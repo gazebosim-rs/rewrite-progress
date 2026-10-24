@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:59:05Z",
+  "updated_at": "2026-10-24T19:04:30Z",
   "state": "active",
-  "summary": "Exact Git snapshot hardening is published; next descriptor path/directory behavior is being implemented.",
+  "summary": "Descriptor path traversal is published and passed hosted CI; lazy, thread-safe instance message creation is under implementation.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
-      "title": "Explicit descriptor path loading",
-      "detail": "Extending the reviewed registry with native filename recognition, path lists and directory loading for retained DynamicFactory/duplicate-descriptor cases. Snapshot hardening is published after independent review and staged gate."
+      "title": "Lazy instance factory and concurrent construction",
+      "detail": "New MessageFactory uses std Mutex with callbacks outside the lock, explicit or lazy environment descriptor paths and observable load errors. Original 10000-iteration concurrent case and isolated single-thread late-environment probe pass; full local gate passed 48 Rust checks. Preparing exact native evidence and independent review."
     }
   ],
   "accepted_slices": [
@@ -52,6 +52,11 @@
       "title": "Explicit descriptor loading, custom options and missing-import retry",
       "commit": "ca17919915f04fede714b021305cb12fdb48afdb",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca17919915f04fede714b021305cb12fdb48afdb"
+    },
+    {
+      "title": "Native explicit descriptor path traversal and duplicate loading",
+      "commit": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f744840c4e5bb986bcc2237a0ba3dae2f66c19b"
     }
   ],
   "remaining": [
@@ -65,33 +70,33 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "e73e046fab7213173eb30587d72453a93fc4abd2",
-    "rust_tests": 40,
+    "revision": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
+    "rust_tests": 43,
     "coverage": {
       "lines": [
-        451,
-        451
+        502,
+        502
       ],
       "regions": [
-        645,
-        653
+        731,
+        740
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 31,
+      "ported": 33,
       "partial": 15
     },
     "ci": {
-      "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118485527"
-    },
-    "note": "Published snapshot slice passed independent source review, five Git regressions, exact staged 40-test gate and the full-build partial-stage rejection proof. Owned Rust coverage unchanged; hosted CI running. Next descriptor path work is outside this revision. Full MSG packets remain incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e73e046fab7213173eb30587d72453a93fc4abd2",
-    "previous_ci": {
-      "revision": "ca17919915f04fede714b021305cb12fdb48afdb",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118094752"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40121346194"
+    },
+    "note": "Published descriptor path slice passed source/assertion/native review, exact staged 43-test gate and hosted CI. Six original fixtures preserved; own-first state before directory listing failure is natively checked. New factory implementation is outside this revision; its local coverage is 597/597 owned Rust lines and 874/883 regions. Full packets remain incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
+    "previous_ci": {
+      "revision": "e73e046fab7213173eb30587d72453a93fc4abd2",
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118485527"
     }
   }
 }
