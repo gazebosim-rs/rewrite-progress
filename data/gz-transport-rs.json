@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:56:17.066114Z",
+  "updated_at": "2026-10-24T18:03:05.036871Z",
   "state": "active",
-  "summary": "Two clean hosted native gates passed. Reviewed bounded multipart cancellation is published and its hosted run is pending.",
+  "summary": "Three clean hosted native gates passed, including bounded multipart cancellation. Unix default partition compatibility is under validation.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "NET-01",
-      "title": "Multipart cancellation hosted validation",
-      "detail": "Reviewed deterministic per-frame interruption and counter behavior; strict staged checks passed and hosted run is pending."
-    },
-    {
       "id": "NET-02",
-      "title": "Native default partition identity",
-      "detail": "Auditing hostname:username and USER/NSS behavior against the pinned native implementation; explicit base configuration remains stable."
+      "title": "Native default Unix partition identity",
+      "detail": "Present/empty/absent USER matches real C++ in isolated child processes; strict gate and peer review are next. Automatic interface selection and exceptional NSS behavior remain pending."
     }
   ],
   "accepted_slices": [
@@ -100,10 +95,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40118290123"
     },
-    "note": "Latest cancellation slice passed strict staged gate with35 Rust tests and17 tooling tests. Previous hosted revisionsc06e097 and2bbbf8c passed full slice gates; latest hosted run is pending.418 retained native cases remain incomplete.",
+    "note": "Hosted d996929 passed35 Rust tests and17 tooling tests, two required native cases,1033/1054 lines and1539/1599 regions;393 applicable IDs reconciled plus25 conditioned retained. Full native suite remains incomplete.",
     "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d996929a5316f2eaaea8edf53d19453a98886deb"
   }
 }
