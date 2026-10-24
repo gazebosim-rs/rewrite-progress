@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:07:36Z",
+  "updated_at": "2026-10-24T17:10:59Z",
   "state": "active",
-  "summary": "OSRF attribution passed hosted CI; packed-cloud metadata is committed for independent review, and safe typed byte access is in progress.",
+  "summary": "Packed-cloud metadata and bounded native-endian byte access passed staged gates and await independent review; public attribution CI passed.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "Metadata commit 9916179 passed the staged 32-test gate with 30 native layouts and 10 datatype sizes; two original mappings await review. Safe unaligned typed access and scalar/color native fixtures are in progress."
+      "detail": "Local commits 9916179 and 78ebdb4 cover metadata plus safe unaligned Pod reads/writes. Thirty metadata and ten scalar/color complete native wire fixtures match. Two original metadata mappings await review; native iterator pointer operators remain outside scope."
     }
   ],
   "accepted_slices": [
@@ -76,7 +76,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40113798719"
     },
-    "note": "Published attribution revision passed the exact staged 30-test gate and hosted CI. Later unpushed metadata commit 9916179 passed 32 tests locally: 371/371 owned lines and 512/516 regions; its two original mappings await review. Typed access is outside both revisions.",
+    "note": "Public dd280195 attribution revision passed its 30-test staged gate and hosted CI. Later unpushed 78ebdb4 passed the exact staged 35-test gate: 427/427 owned lines, 601/609 regions, including modified vendor predicates. Metadata mappings remain pending; no iterator test was retired.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dd280195bfb96fa366447b648f576229b8590575",
     "previous_ci": {
       "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
