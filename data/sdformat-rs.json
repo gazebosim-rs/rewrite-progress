@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T17:36:25.307626Z",
+  "updated_at": "2026-10-24T17:41:57.982615Z",
   "state": "active",
   "summary": "Nine reviewed slices are pushed with passing CI. Primitive visual/second-axis support and native-compatible deferred pose errors are in independent review.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-01",
       "title": "Visual, second-axis and deferred-pose review",
-      "detail": "Isolated candidate passes 45 Rust tests and 8 tool tests; coverage1677/1698 lines and2889/3001 regions. Two unchanged upstream nested-frame ports and76 native acceptance cases, including4 deferred pose failures, await independent acceptance. Explicit validation API is prepared for atomic scene consumers."
+      "detail": "Independent review passed after restoring exact native component-wise pose comparisons;45 Rust tests and76 native differential cases independently rerun. Production coverage1677/1698 lines,2889/3001 regions. Final reviewer receipt and strict staged publication pending; simulator adoption will explicitly validate non-frame poses."
     }
   ],
   "accepted_slices": [
