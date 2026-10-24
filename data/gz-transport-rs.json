@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T20:58:30.190404Z",
+  "updated_at": "2026-10-24T23:39:02.832356Z",
   "state": "active",
-  "summary": "Native topic helper hosted gate passed and simulator Clock/IMU/control consumer validated; discovery identity repair passed final local checks and awaits narrow peer re-review.",
+  "summary": "Discovery identity repair published with successful hosted native gate; simulator remote-removal independent review passed. Continuing reset lifecycle integration support.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "NET-01",
-      "title": "Discovery channel/address identity repair",
-      "detail": "Final local55 Rust/21 tools pass,1202/1226 lines,1785/1853 regions,40/40 changed. Peer-found duplicate/capacity registration sideeffect fixed with deterministic UDP regression; exact re-review pending. Source remains frozen while owner supports root frame metadata review."
+      "id": "NET-02",
+      "title": "Headless integration and publisher lease lifecycle",
+      "detail": "Completed independent remote-removal review:20 server unit checks and4 real C++ scenarios pass. Next review message cursor and verify native same-topic publisher lease withdrawal before reset integration."
     }
   ],
   "accepted_slices": [
@@ -97,6 +97,11 @@
       "title": "Native one-pass topic sanitization for sensor metadata",
       "commit": "c9ddc555cd60e7376b98a4110bdea8c79ef9f8c1",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c9ddc555cd60e7376b98a4110bdea8c79ef9f8c1"
+    },
+    {
+      "title": "Channel-local discovery identity, keep-first metadata and admission sideeffects",
+      "commit": "b67b669e1067bde9fa60ed256cc2d0af28f05884",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b67b669e1067bde9fa60ed256cc2d0af28f05884"
     }
   ],
   "remaining": [
@@ -112,17 +117,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "c9ddc555cd60e7376b98a4110bdea8c79ef9f8c1",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c9ddc555cd60e7376b98a4110bdea8c79ef9f8c1",
-    "rust_tests": 47,
+    "revision": "b67b669e1067bde9fa60ed256cc2d0af28f05884",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b67b669e1067bde9fa60ed256cc2d0af28f05884",
+    "rust_tests": 55,
     "coverage": {
       "lines": [
-        1184,
-        1208
+        1202,
+        1226
       ],
       "regions": [
-        1767,
-        1837
+        1785,
+        1853
       ]
     },
     "upstream": {
@@ -132,8 +137,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40130295698"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40133667311"
     },
-    "note": "Hosted c9ddc555 passed47 Rust/21 tools,1184/1208 lines,1767/1837 regions,19/19 changed. Actual artifact source hashes match published helper. Native original16-input and22 raw-byte C++ differential checks pass.393 applicable+25 conditioned IDs reconciled; full418-case suite incomplete."
+    "note": "Hosted b67b669e passed55 Rust/21 tools,1202/1226 lines,1785/1853 regions,40/40 changed. Downloaded artifact runtime source hash matches published commit. Native channel/address identity, same-node pubsub+RPC and original TopicStorage reference checks pass; no full original retirement.393 applicable+25 conditioned IDs reconciled; full418-case suite incomplete."
   }
 }
