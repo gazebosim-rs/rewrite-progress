@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T20:11:16.208559Z",
+  "updated_at": "2026-10-24T20:23:53.379428Z",
   "state": "active",
-  "summary": "Native NodeOptions and HOST compatibility hosted gates passed; native subscriber-only inspection is implemented and under independent review.",
+  "summary": "Native subscriber-only inspection published after independent review and strict staged checks; headless simulator bridge independently validated.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Native subscriber-only inspection review",
-      "detail": "Frozen subscriber-inspection slice passed44 Rust/21 tools and both original native cases;1165/1189 lines,1735/1805 regions,changed34/34. Independent peer review pending. Latest published revision remains ee0e98e with hosted success."
+      "title": "Discovery channel/address identity repair",
+      "detail": "Isolated regression reproduced same-topic message/service collision (1 peer instead of native2); channel/address-key fix and lifecycle checks in progress, no API change."
+    },
+    {
+      "id": "NET-02",
+      "title": "Retained literal assertion review",
+      "detail": "Independent full400-row naming mapping approved. Added original Int32(5)/single-delivery/invalid-advertise supplement for existing partial one-way mapping; narrow peer re-review active."
     }
   ],
   "accepted_slices": [
@@ -82,6 +87,11 @@
       "title": "Native NodeOptions setters and original assertions",
       "commit": "ee0e98e4a37adad17c3d90b4cb7ef6fadd580391",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/ee0e98e4a37adad17c3d90b4cb7ef6fadd580391"
+    },
+    {
+      "title": "Native subscriber-only inspection and last-lease withdrawal",
+      "commit": "8d3120fa96ae5d46809534249780f654c8c1e884",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8d3120fa96ae5d46809534249780f654c8c1e884"
     }
   ],
   "remaining": [
@@ -97,28 +107,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "ee0e98e4a37adad17c3d90b4cb7ef6fadd580391",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/ee0e98e4a37adad17c3d90b4cb7ef6fadd580391",
-    "rust_tests": 41,
+    "revision": "8d3120fa96ae5d46809534249780f654c8c1e884",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8d3120fa96ae5d46809534249780f654c8c1e884",
+    "rust_tests": 44,
     "coverage": {
       "lines": [
-        1133,
-        1157
+        1165,
+        1189
       ],
       "regions": [
-        1697,
-        1767
+        1735,
+        1805
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 3,
+      "ported": 5,
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40127864290"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40129451462"
     },
-    "note": "Hosted ee0e98e passed41 Rust tests/21 tooling tests;1133/1157 lines,1697/1767 regions,changed15/15. Both original NodeOptions tests independently rerun.393 applicable native IDs reconciled plus25 conditioned retained; full418-case execution/ports remain incomplete."
+    "note": "Strict staged gate:44 Rust/21 tooling tests,1165/1189 lines,1735/1805 regions,changed34/34. Independent SDF reviewer reran both native originals,2 UDP tests and real C++ observer case.393 applicable IDs reconciled plus25 conditioned retained; full418-case suite remains incomplete. Previous ee0e98e hosted gate succeeded."
   }
 }
