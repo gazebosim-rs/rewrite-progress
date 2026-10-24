@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T19:41:37Z",
+  "updated_at": "2026-10-24T19:46:01Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Nested headers and multi-message construction",
-      "detail": "Published reviewed lazy/concurrent factory and three original mappings. Next bounded ports retain nested wire lengths and all three messages in one schema; full conversion and release scope remains open."
+      "title": "Plane and bounding-box component conversions",
+      "detail": "Nested header/multitype ports published after independent review. Plane/AABB helpers and four original mappings pass local gate/native corpus and await independent review; retained cloud families are next."
     }
   ],
   "accepted_slices": [
@@ -67,6 +67,11 @@
       "title": "Lazy instance factory and original concurrent/environment behavior",
       "commit": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca0ef2e996af391566f89946cce6669f0a11d9c6"
+    },
+    {
+      "title": "Original nested header sizes and multi-message ownership forms",
+      "commit": "9d1c1c1275ea555753e580326d7315c2abedcbb2",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9d1c1c1275ea555753e580326d7315c2abedcbb2"
     }
   ],
   "remaining": [
@@ -80,8 +85,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
-    "rust_tests": 48,
+    "revision": "9d1c1c1275ea555753e580326d7315c2abedcbb2",
+    "rust_tests": 50,
     "coverage": {
       "lines": [
         597,
@@ -94,19 +99,19 @@
     },
     "upstream": {
       "total": 83,
-      "ported": 36,
+      "ported": 38,
       "partial": 15
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40126701413"
+    },
+    "note": "Published header/multitype assertion ports passed independent source/native/Rust review and strict staged gate. Exact hosted run pending; previous factory hosted success retained. Plane/AABB is a separate unpublished candidate:54Rust checks,643/643ownedlines955/964regions,16nativewirecases and4originals pass. MSG-02 remains incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9d1c1c1275ea555753e580326d7315c2abedcbb2",
+    "previous_ci": {
+      "revision": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40126279492"
-    },
-    "note": "Published factory slice passed independent source/assertion/native review, strict staged gate and exact-revision hosted CI. MSG-01 accepted separately; MSG-02 retains unported conversions/cloud/tooling/release scope.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca0ef2e996af391566f89946cce6669f0a11d9c6",
-    "previous_ci": {
-      "revision": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40121346194"
     }
   }
 }
