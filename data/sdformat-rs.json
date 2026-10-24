@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T17:06:34.696090Z",
+  "updated_at": "2026-10-24T17:20:16.119070Z",
   "state": "active",
   "summary": "Eight reviewed slices are pushed with passing CI, including requested OSRF attribution; coverage target inventory hardening is the next separate slice.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
-      "title": "Fail-closed production target inventory",
-      "detail": "Working-tree target/runner/source-layout checks pass 8 tool tests and the unchanged 39 Rust tests; independent review requested. Published coverage evidence remains bound to the accepted attribution revision."
+      "title": "Fail-closed production target inventory review",
+      "detail": "Working-tree checks pass 8 tool tests and 39 Rust tests. Independent review caught and verified a fix for non-Rust-extension included sources; final policy receipt and staged commit are pending."
+    },
+    {
+      "id": "SDF-01",
+      "title": "Isolated visual and second-axis candidate",
+      "detail": "Primitive visual poses/optional geometry and universal/revolute2 second axes pass 44 Rust tests; coverage 1664/1685 lines and 2868/2980 regions. Two unchanged upstream nested-frame assertion ports pass natively and in Rust, pending independent review. No candidate acceptance or published revision is claimed."
     }
   ],
   "accepted_slices": [
@@ -55,6 +60,7 @@
     }
   ],
   "remaining": [
+    "Resolve native scalar prefix/coercion parity and deferred non-frame pose error timing versus the current eager validated-loader policy.",
     "Complete retained schema/version conversions, include merge, automatic inertia and import/export semantics.",
     "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
