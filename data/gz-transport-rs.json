@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T20:01:10.920186Z",
+  "updated_at": "2026-10-24T20:09:28.999322Z",
   "state": "active",
-  "summary": "Native HOST discovery and NodeOptions compatibility slices published; latest NodeOptions clean hosted gate is running after strict local checks.",
+  "summary": "Native NodeOptions and HOST compatibility hosted gates passed; native subscriber-only inspection is implemented and under independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Discovery query behavior inventory",
-      "detail": "Next bounded functionality slice: expose bounded topic/service discovery snapshots, retain native assertion mappings and real C++ observations."
+      "title": "Native subscriber-only inspection review",
+      "detail": "SUBSCRIBERS_REQ/REP and last-lease END_CONNECTION implementation passes real C++ TopicList/TopicInfo regression; both retained native originals pass. Strict full gate and independent review active."
     }
   ],
   "accepted_slices": [
@@ -116,9 +116,9 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40127864290"
     },
-    "note": "Strict staged local gate:41 Rust tests,21 tooling tests,1133/1157 lines,1697/1767 regions,changed15/15. Both original NodeOptions tests independently rerun. Previous HOST commit4fa16cc hosted run40126677994 succeeded.393 applicable native IDs reconciled plus25 conditioned retained; full418-case execution/ports remain incomplete."
+    "note": "Hosted ee0e98e passed41 Rust tests/21 tooling tests;1133/1157 lines,1697/1767 regions,changed15/15. Both original NodeOptions tests independently rerun.393 applicable native IDs reconciled plus25 conditioned retained; full418-case execution/ports remain incomplete."
   }
 }
