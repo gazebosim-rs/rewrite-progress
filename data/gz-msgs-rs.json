@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T16:34:26Z",
+  "updated_at": "2026-10-24T16:37:55Z",
   "state": "active",
-  "summary": "Canonical runtime, signed Time, native CLI output and enum conversions accepted in public commits; remaining utility scope continues.",
+  "summary": "Reviewed runtime, Time, CLI and enum slices are public; owned-only coverage CI is running and packed-cloud investigation continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
       "title": "Message runtime qualification",
-      "detail": "Canonical schemas, descriptors, C++ conformance and signed-zero dependency fixes validated; release qualification remains."
+      "detail": "Canonical runtime and owned-only coverage gates validated locally; exact published ad10fc5 hosted run is in progress."
     },
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "CLI and enum families independently approved. Quality update isolates instrumentation to owned code and patched predicates; packed-cloud and remaining conversions are next."
+      "detail": "Investigating native packed-cloud layout, color aliases and safe scalar access; no packed-cloud implementation or parity claim yet."
     }
   ],
   "accepted_slices": [
@@ -55,7 +55,7 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
+    "revision": "ad10fc59a6c454c9b4a83a511860763a58457a06",
     "rust_tests": 30,
     "coverage": {
       "lines": [
@@ -73,10 +73,15 @@
       "partial": 15
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40112346444"
+    },
+    "note": "Exact ad10fc5 hosted CI is in progress; local staged gate passes 30 integration tests plus five unchanged C++ CLI cases, all 271 info outputs, and fatal-warning coverage. The prior hosted pass applies only to 22a0482. Owned coverage scope remains explicit.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ad10fc59a6c454c9b4a83a511860763a58457a06",
+    "previous_ci": {
+      "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40111717896"
-    },
-    "note": "Hosted CI success applies exactly to public 22a0482. The later owned-only instrumentation gate update is locally passing and currently committing; it is not covered by that hosted result. Coverage scope is handwritten src/build plus changed dependency predicates only.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/22a0482fbf17e6469b59be4d217875262f916f94"
+    }
   }
 }
