@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T19:38:42.864632Z",
+  "updated_at": "2026-10-24T19:49:05.516593Z",
   "state": "active",
   "summary": "Thirteen independently reviewed slices are pushed with passing CI. Typed geometry/schema metadata remains in independent review.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-01",
       "title": "Mesh and additional primitive metadata review",
-      "detail": "Isolated candidate passes59 Rust tests,11 tooling tests;60 geometry and72 named-entity native cases match. Coverage1915/1938 lines,3304/3418 regions. Eight original geometry value cases and the reserved-name table await independent review. Full shapes fixture remains pending collision surface/rendering properties."
+      "detail": "Isolated corrected candidate passes59 Rust tests,11 tooling tests;87 geometry and72 named-entity native cases match. Coverage1927/1950 lines,3327/3440 regions. Independent review found malformed scalar/vector whitespace accepts; native-backed regressions now distinguish required/optional blanks, C whitespace, Unicode separators and CDATA. Re-review pending. Eight original geometry value cases and reserved-name table remain pending acceptance; fullShapes still needs surface/rendering properties."
     }
   ],
   "accepted_slices": [
