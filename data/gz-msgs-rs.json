@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T19:55:22Z",
+  "updated_at": "2026-10-24T19:59:10Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
@@ -9,7 +9,7 @@
     {
       "id": "MSG-02",
       "title": "Quaternion, pose and metadata-retaining component setters",
-      "detail": "Published packed-cloud/default ports and independent reviews bring original cases to61/83. Next9 quaternion/pose/vector/color mappings pass full localgate/native corpus and await transport review. Operators object identity remains partial."
+      "detail": "Nine quaternion/pose/vector/color mappings pass full localgate/native corpus and await transport review. Separate inertial native-state probing continues, preserving append and orientation-W-only semantics. Operators object identity remains partial."
     }
   ],
   "accepted_slices": [
@@ -113,10 +113,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40127422168"
     },
-    "note": "Published cloud/default slice and15older dispositions independently reviewed and strict staged gate passed. Exact latest hosted CI pending; plane/AABB hosted success retained. Operators numeric values are covered but object identity/overloads remain partial. Unpublished component setters:62checks643/643lines966/975regions18nativewirecases+9originals pass, awaiting review. MSG-02 and broad release qualification remain incomplete.",
+    "note": "Published cloud/default slice and15older dispositions independently reviewed and strict staged gate passed. Exact latest hosted CI passed; prior plane/AABB hosted success retained. Operators numeric values are covered but object identity/overloads remain partial. Unpublished component setters:62checks643/643lines966/975regions18nativewirecases+9originals pass, awaiting review. MSG-02 and broad release qualification remain incomplete.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/35786194c030f5427396887c645701dcffe0172d",
     "previous_ci": {
       "revision": "893817482c1d34f7409c5f4ba17098effc58771b",
