@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T16:24:58.133574Z",
+  "updated_at": "2026-10-24T16:32:24.164654Z",
   "state": "active",
   "summary": "Bevy stepping, full-f64 rigid bodies, IMU measurements and a constrained SDF scene loader are reviewed. The complete server slice is still in progress.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "CLI-01",
-      "title": "Headless exact-step CLI",
-      "detail": "Five CLI tests pass, including atomic overflow and output IO errors; independent review complete, exact staged gate next."
+      "id": "IO-01",
+      "title": "Clock and scene publication contracts",
+      "detail": "Tracing native clock, topic and frame semantics before transport integration; model hierarchy and stable external IDs remain prerequisites for complete pose publication."
     },
     {
       "id": "QLT-01",
-      "title": "Quality gates and integration review",
-      "detail": "Added strict per-crate changed-line coverage with full push/PR base, owned-only LLVM instrumentation and eight gate regression tests; independent gate review pending."
+      "title": "Hosted CLI and coverage verification",
+      "detail": "Reviewed CLI and changed-line gates pushed after exact staged checks passed; hosted result pending."
     }
   ],
   "accepted_slices": [
@@ -27,6 +27,11 @@
       "title": "SDF scene construction, full inertia and reset-safe IMU sampling",
       "commit": "f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886"
+    },
+    {
+      "title": "Headless exact-step CLI and strict per-crate changed-line coverage",
+      "commit": "a309b9c8d520429624de4beef549a5903a725c9d",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a309b9c8d520429624de4beef549a5903a725c9d"
     }
   ],
   "remaining": [
@@ -50,10 +55,11 @@
     "SENSOR-01": "in_progress",
     "LOAD-01": "in_progress",
     "SLICE-01": "in_progress",
-    "CLI-01": "in_progress"
+    "CLI-01": "in_progress",
+    "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "working tree after f0eeb2a",
+    "revision": "a309b9c8d520429624de4beef549a5903a725c9d",
     "rust_tests": 28,
     "coverage": {
       "lines": [
@@ -74,7 +80,8 @@
       "state": "pending",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions"
     },
-    "note": "Full local current-profile gate passes: each of five crates exceeds 95% lines and regions; all 33 changed executable CLI lines covered. Eight gate regression tests pass. Working-tree changes await staged check and hosted CI. Full parity, feature matrix and performance comparison remain open."
+    "note": "Exact staged current-profile gate passes: 28 Rust tests, nine gate regression tests, all five crates >95% lines/regions and 33/33 changed executable CLI lines. Hosted CI pending for this revision. Full retained parity, feature matrix and comparative performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a309b9c8d520429624de4beef549a5903a725c9d"
   },
   "phase_status": {
     "P0": "in_progress",
