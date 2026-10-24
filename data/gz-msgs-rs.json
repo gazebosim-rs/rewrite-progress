@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T16:37:55Z",
+  "updated_at": "2026-10-24T16:57:52Z",
   "state": "active",
-  "summary": "Reviewed runtime, Time, CLI and enum slices are public; owned-only coverage CI is running and packed-cloud investigation continues.",
+  "summary": "Apache-2.0 and OSRF attribution are public; packed-cloud metadata prototype matches native wire fixtures while broader MSG-02 scope continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "Investigating native packed-cloud layout, color aliases and safe scalar access; no packed-cloud implementation or parity claim yet."
+      "detail": "Packed-cloud initializer/datatype-size prototype compares 30 native layouts and 10 sizes; original Init/Size assertions pass locally, awaiting cohesive review. Iterator/byte-access behavior remains unimplemented."
     }
   ],
   "accepted_slices": [
@@ -55,7 +55,7 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "ad10fc59a6c454c9b4a83a511860763a58457a06",
+    "revision": "dd280195bfb96fa366447b648f576229b8590575",
     "rust_tests": 30,
     "coverage": {
       "lines": [
@@ -74,10 +74,10 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40112346444"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40113798719"
     },
-    "note": "Exact ad10fc5 hosted CI is in progress; local staged gate passes 30 integration tests plus five unchanged C++ CLI cases, all 271 info outputs, and fatal-warning coverage. The prior hosted pass applies only to 22a0482. Owned coverage scope remains explicit.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ad10fc59a6c454c9b4a83a511860763a58457a06",
+    "note": "Published attribution-only revision passed the exact staged 30-test gate with unchanged executable logic and >95% owned coverage. Its hosted CI is running. Cloud prototype is outside this revision; imported/vendored notices remain unchanged. Previous hosted success is separately revision-linked.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dd280195bfb96fa366447b648f576229b8590575",
     "previous_ci": {
       "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
       "state": "success",
