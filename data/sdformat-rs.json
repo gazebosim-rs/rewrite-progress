@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T21:31:19.905306Z",
+  "updated_at": "2026-10-24T21:46:25.600789Z",
   "state": "active",
-  "summary": "Eighteen independently reviewed slices are published with passing CI. Frame IDs, native topic strings and canonical DOM link selection are ready for headless adoption.",
+  "summary": "Nineteen independently reviewed slices are published. Audited Linux GNU scalar/Pose-token conversion passed strict staged gates; its CI is running. Surface metadata final review is next.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Scalar conversion boundary review preparation",
-      "detail": "Private isolated prototype uses explicit per-call C locale for native prefix/ERANGE behavior, with actual scalar/Pose/vector controls and failure/concurrency tests. No unsafe/dependency policy change published; independent ABI/safety review required."
-    },
-    {
-      "id": "SDF-01",
-      "title": "Surface metadata scalar range correction",
-      "detail": "Surface value/default assertions passed13 Rust tests and10 exact native originals. Peer review found native scalar underflow rejection absent from Rust parsing. Surface remains unaccepted pending precise conversion/error handling; scalar and vector native paths differ."
+      "title": "Collision surface final review preparation",
+      "detail": "Separate corrected Surface prototype passes49 actual native observations and13 Rust feature tests, including exact/inexact underflow controls. Original10 value ports retained. Final combined coverage, review and strict staged gate required; simulator must reject explicit surfaces until physics support."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Native scalar range and pose-token conversion on Linux GNU",
+      "commit": "fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613"
+    },
     {
       "title": "Expose native DOM canonical link selection",
       "commit": "bae15b4500cfb523b5680a6fa317f11479ce0d8a",
@@ -125,16 +125,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "bae15b4500cfb523b5680a6fa317f11479ce0d8a",
-    "rust_tests": 68,
+    "revision": "fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613",
+    "rust_tests": 72,
     "coverage": {
       "lines": [
-        2041,
-        2062
+        2067,
+        2089
       ],
       "regions": [
-        3524,
-        3634
+        3580,
+        3691
       ]
     },
     "upstream": {
@@ -143,10 +143,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40134484519"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40135618915"
     },
-    "note": "Exact reviewed canonical/frame/topic snapshots passed strict frozen staged hooks,11 tooling tests and hosted CI.17 native canonical+24 topic+30 frame observations match; original canonical case rerun. Surface/scalar safety changes remain unaccepted and outside this revision.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bae15b4500cfb523b5680a6fa317f11479ce0d8a"
+    "note": "Independent code/ABI/safety review and strict frozen hook passed, including11 tooling tests, allocation-failure/concurrency/locale checks.63 actual native observations:61 finite/error matches plus2 explicit nonfinite gaps. Qualification is Linux GNU; no portable/performance claim. Surface remains outside this revision.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613"
   }
 }
