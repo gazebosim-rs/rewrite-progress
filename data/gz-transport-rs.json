@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T18:28:07.689374Z",
+  "updated_at": "2026-10-24T19:20:39.841642Z",
   "state": "active",
-  "summary": "Reviewed Unix default partition compatibility is published; three prior clean hosted gates passed and the latest run is pending.",
+  "summary": "Four clean hosted native gates passed, including Unix default partition compatibility; retained HOST behavior and exact ownership fixes are next.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
-      "title": "Cargo target and LLVM source inventory guard",
-      "detail": "Precompile target/package/feature/runner checks and fail-closed owned LLVM source checks pass37 Rust tests and19 tooling tests locally; peer review next."
+      "title": "Concrete compiler ownership and freshness correction",
+      "detail": "Review found production imports through tests and Cargo cached dep-info with restored mtime; fresh normal-library compiler proof and exact negative regressions pass37 Rust/21 tooling tests locally, re-review active."
     },
     {
-      "id": "NET-02",
-      "title": "Default identity hosted validation",
-      "detail": "Reviewed hostname:USER/UID behavior is published; automatic interface and exceptional NSS semantics remain pending."
+      "id": "NET-01",
+      "title": "HOST discovery retained behavior inventory",
+      "detail": "Native accepts eligible local interface sources and all127.* addresses; implement that receive filter with real C++ HOST-service checks next."
     }
   ],
   "accepted_slices": [
@@ -105,10 +105,10 @@
       "partial": 2
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40120311685"
     },
-    "note": "Latest reviewed identity slice passed strict staged37 Rust/17 tooling tests and three native originals; changed30/30 lines. Hosted run pending; prior cancellation revision passed hosted. Full418-case native suite remains incomplete.",
+    "note": "Hosted1cf0867 passed37 Rust tests/17 tooling tests and three native originals;1065/1087 lines,1586/1651 regions,changed30/30.393 applicable native IDs reconciled plus25 conditioned retained; full418-case suite remains incomplete.",
     "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1cf0867e382edcfdbbf8784dfb085a8d92cc96b7"
   }
 }
