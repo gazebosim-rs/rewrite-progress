@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T17:41:57.982615Z",
+  "updated_at": "2026-10-24T17:50:12.601954Z",
   "state": "active",
-  "summary": "Nine reviewed slices are pushed with passing CI. Primitive visual/second-axis support and native-compatible deferred pose errors are in independent review.",
+  "summary": "Ten independently reviewed slices are pushed with passing CI. Visual frames, second axes and native deferred pose failures are available; staged export integrity hardening is in review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "SDF-01",
-      "title": "Visual, second-axis and deferred-pose review",
-      "detail": "Independent review passed after restoring exact native component-wise pose comparisons;45 Rust tests and76 native differential cases independently rerun. Production coverage1677/1698 lines,2889/3001 regions. Final reviewer receipt and strict staged publication pending; simulator adoption will explicitly validate non-frame poses."
+      "id": "QLT-01",
+      "title": "Verify frozen staged blobs and modes",
+      "detail": "Replace archive export with private frozen-index checkout and raw Git blob, path, file-type and owner-executable verification.11 tooling tests pass including export-ignore, EOL-transform rejection and index/HEAD races; independent review underway. Published runtime evidence remains bound to the preceding accepted API commit."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve visual frames, second axes and deferred pose failures",
+      "commit": "75b14f1a950ddb60e691379b39a32ec7e3a3a8bf",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/75b14f1a950ddb60e691379b39a32ec7e3a3a8bf"
+    },
     {
       "title": "Reject unaccounted Cargo targets and coverage inputs",
       "commit": "c275d13d7206e443f554d27aa7b3244615f519ab",
@@ -74,28 +79,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c275d13d7206e443f554d27aa7b3244615f519ab",
-    "rust_tests": 39,
+    "revision": "75b14f1a950ddb60e691379b39a32ec7e3a3a8bf",
+    "rust_tests": 45,
     "coverage": {
       "lines": [
-        1622,
-        1643
+        1677,
+        1698
       ],
       "regions": [
-        2774,
-        2885
+        2889,
+        3001
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 7,
+      "ported": 9,
       "partial": 1
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40116605193"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40117444057"
     },
-    "note": "Exact published quality slice passed strict staged-tree verification and hosted CI:39 Rust tests,8 tool tests; production1622/1643 lines,2774/2885 regions. No exclusions. Candidate45-test/native76-case results are separate unaccepted work;7 reviewed complete upstream ports plus1 partial of1344 remain the published baseline.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c275d13d7206e443f554d27aa7b3244615f519ab"
+    "note": "Exact published API slice passed strict staged verification and hosted CI:45 Rust tests,8 tooling tests;76 native acceptance cases including4 deferred pose errors. Original pose component comparisons were restored explicitly after independent math-header review, retaining tighter supplementary checks.9 complete reviewed upstream ports and1 partial remain a small subset of1344; no whole-packet or performance claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/75b14f1a950ddb60e691379b39a32ec7e3a3a8bf"
   }
 }
