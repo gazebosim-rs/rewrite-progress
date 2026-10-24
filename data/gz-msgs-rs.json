@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T16:32:42Z",
+  "updated_at": "2026-10-24T16:34:26Z",
   "state": "active",
   "summary": "Canonical runtime, signed Time, native CLI output and enum conversions accepted in public commits; remaining utility scope continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
@@ -55,7 +55,7 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "22a0482 plus owned-instrumentation gate working tree",
+    "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
     "rust_tests": 30,
     "coverage": {
       "lines": [
@@ -73,9 +73,10 @@
       "partial": 15
     },
     "ci": {
-      "state": "unknown",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40111717896"
     },
-    "note": "CLI and enum implementation commits verified public through origin/main. Local gate passes 30 integration tests plus five unchanged C++ CLI cases; all 271 native info outputs match. LLVM export now rejects warnings and passes with only owned code/predicates instrumented. Hosted CI unverified."
+    "note": "Hosted CI success applies exactly to public 22a0482. The later owned-only instrumentation gate update is locally passing and currently committing; it is not covered by that hosted result. Coverage scope is handwritten src/build plus changed dependency predicates only.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/22a0482fbf17e6469b59be4d217875262f916f94"
   }
 }
