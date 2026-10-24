@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T16:32:24.164654Z",
+  "updated_at": "2026-10-24T16:34:25.625661Z",
   "state": "active",
   "summary": "Bevy stepping, full-f64 rigid bodies, IMU measurements and a constrained SDF scene loader are reviewed. The complete server slice is still in progress.",
   "model": "Coordinator; architecture, integration and review",
@@ -10,11 +10,6 @@
       "id": "IO-01",
       "title": "Clock and scene publication contracts",
       "detail": "Tracing native clock, topic and frame semantics before transport integration; model hierarchy and stable external IDs remain prerequisites for complete pose publication."
-    },
-    {
-      "id": "QLT-01",
-      "title": "Hosted CLI and coverage verification",
-      "detail": "Reviewed CLI and changed-line gates pushed after exact staged checks passed; hosted result pending."
     }
   ],
   "accepted_slices": [
@@ -77,10 +72,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40111917344"
     },
-    "note": "Exact staged current-profile gate passes: 28 Rust tests, nine gate regression tests, all five crates >95% lines/regions and 33/33 changed executable CLI lines. Hosted CI pending for this revision. Full retained parity, feature matrix and comparative performance remain open.",
+    "note": "Exact staged and hosted current-profile gates pass: 28 Rust tests, nine gate regression tests, all five crates >95% lines/regions and 33/33 changed executable CLI lines. Full retained parity, feature matrix and comparative performance remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a309b9c8d520429624de4beef549a5903a725c9d"
   },
   "phase_status": {
