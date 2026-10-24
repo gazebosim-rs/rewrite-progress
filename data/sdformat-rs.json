@@ -1,18 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T19:49:05.516593Z",
+  "updated_at": "2026-10-24T20:28:01.677655Z",
   "state": "active",
-  "summary": "Thirteen independently reviewed slices are pushed with passing CI. Typed geometry/schema metadata remains in independent review.",
+  "summary": "Fifteen independently reviewed slices are pushed. Mesh/additional primitives and native optional-text handling passed strict staged gates; collision-surface metadata implementation has started.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Mesh and additional primitive metadata review",
-      "detail": "Isolated corrected candidate passes59 Rust tests,11 tooling tests;87 geometry and72 named-entity native cases match. Coverage1927/1950 lines,3327/3440 regions. Independent review found malformed scalar/vector whitespace accepts; native-backed regressions now distinguish required/optional blanks, C whitespace, Unicode separators and CDATA. Re-review pending. Eight original geometry value cases and reserved-name table remain pending acceptance; fullShapes still needs surface/rendering properties."
+      "title": "Collision surface contact and friction metadata",
+      "detail": "Working prototype compiles; existing62 Rust tests and clippy pass. Adds contact masks and ODE/Bullet/torsional friction values with optional source provenance; native surface oracle prepared. New feature assertions, coverage and independent review still pending. Simulator adoption requires rejecting explicit surfaces until backend support."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain mesh metadata and native geometry defaults",
+      "commit": "3174e1e41c32cdcffa39ae364288c14ac75ae5e4",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3174e1e41c32cdcffa39ae364288c14ac75ae5e4"
+    },
+    {
+      "title": "Distinguish optional numeric text from CDATA",
+      "commit": "56315822f1839e2b35306c2e6e0b43ebe7a00320",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/56315822f1839e2b35306c2e6e0b43ebe7a00320"
+    },
     {
       "title": "Preserve legacy SDF model and world name collisions",
       "commit": "eb815a1e720f2990197ecf4d160d1316f7029111",
@@ -80,6 +90,7 @@
     }
   ],
   "remaining": [
+    "Complete older primitive fallback/required-value parity, collision surfaces and retained full-shapes fixture before claiming complete geometry/schema behavior.",
     "Complete native scalar prefix/coercion parity; retain documented native inertial-frame limitations and extend explicit consumer validation with supported features.",
     "Complete retained schema/version conversions, include merge, automatic inertia and import/export semantics.",
     "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
@@ -94,28 +105,27 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "eb815a1e720f2990197ecf4d160d1316f7029111",
-    "rust_tests": 50,
+    "revision": "56315822f1839e2b35306c2e6e0b43ebe7a00320",
+    "rust_tests": 62,
     "coverage": {
       "lines": [
-        1823,
-        1842
+        1997,
+        2018
       ],
       "regions": [
-        3120,
-        3227
+        3455,
+        3565
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 11,
+      "ported": 20,
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40126005828"
+      "state": "pending"
     },
-    "note": "Published legacy-name slice passed strict frozen staged verification:50 Rust tests,11 tooling tests,139 native differential cases, both original native cases; production1823/1842 lines,3120/3227 regions. Independent msgs review preserves every original assertion and unchanged fixtures. Hosted CI passed. Geometry candidate remains separate unaccepted work;11 complete reviewed ports plus1 partial are a small subset of1344. No whole-packet or speedup claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/eb815a1e720f2990197ecf4d160d1316f7029111"
+    "note": "Published geometry/text chain passed two strict frozen staged gates. Latest62 Rust tests,11 tooling tests,322 local native observations (139base/111geometry/72names);1997/2018 productionlines3455/3565regions. Different agents independently reviewed original9mappings and exact follow-up; no exclusions/deps/threshold changes. Hosted CI pending.20complete original ports+1partial remain a small subset of1344; fullShapes, schema, conversion and performance packets incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/56315822f1839e2b35306c2e6e0b43ebe7a00320"
   }
 }
