@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T16:12:44Z",
+  "updated_at": "2026-10-24T16:16:08Z",
   "state": "active",
-  "summary": "216 canonical schemas and maintained protobuf interop validated; CLI and enum conversion slices await review.",
+  "summary": "Canonical runtime, signed Time and native enum conformance validated; correcting complete native CLI info output fidelity.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "29 integration tests plus five unchanged C++ CLI cases pass locally; 197 native enum cases match; pending cohesive assertion review."
+      "detail": "Native full --info comparison exposed headings/type-qualification/synthetic-map-entry gaps despite five unchanged C++ tests passing; implementing complete-output corpus and regression checks."
     }
   ],
   "accepted_slices": [
@@ -66,6 +66,6 @@
       "state": "unknown",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions"
     },
-    "note": "Local staged gates pass. Coverage combines handwritten src/build and only changed vendored predicate lines/regions; unchanged upstream/generated code excluded by provenance. Partial counts are pending-review mappings, not parity completion. Native baseline 82 C++ and 1 Python tests pass; hosted CI unverified."
+    "note": "29 local integration tests and five unchanged C++ CLI cases pass, but complete native --info differential found a fidelity gap under active correction. Coverage counts owned src/build and changed dependency predicates only. Hosted CI unverified."
   }
 }
