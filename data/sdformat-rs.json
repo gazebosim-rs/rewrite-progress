@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T17:20:16.119070Z",
+  "updated_at": "2026-10-24T17:36:25.307626Z",
   "state": "active",
-  "summary": "Eight reviewed slices are pushed with passing CI, including requested OSRF attribution; coverage target inventory hardening is the next separate slice.",
+  "summary": "Nine reviewed slices are pushed with passing CI. Primitive visual/second-axis support and native-compatible deferred pose errors are in independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "QLT-01",
-      "title": "Fail-closed production target inventory review",
-      "detail": "Working-tree checks pass 8 tool tests and 39 Rust tests. Independent review caught and verified a fix for non-Rust-extension included sources; final policy receipt and staged commit are pending."
-    },
-    {
       "id": "SDF-01",
-      "title": "Isolated visual and second-axis candidate",
-      "detail": "Primitive visual poses/optional geometry and universal/revolute2 second axes pass 44 Rust tests; coverage 1664/1685 lines and 2868/2980 regions. Two unchanged upstream nested-frame assertion ports pass natively and in Rust, pending independent review. No candidate acceptance or published revision is claimed."
+      "title": "Visual, second-axis and deferred-pose review",
+      "detail": "Isolated candidate passes 45 Rust tests and 8 tool tests; coverage1677/1698 lines and2889/3001 regions. Two unchanged upstream nested-frame ports and76 native acceptance cases, including4 deferred pose failures, await independent acceptance. Explicit validation API is prepared for atomic scene consumers."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Reject unaccounted Cargo targets and coverage inputs",
+      "commit": "c275d13d7206e443f554d27aa7b3244615f519ab",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c275d13d7206e443f554d27aa7b3244615f519ab"
+    },
     {
       "title": "Attribute owned implementation to Open Source Robotics Foundation",
       "commit": "1b6b201e2fbcf59115394445d9795ca8b25bf60d",
@@ -60,7 +60,7 @@
     }
   ],
   "remaining": [
-    "Resolve native scalar prefix/coercion parity and deferred non-frame pose error timing versus the current eager validated-loader policy.",
+    "Complete native scalar prefix/coercion parity; retain documented native inertial-frame limitations and extend explicit consumer validation with supported features.",
     "Complete retained schema/version conversions, include merge, automatic inertia and import/export semantics.",
     "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
@@ -74,7 +74,7 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "1b6b201e2fbcf59115394445d9795ca8b25bf60d",
+    "revision": "c275d13d7206e443f554d27aa7b3244615f519ab",
     "rust_tests": 39,
     "coverage": {
       "lines": [
@@ -93,9 +93,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40114012904"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40116605193"
     },
-    "note": "Exact published attribution slice passed staged-tree gate and hosted core CI: 39 Rust tests, 6 tool tests; production coverage 1622/1643 lines and 2774/2885 regions. Seven complete reviewed upstream assertion ports plus one partial IMU subset of 1344 cases. Full retained scope remains pending; no whole-packet, release or speedup claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1b6b201e2fbcf59115394445d9795ca8b25bf60d"
+    "note": "Exact published quality slice passed strict staged-tree verification and hosted CI:39 Rust tests,8 tool tests; production1622/1643 lines,2774/2885 regions. No exclusions. Candidate45-test/native76-case results are separate unaccepted work;7 reviewed complete upstream ports plus1 partial of1344 remain the published baseline.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c275d13d7206e443f554d27aa7b3244615f519ab"
   }
 }
