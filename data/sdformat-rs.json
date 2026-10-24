@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T21:46:25.600789Z",
+  "updated_at": "2026-10-24T23:39:35.107294Z",
   "state": "active",
-  "summary": "Nineteen independently reviewed slices are published. Audited Linux GNU scalar/Pose-token conversion passed strict staged gates; its CI is running. Surface metadata final review is next.",
+  "summary": "Twenty independently reviewed slices are published. Collision contact/friction metadata passed strict staged gates and native review; hosted Surface CI is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Collision surface final review preparation",
-      "detail": "Separate corrected Surface prototype passes49 actual native observations and13 Rust feature tests, including exact/inexact underflow controls. Original10 value ports retained. Final combined coverage, review and strict staged gate required; simulator must reject explicit surfaces until physics support."
+      "title": "Include plugins and resource provenance",
+      "detail": "Investigating native include-level plugin ordering and original include metadata through the injected resolver. Full serialization, old-version conversion and unsupported geometry remain explicit pending scope."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain collision surface contact and friction metadata",
+      "commit": "6740618086d541054e13945b2ecb9a8cbc6fbfb6",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6740618086d541054e13945b2ecb9a8cbc6fbfb6"
+    },
     {
       "title": "Native scalar range and pose-token conversion on Linux GNU",
       "commit": "fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613",
@@ -125,28 +130,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613",
-    "rust_tests": 72,
+    "revision": "6740618086d541054e13945b2ecb9a8cbc6fbfb6",
+    "rust_tests": 85,
     "coverage": {
       "lines": [
-        2067,
-        2089
+        2216,
+        2241
       ],
       "regions": [
-        3580,
-        3691
+        3837,
+        3961
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 20,
+      "ported": 30,
       "partial": 1
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40135618915"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40143463356"
     },
-    "note": "Independent code/ABI/safety review and strict frozen hook passed, including11 tooling tests, allocation-failure/concurrency/locale checks.63 actual native observations:61 finite/error matches plus2 explicit nonfinite gaps. Qualification is Linux GNU; no portable/performance claim. Surface remains outside this revision.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fbdf7f02c0865f32cc2c68b6e3e61e4e3e619613"
+    "note": "Exact reviewed Surface snapshot passed strict frozen hook, 11 tooling tests, 49 actual native observations and 10 original native cases. Metadata only; simulator must reject explicit Surface until physics support. Scalar qualification remains Linux GNU; nonfinite/vector-prefix/full-Surface and performance gaps remain explicit.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6740618086d541054e13945b2ecb9a8cbc6fbfb6"
   }
 }
