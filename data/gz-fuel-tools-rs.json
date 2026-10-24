@@ -1,17 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-fuel-tools-rs",
-  "updated_at": "2026-10-24T16:20:26.178129Z",
-  "state": "active",
-  "summary": "The standalone Linux rewrite is reviewed and CI-verified; contributor reporting guidance is awaiting protected PR checks.",
+  "updated_at": "2026-10-24T16:26:59.799467Z",
+  "state": "complete",
+  "summary": "The reviewed standalone Linux Fuel rewrite and public reporting guidance are complete; gz-sim integration acceptance remains separately owned.",
   "model": "Codex repository owner (model and reasoning effort not recorded)",
-  "active": [
-    {
-      "id": "TRACKER-GUIDANCE",
-      "title": "Persist public progress reporting guidance",
-      "detail": "PR #8 adds owner-only reporting guidance and the gz-sim integration boundary; full local hooks passed and required hosted CI is pending: https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/8"
-    }
-  ],
+  "active": [],
   "accepted_slices": [
     {
       "title": "Native Rust client and CLI with unchanged upstream C++ source interfaces and acceptance tests",
@@ -22,11 +16,14 @@
       "title": "Reviewed security fixes, enforced CI, dependency audits and clean package/install validation",
       "commit": "877acad579cf991b896d6730df9e1c5370e7c394",
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/2"
+    },
+    {
+      "title": "Owner-specific public progress reporting guidance merged after required CI passed",
+      "commit": "53c3276269425e653dd8ba88d2b132a1e896c60b",
+      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/8"
     }
   ],
-  "remaining": [
-    "Merge contributor reporting guidance after required CI succeeds."
-  ],
+  "remaining": [],
   "blockers": [],
   "plan_status": {},
   "quality": {
@@ -49,6 +46,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/actions/runs/40107060180"
     },
-    "note": "Linux validation: 55 Rust unit tests plus 2 CLI integration tests, 8 Python validation tests, and all 21 C++ suites pass. The original 128 C++ cases run unchanged in 19 suites against the Rust-backed facade; ported/partial counts are not asserted. Two supplementary suites cover 11 additional C++ cases. Rust production line coverage is 2736/2815; C++ facade coverage is 1319/1359. Region coverage is unmeasured. Source compatibility requires downstream rebuilds; Windows/macOS and release publication are not claimed. gz-sim owns FUEL-01 integration acceptance, which is not established by these standalone results."
+    "note": "Linux: 55 Rust unit tests, 2 CLI tests, 8 Python validation tests and 21 C++ suites pass. The 128 upstream C++ cases run unchanged in 19 suites; two supplementary suites add 11 cases. Rust-port and partial counts are not asserted. C++ line coverage is 1319/1359; region coverage is unmeasured. Downstream C++ rebuilds are required; Windows/macOS and release publication are not claimed. FUEL-01 acceptance belongs to gz-sim. Quality metrics and linked CI remain pinned to the reviewed implementation revision; reporting-only PR #8 also passed every required check before merging."
   }
 }
