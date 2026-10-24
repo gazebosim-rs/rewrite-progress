@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:13:04.920719Z",
+  "updated_at": "2026-10-24T17:29:35.357484Z",
   "state": "active",
-  "summary": "Reviewed transport slices pass local native gates; the native enumeration repair is reviewed locally and awaits publication.",
+  "summary": "Reviewed enumeration repair is published and hosted native validation is running; bounded one-way services are under implementation.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
-      "title": "Hosted native gate failure investigation",
-      "detail": "Canonical gtest JSON enumeration repair independently reviewed and committed; coordinator publication and hosted rerun remain."
+      "title": "Hosted native enumeration validation",
+      "detail": "Published reviewed structured JSON enumeration repair; real hosted build and validation running."
+    },
+    {
+      "id": "NET-02",
+      "title": "Gazebo one-way Empty-response services",
+      "detail": "Implementing bounded handoff and native reply suppression with real C++ peers in both directions."
     }
   ],
   "accepted_slices": [
@@ -37,6 +42,11 @@
       "title": "OSRF copyright and Apache-2.0 attribution",
       "commit": "3bbe622c37ea26d142c4526e0f8eb2b492da52cc",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3bbe622c37ea26d142c4526e0f8eb2b492da52cc"
+    },
+    {
+      "title": "Structured native enumeration with retained diagnostics",
+      "commit": "26ecc9a5430f0de7b2d2ac068b16e16ca2c88747",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/26ecc9a5430f0de7b2d2ac068b16e16ca2c88747"
     }
   ],
   "remaining": [
@@ -45,16 +55,14 @@
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
-  "blockers": [
-    "Hosted native build succeeded but stdout enumeration omitted 183 cases; reviewed structured JSON repair awaits coordinator publication and a hosted rerun."
-  ],
+  "blockers": [],
   "plan_status": {
     "NET-01": "in_progress",
     "NET-02": "in_progress",
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "3bbe622c37ea26d142c4526e0f8eb2b492da52cc",
+    "revision": "26ecc9a5430f0de7b2d2ac068b16e16ca2c88747",
     "rust_tests": 30,
     "coverage": {
       "lines": [
@@ -72,10 +80,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "failure",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40113767467"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40116203772"
     },
-    "note": "Published revision passed local native gate but failed hosted enumeration. Separate reviewed repair passed all 30 Rust tests and 13 tooling tests locally; hosted validation remains pending publication.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3bbe622c37ea26d142c4526e0f8eb2b492da52cc"
+    "note": "Reviewed exact staged native gate passed; hosted validation running. All 418 cases retained; 393 applicable in the ZeroMQ reference profile.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/26ecc9a5430f0de7b2d2ac068b16e16ca2c88747"
   }
 }
