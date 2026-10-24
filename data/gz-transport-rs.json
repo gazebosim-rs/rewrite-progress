@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T16:42:25.284430Z",
+  "updated_at": "2026-10-24T17:10:55.704256Z",
   "state": "active",
-  "summary": "Reviewed transport slices pass local native gates; the first hosted native run failed and is being diagnosed.",
+  "summary": "Reviewed transport slices pass local native gates; hosted native sources build, but test enumeration is being repaired.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
       "title": "Hosted native gate failure investigation",
-      "detail": "Policy job succeeded; retrieving the failed native step and correcting the hosted reference bootstrap."
+      "detail": "Canonical gtest JSON enumeration passes locally against all393applicable cases; independent review and hosted rerun remain."
     }
   ],
   "accepted_slices": [
@@ -32,6 +32,11 @@
       "title": "Source-pinned hosted native gate and retained reference profiles",
       "commit": "275855d74f2e60bc594f79706c098e3fbf3f17bb",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/275855d74f2e60bc594f79706c098e3fbf3f17bb"
+    },
+    {
+      "title": "OSRF copyright and Apache-2.0 attribution",
+      "commit": "3bbe622c37ea26d142c4526e0f8eb2b492da52cc",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3bbe622c37ea26d142c4526e0f8eb2b492da52cc"
     }
   ],
   "remaining": [
@@ -41,7 +46,7 @@
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
   "blockers": [
-    "Hosted native parity run failed; investigation and repair are active."
+    "Hosted native sources build; stdout enumeration omitted183cases. Structured JSON repair passes locally and awaits review/hosted validation."
   ],
   "plan_status": {
     "NET-01": "in_progress",
@@ -49,7 +54,7 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "275855d74f2e60bc594f79706c098e3fbf3f17bb",
+    "revision": "3bbe622c37ea26d142c4526e0f8eb2b492da52cc",
     "rust_tests": 30,
     "coverage": {
       "lines": [
@@ -68,9 +73,9 @@
     },
     "ci": {
       "state": "failure",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40112454254"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40113767467"
     },
-    "note": "Exact staged local native gate remains passing. First ordinary hosted native run failed; this is not reported as a native CI pass.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/275855d74f2e60bc594f79706c098e3fbf3f17bb"
+    "note": "Exact staged local native gate passed; hosted native reference build passed but runtime enumeration failed. No hosted native CI pass claimed.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3bbe622c37ea26d142c4526e0f8eb2b492da52cc"
   }
 }
