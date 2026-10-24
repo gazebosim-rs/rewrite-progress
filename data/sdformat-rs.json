@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T21:04:51.447584Z",
+  "updated_at": "2026-10-24T21:06:52.526637Z",
   "state": "active",
-  "summary": "Sixteen independently reviewed slices are published. Sensor canonical/legacy frame metadata passed strict staged gates; CI is running. Canonical DOM selection is in peer review.",
+  "summary": "Sixteen reviewed slices are published with passing CI. Canonical DOM selection and a native sensor topic-string correction are independently reviewed next.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Canonical DOM link selection review",
       "detail": "Isolated helper matches17 native observations including static child/empty-first-child/explicit-frame aliases. Direct canonical-link identity assertions supplement the original mapped case; independent review pending."
+    },
+    {
+      "id": "SDF-01",
+      "title": "Sensor topic text review",
+      "detail": "Separate66-test candidate matches24 native topic observations and fixes default sentinel/ordinary whitespace/NBSP handling;4/4 changed lines covered. Consumer transport repair remains separate."
     },
     {
       "id": "SDF-01",
@@ -133,7 +138,7 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40132595761"
     },
     "note": "Published frame-only snapshot passed strict frozen staged hook and11 tooling tests;30 native frame metadata observations match. Surface is excluded from this revision and remains unaccepted. No performance/full-SDF completion claim.",
