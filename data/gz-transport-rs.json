@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T23:57:22.248913Z",
+  "updated_at": "2026-10-24T23:58:43.005948Z",
   "state": "active",
-  "summary": "Publisher ownership fix published and hosted native build running. Next local-service enumeration/withdrawal slice under strict final gate and independent SDF review.",
+  "summary": "Publisher ownership/recreation fix passed hosted native CI; pin ready for simulator reset integration. Local service enumeration/withdrawal final gate and SDF review running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-02",
       "title": "Local service enumeration and explicit withdrawal",
-      "detail": "Completed original one-way count/topic/invalid+valid withdrawal/empty-list assertions. Atomic exactly-once capacity release, queued-command cancellation, replacement ordering and C++ recreated-service request pass; final gate and SDF peer review running. Published publisher hosted40144310888 still building reference."
+      "detail": "Published c00de5e hosted40144310888 passed with exact-source evidence verified. Next service slice: original one-way final assertions, exactly-once capacity release, retirement ordering and C++ recreated-service request pass; final gate and SDF review running."
     }
   ],
   "accepted_slices": [
@@ -141,9 +141,9 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40144310888"
     },
-    "note": "Exact staged hook passes62Rust+21tools,1216/1241lines1816/1885regions14/14changed; peer independently replayed8Rust+4native originals. Actual C++ subscriber survives immediate topic recreation. Hosted build queued, not claimed passing; prior b67 hosted gate succeeded. Full418-case suite remains incomplete."
+    "note": "Hosted40144310888 passes62Rust/21tools,1216/1241lines1816/1885regions14/14changed. Downloaded runtime/error/interop/CPP peer hashes match published c00de5e exactly. Peer independently replayed8Rust+4native originals;10 full original ports reviewed, full418-case suite incomplete."
   }
 }
