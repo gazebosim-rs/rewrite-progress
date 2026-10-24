@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T18:10:07.464017Z",
+  "updated_at": "2026-10-24T18:28:07.689374Z",
   "state": "active",
-  "summary": "Three clean hosted native gates passed, including bounded multipart cancellation. Unix default partition compatibility is under validation.",
+  "summary": "Reviewed Unix default partition compatibility is published; three prior clean hosted gates passed and the latest run is pending.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
+      "id": "QLT-01",
+      "title": "Cargo target and LLVM source inventory guard",
+      "detail": "Precompile target/package/feature/runner checks and fail-closed owned LLVM source checks pass37 Rust tests and19 tooling tests locally; peer review next."
+    },
+    {
       "id": "NET-02",
-      "title": "Native default Unix partition identity peer review",
-      "detail": "Present/empty/absent USER matches real C++; strict local gate passed37 Rust tests and17 tooling tests,1065/1087 lines and1586/1651 regions. Independent SDF review is active. Auto-interface and exceptional NSS behavior remain pending."
+      "title": "Default identity hosted validation",
+      "detail": "Reviewed hostname:USER/UID behavior is published; automatic interface and exceptional NSS semantics remain pending."
     }
   ],
   "accepted_slices": [
@@ -62,6 +67,11 @@
       "title": "Cancellation during malformed multipart draining",
       "commit": "d996929a5316f2eaaea8edf53d19453a98886deb",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d996929a5316f2eaaea8edf53d19453a98886deb"
+    },
+    {
+      "title": "Native Unix default partition identity with explicit error bounds",
+      "commit": "1cf0867e382edcfdbbf8784dfb085a8d92cc96b7",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1cf0867e382edcfdbbf8784dfb085a8d92cc96b7"
     }
   ],
   "remaining": [
@@ -77,28 +87,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "d996929a5316f2eaaea8edf53d19453a98886deb",
-    "rust_tests": 35,
+    "revision": "1cf0867e382edcfdbbf8784dfb085a8d92cc96b7",
+    "rust_tests": 37,
     "coverage": {
       "lines": [
-        1033,
-        1054
+        1065,
+        1087
       ],
       "regions": [
-        1539,
-        1599
+        1586,
+        1651
       ]
     },
     "upstream": {
       "total": 418,
       "ported": 1,
-      "partial": 1
+      "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40118290123"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40120311685"
     },
-    "note": "Hosted d996929 passed35 Rust tests and17 tooling tests, two required native cases,1033/1054 lines and1539/1599 regions;393 applicable IDs reconciled plus25 conditioned retained. Full native suite remains incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d996929a5316f2eaaea8edf53d19453a98886deb"
+    "note": "Latest reviewed identity slice passed strict staged37 Rust/17 tooling tests and three native originals; changed30/30 lines. Hosted run pending; prior cancellation revision passed hosted. Full418-case native suite remains incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1cf0867e382edcfdbbf8784dfb085a8d92cc96b7"
   }
 }
