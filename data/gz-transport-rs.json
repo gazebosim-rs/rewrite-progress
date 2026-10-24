@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T16:10:02.627478Z",
+  "updated_at": "2026-10-24T16:16:12.935126Z",
   "state": "active",
-  "summary": "Real C++ wire interoperability and bounded configuration slices accepted; maintained messages migration in review and hosted reference bootstrap underway.",
+  "summary": "Reviewed real C++ wire, bounded configuration and maintained-message slices are public; hosted native reference CI bootstrap is active.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "NET-01",
-      "title": "Maintained message runtime integration",
-      "detail": "Migration commit passes native peers and strict staged coverage; coordinator review pending."
-    },
-    {
       "id": "QLT-01",
-      "title": "Hosted native reference bootstrap",
-      "detail": "Isolated pinned native source chain builds successfully; wiring ordinary hosted CI and feature-conditioned reference ledger."
+      "title": "Hosted native reference CI",
+      "detail": "Fresh source-pinned ZeroMQ C++ build completed; replacing unavailable custom runner with ordinary hosted execution and retained feature-conditioned cases."
     }
   ],
   "accepted_slices": [
@@ -27,6 +22,11 @@
       "title": "Explicit environment configuration and native differential checks",
       "commit": "13b4be5f1d66501c0742008766cf80df910cf935",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/13b4be5f1d66501c0742008766cf80df910cf935"
+    },
+    {
+      "title": "Maintained messages and byte-exact opaque forwarding",
+      "commit": "5403622574f578363c377a6f2d08f1f40762a87d",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/5403622574f578363c377a6f2d08f1f40762a87d"
     }
   ],
   "remaining": [
@@ -60,9 +60,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "unknown",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40110738081"
     },
-    "note": "Exact staged local Linux native gate passed with real C++ peers and fatal LLVM warnings. Hosted native CI is being replaced because the previous custom runner was unavailable; no hosted native pass claimed."
+    "note": "Exact staged local Linux native gate passed with real C++ peers and fatal LLVM warnings. Hosted native CI is being replaced because the previous custom runner was unavailable; no hosted native pass claimed.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/5403622574f578363c377a6f2d08f1f40762a87d"
   }
 }
