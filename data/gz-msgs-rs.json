@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:47:24Z",
+  "updated_at": "2026-10-24T17:56:02Z",
   "state": "active",
-  "summary": "Published cloud/Factory chain passed hosted CI; explicit descriptor retry passed its full local gate and is under independent review.",
+  "summary": "Reviewed descriptor retry is published; exact staged Git blob validation is running through independent review.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
-      "title": "Descriptor retry and staged-source qualification",
-      "detail": "Explicit registry candidate is frozen for SDF review after 40 tests and custom-option preservation checks. Transport and SDF peer reviews completed with deadline/assertion fixes; preparing matching Git-blob snapshot hardening next."
+      "title": "Exact staged-source qualification",
+      "detail": "New snapshot gate includes export-ignore inputs, validates raw Git blob/type/mode/path identity, and rejects concurrent index/HEAD changes. Five scratch regressions and full 40-test gate pass; peer review and full-build partial-stage regression are running."
     }
   ],
   "accepted_slices": [
@@ -47,6 +47,11 @@
       "title": "Complete 271-name Factory listing and three original construction cases",
       "commit": "a7b99ec50b71d6417bc328cb45dbe2afcac4858b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7b99ec50b71d6417bc328cb45dbe2afcac4858b"
+    },
+    {
+      "title": "Explicit descriptor loading, custom options and missing-import retry",
+      "commit": "ca17919915f04fede714b021305cb12fdb48afdb",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca17919915f04fede714b021305cb12fdb48afdb"
     }
   ],
   "remaining": [
@@ -60,33 +65,32 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "56872d769e6ab613573411d6001a9bc2d1ecf696",
-    "rust_tests": 37,
+    "revision": "ca17919915f04fede714b021305cb12fdb48afdb",
+    "rust_tests": 40,
     "coverage": {
       "lines": [
-        422,
-        422
+        451,
+        451
       ],
       "regions": [
-        595,
-        603
+        645,
+        653
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 30,
+      "ported": 31,
       "partial": 15
     },
     "ci": {
+      "state": "pending"
+    },
+    "note": "Published descriptor slice passed independent source/assertion/native review and the exact staged gate. All owned Rust/build logic and changed vendor predicates measured; full MSG packets remain incomplete. New snapshot tooling is outside this revision.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca17919915f04fede714b021305cb12fdb48afdb",
+    "previous_ci": {
+      "revision": "56872d769e6ab613573411d6001a9bc2d1ecf696",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40116772237"
-    },
-    "note": "Exact published 56872d7 passed hosted CI and its staged 37-test gate. New descriptor candidate outside this revision passed 40 tests locally: 451/451 owned lines, 645/653 regions; one original retry mapping awaits independent review. Full MSG packets remain incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/56872d769e6ab613573411d6001a9bc2d1ecf696",
-    "previous_ci": {
-      "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40111717896"
     }
   }
 }
