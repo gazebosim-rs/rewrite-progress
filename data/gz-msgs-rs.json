@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T19:48:04Z",
+  "updated_at": "2026-10-24T19:55:22Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Plane and bounding-box component conversions",
-      "detail": "Plane/AABB helpers and four original mappings pass full local gate/native corpus and await independent review. Separate cloud original-value ports are advancing; operator object identity remains outside indexed API claim."
+      "title": "Quaternion, pose and metadata-retaining component setters",
+      "detail": "Published packed-cloud/default ports and independent reviews bring original cases to61/83. Next9 quaternion/pose/vector/color mappings pass full localgate/native corpus and await transport review. Operators object identity remains partial."
     }
   ],
   "accepted_slices": [
@@ -72,11 +72,21 @@
       "title": "Original nested header sizes and multi-message ownership forms",
       "commit": "9d1c1c1275ea555753e580326d7315c2abedcbb2",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9d1c1c1275ea555753e580326d7315c2abedcbb2"
+    },
+    {
+      "title": "Plane and bounding-box raw component conversions",
+      "commit": "893817482c1d34f7409c5f4ba17098effc58771b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/893817482c1d34f7409c5f4ba17098effc58771b"
+    },
+    {
+      "title": "Packed-cloud/default values and nineteen original-case reviews",
+      "commit": "35786194c030f5427396887c645701dcffe0172d",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/35786194c030f5427396887c645701dcffe0172d"
     }
   ],
   "remaining": [
-    "Complete retained conversion families and packed point-cloud utilities",
-    "External descriptor loading, retry/concurrency and full formatting conformance",
+    "Remaining inertial/mass-matrix/spherical/Fuel conversions and iterator operator scope",
+    "Complete formatting and descriptor install/global/cache compatibility qualification",
     "Packaging, performance comparison and full retained-test review"
   ],
   "blockers": [],
@@ -85,33 +95,33 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "9d1c1c1275ea555753e580326d7315c2abedcbb2",
-    "rust_tests": 50,
+    "revision": "35786194c030f5427396887c645701dcffe0172d",
+    "rust_tests": 59,
     "coverage": {
       "lines": [
-        597,
-        597
+        643,
+        643
       ],
       "regions": [
-        874,
-        883
+        955,
+        964
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 38,
-      "partial": 15
+      "ported": 61,
+      "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40126701413"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40127422168"
     },
-    "note": "Published header/multitype assertion ports passed independent source/native/Rust review, strict staged gate and exact hosted CI. Plane/AABB remains separate unpublished candidate:54Rustchecks643/643ownedlines955/964regions and16nativewirecases+4originals pass. New cloud retained-value tests pass locally but are not accepted mappings. MSG-02 remains incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9d1c1c1275ea555753e580326d7315c2abedcbb2",
+    "note": "Published cloud/default slice and15older dispositions independently reviewed and strict staged gate passed. Exact latest hosted CI pending; plane/AABB hosted success retained. Operators numeric values are covered but object identity/overloads remain partial. Unpublished component setters:62checks643/643lines966/975regions18nativewirecases+9originals pass, awaiting review. MSG-02 and broad release qualification remain incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/35786194c030f5427396887c645701dcffe0172d",
     "previous_ci": {
-      "revision": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
+      "revision": "893817482c1d34f7409c5f4ba17098effc58771b",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40126279492"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40127121694"
     }
   }
 }
