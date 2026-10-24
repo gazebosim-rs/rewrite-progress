@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T16:36:02.683723Z",
+  "updated_at": "2026-10-24T16:54:37.693858Z",
   "state": "active",
-  "summary": "Six independently reviewed semantic/XML slices are pushed; omitted-axis defaults and an SDF1.7 subset are the next separate slice.",
+  "summary": "Seven reviewed semantic/XML/default slices are pushed and CI passes; OSRF source attribution is the next separate reviewed change.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "SDF-01",
-      "title": "Joint defaults and SDF1.7 subset",
-      "detail": "Native-backed omitted axis=None semantics and unchanged nested frame-only fixture;39working-tree tests pass, independent review pending."
-    },
-    {
-      "id": "SDF-02",
-      "title": "Defaults and conversions",
-      "detail": "Native probes found omitted moving-joint axis acceptance; SDF1.7 conversion subset next."
+      "id": "LICENSING",
+      "title": "OSRF attribution review",
+      "detail": "Add requested2026holder/SPDX to owned code and NOTICE; preserve imported notices and dependency licenses. Build-target coverage hardening follows separately."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve optional joint axes and the SDF 1.7 semantic subset",
+      "commit": "6c0efe538837504b626d12cae842a1bbbe88b33c",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6c0efe538837504b626d12cae842a1bbbe88b33c"
+    },
     {
       "title": "Preserve native legacy XML lexical and scalar semantics",
       "commit": "71af9e5795af32d659cc98c081e6709b64df7519",
@@ -63,28 +63,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "71af9e5795af32d659cc98c081e6709b64df7519",
-    "rust_tests": 36,
+    "revision": "6c0efe538837504b626d12cae842a1bbbe88b33c",
+    "rust_tests": 39,
     "coverage": {
       "lines": [
-        1618,
-        1639
+        1622,
+        1643
       ],
       "regions": [
-        2772,
-        2883
+        2774,
+        2885
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 6,
+      "ported": 7,
       "partial": 1
     },
     "ci": {
-      "state": "pending",
-      "url": null
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40113452124"
     },
-    "note": "Published XML slice passed exact staged-tree gate:36Rusttests,6tooltests;53native/Rust acceptance cases,4numericposes,9mass and3typedstring observations. Independent transport review all12cases matched. Six complete reviewed assertion ports and one partial IMU subset of1344cases; no wholepacket/release or speedup claim. Active39test working tree is separate from these committed counts.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/71af9e5795af32d659cc98c081e6709b64df7519"
+    "note": "Exact published defaults slice passed staged-tree gate and hosted core CI:39Rusttests,6tooltests;59native/Rust acceptance cases and4axis-absence observations. Seven complete reviewed assertion ports plus one partial IMU subset of1344cases. SDF1.7unflatten/generalserialization and full retained scope remain pending; no wholepacket/release or speedup claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6c0efe538837504b626d12cae842a1bbbe88b33c"
   }
 }
