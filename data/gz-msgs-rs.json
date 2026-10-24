@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T19:04:30Z",
+  "updated_at": "2026-10-24T19:25:55Z",
   "state": "active",
-  "summary": "Descriptor path traversal is published and passed hosted CI; lazy, thread-safe instance message creation is under implementation.",
+  "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
-      "id": "MSG-01",
+      "id": "MSG-02",
       "title": "Lazy instance factory and concurrent construction",
-      "detail": "New MessageFactory uses std Mutex with callbacks outside the lock, explicit or lazy environment descriptor paths and observable load errors. Original 10000-iteration concurrent case and isolated single-thread late-environment probe pass; full local gate passed 48 Rust checks. Preparing exact native evidence and independent review."
+      "detail": "Lazy instance factory and original concurrency/environment cases pass locally; native reference evidence and independent review are being prepared. MSG-01 acceptance is separate from the remaining full 83-case ledger, tooling, conversions and release qualification."
     }
   ],
   "accepted_slices": [
@@ -57,6 +57,11 @@
       "title": "Native explicit descriptor path traversal and duplicate loading",
       "commit": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f744840c4e5bb986bcc2237a0ba3dae2f66c19b"
+    },
+    {
+      "title": "MSG-01 formal coordinator acceptance",
+      "commit": "30ade168180f97aa0bcaf447b278aaf1c4c0a5ba",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/30ade168180f97aa0bcaf447b278aaf1c4c0a5ba/docs/acceptance/MSG-01.md"
     }
   ],
   "remaining": [
@@ -66,7 +71,7 @@
   ],
   "blockers": [],
   "plan_status": {
-    "MSG-01": "in_progress",
+    "MSG-01": "complete",
     "MSG-02": "in_progress"
   },
   "quality": {
