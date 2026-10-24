@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T16:58:20.726985Z",
+  "updated_at": "2026-10-24T19:18:52.920357Z",
   "state": "active",
-  "summary": "Headless Bevy/Rapier/SDF/IMU slice and CLI reviewed; transport integration and full retained parity remain in progress.",
+  "summary": "Integrating reviewed SDFormat behavior into the headless simulator. Next functional milestone is legacy-client clock/IMU publication; full packets remain unaccepted.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "IO-01",
-      "title": "Clock and scene publication contracts",
-      "detail": "Tracing native clock, topic and frame semantics before transport integration; model hierarchy and stable external IDs remain prerequisites for complete pose publication."
+      "id": "LOAD-01",
+      "title": "Adopt reviewed SDF semantics in the simulator",
+      "detail": "Pin the tested SDF 1.6/1.7 subset and preserve atomic scene rejection using explicit non-frame pose validation. Regression tests and independent SDF-owner review are in progress."
+    },
+    {
+      "id": "SLICE-01",
+      "title": "Headless integration acceptance checklist",
+      "detail": "Done: Bevy stepping, Rapier sphere/box state, IMU, SDF loader and CLI. Remaining: stable entity hierarchy, clock/pose/IMU transport with real C++ clients, offline Fuel resources, sensor rate/noise/reset qualification and equal-work C++ benchmark. No complete-slice claim."
     }
   ],
   "accepted_slices": [
