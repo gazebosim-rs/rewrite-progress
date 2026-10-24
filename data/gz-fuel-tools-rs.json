@@ -1,20 +1,14 @@
 {
   "schema_version": 1,
   "repository": "gz-fuel-tools-rs",
-  "updated_at": "2026-10-24T17:00:53.695637Z",
-  "state": "active",
-  "summary": "A fresh-context adversarial review is reassessing standalone Fuel correctness, compatibility, performance and development practices.",
+  "updated_at": "2026-10-24T17:32:52.783323Z",
+  "state": "idle",
+  "summary": "Fresh-context critical review is complete; verified correctness, compatibility and resource-management gaps remain before standalone sign-off.",
   "model": "Codex repository owner (model and reasoning effort not recorded)",
-  "active": [
-    {
-      "id": "FRESH-REVIEW",
-      "title": "Independent adversarial review",
-      "detail": "Three reviewers with no inherited conversation history are comparing behavior against pinned upstream code and building bounded reproductions; no implementation changes are being made."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
     {
-      "title": "Native Rust client and CLI with unchanged upstream C++ source interfaces and acceptance tests",
+      "title": "Native Rust client/CLI and C++ facade retaining public declarations and passing the retained upstream test suites",
       "commit": "877acad579cf991b896d6730df9e1c5370e7c394",
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/commit/877acad579cf991b896d6730df9e1c5370e7c394"
     },
@@ -35,13 +29,16 @@
     }
   ],
   "remaining": [
-    "Verify and prioritize correctness, compatibility, performance and simplification findings; report limitations of prior acceptance evidence."
+    "Resolve confirmed correctness and cache-integrity defects, with independent contract regressions.",
+    "Restore metadata, identifier, iterator and downstream build compatibility.",
+    "Address binary-transfer memory overhead, bounded resource handling and transport/cache performance.",
+    "Revalidate standalone readiness after corrective work; no implementation fixes were applied during this review."
   ],
   "blockers": [],
   "plan_status": {},
   "quality": {
-    "revision": "4ea848a72499a134f4730a8c393619a6751036b6",
-    "revision_url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/commit/4ea848a72499a134f4730a8c393619a6751036b6",
+    "revision": "0c601181c144c4d891670f04f451c16a30c7b196",
+    "revision_url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/commit/0c601181c144c4d891670f04f451c16a30c7b196",
     "rust_tests": 57,
     "coverage": {
       "lines": [
@@ -57,8 +54,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/actions/runs/40112580634"
+      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/actions/runs/40113247517"
     },
-    "note": "Verified Linux scope: 55 Rust unit tests, 2 CLI tests, 8 Python validation tests and 21 C++ suites. The 128 upstream C++ cases run unchanged in 19 suites; two supplementary suites add 11 cases. Rust-port and partial counts are not asserted. C++ line coverage is 1319/1359; region coverage is unmeasured. All 17 retained public headers match upstream. The 27-file Rust crate includes NOTICE; native install and relocation checks verify LICENSE/NOTICE. CI and metrics refer to PR #9's tested head; the accepted main commit is listed separately. Downstream C++ rebuilds are required; Windows/macOS and release publication are not claimed. FUEL-01 acceptance belongs to gz-sim."
+    "note": "Baseline CI passes at the linked revision:55 Rust unit tests,2 CLI tests,8 Python validation tests,21 C++ suites including128 unchanged upstream cases and11 supplementary cases. Rust production line coverage2736/2815; C++1319/1359. Region and Rust-port/partial measurements are not asserted. A fresh-context source review and bounded adversarial probes exposed additional unaddressed contract failures; passing baseline CI and line coverage do not establish standalone readiness. No tracked implementation changes were made. FUEL-01 integration acceptance remains owned by gz-sim."
   }
 }
