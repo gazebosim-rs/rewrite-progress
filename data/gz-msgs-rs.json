@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T21:45:36.710100Z",
+  "updated_at": "2026-10-24T23:42:35.105906Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Remaining packed-cloud operator and Fuel metadata behavior",
-      "detail": "Borrowed packed-cloud cursor candidate passes75Rust checks and strict coverage839/839lines1197/1209regions; independent review pending. Native Fuel metadata XML edge cases under investigation.81/83 mappings remain accepted until review/commit."
+      "title": "Final original Fuel metadata mapping",
+      "detail": "Borrowed cloud cursor195644d is published after independent staged-only review and strict gate;82/83 original mappings reviewed. Fuel candidate passes original assertions and106native XML/wire observations; final coverage and review pending."
     }
   ],
   "accepted_slices": [
@@ -97,10 +97,15 @@
       "title": "Spherical coordinate enums, angles and raw surface components",
       "commit": "1f146e5c60f87893ae121782449731d9c7c80d0b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1f146e5c60f87893ae121782449731d9c7c80d0b"
+    },
+    {
+      "title": "Borrowed packed-cloud cursor identity and operators",
+      "commit": "195644d8daeb1fa17ed8830e885a36f25ba71871",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/195644d8daeb1fa17ed8830e885a36f25ba71871"
     }
   ],
   "remaining": [
-    "Fuel metadata conversion and packed-cloud iterator operator scope",
+    "Fuel metadata conversion; broader XML/formatting compatibility qualification remains separate from original-case mappings",
     "Complete formatting and descriptor install/global/cache compatibility qualification",
     "Packaging, performance comparison and full retained-test review"
   ],
@@ -110,33 +115,33 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "1f146e5c60f87893ae121782449731d9c7c80d0b",
-    "rust_tests": 72,
+    "revision": "195644d8daeb1fa17ed8830e885a36f25ba71871",
+    "rust_tests": 75,
     "coverage": {
       "lines": [
-        788,
-        788
+        839,
+        839
       ],
       "regions": [
-        1123,
-        1132
+        1197,
+        1209
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 81,
-      "partial": 1
+      "ported": 82,
+      "partial": 0
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40143769762"
+    },
+    "note": "Cursor exact staged snapshot independently reviewed,7targetedRust+5native originals rerun, strict staged75checks/5snapshot/coverage pass. HostedCIpending. Fuel original mapping pending, remaining MSG-02 exit obligations still open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/195644d8daeb1fa17ed8830e885a36f25ba71871",
+    "previous_ci": {
+      "revision": "1f146e5c60f87893ae121782449731d9c7c80d0b",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40134094908"
-    },
-    "note": "Published inertial and spherical slices independently reviewed against original assertions and native wire/bit fixtures; strict staged and exact hosted CI pass. Operators remains partial; Fuel metadata not ported. Formatting, install/global/cache qualification, packaging and performance remain open MSG-02 obligations.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1f146e5c60f87893ae121782449731d9c7c80d0b",
-    "previous_ci": {
-      "revision": "97557fca8e4fec1fb50fb9f77dc057c97fc42b05",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40128120430"
     }
   }
 }
