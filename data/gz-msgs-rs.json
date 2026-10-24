@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:10:59Z",
+  "updated_at": "2026-10-24T17:16:20Z",
   "state": "active",
-  "summary": "Packed-cloud metadata and bounded native-endian byte access passed staged gates and await independent review; public attribution CI passed.",
+  "summary": "Three bounded cloud/Factory slices passed staged gates and await independent review; public attribution CI passed.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "Local commits 9916179 and 78ebdb4 cover metadata plus safe unaligned Pod reads/writes. Thirty metadata and ten scalar/color complete native wire fixtures match. Two original metadata mappings await review; native iterator pointer operators remain outside scope."
+      "detail": "Local commits 9916179/78ebdb4 add cloud metadata and bounded native-endian Pod access; a7b99ec fixes --list from 223 to all271 native registered names and retains Factory text/all-type assertions. Five new mappings await review; pointer iterator and external descriptor contracts remain open."
     }
   ],
   "accepted_slices": [
@@ -34,7 +34,7 @@
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7ce983e5deb1bc182471e6328d7598204b33b63"
     },
     {
-      "title": "Complete native message CLI output and unchanged C++ workflow tests",
+      "title": "Complete canonical --info output and unchanged C++ workflow tests",
       "commit": "22a0482fbf17e6469b59be4d217875262f916f94",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/22a0482fbf17e6469b59be4d217875262f916f94"
     },
@@ -76,7 +76,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40113798719"
     },
-    "note": "Public dd280195 attribution revision passed its 30-test staged gate and hosted CI. Later unpushed 78ebdb4 passed the exact staged 35-test gate: 427/427 owned lines, 601/609 regions, including modified vendor predicates. Metadata mappings remain pending; no iterator test was retired.",
+    "note": "Public dd280195 attribution revision passed its30-test staged gate and hostedCI. Later unpushed a7b99ec passed the exact staged37-test gate:422/422 ownedlines,595/603regions, including changed vendor predicates. Five new original mappings await review; no iterator test retired. Native list set is complete, Rust sorting deliberate; broader CLI formatting remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dd280195bfb96fa366447b648f576229b8590575",
     "previous_ci": {
       "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
