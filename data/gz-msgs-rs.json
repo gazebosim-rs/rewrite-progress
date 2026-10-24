@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T16:25:10Z",
+  "updated_at": "2026-10-24T16:32:42Z",
   "state": "active",
-  "summary": "Maintained runtime and signed Time validated; 271 native CLI info outputs now match exactly, awaiting review.",
+  "summary": "Canonical runtime, signed Time, native CLI output and enum conversions accepted in public commits; remaining utility scope continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "Complete native CLI output corpus closes headings/type qualification/synthetic-entry gap; full local gate passes 30 tests. Enum and CLI assertion families await independent acceptance."
+      "detail": "CLI and enum families independently approved. Quality update isolates instrumentation to owned code and patched predicates; packed-cloud and remaining conversions are next."
     }
   ],
   "accepted_slices": [
@@ -32,6 +32,16 @@
       "title": "Native signed Time fields and exact boundary wire fixtures",
       "commit": "a7ce983e5deb1bc182471e6328d7598204b33b63",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7ce983e5deb1bc182471e6328d7598204b33b63"
+    },
+    {
+      "title": "Complete native message CLI output and unchanged C++ workflow tests",
+      "commit": "22a0482fbf17e6469b59be4d217875262f916f94",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/22a0482fbf17e6469b59be4d217875262f916f94"
+    },
+    {
+      "title": "Legacy enum names and 197 native conversion comparisons",
+      "commit": "2f283f382a3dd60477983f9770b1850d497775d0",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f283f382a3dd60477983f9770b1850d497775d0"
     }
   ],
   "remaining": [
@@ -45,7 +55,7 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "2f283f3 plus CLI fidelity correction working tree",
+    "revision": "22a0482 plus owned-instrumentation gate working tree",
     "rust_tests": 30,
     "coverage": {
       "lines": [
@@ -59,13 +69,13 @@
     },
     "upstream": {
       "total": 83,
-      "ported": 14,
-      "partial": 26
+      "ported": 25,
+      "partial": 15
     },
     "ci": {
       "state": "unknown",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions"
     },
-    "note": "Local gate passes 30 integration tests plus five unchanged C++ CLI cases and all 271 complete native info outputs. Coverage includes only owned src/build and changed dependency predicates. Hosted CI unverified; CLI correction awaits independent review."
+    "note": "CLI and enum implementation commits verified public through origin/main. Local gate passes 30 integration tests plus five unchanged C++ CLI cases; all 271 native info outputs match. LLVM export now rejects warnings and passes with only owned code/predicates instrumented. Hosted CI unverified."
   }
 }
