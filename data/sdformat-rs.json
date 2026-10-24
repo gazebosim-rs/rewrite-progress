@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T18:21:57.691337Z",
+  "updated_at": "2026-10-24T19:16:14.608326Z",
   "state": "active",
-  "summary": "Eleven reviewed slices are pushed with passing CI. SDF 1.6 pose-frame and joint-axis semantic conversion is in independent review.",
+  "summary": "Twelve reviewed slices are pushed with passing CI. Legacy SDF1.6 shared-name compatibility is being prepared for independent assertion review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "SDF 1.6 semantic conversion review",
-      "detail": "Working tree passes47 Rust tests,11 tool tests and108 native differential cases. Coverage1743/1764 lines,2982/3092 regions. Peer review caught and corrected CDATA/ASCII-whitespace differences; final re-review pending. Legacy shared names/unflattening and complete version serialization remain explicitly unsupported."
+      "title": "Legacy SDF1.6 shared names",
+      "detail": "Working tree passes50 Rust tests,11 tooling tests and139 native differential cases. Coverage1823/1842 lines,3120/3227 regions, changed104/104. Two complete original assertion ports and native originals pass; independent review pending. Model declaration order, world models-first ordering, suffixes, duplicates and unchanged reference strings are tested."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Apply retained SDF1.6 pose and joint-axis conversions",
+      "commit": "8109265aa8e70b23fcd6cb137c0531de8bb4e336",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8109265aa8e70b23fcd6cb137c0531de8bb4e336"
+    },
     {
       "title": "Verify frozen staged blobs and file modes",
       "commit": "3f009d0f684a64e69c5762783caed0b696962d48",
@@ -84,16 +89,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "3f009d0f684a64e69c5762783caed0b696962d48",
-    "rust_tests": 45,
+    "revision": "8109265aa8e70b23fcd6cb137c0531de8bb4e336",
+    "rust_tests": 47,
     "coverage": {
       "lines": [
-        1677,
-        1698
+        1749,
+        1770
       ],
       "regions": [
-        2889,
-        3001
+        2984,
+        3094
       ]
     },
     "upstream": {
@@ -103,9 +108,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40118083796"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40122423859"
     },
-    "note": "Exact published export-hardening slice passed strict staged verification and hosted CI:45 Rust tests,11 tool tests; production1677/1698 lines,2889/3001 regions. No exclusions. Candidate47-test/108-case results are separate unaccepted work.9 complete reviewed upstream ports plus1 partial remain a small subset of1344; no whole-packet or performance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3f009d0f684a64e69c5762783caed0b696962d48"
+    "note": "Published conversion slice passed strict frozen staged verification and hosted CI:47 Rust tests,11 tool tests,122 native differential cases; production1749/1770 lines,2984/3094 regions. No exclusions. Shared-name candidate50-test/139-case evidence is unaccepted work.9 complete reviewed upstream ports plus1 partial remain a small subset of1344; no whole-packet or performance claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8109265aa8e70b23fcd6cb137c0531de8bb4e336"
   }
 }
