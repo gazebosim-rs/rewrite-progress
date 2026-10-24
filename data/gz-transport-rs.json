@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T20:23:53.379428Z",
+  "updated_at": "2026-10-24T20:30:09.224919Z",
   "state": "active",
-  "summary": "Native subscriber-only inspection published after independent review and strict staged checks; headless simulator bridge independently validated.",
+  "summary": "Subscriber inspection and original literal/mapping review slices published; native topic sanitization for simulator IMU integration passed strict local gate and is under peer review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Discovery channel/address identity repair",
-      "detail": "Isolated regression reproduced same-topic message/service collision (1 peer instead of native2); channel/address-key fix and lifecycle checks in progress, no API change."
+      "title": "Native topic sanitization for simulator IMU",
+      "detail": "Public as_valid_topic helper matches native one-pass scan and empty sentinel.47 Rust/21 tools pass;1184/1208 lines,1767/1837 regions,19/19 changed. Original16-case port and22 native raw-byte differential cases pass; independent review pending."
     },
     {
-      "id": "NET-02",
-      "title": "Retained literal assertion review",
-      "detail": "Independent full400-row naming mapping approved. Added original Int32(5)/single-delivery/invalid-advertise supplement for existing partial one-way mapping; narrow peer re-review active."
+      "id": "NET-01",
+      "title": "Discovery peer identity isolated follow-up",
+      "detail": "Same-topic message/service collision reproduced; bounded channel/address fix and channel-local lifecycle units pass in isolated worktree. Prioritized simulator helper ahead of final native proof/review."
     }
   ],
   "accepted_slices": [
@@ -92,6 +92,11 @@
       "title": "Native subscriber-only inspection and last-lease withdrawal",
       "commit": "8d3120fa96ae5d46809534249780f654c8c1e884",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8d3120fa96ae5d46809534249780f654c8c1e884"
+    },
+    {
+      "title": "Original one-way literal supplement and independent mapping receipts",
+      "commit": "35902d6b53cd433fe7eb7cd630dd5a1d5b7c3c52",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/35902d6b53cd433fe7eb7cd630dd5a1d5b7c3c52"
     }
   ],
   "remaining": [
@@ -107,9 +112,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "8d3120fa96ae5d46809534249780f654c8c1e884",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8d3120fa96ae5d46809534249780f654c8c1e884",
-    "rust_tests": 44,
+    "revision": "35902d6b53cd433fe7eb7cd630dd5a1d5b7c3c52",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/35902d6b53cd433fe7eb7cd630dd5a1d5b7c3c52",
+    "rust_tests": 45,
     "coverage": {
       "lines": [
         1165,
@@ -127,8 +132,8 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40129451462"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40129800097"
     },
-    "note": "Strict staged gate:44 Rust/21 tooling tests,1165/1189 lines,1735/1805 regions,changed34/34. Independent SDF reviewer reran both native originals,2 UDP tests and real C++ observer case.393 applicable IDs reconciled plus25 conditioned retained; full418-case suite remains incomplete. Previous ee0e98e hosted gate succeeded."
+    "note": "Strict staged gate:45 Rust/21 tools,1165/1189 lines,1735/1805 regions,changed0/0 (tests/docs only). Full400 naming table independently approved; oldoneway remainspartial with exact Int32(5)/count1 nowretained. Latest hosted35902d6 includes subscriber inspection; prior8d3120f run cancelled automatically by workflow concurrency, not passed.393 applicable+25 conditioned retained; full418-case suite incomplete."
   }
 }
