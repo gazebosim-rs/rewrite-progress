@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T20:28:22.567028Z",
+  "updated_at": "2026-10-24T20:53:51.405618Z",
   "state": "active",
-  "summary": "Fifteen independently reviewed slices are pushed with passing CI. Mesh/additional primitives and native optional-text handling passed strict staged gates; collision-surface metadata implementation has started.",
+  "summary": "Fifteen reviewed slices are published with passing CI; collision surface metadata has passed working-tree gates and awaits independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Collision surface contact and friction metadata",
-      "detail": "Working prototype compiles; existing62 Rust tests and clippy pass. Adds contact masks and ODE/Bullet/torsional friction values with optional source provenance; native surface oracle prepared. New feature assertions, coverage and independent review still pending. Simulator adoption requires rejecting explicit surfaces until backend support."
+      "title": "Collision surface metadata review",
+      "detail": "Frozen candidate:75 Rust tests,11 tooling tests,10 exact native originals and30 new matching surface observations pass. Working-tree coverage2146/2170 lines and3712/3835 regions; independent review pending. Simulator will reject explicit surfaces until physics support."
+    },
+    {
+      "id": "SDF-01",
+      "title": "Sensor frame metadata and canonical link selection",
+      "detail": "Preparing canonical frame_id plus optional legacy gz_frame_id preserving explicit empty values. Native DOM canonical-link selection helper scheduled separately from attachment semantics."
     }
   ],
   "accepted_slices": [
