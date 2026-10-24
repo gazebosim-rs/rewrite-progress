@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T21:30:32.236006Z",
+  "updated_at": "2026-10-24T21:34:14.369128Z",
   "state": "active",
-  "summary": "CORE-01 foundation is accepted against the reviewed revision and matching green CI. Native clock, pose and IMU integration is published. Model removal is in final review; remote lifecycle work is underway.",
+  "summary": "CORE-01 is accepted. Validated local model removal is reviewed and published. The remote-removal candidate passes real C++ interoperability; final queue and timeout cases are being verified.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "CORE-02",
-      "title": "Review atomic scene model removal",
-      "detail": "Final review: 59 Rust tests and 9 gate tests pass; 1222/1232 lines, 1804/1840 regions and 43/43 changed lines. Preflight rejects missing, duplicate and retained-body aliases before deletion. Remote removal and full initial-scene reset are next."
+      "id": "IO-01",
+      "title": "Remote model-removal services",
+      "detail": "Working implementation serves native remove and remove/blocking protocols, preserving queued versus completed replies and final pose publication. Four C++ scenarios pass. Bounded batch, duplicate, malformed, paused/running, retained-neighbor and client-timeout tests are being finalized for independent review."
     },
     {
       "id": "SLICE-01",
@@ -62,6 +62,11 @@
       "title": "CORE-01 foundation acceptance with exact hosted evidence",
       "commit": "83935962507c442c9d0f718a7de085892d7c6965",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/83935962507c442c9d0f718a7de085892d7c6965/docs/acceptance/CORE-01.md"
+    },
+    {
+      "title": "Validated recursive model removal, physics ownership and sensor cleanup",
+      "commit": "5fd5e49bf3ad594a21d174c076cb6c234ff47b93",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5fd5e49bf3ad594a21d174c076cb6c234ff47b93"
     }
   ],
   "remaining": [
@@ -89,16 +94,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2",
-    "rust_tests": 54,
+    "revision": "5fd5e49bf3ad594a21d174c076cb6c234ff47b93",
+    "rust_tests": 59,
     "coverage": {
       "lines": [
-        1176,
-        1186
+        1222,
+        1232
       ],
       "regions": [
-        1702,
-        1738
+        1804,
+        1840
       ]
     },
     "upstream": {
@@ -107,11 +112,11 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40133104649"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40134690534"
     },
-    "note": "Accepted CORE-01 concrete foundation exit is recorded publicly, based on d3524f58 and its successful hosted gate. API-01, QLT-01, CORE-02 and every broad phase remain open. The accepted revision passes 54 checks with every crate above 95%; current removal candidate separately passes 59 checks.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2"
+    "note": "Published local removal passed independent transport review and strict staged verification: 59 Rust and 9 gate tests; every crate exceeds 95% coverage. Hosted run pending. Remote-service measurements are separate; full reset, TPE, resources, sensor scheduling and performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5fd5e49bf3ad594a21d174c076cb6c234ff47b93"
   },
   "phase_status": {
     "P0": "in_progress",
