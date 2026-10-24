@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T19:18:52.920357Z",
+  "updated_at": "2026-10-24T19:24:27.717155Z",
   "state": "active",
-  "summary": "Integrating reviewed SDFormat behavior into the headless simulator. Next functional milestone is legacy-client clock/IMU publication; full packets remain unaccepted.",
+  "summary": "Reviewed SDF 1.6/1.7 support and atomic pose validation are integrated and published. Message foundation accepted; headless transport and full first-slice qualification remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "LOAD-01",
-      "title": "Adopt reviewed SDF semantics in the simulator",
-      "detail": "Pin the tested SDF 1.6/1.7 subset and preserve atomic scene rejection using explicit non-frame pose validation. Regression tests and independent SDF-owner review are in progress."
+      "id": "IO-01",
+      "title": "Headless transport integration",
+      "detail": "Reviewed producer revisions are ready: msgs2f74484 and transport1cf0867. Next implementation is bounded clock/IMU publication and polled control services. Network setup/join stays outside stepping; real C++ clients and observable overload are required."
     },
     {
       "id": "SLICE-01",
-      "title": "Headless integration acceptance checklist",
-      "detail": "Done: Bevy stepping, Rapier sphere/box state, IMU, SDF loader and CLI. Remaining: stable entity hierarchy, clock/pose/IMU transport with real C++ clients, offline Fuel resources, sensor rate/noise/reset qualification and equal-work C++ benchmark. No complete-slice claim."
+      "title": "First integrated milestone checklist",
+      "detail": "Done: Bevy stepping, Rapier sphere/box state, IMU, updated SDF loader and CLI. Remaining: stable entity hierarchy; clock/pose/IMU transport and control with C++ clients; joint/force/remove behavior; TPE; offline resources; sensor rate/noise/reset checks; equal-work reference comparison and performance report."
     }
   ],
   "accepted_slices": [
@@ -32,6 +32,11 @@
       "title": "Headless exact-step CLI and strict per-crate changed-line coverage",
       "commit": "a309b9c8d520429624de4beef549a5903a725c9d",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a309b9c8d520429624de4beef549a5903a725c9d"
+    },
+    {
+      "title": "Reviewed SDF 1.6/1.7 integration and atomic pose validation",
+      "commit": "196fa6634c3ecd87a3c8b44c9a8fd1674b479ca0",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/196fa6634c3ecd87a3c8b44c9a8fd1674b479ca0"
     }
   ],
   "remaining": [
@@ -59,16 +64,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "0ff6f9fb6f69d215bae0d4bae250bfbea32f03e5",
-    "rust_tests": 28,
+    "revision": "196fa6634c3ecd87a3c8b44c9a8fd1674b479ca0",
+    "rust_tests": 30,
     "coverage": {
       "lines": [
-        632,
-        634
+        633,
+        635
       ],
       "regions": [
-        925,
-        939
+        928,
+        942
       ]
     },
     "upstream": {
@@ -77,11 +82,11 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40113664555"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40125014203"
     },
-    "note": "Published OSRF attribution and Apache-2.0 guidance; executable bodies unchanged. Exact staged and hosted current-profile gates pass: 28 Rust tests, nine gate regression tests, all five crates >95% lines/regions. Full retained parity, feature matrix and comparative performance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0ff6f9fb6f69d215bae0d4bae250bfbea32f03e5"
+    "note": "Independent SDF-owner review and all seven scene tests pass; strict local/staged gates pass30 Rust tests+9 gate tests, each of five crates >95% lines/regions. Hosted verification pending for this exact source revision. Original retained parity, full feature matrix and measured speedup remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/196fa6634c3ecd87a3c8b44c9a8fd1674b479ca0"
   },
   "phase_status": {
     "P0": "in_progress",
