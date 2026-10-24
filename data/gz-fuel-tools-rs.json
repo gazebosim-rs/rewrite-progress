@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "repository": "gz-fuel-tools-rs",
-  "updated_at": "2026-10-24T17:39:56.822047Z",
-  "state": "idle",
-  "summary": "Fresh-context critical review is complete; verified correctness, compatibility and resource-management gaps remain before standalone sign-off.",
+  "updated_at": "2026-10-24T18:24:24Z",
+  "state": "active",
+  "summary": "Implementing the independent review corrections across typed APIs, cache transactions, transport, pagination and compatibility.",
   "model": "Codex repository owner (model and reasoning effort not recorded)",
-  "active": [],
+  "active": [
+    {
+      "id": "REVIEW",
+      "title": "Review corrections",
+      "detail": "Regression tests and shared implementations are in progress; full coverage and protected CI validation remain."
+    }
+  ],
   "accepted_slices": [
     {
       "title": "Native Rust client/CLI and C++ facade retaining public declarations and passing the retained upstream test suites",
@@ -29,10 +35,9 @@
     }
   ],
   "remaining": [
-    "Resolve confirmed correctness and cache-integrity defects, with independent contract regressions.",
-    "Restore metadata, identifier, iterator and downstream build compatibility.",
-    "Address binary-transfer memory overhead, bounded resource handling and transport/cache performance.",
-    "Revalidate standalone readiness after corrective work; no implementation fixes were applied during this review."
+    "Finish review corrections and regressions",
+    "Independent cross-review and complete coverage gates",
+    "Protected PR CI and merge"
   ],
   "blockers": [],
   "plan_status": {},
