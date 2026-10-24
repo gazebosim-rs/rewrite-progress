@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:56:02Z",
+  "updated_at": "2026-10-24T17:56:21Z",
   "state": "active",
   "summary": "Reviewed descriptor retry is published; exact staged Git blob validation is running through independent review.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
@@ -83,9 +83,10 @@
       "partial": 15
     },
     "ci": {
-      "state": "pending"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118094752"
     },
-    "note": "Published descriptor slice passed independent source/assertion/native review and the exact staged gate. All owned Rust/build logic and changed vendor predicates measured; full MSG packets remain incomplete. New snapshot tooling is outside this revision.",
+    "note": "Published descriptor slice passed independent source/assertion/native review and the exact staged gate. All owned Rust/build logic and changed vendor predicates measured; full MSG packets remain incomplete. New snapshot tooling is outside this revision. Hosted CI success is verified for ca17919.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca17919915f04fede714b021305cb12fdb48afdb",
     "previous_ci": {
       "revision": "56872d769e6ab613573411d6001a9bc2d1ecf696",
