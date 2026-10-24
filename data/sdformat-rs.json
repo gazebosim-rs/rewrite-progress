@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T21:13:26.504627Z",
+  "updated_at": "2026-10-24T21:18:44.929802Z",
   "state": "active",
-  "summary": "Seventeen independently reviewed slices are published. Sensor frame metadata and native topic normalization are available for headless integration; topic CI is running.",
+  "summary": "Seventeen independently reviewed slices are published with passing CI. Sensor frame metadata and native topic normalization are ready for headless integration; canonical DOM selection is in peer review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -138,10 +138,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40133229079"
     },
-    "note": "Reviewed topic-only snapshot and frame ancestor passed strict frozen staged hooks and11 tooling tests;24 native topic+30 frame observations match. Frame ancestor CI passed; linked topic revision CI pending. Surface remains outside this revision and unaccepted.",
+    "note": "Published frame/topic snapshots passed strict frozen staged hooks,11 tooling tests and hosted CI;24 native topic+30 frame observations match. Surface remains unaccepted pending its scalar range correction; no unsafe/dependency policy change is published.",
     "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f2a3c9f0097ca64c1abfbea8f36502337142fb0c"
   }
 }
