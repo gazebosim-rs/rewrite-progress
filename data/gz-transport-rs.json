@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:10:55.704256Z",
+  "updated_at": "2026-10-24T17:13:04.920719Z",
   "state": "active",
-  "summary": "Reviewed transport slices pass local native gates; hosted native sources build, but test enumeration is being repaired.",
+  "summary": "Reviewed transport slices pass local native gates; the native enumeration repair is reviewed locally and awaits publication.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
       "title": "Hosted native gate failure investigation",
-      "detail": "Canonical gtest JSON enumeration passes locally against all393applicable cases; independent review and hosted rerun remain."
+      "detail": "Canonical gtest JSON enumeration repair independently reviewed and committed; coordinator publication and hosted rerun remain."
     }
   ],
   "accepted_slices": [
@@ -46,7 +46,7 @@
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
   "blockers": [
-    "Hosted native sources build; stdout enumeration omitted183cases. Structured JSON repair passes locally and awaits review/hosted validation."
+    "Hosted native build succeeded but stdout enumeration omitted 183 cases; reviewed structured JSON repair awaits coordinator publication and a hosted rerun."
   ],
   "plan_status": {
     "NET-01": "in_progress",
@@ -75,7 +75,7 @@
       "state": "failure",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40113767467"
     },
-    "note": "Exact staged local native gate passed; hosted native reference build passed but runtime enumeration failed. No hosted native CI pass claimed.",
+    "note": "Published revision passed local native gate but failed hosted enumeration. Separate reviewed repair passed all 30 Rust tests and 13 tooling tests locally; hosted validation remains pending publication.",
     "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3bbe622c37ea26d142c4526e0f8eb2b492da52cc"
   }
 }
