@@ -1,3 +1,5 @@
+// Copyright (C) 2026 Open Source Robotics Foundation
+// SPDX-License-Identifier: Apache-2.0
 "use strict";
 
 const STATUS_ROOT = "https://raw.githubusercontent.com/gazebosim-rs/rewrite-progress/status/data/";

@@ -20,4 +20,5 @@ Fuel has an independent owner; unknown status is displayed as unknown.
 
 See [agent update instructions](AGENTS.md) and [the data contract](status-contract.md).
 
-Licensed under [Apache License 2.0](LICENSE).
+Copyright (C) 2026 Open Source Robotics Foundation. Licensed under
+[Apache License 2.0](LICENSE); see [NOTICE](NOTICE).

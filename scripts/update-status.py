@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (C) 2026 Open Source Robotics Foundation
+# SPDX-License-Identifier: Apache-2.0
 """Validate and publish one owner's report without changing shared Git state."""
 import argparse
 import base64
