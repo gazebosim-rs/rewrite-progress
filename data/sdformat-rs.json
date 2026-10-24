@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T19:16:14.608326Z",
+  "updated_at": "2026-10-24T19:26:42.625023Z",
   "state": "active",
-  "summary": "Twelve reviewed slices are pushed with passing CI. Legacy SDF1.6 shared-name compatibility is being prepared for independent assertion review.",
+  "summary": "Twelve reviewed slices are pushed with passing CI. Legacy shared names await independent review; typed geometry and native name-validation work continues separately.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
       "title": "Legacy SDF1.6 shared names",
       "detail": "Working tree passes50 Rust tests,11 tooling tests and139 native differential cases. Coverage1823/1842 lines,3120/3227 regions, changed104/104. Two complete original assertion ports and native originals pass; independent review pending. Model declaration order, world models-first ordering, suffixes, duplicates and unchanged reference strings are tested."
+    },
+    {
+      "id": "SDF-01",
+      "title": "Mesh and additional primitive metadata",
+      "detail": "Isolated candidate adds Capsule/Cone/Ellipsoid/Mesh metadata with source provenance and no IO.59 Rust tests pass;60 native geometry and72 named-entity cases are retained, including decomposition integer parsing and required/optional empty values. Eight original typed-geometry cases plus the reserved-name table have pending assertion mappings; full shapes fixture still needs collision surface/rendering properties. Review not yet complete."
     }
   ],
   "accepted_slices": [
