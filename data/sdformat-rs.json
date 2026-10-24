@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T21:18:44.929802Z",
+  "updated_at": "2026-10-24T21:31:19.905306Z",
   "state": "active",
-  "summary": "Seventeen independently reviewed slices are published with passing CI. Sensor frame metadata and native topic normalization are ready for headless integration; canonical DOM selection is in peer review.",
+  "summary": "Eighteen independently reviewed slices are published with passing CI. Frame IDs, native topic strings and canonical DOM link selection are ready for headless adoption.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Canonical DOM link selection review",
-      "detail": "Isolated helper matches17 native observations including static child/empty-first-child/explicit-frame aliases. Direct canonical-link identity assertions supplement the original mapped case; independent review pending."
+      "title": "Scalar conversion boundary review preparation",
+      "detail": "Private isolated prototype uses explicit per-call C locale for native prefix/ERANGE behavior, with actual scalar/Pose/vector controls and failure/concurrency tests. No unsafe/dependency policy change published; independent ABI/safety review required."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Expose native DOM canonical link selection",
+      "commit": "bae15b4500cfb523b5680a6fa317f11479ce0d8a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bae15b4500cfb523b5680a6fa317f11479ce0d8a"
+    },
     {
       "title": "Match native sensor topic string normalization",
       "commit": "f2a3c9f0097ca64c1abfbea8f36502337142fb0c",
@@ -120,16 +125,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "f2a3c9f0097ca64c1abfbea8f36502337142fb0c",
-    "rust_tests": 66,
+    "revision": "bae15b4500cfb523b5680a6fa317f11479ce0d8a",
+    "rust_tests": 68,
     "coverage": {
       "lines": [
-        2012,
-        2033
+        2041,
+        2062
       ],
       "regions": [
-        3483,
-        3593
+        3524,
+        3634
       ]
     },
     "upstream": {
@@ -139,9 +144,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40133229079"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40134484519"
     },
-    "note": "Published frame/topic snapshots passed strict frozen staged hooks,11 tooling tests and hosted CI;24 native topic+30 frame observations match. Surface remains unaccepted pending its scalar range correction; no unsafe/dependency policy change is published.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f2a3c9f0097ca64c1abfbea8f36502337142fb0c"
+    "note": "Exact reviewed canonical/frame/topic snapshots passed strict frozen staged hooks,11 tooling tests and hosted CI.17 native canonical+24 topic+30 frame observations match; original canonical case rerun. Surface/scalar safety changes remain unaccepted and outside this revision.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bae15b4500cfb523b5680a6fa317f11479ce0d8a"
   }
 }
