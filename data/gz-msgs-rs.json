@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T19:46:01Z",
+  "updated_at": "2026-10-24T19:48:04Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
@@ -9,7 +9,7 @@
     {
       "id": "MSG-02",
       "title": "Plane and bounding-box component conversions",
-      "detail": "Nested header/multitype ports published after independent review. Plane/AABB helpers and four original mappings pass local gate/native corpus and await independent review; retained cloud families are next."
+      "detail": "Plane/AABB helpers and four original mappings pass full local gate/native corpus and await independent review. Separate cloud original-value ports are advancing; operator object identity remains outside indexed API claim."
     }
   ],
   "accepted_slices": [
@@ -103,10 +103,10 @@
       "partial": 15
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40126701413"
     },
-    "note": "Published header/multitype assertion ports passed independent source/native/Rust review and strict staged gate. Exact hosted run pending; previous factory hosted success retained. Plane/AABB is a separate unpublished candidate:54Rust checks,643/643ownedlines955/964regions,16nativewirecases and4originals pass. MSG-02 remains incomplete.",
+    "note": "Published header/multitype assertion ports passed independent source/native/Rust review, strict staged gate and exact hosted CI. Plane/AABB remains separate unpublished candidate:54Rustchecks643/643ownedlines955/964regions and16nativewirecases+4originals pass. New cloud retained-value tests pass locally but are not accepted mappings. MSG-02 remains incomplete.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9d1c1c1275ea555753e580326d7315c2abedcbb2",
     "previous_ci": {
       "revision": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
