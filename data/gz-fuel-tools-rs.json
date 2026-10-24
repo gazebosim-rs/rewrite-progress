@@ -1,17 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-fuel-tools-rs",
-  "updated_at": "2026-10-24T16:40:08.097690Z",
-  "state": "active",
-  "summary": "The standalone Fuel implementation is complete; Foundation copyright notices and distribution attribution are being aligned with upstream.",
+  "updated_at": "2026-10-24T16:49:12.701270Z",
+  "state": "complete",
+  "summary": "The standalone Linux Fuel rewrite, Foundation copyright attribution and repository development policies are complete; gz-sim owns separate integration acceptance.",
   "model": "Codex repository owner (model and reasoning effort not recorded)",
-  "active": [
-    {
-      "id": "COPYRIGHT",
-      "title": "Align Open Source Robotics Foundation attribution",
-      "detail": "Copyright attribution and legal-document packaging are in PR #9. All local hooks passed; required hosted CI is pending: https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/9"
-    }
-  ],
+  "active": [],
   "accepted_slices": [
     {
       "title": "Native Rust client and CLI with unchanged upstream C++ source interfaces and acceptance tests",
@@ -27,16 +21,19 @@
       "title": "Owner-specific public progress reporting guidance merged after required CI passed",
       "commit": "53c3276269425e653dd8ba88d2b132a1e896c60b",
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/8"
+    },
+    {
+      "title": "Foundation copyright notices and required attribution in Rust packages and native installs",
+      "commit": "0c601181c144c4d891670f04f451c16a30c7b196",
+      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/9"
     }
   ],
-  "remaining": [
-    "Validate and merge copyright attribution and packaging updates."
-  ],
+  "remaining": [],
   "blockers": [],
   "plan_status": {},
   "quality": {
-    "revision": "877acad579cf991b896d6730df9e1c5370e7c394",
-    "revision_url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/commit/877acad579cf991b896d6730df9e1c5370e7c394",
+    "revision": "4ea848a72499a134f4730a8c393619a6751036b6",
+    "revision_url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/commit/4ea848a72499a134f4730a8c393619a6751036b6",
     "rust_tests": 57,
     "coverage": {
       "lines": [
@@ -52,8 +49,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/actions/runs/40107060180"
+      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/actions/runs/40112580634"
     },
-    "note": "Linux: 55 Rust unit tests, 2 CLI tests, 8 Python validation tests and 21 C++ suites pass. The 128 upstream C++ cases run unchanged in 19 suites; two supplementary suites add 11 cases. Rust-port and partial counts are not asserted. C++ line coverage is 1319/1359; region coverage is unmeasured. Downstream C++ rebuilds are required; Windows/macOS and release publication are not claimed. FUEL-01 acceptance belongs to gz-sim. Quality metrics and linked CI remain pinned to the reviewed implementation revision; reporting-only PR #8 also passed every required check before merging."
+    "note": "Verified Linux scope: 55 Rust unit tests, 2 CLI tests, 8 Python validation tests and 21 C++ suites. The 128 upstream C++ cases run unchanged in 19 suites; two supplementary suites add 11 cases. Rust-port and partial counts are not asserted. C++ line coverage is 1319/1359; region coverage is unmeasured. All 17 retained public headers match upstream. The 27-file Rust crate includes NOTICE; native install and relocation checks verify LICENSE/NOTICE. CI and metrics refer to PR #9's tested head; the accepted main commit is listed separately. Downstream C++ rebuilds are required; Windows/macOS and release publication are not claimed. FUEL-01 acceptance belongs to gz-sim."
   }
 }
