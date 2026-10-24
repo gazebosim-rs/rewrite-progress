@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T20:59:30.456410Z",
+  "updated_at": "2026-10-24T21:17:07.656643Z",
   "state": "active",
-  "summary": "Published clock/control, IMU and topic repair all passed clean hosted CI. Stable identities, Bevy hierarchy and native pose publication pass54 Rust checks and remain under independent review. Reset/removal reference behavior is captured for the next slice.",
+  "summary": "Stable public IDs, Bevy scene hierarchy and native pose publication are reviewed and published with54 passing Rust checks. The next local model-removal transaction passes58 checks and is under independent review; remote reset/removal remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "IO-01",
-      "title": "Review stable identities, hierarchy and native pose publication",
-      "detail": "Working tree:54 Rust tests+9 gate tests pass;1176/1186 lines and1702/1738 regions, all six crates>95%. Actual C++ clients verify clock, parent-relative poses, IDs and IMU; native static-child canonical regression fixed. Independent review running. Native reset/removal behavior captured; fullP2 acceptance remains open."
+      "id": "CORE-02",
+      "title": "Review atomic scene model removal",
+      "detail": "Working tree:58 Rust tests+9 gate tests pass;1210/1220lines1784/1820regions;33/33 changed lines. Removes descendant bodies/entities/IDs after preflight, retaining neighbors; tests prevent ghost bodies and partial deletion. Native reset/removal reference captured. Network remove services/full initial-scene reset remain pending."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published: Bevy stepping, Rapier sphere/box state, SDF scene loader, exact-step CLI, native clock/control and IMU publication. Remaining: stable entity hierarchy and pose transport; reset/remove behavior; joints/forces; TPE; offline resources; sensor scheduling/noise; equal-work C++ comparison and performance report."
+      "detail": "Published: Bevy/Rapier/SDF exact stepping, CLI, stable public identities/hierarchy, native clock/control/pose/IMU transport. Remaining: remote reset/remove and full initial-scene restoration; TPE; local/Fuel resources; sensor scheduling/noise; equal-work native comparison and performance report. Joints/forces and complete backends remain broader rewrite work."
     }
   ],
   "accepted_slices": [
@@ -52,6 +52,11 @@
       "title": "Native IMU topic repair and third real C++ scenario",
       "commit": "afc3cb03bd616a50a18873d96da2b16b942bf7d9",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/afc3cb03bd616a50a18873d96da2b16b942bf7d9"
+    },
+    {
+      "title": "Stable Bevy scene identities, hierarchy and native local-pose publication",
+      "commit": "d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2"
     }
   ],
   "remaining": [
@@ -79,16 +84,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "afc3cb03bd616a50a18873d96da2b16b942bf7d9",
-    "rust_tests": 42,
+    "revision": "d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2",
+    "rust_tests": 54,
     "coverage": {
       "lines": [
-        893,
-        895
+        1176,
+        1186
       ],
       "regions": [
-        1273,
-        1290
+        1702,
+        1738
       ]
     },
     "upstream": {
@@ -97,11 +102,11 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40130915745"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40133104649"
     },
-    "note": "Published topic repair passed independent review, strict staged gate, all three C++ client scenarios and clean hosted CI. Earlier clock/control and IMU commits are also green. Hierarchy/pose working-tree evidence is separate; fullP2 parity and performance qualification remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/afc3cb03bd616a50a18873d96da2b16b942bf7d9"
+    "note": "Independent msgs review reran all54 Rust checks and actualC++ pose/clock/IMU scenarios. Exact staged gate passes; all six crates exceed95% lines/regions. Hosted pose CI is pending. Local model-removal evidence is separate; CORE-02/fullIO-01/P2 and comparative performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2"
   },
   "phase_status": {
     "P0": "in_progress",
