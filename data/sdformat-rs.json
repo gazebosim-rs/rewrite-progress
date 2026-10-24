@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T16:14:06.319341Z",
+  "updated_at": "2026-10-24T16:16:02.800239Z",
   "state": "active",
-  "summary": "Five reviewed semantic/parser slices are pushed; legacy XML compatibility is implemented and under independent review.",
+  "summary": "Five reviewed semantic slices are pushed; independent XML review found four parity gaps now being corrected.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Legacy XML compatibility review",
-      "detail": "Lexical prefix/opaque content preservation, native probes and strict gate evidence; full typed sensor families remain pending."
+      "title": "Correct XML parity review findings",
+      "detail": "First-text scalar handling, legacy comments, declaration placement and native XML depth bound."
     },
     {
       "id": "SDF-02",
@@ -79,6 +79,6 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Working-tree core diagnostics only; 6 tooling tests, 35 native/Rust acceptance probes and 4 numeric observations pass. Six reviewed complete assertion ports plus one reviewed partial IMU subset; most upstream cases remain pending. Full staged verification awaits XML review. No release or performance completion claim."
+    "note": "Working-tree core diagnostic coverage and33Rusttests pass, but independent native review found4XMLcompatibility gaps under correction. Six reviewed complete assertion ports and one reviewed partial IMU subset; most upstream cases remain pending. Full staged verification/review pending; no release or speedup claim."
   }
 }
