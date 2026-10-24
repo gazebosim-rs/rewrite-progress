@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:35:31Z",
+  "updated_at": "2026-10-24T17:47:24Z",
   "state": "active",
-  "summary": "Reviewed cloud and complete Factory listing are published; descriptor-file loading/retry work and peer review are running.",
+  "summary": "Published cloud/Factory chain passed hosted CI; explicit descriptor retry passed its full local gate and is under independent review.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
-      "title": "External descriptor loading and retry",
-      "detail": "Implementing a bounded descriptor registry using maintained reflection, preserving file-order partial successes and missing-import retry. Reviewing the SDF candidate when its revised digest is ready."
-    },
-    {
-      "id": "MSG-02",
-      "title": "Accepted cloud and Factory increments",
-      "detail": "Cloud metadata/byte access and all 271 Factory names are published in 56872d7 after independent reviews. Thirty original cases approved; fifteen geometry mappings and broader retained scope remain open."
+      "title": "Descriptor retry and staged-source qualification",
+      "detail": "Explicit registry candidate is frozen for SDF review after 40 tests and custom-option preservation checks. Transport and SDF peer reviews completed with deadline/assertion fixes; preparing matching Git-blob snapshot hardening next."
     }
   ],
   "accepted_slices": [
@@ -83,9 +78,10 @@
       "partial": 15
     },
     "ci": {
-      "state": "pending"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40116772237"
     },
-    "note": "Published reviewed chain passed the exact staged gate; hosted CI result pending. All owned Rust/build logic and changed vendor predicates measured. Descriptor work is outside this revision; full MSG packets remain incomplete.",
+    "note": "Exact published 56872d7 passed hosted CI and its staged 37-test gate. New descriptor candidate outside this revision passed 40 tests locally: 451/451 owned lines, 645/653 regions; one original retry mapping awaits independent review. Full MSG packets remain incomplete.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/56872d769e6ab613573411d6001a9bc2d1ecf696",
     "previous_ci": {
       "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
