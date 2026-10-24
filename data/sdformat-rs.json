@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T16:16:02.800239Z",
+  "updated_at": "2026-10-24T16:28:51.363119Z",
   "state": "active",
-  "summary": "Five reviewed semantic slices are pushed; independent XML review found four parity gaps now being corrected.",
+  "summary": "Five reviewed semantic slices are pushed; native-backed XML review findings are corrected and awaiting independent re-review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Correct XML parity review findings",
-      "detail": "First-text scalar handling, legacy comments, declaration placement and native XML depth bound."
+      "title": "Legacy XML corrected candidate review",
+      "detail": "First-text scalars, permissive comments, declaration placement, depth boundary and numeric-NUL compatibility are tested against native."
     },
     {
       "id": "SDF-02",
@@ -59,15 +59,15 @@
   },
   "quality": {
     "revision": "working tree after 3a6572ce12dc4fb161bb1f32cbb5401c0b079f81",
-    "rust_tests": 33,
+    "rust_tests": 36,
     "coverage": {
       "lines": [
-        1557,
-        1578
+        1618,
+        1639
       ],
       "regions": [
-        2681,
-        2789
+        2772,
+        2883
       ]
     },
     "upstream": {
@@ -79,6 +79,6 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Working-tree core diagnostic coverage and33Rusttests pass, but independent native review found4XMLcompatibility gaps under correction. Six reviewed complete assertion ports and one reviewed partial IMU subset; most upstream cases remain pending. Full staged verification/review pending; no release or speedup claim."
+    "note": "Working-tree diagnostics only:36Rusttests and6tooltests pass;53native/Rust acceptance cases,4numericposes,9mass and3typedstring observations pass. XML corrections await independent re-review/staged verification. Six complete reviewed assertion ports and one partial IMU subset of1344cases; no wholepacket/release or speedup claim."
   }
 }
