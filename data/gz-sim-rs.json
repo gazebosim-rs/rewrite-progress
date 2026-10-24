@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T16:34:25.625661Z",
+  "updated_at": "2026-10-24T16:58:20.726985Z",
   "state": "active",
-  "summary": "Bevy stepping, full-f64 rigid bodies, IMU measurements and a constrained SDF scene loader are reviewed. The complete server slice is still in progress.",
+  "summary": "Headless Bevy/Rapier/SDF/IMU slice and CLI reviewed; transport integration and full retained parity remain in progress.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -54,7 +54,7 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "a309b9c8d520429624de4beef549a5903a725c9d",
+    "revision": "0ff6f9fb6f69d215bae0d4bae250bfbea32f03e5",
     "rust_tests": 28,
     "coverage": {
       "lines": [
@@ -73,10 +73,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40111917344"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40113664555"
     },
-    "note": "Exact staged and hosted current-profile gates pass: 28 Rust tests, nine gate regression tests, all five crates >95% lines/regions and 33/33 changed executable CLI lines. Full retained parity, feature matrix and comparative performance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a309b9c8d520429624de4beef549a5903a725c9d"
+    "note": "Published OSRF attribution and Apache-2.0 guidance; executable bodies unchanged. Exact staged and hosted current-profile gates pass: 28 Rust tests, nine gate regression tests, all five crates >95% lines/regions. Full retained parity, feature matrix and comparative performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0ff6f9fb6f69d215bae0d4bae250bfbea32f03e5"
   },
   "phase_status": {
     "P0": "in_progress",
