@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:39:52.865806Z",
+  "updated_at": "2026-10-24T17:48:17.133810Z",
   "state": "active",
-  "summary": "Reviewed one-way services and native loader repair are published; strict local gates pass and hosted validation is pending.",
+  "summary": "Clean hosted native gate passed for reviewed one-way services and loader repair; immutable staged verification is also reviewed and published.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
+      "id": "NET-01",
+      "title": "Cancellation during malformed multipart draining",
+      "detail": "Bound native multipart draining with explicit cancellation checks while preserving frame synchronization for live nodes."
+    },
+    {
       "id": "QLT-01",
-      "title": "Hosted native rerun and immutable staged verification",
-      "detail": "Monitor the repaired native loader environment; freeze and guard the staged Git tree against concurrent index edits."
+      "title": "Immutable staged gate hosted rerun",
+      "detail": "Published reviewed blob/path/mode verification and concurrent index/HEAD guards; prior production revision hosted gate succeeded."
     }
   ],
   "accepted_slices": [
@@ -52,6 +57,11 @@
       "title": "Isolated native enumeration environment and loader diagnostics",
       "commit": "c06e09731c7b149af70ff9b1712ace97cb04bbad",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c06e09731c7b149af70ff9b1712ace97cb04bbad"
+    },
+    {
+      "title": "Immutable staged blobs, complete export and concurrent index guards",
+      "commit": "2bbbf8c99c2075c7259bf8fde148d6e5ffa17b70",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2bbbf8c99c2075c7259bf8fde148d6e5ffa17b70"
     }
   ],
   "remaining": [
@@ -85,10 +95,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40117116928"
     },
-    "note": "Both independently reviewed commits passed strict staged native gates. Hosted validation of corrected loader environment is pending.",
+    "note": "Hosted c06e097 passed: 34 Rust tests, 14 tooling tests, two original native cases; 393 applicable IDs reconciled and 25 conditioned retained. Separate reviewed gate follow-up2bbbf8c has 17 tooling tests; its hosted rerun is pending.",
     "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c06e09731c7b149af70ff9b1712ace97cb04bbad"
   }
 }
