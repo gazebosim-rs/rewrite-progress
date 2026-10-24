@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T20:35:36.370413Z",
+  "updated_at": "2026-10-24T20:48:38.650129Z",
   "state": "active",
-  "summary": "Headless clock/control and IMU bridges are reviewed and published. Clock/control clean CI is green; IMU clean CI is running. Native topic repair is being integrated, with stable hierarchy and pose publication next.",
+  "summary": "Clock/control and IMU bridges passed clean hosted CI. Native topic repair is reviewed and published. Stable identities, Bevy hierarchy and native pose publication pass the local full gate and are under independent review.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
-      "title": "Native topic repair and pose integration",
-      "detail": "IMU bridge37ee38a passed independent review and exact staged gate: 42 Rust tests, 9 gate tests, 890/892 lines and1273/1290regions. Integrating reviewed transport topic repair with a third native C++ scenario. Preparing stable public IDs and parent-relative poses; full P2 acceptance remains open."
+      "title": "Review stable identities, hierarchy and native pose publication",
+      "detail": "Working tree:51 Rust tests+9 gate tests pass;1157/1166 lines and1676/1711 regions, all six crates>95%. Native C++ clients verify clock, parent-relative poses, IDs and IMU. Independent review running; reset/removal/TPE/resources and performance remain pending."
     },
     {
       "id": "SLICE-01",
@@ -47,6 +47,11 @@
       "title": "Native-compatible IMU publication and real C++ sensor client",
       "commit": "37ee38a4d0ab262d110eff24c4cfb83e541031b6",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/37ee38a4d0ab262d110eff24c4cfb83e541031b6"
+    },
+    {
+      "title": "Native IMU topic repair and third real C++ scenario",
+      "commit": "afc3cb03bd616a50a18873d96da2b16b942bf7d9",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/afc3cb03bd616a50a18873d96da2b16b942bf7d9"
     }
   ],
   "remaining": [
@@ -74,12 +79,12 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "37ee38a4d0ab262d110eff24c4cfb83e541031b6",
+    "revision": "afc3cb03bd616a50a18873d96da2b16b942bf7d9",
     "rust_tests": 42,
     "coverage": {
       "lines": [
-        890,
-        892
+        893,
+        895
       ],
       "regions": [
         1273,
@@ -93,10 +98,10 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40130359539"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40130915745"
     },
-    "note": "Independently reviewed IMU metadata, native C++ clock/control and sensor clients, and exact staged gate pass. All six production crates exceed95% lines andregions. Hosted IMU CI is pending; preceding clock/control clean CI passed. Full IO-01/P2, upstream simulator parity and performance qualification remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/37ee38a4d0ab262d110eff24c4cfb83e541031b6"
+    "note": "Reviewed topic repair passed the exact staged gate and all three native C++ scenarios. Hosted CI is pending. The preceding IMU and clock/control commits both passed clean hosted CI. Hierarchy/pose working-tree evidence is separate; full P2 parity and performance qualification remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/afc3cb03bd616a50a18873d96da2b16b942bf7d9"
   },
   "phase_status": {
     "P0": "in_progress",
