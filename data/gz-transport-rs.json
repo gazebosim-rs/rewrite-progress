@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:29:35.357484Z",
+  "updated_at": "2026-10-24T17:36:46.606840Z",
   "state": "active",
-  "summary": "Reviewed enumeration repair is published and hosted native validation is running; bounded one-way services are under implementation.",
+  "summary": "Hosted diagnostics identified a missing library-path handoff; repair is under review. One-way services pass local native gates.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
       "title": "Hosted native enumeration validation",
-      "detail": "Published reviewed structured JSON enumeration repair; real hosted build and validation running."
+      "detail": "Archived target stderr proves enumeration lacked isolated LD_LIBRARY_PATH; explicit environment forwarding and regression are under peer review."
     },
     {
       "id": "NET-02",
       "title": "Gazebo one-way Empty-response services",
-      "detail": "Implementing bounded handoff and native reply suppression with real C++ peers in both directions."
+      "detail": "Independent review and staged checks passed for one-way services, including expired local-request rejection; publication queued with loader repair."
     }
   ],
   "accepted_slices": [
@@ -55,7 +55,9 @@
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
-  "blockers": [],
+  "blockers": [
+    "Hosted native enumeration loader failure is diagnosed; reviewed repair and hosted rerun remain."
+  ],
   "plan_status": {
     "NET-01": "in_progress",
     "NET-02": "in_progress",
@@ -80,10 +82,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "failure",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40116203772"
     },
-    "note": "Reviewed exact staged native gate passed; hosted validation running. All 418 cases retained; 393 applicable in the ZeroMQ reference profile.",
+    "note": "Hosted source build passed; enumeration failed loading libgz-utils.so.5 because native environment was not forwarded. Repair under review; no hosted success claimed.",
     "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/26ecc9a5430f0de7b2d2ac068b16e16ca2c88747"
   }
 }
