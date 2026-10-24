@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T16:28:51.363119Z",
+  "updated_at": "2026-10-24T16:36:02.683723Z",
   "state": "active",
-  "summary": "Five reviewed semantic slices are pushed; native-backed XML review findings are corrected and awaiting independent re-review.",
+  "summary": "Six independently reviewed semantic/XML slices are pushed; omitted-axis defaults and an SDF1.7 subset are the next separate slice.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Legacy XML corrected candidate review",
-      "detail": "First-text scalars, permissive comments, declaration placement, depth boundary and numeric-NUL compatibility are tested against native."
+      "title": "Joint defaults and SDF1.7 subset",
+      "detail": "Native-backed omitted axis=None semantics and unchanged nested frame-only fixture;39working-tree tests pass, independent review pending."
     },
     {
       "id": "SDF-02",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve native legacy XML lexical and scalar semantics",
+      "commit": "71af9e5795af32d659cc98c081e6709b64df7519",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/71af9e5795af32d659cc98c081e6709b64df7519"
+    },
     {
       "title": "Preserve exact self poses and local frame precision",
       "commit": "3a6572ce12dc4fb161bb1f32cbb5401c0b079f81",
@@ -58,7 +63,7 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "working tree after 3a6572ce12dc4fb161bb1f32cbb5401c0b079f81",
+    "revision": "71af9e5795af32d659cc98c081e6709b64df7519",
     "rust_tests": 36,
     "coverage": {
       "lines": [
@@ -76,9 +81,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "unknown",
+      "state": "pending",
       "url": null
     },
-    "note": "Working-tree diagnostics only:36Rusttests and6tooltests pass;53native/Rust acceptance cases,4numericposes,9mass and3typedstring observations pass. XML corrections await independent re-review/staged verification. Six complete reviewed assertion ports and one partial IMU subset of1344cases; no wholepacket/release or speedup claim."
+    "note": "Published XML slice passed exact staged-tree gate:36Rusttests,6tooltests;53native/Rust acceptance cases,4numericposes,9mass and3typedstring observations. Independent transport review all12cases matched. Six complete reviewed assertion ports and one partial IMU subset of1344cases; no wholepacket/release or speedup claim. Active39test working tree is separate from these committed counts.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/71af9e5795af32d659cc98c081e6709b64df7519"
   }
 }
