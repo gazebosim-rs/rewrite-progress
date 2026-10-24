@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T20:10:58Z",
+  "updated_at": "2026-10-24T21:40:48.022760Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Inertial and coordinate conversion contracts",
-      "detail": "Published quaternion/pose/component setters bring reviewed original cases to70/83. Inertial7case candidate passes native24wire/reverse rows+full gate and awaits independent review; coordinate enum parity work continues. Native IMU publication details independently verified for root headless bridge."
+      "title": "Remaining packed-cloud operator and Fuel metadata behavior",
+      "detail": "81/83 original cases independently reviewed. Inertial and spherical conversion families are public and hosted CI passes. Implementing the remaining safe cursor and metadata contracts; broader packet obligations remain open."
     }
   ],
   "accepted_slices": [
@@ -87,10 +87,20 @@
       "title": "Quaternion/pose conversions and metadata-retaining component setters",
       "commit": "97557fca8e4fec1fb50fb9f77dc057c97fc42b05",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/97557fca8e4fec1fb50fb9f77dc057c97fc42b05"
+    },
+    {
+      "title": "Inertial and mass-matrix conversion semantics",
+      "commit": "1692bbc906ee8fa32bb7fb4a33234f10261d1acb",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1692bbc906ee8fa32bb7fb4a33234f10261d1acb"
+    },
+    {
+      "title": "Spherical coordinate enums, angles and raw surface components",
+      "commit": "1f146e5c60f87893ae121782449731d9c7c80d0b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1f146e5c60f87893ae121782449731d9c7c80d0b"
     }
   ],
   "remaining": [
-    "Remaining inertial/mass-matrix/spherical/Fuel conversions and iterator operator scope",
+    "Fuel metadata conversion and packed-cloud iterator operator scope",
     "Complete formatting and descriptor install/global/cache compatibility qualification",
     "Packaging, performance comparison and full retained-test review"
   ],
@@ -100,33 +110,33 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "97557fca8e4fec1fb50fb9f77dc057c97fc42b05",
-    "rust_tests": 62,
+    "revision": "1f146e5c60f87893ae121782449731d9c7c80d0b",
+    "rust_tests": 72,
     "coverage": {
       "lines": [
-        643,
-        643
+        788,
+        788
       ],
       "regions": [
-        966,
-        975
+        1123,
+        1132
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 70,
+      "ported": 81,
       "partial": 1
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40128120430"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40134094908"
     },
-    "note": "Published component-setter slice independently source/assertion/native reviewed, strict staged gate and exact hosted CI pass. Operators numeric behavior partial; identity/overloads unclaimed. Separate unpublished inertial slice:67checks714/714lines1052/1061regions24nativewire/reverse cases and7originals pass, awaiting review. Standalone native IMU capture confirms covariance/frame/sequence/rewind semantics for root; no sensor packet acceptance claimed. MSG-02 still incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/97557fca8e4fec1fb50fb9f77dc057c97fc42b05",
+    "note": "Published inertial and spherical slices independently reviewed against original assertions and native wire/bit fixtures; strict staged and exact hosted CI pass. Operators remains partial; Fuel metadata not ported. Formatting, install/global/cache qualification, packaging and performance remain open MSG-02 obligations.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1f146e5c60f87893ae121782449731d9c7c80d0b",
     "previous_ci": {
-      "revision": "35786194c030f5427396887c645701dcffe0172d",
+      "revision": "97557fca8e4fec1fb50fb9f77dc057c97fc42b05",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40127422168"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40128120430"
     }
   }
 }
