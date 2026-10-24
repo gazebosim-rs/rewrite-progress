@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:18:27Z",
+  "updated_at": "2026-10-24T17:35:31Z",
   "state": "active",
-  "summary": "Three bounded cloud/Factory slices passed staged gates and await independent review; public attribution CI passed.",
+  "summary": "Reviewed cloud and complete Factory listing are published; descriptor-file loading/retry work and peer review are running.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
-      "title": "Message runtime qualification",
-      "detail": "Canonical runtime and owned-only coverage gates validated; exact published dd280195 hosted run succeeded."
+      "title": "External descriptor loading and retry",
+      "detail": "Implementing a bounded descriptor registry using maintained reflection, preserving file-order partial successes and missing-import retry. Reviewing the SDF candidate when its revised digest is ready."
     },
     {
       "id": "MSG-02",
-      "title": "Conversions and message tooling",
-      "detail": "Cloud commits 9916179/78ebdb4 received independent semantic/assertion review with native fixtures reproduced; coordinator acceptance/publication remains pending. a7b99ec fixes all 271 Factory names and retains three original text/all-type cases. Attribution-only ab3fc90 preserves original assertion-source years. Five mappings await coordinator review."
+      "title": "Accepted cloud and Factory increments",
+      "detail": "Cloud metadata/byte access and all 271 Factory names are published in 56872d7 after independent reviews. Thirty original cases approved; fifteen geometry mappings and broader retained scope remain open."
     }
   ],
   "accepted_slices": [
@@ -42,6 +42,16 @@
       "title": "Legacy enum names and 197 native conversion comparisons",
       "commit": "2f283f382a3dd60477983f9770b1850d497775d0",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f283f382a3dd60477983f9770b1850d497775d0"
+    },
+    {
+      "title": "Native packed-cloud metadata and bounded native-endian byte access",
+      "commit": "78ebdb4f718dbed681bc8c31235178acae35eb3e",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/78ebdb4f718dbed681bc8c31235178acae35eb3e"
+    },
+    {
+      "title": "Complete 271-name Factory listing and three original construction cases",
+      "commit": "a7b99ec50b71d6417bc328cb45dbe2afcac4858b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7b99ec50b71d6417bc328cb45dbe2afcac4858b"
     }
   ],
   "remaining": [
@@ -55,29 +65,28 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "dd280195bfb96fa366447b648f576229b8590575",
-    "rust_tests": 30,
+    "revision": "56872d769e6ab613573411d6001a9bc2d1ecf696",
+    "rust_tests": 37,
     "coverage": {
       "lines": [
-        324,
-        324
+        422,
+        422
       ],
       "regions": [
-        456,
-        460
+        595,
+        603
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 25,
+      "ported": 30,
       "partial": 15
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40113798719"
+      "state": "pending"
     },
-    "note": "Public dd280195 attribution revision passed its 30-test staged gate and hosted CI. Later unpushed ab3fc90 passed the exact staged 37-test gate: 422/422 owned lines, 595/603 regions, including changed vendor predicates. Five new original mappings await coordinator review; no iterator test retired. Native list set is complete, Rust sorting deliberate; broader CLI formatting remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dd280195bfb96fa366447b648f576229b8590575",
+    "note": "Published reviewed chain passed the exact staged gate; hosted CI result pending. All owned Rust/build logic and changed vendor predicates measured. Descriptor work is outside this revision; full MSG packets remain incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/56872d769e6ab613573411d6001a9bc2d1ecf696",
     "previous_ci": {
       "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
       "state": "success",
