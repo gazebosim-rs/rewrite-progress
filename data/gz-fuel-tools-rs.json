@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "repository": "gz-fuel-tools-rs",
-  "updated_at": "2026-10-24T16:49:12.701270Z",
-  "state": "complete",
-  "summary": "The standalone Linux Fuel rewrite, Foundation copyright attribution and repository development policies are complete; gz-sim owns separate integration acceptance.",
+  "updated_at": "2026-10-24T17:00:53.695637Z",
+  "state": "active",
+  "summary": "A fresh-context adversarial review is reassessing standalone Fuel correctness, compatibility, performance and development practices.",
   "model": "Codex repository owner (model and reasoning effort not recorded)",
-  "active": [],
+  "active": [
+    {
+      "id": "FRESH-REVIEW",
+      "title": "Independent adversarial review",
+      "detail": "Three reviewers with no inherited conversation history are comparing behavior against pinned upstream code and building bounded reproductions; no implementation changes are being made."
+    }
+  ],
   "accepted_slices": [
     {
       "title": "Native Rust client and CLI with unchanged upstream C++ source interfaces and acceptance tests",
@@ -28,7 +34,9 @@
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/9"
     }
   ],
-  "remaining": [],
+  "remaining": [
+    "Verify and prioritize correctness, compatibility, performance and simplification findings; report limitations of prior acceptance evidence."
+  ],
   "blockers": [],
   "plan_status": {},
   "quality": {
