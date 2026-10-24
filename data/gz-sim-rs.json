@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T21:25:17.637577Z",
+  "updated_at": "2026-10-24T21:30:32.236006Z",
   "state": "active",
-  "summary": "The published clock, IMU and pose bridge passes hosted CI. Atomic model removal passes 59 Rust checks after fixing a retained-body alias found in independent review; final review is underway.",
+  "summary": "CORE-01 foundation is accepted against the reviewed revision and matching green CI. Native clock, pose and IMU integration is published. Model removal is in final review; remote lifecycle work is underway.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -57,6 +57,11 @@
       "title": "Stable Bevy scene identities, hierarchy and native local-pose publication",
       "commit": "d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2"
+    },
+    {
+      "title": "CORE-01 foundation acceptance with exact hosted evidence",
+      "commit": "83935962507c442c9d0f718a7de085892d7c6965",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/83935962507c442c9d0f718a7de085892d7c6965/docs/acceptance/CORE-01.md"
     }
   ],
   "remaining": [
@@ -73,7 +78,7 @@
     "PHY-00": "in_progress",
     "API-01": "in_progress",
     "QLT-01": "in_progress",
-    "CORE-01": "in_progress",
+    "CORE-01": "complete",
     "CORE-02": "in_progress",
     "PHY-01": "in_progress",
     "PHY-05": "in_progress",
@@ -105,7 +110,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40133104649"
     },
-    "note": "Exact published pose revision passed hosted CI and independent 54-test replay, including real C++ clients. Every production crate exceeds 95% line and region coverage. Local removal evidence is separate. CORE-01 audit conditions are met; acceptance record is being published. CORE-02, IO-01, P2 and performance remain open.",
+    "note": "Accepted CORE-01 concrete foundation exit is recorded publicly, based on d3524f58 and its successful hosted gate. API-01, QLT-01, CORE-02 and every broad phase remain open. The accepted revision passes 54 checks with every crate above 95%; current removal candidate separately passes 59 checks.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3524f58c18d7f3de9a1cd59d9a2c9a66befc5f2"
   },
   "phase_status": {
