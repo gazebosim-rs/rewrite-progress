@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T17:56:21Z",
+  "updated_at": "2026-10-24T17:59:05Z",
   "state": "active",
-  "summary": "Reviewed descriptor retry is published; exact staged Git blob validation is running through independent review.",
+  "summary": "Exact Git snapshot hardening is published; next descriptor path/directory behavior is being implemented.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
-      "title": "Exact staged-source qualification",
-      "detail": "New snapshot gate includes export-ignore inputs, validates raw Git blob/type/mode/path identity, and rejects concurrent index/HEAD changes. Five scratch regressions and full 40-test gate pass; peer review and full-build partial-stage regression are running."
+      "title": "Explicit descriptor path loading",
+      "detail": "Extending the reviewed registry with native filename recognition, path lists and directory loading for retained DynamicFactory/duplicate-descriptor cases. Snapshot hardening is published after independent review and staged gate."
     }
   ],
   "accepted_slices": [
@@ -65,7 +65,7 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "ca17919915f04fede714b021305cb12fdb48afdb",
+    "revision": "e73e046fab7213173eb30587d72453a93fc4abd2",
     "rust_tests": 40,
     "coverage": {
       "lines": [
@@ -83,15 +83,15 @@
       "partial": 15
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118485527"
+    },
+    "note": "Published snapshot slice passed independent source review, five Git regressions, exact staged 40-test gate and the full-build partial-stage rejection proof. Owned Rust coverage unchanged; hosted CI running. Next descriptor path work is outside this revision. Full MSG packets remain incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e73e046fab7213173eb30587d72453a93fc4abd2",
+    "previous_ci": {
+      "revision": "ca17919915f04fede714b021305cb12fdb48afdb",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118094752"
-    },
-    "note": "Published descriptor slice passed independent source/assertion/native review and the exact staged gate. All owned Rust/build logic and changed vendor predicates measured; full MSG packets remain incomplete. New snapshot tooling is outside this revision. Hosted CI success is verified for ca17919.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca17919915f04fede714b021305cb12fdb48afdb",
-    "previous_ci": {
-      "revision": "56872d769e6ab613573411d6001a9bc2d1ecf696",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40116772237"
     }
   }
 }
