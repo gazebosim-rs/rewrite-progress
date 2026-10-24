@@ -1,17 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-fuel-tools-rs",
-  "updated_at": "2026-10-24T18:53:37Z",
-  "state": "active",
-  "summary": "All review corrections and independent follow-up fixes are implemented; protected PR 10 is running required hosted CI.",
+  "updated_at": "2026-10-24T18:58:32Z",
+  "state": "idle",
+  "summary": "All critical review corrections and independent follow-up fixes merged in PR 10 after every required hosted CI check passed.",
   "model": "Codex repository owner (model and reasoning effort not recorded)",
-  "active": [
-    {
-      "id": "REVIEW",
-      "title": "Protected PR acceptance",
-      "detail": "PR 10 passed local tests, coverage and clean package/install checks; hosted Rust, C++ and dependency checks are running."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
     {
       "title": "Native Rust client/CLI and C++ facade retaining public declarations and passing the retained upstream test suites",
@@ -32,12 +26,14 @@
       "title": "Foundation copyright notices and required attribution in Rust packages and native installs",
       "commit": "0c601181c144c4d891670f04f451c16a30c7b196",
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/9"
+    },
+    {
+      "title": "All 17 critical review findings and independent follow-up fixes, with protected PR CI",
+      "commit": "3747086ed13b59d2f7701eedc11329ebd7c9df3a",
+      "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/pull/10"
     }
   ],
-  "remaining": [
-    "Required hosted CI for PR 10",
-    "Merge protected PR after all checks pass"
-  ],
+  "remaining": [],
   "blockers": [],
   "plan_status": {},
   "quality": {
@@ -57,9 +53,9 @@
       "partial": null
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-fuel-tools-rs/actions/runs/40122748917"
     },
-    "note": "Local acceptance:111 Rust unit tests,2 CLI tests,9 Python regressions,22 C++ suites with128 unchanged upstream and15 supplementary cases. Rust production lines4252/4447; C++1363/1405. Independent review approved all corrections; clean crate/source archive, relocation and7 CMake consumer checks passed for code candidate0a1ca052. Required hosted CI is pending for this exact head. Region/ported/partial counts are not asserted. FUEL-01 integration acceptance remains owned by gz-sim."
+    "note": "Required hosted PR CI passed at the linked head; merged as3747086ed13b59d2f7701eedc11329ebd7c9df3a. Acceptance:111 Rust unit+2 CLI tests,9 Python regressions,22 C++ suites with128 unchanged upstream+15 supplementary cases. Hosted production lines:Rust4252/4447,C++1363/1405. Clean crate/source build,relocation,7 CMake consumers,pkg-config,Ruby dispatcher,dependency/workflow policy and metadata differential checks passed. Independent final review approved corrections. Regions/ported/partial counts are not asserted. FUEL-01 integration acceptance remains owned by gz-sim."
   }
 }
