@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T16:54:37.693858Z",
+  "updated_at": "2026-10-24T17:03:46.085514Z",
   "state": "active",
-  "summary": "Seven reviewed semantic/XML/default slices are pushed and CI passes; OSRF source attribution is the next separate reviewed change.",
+  "summary": "Eight reviewed slices are pushed with passing CI, including requested OSRF attribution; coverage target inventory hardening is the next separate slice.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "LICENSING",
-      "title": "OSRF attribution review",
-      "detail": "Add requested2026holder/SPDX to owned code and NOTICE; preserve imported notices and dependency licenses. Build-target coverage hardening follows separately."
+      "id": "QLT-01",
+      "title": "Fail-closed production target inventory",
+      "detail": "Require explicit coverage support before additional Cargo production targets, feature profiles or owned Rust source roots can enter the package."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Attribute owned implementation to Open Source Robotics Foundation",
+      "commit": "1b6b201e2fbcf59115394445d9795ca8b25bf60d",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1b6b201e2fbcf59115394445d9795ca8b25bf60d"
+    },
     {
       "title": "Preserve optional joint axes and the SDF 1.7 semantic subset",
       "commit": "6c0efe538837504b626d12cae842a1bbbe88b33c",
@@ -63,7 +68,7 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "6c0efe538837504b626d12cae842a1bbbe88b33c",
+    "revision": "1b6b201e2fbcf59115394445d9795ca8b25bf60d",
     "rust_tests": 39,
     "coverage": {
       "lines": [
@@ -82,9 +87,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40113452124"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40114012904"
     },
-    "note": "Exact published defaults slice passed staged-tree gate and hosted core CI:39Rusttests,6tooltests;59native/Rust acceptance cases and4axis-absence observations. Seven complete reviewed assertion ports plus one partial IMU subset of1344cases. SDF1.7unflatten/generalserialization and full retained scope remain pending; no wholepacket/release or speedup claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6c0efe538837504b626d12cae842a1bbbe88b33c"
+    "note": "Exact published attribution slice passed staged-tree gate and hosted core CI: 39 Rust tests, 6 tool tests; production coverage 1622/1643 lines and 2774/2885 regions. Seven complete reviewed upstream assertion ports plus one partial IMU subset of 1344 cases. Full retained scope remains pending; no whole-packet, release or speedup claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1b6b201e2fbcf59115394445d9795ca8b25bf60d"
   }
 }
