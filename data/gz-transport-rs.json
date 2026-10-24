@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T16:39:33.208777Z",
+  "updated_at": "2026-10-24T16:42:25.284430Z",
   "state": "active",
-  "summary": "Reviewed hosted native bootstrap is public and running; native wire, configuration and maintained-message slices remain validated locally.",
+  "summary": "Reviewed transport slices pass local native gates; the first hosted native run failed and is being diagnosed.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
-      "title": "Hosted native parity run",
-      "detail": "Ordinary Ubuntu hosted run is executing pinned native sources, real C++ peers and strict coverage; no hosted pass claimed yet."
+      "title": "Hosted native gate failure investigation",
+      "detail": "Policy job succeeded; retrieving the failed native step and correcting the hosted reference bootstrap."
     }
   ],
   "accepted_slices": [
@@ -40,7 +40,9 @@
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
-  "blockers": [],
+  "blockers": [
+    "Hosted native parity run failed; investigation and repair are active."
+  ],
   "plan_status": {
     "NET-01": "in_progress",
     "NET-02": "in_progress",
@@ -65,10 +67,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "failure",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40112454254"
     },
-    "note": "Exact staged local native gate passed:30 Rust tests,12 tool regressions, real C++ peers, fatal LLVM warnings. Fresh isolated reference expands393 applicable cases;25 feature-conditioned cases stay in the full418 catalog. Hosted CI is in progress.",
+    "note": "Exact staged local native gate remains passing. First ordinary hosted native run failed; this is not reported as a native CI pass.",
     "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/275855d74f2e60bc594f79706c098e3fbf3f17bb"
   }
 }
