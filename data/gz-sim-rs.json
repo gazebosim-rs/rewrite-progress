@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T20:48:38.650129Z",
+  "updated_at": "2026-10-24T20:59:30.456410Z",
   "state": "active",
-  "summary": "Clock/control and IMU bridges passed clean hosted CI. Native topic repair is reviewed and published. Stable identities, Bevy hierarchy and native pose publication pass the local full gate and are under independent review.",
+  "summary": "Published clock/control, IMU and topic repair all passed clean hosted CI. Stable identities, Bevy hierarchy and native pose publication pass54 Rust checks and remain under independent review. Reset/removal reference behavior is captured for the next slice.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Review stable identities, hierarchy and native pose publication",
-      "detail": "Working tree:51 Rust tests+9 gate tests pass;1157/1166 lines and1676/1711 regions, all six crates>95%. Native C++ clients verify clock, parent-relative poses, IDs and IMU. Independent review running; reset/removal/TPE/resources and performance remain pending."
+      "detail": "Working tree:54 Rust tests+9 gate tests pass;1176/1186 lines and1702/1738 regions, all six crates>95%. Actual C++ clients verify clock, parent-relative poses, IDs and IMU; native static-child canonical regression fixed. Independent review running. Native reset/removal behavior captured; fullP2 acceptance remains open."
     },
     {
       "id": "SLICE-01",
@@ -97,10 +97,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40130915745"
     },
-    "note": "Reviewed topic repair passed the exact staged gate and all three native C++ scenarios. Hosted CI is pending. The preceding IMU and clock/control commits both passed clean hosted CI. Hierarchy/pose working-tree evidence is separate; full P2 parity and performance qualification remain open.",
+    "note": "Published topic repair passed independent review, strict staged gate, all three C++ client scenarios and clean hosted CI. Earlier clock/control and IMU commits are also green. Hierarchy/pose working-tree evidence is separate; fullP2 parity and performance qualification remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/afc3cb03bd616a50a18873d96da2b16b942bf7d9"
   },
   "phase_status": {
