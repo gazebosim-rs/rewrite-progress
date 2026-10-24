@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T16:57:52Z",
+  "updated_at": "2026-10-24T17:07:36Z",
   "state": "active",
-  "summary": "Apache-2.0 and OSRF attribution are public; packed-cloud metadata prototype matches native wire fixtures while broader MSG-02 scope continues.",
+  "summary": "OSRF attribution passed hosted CI; packed-cloud metadata is committed for independent review, and safe typed byte access is in progress.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-01",
       "title": "Message runtime qualification",
-      "detail": "Canonical runtime and owned-only coverage gates validated locally; exact published ad10fc5 hosted run is in progress."
+      "detail": "Canonical runtime and owned-only coverage gates validated; exact published dd280195 hosted run succeeded."
     },
     {
       "id": "MSG-02",
       "title": "Conversions and message tooling",
-      "detail": "Packed-cloud initializer/datatype-size prototype compares 30 native layouts and 10 sizes; original Init/Size assertions pass locally, awaiting cohesive review. Iterator/byte-access behavior remains unimplemented."
+      "detail": "Metadata commit 9916179 passed the staged 32-test gate with 30 native layouts and 10 datatype sizes; two original mappings await review. Safe unaligned typed access and scalar/color native fixtures are in progress."
     }
   ],
   "accepted_slices": [
@@ -73,10 +73,10 @@
       "partial": 15
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40113798719"
     },
-    "note": "Published attribution-only revision passed the exact staged 30-test gate with unchanged executable logic and >95% owned coverage. Its hosted CI is running. Cloud prototype is outside this revision; imported/vendored notices remain unchanged. Previous hosted success is separately revision-linked.",
+    "note": "Published attribution revision passed the exact staged 30-test gate and hosted CI. Later unpushed metadata commit 9916179 passed 32 tests locally: 371/371 owned lines and 512/516 regions; its two original mappings await review. Typed access is outside both revisions.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dd280195bfb96fa366447b648f576229b8590575",
     "previous_ci": {
       "revision": "22a0482fbf17e6469b59be4d217875262f916f94",
