@@ -39,6 +39,7 @@ function renderOverview() {
     [Object.values(phases).filter(s => s === "complete").length, `/ ${catalog.phases.length}`, "Phase gates accepted"],
     [complete, `/ ${catalog.packets.length}`, "Plan packets accepted"],
     [active, "", "Plan packets in progress or review"],
+    [[...reports.values()].reduce((sum, report) => sum + report.accepted_slices.length, 0), "", "Reviewed increments reported"],
     [doneSystems, `/ ${catalog.systems.length}`, "Simulator systems migrated"]
   ];
   $("metrics").replaceChildren(...values.map(([value, suffix, caption]) => {
