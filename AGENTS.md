@@ -3,6 +3,8 @@
 The user requested an online tracker and instructed repository agents to update it.
 
 - The coordinator owns dashboard code, the plan catalog, and gz-sim-rs status.
+- License original project code and documentation under Apache-2.0. Preserve
+  third-party license and attribution notices when importing material.
 - Each repository agent owns only its own status file on branch `status`.
 - Update when starting a new bounded task, completing a reviewed slice, discovering
   or clearing a blocker, or materially changing test/coverage/CI evidence.
