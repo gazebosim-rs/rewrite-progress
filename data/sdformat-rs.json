@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T19:36:12.482143Z",
+  "updated_at": "2026-10-24T19:38:42.864632Z",
   "state": "active",
-  "summary": "Thirteen independently reviewed slices are pushed. Legacy shared names passed strict staged verification; typed geometry/schema metadata remains in independent review.",
+  "summary": "Thirteen independently reviewed slices are pushed with passing CI. Typed geometry/schema metadata remains in independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -112,9 +112,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40126005828"
     },
-    "note": "Published legacy-name slice passed strict frozen staged verification:50 Rust tests,11 tooling tests,139 native differential cases, both original native cases; production1823/1842 lines,3120/3227 regions. Independent msgs review preserves every original assertion and unchanged fixtures. Hosted CI pending. Geometry candidate remains separate unaccepted work;11 complete reviewed ports plus1 partial are a small subset of1344. No whole-packet or speedup claim.",
+    "note": "Published legacy-name slice passed strict frozen staged verification:50 Rust tests,11 tooling tests,139 native differential cases, both original native cases; production1823/1842 lines,3120/3227 regions. Independent msgs review preserves every original assertion and unchanged fixtures. Hosted CI passed. Geometry candidate remains separate unaccepted work;11 complete reviewed ports plus1 partial are a small subset of1344. No whole-packet or speedup claim.",
     "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/eb815a1e720f2990197ecf4d160d1316f7029111"
   }
 }
