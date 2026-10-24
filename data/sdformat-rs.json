@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T20:53:51.405618Z",
+  "updated_at": "2026-10-24T21:04:51.447584Z",
   "state": "active",
-  "summary": "Fifteen reviewed slices are published with passing CI; collision surface metadata has passed working-tree gates and awaits independent review.",
+  "summary": "Sixteen independently reviewed slices are published. Sensor canonical/legacy frame metadata passed strict staged gates; CI is running. Canonical DOM selection is in peer review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Collision surface metadata review",
-      "detail": "Frozen candidate:75 Rust tests,11 tooling tests,10 exact native originals and30 new matching surface observations pass. Working-tree coverage2146/2170 lines and3712/3835 regions; independent review pending. Simulator will reject explicit surfaces until physics support."
+      "title": "Canonical DOM link selection review",
+      "detail": "Isolated helper matches17 native observations including static child/empty-first-child/explicit-frame aliases. Direct canonical-link identity assertions supplement the original mapped case; independent review pending."
     },
     {
       "id": "SDF-01",
-      "title": "Sensor frame metadata and canonical link selection",
-      "detail": "Preparing canonical frame_id plus optional legacy gz_frame_id preserving explicit empty values. Native DOM canonical-link selection helper scheduled separately from attachment semantics."
+      "title": "Surface metadata scalar range correction",
+      "detail": "Surface value/default assertions passed13 Rust tests and10 exact native originals. Peer review found native scalar underflow rejection absent from Rust parsing. Surface remains unaccepted pending precise conversion/error handling; scalar and vector native paths differ."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve canonical and legacy sensor frame metadata",
+      "commit": "66be4c775afa594baaf6fbcfbc72abddee168e94",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/66be4c775afa594baaf6fbcfbc72abddee168e94"
+    },
     {
       "title": "Distinguish optional numeric text from CDATA",
       "commit": "56315822f1839e2b35306c2e6e0b43ebe7a00320",
@@ -110,16 +115,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "56315822f1839e2b35306c2e6e0b43ebe7a00320",
-    "rust_tests": 62,
+    "revision": "66be4c775afa594baaf6fbcfbc72abddee168e94",
+    "rust_tests": 64,
     "coverage": {
       "lines": [
-        1997,
-        2018
+        2010,
+        2031
       ],
       "regions": [
-        3455,
-        3565
+        3483,
+        3593
       ]
     },
     "upstream": {
@@ -128,10 +133,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40129323481"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40132595761"
     },
-    "note": "Published geometry/text chain passed two strict frozen staged gates. Latest62 Rust tests,11 tooling tests,322 local native observations (139base/111geometry/72names);1997/2018 productionlines3455/3565regions. Different agents independently reviewed original9mappings and exact follow-up; no exclusions/deps/threshold changes. Hosted CI passed.20complete original ports+1partial remain a small subset of1344; fullShapes, schema, conversion and performance packets incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/56315822f1839e2b35306c2e6e0b43ebe7a00320"
+    "note": "Published frame-only snapshot passed strict frozen staged hook and11 tooling tests;30 native frame metadata observations match. Surface is excluded from this revision and remains unaccepted. No performance/full-SDF completion claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/66be4c775afa594baaf6fbcfbc72abddee168e94"
   }
 }
