@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T19:24:27.717155Z",
+  "updated_at": "2026-10-24T20:14:51.193564Z",
   "state": "active",
-  "summary": "Reviewed SDF 1.6/1.7 support and atomic pose validation are integrated and published. Message foundation accepted; headless transport and full first-slice qualification remain open.",
+  "summary": "Clock/control bridge passes real C++ client conformance and the strict local gate; independent review is underway. IMU/poses/reset and full headless qualification remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
-      "title": "Headless transport integration",
-      "detail": "Reviewed producer revisions are ready: msgs2f74484 and transport1cf0867. Next implementation is bounded clock/IMU publication and polled control services. Network setup/join stays outside stepping; real C++ clients and observable overload are required."
+      "title": "Native-client clock and control bridge review",
+      "detail": "Working tree: C++client observes clock, requests3 steps of an actual SDF/Rapier world and receives3ms; unsupported controls rejected. Fullgate38 Rusttests+9 gate tests,804/806lines1169/1186regions, eachcrate>95%. Transport peer review in progress; not yet published."
     },
     {
       "id": "SLICE-01",
@@ -82,10 +82,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40125014203"
     },
-    "note": "Independent SDF-owner review and all seven scene tests pass; strict local/staged gates pass30 Rust tests+9 gate tests, each of five crates >95% lines/regions. Hosted verification pending for this exact source revision. Original retained parity, full feature matrix and measured speedup remain open.",
+    "note": "Published196fa66 SDF integration passed exact local/staged and hosted gates:30 Rust tests+9 gate tests, eachof5 crates>95% lines/regions. New clock/control measurements are working-tree evidence in active work, not this published revision. Full retained parity, feature matrix and measuredspeedup remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/196fa6634c3ecd87a3c8b44c9a8fd1674b479ca0"
   },
   "phase_status": {
