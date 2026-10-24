@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T21:34:14.369128Z",
+  "updated_at": "2026-10-24T21:42:47.242770Z",
   "state": "active",
-  "summary": "CORE-01 is accepted. Validated local model removal is reviewed and published. The remote-removal candidate passes real C++ interoperability; final queue and timeout cases are being verified.",
+  "summary": "CORE-01 is accepted and local model removal passes hosted CI. The remote-removal candidate passes 66 Rust checks, four real C++ client scenarios and the untouched native removal reference; independent review is active.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Remote model-removal services",
-      "detail": "Working implementation serves native remove and remove/blocking protocols, preserving queued versus completed replies and final pose publication. Four C++ scenarios pass. Bounded batch, duplicate, malformed, paused/running, retained-neighbor and client-timeout tests are being finalized for independent review."
+      "detail": "Frozen candidate: 66 Rust and 9 gate tests pass; 1344/1355 lines, 1986/2026 regions. Bounded deferred /remove and /remove/blocking, same-batch duplicates, ID precedence, paused/running behavior and client-timeout handling are tested. Native UserCommandsTest.Remove passes unchanged; its full light/shape port remains partial."
     },
     {
       "id": "SLICE-01",
@@ -112,10 +112,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40134690534"
     },
-    "note": "Published local removal passed independent transport review and strict staged verification: 59 Rust and 9 gate tests; every crate exceeds 95% coverage. Hosted run pending. Remote-service measurements are separate; full reset, TPE, resources, sensor scheduling and performance remain open.",
+    "note": "Exact published local-removal revision passed independent review, strict staged verification and hosted CI. Every production crate exceeds 95%. Current remote-service evidence is separate and under review. Full reset, TPE, resources, sensor scheduling and performance remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5fd5e49bf3ad594a21d174c076cb6c234ff47b93"
   },
   "phase_status": {
