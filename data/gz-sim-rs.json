@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T16:16:39.585582Z",
+  "updated_at": "2026-10-24T16:24:58.133574Z",
   "state": "active",
   "summary": "Bevy stepping, full-f64 rigid bodies, IMU measurements and a constrained SDF scene loader are reviewed. The complete server slice is still in progress.",
   "model": "Coordinator; architecture, integration and review",
@@ -9,12 +9,12 @@
     {
       "id": "CLI-01",
       "title": "Headless exact-step CLI",
-      "detail": "SDF file input and deterministic step control implemented; error-path coverage must pass before acceptance."
+      "detail": "Five CLI tests pass, including atomic overflow and output IO errors; independent review complete, exact staged gate next."
     },
     {
       "id": "QLT-01",
       "title": "Quality gates and integration review",
-      "detail": "Staged-tree coverage is enforced. Full profile matrix and changed-line enforcement remain open."
+      "detail": "Added strict per-crate changed-line coverage with full push/PR base, owned-only LLVM instrumentation and eight gate regression tests; independent gate review pending."
     }
   ],
   "accepted_slices": [
@@ -53,16 +53,16 @@
     "CLI-01": "in_progress"
   },
   "quality": {
-    "revision": "f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886",
-    "rust_tests": 23,
+    "revision": "working tree after f0eeb2a",
+    "rust_tests": 28,
     "coverage": {
       "lines": [
-        597,
-        599
+        632,
+        634
       ],
       "regions": [
-        867,
-        880
+        925,
+        939
       ]
     },
     "upstream": {
@@ -71,11 +71,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40108767785"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions"
     },
-    "note": "Counts and hosted CI cover the reviewed four-crate revision; each crate exceeds 95% lines and regions. CLI working-tree region coverage currently fails. Selected C++ reference cases pass; no performance gain has been measured.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886"
+    "note": "Full local current-profile gate passes: each of five crates exceeds 95% lines and regions; all 33 changed executable CLI lines covered. Eight gate regression tests pass. Working-tree changes await staged check and hosted CI. Full parity, feature matrix and performance comparison remain open."
   },
   "phase_status": {
     "P0": "in_progress",
