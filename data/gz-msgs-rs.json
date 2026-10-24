@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T19:25:55Z",
+  "updated_at": "2026-10-24T19:40:01Z",
   "state": "active",
   "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Lazy instance factory and concurrent construction",
-      "detail": "Lazy instance factory and original concurrency/environment cases pass locally; native reference evidence and independent review are being prepared. MSG-01 acceptance is separate from the remaining full 83-case ledger, tooling, conversions and release qualification."
+      "title": "Nested headers and multi-message construction",
+      "detail": "Published reviewed lazy/concurrent factory and three original mappings. Next bounded ports retain nested wire lengths and all three messages in one schema; full conversion and release scope remains open."
     }
   ],
   "accepted_slices": [
@@ -62,6 +62,11 @@
       "title": "MSG-01 formal coordinator acceptance",
       "commit": "30ade168180f97aa0bcaf447b278aaf1c4c0a5ba",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/30ade168180f97aa0bcaf447b278aaf1c4c0a5ba/docs/acceptance/MSG-01.md"
+    },
+    {
+      "title": "Lazy instance factory and original concurrent/environment behavior",
+      "commit": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca0ef2e996af391566f89946cce6669f0a11d9c6"
     }
   ],
   "remaining": [
@@ -75,33 +80,33 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
-    "rust_tests": 43,
+    "revision": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
+    "rust_tests": 48,
     "coverage": {
       "lines": [
-        502,
-        502
+        597,
+        597
       ],
       "regions": [
-        731,
-        740
+        874,
+        883
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 33,
+      "ported": 36,
       "partial": 15
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40126279492"
+    },
+    "note": "Published factory slice independently reviewed by sdformat owner and passed strict staged gate. MSG-01 accepted separately; MSG-02 retains unported conversion/cloud/tooling/release scope. Hosted factory CI running; previous exact revision hosted success retained.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca0ef2e996af391566f89946cce6669f0a11d9c6",
+    "previous_ci": {
+      "revision": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40121346194"
-    },
-    "note": "Published descriptor path slice passed source/assertion/native review, exact staged 43-test gate and hosted CI. Six original fixtures preserved; own-first state before directory listing failure is natively checked. New factory implementation is outside this revision; its local coverage is 597/597 owned Rust lines and 874/883 regions. Full packets remain incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
-    "previous_ci": {
-      "revision": "e73e046fab7213173eb30587d72453a93fc4abd2",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40118485527"
     }
   }
 }
