@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:48:17.133810Z",
+  "updated_at": "2026-10-24T17:56:17.066114Z",
   "state": "active",
-  "summary": "Clean hosted native gate passed for reviewed one-way services and loader repair; immutable staged verification is also reviewed and published.",
+  "summary": "Two clean hosted native gates passed. Reviewed bounded multipart cancellation is published and its hosted run is pending.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Cancellation during malformed multipart draining",
-      "detail": "Bound native multipart draining with explicit cancellation checks while preserving frame synchronization for live nodes."
+      "title": "Multipart cancellation hosted validation",
+      "detail": "Reviewed deterministic per-frame interruption and counter behavior; strict staged checks passed and hosted run is pending."
     },
     {
-      "id": "QLT-01",
-      "title": "Immutable staged gate hosted rerun",
-      "detail": "Published reviewed blob/path/mode verification and concurrent index/HEAD guards; prior production revision hosted gate succeeded."
+      "id": "NET-02",
+      "title": "Native default partition identity",
+      "detail": "Auditing hostname:username and USER/NSS behavior against the pinned native implementation; explicit base configuration remains stable."
     }
   ],
   "accepted_slices": [
@@ -62,6 +62,11 @@
       "title": "Immutable staged blobs, complete export and concurrent index guards",
       "commit": "2bbbf8c99c2075c7259bf8fde148d6e5ffa17b70",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2bbbf8c99c2075c7259bf8fde148d6e5ffa17b70"
+    },
+    {
+      "title": "Cancellation during malformed multipart draining",
+      "commit": "d996929a5316f2eaaea8edf53d19453a98886deb",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d996929a5316f2eaaea8edf53d19453a98886deb"
     }
   ],
   "remaining": [
@@ -77,16 +82,16 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "c06e09731c7b149af70ff9b1712ace97cb04bbad",
-    "rust_tests": 34,
+    "revision": "d996929a5316f2eaaea8edf53d19453a98886deb",
+    "rust_tests": 35,
     "coverage": {
       "lines": [
-        1017,
-        1037
+        1033,
+        1054
       ],
       "regions": [
-        1523,
-        1581
+        1539,
+        1599
       ]
     },
     "upstream": {
@@ -95,10 +100,10 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40117116928"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40118290123"
     },
-    "note": "Hosted c06e097 passed: 34 Rust tests, 14 tooling tests, two original native cases; 393 applicable IDs reconciled and 25 conditioned retained. Separate reviewed gate follow-up2bbbf8c has 17 tooling tests; its hosted rerun is pending.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c06e09731c7b149af70ff9b1712ace97cb04bbad"
+    "note": "Latest cancellation slice passed strict staged gate with35 Rust tests and17 tooling tests. Previous hosted revisionsc06e097 and2bbbf8c passed full slice gates; latest hosted run is pending.418 retained native cases remain incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d996929a5316f2eaaea8edf53d19453a98886deb"
   }
 }
