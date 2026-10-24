@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-24T17:36:46.606840Z",
+  "updated_at": "2026-10-24T17:39:52.865806Z",
   "state": "active",
-  "summary": "Hosted diagnostics identified a missing library-path handoff; repair is under review. One-way services pass local native gates.",
+  "summary": "Reviewed one-way services and native loader repair are published; strict local gates pass and hosted validation is pending.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "QLT-01",
-      "title": "Hosted native enumeration validation",
-      "detail": "Archived target stderr proves enumeration lacked isolated LD_LIBRARY_PATH; explicit environment forwarding and regression are under peer review."
-    },
-    {
-      "id": "NET-02",
-      "title": "Gazebo one-way Empty-response services",
-      "detail": "Independent review and staged checks passed for one-way services, including expired local-request rejection; publication queued with loader repair."
+      "title": "Hosted native rerun and immutable staged verification",
+      "detail": "Monitor the repaired native loader environment; freeze and guard the staged Git tree against concurrent index edits."
     }
   ],
   "accepted_slices": [
@@ -47,6 +42,16 @@
       "title": "Structured native enumeration with retained diagnostics",
       "commit": "26ecc9a5430f0de7b2d2ac068b16e16ca2c88747",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/26ecc9a5430f0de7b2d2ac068b16e16ca2c88747"
+    },
+    {
+      "title": "Bounded one-way Empty-response services",
+      "commit": "3a69c5361d2f8f1ada30e9dd6f9a4789cdd3aa91",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3a69c5361d2f8f1ada30e9dd6f9a4789cdd3aa91"
+    },
+    {
+      "title": "Isolated native enumeration environment and loader diagnostics",
+      "commit": "c06e09731c7b149af70ff9b1712ace97cb04bbad",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c06e09731c7b149af70ff9b1712ace97cb04bbad"
     }
   ],
   "remaining": [
@@ -55,37 +60,35 @@
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
-  "blockers": [
-    "Hosted native enumeration loader failure is diagnosed; reviewed repair and hosted rerun remain."
-  ],
+  "blockers": [],
   "plan_status": {
     "NET-01": "in_progress",
     "NET-02": "in_progress",
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "26ecc9a5430f0de7b2d2ac068b16e16ca2c88747",
-    "rust_tests": 30,
+    "revision": "c06e09731c7b149af70ff9b1712ace97cb04bbad",
+    "rust_tests": 34,
     "coverage": {
       "lines": [
-        987,
-        1006
+        1017,
+        1037
       ],
       "regions": [
-        1486,
-        1545
+        1523,
+        1581
       ]
     },
     "upstream": {
       "total": 418,
       "ported": 1,
-      "partial": 0
+      "partial": 1
     },
     "ci": {
-      "state": "failure",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40116203772"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40117116928"
     },
-    "note": "Hosted source build passed; enumeration failed loading libgz-utils.so.5 because native environment was not forwarded. Repair under review; no hosted success claimed.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/26ecc9a5430f0de7b2d2ac068b16e16ca2c88747"
+    "note": "Both independently reviewed commits passed strict staged native gates. Hosted validation of corrected loader environment is pending.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c06e09731c7b149af70ff9b1712ace97cb04bbad"
   }
 }
