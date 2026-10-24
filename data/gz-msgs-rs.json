@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "repository": "gz-msgs-rs",
+  "updated_at": "2026-10-24T16:12:44Z",
+  "state": "active",
+  "summary": "216 canonical schemas and maintained protobuf interop validated; CLI and enum conversion slices await review.",
+  "model": "Assigned gpt-6.1-sol, medium reasoning",
+  "active": [
+    {
+      "id": "MSG-01",
+      "title": "Message runtime qualification",
+      "detail": "Canonical schemas, descriptors, C++ conformance and signed-zero dependency fixes validated; release qualification remains."
+    },
+    {
+      "id": "MSG-02",
+      "title": "Conversions and message tooling",
+      "detail": "29 integration tests plus five unchanged C++ CLI cases pass locally; 197 native enum cases match; pending cohesive assertion review."
+    }
+  ],
+  "accepted_slices": [
+    {
+      "title": "Maintained canonical protobuf runtime and lossless wire envelope",
+      "commit": "e1800c3e8d058ce7358b393e5f7aba6dd912920f",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e1800c3e8d058ce7358b393e5f7aba6dd912920f"
+    },
+    {
+      "title": "Primitive conversions and 14 reviewed assertion mappings",
+      "commit": "b941c012e324d0f4ab627ac24d723bb31f4e7448",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/b941c012e324d0f4ab627ac24d723bb31f4e7448"
+    },
+    {
+      "title": "Native signed Time fields and exact boundary wire fixtures",
+      "commit": "a7ce983e5deb1bc182471e6328d7598204b33b63",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7ce983e5deb1bc182471e6328d7598204b33b63"
+    }
+  ],
+  "remaining": [
+    "Complete retained conversion families and packed point-cloud utilities",
+    "External descriptor loading, retry/concurrency and full formatting conformance",
+    "Packaging, performance comparison and full retained-test review"
+  ],
+  "blockers": [],
+  "plan_status": {
+    "MSG-01": "in_progress",
+    "MSG-02": "in_progress"
+  },
+  "quality": {
+    "revision": "2f283f382a3dd60477983f9770b1850d497775d0",
+    "rust_tests": 29,
+    "coverage": {
+      "lines": [
+        352,
+        352
+      ],
+      "regions": [
+        510,
+        513
+      ]
+    },
+    "upstream": {
+      "total": 83,
+      "ported": 14,
+      "partial": 26
+    },
+    "ci": {
+      "state": "unknown",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions"
+    },
+    "note": "Local staged gates pass. Coverage combines handwritten src/build and only changed vendored predicate lines/regions; unchanged upstream/generated code excluded by provenance. Partial counts are pending-review mappings, not parity completion. Native baseline 82 C++ and 1 Python tests pass; hosted CI unverified."
+  }
+}

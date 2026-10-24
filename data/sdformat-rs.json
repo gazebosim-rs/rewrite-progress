@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "repository": "sdformat-rs",
+  "updated_at": "2026-10-24T16:14:06.319341Z",
+  "state": "active",
+  "summary": "Five reviewed semantic/parser slices are pushed; legacy XML compatibility is implemented and under independent review.",
+  "model": "gpt-6.1-sol / high",
+  "active": [
+    {
+      "id": "SDF-01",
+      "title": "Legacy XML compatibility review",
+      "detail": "Lexical prefix/opaque content preservation, native probes and strict gate evidence; full typed sensor families remain pending."
+    },
+    {
+      "id": "SDF-02",
+      "title": "Defaults and conversions",
+      "detail": "Native probes found omitted moving-joint axis acceptance; SDF1.7 conversion subset next."
+    }
+  ],
+  "accepted_slices": [
+    {
+      "title": "Preserve exact self poses and local frame precision",
+      "commit": "3a6572ce12dc4fb161bb1f32cbb5401c0b079f81",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3a6572ce12dc4fb161bb1f32cbb5401c0b079f81"
+    },
+    {
+      "title": "Resolve model and include placement frames through semantic graphs",
+      "commit": "6b6326e33be44e8cf5723e26b074f10d7f9bd817",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6b6326e33be44e8cf5723e26b074f10d7f9bd817"
+    },
+    {
+      "title": "Enforce SDF frame scopes and root model constraints",
+      "commit": "7be2eec8e0f03af726f59a4fd0b17f543af51a6b",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7be2eec8e0f03af726f59a4fd0b17f543af51a6b"
+    },
+    {
+      "title": "Validate typed IMU configuration and reconcile runtime source ledger",
+      "commit": "297cc8383b19da80a91cc09a55adf5868cf2866c",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/297cc8383b19da80a91cc09a55adf5868cf2866c"
+    },
+    {
+      "title": "Implement semantic SDF loading and strict staged quality gates",
+      "commit": "7fa1fc2e2790855c0db9af7f1f370c233135c418",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7fa1fc2e2790855c0db9af7f1f370c233135c418"
+    }
+  ],
+  "remaining": [
+    "Complete retained schema/version conversions, include merge, automatic inertia and import/export semantics.",
+    "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
+    "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
+  ],
+  "blockers": [],
+  "plan_status": {
+    "REF-02": "in_progress",
+    "API-01": "in_progress",
+    "QLT-01": "in_progress",
+    "SDF-01": "in_progress",
+    "SDF-02": "in_progress"
+  },
+  "quality": {
+    "revision": "working tree after 3a6572ce12dc4fb161bb1f32cbb5401c0b079f81",
+    "rust_tests": 33,
+    "coverage": {
+      "lines": [
+        1557,
+        1578
+      ],
+      "regions": [
+        2681,
+        2789
+      ]
+    },
+    "upstream": {
+      "total": 1344,
+      "ported": 6,
+      "partial": 1
+    },
+    "ci": {
+      "state": "unknown",
+      "url": null
+    },
+    "note": "Working-tree core diagnostics only; 6 tooling tests, 35 native/Rust acceptance probes and 4 numeric observations pass. Six reviewed complete assertion ports plus one reviewed partial IMU subset; most upstream cases remain pending. Full staged verification awaits XML review. No release or performance completion claim."
+  }
+}

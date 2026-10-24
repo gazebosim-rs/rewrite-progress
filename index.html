@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Live implementation and verification status for the Gazebo Rust rewrite.">
+  <title>Gazebo Rust · Rewrite progress</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to progress</a>
+  <header>
+    <div class="brand"><span class="mark" aria-hidden="true">g▧</span><span>GAZEBO <b>RUST</b><small>REWRITE TRACKER</small></span></div>
+    <nav aria-label="Primary"><a href="#developing">In development</a><a href="#remaining">Remaining work</a><a href="https://github.com/gazebosim-rs/gz-sim-rs/blob/main/docs/PLAN.md">Implementation plan ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="intro">
+      <div><p class="eyebrow">IMPLEMENTATION / LIVE STATUS</p><h1>One rewrite.<br><span>The whole picture.</span></h1><p class="lede">Track what is built, what is being developed, and what remains across the Gazebo Rust repositories.</p></div>
+      <aside class="sync"><span class="pulse" aria-hidden="true"></span><strong>Agent-maintained status</strong><p id="sync-status" role="status">Loading public reports…</p><button id="refresh" type="button">Refresh reports ↻</button><p class="muted">Refreshes every minute while open. GitHub caching can delay updates; each report shows its own timestamp.</p></aside>
+    </section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section aria-labelledby="overview-title"><div class="section-head"><h2 id="overview-title">Overall progress</h2><span class="muted">Acceptance gates, not estimates</span></div><div id="metrics" class="metrics"></div><p class="explanation">Reviewed increments can be useful while a broad plan item remains incomplete. Packet counts are unweighted; they are not a percentage of engineering effort. Coverage measures tested code, not feature completeness.</p><div id="phases" class="phases"></div></section>
+    <section id="developing" aria-labelledby="developing-title"><div class="section-head"><h2 id="developing-title">Under development</h2><a href="#repositories">View repository evidence ↓</a></div><div id="active-work" class="active-work"></div></section>
+    <section id="repositories" aria-labelledby="repositories-title"><div class="section-head"><h2 id="repositories-title">Repository reports</h2><span class="muted">Independent ownership · shared contracts</span></div><div id="repo-grid" class="repo-grid"></div></section>
+    <section id="remaining" aria-labelledby="remaining-title"><div class="section-head"><h2 id="remaining-title">The full work plan</h2><span id="packet-count" class="muted"></span></div><div class="filters"><label>Search the plan<input id="search" type="search" placeholder="e.g. MuJoCo, sensors, ABI"></label><label>Repository<select id="repo-filter"><option value="all">All repositories</option></select></label><label>Status<select id="state-filter"><option value="all">All work</option><option value="remaining">Remaining work</option><option value="in_progress">In progress</option><option value="in_review">In review</option><option value="blocked">Blocked</option><option value="not_started">Not started</option><option value="unknown">Unreported</option><option value="complete">Accepted</option></select></label></div><div class="table-wrap"><table><caption class="sr-only">Implementation packets, owners, status and acceptance criteria</caption><thead><tr><th>Work packet</th><th>Owner / phase</th><th>Status</th><th>Acceptance evidence required</th></tr></thead><tbody id="packets"></tbody></table></div><p id="empty-filter" hidden>No packets match these filters.</p><details class="system-detail"><summary id="system-summary">Simulator systems inventory</summary><p>Every system is retained unless the plan explicitly records a disposition. Family progress alone does not migrate an individual system.</p><div id="systems" class="system-grid"></div></details></section>
+    <section class="closing"><h2>What counts as done?</h2><p>The retained behavior and upstream assertions must pass, each owned crate must exceed 95% line and region coverage, and the required compatibility, performance and release checks must have evidence. All eight phase gates remain visible until accepted.</p><a href="https://github.com/gazebosim-rs/rewrite-progress/blob/main/AGENTS.md">How agents update this tracker ↗</a></section>
+  </main>
+  <footer><span>gazebosim-rs / rewrite-progress</span><div><a id="catalog-source" href="https://github.com/gazebosim-rs/gz-sim-rs/blob/main/docs/IMPLEMENTATION_TASKS.md">Plan source</a><a href="https://github.com/gazebosim-rs/rewrite-progress/tree/status/data">Status history ↗</a><a href="https://github.com/gazebosim-rs/rewrite-progress">Dashboard source ↗</a></div></footer>
+</body>
+</html>

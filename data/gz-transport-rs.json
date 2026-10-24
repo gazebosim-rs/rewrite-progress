@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "repository": "gz-transport-rs",
+  "updated_at": "2026-10-24T16:10:02.627478Z",
+  "state": "active",
+  "summary": "Real C++ wire interoperability and bounded configuration slices accepted; maintained messages migration in review and hosted reference bootstrap underway.",
+  "model": "gpt-6.1-sol / high",
+  "active": [
+    {
+      "id": "NET-01",
+      "title": "Maintained message runtime integration",
+      "detail": "Migration commit passes native peers and strict staged coverage; coordinator review pending."
+    },
+    {
+      "id": "QLT-01",
+      "title": "Hosted native reference bootstrap",
+      "detail": "Isolated pinned native source chain builds successfully; wiring ordinary hosted CI and feature-conditioned reference ledger."
+    }
+  ],
+  "accepted_slices": [
+    {
+      "title": "Bounded ZeroMQ discovery, pub/sub and services",
+      "commit": "3ae95796c7f243951d8b63ce3ad34b6269088fba",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3ae95796c7f243951d8b63ce3ad34b6269088fba"
+    },
+    {
+      "title": "Explicit environment configuration and native differential checks",
+      "commit": "13b4be5f1d66501c0742008766cf80df910cf935",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/13b4be5f1d66501c0742008766cf80df910cf935"
+    }
+  ],
+  "remaining": [
+    "Complete NET-01 matrix including relay, host/process scope and default interface selection.",
+    "Wire statistics, throttling, authentication, SQLite logs/replay and complete legacy CLI.",
+    "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
+    "Equal-fidelity latency, throughput and allocation measurements."
+  ],
+  "blockers": [],
+  "plan_status": {
+    "NET-01": "in_progress",
+    "NET-02": "in_progress",
+    "QLT-01": "in_progress"
+  },
+  "quality": {
+    "revision": "5403622574f578363c377a6f2d08f1f40762a87d",
+    "rust_tests": 30,
+    "coverage": {
+      "lines": [
+        987,
+        1006
+      ],
+      "regions": [
+        1486,
+        1545
+      ]
+    },
+    "upstream": {
+      "total": 418,
+      "ported": 1,
+      "partial": 0
+    },
+    "ci": {
+      "state": "unknown",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions"
+    },
+    "note": "Exact staged local Linux native gate passed with real C++ peers and fatal LLVM warnings. Hosted native CI is being replaced because the previous custom runner was unavailable; no hosted native pass claimed."
+  }
+}

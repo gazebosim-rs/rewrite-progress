@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "repository": "gz-sim-rs",
+  "updated_at": "2026-10-24T16:10:32.191517Z",
+  "state": "active",
+  "summary": "Bevy stepping, full-f64 rigid bodies, IMU measurements and a constrained SDF scene loader are reviewed. The complete server slice is still in progress.",
+  "model": "Coordinator; architecture, integration and review",
+  "active": [
+    {
+      "id": "CLI-01",
+      "title": "Headless exact-step CLI",
+      "detail": "SDF file input and deterministic step control implemented; error-path coverage must pass before acceptance."
+    },
+    {
+      "id": "QLT-01",
+      "title": "Quality gates and integration review",
+      "detail": "Staged-tree coverage is enforced. Full profile matrix and changed-line enforcement remain open."
+    }
+  ],
+  "accepted_slices": [
+    {
+      "title": "Bevy core, f64 Rapier probes and noise-free IMU",
+      "commit": "f2b2f18d58142fe63c0997509532ecd229464d86",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f2b2f18d58142fe63c0997509532ecd229464d86"
+    },
+    {
+      "title": "SDF scene construction, full inertia and reset-safe IMU sampling",
+      "commit": "f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886"
+    }
+  ],
+  "remaining": [
+    "Complete exact-step SDF server with clock/pose/IMU transport and a C++ comparison.",
+    "DART, MuJoCo and TPE adapters; joints, forces, complete capability contract.",
+    "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
+    "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
+    "Complete upstream parity, feature coverage, comparative performance and release qualification."
+  ],
+  "blockers": [],
+  "plan_status": {
+    "REF-01": "in_progress",
+    "REF-02": "in_progress",
+    "PHY-00": "in_progress",
+    "API-01": "in_progress",
+    "QLT-01": "in_progress",
+    "CORE-01": "in_progress",
+    "CORE-02": "in_progress",
+    "PHY-01": "in_progress",
+    "PHY-05": "in_progress",
+    "SENSOR-01": "in_progress",
+    "LOAD-01": "in_progress",
+    "SLICE-01": "in_progress",
+    "CLI-01": "in_progress"
+  },
+  "quality": {
+    "revision": "f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886",
+    "rust_tests": 23,
+    "coverage": {
+      "lines": [
+        597,
+        599
+      ],
+      "regions": [
+        867,
+        880
+      ]
+    },
+    "upstream": {
+      "total": null,
+      "ported": 0,
+      "partial": 1
+    },
+    "ci": {
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40106916944"
+    },
+    "note": "Counts cover the reviewed four-crate revision; each crate exceeds 95% lines and regions. The linked hosted run is for the earlier f2b2f18 revision. CLI working-tree region coverage currently fails. Selected C++ reference cases pass; no performance gain has been measured."
+  },
+  "phase_status": {
+    "P0": "in_progress",
+    "P1": "in_progress",
+    "P2": "in_progress",
+    "P3": "not_started",
+    "P4": "not_started",
+    "P5": "not_started",
+    "P6": "not_started",
+    "P7": "not_started"
+  }
+}
