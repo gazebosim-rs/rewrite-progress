@@ -77,7 +77,9 @@ function detail(title, items, render) {
 function renderRepos() {
   $("repo-grid").replaceChildren(...catalog.repositories.map(name => {
     const report = reports.get(name), card = node("article", undefined, "repo"), top = node("div", undefined, "repo-top"), title = node("h3");
-    title.append(link(name, `https://github.com/gazebosim-rs/${name}`)); top.append(title, tag(report?.state || "unknown")); card.append(top);
+    const badge = tag(report?.state || "unknown");
+    if (report?.state === "complete") badge.textContent = "Owner reports complete";
+    title.append(link(name, `https://github.com/gazebosim-rs/${name}`)); top.append(title, badge); card.append(top);
     if (!report) { card.append(node("p", "Report unavailable. See the status history or refresh to retry.", "summary")); return card; }
     card.append(node("p", report.summary, "summary"));
     const stale = Date.now() - Date.parse(report.updated_at) > 24 * 3600_000;
