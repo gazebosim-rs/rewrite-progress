@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T22:03:12Z",
+  "updated_at": "2026-10-25T22:22:42Z",
   "state": "active",
-  "summary": "The complete fixed-fixture DOMLink.Sensors original is public and hosted-green after independent review of all 318 assertions; 67 complete and 17 partial original cases are reviewed. Broader DOM, parser and runtime parity remains open.",
+  "summary": "The pinned DOMSensor.Type original value transitions are public and hosted-green after independent review; 68 complete and 16 partial original cases are reviewed. The complete fixed-fixture DOMLink.Sensors case remains accepted; broader DOM/parser/runtime parity is open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Complete mutable DOMSensor.Type value behavior",
-      "detail": "Reconcile pinned native SetType(enum/string) and invalid-string-preserves-state assertions through a bounded Rust value API, while preserving parsed literal XML kinds and existing consumer behavior. Native replay, independent review and strict gates required."
+      "title": "Review mutable Sensor payload observations",
+      "detail": "Independently compare all eight pinned DOMSensor.MutableSensors blocks with owned SensorConfig mutation, preserve the ForceTorque-tagged IMU original and qualify exact source/metadata, strict hook and hosted run. Six native Sensor construction/copy/move originals are read-only inventoried next."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Complete native Sensor type value transitions",
+      "commit": "f44fa295b5fcd135490632a94e821d5fc08ef0d3",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f44fa295b5fcd135490632a94e821d5fc08ef0d3"
+    },
     {
       "title": "Port complete fixed-fixture DOMLink.Sensors original",
       "commit": "4e14e8b88930dc73254de58e7fea272919fd13c8",
@@ -400,28 +405,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "4e14e8b88930dc73254de58e7fea272919fd13c8",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4e14e8b88930dc73254de58e7fea272919fd13c8",
+    "revision": "f44fa295b5fcd135490632a94e821d5fc08ef0d3",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f44fa295b5fcd135490632a94e821d5fc08ef0d3",
     "rust_tests": 229,
     "coverage": {
       "lines": [
-        3990,
-        4009
+        3996,
+        4015
       ],
       "regions": [
-        6940,
-        7140
+        6947,
+        7147
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 67,
-      "partial": 17
+      "ported": 68,
+      "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40238160417"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40239690601"
     },
-    "note": "Independent complete fixed-fixture assertion/source and final binding receipts SHA1bf75df6/8ef32759; normal protected staged hook, exact hosted verify run40238160417 and unchanged native DOMLink.Sensors1/0 pass. All318 original assertions map on the unchanged27-sensor fixture via owned Rust Vec lookup and read-only CustomSensor/XML. 229Rust/16tools;3990/4009 production lines,6940/7140 regions,3801/3814 staged executable lines. Native Link method identity, arbitrary lookup, mutable Element, generic grammar, other Link originals and broad SDF phase acceptance remain open. Root consumer pin is coordinator-owned SDF575."
+    "note": "Pinned DOMSensor.Type native1/0; independent source/final receipts SHAacbfd43e/daf2b30a and publication-envelope SHAf57ad3e. Ordinary Rust enum assignment and checked canonical-string mutation preserve all default/23 enum/23 string/invalid-string original observations; no C++ facade identity claim. Normal protected hook and exact hosted run40239690601 pass229Rust/16tools,3996/4015 production lines6947/7147 regions,3807/3820 staged executable lines. Approved pre-receipt treea0ac3e and public receipt-envelope tree909deb0 differ only by exact authored reference/review.json. Parsed Sensor.kind/config/Element synchronization and broad phase remain open; Root consumer pin is coordinator-owned SDF575."
   }
 }
