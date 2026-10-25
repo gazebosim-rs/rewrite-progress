@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T11:11:15.950752Z",
+  "updated_at": "2026-10-25T11:19:07.941525Z",
   "state": "active",
-  "summary": "Native axis-limit load parity is published with green hosted CI; owned contact-sensor configuration and the shared SensorConfig enum are being implemented.",
+  "summary": "Native axis-limit load parity is public and green; the owned Contact/IMU configuration packet is frozen for independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Contact sensor metadata and typed configuration",
-      "detail": "Isolated implementation uses Imu or Contact variants with no dummy IMU. Preserves exact configuration XML, ordered collision names, distinct envelope/contact topics and owned source data. Existing IMU assertions stay intact; native corpus and partial original contact assertions are being completed."
+      "title": "Contact configuration independent review",
+      "detail": "Frozen 13-file successor uses boxed Imu or Contact variants without dummy settings. Author 148 Rust and 13 tools, 81 native rows/full Sensors baseline pass; 3156/3177 lines and 5508/5623 regions, 69/70 changed. Eleven named native-accepted policy/schema gaps stay explicit; partial contact assertions and unchanged IMU accessors await independent review."
     },
     {
       "id": "SDF-01",
       "title": "Producer consumer adoption review",
-      "detail": "Independently reviewing the coordinator\u2019s controlled producer pins, owned material/link metadata reset behavior and explicit nondefault flag rejection in a fresh private source/target. Whole packet acceptance remains coordinator-owned."
+      "detail": "Coordinator adoption review approved exact source and readable metadata after 112 fresh Rust checks, nine actual C++ scenarios and two both-engine boundary controls. Root normal staged/hosted publication remains coordinator-owned. Whole SDF packet acceptance stays open."
     }
   ],
   "accepted_slices": [
