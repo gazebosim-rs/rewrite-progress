@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T22:09:06.271200+00:00",
+  "updated_at": "2026-10-25T22:13:40.294988+00:00",
   "state": "active",
-  "summary": "Published hosted-green orientation and reviewed232Rust/24tools/15Cpp evidence retention. New Transport consumer adoption is held after an existing service request timed out in its exact staged gate; diagnosis underway, no waiver or adoption claim.",
+  "summary": "Published hosted-green232Rust/24tools/15Cpp simulator and evidence-retention checks. Consumer Transport2d adoption remains held: exact existing control test reproduces response QueueFull under publishing load; bounded response-lane fix and unchanged-test verification underway.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -48,8 +48,8 @@
     },
     {
       "id": "IO-01",
-      "title": "Separate-Node first-frame delivery integration",
-      "detail": "Producer2d exact40237034528 SUCCESS. New first1ms/seq0 same-process Node-origin/reset case passes bothengines; independent replay and old2a negative also verified. Exact consumerf816 staged gate FAILED existing real_transport_commands... service Request Timeout (44pass1fail serverunit); frozen failure retained, reviewer holds approval. Root instrumenting request/counters, Transport owner investigating queue/worker path; no cause or retry-waiver claim. Public root remains05 withold2a."
+      "title": "Fix response admission under publishing load",
+      "detail": "Retained exactf816 gate failed existing5s controlRequest. Diagnostic-only full45 replay classifies firstmalformed request received/rejected, response_failures1 and631389 queue_drops; independent Transport flood also proves RespondQueueFull\u2192clientTimeout. Newfirst1ms/seq0 directorigin/reset test passes bothengines, old2a negativefails. Transport owner has isolated bounded-response-lane prototype and is validating unchanged45/server plus producer tests; no source/public/hosted acceptance yet. Public root remainsold2a."
     }
   ],
   "accepted_slices": [
@@ -308,7 +308,7 @@
   ],
   "blockers": [
     "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue.",
-    "Consumer Transport2d adoption held for classification/fix of exact staged service-request Timeout; new direct-frame test passes. Publishing load versus request/reply queue starvation is a hypothesis until controlled counters/reproduction identify the failing path. No timeout/assertion/coverage gate will be relaxed."
+    "Consumer Transport2d adoption held: exact staged service-request Timeout retained. Diagnostic-only unchanged-assertion replay and independent Transport flood identify a concrete response-admission QueueFull path under publication load. Bounded response-lane production fix/full native/coverage/review/hosted verification required; no deadline/assertion/gate relaxation."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -347,10 +347,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40237907580"
     },
-    "note": "Independent V2 source/failure/final metadata review approved after fixing two V1 findings. Normal protected232Rust/24tools/15Cpp passes with complete retained exact tree/log/hash/coverage evidence; allcrate>95%,3516/3552lines5369/5486regions,noRustproductiondelta. Original child/index failures preserved; retention-only errors fail; missing output explicitly partial. Latest hosted pending; prior d3a48c3 exact40236973773 SUCCESS. No broader QLT/P0/P2 or performance acceptance claim.",
+    "note": "Independent V2 source/failure/final metadata review approved after fixing two V1 findings. Normal protected232Rust/24tools/15Cpp passes with complete retained exact tree/log/hash/coverage evidence; allcrate>95%,3516/3552lines5369/5486regions,noRustproductiondelta. Original child/index failures preserved; retention-only errors fail; missing output explicitly partial. Exact hosted40237907580 SUCCESS; prior d3a48c3 exact40236973773 SUCCESS. No broader QLT/P0/P2 or performance acceptance claim.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/05c9291d1856186db0125b15a3c034daeac2b9f2"
   },
   "phase_status": {
