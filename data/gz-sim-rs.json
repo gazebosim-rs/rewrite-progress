@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T10:45:09.104324+00:00",
+  "updated_at": "2026-10-25T11:01:43.343724+00:00",
   "state": "active",
-  "summary": "Published checked local velocity/wrench inputs after independent review and182 Rust/12 tooling/nine C++ checks, including the backend-owner collision fix. Next P2 focus: simple-joint variant and complete selected-fixture reference/performance evidence.",
+  "summary": "Checked local velocity/wrench inputs are published and hosted-green. Controlled SDF material/link metadata and matching Messages/Transport adoption passes184 Rust/nine C++ checks and is under review before the simple-joint variant.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Published66861d3 consumes SDF7ed5ad02: omitted CLI step selects first profile (not later marked default), explicit overrides retain precedence, one parse, owned profile metadata and IO-free reset. Three actual native Server clock controls match both engines. Independent69scene/CLI+three native+two countercontrols passed; normal staged168Rust12tools9CPP,49/49scene16/16CLI changed lines. Nondefault contact limits explicitly reject; no pacing claim. Hosted40182386735 succeeded. Newer producer fields await separate preservation/validation."
+      "detail": "Published native first-profile timestep and owned reset metadata. Next9file controlled adoption in review: SDF706 axis fixes/material/link flags plusmatchingTransport7ce/Msgs2cea; Fuel374 unchanged. VisualMaterial+defaultLinkProperties owned/restored, nondefault physics flags explicitly unsupported. Full184Rust/12tools/nineCPP passed2748/2783lines4329/4436regions and28/28delta. OneMessages/prost identity; legitimate socket minor versions retained. Contactenum/joints stillunadopted. Independentreview/normalhook/dependencyhostedqualification pending."
     },
     {
       "id": "PHY-05",
@@ -261,10 +261,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40185967463"
     },
-    "note": "Exact normal staged hook passed182 Rust checks,12 tooling checks and nine existing real C++ scenarios. Every production crate exceeds95% line/region coverage; changedTPE15/15Rapier56/56scene178/179. Independent review replayed107backend/scene tests, exact2original failing owner controls now passing, and30fresh native WorldReset/wrench controls with matching proof hashes. Review found/corrected backend-local bodyID ownership collision. D23/unsupported TPE wrench and analytic cross-engine halfEuler position bound explicit; no original assertions/exclusions/thresholds weakened. Hosted40185967463 running; no fullP2 or performance claim.",
+    "note": "Exact normal staged hook passed182 Rust checks,12 tooling checks and nine existing real C++ scenarios. Every production crate exceeds95% line/region coverage; changedTPE15/15Rapier56/56scene178/179. Independent review replayed107backend/scene tests, exact2original failing owner controls now passing, and30fresh native WorldReset/wrench controls with matching proof hashes. Review found/corrected backend-local bodyID ownership collision. D23/unsupported TPE wrench and analytic cross-engine halfEuler position bound explicit; no original assertions/exclusions/thresholds weakened. Hosted40185967463 succeeded; no fullP2 or performance claim.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/25c801d44e21c06956afcdfe1bb885714db7cee0"
   },
   "phase_status": {
