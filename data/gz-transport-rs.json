@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T13:01:54Z",
+  "updated_at": "2026-10-25T13:12:07Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and one partial; qualified-topic decomposition is public and hosted green. The bounded ServiceListRemap assertion port is staged and under independent review.",
+  "summary": "Forty-three reviewed complete upstream ports and two partial ports; remapped local service listing is public with hosted CI running. A bounded remapped topic-list assertion is staged.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "ServiceListRemap one-node /foo to /bar assertion candidate passed the exact staged strict gate and is in independent review. Forty-three originals have reviewed complete ports, one ambiguity case remains partial, and374 remain pending on public main. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "One-node ServiceListRemap assertion mapping is public570e07e and independently reviewed partial; exact hosted run40196075018 is in progress. TopicListRemap one-node assertion candidate is staged for strict gate and independent review. Forty-three originals have reviewed complete ports, two cases are partial, and373 remain pending. Global discovery, callback/process-global scope, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -222,6 +222,11 @@
       "title": "Native validated fully qualified topic decomposition with complete original assertion port",
       "commit": "32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4"
+    },
+    {
+      "title": "Reviewed partial remapped local service listing assertion",
+      "commit": "570e07eaaea96969bf05bb7c8727099b636f6063",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/570e07eaaea96969bf05bb7c8727099b636f6063"
     }
   ],
   "remaining": [
@@ -237,9 +242,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
-    "rust_tests": 142,
+    "revision": "570e07eaaea96969bf05bb7c8727099b636f6063",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/570e07eaaea96969bf05bb7c8727099b636f6063",
+    "rust_tests": 143,
     "coverage": {
       "lines": [
         1649,
@@ -253,12 +258,12 @@
     "upstream": {
       "total": 418,
       "ported": 43,
-      "partial": 1
+      "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40194804217"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40196075018"
     },
-    "note": "Public32bbebe exact main after mandatory strict hook:142 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,8/8 changed executable lines. Independent review approved three output tuples and five negatives through borrowed decomposition API; exact hosted run40194804217 succeeded. ServiceListRemap candidate remains staged under independent review; whole NET packets and process-global origin remain open."
+    "note": "Public570e07e exact main after independently bound partial ServiceListRemap assertion and mandatory normal strict hook:143 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,0/0 changed production executable lines. Exact hosted run40196075018 is in progress. Global discovery listing remains open; the next TopicListRemap assertion is staged for gate/review."
   }
 }
