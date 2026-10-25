@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T18:17:55Z",
+  "updated_at": "2026-10-25T18:56:10Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the four-Node AllTopicInfo count correction is hosted-green at public 11a6ab6.",
+  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; reviewed staged-failure evidence fix is public with exact hosted CI queued. Publisher lifetime review remains held for an unclassified earlier interop failure.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 11a6ab6 adds reviewed immediate same-process publisher/subscriber endpoint identity and partial NodeTest.AllTopicInfo four-Node count mapping. Normal strict hook and exact hosted run40219787490 succeeded. Native full MessagePublisher vector/atomicity, remote timing and Publisher-after-Node-drop lifetime remain open; the latter is next separately reviewed runtime scope."
+      "detail": "Public 11a6ab6 hosted-green retains partial four-Node AllTopicInfo mapping. Separate tooling-only failure-output retention is public cda6f08 with normal hook green and exact hosted run queued. Native Publisher-after-Node-drop lifetime candidate is unpublished pending classification of one earlier instrumented interop failure; full MessagePublisher vector/atomicity and remote timing remain open."
     }
   ],
   "accepted_slices": [
@@ -290,15 +290,17 @@
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
-  "blockers": [],
+  "blockers": [
+    "Publisher lifetime candidate: one instrumented interop failure lacked retained stdout under the previous verifier; exact failing binary and log are preserved, and source publication is held until the assertion is identified or the cause is independently classified."
+  ],
   "plan_status": {
     "NET-01": "in_progress",
     "NET-02": "in_progress",
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
+    "revision": "cda6f086c8dd49532d6db6a9cb17feb20f70209f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda6f086c8dd49532d6db6a9cb17feb20f70209f",
     "rust_tests": 166,
     "coverage": {
       "lines": [
@@ -316,9 +318,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40219787490"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40223587938"
     },
-    "note": "Public exact reviewed tree64aa27c1; final staged and normal hook pass166 Rust/22 tooling, strict2085/2124 lines3142/3271 regions249/251 changed. Native NodeTest.AllTopicInfo1/0, reviewer private selected1/0 supplements2/0 full166/0 and two focused mutants fail. Partial: no atomic full MessagePublisher vector/metadata, remote timing or Publisher-after-Node-drop lifecycle claim. Exact hosted run40219787490 SUCCESS on public11a6ab6 with policy and native-parity-and-coverage jobs green."
+    "note": "Public exact reviewed tree b720c588; tooling-only staged failure evidence fix passed 24 tooling checks, strict 2085/2124 production lines and 3142/3271 regions, 0 changed production lines, independent split-index/failure-status review and normal hook. Exact hosted run 40223587938 queued; no success claim. Publisher lifetime source remains unpublished after an unclassified first interop failure."
   }
 }
