@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T06:52:21.422149Z",
+  "updated_at": "2026-10-25T07:00:51.996488Z",
   "state": "active",
-  "summary": "Published socket2/Fuel compatibility update is hosted green; independently reviewed verifier Git-context isolation is next.",
+  "summary": "Published worktree verifier isolation passed its exact staged gate; bounded provider-record service inspection is under full verification.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Verifier Git-context isolation and hosted socket2 qualification",
-      "detail": "Published 2032012 is hosted green with all 29 committed input hashes verified, 116 Rust checks and strict coverage. The separate exported-child Git-environment isolation fix is frozen for independent review: 116 Rust and 22 tooling checks pass, including a real temporary-worktree hook with custom index and untouched config/working files. Service-provider prototype is preserved until that harness fix publishes."
+      "title": "Provider-record service inspection and hosted hook qualification",
+      "detail": "Published 4d390a8 preserves authoritative parent Git context while isolating exported verifier children. Independently reviewed real temporary-worktree and alternate-index regressions pass; exact staged gate passes 116 Rust and 22 tooling checks. Hosted CI is running. The preserved provider-record API now retains duplicate equal-signature records; its full native/coverage gate is running before a fresh independent original-assertion review."
     },
     {
       "id": "NET-02",
@@ -167,6 +167,11 @@
       "title": "socket2 0.6.5 pin compatible with public Fuel and Tokio, with exact graph proof",
       "commit": "2032012921d85cf40ca1b35d09bed617e1818802",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2032012921d85cf40ca1b35d09bed617e1818802"
+    },
+    {
+      "title": "Exported verifier Git-context isolation with actual linked-worktree and alternate-index regression",
+      "commit": "4d390a8594bd113a49f04c99d9cd6d2ce25ae4cc",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/4d390a8594bd113a49f04c99d9cd6d2ce25ae4cc"
     }
   ],
   "remaining": [
@@ -182,8 +187,8 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "2032012921d85cf40ca1b35d09bed617e1818802",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2032012921d85cf40ca1b35d09bed617e1818802",
+    "revision": "4d390a8594bd113a49f04c99d9cd6d2ce25ae4cc",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/4d390a8594bd113a49f04c99d9cd6d2ce25ae4cc",
     "rust_tests": 116,
     "coverage": {
       "lines": [
@@ -201,9 +206,9 @@
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40169866773"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40171068480"
     },
-    "note": "Published 2032012 passes the exact reviewed normal-main staged gate: 116 Rust and 21 tooling/native checks, 1528/1550 lines and 2323/2389 regions, with no production-source delta. All staged input hashes match committed blobs. Independent fresh graph and all 116 serial-policy Rust checks pass; public Fuel 374, direct messages e2001a3 and exact Tokio 1.53.3 resolve one socket2 0.6.5. Windows lock pruning is recorded; no other dependency versions or owned Rust changed. Hosted 40169866773 is green; all 29 input hashes match committed blobs and 116 Rust checks pass. Hosted production coverage is 1528/1550 lines and 2323/2389 regions. Worktree hook Git-context defect remains a separate immediate fix, not qualified by main success. Thirty-one complete originals, one partial and 386 pending remain; whole NET-01/NET-02/performance acceptance stays open."
+    "note": "Published 4d390a8 passes the exact reviewed normal staged gate: 116 Rust and 22 tooling checks, 1528/1550 lines and 2323/2389 regions, with no production-source delta. All 29 recorded input hashes match committed blobs. Independent review passes all 22 tooling checks and demonstrates the baseline failure in disposable worktree fixtures. Parent intended-index context and final guards remain intact; only exported verifier children lose official Git local variables. Hosted CI is pending. Prior socket2 compatibility commit 2032012 is hosted green and resolves the public Fuel/Tokio graph. Thirty-one complete originals, one partial and 386 pending remain; whole NET-01/NET-02/performance acceptance stays open."
   }
 }
