@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T04:44:05.608083Z",
+  "updated_at": "2026-10-25T05:09:11.487706Z",
   "state": "active",
-  "summary": "Publisher membership is hosted green; bounded local topic inventory and three proposed original helper ports are frozen for independent review.",
+  "summary": "Publisher membership is hosted green; repaired local-topic inventory is frozen after review found an inherited duplicate-filter cleanup leak.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Local topic inventory and retained publication assertions",
-      "detail": "Published 6a28004 is hosted green with all 29 inputs verified. Next local advertised/subscribed lease inventory is frozen for independent review; strict author gate passes 115 Rust/21 tooling, 1525/1547 lines, 2318/2384 regions and 48/48 changed. Three exact native original helper cases pass; their ledger mappings remain pending until reviewed. Full global query/subscriber-cache and timing scope remain open."
+      "detail": "Independent review proved duplicate ZeroMQ filters survived final receiver retirement in the existing path. The repaired candidate owns one filter per topic and preserves every typed receiver; an actual XPUB unsubscribe/no-new-delivery regression passes. Strict author gate: 116 Rust/21 tooling, 1528/1550 lines, 2323/2389 regions, 51/51 changed. Repaired source and three proposed original helper ports are frozen for review. Published quality remains bound to 6a28004; global query/cache/timing scope stays open."
     },
     {
       "id": "NET-02",
