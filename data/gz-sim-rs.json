@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T07:58:07.479687+00:00",
+  "updated_at": "2026-10-25T08:14:15.739416+00:00",
   "state": "active",
-  "summary": "Published Fuel and hook fixes are hosted-green. Sensor cadence now passes163Rust+10tools and nine actual C++ scenarios; frozen16-file slice is under independent review before the mandatory staged hook. Full P2 remains open.",
+  "summary": "Native-phase IMU cadence is published after exact163Rust+10tools/nineC++ staged checks and independent replay. Both backends support slow/fractional/high rates with pause/reset and checked time faults. Hosted pending; full P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,12 +14,12 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Under final independent review: phase-preserving private IMU clock, per-physics acceleration, pause/reset and typed time-overflow fault. Both engines at0/10/60/1000/2000Hz pass; oldsevenCPP retained plus two actual10Hz/reset cases. Full163Rust+10tools/nineCPP,2422/2450lines3789/3883regions,56/56delta; native10controls+original1/0. OldRust10Hz rejection has strongerpositive replacement pendingexplicitreview. No publication/noise/runtime-registration/P2 acceptance yet."
+      "detail": "Publisheda9cfe05:0/10/60/1000/2000Hz bothengines,exactphase/physicsaccel/pause/reset,typedtimefault. Exact163Rust+10tools/nineCPP and56/56delta pass. Independent87scene/server checks/nineCPP+4strengthenedclocktests,10freshnativecontrols/original1/0+36extra comparisons pass; explicitRust10Hz rejection disposition approved. Hosted40175577427 pending. Noise,subscriberactivation/runtime registration,trigger/metrics/otherfamilies remain open."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published SDF/Bevy/f64Rapier and TPE headless stepping, local includes, clock/pose/IMU and pause/remove/reset through seven real C++ scenarios. Remaining offline Fuel acceptance, scheduling/noise, simple joint, velocity/force inputs and full equal-work report. P2 not complete."
+      "detail": "Published both-backend headless stepping,local/offlineFuelincludes,clock/pose/IMU,pause/remove/reset andnative-phaseIMUrates throughnineactualC++cases. RemainingP2:simplejoint,velocity/forceinputs,noise/fullresourcecontractsandcompleteequal-worknativecomparison/performance. Broaderbackend/system inventories remain open."
     },
     {
       "id": "PHY-02",
@@ -182,6 +182,11 @@
       "title": "Worktree-safe exported verifier with real alternate-index and Git-context regression",
       "commit": "15c7dd167651a6861f78d2448ab68f14f71e8cd9",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/15c7dd167651a6861f78d2448ab68f14f71e8cd9"
+    },
+    {
+      "title": "Native-phase IMU rates, per-physics acceleration, reset and two new real C++ cadence cases",
+      "commit": "a9cfe05c944adc8664e642917103506eaf041e9f",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a9cfe05c944adc8664e642917103506eaf041e9f"
     }
   ],
   "remaining": [
@@ -213,29 +218,29 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "15c7dd167651a6861f78d2448ab68f14f71e8cd9",
-    "rust_tests": 157,
+    "revision": "a9cfe05c944adc8664e642917103506eaf041e9f",
+    "rust_tests": 163,
     "coverage": {
       "lines": [
-        2372,
-        2400
+        2422,
+        2450
       ],
       "regions": [
-        3725,
-        3819
+        3789,
+        3883
       ]
     },
     "upstream": {
       "total": null,
       "ported": 3,
-      "partial": 3
+      "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40171303035"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40175577427"
     },
-    "note": "Exact normal staged157Rust+10tools/seven real C++ scenarios pass, workspace2372/2400lines3725/3819regions and eachcrate>95%; no productionRust delta. Independent exact5-file review/fresh10tools and extra Git-isolation/adversarial index-guard controls pass. Exact hosted40171303035 succeeded; Fuel150a21e hosted40170482056 succeeded. Complete FUEL/P2, full native baseline/performance and export-ignore hardening remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/15c7dd167651a6861f78d2448ab68f14f71e8cd9"
+    "note": "Exact normal staged163Rust+10tools/nine real C++ scenarios pass; everycrate>95%lines/regions,scene56/56delta,no exclusions/tolerance/threshold changes. Independent exact17file review includes87scene/server checks/nineCPP,final4clocktests,10nativecontrols+original1/0+36extra controls; all native proof hashes match after recorded ROS lineage, alternate proof retained. Rust-only10Hz rejection replaced by strongerpositive assertions with explicit independent approval; originalclockmapping partial,none retired. Hosted40175577427 pending; priorFuel150 andhook15c hostedgreen. FullSENSOR/P2/equal-workperformance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a9cfe05c944adc8664e642917103506eaf041e9f"
   },
   "phase_status": {
     "P0": "in_progress",
