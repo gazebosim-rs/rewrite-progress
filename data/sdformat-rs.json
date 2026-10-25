@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T11:19:07.941525Z",
+  "updated_at": "2026-10-25T11:28:36.332949Z",
   "state": "active",
-  "summary": "Native axis-limit load parity is public and green; the owned Contact/IMU configuration packet is frozen for independent review.",
+  "summary": "Native axis-limit parity is public and green; contact configuration preserves prior IMU error order, and a small owned joint-clone prerequisite is in separate review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Contact configuration independent review",
-      "detail": "Frozen 13-file successor uses boxed Imu or Contact variants without dummy settings. Author 148 Rust and 13 tools, 81 native rows/full Sensors baseline pass; 3156/3177 lines and 5508/5623 regions, 69/70 changed. Eleven named native-accepted policy/schema gaps stay explicit; partial contact assertions and unchanged IMU accessors await independent review."
+      "title": "Contact configuration integration and review",
+      "detail": "Corrected isolated packet preserves exact old IMU envelope error precedence with four baseline diagnostic controls. Author 149 Rust/13 tools and 85 native rows/full Sensors original pass; 3160/3181 lines, 5519/5631 regions, 77/78 changed. Original 81 rows and all prior IMU assertions retained. Awaiting additive Clone parent before final independent review; eleven named policy/schema gaps remain."
     },
     {
-      "id": "SDF-01",
-      "title": "Producer consumer adoption review",
-      "detail": "Coordinator adoption review approved exact source and readable metadata after 112 fresh Rust checks, nine actual C++ scenarios and two both-engine boundary controls. Root normal staged/hosted publication remains coordinator-owned. Whole SDF packet acceptance stays open."
+      "id": "API-01",
+      "title": "Owned joint configuration cloning review",
+      "detail": "Separate four-file prerequisite adds three derived Clone implementations for JointKind, Joint and Axis. Consumer ownership test outlives the DOM and mutates a second clone. Author 143 Rust/13 tools, unchanged coverage and zero changed executable production lines; coordinator independent review pending. No parsing/runtime/native mapping changes."
     }
   ],
   "accepted_slices": [
