@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T20:02:43Z",
+  "updated_at": "2026-10-25T20:23:52Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the nonblocking Publisher interest snapshot is reviewed and hosted-green at public 2a545f1. The earlier lost-output interop failure remains unclassified.",
+  "summary": "Forty-four reviewed complete and fourteen partial upstream ports; the local-once delivery port is published at 1422aff with hosted CI in progress. The earlier lost-output interop failure remains unclassified.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 2a545f1 adds independently reviewed atomic-only Publisher::connection_snapshot for same-Node admitted local and remembered remote matching interest; exact strict staged gate, normal hook and hosted run40228259908 passed. This is a membership hint, not a delivery/readiness guarantee; remote discovery is eventual and BYE does not clear remembered registrations. Publisher lifetime hosted-green at1d13c01; earlier lost-output interop status101 remains unclassified."
+      "detail": "Public 1422aff adds a reviewed PARTIAL retained two-process local-once assertion: exactly ten ordered local Vector3d deliveries and no extra with a real remote C++ subscriber. Native original was replayed separately; Rust port passed strict staged and normal protected hook. Two descriptors are only a fixture-specific surrogate for native distinct process UUIDs; remote receipt is unasserted. Hosted run40230542175 is in progress. Publisher interest snapshot remains hosted-green at2a545f1; earlier lost-output interop status101 remains unclassified."
     }
   ],
   "accepted_slices": [
@@ -297,6 +297,11 @@
       "title": "Reviewed nonblocking Publisher interest snapshot",
       "commit": "2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2a545f1d1983c2f5cb1a82d9fadc18a6278175dd"
+    },
+    {
+      "title": "Reviewed partial local-once delivery with remote subscriber",
+      "commit": "1422aff0a0a89b1616f7a936ed71606b5affc27f",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1422aff0a0a89b1616f7a936ed71606b5affc27f"
     }
   ],
   "remaining": [
@@ -312,9 +317,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
-    "rust_tests": 176,
+    "revision": "1422aff0a0a89b1616f7a936ed71606b5affc27f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1422aff0a0a89b1616f7a936ed71606b5affc27f",
+    "rust_tests": 177,
     "coverage": {
       "lines": [
         2260,
@@ -328,12 +333,12 @@
     "upstream": {
       "total": 418,
       "ported": 44,
-      "partial": 13
+      "partial": 14
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40228259908"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40230542175"
     },
-    "note": "Exact reviewer-bound tree b6e547e4, strict staged gate and normal protected hook passed 2260/2307 lines,3396/3544 regions,105/107 changed. Exact hosted run40228259908 succeeded on public2a545f1, including real C++ peer and owned coverage jobs. Snapshot is only a matching-registration hint. Earlier instrumented interop status101 remains UNCLASSIFIED."
+    "note": "Exact reviewer-bound tree cb94574a; final strict staged gate and normal protected hook passed 2260/2307 lines,3396/3544 regions,zero changed production lines. Pinned native original1/0 replayed separately. Hosted run40230542175 is in progress; no green claim. Readiness uses two descriptors as a fixture-specific surrogate for two native process UUIDs; remote receipt remains unasserted. Earlier lost-output interop status101 remains UNCLASSIFIED."
   }
 }
