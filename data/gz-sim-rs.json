@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T13:52:10.149845+00:00",
+  "updated_at": "2026-10-25T14:40:06.845530+00:00",
   "state": "active",
-  "summary": "Published world-revolute slice remains hosted-green. Shared-SDF IMU comparisons pass, but publication is held while repairing a pinned native C++ blocking-request cleanup race exposed by the strict peer gate.",
+  "summary": "Published shared-SDF native/Rust IMU reference and the concrete C++ client lifecycle repair are hosted-green. Developing the matched TPE physics/IMU/process-local delivery benchmark; equal-work performance and the full selected-fixture matrix remain P2 work.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,12 +14,12 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Published a9cfe05 supports 0, 10, 60, 1000 and 2000 Hz on both engines with exact phase, per-physics acceleration, pause/reset and checked time faults. The staged gate passed 163 Rust tests, 10 tooling checks, nine C++ scenarios and 56/56 changed lines. Independent review replayed 87 scene/server checks, four final clock tests, 10 native controls, the original test and 36 extra comparisons. Exact hosted CI 40175577427 succeeded. Noise, activation, registration, triggers, metrics and other sensor families remain pending."
+      "detail": "Published a9cfe05 supports 0, 10, 60, 1000 and 2000 Hz on both engines with exact phase, per-physics acceleration, pause/reset and checked time faults. The staged gate passed 163 Rust tests, 10 tooling checks, nine C++ scenarios and 56/56 changed lines. Independent review replayed 87 scene/server checks, four final clock tests, 10 native controls, the original test and 36 extra comparisons. Exact hosted CI 40175577427 succeeded. Noise, activation, registration, triggers, metrics and other sensor families remain pending. Shared-SDF100-sample native/Rust acquisition is now published d9e1133 with hosted40201843451 success; full sensor configurations/noise/families remain open."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published exact Rapier/TPE SDF stepping, local/offline Fuel, owned metadata, clock/pose/IMU transport, local velocity/wrench inputs, pause/remove/reset and bounded world-revolute joint variant. Remaining immediate P2 work: complete selected-fixture assertion matrix and equal-work C++ reference/performance report; joint hosted qualification succeeded. Developing same-SDF native Server+Physics+IMU controls on DART/TPE with observed subscriber/publisher readiness, queued start, unpaced1ms and100exact samples; Rust comparison and review pending, no performance claim. Existing9actualC++ peer cases remain required. Native wrench/velocity transport systems, full downloads/noise and wider inventories remain retained later-plan work unless selected fixture requires them. Shared-IMU exact staged gate failed in old native blocking-request handler cleanup; candidate held. Native/Rust100-sample comparison and mutation controls pass independently. Repairing client lifecycle before a fresh strict gate; a rerun alone is not treated as a flake fix."
+      "detail": "Published d9e1133 shared pure-SDF acquisition reference after independent200 native rows/Rust/mutation review, strict195-Rust/12-tool/nine-C++ normal hook and exact hosted40201843451 SUCCESS. Actual native Server+Physics+Imu DART/TPE at unpaced1ms, observed local readiness and queued start; all sample components/times compared over100precontact steps. Worldjointb83 also hosted-green. Remaining full selected-fixture matrix and equal-work performance report; no complete P2 or same-engine DART claim."
     },
     {
       "id": "PHY-02",
@@ -33,8 +33,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Preserve strict checks while fixing native client request cleanup",
-      "detail": "Published staged-export isolation remains accepted. New shared-IMU candidate failed existing native-client stderr assertion although request values passed. Pinned419 source and immutable installed header show blocking waiter and response thread both remove one handler. Test-only public async request + same7000ms future waiter preserves all11callsite payloads/assertions byte-for-byte on reversal; source independently audited, authorall9C++ scenarios pass, independent network replay pending. No SDKpatch, retry, ignoredstderr or coverage/assertion waiver."
+      "title": "Published native client lifecycle repair and staged isolation",
+      "detail": "Published94814ee passed independent native replay, strict194-Rust/12-tool/nine-C++ gate, normal hook and exact hosted40200364518. Public async request plus same7000ms bounded future avoids pinned419 SDK double removal; all11callsite payloads/assertions reverse byte-for-byte. No SDK patch, retry, ignored stderr or waived check. Shared-IMU adoption now passes all195 Rust and nine C++ scenarios."
     },
     {
       "id": "LOAD-01",
@@ -44,10 +44,20 @@
     {
       "id": "PHY-05",
       "title": "Qualify published simple-joint variant and remaining backend scope",
-      "detail": "Published b83fc1f after independent139-check/nine-C++ replay, three fresh native DART controls and three additional reviewer controls. Mandatory normal staged hook194Rust/12tools/nine actual C++ scenarios passed; all crates >95%, aggregate3162/3208lines4914/5049regions, changed197/197backend211/216scene. Owned SDF frames, continuous angle, reset/removal and owner checks; preContact4ed pin deliberate. Exact hosted40197224258 completed SUCCESS. General articulations, same-engine parity and full backend acceptance remain open."
+      "detail": "Published b83fc1f after independent139-check/nine-C++ replay, three fresh native DART controls and three additional reviewer controls. Mandatory normal staged hook194Rust/12tools/nine actual C++ scenarios passed; all crates >95%, aggregate3162/3208lines4914/5049regions, changed197/197backend211/216scene. Owned SDF frames, continuous angle, reset/removal and owner checks; preContact4ed pin deliberate. Exact hosted40197224258 completed SUCCESS. General articulations, same-engine parity and full backend acceptance remain open. Performance prototype separately smoke-tested TPE/IMU/process-local full-message delivery; identical counts, logical protobuf sizes and checksums on native/Rust. Release application/library builds underway; debug timings are not performance evidence."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Native C++ request-client lifecycle repair with original assertions",
+      "commit": "94814ee7a7c420f98ea81e12aabcea3764a3c72a",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/94814ee7a7c420f98ea81e12aabcea3764a3c72a"
+    },
+    {
+      "title": "Shared-SDF native/Rust IMU acquisition reference",
+      "commit": "d9e1133b89ac511313d555c721d55ba1fe1afa04",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d9e1133b89ac511313d555c721d55ba1fe1afa04"
+    },
     {
       "title": "Reviewed world-revolute SDF constraints with continuous state and reset/removal ownership",
       "commit": "b83fc1fe36fdbaa7edb05a697453676ad72e4db6",
@@ -232,8 +242,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue.",
-    "Shared-IMU publication held on native C++ blocking-request double-removal race. Bounded test-client repair under independent replay; all checks retained."
+    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -254,8 +263,8 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "b83fc1fe36fdbaa7edb05a697453676ad72e4db6",
-    "rust_tests": 194,
+    "revision": "d9e1133b89ac511313d555c721d55ba1fe1afa04",
+    "rust_tests": 195,
     "coverage": {
       "lines": [
         3162,
@@ -273,10 +282,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40197224258"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40201843451"
     },
-    "note": "Published exact independently bound treecaa7a8ed; normal mandatory hook194Rust/12tools/nine actual C++ scenarios passed, all production crates >95% lines/regions. Independent139 replay+nine C++/three native+three reviewer controls approved; source receipt published. Exact hosted CI40197224258 completed SUCCESS. P2/equal-work performance and broader rewrite remain incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b83fc1fe36fdbaa7edb05a697453676ad72e4db6"
+    "note": "Published exact reviewed shared-IMU tree83535530: mandatory195 Rust/12 tooling/nine actual C++ scenarios and all per-crate >95% line/region gates pass, normal hook and hosted success. Two native100-sample controls and Rust/mutation replay qualified; previous failed gate retained and repaired through separately reviewed94814ee client lifecycle fix. Functional100ms/precontact scope, no P2/performance acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d9e1133b89ac511313d555c721d55ba1fe1afa04"
   },
   "phase_status": {
     "P0": "in_progress",
