@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T02:36:40.356059Z",
+  "updated_at": "2026-10-25T02:45:58.822949Z",
   "state": "active",
-  "summary": "Published loader remains green; visual float conversion and complete Shapes/terrain metadata candidates are frozen for separate independent reviews. SDF-01 exit evidence awaits coordinator acceptance.",
+  "summary": "Visual properties and exact native float getter semantics are published with green CI. Heightmap/polyline and complete Shapes assertions are reviewed and await final integrated receipt and strict publication gate.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Visual metadata and remaining Shapes fields",
-      "detail": "Visual candidate passes 104 Rust checks and 143 native observations (141 matching, two explicit nonfinite gaps); independent ABI/safety review requested isolated shim outputs. Both fault tests now pass from a fresh export using test-only RAII temporary directories. Terrain reviewer independently passed all 108 combined Rust checks,52 native observations and unchanged Shapes original, approving its complete assertion mapping after correcting native Vector2 tolerance. Clean parent integration, exact final receipts and strict staged/hosted publication remain required."
+      "title": "Heightmap/polyline metadata and full Shapes fixture",
+      "detail": "Integrated candidate atop green visual parent passes108 Rust checks,52 fresh native observations and exact Shapes original, with2440/2456 lines4289/4389 regions91/91 terrain delta. Independent assertion review approves native Vector2/Vector3/scalar bounds and full mapping; final clean-parent overlap receipt and normal strict staged/hosted gates remain required. No asset IO/image decoding/physical terrain/rendering effect."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain visual properties with native float getter semantics",
+      "commit": "0644c0f03c265762ba3b84ee4a99166be4baefb2",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0644c0f03c265762ba3b84ee4a99166be4baefb2"
+    },
     {
       "title": "Correct public loader version and deferred-validation documentation",
       "commit": "c75839fd7305432fda23837799753752adaa13e8",
@@ -160,16 +165,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c75839fd7305432fda23837799753752adaa13e8",
-    "rust_tests": 100,
+    "revision": "0644c0f03c265762ba3b84ee4a99166be4baefb2",
+    "rust_tests": 104,
     "coverage": {
       "lines": [
-        2292,
-        2308
+        2344,
+        2360
       ],
       "regions": [
-        4005,
-        4101
+        4089,
+        4185
       ]
     },
     "upstream": {
@@ -179,9 +184,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40151385981"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40155483004"
     },
-    "note": "Published documentation correction passed independent root review, exact strict staged gate and hosted CI. Executable behavior remains reviewed fluid metadata: 100 Rust tests, 32 complete and six partial upstream mappings. Root now rejects every Some fluid matrix before exposing a scene. Private visual candidate measurements are separate and unaccepted; no whole SDF-01/02 or performance completion claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c75839fd7305432fda23837799753752adaa13e8"
+    "note": "Public visual increment passed independent source/ABI/safety review, corrected fresh-export fault tests, exact frozen104-Rust/11-tool staged hook and hosted CI. Native143 observations retain141 matching finite/error rows and two explicit nonfinite gaps. Test-only tempfile isolates shim outputs; production dependencies/unsafe scope unchanged. No new original retirement, rendering/lidar/diagnostic-byte/performance claim. Current public mappings remain32complete/6partial; proposed full Shapes mapping belongs to the separate unpublished terrain slice.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0644c0f03c265762ba3b84ee4a99166be4baefb2"
   }
 }
