@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T16:45:49.892009Z",
+  "updated_at": "2026-10-25T16:56:42.506589Z",
   "state": "active",
-  "summary": "Published static-model correction has green CI; a pinned native pose-graph original has an isolated partial assertion port pending independent review.",
+  "summary": "Independently reviewed pose-graph partial assertion port is published and passed the normal strict staged hook; exact hosted CI is running.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Retain pose-relative graph original assertions",
-      "detail": "Isolated test-only candidate ports 8 model-root poses, 7 raw relative poses and 2 invalid-name failures from the unchanged native original fixture. Exact native original and 182 Rust/13 tools/fmt/Clippy/docs pass; author direct coverage is 3281/3297 lines, 5728/5839 regions. Independent assertion review and protected staged/hosted gates pending. Graph internals and exact native error code/text remain unported; no full case retirement."
+      "title": "Qualify native pose-relative graph assertion port",
+      "detail": "Published 1d364e9605700f56a426e6e5b5787d9a4e7105b0 ports 8 model-root poses, 7 relative poses and 2 invalid-name failures from the unchanged exact native original (1/0). Independent source and final binding approved; normal staged gate passes 182 Rust/13 tools, 3281/3297 lines, 5728/5839 regions, 3117/3129 exported executable lines. Hosted CI is running. Graph internals and exact native error code/text remain unported; partial only."
     }
   ],
   "accepted_slices": [
@@ -265,9 +265,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "6ab311eef76701ace7b44ea87ec03e0750394949",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6ab311eef76701ace7b44ea87ec03e0750394949",
-    "rust_tests": 181,
+    "revision": "1d364e9605700f56a426e6e5b5787d9a4e7105b0",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1d364e9605700f56a426e6e5b5787d9a4e7105b0",
+    "rust_tests": 182,
     "coverage": {
       "lines": [
         3281,
@@ -284,9 +284,9 @@
       "partial": 11
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40212744113"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40213973151"
     },
-    "note": "Exact normal staged hook and hosted core pass; 13 tooling checks and 15/15 changed executable lines. Independent review approves the static sink/canonical correction and one complete original mapping; 61 native corpus rows plus the exact original pass, and prior 150-row/four-original alias proof is unchanged. No simulator static-body/runtime, D23 or full packet acceptance."
+    "note": "Working-tree and normal staged hook pass on the exact published revision; independent review approves only a partial original assertion mapping. Hosted verify is running, so this new partial slice is not yet accepted. No production change, graph-internal facade or full packet claim."
   }
 }
