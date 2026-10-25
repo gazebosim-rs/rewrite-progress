@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T16:42:12.782814Z",
+  "updated_at": "2026-10-25T16:45:49.892009Z",
   "state": "active",
-  "summary": "Static-model graph attachment correction published with independent review, strict staged gate and green hosted CI; next retained native case is being scoped.",
+  "summary": "Published static-model correction has green CI; a pinned native pose-graph original has an isolated partial assertion port pending independent review.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Scope next retained native test/parser slice",
-      "detail": "Select a bounded original case or parser gap from the pinned SDFormat corpus, preserve exact assertions and fixtures, and obtain independent review before acceptance."
+      "title": "Retain pose-relative graph original assertions",
+      "detail": "Isolated test-only candidate ports 8 model-root poses, 7 raw relative poses and 2 invalid-name failures from the unchanged native original fixture. Exact native original and 182 Rust/13 tools/fmt/Clippy/docs pass; author direct coverage is 3281/3297 lines, 5728/5839 regions. Independent assertion review and protected staged/hosted gates pending. Graph internals and exact native error code/text remain unported; no full case retirement."
     }
   ],
   "accepted_slices": [
