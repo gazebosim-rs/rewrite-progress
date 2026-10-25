@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T07:06:29.738215Z",
+  "updated_at": "2026-10-25T07:20:22.101952Z",
   "state": "active",
-  "summary": "The hook Git-context correction is published and hosted green. Material string parity is corrected and under review; world physics profiles await independent review.",
+  "summary": "World physics profiles and native default selection are published and hosted green. Independently approved material metadata is being integrated separately.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Material metadata and native float semantics",
-      "detail": "Reviewer found six real script-name text mismatches. Narrow Param text correction retains all original102 native rows and appends eight exact controls; 124 Rust/110 native/original fixture/ABI checks pass. Independent corrected source/safety review continues; no PBR, IO or rendering effects."
-    },
-    {
-      "id": "SDF-01",
-      "title": "World physics profiles",
-      "detail": "Separate frozen candidate passes 122 Rust checks, 89 native observations and original Physics default/setter assertions. Owned profile metadata and first-default selection; no runtime engine/timestep choice. Independent review pending."
+      "detail": "Independent source/assertion/numeric safety review approved corrected material metadata after 124 owned Rust tests plus an extra string test, 110 native rows, original fixture and ABI proof. Separate integration onto public physics/hook parent is running; final overlap and staged/hosted gates pending."
     },
     {
       "id": "SDF-01",
@@ -23,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain native world physics profiles and default selection",
+      "commit": "7ed5ad02ac12185e071d0ab358de1adad61418e8",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7ed5ad02ac12185e071d0ab358de1adad61418e8"
+    },
     {
       "title": "Isolate staged verification from inherited hook Git context",
       "commit": "119e4f28801d2e95187eb32a838af466c1be9965",
@@ -195,28 +195,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "119e4f28801d2e95187eb32a838af466c1be9965",
-    "rust_tests": 119,
+    "revision": "7ed5ad02ac12185e071d0ab358de1adad61418e8",
+    "rust_tests": 122,
     "coverage": {
       "lines": [
-        2717,
-        2734
+        2857,
+        2875
       ],
       "regions": [
-        4772,
-        4876
+        4974,
+        5080
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 33,
+      "ported": 34,
       "partial": 10
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40171293531"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40172201116"
     },
-    "note": "Independent hook review passed all 13 tools and verified the old real-worktree regression fails on inherited Git context. Mandatory exact staged tree passed 119 Rust/13 tools, unchanged2717/2734 lines4772/4876 regions, whole-export policy2581/2594. Exact hosted CI is green. Production/native assertions and thresholds unchanged; whole SDF/QLT packets remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/119e4f28801d2e95187eb32a838af466c1be9965"
+    "note": "Independent source/assertion review passed 122 Rust tests, 89 fresh native observations, the original default/setter case and 15 additional edge controls; complete native proof matched. Exact normal staged gate passed 122 Rust/13 tools, 2857/2875 lines and 4974/5080 regions. Working changed lines 135/135; stricter exported-tree policy 2714/2728. Exact hosted CI green. Engine blocks, finite-double gaps and runtime solver/timestep policy remain explicit; no whole-packet acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7ed5ad02ac12185e071d0ab358de1adad61418e8"
   }
 }
