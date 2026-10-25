@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T13:30:20.996655Z",
+  "updated_at": "2026-10-25T13:34:52.402784Z",
   "state": "active",
-  "summary": "The reviewed bounded protobuf JSON single-quote slice is public; hosted CI is queued. MSG-01 accepted; MSG-02 remains open.",
+  "summary": "Bounded native-backed protobuf JSON single quotes are reviewed, public and hosted-successful. MSG-01 accepted; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "The 21-row single-quote mapping and two explicit native-positive gaps passed independent review and the normal worktree hook at d6090c7; hosted qualification is pending. Broader descriptor, formatting, installation, release and performance scope stays open."
+      "detail": "Next investigation: native-positive JSON raw control bytes and unknown backslash escapes, retained explicitly by the accepted single-quote slice. Broader descriptor, formatting, installation, release and performance scope stays open."
     }
   ],
   "accepted_slices": [
@@ -192,6 +192,11 @@
       "title": "Bounded protobuf JSON repeated-field trailing array commas with 43 native rows",
       "commit": "280d599b82ff27bafc341fdb73afd18cec7ee019",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/280d599b82ff27bafc341fdb73afd18cec7ee019"
+    },
+    {
+      "title": "Bounded protobuf JSON single quotes with 21 native parity rows and two explicit gaps",
+      "commit": "d6090c73d8dfc1d532224d6273a712f2820d4a41",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d6090c73d8dfc1d532224d6273a712f2820d4a41"
     }
   ],
   "remaining": [
@@ -224,15 +229,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40197887550"
     },
-    "note": "Independent semantic/final metadata reviews approved the bounded 66-row native JSON single-quote slice with two explicit native-positive gaps. Exact final staged gate and normal worktree hook passed 109 harness checks plus FactoryLazy, negative gates, snapshots/archive/downstream/source package. Root production coverage 1939/1942 lines and 3086/3104 regions; vendor patches unchanged. Hosted CI is queued; MSG-02 remains open.",
-    "previous_ci": {
-      "revision": "280d599b82ff27bafc341fdb73afd18cec7ee019",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40196574805"
-    },
+    "note": "Published single-quote slice passed independent semantic/final metadata review, final staged gate, normal worktree hook and exact hosted SHA verification. 109 harness checks plus FactoryLazy, 66 pinned native rows (21 new parity, two explicit gaps), negative gates, snapshots/archive/downstream/source package. Root production coverage 1939/1942 lines and 3086/3104 regions; vendor patches unchanged. MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d6090c73d8dfc1d532224d6273a712f2820d4a41"
   }
 }
