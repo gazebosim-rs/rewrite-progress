@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T09:39:25.801395+00:00",
+  "updated_at": "2026-10-25T09:52:13.553901+00:00",
   "state": "active",
-  "summary": "Published staged-source integrity fix is hosted-green. First-profile SDF timestep integration passes the full local gate and is under independent review; headless joints and commands remain next.",
+  "summary": "Published native first-profile timestep integration after independent review and the exact 168 Rust/12 tooling/nine C++ gate. Velocity/force commands are under development; P2 joints and equal-work reference/performance remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,12 +19,12 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published headless Rapier/TPE stepping, local and offline Fuel includes, clock/pose/IMU transport, pause/remove/reset and native IMU cadence through nine actual C++ scenarios. P2 still needs simple joints, velocity/force inputs, noise, remaining resource contracts and a complete equal-work native comparison with performance evidence. The wider backend and system inventories remain open."
+      "detail": "Published Rapier/TPE stepping, local/offline Fuel includes, owned physics profiles, clock/pose/IMU transport, pause/remove/reset and native IMU cadence through nine actual C++ scenarios. Exact P2 prerequisites still pending: simple-joint variant, velocity/force inputs and selected-fixture C++ equality/performance. Full downloads/noise and wider backend/system inventories remain required later-plan work; they are not added prerequisites for the local-resource noise-free IMU fixture."
     },
     {
       "id": "PHY-02",
       "title": "Complete remaining TPE capabilities and milestone inputs",
-      "detail": "Published model-local Aabb aggregation/parry Bvh contacts, static/mask filtering and same-ID reset composition. Eleven native rows and original StaticFiltering mapping reviewed; actual1e308 midpoint bug fixed with standard f64::midpoint. Narrow1000model/500tick benchmark: author1283.58msnative/87.63msRust, independent1290.16/87.89ms; shared-host/compiler/ISA/packaging qualified, not fullsim/P2. Geometry families, commands, nestedmodels and D23 remain open."
+      "detail": "Published model-local Aabb aggregation/parry Bvh contacts, static/mask filtering and same-ID reset composition. Eleven native rows and original StaticFiltering mapping reviewed; actual1e308 midpoint bug fixed with standard f64::midpoint. Narrow1000model/500tick benchmark: author1283.58msnative/87.63msRust, independent1290.16/87.89ms; shared-host/compiler/ISA/packaging qualified, not fullsim/P2. Geometry families, commands, nestedmodels and D23 remain open. Next bounded command work is isolated: checked world velocity and one-tick wrench primitives pass17backend checks and Clippy; not yet reviewed/accepted. Six actual native DART/TPE controls verify loaded engines. DART combines simultaneous velocity+force despite stale header prose; TPE force has no effect and needs explicit unsupported capability. Scene and real C++ command integration remain pending."
     },
     {
       "id": "FUEL-01",
@@ -39,10 +39,15 @@
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Frozen first-profile timestep integration consumes SDF7ed5ad02. Local gate passes168 Rust/12tools/nine actual C++ scenarios;2477/2507lines3856/3951regions,allcrate>95%,49/49scene16/16CLI changed lines. Three fresh native Server clock controls match both backends. Independent review and exact staged gate are running. Existing explicit overrides, single parse and owned reset metadata are preserved. Nondefault contact limits explicitly reject; pacing remains metadata. Newer material/link fields await separate preserved consumer adoption."
+      "detail": "Published66861d3 consumes SDF7ed5ad02: omitted CLI step selects first profile (not later marked default), explicit overrides retain precedence, one parse, owned profile metadata and IO-free reset. Three actual native Server clock controls match both engines. Independent69scene/CLI+three native+two countercontrols passed; normal staged168Rust12tools9CPP,49/49scene16/16CLI changed lines. Nondefault contact limits explicitly reject; no pacing claim. Hosted40182386735 running. Newer producer fields await separate preservation/validation."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Native first-profile timestep, explicit overrides and owned reset metadata",
+      "commit": "66861d37c9cf6444dbad01b8365a9be6ef600acd",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66861d37c9cf6444dbad01b8365a9be6ef600acd"
+    },
     {
       "title": "Bevy core, f64 Rapier probes and noise-free IMU",
       "commit": "f2b2f18d58142fe63c0997509532ecd229464d86",
@@ -228,16 +233,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "0b09a97cd42925f55649656dada0dc649fb7e926",
-    "rust_tests": 163,
+    "revision": "66861d37c9cf6444dbad01b8365a9be6ef600acd",
+    "rust_tests": 168,
     "coverage": {
       "lines": [
-        2422,
-        2450
+        2477,
+        2507
       ],
       "regions": [
-        3789,
-        3883
+        3856,
+        3951
       ]
     },
     "upstream": {
@@ -246,11 +251,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40178274916"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40182386735"
     },
-    "note": "Exact normal staged gate passed 163 Rust tests, 12 tooling checks and nine real C++ scenarios. Production Rust and coverage are unchanged: every crate exceeds 95% line and region coverage, with no exclusions or tolerances changed. Independent exact six-file review reran 12 tooling checks, reproduced baseline export-ignore failure, and checked SHA256 Git, non-UTF8 data/symlink targets and mode rejection. Hosted CI 40178274916 succeeded; IMU cadence a9cfe05 CI 40175577427 succeeded. Full P2 and equal-work performance acceptance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0b09a97cd42925f55649656dada0dc649fb7e926"
+    "note": "Normal exact staged hook passed168 Rust tests,12 tooling checks and nine actual C++ scenarios. Every production crate exceeds95% lines/regions;49/49scene16/16CLI changed executable lines. Independent review replayed69scene/CLI tests, three rebuilt native Server controls with matching proof hashes, and two extra both-engine counters. No existing assertions/thresholds/exclusions changed. Native controls disable plugins and establish clock/configuration only, not full physics/sensor/performance parity. Hosted40182386735 running;P2 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66861d37c9cf6444dbad01b8365a9be6ef600acd"
   },
   "phase_status": {
     "P0": "in_progress",
