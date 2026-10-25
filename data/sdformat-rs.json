@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T14:01:31.953328Z",
+  "updated_at": "2026-10-25T14:04:38.437224Z",
   "state": "active",
-  "summary": "Owned ForceTorque and joint sensor metadata is public after independent review and strict staged gates; exact hosted CI is running.",
+  "summary": "ForceTorque and joint sensor metadata is public with exact green hosted CI; a separate nested model-frame correction retains more original joint assertions.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Nested implicit model frame parity",
-      "detail": "An unchanged native joint fixture exposed rejection of nested ::__model__ references. A separate isolated graph-lookup correction passes 132 native observations and four complete joint frame assertion ports; full author gates and independent review remain pending."
+      "detail": "An unchanged native joint fixture exposed rejection of nested ::__model__ references. A separate isolated correction passes 150 native rows and four complete joint-frame assertion ports; one inherited static endpoint policy gap remains explicit. Full author gate and independent review are pending."
     }
   ],
   "accepted_slices": [
@@ -263,10 +263,10 @@
       "partial": 11
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40200239625"
     },
-    "note": "Exact mandatory staged gate passed 163 Rust and 13 tooling checks, both production coverage thresholds and exported executable lines 3072/3089. Independent private 163 Rust plus 96 native rows/three unchanged originals and complete assertion review passed. Eight explicit schema/finite differences and metadata-only consumer limits remain; hosted result is pending. Whole packets remain coordinator-owned.",
+    "note": "Exact mandatory staged gate passed 163 Rust and 13 tooling checks, both production coverage thresholds and exported executable lines 3072/3089. Independent private 163 Rust plus 96 native rows/three unchanged originals and complete assertion review passed. Eight explicit schema/finite differences and metadata-only consumer limits remain; exact hosted CI is green. Whole packets remain coordinator-owned.",
     "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/18e6fec0ef35afdea7cd520a16b126ac4318ce4b"
   }
 }
