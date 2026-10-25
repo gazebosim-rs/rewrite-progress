@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T20:57:15.082151Z",
+  "updated_at": "2026-10-25T21:02:55.220193Z",
   "state": "active",
-  "summary": "Thermal/wide-angle Link fragments are public and hosted-green at575d4d9 (66 complete/18 partial). ForceTorque Link fixture assertion is frozen under independent source review.",
+  "summary": "ForceTorque Link fixture fragment is public and hosted-green; 66 complete and 18 partial originals are reviewed. Next native-backed Link/DOM case is under preparation.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
       "title": "Retain next native Link sensor semantics",
-      "detail": "Test-only exact force_torque_sensor fixture fragment on public575d4d9, unchanged sensors.sdf. Pinned DOMLink.Sensors native1/0; isolated and integrated full225 Rust/15 tools/fmt/Clippy/docs,3941/3959 lines6850/7049 regions, no production change. Exact name/effective type/full raw pose/metrics map only a PARTIAL Link fragment; native name lookup/count/index and eight other instances remain. Independent review pending."
+      "detail": "Preparing the next bounded native-backed Link sensor or DOM case on the hosted-green ForceTorque fragment parent. Preserve native assertions and fixtures; whole DOMLink.Sensors remains partial with eight other instances."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain native ForceTorque Link sensor fixture fragment",
+      "commit": "f1de0576f8ff7916b2868b5c9e7d2e5df910b4ad",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f1de0576f8ff7916b2868b5c9e7d2e5df910b4ad"
+    },
     {
       "title": "Parse native thermal and wide angle Camera Link fragments",
       "commit": "575d4d9abe5cd46dd2b02ebdd1267d9e25d6206f",
@@ -375,9 +380,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "575d4d9abe5cd46dd2b02ebdd1267d9e25d6206f",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/575d4d9abe5cd46dd2b02ebdd1267d9e25d6206f",
-    "rust_tests": 224,
+    "revision": "f1de0576f8ff7916b2868b5c9e7d2e5df910b4ad",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f1de0576f8ff7916b2868b5c9e7d2e5df910b4ad",
+    "rust_tests": 225,
     "coverage": {
       "lines": [
         3941,
@@ -395,8 +400,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40232749975"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40233407474"
     },
-    "note": "Normal protected hook and exact hosted verify pass224 Rust/15 tools,3941/3959 production lines6850/7049 regions and3759/3771 staged changed executable lines. Independently reviewed exact thermal/wide-angle Camera PARTIAL DOMLink.Sensors fragments; nine other fixture instances, native Link name/count/index and rendering remain unported. No root consumer pin change."
+    "note": "Normal protected hook and exact hosted verify pass225 Rust/15 tools,3941/3959 production lines6850/7049 regions and3759/3771 staged changed executable lines. Independently reviewed exact test-only ForceTorque PARTIAL DOMLink.Sensors fragment; native lookup/count/index and eight other fixture instances remain unported. No production parser or root consumer pin change."
   }
 }
