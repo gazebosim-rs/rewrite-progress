@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:22:49.041796Z",
+  "updated_at": "2026-10-25T17:25:19.392121Z",
   "state": "active",
-  "summary": "Independently reviewed complete DOMRoot move original is published with strict staged gate; hosted CI is running, while nested attachment bodies remain isolated.",
+  "summary": "Complete DOMRoot frame-semantics-on-move original is published with independent review, strict staged gate and green hosted CI; nested attachment-body partial awaits final integration.",
   "model": "gpt-6-sol / high",
   "active": [
     {
-      "id": "REF-02",
-      "title": "Qualify retained DOMRoot frame semantics after move",
-      "detail": "Published e2943817ddbc22c14e6b2a9fdb9349d0983f137b retains both byte-identical native inputs and four load/move blocks; independent review approved complete original assertion mapping and normal staged gate passes185 Rust/13 tools,3300/3316 lines5746/5857 regions,3136/3148 exported executable lines. Hosted CI pending."
-    },
-    {
       "id": "SDF-01",
-      "title": "Review nested model attachment-body assertions",
-      "detail": "Separate isolated test on unchanged native fixture checks all13 body values plus invalid-name failure from exact native original1/0. Isolated185 Rust/13 tools/fmt/Clippy/docs pass. Native graph build/validation/Count and error code/text remain unported; partial only. Independent review queued."
+      "title": "Integrate nested model attachment-body assertions",
+      "detail": "Independent review approved a partial original mapping of all13 body values and invalid-name failure on unchanged fixture; isolated185 Rust/13 tools and direct coverage pass. Final overlap onto green public parent, protected staged hook and hosted CI remain. Native graph build/validation/Count and error code/text stay unported."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain complete DOMRoot frame semantics after owned moves",
+      "commit": "e2943817ddbc22c14e6b2a9fdb9349d0983f137b",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e2943817ddbc22c14e6b2a9fdb9349d0983f137b"
+    },
     {
       "title": "Match native first invalid world-frame attachment diagnostic",
       "commit": "a62c2888366a72e30e1e7d5b184e973e301a7990",
@@ -295,13 +295,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 49,
+      "ported": 50,
       "partial": 13
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40216158734"
     },
-    "note": "Exact normal staged hook passes185 Rust/13 tools and strict coverage. Independent review approved one complete DOMRoot move original assertion mapping, but hosted verify is still running, so accepted counts remain at prior public green revision. Nested attachment partial is isolated. No simulator/consumer change."
+    "note": "Exact normal staged hook and hosted core pass185 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves the complete original DOMRoot.FrameSemanticsOnMove assertion sequence with both byte-identical inputs and four move blocks; no moved-from/pointer-identity or broader graph claim. Nested body packet remains isolated."
   }
 }
