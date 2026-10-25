@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T17:48:45.054437+00:00",
+  "updated_at": "2026-10-25T18:14:58.055419+00:00",
   "state": "active",
-  "summary": "Published native-backed reset/removal controls and Rust differential checks. The next headless comparison will receive clock, pose and IMU on both actual servers; the complete acceptance matrix remains open.",
+  "summary": "Published and hosted-green complete clock/pose/IMU observation comparison. Independent full replay passed; assembling the final selected headless acceptance matrix before advancing P2.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published reset/removal reference 5f96723 is hosted green: all ten native DART/TPE controls, Rust Reset observers and three regression mutants independently reviewed. The three-stream source is now frozen for review: same clock/pose/IMU requests at a declared 20ms minimum host gap, respecting native pose/info hard60wallHz; actual work latency is separated from pacing, with full wall/byte/field checks. The complete selected-fixture matrix follows acceptance; P2 is open."
+      "detail": "Published d4c73ee is hosted green after independent full 128-step/seven-pair replay and missing-stream/report mutants. Clock, pose and IMU fields, timestamps, identities, byte accounting and local error counters all checked. The selected workload uses a 20ms minimum host gap for native pose/info hard60wallHz; measured work latency excludes declared pacing and retains outliers. Final P2/SLICE01 matrix audit follows; broad packets remain open."
     },
     {
       "id": "PHY-02",
@@ -252,6 +252,11 @@
       "title": "Durable native reset/removal reference with all ten controls and three regression mutants",
       "commit": "5f96723efda8a7bd3a20465b8f2a111f2f75e23e",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5f96723efda8a7bd3a20465b8f2a111f2f75e23e"
+    },
+    {
+      "title": "Complete requested clock pose and IMU observations with explicit pacing and byte accounting",
+      "commit": "d4c73eeda89dc912e8225e0a665055e928e8b9e6",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4c73eeda89dc912e8225e0a665055e928e8b9e6"
     }
   ],
   "remaining": [
@@ -283,8 +288,8 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "5f96723efda8a7bd3a20465b8f2a111f2f75e23e",
-    "rust_tests": 203,
+    "revision": "d4c73eeda89dc912e8225e0a665055e928e8b9e6",
+    "rust_tests": 204,
     "coverage": {
       "lines": [
         3193,
@@ -302,10 +307,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40213637926"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40219319485"
     },
-    "note": "Normal hook passed 203 Rust tests, 15 tooling checks and nine real C++ scenarios. All production crates exceed 95% lines and regions; no new production lines. Independent native replay matched all ten controls and source/library hashes; reset-count, multistep and pose mutants fail as expected. Exact hosted CI 40213637926 succeeded. P2 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5f96723efda8a7bd3a20465b8f2a111f2f75e23e"
+    "note": "Normal hook and exact hosted CI passed 204 Rust tests, 16 tooling checks and nine real C++ scenarios. All production crates exceed 95% lines and regions; workspace3193/3228 lines4964/5079 regions, no changed executable production lines. Independent complete three-stream replay and missing-pose/report mutants approved. Scoped paced latency report retains all samples; no unpaced pose-rate or whole-Gazebo claim. Final P2 matrix audit pending.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4c73eeda89dc912e8225e0a665055e928e8b9e6"
   },
   "phase_status": {
     "P0": "in_progress",
