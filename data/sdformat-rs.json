@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T13:15:36.792831Z",
+  "updated_at": "2026-10-25T13:49:47.956549Z",
   "state": "active",
-  "summary": "Noise required-type and native ASCII trimming correction is public with green CI; scoped joint runtime review passed and force/torque metadata characterization continues.",
+  "summary": "Noise correction is public with green CI; owned ForceTorque/joint sensor metadata passes focused native comparisons and is preparing independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Force/torque metadata characterization",
-      "detail": "Proposed owned joint sensors and selected force/torque configuration reuse six Noise records. Native defaults, errors and joint-default-frame controls are measured; no implementation or runtime effect is claimed yet. Consumer contract requires explicit unsupported-kind/joint-sensor guards until runtime support."
-    },
-    {
-      "id": "API-01",
-      "title": "Coordinator revolute-joint integration review",
-      "detail": "Independent review approved the bounded world-anchored joint source after 139 Rust checks, nine actual C++ scenarios, three fresh native controls and three extra frame/cap/limit controls. Final coordinator metadata/publication qualification is separate; no full P2/backend acceptance."
+      "title": "Owned ForceTorque and joint sensor metadata",
+      "detail": "Isolated implementation passes seven focused Rust checks, 96 native rows and three unchanged original baselines. Full author coverage is running before freeze and independent assertion review. No wrench/noise runtime or unsupported consumer acceptance is claimed."
     }
   ],
   "accepted_slices": [
