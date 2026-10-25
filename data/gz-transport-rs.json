@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T07:54:23.134208Z",
+  "updated_at": "2026-10-25T08:03:41.960118Z",
   "state": "active",
-  "summary": "Reviewed explicit unsubscribe is published after its exact staged gate; hosted qualification is queued and canonical typed-publication work is next.",
+  "summary": "Explicit unsubscribe is hosted green; canonical typed-publication candidate passes its full gate and is frozen for independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Hosted unsubscribe qualification and typed publication",
-      "detail": "Published b3b2b9e passes the exact staged 125 Rust/22-tooling gate, 1578/1599 lines, 2402/2468 regions and 32/32 changed lines; all 29 committed inputs verified. Msgs independently passed 51 runtime checks, fresh C++ metadata and the original native baseline; callback/process-global mapping remains pending. Hosted CI is queued. Next canonical typed-publication wrappers have three ignored feasibility checks and a native mismatch baseline, with no new accepted mapping."
+      "detail": "Published b3b2b9e is hosted green, with 125 Rust checks and all 29 committed inputs verified. The frozen typed-publication candidate passes 128 Rust and 22 tooling checks, 1591/1611 lines, 2420/2485 regions and 12/12 changed lines. It reuses the existing canonical producer binding and prost while retaining raw byte forwarding. The exact TypeMismatch original proposes one full port pending msgs review; same-package and typed unknown-field boundaries are explicit."
     },
     {
       "id": "NET-02",
@@ -216,9 +216,9 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40174419396"
     },
-    "note": "Published b3b2b9e passes exact independently approved staged verification: 125 Rust and 22 tooling checks, 1578/1599 lines, 2402/2468 regions and 32/32 changed executable production lines. All 29 recorded input hashes match committed blobs. Independent msgs replay passed 51 runtime tests, fresh native/Rust metadata and the unchanged native two-node baseline with hashes verified. Owned admitted buffers remain drainable; native queued callback and immediate process-global semantics remain explicit boundaries. No new original case is retired. Hosted CI is queued; prior provider32be618, hook4d390a8 and socket2032012 are hosted green. Thirty-four complete originals, one partial and 383 pending remain; whole NET-01/NET-02/performance acceptance stays open."
+    "note": "Published b3b2b9e passes exact independently approved staged verification: 125 Rust and 22 tooling checks, 1578/1599 lines, 2402/2468 regions and 32/32 changed executable production lines. All 29 recorded input hashes match committed blobs. Independent msgs replay passed 51 runtime tests, fresh native/Rust metadata and the unchanged native two-node baseline with hashes verified. Owned admitted buffers remain drainable; native queued callback and immediate process-global semantics remain explicit boundaries. No new original case is retired. Hosted 40174419396 is green; all 29 committed input hashes and 125 Rust checks are verified with matching strict source/changed coverage. prior provider32be618, hook4d390a8 and socket2032012 are hosted green. Thirty-four complete originals, one partial and 383 pending remain; whole NET-01/NET-02/performance acceptance stays open."
   }
 }
