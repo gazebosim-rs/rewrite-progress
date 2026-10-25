@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T21:11:41.848749+00:00",
+  "updated_at": "2026-10-25T21:25:51.041541+00:00",
   "state": "active",
-  "summary": "Published native subscriber-driven pose/IMU behavior is hosted-green227Rust/11Cpp. Coordinated typed-SDF adoption passes unchanged existing suite plus new explicit capability/static-frame checks.",
+  "summary": "Published coordinated typed-SDF adoption after independent guards/static-frame review and strict230Rust/16tools/11Cpp checks. Hosted check running; broader headless prerequisites remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Working adoption of owner-recommended hosted-green SDF575 from4ed: valid typed non-IMU sensors and joint sensors now fail explicit simulator capability guards. Existing227Rust/11Cpp passed unchanged; new nine-config/joint/static-frame tests3/0, fresh historical static-model61observations+one unchanged native original passed. Producer helper current-source hash anchoring issue recorded without weakening its guard; exact historical6ab packet used. Final strict gate, independent review/publication pending."
+      "detail": "Publishedd029884 adopts owner-recommended hosted-green SDF575; non-IMU typed configurations and all Joint.sensors now fail explicit simulator capability guards. All prior assertions retained; new9variant/joint/static-frame tests and independent guard-removal mutants passed. Native historical61static observations+one original freshly replayed with immutable6ab guard intact, corpus unchanged575. Normal hook230Rust/16tools/11Cpp,allcrate>95%,3513/3549lines5366/5483regions,8/8changed. Exact hosted40235339808 pending; broad LOAD/P2 remains open."
     },
     {
       "id": "PHY-05",
@@ -282,6 +282,11 @@
       "title": "Native subscriber-driven pose work and global IMU activation with idle noise/history preservation",
       "commit": "4ee91b28c44d890890240740c914e7909e1bb8a0",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/4ee91b28c44d890890240740c914e7909e1bb8a0"
+    },
+    {
+      "title": "Coordinated typed SDF adoption with explicit sensor/joint boundaries and static-frame qualification",
+      "commit": "d029884bfc8f1e0938134a7fb193202c21ab0a7d",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d029884bfc8f1e0938134a7fb193202c21ab0a7d"
     }
   ],
   "remaining": [
@@ -313,16 +318,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "4ee91b28c44d890890240740c914e7909e1bb8a0",
-    "rust_tests": 227,
+    "revision": "d029884bfc8f1e0938134a7fb193202c21ab0a7d",
+    "rust_tests": 230,
     "coverage": {
       "lines": [
-        3505,
-        3541
+        3513,
+        3549
       ],
       "regions": [
-        5353,
-        5470
+        5366,
+        5483
       ]
     },
     "upstream": {
@@ -331,11 +336,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40233220259"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40235339808"
     },
-    "note": "Independent22file review/final binding, fresh actual native two-mode Server replay, same-Node Rust control and three failing gate/history/pose-slot mutants. Normal protected hook227Rust/16tools/11Cpp passes; allcrate>95%,changedscene33/33server33/33. Exact hosted40233220259 SUCCESS; complete disconnect detection, performance parity and broad IO01/SENSOR01/P2 remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/4ee91b28c44d890890240740c914e7909e1bb8a0"
+    "note": "Independent11file source/API/assertion/final metadata review; normal protected hook230Rust/16tools/11Cpp passes, allcrate>95%,8/8changed scene lines. Native61rows+one unchanged original and private three tests/two failing guards qualify bounded adoption. Exact hosted pending; no new sensor measurements, complete upstream case credit or broad LOAD/P2 acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d029884bfc8f1e0938134a7fb193202c21ab0a7d"
   },
   "phase_status": {
     "P0": "in_progress",
