@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T16:06:14.199186+00:00",
+  "updated_at": "2026-10-25T16:16:58.360428+00:00",
   "state": "active",
   "summary": "Published independently reviewed native-backed IMU velocity-history correction. Measuring actual full Rust Server against native Server; selected-fixture acceptance remains open.",
   "model": "Coordinator; architecture, integration and review",
@@ -14,12 +14,12 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Publisheda867617 fixes false acceleration from velocity replacement; independent native3x100 acquisition replay and sole-rebase-removal mutant qualify the correction. Same1e-9 tolerance; real2N/2kg force remains1m/s\u00b2. Multiple attached IMUs, pause, invalid admission, fault, both resets and removal covered. Normal hook201 Rust/14 tooling/nine C++ scenarios passes; exact hosted CI pending. Full noise/families/activation remain open."
+      "detail": "Publisheda867617 fixes false acceleration from velocity replacement; independent native3x100 acquisition replay and sole-rebase-removal mutant qualify the correction. Same1e-9 tolerance; real2N/2kg force remains1m/s\u00b2. Multiple attached IMUs, pause, invalid admission, fault, both resets and removal covered. Normal hook201 Rust/14 tooling/nine C++ scenarios passes; exact hosted CI40210013522 SUCCESS. Full noise/families/activation remain open."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Actual Rust Server::tick/publish_imus full-path harness now passes smoke with clock/pose/control/removal work retained. Release matched-fixture measurement underway against native Server; all message fields/counts/times and body motion checked. Prior11.72x executor improvement remains within Rust. Full selected-fixture matrix and independently reviewed full-server report remain P2 work."
+      "detail": "FullServer first batch failed strict sequence assertions under bounded queue pressure and was rejected. Revised harness requires complete per-step receipt on both actual Rust/native Server calls, retaining default1000 queues and all fields/time/motion/counter checks. Transport48a adoption retains canonicalMsgs2cea and untouchedFuel/SDF. Matched release measurement and independent boundary review are underway. Complete selected-fixture matrix remains open."
     },
     {
       "id": "PHY-02",
@@ -291,10 +291,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40210013522"
     },
-    "note": "Normal hook201 Rust/14 tooling/nine actual C++ scenarios, every production crate >95% lines/regions, changed scene12/12. Independent source/native/private mutant and exact final binding approved. Hosted qualification pending for this revision; previous84aef01 hosted40208808832SUCCESS. No full-server/P2 acceptance yet.",
+    "note": "Normal hook201 Rust/14 tooling/nine actual C++ scenarios, every production crate >95% lines/regions, changed scene12/12. Independent source/native/private mutant and exact final binding approved. Exact hosted CI40210013522 SUCCESS; previous84aef01 hosted40208808832SUCCESS. No full-server/P2 acceptance yet.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a867617442985d5491c1a36d933f2e01a3b34a5a"
   },
   "phase_status": {
