@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T12:40:02.196889Z",
+  "updated_at": "2026-10-25T12:49:24.848296Z",
   "state": "active",
-  "summary": "Forty-two reviewed complete upstream ports and one partial; partition validation is public with exact hosted CI queued.",
+  "summary": "Forty-three reviewed complete upstream ports and one partial; qualified-topic decomposition is public with hosted CI queued.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Next retained TopicUtils and origin contracts",
-      "detail": "TopicUtilsTest.testPartitions preserves all18 native predicates through production Config::set_partition and is public at48302f1 after independent review and strict hook. Exact hosted run40194089836 is queued. Other retained TopicUtils mappings and the process-global two-Node origin gap remain open."
+      "title": "Next retained Transport assertion and origin contracts",
+      "detail": "TopicUtilsTest.decomposeFullyQualifiedTopic preserves all three output tuples and five rejected inputs through borrowed Result API and is public at32bbebe after independent review and strict hook. Exact hosted run40194804217 is queued. Other retained TopicUtils mappings and process-global two-Node origin remain open."
     },
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Forty-two originals have reviewed complete ports, one ambiguity case remains partial, and375 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "Forty-three originals have reviewed complete ports, one ambiguity case remains partial, and374 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -217,6 +217,11 @@
       "title": "Complete partition validation assertion port through production configuration setter",
       "commit": "48302f17ffffa27787b0d87cceea4cc7131c3b82",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/48302f17ffffa27787b0d87cceea4cc7131c3b82"
+    },
+    {
+      "title": "Native validated fully qualified topic decomposition with complete original assertion port",
+      "commit": "32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4"
     }
   ],
   "remaining": [
@@ -232,28 +237,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "48302f17ffffa27787b0d87cceea4cc7131c3b82",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/48302f17ffffa27787b0d87cceea4cc7131c3b82",
-    "rust_tests": 141,
+    "revision": "32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
+    "rust_tests": 142,
     "coverage": {
       "lines": [
-        1641,
-        1645
+        1649,
+        1653
       ],
       "regions": [
-        2460,
-        2509
+        2481,
+        2531
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 42,
+      "ported": 43,
       "partial": 1
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40194089836"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40194804217"
     },
-    "note": "Public48302f1 exact main after mandatory strict hook:141 Rust,22 tooling, required native originals,1641/1645 lines2460/2509 regions. Independent review approved all18 partition predicates via production Config::set_partition and guard-removal negative control; exact hosted run40194089836 queued. Whole NET packets and process-global origin remain open."
+    "note": "Public32bbebe exact main after mandatory strict hook:142 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,8/8 changed executable lines. Independent review approved three output tuples and five negatives through borrowed decomposition API; exact hosted run40194804217 queued. Partition parent48302f1 hosted success; whole NET packets and process-global origin remain open."
   }
 }
