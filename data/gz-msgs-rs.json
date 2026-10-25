@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T10:28:34.290812Z",
+  "updated_at": "2026-10-25T10:32:33.396440Z",
   "state": "active",
-  "summary": "MSG-01 accepted; bounded descriptor byte-default robustness correction passes debug/release and strict local gates, now in independent review.",
+  "summary": "Reviewed descriptor byte-default robustness correction published after normal strict staged gate; hosted qualification running. MSG-01 accepted, MSG-02 remains open.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Descriptor byte-default robustness review",
-      "detail": "Frozen owned preflight rejects octal overflow and UTF-8 splitting hex byte defaults with DecodeError, preserving raw bytes, duplicate keep-first, partial loads and retry. Exact native acceptance differences are explicit; general default-value parity remains unclaimed. Independent review pending; Transport MessageInfo peer review runs separately."
+      "title": "Published descriptor byte-default robustness",
+      "detail": "Native/release acceptance differences are explicit. Independent raw-export review, debug/release native regressions and exact staged gate pass; revision-specific hosted qualification is running. General default interpretation and wider dynamic tooling/release/performance scope remain open."
     }
   ],
   "accepted_slices": [
@@ -172,6 +172,11 @@
       "title": "Bounded proto2 declarations and native-backed malformed-oneof guards",
       "commit": "d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9"
+    },
+    {
+      "title": "Bounded descriptor byte-default rejection without reflection panics",
+      "commit": "2cea810e929adb4f925750b325265a99f9ae78b4",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2cea810e929adb4f925750b325265a99f9ae78b4"
     }
   ],
   "remaining": [
@@ -186,16 +191,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9",
-    "rust_tests": 101,
+    "revision": "2cea810e929adb4f925750b325265a99f9ae78b4",
+    "rust_tests": 105,
     "coverage": {
       "lines": [
-        1789,
-        1792
+        1852,
+        1855
       ],
       "regions": [
-        2870,
-        2888
+        2961,
+        2979
       ]
     },
     "upstream": {
@@ -205,14 +210,14 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40183442722"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40185173087"
     },
-    "note": "Public d5f4416 retains its prior measurements. New frozen working correction passes 105 checks and four debug/release regressions with native value replay and registry/factory/CLI paths; working aggregate 1852/1855 lines and 2961/2979 regions. Independent review and exact final staged/hosted qualification pending. All 83 original mappings unchanged; MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9",
+    "note": "Independent raw675 export and fresh reviewer debug4/release4 plus registry/factory/definitions22 pass. Exact reviewed tree normal strict staged hook passes105 checks, native oracle/CLI paths, six snapshot regressions, archive/downstream, strict root and owned patch coverage. Public push verified; current hosted run in progress. Explicit native rejection, raw defaults/formatter limits and all83 original mappings preserved; MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2cea810e929adb4f925750b325265a99f9ae78b4",
     "previous_ci": {
-      "revision": "617079cdafc8e20dc008967e27ddbba8b6d100fa",
+      "revision": "d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40179908956"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40183442722"
     }
   }
 }
