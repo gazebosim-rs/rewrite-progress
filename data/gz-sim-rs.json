@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T18:14:58.055419+00:00",
+  "updated_at": "2026-10-25T18:57:52.673891+00:00",
   "state": "active",
-  "summary": "Published and hosted-green complete clock/pose/IMU observation comparison. Independent full replay passed; assembling the final selected headless acceptance matrix before advancing P2.",
+  "summary": "Selected headless integration evidence independently approved and hosted green. Formal P2 prerequisites remain open; implementing native default pose publication cadence next.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published d4c73ee is hosted green after independent full 128-step/seven-pair replay and missing-stream/report mutants. Clock, pose and IMU fields, timestamps, identities, byte accounting and local error counters all checked. The selected workload uses a 20ms minimum host gap for native pose/info hard60wallHz; measured work latency excludes declared pacing and retains outliers. Final P2/SLICE01 matrix audit follows; broad packets remain open."
+      "detail": "Published e453334 audits 15 selected contracts and 85 evidence/source hashes. Independent review and exact hosted CI40222463306 passed. Selected integration evidence approved; formal P2/SLICE01 remain in progress because the original dependency DAG still requires broader LOAD, TPE, dynamic physics, sensor and IO packets plus P0 provenance/inventory."
     },
     {
       "id": "PHY-02",
@@ -45,6 +45,11 @@
       "id": "PHY-05",
       "title": "Qualify published simple-joint variant and remaining backend scope",
       "detail": "Published b83fc1f after independent139-check/nine-C++ replay, three fresh native DART controls and three additional reviewer controls. Mandatory normal staged hook194Rust/12tools/nine actual C++ scenarios passed; all crates >95%, aggregate3162/3208lines4914/5049regions, changed197/197backend211/216scene. Owned SDF frames, continuous angle, reset/removal and owner checks; preContact4ed pin deliberate. Exact hosted40197224258 completed SUCCESS. General articulations, same-engine parity and full backend acceptance remain open. Performance prototype separately smoke-tested TPE/IMU/process-local full-message delivery; identical counts, logical protobuf sizes and checksums on native/Rust. Release application/library builds underway; debug timings are not performance evidence."
+    },
+    {
+      "id": "IO-01",
+      "title": "Native default pose publication cadence",
+      "detail": "Implementing native fixed60 wall-Hz as a nonblocking eligibility check, independent of physics/clock/IMU cadence. Preserve reset wall timer, report suppressed attempts, retain historical test assertions using an explicit every-tick policy. Native controls, independent review and strict checks pending. Subscriber-interest suppression remains separate."
     }
   ],
   "accepted_slices": [
@@ -257,10 +262,15 @@
       "title": "Complete requested clock pose and IMU observations with explicit pacing and byte accounting",
       "commit": "d4c73eeda89dc912e8225e0a665055e928e8b9e6",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4c73eeda89dc912e8225e0a665055e928e8b9e6"
+    },
+    {
+      "title": "Selected headless evidence approval and explicit formal P2 prerequisite audit",
+      "commit": "e45333441cc0790e5b16942de49b3516e3a72494",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e45333441cc0790e5b16942de49b3516e3a72494"
     }
   ],
   "remaining": [
-    "Finish selected-fixture assertions and equal-work C++ reference/performance report for P2.",
+    "Complete formal P0 provenance/inventory, broader world/resource loading, TPE and dynamic physics, sensor noise/seeds/activation and IO compatibility; selected integration evidence alone does not complete P2.",
     "DART and MuJoCo adapters, remaining TPE capabilities, general articulations/forces and complete backend capability contract.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
@@ -288,7 +298,7 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "d4c73eeda89dc912e8225e0a665055e928e8b9e6",
+    "revision": "e45333441cc0790e5b16942de49b3516e3a72494",
     "rust_tests": 204,
     "coverage": {
       "lines": [
@@ -307,10 +317,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40219319485"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40222463306"
     },
-    "note": "Normal hook and exact hosted CI passed 204 Rust tests, 16 tooling checks and nine real C++ scenarios. All production crates exceed 95% lines and regions; workspace3193/3228 lines4964/5079 regions, no changed executable production lines. Independent complete three-stream replay and missing-pose/report mutants approved. Scoped paced latency report retains all samples; no unpaced pose-rate or whole-Gazebo claim. Final P2 matrix audit pending.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4c73eeda89dc912e8225e0a665055e928e8b9e6"
+    "note": "Normal hook and exact hosted CI passed 204 Rust tests,16 tooling checks,nine real C++ scenarios; every production crate >95% lines and regions. Selected evidence approved independently; formal P2/SLICE01 not accepted. Audit preserves all original prerequisite packets and records exact evidence/dependency hashes.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e45333441cc0790e5b16942de49b3516e3a72494"
   },
   "phase_status": {
     "P0": "in_progress",
