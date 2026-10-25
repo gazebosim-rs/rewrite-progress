@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T22:02:28Z",
+  "updated_at": "2026-10-25T23:07:41Z",
   "state": "active",
-  "summary": "Reviewed bounded UInt64_V undotted e/E hexadecimal JSON is public and hosted green; descriptor-aware float hexadecimal work is in development while MSG-02 remains open.",
+  "summary": "Reviewed bounded Double_V/Float_V unquoted hexadecimal JSON is public; hosted CI is running and MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public reviewed UInt64_V top-level undotted lowercase 0x e/E slice at 81f38c8 reproduces 1,842 native JSON status/wire outcomes, retaining 1,690 prior rows and 18 prior fixture hashes; exact hosted run 40237849828 passed. A Double_V/Float_V unquoted hex candidate is isolated and unreviewed; broader JSON/release qualification remains open."
+      "detail": "Public reviewed top-level Double_V/Float_V lowercase unquoted 0x slice at 5289562 reproduces 2,166 pinned native status/full-wire outcomes, retaining 1,842 prior rows and 19 prior fixture hashes. Six native-positive 07. leading-zero gaps and broader JSON/release scope remain open; hosted run 40243304259 is in progress."
     }
   ],
   "accepted_slices": [
@@ -272,6 +272,11 @@
       "title": "Bounded UInt64_V undotted e/E hexadecimal JSON with 1,842 native rows",
       "commit": "81f38c8225453a3c36b9b4a2bfee3fe7dc779a36",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/81f38c8225453a3c36b9b4a2bfee3fe7dc779a36"
+    },
+    {
+      "title": "Bounded Double_V/Float_V unquoted hexadecimal JSON with 2,166 native rows and six explicit gaps",
+      "commit": "52895625cadb6a226b20579b3e83a8be0b6f9f12",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/52895625cadb6a226b20579b3e83a8be0b6f9f12"
     }
   ],
   "remaining": [
@@ -286,17 +291,11 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "81f38c8225453a3c36b9b4a2bfee3fe7dc779a36",
-    "rust_tests": 118,
+    "revision": "52895625cadb6a226b20579b3e83a8be0b6f9f12",
+    "rust_tests": 119,
     "coverage": {
-      "lines": [
-        2364,
-        2376
-      ],
-      "regions": [
-        3827,
-        3868
-      ]
+      "lines": null,
+      "regions": null
     },
     "upstream": {
       "total": 83,
@@ -304,10 +303,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40237849828"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40243304259"
     },
-    "note": "Semantic-approved seven-file freeze and normal protected hook passed. 118 Rust checks, five retained native C++ CLI originals, 1,842 source-bound native JSON status/wire outcomes (1,690 prior, 152 new with 76 accepted), 18 unchanged prior fixture hashes; root coverage 2364/2376 lines and 3827/3868 regions, CLI 599/610 lines and 1047/1076 regions. Hosted run 40237849828 passed; broad MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/81f38c8225453a3c36b9b4a2bfee3fe7dc779a36"
+    "note": "Exact reviewer-bound seven-file staged gate and normal protected hook passed; 119 Rust checks, five unchanged original C++ CLI tests, 2,166 pinned native JSON status/full-wire outcomes (1,842 retained, 318 new parity and six native-only 07. gaps), 19 unchanged prior fixture hashes. Strict production coverage passed; exact line/region counts not retained by staged export. Hosted run 40243304259 is in progress; MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/52895625cadb6a226b20579b3e83a8be0b6f9f12"
   }
 }
