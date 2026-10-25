@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T01:13:29.623025Z",
+  "updated_at": "2026-10-25T01:22:54.943186Z",
   "state": "active",
-  "summary": "Twenty-three independently reviewed slices are published with passing hosted CI. Original SDF 1.5 include resources load unchanged; fluid-added-mass metadata is in final integrated review.",
+  "summary": "Twenty-four independently reviewed slices are published with passing hosted CI. Symmetric fluid-added-mass metadata and original inertial assertions are retained; visual-property semantics are next.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Fluid-added-mass metadata",
-      "detail": "Isolated source/assertion review passed 98 Rust tests, 40 native bit/presence comparisons and unchanged InertialComplete original. Integrated candidate passes 100 Rust checks; overlap review pending. Plain boxed symmetric data only; consumers must reject Some until engine support."
+      "title": "Visual metadata and remaining Shapes fields",
+      "detail": "Native probes establish cast-shadow, visibility-flag and laser-retro presence semantics. Transparency requires native double storage then 17-digit string/float conversion with range-error zero fallback; investigating exact boundary before implementation. Heightmap/polyline remain planned metadata, without IO/image decoding."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain symmetric fluid added mass metadata",
+      "commit": "e59a674d3f41129e94eac829de95166dd5d355e2",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e59a674d3f41129e94eac829de95166dd5d355e2"
+    },
     {
       "title": "Load the bounded SDF 1.5 model and include subset",
       "commit": "9222bd64cf494e90cefe30608d51167d95fd02ce",
@@ -145,28 +150,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "9222bd64cf494e90cefe30608d51167d95fd02ce",
-    "rust_tests": 97,
+    "revision": "e59a674d3f41129e94eac829de95166dd5d355e2",
+    "rust_tests": 100,
     "coverage": {
       "lines": [
-        2275,
-        2291
+        2292,
+        2308
       ],
       "regions": [
-        3947,
-        4045
+        4005,
+        4101
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 31,
+      "ported": 32,
       "partial": 6
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40149556475"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40149904540"
     },
-    "note": "Exact version-floor snapshot passed independent source/assertion/provenance review, strict frozen hook and hosted CI. 201 native parity observations retain prior 139 plus 62 controls; two native-supported conversion families remain explicit Unsupported. Original IncludeElements input and both resources retained with complete reviewed mapping. No full conversion, Element/serializer, SDF packet or performance acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9222bd64cf494e90cefe30608d51167d95fd02ce"
+    "note": "Exact fluid integration passed independent source/assertion/overlap review, strict frozen hook and hosted CI. 40 fresh native presence/bit observations and unchanged InertialComplete original passed. Fixture-specific validity assertion mapping approved; no generic math/physics claim. Consumers must reject Some, including zero, until engine support. No new unsafe/deps/exclusions. Full conversion/Element/schema/performance qualification remains pending.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e59a674d3f41129e94eac829de95166dd5d355e2"
   }
 }
