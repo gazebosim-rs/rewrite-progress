@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T00:38:32.885996Z",
+  "updated_at": "2026-10-25T00:52:01.702208Z",
   "state": "active",
-  "summary": "Twenty independently reviewed slices are published with passing CI. Include plugins and original resource provenance are in independent review; primitive fallback parity is progressing separately.",
+  "summary": "Twenty-one independently reviewed slices are published. Include plugins and original provenance passed the strict hook; exact hosted CI is running. Primitive parity is in integrated review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Include plugins and resource provenance",
-      "detail": "Frozen include/plugin provenance candidate: 89 Rust tests and 61 native observations (59 matching cases, two explicit native-exception extensions); independent msgs review in progress. Separate primitive correction has 37 native default/normalization controls. No complete SDF packet acceptance."
+      "title": "Primitive parity and legacy resource loading",
+      "detail": "Integrated primitive correction passes 95 Rust checks and 37 fresh native bit observations; overlap review pending after isolated approval. Separate SDF 1.5 model subset loads unchanged original include resources and passes 62 native conversion-chain controls; legacy IMU noise/world-physics conversion remains Unsupported."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve include plugins and original resource provenance",
+      "commit": "8db5770268c682ce353e347d64a96c88c730d881",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8db5770268c682ce353e347d64a96c88c730d881"
+    },
     {
       "title": "Retain collision surface contact and friction metadata",
       "commit": "6740618086d541054e13945b2ecb9a8cbc6fbfb6",
@@ -130,28 +135,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "6740618086d541054e13945b2ecb9a8cbc6fbfb6",
-    "rust_tests": 85,
+    "revision": "8db5770268c682ce353e347d64a96c88c730d881",
+    "rust_tests": 89,
     "coverage": {
       "lines": [
-        2216,
-        2241
+        2279,
+        2296
       ],
       "regions": [
-        3837,
-        3961
+        3942,
+        4046
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 30,
-      "partial": 1
+      "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40143463356"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40148282430"
     },
-    "note": "Exact reviewed Surface snapshot passed strict frozen hook, 11 tooling tests, 49 actual native observations and 10 original native cases. Metadata only; simulator must reject explicit Surface until physics support. Scalar qualification remains Linux GNU; nonfinite/vector-prefix/full-Surface and performance gaps remain explicit.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6740618086d541054e13945b2ecb9a8cbc6fbfb6"
+    "note": "Exact include snapshot passed independent source/assertion/provenance review and strict frozen hook. 61 fresh native rows include 59 matching outcomes and two explicit native-exception extensions. Accepted-row callback equivalence only; invalid-input lookup side effects unqualified. Partial plugin/include mapping only. Linux GNU scalar, nonfinite/vector-prefix/full-Surface and performance limits remain.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8db5770268c682ce353e347d64a96c88c730d881"
   }
 }
