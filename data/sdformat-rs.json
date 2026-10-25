@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T11:28:36.332949Z",
+  "updated_at": "2026-10-25T11:36:48.728462Z",
   "state": "active",
-  "summary": "Native axis-limit parity is public and green; contact configuration preserves prior IMU error order, and a small owned joint-clone prerequisite is in separate review.",
+  "summary": "Owned joint configuration cloning is published and hosted green; corrected Contact configuration is independently reviewed next on that parent.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Contact configuration integration and review",
-      "detail": "Corrected isolated packet preserves exact old IMU envelope error precedence with four baseline diagnostic controls. Author 149 Rust/13 tools and 85 native rows/full Sensors original pass; 3160/3181 lines, 5519/5631 regions, 77/78 changed. Original 81 rows and all prior IMU assertions retained. Awaiting additive Clone parent before final independent review; eleven named policy/schema gaps remain."
+      "title": "Contact configuration independent review",
+      "detail": "Final integrated 14-file packet is frozen on the public Clone parent. Author 150 Rust/13 tools, 85 native rows/full Sensors original pass; 3160/3181 lines, 5519/5631 regions, 77/78 changed. Preserves four exact old-IMU diagnostic controls and original 81 rows; 11 named policy/schema gaps stay explicit. Partial contact assertions and new enum ownership/source await independent review."
     },
     {
-      "id": "API-01",
-      "title": "Owned joint configuration cloning review",
-      "detail": "Separate four-file prerequisite adds three derived Clone implementations for JointKind, Joint and Axis. Consumer ownership test outlives the DOM and mutates a second clone. Author 143 Rust/13 tools, unchanged coverage and zero changed executable production lines; coordinator independent review pending. No parsing/runtime/native mapping changes."
+      "id": "SDF-01",
+      "title": "Retained joint endpoint assertion ports",
+      "detail": "Separate test-only prototype retains original world/parent-model/child-model fixture assertions through existing semantic pose and attachment queries. Three focused Rust tests pass; full native provenance, mapping review and strict gates are not yet complete."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Allow owned Joint, JointKind and Axis configuration cloning",
+      "commit": "4ed690b3a872e395df0f3544b278c7f1d3c45a7e",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4ed690b3a872e395df0f3544b278c7f1d3c45a7e"
+    },
     {
       "title": "Preserve native raw axis-limit load semantics and unbounded defaults",
       "commit": "706e8fde8d096e520cac0cfcc34847ef138dfbb9",
@@ -225,8 +230,8 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "706e8fde8d096e520cac0cfcc34847ef138dfbb9",
-    "rust_tests": 142,
+    "revision": "4ed690b3a872e395df0f3544b278c7f1d3c45a7e",
+    "rust_tests": 143,
     "coverage": {
       "lines": [
         3092,
@@ -244,9 +249,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40182867452"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40189342276"
     },
-    "note": "Exact normal staged gate passed 142 Rust and 13 tooling checks; 3092/3112 lines and 5395/5510 regions, working changed 2/2 and exported-tree 2936/2952. Independent 142 Rust checks, 160 native rows and full Construction baseline pass within two explicit nonfinite-input gaps. Exact obsolete Rust-negative XMLs now retain native positive values; no normalization, runtime execution or new original retirement. Hosted CI is green.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/706e8fde8d096e520cac0cfcc34847ef138dfbb9"
+    "note": "Exact normal staged gate passed 143 Rust and 13 tools; unchanged 3092/3112 lines and 5395/5510 regions, exported 2936/2952. Three derived Clone additions have no changed executable production lines. Coordinator independently reviewed source/API and passed authored ownership regression plus two fresh no-axis/unbounded/source controls. No loading/runtime/native mapping change. Hosted CI is green.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4ed690b3a872e395df0f3544b278c7f1d3c45a7e"
   }
 }
