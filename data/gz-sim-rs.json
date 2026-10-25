@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T01:03:05.474515Z",
+  "updated_at": "2026-10-25T01:26:30.678660Z",
   "state": "active",
-  "summary": "Published reset foundations pass hosted CI. The loaded-scene reset implementation now preserves original IDs, prepared physics, resources and native removal observations; independent review is underway after its strict isolated gate passed.",
+  "summary": "Published loaded-scene reset restores original IDs, prepared physics and IMU configuration while preserving Bevy resources/systems and native reset-time removal observations. Remote reset integration is under development; the headless milestone remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
-      "title": "Compose full loaded-scene reset",
-      "detail": "Working implementation: typed loaded-scene blueprint, same Bevy World/resources/systems, restored public IDs/physics/IMU, pending additions visible through reset then retired. Seven scene tests plus one prepared-epoch test pass; isolated gate75 Rust +9 tools,1515/1528 lines2290/2336 regions, all changed lines covered. Independent review active. Native five-case control/reset evidence is captured; server integration is next."
+      "title": "Integrate remote reset ordering and streams",
+      "detail": "Loaded-scene transaction accepted at735e442 after independent source/metadata review and exact staged gate:89 Rust+9 tooling,five C++ scenarios;1641/1651 lines2505/2550 regions;184/184 changed. Two original reset assertion families are ported with nine repetitions each. Remote reset prototype now passes25 server checks; real C++ reset/resume, strict coverage and independent review remain pending."
     },
     {
       "id": "SENSOR-01",
@@ -97,6 +97,11 @@
       "title": "Prepared initial physics restoration with ownership and allocation preflight",
       "commit": "1afa53f9ffa48d8dc0f7f2152930ba7318c9685c",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1afa53f9ffa48d8dc0f7f2152930ba7318c9685c"
+    },
+    {
+      "title": "Loaded-scene reset with original identities, prepared physics and native removal observations",
+      "commit": "735e44268269aacf2222a0c2cd30d90505d74a73",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/735e44268269aacf2222a0c2cd30d90505d74a73"
     }
   ],
   "remaining": [
@@ -124,29 +129,29 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "1afa53f9ffa48d8dc0f7f2152930ba7318c9685c",
-    "rust_tests": 78,
+    "revision": "735e44268269aacf2222a0c2cd30d90505d74a73",
+    "rust_tests": 89,
     "coverage": {
       "lines": [
-        1455,
-        1462
+        1641,
+        1651
       ],
       "regions": [
-        2159,
-        2194
+        2505,
+        2550
       ]
     },
     "upstream": {
       "total": null,
-      "ported": 0,
+      "ported": 2,
       "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40147275566"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40150581335"
     },
-    "note": "Prepared backend restoration passed independent 13-physics-test review, metadata review and the exact 78-test staged gate; 65/65 changed lines. Every owned crate exceeds 95% line and region coverage. Five C++ scenarios cover clocks, poses, IMU metadata/topic repair, removal and shared endpoints. Exact latest hosted revision passed; earlier removal/producer/identity gates passed. Full scene reset, TPE, resources, scheduling and equal-work performance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1afa53f9ffa48d8dc0f7f2152930ba7318c9685c"
+    "note": "Independent integrated source/assertion/metadata review and exact staged gate passed; every production crate exceeds 95% lines/regions and184/184 changed executable lines are covered. Five existing real C++ scenarios still pass. Two original Name/reset families each repeat nine times; no broader ECM retirement or P2 completion. Hosted CI for this exact revision is pending. Remote reset/control/stream composition is being implemented; TPE, resources, sensor scheduling and equal-work comparison remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/735e44268269aacf2222a0c2cd30d90505d74a73"
   },
   "phase_status": {
     "P0": "in_progress",
