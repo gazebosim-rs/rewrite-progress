@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T19:41:37Z",
+  "updated_at": "2026-10-25T19:55:00Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; Publisher lifetime after ordinary Node destruction is reviewed and public at 1d13c01 with exact hosted CI success. The next NET-02 slice is a nonblocking Publisher interest snapshot.",
+  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the nonblocking Publisher interest snapshot is reviewed, published at 2a545f1 and awaiting exact hosted CI. The earlier lost-output interop failure remains unclassified.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 1d13c01 adds native-backed Publisher ownership after ordinary Node destruction with explicit shutdown unchanged; normal protected hook and strict gate passed. Hosted run40226187699 succeeded on exact public SHA. Earlier lost-output interop status101 remains unclassified and is disclosed in the reviewed contract. Next: a separate nonblocking Publisher interest snapshot for simulator tick, with native matching-interest and shutdown controls."
+      "detail": "Public 2a545f1 adds independently reviewed atomic-only Publisher::connection_snapshot for same-Node admitted local and remembered remote matching interest; exact strict staged gate and normal hook passed. Hosted run40228259908 is in progress. This is a membership hint, not a delivery/readiness guarantee; remote discovery is eventual and BYE does not clear remembered registrations. Publisher lifetime hosted-green at1d13c01; earlier lost-output interop status101 remains unclassified."
     }
   ],
   "accepted_slices": [
@@ -292,6 +292,11 @@
       "title": "Reviewed Publisher lifetime after ordinary Node destruction",
       "commit": "1d13c010397bda79716b45e9166297db3a85e995",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d13c010397bda79716b45e9166297db3a85e995"
+    },
+    {
+      "title": "Reviewed nonblocking Publisher interest snapshot",
+      "commit": "2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2a545f1d1983c2f5cb1a82d9fadc18a6278175dd"
     }
   ],
   "remaining": [
@@ -307,17 +312,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "1d13c010397bda79716b45e9166297db3a85e995",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d13c010397bda79716b45e9166297db3a85e995",
-    "rust_tests": 173,
+    "revision": "2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
+    "rust_tests": 176,
     "coverage": {
       "lines": [
-        2165,
-        2205
+        2260,
+        2307
       ],
       "regions": [
-        3256,
-        3389
+        3396,
+        3544
       ]
     },
     "upstream": {
@@ -326,9 +331,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40226187699"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40228259908"
     },
-    "note": "Exact reviewer-bound tree8571fefe, independent native lifetime/readiness review, first final staged gate and normal protected hook passed 2165/2205 lines,3256/3389 regions,89/89 changed. Hosted run40226187699 succeeded on exact public SHA. An older instrumented interop status101 lost child output under the previous verifier; its exact assertion remains UNCLASSIFIED, and later full passes or controlled readiness checks do not classify it."
+    "note": "Exact reviewer-bound tree b6e547e4 and normal protected hook passed 2260/2307 lines,3396/3544 regions,105/107 changed. Pinned native0,0,1,0 and real C++ subscriber interop independently replayed; source/metadata receipts exact. Hosted run40228259908 is in progress. Snapshot is only a matching-registration hint. Earlier instrumented interop status101 remains UNCLASSIFIED."
   }
 }
