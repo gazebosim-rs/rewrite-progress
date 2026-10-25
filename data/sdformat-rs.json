@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T19:40:14.570369Z",
+  "updated_at": "2026-10-25T19:45:55.738877Z",
   "state": "active",
-  "summary": "Corrected Airspeed source inventory and accepted its two native-backed DOM value originals at public hosted-green revision. Existing Link.Sensors AirSpeed fragment remains partial. Lidar typed/parser candidate is under independent review.",
+  "summary": "Typed Lidar values and parser are public and hosted-green. Two native DOM value originals are complete; four exact Link fixture fragments extend the still-partial original. A bounded Camera construction value original is being tested in isolation.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Review typed Lidar DOM and bounded Link fragments",
-      "detail": "Rebased frozen Lidar source on public Airspeed correction, native DOM2/0 and Link1/0, full211 Rust/15 tools/fmt/Clippy/docs and strict coverage. Independent source review underway; native effective GPU_LIDAR/LIDAR enum classification and full Link original remain unported."
+      "title": "Port retained DOMCamera.Construction values",
+      "detail": "Pinned native original1/0 and isolated Rust selected1/0. Value-only Camera defaults/setters/copy/move/equality candidate is under full strict gate; parser, Link camera fragment, ToElement and rendering remain pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port Lidar DOM values and bounded Link sensor fragments",
+      "commit": "01fabe7d17773f9969c275a4d45447c6385f94ac",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/01fabe7d17773f9969c275a4d45447c6385f94ac"
+    },
     {
       "title": "Correct Airspeed inventory and retain two complete DOM value originals",
       "commit": "2e46e223986bb2429150cd7b84881d2f4dd0e00a",
@@ -340,28 +345,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "2e46e223986bb2429150cd7b84881d2f4dd0e00a",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/2e46e223986bb2429150cd7b84881d2f4dd0e00a",
-    "rust_tests": 207,
+    "revision": "01fabe7d17773f9969c275a4d45447c6385f94ac",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/01fabe7d17773f9969c275a4d45447c6385f94ac",
+    "rust_tests": 211,
     "coverage": {
       "lines": [
-        3461,
-        3477
+        3570,
+        3587
       ],
       "regions": [
-        6038,
-        6167
+        6255,
+        6403
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 63,
+      "ported": 65,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40226921154"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40227375211"
     },
-    "note": "Normal protected staged hook and hosted core pass207 Rust/15 tools,3461/3477 production lines,6038/6167 regions and3286/3298 staged executable lines. Independent review accepted exact pinned DOMAirSpeed.Construction and Set value observations and case-insensitive inventory lookup for src/Airspeed_TEST.cc. Earlier no-unit claim withdrawn. Existing DOMLink.Sensors AirSpeed fixture fragment remains PARTIAL; DOMAirSpeed.Load and ToElement remain unported. Root consumer pin adoption remains coordinator-owned."
+    "note": "Normal protected staged hook and hosted verify core pass211 Rust/15 tools,3570/3587 production lines,6255/6403 regions and3390/3402 staged executable lines. Independent source/final review accepts exact DOMLidar.Construction and Set value originals COMPLETE and four unchanged Link.Sensors gpu_ray/gpu_lidar/ray/lidar fragments PARTIAL. Native effective GPU_LIDAR/LIDAR enum classification, full Link count/index/name lookup, 16 other instances, rendering and measurement remain unported. Previous seven Link fragments and fixture preserved. Root consumer pin adoption coordinator-owned."
   }
 }
