@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T06:58:47.282239+00:00",
+  "updated_at": "2026-10-25T07:03:49.108733+00:00",
   "state": "active",
-  "summary": "Offline Fuel model includes now pass hosted CI and exact157Rust+9tools/sevenCPP staged checks. Both engines preserve loaded IDs/poses after cache deletion. Worktree hook isolation is under independent review; sensor scheduling is next. Full P2 remains open.",
+  "summary": "Offline Fuel150a21e is hosted-green. Reviewed worktree hook isolation15c7dd1 is now published through exact157Rust+10tools/sevenCPP staged checks; hosted pending. Next: headless sensor scheduling and native-backed World physics metadata review. Full P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -34,7 +34,7 @@
     {
       "id": "QLT-01",
       "title": "Isolate exported verifier Git context",
-      "detail": "Five-file correction is under independent review. Real worktree/alternateindex test fails on existing leakedGitlocals and passes after child-only official-key isolation. Intended staged content, caller HEAD/index/config and nonlocalsettings preserved; full157Rust+10tools/sevenCPP pass. No simulator Rust or threshold/exclusion changes; normal staged hook/publication pending."
+      "detail": "Published15c7dd1 after independent exact5-file review, fresh10tools, additional inherited-key/foreignGit/parent-index mutation controls and normal157Rust+10tools/sevenCPP staged gate. No Rust/threshold/exclusion changes. Hosted40171303035 pending. Pre-existing gitarchive export-ignore gap remains concrete follow-up; no attributes in this candidate and no current root corruption."
     }
   ],
   "accepted_slices": [
@@ -177,6 +177,11 @@
       "title": "Offline Fuel model includes through the real producer cache API, both engines and CLI",
       "commit": "150a21e22910ded8e32ba1b25ba2ffc7de7c4556",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/150a21e22910ded8e32ba1b25ba2ffc7de7c4556"
+    },
+    {
+      "title": "Worktree-safe exported verifier with real alternate-index and Git-context regression",
+      "commit": "15c7dd167651a6861f78d2448ab68f14f71e8cd9",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/15c7dd167651a6861f78d2448ab68f14f71e8cd9"
     }
   ],
   "remaining": [
@@ -208,7 +213,7 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "150a21e22910ded8e32ba1b25ba2ffc7de7c4556",
+    "revision": "15c7dd167651a6861f78d2448ab68f14f71e8cd9",
     "rust_tests": 157,
     "coverage": {
       "lines": [
@@ -226,11 +231,11 @@
       "partial": 3
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40170482056"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40171303035"
     },
-    "note": "Exact normal staged157Rust+9tools/seven real C++ scenarios pass; everycrate>95%lines/regions, assets15/15+CLI5/5delta; no exclusions/threshold changes. Independent final18-file receipt binds source/dependencies/docs and103actual fullgraph checks/sevenCPP, plus14focused and six fresh installed-native cache controls. Exact hosted consumer40170482056 succeeded; Transport20320129 hosted40169866773 also succeeded; priorlocaleed6288 hosted succeeded. Complete FUEL-01/P2/native baseline/performance acceptance remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/150a21e22910ded8e32ba1b25ba2ffc7de7c4556"
+    "note": "Exact normal staged157Rust+10tools/seven real C++ scenarios pass, workspace2372/2400lines3725/3819regions and eachcrate>95%; no productionRust delta. Independent exact5-file review/fresh10tools and extra Git-isolation/adversarial index-guard controls pass. Hosted40171303035 pending; Fuel150a21e hosted40170482056 succeeded. Complete FUEL/P2, full native baseline/performance and export-ignore hardening remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/15c7dd167651a6861f78d2448ab68f14f71e8cd9"
   },
   "phase_status": {
     "P0": "in_progress",
