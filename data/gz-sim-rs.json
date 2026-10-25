@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T00:25:19.053385Z",
+  "updated_at": "2026-10-25T00:39:10.638516Z",
   "state": "active",
-  "summary": "Remote model removal and producer integration are published with green hosted CI. Reset identity reservations are published and pass hosted CI after 73 checks. Prepared backend restoration and shared-topic multi-IMU support are being integrated; full reset remains open.",
+  "summary": "Native remote removal, producer integration, reset identities, shared IMU endpoints and prepared backend restoration are reviewed and published. The latest strict gate passes 78 Rust checks and five real C++ scenarios. Composing full initial-scene reset is next.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
-      "title": "Initial-scene restoration and reset identities",
-      "detail": "World/allocator-bound reservations are reviewed and published. Prepared backend restoration is separately reviewed with13 physics tests and a strict isolated gate; composing the scene blueprint, reset callback ordering and sensor reconstruction remains next."
+      "title": "Compose full loaded-scene reset",
+      "detail": "Identity reservations and prepared solver restoration are now published. Next: typed loaded-scene blueprint, native reset-time observations, preserved resources, epoch/control ordering and retirement of runtime additions. Full remote reset stays disabled until composed and verified."
     },
     {
       "id": "SENSOR-01",
-      "title": "Multiple IMUs sharing one endpoint",
-      "detail": "Working candidate passes74 Rust + 9 tool checks and5 actual C++ scenarios, including two aliased topics with distinct frame IDs/sequences. Temporary weak publisher cache releases the endpoint only with its last stream. Independent final review underway; discovery-count qualification remains explicit."
+      "title": "Sensor reconstruction and scheduling",
+      "detail": "Shared-topic streams are published with distinct frame IDs/sequences and last-source endpoint retirement. Next: reset instance/sequence reconstruction, scheduling/rates and noise. Discovery publisher counts remain explicitly qualified."
     },
     {
       "id": "SLICE-01",
@@ -87,6 +87,16 @@
       "title": "World/allocator-bound original-identity reservations for reset",
       "commit": "3c4577c763474ede8e1c582b933aa909726a1f22",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3c4577c763474ede8e1c582b933aa909726a1f22"
+    },
+    {
+      "title": "Shared IMU endpoints with per-source frame IDs and sequence state",
+      "commit": "224820e1c2c8da83722ac9055f4f691d526a2239",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/224820e1c2c8da83722ac9055f4f691d526a2239"
+    },
+    {
+      "title": "Prepared initial physics restoration with ownership and allocation preflight",
+      "commit": "1afa53f9ffa48d8dc0f7f2152930ba7318c9685c",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1afa53f9ffa48d8dc0f7f2152930ba7318c9685c"
     }
   ],
   "remaining": [
@@ -114,16 +124,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "3c4577c763474ede8e1c582b933aa909726a1f22",
-    "rust_tests": 73,
+    "revision": "1afa53f9ffa48d8dc0f7f2152930ba7318c9685c",
+    "rust_tests": 78,
     "coverage": {
       "lines": [
-        1390,
-        1397
+        1455,
+        1462
       ],
       "regions": [
-        2060,
-        2094
+        2159,
+        2194
       ]
     },
     "upstream": {
@@ -132,11 +142,11 @@
       "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40146023945"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40147275566"
     },
-    "note": "Exact published identity revision passed hosted CI, independent 13-core-test review and strict 73-test staged integration; 53/53 changed lines. Every owned crate exceeds 95% line and region coverage. Producer db716d7 and removal b39ea419 hosted gates are also green. Shared-IMU and prepared-backend working evidence remains separate; full scene reset, TPE, resources, scheduling and performance are open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3c4577c763474ede8e1c582b933aa909726a1f22"
+    "note": "Prepared backend restoration passed independent 13-physics-test review, metadata review and the exact 78-test staged gate; 65/65 changed lines. Every owned crate exceeds 95% line and region coverage. Five C++ scenarios cover clocks, poses, IMU metadata/topic repair, removal and shared endpoints. Hosted latest revision is pending; earlier removal/producer/identity gates passed. Full scene reset, TPE, resources, scheduling and equal-work performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1afa53f9ffa48d8dc0f7f2152930ba7318c9685c"
   },
   "phase_status": {
     "P0": "in_progress",
