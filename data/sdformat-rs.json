@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:58:36.948109Z",
+  "updated_at": "2026-10-25T18:02:56.319648Z",
   "state": "active",
-  "summary": "Complete ForceTorque DOM construction assertions are public, independently reviewed and green in hosted CI; complete Noise construction source is approved for integration.",
+  "summary": "Complete Noise construction assertions are public, independently reviewed and green in hosted CI; complete IMU construction source is approved for integration.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Integrate complete native Noise construction assertions",
-      "detail": "DOMNoise.ConstructionAndSet exact native and isolated Rust tests pass with independent complete source review. Final main metadata binding, normal hook and hosted qualification remain."
+      "title": "Integrate complete native IMU construction assertions",
+      "detail": "DOMImu.Construction exact native and isolated Rust tests pass with independent complete source review. Final main metadata binding, normal hook and hosted qualification remain."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain complete Noise construction and post-move value assertions",
+      "commit": "09aa7831ca5d22cf6d44130929837c921c984b2a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/09aa7831ca5d22cf6d44130929837c921c984b2a"
+    },
     {
       "title": "Retain complete ForceTorque DOM construction assertions",
       "commit": "577f5953c25dcb05636e48b37108b233b99ca493",
@@ -300,9 +305,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "577f5953c25dcb05636e48b37108b233b99ca493",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/577f5953c25dcb05636e48b37108b233b99ca493",
-    "rust_tests": 190,
+    "revision": "09aa7831ca5d22cf6d44130929837c921c984b2a",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/09aa7831ca5d22cf6d44130929837c921c984b2a",
+    "rust_tests": 191,
     "coverage": {
       "lines": [
         3300,
@@ -315,13 +320,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 51,
+      "ported": 52,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40218881989"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40219200670"
     },
-    "note": "Exact normal staged hook and hosted core pass190 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves the complete DOMForceTorque.Construction original observable values, copy/move/equality/inequality via owned public configuration. Native setters map direct public fields; no parsed-object equality, serializer or sampler claim. No production/API, simulator or consumer change."
+    "note": "Exact normal staged hook and hosted core pass191 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves complete DOMNoise.ConstructionAndSet default/mutation and copy/move/post-move value assertions. No parser/serialization/sampler or moved-from internal-state claim. No production/API, simulator or consumer change."
   }
 }
