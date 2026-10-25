@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:42:09.820855Z",
+  "updated_at": "2026-10-25T17:49:51.808943Z",
   "state": "active",
-  "summary": "Basic model and world frame attachment body partials are public, independently reviewed and green in hosted CI; nested world scope mapping is in isolated review.",
+  "summary": "Nested-world attachment and scoped failure assertions are public, independently reviewed and green in hosted CI; ForceTorque DOM construction is in isolated review.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Retain nested world attachment and scope assertions",
-      "detail": "The pinned nested-world original and isolated Rust test pass. Independent assertion review, final main binding, strict hook and hosted qualification remain. Native graph internals and error code/text are explicitly partial."
+      "title": "Review native ForceTorque DOM construction",
+      "detail": "Pinned native DOMForceTorque.Construction and isolated Rust owned-value test pass. Independent reviewer will decide complete versus partial assertion mapping before integration, strict hook and hosted qualification."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain nested-world attachment and scoped failure assertions as a partial original port",
+      "commit": "0ede9a7a5b1dbce661c50f5086c2085ff0b72717",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0ede9a7a5b1dbce661c50f5086c2085ff0b72717"
+    },
     {
       "title": "Retain model and world frame attachment body assertions as two partial originals",
       "commit": "844cf12652ac7b306ca6814f721636b0cf2a01bc",
@@ -290,9 +295,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "844cf12652ac7b306ca6814f721636b0cf2a01bc",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/844cf12652ac7b306ca6814f721636b0cf2a01bc",
-    "rust_tests": 188,
+    "revision": "0ede9a7a5b1dbce661c50f5086c2085ff0b72717",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0ede9a7a5b1dbce661c50f5086c2085ff0b72717",
+    "rust_tests": 189,
     "coverage": {
       "lines": [
         3300,
@@ -306,12 +311,12 @@
     "upstream": {
       "total": 1344,
       "ported": 50,
-      "partial": 16
+      "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40217550655"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40218194399"
     },
-    "note": "Exact normal staged hook and hosted core pass188 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves six model, six world and three embedded-model body values plus two invalid-name failures on unchanged native fixtures; two partial originals only. Native graph build/validate/map/vertex/edge/count/check and exact error code/text remain unported. No production/API, simulator or consumer change."
+    "note": "Exact normal staged hook and hosted core pass189 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves sixteen world and six embedded-model body values, world invalid failure and seven model-scope failures on unchanged fixture. Native modelGraph world rejection differs from public enclosing-world alias and remains unported with graph/Count/error details; partial only. No production/API, simulator or consumer change."
   }
 }
