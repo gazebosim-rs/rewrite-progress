@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T19:37:36.150831+00:00",
+  "updated_at": "2026-10-25T19:53:44.314278+00:00",
   "state": "active",
-  "summary": "Pose cadence is published and hosted-green. Gaussian IMU noise candidate passed strict staged checks:220 Rust,16 tooling,11 C++ scenarios; independent review in progress.",
+  "summary": "Published independently reviewed Gaussian IMU noise, deterministic per-sensor replay and native covariance. Protected hook221Rust/16tools/11C++ passes; exact hosted check running.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "SENSOR-01",
-      "title": "Gaussian IMU noise and deterministic streams under review",
-      "detail": "Frozen candidate implements mature-library Gaussian sampling, signed/dynamic bias, quantization, seeded per-sensor replay, native acquisition-float dt and diagonal covariance. Exact staged220Rust/16tools/all11realCpp passes; every production crate >95%,3436/3472lines5255/5371regions. Six native controls/seven unchanged NoiseTest cases reproduce. Independent native/source/assertion/seed-policy review pending; no publication or broad SENSOR01/P2 completion. Original nine C++ modes retained; two noisy modes test covariance and reset replay."
+      "title": "Published Gaussian IMU noise; activation next",
+      "detail": "Published da08c97 after independent source/native/assertion/seed-policy review and four failing regression mutants. Native six scalar modes/seven original tests replayed; exact old Gaussian XML retained100samples/bothengines. Normal protected hook221Rust/16tools/all11realCpp passes; everycrate>95%,3436/3472lines5255/5371regions. Exact hosted40228106629 pending. Per-sensor ChaCha reset-repeat policy is explicit; no global-C++RNG bit-identity/full noisy nativeServer claim. Activation/registration/trigger/families and broadSENSOR01 remain open."
     },
     {
       "id": "SLICE-01",
@@ -49,7 +49,7 @@
     {
       "id": "IO-01",
       "title": "Native default pose publication cadence",
-      "detail": "Published fb2e28f: native60wallHz eligibility without step waits, preserved reset wall timer, separate throttle counter, explicit every-tick override. Independent five native controls/private38tests and two regression mutants; all old assertions retained. Normal hook208Rust/16tools/nineCpp,allcrate>95%,43/43changed. Exact hosted40224787967 SUCCESS; no-subscriber suppression and broader IO01 remain open."
+      "detail": "Published fb2e28f: native60wallHz eligibility without step waits, preserved reset wall timer, separate throttle counter, explicit every-tick override. Independent five native controls/private38tests and two regression mutants; all old assertions retained. Normal hook208Rust/16tools/nineCpp,allcrate>95%,43/43changed. Exact hosted40224787967 SUCCESS; no-subscriber suppression and broader IO01 remain open. Next: adopt independently reviewed nonblocking Transport interest snapshot after public/hosted qualification; preserve native global IMU any-connected-and-due activation semantics."
     }
   ],
   "accepted_slices": [
@@ -272,6 +272,11 @@
       "title": "Native default60wallHz pose cadence with reset timer and explicit historical policy",
       "commit": "fb2e28fa48dcf680da369c94fa3448494630366e",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fb2e28fa48dcf680da369c94fa3448494630366e"
+    },
+    {
+      "title": "Seeded Gaussian IMU noise, exact old fixture preservation and native covariance",
+      "commit": "da08c97d1438bbb4bacf1986077bd5251acc4a70",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/da08c97d1438bbb4bacf1986077bd5251acc4a70"
     }
   ],
   "remaining": [
@@ -303,16 +308,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "fb2e28fa48dcf680da369c94fa3448494630366e",
-    "rust_tests": 208,
+    "revision": "da08c97d1438bbb4bacf1986077bd5251acc4a70",
+    "rust_tests": 221,
     "coverage": {
       "lines": [
-        3229,
-        3264
+        3436,
+        3472
       ],
       "regions": [
-        5007,
-        5122
+        5255,
+        5371
       ]
     },
     "upstream": {
@@ -321,11 +326,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40224787967"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40228106629"
     },
-    "note": "Independently reviewed13file increment; normal protected hook208Rust/16tools/nine actual C++ scenarios passes,all production crates >95% lines and regions,43/43 changed server lines covered. Five native60Hz controls/private38tests and two failing regression mutants verify scope. Exact hosted40224787967 SUCCESS; no broader IO01 or formal P2 acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fb2e28fa48dcf680da369c94fa3448494630366e"
+    "note": "Independently reviewed21file Gaussian increment and final metadata binding. Normal protected hook221Rust/16tools/11actualCpp scenarios passes, everycrate >95% lines/regions; changed sensors79/79,scene133/134,server15/15. Native6x16+sevenoriginalNoiseTest/private replays and precision/dt/covariance/reset mutants qualify bounded scope. Exact hosted pending; no new complete original-case credit or formalP2/SENSOR01 acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/da08c97d1438bbb4bacf1986077bd5251acc4a70"
   },
   "phase_status": {
     "P0": "in_progress",
