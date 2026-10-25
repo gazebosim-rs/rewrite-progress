@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T13:49:47.956549Z",
+  "updated_at": "2026-10-25T14:01:31.953328Z",
   "state": "active",
-  "summary": "Noise correction is public with green CI; owned ForceTorque/joint sensor metadata passes focused native comparisons and is preparing independent review.",
+  "summary": "Owned ForceTorque and joint sensor metadata is public after independent review and strict staged gates; exact hosted CI is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "SDF-02",
-      "title": "Owned ForceTorque and joint sensor metadata",
-      "detail": "Isolated implementation passes seven focused Rust checks, 96 native rows and three unchanged original baselines. Full author coverage is running before freeze and independent assertion review. No wrench/noise runtime or unsupported consumer acceptance is claimed."
+      "id": "SDF-01",
+      "title": "Nested implicit model frame parity",
+      "detail": "An unchanged native joint fixture exposed rejection of nested ::__model__ references. A separate isolated graph-lookup correction passes 132 native observations and four complete joint frame assertion ports; full author gates and independent review remain pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain owned ForceTorque settings and joint sensor semantic frames",
+      "commit": "18e6fec0ef35afdea7cd520a16b126ac4318ce4b",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/18e6fec0ef35afdea7cd520a16b126ac4318ce4b"
+    },
     {
       "title": "Match native required Noise types and ASCII attribute trimming",
       "commit": "a4eb3a08cff8e237c56bc3333a08eb669d541b69",
@@ -240,28 +245,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a4eb3a08cff8e237c56bc3333a08eb669d541b69",
-    "rust_tests": 156,
+    "revision": "18e6fec0ef35afdea7cd520a16b126ac4318ce4b",
+    "rust_tests": 163,
     "coverage": {
       "lines": [
-        3165,
-        3186
+        3239,
+        3260
       ],
       "regions": [
-        5533,
-        5645
+        5665,
+        5780
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 43,
+      "ported": 44,
       "partial": 11
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40194705873"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40200239625"
     },
-    "note": "Exact normal staged gate passed 156 Rust and 13 tooling checks; 3165/3186 lines, 5533/5645 regions, exported-tree 3004/3021. Independent private replay passed all 156 Rust checks, 126 native observations and two unchanged originals, with complete shared proof equality. Exact old malformed supplementary positive is retained as a negative; one explicit-none literal preserves all positive data/operators and reconstructs the whole old test file. Required ASCII-only trim and Unicode/control/first-error boundaries explicitly reviewed. No new original retirement or runtime/unsafe/dependency change. Hosted CI is green.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a4eb3a08cff8e237c56bc3333a08eb669d541b69"
+    "note": "Exact mandatory staged gate passed 163 Rust and 13 tooling checks, both production coverage thresholds and exported executable lines 3072/3089. Independent private 163 Rust plus 96 native rows/three unchanged originals and complete assertion review passed. Eight explicit schema/finite differences and metadata-only consumer limits remain; hosted result is pending. Whole packets remain coordinator-owned.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/18e6fec0ef35afdea7cd520a16b126ac4318ce4b"
   }
 }
