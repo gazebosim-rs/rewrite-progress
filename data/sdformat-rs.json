@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T02:16:40.016836Z",
+  "updated_at": "2026-10-25T02:27:09.937891Z",
   "state": "active",
-  "summary": "Reviewed loader and fluid metadata are published with green CI; visual-property parsing and exact float conversion are in independent safety review. SDF-01 exit evidence is recorded for coordinator review.",
+  "summary": "Published loader remains green; visual float conversion and complete Shapes/terrain metadata candidates are frozen for separate independent reviews. SDF-01 exit evidence awaits coordinator acceptance.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
       "title": "Visual metadata and remaining Shapes fields",
-      "detail": "Isolated candidate passes 104 Rust checks, strict line/region coverage and 143 native observations (141 matching plus two explicit existing nonfinite gaps). Native double-to-text-to-float conversion and its narrow strtof_l boundary are frozen for independent code/ABI/safety review. Heightmap/polyline remain planned metadata without IO/image decoding."
+      "detail": "Visual candidate: 104 Rust checks, 141 matching native finite/error rows plus two explicit nonfinite gaps, code/ABI/safety review underway. Separate combined terrain candidate: 108 Rust checks,52 native metadata observations and unchanged DOMGeometry.Shapes pass; proposed complete mapping awaits independent assertion review. No image IO, physical terrain, rendering effects or performance claim."
     },
     {
       "id": "SDF-01",
