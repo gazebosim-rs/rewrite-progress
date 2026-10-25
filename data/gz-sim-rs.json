@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T15:59:22.957810+00:00",
+  "updated_at": "2026-10-25T16:06:14.199186+00:00",
   "state": "active",
-  "summary": "Published reviewed Bevy executor improvement: controlled within-Rust stepping is11.72x faster. Native comparison remains contextual; fixing native-proven velocity-reset IMU history and preparing full-server equal-work evidence.",
+  "summary": "Published independently reviewed native-backed IMU velocity-history correction. Measuring actual full Rust Server against native Server; selected-fixture acceptance remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,12 +14,12 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Published a9cfe05 supports 0, 10, 60, 1000 and 2000 Hz on both engines with exact phase, per-physics acceleration, pause/reset and checked time faults. The staged gate passed 163 Rust tests, 10 tooling checks, nine C++ scenarios and 56/56 changed lines. Independent review replayed 87 scene/server checks, four final clock tests, 10 native controls, the original test and 36 extra comparisons. Exact hosted CI 40175577427 succeeded. Noise, activation, registration, triggers, metrics and other sensor families remain pending. Shared-SDF100-sample native/Rust acquisition is now published d9e1133 with hosted40201843451 success; full sensor configurations/noise/families remain open."
+      "detail": "Publisheda867617 fixes false acceleration from velocity replacement; independent native3x100 acquisition replay and sole-rebase-removal mutant qualify the correction. Same1e-9 tolerance; real2N/2kg force remains1m/s\u00b2. Multiple attached IMUs, pause, invalid admission, fault, both resets and removal covered. Normal hook201 Rust/14 tooling/nine C++ scenarios passes; exact hosted CI pending. Full noise/families/activation remain open."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published84aef01 normal-hook198 Rust/14 tooling/nine actual C++ scenarios and every crate >95% line/region. Independent replay reproduces within-Rust executor improvement; native full Server vs Rust direct IMU harness is contextual only. Native300-sample command/force controls expose first-frame velocity-reset history defect; fix and lifecycle tests in independent review. Complete selected-fixture matrix and full-server equal-work report remain required."
+      "detail": "Actual Rust Server::tick/publish_imus full-path harness now passes smoke with clock/pose/control/removal work retained. Release matched-fixture measurement underway against native Server; all message fields/counts/times and body motion checked. Prior11.72x executor improvement remains within Rust. Full selected-fixture matrix and independently reviewed full-server report remain P2 work."
     },
     {
       "id": "PHY-02",
@@ -237,6 +237,11 @@
       "title": "Reviewed Bevy executor default with explicit parallel option and qualified within-Rust performance evidence",
       "commit": "84aef01f4685c6ea3a398e485a70b96284fbd08e",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/84aef01f4685c6ea3a398e485a70b96284fbd08e"
+    },
+    {
+      "title": "Native-backed IMU velocity reset with real-force and lifecycle controls",
+      "commit": "a867617442985d5491c1a36d933f2e01a3b34a5a",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a867617442985d5491c1a36d933f2e01a3b34a5a"
     }
   ],
   "remaining": [
@@ -268,16 +273,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "84aef01f4685c6ea3a398e485a70b96284fbd08e",
-    "rust_tests": 198,
+    "revision": "a867617442985d5491c1a36d933f2e01a3b34a5a",
+    "rust_tests": 201,
     "coverage": {
       "lines": [
-        3169,
-        3215
+        3182,
+        3228
       ],
       "regions": [
-        4922,
-        5057
+        4941,
+        5079
       ]
     },
     "upstream": {
@@ -286,11 +291,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40208808832"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40210013522"
     },
-    "note": "Published independently reviewed executor slice; normal hook198 Rust/14 tooling/nine real C++ scenarios, all production crates strictly >95% lines and regions, core changed7/7. Exact hosted CI40208808832 SUCCESS. Controlled same-Rust-binary executor result11.72x, independently reproduced; native ratio is contextual because harness paths differ. No full-server/P2 acceptance. Native-backed IMU history fix now under independent review.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/84aef01f4685c6ea3a398e485a70b96284fbd08e"
+    "note": "Normal hook201 Rust/14 tooling/nine actual C++ scenarios, every production crate >95% lines/regions, changed scene12/12. Independent source/native/private mutant and exact final binding approved. Hosted qualification pending for this revision; previous84aef01 hosted40208808832SUCCESS. No full-server/P2 acceptance yet.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a867617442985d5491c1a36d933f2e01a3b34a5a"
   },
   "phase_status": {
     "P0": "in_progress",
