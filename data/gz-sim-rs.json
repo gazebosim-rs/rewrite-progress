@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T01:31:11.649641Z",
+  "updated_at": "2026-10-25T01:44:35.387278Z",
   "state": "active",
-  "summary": "Published loaded-scene reset restores original IDs, prepared physics and IMU configuration while preserving Bevy resources/systems and native reset-time removal observations. Remote reset integration is under development; the headless milestone remains open.",
+  "summary": "Published remote loaded-scene reset: a real C++ client removes a model, restores its original IDs, reconnects IMU, resets again and verifies time1ms/sequence0. Strict staged96-test gate and independent six-scenario replay pass; full headless P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
-      "title": "Integrate remote reset ordering and streams",
-      "detail": "Loaded-scene transaction accepted at735e442:89 Rust+9 tooling,five C++ scenarios,strict coverage and independent review; exact hosted CI passed. Remote reset candidate now passes96 Rust+9 tooling,six C++ scenarios,1755/1765 lines2689/2737 regions and120/120 changed lines. Independent review is pending before staged verification/publication."
+      "title": "Shared backend and remaining lifecycle integration",
+      "detail": "Remote reset accepted atcee53e3 after independent source/metadata review and exact96Rust+9tooling staged gate; six real C++ scenarios pass, including exact zero active real time. Hosted verification pending. Next backend contract/TPE composition must preserve reset identities, stream lifetime and bounded command ordering."
     },
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Shared-topic streams are published with distinct frame IDs/sequences and last-source endpoint retirement. Next: reset instance/sequence reconstruction, scheduling/rates and noise. Discovery publisher counts remain explicitly qualified."
+      "detail": "Reset now reconstructs sensor instances and sequences, reuses shared endpoints and recreates retired endpoints. Real sampled readiness and live-lease reset verify first restarted IMU sequence0. Remaining scheduling/rates, noise and runtime sensor registration; native discovery counts remain qualified."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published: Bevy/Rapier/SDF exact stepping, CLI, stable identities/hierarchy, native clock/control/pose/IMU and loaded-scene reset API. Remote reset is in review. Remaining P2: TPE, local/Fuel resources, sensor scheduling/noise, simple-joint variant and velocity/force inputs from PLAN.md, equal-work comparison/performance report. Complete backend/articulation matrices remain broader work."
+      "detail": "Published: SDF/Bevy/f64Rapier exact stepping, CLI, stable IDs, clock/pose/IMU, pause/remove/reset through actual C++ clients. SDF fluid-guard adoption passed97 tests and six C++ scenarios, final review pending. Remaining P2: TPE, resources, sensor scheduling/noise, simple-joint variant, velocity/force inputs and equal-work comparison/performance report. Nine untouched native TPE targets/28 tests pass as qualified preparation; no Rust TPE implementation or speedup claimed."
     }
   ],
   "accepted_slices": [
@@ -102,6 +102,11 @@
       "title": "Loaded-scene reset with original identities, prepared physics and native removal observations",
       "commit": "735e44268269aacf2222a0c2cd30d90505d74a73",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/735e44268269aacf2222a0c2cd30d90505d74a73"
+    },
+    {
+      "title": "Remote reset with native control ordering, zero clocks and sensor sequence reconstruction",
+      "commit": "cee53e3df42d00fdb32bff3918c3326884f280f0",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cee53e3df42d00fdb32bff3918c3326884f280f0"
     }
   ],
   "remaining": [
@@ -129,16 +134,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "735e44268269aacf2222a0c2cd30d90505d74a73",
-    "rust_tests": 89,
+    "revision": "cee53e3df42d00fdb32bff3918c3326884f280f0",
+    "rust_tests": 96,
     "coverage": {
       "lines": [
-        1641,
-        1651
+        1755,
+        1765
       ],
       "regions": [
-        2505,
-        2550
+        2689,
+        2737
       ]
     },
     "upstream": {
@@ -147,11 +152,11 @@
       "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40150581335"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40151782361"
     },
-    "note": "Independent integrated source/assertion/metadata review and exact staged gate passed; every production crate exceeds 95% lines/regions and184/184 changed executable lines are covered. Five existing real C++ scenarios still pass. Two original Name/reset families each repeat nine times; no broader ECM retirement or P2 completion. Hosted CI for this exact revision passed. Remote reset/control/stream composition is being implemented; TPE, resources, sensor scheduling and equal-work comparison remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/735e44268269aacf2222a0c2cd30d90505d74a73"
+    "note": "Independent28-server-test and six real C++ scenario replay, source/metadata review and exact96Rust+9tool staged gate passed. Every production crate exceeds95% line/region coverage;120/120 changed executable lines covered. C++ verifies zero active real clock and exact1ms/sequence0 after reset using actual connection readiness. Hosted CI pending for exact revision. Blocking reset cancellation false-reply and unpolled queue differences are explicit. Full CORE-02/IO-01/P2 and equal-work performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cee53e3df42d00fdb32bff3918c3326884f280f0"
   },
   "phase_status": {
     "P0": "in_progress",
