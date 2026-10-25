@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T13:02:40.495268Z",
+  "updated_at": "2026-10-25T13:07:36.199406Z",
   "state": "active",
-  "summary": "Reviewed bounded protobuf JSON grammar correction is public with normal staged-hook and hosted verify success. MSG-01 accepted; MSG-02 remains open.",
+  "summary": "A native-backed repeated-field JSON array-comma candidate passes the exact staged gate and awaits independent review. MSG-01 accepted; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "The 29-row JSON grammar/framing slice is qualified on public c1234c0a. Broader descriptor/default, formatting, installation, release and equal-work performance obligations remain under MSG-02."
+      "detail": "The 14-row trailing-array-comma candidate passes local strict checks alongside all 29 prior JSON rows; independent semantic review and hosted qualification remain. Broader descriptor, formatting, installation, release and performance scope stays open."
     }
   ],
   "accepted_slices": [
@@ -201,16 +201,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "c1234c0a2e7d3a17c6135d8f3949e465da4dba08",
+    "revision": "working tree staged 0c25a021e6986ee00751ceb5e10c5b6622044d92",
     "rust_tests": 110,
     "coverage": {
       "lines": [
-        2015,
-        2019
+        2019,
+        2023
       ],
       "regions": [
-        3260,
-        3279
+        3266,
+        3285
       ]
     },
     "upstream": {
@@ -219,15 +219,13 @@
       "partial": 0
     },
     "ci": {
+      "state": "pending"
+    },
+    "note": "Working and exact staged gates passed 109 harness checks plus FactoryLazy, 43 pinned native JSON rows, negative gates, snapshots/archive/downstream. Aggregate coverage includes root 1917/1920 lines and 3053/3071 regions plus unchanged owned vendor patches. Candidate awaits independent review, normal hook and hosted CI; prior public c1234c0a remains hosted-successful.",
+    "previous_ci": {
+      "revision": "c1234c0a2e7d3a17c6135d8f3949e465da4dba08",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40195447870"
-    },
-    "note": "Exact public revision passes hosted verify, normal actual-worktree staged hook, independent semantic/final review, 29 native JSON rows and 277 supplemental reviewer lexical controls. Full gate covers 109 harness checks plus FactoryLazy and all retained originals, with aggregate owned 2015/2019 lines and 3260/3279 regions. General JSON grammar and MSG-02 remain open.",
-    "previous_ci": {
-      "revision": "f0f236f028be20274dc8bf58f594fc849289769f",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40191441331"
-    },
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c1234c0a2e7d3a17c6135d8f3949e465da4dba08"
+    }
   }
 }
