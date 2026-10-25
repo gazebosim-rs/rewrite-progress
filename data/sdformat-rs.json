@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T23:20:24Z",
+  "updated_at": "2026-10-25T23:38:25Z",
   "state": "active",
-  "summary": "Three native Model, World and Visual plugin originals are public and hosted-green after independent review; 78 complete and 16 partial original cases are reviewed. Broader DOM/parser and SDF parity remain open.",
+  "summary": "Native DOMSensor.EnableMetrics observable original is public and hosted-green after correcting native mutation-before-error ordering; 83 complete and 12 partial original cases are reviewed. Broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Audit native Sensor metrics loading",
-      "detail": "Map pinned DOMSensor.EnableMetrics default/load/set observations against its exact inline SDF 1.5 document; evaluate bounded standalone Sensor DOM loading without weakening full-document validation."
+      "title": "Port native Plugin owned value originals",
+      "detail": "Four pinned DOMPlugin copy/move assignment originals pass natively and in an isolated Rust packet; independent assertion review and later final metadata/publication remain."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Sensor enable metrics original with partial-error ordering",
+      "commit": "30123d93459465c0addd0c00c7a431c6de510952",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/30123d93459465c0addd0c00c7a431c6de510952"
+    },
     {
       "title": "Port native Model World and Visual plugin originals",
       "commit": "6bb760e275401cb6f122f07f4831ea5f1bf30a34",
@@ -425,28 +430,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "6bb760e275401cb6f122f07f4831ea5f1bf30a34",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6bb760e275401cb6f122f07f4831ea5f1bf30a34",
-    "rust_tests": 240,
+    "revision": "30123d93459465c0addd0c00c7a431c6de510952",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/30123d93459465c0addd0c00c7a431c6de510952",
+    "rust_tests": 242,
     "coverage": {
       "lines": [
-        3998,
-        4017
+        4068,
+        4088
       ],
       "regions": [
-        6951,
-        7152
+        7042,
+        7251
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 78,
-      "partial": 16
+      "ported": 83,
+      "partial": 12
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40244078782"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40245442664"
     },
-    "note": "Pinned native Model/World/Visual plugin originals3/0 and private Rust3/0; independent source/final receipts SHAd5525307/fba3635a; normal protected hook and exact hosted run40244078782 pass240Rust/16tools,3998/4017 lines6951/7152 regions,3809/3822 staged executable lines. Complete observable empty/copy/order/clear values, no production edits; original2017/2018 notices preserved. Pre-receipt candidate tree17d5184d versus receipt-envelope public treee4bc8540 differ only by reviewer-authored reference/review.json. C++ plugin method identity, ToElement and broad grammar remain open. Root consumer pin is coordinator-owned SDF575."
+    "note": "Pinned native DOMSensor.EnableMetrics1/0, private Rust2/0 and metrics-removal mutant; independent source/final receipts SHAf23a0600/7b2f6200. Corrected native invalid type ordering mutates enable_metrics before returning error; old freeze revoked. Normal protected staged hook and hosted40245442664 pass242Rust/16tools,4068/4088 lines7042/7251 regions, staged3878/3891 executable lines. Pre-receipt candidate tree f6a35568 differs from receipt-envelope public tree39650e70 only by reviewer-authored reference/review.json. Complete observed false/true/false values; full Sensor.Load/Element/graph and exact native error vector remain open. Root consumer pin coordinator-owned."
   }
 }
