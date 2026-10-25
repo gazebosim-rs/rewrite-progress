@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T03:55:24.804701+00:00",
+  "updated_at": "2026-10-25T04:07:52.035437+00:00",
   "state": "active",
-  "summary": "Backend-independent Bevy model/IMU observations are published with green CI. A reviewed typed step-fault boundary is in strict staged checks; actual TPE ECS installation is next. Full headless P2 remains open.",
+  "summary": "Typed terminal fault boundaries and real Bevy-owned TPE motion/reset installation are published after independent review and strict staged gates. Selectable TPE SDF world, lifecycle, CLI and a seventh C++ reset/IMU scenario now pass local checks and are under review. P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
-      "title": "Stop failed runs at typed step/reset/server boundaries",
-      "detail": "Independent source review and84 core/scene/server checks, all six fresh actual C++ scenarios, and16-concurrent-reporter ownership probe passed. Author115Rust+9tools,1870/1880lines2884/2932regions57/57changed; exact14-file normal staged gate running. No rollback, native exception recovery or parallel effect cancellation promised."
+      "title": "Integrate selectable TPE loaded worlds and lifecycle",
+      "detail": "Source under independent SDF review: explicit TPE engine selection, model-owned Motion with fixed link frames, same-ID loaded restoration and chosen-engine removal. Local seventh real C++ scenario passed clock/pose/IMU-specific-force/remove/reset/reconnect; six Rapier cases retained. Native two-row World/Model/Link fixture compares rotated/offset hierarchy. Final strict gate running; no contacts/nested models/link commands/D23 decision or P2 acceptance."
     },
     {
       "id": "SENSOR-01",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-02",
       "title": "Integrate the validated TPE Body into the Bevy world",
-      "detail": "Published kernel2962f1d passes exact106Rust+9tool/six-C++ staged and hosted gates; motion48/48 lines73/73 regions. Independent9-test/native12-row review retained original motion intent. Narrow microbenchmark medians22.71ns Rust/26.64ns native (1.17x), explicitly shared-host/compiler/packaging qualified. Actual TPE world/collision/lifecycle/commands remain unimplemented; D23 static/rotated-link policy awaits owner input."
+      "detail": "Published installer ad1d8b0 passes exact118Rust+9tools/six-C++ staged gate; TPE81/81lines121/121regions. Independent26 TPE/Rapier checks+six actual C++ scenarios passed. Shared installer identity prevents two physics systems; component reset/despawn and typed failure verified. Hosted40160579870 pending. New selectable-world source in review; contacts, broader lifecycle and commands remain."
     }
   ],
   "accepted_slices": [
@@ -132,6 +132,16 @@
       "title": "Backend-independent ECS link lookup, model pose and IMU observations",
       "commit": "c96b9daf40895990e00c81d1dc6f569938034202",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c96b9daf40895990e00c81d1dc6f569938034202"
+    },
+    {
+      "title": "Typed terminal fault boundaries across core, loaded reset and server",
+      "commit": "40291aca9f0247203b99b906c6540756112699e4",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/40291aca9f0247203b99b906c6540756112699e4"
+    },
+    {
+      "title": "Bevy-owned TPE motion and reset with exclusive physics installation",
+      "commit": "ad1d8b0eb5538b794deff1606428a2e0aab56071",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ad1d8b0eb5538b794deff1606428a2e0aab56071"
     }
   ],
   "remaining": [
@@ -162,16 +172,16 @@
     "PHY-02": "in_progress"
   },
   "quality": {
-    "revision": "c96b9daf40895990e00c81d1dc6f569938034202",
-    "rust_tests": 109,
+    "revision": "ad1d8b0eb5538b794deff1606428a2e0aab56071",
+    "rust_tests": 118,
     "coverage": {
       "lines": [
-        1821,
-        1831
+        1903,
+        1913
       ],
       "regions": [
-        2802,
-        2850
+        2933,
+        2980
       ]
     },
     "upstream": {
@@ -180,11 +190,11 @@
       "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40158386519"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40160579870"
     },
-    "note": "Exact109Rust+9tool/six-C++ staged and hosted gates passed. Every production crate exceeds95% lines/regions;36/36changed executable lines covered. Independent49 core/scene checks plus fresh six-native-client replay verify stable link ownership and model/IMU frame, pause/reset and replacement-link semantics. Broader CORE-02/TPE/P2 remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c96b9daf40895990e00c81d1dc6f569938034202"
+    "note": "Exact isolated staged118Rust+9tools/sixCPP gate passed. Every production crate exceeds95%;34/34changed lines,TPE81/81lines121/121regions. Independent26 Rust+6C++ replay and ownership/API/reset/fault review passed. Hosted installer run is pending; earlier fault40291ac hosted40160034170 succeeded. Actual TPE SDF integration is separate unaccepted working source; no P2 or full original retirement.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ad1d8b0eb5538b794deff1606428a2e0aab56071"
   },
   "phase_status": {
     "P0": "in_progress",
