@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T07:20:22.101952Z",
+  "updated_at": "2026-10-25T07:37:29.261590Z",
   "state": "active",
-  "summary": "World physics profiles and native default selection are published and hosted green. Independently approved material metadata is being integrated separately.",
+  "summary": "Owned material metadata and world physics profiles are published with exact hosted CI green. Joint axis dynamics and stop metadata are implemented in an isolated candidate.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Material metadata and native float semantics",
-      "detail": "Independent source/assertion/numeric safety review approved corrected material metadata after 124 owned Rust tests plus an extra string test, 110 native rows, original fixture and ABI proof. Separate integration onto public physics/hook parent is running; final overlap and staged/hosted gates pending."
+      "title": "Axis dynamics and stop metadata",
+      "detail": "Isolated implementation retains damping/friction/spring reference/stiffness and stop stiffness/dissipation, including both axes, source/XML presence and native defaults. 125 Rust checks and 66 native observations pass; coverage and independent review preparation continue. No runtime joint effect or full original retirement claimed."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain owned material metadata with native float and text semantics",
+      "commit": "01464a4276a19ce524312e2a7d8de4caa4f9dfa5",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/01464a4276a19ce524312e2a7d8de4caa4f9dfa5"
+    },
     {
       "title": "Retain native world physics profiles and default selection",
       "commit": "7ed5ad02ac12185e071d0ab358de1adad61418e8",
@@ -180,10 +185,10 @@
     }
   ],
   "remaining": [
-    "Complete primitive Element/error/mutation contracts, material metadata and unsupported Surface fields; heightmap/polyline metadata and the full Shapes assertion port are delivered.",
+    "Complete primitive Element/error/mutation contracts, PBR and unsupported Surface fields; basic material, heightmap/polyline metadata and full Shapes assertions are delivered.",
     "Complete nonfinite scalar and vector-stream parity; retain documented native inertial-frame limitations and explicit consumer validation.",
     "Complete retained schema/version conversions, remaining merge/schema extensions, automatic inertia and import/export semantics; bounded model-scope merge and pure config selection are delivered.",
-    "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
+    "Remaining sensor families, complete DOM/setter/Element contracts, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
   "blockers": [],
@@ -195,28 +200,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "7ed5ad02ac12185e071d0ab358de1adad61418e8",
-    "rust_tests": 122,
+    "revision": "01464a4276a19ce524312e2a7d8de4caa4f9dfa5",
+    "rust_tests": 127,
     "coverage": {
       "lines": [
-        2857,
-        2875
+        3032,
+        3052
       ],
       "regions": [
-        4974,
-        5080
+        5275,
+        5393
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 34,
+      "ported": 35,
       "partial": 10
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40172201116"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40173110011"
     },
-    "note": "Independent source/assertion review passed 122 Rust tests, 89 fresh native observations, the original default/setter case and 15 additional edge controls; complete native proof matched. Exact normal staged gate passed 122 Rust/13 tools, 2857/2875 lines and 4974/5080 regions. Working changed lines 135/135; stricter exported-tree policy 2714/2728. Exact hosted CI green. Engine blocks, finite-double gaps and runtime solver/timestep policy remain explicit; no whole-packet acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7ed5ad02ac12185e071d0ab358de1adad61418e8"
+    "note": "Independent material review passed 125 corrected private checks (124 owned plus one reviewer test), 127 integrated owned checks, 110 fresh native rows, the original fixture and ABI proof. Six script-name mismatches were found and fixed with exact controls retained. Source/assertion/ABI/safety overlap approved. Exact normal staged gate passed 127 Rust/13 tools, 3032/3052 lines and 5275/5393 regions; working changed 168/169, exported-tree policy 2878/2894. Exact hosted CI green. PBR, IO/rendering, nonfinite-double and full DOM/serializer limits remain explicit.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/01464a4276a19ce524312e2a7d8de4caa4f9dfa5"
   }
 }
