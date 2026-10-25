@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T00:01:33.558256Z",
+  "updated_at": "2026-10-25T00:24:04.576126Z",
   "state": "active",
-  "summary": "Native remote model-removal services are independently reviewed and published after 66 Rust checks and four real C++ scenarios. Full scene reset and producer integration are now under development; CORE-01 is accepted.",
+  "summary": "Remote model removal and producer integration are published with green hosted CI. Reset identity reservations are published after 73 checks. Prepared backend restoration and shared-topic multi-IMU support are being integrated; full reset remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
       "title": "Initial-scene restoration and reset identities",
-      "detail": "World/allocator-bound identity reservation primitive passes its isolated gate and is under independent review. Loaded-scene blueprint, prepared backend restoration, epoch-aware handles, reset callback ordering and sensor reconstruction remain to implement."
+      "detail": "World/allocator-bound reservations are reviewed and published. Prepared backend restoration is separately reviewed with13physics tests and a strict isolated gate; composing the scene blueprint, reset callback ordering and sensor reconstruction remains next."
     },
     {
-      "id": "LOAD-01",
-      "title": "Integrate reviewed producer revisions",
-      "detail": "Adopting SDF surface/frame/topic/canonical helpers, messages cursor and transport publisher recreation fix. Consumer cases test explicit frame precedence, native default topics, retained XML whitespace and explicit rejection of unsupported surface physics."
+      "id": "SENSOR-01",
+      "title": "Multiple IMUs sharing one endpoint",
+      "detail": "Working candidate passes74Rust+9tool checks and5actualC++scenarios, including two aliased topics with distinct frame IDs/sequences. Temporary weak publisher cache releases the endpoint only with its last stream. Independent final review underway; discovery-count qualification remains explicit."
     },
     {
       "id": "SLICE-01",
@@ -77,6 +77,16 @@
       "title": "Bounded native remove services with deferred publication and sensor cleanup",
       "commit": "b39ea41931376355b604c2f79f28d03dcf15565a",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b39ea41931376355b604c2f79f28d03dcf15565a"
+    },
+    {
+      "title": "Reviewed SDF frame/topic/canonical/surface integration and publisher recreation",
+      "commit": "db716d76a26e0c1534622c08be3e22c1bb4ab96b",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/db716d76a26e0c1534622c08be3e22c1bb4ab96b"
+    },
+    {
+      "title": "World/allocator-bound original-identity reservations for reset",
+      "commit": "3c4577c763474ede8e1c582b933aa909726a1f22",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3c4577c763474ede8e1c582b933aa909726a1f22"
     }
   ],
   "remaining": [
@@ -104,16 +114,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "b39ea41931376355b604c2f79f28d03dcf15565a",
-    "rust_tests": 66,
+    "revision": "3c4577c763474ede8e1c582b933aa909726a1f22",
+    "rust_tests": 73,
     "coverage": {
       "lines": [
-        1344,
-        1355
+        1390,
+        1397
       ],
       "regions": [
-        1986,
-        2026
+        2060,
+        2094
       ]
     },
     "upstream": {
@@ -123,10 +133,10 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40144914864"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40146023945"
     },
-    "note": "Published remote removal passed independent 20-server-test/four-C++-scenario replay and strict staged gate. Each crate exceeds 95% line/region coverage;117/118 changed lines covered. Untouched native Remove and18 reset reference cases pass in a qualified installed dependency environment; Rust original mappings remain partial/pending. Hosted CI pending; full P2/reset/TPE/resources/scheduling/performance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b39ea41931376355b604c2f79f28d03dcf15565a"
+    "note": "Published identity primitive passed independent13core-test review, metadata review and strict73-test staged integration;53/53changed lines. Every owned crate exceeds95% line/region coverage. Previous producer db716d7 and removal b39ea419 hosted gates are green. Shared-IMU and backend-preparation working evidence is separate; full scene/reset/TPE/resources/scheduling/performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3c4577c763474ede8e1c582b933aa909726a1f22"
   },
   "phase_status": {
     "P0": "in_progress",
