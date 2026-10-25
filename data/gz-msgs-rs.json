@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T14:51:23Z",
+  "updated_at": "2026-10-25T15:03:39Z",
   "state": "active",
-  "summary": "Published escaped-byte protobuf JSON slice passed exact hosted CI; bounded escaped-UTF-8 follow-up is in development. MSG-02 remains open.",
+  "summary": "Bounded escaped-UTF-8 protobuf JSON slice is public after independent review and normal hook; exact hosted CI is running. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Published ASCII escaped-byte JSON slice passed independent review, normal hook and exact hosted CI with 396 native rows. A separate UTF-8 candidate now tests 12 valid and 10 malformed sequences after backslash under each quote style: native accepts 24 valid and rejects 20 malformed rows; focused Rust comparison passes after a one-line lexical correction. Full strict gate, independent review and publication remain pending. Broader descriptor, formatting, installation, release and performance scope remains open."
+      "detail": "Published escaped-UTF-8 JSON slice matches 440 pinned native rows: 396 retained and 44 new valid/malformed controls. Independent review, final staged gate, normal hook and fresh coverage pass; exact hosted CI is running. Broader Unicode/JSON grammar and diagnostics, descriptor, formatting, installation, release and performance scope remain open."
     }
   ],
   "accepted_slices": [
@@ -207,6 +207,11 @@
       "title": "Bounded protobuf JSON escaped ASCII bytes with 396 native rows",
       "commit": "5fa067f47273f2ac46c8af7ba27bef66b6a3251e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fa067f47273f2ac46c8af7ba27bef66b6a3251e"
+    },
+    {
+      "title": "Bounded protobuf JSON escaped UTF-8 with 440 native rows",
+      "commit": "f46db31af457a2a2c815c823e46389d2cc7aaf9b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f46db31af457a2a2c815c823e46389d2cc7aaf9b"
     }
   ],
   "remaining": [
@@ -221,16 +226,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "5fa067f47273f2ac46c8af7ba27bef66b6a3251e",
+    "revision": "f46db31af457a2a2c815c823e46389d2cc7aaf9b",
     "rust_tests": 110,
     "coverage": {
       "lines": [
         2062,
-        2067
+        2066
       ],
       "regions": [
         3336,
-        3359
+        3355
       ]
     },
     "upstream": {
@@ -239,10 +244,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40203734126"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40205031763"
     },
-    "note": "Published escaped-byte slice passed independent semantic/final metadata review, exact final staged gate and normal worktree hook. 109 Rust harness checks plus FactoryLazy, 396 pinned native JSON rows (140 unchanged, 254 new positive, two rejected incomplete-unicode controls), separate branch-removal mutant, strict negative gates and downstream/source checks. Root production coverage 1960/1964 lines and 3123/3145 regions; CLI 195/198 lines and 343/353 regions; vendor patches unchanged. Exact hosted CI passed on the verified published SHA; MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fa067f47273f2ac46c8af7ba27bef66b6a3251e"
+    "note": "Published escaped-UTF-8 slice passed independent semantic/final metadata review, exact final staged gate and normal worktree hook. 109 Rust harness checks plus FactoryLazy, 440 pinned native JSON rows (396 unchanged, 24 new valid and 20 malformed), actual before-failure and separate mutant, strict negative gates and downstream/source checks. Root production coverage 1960/1963 lines and 3123/3141 regions; CLI 195/197 lines and 343/349 regions; vendor patches unchanged. Exact hosted CI is running; MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f46db31af457a2a2c815c823e46389d2cc7aaf9b"
   }
 }
