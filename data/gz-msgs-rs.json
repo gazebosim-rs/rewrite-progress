@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T11:55:58.546494Z",
+  "updated_at": "2026-10-25T12:04:21.747734Z",
   "state": "active",
-  "summary": "Public byte-default robustness remains qualified; bounded raw-preserving integer defaults pass 110 local checks and native corpus, now in final independent review.",
+  "summary": "Source-preserving registry integer defaults published after independent semantic/gate review and strict actual-worktree staged checks; hosted qualification running. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Final integer-default semantic review",
-      "detail": "Opt-in eligible proto2 integer policy preserves raw spelling and standard-pool/extension/proto3 limits. All 990 scalar and 8 native shape controls, 190 legacy standard-pool observations, debug/release, full strict local checks and downstream pass. Gate accounting independently approved; final semantic review, exact staged hook and hosted qualification remain pending."
+      "title": "Published registry integer-default qualification",
+      "detail": "Eligible proto2 integer effective values match the bounded Linux LP64/C23 corpus while raw spelling remains intact. Standard pools/extensions/proto3 and formatting limits stay explicit. Independent 110 checks, debug/release, 990 scalar plus 8 shape native observations and exact staged hook pass; revision-specific hosted run is in progress."
     }
   ],
   "accepted_slices": [
@@ -177,6 +177,11 @@
       "title": "Bounded descriptor byte-default rejection without reflection panics",
       "commit": "2cea810e929adb4f925750b325265a99f9ae78b4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2cea810e929adb4f925750b325265a99f9ae78b4"
+    },
+    {
+      "title": "Source-preserving registry integer defaults with bounded native LP64/C23 policy",
+      "commit": "f0f236f028be20274dc8bf58f594fc849289769f",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f0f236f028be20274dc8bf58f594fc849289769f"
     }
   ],
   "remaining": [
@@ -191,16 +196,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "2cea810e929adb4f925750b325265a99f9ae78b4",
-    "rust_tests": 105,
+    "revision": "f0f236f028be20274dc8bf58f594fc849289769f",
+    "rust_tests": 110,
     "coverage": {
       "lines": [
-        1852,
-        1855
+        1941,
+        1945
       ],
       "regions": [
-        2961,
-        2979
+        3138,
+        3157
       ]
     },
     "upstream": {
@@ -209,15 +214,15 @@
       "partial": 0
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40191441331"
+    },
+    "note": "Independent gate/provenance and semantic reviews, all 110 Rust checks, debug/release five integer tests, fresh 990 scalar plus 8 shape native observations, 190 legacy pool values/errors, exact raw spelling/exports and downstream pass. Actual worktree normal strict staged hook passed on the exact final reviewed tree; clean main fast-forward and public commit verified. Coverage includes root and all owned vendor changes, with defensive error uncovered and no executable/region exclusion. Current hosted run in progress; broader defaults/formatter/group/extension/native wire and MSG-02 completion unclaimed.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f0f236f028be20274dc8bf58f594fc849289769f",
+    "previous_ci": {
+      "revision": "2cea810e929adb4f925750b325265a99f9ae78b4",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40185173087"
-    },
-    "note": "Public 2cea810 measurements and hosted success remain unchanged. Isolated integer candidate passes 110 working checks and aggregate 1941/1945 lines, 3138/3157 regions; defensive impossible-kind error remains included/uncovered. Source-preserving 990 scalar plus 8 shape native corpus and all 190 legacy values/errors pass. Final independent semantic review, exact staged and hosted qualification pending. No formatter explicit-default, broad default/group/extension or MSG-02 completion claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2cea810e929adb4f925750b325265a99f9ae78b4",
-    "previous_ci": {
-      "revision": "d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40183442722"
     }
   }
 }
