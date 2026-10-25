@@ -1,20 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-24T21:42:47.242770Z",
+  "updated_at": "2026-10-25T00:01:33.558256Z",
   "state": "active",
-  "summary": "CORE-01 is accepted and local model removal passes hosted CI. The remote-removal candidate passes 66 Rust checks, four real C++ client scenarios and the untouched native removal reference; independent review is active.",
+  "summary": "Native remote model-removal services are independently reviewed and published after 66 Rust checks and four real C++ scenarios. Full scene reset and producer integration are now under development; CORE-01 is accepted.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "IO-01",
-      "title": "Remote model-removal services",
-      "detail": "Frozen candidate: 66 Rust and 9 gate tests pass; 1344/1355 lines, 1986/2026 regions. Bounded deferred /remove and /remove/blocking, same-batch duplicates, ID precedence, paused/running behavior and client-timeout handling are tested. Native UserCommandsTest.Remove passes unchanged; its full light/shape port remains partial."
+      "id": "CORE-02",
+      "title": "Initial-scene restoration and reset identities",
+      "detail": "World/allocator-bound identity reservation primitive passes its isolated gate and is under independent review. Loaded-scene blueprint, prepared backend restoration, epoch-aware handles, reset callback ordering and sensor reconstruction remain to implement."
+    },
+    {
+      "id": "LOAD-01",
+      "title": "Integrate reviewed producer revisions",
+      "detail": "Adopting SDF surface/frame/topic/canonical helpers, messages cursor and transport publisher recreation fix. Consumer cases test explicit frame precedence, native default topics, retained XML whitespace and explicit rejection of unsupported surface physics."
     },
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published: Bevy/Rapier/SDF exact stepping, CLI, stable public identities/hierarchy, native clock/control/pose/IMU transport. Remaining: remote reset/remove and full initial-scene restoration; TPE; local/Fuel resources; sensor scheduling/noise; equal-work native comparison and performance report. Joints/forces and complete backends remain broader rewrite work."
+      "detail": "Published: Bevy/Rapier/SDF exact stepping, CLI, stable public identities/hierarchy, native clock/control/pose/IMU transport. Remaining: remote full initial-scene reset; TPE; local/Fuel resources; sensor scheduling/noise; equal-work native comparison and performance report. Joints/forces and complete backends remain broader rewrite work."
     }
   ],
   "accepted_slices": [
@@ -67,6 +72,11 @@
       "title": "Validated recursive model removal, physics ownership and sensor cleanup",
       "commit": "5fd5e49bf3ad594a21d174c076cb6c234ff47b93",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5fd5e49bf3ad594a21d174c076cb6c234ff47b93"
+    },
+    {
+      "title": "Bounded native remove services with deferred publication and sensor cleanup",
+      "commit": "b39ea41931376355b604c2f79f28d03dcf15565a",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b39ea41931376355b604c2f79f28d03dcf15565a"
     }
   ],
   "remaining": [
@@ -94,29 +104,29 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "5fd5e49bf3ad594a21d174c076cb6c234ff47b93",
-    "rust_tests": 59,
+    "revision": "b39ea41931376355b604c2f79f28d03dcf15565a",
+    "rust_tests": 66,
     "coverage": {
       "lines": [
-        1222,
-        1232
+        1344,
+        1355
       ],
       "regions": [
-        1804,
-        1840
+        1986,
+        2026
       ]
     },
     "upstream": {
       "total": null,
       "ported": 0,
-      "partial": 1
+      "partial": 2
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40134690534"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40144914864"
     },
-    "note": "Exact published local-removal revision passed independent review, strict staged verification and hosted CI. Every production crate exceeds 95%. Current remote-service evidence is separate and under review. Full reset, TPE, resources, sensor scheduling and performance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5fd5e49bf3ad594a21d174c076cb6c234ff47b93"
+    "note": "Published remote removal passed independent 20-server-test/four-C++-scenario replay and strict staged gate. Each crate exceeds 95% line/region coverage;117/118 changed lines covered. Untouched native Remove and18 reset reference cases pass in a qualified installed dependency environment; Rust original mappings remain partial/pending. Hosted CI pending; full P2/reset/TPE/resources/scheduling/performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b39ea41931376355b604c2f79f28d03dcf15565a"
   },
   "phase_status": {
     "P0": "in_progress",
