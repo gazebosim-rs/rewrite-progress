@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T02:45:58.822949Z",
+  "updated_at": "2026-10-25T02:53:06.751943Z",
   "state": "active",
-  "summary": "Visual properties and exact native float getter semantics are published with green CI. Heightmap/polyline and complete Shapes assertions are reviewed and await final integrated receipt and strict publication gate.",
+  "summary": "Heightmap/polyline metadata and the unchanged full Shapes assertion port are published with green CI. Include-merge frame and provenance semantics are the next bounded loader work.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Heightmap/polyline metadata and full Shapes fixture",
-      "detail": "Integrated candidate atop green visual parent passes108 Rust checks,52 fresh native observations and exact Shapes original, with2440/2456 lines4289/4389 regions91/91 terrain delta. Independent assertion review approves native Vector2/Vector3/scalar bounds and full mapping; final clean-parent overlap receipt and normal strict staged/hosted gates remain required. No asset IO/image decoding/physical terrain/rendering effect."
+      "title": "Include-merge semantics and native controls",
+      "detail": "Audit native proxy-frame creation, canonical attachment, placement adjustment, model-frame reference rewrites and provenance. Establish bounded native controls before implementation. Preserve explicit unsupported extension/world-merge limits; no Fuel or filesystem dependency."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Load heightmap/polyline metadata and retain full original Shapes assertions",
+      "commit": "c4e5d6277a563807b5f4734e8b97b4ebd3467c47",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c4e5d6277a563807b5f4734e8b97b4ebd3467c47"
+    },
     {
       "title": "Retain visual properties with native float getter semantics",
       "commit": "0644c0f03c265762ba3b84ee4a99166be4baefb2",
@@ -165,28 +170,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "0644c0f03c265762ba3b84ee4a99166be4baefb2",
-    "rust_tests": 104,
+    "revision": "c4e5d6277a563807b5f4734e8b97b4ebd3467c47",
+    "rust_tests": 108,
     "coverage": {
       "lines": [
-        2344,
-        2360
+        2440,
+        2456
       ],
       "regions": [
-        4089,
-        4185
+        4289,
+        4389
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 32,
+      "ported": 33,
       "partial": 6
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40155483004"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40155916971"
     },
-    "note": "Public visual increment passed independent source/ABI/safety review, corrected fresh-export fault tests, exact frozen104-Rust/11-tool staged hook and hosted CI. Native143 observations retain141 matching finite/error rows and two explicit nonfinite gaps. Test-only tempfile isolates shim outputs; production dependencies/unsafe scope unchanged. No new original retirement, rendering/lidar/diagnostic-byte/performance claim. Current public mappings remain32complete/6partial; proposed full Shapes mapping belongs to the separate unpublished terrain slice.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0644c0f03c265762ba3b84ee4a99166be4baefb2"
+    "note": "Exact terrain overlap independently reviewed; all108 Rust checks,52 fresh native observations and unchanged Shapes original passed independently. Native Vector2 1e-6,Vector3 1e-3 and scalar four-ULP bounds retained. Normal frozen hook passed108 Rust/11 tools and91/91 changed lines; hosted CI green. Visual safety remains independently attributed to msgs. No asset IO/image decoding/physical terrain/rendering effect or whole-packet/performance acceptance; consumers reject new physical shapes until backend support.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c4e5d6277a563807b5f4734e8b97b4ebd3467c47"
   }
 }
