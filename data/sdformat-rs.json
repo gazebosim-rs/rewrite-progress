@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T07:37:29.261590Z",
+  "updated_at": "2026-10-25T08:53:57.720624Z",
   "state": "active",
-  "summary": "Owned material metadata and world physics profiles are published with exact hosted CI green. Joint axis dynamics and stop metadata are implemented in an isolated candidate.",
+  "summary": "Joint axis dynamics are published with exact hosted CI green. Link flags and full pendulum assertion ports are in independent review after correcting native axis-index clamping.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Axis dynamics and stop metadata",
-      "detail": "Isolated implementation retains damping/friction/spring reference/stiffness and stop stiffness/dissipation, including both axes, source/XML presence and native defaults. 125 Rust checks and 66 native observations pass; coverage and independent review preparation continue. No runtime joint effect or full original retirement claimed."
+      "title": "Link properties and pendulum assertion ports",
+      "detail": "Isolated metadata retains native wind/gravity/kinematic/self-collide defaults. Revised candidate passes 135 Rust checks, 13 tools, 56 native rows and two exact originals. Reviewer found the axis accessor must clamp positive indices to axis2; correction retains absent-axis assertions and adds stored-reference controls. Known-fixture validity mapping awaits final independent approval; no runtime effects claimed."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain joint axis dynamics and stop metadata",
+      "commit": "eab6183146c8b265222645d16d48d3ec13d26226",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/eab6183146c8b265222645d16d48d3ec13d26226"
+    },
     {
       "title": "Retain owned material metadata with native float and text semantics",
       "commit": "01464a4276a19ce524312e2a7d8de4caa4f9dfa5",
@@ -200,28 +205,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "01464a4276a19ce524312e2a7d8de4caa4f9dfa5",
-    "rust_tests": 127,
+    "revision": "eab6183146c8b265222645d16d48d3ec13d26226",
+    "rust_tests": 130,
     "coverage": {
       "lines": [
-        3032,
-        3052
+        3058,
+        3078
       ],
       "regions": [
-        5275,
-        5393
+        5323,
+        5440
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 35,
-      "partial": 10
+      "partial": 11
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40173110011"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40176430770"
     },
-    "note": "Independent material review passed 125 corrected private checks (124 owned plus one reviewer test), 127 integrated owned checks, 110 fresh native rows, the original fixture and ABI proof. Six script-name mismatches were found and fixed with exact controls retained. Source/assertion/ABI/safety overlap approved. Exact normal staged gate passed 127 Rust/13 tools, 3032/3052 lines and 5275/5393 regions; working changed 168/169, exported-tree policy 2878/2894. Exact hosted CI green. PBR, IO/rendering, nonfinite-double and full DOM/serializer limits remain explicit.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/01464a4276a19ce524312e2a7d8de4caa4f9dfa5"
+    "note": "Exact staged gate passed 130 Rust/13 tooling checks, 3058/3078 lines and 5323/5440 regions; working changed 34/34, exported-tree 2904/2920. Independent integrated replay passed 130 Rust checks, 68 native rows and the complete original Construction case. Only twelve axis-value observations are mapped partial; complete construction/Element/error contracts remain open. Exact hosted CI green. Link successor remains unaccepted review work.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/eab6183146c8b265222645d16d48d3ec13d26226"
   }
 }
