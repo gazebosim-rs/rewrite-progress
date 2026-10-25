@@ -1,20 +1,25 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T05:55:56.981169Z",
+  "updated_at": "2026-10-25T06:39:52.970017Z",
   "state": "active",
-  "summary": "The bounded SDF 1.4 loader is independently reviewed, published and hosted green. Consumer resource integration review is resolving native path and warning semantics.",
+  "summary": "Owned material metadata and direct-float conversion are frozen for independent review; the published SDF 1.4 loader remains hosted green.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "SDF-02",
-      "title": "Resource consumer integration review",
-      "detail": "Producer config API and SDF 1.4 support are public. Independent root consumer review found literal-path append, diagnostic identity and legacy warning ordering issues; native-backed repairs are under review. No filesystem or Fuel dependency was added to this library."
+      "id": "SDF-01",
+      "title": "Material metadata and native float semantics",
+      "detail": "Frozen candidate passes 124 Rust checks, 102 native observations, the original material fixture test and 11 tooling checks. Working coverage: 2886/2910 lines, 5065/5183 regions; changed 165/171. Independent source/assertion/numeric safety review is pending. PBR, IO and rendering effects remain unsupported."
     },
     {
       "id": "SDF-01",
       "title": "Exit evidence audit",
       "detail": "Exact plan criteria, current supported loader subset, 33 complete and ten partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
+    },
+    {
+      "id": "SDF-02",
+      "title": "Offline Fuel consumer integration review",
+      "detail": "Independent fresh private replay passes 14 consumer tests and six native cache controls. Source-only review approved; final paired dependency pins, workspace/staged gates and metadata remain pending. No Fuel or filesystem dependency is added to sdformat-rs."
     }
   ],
   "accepted_slices": [
