@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T18:30:06Z",
+  "updated_at": "2026-10-25T19:26:34Z",
   "state": "active",
-  "summary": "Reviewed repeated-integer protobuf JSON slice is public and hosted-green; MSG-02 remains open.",
+  "summary": "Reviewed StringMsg_V repeated data-key protobuf JSON slice is public and hosted-green; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Duplicate top-level Int32_V/UInt32_V/Int64_V data-key slice independently approved and published at 8ab936c with 992 pinned native JSON outcomes, 12 unchanged prior fixture hashes, exact source/final binding, normal hook and hosted run 40220925335 SUCCESS. UInt64_V overflow and broader duplicate-field/JSON semantics remain open."
+      "detail": "StringMsg_V duplicate top-level data-key append slice independently approved and published at 115b467 with 1,038 native JSON outcomes, 13 unchanged earlier fixtures, 113 Rust checks, exact strict gate and hosted run 40225573548 SUCCESS. UInt64_V overflow, other descriptors and broader JSON semantics remain open."
     }
   ],
   "accepted_slices": [
@@ -242,6 +242,11 @@
       "title": "Bounded repeated integer data-key append behavior with 992 native JSON rows",
       "commit": "8ab936c491305e7c4517225d9e58ef162081ef9e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8ab936c491305e7c4517225d9e58ef162081ef9e"
+    },
+    {
+      "title": "Bounded repeated StringMsg_V data-key append behavior with 1,038 native JSON rows",
+      "commit": "115b467f612c41b9c0b4706b5032a4280a731e41",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/115b467f612c41b9c0b4706b5032a4280a731e41"
     }
   ],
   "remaining": [
@@ -256,8 +261,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "8ab936c491305e7c4517225d9e58ef162081ef9e",
-    "rust_tests": 112,
+    "revision": "115b467f612c41b9c0b4706b5032a4280a731e41",
+    "rust_tests": 113,
     "coverage": {
       "lines": [
         2228,
@@ -275,9 +280,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40220925335"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40225573548"
     },
-    "note": "Independent semantic/final metadata reviews approved the bounded repeated-integer data-key slice; 992 native JSON rows (875 retained, 117 new), 112 Rust harness checks, five original C++ CLI tests, strict root/CLI/vendor/negative/downstream gates and normal hook passed. Published-revision coverage root2228/2242 lines3575/3619 regions, CLI463/476 lines795/827 regions. Exact hosted run40220925335 succeeded. UInt64_V overflow and broad MSG-02 acceptance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8ab936c491305e7c4517225d9e58ef162081ef9e"
+    "note": "Exact reviewed seven-file freeze and normal protected hook passed: 113 Rust checks, five retained native C++ CLI tests, 1,038 source-bound native JSON status/wire outcomes (992 prior plus 46 new), 13 unchanged prior fixture hashes, root coverage 2228/2242 lines and 3575/3619 regions; CLI 467/479 lines and 798/828 regions. Exact hosted run 40225573548 succeeded on public revision 115b467. UInt64_V and broader MSG-02 semantics remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/115b467f612c41b9c0b4706b5032a4280a731e41"
   }
 }
