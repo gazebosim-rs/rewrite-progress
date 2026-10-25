@@ -1,25 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T07:02:23.554115Z",
+  "updated_at": "2026-10-25T07:06:29.738215Z",
   "state": "active",
-  "summary": "Owned material metadata is under independent review; native-backed world physics profiles are ready for review, and a concrete hook-isolation correction is running the strict staged gate.",
+  "summary": "The hook Git-context correction is published and hosted green. Material string parity is corrected and under review; world physics profiles await independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Material metadata and native float semantics",
-      "detail": "Frozen material candidate passes 124 Rust checks, 102 native observations, the original fixture case and 11 tools. Independent source/assertion/numeric safety review is underway; no PBR, IO or rendering effects."
+      "detail": "Reviewer found six real script-name text mismatches. Narrow Param text correction retains all original102 native rows and appends eight exact controls; 124 Rust/110 native/original fixture/ABI checks pass. Independent corrected source/safety review continues; no PBR, IO or rendering effects."
     },
     {
       "id": "SDF-01",
       "title": "World physics profiles",
       "detail": "Separate frozen candidate passes 122 Rust checks, 89 native observations and original Physics default/setter assertions. Owned profile metadata and first-default selection; no runtime engine/timestep choice. Independent review pending."
-    },
-    {
-      "id": "QLT-01",
-      "title": "Isolate hook Git context",
-      "detail": "Independent review approved exact Git-local environment isolation. Real worktree/alternate-index regression fails before the correction and all 13 tools pass afterward. The mandatory staged gate is running; no exclusions or production/native changes."
     },
     {
       "id": "SDF-01",
@@ -28,6 +23,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Isolate staged verification from inherited hook Git context",
+      "commit": "119e4f28801d2e95187eb32a838af466c1be9965",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/119e4f28801d2e95187eb32a838af466c1be9965"
+    },
     {
       "title": "Load SDF 1.4 models with scoped native axis defaults",
       "commit": "aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd",
@@ -195,7 +195,7 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd",
+    "revision": "119e4f28801d2e95187eb32a838af466c1be9965",
     "rust_tests": 119,
     "coverage": {
       "lines": [
@@ -214,9 +214,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40165918019"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40171293531"
     },
-    "note": "Independent final snapshot passed all 119 Rust checks, 61 native observations and two exact originals with full proof equality. Config API/proof and 114 untouched parent files verified unchanged. Two typed/axis original portions remain partial; Element/serializer assertions stay pending. Exact strict staged gate passed 119 Rust/11 tooling tests, 2717/2734 lines and 4772/4876 regions; working changed lines 24/24 and staged whole-export policy 2581/2594. Exact hosted CI verified green. No dependency/unsafe change or whole-packet/performance acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd"
+    "note": "Independent hook review passed all 13 tools and verified the old real-worktree regression fails on inherited Git context. Mandatory exact staged tree passed 119 Rust/13 tools, unchanged2717/2734 lines4772/4876 regions, whole-export policy2581/2594. Exact hosted CI is green. Production/native assertions and thresholds unchanged; whole SDF/QLT packets remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/119e4f28801d2e95187eb32a838af466c1be9965"
   }
 }
