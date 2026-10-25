@@ -1,18 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T01:22:54.943186Z",
+  "updated_at": "2026-10-25T02:16:40.016836Z",
   "state": "active",
-  "summary": "Twenty-four independently reviewed slices are published with passing hosted CI. Symmetric fluid-added-mass metadata and original inertial assertions are retained; visual-property semantics are next.",
+  "summary": "Reviewed loader and fluid metadata are published with green CI; visual-property parsing and exact float conversion are in independent safety review. SDF-01 exit evidence is recorded for coordinator review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
       "title": "Visual metadata and remaining Shapes fields",
-      "detail": "Native probes establish cast-shadow, visibility-flag and laser-retro presence semantics. Transparency requires native double storage then 17-digit string/float conversion with range-error zero fallback; investigating exact boundary before implementation. Heightmap/polyline remain planned metadata, without IO/image decoding."
+      "detail": "Isolated candidate passes 104 Rust checks, strict line/region coverage and 143 native observations (141 matching plus two explicit existing nonfinite gaps). Native double-to-text-to-float conversion and its narrow strtof_l boundary are frozen for independent code/ABI/safety review. Heightmap/polyline remain planned metadata without IO/image decoding."
+    },
+    {
+      "id": "SDF-01",
+      "title": "Exit evidence audit",
+      "detail": "Exact plan criteria, current supported loader subset, 32 complete and six partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Correct public loader version and deferred-validation documentation",
+      "commit": "c75839fd7305432fda23837799753752adaa13e8",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c75839fd7305432fda23837799753752adaa13e8"
+    },
     {
       "title": "Retain symmetric fluid added mass metadata",
       "commit": "e59a674d3f41129e94eac829de95166dd5d355e2",
@@ -150,7 +160,7 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "e59a674d3f41129e94eac829de95166dd5d355e2",
+    "revision": "c75839fd7305432fda23837799753752adaa13e8",
     "rust_tests": 100,
     "coverage": {
       "lines": [
@@ -169,9 +179,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40149904540"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40151385981"
     },
-    "note": "Exact fluid integration passed independent source/assertion/overlap review, strict frozen hook and hosted CI. 40 fresh native presence/bit observations and unchanged InertialComplete original passed. Fixture-specific validity assertion mapping approved; no generic math/physics claim. Consumers must reject Some, including zero, until engine support. No new unsafe/deps/exclusions. Full conversion/Element/schema/performance qualification remains pending.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e59a674d3f41129e94eac829de95166dd5d355e2"
+    "note": "Published documentation correction passed independent root review, exact strict staged gate and hosted CI. Executable behavior remains reviewed fluid metadata: 100 Rust tests, 32 complete and six partial upstream mappings. Root now rejects every Some fluid matrix before exposing a scene. Private visual candidate measurements are separate and unaccepted; no whole SDF-01/02 or performance completion claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c75839fd7305432fda23837799753752adaa13e8"
   }
 }
