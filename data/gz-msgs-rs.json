@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T23:33:23Z",
+  "updated_at": "2026-10-25T23:41:26Z",
   "state": "active",
-  "summary": "Reviewed Double_V/Float_V unquoted hexadecimal JSON is public and hosted green; the corrected bounded leading-zero floating slice passed its source gate and awaits independent review while MSG-02 remains open.",
+  "summary": "Bounded Double_V/Float_V leading-zero floating JSON is reviewed and public with hosted CI queued; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public float-hex slice 5289562 has hosted-green run 40243304259 and 2,166 pinned native JSON outcomes. Corrected isolated leading-zero Double_V/Float_V candidate is source-frozen at six-file tree 7327f449: 252 new native rows, six explicit Time gaps, 20 prior fixture hashes, 2,424-row combined native replay and a passing strict 120-Rust/five-original-C++ staged gate. A separate 252-form quoted preservation sweep found no behavior changes, with six preexisting quoted-array overflow gaps disclosed; first c08 tree is superseded. Independent semantic review is pending; no publication claim."
+      "detail": "Public leading-zero slice 17b0b9b passed exact seven-file review binding and normal protected hook: 120 Rust checks, five unchanged original C++ CLI cases, 2,424 pinned native JSON status/full-wire outcomes, 20 retained fixture hashes and six explicit native-only Time gaps. Hosted run 40245881573 is queued. Next bounded characterization targets remaining Time leading-zero numeric grammar without broad MSG-02 acceptance."
     }
   ],
   "accepted_slices": [
@@ -277,6 +277,11 @@
       "title": "Bounded Double_V/Float_V unquoted hexadecimal JSON with 2,166 native rows and six explicit gaps",
       "commit": "52895625cadb6a226b20579b3e83a8be0b6f9f12",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/52895625cadb6a226b20579b3e83a8be0b6f9f12"
+    },
+    {
+      "title": "Bounded Double_V/Float_V leading-zero floating JSON with 2,424 native rows",
+      "commit": "17b0b9b20d3886fe19eb274c0525afbc844cc274",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/17b0b9b20d3886fe19eb274c0525afbc844cc274"
     }
   ],
   "remaining": [
@@ -291,8 +296,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "52895625cadb6a226b20579b3e83a8be0b6f9f12",
-    "rust_tests": 119,
+    "revision": "17b0b9b20d3886fe19eb274c0525afbc844cc274",
+    "rust_tests": 120,
     "coverage": {
       "lines": null,
       "regions": null
@@ -303,10 +308,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40243304259"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40245881573"
     },
-    "note": "Exact reviewer-bound seven-file staged gate and normal protected hook passed; 119 Rust checks, five unchanged original C++ CLI tests, 2,166 pinned native JSON status/full-wire outcomes (1,842 retained, 318 new parity and six native-only 07. gaps), 19 unchanged prior fixture hashes. Strict production coverage passed; exact line/region counts not retained by staged export. Hosted run 40243304259 passed; MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/52895625cadb6a226b20579b3e83a8be0b6f9f12"
+    "note": "Exact reviewer-bound seven-file staged gate and normal protected hook passed; 120 Rust checks, five unchanged original C++ CLI cases, 2,424 pinned native JSON status/full-wire outcomes (2,166 retained, 252 bounded leading-zero rows, six Time native-only gaps), 20 unchanged prior fixture hashes. A 252-form quoted-preservation sweep found no behavior changes; six preexisting quoted-array overflow gaps remain. Strict production coverage passed; exact line/region counts not retained by staged export. Hosted run 40245881573 queued; MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/17b0b9b20d3886fe19eb274c0525afbc844cc274"
   }
 }
