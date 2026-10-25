@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T00:52:15.128431Z",
+  "updated_at": "2026-10-25T01:00:23.982925Z",
   "state": "active",
-  "summary": "Published two further async assertion ports after independent review and strict staged gate; service ownership predecessor is hosted green.",
+  "summary": "Recovered transport work is published and hosted green: bounded duplicate-service ownership plus five additional reviewed original service ports.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-02",
-      "title": "Hosted async assertion qualification",
-      "detail": "Published 05247e4 adds ordinary and inputless async ports. Independent original/helper review and strict 79 Rust/21 tooling staged gate pass with 1283/1304 lines and 1927/1991 regions; zero changed production lines. Hosted run 40148298562 is running. Predecessor 7268928 hosted success is verified against all 28 source inputs. Full transport parity remains open."
+      "title": "Retained transport compatibility work",
+      "detail": "Latest 05247e4 hosted run passes 79 Rust tests and strict native interoperability/coverage. All 28 source input hashes match the revision. Twenty original cases have reviewed faithful ports; logging, statistics, authentication, CLI, discovery and performance scope remain open. Next bounded library candidate is service type inspection/resolution, with native contracts inventoried."
     }
   ],
   "accepted_slices": [
@@ -152,11 +152,11 @@
     "rust_tests": 79,
     "coverage": {
       "lines": [
-        1283,
+        1282,
         1304
       ],
       "regions": [
-        1927,
+        1926,
         1991
       ]
     },
@@ -166,9 +166,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40148298562"
     },
-    "note": "Published 05247e4 strict staged gate passes 79 Rust and 21 tooling tests, 1283/1304 lines, 1927/1991 regions, and zero changed production lines. Independent two-new/three-existing Rust ports and two exact native originals pass. Hosted CI is running. Predecessor 7268928 hosted success is verified: 77 tests, 1282/1304 lines, 1926/1991 regions, 3/3 changed lines; all 28 input hashes match its revision. Twenty of 418 original ports are reviewed; packets remain incomplete."
+    "note": "Hosted run 40148298562 passes at published 05247e4: 79 Rust tests, 1282/1304 production lines, 1926/1991 regions, and zero changed executable production lines. All 28 downloaded input hashes match exactly. The strict staged gate also passed 79 Rust/21 tooling tests. Predecessor ownership 7268928 hosted run passed 3/3 changed lines. Twenty of 418 original cases have reviewed faithful ports; full NET packets and performance qualification remain incomplete."
   }
 }
