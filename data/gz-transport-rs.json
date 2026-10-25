@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T16:49:31Z",
+  "updated_at": "2026-10-25T16:58:07Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete upstream ports and eight partial ports; three native-backed two-process ServiceList assertion ports are frozen for independent review atop hosted-green cd8d76a.",
+  "summary": "Forty-four reviewed complete and eleven partial upstream ports; three native-backed two-process ServiceList assertions are public with the exact normal gate green and hosted CI pending.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Publiccd8d76a one-Node ServiceList partial port is hosted-green. Three new two-process ServiceList variants are frozen on tree6c266db7: native originals3/0, selected Rust3/0 with60 repeats, old-worker mutant3 failures, strict working/staged gates160 Rust/22 tools and1816/1840 lines2755/2837 regions. Independent review pending; ledger remains44 faithful,8 partial,366 pending at public head. Process-global same-process multi-Node sharing remains open."
+      "detail": "Public 628309f adds three reviewed partial two-process ServiceList assertions for ordinary/inputless/outputless signatures. Exact native originals3/0, private Rust3/0, old-worker mutant fails all <2ms checks, strict160 Rust/22 tools and1816/1840 lines2756/2837 regions; hosted run40214169154 pending. Process-global same-process sharing remains open."
     }
   ],
   "accepted_slices": [
@@ -267,6 +267,11 @@
       "title": "Reviewed partial one-Node ServiceList latency assertion port",
       "commit": "cd8d76a2fa1858adc0d7e87335a0c74424665ff6",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cd8d76a2fa1858adc0d7e87335a0c74424665ff6"
+    },
+    {
+      "title": "Reviewed partial three two-process ServiceList assertion ports",
+      "commit": "628309fb92d48fa65760cc74a001ab16d8cc3b72",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/628309fb92d48fa65760cc74a001ab16d8cc3b72"
     }
   ],
   "remaining": [
@@ -282,9 +287,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "cd8d76a2fa1858adc0d7e87335a0c74424665ff6",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cd8d76a2fa1858adc0d7e87335a0c74424665ff6",
-    "rust_tests": 157,
+    "revision": "628309fb92d48fa65760cc74a001ab16d8cc3b72",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/628309fb92d48fa65760cc74a001ab16d8cc3b72",
+    "rust_tests": 160,
     "coverage": {
       "lines": [
         1816,
@@ -298,12 +303,12 @@
     "upstream": {
       "total": 418,
       "ported": 44,
-      "partial": 8
+      "partial": 11
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40211368303"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40214169154"
     },
-    "note": "Publiccd8d76a exact independently reviewed tree3614b350; final staged and normal hook passed157 Rust/22 tooling,1816/1840 production lines2756/2837 regions,0 changed production lines. Pinned native NodeTest.ServiceList original1/0, private selected+20 repeats and old-sleep mutant failed2.089ms. Exact hosted run40211368303 completed SUCCESS on headcd8d76a; policy and native-parity-and-coverage jobs green. One-Node list/timing only; process-global and remote completeness unqualified."
+    "note": "Public exact independently reviewed treea403add2, final staged and normal hook pass160 Rust/22 tooling and strict1816/1840 production lines2756/2837 regions,0 changed production lines. Three pinned native ServiceList originals each1/0; private C++ peer/Rust3/0 and old-worker mutant fails all <2ms assertions. Scope one discovered remote /foo per signature; global registry and handler calls unqualified. Hosted run40214169154 pending."
   }
 }
