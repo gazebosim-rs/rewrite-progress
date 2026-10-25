@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T14:53:19Z",
+  "updated_at": "2026-10-25T15:18:33Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and five partial ports; bounded topic endpoint descriptor snapshot is public and exact hosted CI passed.",
+  "summary": "Forty-three reviewed complete upstream ports and six partial ports; the two-process TopicInfo assertion subset is public and exact hosted CI passed.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public47c4cc0 known_topic_info descriptor snapshot passed independent source/API/assertion review, pinned NodeTest.TopicInfoSubscriberOnly original, real C++ publisher/subscriber controls, normal strict hook and exact hosted run40203823103. The original stays partial: native full MessagePublisher metadata, process-global sharing, immediate discovery and latency remain unqualified. Forty-three faithful, five partial and370 pending; two-process TopicInfo original passed read-only native baseline for the next bounded assertion port."
+      "detail": "Public9a378da two-process TopicInfo partial assertion port passed independent review, pinned native original, strict normal hook and exact hosted run40205619916. Existing descriptor snapshots and tests preserve invalid/absent/present queries and original bounded waits; C++ mutable output vector, full metadata, process-global sharing and latency remain open. Forty-three faithful, six partial and369 pending. Native AllTopicInfo original passed1/0; a separate test-only assertion port is the next bounded candidate."
     }
   ],
   "accepted_slices": [
@@ -247,6 +247,11 @@
       "title": "Bounded topic publisher and subscriber descriptor snapshot",
       "commit": "47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/47c4cc0565a0db2650baca5b1e7913cf1ec7f393"
+    },
+    {
+      "title": "Reviewed partial two-process TopicInfo assertion port",
+      "commit": "9a378daf4693f11ccb4c90bfea27ba37ef4df59e",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/9a378daf4693f11ccb4c90bfea27ba37ef4df59e"
     }
   ],
   "remaining": [
@@ -262,28 +267,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
-    "rust_tests": 153,
+    "revision": "9a378daf4693f11ccb4c90bfea27ba37ef4df59e",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/9a378daf4693f11ccb4c90bfea27ba37ef4df59e",
+    "rust_tests": 154,
     "coverage": {
       "lines": [
         1814,
         1838
       ],
       "regions": [
-        2749,
+        2750,
         2833
       ]
     },
     "upstream": {
       "total": 418,
       "ported": 43,
-      "partial": 5
+      "partial": 6
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40203823103"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40205619916"
     },
-    "note": "Public47c4cc0 exact independently reviewed tree5f434465, mandatory normal hook passed153 Rust/22 tooling and pinned native originals; staged coverage1814/1838 production lines2749/2833 regions61/61 changed lines (hook observed2750/2833 regions). Exact hosted run40203823103 completed SUCCESS on head47c4cc0, policy and native-parity-and-coverage jobs both green. NodeTest.TopicInfoSubscriberOnly remains partial; full native metadata, process-global registry and latency unqualified."
+    "note": "Public9a378da exact independently reviewed tree4bef5c6f; mandatory normal hook passed154 Rust/22 tooling and pinned native originals. Exact staged coverage1814/1838 production lines2750/2833 regions,0/0 new production changed lines (hook observed2751/2833 regions). Exact hosted run40205619916 completed SUCCESS on head9a378da, policy and native-parity-and-coverage jobs both green. twoProcPubSub.TopicInfo stays partial because C++ invalid-query output-vector state and full metadata/global/timing semantics remain unqualified."
   }
 }
