@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T18:06:49.801629Z",
+  "updated_at": "2026-10-25T18:18:26.551719Z",
   "state": "active",
-  "summary": "Complete IMU construction assertions are public, independently reviewed and green in hosted CI; next typed magnetometer DOM/parser slice is being scoped.",
+  "summary": "Typed Magnetometer DOM/parser and two complete native originals are public, independently reviewed and green in hosted CI; the Link sensor integration mapping remains partial.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Scope typed magnetometer DOM and parser slice",
-      "detail": "Continue native-backed sensor DOM work with bounded Magnetometer construction/set assertions and public typed parsing, independent review and strict coverage. Consumer pin adoption remains coordinator-owned."
+      "title": "Scope next retained sensor DOM/parser case",
+      "detail": "Continue bounded native-backed sensor DOM work and strict gates. Magnetometer consumer enum adoption stays coordinator-owned; other 24 sensor families and full Link.Sensors case remain pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Add typed Magnetometer parser and retain two complete DOM originals",
+      "commit": "29a513dff43f5ad530d92b92a89e784394e409a5",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/29a513dff43f5ad530d92b92a89e784394e409a5"
+    },
     {
       "title": "Retain complete IMU construction and owned move assertions",
       "commit": "f2d6e4ad183f5e9cc3f0c35fc9ff4e3077d29b25",
@@ -310,28 +315,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "f2d6e4ad183f5e9cc3f0c35fc9ff4e3077d29b25",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f2d6e4ad183f5e9cc3f0c35fc9ff4e3077d29b25",
-    "rust_tests": 192,
+    "revision": "29a513dff43f5ad530d92b92a89e784394e409a5",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/29a513dff43f5ad530d92b92a89e784394e409a5",
+    "rust_tests": 195,
     "coverage": {
       "lines": [
-        3300,
-        3316
+        3314,
+        3330
       ],
       "regions": [
-        5746,
-        5857
+        5771,
+        5884
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 53,
+      "ported": 55,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40219545324"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40220424671"
     },
-    "note": "Exact normal staged hook and hosted core pass192 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves complete DOMImu.Construction six noise-axis, orientation/parent-frame/localization and copy/move/equality assertions. No parser/serialization/sampler or moved-from internal-state claim. No production/API, simulator or consumer change."
+    "note": "Exact normal staged hook and hosted core pass195 Rust/13 tools,3314/3330 production lines,5771/5884 regions,19/19 changed executable lines and3149/3161 exported executable lines. Independent review approves two COMPLETE DOMMagnetometer originals and only the native magnetometer fragment added to existing PARTIAL DOMLink.Sensors; prior IMU/contact assertions and unchanged fixture preserved. Public typed enum/parser/accessor added; no sampler or simulator behavior. Root consumer pin adoption remains coordinator-owned."
   }
 }
