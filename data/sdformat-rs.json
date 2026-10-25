@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T09:49:37.148771Z",
+  "updated_at": "2026-10-25T11:11:15.950752Z",
   "state": "active",
-  "summary": "Scoped joint/frame DOM lookup and the complete multi-nested assertion port are published with hosted CI green; native axis-limit load corrections are in independent review.",
+  "summary": "Native axis-limit load parity is published with green hosted CI; owned contact-sensor configuration and the shared SensorConfig enum are being implemented.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Axis limit load parity review",
-      "detail": "Frozen successor preserves finite inverted values, native Root unbounded defaults and explicit-empty errors. Exact obsolete Rust-negative XMLs remain positive regressions; unrelated assertion bytes reconstruct the public parent. All 142 Rust checks, 13 tools and 160 native rows pass within explicit two nonfinite-input gaps. No runtime limit normalization/execution."
+      "title": "Contact sensor metadata and typed configuration",
+      "detail": "Isolated implementation uses Imu or Contact variants with no dummy IMU. Preserves exact configuration XML, ordered collision names, distinct envelope/contact topics and owned source data. Existing IMU assertions stay intact; native corpus and partial original contact assertions are being completed."
     },
     {
       "id": "SDF-01",
-      "title": "Exit evidence audit",
-      "detail": "Exit audit and remaining prerequisites stay recorded; whole SDF packets remain open. Independent root first-profile consumer review passed fresh 69 scene/CLI checks, three native clock controls and two reviewer boundary tests; root publication remains coordinator-owned."
+      "title": "Producer consumer adoption review",
+      "detail": "Independently reviewing the coordinator\u2019s controlled producer pins, owned material/link metadata reset behavior and explicit nondefault flag rejection in a fresh private source/target. Whole packet acceptance remains coordinator-owned."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve native raw axis-limit load semantics and unbounded defaults",
+      "commit": "706e8fde8d096e520cac0cfcc34847ef138dfbb9",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/706e8fde8d096e520cac0cfcc34847ef138dfbb9"
+    },
     {
       "title": "Expose scoped joint/frame DOM lookup and retain full MultiNestedModel assertions",
       "commit": "a25db13687c7f8ec60e9e2cbf968d7ba07a801b7",
@@ -220,16 +225,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a25db13687c7f8ec60e9e2cbf968d7ba07a801b7",
-    "rust_tests": 140,
+    "revision": "706e8fde8d096e520cac0cfcc34847ef138dfbb9",
+    "rust_tests": 142,
     "coverage": {
       "lines": [
-        3099,
-        3119
+        3092,
+        3112
       ],
       "regions": [
-        5398,
-        5515
+        5395,
+        5510
       ]
     },
     "upstream": {
@@ -239,9 +244,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40180279580"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40182867452"
     },
-    "note": "Exact normal staged gate passed 140 Rust and 13 tooling checks, 3099/3119 lines and 5398/5515 regions; working changed 16/16, exported-tree 2943/2959. Independent private replay passed all 140 Rust checks, 104 fresh native rows and the complete original; every proof hash matches. All prior 36 rows retained. Complete mapping explicitly approved, including seven known-valid-fixture graph membership observations. No general mutable graph/whole packet acceptance. Exact hosted CI green.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a25db13687c7f8ec60e9e2cbf968d7ba07a801b7"
+    "note": "Exact normal staged gate passed 142 Rust and 13 tooling checks; 3092/3112 lines and 5395/5510 regions, working changed 2/2 and exported-tree 2936/2952. Independent 142 Rust checks, 160 native rows and full Construction baseline pass within two explicit nonfinite-input gaps. Exact obsolete Rust-negative XMLs now retain native positive values; no normalization, runtime execution or new original retirement. Hosted CI is green.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/706e8fde8d096e520cac0cfcc34847ef138dfbb9"
   }
 }
