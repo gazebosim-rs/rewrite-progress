@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T15:42:54Z",
+  "updated_at": "2026-10-25T15:59:31Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and seven partial ports; the two-process AllTopicInfo assertion subset is public and exact hosted CI passed.",
+  "summary": "Forty-four reviewed complete upstream ports and seven partial ports; the two-process TopicList latency assertion is public and exact hosted CI passed.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public3785850 two-process AllTopicInfo partial assertion port passed independent review, pinned native original, strict normal hook and exact hosted run40207654006. Existing per-topic snapshots preserve both discovered names and four original endpoint counts; complete native vector/metadata/global timing remain open. Forty-three faithful, seven partial and368 pending. A separate two-process TopicList latency fix and exact <2ms assertion are under isolated review, not public."
+      "detail": "Public48a58ee two-process TopicList complete assertion port passed independent review, pinned native original, strict normal hook and exact hosted run40208945327. The worker wakes on queued commands while retaining a bounded 2ms idle socket poll; the original second-call <2ms assertion passes, with separate pre-fix mutation failure. Forty-four faithful, seven partial and367 pending. `Publisher::has_connections()` already exposes reviewed matching-interest semantics; remembered remote registrations are distinct from 3s listing-interest TTL, and process-global same-process visibility remains open."
     }
   ],
   "accepted_slices": [
@@ -257,6 +257,11 @@
       "title": "Reviewed partial two-process AllTopicInfo assertion port",
       "commit": "37858508ce734be53099fd2e66d1cc308aa75868",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/37858508ce734be53099fd2e66d1cc308aa75868"
+    },
+    {
+      "title": "Command-woken worker and faithful two-process TopicList latency assertion",
+      "commit": "48a58eed4e2a3a7613f8b0cd6b0842d7b758a848",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/48a58eed4e2a3a7613f8b0cd6b0842d7b758a848"
     }
   ],
   "remaining": [
@@ -272,28 +277,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "37858508ce734be53099fd2e66d1cc308aa75868",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/37858508ce734be53099fd2e66d1cc308aa75868",
-    "rust_tests": 155,
+    "revision": "48a58eed4e2a3a7613f8b0cd6b0842d7b758a848",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/48a58eed4e2a3a7613f8b0cd6b0842d7b758a848",
+    "rust_tests": 156,
     "coverage": {
       "lines": [
-        1813,
-        1838
+        1816,
+        1840
       ],
       "regions": [
-        2749,
-        2833
+        2756,
+        2837
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 43,
+      "ported": 44,
       "partial": 7
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40207654006"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40208945327"
     },
-    "note": "Public3785850 exact independently reviewed tree27771234; mandatory normal hook passed155 Rust/22 tooling and pinned native originals. Exact main staged coverage1813/1838 production lines2749/2833 regions,0/0 new production changed lines (hook observed1814/1838 lines2751/2833 regions). Exact hosted run40207654006 completed SUCCESS on head3785850, policy and native-parity-and-coverage jobs both green. twoProcPubSub.AllTopicInfo stays partial because full native vector contents, endpoint metadata, process-global sharing and extra timing remain unqualified."
+    "note": "Public48a58ee exact independently reviewed treef9b2f5ad; mandatory normal hook passed156 Rust/22 tooling and five pinned native two-process originals. Exact staged and hook coverage1816/1840 production lines2756/2837 regions,3/3 changed production lines. Exact hosted run40208945327 completed SUCCESS on head48a58ee, policy and native-parity-and-coverage jobs both green. Original twoProcPubSub.TopicList discovery, two list predicates and second-call <2ms bound are mapped; local 50-call 22\u201335us samples are not a portable latency guarantee."
   }
 }
