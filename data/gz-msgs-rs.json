@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T04:06:43.753632Z",
+  "updated_at": "2026-10-25T04:31:54.768686Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "External CLI listing qualification",
-      "detail": "Reviewed info-vector revision 873a2e2 published; hosted pending. Separate descriptor-aware listing passes 11 complete native sets and targeted Rust aliases; final 87-check working gate running after provenance guards. No new dependency. External info formatting/diagnostic and wider contracts remain open."
+      "title": "External info feasibility and producer peer review",
+      "detail": "Descriptor-aware listing 0104b88 is public after independent review/strict hook; hosted pending. Ignored common-proto3 formatter probe matches 271 identical dynamic descriptor definitions against C++, but explicit unsupported-feature guards/custom native tests are still required before production. SDF merge findings corrected/reviewed; next model.config peer review begins."
     }
   ],
   "accepted_slices": [
@@ -142,6 +142,11 @@
       "title": "Native info vector expansion and per-occurrence required values",
       "commit": "873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/873a2e2eac23aeafda45fc7d2c7574db76a66ff2"
+    },
+    {
+      "title": "Canonical and external descriptor CLI name inventory",
+      "commit": "0104b887c7c4dda2efe1bd23edb52243430592f4",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/0104b887c7c4dda2efe1bd23edb52243430592f4"
     }
   ],
   "remaining": [
@@ -156,16 +161,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
-    "rust_tests": 86,
+    "revision": "0104b887c7c4dda2efe1bd23edb52243430592f4",
+    "rust_tests": 87,
     "coverage": {
       "lines": [
-        1465,
-        1467
+        1460,
+        1462
       ],
       "regions": [
-        2303,
-        2317
+        2297,
+        2311
       ]
     },
     "upstream": {
@@ -175,14 +180,14 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40160640315"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40161797130"
     },
-    "note": "Exact staged hook passes. Independent 638-blob raw export/private target passes all 12 CLI tests and five unchanged C++ cases; 119 native observations reproduce identical proof, prior 90+171 retained. Final flag-parent metadata overlap independently bound. Hosted qualification pending. External-listing work is separate; MSG-02 incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
+    "note": "Exact independent final binding and strict staged hook pass. Fresh reviewer-owned export/target passes 12 existing CLI tests, the external-list test (three aliases per 11 cases) and five unchanged C++ cases. All 11 complete native lists/proofs reproduce, including descriptor regeneration and linked library hashes. All 83 original mappings remain reviewed. Hosted qualification pending; malformed diagnostics/conflicts/external info and broad MSG-02 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/0104b887c7c4dda2efe1bd23edb52243430592f4",
     "previous_ci": {
-      "revision": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
+      "revision": "873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40159639492"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40160640315"
     }
   }
 }
