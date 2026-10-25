@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T00:18:56.752272Z",
+  "updated_at": "2026-10-25T00:26:43.731981Z",
   "state": "active",
-  "summary": "Publisher and service lifecycle fixes hosted green; four synchronous originals published. Three multiple-call assertion ports now validate while supporting simulator reset integration.",
+  "summary": "All latest published transport slices hosted green. Three retained batch assertion ports pass full76-test local gate; simulator shared-IMU integration independently reviewed.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-02",
       "title": "Retained one-then-three service batch assertions",
-      "detail": "Three new ordinary/inputless/one-way batch ports pass actual1 then3 dispatch/completion counts;3unchanged native originals pass. Production unchanged; full gate and msgs review queued. Latest published691f3ca hosted40145935541 building native reference; predecessorsc00/dff green. Root reset physics primitive13tests independently reviewed."
+      "detail": "Three ordinary/inputless/one-way batch ports pass full76Rust/21tools gate,1278/1300lines1920/1985regions0changed; msgs review queued. Latest published691f3ca hosted success verified. Root shared-IMU alias/lifetime test+all5CPP scenarios independently pass. Inventorying known native duplicate-service failure sideeffect before ownership proposal."
     }
   ],
   "accepted_slices": [
@@ -151,9 +151,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40145935541"
     },
-    "note": "Exact staged hook passes73Rust/21tools,1277/1300lines1919/1985regions; production unchanged(0/0 changed). Msgs peer independently replayed4Rust+4native originals, unchanged1000ms/<=200ms bounds. Hosted latest run pending; dff6ef5 andc00de5e predecessors succeeded.15original full ports reviewed; full418-case suite incomplete."
+    "note": "Hosted40145935541 passes73Rust/21tools,1277/1300lines1919/1985regions0changed. Downloaded runtime/assertion/runner source hashes match691f3ca exactly.15full original ports reviewed; full418-case suite incomplete. Publisher/service lifecycle predecessors also hosted green."
   }
 }
