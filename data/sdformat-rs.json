@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T20:24:49.199731Z",
+  "updated_at": "2026-10-25T20:31:01.763970Z",
   "state": "active",
-  "summary": "Effective Sensor type partial mapping is public and hosted-green at21ab18c (66 complete/18 partial). Depth/RGBD Camera Link fragments are frozen and under independent source review.",
+  "summary": "Depth/RGBD Camera Link fragments are public and hosted-green; 66 complete and 18 partial originals are reviewed. Next native camera-family fixture case is under preparation.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Parse native depth camera fixture fragment",
-      "detail": "Exact two-file source packet plus unchanged sensors.sdf fixture frozen on public21ab18c; pinned DOMLink.Sensors native1/0. Isolated and main integrated full218 Rust/15 tools/fmt/Clippy/docs pass,3901/3919 production lines6810/7007 regions11/11 changed. Only depth_sensor and rgbd_sensor native name/type/pose/metrics/nested Camera values mapped; full Link, other13 instances, broader Camera/depth rendering unported. Independent source review pending."
+      "title": "Retain next Camera family fixture semantics",
+      "detail": "Preparing the next bounded native-backed camera-family Link fragment on the hosted-green depth/RGBD parent. Preserve exact upstream fixture and native assertions; whole DOMLink.Sensors remains partial."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Parse native depth and RGBD Camera Link fixture fragments",
+      "commit": "cde524db0b82d848e82d307e76765eb3ad4efcb2",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/cde524db0b82d848e82d307e76765eb3ad4efcb2"
+    },
     {
       "title": "Expose native effective Sensor types for parsed fixture fragments",
       "commit": "21ab18c336c29070e7a5c6b33a0bbd70862b58d3",
@@ -360,17 +365,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "21ab18c336c29070e7a5c6b33a0bbd70862b58d3",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/21ab18c336c29070e7a5c6b33a0bbd70862b58d3",
-    "rust_tests": 216,
+    "revision": "cde524db0b82d848e82d307e76765eb3ad4efcb2",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/cde524db0b82d848e82d307e76765eb3ad4efcb2",
+    "rust_tests": 218,
     "coverage": {
       "lines": [
-        3892,
-        3910
+        3901,
+        3919
       ],
       "regions": [
-        6795,
-        6992
+        6810,
+        7007
       ]
     },
     "upstream": {
@@ -380,8 +385,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40230201068"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40230955943"
     },
-    "note": "Normal protected hook and exact hosted verify pass216 Rust/15 tools,3892/3910 production lines6795/6992 regions and3710/3722 staged changed executable lines. Independent source/final review approved PARTIAL DOMSensor.Type canonical value strings and effective enum assertions on already parsed Link fragments. Mutable native SetType/invalid-string state, unsupported XML families and full Link remain unported. No root consumer pin change."
+    "note": "Normal protected hook and exact hosted verify pass218 Rust/15 tools,3901/3919 production lines6810/7007 regions and3719/3731 staged changed executable lines. Independently reviewed exact two depth/RGBD fixture fragments of PARTIAL DOMLink.Sensors; 13 other sensor instances, full Link and Camera/depth grammar/rendering remain unported. No root consumer pin change."
   }
 }
