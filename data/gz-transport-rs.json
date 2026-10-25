@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T14:24:46Z",
+  "updated_at": "2026-10-25T14:53:19Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and four partial ports; bounded subscriber-only discovered topic snapshot is public and exact hosted CI passed.",
+  "summary": "Forty-three reviewed complete upstream ports and five partial ports; bounded topic endpoint descriptor snapshot is public and exact hosted CI passed.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Retained service and tooling contracts",
-      "detail": "Publicf9932d0 known_topics subscriber-only snapshot passed independent source/API/assertion review, native one-node/two-process originals, real C++ remote-interest test, normal strict hook and exact hosted run40201379550. NodeTest.TopicListSubscriberOnly remains partial; global initialization and native latency contracts unqualified. Forty-three faithful, four partial and371 pending."
+      "title": "Retained topic information and service contracts",
+      "detail": "Public47c4cc0 known_topic_info descriptor snapshot passed independent source/API/assertion review, pinned NodeTest.TopicInfoSubscriberOnly original, real C++ publisher/subscriber controls, normal strict hook and exact hosted run40203823103. The original stays partial: native full MessagePublisher metadata, process-global sharing, immediate discovery and latency remain unqualified. Forty-three faithful, five partial and370 pending; two-process TopicInfo original passed read-only native baseline for the next bounded assertion port."
     }
   ],
   "accepted_slices": [
@@ -242,6 +242,11 @@
       "title": "Bounded subscriber-only discovered topic snapshot",
       "commit": "f9932d09a9e66f71e045b34365eeddd14a69e828",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f9932d09a9e66f71e045b34365eeddd14a69e828"
+    },
+    {
+      "title": "Bounded topic publisher and subscriber descriptor snapshot",
+      "commit": "47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/47c4cc0565a0db2650baca5b1e7913cf1ec7f393"
     }
   ],
   "remaining": [
@@ -257,28 +262,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "f9932d09a9e66f71e045b34365eeddd14a69e828",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f9932d09a9e66f71e045b34365eeddd14a69e828",
-    "rust_tests": 149,
+    "revision": "47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
+    "rust_tests": 153,
     "coverage": {
       "lines": [
-        1760,
-        1777
+        1814,
+        1838
       ],
       "regions": [
-        2664,
-        2735
+        2749,
+        2833
       ]
     },
     "upstream": {
       "total": 418,
       "ported": 43,
-      "partial": 4
+      "partial": 5
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40201379550"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40203823103"
     },
-    "note": "Publicf9932d0 exact reviewed tree4d15bdc, normal mandatory staged hook passed149 Rust/22 tooling and required native originals; 1760/1777 production lines2664/2735 regions71/71 changed executable lines. Exact hosted run40201379550 completed success for head f9932d0, with policy and native-parity-and-coverage jobs both green. NodeTest.TopicListSubscriberOnly remains partial, global registry/timing unqualified."
+    "note": "Public47c4cc0 exact independently reviewed tree5f434465, mandatory normal hook passed153 Rust/22 tooling and pinned native originals; staged coverage1814/1838 production lines2749/2833 regions61/61 changed lines (hook observed2750/2833 regions). Exact hosted run40203823103 completed SUCCESS on head47c4cc0, policy and native-parity-and-coverage jobs both green. NodeTest.TopicInfoSubscriberOnly remains partial; full native metadata, process-global registry and latency unqualified."
   }
 }
