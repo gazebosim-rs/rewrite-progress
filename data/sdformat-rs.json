@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T19:48:31.029114Z",
+  "updated_at": "2026-10-25T19:54:18.230467Z",
   "state": "active",
-  "summary": "Typed Lidar values and parser are public and hosted-green. Two native DOM value originals are complete; four exact Link fixture fragments extend the still-partial original. A bounded Camera construction value original is being tested in isolation.",
+  "summary": "Camera Construction value original is public and hosted-green; accepted complete original count66, partial17. A separate native-backed camera sensor parser and bounded Link fixture fragment is under isolated test.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Port retained DOMCamera.Construction values",
-      "detail": "Pinned native DOMCamera.Construction1/0 and isolated/integrated full212 Rust/15 tools/fmt/Clippy/docs pass, production3645/3662 lines6284/6432 regions75/75 changed. Exact three-file source freeze is under independent review; no complete-case credit yet. Camera parser, Link fragment, ToElement and rendering remain pending."
+      "title": "Parse the native camera sensor fixture fragment",
+      "detail": "Pinned DOMLink.Sensors1/0 on unchanged sensors.sdf. Isolated typed Camera parser and exact camera_sensor assertions pass selected Rust tests; full strict gate and independent disposition review remain. Full Link original, 15 other instances, ToElement/rendering unported."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain complete Camera construction DOM values",
+      "commit": "8b0416cc6d947e169b6a2c67fe3eb408cadc71d4",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8b0416cc6d947e169b6a2c67fe3eb408cadc71d4"
+    },
     {
       "title": "Port Lidar DOM values and bounded Link sensor fragments",
       "commit": "01fabe7d17773f9969c275a4d45447c6385f94ac",
@@ -345,28 +350,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "01fabe7d17773f9969c275a4d45447c6385f94ac",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/01fabe7d17773f9969c275a4d45447c6385f94ac",
-    "rust_tests": 211,
+    "revision": "8b0416cc6d947e169b6a2c67fe3eb408cadc71d4",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8b0416cc6d947e169b6a2c67fe3eb408cadc71d4",
+    "rust_tests": 212,
     "coverage": {
       "lines": [
-        3570,
-        3587
+        3645,
+        3662
       ],
       "regions": [
-        6255,
-        6403
+        6284,
+        6432
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 65,
+      "ported": 66,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40227375211"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40227988669"
     },
-    "note": "Normal protected staged hook and hosted verify core pass211 Rust/15 tools,3570/3587 production lines,6255/6403 regions and3390/3402 staged executable lines. Independent source/final review accepts exact DOMLidar.Construction and Set value originals COMPLETE and four unchanged Link.Sensors gpu_ray/gpu_lidar/ray/lidar fragments PARTIAL. Native effective GPU_LIDAR/LIDAR enum classification, full Link count/index/name lookup, 16 other instances, rendering and measurement remain unported. Previous seven Link fragments and fixture preserved. Root consumer pin adoption coordinator-owned."
+    "note": "Normal protected staged hook and hosted verify core pass212 Rust/15 tools,3645/3662 production lines,6284/6432 regions and3465/3477 staged executable lines. Independent source/final review accepted exact pinned DOMCamera.Construction value original COMPLETE with all defaults/set/read and copy/move/equality observations. PixelFormat currently exposes the two original tested variants; Camera parser/Load/ToElement/Link/rendering were outside this accepted slice. No root consumer pin change."
   }
 }
