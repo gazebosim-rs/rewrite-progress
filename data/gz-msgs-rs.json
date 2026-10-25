@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T02:04:50.165248Z",
+  "updated_at": "2026-10-25T03:05:53.904334Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Native CLI option combinations",
-      "detail": "JSON92f5a99 is published/hosted green after independent review and strict gate. Implementing bounded attached/repeated info, flag combinations and native errors with maintained clap_lex; assigned flag values/full grammar stay explicit. Discovery consumer peer review completed in isolated target."
+      "title": "Native flag-value conversion qualification",
+      "detail": "Bounded CLI a9811a9 published and hosted green after84-check strict gate/private review.75 invocation rows match;15 long flag-value observations remain explicit gaps for the next slice. Remapping peer review completed with8 focused checks and2 native originals."
     }
   ],
   "accepted_slices": [
@@ -127,6 +127,11 @@
       "title": "Complete JSON document framing and isolated reviewer-target policy",
       "commit": "92f5a99020c6063d5d42cb720b757474a65c7dda",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/92f5a99020c6063d5d42cb720b757474a65c7dda"
+    },
+    {
+      "title": "Bounded native CLI option combinations using a maintained lexer",
+      "commit": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a9811a99157936fe648bcd11a897c34eabdf6b6b"
     }
   ],
   "remaining": [
@@ -141,16 +146,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "92f5a99020c6063d5d42cb720b757474a65c7dda",
-    "rust_tests": 83,
+    "revision": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
+    "rust_tests": 84,
     "coverage": {
       "lines": [
-        1258,
-        1258
+        1380,
+        1382
       ],
       "regions": [
-        1933,
-        1945
+        2155,
+        2169
       ]
     },
     "upstream": {
@@ -160,14 +165,14 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40152236100"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40156564346"
     },
-    "note": "Independent isolated-target replay passes all9 CLI tests and14 native JSON rows. Exact staged hook and hosted source-install gate pass. Initial shared-target stale binary was preserved, traced to reviewer snapshot, and resolved by isolated rebuilds; guidance now requires target isolation. Native unquoted-key/trailing-comma JSON grammar remains unqualified; MSG-02 incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/92f5a99020c6063d5d42cb720b757474a65c7dda",
+    "note": "Exact staged hook and hosted source/archive install pass. Independent raw-blob export/private target passes all10 CLI tests plus5 unchanged C++ cases;90 native observations reproduced with identical provenance proof.75 matching invocations and15 unsupported flag-value rows distinguished. Helper120/120 lines217/217 regions; no threshold/exclusion change. MSG-02 incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a9811a99157936fe648bcd11a897c34eabdf6b6b",
     "previous_ci": {
-      "revision": "e2001a3bc5b54cb15ea1cc16deaefdf14719b2df",
+      "revision": "92f5a99020c6063d5d42cb720b757474a65c7dda",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40151171345"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40152236100"
     }
   }
 }
