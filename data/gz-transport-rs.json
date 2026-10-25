@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T02:10:29.811675Z",
+  "updated_at": "2026-10-25T02:21:29.465252Z",
   "state": "active",
-  "summary": "Published reviewed native-compatible discovery decoding; exact staged gate passes and hosted CI is running.",
+  "summary": "Published reviewed native-compatible discovery decoding; exact staged and source-matched hosted gates pass. Continuing bounded service type inspection.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Discovery hosted qualification and service inspection contract",
-      "detail": "Published c570e8c pins msgs e2001a3 and opts discovery into its compatible envelope. Independent 31-case native/parser and runtime admission review passes; strict staged gate passes 81 Rust/21 tooling, 1286/1307 lines, 1929/1993 regions and 4/4 changed lines. Hosted 40153350311 is running. Next bounded library task is service type inspection/resolution."
+      "title": "Bounded service type inspection and resolution",
+      "detail": "Published c570e8c pins msgs e2001a3 and opts discovery into its compatible envelope. Independent 31-case native/parser and runtime admission review passes; hosted 40153350311 passes 81 Rust tests, 1285/1307 lines, 1928/1993 regions and 4/4 changed lines. All 29 downloaded input hashes match the published revision. Next bounded library task is service type inspection/resolution."
     },
     {
       "id": "NET-02",
@@ -162,11 +162,11 @@
     "rust_tests": 81,
     "coverage": {
       "lines": [
-        1286,
+        1285,
         1307
       ],
       "regions": [
-        1929,
+        1928,
         1993
       ]
     },
@@ -176,9 +176,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40153350311"
     },
-    "note": "Published c570e8c passes the exact immutable staged gate: 81 Rust and 21 tooling tests, 1286/1307 lines, 1929/1993 regions and 4/4 changed executable lines. Independent strict C++ parser/runtime replay covers 31 characterization cases. Producer e2001a3 is hosted green; consumer CI is running. Twenty of 418 original ports remain reviewed; no extra original retirement, lossless discovery relay, opaque-payload decoding or full wire/parser qualification is claimed."
+    "note": "Published c570e8c passes the exact immutable staged gate (81 Rust and 21 tooling tests; 1286/1307 lines, 1929/1993 regions, 4/4 changed) and hosted CI (81 Rust; 1285/1307 lines, 1928/1993 regions, 4/4 changed). All 29 hosted input hashes match the published commit. Independent strict C++ parser/runtime replay covers 31 characterization cases. Twenty of 418 original ports remain reviewed; no extra original retirement, lossless discovery relay, opaque-payload decoding or full wire/parser qualification is claimed."
   }
 }
