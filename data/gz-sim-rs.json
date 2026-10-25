@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T06:14:36.578492+00:00",
+  "updated_at": "2026-10-25T06:18:24.009343+00:00",
   "state": "active",
-  "summary": "Reviewed bounded local SDF resources are published (151 Rust tests and seven real C++ scenarios). Offline Fuel model integration is under development; Transport owner is resolving a socket2/Tokio compatibility blocker. Full headless P2 remains open.",
+  "summary": "Bounded local SDF resources now pass hosted CI (151 Rust tests, seven real C++ scenarios, strict coverage). Offline Fuel cache and both-engine reset tests pass in isolation; workspace integration awaits the reviewed Transport dependency fix. P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -29,7 +29,7 @@
     {
       "id": "FUEL-01",
       "title": "Integrate local paths and offline Fuel resources",
-      "detail": "Published eed6288 local lookup/config selection, lossless file identity, XML/warning budgets and both-engine include/reset. Independent review and exact staged151Rust+9tools/sevenCPP passed; hosted40167872106 pending. New immutable Fuel3747086 cache-only consumer and actual producer/CLI/both-engine reset fixtures are not yet compiled: Transport exactsocket2.6.2 conflicts with Fuel Tokio requiring.6.3+. Producer owner is fixing with strict review; Fuel repo untouched."
+      "detail": "Published eed6288 local lookup/config selection, lossless file identity, XML/warning budgets and both-engine include/reset. Independent review and exact staged151Rust+9tools/sevenCPP passed; hosted40167872106 succeeded. New immutable Fuel3747086 cache-only consumer and actual producer/CLI/both-engine reset fixtures pass in isolated manifests; full workspace is still blocked: Transport exactsocket2.6.2 conflicts with Fuel Tokio requiring.6.3+. Producer owner is fixing with strict review; Fuel repo untouched."
     }
   ],
   "accepted_slices": [
@@ -217,10 +217,10 @@
       "partial": 3
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40167872106"
     },
-    "note": "Exact isolated staged151Rust+9tools/seven real C++ scenarios pass; every crate strictly >95% lines/regions. New assets132/133lines245/250regions; independent66focused checks and18fresh installed-native controls passed. Hosted consumer pending; prior be62cc1 CI40164752228 succeeded. Offline Fuel consumer is uncompiled work, not accepted capability. No broad P2 completion or full simulator speedup claimed.",
+    "note": "Exact isolated staged151Rust+9tools/seven real C++ scenarios pass; every crate strictly >95% lines/regions. New assets132/133lines245/250regions; independent66focused checks and18fresh installed-native controls passed. Exact hosted consumer40167872106 succeeded; prior be62cc1 CI40164752228 succeeded. Offline Fuel consumer is uncompiled work, not accepted capability. No broad P2 completion or full simulator speedup claimed.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eed628872e64334c0ccd3572a56a5ca1345b945a"
   },
   "phase_status": {
