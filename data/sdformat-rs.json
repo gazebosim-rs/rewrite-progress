@@ -1,25 +1,30 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T06:39:52.970017Z",
+  "updated_at": "2026-10-25T07:02:23.554115Z",
   "state": "active",
-  "summary": "Owned material metadata and direct-float conversion are frozen for independent review; the published SDF 1.4 loader remains hosted green.",
+  "summary": "Owned material metadata is under independent review; native-backed world physics profiles are ready for review, and a concrete hook-isolation correction is running the strict staged gate.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Material metadata and native float semantics",
-      "detail": "Frozen candidate passes 124 Rust checks, 102 native observations, the original material fixture test and 11 tooling checks. Working coverage: 2886/2910 lines, 5065/5183 regions; changed 165/171. Independent source/assertion/numeric safety review is pending. PBR, IO and rendering effects remain unsupported."
+      "detail": "Frozen material candidate passes 124 Rust checks, 102 native observations, the original fixture case and 11 tools. Independent source/assertion/numeric safety review is underway; no PBR, IO or rendering effects."
+    },
+    {
+      "id": "SDF-01",
+      "title": "World physics profiles",
+      "detail": "Separate frozen candidate passes 122 Rust checks, 89 native observations and original Physics default/setter assertions. Owned profile metadata and first-default selection; no runtime engine/timestep choice. Independent review pending."
+    },
+    {
+      "id": "QLT-01",
+      "title": "Isolate hook Git context",
+      "detail": "Independent review approved exact Git-local environment isolation. Real worktree/alternate-index regression fails before the correction and all 13 tools pass afterward. The mandatory staged gate is running; no exclusions or production/native changes."
     },
     {
       "id": "SDF-01",
       "title": "Exit evidence audit",
-      "detail": "Exact plan criteria, current supported loader subset, 33 complete and ten partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
-    },
-    {
-      "id": "SDF-02",
-      "title": "Offline Fuel consumer integration review",
-      "detail": "Independent fresh private replay passes 14 consumer tests and six native cache controls. Source-only review approved; final paired dependency pins, workspace/staged gates and metadata remain pending. No Fuel or filesystem dependency is added to sdformat-rs."
+      "detail": "Supported loader subset and remaining acceptance dependencies remain recorded; whole SDF-01/02 packets stay in progress. Independent offline Fuel consumer review passed 103 targeted root checks, seven C++ scenarios and six native cache controls; root published that consumer separately."
     }
   ],
   "accepted_slices": [
