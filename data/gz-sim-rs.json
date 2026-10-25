@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T09:52:13.553901+00:00",
+  "updated_at": "2026-10-25T10:00:50.063413+00:00",
   "state": "active",
-  "summary": "Published native first-profile timestep integration after independent review and the exact 168 Rust/12 tooling/nine C++ gate. Velocity/force commands are under development; P2 joints and equal-work reference/performance remain open.",
+  "summary": "Hosted-green native first-profile timestep integration after independent review and the exact 168 Rust/12 tooling/nine C++ gate. Velocity/force commands are under development; P2 joints and equal-work reference/performance remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Published66861d3 consumes SDF7ed5ad02: omitted CLI step selects first profile (not later marked default), explicit overrides retain precedence, one parse, owned profile metadata and IO-free reset. Three actual native Server clock controls match both engines. Independent69scene/CLI+three native+two countercontrols passed; normal staged168Rust12tools9CPP,49/49scene16/16CLI changed lines. Nondefault contact limits explicitly reject; no pacing claim. Hosted40182386735 running. Newer producer fields await separate preservation/validation."
+      "detail": "Published66861d3 consumes SDF7ed5ad02: omitted CLI step selects first profile (not later marked default), explicit overrides retain precedence, one parse, owned profile metadata and IO-free reset. Three actual native Server clock controls match both engines. Independent69scene/CLI+three native+two countercontrols passed; normal staged168Rust12tools9CPP,49/49scene16/16CLI changed lines. Nondefault contact limits explicitly reject; no pacing claim. Hosted40182386735 succeeded. Newer producer fields await separate preservation/validation."
     }
   ],
   "accepted_slices": [
@@ -251,10 +251,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40182386735"
     },
-    "note": "Normal exact staged hook passed168 Rust tests,12 tooling checks and nine actual C++ scenarios. Every production crate exceeds95% lines/regions;49/49scene16/16CLI changed executable lines. Independent review replayed69scene/CLI tests, three rebuilt native Server controls with matching proof hashes, and two extra both-engine counters. No existing assertions/thresholds/exclusions changed. Native controls disable plugins and establish clock/configuration only, not full physics/sensor/performance parity. Hosted40182386735 running;P2 remains open.",
+    "note": "Normal exact staged hook passed168 Rust tests,12 tooling checks and nine actual C++ scenarios. Every production crate exceeds95% lines/regions;49/49scene16/16CLI changed executable lines. Independent review replayed69scene/CLI tests, three rebuilt native Server controls with matching proof hashes, and two extra both-engine counters. No existing assertions/thresholds/exclusions changed. Native controls disable plugins and establish clock/configuration only, not full physics/sensor/performance parity. Hosted40182386735 succeeded;P2 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66861d37c9cf6444dbad01b8365a9be6ef600acd"
   },
   "phase_status": {
