@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T08:41:00.287379Z",
+  "updated_at": "2026-10-25T08:42:49.605398Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
@@ -9,7 +9,7 @@
     {
       "id": "MSG-02",
       "title": "Source-aware external definitions",
-      "detail": "Source-aware registry/factory/CLI definitions are frozen for independent review after full 99 Rust checks and six snapshot regressions; total owned 1778/1781 lines and 2851/2870 regions. Accepted raw JSON-name omissions stay bound to successful pool snapshots; duplicate/failure/clone/maps/oneofs native tests pass. Public 25f7d611 reserved formatter hosted qualification remains in progress; MSG-02 open."
+      "detail": "Source-aware registry/factory/CLI definitions are frozen for independent review after full 99 Rust checks and six snapshot regressions; total owned 1778/1781 lines and 2851/2870 regions. Accepted raw JSON-name omissions stay bound to successful pool snapshots; duplicate/failure/clone/maps/oneofs native tests pass. Public 25f7d611 reserved formatter hosted qualification is verified green, including exact archive identity; MSG-02 open."
     }
   ],
   "accepted_slices": [
@@ -194,10 +194,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40177274169"
     },
-    "note": "Independent source/final binding and normal mandatory staged gate pass; 96 Rust checks, six snapshot regressions, archive/downstream and strict coverage pass. Independent nine definition checks, 27 complete native CLI rows and 132 extra escaping comparisons pass. Exact hosted qualification pending; all 83 original mappings unchanged, MSG-02 remains open.",
+    "note": "Independent source/final binding and normal mandatory staged gate pass: 96 Rust checks, six snapshot regressions, archive/downstream and strict coverage. Independent nine definition checks, 27 native CLI rows and 132 escaping comparisons pass. Exact hosted run passes, including staged proof and fresh-cache install; downloaded 667-file archive proof matches published tree and byte-identical independently regenerated local archive. All 83 original mappings unchanged; MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25f7d611b553c0d4d72fcd84aec5f2cab9339712",
     "previous_ci": {
       "revision": "25a2b88407ecc542c4a6eb5aae00cf4db3933f73",
