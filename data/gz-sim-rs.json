@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T08:37:15.072002+00:00",
+  "updated_at": "2026-10-25T09:05:03.687551+00:00",
   "state": "active",
-  "summary": "Published IMU cadence now passes hosted CI: 163 Rust tests, 10 tooling checks and nine real C++ scenarios. The staged-source export correction is under independent review. Next headless work includes physics profiles, noise, joints and inputs; P2 remains open.",
+  "summary": "Native IMU cadence is hosted-green. Exact staged-source export is now published after independent review and the normal 163 Rust / 12 tooling / nine C++ gate. First-profile physics timestep integration is underway; P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -34,7 +34,12 @@
     {
       "id": "QLT-01",
       "title": "Isolate exported verifier Git context",
-      "detail": "The child Git-context fix is published and hosted-green. Its six-file successor replaces git archive with private-index export and validates every blob, mode, symlink, directory and path. The worktree regression now reproduces export-ignore omission and a tracked metadata filename collision; filtered checkout and snapshot mutation tests pass. Full 163 Rust tests, 12 tooling checks, nine C++ scenarios and unchanged coverage pass. Independent review and the exact normal staged gate remain pending."
+      "detail": "Published 0b09a97 exports with a private index and validates raw blobs, executable flags, symlinks, directories and all paths. Real worktree/alternate-index tests cover export-ignore and tracked metadata filenames; checkout conversion and snapshot mutations fail closed. Independent 12-tool and SHA256/non-UTF8 controls pass, as does the exact full staged gate. Hosted CI 40178274916 is running. No Rust or coverage policy changed."
+    },
+    {
+      "id": "LOAD-01",
+      "title": "Consume native physics profile timestep",
+      "detail": "Preparing a controlled SDF 7ed5ad02 adoption. The pinned native simulator selects the first profile, rather than the DOM helper\u2019s marked default. Omitted CLI step will use that value; explicit Rust/CLI overrides retain precedence, with one parse and owned reset metadata. Native Server clock controls and consumer boundary tests are in development. Newer material/link flags remain separate until preserved or explicitly validated."
     }
   ],
   "accepted_slices": [
@@ -187,6 +192,11 @@
       "title": "Native-phase IMU rates, per-physics acceleration, reset and two new real C++ cadence cases",
       "commit": "a9cfe05c944adc8664e642917103506eaf041e9f",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a9cfe05c944adc8664e642917103506eaf041e9f"
+    },
+    {
+      "title": "Exact staged source export with raw blob and worktree integrity checks",
+      "commit": "0b09a97cd42925f55649656dada0dc649fb7e926",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0b09a97cd42925f55649656dada0dc649fb7e926"
     }
   ],
   "remaining": [
@@ -218,7 +228,7 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "a9cfe05c944adc8664e642917103506eaf041e9f",
+    "revision": "0b09a97cd42925f55649656dada0dc649fb7e926",
     "rust_tests": 163,
     "coverage": {
       "lines": [
@@ -236,11 +246,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40175577427"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40178274916"
     },
-    "note": "The exact normal staged gate passed 163 Rust tests, 10 tooling checks and nine real C++ scenarios. Every crate exceeds 95% line and region coverage; all 56 changed scene lines are covered. No exclusions, tolerances or thresholds changed. Independent review bound all 17 files and reran 87 scene/server checks, four final clock tests, 10 native controls, the original test and 36 extra comparisons. Native proof hashes match the recorded ROS loader lineage; the alternate proof is retained. The obsolete Rust-only 10 Hz rejection has an explicitly approved stronger positive replacement. The original clock mapping is partial; no upstream test was retired. Exact hosted CI 40175577427 succeeded. Full SENSOR-01, P2 and equal-work performance acceptance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a9cfe05c944adc8664e642917103506eaf041e9f"
+    "note": "Exact normal staged gate passed 163 Rust tests, 12 tooling checks and nine real C++ scenarios. Production Rust and coverage are unchanged: every crate exceeds 95% line and region coverage, with no exclusions or tolerances changed. Independent exact six-file review reran 12 tooling checks, reproduced baseline export-ignore failure, and checked SHA256 Git, non-UTF8 data/symlink targets and mode rejection. Hosted CI 40178274916 is running; IMU cadence a9cfe05 CI 40175577427 succeeded. Full P2 and equal-work performance acceptance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0b09a97cd42925f55649656dada0dc649fb7e926"
   },
   "phase_status": {
     "P0": "in_progress",
