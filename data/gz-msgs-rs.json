@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T03:42:10.201054Z",
+  "updated_at": "2026-10-25T03:50:14.646873Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Native flag-value conversion qualification",
-      "detail": "Two separately frozen reviews: flag values (85 local checks, 171 new native rows) and info vectors (86 local checks, 119 new native rows). Combined working coverage passes 1465/1467 lines and 2303/2317 regions; public quality remains a9811a9 hosted success. No full MSG-02 acceptance claimed."
+      "title": "Info vector qualification and hosted flag-value gate",
+      "detail": "Flag-value commit published after exact independent review and 85-check strict staged gate; hosted run pending. Separate frozen info-vector slice passes 86 local checks and 119 native observations, now independently reviewed by transport. Publisher-membership peer review completed with 53 unit, 6 integration and 4 native originals passing."
     }
   ],
   "accepted_slices": [
@@ -132,6 +132,11 @@
       "title": "Bounded native CLI option combinations using a maintained lexer",
       "commit": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a9811a99157936fe648bcd11a897c34eabdf6b6b"
+    },
+    {
+      "title": "Native boolean flag values, ranges and callback precedence",
+      "commit": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5a68646a0ef537a11b1584ab58685ff9c0f44bb3"
     }
   ],
   "remaining": [
@@ -146,16 +151,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
-    "rust_tests": 84,
+    "revision": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
+    "rust_tests": 85,
     "coverage": {
       "lines": [
-        1380,
-        1382
+        1448,
+        1450
       ],
       "regions": [
-        2155,
-        2169
+        2275,
+        2289
       ]
     },
     "upstream": {
@@ -164,15 +169,15 @@
       "partial": 0
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40159639492"
+    },
+    "note": "Exact strict staged hook passes. Independent raw export/private target passes all 11 CLI tests plus five unchanged C++ cases; both complete native proofs (90 earlier and 171 new rows) match. All 83 original mappings remain reviewed; no threshold/exclusion/dependency change. Hosted qualification pending. Info-vector working evidence is a separate uncommitted slice; MSG-02 incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
+    "previous_ci": {
+      "revision": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40156564346"
-    },
-    "note": "Exact staged hook and hosted source/archive install pass for this public revision. Independent raw-blob export/private target passes all 10 CLI tests plus 5 unchanged C++ cases; 90 native observations reproduced with identical provenance proof. This revision retains 15 unsupported flag-value inputs, now addressed only in a separate uncommitted review slice. Helper 120/120 lines and 217/217 regions; no threshold/exclusion change. MSG-02 incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a9811a99157936fe648bcd11a897c34eabdf6b6b",
-    "previous_ci": {
-      "revision": "92f5a99020c6063d5d42cb720b757474a65c7dda",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40152236100"
     }
   }
 }
