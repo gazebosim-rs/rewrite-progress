@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T19:31:54.264272Z",
+  "updated_at": "2026-10-25T19:40:14.570369Z",
   "state": "active",
-  "summary": "Typed AirSpeed Link fragment is public and hosted-green. Inventory correction: pinned UNIT_Airspeed_TEST contains dedicated DOMAirSpeed.Construction and Set originals, now undergoing a separate native-backed port; the full Link case remains partial.",
+  "summary": "Corrected Airspeed source inventory and accepted its two native-backed DOM value originals at public hosted-green revision. Existing Link.Sensors AirSpeed fragment remains partial. Lidar typed/parser candidate is under independent review.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Correct AirSpeed original inventory and port DOM cases",
-      "detail": "A lowercase pinned src/Airspeed_TEST.cc supplies DOMAirSpeed.Construction and Set. The earlier absence claim is withdrawn; native2/0 and Rust corrective packet are in progress with no complete-case credit until independent review and hosted acceptance. Lidar source review is paused and preserved for rebasing afterward."
+      "title": "Review typed Lidar DOM and bounded Link fragments",
+      "detail": "Rebased frozen Lidar source on public Airspeed correction, native DOM2/0 and Link1/0, full211 Rust/15 tools/fmt/Clippy/docs and strict coverage. Independent source review underway; native effective GPU_LIDAR/LIDAR enum classification and full Link original remain unported."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Correct Airspeed inventory and retain two complete DOM value originals",
+      "commit": "2e46e223986bb2429150cd7b84881d2f4dd0e00a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/2e46e223986bb2429150cd7b84881d2f4dd0e00a"
+    },
     {
       "title": "Add typed AirSpeed settings for the native Link sensor fragment",
       "commit": "e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c",
@@ -335,9 +340,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c",
-    "rust_tests": 205,
+    "revision": "2e46e223986bb2429150cd7b84881d2f4dd0e00a",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/2e46e223986bb2429150cd7b84881d2f4dd0e00a",
+    "rust_tests": 207,
     "coverage": {
       "lines": [
         3461,
@@ -350,13 +355,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 61,
+      "ported": 63,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40225448184"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40226921154"
     },
-    "note": "Exact normal staged hook and hosted core pass205 Rust/13 tools,3461/3477 production lines,6038/6167 regions,36/36 changed executable lines. Independent review approves only the exact AirSpeed pressure-noise fragment added to existing PARTIAL DOMLink.Sensors; all prior sensor assertions and unchanged fixture preserved. Pinned UNIT_Airspeed_TEST has dedicated DOMAirSpeed.Construction and Set originals; the previous absence claim is withdrawn. No complete-case credit is claimed by this Link-only slice; a corrective native-backed port is in progress. Typed enum/parser/accessor added without speed measurement or simulator behavior. Root consumer pin adoption remains coordinator-owned."
+    "note": "Normal protected staged hook and hosted core pass207 Rust/15 tools,3461/3477 production lines,6038/6167 regions and3286/3298 staged executable lines. Independent review accepted exact pinned DOMAirSpeed.Construction and Set value observations and case-insensitive inventory lookup for src/Airspeed_TEST.cc. Earlier no-unit claim withdrawn. Existing DOMLink.Sensors AirSpeed fixture fragment remains PARTIAL; DOMAirSpeed.Load and ToElement remain unported. Root consumer pin adoption remains coordinator-owned."
   }
 }
