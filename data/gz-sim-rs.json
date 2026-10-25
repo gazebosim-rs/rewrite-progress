@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T16:16:58.360428+00:00",
+  "updated_at": "2026-10-25T16:34:46.998054+00:00",
   "state": "active",
-  "summary": "Published independently reviewed native-backed IMU velocity-history correction. Measuring actual full Rust Server against native Server; selected-fixture acceptance remains open.",
+  "summary": "Published reviewed actual-server step-to-observation report and Transport integration. Native-backed reset/removal reference is now passing on both supported scene backends and being prepared for independent review; P2 matrix remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "FullServer first batch failed strict sequence assertions under bounded queue pressure and was rejected. Revised harness requires complete per-step receipt on both actual Rust/native Server calls, retaining default1000 queues and all fields/time/motion/counter checks. Transport48a adoption retains canonicalMsgs2cea and untouchedFuel/SDF. Matched release measurement and independent boundary review are underway. Complete selected-fixture matrix remains open."
+      "detail": "Published03328bf after independent fullServer/7ce/48a replays, per-step receipt mutant, exact source binding and normal202Rust/15tool/nineCPP hook. AuthorRust28.403us/native24.177us and independent27.962us/25.098us are contextual native comparisons; alloutput checks retained. Large withinRust producer-associated improvement reproduced with identicalRustsource and separate batches. Now promoting existing native reset/removal controls into durable sharedSDF10-case DART/TPE proof and Rust lifecycle/pose comparisons for final selected-fixture matrix."
     },
     {
       "id": "PHY-02",
@@ -242,6 +242,11 @@
       "title": "Native-backed IMU velocity reset with real-force and lifecycle controls",
       "commit": "a867617442985d5491c1a36d933f2e01a3b34a5a",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a867617442985d5491c1a36d933f2e01a3b34a5a"
+    },
+    {
+      "title": "Actual server per-step observation report, bounded queues and reviewed Transport48a integration",
+      "commit": "03328bfc302376bf6094ea21862123778a34ac1d",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/03328bfc302376bf6094ea21862123778a34ac1d"
     }
   ],
   "remaining": [
@@ -273,8 +278,8 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "a867617442985d5491c1a36d933f2e01a3b34a5a",
-    "rust_tests": 201,
+    "revision": "03328bfc302376bf6094ea21862123778a34ac1d",
+    "rust_tests": 202,
     "coverage": {
       "lines": [
         3182,
@@ -291,11 +296,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40210013522"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40212126834"
     },
-    "note": "Normal hook201 Rust/14 tooling/nine actual C++ scenarios, every production crate >95% lines/regions, changed scene12/12. Independent source/native/private mutant and exact final binding approved. Exact hosted CI40210013522 SUCCESS; previous84aef01 hosted40208808832SUCCESS. No full-server/P2 acceptance yet.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a867617442985d5491c1a36d933f2e01a3b34a5a"
+    "note": "Normal hook202Rust/15tools/nineactualCPP passes, allproductioncrates strictly>95% lines/regions, unchanged3182/3228 lines4941/5079 regions; no changedproductionlines. Independent matching per-step server replay,7ce-onlypin control and omitted5ms sample mutant approved; native ratio contextual, noP2acceptance. Exact hostedpending; previousa867 hosted40210013522SUCCESS.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/03328bfc302376bf6094ea21862123778a34ac1d"
   },
   "phase_status": {
     "P0": "in_progress",
