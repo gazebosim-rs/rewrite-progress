@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T08:43:24.781326Z",
+  "updated_at": "2026-10-25T10:11:45.980898Z",
   "state": "active",
   "summary": "Canonical typed publication and faithful mismatch port are hosted green; 35 originals have complete reviewed Rust ports, with broader transport scope still open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Hosted typed publication and retained query/metadata contracts",
-      "detail": "Published 2f35102 is hosted green with all 30 committed input hashes and 128 Rust checks verified: 1591/1611 lines, 2420/2485 regions and 12/12 changed lines. Working source is clean. The next retained metadata gap requires preserving native partition/type/delivery-origin observations without breaking existing owned raw Message values; global query/cache timing and immediate process-global sharing also remain open."
+      "title": "Received MessageInfo metadata and explicit native origin boundary",
+      "detail": "Published 2f35102 remains hosted green with 128 Rust checks, 1591/1611 lines and 2420/2485 regions. Working MessageInfo adds an owned receive envelope while preserving raw three-field Message values and byte forwarding. Native same-Node and mixed-process metadata tests pass, and a maintained differential asserts the known native/Rust two-Node origin mismatch. Full strict gate and independent review are pending; no new original mapping is accepted."
     },
     {
       "id": "NET-02",
