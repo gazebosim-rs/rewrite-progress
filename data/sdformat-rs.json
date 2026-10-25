@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T15:17:40.403229Z",
+  "updated_at": "2026-10-25T16:10:42.074257Z",
   "state": "active",
-  "summary": "UTF-8 BOM raw-span corruption/panics are fixed in a public green-CI revision; a separate source-position cache is being measured and checked.",
+  "summary": "Reviewed source-position cache is public with exact green CI; the next bounded task characterizes native static-model attachment identities and joint endpoints.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "SDF-02",
-      "title": "Measured source-position cache prototype",
-      "detail": "The initial eager prototype improved large semantic-frame loads but regressed opaque-tail documents. A separate lazy requested-prefix cache preserves the existing xmlparser coordinate routine and is undergoing output/benchmark checks. No cache implementation is accepted yet."
+      "id": "SDF-01",
+      "title": "Static model frame/body identity",
+      "detail": "Coordinator requested native-backed correction of static-model sink/name semantics. Existing Rust collapses model attachment to world and rejects a native-accepted static child endpoint. Measuring exact frame/link/endpoint identities first; no simulator static-policy decision or consumer pin change."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Cache source positions with retained fidelity and qualified benchmark evidence",
+      "commit": "547522dd3cf525a1d5c75beb7abfd5c418061755",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/547522dd3cf525a1d5c75beb7abfd5c418061755"
+    },
     {
       "title": "Preserve original XML spans and avoid BOM UTF-8 boundary panics",
       "commit": "0fb9a1402639c5bbddf3610a3423b13d9e83a8ff",
@@ -255,16 +260,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "0fb9a1402639c5bbddf3610a3423b13d9e83a8ff",
-    "rust_tests": 177,
+    "revision": "547522dd3cf525a1d5c75beb7abfd5c418061755",
+    "rust_tests": 179,
     "coverage": {
       "lines": [
-        3259,
-        3275
+        3281,
+        3297
       ],
       "regions": [
-        5694,
-        5806
+        5732,
+        5844
       ]
     },
     "upstream": {
@@ -274,9 +279,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40205837438"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40209850890"
     },
-    "note": "Exact normal staged gate passes 177 Rust and 13 tools, strict line/region coverage and exported executable lines 3091/3103. Independent review reproduces both pre-fix failures; private 177 Rust and 87 native rows/three unchanged originals pass with complete proof equality. Three inherited XML grammar gaps remain. No new case retirement or whole-packet acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0fb9a1402639c5bbddf3610a3423b13d9e83a8ff"
+    "note": "Exact normal staged gate passes 179 Rust and 13 tools, strict line/region coverage and exported executable lines 3113/3125. Independent review passes 179 Rust and all 660 native observations/twelve original runs, plus fresh qualified paired loader timings and exact semantic-state equality. Small opaque-case tradeoff/shared-host limits remain explicit; no whole-engine/P2/SDF-02 acceptance or new original retirement.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/547522dd3cf525a1d5c75beb7abfd5c418061755"
   }
 }
