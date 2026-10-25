@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T06:44:29.328203+00:00",
+  "updated_at": "2026-10-25T06:50:08.033615+00:00",
   "state": "active",
-  "summary": "Local resources are published with green hosted CI. Offline Fuel integration now passes the full157Rust+9tools/sevenCPP strict gate after the reviewed Transport dependency fix; final independent binding and normal staged hook are next. P2 remains open.",
+  "summary": "Cache-only Fuel model includes are published after independent replay and the normal157Rust+9tools/sevenCPP staged gate. Both engines step/reset after cache deletion; hosted verification pending. Next: worktree hook isolation and sensor scheduling. P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Reset now reconstructs sensor instances and sequences, reuses shared endpoints and recreates retired endpoints. Real sampled readiness and live-lease reset verify first restarted IMU sequence0. Remaining scheduling/rates, noise and runtime sensor registration; native discovery counts remain qualified."
+      "detail": "Next implementation: phase-preserving IMU scheduling with integer time, existing pause/reset and derivative cadence. Pinned native NextDataUpdateTime original passes; ignored prototype passes original sequence/off-grid/overflow controls, not production acceptance. Noise, connections/runtime sensor registration and remaining families stay open."
     },
     {
       "id": "SLICE-01",
@@ -29,7 +29,7 @@
     {
       "id": "FUEL-01",
       "title": "Integrate local paths and offline Fuel resources",
-      "detail": "Transport20320129/socket2.6.5 and matching msgse2001a3 remove the dependency blocker. Root pinnedFuel374 consumer now passes full157Rust+9tools/sevenCPP; coverage2372/2400lines3725/3819regions, everycrate>95%,delta20/20. Independent14focused+103fullgraph checks/sevenCPP and six fresh native cache controls pass. Final18-file binding and normal staged hook/publication pending; no fullFUEL-01/P2 completion."
+      "detail": "Published150a21e after independent14focused+103fullgraph/sevenCPP and six fresh installed-native controls; exact staged157Rust+9tools/sevenCPP,allcrate>95%,20/20delta passed. Actual Fuel374 parse/cached only; local candidates first, exact/tip versions, explicitmiss/metadata errors and original IDs/poses after cache removal. Hosted40170482056 pending. Downloads/cancellation, remote top-level/model-file/collection URLs and broadFUEL/P2 remain open."
     }
   ],
   "accepted_slices": [
@@ -167,6 +167,11 @@
       "title": "Bounded local SDF resources with native lookup controls and both-engine reset",
       "commit": "eed628872e64334c0ccd3572a56a5ca1345b945a",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eed628872e64334c0ccd3572a56a5ca1345b945a"
+    },
+    {
+      "title": "Offline Fuel model includes through the real producer cache API, both engines and CLI",
+      "commit": "150a21e22910ded8e32ba1b25ba2ffc7de7c4556",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/150a21e22910ded8e32ba1b25ba2ffc7de7c4556"
     }
   ],
   "remaining": [
@@ -198,16 +203,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "eed628872e64334c0ccd3572a56a5ca1345b945a",
-    "rust_tests": 151,
+    "revision": "150a21e22910ded8e32ba1b25ba2ffc7de7c4556",
+    "rust_tests": 157,
     "coverage": {
       "lines": [
-        2352,
-        2380
+        2372,
+        2400
       ],
       "regions": [
-        3677,
-        3771
+        3725,
+        3819
       ]
     },
     "upstream": {
@@ -216,11 +221,11 @@
       "partial": 3
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40167872106"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40170482056"
     },
-    "note": "Exact isolated staged151Rust+9tools/seven real C++ scenarios pass; every crate strictly >95% lines/regions. New assets132/133lines245/250regions; independent66focused checks and18fresh installed-native controls passed. Exact hosted consumer40167872106 succeeded; prior be62cc1 CI40164752228 succeeded. Offline Fuel consumer is uncompiled work, not accepted capability. No broad P2 completion or full simulator speedup claimed.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eed628872e64334c0ccd3572a56a5ca1345b945a"
+    "note": "Exact normal staged157Rust+9tools/seven real C++ scenarios pass; everycrate>95%lines/regions, assets15/15+CLI5/5delta; no exclusions/threshold changes. Independent final18-file receipt binds source/dependencies/docs and103actual fullgraph checks/sevenCPP, plus14focused and six fresh installed-native cache controls. Hosted consumer40170482056 pending; priorlocaleed6288 hosted succeeded. Complete FUEL-01/P2/native baseline/performance acceptance remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/150a21e22910ded8e32ba1b25ba2ffc7de7c4556"
   },
   "phase_status": {
     "P0": "in_progress",
