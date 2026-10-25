@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T10:11:45.980898Z",
+  "updated_at": "2026-10-25T10:15:18.006495Z",
   "state": "active",
   "summary": "Canonical typed publication and faithful mismatch port are hosted green; 35 originals have complete reviewed Rust ports, with broader transport scope still open.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "NET-01",
       "title": "Received MessageInfo metadata and explicit native origin boundary",
-      "detail": "Published 2f35102 remains hosted green with 128 Rust checks, 1591/1611 lines and 2420/2485 regions. Working MessageInfo adds an owned receive envelope while preserving raw three-field Message values and byte forwarding. Native same-Node and mixed-process metadata tests pass, and a maintained differential asserts the known native/Rust two-Node origin mismatch. Full strict gate and independent review are pending; no new original mapping is accepted."
+      "detail": "Published 2f35102 remains hosted green. Frozen MessageInfo candidate passes the author full gate: 135 Rust and 22 tooling checks, 1641/1645 lines, 2460/2509 regions and 45/45 changed lines. Independent source/assertion review is reserved with msgs. Owned receive metadata preserves raw Message/relay APIs, captures direct worker versus wire delivery and retains a measured native/Rust same-process two-Node origin mismatch. The selected same-Node original mapping, final staged gate and hosted qualification are still pending."
     },
     {
       "id": "NET-02",
