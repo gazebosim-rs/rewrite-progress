@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T04:20:34.637896Z",
+  "updated_at": "2026-10-25T04:26:09.129826Z",
   "state": "active",
-  "summary": "Published visual and heightmap/polyline metadata remain green. Model-scope merged includes are implemented under independent review; native-backed scope corrections are being validated.",
+  "summary": "Model-scope merged includes are independently reviewed and published after the strict staged gate. Hosted CI is running; pure model.config file selection is the next resource-loading increment.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Include-merge semantics and native controls",
-      "detail": "Implemented model-scope proxy frames, placement adjustment, direct reference rewrites, plugin order and owned merged provenance. Independent review found placement lookup and resource root-pose scope false accepts; both corrected with a 153-row native corpus, including ordinary include controls. Local tests and native proof are rerunning; merge remains unpublished."
+      "title": "Pure model.config file selection",
+      "detail": "Probe and implement highest-supported-version selection, first ties, missing-version fallback, warnings and filename text semantics without filesystem or Fuel dependencies. Initial 63 native controls and two isolated Rust tests pass; source remains unreviewed."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Resolve model-scope merged includes with native frame rewrites",
+      "commit": "fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37"
+    },
     {
       "title": "Load heightmap/polyline metadata and retain full original Shapes assertions",
       "commit": "c4e5d6277a563807b5f4734e8b97b4ebd3467c47",
@@ -170,16 +175,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c4e5d6277a563807b5f4734e8b97b4ebd3467c47",
-    "rust_tests": 108,
+    "revision": "fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37",
+    "rust_tests": 112,
     "coverage": {
       "lines": [
-        2440,
-        2456
+        2572,
+        2590
       ],
       "regions": [
-        4289,
-        4389
+        4534,
+        4639
       ]
     },
     "upstream": {
@@ -188,10 +193,10 @@
       "partial": 6
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40155916971"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40161820248"
     },
-    "note": "Exact terrain overlap independently reviewed; all108 Rust checks,52 fresh native observations and unchanged Shapes original passed independently. Native Vector2 1e-6,Vector3 1e-3 and scalar four-ULP bounds retained. Normal frozen hook passed108 Rust/11 tools and91/91 changed lines; hosted CI green. Visual safety remains independently attributed to msgs. No asset IO/image decoding/physical terrain/rendering effect or whole-packet/performance acceptance; consumers reject new physical shapes until backend support.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c4e5d6277a563807b5f4734e8b97b4ebd3467c47"
+    "note": "Independent fresh snapshot replay passed 112 Rust tests, 153 native observations and both exact native include originals. Review found and verified corrections for placement schema scope and original resource root poses before overrides. Five schema/legacy gaps remain explicit; no new original retirement. Normal strict frozen hook passed 112 Rust tests and 11 tooling tests, with 2450/2463 executable lines under its whole-export changed-line policy; working delta passed 152/152. Hosted CI pending. No new unsafe code, filesystem dependency or whole-packet/performance acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37"
   }
 }
