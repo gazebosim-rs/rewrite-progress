@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T01:24:33.759238Z",
+  "updated_at": "2026-10-25T01:58:47.534837Z",
   "state": "active",
-  "summary": "Transport remains hosted green; reviewing the producer known-tag/wrong-wire compatibility boundary before explicit decoder adoption.",
+  "summary": "Implementing explicit native-compatible discovery decoding against the reviewed, hosted-green messages producer; latest published transport remains green.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Discovery and request decoder compatibility boundary",
-      "detail": "Independent producer review is checking the new opt-in native-compatible envelope decoder against staged source and 70 native framing cases. Transport decoders remain unchanged until the reviewed producer API/revision is published. Latest transport 05247e4 remains hosted green; full discovery and retained-case parity are incomplete."
+      "title": "Native-compatible discovery decoder opt-in",
+      "detail": "Working candidate pins msgs e2001a3 and explicitly clones the compatible typed discovery value for dispatch. Thirty-one real C++ parser cases cover wrong-wire values/presence/merge/framing; runtime admission and unknown-scope checks pass. Full native/coverage gate is running and independent msgs review is active. Application payloads stay opaque; relay and full wire/parser parity are not claimed."
     },
     {
       "id": "NET-02",
