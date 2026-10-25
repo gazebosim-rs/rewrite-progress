@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T16:56:38.638710+00:00",
+  "updated_at": "2026-10-25T17:48:45.054437+00:00",
   "state": "active",
   "summary": "Published native-backed reset/removal controls and Rust differential checks. The next headless comparison will receive clock, pose and IMU on both actual servers; the complete acceptance matrix remains open.",
   "model": "Coordinator; architecture, integration and review",
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published 5f96723 preserves ten DART/TPE control outcomes and adds actual Rust Reset observers, identity/pose/time comparisons. Independent replay and three intentional mutants establish the checks; the normal hook passed 203 Rust tests, 15 tooling checks and nine C++ scenarios. Next work matches all three requested clock/pose/IMU streams before final P2 matrix review. The existing IMU-only native timing remains contextual."
+      "detail": "Published reset/removal reference 5f96723 is hosted green: all ten native DART/TPE controls, Rust Reset observers and three regression mutants independently reviewed. The three-stream source is now frozen for review: same clock/pose/IMU requests at a declared 20ms minimum host gap, respecting native pose/info hard60wallHz; actual work latency is separated from pacing, with full wall/byte/field checks. The complete selected-fixture matrix follows acceptance; P2 is open."
     },
     {
       "id": "PHY-02",
@@ -301,10 +301,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40213637926"
     },
-    "note": "Normal hook passed 203 Rust tests, 15 tooling checks and nine real C++ scenarios. All production crates exceed 95% lines and regions; no new production lines. Independent native replay matched all ten controls and source/library hashes; reset-count, multistep and pose mutants fail as expected. Exact hosted state: pending. P2 remains open.",
+    "note": "Normal hook passed 203 Rust tests, 15 tooling checks and nine real C++ scenarios. All production crates exceed 95% lines and regions; no new production lines. Independent native replay matched all ten controls and source/library hashes; reset-count, multistep and pose mutants fail as expected. Exact hosted CI 40213637926 succeeded. P2 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5f96723efda8a7bd3a20465b8f2a111f2f75e23e"
   },
   "phase_status": {
