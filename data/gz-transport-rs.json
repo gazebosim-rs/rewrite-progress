@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T13:12:07Z",
+  "updated_at": "2026-10-25T13:14:15Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and two partial ports; remapped local service listing is public with hosted CI running. A bounded remapped topic-list assertion is staged.",
+  "summary": "Forty-three reviewed complete upstream ports and two partial ports; remapped local service listing is public and hosted green. A bounded remapped topic-list assertion is staged for independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "One-node ServiceListRemap assertion mapping is public570e07e and independently reviewed partial; exact hosted run40196075018 is in progress. TopicListRemap one-node assertion candidate is staged for strict gate and independent review. Forty-three originals have reviewed complete ports, two cases are partial, and373 remain pending. Global discovery, callback/process-global scope, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "One-node ServiceListRemap assertion mapping is public570e07e and independently reviewed partial; exact hosted run40196075018 succeeded. TopicListRemap one-node assertion candidate passed staged strict gate and awaits independent review. Forty-three originals have reviewed complete ports, two cases are partial, and373 remain pending on public main. Global discovery, callback/process-global scope, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -261,9 +261,9 @@
       "partial": 2
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40196075018"
     },
-    "note": "Public570e07e exact main after independently bound partial ServiceListRemap assertion and mandatory normal strict hook:143 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,0/0 changed production executable lines. Exact hosted run40196075018 is in progress. Global discovery listing remains open; the next TopicListRemap assertion is staged for gate/review."
+    "note": "Public570e07e exact main after independently bound partial ServiceListRemap assertion and mandatory normal strict hook:143 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,0/0 changed production executable lines. Exact hosted run40196075018 succeeded. Global discovery listing remains open; next TopicListRemap assertion passed staged gate and awaits independent review."
   }
 }
