@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:29:57.405867Z",
+  "updated_at": "2026-10-25T17:42:09.820855Z",
   "state": "active",
-  "summary": "Nested model attachment-body partial is published with independent review, strict staged gate and green hosted CI; next native DOM/frame case is being scoped.",
+  "summary": "Basic model and world frame attachment body partials are public, independently reviewed and green in hosted CI; nested world scope mapping is in isolated review.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Scope next retained native DOM/frame case",
-      "detail": "Continue the pinned SDFormat ledger with user-facing DOM and frame semantics, exact native originals, independent assertion review and strict gates. The nested body mapping remains partial because graph construction/counts and native error code/text are unported."
+      "title": "Retain nested world attachment and scope assertions",
+      "detail": "The pinned nested-world original and isolated Rust test pass. Independent assertion review, final main binding, strict hook and hosted qualification remain. Native graph internals and error code/text are explicitly partial."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain model and world frame attachment body assertions as two partial originals",
+      "commit": "844cf12652ac7b306ca6814f721636b0cf2a01bc",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/844cf12652ac7b306ca6814f721636b0cf2a01bc"
+    },
     {
       "title": "Retain nested model attachment body values as a partial original port",
       "commit": "1826af6e51c68d1a631aae7ff0cf587ab99debb1",
@@ -285,9 +290,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "1826af6e51c68d1a631aae7ff0cf587ab99debb1",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1826af6e51c68d1a631aae7ff0cf587ab99debb1",
-    "rust_tests": 186,
+    "revision": "844cf12652ac7b306ca6814f721636b0cf2a01bc",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/844cf12652ac7b306ca6814f721636b0cf2a01bc",
+    "rust_tests": 188,
     "coverage": {
       "lines": [
         3300,
@@ -301,12 +306,12 @@
     "upstream": {
       "total": 1344,
       "ported": 50,
-      "partial": 14
+      "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40216557943"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40217550655"
     },
-    "note": "Exact normal staged hook and hosted core pass186 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves thirteen attachment-body values plus invalid-name failure on unchanged native fixture, partial only; native graph build/validation/Count and error code/text remain unported. No production/API, simulator or consumer change."
+    "note": "Exact normal staged hook and hosted core pass188 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves six model, six world and three embedded-model body values plus two invalid-name failures on unchanged native fixtures; two partial originals only. Native graph build/validate/map/vertex/edge/count/check and exact error code/text remain unported. No production/API, simulator or consumer change."
   }
 }
