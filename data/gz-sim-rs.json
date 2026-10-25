@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T06:50:08.033615+00:00",
+  "updated_at": "2026-10-25T06:58:47.282239+00:00",
   "state": "active",
-  "summary": "Cache-only Fuel model includes are published after independent replay and the normal157Rust+9tools/sevenCPP staged gate. Both engines step/reset after cache deletion; hosted verification pending. Next: worktree hook isolation and sensor scheduling. P2 remains open.",
+  "summary": "Offline Fuel model includes now pass hosted CI and exact157Rust+9tools/sevenCPP staged checks. Both engines preserve loaded IDs/poses after cache deletion. Worktree hook isolation is under independent review; sensor scheduling is next. Full P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -29,7 +29,12 @@
     {
       "id": "FUEL-01",
       "title": "Integrate local paths and offline Fuel resources",
-      "detail": "Published150a21e after independent14focused+103fullgraph/sevenCPP and six fresh installed-native controls; exact staged157Rust+9tools/sevenCPP,allcrate>95%,20/20delta passed. Actual Fuel374 parse/cached only; local candidates first, exact/tip versions, explicitmiss/metadata errors and original IDs/poses after cache removal. Hosted40170482056 pending. Downloads/cancellation, remote top-level/model-file/collection URLs and broadFUEL/P2 remain open."
+      "detail": "Published150a21e after independent14focused+103fullgraph/sevenCPP and six fresh installed-native controls; exact staged157Rust+9tools/sevenCPP,allcrate>95%,20/20delta passed. Actual Fuel374 parse/cached only; local candidates first, exact/tip versions, explicitmiss/metadata errors and original IDs/poses after cache removal. Hosted40170482056 succeeded. Downloads/cancellation, remote top-level/model-file/collection URLs and broadFUEL/P2 remain open."
+    },
+    {
+      "id": "QLT-01",
+      "title": "Isolate exported verifier Git context",
+      "detail": "Five-file correction is under independent review. Real worktree/alternateindex test fails on existing leakedGitlocals and passes after child-only official-key isolation. Intended staged content, caller HEAD/index/config and nonlocalsettings preserved; full157Rust+10tools/sevenCPP pass. No simulator Rust or threshold/exclusion changes; normal staged hook/publication pending."
     }
   ],
   "accepted_slices": [
@@ -221,10 +226,10 @@
       "partial": 3
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40170482056"
     },
-    "note": "Exact normal staged157Rust+9tools/seven real C++ scenarios pass; everycrate>95%lines/regions, assets15/15+CLI5/5delta; no exclusions/threshold changes. Independent final18-file receipt binds source/dependencies/docs and103actual fullgraph checks/sevenCPP, plus14focused and six fresh installed-native cache controls. Hosted consumer40170482056 pending; priorlocaleed6288 hosted succeeded. Complete FUEL-01/P2/native baseline/performance acceptance remains open.",
+    "note": "Exact normal staged157Rust+9tools/seven real C++ scenarios pass; everycrate>95%lines/regions, assets15/15+CLI5/5delta; no exclusions/threshold changes. Independent final18-file receipt binds source/dependencies/docs and103actual fullgraph checks/sevenCPP, plus14focused and six fresh installed-native cache controls. Exact hosted consumer40170482056 succeeded; Transport20320129 hosted40169866773 also succeeded; priorlocaleed6288 hosted succeeded. Complete FUEL-01/P2/native baseline/performance acceptance remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/150a21e22910ded8e32ba1b25ba2ffc7de7c4556"
   },
   "phase_status": {
