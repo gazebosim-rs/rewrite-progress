@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T17:51:38Z",
+  "updated_at": "2026-10-25T18:03:12Z",
   "state": "active",
-  "summary": "Reviewed repeated-float-data protobuf JSON slice passed exact gates and the normal hook on public main; hosted CI is running and MSG-02 remains open.",
+  "summary": "Reviewed repeated-float-data protobuf JSON slice is public and hosted-green; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Repeated top-level Double_V/Float_V data-key slice independently approved and published at 0d26750 with 875 pinned native rows, 11 unchanged prior fixtures, exact source/final binding and normal hook; hosted run 40218476323 is in progress. Broader duplicate-field semantics, other descriptors and MSG-02 acceptance remain open."
+      "detail": "Repeated top-level Double_V/Float_V data-key slice independently approved and published at 0d26750 with 875 pinned native rows, 11 unchanged prior fixtures, exact source/final binding, normal hook and hosted run 40218476323 SUCCESS. Broader duplicate-field semantics, other descriptors and MSG-02 acceptance remain open."
     }
   ],
   "accepted_slices": [
@@ -232,6 +232,11 @@
       "title": "Bounded protobuf JSON quoted hexadecimal floats with 809 native rows",
       "commit": "1c3c0b802cd17fd8c1f49fac4370db3103ba9028",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1c3c0b802cd17fd8c1f49fac4370db3103ba9028"
+    },
+    {
+      "title": "Bounded repeated float data-key append behavior with 875 native JSON rows",
+      "commit": "0d267506915119344467a56956ddb4408777158c",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/0d267506915119344467a56956ddb4408777158c"
     }
   ],
   "remaining": [
@@ -264,10 +269,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40218476323"
     },
-    "note": "Independent source and exact metadata reviews approved the bounded repeated float data-key slice; 875 native JSON rows, 111 Rust harness checks, five original C++ CLI tests, strict root/CLI/vendor/negative/downstream gates and normal hook passed. Published-revision coverage root2217/2232 lines3562/3608 regions, CLI452/466 lines782/816 regions. Exact hosted run40218476323 is in progress. General duplicate-field/JSON behavior and MSG-02 acceptance remain open.",
+    "note": "Independent source and exact metadata reviews approved the bounded repeated float data-key slice; 875 native JSON rows, 111 Rust harness checks, five original C++ CLI tests, strict root/CLI/vendor/negative/downstream gates and normal hook passed. Published-revision coverage root2217/2232 lines3562/3608 regions, CLI452/466 lines782/816 regions. Exact hosted run40218476323 succeeded. General duplicate-field/JSON behavior and MSG-02 acceptance remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/0d267506915119344467a56956ddb4408777158c"
   }
 }
