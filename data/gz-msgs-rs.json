@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T15:40:46Z",
+  "updated_at": "2026-10-25T16:13:59Z",
   "state": "active",
-  "summary": "Published corrected trailing-dot protobuf JSON slice passed independent review, normal hook and exact hosted CI; MSG-02 broader retained scope remains open.",
+  "summary": "Reviewed bare negative-zero protobuf JSON slice is public after the normal hook; exact hosted CI is running. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Corrected trailing-dot lexical slice published after independent second-dot finding, revised 503-row native corpus, semantic/final binding and normal hook. Hosted CI green on exact published revision; leading-zero/hex, broader numeric/JSON grammar, diagnostics, descriptor, formatting, installation, release and performance scope remain open."
+      "detail": "Bare negative-zero JSON parity published with 549 pinned native rows, independent source/final binding and exact normal hook. Hosted run 40210527139 is in progress; quoted-hex, native vertical-tab/form-feed, leading-zero/hex and broader grammar, descriptors, packaging and performance remain open."
     }
   ],
   "accepted_slices": [
@@ -217,6 +217,11 @@
       "title": "Bounded native trailing-dot numeric grammar with second-dot rejection",
       "commit": "c2e15df04e8983d07879fdef0344e207996d643d",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c2e15df04e8983d07879fdef0344e207996d643d"
+    },
+    {
+      "title": "Bounded protobuf JSON bare negative-zero wire parity",
+      "commit": "11ea55557d9a6a111a440f05b9ad3b65c9a8427a",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/11ea55557d9a6a111a440f05b9ad3b65c9a8427a"
     }
   ],
   "remaining": [
@@ -231,16 +236,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "c2e15df04e8983d07879fdef0344e207996d643d",
+    "revision": "11ea55557d9a6a111a440f05b9ad3b65c9a8427a",
     "rust_tests": 110,
     "coverage": {
       "lines": [
-        2062,
-        2066
+        1995,
+        1998
       ],
       "regions": [
-        3336,
-        3355
+        3169,
+        3187
       ]
     },
     "upstream": {
@@ -249,10 +254,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40207657716"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40210527139"
     },
-    "note": "Corrected trailing-dot slice: exact reviewed final tree, normal hook and publication passed; exact hosted run 40207657716 passed. 109 Rust harness checks plus FactoryLazy, 503 pinned native JSON rows (440 unchanged, 63 new including 14 second-dot rejects and five explicit native-positive/Rust-negative gaps), actual before-failure and separate mutants, strict negative/downstream/source gates. Root production 1960/1963 lines and3123/3141 regions; CLI195/197 lines343/349 regions; owned vendor patches unchanged. MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c2e15df04e8983d07879fdef0344e207996d643d"
+    "note": "Independent review approved the seven-file final tree and explicit assertion scope; exact staged gate and normal hook passed. 109 Rust harness checks plus FactoryLazy, five original C++ CLI tests, all 549 pinned native JSON rows, strict source/coverage/vendor/downstream/negative gates. Fresh published-revision coverage root 1995/1998 lines and 3169/3187 regions; CLI 230/232 lines and 389/395 regions. Twelve additional native-only vertical-tab/form-feed cases and two quoted-hex rows remain out of scope; hosted result pending, MSG-02 open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/11ea55557d9a6a111a440f05b9ad3b65c9a8427a"
   }
 }
