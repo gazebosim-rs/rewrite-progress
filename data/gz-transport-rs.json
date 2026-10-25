@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T19:17:37Z",
+  "updated_at": "2026-10-25T19:28:50Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the staged-failure evidence fix is public and hosted-green at cda6f08. Native Publisher lifetime is source-frozen under independent review, with controlled readiness regressions passed.",
+  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; Publisher lifetime after ordinary Node destruction is reviewed and public at 1d13c01 with hosted CI pending. The next NET-02 slice is a nonblocking Publisher interest snapshot.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 11a6ab6 hosted-green retains partial four-Node AllTopicInfo mapping. Tooling-only staged failure-output retention is public cda6f08, normal-hook and hosted-green. Publisher-after-Node-drop lifetime V2 is source-frozen for independent review: strict gate passed and controlled delayed service/native subscriber barrier-removal mutants fail. An earlier instrumented interop failure lost child output and remains unclassified; publication is held pending reviewer/root assessment."
+      "detail": "Public 1d13c01 adds native-backed Publisher ownership after ordinary Node destruction with explicit shutdown unchanged; normal protected hook and strict gate passed. Hosted run40226187699 is queued. Earlier lost-output interop status101 remains unclassified and is disclosed in the reviewed contract. Next: a separate nonblocking Publisher interest snapshot for simulator tick, with native matching-interest and shutdown controls."
     }
   ],
   "accepted_slices": [
@@ -287,6 +287,11 @@
       "title": "Reviewed staged child failure-output retention and private index snapshot",
       "commit": "cda6f086c8dd49532d6db6a9cb17feb20f70209f",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda6f086c8dd49532d6db6a9cb17feb20f70209f"
+    },
+    {
+      "title": "Reviewed Publisher lifetime after ordinary Node destruction",
+      "commit": "1d13c010397bda79716b45e9166297db3a85e995",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d13c010397bda79716b45e9166297db3a85e995"
     }
   ],
   "remaining": [
@@ -295,26 +300,24 @@
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
-  "blockers": [
-    "Publisher lifetime V2 candidate is held for independent source/readiness review and root assessment. Its earlier first instrumented interop failure lacked child output under the old verifier and remains explicitly unclassified; ten later full passes do not classify it."
-  ],
+  "blockers": [],
   "plan_status": {
     "NET-01": "in_progress",
     "NET-02": "in_progress",
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "cda6f086c8dd49532d6db6a9cb17feb20f70209f",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda6f086c8dd49532d6db6a9cb17feb20f70209f",
-    "rust_tests": 166,
+    "revision": "1d13c010397bda79716b45e9166297db3a85e995",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d13c010397bda79716b45e9166297db3a85e995",
+    "rust_tests": 173,
     "coverage": {
       "lines": [
-        2085,
-        2124
+        2165,
+        2205
       ],
       "regions": [
-        3142,
-        3271
+        3256,
+        3389
       ]
     },
     "upstream": {
@@ -323,9 +326,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40223587938"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40226187699"
     },
-    "note": "Public exact reviewed tree b720c588; tooling-only staged failure evidence fix passed 24 tooling checks, strict 2085/2124 production lines and 3142/3271 regions, independent split-index/failure-status review, normal hook and exact hosted run40223587938 SUCCESS. Separate unpublished Publisher lifetime V2 first exact strict gate passed 2165/2205 lines,3256/3389 regions and89/89 changed; controlled delayed readiness positives passed and removal mutants failed. Independent review pending; original lost failure unclassified."
+    "note": "Exact reviewer-bound tree8571fefe, independent native lifetime/readiness review, first final staged gate and normal protected hook passed 2165/2205 lines,3256/3389 regions,89/89 changed. Hosted run40226187699 queued. An older instrumented interop status101 lost child output under the previous verifier; its exact assertion remains UNCLASSIFIED, and later full passes or controlled readiness checks do not classify it."
   }
 }
