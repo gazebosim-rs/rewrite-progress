@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T14:15:28Z",
+  "updated_at": "2026-10-25T14:27:00Z",
   "state": "active",
-  "summary": "Published single-quote JSON slice is hosted successful; bounded raw-control follow-up passed its staged gate and awaits independent review. MSG-02 remains open.",
+  "summary": "Bounded raw-control JSON slice is public after independent review and normal hook; exact hosted CI is running. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Frozen six-file raw-control JSON candidate covers 64 native-positive byte/quote combinations and ten rejected controls; all 66 accepted rows remain byte-identical. Exact staged verifier and branch-removal negative control pass; independent semantic review and publication remain pending. Unknown escapes and broader descriptor, formatting, installation, release and performance scope remain open."
+      "detail": "Published raw-control JSON slice covers 64 native-positive byte/quote combinations and ten rejected controls; all 66 previously accepted rows remain byte-identical. Independent semantic review, exact staged verifier, negative control and normal hook passed. Exact hosted CI is running. Escaped raw controls, unknown escapes and broader descriptor, formatting, installation, release and performance scope remain open."
     }
   ],
   "accepted_slices": [
@@ -197,6 +197,11 @@
       "title": "Bounded protobuf JSON single quotes with 21 native parity rows and two explicit gaps",
       "commit": "d6090c73d8dfc1d532224d6273a712f2820d4a41",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d6090c73d8dfc1d532224d6273a712f2820d4a41"
+    },
+    {
+      "title": "Bounded protobuf JSON unescaped raw controls with 140 native rows",
+      "commit": "dcdbb741630d38e21ba5271a50cae04be1aee6c4",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dcdbb741630d38e21ba5271a50cae04be1aee6c4"
     }
   ],
   "remaining": [
@@ -211,16 +216,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "d6090c73d8dfc1d532224d6273a712f2820d4a41",
+    "revision": "dcdbb741630d38e21ba5271a50cae04be1aee6c4",
     "rust_tests": 110,
     "coverage": {
       "lines": [
-        2041,
-        2045
+        2051,
+        2055
       ],
       "regions": [
-        3299,
-        3318
+        3319,
+        3338
       ]
     },
     "upstream": {
@@ -229,10 +234,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40197887550"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40202085831"
     },
-    "note": "Published single-quote slice passed independent semantic/final metadata review, final staged gate, normal worktree hook and exact hosted SHA verification. 109 harness checks plus FactoryLazy, 66 pinned native rows (21 new parity, two explicit gaps), negative gates, snapshots/archive/downstream/source package. Root production coverage 1939/1942 lines and 3086/3104 regions; vendor patches unchanged. MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d6090c73d8dfc1d532224d6273a712f2820d4a41"
+    "note": "Published raw-control slice passed independent semantic/final metadata review, exact final staged gate, normal worktree hook, and fresh working-tree coverage. 109 Rust harness checks plus FactoryLazy, 140 pinned native rows: 66 unchanged accepted, 64 new parity, ten rejected controls. Six escaped-raw probes remain explicit gaps; unknown escapes remain open. Root production coverage 1949/1952 lines and 3106/3124 regions; vendor patches unchanged. Exact hosted CI is running; MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dcdbb741630d38e21ba5271a50cae04be1aee6c4"
   }
 }
