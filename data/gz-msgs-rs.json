@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-24T23:53:47.856245Z",
+  "updated_at": "2026-10-25T00:03:18.816292Z",
   "state": "active",
-  "summary": "MSG-01 is formally accepted; MSG-02 factory, conversion and retained-test work continues.",
+  "summary": "MSG-01 formally accepted; all83 original message cases independently reviewed. MSG-02 tooling, packaging and wider qualification continue.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Final original Fuel metadata mapping",
-      "detail": "Fuel review found native terminal-text and malformed-name false accepts; narrow fixes and173native controls are under final gate/re-review.82/83 mappings remain reviewed. Cursor195644d exact hostedCIgreen; transport publisher lifecycle independently reviewed."
+      "title": "CLI behavior and packaging qualification",
+      "detail": "Fuel a0a7841 is published and hostedCIgreen;83/83 original mappings reviewed. Native --info failure/continuation correction passes9fulloutput/status observations and full80checkgate, awaiting independent review. Clean source/install packaging is next."
     }
   ],
   "accepted_slices": [
@@ -102,12 +102,17 @@
       "title": "Borrowed packed-cloud cursor identity and operators",
       "commit": "195644d8daeb1fa17ed8830e885a36f25ba71871",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/195644d8daeb1fa17ed8830e885a36f25ba71871"
+    },
+    {
+      "title": "Fuel model/world XML conversion and final original mapping",
+      "commit": "a0a7841ef85a633c3260fe9b8d0182c4acec38f5",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a0a7841ef85a633c3260fe9b8d0182c4acec38f5"
     }
   ],
   "remaining": [
-    "Fuel metadata conversion; broader XML/formatting compatibility qualification remains separate from original-case mappings",
-    "Complete formatting and descriptor install/global/cache compatibility qualification",
-    "Packaging, performance comparison and full retained-test review"
+    "Broader XML, CLI grammar/dynamic-descriptor info and formatting qualification",
+    "Descriptor installation/global/cache compatibility decisions and qualification",
+    "Clean packaging/install and equal-work performance evidence; MSG-02 acceptance remains pending"
   ],
   "blockers": [],
   "plan_status": {
@@ -115,33 +120,33 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "195644d8daeb1fa17ed8830e885a36f25ba71871",
-    "rust_tests": 75,
+    "revision": "a0a7841ef85a633c3260fe9b8d0182c4acec38f5",
+    "rust_tests": 79,
     "coverage": {
       "lines": [
-        839,
-        839
+        1136,
+        1136
       ],
       "regions": [
-        1197,
-        1209
+        1725,
+        1736
       ]
     },
     "upstream": {
       "total": 83,
-      "ported": 82,
+      "ported": 83,
       "partial": 0
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40143769762"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40144877025"
     },
-    "note": "Public cursor195644d exact hosted40143769762 and strict staged75checks/5snapshots/coverage pass.82/83reviewed. Fuel candidate review identified4grammar mismatches; corrected candidate expanded173native observations, finalgate/review pending. MSG-02 broader obligations remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/195644d8daeb1fa17ed8830e885a36f25ba71871",
+    "note": "Published Fuel candidate independently reviewed against all original assertions plus173fresh native wire/XML rows and11extraedge controls; strict staged79checks/5snapshots/coverage and exact hostedCIpass. All83original cases reviewed, not fullMSG02acceptance. Separate CLI candidate remains under review.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a0a7841ef85a633c3260fe9b8d0182c4acec38f5",
     "previous_ci": {
-      "revision": "1f146e5c60f87893ae121782449731d9c7c80d0b",
+      "revision": "195644d8daeb1fa17ed8830e885a36f25ba71871",
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40134094908"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40143769762"
     }
   }
 }
