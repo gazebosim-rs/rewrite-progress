@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T01:35:34.320476Z",
+  "updated_at": "2026-10-25T01:38:58.693411Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
@@ -9,7 +9,7 @@
     {
       "id": "MSG-02",
       "title": "JSON framing review and CLI qualification",
-      "detail": "Reviewed wire e2001a3 published after strict hooks: 70 native cases and 82 Rust checks pass; hosted CI pending. Separate JSON framing slice passes full 83-check gate and is frozen for SDF review. Legacy option grammar remains under native investigation."
+      "detail": "Reviewed wire e2001a3 is published and hosted green. Separate JSON framing slice passes 83 Rust checks and is frozen for SDF review. Native CLI attached/repeated options, conflicts and priorities are quantified for the following bounded slice."
     }
   ],
   "accepted_slices": [
@@ -117,6 +117,11 @@
       "title": "Immutable source distributions and clean Cargo installs",
       "commit": "b18108331485d14e95916d9d3cbeeda259b23294",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/b18108331485d14e95916d9d3cbeeda259b23294"
+    },
+    {
+      "title": "Native-compatible canonical envelope decoding with lossless raw forwarding",
+      "commit": "e2001a3bc5b54cb15ea1cc16deaefdf14719b2df",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e2001a3bc5b54cb15ea1cc16deaefdf14719b2df"
     }
   ],
   "remaining": [
@@ -149,10 +154,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40151171345"
     },
-    "note": "Exact staged and amend hooks pass. Independent staged-snapshot review reproduced both new tests, all 70 generated/native rows, 216 schema hashes and clean downstream. Direct prost/reflection remain stricter for wrong-wire known tags; consumers must opt in. Previous source-package b181083 hosted install proof is green. JSON follow-up measurements remain separate and unpushed.",
+    "note": "Exact staged/amend hooks and hosted source-install gate pass for e2001a3. Independent staged snapshot review reproduced both new tests, all 70 native rows, 216 schema checks and clean downstream. Direct prost/reflection remain stricter; consumers must opt in. Separate JSON follow-up passes its full local gate and awaits independent review.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e2001a3bc5b54cb15ea1cc16deaefdf14719b2df",
     "previous_ci": {
       "revision": "b18108331485d14e95916d9d3cbeeda259b23294",
