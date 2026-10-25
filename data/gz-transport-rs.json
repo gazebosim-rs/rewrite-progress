@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T18:56:10Z",
+  "updated_at": "2026-10-25T19:05:20Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; reviewed staged-failure evidence fix is public with exact hosted CI queued. Publisher lifetime review remains held for an unclassified earlier interop failure.",
+  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the staged-failure evidence fix is public and hosted-green at cda6f08. Publisher lifetime remains under failure audit.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 11a6ab6 hosted-green retains partial four-Node AllTopicInfo mapping. Separate tooling-only failure-output retention is public cda6f08 with normal hook green and exact hosted run queued. Native Publisher-after-Node-drop lifetime candidate is unpublished pending classification of one earlier instrumented interop failure; full MessagePublisher vector/atomicity and remote timing remain open."
+      "detail": "Public 11a6ab6 hosted-green retains partial four-Node AllTopicInfo mapping. Separate tooling-only staged failure-output retention is public cda6f08 with normal hook and exact hosted run40223587938 success. Native Publisher-after-Node-drop lifetime candidate remains unpublished while an earlier instrumented interop failure is audited; full MessagePublisher vector/atomicity and remote timing remain open."
     }
   ],
   "accepted_slices": [
@@ -282,6 +282,11 @@
       "title": "Reviewed partial immediate four-Node AllTopicInfo assertions and keyed endpoint snapshot",
       "commit": "11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8"
+    },
+    {
+      "title": "Reviewed staged child failure-output retention and private index snapshot",
+      "commit": "cda6f086c8dd49532d6db6a9cb17feb20f70209f",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda6f086c8dd49532d6db6a9cb17feb20f70209f"
     }
   ],
   "remaining": [
@@ -318,9 +323,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40223587938"
     },
-    "note": "Public exact reviewed tree b720c588; tooling-only staged failure evidence fix passed 24 tooling checks, strict 2085/2124 production lines and 3142/3271 regions, 0 changed production lines, independent split-index/failure-status review and normal hook. Exact hosted run 40223587938 queued; no success claim. Publisher lifetime source remains unpublished after an unclassified first interop failure."
+    "note": "Public exact reviewed tree b720c588; tooling-only staged failure evidence fix passed 24 tooling checks, strict 2085/2124 production lines and 3142/3271 regions, 0 changed production lines, independent split-index/failure-status review and normal hook. Exact hosted run40223587938 SUCCESS on public cda6f08. Publisher lifetime source remains unpublished after an unclassified first interop failure."
   }
 }
