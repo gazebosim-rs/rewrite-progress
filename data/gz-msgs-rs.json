@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T08:42:49.605398Z",
+  "updated_at": "2026-10-25T09:16:20.735981Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Source-aware external definitions",
-      "detail": "Source-aware registry/factory/CLI definitions are frozen for independent review after full 99 Rust checks and six snapshot regressions; total owned 1778/1781 lines and 2851/2870 regions. Accepted raw JSON-name omissions stay bound to successful pool snapshots; duplicate/failure/clone/maps/oneofs native tests pass. Public 25f7d611 reserved formatter hosted qualification is verified green, including exact archive identity; MSG-02 open."
+      "title": "Formatting qualification and peer review",
+      "detail": "Source-aware definitions published after independent review and mandatory staged gate; hosted qualification pending. Isolated next proto2 probes quantify native default normalization and maintained-loader differences, with no production support claim. Reviewing frozen SDF member lookup/assertion packet in private source/target. Broader grammar/options/loading/release/performance and MSG-02 acceptance remain open."
     }
   ],
   "accepted_slices": [
@@ -162,6 +162,11 @@
       "title": "Native reserved declarations and UTF-8 byte escaping with overflow guards",
       "commit": "25f7d611b553c0d4d72fcd84aec5f2cab9339712",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25f7d611b553c0d4d72fcd84aec5f2cab9339712"
+    },
+    {
+      "title": "Source-aware raw JSON-name presence for registry/factory/CLI definitions",
+      "commit": "617079cdafc8e20dc008967e27ddbba8b6d100fa",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/617079cdafc8e20dc008967e27ddbba8b6d100fa"
     }
   ],
   "remaining": [
@@ -176,16 +181,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "25f7d611b553c0d4d72fcd84aec5f2cab9339712",
-    "rust_tests": 96,
+    "revision": "617079cdafc8e20dc008967e27ddbba8b6d100fa",
+    "rust_tests": 99,
     "coverage": {
       "lines": [
-        1704,
-        1708
+        1778,
+        1781
       ],
       "regions": [
-        2715,
-        2734
+        2851,
+        2870
       ]
     },
     "upstream": {
@@ -194,15 +199,15 @@
       "partial": 0
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40179908956"
+    },
+    "note": "Independent focused 20-test/native/matrix review and exact final binding approved; mandatory normal staged gate passes 99 Rust checks, six snapshot regressions, archive QA/downstream and strict owned coverage. Raw JSON-name presence stays bound to successfully accepted descriptor snapshots. Hosted qualification pending. Canonical cache, runtime codecs, dependencies and all 83 reviewed original mappings unchanged; MSG-02 open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/617079cdafc8e20dc008967e27ddbba8b6d100fa",
+    "previous_ci": {
+      "revision": "25f7d611b553c0d4d72fcd84aec5f2cab9339712",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40177274169"
-    },
-    "note": "Independent source/final binding and normal mandatory staged gate pass: 96 Rust checks, six snapshot regressions, archive/downstream and strict coverage. Independent nine definition checks, 27 native CLI rows and 132 escaping comparisons pass. Exact hosted run passes, including staged proof and fresh-cache install; downloaded 667-file archive proof matches published tree and byte-identical independently regenerated local archive. All 83 original mappings unchanged; MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25f7d611b553c0d4d72fcd84aec5f2cab9339712",
-    "previous_ci": {
-      "revision": "25a2b88407ecc542c4a6eb5aae00cf4db3933f73",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40171295022"
     }
   }
 }
