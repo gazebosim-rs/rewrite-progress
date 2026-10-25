@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T23:01:00.467774+00:00",
+  "updated_at": "2026-10-25T23:49:31.104684+00:00",
   "state": "active",
   "summary": "Public headless simulator checks are green at 05c9291: 232 Rust tests, 24 tooling tests and 15 C++ scenarios. Updated Transport integration remains held: the reply-overload defect is fixed, while a scoped publication benchmark still shows about 7% overhead over the earlier prototype.",
   "model": "Coordinator; architecture, integration and review",
@@ -38,8 +38,8 @@
     },
     {
       "id": "LOAD-01",
-      "title": "Consume native physics profile timestep",
-      "detail": "Publishedd029884 adopts owner-recommended hosted-green SDF575; non-IMU typed configurations and all Joint.sensors now fail explicit simulator capability guards. All prior assertions retained; new9variant/joint/static-frame tests and independent guard-removal mutants passed. Native historical61static observations+one original freshly replayed with immutable6ab guard intact, corpus unchanged575. Normal hook230Rust/16tools/11Cpp,allcrate>95%,3513/3549lines5366/5483regions,8/8changed. Exact hosted40235339808 pending; broad LOAD/P2 remains open."
+      "title": "Validate centered cylinder loading and retained capability guards",
+      "detail": "A new bounded cylinder candidate passes five geometry integration tests, the old twelve scene tests and eight fresh native TPE contact controls plus the unchanged CylinderShape original. Z-axis inertia, invalid dimensions, floor contact, IMU and original-ID loaded reset are covered. Independent review and full strict staged checks remain pending. Public simulator remains 05c9291; broader LOAD and P2 remain open."
     },
     {
       "id": "PHY-05",
@@ -53,8 +53,8 @@
     },
     {
       "id": "REF-02",
-      "title": "Profile the remaining publication cost",
-      "detail": "Four predeclared comparisons retain all 88 samples: same full clock/pose/IMU assertions, TPE, 128 steps, 20 ms pacing and CPU31. Prefix expiry and borrowed delivery reduced the paired overhead from 71% to 7.3%; latest ratio 1.0728, bootstrap 95% [1.0519, 1.0930]. This shared-host workload still narrowly exceeds the proposed 5% limit. Diagnostic phase profiling is next. No whole-simulator, dedicated-hardware or nonregression claim."
+      "title": "Measure publication history optimization and current native reference",
+      "detail": "The response-lane correctness repair passes all 45 private server tests and 15 C++ scenarios; earlier matched publication variants retain their measured regressions. A new lease-owned history candidate passed the producer strict gate and independent semantic controls; its unchanged 22-sample matched protocol is running. Separately, the current public simulator/native comparison passed independent equal-work review: paired Rust/native ratio 0.7002 with 95% interval [0.5487,0.9507], limited to the selected paced two-model TPE/IMU stream fixture on a shared host. Balanced robotics and full P2 performance remain open."
     }
   ],
   "accepted_slices": [
