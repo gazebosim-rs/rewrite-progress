@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T19:05:01.781681Z",
+  "updated_at": "2026-10-25T19:21:00.227693Z",
   "state": "active",
-  "summary": "Typed NavSat/GPS DOM/parser and two complete native originals are public, independently reviewed and green in hosted CI; the Link sensor integration mapping remains partial.",
+  "summary": "Typed AirSpeed pressure-noise parsing is public, independently reviewed and green in hosted CI; only its native Link sensor fragment is retained and the full integration original remains partial.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Review next AirSpeed link fragment",
-      "detail": "Continue native-backed AirSpeed typed parser and strict gates. NavSat consumer enum adoption stays coordinator-owned; other 21 sensor families and full Link.Sensors case remain pending."
+      "title": "Review next Lidar DOM/parser case",
+      "detail": "Continue native-backed Lidar DOM and four bounded Link fragments with strict gates. AirSpeed consumer enum adoption stays coordinator-owned; other 20 sensor instances and full Link.Sensors case remain pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Add typed AirSpeed settings for the native Link sensor fragment",
+      "commit": "e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c"
+    },
     {
       "title": "Add typed NavSat configuration and retain two complete DOM originals",
       "commit": "5ba57509327ffe0f82985f6968148250dc8916a4",
@@ -330,17 +335,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "5ba57509327ffe0f82985f6968148250dc8916a4",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5ba57509327ffe0f82985f6968148250dc8916a4",
-    "rust_tests": 204,
+    "revision": "e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e6dc9bef6f5f29ee4f03aca81331a5d541d4a49c",
+    "rust_tests": 205,
     "coverage": {
       "lines": [
-        3430,
-        3446
+        3461,
+        3477
       ],
       "regions": [
-        5985,
-        6112
+        6038,
+        6167
       ]
     },
     "upstream": {
@@ -350,8 +355,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40224120476"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40225448184"
     },
-    "note": "Exact normal staged hook and hosted core pass204 Rust/13 tools,3430/3446 production lines,5985/6112 regions,63/63 changed executable lines. Independent review approves two COMPLETE DOMNavSat originals and only the legacy gps/NavSat fragment added to existing PARTIAL DOMLink.Sensors; prior IMU/contact/magnetometer/altimeter/air-pressure assertions and unchanged fixture preserved. Literal gps kind/XML and native NAVSAT typed meaning retained; no coordinate measurement or simulator behavior. Root consumer pin adoption remains coordinator-owned."
+    "note": "Exact normal staged hook and hosted core pass205 Rust/13 tools,3461/3477 production lines,6038/6167 regions,36/36 changed executable lines. Independent review approves only the exact AirSpeed pressure-noise fragment added to existing PARTIAL DOMLink.Sensors; all prior sensor assertions and unchanged fixture preserved. No dedicated pinned AirSpeed unit original or complete-case credit. Typed enum/parser/accessor added without speed measurement or simulator behavior. Root consumer pin adoption remains coordinator-owned."
   }
 }
