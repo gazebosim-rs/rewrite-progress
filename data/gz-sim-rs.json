@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T02:44:28.722687Z",
+  "updated_at": "2026-10-25T03:11:49.584442Z",
   "state": "active",
-  "summary": "Published reset/SDF/shared-value foundations remain green. A validated TPE motion Body now passes106 local Rust checks and12 native motion observations; final review is underway. TPE world integration and the wider headless milestone remain open.",
+  "summary": "Validated TPE motion is published with green hosted CI, native assertion/provenance evidence and a qualified equal-operation microbenchmark. Bevy model/IMU observations are now being decoupled from Rapier for actual TPE world integration; full headless P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
-      "title": "Shared backend and remaining lifecycle integration",
-      "detail": "Remote reset is published with exact green CI. Next: TPE integration must preserve original IDs, sensor leases and bounded control ordering. A fresh Release build of pinned TPE passes9 original targets/28 tests; dependencies remain qualified. Motion probes exposed native static/rotated-link quirks; the owner has been asked how to handle compatibility differences."
+      "title": "Use committed ECS state for backend-independent observations",
+      "detail": "Working source replaces direct Rapier model/IMU reads with stable public link IDs and committed WorldPose/Velocity. Readonly EntityLookup validates live ownership. Two lookup lifecycle/corruption tests and analytic no-Rapier frame/reset/rebound-link test added. Full109Rust+9tools/six-C++ local gate passes1821/1831lines2802/2850regions36/36changed; independent review pending."
     },
     {
       "id": "SENSOR-01",
@@ -23,8 +23,8 @@
     },
     {
       "id": "PHY-02",
-      "title": "Review validated TPE motion and integrate the Bevy world",
-      "detail": "Isolated Body::try_from validates once; private state and immutable access preserve the invariant, and advance commits only after finite checks. Nine motion tests retain native1e-3 stationary semantics, tiny f64 angles, near-unit accuracy and overflow retry. Full106Rust+9tool/six-C++ gate passes; final independent review pending. Narrow equal-operation measurement records22.73ns Rust vs26.54ns native, with shared-host/packaging limits; no simulator speedup claim. Static/rotated-link adapter policy awaits owner input."
+      "title": "Integrate the validated TPE Body into the Bevy world",
+      "detail": "Published kernel2962f1d passes exact106Rust+9tool/six-C++ staged and hosted gates; motion48/48 lines73/73 regions. Independent9-test/native12-row review retained original motion intent. Narrow microbenchmark medians22.71ns Rust/26.64ns native (1.17x), explicitly shared-host/compiler/packaging qualified. Actual TPE world/collision/lifecycle/commands remain unimplemented; D23 static/rotated-link policy awaits owner input."
     }
   ],
   "accepted_slices": [
@@ -122,6 +122,11 @@
       "title": "Shared f64 physics values with unchanged Rapier API and dependency-free contract crate",
       "commit": "d52707a6a9b22f66ad8d0a2a39af3a230a5ddfaa",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d52707a6a9b22f66ad8d0a2a39af3a230a5ddfaa"
+    },
+    {
+      "title": "Validated TPE motion with native stationary/tiny-angle evidence and measured stepping",
+      "commit": "2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28"
     }
   ],
   "remaining": [
@@ -152,16 +157,16 @@
     "PHY-02": "in_progress"
   },
   "quality": {
-    "revision": "d52707a6a9b22f66ad8d0a2a39af3a230a5ddfaa",
-    "rust_tests": 97,
+    "revision": "2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28",
+    "rust_tests": 106,
     "coverage": {
       "lines": [
-        1759,
-        1769
+        1807,
+        1817
       ],
       "regions": [
-        2694,
-        2742
+        2767,
+        2815
       ]
     },
     "upstream": {
@@ -171,10 +176,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40152702656"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40156402971"
     },
-    "note": "Independent exact type-body/adapter comparison,14 real Rapier tests and dependency/license audit passed. Exact staged97Rust+9tool/six-C++ gate passed; new shared crate6/6 lines3/3regions and6/6 changed executable lines covered. Every production crate exceeds95% lines/regions; workspace totals unchanged. Exact latest hosted revision passed; preceding SDF and remote-reset hosted revisions also passed. TPE behavior and wider headless acceptance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d52707a6a9b22f66ad8d0a2a39af3a230a5ddfaa"
+    "note": "Exact106Rust+9tool/six-C++ staged and hosted gates passed. Motion48/48lines73/73regions46/46changed; every production crate exceeds95% lines/regions. Independent9 motion tests, fresh12-native-row regeneration, original Model.BasicAPI replay and benchmark-setup/hash/median review passed. Timings are author measured, narrow/shared-host/packaging-qualified; no independent timing, TPE world, full original retirement or P2 acceptance claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28"
   },
   "phase_status": {
     "P0": "in_progress",
