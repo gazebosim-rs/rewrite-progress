@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T18:57:52.673891+00:00",
+  "updated_at": "2026-10-25T19:14:34.547088+00:00",
   "state": "active",
-  "summary": "Selected headless integration evidence independently approved and hosted green. Formal P2 prerequisites remain open; implementing native default pose publication cadence next.",
+  "summary": "Published independently reviewed native-default pose cadence; protected hook passed208 Rust/nine C++ scenarios. Exact hosted check running; implementing Gaussian IMU noise next.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Publisheda867617 fixes false acceleration from velocity replacement; independent native3x100 acquisition replay and sole-rebase-removal mutant qualify the correction. Same1e-9 tolerance; real2N/2kg force remains1m/s\u00b2. Multiple attached IMUs, pause, invalid admission, fault, both resets and removal covered. Normal hook201 Rust/14 tooling/nine C++ scenarios passes; exact hosted CI40210013522 SUCCESS. Full noise/families/activation remain open."
+      "detail": "Gaussian noise model implementation underway using pinned maintained RNG/distribution libraries, independently owned deterministic sensor streams and native bias/quantization controls. Seven unchanged native NoiseTest cases pass; six seeded native controls recorded. New Rust model tests pass locally; scene/noise/covariance integration, independent review and strict acceptance pending. Existing noise-free behavior remains published at prior pins."
     },
     {
       "id": "SLICE-01",
@@ -49,7 +49,7 @@
     {
       "id": "IO-01",
       "title": "Native default pose publication cadence",
-      "detail": "Implementing native fixed60 wall-Hz as a nonblocking eligibility check, independent of physics/clock/IMU cadence. Preserve reset wall timer, report suppressed attempts, retain historical test assertions using an explicit every-tick policy. Native controls, independent review and strict checks pending. Subscriber-interest suppression remains separate."
+      "detail": "Published fb2e28f: native60wallHz eligibility without step waits, preserved reset wall timer, separate throttle counter, explicit every-tick override. Independent five native controls/private38tests and two regression mutants; all old assertions retained. Normal hook208Rust/16tools/nineCpp,allcrate>95%,43/43changed. Exact hosted40224787967 pending; no-subscriber suppression and broader IO01 remain open."
     }
   ],
   "accepted_slices": [
@@ -267,6 +267,11 @@
       "title": "Selected headless evidence approval and explicit formal P2 prerequisite audit",
       "commit": "e45333441cc0790e5b16942de49b3516e3a72494",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e45333441cc0790e5b16942de49b3516e3a72494"
+    },
+    {
+      "title": "Native default60wallHz pose cadence with reset timer and explicit historical policy",
+      "commit": "fb2e28fa48dcf680da369c94fa3448494630366e",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fb2e28fa48dcf680da369c94fa3448494630366e"
     }
   ],
   "remaining": [
@@ -298,16 +303,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "e45333441cc0790e5b16942de49b3516e3a72494",
-    "rust_tests": 204,
+    "revision": "fb2e28fa48dcf680da369c94fa3448494630366e",
+    "rust_tests": 208,
     "coverage": {
       "lines": [
-        3193,
-        3228
+        3229,
+        3264
       ],
       "regions": [
-        4964,
-        5079
+        5007,
+        5122
       ]
     },
     "upstream": {
@@ -316,11 +321,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40222463306"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40224787967"
     },
-    "note": "Normal hook and exact hosted CI passed 204 Rust tests,16 tooling checks,nine real C++ scenarios; every production crate >95% lines and regions. Selected evidence approved independently; formal P2/SLICE01 not accepted. Audit preserves all original prerequisite packets and records exact evidence/dependency hashes.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e45333441cc0790e5b16942de49b3516e3a72494"
+    "note": "Independently reviewed13file increment; normal protected hook208Rust/16tools/nine actual C++ scenarios passes,all production crates >95% lines and regions,43/43 changed server lines covered. Five native60Hz controls/private38tests and two failing regression mutants verify scope. Exact hosted check pending; no broader IO01 or formal P2 acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fb2e28fa48dcf680da369c94fa3448494630366e"
   },
   "phase_status": {
     "P0": "in_progress",
