@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T02:27:09.937891Z",
+  "updated_at": "2026-10-25T02:36:40.356059Z",
   "state": "active",
   "summary": "Published loader remains green; visual float conversion and complete Shapes/terrain metadata candidates are frozen for separate independent reviews. SDF-01 exit evidence awaits coordinator acceptance.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-02",
       "title": "Visual metadata and remaining Shapes fields",
-      "detail": "Visual candidate: 104 Rust checks, 141 matching native finite/error rows plus two explicit nonfinite gaps, code/ABI/safety review underway. Separate combined terrain candidate: 108 Rust checks,52 native metadata observations and unchanged DOMGeometry.Shapes pass; proposed complete mapping awaits independent assertion review. No image IO, physical terrain, rendering effects or performance claim."
+      "detail": "Visual candidate passes 104 Rust checks and 143 native observations (141 matching, two explicit nonfinite gaps); independent ABI/safety review requested isolated shim outputs. Both fault tests now pass from a fresh export using test-only RAII temporary directories. Terrain reviewer independently passed all 108 combined Rust checks,52 native observations and unchanged Shapes original, approving its complete assertion mapping after correcting native Vector2 tolerance. Clean parent integration, exact final receipts and strict staged/hosted publication remain required."
     },
     {
       "id": "SDF-01",
