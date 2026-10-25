@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T00:57:18.470987Z",
+  "updated_at": "2026-10-25T01:13:29.623025Z",
   "state": "active",
-  "summary": "Twenty-two independently reviewed slices are published with passing hosted CI. Native primitive defaults and plane normalization are retained; original SDF 1.5 resource loading is in review.",
+  "summary": "Twenty-three independently reviewed slices are published with passing hosted CI. Original SDF 1.5 include resources load unchanged; fluid-added-mass metadata is in final integrated review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
-      "id": "SDF-01",
-      "title": "Original SDF 1.5 include resources",
-      "detail": "Frozen bounded version-floor candidate passes 97 Rust checks and 201 matching native observations, preserving the prior 139 and adding 62 conversion-chain controls. Original IncludeElements input/resources/assertions retained; two native-supported conversion obligations remain explicitly Unsupported. Independent review in progress."
+      "id": "SDF-02",
+      "title": "Fluid-added-mass metadata",
+      "detail": "Isolated source/assertion review passed 98 Rust tests, 40 native bit/presence comparisons and unchanged InertialComplete original. Integrated candidate passes 100 Rust checks; overlap review pending. Plain boxed symmetric data only; consumers must reject Some until engine support."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Load the bounded SDF 1.5 model and include subset",
+      "commit": "9222bd64cf494e90cefe30608d51167d95fd02ce",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9222bd64cf494e90cefe30608d51167d95fd02ce"
+    },
     {
       "title": "Match native primitive defaults and plane normalization",
       "commit": "1dda357c442497d0475075eb353b1a82dcfcd9d6",
@@ -140,28 +145,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "1dda357c442497d0475075eb353b1a82dcfcd9d6",
-    "rust_tests": 95,
+    "revision": "9222bd64cf494e90cefe30608d51167d95fd02ce",
+    "rust_tests": 97,
     "coverage": {
       "lines": [
-        2272,
-        2289
+        2275,
+        2291
       ],
       "regions": [
-        3941,
-        4040
+        3947,
+        4045
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 30,
+      "ported": 31,
       "partial": 6
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40148470725"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40149556475"
     },
-    "note": "Exact primitive integration passed independent overlap/assertion review, 95 Rust checks, strict frozen hook and hosted CI. 37 fresh native bit observations and four unchanged native Load originals passed; four value-subset mappings remain partial. Native zero/overflow plane normals are DOM data requiring consumer validation. Linux GNU scalar, nonfinite/vector-prefix/full-schema and performance limits remain.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1dda357c442497d0475075eb353b1a82dcfcd9d6"
+    "note": "Exact version-floor snapshot passed independent source/assertion/provenance review, strict frozen hook and hosted CI. 201 native parity observations retain prior 139 plus 62 controls; two native-supported conversion families remain explicit Unsupported. Original IncludeElements input and both resources retained with complete reviewed mapping. No full conversion, Element/serializer, SDF packet or performance acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9222bd64cf494e90cefe30608d51167d95fd02ce"
   }
 }
