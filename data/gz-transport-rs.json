@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T19:55:00Z",
+  "updated_at": "2026-10-25T20:02:43Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the nonblocking Publisher interest snapshot is reviewed, published at 2a545f1 and awaiting exact hosted CI. The earlier lost-output interop failure remains unclassified.",
+  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the nonblocking Publisher interest snapshot is reviewed and hosted-green at public 2a545f1. The earlier lost-output interop failure remains unclassified.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 2a545f1 adds independently reviewed atomic-only Publisher::connection_snapshot for same-Node admitted local and remembered remote matching interest; exact strict staged gate and normal hook passed. Hosted run40228259908 is in progress. This is a membership hint, not a delivery/readiness guarantee; remote discovery is eventual and BYE does not clear remembered registrations. Publisher lifetime hosted-green at1d13c01; earlier lost-output interop status101 remains unclassified."
+      "detail": "Public 2a545f1 adds independently reviewed atomic-only Publisher::connection_snapshot for same-Node admitted local and remembered remote matching interest; exact strict staged gate, normal hook and hosted run40228259908 passed. This is a membership hint, not a delivery/readiness guarantee; remote discovery is eventual and BYE does not clear remembered registrations. Publisher lifetime hosted-green at1d13c01; earlier lost-output interop status101 remains unclassified."
     }
   ],
   "accepted_slices": [
@@ -331,9 +331,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40228259908"
     },
-    "note": "Exact reviewer-bound tree b6e547e4 and normal protected hook passed 2260/2307 lines,3396/3544 regions,105/107 changed. Pinned native0,0,1,0 and real C++ subscriber interop independently replayed; source/metadata receipts exact. Hosted run40228259908 is in progress. Snapshot is only a matching-registration hint. Earlier instrumented interop status101 remains UNCLASSIFIED."
+    "note": "Exact reviewer-bound tree b6e547e4, strict staged gate and normal protected hook passed 2260/2307 lines,3396/3544 regions,105/107 changed. Exact hosted run40228259908 succeeded on public2a545f1, including real C++ peer and owned coverage jobs. Snapshot is only a matching-registration hint. Earlier instrumented interop status101 remains UNCLASSIFIED."
   }
 }
