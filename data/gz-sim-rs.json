@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T16:43:56.203844+00:00",
+  "updated_at": "2026-10-25T16:56:38.638710+00:00",
   "state": "active",
-  "summary": "Published reviewed actual-server step-to-observation report and Transport integration. Native-backed reset/removal reference is now passing on both supported scene backends and being prepared for independent review; P2 matrix remains open.",
+  "summary": "Published native-backed reset/removal controls and Rust differential checks. The next headless comparison will receive clock, pose and IMU on both actual servers; the complete acceptance matrix remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published server observation report and Transport 48a integration are hosted green. Independent replay reproduced the large within-Rust delivery latency improvement and rejected missing samples. The next native-backed lifecycle slice now passes all ten DART/TPE controls and Rust comparisons, with Reset observer, multistep and pose mutants under independent review. Complete the selected-fixture matrix before P2 acceptance."
+      "detail": "Published 5f96723 preserves ten DART/TPE control outcomes and adds actual Rust Reset observers, identity/pose/time comparisons. Independent replay and three intentional mutants establish the checks; the normal hook passed 203 Rust tests, 15 tooling checks and nine C++ scenarios. Next work matches all three requested clock/pose/IMU streams before final P2 matrix review. The existing IMU-only native timing remains contextual."
     },
     {
       "id": "PHY-02",
@@ -247,6 +247,11 @@
       "title": "Actual server per-step observation report, bounded queues and reviewed Transport48a integration",
       "commit": "03328bfc302376bf6094ea21862123778a34ac1d",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/03328bfc302376bf6094ea21862123778a34ac1d"
+    },
+    {
+      "title": "Durable native reset/removal reference with all ten controls and three regression mutants",
+      "commit": "5f96723efda8a7bd3a20465b8f2a111f2f75e23e",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5f96723efda8a7bd3a20465b8f2a111f2f75e23e"
     }
   ],
   "remaining": [
@@ -278,15 +283,15 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "03328bfc302376bf6094ea21862123778a34ac1d",
-    "rust_tests": 202,
+    "revision": "5f96723efda8a7bd3a20465b8f2a111f2f75e23e",
+    "rust_tests": 203,
     "coverage": {
       "lines": [
-        3182,
+        3193,
         3228
       ],
       "regions": [
-        4941,
+        4964,
         5079
       ]
     },
@@ -296,11 +301,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40212126834"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40213637926"
     },
-    "note": "Published 03328bf passed the normal hook and exact hosted CI 40212126834: 202 Rust tests, 15 tooling checks and nine real C++ scenarios. Every production crate exceeds 95% lines and regions; workspace 3182/3228 lines and 4941/5079 regions. Independent server replay, a cross-pin control and an omitted-sample mutant passed review. Native ratios remain contextual; P2 acceptance is open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/03328bfc302376bf6094ea21862123778a34ac1d"
+    "note": "Normal hook passed 203 Rust tests, 15 tooling checks and nine real C++ scenarios. All production crates exceed 95% lines and regions; no new production lines. Independent native replay matched all ten controls and source/library hashes; reset-count, multistep and pose mutants fail as expected. Exact hosted state: pending. P2 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5f96723efda8a7bd3a20465b8f2a111f2f75e23e"
   },
   "phase_status": {
     "P0": "in_progress",
