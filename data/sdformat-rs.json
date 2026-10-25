@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:49:51.808943Z",
+  "updated_at": "2026-10-25T17:58:36.948109Z",
   "state": "active",
-  "summary": "Nested-world attachment and scoped failure assertions are public, independently reviewed and green in hosted CI; ForceTorque DOM construction is in isolated review.",
+  "summary": "Complete ForceTorque DOM construction assertions are public, independently reviewed and green in hosted CI; complete Noise construction source is approved for integration.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Review native ForceTorque DOM construction",
-      "detail": "Pinned native DOMForceTorque.Construction and isolated Rust owned-value test pass. Independent reviewer will decide complete versus partial assertion mapping before integration, strict hook and hosted qualification."
+      "title": "Integrate complete native Noise construction assertions",
+      "detail": "DOMNoise.ConstructionAndSet exact native and isolated Rust tests pass with independent complete source review. Final main metadata binding, normal hook and hosted qualification remain."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain complete ForceTorque DOM construction assertions",
+      "commit": "577f5953c25dcb05636e48b37108b233b99ca493",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/577f5953c25dcb05636e48b37108b233b99ca493"
+    },
     {
       "title": "Retain nested-world attachment and scoped failure assertions as a partial original port",
       "commit": "0ede9a7a5b1dbce661c50f5086c2085ff0b72717",
@@ -295,9 +300,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "0ede9a7a5b1dbce661c50f5086c2085ff0b72717",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0ede9a7a5b1dbce661c50f5086c2085ff0b72717",
-    "rust_tests": 189,
+    "revision": "577f5953c25dcb05636e48b37108b233b99ca493",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/577f5953c25dcb05636e48b37108b233b99ca493",
+    "rust_tests": 190,
     "coverage": {
       "lines": [
         3300,
@@ -310,13 +315,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 50,
+      "ported": 51,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40218194399"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40218881989"
     },
-    "note": "Exact normal staged hook and hosted core pass189 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves sixteen world and six embedded-model body values, world invalid failure and seven model-scope failures on unchanged fixture. Native modelGraph world rejection differs from public enclosing-world alias and remains unported with graph/Count/error details; partial only. No production/API, simulator or consumer change."
+    "note": "Exact normal staged hook and hosted core pass190 Rust/13 tools,3300/3316 production lines,5746/5857 regions and3136/3148 exported executable lines. Independent review approves the complete DOMForceTorque.Construction original observable values, copy/move/equality/inequality via owned public configuration. Native setters map direct public fields; no parsed-object equality, serializer or sampler claim. No production/API, simulator or consumer change."
   }
 }
