@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T13:18:32Z",
+  "updated_at": "2026-10-25T13:33:22Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and three partial ports; remapped local topic listing is public with hosted CI running.",
+  "summary": "Forty-three reviewed complete upstream ports and three partial ports; remapped local topic listing is public and hosted green. A discovered publisher/service listing capability is staged for independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "One-node ServiceListRemap and TopicListRemap assertion mappings are independently reviewed partial; TopicListRemap is public3ba3474 with exact hosted run40196988751 in progress. Forty-three originals have reviewed complete ports, three cases are partial, and372 remain pending. Global discovery, callback/process-global scope, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "One-node ServiceListRemap and TopicListRemap mappings are independently reviewed partial; exact TopicListRemap hosted run40196988751 succeeded. A bounded known_publisher_topics/known_services worker-snapshot capability passed exact staged native and strict coverage gates and is under independent API/source review. Forty-three originals have reviewed complete ports, three cases are partial, and372 remain pending on public main. Global subscriber-only, process-wide, immediate-discovery and latency contracts remain open."
     }
   ],
   "accepted_slices": [
@@ -266,9 +266,9 @@
       "partial": 3
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40196988751"
     },
-    "note": "Public3ba3474 exact main after independently bound partial TopicListRemap assertion and mandatory normal strict hook:144 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,0/0 changed production executable lines. Exact hosted run40196988751 is in progress. Global discovery listing remains open; no full NET-02 acceptance claim."
+    "note": "Public3ba3474 exact main after independently bound partial TopicListRemap assertion and mandatory normal strict hook:144 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,0/0 changed production executable lines. Exact hosted run40196988751 succeeded. Next discovered-list worker-snapshot capability is staged under independent review; no full NET-02 acceptance claim."
   }
 }
