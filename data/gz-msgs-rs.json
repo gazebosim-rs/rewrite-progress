@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T21:57:03Z",
+  "updated_at": "2026-10-25T22:02:28Z",
   "state": "active",
-  "summary": "Reviewed bounded UInt64_V undotted e/E hexadecimal JSON is public; exact hosted qualification is in progress and MSG-02 remains open.",
+  "summary": "Reviewed bounded UInt64_V undotted e/E hexadecimal JSON is public and hosted green; descriptor-aware float hexadecimal work is in development while MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public reviewed UInt64_V top-level undotted lowercase 0x e/E slice at 81f38c8 reproduces 1,842 native JSON status/wire outcomes, retaining 1,690 prior rows and 18 prior fixture hashes. The normal protected hook passed; exact hosted run 40237849828 is in progress. Broader JSON/release qualification remains open."
+      "detail": "Public reviewed UInt64_V top-level undotted lowercase 0x e/E slice at 81f38c8 reproduces 1,842 native JSON status/wire outcomes, retaining 1,690 prior rows and 18 prior fixture hashes; exact hosted run 40237849828 passed. A Double_V/Float_V unquoted hex candidate is isolated and unreviewed; broader JSON/release qualification remains open."
     }
   ],
   "accepted_slices": [
@@ -304,10 +304,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40237849828"
     },
-    "note": "Semantic-approved seven-file freeze and normal protected hook passed. 118 Rust checks, five retained native C++ CLI originals, 1,842 source-bound native JSON status/wire outcomes (1,690 prior, 152 new with 76 accepted), 18 unchanged prior fixture hashes; root coverage 2364/2376 lines and 3827/3868 regions, CLI 599/610 lines and 1047/1076 regions. Hosted run 40237849828 is in progress; broad MSG-02 remains open.",
+    "note": "Semantic-approved seven-file freeze and normal protected hook passed. 118 Rust checks, five retained native C++ CLI originals, 1,842 source-bound native JSON status/wire outcomes (1,690 prior, 152 new with 76 accepted), 18 unchanged prior fixture hashes; root coverage 2364/2376 lines and 3827/3868 regions, CLI 599/610 lines and 1047/1076 regions. Hosted run 40237849828 passed; broad MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/81f38c8225453a3c36b9b4a2bfee3fe7dc779a36"
   }
 }
