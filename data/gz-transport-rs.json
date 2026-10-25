@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T03:07:59.531207Z",
+  "updated_at": "2026-10-25T03:33:14.568755Z",
   "state": "active",
-  "summary": "Published reviewed bounded single-hop topic remapping after exact staged gate; hosted CI is running.",
+  "summary": "Published remapping has source-verified hosted success. Bounded publisher membership/graceful withdrawal is under full local verification.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Remapping hosted qualification and publisher inspection contract",
-      "detail": "Published c8060e4 passes the exact staged 97 Rust/21 tooling gate, 1391/1412 lines, 2104/2169 regions and 33/33 changed executable lines. Independent eight-check/native-original replay passes. Hosted 40157033644 is running. Next publisher inspection contract has a pinned native characterization: remembered registrations, deliberate process-disconnection retention, and explicit END removal; no Rust readiness API accepted yet."
+      "title": "Bounded publisher membership and graceful withdrawal",
+      "detail": "Prototype adds bounded membership snapshots, native registration identity/default projection and retention, plus graceful END-before-BYE. All 53 unit checks, threaded publication ports and C++ membership/lifecycle checks pass; full gate is running. Four original helper mappings remain pending independent review. An older service race fixture now establishes actual worker admission and separately tests queued-command retirement; its assertions are retained."
     },
     {
       "id": "NET-02",
@@ -172,11 +172,11 @@
     "rust_tests": 97,
     "coverage": {
       "lines": [
-        1391,
+        1390,
         1412
       ],
       "regions": [
-        2104,
+        2103,
         2169
       ]
     },
@@ -186,9 +186,9 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40157033644"
     },
-    "note": "Published c8060e4 passes exact immutable staged verification: 97 Rust and 21 tooling tests, 1391/1412 lines, 2104/2169 regions, 33/33 changed. Independent review replays eight focused checks including 144 native option combinations, real C++ communication in all four directions, native/Rust original-name inspection and withdrawal, plus two untouched native originals XML 2/0. Hosted CI is running. No threshold, assertion or protocol change; prior ledger replacement-name failure and corrected full rerun remain recorded. Twenty-four complete ports, one partial and 393 pending remain of 418. Full NET-01/NET-02/performance acceptance remains open."
+    "note": "Published c8060e4 passes exact staged and hosted gates. Staged: 97 Rust/21 tooling, 1391/1412 lines, 2104/2169 regions, 33/33 changed. Hosted: 97 Rust, 1390/1412 lines, 2103/2169 regions, 33/33 changed; all 29 downloaded input hashes match the published commit. Independent remapping review covers 144 native option combinations, four C++ directions, lifecycle and two native originals XML 2/0. Twenty-four complete ports, one partial and 393 pending remain of 418. Successor publisher-membership working evidence is separate; no full NET-01/NET-02/performance acceptance."
   }
 }
