@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T12:58:09.253803Z",
+  "updated_at": "2026-10-25T13:02:40.495268Z",
   "state": "active",
-  "summary": "Reviewed bounded protobuf JSON grammar correction is public after the normal staged hook; hosted CI is running. MSG-01 accepted; MSG-02 remains open.",
+  "summary": "Reviewed bounded protobuf JSON grammar correction is public with normal staged-hook and hosted verify success. MSG-01 accepted; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "The 29-row JSON grammar/framing correction has independent semantic and final metadata approval plus clean actual-worktree hook; hosted run 40195447870 is in progress. Broader descriptor, formatting, installation, release and performance scope stays open."
+      "detail": "The 29-row JSON grammar/framing slice is qualified on public c1234c0a. Broader descriptor/default, formatting, installation, release and equal-work performance obligations remain under MSG-02."
     }
   ],
   "accepted_slices": [
@@ -182,6 +182,11 @@
       "title": "Source-preserving registry integer defaults with bounded native LP64/C23 policy",
       "commit": "f0f236f028be20274dc8bf58f594fc849289769f",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f0f236f028be20274dc8bf58f594fc849289769f"
+    },
+    {
+      "title": "Bounded protobuf JSON bare keys and trailing object commas with 29 native rows",
+      "commit": "c1234c0a2e7d3a17c6135d8f3949e465da4dba08",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c1234c0a2e7d3a17c6135d8f3949e465da4dba08"
     }
   ],
   "remaining": [
@@ -214,10 +219,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40195447870"
     },
-    "note": "Published commit passed independently reviewed 29-row native JSON parity, 277 supplemental reviewer lexical controls, exact staged export and normal actual-worktree hook, with 109 harness checks plus FactoryLazy and strict owned coverage 2015/2019 lines, 3260/3279 regions. Hosted run in progress; broad MSG-02 remains open.",
+    "note": "Exact public revision passes hosted verify, normal actual-worktree staged hook, independent semantic/final review, 29 native JSON rows and 277 supplemental reviewer lexical controls. Full gate covers 109 harness checks plus FactoryLazy and all retained originals, with aggregate owned 2015/2019 lines and 3260/3279 regions. General JSON grammar and MSG-02 remain open.",
     "previous_ci": {
       "revision": "f0f236f028be20274dc8bf58f594fc849289769f",
       "state": "success",
