@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T04:07:52.035437+00:00",
+  "updated_at": "2026-10-25T04:17:01.308866+00:00",
   "state": "active",
   "summary": "Typed terminal fault boundaries and real Bevy-owned TPE motion/reset installation are published after independent review and strict staged gates. Selectable TPE SDF world, lifecycle, CLI and a seventh C++ reset/IMU scenario now pass local checks and are under review. P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
@@ -9,7 +9,7 @@
     {
       "id": "CORE-02",
       "title": "Integrate selectable TPE loaded worlds and lifecycle",
-      "detail": "Source under independent SDF review: explicit TPE engine selection, model-owned Motion with fixed link frames, same-ID loaded restoration and chosen-engine removal. Local seventh real C++ scenario passed clock/pose/IMU-specific-force/remove/reset/reconnect; six Rapier cases retained. Native two-row World/Model/Link fixture compares rotated/offset hierarchy. Final strict gate running; no contacts/nested models/link commands/D23 decision or P2 acceptance."
+      "detail": "Source under independent SDF review: explicit TPE engine selection, model-owned Motion with fixed link frames, same-ID loaded restoration and chosen-engine removal. Local seventh real C++ scenario passed clock/pose/IMU-specific-force/remove/reset/reconnect; six Rapier cases retained. Native two-row World/Model/Link fixture compares rotated/offset hierarchy. Final author127Rust+9tools/sevenCPP gate passes2034/2057lines3133/3206regions198/198changed; no contacts/nested models/link commands/D23 decision or P2 acceptance."
     },
     {
       "id": "SENSOR-01",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-02",
       "title": "Integrate the validated TPE Body into the Bevy world",
-      "detail": "Published installer ad1d8b0 passes exact118Rust+9tools/six-C++ staged gate; TPE81/81lines121/121regions. Independent26 TPE/Rapier checks+six actual C++ scenarios passed. Shared installer identity prevents two physics systems; component reset/despawn and typed failure verified. Hosted40160579870 pending. New selectable-world source in review; contacts, broader lifecycle and commands remain."
+      "detail": "Published installer ad1d8b0 passes exact118Rust+9tools/six-C++ staged gate; TPE81/81lines121/121regions. Independent26 TPE/Rapier checks+six actual C++ scenarios passed. Shared installer identity prevents two physics systems; component reset/despawn and typed failure verified. Hosted40160579870 succeeded. New selectable-world source in review; contacts, broader lifecycle and commands remain."
     }
   ],
   "accepted_slices": [
@@ -190,10 +190,10 @@
       "partial": 2
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40160579870"
     },
-    "note": "Exact isolated staged118Rust+9tools/sixCPP gate passed. Every production crate exceeds95%;34/34changed lines,TPE81/81lines121/121regions. Independent26 Rust+6C++ replay and ownership/API/reset/fault review passed. Hosted installer run is pending; earlier fault40291ac hosted40160034170 succeeded. Actual TPE SDF integration is separate unaccepted working source; no P2 or full original retirement.",
+    "note": "Exact isolated staged118Rust+9tools/sixCPP gate passed. Every production crate exceeds95%;34/34changed lines,TPE81/81lines121/121regions. Independent26 Rust+6C++ replay and ownership/API/reset/fault review passed. Exact hosted installer40160579870 succeeded; earlier fault40291ac hosted40160034170 succeeded. Actual TPE SDF integration is separate unaccepted working source; no P2 or full original retirement.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ad1d8b0eb5538b794deff1606428a2e0aab56071"
   },
   "phase_status": {
