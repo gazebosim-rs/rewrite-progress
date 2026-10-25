@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T04:54:15.949840Z",
+  "updated_at": "2026-10-25T05:00:37.092961Z",
   "state": "active",
-  "summary": "Model-scope merged includes are independently reviewed, published and hosted green. Pure model.config file selection is implemented in isolation with native-backed edge controls.",
+  "summary": "Pure model.config selection is independently reviewed and published after the exact strict staged gate. Hosted CI is running; native-backed SDF 1.4 axis conversion remains a separate prototype.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Pure model.config file selection",
-      "detail": "Pure config selector is under independent review. Production selection/version code is unchanged; review narrowed a test-only native-failure allowance and added eight XML controls with five explicit inherited grammar gaps. Revised corpus has 97 native observations plus two exact originals. Integrated candidate passes 116 Rust checks; no config publication yet."
+      "title": "Native SDF 1.4 axis conversion scope",
+      "detail": "Separate unreviewed prototype retains direct-root/world axis defaults and unchanged nested-model behavior, including mixed-version resource controls. Native60 observations/two original cases and prototype tests pass. Public loader floor remains1.5; config adoption is coordinator-owned."
     },
     {
       "id": "SDF-01",
       "title": "Exit evidence audit",
-      "detail": "Exact plan criteria, current supported loader subset, 33 complete and six partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
-    },
-    {
-      "id": "SDF-02-1.4",
-      "title": "SDF 1.4 axis conversion prototype",
-      "detail": "Native direct/nested/world/resource scope probes are recorded; an isolated unreviewed prototype retains model-frame axis insertion only where the converter table applies. Public loader floor remains 1.5. Actors and full conversion/serialization remain pending."
+      "detail": "Exact plan criteria, current supported loader subset, 33 complete and eight partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Select model.config SDF files with native version rules",
+      "commit": "80b6c74a5fc69574fdac592eeb10b1111f789871",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/80b6c74a5fc69574fdac592eeb10b1111f789871"
+    },
     {
       "title": "Resolve model-scope merged includes with native frame rewrites",
       "commit": "fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37",
@@ -167,7 +167,7 @@
   "remaining": [
     "Complete primitive Element/error/mutation contracts, material metadata and unsupported Surface fields; heightmap/polyline metadata and the full Shapes assertion port are delivered.",
     "Complete nonfinite scalar and vector-stream parity; retain documented native inertial-frame limitations and explicit consumer validation.",
-    "Complete retained schema/version conversions, include merge, automatic inertia and import/export semantics.",
+    "Complete retained schema/version conversions, remaining merge/schema extensions, automatic inertia and import/export semantics; bounded model-scope merge and pure config selection are delivered.",
     "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
@@ -180,28 +180,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37",
-    "rust_tests": 112,
+    "revision": "80b6c74a5fc69574fdac592eeb10b1111f789871",
+    "rust_tests": 116,
     "coverage": {
       "lines": [
-        2572,
-        2590
+        2700,
+        2718
       ],
       "regions": [
-        4534,
-        4639
+        4737,
+        4842
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 33,
-      "partial": 6
+      "partial": 8
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40161820248"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40163884713"
     },
-    "note": "Independent fresh snapshot replay passed 112 Rust tests, 153 native observations and both exact native include originals. Review found and verified corrections for placement schema scope and original resource root poses before overrides. Five schema/legacy gaps remain explicit; no new original retirement. Normal strict frozen hook passed 112 Rust tests and 11 tooling tests, with 2450/2463 executable lines under its whole-export changed-line policy; working delta passed 152/152. Exact hosted CI is green. No new unsafe code, filesystem dependency or whole-packet/performance acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37"
+    "note": "Independent hash-verified integrated snapshot passed all 116 Rust tests. Fresh 97 native observations/two originals and complete provenance proof match. Two filename-only original portions remain partial; five inherited XML grammar gaps and two named safe-warning boundaries are explicit. Normal strict staged gate passed 116 Rust/11 tooling tests; working changed lines 117/117 and whole-export staged policy 2567/2580. Exact hosted CI pending. No filesystem/Fuel dependency, new unsafe code or whole-packet/performance acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/80b6c74a5fc69574fdac592eeb10b1111f789871"
   }
 }
