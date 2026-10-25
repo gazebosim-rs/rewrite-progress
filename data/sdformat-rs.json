@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T05:03:38.166662Z",
+  "updated_at": "2026-10-25T05:55:56.981169Z",
   "state": "active",
-  "summary": "Pure model.config selection is independently reviewed, published and hosted green. Native-backed SDF 1.4 axis conversion is the next separate loader increment.",
+  "summary": "The bounded SDF 1.4 loader is independently reviewed, published and hosted green. Consumer resource integration review is resolving native path and warning semantics.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Native SDF 1.4 axis conversion scope",
-      "detail": "Separate unreviewed prototype retains direct-root/world axis defaults and unchanged nested-model behavior, including mixed-version resource controls. Native 60 observations/two original cases and prototype tests pass. Public loader floor remains 1.5; config adoption is coordinator-owned."
+      "title": "Resource consumer integration review",
+      "detail": "Producer config API and SDF 1.4 support are public. Independent root consumer review found literal-path append, diagnostic identity and legacy warning ordering issues; native-backed repairs are under review. No filesystem or Fuel dependency was added to this library."
     },
     {
       "id": "SDF-01",
       "title": "Exit evidence audit",
-      "detail": "Exact plan criteria, current supported loader subset, 33 complete and eight partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
+      "detail": "Exact plan criteria, current supported loader subset, 33 complete and ten partial mappings, native comparisons, gaps and reference/API prerequisites are recorded. Root adopted the fluid-aware producer with explicit rejection. Packet remains in progress pending coordinator acceptance and prerequisite disposition."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Load SDF 1.4 models with scoped native axis defaults",
+      "commit": "aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd"
+    },
     {
       "title": "Select model.config SDF files with native version rules",
       "commit": "80b6c74a5fc69574fdac592eeb10b1111f789871",
@@ -180,28 +185,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "80b6c74a5fc69574fdac592eeb10b1111f789871",
-    "rust_tests": 116,
+    "revision": "aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd",
+    "rust_tests": 119,
     "coverage": {
       "lines": [
-        2700,
-        2718
+        2717,
+        2734
       ],
       "regions": [
-        4737,
-        4842
+        4772,
+        4876
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 33,
-      "partial": 8
+      "partial": 10
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40163884713"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40165918019"
     },
-    "note": "Independent hash-verified integrated snapshot passed all 116 Rust tests. Fresh 97 native observations/two originals and complete provenance proof match. Two filename-only original portions remain partial; five inherited XML grammar gaps and two named safe-warning boundaries are explicit. Normal strict staged gate passed 116 Rust/11 tooling tests; working changed lines 117/117 and whole-export staged policy 2567/2580. Exact hosted CI verified green. No filesystem/Fuel dependency, new unsafe code or whole-packet/performance acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/80b6c74a5fc69574fdac592eeb10b1111f789871"
+    "note": "Independent final snapshot passed all 119 Rust checks, 61 native observations and two exact originals with full proof equality. Config API/proof and 114 untouched parent files verified unchanged. Two typed/axis original portions remain partial; Element/serializer assertions stay pending. Exact strict staged gate passed 119 Rust/11 tooling tests, 2717/2734 lines and 4772/4876 regions; working changed lines 24/24 and staged whole-export policy 2581/2594. Exact hosted CI verified green. No dependency/unsafe change or whole-packet/performance acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/aae2d61d5131b2d87772a2e48c3ac4dd9a3016bd"
   }
 }
