@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T13:12:55.097910Z",
+  "updated_at": "2026-10-25T13:16:13.474997Z",
   "state": "active",
-  "summary": "A reviewed native-backed repeated-field JSON array-comma slice is public; hosted CI is queued. MSG-01 accepted; MSG-02 remains open.",
+  "summary": "Native-backed repeated-field JSON array commas are reviewed, public and hosted-successful. A bounded single-quote grammar probe has begun; MSG-01 accepted and MSG-02 open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "The 14-row array-comma slice passed independent review and the normal worktree hook and is public at 280d599; hosted qualification is pending. Broader descriptor, formatting, installation, release and performance scope stays open."
+      "detail": "Probing protobuf 3.21.12 single-quoted JSON keys and string values as the next bounded CLI syntax gap. Broader descriptor, formatting, installation, release and performance scope stays open."
     }
   ],
   "accepted_slices": [
@@ -187,6 +187,11 @@
       "title": "Bounded protobuf JSON bare keys and trailing object commas with 29 native rows",
       "commit": "c1234c0a2e7d3a17c6135d8f3949e465da4dba08",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c1234c0a2e7d3a17c6135d8f3949e465da4dba08"
+    },
+    {
+      "title": "Bounded protobuf JSON repeated-field trailing array commas with 43 native rows",
+      "commit": "280d599b82ff27bafc341fdb73afd18cec7ee019",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/280d599b82ff27bafc341fdb73afd18cec7ee019"
     }
   ],
   "remaining": [
@@ -219,15 +224,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40196574805"
     },
-    "note": "Independent semantic and final metadata reviews approved the bounded 43-row native JSON array slice. Exact final staged gate and normal worktree hook passed 109 harness checks plus FactoryLazy, negative gates, snapshots/archive/downstream. Root production coverage 1917/1920 lines and 3053/3071 regions; vendor patches unchanged. Hosted CI is queued; MSG-02 remains open.",
-    "previous_ci": {
-      "revision": "c1234c0a2e7d3a17c6135d8f3949e465da4dba08",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40195447870"
-    },
+    "note": "Published array-comma slice passed independent semantic/final metadata review, final staged gate, normal worktree hook and exact hosted SHA verification. 109 harness checks plus FactoryLazy, 43 pinned native rows, negative gates, snapshots/archive/downstream/source package. Root production coverage 1917/1920 lines and 3053/3071 regions; vendor patches unchanged. Single-quote gap is exploratory only; MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/280d599b82ff27bafc341fdb73afd18cec7ee019"
   }
 }
