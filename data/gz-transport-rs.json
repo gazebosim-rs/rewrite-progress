@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T08:03:41.960118Z",
+  "updated_at": "2026-10-25T08:36:51.447760Z",
   "state": "active",
-  "summary": "Explicit unsubscribe is hosted green; canonical typed-publication candidate passes its full gate and is frozen for independent review.",
+  "summary": "Canonical typed publication and the faithful mismatch original are published after reviewed staged verification; hosted qualification is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Hosted unsubscribe qualification and typed publication",
-      "detail": "Published b3b2b9e is hosted green, with 125 Rust checks and all 29 committed inputs verified. The frozen typed-publication candidate passes 128 Rust and 22 tooling checks, 1591/1611 lines, 2420/2485 regions and 12/12 changed lines. It reuses the existing canonical producer binding and prost while retaining raw byte forwarding. The exact TypeMismatch original proposes one full port pending msgs review; same-package and typed unknown-field boundaries are explicit."
+      "title": "Hosted typed publication and retained query/metadata contracts",
+      "detail": "Published 2f35102 passes exact reviewed 128 Rust/22-tooling staged checks, 1591/1611 lines, 2420/2485 regions and 12/12 changed lines; all 30 inputs match committed blobs. Independent msgs replay accepts full TypeMismatch and canonical bounds with real C++ delivery. Hosted CI is running; source tree is clean. Raw unknown-field forwarding stays unchanged. Global list/cache timing, immediate process-global sharing, complete message metadata and broader NET-01 remain pending."
     },
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Thirty-four original cases have reviewed complete ports, one ambiguity case remains partial, and 383 remain pending. Immediate process-global visibility, global queries/cache, scope/CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "Thirty-five original cases have reviewed complete ports, one ambiguity case remains partial, and 382 remain pending. Callback/process-global scope, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -182,6 +182,11 @@
       "title": "Bounded explicit original-name unsubscribe, release-once leases and absent/repeated generic END refresh with explicit owned-buffer boundary",
       "commit": "b3b2b9ec6d68f59fb371fb86cf5ebf40454ee5fb",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b3b2b9ec6d68f59fb371fb86cf5ebf40454ee5fb"
+    },
+    {
+      "title": "Canonical typed advertisement/publication with sealed descriptor binding, preencoding bounds and faithful original type mismatch port",
+      "commit": "2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2f35102930f59c53b5f38de4bb07ee7bd49c1edc"
     }
   ],
   "remaining": [
@@ -197,28 +202,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "b3b2b9ec6d68f59fb371fb86cf5ebf40454ee5fb",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b3b2b9ec6d68f59fb371fb86cf5ebf40454ee5fb",
-    "rust_tests": 125,
+    "revision": "2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
+    "rust_tests": 128,
     "coverage": {
       "lines": [
-        1578,
-        1599
+        1591,
+        1611
       ],
       "regions": [
-        2402,
-        2468
+        2420,
+        2485
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 34,
+      "ported": 35,
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40174419396"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40176574469"
     },
-    "note": "Published b3b2b9e passes exact independently approved staged verification: 125 Rust and 22 tooling checks, 1578/1599 lines, 2402/2468 regions and 32/32 changed executable production lines. All 29 recorded input hashes match committed blobs. Independent msgs replay passed 51 runtime tests, fresh native/Rust metadata and the unchanged native two-node baseline with hashes verified. Owned admitted buffers remain drainable; native queued callback and immediate process-global semantics remain explicit boundaries. No new original case is retired. Hosted 40174419396 is green; all 29 committed input hashes and 125 Rust checks are verified with matching strict source/changed coverage. prior provider32be618, hook4d390a8 and socket2032012 are hosted green. Thirty-four complete originals, one partial and 383 pending remain; whole NET-01/NET-02/performance acceptance stays open."
+    "note": "Published 2f35102 passes the exact independently approved staged gate: 128 Rust and 22 tooling checks, 1591/1611 lines, 2420/2485 regions and 12/12 changed executable production lines. All 30 recorded inputs match committed blobs. Independent msgs replay passed the original mismatch, deterministic bounds/errors, fresh actual C++ delivery and unchanged native TypeMismatch XML one run/zero failures with verified hashes. Wrappers reuse the same pinned canonical producer and prost; raw byte forwarding, dependency pins and error enum remain unchanged. Same-package and typed unknown-field-loss boundaries are explicit. Hosted qualification is running. Prior unsubscribe b3b2b9e, provider32be618, hook4d390a8 and socket2032012 are hosted green. Thirty-five complete originals, one partial and 382 pending remain; whole NET-01/NET-02/performance acceptance stays open."
   }
 }
