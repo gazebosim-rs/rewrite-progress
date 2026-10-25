@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T06:32:09.434181Z",
+  "updated_at": "2026-10-25T07:07:43.891818Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Reserved declarations and native escaping",
-      "detail": "Formatter 771eb216 and hosted 40168115838 are green. Transport socket2 integration-blocker review is complete: exact graph and 116 serial real-peer checks pass; final receipt approved. Ignored successor now preserves native empty/reversed/negative-ended/over-max raw reserved ranges and byte escaping, with nine focused tests; signed-overflow native boundaries return Unsupported. Full successor qualification and JSON-name provenance remain open."
+      "title": "Peer material safety review and formatter follow-ups",
+      "detail": "Worktree Git-context repair 25a2b884 is public after independent review, real full worktree hook, six regressions and normal staged gate; hosted 40171295022 pending. Reviewing SDF material/raw-float safety: found six script-name whitespace mismatches, correction now frozen for recheck. Reserved/escaping successor stays isolated; no MSG-02 completion claim."
     }
   ],
   "accepted_slices": [
@@ -152,6 +152,11 @@
       "title": "Bounded normalized-reflection external definitions with explicit raw-provenance gap",
       "commit": "771eb2163cd2835043ef9c2c390605b069db734c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/771eb2163cd2835043ef9c2c390605b069db734c"
+    },
+    {
+      "title": "Real worktree-hook Git-context isolation with intended-index preservation",
+      "commit": "25a2b88407ecc542c4a6eb5aae00cf4db3933f73",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25a2b88407ecc542c4a6eb5aae00cf4db3933f73"
     }
   ],
   "remaining": [
@@ -166,7 +171,7 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "771eb2163cd2835043ef9c2c390605b069db734c",
+    "revision": "25a2b88407ecc542c4a6eb5aae00cf4db3933f73",
     "rust_tests": 94,
     "coverage": {
       "lines": [
@@ -184,15 +189,15 @@
       "partial": 0
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40171295022"
+    },
+    "note": "Exact independent source/final metadata binding, actual full production linked-worktree hook and normal strict staged hook pass. Six snapshot tests preserve alternate intended index, caller HEAD/config/normal index and foreign Git fixtures; baseline regression fails and fix passes. All Rust/dependencies/83 reviewed original mappings/thresholds unchanged. Current hosted qualification pending; prior formatter hosted green. Raw JSON-name provenance, advanced formatting and broad MSG-02 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25a2b88407ecc542c4a6eb5aae00cf4db3933f73",
+    "previous_ci": {
+      "revision": "771eb2163cd2835043ef9c2c390605b069db734c",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40168115838"
-    },
-    "note": "Independent 25 focused Rust checks, all 271 identical dynamic definitions and 25 complete native CLI rows/proofs pass. Checked map access repairs the independently reproduced panic; raw JSON-name omission mismatch remains an explicit native-backed API/CLI gap. Normal exact staged 94-check gate and owned/vendor coverage pass; exact hosted source/staged/archive/fresh-cache qualification passes. All 83 original mappings remain reviewed; no full external-info parity or MSG-02 acceptance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/771eb2163cd2835043ef9c2c390605b069db734c",
-    "previous_ci": {
-      "revision": "0104b887c7c4dda2efe1bd23edb52243430592f4",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40161797130"
     }
   }
 }
