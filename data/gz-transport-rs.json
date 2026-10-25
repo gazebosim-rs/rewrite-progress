@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T17:29:03Z",
+  "updated_at": "2026-10-25T18:08:23Z",
   "state": "active",
-  "summary": "Forty-four reviewed complete and twelve partial upstream ports; the bounded two-Node TopicList visibility correction is hosted-green at public 1aecfc9.",
+  "summary": "Forty-four reviewed complete and thirteen partial upstream ports; the four-Node AllTopicInfo count correction is public with exact hosted CI queued.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic information and service contracts",
-      "detail": "Public 1aecfc9 adds a reviewed weak process-local publisher index and exact NodeTest.TopicList two-live-Node assertion port. Normal strict hook and exact hosted run40216050804 succeeded; Publisher-after-Node-drop lifetime, immediate four-Node AllTopicInfo and broader discovery remain open."
+      "detail": "Public 11a6ab6 adds reviewed immediate same-process publisher/subscriber endpoint identity and partial NodeTest.AllTopicInfo four-Node count mapping. Normal strict hook passed; exact hosted run40219787490 queued. Native full MessagePublisher vector/atomicity, remote timing and Publisher-after-Node-drop lifetime remain open."
     }
   ],
   "accepted_slices": [
@@ -277,6 +277,11 @@
       "title": "Reviewed partial immediate two-Node TopicList assertion and process-local publisher names",
       "commit": "1aecfc92d051ae6ed9862942becc026c3890219d",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1aecfc92d051ae6ed9862942becc026c3890219d"
+    },
+    {
+      "title": "Reviewed partial immediate four-Node AllTopicInfo assertions and keyed endpoint snapshot",
+      "commit": "11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8"
     }
   ],
   "remaining": [
@@ -292,28 +297,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "1aecfc92d051ae6ed9862942becc026c3890219d",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1aecfc92d051ae6ed9862942becc026c3890219d",
-    "rust_tests": 163,
+    "revision": "11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
+    "rust_tests": 166,
     "coverage": {
       "lines": [
-        1875,
-        1901
+        2085,
+        2124
       ],
       "regions": [
-        2838,
-        2930
+        3142,
+        3271
       ]
     },
     "upstream": {
       "total": 418,
       "ported": 44,
-      "partial": 12
+      "partial": 13
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40216050804"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40219787490"
     },
-    "note": "Public exact independently reviewed tree75c166bd, final staged and normal hook pass163 Rust/22 tooling and strict1875/1901 production lines2838/2930 regions,58/58 changed. Pinned native NodeTest.TopicList1/0; private Rust original1/0, supplements2/0, full163/0, old-runtime reversal fails first count. Scope immediate two-live-Node names in same discovery domain; Publisher-after-Node-drop lifetime and broader discovery unqualified. Exact hosted run40216050804 SUCCESS on public1aecfc9 with policy/native-parity-and-coverage jobs green."
+    "note": "Public exact reviewed tree64aa27c1; final staged and normal hook pass166 Rust/22 tooling, strict2085/2124 lines3142/3271 regions249/251 changed. Native NodeTest.AllTopicInfo1/0, reviewer private selected1/0 supplements2/0 full166/0 and two focused mutants fail. Partial: no atomic full MessagePublisher vector/metadata, remote timing or Publisher-after-Node-drop lifecycle claim. Exact hosted run40219787490 queued."
   }
 }
