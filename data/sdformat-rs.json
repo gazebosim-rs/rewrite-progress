@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T23:11:38Z",
+  "updated_at": "2026-10-25T23:20:24Z",
   "state": "active",
-  "summary": "Native DOMSensor.Plugins is public and hosted-green after independent review; 75 complete and 16 partial original cases are reviewed. Broader Sensor DOM/parser and SDF parity remain open.",
+  "summary": "Three native Model, World and Visual plugin originals are public and hosted-green after independent review; 78 complete and 16 partial original cases are reviewed. Broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Audit native Sensor metrics loading",
-      "detail": "Map pinned DOMSensor.EnableMetrics default/load/set observations against its exact inline SDF 1.5 document; design a bounded standalone Sensor DOM load path without weakening full-document validation."
+      "detail": "Map pinned DOMSensor.EnableMetrics default/load/set observations against its exact inline SDF 1.5 document; evaluate bounded standalone Sensor DOM loading without weakening full-document validation."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Model World and Visual plugin originals",
+      "commit": "6bb760e275401cb6f122f07f4831ea5f1bf30a34",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6bb760e275401cb6f122f07f4831ea5f1bf30a34"
+    },
     {
       "title": "Retain complete DOMSensor.Plugins values and parsed order",
       "commit": "861c9d8c1afdcf1527cf984d6c1a864c37ceddd2",
@@ -420,9 +425,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "861c9d8c1afdcf1527cf984d6c1a864c37ceddd2",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/861c9d8c1afdcf1527cf984d6c1a864c37ceddd2",
-    "rust_tests": 237,
+    "revision": "6bb760e275401cb6f122f07f4831ea5f1bf30a34",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/6bb760e275401cb6f122f07f4831ea5f1bf30a34",
+    "rust_tests": 240,
     "coverage": {
       "lines": [
         3998,
@@ -435,13 +440,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 75,
+      "ported": 78,
       "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40243454034"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40244078782"
     },
-    "note": "Pinned DOMSensor.Plugins native1/0 and private raw-parent Rust selected2/full237; independent source/final receipts SHA7af94967/86eaf5ab; normal protected hook and exact hosted run40243454034 pass237Rust/16tools,3998/4017 production lines6951/7152 regions,3809/3822 staged executable lines. Parsed Sensor plugin order and raw XML supplement is source-backed with parser-disconnect mutant red; ToElement/general grammar remain open. Approved pre-receipt candidate tree7d915023 versus receipt-envelope public treee7e9f73a differ only by reviewer-authored reference/review.json. Root consumer pin is coordinator-owned SDF575."
+    "note": "Pinned native Model/World/Visual plugin originals3/0 and private Rust3/0; independent source/final receipts SHAd5525307/fba3635a; normal protected hook and exact hosted run40244078782 pass240Rust/16tools,3998/4017 lines6951/7152 regions,3809/3822 staged executable lines. Complete observable empty/copy/order/clear values, no production edits; original2017/2018 notices preserved. Pre-receipt candidate tree17d5184d versus receipt-envelope public treee4bc8540 differ only by reviewer-authored reference/review.json. C++ plugin method identity, ToElement and broad grammar remain open. Root consumer pin is coordinator-owned SDF575."
   }
 }
