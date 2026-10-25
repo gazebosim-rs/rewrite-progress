@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T22:28:23.121483+00:00",
+  "updated_at": "2026-10-25T23:01:00.467774+00:00",
   "state": "active",
-  "summary": "Public simulator05c9291 exact hosted-green232Rust/24tools/15Cpp. Held Transport adoption now has reviewed bounded-response fix: private unchangedSim45 and all15realCpp pass; producer publication/hosted, final consumer gates and scoped Release characterization remain.",
+  "summary": "Public headless simulator checks are green at 05c9291: 232 Rust tests, 24 tooling tests and 15 C++ scenarios. Updated Transport integration remains held: the reply-overload defect is fixed, while a scoped publication benchmark still shows about 7% overhead over the earlier prototype.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -48,8 +48,13 @@
     },
     {
       "id": "IO-01",
-      "title": "Fix response admission under publishing load",
-      "detail": "Retained f816/Transport2d gate failure reproduced responseQueueFull for first rejectedcontrol. Frozen producer93612052 bounded response-lane source independently approved and strict producer gate passed; separate frozen Sim45/0 and unchanged realCpp15/0 pass via private dependencyredirect. Normal producerhook/public/hosted and freshRoot publicpin233Rust/24tools/15Cpp gate stillrequired. Release equalwork complete-stream comparison being prepared; no new performance/adoption claim. Publicroot remainsold2a."
+      "title": "Finish reviewed Transport integration",
+      "detail": "The original failed service-request gate is retained. A bounded response lane fixes the reproduced QueueFull path; public Transport b8b31a2 has exact hosted success. Private frozen integration passed the unchanged 45 server tests and all 15 C++ scenarios. Cache optimizations pass their producer correctness gates, but final simulator adoption still requires performance review, a new public producer pin, and fresh full staged checks. Public simulator still uses Transport2a."
+    },
+    {
+      "id": "REF-02",
+      "title": "Profile the remaining publication cost",
+      "detail": "Four predeclared comparisons retain all 88 samples: same full clock/pose/IMU assertions, TPE, 128 steps, 20 ms pacing and CPU31. Prefix expiry and borrowed delivery reduced the paired overhead from 71% to 7.3%; latest ratio 1.0728, bootstrap 95% [1.0519, 1.0930]. This shared-host workload still narrowly exceeds the proposed 5% limit. Diagnostic phase profiling is next. No whole-simulator, dedicated-hardware or nonregression claim."
     }
   ],
   "accepted_slices": [
@@ -308,7 +313,7 @@
   ],
   "blockers": [
     "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue.",
-    "Consumer Transport2d adoption held: exact staged service-request Timeout retained. Diagnostic-only unchanged-assertion replay and independent Transport flood identify a concrete response-admission QueueFull path under publication load. Bounded response-lane production fix/full native/coverage/review/hosted verification required; no deadline/assertion/gate relaxation."
+    "Updated Transport adoption is held for performance investigation and final consumer verification. The response-overload defect is fixed and hosted-green; the latest scoped equal-work comparison still shows 7.3% overhead over the earlier Rust transport prototype. Original failures, all samples and reviewed limitations remain retained."
   ],
   "plan_status": {
     "REF-01": "in_progress",
