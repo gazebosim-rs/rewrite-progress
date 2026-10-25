@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T19:21:00.227693Z",
+  "updated_at": "2026-10-25T19:31:54.264272Z",
   "state": "active",
-  "summary": "Typed AirSpeed pressure-noise parsing is public, independently reviewed and green in hosted CI; only its native Link sensor fragment is retained and the full integration original remains partial.",
+  "summary": "Typed AirSpeed Link fragment is public and hosted-green. Inventory correction: pinned UNIT_Airspeed_TEST contains dedicated DOMAirSpeed.Construction and Set originals, now undergoing a separate native-backed port; the full Link case remains partial.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Review next Lidar DOM/parser case",
-      "detail": "Continue native-backed Lidar DOM and four bounded Link fragments with strict gates. AirSpeed consumer enum adoption stays coordinator-owned; other 20 sensor instances and full Link.Sensors case remain pending."
+      "title": "Correct AirSpeed original inventory and port DOM cases",
+      "detail": "A lowercase pinned src/Airspeed_TEST.cc supplies DOMAirSpeed.Construction and Set. The earlier absence claim is withdrawn; native2/0 and Rust corrective packet are in progress with no complete-case credit until independent review and hosted acceptance. Lidar source review is paused and preserved for rebasing afterward."
     }
   ],
   "accepted_slices": [
@@ -357,6 +357,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40225448184"
     },
-    "note": "Exact normal staged hook and hosted core pass205 Rust/13 tools,3461/3477 production lines,6038/6167 regions,36/36 changed executable lines. Independent review approves only the exact AirSpeed pressure-noise fragment added to existing PARTIAL DOMLink.Sensors; all prior sensor assertions and unchanged fixture preserved. No dedicated pinned AirSpeed unit original or complete-case credit. Typed enum/parser/accessor added without speed measurement or simulator behavior. Root consumer pin adoption remains coordinator-owned."
+    "note": "Exact normal staged hook and hosted core pass205 Rust/13 tools,3461/3477 production lines,6038/6167 regions,36/36 changed executable lines. Independent review approves only the exact AirSpeed pressure-noise fragment added to existing PARTIAL DOMLink.Sensors; all prior sensor assertions and unchanged fixture preserved. Pinned UNIT_Airspeed_TEST has dedicated DOMAirSpeed.Construction and Set originals; the previous absence claim is withdrawn. No complete-case credit is claimed by this Link-only slice; a corrective native-backed port is in progress. Typed enum/parser/accessor added without speed measurement or simulator behavior. Root consumer pin adoption remains coordinator-owned."
   }
 }
