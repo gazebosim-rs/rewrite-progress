@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T09:05:03.687551+00:00",
+  "updated_at": "2026-10-25T09:39:25.801395+00:00",
   "state": "active",
-  "summary": "Native IMU cadence is hosted-green. Exact staged-source export is now published after independent review and the normal 163 Rust / 12 tooling / nine C++ gate. First-profile physics timestep integration is underway; P2 remains open.",
+  "summary": "Published staged-source integrity fix is hosted-green. First-profile SDF timestep integration passes the full local gate and is under independent review; headless joints and commands remain next.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -34,12 +34,12 @@
     {
       "id": "QLT-01",
       "title": "Isolate exported verifier Git context",
-      "detail": "Published 0b09a97 exports with a private index and validates raw blobs, executable flags, symlinks, directories and all paths. Real worktree/alternate-index tests cover export-ignore and tracked metadata filenames; checkout conversion and snapshot mutations fail closed. Independent 12-tool and SHA256/non-UTF8 controls pass, as does the exact full staged gate. Hosted CI 40178274916 is running. No Rust or coverage policy changed."
+      "detail": "Published 0b09a97 exports with a private index and validates raw blobs, executable flags, symlinks, directories and all paths. Real worktree/alternate-index tests cover export-ignore and tracked metadata filenames; checkout conversion and snapshot mutations fail closed. Independent 12-tool and SHA256/non-UTF8 controls pass, as does the exact full staged gate. Hosted CI 40178274916 succeeded. No Rust or coverage policy changed."
     },
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Preparing a controlled SDF 7ed5ad02 adoption. The pinned native simulator selects the first profile, rather than the DOM helper\u2019s marked default. Omitted CLI step will use that value; explicit Rust/CLI overrides retain precedence, with one parse and owned reset metadata. Native Server clock controls and consumer boundary tests are in development. Newer material/link flags remain separate until preserved or explicitly validated."
+      "detail": "Frozen first-profile timestep integration consumes SDF7ed5ad02. Local gate passes168 Rust/12tools/nine actual C++ scenarios;2477/2507lines3856/3951regions,allcrate>95%,49/49scene16/16CLI changed lines. Three fresh native Server clock controls match both backends. Independent review and exact staged gate are running. Existing explicit overrides, single parse and owned reset metadata are preserved. Nondefault contact limits explicitly reject; pacing remains metadata. Newer material/link fields await separate preserved consumer adoption."
     }
   ],
   "accepted_slices": [
@@ -246,10 +246,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40178274916"
     },
-    "note": "Exact normal staged gate passed 163 Rust tests, 12 tooling checks and nine real C++ scenarios. Production Rust and coverage are unchanged: every crate exceeds 95% line and region coverage, with no exclusions or tolerances changed. Independent exact six-file review reran 12 tooling checks, reproduced baseline export-ignore failure, and checked SHA256 Git, non-UTF8 data/symlink targets and mode rejection. Hosted CI 40178274916 is running; IMU cadence a9cfe05 CI 40175577427 succeeded. Full P2 and equal-work performance acceptance remain open.",
+    "note": "Exact normal staged gate passed 163 Rust tests, 12 tooling checks and nine real C++ scenarios. Production Rust and coverage are unchanged: every crate exceeds 95% line and region coverage, with no exclusions or tolerances changed. Independent exact six-file review reran 12 tooling checks, reproduced baseline export-ignore failure, and checked SHA256 Git, non-UTF8 data/symlink targets and mode rejection. Hosted CI 40178274916 succeeded; IMU cadence a9cfe05 CI 40175577427 succeeded. Full P2 and equal-work performance acceptance remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0b09a97cd42925f55649656dada0dc649fb7e926"
   },
   "phase_status": {
