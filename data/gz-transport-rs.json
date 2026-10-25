@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T01:00:23.982925Z",
+  "updated_at": "2026-10-25T01:24:33.759238Z",
   "state": "active",
-  "summary": "Recovered transport work is published and hosted green: bounded duplicate-service ownership plus five additional reviewed original service ports.",
+  "summary": "Transport remains hosted green; reviewing the producer known-tag/wrong-wire compatibility boundary before explicit decoder adoption.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
+      "id": "NET-01",
+      "title": "Discovery and request decoder compatibility boundary",
+      "detail": "Independent producer review is checking the new opt-in native-compatible envelope decoder against staged source and 70 native framing cases. Transport decoders remain unchanged until the reviewed producer API/revision is published. Latest transport 05247e4 remains hosted green; full discovery and retained-case parity are incomplete."
+    },
+    {
       "id": "NET-02",
-      "title": "Retained transport compatibility work",
-      "detail": "Latest 05247e4 hosted run passes 79 Rust tests and strict native interoperability/coverage. All 28 source input hashes match the revision. Twenty original cases have reviewed faithful ports; logging, statistics, authentication, CLI, discovery and performance scope remain open. Next bounded library candidate is service type inspection/resolution, with native contracts inventoried."
+      "title": "Retained service and tooling contracts",
+      "detail": "Twenty original transport cases have reviewed faithful ports. Service type inspection/resolution is inventoried as the next bounded library candidate. Logging, statistics, authentication, CLI and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
