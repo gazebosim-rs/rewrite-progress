@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T00:39:10.638516Z",
+  "updated_at": "2026-10-25T01:03:05.474515Z",
   "state": "active",
-  "summary": "Native remote removal, producer integration, reset identities, shared IMU endpoints and prepared backend restoration are reviewed and published. The latest strict gate passes 78 Rust checks and five real C++ scenarios. Composing full initial-scene reset is next.",
+  "summary": "Published reset foundations pass hosted CI. The loaded-scene reset implementation now preserves original IDs, prepared physics, resources and native removal observations; independent review is underway after its strict isolated gate passed.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
       "title": "Compose full loaded-scene reset",
-      "detail": "Identity reservations and prepared solver restoration are now published. Next: typed loaded-scene blueprint, native reset-time observations, preserved resources, epoch/control ordering and retirement of runtime additions. Full remote reset stays disabled until composed and verified."
+      "detail": "Working implementation: typed loaded-scene blueprint, same Bevy World/resources/systems, restored public IDs/physics/IMU, pending additions visible through reset then retired. Seven scene tests plus one prepared-epoch test pass; isolated gate75 Rust +9 tools,1515/1528 lines2290/2336 regions, all changed lines covered. Independent review active. Native five-case control/reset evidence is captured; server integration is next."
     },
     {
       "id": "SENSOR-01",
@@ -142,10 +142,10 @@
       "partial": 2
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40147275566"
     },
-    "note": "Prepared backend restoration passed independent 13-physics-test review, metadata review and the exact 78-test staged gate; 65/65 changed lines. Every owned crate exceeds 95% line and region coverage. Five C++ scenarios cover clocks, poses, IMU metadata/topic repair, removal and shared endpoints. Hosted latest revision is pending; earlier removal/producer/identity gates passed. Full scene reset, TPE, resources, scheduling and equal-work performance remain open.",
+    "note": "Prepared backend restoration passed independent 13-physics-test review, metadata review and the exact 78-test staged gate; 65/65 changed lines. Every owned crate exceeds 95% line and region coverage. Five C++ scenarios cover clocks, poses, IMU metadata/topic repair, removal and shared endpoints. Exact latest hosted revision passed; earlier removal/producer/identity gates passed. Full scene reset, TPE, resources, scheduling and equal-work performance remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1afa53f9ffa48d8dc0f7f2152930ba7318c9685c"
   },
   "phase_status": {
