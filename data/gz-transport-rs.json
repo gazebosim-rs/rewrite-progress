@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T11:04:46.484796Z",
+  "updated_at": "2026-10-25T11:49:38.642097Z",
   "state": "active",
-  "summary": "Three raw metadata original assertion ports pass138-check gates and are in independent review; public fixture qualification is pending hosted CI.",
+  "summary": "Three reviewed raw MessageInfo ports are public and hosted green; two topic/namespace validation assertion ports pass exact local gates and await independent review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Three raw MessageInfo original assertion ports",
-      "detail": "Publishedfb55f8e fixture-only repair passed author and independent default-parallel135 plus mandatory serial135/22 tooling;1641/1645lines2460/2509regions unchanged. Hosted40187037429 running. Matching Transport7ce88e5/Msgs2cea810 pair hosted green, all30 pin inputs verified. Three raw/wildcard publication/receiver original ports pass private138 default-parallel checks with fresh native peer; strict native gate passed138Rust/22tools,1641/1645lines2460/2509regions with no new production lines. Exact five-file packet is frozen under independent assertion/API review; three ledger entries remain pending until approval. Earlier loader/mode/child-peer setup failures are retained separately. Callback executor and native process-global origin remain open."
+      "title": "Topic and namespace validation assertion ports",
+      "detail": "Pinned native testTopics and testNamespaces originals pass2/2. Exact 21/18 Rust predicates pass; a private removal of the production empty-topic guard fails the new port. Revised staged tree dd668562 passes normal and exact staged gates: 140 Rust,22 tooling,1641/1645 lines,2460/2509 regions,0 changed production executable lines. Ledger remains partial and independent assertion review pending. Process-global two-Node origin remains open."
     },
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Thirty-six originals have reviewed complete ports, one ambiguity case remains partial, and381 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "Thirty-nine originals have reviewed complete ports, one ambiguity case remains partial, and378 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -202,6 +202,11 @@
       "title": "Deterministic reserved-port malformed discovery fixture with unchanged one-send/deadline/exact counter and causal negative control",
       "commit": "fb55f8edd83d9ecc2dc48d84729503ad10830a9e",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/fb55f8edd83d9ecc2dc48d84729503ad10830a9e"
+    },
+    {
+      "title": "Three selected same-Node raw MessageInfo original assertion ports with exact raw/typed and wildcard receiver mappings",
+      "commit": "778642ca49c2813f815d405b276686f463ceeca1",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/778642ca49c2813f815d405b276686f463ceeca1"
     }
   ],
   "remaining": [
@@ -217,9 +222,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "fb55f8edd83d9ecc2dc48d84729503ad10830a9e",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/fb55f8edd83d9ecc2dc48d84729503ad10830a9e",
-    "rust_tests": 135,
+    "revision": "778642ca49c2813f815d405b276686f463ceeca1",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/778642ca49c2813f815d405b276686f463ceeca1",
+    "rust_tests": 138,
     "coverage": {
       "lines": [
         1641,
@@ -232,13 +237,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 36,
+      "ported": 39,
       "partial": 1
     },
     "ci": {
-      "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40187037429"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40187782949"
     },
-    "note": "Publicfb55f8e exact reviewed tree passed normal staged135Rust/22tool gate with1641/1645lines2460/2509regions and no changed executable production lines; all4 committed hashes match final binding. Author and independent fresh reviewer source/target/native peer each pass135 default-parallel and135 required serial checks. Separate controlled same-port competitor fails unchanged deadline with target0/competing1; restored isolated source passes. Production/gates/dependencies/ledger unchanged. Hosted40187037429 running, not yet green. Parent matching-pin7ce hosted40186373639 is green with all30 hashes and135checks verified; metadatab04 green.36complete originals,1partial,381pending; whole NET packets/process-global origin/performance remain open."
+    "note": "Public 778642c exact revision hosted run40187782949 completed success; three raw MessageInfo original ports reviewed,138 Rust/22 tooling and unchanged strict coverage. Separate revised working-tree validation candidate passes140 Rust/22 tools and normal/exact staged gates but is not yet reviewed or committed. Whole NET packets, process-global origin and performance remain open."
   }
 }
