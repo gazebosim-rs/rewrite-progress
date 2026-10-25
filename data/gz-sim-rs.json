@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T21:00:01.646753+00:00",
+  "updated_at": "2026-10-25T21:11:41.848749+00:00",
   "state": "active",
-  "summary": "Published native subscriber-driven pose/IMU work after independent native replay and strict227Rust/16tools/11Cpp checks. Exact hosted check running; coordinated SDF adoption next.",
+  "summary": "Published native subscriber-driven pose/IMU behavior is hosted-green227Rust/11Cpp. Coordinated typed-SDF adoption passes unchanged existing suite plus new explicit capability/static-frame checks.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Next: coordinate adoption of hosted-green SDF575d4d9 from old4ed, explicitly reject every non-IMU typed sensor and nonempty Joint.sensors, preserve owned metadata/reset and qualify static-model frame/body fixes. Other producer/Fuel pins remain controlled; no silent camera/contact/force-torque reinterpretation."
+      "detail": "Working adoption of owner-recommended hosted-green SDF575 from4ed: valid typed non-IMU sensors and joint sensors now fail explicit simulator capability guards. Existing227Rust/11Cpp passed unchanged; new nine-config/joint/static-frame tests3/0, fresh historical static-model61observations+one unchanged native original passed. Producer helper current-source hash anchoring issue recorded without weakening its guard; exact historical6ab packet used. Final strict gate, independent review/publication pending."
     },
     {
       "id": "PHY-05",
@@ -49,7 +49,7 @@
     {
       "id": "IO-01",
       "title": "Native default pose publication cadence",
-      "detail": "Published4ee91b2 adopts hosted-green Transport2a atomic interest without step waits, skips uninterested pose construction/timer consumption, and applies native global any-due-connected IMU gating. Native51/62ms seq0/1 and101/112ms seq2/3 replay; independent three mutants and unchanged-assertion dispositions approved. Normal hook227Rust/16tools/11Cpp,allcrate>95%,3505/3541lines5353/5470regions,changed33/33scene+server. Exact hosted40233220259 pending. Same-Node hint scope explicit; remote readiness frame-based, full IO01/SENSOR01 open."
+      "detail": "Published4ee91b2 adopts hosted-green Transport2a atomic interest without step waits, skips uninterested pose construction/timer consumption, and applies native global any-due-connected IMU gating. Native51/62ms seq0/1 and101/112ms seq2/3 replay; independent three mutants and unchanged-assertion dispositions approved. Normal hook227Rust/16tools/11Cpp,allcrate>95%,3505/3541lines5353/5470regions,changed33/33scene+server. Exact hosted40233220259 SUCCESS. Same-Node hint scope explicit; remote readiness frame-based, full IO01/SENSOR01 open."
     }
   ],
   "accepted_slices": [
@@ -331,10 +331,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40233220259"
     },
-    "note": "Independent22file review/final binding, fresh actual native two-mode Server replay, same-Node Rust control and three failing gate/history/pose-slot mutants. Normal protected hook227Rust/16tools/11Cpp passes; allcrate>95%,changedscene33/33server33/33. Exact hosted pending; complete disconnect detection, performance parity and broad IO01/SENSOR01/P2 remain open.",
+    "note": "Independent22file review/final binding, fresh actual native two-mode Server replay, same-Node Rust control and three failing gate/history/pose-slot mutants. Normal protected hook227Rust/16tools/11Cpp passes; allcrate>95%,changedscene33/33server33/33. Exact hosted40233220259 SUCCESS; complete disconnect detection, performance parity and broad IO01/SENSOR01/P2 remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/4ee91b28c44d890890240740c914e7909e1bb8a0"
   },
   "phase_status": {
