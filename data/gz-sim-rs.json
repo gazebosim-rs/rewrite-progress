@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T04:24:34.511385+00:00",
+  "updated_at": "2026-10-25T04:28:13.526648+00:00",
   "state": "active",
   "summary": "Selectable headless TPE SDF worlds are published after independent review and the exact staged127Rust/seven-real-C++ gate. Model removal/reset, CLI selection, stationary IMU and rotated/offset motion are verified. TPE contacts are now under development; full P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-02",
       "title": "Add native-compatible TPE model contacts using parry",
-      "detail": "New working engine code uses validated model-local bounds, parry Aabb/Bvh, native static/mask filtering and current Bevy model identities. Three local contact tests pass, including touching/separation, shrink-envelope filtering, explicit same-index/new-generation retirement and typed overflow. Fresh8-case native contact probes captured. Loader bounds aggregation, reset capture, original assertion ports, strict coverage and independent review are still pending; this contact work is not accepted."
+      "detail": "New working engine code uses validated model-local bounds, parry Aabb/Bvh, native static/mask filtering and current Bevy model identities. Four local contact tests pass, including touching/separation, shrink-envelope filtering, explicit same-index/new-generation retirement typed overflow and bounded pair-budget failure preserving the last complete frame. Fresh8-case native contact probes captured. Loader bounds aggregation, reset capture, original assertion ports, strict coverage and independent review are still pending; this contact work is not accepted."
     }
   ],
   "accepted_slices": [
@@ -195,10 +195,10 @@
       "partial": 2
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40161609532"
     },
-    "note": "Exact isolated staged127Rust+9tools/seven actual C++ client scenarios passed. All production crates exceed95% lines/regions;198/198changed executable lines. Independent80 Rust checks,7freshC++ scenarios, exact two-row native fixture regeneration and ownership/reset/removal/default-engine review passed. Hosted scene40161609532 is pending; prior installer40160579870 and fault40160034170 succeeded. TPE contacts are separate unaccepted work. No full P2/native simulator parity/performance acceptance.",
+    "note": "Exact isolated staged127Rust+9tools/seven actual C++ client scenarios passed. All production crates exceed95% lines/regions;198/198changed executable lines. Independent80 Rust checks,7freshC++ scenarios, exact two-row native fixture regeneration and ownership/reset/removal/default-engine review passed. Exact hosted scene40161609532 succeeded; prior installer40160579870 and fault40160034170 succeeded. TPE contacts are separate unaccepted work. No full P2/native simulator parity/performance acceptance.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2cd660125accfb1a2027a75a528702c9aa10ed8b"
   },
   "phase_status": {
