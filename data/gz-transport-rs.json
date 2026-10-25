@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T13:33:22Z",
+  "updated_at": "2026-10-25T13:38:28Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and three partial ports; remapped local topic listing is public and hosted green. A discovered publisher/service listing capability is staged for independent review.",
+  "summary": "Forty-three reviewed complete upstream ports and three partial ports; bounded discovered publisher and service listings are public with hosted CI queued.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "One-node ServiceListRemap and TopicListRemap mappings are independently reviewed partial; exact TopicListRemap hosted run40196988751 succeeded. A bounded known_publisher_topics/known_services worker-snapshot capability passed exact staged native and strict coverage gates and is under independent API/source review. Forty-three originals have reviewed complete ports, three cases are partial, and372 remain pending on public main. Global subscriber-only, process-wide, immediate-discovery and latency contracts remain open."
+      "detail": "Bounded known_publisher_topics and known_services worker snapshots are public89c1eba after independent API/source review and normal strict hook; exact hosted run40198510478 is queued. They include active local and already-discovered remote publisher/service records in this partition, with eventual visibility and withdrawal. Subscriber-only/global process/latency equivalence and original TopicList/ServiceList retirement remain open. Forty-three originals are faithful, three partial and372 pending."
     }
   ],
   "accepted_slices": [
@@ -232,6 +232,11 @@
       "title": "Reviewed partial remapped local topic listing assertion",
       "commit": "3ba34745b0914d3c250aab326f937a71f802bc0a",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3ba34745b0914d3c250aab326f937a71f802bc0a"
+    },
+    {
+      "title": "Bounded discovered publisher and service listing snapshots",
+      "commit": "89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/89c1eba9b43c1a7a905e9a749df3d24c6dec9683"
     }
   ],
   "remaining": [
@@ -247,17 +252,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "3ba34745b0914d3c250aab326f937a71f802bc0a",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3ba34745b0914d3c250aab326f937a71f802bc0a",
-    "rust_tests": 144,
+    "revision": "89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
+    "rust_tests": 146,
     "coverage": {
       "lines": [
-        1649,
-        1653
+        1698,
+        1708
       ],
       "regions": [
-        2481,
-        2531
+        2562,
+        2622
       ]
     },
     "upstream": {
@@ -266,9 +271,9 @@
       "partial": 3
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40196988751"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40198510478"
     },
-    "note": "Public3ba3474 exact main after independently bound partial TopicListRemap assertion and mandatory normal strict hook:144 Rust,22 tooling,required native originals,1649/1653 lines2481/2531 regions,0/0 changed production executable lines. Exact hosted run40196988751 succeeded. Next discovered-list worker-snapshot capability is staged under independent review; no full NET-02 acceptance claim."
+    "note": "Public89c1eba exact main after independently reviewed known-list worker-snapshot API, native C++ cross-process test and mandatory normal strict hook:146 Rust,22 tooling,required native originals,1698/1708 lines2562/2622 regions,54/54 changed executable lines. Exact hosted run40198510478 queued. TopicList/ServiceList original ledger cases remain pending; subscriber-only/global process/timing contracts remain open."
   }
 }
