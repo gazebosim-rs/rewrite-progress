@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:02:07.457340Z",
+  "updated_at": "2026-10-25T17:05:45.121713Z",
   "state": "active",
-  "summary": "Published pose-graph partial is green; an isolated native invalid world-frame attachment diagnostic correction is frozen for independent review.",
+  "summary": "Reviewed native invalid world-frame attachment correction is published with a passing strict staged hook; exact hosted CI is running.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Review native invalid world-frame attachment diagnostic",
-      "detail": "Pinned unchanged NestedFrameSemantics.InvalidAttachedToScope original passes 1/0. Public parent red assertion shows generic missing frame; isolated correction matches exact native first attachment message, with two valid and one invalid native-backed controls. Author 184 Rust/13 tools, fmt/Clippy/docs and coverage3300/3316 lines5746/5857 regions19/19 changed pass. Independent review and protected staged/hosted gates pending. Native full error vector/code and graph-check booleans remain unported; partial only."
+      "title": "Qualify native invalid world-frame attachment diagnostic",
+      "detail": "Published a62c2888366a72e30e1e7d5b184e973e301a7990 matches the exact first native attachment diagnostic on unchanged original fixture after independent source/final binding review. Normal staged gate passes184 Rust/13 tools,3300/3316 lines5746/5857 regions and3136/3148 exported executable lines. Hosted CI pending. Native full seven-error vector, code23 and graph-check query booleans remain unported; partial only."
     }
   ],
   "accepted_slices": [
@@ -270,17 +270,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "1d364e9605700f56a426e6e5b5787d9a4e7105b0",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/1d364e9605700f56a426e6e5b5787d9a4e7105b0",
-    "rust_tests": 182,
+    "revision": "a62c2888366a72e30e1e7d5b184e973e301a7990",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a62c2888366a72e30e1e7d5b184e973e301a7990",
+    "rust_tests": 184,
     "coverage": {
       "lines": [
-        3281,
-        3297
+        3300,
+        3316
       ],
       "regions": [
-        5728,
-        5839
+        5746,
+        5857
       ]
     },
     "upstream": {
@@ -289,9 +289,9 @@
       "partial": 12
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40213973151"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40214782771"
     },
-    "note": "Exact normal staged hook and hosted core pass on 182 Rust tests, 13 tooling tests, 3281/3297 production lines, 5728/5839 regions and 3117/3129 exported executable lines. Independent review approves only 8 root, 7 relative and 2 invalid-name assertions from the exact native original; graph internals and exact native error code/text remain unported. No production/API change, complete original retirement or full packet claim."
+    "note": "Exact normal staged hook passes 184 Rust/13 tools and strict coverage; independent review approves first native diagnostic and three target controls only. Hosted verify is running, so the new partial mapping is not accepted yet. Native full seven-error vector, code23 and graph-check booleans remain unported; no simulator/consumer change."
   }
 }
