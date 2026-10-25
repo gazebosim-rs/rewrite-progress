@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T03:11:49.584442Z",
+  "updated_at": "2026-10-25T03:55:24.804701+00:00",
   "state": "active",
-  "summary": "Validated TPE motion is published with green hosted CI, native assertion/provenance evidence and a qualified equal-operation microbenchmark. Bevy model/IMU observations are now being decoupled from Rapier for actual TPE world integration; full headless P2 remains open.",
+  "summary": "Backend-independent Bevy model/IMU observations are published with green CI. A reviewed typed step-fault boundary is in strict staged checks; actual TPE ECS installation is next. Full headless P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
-      "title": "Use committed ECS state for backend-independent observations",
-      "detail": "Working source replaces direct Rapier model/IMU reads with stable public link IDs and committed WorldPose/Velocity. Readonly EntityLookup validates live ownership. Two lookup lifecycle/corruption tests and analytic no-Rapier frame/reset/rebound-link test added. Full109Rust+9tools/six-C++ local gate passes1821/1831lines2802/2850regions36/36changed; independent review pending."
+      "title": "Stop failed runs at typed step/reset/server boundaries",
+      "detail": "Independent source review and84 core/scene/server checks, all six fresh actual C++ scenarios, and16-concurrent-reporter ownership probe passed. Author115Rust+9tools,1870/1880lines2884/2932regions57/57changed; exact14-file normal staged gate running. No rollback, native exception recovery or parallel effect cancellation promised."
     },
     {
       "id": "SENSOR-01",
@@ -127,6 +127,11 @@
       "title": "Validated TPE motion with native stationary/tiny-angle evidence and measured stepping",
       "commit": "2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28"
+    },
+    {
+      "title": "Backend-independent ECS link lookup, model pose and IMU observations",
+      "commit": "c96b9daf40895990e00c81d1dc6f569938034202",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c96b9daf40895990e00c81d1dc6f569938034202"
     }
   ],
   "remaining": [
@@ -157,16 +162,16 @@
     "PHY-02": "in_progress"
   },
   "quality": {
-    "revision": "2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28",
-    "rust_tests": 106,
+    "revision": "c96b9daf40895990e00c81d1dc6f569938034202",
+    "rust_tests": 109,
     "coverage": {
       "lines": [
-        1807,
-        1817
+        1821,
+        1831
       ],
       "regions": [
-        2767,
-        2815
+        2802,
+        2850
       ]
     },
     "upstream": {
@@ -176,10 +181,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40156402971"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40158386519"
     },
-    "note": "Exact106Rust+9tool/six-C++ staged and hosted gates passed. Motion48/48lines73/73regions46/46changed; every production crate exceeds95% lines/regions. Independent9 motion tests, fresh12-native-row regeneration, original Model.BasicAPI replay and benchmark-setup/hash/median review passed. Timings are author measured, narrow/shared-host/packaging-qualified; no independent timing, TPE world, full original retirement or P2 acceptance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2962f1d07b09d4b6abf0ae8be143b5eb1cff7d28"
+    "note": "Exact109Rust+9tool/six-C++ staged and hosted gates passed. Every production crate exceeds95% lines/regions;36/36changed executable lines covered. Independent49 core/scene checks plus fresh six-native-client replay verify stable link ownership and model/IMU frame, pause/reset and replacement-link semantics. Broader CORE-02/TPE/P2 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c96b9daf40895990e00c81d1dc6f569938034202"
   },
   "phase_status": {
     "P0": "in_progress",
