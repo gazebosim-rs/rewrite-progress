@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T07:26:14.111178Z",
+  "updated_at": "2026-10-25T07:32:38.446955Z",
   "state": "active",
-  "summary": "Provider-record inspection and three faithful ServiceInfo ports are hosted green; bounded unsubscribe lifecycle work is in full verification.",
+  "summary": "Provider-record inspection is hosted green; explicit unsubscribe passes its corrected full gate and is frozen for independent lifecycle review.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Explicit unsubscribe lifecycle and native withdrawal",
-      "detail": "Published 32be618 is hosted green; all 29 committed inputs and 121 Rust checks are verified. The next working API retires matching original-name subscription leases, preserves already-owned receiver buffers and queues generic END even for absent/repeated names. Queue saturation precedes local mutation. Native metadata, slot/filter/buffer and END checks pass; corrected full gate runs before independent review. Native immediate process-global and queued callback behavior remain open."
+      "detail": "Published 32be618 is hosted green; all 29 committed inputs and 121 Rust checks are verified. Working unsubscribe candidate passes 125 Rust and 22 tooling checks, 1578/1599 lines, 2402/2468 regions and 32/32 changed lines. It is frozen for independent msgs review, preserving queue admission before lease mutation, absent/repeated END refresh, original names and drainable owned buffers. Native callback queue/immediate process-global scope remains explicit and no original is retired."
     },
     {
       "id": "NET-02",
