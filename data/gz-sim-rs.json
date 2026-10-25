@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T02:07:54.559189Z",
+  "updated_at": "2026-10-25T02:44:28.722687Z",
   "state": "active",
-  "summary": "Remote remove/reset/reconnect/resume and reviewed SDF integration are published with green hosted CI. Shared f64 physics values are now published after strict97-test verification, preparing TPE. Full headless P2 remains open.",
+  "summary": "Published reset/SDF/shared-value foundations remain green. A validated TPE motion Body now passes106 local Rust checks and12 native motion observations; final review is underway. TPE world integration and the wider headless milestone remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -22,9 +22,9 @@
       "detail": "Published SDF/Bevy/f64Rapier exact stepping, CLI, stable IDs, clock/pose/IMU and pause/remove/reset through real C++ clients. Shared value extraction is published as a TPE prerequisite. Remaining P2: TPE behavior/integration, resources, scheduling/noise, simple joint, velocity/force inputs and equal-work performance. No speedup or P2 acceptance claimed."
     },
     {
-      "id": "PHY-01",
-      "title": "Implement TPE over the shared physics values",
-      "detail": "Dependency-free gz-physics now owns unchanged f64 Shape/BodySpec/Inertia/RotationSpec/BodyState; Rapier reexports preserve paths. Independent14-test review and exact97-test/six-C++ staged gate passed. TPE engine behavior is not implemented. Fresh pinned native28-test reference and motion probes guide the next slice."
+      "id": "PHY-02",
+      "title": "Review validated TPE motion and integrate the Bevy world",
+      "detail": "Isolated Body::try_from validates once; private state and immutable access preserve the invariant, and advance commits only after finite checks. Nine motion tests retain native1e-3 stationary semantics, tiny f64 angles, near-unit accuracy and overflow retry. Full106Rust+9tool/six-C++ gate passes; final independent review pending. Narrow equal-operation measurement records22.73ns Rust vs26.54ns native, with shared-host/packaging limits; no simulator speedup claim. Static/rotated-link adapter policy awaits owner input."
     }
   ],
   "accepted_slices": [
@@ -148,7 +148,8 @@
     "LOAD-01": "in_progress",
     "SLICE-01": "in_progress",
     "CLI-01": "in_progress",
-    "IO-01": "in_progress"
+    "IO-01": "in_progress",
+    "PHY-02": "in_progress"
   },
   "quality": {
     "revision": "d52707a6a9b22f66ad8d0a2a39af3a230a5ddfaa",
