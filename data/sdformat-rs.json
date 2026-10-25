@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T17:17:15.151875Z",
+  "updated_at": "2026-10-25T17:22:49.041796Z",
   "state": "active",
-  "summary": "Published invalid-attachment correction is green; exact DOMRoot move case and nested attachment-body partial are isolated in independent-review queue.",
+  "summary": "Independently reviewed complete DOMRoot move original is published with strict staged gate; hosted CI is running, while nested attachment bodies remain isolated.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "REF-02",
-      "title": "Review retained DOMRoot frame semantics after move",
-      "detail": "Exact native original1/0; both inline SDF1.8 strings byte-identical, four load/move blocks and semantic frame poses ported. Isolated185 Rust/13 tools/fmt/Clippy/docs pass, direct coverage3300/3316 lines5746/5857 regions. Complete retirement proposed only, awaiting independent ownership/assertion review and staged/hosted gates."
+      "title": "Qualify retained DOMRoot frame semantics after move",
+      "detail": "Published e2943817ddbc22c14e6b2a9fdb9349d0983f137b retains both byte-identical native inputs and four load/move blocks; independent review approved complete original assertion mapping and normal staged gate passes185 Rust/13 tools,3300/3316 lines5746/5857 regions,3136/3148 exported executable lines. Hosted CI pending."
     },
     {
       "id": "SDF-01",
       "title": "Review nested model attachment-body assertions",
-      "detail": "Separate isolated test on unchanged native fixture checks all13 body values plus invalid-name failure from exact native original1/0. Isolated185 Rust/13 tools/fmt/Clippy/docs pass, direct coverage3300/3316 lines5746/5857 regions. Native graph build/validation/Count and error code/text remain unported; partial only. Source review queued after DOMRoot move case."
+      "detail": "Separate isolated test on unchanged native fixture checks all13 body values plus invalid-name failure from exact native original1/0. Isolated185 Rust/13 tools/fmt/Clippy/docs pass. Native graph build/validation/Count and error code/text remain unported; partial only. Independent review queued."
     }
   ],
   "accepted_slices": [
@@ -280,9 +280,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a62c2888366a72e30e1e7d5b184e973e301a7990",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a62c2888366a72e30e1e7d5b184e973e301a7990",
-    "rust_tests": 184,
+    "revision": "e2943817ddbc22c14e6b2a9fdb9349d0983f137b",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e2943817ddbc22c14e6b2a9fdb9349d0983f137b",
+    "rust_tests": 185,
     "coverage": {
       "lines": [
         3300,
@@ -299,9 +299,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40214782771"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40216158734"
     },
-    "note": "Exact normal staged hook and hosted core pass 184 Rust/13 tools, 3300/3316 production lines, 5746/5857 regions and 3136/3148 exported executable lines. Independent review approves first native attachment diagnostic plus two valid/one invalid controls. Full seven-error native vector, error code23 and graph-check booleans remain unported; no complete original, simulator or consumer claim."
+    "note": "Exact normal staged hook passes185 Rust/13 tools and strict coverage. Independent review approved one complete DOMRoot move original assertion mapping, but hosted verify is still running, so accepted counts remain at prior public green revision. Nested attachment partial is isolated. No simulator/consumer change."
   }
 }
