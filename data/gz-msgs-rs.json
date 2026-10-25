@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T14:46:53Z",
+  "updated_at": "2026-10-25T14:51:23Z",
   "state": "active",
-  "summary": "Bounded escaped-byte protobuf JSON slice is public after independent review and normal hook; exact hosted CI is running. MSG-02 remains open.",
+  "summary": "Published escaped-byte protobuf JSON slice passed exact hosted CI; bounded escaped-UTF-8 follow-up is in development. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Published escaped-byte JSON slice matches 396 pinned native rows: 140 retained and 256 exhaustive ASCII escape-byte/quote controls. Independent review, final staged gate, normal hook and fresh coverage pass; exact hosted CI is running. Non-ASCII escapes, broader grammar/diagnostics, descriptor, formatting, installation, release and performance scope remain open."
+      "detail": "Published ASCII escaped-byte JSON slice passed independent review, normal hook and exact hosted CI with 396 native rows. A separate UTF-8 candidate now tests 12 valid and 10 malformed sequences after backslash under each quote style: native accepts 24 valid and rejects 20 malformed rows; focused Rust comparison passes after a one-line lexical correction. Full strict gate, independent review and publication remain pending. Broader descriptor, formatting, installation, release and performance scope remains open."
     }
   ],
   "accepted_slices": [
@@ -239,10 +239,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40203734126"
     },
-    "note": "Published escaped-byte slice passed independent semantic/final metadata review, exact final staged gate and normal worktree hook. 109 Rust harness checks plus FactoryLazy, 396 pinned native JSON rows (140 unchanged, 254 new positive, two rejected incomplete-unicode controls), separate branch-removal mutant, strict negative gates and downstream/source checks. Root production coverage 1960/1964 lines and 3123/3145 regions; CLI 195/198 lines and 343/353 regions; vendor patches unchanged. Exact hosted CI is running; MSG-02 remains open.",
+    "note": "Published escaped-byte slice passed independent semantic/final metadata review, exact final staged gate and normal worktree hook. 109 Rust harness checks plus FactoryLazy, 396 pinned native JSON rows (140 unchanged, 254 new positive, two rejected incomplete-unicode controls), separate branch-removal mutant, strict negative gates and downstream/source checks. Root production coverage 1960/1964 lines and 3123/3145 regions; CLI 195/198 lines and 343/353 regions; vendor patches unchanged. Exact hosted CI passed on the verified published SHA; MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fa067f47273f2ac46c8af7ba27bef66b6a3251e"
   }
 }
