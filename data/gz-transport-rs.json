@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T13:57:03Z",
+  "updated_at": "2026-10-25T14:16:00Z",
   "state": "active",
-  "summary": "Forty-three reviewed complete upstream ports and three partial ports; hosted-green discovered publisher/service lists, with subscriber-only global topic interest candidate frozen for independent review.",
+  "summary": "Forty-three reviewed complete upstream ports and four partial ports; bounded subscriber-only discovered topic snapshot is public with normal strict gate passed and exact hosted CI in progress.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Public89c1eba known publisher/service lists passed independent review and hosted run40198510478. Subscriber-only known_topics candidate is frozen at staged tree ba3e9eff with exact local strict gate:1759/1777 lines2663/2735 regions71/71 changed; two native originals and C++ remote-interest fixture pass, reply-disabled mutant fails. Independent source/API review pending; no publication or hosted claim for this candidate. Forty-three originals faithful, three partial and372 pending; global timing and process contracts remain open."
+      "detail": "Publicf9932d0 known_topics subscriber-only snapshot passed independent source/API/assertion review, native one-node/two-process originals, real C++ remote-interest test, strict normal hook and149 Rust checks. Hosted run40201379550 is in progress. NodeTest.TopicListSubscriberOnly remains partial; global initialization and native latency contracts unqualified. Forty-three faithful, four partial and371 pending."
     }
   ],
   "accepted_slices": [
@@ -237,6 +237,11 @@
       "title": "Bounded discovered publisher and service listing snapshots",
       "commit": "89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/89c1eba9b43c1a7a905e9a749df3d24c6dec9683"
+    },
+    {
+      "title": "Bounded subscriber-only discovered topic snapshot",
+      "commit": "f9932d09a9e66f71e045b34365eeddd14a69e828",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f9932d09a9e66f71e045b34365eeddd14a69e828"
     }
   ],
   "remaining": [
@@ -252,28 +257,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
-    "rust_tests": 146,
+    "revision": "f9932d09a9e66f71e045b34365eeddd14a69e828",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f9932d09a9e66f71e045b34365eeddd14a69e828",
+    "rust_tests": 149,
     "coverage": {
       "lines": [
-        1698,
-        1708
+        1760,
+        1777
       ],
       "regions": [
-        2562,
-        2622
+        2664,
+        2735
       ]
     },
     "upstream": {
       "total": 418,
       "ported": 43,
-      "partial": 3
+      "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40198510478"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40201379550"
     },
-    "note": "Public89c1eba exact main after independently reviewed known-list worker-snapshot API, native C++ cross-process test and mandatory normal strict hook:146 Rust,22 tooling,required native originals,1698/1708 lines2562/2622 regions,54/54 changed executable lines. Exact hosted run40198510478 succeeded. TopicList/ServiceList original ledger cases remain pending; subscriber-only/global process/timing contracts remain open."
+    "note": "Publicf9932d0 exact reviewed tree4d15bdc, normal mandatory staged hook passed149 Rust/22 tooling and required native originals; 1760/1777 production lines2664/2735 regions71/71 changed executable lines. Exact hosted run40201379550 in progress; NodeTest.TopicListSubscriberOnly remains partial, global registry/timing unqualified."
   }
 }
