@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T11:01:43.343724+00:00",
+  "updated_at": "2026-10-25T12:40:54.377482+00:00",
   "state": "active",
-  "summary": "Checked local velocity/wrench inputs are published and hosted-green. Controlled SDF material/link metadata and matching Messages/Transport adoption passes184 Rust/nine C++ checks and is under review before the simple-joint variant.",
+  "summary": "Controlled producer metadata adoption is published and hosted-green. World-revolute pendulum integration is in development; headless acceptance still needs scene lifecycle and selected-fixture reference/performance evidence.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -39,15 +39,20 @@
     {
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
-      "detail": "Published native first-profile timestep and owned reset metadata. Next9file controlled adoption in review: SDF706 axis fixes/material/link flags plusmatchingTransport7ce/Msgs2cea; Fuel374 unchanged. VisualMaterial+defaultLinkProperties owned/restored, nondefault physics flags explicitly unsupported. Full184Rust/12tools/nineCPP passed2748/2783lines4329/4436regions and28/28delta. OneMessages/prost identity; legitimate socket minor versions retained. Contactenum/joints stillunadopted. Independentreview/normalhook/dependencyhostedqualification pending."
+      "detail": "Published 67c1af4 preserves and resets visual material and default link properties, rejects unsupported physics flags, and adopts matching SDF706/Transport7ce/Messages2cea. Fuel374 remains unchanged. Independent review and mandatory hook passed184 Rust/12 tools/nine actual C++ scenarios, all crates >95%, 28/28 changed scene lines. Exact hosted CI40188844686 succeeded. Later sensor-enum and joint integration remain pending."
     },
     {
       "id": "PHY-05",
       "title": "Validate the selected simple-joint variant",
-      "detail": "Inspecting native joint frames and Rapier revolute/reset facilities for a world-anchored pendulum. Current SDF7ed pin remains deliberate; later706 axis defaults/dynamics/link/material metadata require controlled preserved/validated adoption, not a blind pin. No joint implementation or same-engine parity/performance acceptance yet."
+      "detail": "Isolated world-revolute prototype passes a 4000-step small-angle pendulum, energy/anchor checks, native DART q/dq comparison and reset/retirement probes. Corrected sleeping policy for jointed bodies. Continuous-angle tracking and SDF scene/lifecycle integration are under development; prototype is not accepted or published. No same-engine parity, equal-work speedup or P2 acceptance claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Owned material/link metadata and matched producer adoption",
+      "commit": "67c1af4508008047f09a5ca7918c94c49fb56736",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/67c1af4508008047f09a5ca7918c94c49fb56736"
+    },
     {
       "title": "Checked local link velocity/wrench input lifecycle and backend ownership",
       "commit": "25c801d44e21c06956afcdfe1bb885714db7cee0",
@@ -243,16 +248,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "25c801d44e21c06956afcdfe1bb885714db7cee0",
-    "rust_tests": 182,
+    "revision": "67c1af4508008047f09a5ca7918c94c49fb56736",
+    "rust_tests": 184,
     "coverage": {
       "lines": [
-        2733,
-        2767
+        2748,
+        2783
       ],
       "regions": [
-        4288,
-        4391
+        4329,
+        4436
       ]
     },
     "upstream": {
@@ -262,10 +267,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40185967463"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40188844686"
     },
-    "note": "Exact normal staged hook passed182 Rust checks,12 tooling checks and nine existing real C++ scenarios. Every production crate exceeds95% line/region coverage; changedTPE15/15Rapier56/56scene178/179. Independent review replayed107backend/scene tests, exact2original failing owner controls now passing, and30fresh native WorldReset/wrench controls with matching proof hashes. Review found/corrected backend-local bodyID ownership collision. D23/unsupported TPE wrench and analytic cross-engine halfEuler position bound explicit; no original assertions/exclusions/thresholds weakened. Hosted40185967463 succeeded; no fullP2 or performance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/25c801d44e21c06956afcdfe1bb885714db7cee0"
+    "note": "Published revision: 184 Rust, 12 tooling, nine actual C++ peer scenarios; every production crate and aggregate lines/regions strictly >95%; changed scene lines28/28. Independent review and exact normal hook passed. Joint prototype is excluded from accepted evidence. Broader reference, backend, sensor and performance work remains.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/67c1af4508008047f09a5ca7918c94c49fb56736"
   },
   "phase_status": {
     "P0": "in_progress",
