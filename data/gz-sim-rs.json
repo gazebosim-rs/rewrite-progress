@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T21:46:46.773852+00:00",
+  "updated_at": "2026-10-25T21:58:35.376052+00:00",
   "state": "active",
-  "summary": "Published native-compatible disabled IMU orientation after independent native/source/assertion/mutant review and protected232Rust/16tools/15Cpp gate. Exact hosted check running; wider headless milestone remains open.",
+  "summary": "Published disabled IMU orientation (exact hosted-green d3a48c3) and reviewed strict staged-evidence retention05c9291. Latest protected232Rust/24tools/15Cpp passes; hosted check running. Preparing separate-Node first-frame transport integration; broad headless prerequisites remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "SENSOR-01",
       "title": "Published orientation field policy; remaining IMU frames and lifecycle",
-      "detail": "Publicd3a48c3 omits only disabled orientation field; acceleration, gyro, all covariance arrays, timestamps, metadata, sequence, noise and loaded reset preserved. Native4controls and old11+new4 actualCpp modes, independent review/two failing mutants and protected232Rust gate pass. Exact hosted40236973773 running. Runtime toggling/custom/named frames, sensor registration/triggers/families and broadSENSOR01 remain open."
+      "detail": "Publicd3a48c3 omits only disabled orientation field; acceleration, gyro, all covariance arrays, timestamps, metadata, sequence, noise and loaded reset preserved. Native4controls and old11+new4 actualCpp modes, independent review/two failing mutants and protected232Rust gate pass. Exact hosted40236973773 SUCCESS. Runtime toggling/custom/named frames, sensor registration/triggers/families and broadSENSOR01 remain open."
     },
     {
       "id": "SLICE-01",
@@ -33,8 +33,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Retain exact staged verification artifacts",
-      "detail": "Next frozen verifier-only candidate preserves exact test-output/coverage summaries under per-run tree-addressed ignored artifacts, with checksums/missing lists and passed/failed/index-change states.20tool tests pass including real child7/index mutation/cleanup/symlink controls; no existing gate or Rust check changed. Independent review/full staged gate next. Public quality remains accepted232Rust revision, not candidate claim."
+      "title": "Published exact staged evidence retention",
+      "detail": "Public05c9291 retains raw Rust outputs and coverage reports in unique ignored tree/run directories. Separate checks/evidence states, hashes and missing lists; child/index failures survive retention IO failure and retention-only failures still fail. Independent review/eight new real Git/error controls and protected232Rust/24tools/15Cpp pass. V1 findings corrected; broadQLT/P0 remains open."
     },
     {
       "id": "LOAD-01",
@@ -48,11 +48,16 @@
     },
     {
       "id": "IO-01",
-      "title": "Native default pose publication cadence",
-      "detail": "Published4ee91b2 adopts hosted-green Transport2a atomic interest without step waits, skips uninterested pose construction/timer consumption, and applies native global any-due-connected IMU gating. Native51/62ms seq0/1 and101/112ms seq2/3 replay; independent three mutants and unchanged-assertion dispositions approved. Normal hook227Rust/16tools/11Cpp,allcrate>95%,3505/3541lines5353/5470regions,changed33/33scene+server. Exact hosted40233220259 SUCCESS. Same-Node hint scope explicit; remote readiness frame-based, full IO01/SENSOR01 open."
+      "title": "Separate-Node first-frame delivery integration",
+      "detail": "Old Transport2a actual Server first-frame regression fails native intra_process origin assertion; first frame arrived by wire, no loss claim. Unpublished2d candidate checks both engines/reset/metadata/covariance/direct origin/no duplicate without publication warmup. Same Msgs/SDF/Fuel pins; producer exact40237034528 still running, adoption publication waits for green. Full original C++15 scenarios and strict gates remain required."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain exact staged logs and preserve original verification failures",
+      "commit": "05c9291d1856186db0125b15a3c034daeac2b9f2",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/05c9291d1856186db0125b15a3c034daeac2b9f2"
+    },
     {
       "title": "Disabled IMU orientation preserves motion, covariance and reset semantics",
       "commit": "d3a48c3945b00e9fef71e4c1b539bc25f6b82685",
@@ -323,7 +328,7 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "d3a48c3945b00e9fef71e4c1b539bc25f6b82685",
+    "revision": "05c9291d1856186db0125b15a3c034daeac2b9f2",
     "rust_tests": 232,
     "coverage": {
       "lines": [
@@ -342,10 +347,10 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40236973773"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40237907580"
     },
-    "note": "Independent15file source/native/assertion/final binding approved. Normal protected hook232Rust/16tools/15actualCpp scenarios passes; exact raw232 retained, allcrate>95%,changedscene2/2server3/3. Four actual native TPE Server controls fresh replayed by author/reviewer; always-quaternion and loader-true mutants red. Hosted pending. No runtime toggle, complete upstream-case, performance or broad SENSOR01/P2 acceptance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3a48c3945b00e9fef71e4c1b539bc25f6b82685"
+    "note": "Independent V2 source/failure/final metadata review approved after fixing two V1 findings. Normal protected232Rust/24tools/15Cpp passes with complete retained exact tree/log/hash/coverage evidence; allcrate>95%,3516/3552lines5369/5486regions,noRustproductiondelta. Original child/index failures preserved; retention-only errors fail; missing output explicitly partial. Latest hosted pending; prior d3a48c3 exact40236973773 SUCCESS. No broader QLT/P0/P2 or performance acceptance claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/05c9291d1856186db0125b15a3c034daeac2b9f2"
   },
   "phase_status": {
     "P0": "in_progress",
