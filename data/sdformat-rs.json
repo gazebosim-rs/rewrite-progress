@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T04:26:09.129826Z",
+  "updated_at": "2026-10-25T04:28:41.665861Z",
   "state": "active",
-  "summary": "Model-scope merged includes are independently reviewed and published after the strict staged gate. Hosted CI is running; pure model.config file selection is the next resource-loading increment.",
+  "summary": "Model-scope merged includes are independently reviewed, published and hosted green. Pure model.config file selection is implemented in isolation with native-backed edge controls.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
       "title": "Pure model.config file selection",
-      "detail": "Probe and implement highest-supported-version selection, first ties, missing-version fallback, warnings and filename text semantics without filesystem or Fuel dependencies. Initial 63 native controls and two isolated Rust tests pass; source remains unreviewed."
+      "detail": "Pure selection/warnings API retains highest supported version, first tie, first-tag fallback, filename text and safe malformed-version handling without filesystem/Fuel dependencies. Native corpus expanded to 89 controls; full source/provenance checks are in progress before independent review."
     },
     {
       "id": "SDF-01",
@@ -193,10 +193,10 @@
       "partial": 6
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40161820248"
     },
-    "note": "Independent fresh snapshot replay passed 112 Rust tests, 153 native observations and both exact native include originals. Review found and verified corrections for placement schema scope and original resource root poses before overrides. Five schema/legacy gaps remain explicit; no new original retirement. Normal strict frozen hook passed 112 Rust tests and 11 tooling tests, with 2450/2463 executable lines under its whole-export changed-line policy; working delta passed 152/152. Hosted CI pending. No new unsafe code, filesystem dependency or whole-packet/performance acceptance.",
+    "note": "Independent fresh snapshot replay passed 112 Rust tests, 153 native observations and both exact native include originals. Review found and verified corrections for placement schema scope and original resource root poses before overrides. Five schema/legacy gaps remain explicit; no new original retirement. Normal strict frozen hook passed 112 Rust tests and 11 tooling tests, with 2450/2463 executable lines under its whole-export changed-line policy; working delta passed 152/152. Exact hosted CI is green. No new unsafe code, filesystem dependency or whole-packet/performance acceptance.",
     "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fd6d5973cff7a0cb9afe2ef2badfb4cff1902e37"
   }
 }
