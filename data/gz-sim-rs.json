@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T07:22:24.309355+00:00",
+  "updated_at": "2026-10-25T07:58:07.479687+00:00",
   "state": "active",
-  "summary": "Offline Fuel loading and worktree hook isolation both pass exact hosted CI. Current157Rust+10tools/sevenCPP and strict coverage pass. Next headless work: sensor scheduling and consumption of reviewed native-backed World physics profiles. P2 remains open.",
+  "summary": "Published Fuel and hook fixes are hosted-green. Sensor cadence now passes163Rust+10tools and nine actual C++ scenarios; frozen16-file slice is under independent review before the mandatory staged hook. Full P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "SENSOR-01",
       "title": "Sensor reconstruction and scheduling",
-      "detail": "Next implementation: phase-preserving IMU scheduling with integer time, existing pause/reset and derivative cadence. Pinned native NextDataUpdateTime original passes; ignored prototype passes original sequence/off-grid/overflow controls, not production acceptance. Noise, connections/runtime sensor registration and remaining families stay open."
+      "detail": "Under final independent review: phase-preserving private IMU clock, per-physics acceleration, pause/reset and typed time-overflow fault. Both engines at0/10/60/1000/2000Hz pass; oldsevenCPP retained plus two actual10Hz/reset cases. Full163Rust+10tools/nineCPP,2422/2450lines3789/3883regions,56/56delta; native10controls+original1/0. OldRust10Hz rejection has strongerpositive replacement pendingexplicitreview. No publication/noise/runtime-registration/P2 acceptance yet."
     },
     {
       "id": "SLICE-01",
