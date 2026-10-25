@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T08:53:57.720624Z",
+  "updated_at": "2026-10-25T08:57:52.703516Z",
   "state": "active",
-  "summary": "Joint axis dynamics are published with exact hosted CI green. Link flags and full pendulum assertion ports are in independent review after correcting native axis-index clamping.",
+  "summary": "Link flags and two complete pendulum assertion ports are published after independent review and the strict staged gate; hosted verification is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Link properties and pendulum assertion ports",
-      "detail": "Isolated metadata retains native wind/gravity/kinematic/self-collide defaults. Revised candidate passes 135 Rust checks, 13 tools, 56 native rows and two exact originals. Reviewer found the axis accessor must clamp positive indices to axis2; correction retains absent-axis assertions and adds stored-reference controls. Known-fixture validity mapping awaits final independent approval; no runtime effects claimed."
+      "title": "Link properties hosted verification",
+      "detail": "Native positive-axis clamping and four link flags are published. All 135 Rust checks, 13 tools, 56 native rows and two exact originals pass locally. Independent review approved both complete assertion mappings, including narrowly fixture-specific validity. Hosted result pending; no runtime physical effects claimed."
     },
     {
       "id": "SDF-01",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain link flags and native joint axis lookup with full pendulum assertion ports",
+      "commit": "f4514ca956db59e7d73b3f4930509f74dc8d65be",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f4514ca956db59e7d73b3f4930509f74dc8d65be"
+    },
     {
       "title": "Retain joint axis dynamics and stop metadata",
       "commit": "eab6183146c8b265222645d16d48d3ec13d26226",
@@ -205,28 +210,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "eab6183146c8b265222645d16d48d3ec13d26226",
-    "rust_tests": 130,
+    "revision": "f4514ca956db59e7d73b3f4930509f74dc8d65be",
+    "rust_tests": 135,
     "coverage": {
       "lines": [
-        3058,
-        3078
+        3079,
+        3099
       ],
       "regions": [
-        5323,
-        5440
+        5353,
+        5470
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 35,
+      "ported": 37,
       "partial": 11
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40176430770"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40178653928"
     },
-    "note": "Exact staged gate passed 130 Rust/13 tooling checks, 3058/3078 lines and 5323/5440 regions; working changed 34/34, exported-tree 2904/2920. Independent integrated replay passed 130 Rust checks, 68 native rows and the complete original Construction case. Only twelve axis-value observations are mapped partial; complete construction/Element/error contracts remain open. Exact hosted CI green. Link successor remains unaccepted review work.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/eab6183146c8b265222645d16d48d3ec13d26226"
+    "note": "Exact staged gate passed 135 Rust and 13 tooling checks, 3079/3099 lines and 5353/5470 regions; working changed 21/21, exported-tree 2925/2941. Independent private 135-check replay, 56 fresh native rows and both originals match complete proof. Reviewer found native positive indices alias axis2; corrected exact controls retain the original 54-row corpus and pendulum assertions. Two complete mappings approved; physical effects and generic mass-matrix validity parity remain unclaimed. Hosted verification pending.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f4514ca956db59e7d73b3f4930509f74dc8d65be"
   }
 }
