@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T03:33:14.568755Z",
+  "updated_at": "2026-10-25T03:59:45.405991Z",
   "state": "active",
-  "summary": "Published remapping has source-verified hosted success. Bounded publisher membership/graceful withdrawal is under full local verification.",
+  "summary": "Published reviewed bounded publisher membership and graceful subscription withdrawal after exact staged gate; hosted CI is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Bounded publisher membership and graceful withdrawal",
-      "detail": "Prototype adds bounded membership snapshots, native registration identity/default projection and retention, plus graceful END-before-BYE. All 53 unit checks, threaded publication ports and C++ membership/lifecycle checks pass; full gate is running. Four original helper mappings remain pending independent review. An older service race fixture now establishes actual worker admission and separately tests queued-command retirement; its assertions are retained."
+      "title": "Publisher membership hosted qualification and retained query inventory",
+      "detail": "Published 6a28004 passes the exact staged 108 Rust/21 tooling gate, 1480/1501 lines, 2246/2310 regions and 84/84 changed executable lines. Independent 53 units, two live membership checks, four helper ports and four native originals pass. Hosted 40160138591 is running. Retained topic/service query and subscriber-list contracts remain next library inventory."
     },
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Twenty-four original cases have reviewed complete ports, one ambiguity case is partial, and 393 remain pending. Immediate process-global multi-Node visibility, complete query/remapping/scope/CLI contracts, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "Twenty-eight original cases have reviewed complete ports, one ambiguity case is partial, and 389 remain pending. Immediate process-global multi-Node visibility, complete query/remapping/scope/CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -152,6 +152,11 @@
       "title": "Bounded exact-key single-hop topic remapping with native operation-specific lifecycle and two original ports",
       "commit": "c8060e4495e9a7cb87f779e1bcd69e31b513ed0e",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c8060e4495e9a7cb87f779e1bcd69e31b513ed0e"
+    },
+    {
+      "title": "Bounded native publisher membership, graceful END-before-BYE, four threaded publication/ALL helper ports and preserved race fixtures",
+      "commit": "6a2800406358b312eb880bf843e0ef66449ce691",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/6a2800406358b312eb880bf843e0ef66449ce691"
     }
   ],
   "remaining": [
@@ -167,28 +172,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "c8060e4495e9a7cb87f779e1bcd69e31b513ed0e",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c8060e4495e9a7cb87f779e1bcd69e31b513ed0e",
-    "rust_tests": 97,
+    "revision": "6a2800406358b312eb880bf843e0ef66449ce691",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/6a2800406358b312eb880bf843e0ef66449ce691",
+    "rust_tests": 108,
     "coverage": {
       "lines": [
-        1390,
-        1412
+        1480,
+        1501
       ],
       "regions": [
-        2103,
-        2169
+        2246,
+        2310
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 24,
+      "ported": 28,
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40157033644"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40160138591"
     },
-    "note": "Published c8060e4 passes exact staged and hosted gates. Staged: 97 Rust/21 tooling, 1391/1412 lines, 2104/2169 regions, 33/33 changed. Hosted: 97 Rust, 1390/1412 lines, 2103/2169 regions, 33/33 changed; all 29 downloaded input hashes match the published commit. Independent remapping review covers 144 native option combinations, four C++ directions, lifecycle and two native originals XML 2/0. Twenty-four complete ports, one partial and 393 pending remain of 418. Successor publisher-membership working evidence is separate; no full NET-01/NET-02/performance acceptance."
+    "note": "Published 6a28004 passes the exact immutable staged gate: 108 Rust and 21 tooling tests, 1480/1501 lines, 2246/2310 regions and 84/84 changed. Independent review passes 53 library units, two live C++ membership/shutdown checks, four Rust helper ports and four untouched native originals XML 4/0. The service-race original assertions remain byte-identical, with actual admission readiness and separate queued retirement coverage. Hosted CI is running. Membership is remembered registration, not authentication/delivery/handshake acknowledgement. Twenty-eight complete ports, one partial and 389 pending remain of 418; whole NET-01/NET-02/performance acceptance stays open."
   }
 }
