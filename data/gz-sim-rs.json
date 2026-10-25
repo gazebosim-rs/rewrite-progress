@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T13:22:00.012591+00:00",
+  "updated_at": "2026-10-25T13:37:03.537517+00:00",
   "state": "active",
-  "summary": "Published reviewed reset-safe world-revolute constraints and SDF joint scenes after the mandatory194-Rust/nine-C++ strict gate. Exact hosted CI is running; selected-fixture and equal-work reference/performance evidence remain P2 work.",
+  "summary": "Published world-revolute SDF/lifecycle slice is hosted-green. Shared-SDF native IMU acquisition and selected-fixture comparison are under development; equal-work performance evidence still blocks P2 acceptance.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published exact Rapier/TPE SDF stepping, local/offline Fuel, owned metadata, clock/pose/IMU transport, local velocity/wrench inputs, pause/remove/reset and bounded world-revolute joint variant. Remaining immediate P2 work: complete selected-fixture assertion matrix and equal-work C++ reference/performance report; joint hosted qualification pending. Existing9actualC++ peer cases remain required. Native wrench/velocity transport systems, full downloads/noise and wider inventories remain retained later-plan work unless selected fixture requires them."
+      "detail": "Published exact Rapier/TPE SDF stepping, local/offline Fuel, owned metadata, clock/pose/IMU transport, local velocity/wrench inputs, pause/remove/reset and bounded world-revolute joint variant. Remaining immediate P2 work: complete selected-fixture assertion matrix and equal-work C++ reference/performance report; joint hosted qualification succeeded. Developing same-SDF native Server+Physics+IMU controls on DART/TPE with observed subscriber/publisher readiness, queued start, unpaced1ms and100exact samples; Rust comparison and review pending, no performance claim. Existing9actualC++ peer cases remain required. Native wrench/velocity transport systems, full downloads/noise and wider inventories remain retained later-plan work unless selected fixture requires them."
     },
     {
       "id": "PHY-02",
@@ -44,7 +44,7 @@
     {
       "id": "PHY-05",
       "title": "Qualify published simple-joint variant and remaining backend scope",
-      "detail": "Published b83fc1f after independent139-check/nine-C++ replay, three fresh native DART controls and three additional reviewer controls. Mandatory normal staged hook194Rust/12tools/nine actual C++ scenarios passed; all crates >95%, aggregate3162/3208lines4914/5049regions, changed197/197backend211/216scene. Owned SDF frames, continuous angle, reset/removal and owner checks; preContact4ed pin deliberate. Exact hosted40197224258 running. General articulations, same-engine parity and full backend acceptance remain open."
+      "detail": "Published b83fc1f after independent139-check/nine-C++ replay, three fresh native DART controls and three additional reviewer controls. Mandatory normal staged hook194Rust/12tools/nine actual C++ scenarios passed; all crates >95%, aggregate3162/3208lines4914/5049regions, changed197/197backend211/216scene. Owned SDF frames, continuous angle, reset/removal and owner checks; preContact4ed pin deliberate. Exact hosted40197224258 completed SUCCESS. General articulations, same-engine parity and full backend acceptance remain open."
     }
   ],
   "accepted_slices": [
@@ -225,7 +225,7 @@
     }
   ],
   "remaining": [
-    "Finish selected-fixture assertions and equal-work C++ reference/performance report for P2; qualify published joint CI.",
+    "Finish selected-fixture assertions and equal-work C++ reference/performance report for P2.",
     "DART and MuJoCo adapters, remaining TPE capabilities, general articulations/forces and complete backend capability contract.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
@@ -271,10 +271,10 @@
       "partial": 4
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40197224258"
     },
-    "note": "Published exact independently bound treecaa7a8ed; normal mandatory hook194Rust/12tools/nine actual C++ scenarios passed, all production crates >95% lines/regions. Independent139 replay+nine C++/three native+three reviewer controls approved; source receipt published. Hosted CI pending. P2/equal-work performance and broader rewrite remain incomplete.",
+    "note": "Published exact independently bound treecaa7a8ed; normal mandatory hook194Rust/12tools/nine actual C++ scenarios passed, all production crates >95% lines/regions. Independent139 replay+nine C++/three native+three reviewer controls approved; source receipt published. Exact hosted CI40197224258 completed SUCCESS. P2/equal-work performance and broader rewrite remain incomplete.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b83fc1fe36fdbaa7edb05a697453676ad72e4db6"
   },
   "phase_status": {
