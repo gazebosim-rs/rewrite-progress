@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T11:49:38.642097Z",
+  "updated_at": "2026-10-25T12:15:04.151177Z",
   "state": "active",
-  "summary": "Three reviewed raw MessageInfo ports are public and hosted green; two topic/namespace validation assertion ports pass exact local gates and await independent review.",
+  "summary": "Forty-one reviewed complete upstream ports and one partial; topic and namespace validation ports are public, with exact hosted CI pending.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Topic and namespace validation assertion ports",
-      "detail": "Pinned native testTopics and testNamespaces originals pass2/2. Exact 21/18 Rust predicates pass; a private removal of the production empty-topic guard fails the new port. Revised staged tree dd668562 passes normal and exact staged gates: 140 Rust,22 tooling,1641/1645 lines,2460/2509 regions,0 changed production executable lines. Ledger remains partial and independent assertion review pending. Process-global two-Node origin remains open."
+      "title": "Partition validation assertion continuation",
+      "detail": "Pinned TopicUtilsTest.testPartitions native original passes1/0 and repeats the namespace 18-row predicate table. Separate bounded mapping proposal is next; process-global two-Node origin remains open. The topic/namespace slice is public and hosted CI is pending."
     },
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Thirty-nine originals have reviewed complete ports, one ambiguity case remains partial, and378 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "Forty-one originals have reviewed complete ports, one ambiguity case remains partial, and 376 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -207,6 +207,11 @@
       "title": "Three selected same-Node raw MessageInfo original assertion ports with exact raw/typed and wildcard receiver mappings",
       "commit": "778642ca49c2813f815d405b276686f463ceeca1",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/778642ca49c2813f815d405b276686f463ceeca1"
+    },
+    {
+      "title": "Complete topic and namespace validation assertion ports with actual production empty-topic guard control",
+      "commit": "7351f8aafe6c7cd9455227afca8124e13d7c4a32",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/7351f8aafe6c7cd9455227afca8124e13d7c4a32"
     }
   ],
   "remaining": [
@@ -222,9 +227,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "778642ca49c2813f815d405b276686f463ceeca1",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/778642ca49c2813f815d405b276686f463ceeca1",
-    "rust_tests": 138,
+    "revision": "7351f8aafe6c7cd9455227afca8124e13d7c4a32",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/7351f8aafe6c7cd9455227afca8124e13d7c4a32",
+    "rust_tests": 140,
     "coverage": {
       "lines": [
         1641,
@@ -237,13 +242,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 39,
+      "ported": 41,
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40187782949"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40192254948"
     },
-    "note": "Public 778642c exact revision hosted run40187782949 completed success; three raw MessageInfo original ports reviewed,138 Rust/22 tooling and unchanged strict coverage. Separate revised working-tree validation candidate passes140 Rust/22 tools and normal/exact staged gates but is not yet reviewed or committed. Whole NET packets, process-global origin and performance remain open."
+    "note": "Public7351f8a exact main after normal strict staged hook:140 Rust,22 tooling, required native originals,1641/1645 lines2460/2509 regions. Independent review approved original21topic/18namespace predicates and guard-removal negative control. Hosted run40192254948 in progress; broad NET packets and process-global origin remain open."
   }
 }
