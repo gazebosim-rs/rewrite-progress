@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T13:37:03.537517+00:00",
+  "updated_at": "2026-10-25T13:52:10.149845+00:00",
   "state": "active",
-  "summary": "Published world-revolute SDF/lifecycle slice is hosted-green. Shared-SDF native IMU acquisition and selected-fixture comparison are under development; equal-work performance evidence still blocks P2 acceptance.",
+  "summary": "Published world-revolute slice remains hosted-green. Shared-SDF IMU comparisons pass, but publication is held while repairing a pinned native C++ blocking-request cleanup race exposed by the strict peer gate.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published exact Rapier/TPE SDF stepping, local/offline Fuel, owned metadata, clock/pose/IMU transport, local velocity/wrench inputs, pause/remove/reset and bounded world-revolute joint variant. Remaining immediate P2 work: complete selected-fixture assertion matrix and equal-work C++ reference/performance report; joint hosted qualification succeeded. Developing same-SDF native Server+Physics+IMU controls on DART/TPE with observed subscriber/publisher readiness, queued start, unpaced1ms and100exact samples; Rust comparison and review pending, no performance claim. Existing9actualC++ peer cases remain required. Native wrench/velocity transport systems, full downloads/noise and wider inventories remain retained later-plan work unless selected fixture requires them."
+      "detail": "Published exact Rapier/TPE SDF stepping, local/offline Fuel, owned metadata, clock/pose/IMU transport, local velocity/wrench inputs, pause/remove/reset and bounded world-revolute joint variant. Remaining immediate P2 work: complete selected-fixture assertion matrix and equal-work C++ reference/performance report; joint hosted qualification succeeded. Developing same-SDF native Server+Physics+IMU controls on DART/TPE with observed subscriber/publisher readiness, queued start, unpaced1ms and100exact samples; Rust comparison and review pending, no performance claim. Existing9actualC++ peer cases remain required. Native wrench/velocity transport systems, full downloads/noise and wider inventories remain retained later-plan work unless selected fixture requires them. Shared-IMU exact staged gate failed in old native blocking-request handler cleanup; candidate held. Native/Rust100-sample comparison and mutation controls pass independently. Repairing client lifecycle before a fresh strict gate; a rerun alone is not treated as a flake fix."
     },
     {
       "id": "PHY-02",
@@ -33,8 +33,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Isolate exported verifier Git context",
-      "detail": "Published 0b09a97 exports with a private index and validates raw blobs, executable flags, symlinks, directories and all paths. Real worktree/alternate-index tests cover export-ignore and tracked metadata filenames; checkout conversion and snapshot mutations fail closed. Independent 12-tool and SHA256/non-UTF8 controls pass, as does the exact full staged gate. Hosted CI 40178274916 succeeded. No Rust or coverage policy changed."
+      "title": "Preserve strict checks while fixing native client request cleanup",
+      "detail": "Published staged-export isolation remains accepted. New shared-IMU candidate failed existing native-client stderr assertion although request values passed. Pinned419 source and immutable installed header show blocking waiter and response thread both remove one handler. Test-only public async request + same7000ms future waiter preserves all11callsite payloads/assertions byte-for-byte on reversal; source independently audited, authorall9C++ scenarios pass, independent network replay pending. No SDKpatch, retry, ignoredstderr or coverage/assertion waiver."
     },
     {
       "id": "LOAD-01",
@@ -232,7 +232,8 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue."
+    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue.",
+    "Shared-IMU publication held on native C++ blocking-request double-removal race. Bounded test-client repair under independent replay; all checks retained."
   ],
   "plan_status": {
     "REF-01": "in_progress",
