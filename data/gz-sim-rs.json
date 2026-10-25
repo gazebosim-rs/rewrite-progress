@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T06:18:39.691805+00:00",
+  "updated_at": "2026-10-25T06:26:02.104925+00:00",
   "state": "active",
   "summary": "Bounded local SDF resources now pass hosted CI (151 Rust tests, seven real C++ scenarios, strict coverage). Offline Fuel cache and both-engine reset tests pass in isolation; workspace integration awaits the reviewed Transport dependency fix. P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
@@ -29,7 +29,7 @@
     {
       "id": "FUEL-01",
       "title": "Integrate local paths and offline Fuel resources",
-      "detail": "Published eed6288 local lookup/config selection, lossless identity, XML/warning budgets and both-engine include/reset. Independent review, exact staged151Rust+9tools/sevenCPP and hosted40167872106 passed. New immutable Fuel3747086 cache API tests and both-engine reset fixtures pass in isolated manifests; CLI fixtures are written but unrun. Full workspace cannot resolve Transport socket2.6.2 versus Fuel Tokio requiring.6.3+. Producer owner is fixing with strict review; Fuel repo untouched."
+      "detail": "Published eed6288 bounded local resources: independent review, staged151Rust+9tools/sevenCPP and hosted40167872106 passed. New Fuel3747086 consumer passes four actual cache/loopback/error tests, two both-engine local/offline reset tests and eight CLI checks in isolated harnesses; clippy passes. Six installed-native cache controls agree. Full workspace still awaits reviewed Transport socket2.6.5 publication; producer fullgate/graph proof passed and independent replay is running. No Fuel repo edits or full FUEL-01/P2 acceptance."
     }
   ],
   "accepted_slices": [
