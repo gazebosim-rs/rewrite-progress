@@ -1,23 +1,33 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T11:36:48.728462Z",
+  "updated_at": "2026-10-25T12:05:22.190308Z",
   "state": "active",
-  "summary": "Owned joint configuration cloning is published and hosted green; corrected Contact configuration is independently reviewed next on that parent.",
+  "summary": "Owned Contact configuration and three complete original joint endpoint assertion ports are public with green hosted CI; native noise-type schema edge cases are being characterized.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Contact configuration independent review",
-      "detail": "Final integrated 14-file packet is frozen on the public Clone parent. Author 150 Rust/13 tools, 85 native rows/full Sensors original pass; 3160/3181 lines, 5519/5631 regions, 77/78 changed. Preserves four exact old-IMU diagnostic controls and original 81 rows; 11 named policy/schema gaps stay explicit. Partial contact assertions and new enum ownership/source await independent review."
+      "title": "Noise type schema parity characterization",
+      "detail": "Fresh native/Rust controls found explicit noise without required type is falsely accepted, while ASCII-padded gaussian type is falsely rejected. Exact old supplementary positive payload is identified for an independently reviewed disposition; no source correction is published yet."
     },
     {
-      "id": "SDF-01",
-      "title": "Retained joint endpoint assertion ports",
-      "detail": "Separate test-only prototype retains original world/parent-model/child-model fixture assertions through existing semantic pose and attachment queries. Three focused Rust tests pass; full native provenance, mapping review and strict gates are not yet complete."
+      "id": "SDF-02",
+      "title": "Next joint sensor configuration contract",
+      "detail": "Proposed owned joint sensors and typed force/torque metadata reuse the selected SensorConfig design and six Noise records. Native defaults/errors are being characterized before implementation; consumer rejection remains required until runtime support. Whole packet acceptance stays coordinator-owned."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain original joint world/model-frame endpoint assertions",
+      "commit": "bb9786c3139257115bd9ee816db8dfa3dd44ed97",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bb9786c3139257115bd9ee816db8dfa3dd44ed97"
+    },
+    {
+      "title": "Retain owned Contact configuration with typed sensor variants",
+      "commit": "943b171cac881dd1f0eacb398abc8d00e0fc1fef",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/943b171cac881dd1f0eacb398abc8d00e0fc1fef"
+    },
     {
       "title": "Allow owned Joint, JointKind and Axis configuration cloning",
       "commit": "4ed690b3a872e395df0f3544b278c7f1d3c45a7e",
@@ -230,28 +240,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "4ed690b3a872e395df0f3544b278c7f1d3c45a7e",
-    "rust_tests": 143,
+    "revision": "bb9786c3139257115bd9ee816db8dfa3dd44ed97",
+    "rust_tests": 153,
     "coverage": {
       "lines": [
-        3092,
-        3112
+        3160,
+        3181
       ],
       "regions": [
-        5395,
-        5510
+        5519,
+        5631
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 40,
+      "ported": 43,
       "partial": 11
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40189342276"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40191105533"
     },
-    "note": "Exact normal staged gate passed 143 Rust and 13 tools; unchanged 3092/3112 lines and 5395/5510 regions, exported 2936/2952. Three derived Clone additions have no changed executable production lines. Coordinator independently reviewed source/API and passed authored ownership regression plus two fresh no-axis/unbounded/source controls. No loading/runtime/native mapping change. Hosted CI is green.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4ed690b3a872e395df0f3544b278c7f1d3c45a7e"
+    "note": "Exact normal staged gate passed 153 Rust and 13 tooling checks, 3160/3181 lines and 5519/5631 regions; exported-tree 3002/3019. This tests/evidence-only successor adds no production code. Independent private 153 Rust/13 tools/fmt/Clippy and three exact native originals pass with complete source/header/fixture/binary/library proof equality. All original assertions and known-valid-fixture API translations explicitly approved; no generic mutable endpoint, runtime joint or whole packet claim. Contact943 also has green exact CI40190326171.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bb9786c3139257115bd9ee816db8dfa3dd44ed97"
   }
 }
