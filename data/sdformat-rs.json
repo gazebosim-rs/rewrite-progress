@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-24T23:41:05.267433Z",
+  "updated_at": "2026-10-25T00:38:32.885996Z",
   "state": "active",
-  "summary": "Twenty independently reviewed slices are published with passing CI. Collision surface contact/friction metadata is retained; include-level plugin and provenance support is next.",
+  "summary": "Twenty independently reviewed slices are published with passing CI. Include plugins and original resource provenance are in independent review; primitive fallback parity is progressing separately.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
       "title": "Include plugins and resource provenance",
-      "detail": "Investigating native include-level plugin ordering and original include metadata through the injected resolver. Full serialization, old-version conversion and unsupported geometry remain explicit pending scope."
+      "detail": "Frozen include/plugin provenance candidate: 89 Rust tests and 61 native observations (59 matching cases, two explicit native-exception extensions); independent msgs review in progress. Separate primitive correction has 37 native default/normalization controls. No complete SDF packet acceptance."
     }
   ],
   "accepted_slices": [
@@ -115,8 +115,8 @@
     }
   ],
   "remaining": [
-    "Complete older primitive fallback/required-value parity, collision surfaces and retained full-shapes fixture before claiming complete geometry/schema behavior.",
-    "Complete native scalar prefix/coercion parity; retain documented native inertial-frame limitations and extend explicit consumer validation with supported features.",
+    "Complete primitive fallback/required-value parity, unsupported Surface fields and retained full-shapes fixture before claiming complete geometry/schema behavior.",
+    "Complete nonfinite scalar and vector-stream parity; retain documented native inertial-frame limitations and explicit consumer validation.",
     "Complete retained schema/version conversions, include merge, automatic inertia and import/export semantics.",
     "Remaining sensor families, visual/material/mesh DOM, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
