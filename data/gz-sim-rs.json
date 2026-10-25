@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T01:44:35.387278Z",
+  "updated_at": "2026-10-25T01:52:55.622633Z",
   "state": "active",
-  "summary": "Published remote loaded-scene reset: a real C++ client removes a model, restores its original IDs, reconnects IMU, resets again and verifies time1ms/sequence0. Strict staged96-test gate and independent six-scenario replay pass; full headless P2 remains open.",
+  "summary": "Published real C++ remove/reset/reconnect/resume plus reviewed SDF1.5/fluid capability integration. Exact97-test staged gate and six C++ scenarios pass. Work has moved to the shared physics/TPE implementation; full headless P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
       "title": "Shared backend and remaining lifecycle integration",
-      "detail": "Remote reset accepted atcee53e3 after independent source/metadata review and exact96Rust+9tooling staged gate; six real C++ scenarios pass, including exact zero active real time. Hosted verification pending. Next backend contract/TPE composition must preserve reset identities, stream lifetime and bounded command ordering."
+      "detail": "Remote reset is published atcee53e3. Next: shared physics/TPE integration must preserve original IDs, sensor stream lifetimes and bounded ordering. Nine pinned native TPE unit targets/28 tests pass with installed-dependency qualification; Rust TPE behavior is not implemented yet."
     },
     {
       "id": "SENSOR-01",
@@ -19,7 +19,12 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published: SDF/Bevy/f64Rapier exact stepping, CLI, stable IDs, clock/pose/IMU, pause/remove/reset through actual C++ clients. SDF fluid-guard adoption passed97 tests and six C++ scenarios, final review pending. Remaining P2: TPE, resources, sensor scheduling/noise, simple-joint variant, velocity/force inputs and equal-work comparison/performance report. Nine untouched native TPE targets/28 tests pass as qualified preparation; no Rust TPE implementation or speedup claimed."
+      "detail": "Published exact stepping, stable IDs, clock/pose/IMU, pause/remove/reset through actual C++ clients; reviewed SDF e59 adoption rejects every unsupported fluid matrix and extends unchanged legacy assertions to1.5. Remaining P2: TPE, resources, scheduling/noise, simple joint, velocity/force input and equal-work performance. Shared f64 construction/state values are being extracted unchanged in an isolated worktree before TPE; no speedup claimed."
+    },
+    {
+      "id": "PHY-01",
+      "title": "Extract actual shared physics values for TPE",
+      "detail": "Isolated implementation moves existing Shape/BodySpec/Inertia/RotationSpec/BodyState into a dependency-free workspace crate with Rapier reexports. Adapter handles, ownership, errors and schedules stay concrete. Verification/review pending; no speculative engine trait or extra ECS."
     }
   ],
   "accepted_slices": [
@@ -107,6 +112,11 @@
       "title": "Remote reset with native control ordering, zero clocks and sensor sequence reconstruction",
       "commit": "cee53e3df42d00fdb32bff3918c3326884f280f0",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cee53e3df42d00fdb32bff3918c3326884f280f0"
+    },
+    {
+      "title": "Reviewed SDF1.5 consumer and explicit unsupported fluid added-mass guard",
+      "commit": "3b05c431a0ff9bc65c8aebe454226365f674f8e6",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3b05c431a0ff9bc65c8aebe454226365f674f8e6"
     }
   ],
   "remaining": [
@@ -134,16 +144,16 @@
     "IO-01": "in_progress"
   },
   "quality": {
-    "revision": "cee53e3df42d00fdb32bff3918c3326884f280f0",
-    "rust_tests": 96,
+    "revision": "3b05c431a0ff9bc65c8aebe454226365f674f8e6",
+    "rust_tests": 97,
     "coverage": {
       "lines": [
-        1755,
-        1765
+        1759,
+        1769
       ],
       "regions": [
-        2689,
-        2737
+        2694,
+        2742
       ]
     },
     "upstream": {
@@ -153,10 +163,10 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40151782361"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40152181181"
     },
-    "note": "Independent28-server-test and six real C++ scenario replay, source/metadata review and exact96Rust+9tool staged gate passed. Every production crate exceeds95% line/region coverage;120/120 changed executable lines covered. C++ verifies zero active real clock and exact1ms/sequence0 after reset using actual connection readiness. Hosted CI pending for exact revision. Blocking reset cancellation false-reply and unpolled queue differences are explicit. Full CORE-02/IO-01/P2 and equal-work performance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cee53e3df42d00fdb32bff3918c3326884f280f0"
+    "note": "Independent producer-boundary/overlap review,33 scene checks and six real C++ scenarios pass; exact97Rust+9tool staged gate passed with4/4 changed scene lines. Every production crate exceeds95% line/region coverage. Remote reset retains its separate independent28-server-test/six-C++ receipt and120/120 changed coverage. Hosted CI pending for latest exact revision. Full SDF-01/CORE-02/IO-01/P2 and equal-work performance remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3b05c431a0ff9bc65c8aebe454226365f674f8e6"
   },
   "phase_status": {
     "P0": "in_progress",
