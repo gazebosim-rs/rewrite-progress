@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T00:24:04.576126Z",
+  "updated_at": "2026-10-25T00:25:19.053385Z",
   "state": "active",
-  "summary": "Remote model removal and producer integration are published with green hosted CI. Reset identity reservations are published after 73 checks. Prepared backend restoration and shared-topic multi-IMU support are being integrated; full reset remains open.",
+  "summary": "Remote model removal and producer integration are published with green hosted CI. Reset identity reservations are published and pass hosted CI after 73 checks. Prepared backend restoration and shared-topic multi-IMU support are being integrated; full reset remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
       "title": "Initial-scene restoration and reset identities",
-      "detail": "World/allocator-bound reservations are reviewed and published. Prepared backend restoration is separately reviewed with13physics tests and a strict isolated gate; composing the scene blueprint, reset callback ordering and sensor reconstruction remains next."
+      "detail": "World/allocator-bound reservations are reviewed and published. Prepared backend restoration is separately reviewed with13 physics tests and a strict isolated gate; composing the scene blueprint, reset callback ordering and sensor reconstruction remains next."
     },
     {
       "id": "SENSOR-01",
       "title": "Multiple IMUs sharing one endpoint",
-      "detail": "Working candidate passes74Rust+9tool checks and5actualC++scenarios, including two aliased topics with distinct frame IDs/sequences. Temporary weak publisher cache releases the endpoint only with its last stream. Independent final review underway; discovery-count qualification remains explicit."
+      "detail": "Working candidate passes74 Rust + 9 tool checks and5 actual C++ scenarios, including two aliased topics with distinct frame IDs/sequences. Temporary weak publisher cache releases the endpoint only with its last stream. Independent final review underway; discovery-count qualification remains explicit."
     },
     {
       "id": "SLICE-01",
@@ -132,10 +132,10 @@
       "partial": 2
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40146023945"
     },
-    "note": "Published identity primitive passed independent13core-test review, metadata review and strict73-test staged integration;53/53changed lines. Every owned crate exceeds95% line/region coverage. Previous producer db716d7 and removal b39ea419 hosted gates are green. Shared-IMU and backend-preparation working evidence is separate; full scene/reset/TPE/resources/scheduling/performance remain open.",
+    "note": "Exact published identity revision passed hosted CI, independent 13-core-test review and strict 73-test staged integration; 53/53 changed lines. Every owned crate exceeds 95% line and region coverage. Producer db716d7 and removal b39ea419 hosted gates are also green. Shared-IMU and prepared-backend working evidence remains separate; full scene reset, TPE, resources, scheduling and performance are open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3c4577c763474ede8e1c582b933aa909726a1f22"
   },
   "phase_status": {
