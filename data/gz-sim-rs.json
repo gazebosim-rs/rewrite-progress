@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T10:17:43.735270+00:00",
+  "updated_at": "2026-10-25T10:45:09.104324+00:00",
   "state": "active",
-  "summary": "First-profile timesteps are published and hosted-green. Local velocity/wrench input integration is frozen for independent review after179 Rust/12 tooling/nine C++ checks and30 real native controls; external ingress and joints remain P2 work.",
+  "summary": "Published checked local velocity/wrench inputs after independent review and182 Rust/12 tooling/nine C++ checks, including the backend-owner collision fix. Next P2 focus: simple-joint variant and complete selected-fixture reference/performance evidence.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "CORE-02",
       "title": "Complete headless lifecycle and remaining P2 composition",
-      "detail": "Published loaded lifecycle, original logical IDs, typed faults, TPE selection, model contacts and same-ID reset. Remaining force/velocity inputs, joints, nested TPE behavior and full P2 reference composition."
+      "detail": "Published loaded lifecycle, stable logical IDs, typed faults, TPE contacts and same-ID reset, plus local input pause/replacement/one-step/reset/removal lifecycle. Independent review caught backend-local BodyId collisions; admission/execution now check the loaded opaque owner. Remaining joint constraints, wider capabilities and selected-fixture composition."
     },
     {
       "id": "SENSOR-01",
@@ -19,12 +19,12 @@
     {
       "id": "SLICE-01",
       "title": "First integrated milestone checklist",
-      "detail": "Published Rapier/TPE stepping, local/offline Fuel includes, owned physics profiles, clock/pose/IMU transport, pause/remove/reset and native IMU cadence through nine actual C++ scenarios. Exact P2 prerequisites still pending: simple-joint variant, velocity/force inputs and selected-fixture C++ equality/performance. Full downloads/noise and wider backend/system inventories remain required later-plan work; they are not added prerequisites for the local-resource noise-free IMU fixture."
+      "detail": "Published exact Rapier/TPE SDF stepping, local/offline Fuel resources, owned profiles, clock/pose/IMU transport, pause/remove/reset, native IMU cadence and checked local velocity/force input APIs. Immediate P2 work: simple-joint variant, complete selected-fixture assertions and equal-work C++ reference/performance report. Existing9actualCPP peer scenarios remain required. Native wrench/velocity transport systems, full downloads/noise and wider inventories remain retained later-plan work unless the selected fixture requires them; no invented extra P2 endpoint prerequisite."
     },
     {
       "id": "PHY-02",
       "title": "Complete remaining TPE capabilities and milestone inputs",
-      "detail": "Published TPE contacts/reset and narrow qualified contact benchmark remain accepted. New local link input packet is frozen for review: worldvelocity replacement, one-step COM wrench accumulation, paused retention/reset/removal cancellation, typed admission and terminal runtime faults. Rapier and TPE capabilities are explicit (TPE wrench/static/rotated cases unsupported). Full179Rust/12tools/nine existingCPP gate passes2715/2750lines4261/4365regions;deltaTPE15/15Rapier52/52scene166/167. Thirty actual native WorldReset/wrench controls check loaded engines;20 supported velocity/angular observation rows and10retained TPErotation gaps. Force position uses analytic halfEuler error bound, not same-engine trajectory equality. Independent review and normal staged gate pending. No external input endpoint/performance/P2 completion claim."
+      "detail": "Published TPE motion/contact/reset and checked finite worldvelocity setter; local freebody inputs reject TPE wrench/static/rotated cases explicitly. D23 remains open. Native30 input controls retain10rotatedTPE gaps;20 supported velocity/angular observation rows qualify the bounded scene. All182Rust/12tools/nineCPP author/staged gate passed, independent107backend/scene+exact2foreign-owner countertests and30native proof replay passed. No full TPE capability, joint, performance or P2 acceptance claim."
     },
     {
       "id": "FUEL-01",
@@ -40,9 +40,19 @@
       "id": "LOAD-01",
       "title": "Consume native physics profile timestep",
       "detail": "Published66861d3 consumes SDF7ed5ad02: omitted CLI step selects first profile (not later marked default), explicit overrides retain precedence, one parse, owned profile metadata and IO-free reset. Three actual native Server clock controls match both engines. Independent69scene/CLI+three native+two countercontrols passed; normal staged168Rust12tools9CPP,49/49scene16/16CLI changed lines. Nondefault contact limits explicitly reject; no pacing claim. Hosted40182386735 succeeded. Newer producer fields await separate preservation/validation."
+    },
+    {
+      "id": "PHY-05",
+      "title": "Validate the selected simple-joint variant",
+      "detail": "Inspecting native joint frames and Rapier revolute/reset facilities for a world-anchored pendulum. Current SDF7ed pin remains deliberate; later706 axis defaults/dynamics/link/material metadata require controlled preserved/validated adoption, not a blind pin. No joint implementation or same-engine parity/performance acceptance yet."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Checked local link velocity/wrench input lifecycle and backend ownership",
+      "commit": "25c801d44e21c06956afcdfe1bb885714db7cee0",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/25c801d44e21c06956afcdfe1bb885714db7cee0"
+    },
     {
       "title": "Native first-profile timestep, explicit overrides and owned reset metadata",
       "commit": "66861d37c9cf6444dbad01b8365a9be6ef600acd",
@@ -205,7 +215,7 @@
     }
   ],
   "remaining": [
-    "Complete exact-step SDF server with clock/pose/IMU transport and a C++ comparison.",
+    "Complete selected simple-joint fixture, retained assertions and equal-work C++ reference/performance report for P2.",
     "DART, MuJoCo and TPE adapters; joints, forces, complete capability contract.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
@@ -233,16 +243,16 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "66861d37c9cf6444dbad01b8365a9be6ef600acd",
-    "rust_tests": 168,
+    "revision": "25c801d44e21c06956afcdfe1bb885714db7cee0",
+    "rust_tests": 182,
     "coverage": {
       "lines": [
-        2477,
-        2507
+        2733,
+        2767
       ],
       "regions": [
-        3856,
-        3951
+        4288,
+        4391
       ]
     },
     "upstream": {
@@ -251,11 +261,11 @@
       "partial": 4
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40182386735"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40185967463"
     },
-    "note": "Normal exact staged hook passed168 Rust tests,12 tooling checks and nine actual C++ scenarios. Every production crate exceeds95% lines/regions;49/49scene16/16CLI changed executable lines. Independent review replayed69scene/CLI tests, three rebuilt native Server controls with matching proof hashes, and two extra both-engine counters. No existing assertions/thresholds/exclusions changed. Native controls disable plugins and establish clock/configuration only, not full physics/sensor/performance parity. Hosted40182386735 succeeded;P2 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66861d37c9cf6444dbad01b8365a9be6ef600acd"
+    "note": "Exact normal staged hook passed182 Rust checks,12 tooling checks and nine existing real C++ scenarios. Every production crate exceeds95% line/region coverage; changedTPE15/15Rapier56/56scene178/179. Independent review replayed107backend/scene tests, exact2original failing owner controls now passing, and30fresh native WorldReset/wrench controls with matching proof hashes. Review found/corrected backend-local bodyID ownership collision. D23/unsupported TPE wrench and analytic cross-engine halfEuler position bound explicit; no original assertions/exclusions/thresholds weakened. Hosted40185967463 running; no fullP2 or performance claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/25c801d44e21c06956afcdfe1bb885714db7cee0"
   },
   "phase_status": {
     "P0": "in_progress",
