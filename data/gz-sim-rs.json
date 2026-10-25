@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T10:00:50.063413+00:00",
+  "updated_at": "2026-10-25T10:17:43.735270+00:00",
   "state": "active",
-  "summary": "Hosted-green native first-profile timestep integration after independent review and the exact 168 Rust/12 tooling/nine C++ gate. Velocity/force commands are under development; P2 joints and equal-work reference/performance remain open.",
+  "summary": "First-profile timesteps are published and hosted-green. Local velocity/wrench input integration is frozen for independent review after179 Rust/12 tooling/nine C++ checks and30 real native controls; external ingress and joints remain P2 work.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "PHY-02",
       "title": "Complete remaining TPE capabilities and milestone inputs",
-      "detail": "Published model-local Aabb aggregation/parry Bvh contacts, static/mask filtering and same-ID reset composition. Eleven native rows and original StaticFiltering mapping reviewed; actual1e308 midpoint bug fixed with standard f64::midpoint. Narrow1000model/500tick benchmark: author1283.58msnative/87.63msRust, independent1290.16/87.89ms; shared-host/compiler/ISA/packaging qualified, not fullsim/P2. Geometry families, commands, nestedmodels and D23 remain open. Next bounded command work is isolated: checked world velocity and one-tick wrench primitives pass17backend checks and Clippy; not yet reviewed/accepted. Six actual native DART/TPE controls verify loaded engines. DART combines simultaneous velocity+force despite stale header prose; TPE force has no effect and needs explicit unsupported capability. Scene and real C++ command integration remain pending."
+      "detail": "Published TPE contacts/reset and narrow qualified contact benchmark remain accepted. New local link input packet is frozen for review: worldvelocity replacement, one-step COM wrench accumulation, paused retention/reset/removal cancellation, typed admission and terminal runtime faults. Rapier and TPE capabilities are explicit (TPE wrench/static/rotated cases unsupported). Full179Rust/12tools/nine existingCPP gate passes2715/2750lines4261/4365regions;deltaTPE15/15Rapier52/52scene166/167. Thirty actual native WorldReset/wrench controls check loaded engines;20 supported velocity/angular observation rows and10retained TPErotation gaps. Force position uses analytic halfEuler error bound, not same-engine trajectory equality. Independent review and normal staged gate pending. No external input endpoint/performance/P2 completion claim."
     },
     {
       "id": "FUEL-01",
