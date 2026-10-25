@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T04:02:24.802519Z",
+  "updated_at": "2026-10-25T04:06:43.753632Z",
   "state": "active",
   "summary": "MSG-01 accepted and all 83 original cases reviewed; native-compatible envelope published, MSG-02 qualification continues.",
   "model": "Assigned gpt-6.1-sol, medium reasoning",
   "active": [
     {
       "id": "MSG-02",
-      "title": "External CLI listing and info-vector review",
-      "detail": "Hosted-green flag revision 5a68646 remains public quality. Separate info-vector snapshot awaits final independent review (119 native rows). Descriptor-aware CLI listing now passes 11 complete native sets and 87 combined working Rust checks, 1460/1462 lines and 2297/2311 regions; no new dependency. Arbitrary external info formatting and diagnostic parity remain explicit gaps."
+      "title": "External CLI listing qualification",
+      "detail": "Reviewed info-vector revision 873a2e2 published; hosted pending. Separate descriptor-aware listing passes 11 complete native sets and targeted Rust aliases; final 87-check working gate running after provenance guards. No new dependency. External info formatting/diagnostic and wider contracts remain open."
     }
   ],
   "accepted_slices": [
@@ -137,6 +137,11 @@
       "title": "Native boolean flag values, ranges and callback precedence",
       "commit": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5a68646a0ef537a11b1584ab58685ff9c0f44bb3"
+    },
+    {
+      "title": "Native info vector expansion and per-occurrence required values",
+      "commit": "873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/873a2e2eac23aeafda45fc7d2c7574db76a66ff2"
     }
   ],
   "remaining": [
@@ -151,16 +156,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
-    "rust_tests": 85,
+    "revision": "873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
+    "rust_tests": 86,
     "coverage": {
       "lines": [
-        1448,
-        1450
+        1465,
+        1467
       ],
       "regions": [
-        2275,
-        2289
+        2303,
+        2317
       ]
     },
     "upstream": {
@@ -169,15 +174,15 @@
       "partial": 0
     },
     "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40160640315"
+    },
+    "note": "Exact staged hook passes. Independent 638-blob raw export/private target passes all 12 CLI tests and five unchanged C++ cases; 119 native observations reproduce identical proof, prior 90+171 retained. Final flag-parent metadata overlap independently bound. Hosted qualification pending. External-listing work is separate; MSG-02 incomplete.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
+    "previous_ci": {
+      "revision": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40159639492"
-    },
-    "note": "Exact strict staged hook passes. Independent raw export/private target passes all 11 CLI tests plus five unchanged C++ cases; both complete native proofs (90 earlier and 171 new rows) match. All 83 original mappings remain reviewed; no threshold/exclusion/dependency change. Exact revision-linked hosted source/staged/archive/fresh-cache install qualification passes. Info-vector working evidence is a separate uncommitted slice; MSG-02 incomplete.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
-    "previous_ci": {
-      "revision": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40156564346"
     }
   }
 }
