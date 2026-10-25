@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T00:26:43.731981Z",
+  "updated_at": "2026-10-25T00:38:57.744932Z",
   "state": "active",
-  "summary": "All latest published transport slices hosted green. Three retained batch assertion ports pass full76-test local gate; simulator shared-IMU integration independently reviewed.",
+  "summary": "Recovered transport owner; reviewed three-case batch published after strict staged gate. Bounded duplicate-service ownership now under verification.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-02",
-      "title": "Retained one-then-three service batch assertions",
-      "detail": "Three ordinary/inputless/one-way batch ports pass full76Rust/21tools gate,1278/1300lines1920/1985regions0changed; msgs review queued. Latest published691f3ca hosted success verified. Root shared-IMU alias/lifetime test+all5CPP scenarios independently pass. Inventorying known native duplicate-service failure sideeffect before ownership proposal."
+      "title": "Bounded duplicate-service ownership",
+      "detail": "Preserved3-case multiple-call batch published2993f55; independent original/helper review and strict76Rust/21tool staged gate pass. Hosted40147477523 running. Duplicate-service guard preserves first receiver; native failed-registration side effect explicitly documented, retained parity open. Full native gate and independent review next."
     }
   ],
   "accepted_slices": [
@@ -117,6 +117,11 @@
       "title": "Four original synchronous/inputless service and exact timeout assertion ports",
       "commit": "691f3caa73c3471d0c3773769919005624f78f58",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/691f3caa73c3471d0c3773769919005624f78f58"
+    },
+    {
+      "title": "Three original one-then-three multiple-call service assertion ports",
+      "commit": "2993f556fd2f639b2128f1d86131fb3e9976aff9",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2993f556fd2f639b2128f1d86131fb3e9976aff9"
     }
   ],
   "remaining": [
@@ -132,9 +137,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "691f3caa73c3471d0c3773769919005624f78f58",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/691f3caa73c3471d0c3773769919005624f78f58",
-    "rust_tests": 73,
+    "revision": "2993f556fd2f639b2128f1d86131fb3e9976aff9",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2993f556fd2f639b2128f1d86131fb3e9976aff9",
+    "rust_tests": 76,
     "coverage": {
       "lines": [
         1277,
@@ -147,13 +152,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 15,
+      "ported": 18,
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40145935541"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40147477523"
     },
-    "note": "Hosted40145935541 passes73Rust/21tools,1277/1300lines1919/1985regions0changed. Downloaded runtime/assertion/runner source hashes match691f3ca exactly.15full original ports reviewed; full418-case suite incomplete. Publisher/service lifecycle predecessors also hosted green."
+    "note": "Strict immutable staged gate76Rust/21tools,1277/1300lines1919/1985regions0changed passes at published2993f55. Eighteen full original ports reviewed; remaining418-case suite incomplete. Hosted CI running, not yet success. Independent msgs packaging source/archive/install review also completed; no transport protocol change."
   }
 }
