@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-25T14:27:00Z",
+  "updated_at": "2026-10-25T14:30:50Z",
   "state": "active",
-  "summary": "Bounded raw-control JSON slice is public after independent review and normal hook; exact hosted CI is running. MSG-02 remains open.",
+  "summary": "Published raw-control JSON slice passed exact hosted CI; bounded escaped-byte follow-up is in development. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Published raw-control JSON slice covers 64 native-positive byte/quote combinations and ten rejected controls; all 66 previously accepted rows remain byte-identical. Independent semantic review, exact staged verifier, negative control and normal hook passed. Exact hosted CI is running. Escaped raw controls, unknown escapes and broader descriptor, formatting, installation, release and performance scope remain open."
+      "detail": "Published raw-control JSON slice passed independent review, normal hook and exact hosted CI with 140 native rows. A separate escaped-byte candidate now measures all 256 ASCII escape-byte/quote combinations against pinned protobuf 3.21.12; 254 native-positive and two incomplete-unicode negatives match a focused local Rust comparison. Full strict gate, independent review and publication remain pending. Broader descriptor, formatting, installation, release and performance scope remain open."
     }
   ],
   "accepted_slices": [
@@ -234,10 +234,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40202085831"
     },
-    "note": "Published raw-control slice passed independent semantic/final metadata review, exact final staged gate, normal worktree hook, and fresh working-tree coverage. 109 Rust harness checks plus FactoryLazy, 140 pinned native rows: 66 unchanged accepted, 64 new parity, ten rejected controls. Six escaped-raw probes remain explicit gaps; unknown escapes remain open. Root production coverage 1949/1952 lines and 3106/3124 regions; vendor patches unchanged. Exact hosted CI is running; MSG-02 remains open.",
+    "note": "Published raw-control slice passed independent semantic/final metadata review, exact final staged gate, normal worktree hook, and fresh working-tree coverage. 109 Rust harness checks plus FactoryLazy, 140 pinned native rows: 66 unchanged accepted, 64 new parity, ten rejected controls. Six escaped-raw probes remain explicit gaps; unknown escapes remain open. Root production coverage 1949/1952 lines and 3106/3124 regions; vendor patches unchanged. Exact hosted CI passed on the verified published SHA; MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dcdbb741630d38e21ba5271a50cae04be1aee6c4"
   }
 }
