@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T10:15:18.006495Z",
+  "updated_at": "2026-10-25T10:34:21.713327Z",
   "state": "active",
-  "summary": "Canonical typed publication and faithful mismatch port are hosted green; 35 originals have complete reviewed Rust ports, with broader transport scope still open.",
+  "summary": "Owned received metadata and one complete same-Node original mapping are published; hosted qualification is running and three raw metadata assertion ports are next.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Received MessageInfo metadata and explicit native origin boundary",
-      "detail": "Published 2f35102 remains hosted green. Frozen MessageInfo candidate passes the author full gate: 135 Rust and 22 tooling checks, 1641/1645 lines, 2460/2509 regions and 45/45 changed lines. Independent source/assertion review is reserved with msgs. Owned receive metadata preserves raw Message/relay APIs, captures direct worker versus wire delivery and retains a measured native/Rust same-process two-Node origin mismatch. The selected same-Node original mapping, final staged gate and hosted qualification are still pending."
+      "title": "Raw MessageInfo assertion ports and hosted qualification",
+      "detail": "Published b04b1f3 passed independent source/assertion review and normal exact staged gate:135 Rust/22 tooling,1641/1645lines,2460/2509regions,45/45changed. Hosted40185291364 is running. Three retained same-Node raw metadata originals passed their unchanged native baselines; raw/wildcard owned-receive ports are being prepared. Native process-global two-Node origin remains explicit incomplete scope."
     },
     {
       "id": "NET-02",
       "title": "Retained service and tooling contracts",
-      "detail": "Thirty-five original cases have reviewed complete ports, one ambiguity case remains partial, and 382 remain pending. Callback/process-global scope, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
+      "detail": "Thirty-six originals have reviewed complete ports, one ambiguity case remains partial, and381 remain pending. Callback/process-global scope, mutable MessageInfo construction/setters, global queries/cache, CLI, logging, statistics, authentication and equal-work performance remain open."
     }
   ],
   "accepted_slices": [
@@ -187,6 +187,11 @@
       "title": "Canonical typed advertisement/publication with sealed descriptor binding, preencoding bounds and faithful original type mismatch port",
       "commit": "2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2f35102930f59c53b5f38de4bb07ee7bd49c1edc"
+    },
+    {
+      "title": "Owned received metadata, shared raw queue and selected same-Node original assertion mapping with explicit native origin gap",
+      "commit": "b04b1f32a47709a94a932ea019978a6cc95ef831",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b04b1f32a47709a94a932ea019978a6cc95ef831"
     }
   ],
   "remaining": [
@@ -202,28 +207,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
-    "rust_tests": 128,
+    "revision": "b04b1f32a47709a94a932ea019978a6cc95ef831",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b04b1f32a47709a94a932ea019978a6cc95ef831",
+    "rust_tests": 135,
     "coverage": {
       "lines": [
-        1591,
-        1611
+        1641,
+        1645
       ],
       "regions": [
-        2420,
-        2485
+        2460,
+        2509
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 35,
+      "ported": 36,
       "partial": 1
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40176574469"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40185291364"
     },
-    "note": "Published 2f35102 passes the exact independently approved staged gate: 128 Rust and 22 tooling checks, 1591/1611 lines, 2420/2485 regions and 12/12 changed executable production lines. All 30 recorded inputs match committed blobs. Independent msgs replay passed the original mismatch, deterministic bounds/errors, fresh actual C++ delivery and unchanged native TypeMismatch XML one run/zero failures with verified hashes. Wrappers reuse the same pinned canonical producer and prost; raw byte forwarding, dependency pins and error enum remain unchanged. Same-package and typed unknown-field-loss boundaries are explicit. Hosted40176574469 is green; all 30 committed input hashes and 128 Rust checks are verified with matching strict production/changed coverage. Prior unsubscribe b3b2b9e, provider32be618, hook4d390a8 and socket2032012 are hosted green. Thirty-five complete originals, one partial and 382 pending remain; whole NET-01/NET-02/performance acceptance stays open."
+    "note": "Published b04b1f3 exact reviewed tree passed normal strict staged hook:135 Rust/22 tooling,1641/1645lines,2460/2509regions,45/45changed executable lines;12 final input hashes match committed blobs. Independent reviewer reran all135 Rust checks with fresh native peer and separate source/target, pinned native original1/1, and wildcard/remap/alternating raw+envelope receive/opaque byte allocation lifetime supplement. Native process-global two-Node origin is still unsupported and explicitly tested as a mismatch. Selected mapping approves36 complete originals,1partial,381pending; no whole NET-01/NET-02/performance acceptance. Hosted40185291364 is in progress; pending is not hosted success."
   }
 }
