@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T07:03:49.108733+00:00",
+  "updated_at": "2026-10-25T07:22:24.309355+00:00",
   "state": "active",
-  "summary": "Offline Fuel150a21e is hosted-green. Reviewed worktree hook isolation15c7dd1 is now published through exact157Rust+10tools/sevenCPP staged checks; hosted pending. Next: headless sensor scheduling and native-backed World physics metadata review. Full P2 remains open.",
+  "summary": "Offline Fuel loading and worktree hook isolation both pass exact hosted CI. Current157Rust+10tools/sevenCPP and strict coverage pass. Next headless work: sensor scheduling and consumption of reviewed native-backed World physics profiles. P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -34,7 +34,7 @@
     {
       "id": "QLT-01",
       "title": "Isolate exported verifier Git context",
-      "detail": "Published15c7dd1 after independent exact5-file review, fresh10tools, additional inherited-key/foreignGit/parent-index mutation controls and normal157Rust+10tools/sevenCPP staged gate. No Rust/threshold/exclusion changes. Hosted40171303035 pending. Pre-existing gitarchive export-ignore gap remains concrete follow-up; no attributes in this candidate and no current root corruption."
+      "detail": "Published15c7dd1 after independent exact5-file review, fresh10tools, additional inherited-key/foreignGit/parent-index mutation controls and normal157Rust+10tools/sevenCPP staged gate. No Rust/threshold/exclusion changes. Hosted40171303035 succeeded. Pre-existing gitarchive export-ignore gap remains concrete follow-up; no attributes in this candidate and no current root corruption."
     }
   ],
   "accepted_slices": [
@@ -231,10 +231,10 @@
       "partial": 3
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40171303035"
     },
-    "note": "Exact normal staged157Rust+10tools/seven real C++ scenarios pass, workspace2372/2400lines3725/3819regions and eachcrate>95%; no productionRust delta. Independent exact5-file review/fresh10tools and extra Git-isolation/adversarial index-guard controls pass. Hosted40171303035 pending; Fuel150a21e hosted40170482056 succeeded. Complete FUEL/P2, full native baseline/performance and export-ignore hardening remain open.",
+    "note": "Exact normal staged157Rust+10tools/seven real C++ scenarios pass, workspace2372/2400lines3725/3819regions and eachcrate>95%; no productionRust delta. Independent exact5-file review/fresh10tools and extra Git-isolation/adversarial index-guard controls pass. Exact hosted40171303035 succeeded; Fuel150a21e hosted40170482056 succeeded. Complete FUEL/P2, full native baseline/performance and export-ignore hardening remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/15c7dd167651a6861f78d2448ab68f14f71e8cd9"
   },
   "phase_status": {
