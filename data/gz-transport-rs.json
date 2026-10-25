@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T02:03:58.738002Z",
+  "updated_at": "2026-10-25T02:10:29.811675Z",
   "state": "active",
-  "summary": "Implementing explicit native-compatible discovery decoding against the reviewed, hosted-green messages producer; latest published transport remains green.",
+  "summary": "Published reviewed native-compatible discovery decoding; exact staged gate passes and hosted CI is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
-      "title": "Native-compatible discovery decoder opt-in",
-      "detail": "The restored-lock discovery candidate pins hosted-green msgs e2001a3 and passes the full local gate: 81 Rust and 21 tooling tests, 1286/1307 lines, 1929/1993 regions and 4/4 changed executable lines. Thirty-one real C++ parser cases and runtime scope/admission checks pass; independent review is underway. Prior unrelated Windows resolution is preserved. Latest published transport remains 05247e4; no lossless relay or opaque-payload decoding claim."
+      "title": "Discovery hosted qualification and service inspection contract",
+      "detail": "Published c570e8c pins msgs e2001a3 and opts discovery into its compatible envelope. Independent 31-case native/parser and runtime admission review passes; strict staged gate passes 81 Rust/21 tooling, 1286/1307 lines, 1929/1993 regions and 4/4 changed lines. Hosted 40153350311 is running. Next bounded library task is service type inspection/resolution."
     },
     {
       "id": "NET-02",
@@ -137,6 +137,11 @@
       "title": "Original ordinary and inputless async service assertion ports",
       "commit": "05247e4ef1bb2341447b723405000f233f5c4505",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/05247e4ef1bb2341447b723405000f233f5c4505"
+    },
+    {
+      "title": "Native-compatible discovery decoder with pinned producer and 31 native differential cases",
+      "commit": "c570e8cdb984bfbb4aafb3f8ca4ff2e4abd54332",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c570e8cdb984bfbb4aafb3f8ca4ff2e4abd54332"
     }
   ],
   "remaining": [
@@ -152,17 +157,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "05247e4ef1bb2341447b723405000f233f5c4505",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/05247e4ef1bb2341447b723405000f233f5c4505",
-    "rust_tests": 79,
+    "revision": "c570e8cdb984bfbb4aafb3f8ca4ff2e4abd54332",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c570e8cdb984bfbb4aafb3f8ca4ff2e4abd54332",
+    "rust_tests": 81,
     "coverage": {
       "lines": [
-        1282,
-        1304
+        1286,
+        1307
       ],
       "regions": [
-        1926,
-        1991
+        1929,
+        1993
       ]
     },
     "upstream": {
@@ -171,9 +176,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40148298562"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40153350311"
     },
-    "note": "Hosted run 40148298562 passes at published 05247e4: 79 Rust tests, 1282/1304 production lines, 1926/1991 regions, and zero changed executable production lines. All 28 downloaded input hashes match exactly. The strict staged gate also passed 79 Rust/21 tooling tests. Predecessor ownership 7268928 hosted run passed 3/3 changed lines. Twenty of 418 original cases have reviewed faithful ports; full NET packets and performance qualification remain incomplete."
+    "note": "Published c570e8c passes the exact immutable staged gate: 81 Rust and 21 tooling tests, 1286/1307 lines, 1929/1993 regions and 4/4 changed executable lines. Independent strict C++ parser/runtime replay covers 31 characterization cases. Producer e2001a3 is hosted green; consumer CI is running. Twenty of 418 original ports remain reviewed; no extra original retirement, lossless discovery relay, opaque-payload decoding or full wire/parser qualification is claimed."
   }
 }
