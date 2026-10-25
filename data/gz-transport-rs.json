@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T06:48:13.055474Z",
+  "updated_at": "2026-10-25T06:52:21.422149Z",
   "state": "active",
-  "summary": "Published reviewed socket2 compatibility update unblocks the Fuel/Tokio graph; hosted qualification is running and verifier Git-context isolation is being repaired.",
+  "summary": "Published socket2/Fuel compatibility update is hosted green; independently reviewed verifier Git-context isolation is next.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Verifier Git-context isolation and hosted socket2 qualification",
-      "detail": "Published 2032012 raises socket2 to 0.6.5 and retains messages e2001a3. Independent/full strict/native checks pass 116 Rust/21 tools; a locked offline public Fuel374/Tokio1.53.3 graph compiles with one socket2 and one messages instance. Its normal main staged hook passed. A real isolated-worktree hook exposed inherited Git variables corrupting fixture context; exact prototype/Git state was preserved and restored. The separate bounded child-env fix has a before-failing/after-passing real temporary-worktree regression; full gate is running. Service-info prototype remains preserved."
+      "detail": "Published 2032012 is hosted green with all 29 committed input hashes verified, 116 Rust checks and strict coverage. The separate exported-child Git-environment isolation fix is frozen for independent review: 116 Rust and 22 tooling checks pass, including a real temporary-worktree hook with custom index and untouched config/working files. Service-provider prototype is preserved until that harness fix publishes."
     },
     {
       "id": "NET-02",
@@ -201,9 +201,9 @@
       "partial": 1
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40169866773"
     },
-    "note": "Published 2032012 passes the exact reviewed normal-main staged gate: 116 Rust and 21 tooling/native checks, 1528/1550 lines and 2323/2389 regions, with no production-source delta. All staged input hashes match committed blobs. Independent fresh graph and all 116 serial-policy Rust checks pass; public Fuel374, direct messages e2001a3 and exact Tokio1.53.3 resolve one socket2 0.6.5. Windows lock pruning is recorded; no other dependency versions or owned Rust changed. Hosted 40169866773 is running. Worktree hook Git-context defect remains a separate immediate fix, not qualified by main success. Thirty-one complete originals, one partial and 386 pending remain; whole NET-01/NET-02/performance acceptance stays open."
+    "note": "Published 2032012 passes the exact reviewed normal-main staged gate: 116 Rust and 21 tooling/native checks, 1528/1550 lines and 2323/2389 regions, with no production-source delta. All staged input hashes match committed blobs. Independent fresh graph and all 116 serial-policy Rust checks pass; public Fuel 374, direct messages e2001a3 and exact Tokio 1.53.3 resolve one socket2 0.6.5. Windows lock pruning is recorded; no other dependency versions or owned Rust changed. Hosted 40169866773 is green; all 29 input hashes match committed blobs and 116 Rust checks pass. Hosted production coverage is 1528/1550 lines and 2323/2389 regions. Worktree hook Git-context defect remains a separate immediate fix, not qualified by main success. Thirty-one complete originals, one partial and 386 pending remain; whole NET-01/NET-02/performance acceptance stays open."
   }
 }
