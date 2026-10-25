@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-25T01:58:47.534837Z",
+  "updated_at": "2026-10-25T02:03:58.738002Z",
   "state": "active",
   "summary": "Implementing explicit native-compatible discovery decoding against the reviewed, hosted-green messages producer; latest published transport remains green.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "NET-01",
       "title": "Native-compatible discovery decoder opt-in",
-      "detail": "Working candidate pins msgs e2001a3 and explicitly clones the compatible typed discovery value for dispatch. Thirty-one real C++ parser cases cover wrong-wire values/presence/merge/framing; runtime admission and unknown-scope checks pass. Full native/coverage gate is running and independent msgs review is active. Application payloads stay opaque; relay and full wire/parser parity are not claimed."
+      "detail": "The restored-lock discovery candidate pins hosted-green msgs e2001a3 and passes the full local gate: 81 Rust and 21 tooling tests, 1286/1307 lines, 1929/1993 regions and 4/4 changed executable lines. Thirty-one real C++ parser cases and runtime scope/admission checks pass; independent review is underway. Prior unrelated Windows resolution is preserved. Latest published transport remains 05247e4; no lossless relay or opaque-payload decoding claim."
     },
     {
       "id": "NET-02",
