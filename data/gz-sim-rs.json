@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T19:22:06.336597+00:00",
+  "updated_at": "2026-10-25T19:37:36.150831+00:00",
   "state": "active",
-  "summary": "Published native-default pose cadence passed exact hosted verification. Gaussian IMU noise model and simulator integration are under development; formal P2 remains open.",
+  "summary": "Pose cadence is published and hosted-green. Gaussian IMU noise candidate passed strict staged checks:220 Rust,16 tooling,11 C++ scenarios; independent review in progress.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "SENSOR-01",
-      "title": "Sensor reconstruction and scheduling",
-      "detail": "Gaussian noise model implementation underway using pinned maintained RNG/distribution libraries, independently owned deterministic sensor streams and native bias/quantization controls. Seven unchanged native NoiseTest cases pass; six seeded native controls recorded. New Rust model tests pass locally; scene/noise/covariance integration, independent review and strict acceptance pending. Existing noise-free behavior remains published at prior pins."
+      "title": "Gaussian IMU noise and deterministic streams under review",
+      "detail": "Frozen candidate implements mature-library Gaussian sampling, signed/dynamic bias, quantization, seeded per-sensor replay, native acquisition-float dt and diagonal covariance. Exact staged220Rust/16tools/all11realCpp passes; every production crate >95%,3436/3472lines5255/5371regions. Six native controls/seven unchanged NoiseTest cases reproduce. Independent native/source/assertion/seed-policy review pending; no publication or broad SENSOR01/P2 completion. Original nine C++ modes retained; two noisy modes test covariance and reset replay."
     },
     {
       "id": "SLICE-01",
