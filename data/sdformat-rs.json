@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-25T22:30:23Z",
+  "updated_at": "2026-10-25T22:49:01Z",
   "state": "active",
-  "summary": "The pinned DOMSensor.MutableSensors eight-block original is public and hosted-green after independent review; 69 complete and 16 partial original cases are reviewed. Full fixed-fixture Link and Sensor type value originals remain accepted; broader DOM/parser/runtime parity is open.",
+  "summary": "Five pinned DOMSensor copy/move originals are public and hosted-green after independent review; 74 complete and 16 partial original cases are reviewed. Broader Sensor DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Audit Sensor construction and ownership originals",
-      "detail": "Port bounded native DOMSensor Construction/copy/move observations using owned Rust values and exact native cases, keeping Element/graph/default/equality limits explicit. Six pinned originals have fresh native6/0 baseline; source, assertion and disposition review required."
+      "title": "Port native Sensor plugin ownership",
+      "detail": "Implement ordered owned Sensor plugins and parser retention for pinned DOMSensor.Plugins; preserve native add/copy/clear observations, then independent review and strict gates."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port five complete DOMSensor copy and move originals",
+      "commit": "dbf349b6a52a77680900e6afc53de5c604cd409a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/dbf349b6a52a77680900e6afc53de5c604cd409a"
+    },
     {
       "title": "Port mutable Sensor payload original observations",
       "commit": "cc3b1e2f6828a047106859b079d5558f5d4038cd",
@@ -410,9 +415,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "cc3b1e2f6828a047106859b079d5558f5d4038cd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/cc3b1e2f6828a047106859b079d5558f5d4038cd",
-    "rust_tests": 230,
+    "revision": "dbf349b6a52a77680900e6afc53de5c604cd409a",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/dbf349b6a52a77680900e6afc53de5c604cd409a",
+    "rust_tests": 235,
     "coverage": {
       "lines": [
         3996,
@@ -425,13 +430,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 69,
+      "ported": 74,
       "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40240295435"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40241708877"
     },
-    "note": "Pinned DOMSensor.MutableSensors native1/0 and private Rust1/0; independent complete observable-value source/final receipts SHA4db4e76a/bc146e33; normal protected hook and exact hosted run40240295435 pass230Rust/16tools,3996/4015 production lines6947/7147 regions,3807/3820 staged executable lines. All eight mutable payload blocks retained, including ForceTorque-tagged IMU. Approved pre-receipt candidate tree79cc42f vs receipt-envelope public tree87ba980 differ only by exact authored reference/review.json. C++ pointer/setter method identity is not a Rust release requirement; generic Sensor mutation, parser/serialization and broad phase remain open. Root consumer pin is coordinator-owned SDF575."
+    "note": "Pinned DOMSensor copy/move native5/0 and private Rust5/0; independent source/final receipts SHAbfd94821/4cdc5cf2; normal protected hook and exact hosted run40241708877 pass235Rust/16tools,3996/4015 production lines6947/7147 regions,3807/3820 staged executable lines. Five complete observable value originals, no production edits. Approved pre-receipt candidate tree c5794e9e versus receipt-envelope public tree1c714e71 differ only by reviewer-authored reference/review.json. Construction/default/Element/semantic pose, generic mutation, parser and serialization remain open; Root consumer pin is coordinator-owned SDF575."
   }
 }
