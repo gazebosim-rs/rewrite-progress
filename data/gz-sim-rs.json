@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T04:51:27.890590+00:00",
+  "updated_at": "2026-10-25T05:02:00.525985+00:00",
   "state": "active",
-  "summary": "Published headless TPE worlds remain green. Integrated model contacts now pass the full138Rust/seven-C++ author gate and independent source/native review; final benchmark/metadata review is in progress before staged publication. Full P2 remains open.",
+  "summary": "TPE model contacts are published after independent numerical/lifecycle/native and benchmark review plus the exact138Rust/seven-C++ staged gate. A qualified equal-work contact benchmark is recorded. Local/offline resource integration is next; full headless P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -23,8 +23,13 @@
     },
     {
       "id": "PHY-02",
-      "title": "Add native-compatible TPE model contacts using parry",
-      "detail": "Integrated parry model Aabb/Bvh contacts, fixed-link bounds aggregation and reset reconstruction pass138Rust+9tools/seven actual C++ scenarios;2186/2212lines3373/3455regions, all crates/delta>95. Independent source review and11native rows passed after correcting an actual finite1e308 midpoint overflow with std f64::midpoint. Full original static-filter assertion mapped; no broad original retirement. Narrow500tick/1000model paired benchmark has unique-pair/time/state guards; final evidence review pending. Contacts not yet published."
+      "title": "Complete remaining TPE capabilities and milestone inputs",
+      "detail": "Published model-local Aabb aggregation/parry Bvh contacts, static/mask filtering and same-ID reset composition. Eleven native rows and original StaticFiltering mapping reviewed; actual1e308 midpoint bug fixed with standard f64::midpoint. Narrow1000model/500tick benchmark: author1283.58msnative/87.63msRust, independent1290.16/87.89ms; shared-host/compiler/ISA/packaging qualified, not fullsim/P2. Geometry families, commands, nestedmodels and D23 remain open."
+    },
+    {
+      "id": "FUEL-01",
+      "title": "Integrate local paths and offline Fuel resources",
+      "detail": "Read-only Fuel API inspection preserves its independent owner. SDF pure model.config selector80b6c74 is public with reviewed116Rust/97native evidence; pin/adoption and consumer implementation next. Fresh8-case installed native path probe captures cwd/root-map/SDF_PATH precedence and literal-percent file URI semantics. No resolver or offline cache support accepted yet."
     }
   ],
   "accepted_slices": [
@@ -147,6 +152,11 @@
       "title": "Selectable headless TPE worlds, loaded lifecycle, CLI and seventh real C++ reset/IMU scenario",
       "commit": "2cd660125accfb1a2027a75a528702c9aa10ed8b",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2cd660125accfb1a2027a75a528702c9aa10ed8b"
+    },
+    {
+      "title": "TPE model contacts, finite-coordinate repair, native assertion mapping and qualified equal-work benchmark",
+      "commit": "f4c6cd4f6a065bb9760c3a5d5d346d6b78e482fc",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f4c6cd4f6a065bb9760c3a5d5d346d6b78e482fc"
     }
   ],
   "remaining": [
@@ -174,32 +184,33 @@
     "SLICE-01": "in_progress",
     "CLI-01": "in_progress",
     "IO-01": "in_progress",
-    "PHY-02": "in_progress"
+    "PHY-02": "in_progress",
+    "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "2cd660125accfb1a2027a75a528702c9aa10ed8b",
-    "rust_tests": 127,
+    "revision": "f4c6cd4f6a065bb9760c3a5d5d346d6b78e482fc",
+    "rust_tests": 138,
     "coverage": {
       "lines": [
-        2034,
-        2057
+        2186,
+        2212
       ],
       "regions": [
-        3133,
-        3206
+        3373,
+        3455
       ]
     },
     "upstream": {
       "total": null,
-      "ported": 2,
-      "partial": 2
+      "ported": 3,
+      "partial": 3
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40161609532"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40163685534"
     },
-    "note": "Exact isolated staged127Rust+9tools/seven actual C++ client scenarios passed. All production crates exceed95% lines/regions;198/198changed executable lines. Independent80 Rust checks,7freshC++ scenarios, exact two-row native fixture regeneration and ownership/reset/removal/default-engine review passed. Exact hosted scene40161609532 succeeded; prior installer40160579870 and fault40160034170 succeeded. TPE contacts are separate unaccepted work. No full P2/native simulator parity/performance acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2cd660125accfb1a2027a75a528702c9aa10ed8b"
+    "note": "Exact isolated staged138Rust+9tools/all7actualCPP passed. Everycrate>95%lines/regions;TPE101/102,scene68/69changed. Independent66producerRust+reviewerboundary/11native/staticXML1/0; fresh paired benchmark validates all poses,250unique duos,time/checksums. Source/binary/library hashes and medians reviewed. Hosted40163685534 pending. Narrow timings do not accept broaderP2/fullphysics/sensor/performance scope.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f4c6cd4f6a065bb9760c3a5d5d346d6b78e482fc"
   },
   "phase_status": {
     "P0": "in_progress",
