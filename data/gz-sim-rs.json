@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T07:31:21.747382Z",
+  "updated_at": "2026-10-26T07:46:53.914698Z",
   "state": "active",
-  "summary": "Simulator ab8d1ad is hosted-green. The clean 14-repository native SDK built successfully; selected runtime qualification and independent review are in progress. Formal P2 remains open.",
+  "summary": "The clean native headless SDK and selected runtime checks passed independent review. Its recipe is in the mandatory protected commit checks; formal P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "REF-01",
-      "title": "Qualify clean headless native reference SDK",
-      "detail": "Immutable local SDK image 11b7378c built all 14 pinned C++ repositories with tests enabled and records 690 packages plus 4743 installed paths. Ten unchanged selected originals and the unchanged 100-step Server/TPE/IMU fixture pass; both IMU runs exposed a log-path warning on read-only HOME. A private writable log tmpfs correction is being verified without suppressing diagnostics. Inventory retains 578 configurations, 4589 case expansions and 597 explicit gaps (596 wrapper/unrecognized, one Zenoh-disabled empty binary); no full inventory credit. Recipe remains unpublished pending independent actual-image/projection review and strict staged, normal and hosted gates. Local image has not been published to a registry; no new performance or P0/P2 acceptance."
+      "title": "Publish reviewed clean headless reference SDK",
+      "detail": "Independently reviewed local SDK image 11b7378c builds all14 pinned native repositories and records690 packages/4743 installed paths. Ten unchanged originals and100 exact1ms native Server/TPE/IMU observations pass; independent same-image replay confirms clean XML and empty stderr after a private writable Gazebo log tmpfs correction. Exact frozen source gate passed246 Rust/53 tooling/15 actual C++ client scenarios with strict unchanged coverage. Final13-file metadata/source binding approved; mandatory normal commit hook is running. Expanded inventory still has597 explicit gaps; full profiles, image registry/license distribution review, native-client SDK adoption, REF01/P0/P2 remain open. No new performance claim."
     },
     {
       "id": "CORE-02",
