@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T21:32:29.897889+00:00",
+  "updated_at": "2026-10-26T21:47:39.510584+00:00",
   "state": "active",
-  "summary": "Headless runtime IMU rates now pass a 270-test diagnostic run with all nine crates above95% lines/regions. Real C++ rate/reset clients and delayed/error/unwind controls pass. Exact integrated source review, staged acceptance and equal-work performance qualification remain in progress.",
+  "summary": "Runtime IMU rate controls passed an independent 89-test replay, real C++ clients and six failing regression controls. Strict publication checks and fresh equal-work performance measurements are next; the rewrite and formal headless milestone remain in progress.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "Runtime IMU rate control under development; full sensor scope open",
-      "detail": "Unaccepted integrated source b08c406f: phase-preserving capped IMU rates and one-way Double/Empty endpoints; distinct same-topic providers, minimal warm workers, bounded ingress, local outcomes and aggregate queue-drop metrics. Diagnostic79869 passes270Rust/0failed/0ignored, all9crates>95both, workspace3801/3841lines5828/5959regions; no staged/normal/hosted acceptance yet. Additional None/Always single-IMU zero/NaN test2/0 onTPE/Rapier closes reviewer regression gap; next fullcount unverified. Actual C++ old15 plusnewTPE/Rapier rate/reset cases and100ms-delivery/nonzero-exit/Rust-unwind-SIGKILL controls pass. Independent native raw-deadline/reset references66aed/6f768 and public reproducibility bindingd1ab; exact code review/negativecontrols, strict staged+normal, source-package/SDK and current-source equal-work evidence remain. Allproducerpins/Fuel/oldassertions unchanged; broadSENSOR01/IO01/P2 not complete."
+      "detail": "Candidate b08c406f preserves native capped rates, pending deadlines, reset phase and one-way Double/Empty endpoints. A fresh independent source export passes 89 selected Scene/Server/C++ checks and all restored positives; six production mutations fail their intended deadline, reset-queue, recipient, drop-counter and command-budget assertions. Real C++ rate/reset clients run on TPE and Rapier; existing15 scenarios remain mandatory. The earlier270-test diagnostic passes >95% lines/regions in all9 crates; it precedes one additional regression, so the next full count is unverified. Static source review approved; exact full staged/normal gates, current-source SDK functional/performance evidence and hostedCI remain required. No producer pins, Fuel work, old assertions or coverage policy changed. Broader sensor and P2 scope stays open."
     },
     {
       "id": "SLICE-01",
@@ -44,7 +44,7 @@
     {
       "id": "QLT-01",
       "title": "Close producer changed-source coverage enforcement gap",
-      "detail": "Changed-source coverage remains enforced. Msgs accepted scalar65d8 passed exact CI40330145997. New null draft canonical same-source136Rust/39CLI6979native passes205/206 vendorregions; two noncanonical incremental0 runs fail205/222 due16 zero generic-placeholder regions. Both failures retained, source/toolchain identities controlled; independent configuration review pending. No threshold, exclusion, assertion or policy change, no all-profile waiver. Root all9 crates>95% lines/regions unchanged."
+      "detail": "Strict >95% production line and region coverage remains mandatory per crate, workspace and changed code. Accepted consumer22a536c passes all9 crates. New rate-control candidate diagnostic also passes; full frozen staged and normal publication checks remain pending. Producer changes qualify independently and are not adopted by changing consumer pins automatically. No threshold, exclusion, original assertion or all-profile waiver is introduced."
     },
     {
       "id": "LOAD-01",
@@ -414,7 +414,7 @@
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40365209522"
     },
     "note": "Public22a536c exacthosted40365209522SUCCESS. Independent runtimea4a140bf/final91618b95,native1223 andfresh7/0+3productioncontrolfailures/restored7/0. Strictsource36995+mandatorynormal89274 pass253Rust/75tooling/15unchangedrealCpp; all9productioncrates>95%lines/regions,workspace3569/3605and5446/5565,changedRapier6/6Scene13/13. CapsuleShape PARTIAL only: positivegeometry/nativebounds+supplementarycontacts covered; emptydefault/mutableAPI remainsunported. No new fullcase/retirement/performance/P0/P2/fullrewrite credit. Allproducerpins/oldfixtures/assertions/tolerances/policy preserved.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a9a060f6229c4e98932d33c361ea6d2d00f72bac"
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/22a536c6918f55314ea7566fe783d06f4ce54e75"
   },
   "phase_status": {
     "P0": "in_progress",
