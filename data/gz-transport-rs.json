@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T11:00:08Z",
+  "updated_at": "2026-10-26T11:29:15Z",
   "state": "active",
-  "summary": "Fifty-six accepted complete and nineteen partial upstream ports; two additional reviewed mixed wrong/good response service originals are public and await exact hosted qualification.",
+  "summary": "Fifty-eight reviewed complete and nineteen partial upstream ports. Public 1d1eb0c passed exact source, normal protected and hosted checks for two mixed wrong/good local service originals; broad NET-01/NET-02 scope remains.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public 1d1eb0c passed exact source and normal protected gates for the two mixed wrong/good response originals. Exact hosted run 40311599435 is in progress; accepted count remains 56 until it succeeds."
+      "detail": "Public 1d1eb0c is hosted-green on exact run 40311599435. Next bounded work will characterize cross-process wrong-type service originals against the pinned native fixture before edits; current complete and partial mappings remain scoped."
     },
     {
       "id": "NET-02",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Fixed mixed wrong/good local service response observations with retained wrong-observer lifetime",
+      "commit": "1d1eb0ced8cb0d3af5b9e0f56f3cf4f044e1e647",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d1eb0ced8cb0d3af5b9e0f56f3cf4f044e1e647"
+    },
     {
       "title": "Fixed local wrong-response and inputless wrong-response service observations with live owned observers",
       "commit": "cda96dc9d150dd1613b6b2d53f9e26568423b0a7",
@@ -412,13 +417,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 56,
+      "ported": 58,
       "partial": 19
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40311599435"
     },
-    "note": "Reviewed source db694f30 and final tree 2223d358 passed exact source and mandatory normal protected hook; public 1d1eb0c exact hosted run 40311599435 is in progress, not a pass. 218 Rust passed, zero failed/ignored; native Node 56/0; production coverage 2645/2714 lines and 3893/4071 regions, zero production edit. Independent native 2/0, raw Rust 2/0, valid wrong-response controls and required good-response Timeout controls retain fixed predicates. Thirty-second owned async bounds, fresh ten-second good observation, native unbounded lifetime and secondary failed-control unwind errors remain explicit. Two new mappings await hosted acceptance; historical lost-output 101 is unclassified."
+    "note": "Reviewed source db694f30 and final tree 2223d358 passed the mandatory normal protected hook and exact hosted run 40311599435 SUCCESS on public 1d1eb0c. 218 Rust passed, zero failed/ignored; native Node 56/0; production coverage 2645/2714 lines and 3893/4071 regions, zero production edit. Independent native 2/0, raw Rust 2/0 and two descriptor controls preserve false wrong-response and required good-response observations. Thirty-second owned async bounds, separate ten-second good observation and native unbounded lifetime/C++ callback limits remain explicit. Failed-control secondary unwind errors are disclosed separately; historical lost-output 101 remains unclassified."
   }
 }
