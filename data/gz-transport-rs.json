@@ -1,34 +1,348 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T02:22:23Z",
+  "updated_at": "2026-10-26T03:01:01Z",
   "state": "active",
-  "summary": "Reviewed class-member service observations are public and hosted-green; broader NET-02 work remains active.",
+  "summary": "Forty-nine reviewed complete and seventeen partial upstream ports. Request-before-local-advertise now passes exact native and Rust assertions at f99b878; hosted native qualification is running. NET-02 and broader performance qualification remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
+      "id": "NET-01",
+      "title": "Retained Transport assertion and origin contracts",
+      "detail": "Process-local first delivery now maps one retained two-Node original without publication warmup. Other PROCESS scope, relay, discovery and inspection contracts remain open."
+    },
+    {
       "id": "NET-02",
-      "title": "Remaining native transport observations",
-      "detail": "Both class-member service originals have reviewed partial mappings on hosted-green d477dd7; immediate native callback visibility and C++ registration semantics remain open."
+      "title": "Retained topic, service and origin contracts",
+      "detail": "Public f99b878 adds the pinned request-before-advertise original with one typed late local admission and owned response observation. Exact staged and protected native gates passed; hosted run40261695188 is in progress. C++ callback API/scheduling, remote races and other NET-02 cases remain open."
     }
   ],
   "accepted_slices": [
     {
-      "title": "Process-local direct delivery and bounded service response admission",
+      "title": "Bounded ZeroMQ discovery, pub/sub and services",
+      "commit": "3ae95796c7f243951d8b63ce3ad34b6269088fba",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3ae95796c7f243951d8b63ce3ad34b6269088fba"
+    },
+    {
+      "title": "Explicit environment configuration and native differential checks",
+      "commit": "13b4be5f1d66501c0742008766cf80df910cf935",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/13b4be5f1d66501c0742008766cf80df910cf935"
+    },
+    {
+      "title": "Maintained messages and byte-exact opaque forwarding",
+      "commit": "5403622574f578363c377a6f2d08f1f40762a87d",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/5403622574f578363c377a6f2d08f1f40762a87d"
+    },
+    {
+      "title": "Source-pinned hosted native gate and retained reference profiles",
+      "commit": "275855d74f2e60bc594f79706c098e3fbf3f17bb",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/275855d74f2e60bc594f79706c098e3fbf3f17bb"
+    },
+    {
+      "title": "OSRF copyright and Apache-2.0 attribution",
+      "commit": "3bbe622c37ea26d142c4526e0f8eb2b492da52cc",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3bbe622c37ea26d142c4526e0f8eb2b492da52cc"
+    },
+    {
+      "title": "Structured native enumeration with retained diagnostics",
+      "commit": "26ecc9a5430f0de7b2d2ac068b16e16ca2c88747",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/26ecc9a5430f0de7b2d2ac068b16e16ca2c88747"
+    },
+    {
+      "title": "Bounded one-way Empty-response services",
+      "commit": "3a69c5361d2f8f1ada30e9dd6f9a4789cdd3aa91",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3a69c5361d2f8f1ada30e9dd6f9a4789cdd3aa91"
+    },
+    {
+      "title": "Isolated native enumeration environment and loader diagnostics",
+      "commit": "c06e09731c7b149af70ff9b1712ace97cb04bbad",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c06e09731c7b149af70ff9b1712ace97cb04bbad"
+    },
+    {
+      "title": "Immutable staged blobs, complete export and concurrent index guards",
+      "commit": "2bbbf8c99c2075c7259bf8fde148d6e5ffa17b70",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2bbbf8c99c2075c7259bf8fde148d6e5ffa17b70"
+    },
+    {
+      "title": "Cancellation during malformed multipart draining",
+      "commit": "d996929a5316f2eaaea8edf53d19453a98886deb",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d996929a5316f2eaaea8edf53d19453a98886deb"
+    },
+    {
+      "title": "Native Unix default partition identity with explicit error bounds",
+      "commit": "1cf0867e382edcfdbbf8784dfb085a8d92cc96b7",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1cf0867e382edcfdbbf8784dfb085a8d92cc96b7"
+    },
+    {
+      "title": "Fresh normal-library compiler-input ownership proof",
+      "commit": "a393e0ee5eb878ede47a4b8b020948298e927328",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/a393e0ee5eb878ede47a4b8b020948298e927328"
+    },
+    {
+      "title": "Native HOST discovery source membership",
+      "commit": "4fa16cc350bcbe76c39816180fbfcc52b33f16bf",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/4fa16cc350bcbe76c39816180fbfcc52b33f16bf"
+    },
+    {
+      "title": "Native NodeOptions setters and original assertions",
+      "commit": "ee0e98e4a37adad17c3d90b4cb7ef6fadd580391",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/ee0e98e4a37adad17c3d90b4cb7ef6fadd580391"
+    },
+    {
+      "title": "Native subscriber-only inspection and last-lease withdrawal",
+      "commit": "8d3120fa96ae5d46809534249780f654c8c1e884",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8d3120fa96ae5d46809534249780f654c8c1e884"
+    },
+    {
+      "title": "Original one-way literal supplement and independent mapping receipts",
+      "commit": "35902d6b53cd433fe7eb7cd630dd5a1d5b7c3c52",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/35902d6b53cd433fe7eb7cd630dd5a1d5b7c3c52"
+    },
+    {
+      "title": "Native one-pass topic sanitization for sensor metadata",
+      "commit": "c9ddc555cd60e7376b98a4110bdea8c79ef9f8c1",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c9ddc555cd60e7376b98a4110bdea8c79ef9f8c1"
+    },
+    {
+      "title": "Channel-local discovery identity, keep-first metadata and admission sideeffects",
+      "commit": "b67b669e1067bde9fa60ed256cc2d0af28f05884",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b67b669e1067bde9fa60ed256cc2d0af28f05884"
+    },
+    {
+      "title": "Native publisher topic ownership and safe immediate recreation",
+      "commit": "c00de5e4a33a884336dba4952547d3167ec74709",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c00de5e4a33a884336dba4952547d3167ec74709"
+    },
+    {
+      "title": "Local service enumeration, explicit withdrawal and complete original one-way mapping",
+      "commit": "dff6ef504711cc56d8a9be42912e4f4cf86f7c6c",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/dff6ef504711cc56d8a9be42912e4f4cf86f7c6c"
+    },
+    {
+      "title": "Four original synchronous/inputless service and exact timeout assertion ports",
+      "commit": "691f3caa73c3471d0c3773769919005624f78f58",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/691f3caa73c3471d0c3773769919005624f78f58"
+    },
+    {
+      "title": "Three original one-then-three multiple-call service assertion ports",
+      "commit": "2993f556fd2f639b2128f1d86131fb3e9976aff9",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2993f556fd2f639b2128f1d86131fb3e9976aff9"
+    },
+    {
+      "title": "Bounded duplicate service admission preserving original receiver with explicit native API disposition",
+      "commit": "7268928fd37178149ef96d648184a7aeacc351c0",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/7268928fd37178149ef96d648184a7aeacc351c0"
+    },
+    {
+      "title": "Original ordinary and inputless async service assertion ports",
+      "commit": "05247e4ef1bb2341447b723405000f233f5c4505",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/05247e4ef1bb2341447b723405000f233f5c4505"
+    },
+    {
+      "title": "Native-compatible discovery decoder with pinned producer and 31 native differential cases",
+      "commit": "c570e8cdb984bfbb4aafb3f8ca4ff2e4abd54332",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c570e8cdb984bfbb4aafb3f8ca4ff2e4abd54332"
+    },
+    {
+      "title": "Bounded known service signatures and type resolution with two complete originals and explicit partial ambiguity mapping",
+      "commit": "053b513faa88a6b19452b12e25d5021dabe03e08",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/053b513faa88a6b19452b12e25d5021dabe03e08"
+    },
+    {
+      "title": "Bounded exact-key single-hop topic remapping with native operation-specific lifecycle and two original ports",
+      "commit": "c8060e4495e9a7cb87f779e1bcd69e31b513ed0e",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c8060e4495e9a7cb87f779e1bcd69e31b513ed0e"
+    },
+    {
+      "title": "Bounded native publisher membership, graceful END-before-BYE, four threaded publication/ALL helper ports and preserved race fixtures",
+      "commit": "6a2800406358b312eb880bf843e0ef66449ce691",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/6a2800406358b312eb880bf843e0ef66449ce691"
+    },
+    {
+      "title": "Local advertised/subscribed topic ownership, one ZeroMQ filter per topic and three original ordinary/generic publication ports",
+      "commit": "befd9a7b417de265cb1dc2a292240e3be4ba248b",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/befd9a7b417de265cb1dc2a292240e3be4ba248b"
+    },
+    {
+      "title": "socket2 0.6.5 pin compatible with public Fuel and Tokio, with exact graph proof",
+      "commit": "2032012921d85cf40ca1b35d09bed617e1818802",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2032012921d85cf40ca1b35d09bed617e1818802"
+    },
+    {
+      "title": "Exported verifier Git-context isolation with actual linked-worktree and alternate-index regression",
+      "commit": "4d390a8594bd113a49f04c99d9cd6d2ce25ae4cc",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/4d390a8594bd113a49f04c99d9cd6d2ce25ae4cc"
+    },
+    {
+      "title": "Bounded provider-record type inspection preserving multiplicity and three original ServiceInfo assertion ports",
+      "commit": "32be6186dc16ca379dded9aa17ed299ef0214393",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32be6186dc16ca379dded9aa17ed299ef0214393"
+    },
+    {
+      "title": "Bounded explicit original-name unsubscribe, release-once leases and absent/repeated generic END refresh with explicit owned-buffer boundary",
+      "commit": "b3b2b9ec6d68f59fb371fb86cf5ebf40454ee5fb",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b3b2b9ec6d68f59fb371fb86cf5ebf40454ee5fb"
+    },
+    {
+      "title": "Canonical typed advertisement/publication with sealed descriptor binding, preencoding bounds and faithful original type mismatch port",
+      "commit": "2f35102930f59c53b5f38de4bb07ee7bd49c1edc",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2f35102930f59c53b5f38de4bb07ee7bd49c1edc"
+    },
+    {
+      "title": "Owned received metadata, shared raw queue and selected same-Node original assertion mapping with explicit native origin gap",
+      "commit": "b04b1f32a47709a94a932ea019978a6cc95ef831",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b04b1f32a47709a94a932ea019978a6cc95ef831"
+    },
+    {
+      "title": "Exact matching Msgs2cea810 pin with positive/negative canonical identity and unchanged Fuel graph qualification",
+      "commit": "7ce88e5fe295cda4620bc503c105ed3250d360b6",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/7ce88e5fe295cda4620bc503c105ed3250d360b6"
+    },
+    {
+      "title": "Deterministic reserved-port malformed discovery fixture with unchanged one-send/deadline/exact counter and causal negative control",
+      "commit": "fb55f8edd83d9ecc2dc48d84729503ad10830a9e",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/fb55f8edd83d9ecc2dc48d84729503ad10830a9e"
+    },
+    {
+      "title": "Three selected same-Node raw MessageInfo original assertion ports with exact raw/typed and wildcard receiver mappings",
+      "commit": "778642ca49c2813f815d405b276686f463ceeca1",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/778642ca49c2813f815d405b276686f463ceeca1"
+    },
+    {
+      "title": "Complete topic and namespace validation assertion ports with actual production empty-topic guard control",
+      "commit": "7351f8aafe6c7cd9455227afca8124e13d7c4a32",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/7351f8aafe6c7cd9455227afca8124e13d7c4a32"
+    },
+    {
+      "title": "Complete partition validation assertion port through production configuration setter",
+      "commit": "48302f17ffffa27787b0d87cceea4cc7131c3b82",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/48302f17ffffa27787b0d87cceea4cc7131c3b82"
+    },
+    {
+      "title": "Native validated fully qualified topic decomposition with complete original assertion port",
+      "commit": "32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32bbebe1a6c006fd9f488e0767dda1b87e5dbfa4"
+    },
+    {
+      "title": "Reviewed partial remapped local service listing assertion",
+      "commit": "570e07eaaea96969bf05bb7c8727099b636f6063",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/570e07eaaea96969bf05bb7c8727099b636f6063"
+    },
+    {
+      "title": "Reviewed partial remapped local topic listing assertion",
+      "commit": "3ba34745b0914d3c250aab326f937a71f802bc0a",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3ba34745b0914d3c250aab326f937a71f802bc0a"
+    },
+    {
+      "title": "Bounded discovered publisher and service listing snapshots",
+      "commit": "89c1eba9b43c1a7a905e9a749df3d24c6dec9683",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/89c1eba9b43c1a7a905e9a749df3d24c6dec9683"
+    },
+    {
+      "title": "Bounded subscriber-only discovered topic snapshot",
+      "commit": "f9932d09a9e66f71e045b34365eeddd14a69e828",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f9932d09a9e66f71e045b34365eeddd14a69e828"
+    },
+    {
+      "title": "Bounded topic publisher and subscriber descriptor snapshot",
+      "commit": "47c4cc0565a0db2650baca5b1e7913cf1ec7f393",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/47c4cc0565a0db2650baca5b1e7913cf1ec7f393"
+    },
+    {
+      "title": "Reviewed partial two-process TopicInfo assertion port",
+      "commit": "9a378daf4693f11ccb4c90bfea27ba37ef4df59e",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/9a378daf4693f11ccb4c90bfea27ba37ef4df59e"
+    },
+    {
+      "title": "Reviewed partial two-process AllTopicInfo assertion port",
+      "commit": "37858508ce734be53099fd2e66d1cc308aa75868",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/37858508ce734be53099fd2e66d1cc308aa75868"
+    },
+    {
+      "title": "Command-woken worker and faithful two-process TopicList latency assertion",
+      "commit": "48a58eed4e2a3a7613f8b0cd6b0842d7b758a848",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/48a58eed4e2a3a7613f8b0cd6b0842d7b758a848"
+    },
+    {
+      "title": "Reviewed partial one-Node ServiceList latency assertion port",
+      "commit": "cd8d76a2fa1858adc0d7e87335a0c74424665ff6",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cd8d76a2fa1858adc0d7e87335a0c74424665ff6"
+    },
+    {
+      "title": "Reviewed partial three two-process ServiceList assertion ports",
+      "commit": "628309fb92d48fa65760cc74a001ab16d8cc3b72",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/628309fb92d48fa65760cc74a001ab16d8cc3b72"
+    },
+    {
+      "title": "Reviewed partial immediate two-Node TopicList assertion and process-local publisher names",
+      "commit": "1aecfc92d051ae6ed9862942becc026c3890219d",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1aecfc92d051ae6ed9862942becc026c3890219d"
+    },
+    {
+      "title": "Reviewed partial immediate four-Node AllTopicInfo assertions and keyed endpoint snapshot",
+      "commit": "11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/11a6ab66a5f92f9b7d67dcae0d5d6f4b948711e8"
+    },
+    {
+      "title": "Reviewed staged child failure-output retention and private index snapshot",
+      "commit": "cda6f086c8dd49532d6db6a9cb17feb20f70209f",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda6f086c8dd49532d6db6a9cb17feb20f70209f"
+    },
+    {
+      "title": "Reviewed Publisher lifetime after ordinary Node destruction",
+      "commit": "1d13c010397bda79716b45e9166297db3a85e995",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d13c010397bda79716b45e9166297db3a85e995"
+    },
+    {
+      "title": "Reviewed nonblocking Publisher interest snapshot",
+      "commit": "2a545f1d1983c2f5cb1a82d9fadc18a6278175dd",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2a545f1d1983c2f5cb1a82d9fadc18a6278175dd"
+    },
+    {
+      "title": "Reviewed partial local-once delivery with remote subscriber",
+      "commit": "1422aff0a0a89b1616f7a936ed71606b5affc27f",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1422aff0a0a89b1616f7a936ed71606b5affc27f"
+    },
+    {
+      "title": "Reviewed per-registration ignore-local delivery and exact original assertion ports",
+      "commit": "77a533e8236547bc7552ffb25c1244b1a374ebd2",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/77a533e8236547bc7552ffb25c1244b1a374ebd2"
+    },
+    {
+      "title": "Reviewed process-local first delivery and native origin mapping",
+      "commit": "2d810f898d9e3fc1c3be265b03355d6b881865d0",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2d810f898d9e3fc1c3be265b03355d6b881865d0"
+    },
+    {
+      "title": "Reviewed bounded service response admission under publication flood",
+      "commit": "b8b31a29294a10cfa4ce7572dfed3a61c88a442e",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b8b31a29294a10cfa4ce7572dfed3a61c88a442e"
+    },
+    {
+      "title": "Reviewed local publication history and final-recipient fanout cost",
       "commit": "c21ffcc7ebdc108aefa1ab137f5468887a4bce96",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/c21ffcc7ebdc108aefa1ab137f5468887a4bce96"
     },
     {
-      "title": "Reviewed class-member service observations with partial native scope",
+      "title": "Reviewed owned member-callback observations and native drop timing",
+      "commit": "fc44ad1e0931c222047b8962d24716b870e495ac",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/fc44ad1e0931c222047b8962d24716b870e495ac"
+    },
+    {
+      "title": "Reviewed partial owned member-service response observations",
       "commit": "d477dd767cc524a4187f58fdb55a3bf09a2a75f9",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d477dd767cc524a4187f58fdb55a3bf09a2a75f9"
+    },
+    {
+      "title": "Reviewed request-before-local-service-advertise original",
+      "commit": "f99b8784419c60ea8e22754992793010488f72ff",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f99b8784419c60ea8e22754992793010488f72ff"
     }
   ],
   "remaining": [
-    "Native immediate-after-Request callback visibility and C++ callback registration or scheduling for both class-member service originals.",
-    "Complete NET-02 matrix, including relay and remaining topic/service lifecycle cases.",
+    "Complete NET-01 matrix including PROCESS scope, relay, default interface selection, query APIs and retained assertion ports.",
     "Wire statistics, throttling, authentication, SQLite logs/replay and complete legacy CLI.",
-    "Retained upstream assertion contracts and remaining Rust ports; historical lost-output status 101 remains unclassified.",
+    "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
   "blockers": [],
@@ -38,28 +352,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "d477dd767cc524a4187f58fdb55a3bf09a2a75f9",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d477dd767cc524a4187f58fdb55a3bf09a2a75f9",
-    "rust_tests": null,
+    "revision": "f99b8784419c60ea8e22754992793010488f72ff",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f99b8784419c60ea8e22754992793010488f72ff",
+    "rust_tests": 201,
     "coverage": {
       "lines": [
-        2500,
-        2557
+        2533,
+        2594
       ],
       "regions": [
-        3705,
-        3861
+        3739,
+        3902
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 48,
+      "ported": 49,
       "partial": 17
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40257660107"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40261695188"
     },
-    "note": "Exact protected hook and hosted run 40257660107 passed native peers, Rust tests and strict coverage with 17/17 changed production lines covered. Both class-member service originals remain partial. The earlier wrong-reference-path gate stopped in setup; historical lost-output status 101 remains unclassified."
+    "note": "Exact reviewer-bound tree857e91df; final staged gate and normal protected hook passed native originals and strict coverage2533/2594 lines,3739/3902 regions,60/60 changed. Published f99b878; hosted run40261695188 is in progress. Native callback API/scheduling and remote races remain open; historical lost-output101 remains unclassified."
   }
 }
