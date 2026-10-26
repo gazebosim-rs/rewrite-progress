@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-25T23:49:31.104684+00:00",
+  "updated_at": "2026-10-26T00:04:00.891529+00:00",
   "state": "active",
-  "summary": "Public headless simulator checks are green at 05c9291: 232 Rust tests, 24 tooling tests and 15 C++ scenarios. Updated Transport integration remains held: the reply-overload defect is fixed, while a scoped publication benchmark still shows about 7% overhead over the earlier prototype.",
+  "summary": "Published centered Z-axis cylinder support at d4aaab2 after independent native/source/assertion review and protected checks: 238 Rust tests, 24 tooling checks and 15 C++ scenarios. Exact hosted verification is running; Transport performance work continues.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -38,8 +38,8 @@
     },
     {
       "id": "LOAD-01",
-      "title": "Validate centered cylinder loading and retained capability guards",
-      "detail": "A new bounded cylinder candidate passes five geometry integration tests, the old twelve scene tests and eight fresh native TPE contact controls plus the unchanged CylinderShape original. Z-axis inertia, invalid dimensions, floor contact, IMU and original-ID loaded reset are covered. Independent review and full strict staged checks remain pending. Public simulator remains 05c9291; broader LOAD and P2 remain open."
+      "title": "Published cylinder loading; hosted verification running",
+      "detail": "Public d4aaab2 adds centered cylinders to Rapier and native TPE AABB contacts. Both engines retain IMU timestamps and original IDs through loaded reset. Independent native original1/0 plus eight contact controls, private Rust18/0 and two failing geometry mutants; protected full238 Rust/24 tools/unchanged15 C++ scenarios passed. Coverage3535/3572 lines5395/5514 regions, each crate >95%, changed Rapier9/9 scene12/12. Exact hosted40247499908 is running. Full mutable Shape API and broader LOAD/P2 remain open."
     },
     {
       "id": "PHY-05",
@@ -54,7 +54,7 @@
     {
       "id": "REF-02",
       "title": "Measure publication history optimization and current native reference",
-      "detail": "The response-lane correctness repair passes all 45 private server tests and 15 C++ scenarios; earlier matched publication variants retain their measured regressions. A new lease-owned history candidate passed the producer strict gate and independent semantic controls; its unchanged 22-sample matched protocol is running. Separately, the current public simulator/native comparison passed independent equal-work review: paired Rust/native ratio 0.7002 with 95% interval [0.5487,0.9507], limited to the selected paced two-model TPE/IMU stream fixture on a shared host. Balanced robotics and full P2 performance remain open."
+      "detail": "Six previous predeclared publication comparisons retain all samples. Latest lease-owned history variant measured 5.43% overhead over the earlier Rust prototype, still above the proposed 5% target. A reviewed ownership-only final-recipient move is now undergoing the same unchanged 22-sample protocol. Current public05/native comparison separately passed equal-work review: paired Rust/native ratio0.7002,95% interval[0.5487,0.9507], limited to the paced two-model TPE/IMU streaming fixture on a shared host. Balanced robotics, proposed-budget acceptance and P2 remain open."
     }
   ],
   "accepted_slices": [
@@ -334,29 +334,29 @@
     "FUEL-01": "in_progress"
   },
   "quality": {
-    "revision": "05c9291d1856186db0125b15a3c034daeac2b9f2",
-    "rust_tests": 232,
+    "revision": "d4aaab213aa91f64138636be401979def4daf419",
+    "rust_tests": 238,
     "coverage": {
       "lines": [
-        3516,
-        3552
+        3535,
+        3572
       ],
       "regions": [
-        5369,
-        5486
+        5395,
+        5514
       ]
     },
     "upstream": {
       "total": null,
       "ported": 3,
-      "partial": 4
+      "partial": 5
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40237907580"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40247499908"
     },
-    "note": "Independent V2 source/failure/final metadata review approved after fixing two V1 findings. Normal protected232Rust/24tools/15Cpp passes with complete retained exact tree/log/hash/coverage evidence; allcrate>95%,3516/3552lines5369/5486regions,noRustproductiondelta. Original child/index failures preserved; retention-only errors fail; missing output explicitly partial. Exact hosted40237907580 SUCCESS; prior d3a48c3 exact40236973773 SUCCESS. No broader QLT/P0/P2 or performance acceptance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/05c9291d1856186db0125b15a3c034daeac2b9f2"
+    "note": "Independent source/native/test-integrity and final metadata reviews approved. Exact staged and normal protected hook pass238 Rust/24 tools/15 unchanged C++ scenarios; every crate >95% lines and regions, changed executable lines Rapier9/9 scene12/12. Native CylinderShape remains partial; no original test retirement, solver/performance or broad P2 claim. Exact hosted verification is running; local evidence does not establish hosted success.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4aaab213aa91f64138636be401979def4daf419"
   },
   "phase_status": {
     "P0": "in_progress",
