@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T03:35:54.288654Z",
+  "updated_at": "2026-10-26T03:53:53.516575Z",
   "state": "active",
   "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
   "model": "Coordinator; architecture, integration and review",
@@ -23,8 +23,8 @@
     },
     {
       "id": "PHY-02",
-      "title": "Implement confirmed D23 static and world-axis corrections",
-      "detail": "Confirmed D23 corrected TPE source V2 frozen ce831415 under independent review/full staged checks. V1 full gate passed246 Rust/35tools/15realCpp, everycrate>95% (3548/3584lines5419/5538regions), changedTPE27/27 scene11/11. Reviewer found new native-runner XML skip/error admission gap despite clean actual XML; V1 not approved. V2 strict completed-original guard adds6 regression tests (all41tools pass; exactoldpredicate mutant fails); fresh6native full-state observations/unchanged Model.BasicAPI1/0 replayed, all30old Serverinput observations and fixtures retained. Empty static models remain fixed without contact bounds through pause/core+loaded reset. Corrected-source review, full/normal/hosted gates pending; broader TPE/P2 open."
+      "title": "Published corrected TPE policy; hosted qualification pending",
+      "detail": "Public ab8d1ad implements confirmed D23: static models, including empty models without contact bounds, remain immobile; supported rotated model/link velocity commands honor world axes. Independent source/API/native/assertion/projection and final metadata reviews passed. Exact corrected staged and normal protected gates passed246 Rust/41tools/15 actual C++ child clients, every production crate>95% lines/regions, workspace3548/3584 and5419/5538, changedTPE27/27 scene11/11. Native6 full-state observations plus unchanged Model.BasicAPI1/0 and thirty Server input observations retained. Reviewed V1 XML guard gap fixed with six tooling controls and red old-predicate mutant. Exact hosted40266257423 in progress; no accepted credit yet. General link-offset twist and full PHY02/P2 remain open."
     },
     {
       "id": "FUEL-01",
@@ -357,16 +357,16 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "f118fff9a7ccea9a44e7f0e0119295cb723b0e72",
-    "rust_tests": 239,
+    "revision": "ab8d1adf47364c61620f57d95e07b0906351dae1",
+    "rust_tests": 246,
     "coverage": {
       "lines": [
-        3535,
-        3572
+        3548,
+        3584
       ],
       "regions": [
-        5395,
-        5514
+        5419,
+        5538
       ]
     },
     "upstream": {
@@ -375,11 +375,11 @@
       "partial": 5
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40256611703"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40266257423"
     },
-    "note": "Independent corrected-source/evidence/final binding approved after finding and fixing V1 inherited-Git-env false qualification. Exact staged and normal239 Rust/35 tooling/15 unchanged C++ scenarios pass, every production crate>95% lines/regions; workspace3535/3572 and5395/5514, no executable Rust delta. Exact hosted40256611703 SUCCESS on publicf118fff. Reference listing237/2388 and724 retained gaps is inventory only; full REF/P0/P2 remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f118fff9a7ccea9a44e7f0e0119295cb723b0e72"
+    "note": "Public ab8d1ad passed independent source/native/assertion/projection and final metadata reviews plus exact staged and normal protected246 Rust/41 tooling/15 real C++ child-client gates, all9 production crates>95% lines/regions. Workspace3548/3584lines5419/5538regions; changedTPE27/27 scene11/11. Hosted40266257423 is in progress, so not yet credited as accepted. Native quirks explicitly corrected under confirmed D23; full reference image/inventory, PHY02 and P2 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ab8d1adf47364c61620f57d95e07b0906351dae1"
   },
   "phase_status": {
     "P0": "in_progress",
