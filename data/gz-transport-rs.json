@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T17:40:36Z",
+  "updated_at": "2026-10-26T17:56:51Z",
   "state": "active",
-  "summary": "Sixty-five reviewed complete and nineteen partial upstream ports remain accepted. Public f963c83 passed exact source and normal protected checks for two mixed-subscriber originals; its new hosted run is pending. Broader NET-01/NET-02 remains open.",
+  "summary": "Sixty-seven reviewed complete and nineteen partial upstream ports. Public f963c83 passed exact source, normal protected and hosted checks for two remote mixed-subscriber originals; broader NET-01/NET-02 remains open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public f963c83 passed the exact source gate and mandatory normal protected hook with 227 Rust tests, 24 tooling tests and all required native groups. Independent source and final metadata reviews are approved; all 209 source and 209 normal reports remain retained. Exact hosted run 40370522967 is in progress. Accepted credit remains at 65 complete / 19 partial until hosted qualification."
+      "detail": "Public f963c83 is accepted on exact hosted run 40370522967 SUCCESS: 67 complete / 19 partial ports and 227 Rust tests. Exact source and mandatory normal protected checks passed with 24 tooling and all required native groups. Independent source/final metadata reviews and 209 source + 209 normal reports are retained. Broader NET-01 scope remains open."
     },
     {
       "id": "NET-02",
       "title": "Retained topic, service and origin contracts",
-      "detail": "The next two originals retain 500 ms before three-Node construction, three subscription admissions, the 2500 ms wrong=false/correct=true/generic=true flags, and generic callback Topic without @. Independent native 2 / Rust 4 replay and three private controls verified primary flag and metadata predicates; restored source passed 4/0. Broader native callback, storage and scheduling parity remains unqualified. The next functional scope under static study is publisher PROCESS scope; no implementation or scope baseline is claimed."
+      "detail": "The accepted mixed-subscriber originals retain 500 ms before three-Node construction, three admissions, 2500 ms wrong=false/correct=true/generic=true flags, and generic Topic without @. Independent native 2 / Rust 4 replay and three controls verified the primary predicates; restored source passed 4/0. Next is native characterization of Process/Host publication scopes before implementation. No scope baseline or production change is claimed yet."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Fixed remote typed/raw mixed-subscriber originals with live wrong/correct/generic observers and original Topic metadata",
+      "commit": "f963c83a736701b64e2a529cddf068099c73e416",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f963c83a736701b64e2a529cddf068099c73e416"
+    },
     {
       "title": "Fixed remote typed/raw wrong-subscription originals with live owned observers and native traffic controls",
       "commit": "9737abdee625bcb6ef9d5b59dbcf3f30550eacca",
@@ -437,13 +442,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 65,
+      "ported": 67,
       "partial": 19
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40370522967"
     },
-    "note": "Reviewed source 6032a7fa and final tree fb5a4f95 passed exact source and mandatory normal protected checks on public f963c83. All 227 Rust tests passed with zero failed or ignored, plus 24 tooling tests. Native Node 56, pub/sub 11, ordinary service 6, inputless 5 and other required groups passed. Strict coverage remains 2645/2714 lines and 3893/4071 regions; no production code changed. Independent raw 173/native 2/Rust 4 replay and three private controls verified both primary flag predicates and generic Topic metadata; the metadata control retained two expected join propagations. All 209 source and 209 normal reports remain retained. Exact new hosted run 40370522967 remains pending; accepted counts stay 65/19. Earlier native-loader setup failure, callback/storage/scheduling limits, broader NET scope and historical lost-output 101 remain explicit."
+    "note": "Reviewed source 6032a7fa and final tree fb5a4f95 passed exact source, mandatory normal protected and exact hosted run 40370522967 SUCCESS on public f963c83. All 227 Rust tests passed with zero failed or ignored, plus 24 tooling tests. Native Node 56, pub/sub 11, ordinary service 6, inputless 5 and other required groups passed. Strict coverage remains 2645/2714 lines and 3893/4071 regions; no production code changed. Independent raw 173/native 2/Rust 4 replay and three private controls verified primary flags and generic Topic metadata; the metadata control retained two expected join propagations. All 209 source and 209 normal reports remain retained. Native callback/storage/scheduling limits, earlier native-loader setup failure, broader NET scope and historical lost-output 101 remain explicit."
   }
 }
