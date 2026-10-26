@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T18:59:04.601329+00:00",
+  "updated_at": "2026-10-26T19:24:17.774523+00:00",
   "state": "active",
-  "summary": "Capsule support remains published and CI-green. Runtime IMU rate control is under development: native boundary/phase references and a Rust scene kernel pass focused checks; server interoperability/reset evidence remains open.",
+  "summary": "Capsule support remains published and CI-green. Runtime IMU rate services now pass all51 server library tests; independent native TPE/DART reset packet references are approved. Full-system scheduling, stale-request generations and new C++ interoperability remain under development.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "Runtime IMU rate control under development; full sensor scope open",
-      "detail": "Publicd3a48c3 omits only disabled orientation field; acceleration, gyro, all covariance arrays, timestamps, metadata, sequence, noise and loaded reset preserved. Native4controls and old11+new4 actualCpp modes, independent review/two failing mutants and protected232Rust gate pass. Exact hosted40236973773 SUCCESS. Runtime toggling/custom/named frames, sensor registration/triggers/families and broadSENSOR01 remain open. Runtime-rate WIP:unchanged native service originals2/0;independentc2ac/4f2a replay45admission+5phase+12definednonfinite controls. AuthorRustsceneAPI3integrationtests+27SceneLibpass,phasepreserved andloadernumericalvalidationunchanged.No newpubliccommit/fullstrictcoverage/serverDouble\u2192Emptyendpoint/sharedtopic/Serverreset/legacynewclient acceptance yet. Existingpublishedquality/pinsremainunchanged. Independent kernel static review62fe32f3 now passes: seven files and45+5+12 native projections bound; no runtime/full/coverage acceptance. Capacity-aware distinct-provider Server pool draft written but not linked or compiled. Reset collector revised after independent review to bind callback FIFO fences, actual tick boundaries, qualified binary lineage and selected inline headers; native execution awaits prereview and shared strict-gate release. Five failure-retention controls pass without native credit."
+      "detail": "Runtime-rate WIP: unchanged native originals2/0; approved base45 admissions+5 phase+12 nonfinite rows and two-provider/single-recipient reference. Local Scene get/set tests3/0+SceneLib27/0. Server warm minimal worker pool now passes allocator3/0+wire3/0 and all51 ServerLib tests (old45+new6), including paused rates, malformed/local ignored outcomes, deletion/provider restoration, both resets, shutdown and shared-topic multiplicity. Empty is one-way: handoff never proves completion. Independent static kernel62fe and Server1b9b bind exact source, no runtime/full coverage credit. Native finite reset author+independent TPE/DART approved66aedb:8 datasets/384 decoded packets,48samples/71ticks each; reset restores1000Hz. Remaining: source-discovered raw future-deadline global gate for0/NaN (new paired connected-peer capture pending prereview), stale queued-request generation cancellation, actual new C++ client/acquisition, full strict coverage, metadata/final review, protected normal+exactCI. Public accepted quality stays22a536c; no SENSOR01/P2 completion."
     },
     {
       "id": "SLICE-01",
