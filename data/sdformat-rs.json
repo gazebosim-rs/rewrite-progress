@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T09:51:40.040886+00:00",
+  "updated_at": "2026-10-26T10:03:41.569991+00:00",
   "state": "active",
   "summary": "Bounded Physics XML values are public and pass exact hosted CI after independent partial review and normal hooks. There are 127 complete and 24 partial reviewed original cases. Element, console and broader SDF scope remain open.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-01",
       "title": "Inventory world atmosphere metadata",
-      "detail": "Public e262de3 passed exact hosted run 40302323810 and normal hooks with 316 Rust tests and 16 tooling tests. Read-only inventory now covers native Atmosphere defaults/set/copy values and World metadata. Native boundary probes and a bounded source claim are next; no new source is accepted yet."
+      "detail": "Seven pinned native Atmosphere constructor/set/copy/move cases passed and bounded ownership is recorded. Type, numeric and version probes precede parser edits; both probes and builds are held for the Transport timing gate. The slice proposes owned values and a public World.atmosphere field, with a contract note for struct literals. No new source is accepted; public quality below remains e262de3."
     }
   ],
   "accepted_slices": [
