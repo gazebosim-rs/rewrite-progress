@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T19:00:11Z",
+  "updated_at": "2026-10-26T19:10:37Z",
   "state": "active",
-  "summary": "Sixty-seven reviewed complete and nineteen partial upstream ports. Public f963c83 passed exact source, normal protected and hosted checks for two remote mixed-subscriber originals; broader NET-01/NET-02 remains open.",
+  "summary": "Sixty-seven reviewed complete and nineteen partial upstream ports remain accepted. Public 7cf70b2 passed exact source and normal protected checks for message publication scopes; its new hosted run is pending. Broader NET-01/NET-02 remains open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public f963c83 remains accepted on exact hosted run 40370522967 SUCCESS: 67 complete / 19 partial ports and 227 Rust tests. The next publisher-scope source passed its full strict gate with 234 Rust and 24 tooling tests, 2702/2778 production lines, 3971/4157 regions and 73/73 added executable lines covered. Independent source/control and full-evidence reviews are approved; all 209 source reports are retained. Exact final metadata binding, the normal hook and new hosted qualification remain pending."
+      "detail": "Public 7cf70b2 passed exact source, independent source/control/full/final reviews and the mandatory normal protected hook: 234 Rust tests, 24 tooling tests, 2702/2778 production lines, 3971/4157 regions and 73/73 added executable lines covered. All 209 source and 209 normal reports are retained. Exact hosted run 40384167730 is in progress; accepted credit remains 67 complete / 19 partial until success."
     },
     {
       "id": "NET-02",
@@ -427,17 +427,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "f963c83a736701b64e2a529cddf068099c73e416",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/f963c83a736701b64e2a529cddf068099c73e416",
-    "rust_tests": 227,
+    "revision": "7cf70b20827fe1d80dc01f4ec3aa5f658b3c632c",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/7cf70b20827fe1d80dc01f4ec3aa5f658b3c632c",
+    "rust_tests": 234,
     "coverage": {
       "lines": [
-        2645,
-        2714
+        2702,
+        2778
       ],
       "regions": [
-        3893,
-        4071
+        3971,
+        4157
       ]
     },
     "upstream": {
@@ -446,9 +446,9 @@
       "partial": 19
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40370522967"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40384167730"
     },
-    "note": "Reviewed source 6032a7fa and final tree fb5a4f95 passed exact source, mandatory normal protected and exact hosted run 40370522967 SUCCESS on public f963c83. All 227 Rust tests passed with zero failed or ignored, plus 24 tooling tests. Native Node 56, pub/sub 11, ordinary service 6, inputless 5 and other required groups passed. Strict coverage remains 2645/2714 lines and 3893/4071 regions; no production code changed. Independent raw 173/native 2/Rust 4 replay and three private controls verified primary flags and generic Topic metadata; the metadata control retained two expected join propagations. All 209 source and 209 normal reports remain retained. Native callback/storage/scheduling limits, earlier native-loader setup failure, broader NET scope and historical lost-output 101 remain explicit."
+    "note": "Reviewed source 12b1fbbe and final tree 94981737 passed exact source and mandatory normal protected checks on public 7cf70b2. All 234 Rust tests passed with zero failed or ignored, plus 24 tooling tests and all required native groups including Node 60. Strict coverage is 2702/2778 lines and 3971/4157 regions; all 73 changed executable lines are covered. Independent fresh native 6 / Rust 95 replay and three production controls verified scope metadata, Process readiness and Host query admission; restored source passed 95/0. All 209 source and 209 normal reports remain retained. Native Process heartbeat behavior, owned callback/snapshot adaptation, physical multi-host and broader service/performance limits, author and reviewer failure receipts remain explicit. New exact hosted run 40384167730 is pending; accepted credit remains 67/19."
   }
 }
