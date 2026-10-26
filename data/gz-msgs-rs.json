@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T00:23:23Z",
+  "updated_at": "2026-10-26T00:30:59Z",
   "state": "active",
-  "summary": "Bounded Time sec/nsec numeric JSON is reviewed and public after exact gates; hosted qualification is running. MSG-02 remains open.",
+  "summary": "Bounded Time sec/nsec numeric JSON passed independent review, protected checks and exact hosted CI; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public Time numeric slice a6123a6 passed independent source/assertion and final metadata review, exact staged gate, and normal protected hook: 121 Rust tests, strict >95% production coverage, 2,563 pinned native status/full-wire observations (2,562 distinct type/input pairs), 21 retained fixture hashes. Hosted run 40249108460 is in progress. The first source gate stale historical Time assertion failure was retained and corrected without changing prior fixtures. Broader MSG-02 grammar and release qualification remain open."
+      "detail": "Time numeric slice a6123a6 is public and hosted-green on exact run 40249108460: reviewer-bound seven-file tree, 121 Rust checks, strict >95% production coverage, 2,563 native status/full-wire observations (2,562 distinct type/input pairs), 21 prior fixture hashes exact. The initial stale historical assertion failure was retained and corrected without changing prior fixtures. Next measured gap is quoted Double_V/Float_V numeric overflow and noncanonical nonfinite spellings; isolated read-only 128-row characterization/source audit underway. Broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -282,6 +282,11 @@
       "title": "Bounded Double_V/Float_V leading-zero floating JSON with 2,424 native rows",
       "commit": "17b0b9b20d3886fe19eb274c0525afbc844cc274",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/17b0b9b20d3886fe19eb274c0525afbc844cc274"
+    },
+    {
+      "title": "Bounded Time sec/nsec numeric JSON with 2,563 native observations",
+      "commit": "a6123a61606bedfa8a37427c32a0db4bbc155768",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a6123a61606bedfa8a37427c32a0db4bbc155768"
     }
   ],
   "remaining": [
@@ -308,10 +313,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40249108460"
     },
-    "note": "Exact reviewer-bound seven-file staged gate and normal protected hook passed on tree1af48c3d: 121 Rust checks, strict production >95% coverage, 2,563 pinned native status/full-wire observations with one duplicate type/input across retained fixtures, 21 prior fixture hashes exact. Independent reviewer reproduced corpus and 120 additional bounded forms; general MSG-02 remains open. Hosted run 40249108460 is in progress, so hosted success is not claimed.",
+    "note": "Exact reviewer-bound seven-file staged gate, normal protected hook and hosted run 40249108460 passed on public a6123a6: 121 Rust checks, strict production >95% coverage, 2,563 pinned native status/full-wire observations with one retained duplicate type/input, 21 prior fixture hashes exact. Independent reviewer reproduced corpus and 120 additional bounded forms; general MSG-02 remains open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a6123a61606bedfa8a37427c32a0db4bbc155768"
   }
 }
