@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T11:49:26.810039+00:00",
+  "updated_at": "2026-10-26T11:59:27.020139+00:00",
   "state": "active",
-  "summary": "Explicit SDK client qualification is published after independent fifteen-scenario replay and the mandatory normal gate; exact hosted CI is running. Formal headless and full rewrite acceptance remain open.",
+  "summary": "SDK-qualified fifteen-scenario C++ client interoperability is published and exact CI-green. Next work audits pinned compiler-diagnostic registrations; formal headless and full rewrite acceptance remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Qualify original client scenarios inside the clean SDK",
-      "detail": "Public b65bc63 preserves the default legacy reference and adds an explicit validated SDK profile. Both author and independent fresh Rust/native runs passed all15 unchanged actual C++ scenarios in immutable SDK, empty stderr and matching executable hashes. Independent source/final binding and normal protected246 Rust/64 tooling/15 legacy C++ checks passed, strict coverage unchanged. Exact hosted40317804892 pending; broad IO/P0/P2 remain open."
+      "detail": "Public b65bc63 exact hosted40317804892SUCCESS follows independent source/final review, author and independent15-scenario actual SDK replay, and mandatory normal246 Rust/64 tooling/15 legacy C++ gate. All15 SDK client binaries match with empty stderr; default legacy reference/pins/assertions unchanged. Functional selected interoperability accepted; broad IO/P0/P2 remain open."
     },
     {
       "id": "REF-02",
       "title": "Audit remaining native test/profile inventory",
-      "detail": "Accepted8ec3644 exacthosted40293345399SUCCESS lists579 result-guard registrations separately from tests, preserving578 native configs/4589case expansions.18 explicit gaps remain:17non-gtest wrappers and1Zenoh-disabled emptybinary. ReferenceSDKd0 bytes/embeddedcollector/old597gap report remain unchanged. Next source-semantic audit must distinguish C++symbol/compilefail/buildpolicy, Pythonbindings and CLIdispatch responsibilities without retiring behavior or crediting passes. Fullprofile execution/source-ledger reconciliation and REF02/P0/P2 remain open."
+      "detail": "Published8ec3644 inventory preserves579 result guards/578 configurations/4589 case expansions and18 gaps. New bounded two-file draft recognizes exactly7 pinned physics/plugin compiler-diagnostic registrations via helper/CMake/source/target/diagnostic/command hashes, without executing or counting cases/passes/ports/retirements. Focused19/0 and independent source review passed; new outer checker22 synthetic rejection controls pass, runner preuse review pending. Actual native listing, full source/normal/hosted gates remain. Other10 wrappers plus empty Zenoh profile gap and full REF02/P0 stay open."
     },
     {
       "id": "CORE-02",
@@ -63,6 +63,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Explicit immutable SDK client qualification with independently replayed fifteen unchanged C++ scenarios",
+      "commit": "b65bc63926c0398181a6924a418bbd7a7d10842a",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b65bc63926c0398181a6924a418bbd7a7d10842a"
+    },
     {
       "title": "Reviewed native result-guard registrations, preserved case/config payloads and explicit18 remaining gaps",
       "commit": "8ec364420411d93f4d215ec0ae9f317d1739b3ff",
@@ -390,10 +395,10 @@
       "partial": 5
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40317804892"
     },
-    "note": "Public b65bc63 passed independent source/assertion/projection/final review, actual SDK author and independent15-client replay, exact source and mandatory normal protected246 Rust/64 tooling/15 legacy C++ scenarios. All9 production crates>95% lines/regions; no Rust production edits. Exact hosted CI40317804892 is pending. No formal headless, full rewrite or performance completion claim.",
+    "note": "Public b65bc63 exact hosted40317804892SUCCESS. Independent source/assertion/projection/final review, author and independent15-client SDK replay and mandatory normal protected246 Rust/64 tooling/15 legacy C++ scenarios all passed. All9 production crates>95% lines/regions; workspace3548/3584 and5419/5538. No Rust production edits or full headless/P0/P2/performance completion claim.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b65bc63926c0398181a6924a418bbd7a7d10842a"
   },
   "phase_status": {
