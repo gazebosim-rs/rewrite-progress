@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T00:04:00.891529+00:00",
+  "updated_at": "2026-10-26T00:18:03.375678+00:00",
   "state": "active",
-  "summary": "Published centered Z-axis cylinder support at d4aaab2 after independent native/source/assertion review and protected checks: 238 Rust tests, 24 tooling checks and 15 C++ scenarios. Exact hosted verification is running; Transport performance work continues.",
+  "summary": "Centered cylinder support is accepted at d4aaab2: independent review, protected238 Rust/24 tooling/15 C++ checks and exact hosted CI all passed. The next Transport consumer integration is under strict verification and independent review.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -38,8 +38,8 @@
     },
     {
       "id": "LOAD-01",
-      "title": "Published cylinder loading; hosted verification running",
-      "detail": "Public d4aaab2 adds centered cylinders to Rapier and native TPE AABB contacts. Both engines retain IMU timestamps and original IDs through loaded reset. Independent native original1/0 plus eight contact controls, private Rust18/0 and two failing geometry mutants; protected full238 Rust/24 tools/unchanged15 C++ scenarios passed. Coverage3535/3572 lines5395/5514 regions, each crate >95%, changed Rapier9/9 scene12/12. Exact hosted40247499908 is running. Full mutable Shape API and broader LOAD/P2 remain open."
+      "title": "Accepted centered cylinder loading; broader scene capabilities remain",
+      "detail": "Public d4aaab2 adds centered cylinders to Rapier and native TPE AABB contacts. Both engines retain IMU timestamps and original IDs through loaded reset. Independent native original1/0 plus eight contact controls, private Rust18/0 and two failing geometry mutants; protected full238 Rust/24 tools/unchanged15 C++ scenarios passed. Coverage3535/3572 lines5395/5514 regions, each crate >95%, changed Rapier9/9 scene12/12. Exact hosted40247499908 SUCCESS. Full mutable Shape API and broader LOAD/P2 remain open."
     },
     {
       "id": "PHY-05",
@@ -48,16 +48,21 @@
     },
     {
       "id": "IO-01",
-      "title": "Finish reviewed Transport integration",
-      "detail": "The original failed service-request gate is retained. A bounded response lane fixes the reproduced QueueFull path; public Transport b8b31a2 has exact hosted success. Private frozen integration passed the unchanged 45 server tests and all 15 C++ scenarios. Cache optimizations pass their producer correctness gates, but final simulator adoption still requires performance review, a new public producer pin, and fresh full staged checks. Public simulator still uses Transport2a."
+      "title": "Validate published Transport c21 consumer integration",
+      "detail": "Public Transport c21ffcc passed source/performance/final review and normal protected hook; exact producer hosted40248292544 is running. Root candidate c6beec57 is frozen on accepted cylinder d4aaab2; fresh239 Rust/24 tooling/15 C++ strict gate and independent pin/API/test review are running. Old failed f816 adoption remains unchanged. Public simulator still pins2a until the new consumer gates and exact producer hosted acceptance pass."
     },
     {
       "id": "REF-02",
-      "title": "Measure publication history optimization and current native reference",
-      "detail": "Six previous predeclared publication comparisons retain all samples. Latest lease-owned history variant measured 5.43% overhead over the earlier Rust prototype, still above the proposed 5% target. A reviewed ownership-only final-recipient move is now undergoing the same unchanged 22-sample protocol. Current public05/native comparison separately passed equal-work review: paired Rust/native ratio0.7002,95% interval[0.5487,0.9507], limited to the paced two-model TPE/IMU streaming fixture on a shared host. Balanced robotics, proposed-budget acceptance and P2 remain open."
+      "title": "Publish complete retained performance history and qualify new pin",
+      "detail": "All seven predeclared Transport comparisons retain all154 observations, including regressions and warmup pairs. Final paired candidate/earlier-Rust ratio1.03598,95% interval[0.99243,1.07658]: point overhead3.598% is inside proposed5%, upper-bound guarantee remains unproven. Independent public projection review approved all samples/statistics. Separate historical public05/native report retains all11 pairs, ratio0.70018 limited to selected TPE/IMU streams. Full balanced robotics, ratified budgets and P2 remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Centered Z-axis cylinder loading, dynamics and native TPE contact controls",
+      "commit": "d4aaab213aa91f64138636be401979def4daf419",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4aaab213aa91f64138636be401979def4daf419"
+    },
     {
       "title": "Retain exact staged logs and preserve original verification failures",
       "commit": "05c9291d1856186db0125b15a3c034daeac2b9f2",
@@ -352,10 +357,10 @@
       "partial": 5
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40247499908"
     },
-    "note": "Independent source/native/test-integrity and final metadata reviews approved. Exact staged and normal protected hook pass238 Rust/24 tools/15 unchanged C++ scenarios; every crate >95% lines and regions, changed executable lines Rapier9/9 scene12/12. Native CylinderShape remains partial; no original test retirement, solver/performance or broad P2 claim. Exact hosted verification is running; local evidence does not establish hosted success.",
+    "note": "Independent source/native/assertion and final metadata reviews approved; exact staged and normal protected hook238 Rust/24 tools/15 unchanged C++ scenarios pass. Every production crate >95% lines/regions; workspace3535/3572 lines5395/5514 regions; changed Rapier9/9 and scene12/12. Exact hosted40247499908 SUCCESS on public d4aaab2. Native CylinderShape remains partial; no original retirement, solver/performance or full LOAD/PHY/P2 acceptance.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4aaab213aa91f64138636be401979def4daf419"
   },
   "phase_status": {
