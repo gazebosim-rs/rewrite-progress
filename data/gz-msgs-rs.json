@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T02:24:27Z",
+  "updated_at": "2026-10-26T02:29:29Z",
   "state": "active",
-  "summary": "Portable native JSON replay verifier repair is public after protected checks; hosted CI is running and MSG-02 remains open.",
+  "summary": "Reviewed unquoted Float_V rounding and portable native replay passed protected checks and exact hosted CI; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public Float_V max-rounding cdf25b0 had hosted failure40257819363 before native replay because of cross-host ELF byte equality. Reviewer-bound verifier repair448267a passed normal123 Rust/all3,037 exact native checks and is hosted run40258911434 pending. Eighteen Double_V one-bit wire gaps and broader MSG-02 remain open."
+      "detail": "Public Float_V max-rounding cdf25b0 plus independently reviewed cross-host native verifier repair448267a passed 123 Rust, all3,037 exact native status/full-wire observations, strict coverage, normal hooks and hosted run40258911434. Prior hosted run40257819363 failed before native replay on host-specific ELF equality and remains recorded. Eighteen Double_V one-bit decimal wire gaps remain the next bounded work; broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -297,6 +297,11 @@
       "title": "Bounded unquoted Float_V maximum rounding with 3,037 native observations and 18 explicit Double wire gaps",
       "commit": "cdf25b076ef4a7d3ea1d3449d74c688792f6197c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/cdf25b076ef4a7d3ea1d3449d74c688792f6197c"
+    },
+    {
+      "title": "Portable pinned native JSON replay with 3,037 exact outcomes across compiler builds",
+      "commit": "448267a5e3e64ed2260a01118f82307bc566cd8b",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/448267a5e3e64ed2260a01118f82307bc566cd8b"
     }
   ],
   "remaining": [
@@ -323,10 +328,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40258911434"
     },
-    "note": "Normal protected hook on reviewer-bound repair448267a passed123 Rust/all3,037 mandatory native status/full-wire outcomes and strict production coverage. Prior hosted40257819363 failed at cross-host ELF equality before replay; repaired hosted40258911434 pending. Historical fixture hashes/source/version remain pinned; broader MSG-02 open.",
+    "note": "Reviewer-bound four-file verifier repair and normal protected hook passed 123 Rust, all3,037 exact native outcomes and strict >95% owned production line/region coverage. Hosted40258911434 succeeded, including staged-tree and fresh-cache source-package gates. Earlier hosted40257819363 failed before replay at cross-host ELF equality and remains retained. Eighteen Double_V decimal wire gaps and broader MSG-02 open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/448267a5e3e64ed2260a01118f82307bc566cd8b"
   }
 }
