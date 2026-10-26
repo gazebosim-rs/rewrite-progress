@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T20:22:31.760320+00:00",
+  "updated_at": "2026-10-26T20:24:50.651386+00:00",
   "state": "active",
-  "summary": "Owned Model namespace metadata and Model/Frame cloning are public with exact hosted CI success after independent source/final reviews and mandatory normal hooks. Five original name and optional namespace cases bring the accepted ledger to 163 complete and 25 partial; XML namespace parsing and broader SDF semantics remain open.",
+  "summary": "Model and include namespace XML metadata is public with exact hosted CI success after independent source/helper/final reviews and mandatory normal hooks. Native empty/override/CDATA/rename behavior is retained across the bounded 98-case corpus. The ledger remains 163 complete and 25 partial originals; broader SDF-02 work remains open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify model/include namespace XML parsing",
-      "detail": "Public candidate a912e8f passed independent source, portable-helper and final reviews, the full 367 Rust/16 tooling gate, and mandatory normal hooks. Strict coverage is 4799/4823 lines and 7945/8187 regions; all 21 changed lines are covered. Exact hosted run 40394672288 is in progress. Accepted metrics remain on 5306e46; the ledger stays 163 complete/25 partial. The 98 native projections are supplemental, with no new original retirement or SDF-02 completion."
-    },
-    {
-      "id": "SDF-02",
       "title": "Prepare root-level model include loading",
-      "detail": "The exact unchanged native IncludesTest.IncludeModelEmptyNamespace baseline passed 1/0 before source edits. The Rust root dispatcher currently rejects include elements. A bounded follow-on will preserve all six original predicates and the exact 1.6 mesh fixture through an injected resolver; merge/multiple/mixed-root and pose/error behavior needs native characterization. No new implementation or credit yet."
+      "detail": "The exact unchanged native IncludesTest.IncludeModelEmptyNamespace baseline passed 1/0 before source edits, preserving six original predicates and the exact 1.6 mesh fixture. The Rust root dispatcher currently rejects include elements. Root merge/multiple/mixed-root, pose/error and provenance behavior needs native characterization before a bounded resolver-based implementation. No new code or retirement yet."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Parse model and include namespace metadata with native XML semantics",
+      "commit": "a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5"
+    },
     {
       "title": "Retain owned Model namespaces and clone nested Model metadata",
       "commit": "5306e46c44b8fb6f8db84f442e65e5bb3c439f1f",
@@ -600,17 +600,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "5306e46c44b8fb6f8db84f442e65e5bb3c439f1f",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5306e46c44b8fb6f8db84f442e65e5bb3c439f1f",
-    "rust_tests": 362,
+    "revision": "a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5",
+    "rust_tests": 367,
     "coverage": {
       "lines": [
-        4778,
-        4802
+        4799,
+        4823
       ],
       "regions": [
-        7924,
-        8166
+        7945,
+        8187
       ]
     },
     "upstream": {
@@ -620,8 +620,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40378111267"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40394672288"
     },
-    "note": "Public 5306e46 passed independent source/final review, the full author gate, mandatory normal hooks and exact hosted core: 362 Rust tests, 16 tooling tests, strict 4778/4802 lines and 7924/8166 regions, all 6 changed lines covered, no exclusions. Five fixed Model ownership originals retain every name, optional presence and namespace value predicate. Fresh private Rust 8/0 and native 6/0 passed, with clone namespace-loss and raw-placeholder controls followed by exact restored 8/0. Construction namespace, rename, nested ownership and Unsupported XML checks are supplemental. XML/include/version/merge loading, extra Frame originals, Element, graph rebuilding, C++ identity, runtime, performance and SDF-02 completion remain unqualified."
+    "note": "Public a912e8f passed independent semantic/helper/final reviews, full author checks, mandatory normal hooks and exact hosted core. 367 Rust tests and 16 tooling tests passed; strict unfiltered coverage is 4799/4823 lines and 7945/8187 regions, all 21 changed lines covered, staged all-source 4573/4590. Native 98-row source/actual/replay and two production rejection controls passed after exact restoration. Five original Model ownership bodies are unchanged. Root-level include loading, Rust native OriginalVersion access, serialization, graph mutation/runtime, performance and SDF-02 completion remain unqualified; no original retirement was added. Earlier preflight and verifier setup failures remain retained and uncredited."
   }
 }
