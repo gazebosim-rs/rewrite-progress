@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T06:19:50Z",
+  "updated_at": "2026-10-26T06:36:44Z",
   "state": "active",
-  "summary": "The bounded DOMLight.DefaultConstruction value observations are public and hosted-green after independent partial review. 117 complete and 17 partial original cases are reviewed; Light Element and standalone semantic-pose errors remain unmapped.",
+  "summary": "Five fixed observable DOMLight copy and move originals are public and hosted-green after independent review. 122 complete and 17 partial original cases are reviewed; Light Element, semantic-pose errors and broad XML semantics remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port native Light copy and move originals",
-      "detail": "Pinned five Light ownership originals pass natively 5/0. Isolated test-only Rust5/0 and full strict source gate pass; independent source/final review and publication remain pending. No C++ pointer identity or moved-from state claim."
+      "title": "Port bounded Light XML roundtrip",
+      "detail": "Pinned native DOMLight.ToElement and ToElementErrorOutput originals pass2/0; isolated standalone Light XML emit/load fixed-value prototype and selected Rust tests pass. Element ownership/identity, console capture and general schema remain partial; independent review and publication pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Light copy and move originals",
+      "commit": "c70a086beda8a1dd6360ae07455659d871a20abd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c70a086beda8a1dd6360ae07455659d871a20abd"
+    },
     {
       "title": "Port native Light default values as partial original",
       "commit": "b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61",
@@ -525,9 +530,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61",
-    "rust_tests": 288,
+    "revision": "c70a086beda8a1dd6360ae07455659d871a20abd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c70a086beda8a1dd6360ae07455659d871a20abd",
+    "rust_tests": 293,
     "coverage": {
       "lines": [
         4375,
@@ -540,13 +545,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 117,
+      "ported": 122,
       "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40278755806"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40280010042"
     },
-    "note": "Pinned DOMLight.DefaultConstruction native1/0 and private raw-parent Rust selected1/0. Fixed owned type/name/raw+relative pose/flags/colors/scalars map; Element null and two standalone SemanticPose.Resolve nonempty errors remain unported. Independent source/final receipts SHAdcc9b480/575d7b9b, normal protected hook288 Rust/16 tools, production4375/4396 lines7411/7631 regions, author changed10/10. V6 SDK/Msgs overlap was correctness-only."
+    "note": "Pinned five DOMLight copy/move originals native5/0 and reviewer raw-parent Rust5/0. Fixed final value/name assertions retained via Clone/clone_from/move/replace; C++ operator/pointer/moved-from state unclaimed. Independent source/final receipts SHA5766dfda/efca13a0, normal protected hook293 Rust/16 tools, production4375/4396 lines7411/7631 regions, no production changed. Root V6 SDK overlap was correctness-only."
   }
 }
