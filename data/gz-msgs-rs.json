@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T00:07:32Z",
+  "updated_at": "2026-10-26T00:23:23Z",
   "state": "active",
-  "summary": "Leading-zero float JSON is public and hosted green; bounded Time numeric conversion passed its source gate and awaits independent review. MSG-02 remains open.",
+  "summary": "Bounded Time sec/nsec numeric JSON is reviewed and public after exact gates; hosted qualification is running. MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public leading-zero float slice 17b0b9b passed hosted 40245881573. An isolated six-file Time sec/nsec numeric source tree d7e150e2 now has 139 new pinned native controls, 2,563 total native status/full-wire outcomes, 21 unchanged prior fixture hashes, 121 Rust tests and strict >95% source gate. The first gate exposed a stale historical Time assertion and was retained; corrected native-positive assertion and revised gate passed. Independent review, metadata binding, normal protected hook and hosted qualification remain pending; no MSG-02 acceptance claim."
+      "detail": "Public Time numeric slice a6123a6 passed independent source/assertion and final metadata review, exact staged gate, and normal protected hook: 121 Rust tests, strict >95% production coverage, 2,563 pinned native status/full-wire observations (2,562 distinct type/input pairs), 21 retained fixture hashes. Hosted run 40249108460 is in progress. The first source gate stale historical Time assertion failure was retained and corrected without changing prior fixtures. Broader MSG-02 grammar and release qualification remain open."
     }
   ],
   "accepted_slices": [
@@ -296,8 +296,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "17b0b9b20d3886fe19eb274c0525afbc844cc274",
-    "rust_tests": 120,
+    "revision": "a6123a61606bedfa8a37427c32a0db4bbc155768",
+    "rust_tests": 121,
     "coverage": {
       "lines": null,
       "regions": null
@@ -308,10 +308,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40245881573"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40249108460"
     },
-    "note": "Exact reviewer-bound seven-file staged gate and normal protected hook passed; 120 Rust checks, five unchanged original C++ CLI cases, 2,424 pinned native JSON status/full-wire outcomes (2,166 retained, 252 bounded leading-zero rows, six Time native-only gaps), 20 unchanged prior fixture hashes. A 252-form quoted-preservation sweep found no behavior changes; six preexisting quoted-array overflow gaps remain. Strict production coverage passed; exact line/region counts not retained by staged export. Hosted run 40245881573 passed on exact head; MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/17b0b9b20d3886fe19eb274c0525afbc844cc274"
+    "note": "Exact reviewer-bound seven-file staged gate and normal protected hook passed on tree1af48c3d: 121 Rust checks, strict production >95% coverage, 2,563 pinned native status/full-wire observations with one duplicate type/input across retained fixtures, 21 prior fixture hashes exact. Independent reviewer reproduced corpus and 120 additional bounded forms; general MSG-02 remains open. Hosted run 40249108460 is in progress, so hosted success is not claimed.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a6123a61606bedfa8a37427c32a0db4bbc155768"
   }
 }
