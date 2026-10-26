@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T03:27:56.619493Z",
+  "updated_at": "2026-10-26T03:35:54.288654Z",
   "state": "active",
   "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
   "model": "Coordinator; architecture, integration and review",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-02",
       "title": "Implement confirmed D23 static and world-axis corrections",
-      "detail": "Confirmed D23 source frozen43b54bef for independent review; strict full staged gate running. Focused low-level3 and loaded-scene4 tests pass. Reviewer found valid empty static models lack ModelBounds; immutable Motion::new_fixed now preserves static policy without contact geometry and through core/loaded resets. Static-bounds callers remain supported. Native6 full-state observations, unchanged Model.BasicAPI1/0 and all30 actual native Server input controls replayed; old fixtures/tolerances retained. Two Rust-only obsolete rotation rejections retain their Unsupported/atomicity assertions as wrench negatives, pending independent disposition. Not accepted or counted complete; normal/hosted gates and broader TPE remain open."
+      "detail": "Confirmed D23 corrected TPE source V2 frozen ce831415 under independent review/full staged checks. V1 full gate passed246 Rust/35tools/15realCpp, everycrate>95% (3548/3584lines5419/5538regions), changedTPE27/27 scene11/11. Reviewer found new native-runner XML skip/error admission gap despite clean actual XML; V1 not approved. V2 strict completed-original guard adds6 regression tests (all41tools pass; exactoldpredicate mutant fails); fresh6native full-state observations/unchanged Model.BasicAPI1/0 replayed, all30old Serverinput observations and fixtures retained. Empty static models remain fixed without contact bounds through pause/core+loaded reset. Corrected-source review, full/normal/hosted gates pending; broader TPE/P2 open."
     },
     {
       "id": "FUEL-01",
