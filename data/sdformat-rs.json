@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T01:12:50Z",
+  "updated_at": "2026-10-26T01:48:15Z",
   "state": "active",
-  "summary": "JointAxis InfiniteLimits fixed-fixture original and native nonfinite limit values are public and hosted-green after independent review. 94 complete and 12 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
+  "summary": "JointAxis ParseMimic fixed-inline original and three partial first-diagnostic invalid cases are public and hosted-green after independent review. 95 complete and 15 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Parse native joint-axis mimic payload",
-      "detail": "Isolated worktree on hosted-green 7135879, pinned DOMJointAxis.ParseMimic original1/0; typed mimic payload/parser mapping and invalid-reference controls are being prepared. No source freeze or full gate yet."
+      "title": "Port native joint-axis expressed-in fixture",
+      "detail": "Isolated worktree on public 037a4d2; pinned XyzExpressedIn and InvalidExpressedIn native originals2/0, exact positive fixture and selected Rust positive1/0. Mapping the full positive DOM/axis/frame observations; invalid two-error native case remains a separate typed-diagnostic gap. Source review, full gate and hosted qualification are pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Parse native JointAxis mimic metadata and first diagnostics",
+      "commit": "037a4d20a81a9db3fea24dd139358e85d59d262c",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/037a4d20a81a9db3fea24dd139358e85d59d262c"
+    },
     {
       "title": "Match native JointAxis infinite limit values",
       "commit": "71358795c5b9582213232948f742e4aac1789673",
@@ -455,28 +460,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "71358795c5b9582213232948f742e4aac1789673",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/71358795c5b9582213232948f742e4aac1789673",
-    "rust_tests": 255,
+    "revision": "037a4d20a81a9db3fea24dd139358e85d59d262c",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/037a4d20a81a9db3fea24dd139358e85d59d262c",
+    "rust_tests": 261,
     "coverage": {
       "lines": [
-        4110,
-        4130
+        4166,
+        4186
       ],
       "regions": [
-        7111,
-        7321
+        7203,
+        7418
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 94,
-      "partial": 12
+      "ported": 95,
+      "partial": 15
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40252871143"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40255611288"
     },
-    "note": "Pinned DOMJointAxis.InfiniteLimits native original1/0 and unchanged fixture, native axis corpus223/0 plus Construction original1/0; independent source/final receipts SHA5d212afa/ae6da1ba. Normal protected staged hook passed255 Rust/16 tools, production4110/4130 lines7111/7321 regions, staged3919/3932 executable lines. Pre-receipt treea3b0d658 differs from receipt-envelope public tree47e3af75 only by reviewer-owned reference/review.json. Exact hosted verify40252871143 SUCCESS. One fixed-fixture original complete; generic scalar, arbitrary token prefixes, Element/ToElement/backend and broad SDF parity remain open. Root consumer pin coordinator-owned."
+    "note": "Pinned ParseMimic positive native1/0 and three invalid originals3/0; exact inline fixtures, first typed diagnostics only for invalid native vectors2/2/4. Static-model native61 rows plus unchanged original1/0 and exact successor guard preserved. Independent source/final receipts SHAb51f4882/5cc480f4. Normal protected staged hook passed261 Rust/16 tools, production4166/4186 lines7203/7418 regions, staged3972/3985 executable lines. Pre-receipt treeef5c7241 differs from receipt-envelope public tree66f2bc33 only by reviewer-owned reference/review.json. Exact hosted verify40255611288 SUCCESS. No mimic runtime, URDF, Element/ToElement, full native error vector, warning output or broad SDF parity claim. Root consumer pin coordinator-owned."
   }
 }
