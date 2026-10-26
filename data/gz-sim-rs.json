@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T17:12:14.402016+00:00",
+  "updated_at": "2026-10-26T17:18:30.160959+00:00",
   "state": "active",
-  "summary": "Centered capsules on TPE/Rapier are published at22a536c after independent replay and strict253Rust/75tooling/15C++ gates; exact hosted CI pending. Formal headless and wider rewrite remain open.",
+  "summary": "Centered capsules on TPE/Rapier are independently reviewed, published and exact CI-green. Runtime IMU rate control is the next headless task; formal headless and wider rewrite remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "Published orientation field policy; remaining IMU frames and lifecycle",
-      "detail": "Publicd3a48c3 omits only disabled orientation field; acceleration, gyro, all covariance arrays, timestamps, metadata, sequence, noise and loaded reset preserved. Native4controls and old11+new4 actualCpp modes, independent review/two failing mutants and protected232Rust gate pass. Exact hosted40236973773 SUCCESS. Runtime toggling/custom/named frames, sensor registration/triggers/families and broadSENSOR01 remain open."
+      "detail": "Publicd3a48c3 omits only disabled orientation field; acceleration, gyro, all covariance arrays, timestamps, metadata, sequence, noise and loaded reset preserved. Native4controls and old11+new4 actualCpp modes, independent review/two failing mutants and protected232Rust gate pass. Exact hosted40236973773 SUCCESS. Runtime toggling/custom/named frames, sensor registration/triggers/families and broadSENSOR01 remain open. Next bounded runtime IMU rate-control task is planned in ignored coordinator handoff; pinned Sensor_TEST SetRateService/SetRateZeroService baselines and boundary/phase/reset controls must precede implementation. No new rate-service code or acceptance yet."
     },
     {
       "id": "SLICE-01",
@@ -33,8 +33,8 @@
     },
     {
       "id": "PHY-02",
-      "title": "Accepted corrected TPE policy; remaining backend scope",
-      "detail": "Public ab8d1ad implements confirmed D23: static models, including empty models without contact bounds, remain immobile; supported rotated model/link commands honor world axes. Independent source/API/native/assertion/projection and final metadata reviews passed. Corrected exact staged and normal protected gates passed246 Rust/41tools/15 actual C++ child clients; all9 production crates>95% lines/regions, workspace3548/3584 and5419/5538, changedTPE27/27 scene11/11. Exact hosted40266257423 SUCCESS on matching commit. Six full-state native observations, unchanged Model.BasicAPI1/0 and thirty Server controls retained; fixed XML skip/error guard has six controls and red old-predicate mutant. Full Model API, independent link-local/offset twist, backend conformance and PHY02/P2 remain open. Next centered-capsule slice is UNDER DEVELOPMENT, not accepted: independent native1223cbc4 replayed exact8TPEcontactcontrols and untouchedShape.CapsuleShape1/0; code now reuses pinnedRapier capsule_z and nativeZbound length/2+radius. Independent sourcea4a140bf/final91618b95 and fresh7/0+3productioncontrols passed. Source36995 andmandatorynormal89274passed253Rust/75tooling/15Cpp, all9cratesstrict>95%,3569/3605lines5446/5565regions changedRapier6/6Scene13/13. Public22a536c exacthosted40365209522pending; no acceptance untilsuccess. ProposedCapsulePARTIALmapping makes3complete6partial; no originalretirement. All previous pins/assertions/policy unchanged."
+      "title": "Capsule geometry and corrected TPE policy accepted; full backend scope open",
+      "detail": "Public ab8d1ad implements confirmed D23: static models, including empty models without contact bounds, remain immobile; supported rotated model/link commands honor world axes. Independent source/API/native/assertion/projection and final metadata reviews passed. Corrected exact staged and normal protected gates passed246 Rust/41tools/15 actual C++ child clients; all9 production crates>95% lines/regions, workspace3548/3584 and5419/5538, changedTPE27/27 scene11/11. Exact hosted40266257423 SUCCESS on matching commit. Six full-state native observations, unchanged Model.BasicAPI1/0 and thirty Server controls retained; fixed XML skip/error guard has six controls and red old-predicate mutant. Full Model API, independent link-local/offset twist, backend conformance and PHY02/P2 remain open. Centered-capsule slice ACCEPTED: independent native1223cbc4 replayed exact8TPEcontactcontrols and untouchedShape.CapsuleShape1/0; code now reuses pinnedRapier capsule_z and nativeZbound length/2+radius. Independent sourcea4a140bf/final91618b95 and fresh7/0+3productioncontrols passed. Source36995 andmandatorynormal89274passed253Rust/75tooling/15Cpp, all9cratesstrict>95%,3569/3605lines5446/5565regions changedRapier6/6Scene13/13. Public22a536c exacthosted40365209522SUCCESS; CapsulePARTIALmapping now3complete6partial, no originalretirement. All previous pins/assertions/policy unchanged."
     },
     {
       "id": "FUEL-01",
@@ -63,6 +63,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Centered Z-axis capsules on full-f64 Rapier and native TPE model bounds with independent native/physical checks",
+      "commit": "22a536c6918f55314ea7566fe783d06f4ce54e75",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/22a536c6918f55314ea7566fe783d06f4ce54e75"
+    },
     {
       "title": "Current-source clean SDK clock/pose/IMU observation measurements with independent replay and qualified provenance",
       "commit": "25f682f5315fbc91340cadb79f76a472df69f09c",
@@ -387,28 +392,28 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "25f682f5315fbc91340cadb79f76a472df69f09c",
-    "rust_tests": 246,
+    "revision": "22a536c6918f55314ea7566fe783d06f4ce54e75",
+    "rust_tests": 253,
     "coverage": {
       "lines": [
-        3548,
-        3584
+        3569,
+        3605
       ],
       "regions": [
-        5419,
-        5538
+        5446,
+        5565
       ]
     },
     "upstream": {
       "total": null,
       "ported": 3,
-      "partial": 5
+      "partial": 6
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40353336864"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40365209522"
     },
-    "note": "Public25f682f exacthosted40353336864SUCCESS, independent final94da2698; strictsource39990 andmandatorynormal96307 passed246Rust/75tooling/15actuallegacyCppscenarios. All9productioncrates strictly>95%lines/regions;3548/3584lines5419/5538regions unchanged,nochangedRustproductionlines. ExplicitSDKactualfunctional+separateauthor/independent11-pairmeasurements retain44runs,source/compiler/library/ELFidentities andallobservations. SelectedsharedhostTPEworklatency excludesdeclaredpacing; no general/balanced/throughput/causal/P0/P2orneworiginalportcredit. Capsulecandidate22a536c independentlyreviewed,source+normal253/75/15 andstrict3569/3605lines5446/5565regions passed; exacthosted40365209522pending, not yetaccepted.",
+    "note": "Public22a536c exacthosted40365209522SUCCESS. Independent runtimea4a140bf/final91618b95,native1223 andfresh7/0+3productioncontrolfailures/restored7/0. Strictsource36995+mandatorynormal89274 pass253Rust/75tooling/15unchangedrealCpp; all9productioncrates>95%lines/regions,workspace3569/3605and5446/5565,changedRapier6/6Scene13/13. CapsuleShape PARTIAL only: positivegeometry/nativebounds+supplementarycontacts covered; emptydefault/mutableAPI remainsunported. No new fullcase/retirement/performance/P0/P2/fullrewrite credit. Allproducerpins/oldfixtures/assertions/tolerances/policy preserved.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a9a060f6229c4e98932d33c361ea6d2d00f72bac"
   },
   "phase_status": {
