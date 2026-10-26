@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T02:11:23Z",
+  "updated_at": "2026-10-26T02:13:10Z",
   "state": "active",
-  "summary": "Reviewed unquoted Float_V maximum rounding is public after protected checks; hosted CI is in progress and MSG-02 remains open.",
+  "summary": "Reviewed unquoted Float_V slice is public, but hosted CI failed on a cross-host C++ peer binary-hash assumption; verifier repair is in progress and MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Unquoted Float_V max-rounding slice cdf25b0 passed exact reviewer-bound 123 Rust, mandatory 3,037 native status/full-wire observations and strict production coverage; normal protected hook passed. Hosted run 40257819363 is in progress. Eighteen Double_V one-bit decimal wire gaps remain explicit; broader MSG-02 remains open."
+      "detail": "Public cdf25b0 passed exact normal protected hook, 123 Rust and 3,037 local native rows. Hosted run 40257819363 failed before native replay because the verifier compared a newly built Ubuntu C++ ELF SHA to a pinned local ELF SHA. Source/protobuf version checks and all fixture hashes remain; a bounded verifier provenance repair is in review preparation. Eighteen Double_V wire gaps and broader MSG-02 remain open."
     }
   ],
   "accepted_slices": [
@@ -323,10 +323,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "failure",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40257819363"
     },
-    "note": "Exact eight-file reviewer-bound staged gate and normal protected hook passed on public cdf25b0; 123 Rust and mandatory 3,037 native status/full-wire observations. Strict >95% owned production line/region coverage. Hosted run pending; 18 Double_V decimal one-bit wire gaps and broader MSG-02 remain open.",
+    "note": "Public cdf25b0 passed protected hook locally, but hosted run 40257819363 failed before native replay at a cross-host native-peer ELF hash assertion. The normal 123 Rust/3,037 native local gate remains valid; hosted qualification is pending a reviewed verifier repair. No MSG-02 completion claim.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/cdf25b076ef4a7d3ea1d3449d74c688792f6197c"
   }
 }
