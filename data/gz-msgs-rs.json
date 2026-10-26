@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T03:45:39Z",
+  "updated_at": "2026-10-26T03:58:56Z",
   "state": "active",
-  "summary": "Public Double_V decimal wire correction remains hosted-green; a bounded quoted-float whitespace candidate passed source gates and awaits independent review; MSG-02 remains open.",
+  "summary": "Bounded quoted Float_V/Double_V edge whitespace is public after independent review and protected gates; hosted qualification is running, while MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public 34de42e hosted run40261863110 succeeded. An isolated six-file quoted Float_V/Double_V edge-whitespace candidate passed 1,104 native/Rust boundary cases (720 exact positive wires,384 joint rejections), mandatory4,276 native outcomes and strict staged gates; independent semantic review, normal hook and hosted qualification remain pending. An earlier one-bit midpoint candidate was revoked before publication with exact failure proof. MSG-02 remains open."
+      "detail": "Public commit5fe0f2d is on exact independently bound seven-file tree after125 Rust checks,4,276 exact native JSON outcomes, strict coverage and normal protected hook. Hosted run40266634050 is in progress. The corrected 1,104-observation fixture has720 exact native-positive wires/384 joint rejects; earlier one-bit midpoint candidate remains revoked. Broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -321,8 +321,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "34de42e13d3e588848050eab85e6612b3ec5086c",
-    "rust_tests": 124,
+    "revision": "5fe0f2d10d261312d2913e2bcfc75de4d91bbac9",
+    "rust_tests": 125,
     "coverage": {
       "lines": null,
       "regions": null
@@ -333,10 +333,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40261863110"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40266634050"
     },
-    "note": "Public 34de42e normal hook and hosted40261863110 succeeded:124 Rust,3,172 exact native JSON rows,strict coverage,staged-index and fresh-cache package checks. Prior portable-verifier hosted failure40257819363 retained; repaired hosted40258911434 succeeded. MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/34de42e13d3e588848050eab85e6612b3ec5086c"
+    "note": "Public5fe0f2d exact reviewed tree7317ffb9; final staged and normal protected gates pass125 Rust,4,276 native JSON rows and strict coverage. Hosted40266634050 is running; no hosted acceptance yet. V1 one-bit midpoint candidate was revoked before publication. MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fe0f2d10d261312d2913e2bcfc75de4d91bbac9"
   }
 }
