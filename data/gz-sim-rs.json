@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T00:18:03.375678+00:00",
+  "updated_at": "2026-10-26T00:21:32.788260+00:00",
   "state": "active",
   "summary": "Centered cylinder support is accepted at d4aaab2: independent review, protected238 Rust/24 tooling/15 C++ checks and exact hosted CI all passed. The next Transport consumer integration is under strict verification and independent review.",
   "model": "Coordinator; architecture, integration and review",
@@ -49,7 +49,7 @@
     {
       "id": "IO-01",
       "title": "Validate published Transport c21 consumer integration",
-      "detail": "Public Transport c21ffcc passed source/performance/final review and normal protected hook; exact producer hosted40248292544 is running. Root candidate c6beec57 is frozen on accepted cylinder d4aaab2; fresh239 Rust/24 tooling/15 C++ strict gate and independent pin/API/test review are running. Old failed f816 adoption remains unchanged. Public simulator still pins2a until the new consumer gates and exact producer hosted acceptance pass."
+      "detail": "Frozen Root consumer c6beec57 passed its exact staged gate:239 Rust tests,24 tooling checks and all15 unchanged C++ scenarios. Every crate remains >95% lines/regions; workspace3535/3572 and5395/5514. Existing service timeout assertions now pass with public producer c21; old failed f816 evidence remains intact. Independent consumer replay/review, exact producer hosted40248292544, final metadata and normal/hosted consumer checks remain. Accepted public simulator still pins2a."
     },
     {
       "id": "REF-02",
@@ -318,7 +318,7 @@
   ],
   "blockers": [
     "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue.",
-    "Updated Transport adoption is held for performance investigation and final consumer verification. The response-overload defect is fixed and hosted-green; the latest scoped equal-work comparison still shows 7.3% overhead over the earlier Rust transport prototype. Original failures, all samples and reviewed limitations remain retained."
+    "Transport consumer acceptance awaits exact producer hosted success and remaining independent/final consumer checks. Final measured point overhead3.598% meets proposed5%, but 95% interval[0.99243,1.07658] does not establish a 5% upper bound or ratified performance acceptance. All seven experiments and the original failed adoption remain retained."
   ],
   "plan_status": {
     "REF-01": "in_progress",
