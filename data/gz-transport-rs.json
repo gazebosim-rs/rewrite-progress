@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T10:20:15Z",
+  "updated_at": "2026-10-26T10:30:42Z",
   "state": "active",
-  "summary": "Fifty-four accepted complete and nineteen partial upstream ports; two additional reviewed local wrong-response service originals are public and await exact hosted qualification.",
+  "summary": "Fifty-six reviewed complete and nineteen partial upstream ports. Public cda96dc passed exact source, normal protected and hosted checks for two fixed local wrong-response service originals; broad NET-01/NET-02 scope remains.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public cda96dc passed exact source and normal protected gates for the two local wrong-response service originals. Exact hosted run 40306497060 is in progress; accepted count remains 54 until it succeeds."
+      "detail": "Public cda96dc is hosted-green on exact run 40306497060. Next bounded work ports the two mixed wrong/good response service originals: pinned native 2/0 and selected Rust 2/0 pass, while full gate and independent review remain pending."
     },
     {
       "id": "NET-02",
@@ -18,6 +18,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Fixed local wrong-response and inputless wrong-response service observations with live owned observers",
+      "commit": "cda96dc9d150dd1613b6b2d53f9e26568423b0a7",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda96dc9d150dd1613b6b2d53f9e26568423b0a7"
+    },
     {
       "title": "Bounded ZeroMQ discovery, pub/sub and services",
       "commit": "3ae95796c7f243951d8b63ce3ad34b6269088fba",
@@ -407,13 +412,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 54,
+      "ported": 56,
       "partial": 19
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40306497060"
     },
-    "note": "Reviewed two-file source b9af1579 and final tree b70cc691 passed exact source and mandatory normal protected hook; public cda96dc exact hosted run 40306497060 is in progress, not a pass. 216 Rust passed, zero failed/ignored; native Node54/0; production coverage2645/2714 lines3893/4071 regions, zero production edit. Independent native2/0, rawRust3/0, and two valid-response controls exercised provider/observer Int32(5)/true then failed retained300ms false callback flags. Native unbounded async lifetime/C++callback API/scheduling unqualified. Two reviewed additional mappings await hosted acceptance; accepted count54/19; historical lost-output101 unclassified."
+    "note": "Reviewed source b9af1579 and final tree b70cc691 passed the mandatory normal protected hook and exact hosted run 40306497060 SUCCESS on public cda96dc. 216 Rust passed, zero failed/ignored; native Node 54/0; production coverage 2645/2714 lines and 3893/4071 regions, zero production edit. Independent native 2/0, raw Rust 3/0 and two valid-response controls exercised provider/observer Int32(5)/true then failed the retained 300 ms false callback flags. Native unbounded async lifetime, C++ callback API and scheduling limits remain explicit. Historical lost-output 101 remains unclassified."
   }
 }
