@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T13:47:40Z",
+  "updated_at": "2026-10-26T13:57:57Z",
   "state": "active",
-  "summary": "Sixty reviewed complete and nineteen partial upstream ports. Public 747460f passed exact source, normal protected and hosted checks for two cross-process wrong-type service originals; broad NET-01/NET-02 scope remains.",
+  "summary": "Sixty-one reviewed complete and nineteen partial upstream ports. Public 8604f91 passed exact source, normal protected and hosted checks for the cross-process inputless wrong-response original; broad NET-01/NET-02 scope remains.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public 8604f91 passes the exact inputless source gate, independent source and final binding, and mandatory normal protected hook: 221 Rust, 24 tools, Node 56/0, ordinary service 5/0 and inputless service 4/0. Exact hosted run 40333621032 is in progress. Accepted quality stays at prior hosted-green 747460f with 60 complete / 19 partial until the new revision qualifies."
+      "detail": "Public 8604f91 is accepted on exact hosted run 40333621032 SUCCESS: 221 Rust, 24 tools, Node 56/0, ordinary service 5/0 and inputless service 4/0, with unchanged strict coverage. The next remote mixed-response source 98fccf17 has pre-edit native 2/0 and focused Rust 5/0; its full source gate, independent source/final review, normal hook and new hosted result are unrun."
     },
     {
       "id": "NET-02",
       "title": "Retained topic, service and origin contracts",
-      "detail": "The reviewed inputless negative case retains Empty request bytes, Vector3d expected reply, asynchronous admission, original 300 ms false callback and synchronous 1000 ms Timeout. A valid async expected-Int32 control actually receives data 5/true then fails the retained false assertion. Separate positive native callback/counter observations receive no Rust port credit. Broader NET-02 remains open."
+      "detail": "The next two remote mixed-response originals preserve the original 500 ms pre-Node settle, wrong and good synchronous 2000 ms bounds, wrong async false after 300 ms and required good async data 5/true after 300 ms. Existing three remote cases remain unchanged. The draft keeps the wrong observer live through the good checkpoint and bounds failure cleanup; no timing or new port credit yet."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Fixed cross-process inputless wrong-response original with live native provider",
+      "commit": "8604f912f4707118916f33093258739bcfb171f4",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8604f912f4707118916f33093258739bcfb171f4"
+    },
     {
       "title": "Fixed cross-process wrong-type service observations against a live native echo provider",
       "commit": "747460f8516346746ad935a850c22b4adfb7f76f",
@@ -407,9 +412,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "747460f8516346746ad935a850c22b4adfb7f76f",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/747460f8516346746ad935a850c22b4adfb7f76f",
-    "rust_tests": 220,
+    "revision": "8604f912f4707118916f33093258739bcfb171f4",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8604f912f4707118916f33093258739bcfb171f4",
+    "rust_tests": 221,
     "coverage": {
       "lines": [
         2645,
@@ -422,13 +427,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 60,
+      "ported": 61,
       "partial": 19
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40327340902"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40333621032"
     },
-    "note": "Reviewed source a430e98e and final tree d8e73b75 passed the mandatory normal protected hook and exact hosted run 40327340902 SUCCESS on public 747460f. 220 Rust passed with zero failed or ignored; native Node 56/0 plus ordinary integration 5/0. Strict coverage is 2645/2714 lines and 3893/4071 regions, with zero production changes. Independent raw Rust 2/0, native 2/0 plus separate positive 1/0, and two valid async controls verify actual data 5/true before retained 300 ms false failures. Native positive counter/storage assertions remain pending and receive no Rust port credit. Owned ten-second/native-unbounded observer, fixture lifetime and C++ callback/scheduling limits stay explicit. Historical lost-output 101 remains unclassified."
+    "note": "Reviewed source 8933bc9d and final tree a0fb1022 passed the mandatory normal protected hook and exact hosted run 40333621032 SUCCESS on public 8604f91. 221 Rust passed with zero failed or ignored, plus 24 tools and required native Node 56/0, ordinary service 5/0 and inputless service 4/0. Strict coverage remains 2645/2714 lines and 3893/4071 regions; zero production changes. Independent fresh native 1+positive 1 and raw Rust 3/0 replay passed. An async-only expected-Int32 control actually received data 5/true then failed the retained 300 ms false assertion; restored source passed 3/0. Separate positive native callback/counter observations receive no Rust port credit. Reviewer setup-only filename/proof failures are retained separately. Owned ten-second/native-unbounded pending, six-second fixture and C++ API/scheduling limits remain explicit. Historical lost-output 101 stays unclassified."
   }
 }
