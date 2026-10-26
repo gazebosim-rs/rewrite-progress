@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T01:24:12.292091+00:00",
+  "updated_at": "2026-10-26T03:07:30.663591+00:00",
   "state": "active",
-  "summary": "Public66e5559 publishes the independently reviewed current-pin native/Rust comparison; exact hosted CI passed239 Rust/24 tooling/15 C++ checks. Next, a reference inventory collector is under strict verification, with237 listed configurations and724 retained gaps.",
+  "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -23,8 +23,8 @@
     },
     {
       "id": "PHY-02",
-      "title": "Complete remaining TPE capabilities and milestone inputs",
-      "detail": "Published TPE motion/contact/reset and checked finite worldvelocity setter; local freebody inputs reject TPE wrench/static/rotated cases explicitly. D23 remains open. Native30 input controls retain10rotatedTPE gaps;20 supported velocity/angular observation rows qualify the bounded scene. All182Rust/12tools/nineCPP author/staged gate passed, independent107backend/scene+exact2foreign-owner countertests and30native proof replay passed. No full TPE capability, joint, performance or P2 acceptance claim."
+      "title": "Implement confirmed D23 static and world-axis corrections",
+      "detail": "Owner confirmed corrected behavior with preserved assertions/native difference records. Unpublished Root prototype keeps static ModelBounds immobile/zero velocity and accepts rotated model/link world-velocity inputs. Focused low-level2 and scene3 tests pass, covering pause/reset/public IDs/IMU and retained native rotated data. Fresh native static6observations plus unchanged Model.BasicAPI1/0 pass. Existing Rust-only obsolete rotation rejection assertions are retained as unsupported-wrench negatives with independent disposition required. Full staged/review/normal/hosted gates and broader TPE remain open."
     },
     {
       "id": "FUEL-01",
@@ -58,11 +58,16 @@
     },
     {
       "id": "REF-02",
-      "title": "Verify configured native runtime-test inventory tooling",
-      "detail": "New collector candidate a58047f1 preserves CTest configuration identity including cwd/ordered envmods, uses native CMake reset behavior, retains partial failures and checks executable hashes after listing. Ten new integrity tests plus24 original tooling controls pass34 locally. Fresh five-build replay lists237 configurations/2388 case expansions and retains724 unqualified entries, with no listing failures. Listing earns no execution-pass credit; strict gate and independent review are running. Complete wrappers/build profiles/runtime results and immutable reference image remain open."
+      "title": "Published configured native inventory; remaining expansion",
+      "detail": "Publicf118fff passed independent corrected-source/final review and exact hosted40256611703 SUCCESS:239 Rust/35 tooling/15 unchanged C++ scenarios, all crates>95% lines/regions. New collector lists237 configurations/2388 case expansions across five pinned builds and retains724 unqualified entries; listing gives no execution-pass credit. Inherited-Git-context V1 bug was caught independently, fixed and covered by a real two-repository negative regression before publication. Full wrappers/profiles/runtime execution and immutable image remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Configured native test inventory with corrected Git provenance and retained gaps",
+      "commit": "f118fff9a7ccea9a44e7f0e0119295cb723b0e72",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f118fff9a7ccea9a44e7f0e0119295cb723b0e72"
+    },
     {
       "title": "Qualified current-pin native/Rust stream measurement and retained raw observations",
       "commit": "66e55596fc977791191ef3159bdf13505156e9fc",
@@ -331,9 +336,7 @@
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [
-    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -354,7 +357,7 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "66e55596fc977791191ef3159bdf13505156e9fc",
+    "revision": "f118fff9a7ccea9a44e7f0e0119295cb723b0e72",
     "rust_tests": 239,
     "coverage": {
       "lines": [
@@ -373,10 +376,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40251239484"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40256611703"
     },
-    "note": "Independent native/source/build/binary/library/raw-row/statistics and final metadata reviews approved. Normal protected239 Rust/24 tools/15 unchanged C++ scenarios pass, every production crate >95% lines/regions, workspace3535/3572 and5395/5514; data-only publication has no code/test/pin/history delta. Exact hosted40251239484 SUCCESS. Measured code is public1c32/c21; complete balanced performance budgets, REF/P0 and P2 remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66e55596fc977791191ef3159bdf13505156e9fc"
+    "note": "Independent corrected-source/evidence/final binding approved after finding and fixing V1 inherited-Git-env false qualification. Exact staged and normal239 Rust/35 tooling/15 unchanged C++ scenarios pass, every production crate>95% lines/regions; workspace3535/3572 and5395/5514, no executable Rust delta. Exact hosted40256611703 SUCCESS on publicf118fff. Reference listing237/2388 and724 retained gaps is inventory only; full REF/P0/P2 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f118fff9a7ccea9a44e7f0e0119295cb723b0e72"
   },
   "phase_status": {
     "P0": "in_progress",
