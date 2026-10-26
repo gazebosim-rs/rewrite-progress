@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T06:12:51Z",
+  "updated_at": "2026-10-26T06:23:50Z",
   "state": "active",
-  "summary": "Published Vector3d slice remains hosted-green; bounded top-level Quaternion JSON candidate passed native and strict staged gates and awaits independent review. Broader MSG-02 remains open.",
+  "summary": "Bounded top-level Quaternion quoted numeric JSON is public and protected-hook green; exact hosted CI is running. Broader MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public e400a26743b77b81be2262cabacf8b3315ec9eef hosted run40276156061 succeeded after127 Rust tests and5,363 pinned native JSON outcomes. A separate six-file top-level Quaternion x/y/z/w quoted numeric candidate is frozen on parent e400 at tree ab640533: 408 new observations (155 native-positive exact wires),28 earlier fixture hashes unchanged,5,771 total pinned native outcomes,128 Rust tests and strict >95% staged coverage. Independent source review, normal protected hook, public commit and hosted CI are pending; no nested Pose/general JSON or MSG-02 completion claim. First format-only gate failure retained and corrected before the passed exact gate."
+      "detail": "Public 7c6d98016f3e7fdcdfee649ee3299c87da9a8821 fixes only top-level Quaternion x/y/z/w quoted finite numeric compatibility. The 408-observation fixture has155 native-positive exact wires and253 rejects;28 older fixture hashes are unchanged. Independent source/final reviews approved, normal protected hook passed128 Rust tests including31 CLI,5,771 pinned native status/full-wire outcomes and strict >95% coverage. Hosted messages run40279507589 for the exact commit is in progress; no hosted acceptance or nested Pose/general MSG-02 claim yet. The first source gate stopped at formatting before tests and was corrected; no timing claim from Cargo2 overlap with Root SDK."
     }
   ],
   "accepted_slices": [
@@ -336,8 +336,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "e400a26743b77b81be2262cabacf8b3315ec9eef",
-    "rust_tests": 127,
+    "revision": "7c6d98016f3e7fdcdfee649ee3299c87da9a8821",
+    "rust_tests": 128,
     "coverage": {
       "lines": null,
       "regions": null
@@ -348,10 +348,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40276156061"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40279507589"
     },
-    "note": "Public e400a267 normal protected hook and hosted40276156061 succeeded:127 Rust,5,363 exact native JSON outcomes,strict coverage,staged-index and fresh-cache source-package gates. This is only the bounded Vector3d slice; no full MSG-02 acceptance or timing claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e400a26743b77b81be2262cabacf8b3315ec9eef"
+    "note": "Exact public 7c6d980 normal protected hook passed128 Rust/31 CLI,5,771 native exact outcomes and strict coverage. Hosted run40279507589 remains in progress; bounded Quaternion slice is not yet hosted-accepted. MSG-02 remains open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7c6d98016f3e7fdcdfee649ee3299c87da9a8821"
   }
 }
