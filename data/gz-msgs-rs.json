@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T20:11:01.849972+00:00",
+  "updated_at": "2026-10-26T20:24:10.974792+00:00",
   "state": "active",
-  "summary": "Standalone component Header changes are public after independent reviews and the normal hook; exact hosted CI is pending.",
+  "summary": "Standalone Vector3d/Quaternion Header slice accepted after independent reviews, protected normal hook and exact hosted success.",
   "model": "GPT-6 Astra high \u2014 Messages owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public69e7079 passed source/full review d8cd6976, final2c9fae91 and canonical protected normal16671:140Rust/43CLI/7415native, strict3119/3139lines5138/5223regions,10/10added and all retained proof files complete. Hosted40393266572 attempt1 is running; accepted counters remain prior328ba65d until exact success. The112-case corpus corrects32rejections+12wrongwires with28controls/40rejects, preserving all40olderfixtures and previous test bodies. Broader descriptors/depth/diagnostics/MSG-02 remain open."
+      "detail": "Accepted69e7079 exact hosted40393266572 attempt1 SUCCESS:140Rust/43CLI/7415native,3119/3139lines5138/5223regions10/10added. All40olderfixtures and previous test bodies preserved;112native comparisons correct32parentrejections+12wrongwires with28controls/40rejects. Next standalone gz.msgs.Header root has only a static64-input probe plan; native capture and implementation remain UNRUN pending coordinated resource slot. Other descriptors/arbitrary depth/diagnostics/release qualification and MSG-02 remain open."
     }
   ],
   "accepted_slices": [
@@ -382,6 +382,11 @@
       "title": "Bounded nested outer Pose Header.data arrays with7,303 native outcomes",
       "commit": "328ba65d122e178493d27e13377ca08969800e5f",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/328ba65d122e178493d27e13377ca08969800e5f"
+    },
+    {
+      "title": "Bounded standalone Vector3d/Quaternion Header structure with7,415 native outcomes",
+      "commit": "69e7079002a4ec42d30e88c3e9baee0cca64516e",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/69e7079002a4ec42d30e88c3e9baee0cca64516e"
     }
   ],
   "remaining": [
@@ -396,16 +401,16 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "328ba65d122e178493d27e13377ca08969800e5f",
-    "rust_tests": 139,
+    "revision": "69e7079002a4ec42d30e88c3e9baee0cca64516e",
+    "rust_tests": 140,
     "coverage": {
       "lines": [
-        3116,
-        3136
+        3119,
+        3139
       ],
       "regions": [
-        5126,
-        5211
+        5138,
+        5223
       ]
     },
     "upstream": {
@@ -415,9 +420,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40384524441"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40393266572"
     },
-    "note": "Accepted328ba65d exact hosted40384524441 attempt1 SUCCESS, including required verification/staged-context/source-package/fresh-cache checks. Independent source/full8beeda8b and final1420b201; canonical normal28923 passed139Rust/42CLI/7303native with all five retained proofs complete, strict3116/3136lines5126/5211regions and6/6added. All39fixture pins/ten stronger input-wire mappings and60parentcorrections plus six controls independently checked. Other descriptors, arbitrary-depth, native rejection diagnostics and MSG-02 remain open; all failures retained, no filtering/waiver/all-config or performance claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/328ba65d122e178493d27e13377ca08969800e5f"
+    "note": "Accepted69e7079 exact hosted40393266572 attempt1 SUCCESS including verification/staged/source-package/fresh-cache checks. Independent source/full d8cd6976 and final2c9fae91; canonical normal16671 passed140Rust/43CLI/7415native, strict3119/3139lines5138/5223regions10/10added and unchanged vendor checks. Allfive retained proofs complete. Fresh independent112comparison corrects32parentrejections+12wrongwires;28controls/40rejects preserved. All40oldfixtures and oldtest bodies unchanged. Prior failures retained; no waiver/all-config/performance/MSG-02 completion claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/69e7079002a4ec42d30e88c3e9baee0cca64516e"
   }
 }
