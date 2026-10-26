@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T06:06:19Z",
+  "updated_at": "2026-10-26T06:19:50Z",
   "state": "active",
-  "summary": "The fixed observable DOMLight.SpotLightNegativeValues and AttenuationClamp originals are public and hosted-green after independent review. 117 complete and 16 partial original cases are reviewed; broader Light XML and SDF parity remain open.",
+  "summary": "The bounded DOMLight.DefaultConstruction value observations are public and hosted-green after independent partial review. 117 complete and 17 partial original cases are reviewed; Light Element and standalone semantic-pose errors remain unmapped.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port remaining native Light value originals",
-      "detail": "Inventory native DOMLight.DefaultConstruction and ownership originals against current owned Light fields; record exact baseline and bounded scope before implementation. Light XML, Element/rendering and broad parser behavior remain unclaimed."
+      "title": "Port native Light copy and move originals",
+      "detail": "Pinned five Light ownership originals pass natively 5/0. Isolated test-only Rust5/0 and full strict source gate pass; independent source/final review and publication remain pending. No C++ pointer identity or moved-from state claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Light default values as partial original",
+      "commit": "b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61"
+    },
     {
       "title": "Port native Light scalar clamp originals",
       "commit": "3a04c865c0c3e1f57318b8e32fa724fcf819f4bd",
@@ -520,28 +525,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "3a04c865c0c3e1f57318b8e32fa724fcf819f4bd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3a04c865c0c3e1f57318b8e32fa724fcf819f4bd",
-    "rust_tests": 287,
+    "revision": "b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b47138eb10f59f3c1dda2804b0bc0d6a8b16eb61",
+    "rust_tests": 288,
     "coverage": {
       "lines": [
-        4365,
-        4386
+        4375,
+        4396
       ],
       "regions": [
-        7407,
-        7627
+        7411,
+        7631
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 117,
-      "partial": 16
+      "partial": 17
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40277647034"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40278755806"
     },
-    "note": "Pinned DOMLight.SpotLightNegativeValues/AttenuationClamp native2/0 and reviewer raw-parent Rust originals2/0 plus supplemental1/0. Exact scalar clamp values/order retained. Independent source/final receipts SHA540cbe4e/bafc8473, normal protected hook287 Rust/16 tools, production4365/4386 lines7407/7627 regions, changed29/29. Public Light gains six scalar fields and drops Eq; XML/pose/nonfinite/Element/rendering remain open. Two-job V6 dependency overlap was correctness-only."
+    "note": "Pinned DOMLight.DefaultConstruction native1/0 and private raw-parent Rust selected1/0. Fixed owned type/name/raw+relative pose/flags/colors/scalars map; Element null and two standalone SemanticPose.Resolve nonempty errors remain unported. Independent source/final receipts SHAdcc9b480/575d7b9b, normal protected hook288 Rust/16 tools, production4375/4396 lines7411/7631 regions, author changed10/10. V6 SDK/Msgs overlap was correctness-only."
   }
 }
