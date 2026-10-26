@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T06:11:32.165776Z",
+  "updated_at": "2026-10-26T07:31:21.747382Z",
   "state": "active",
-  "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
+  "summary": "Simulator ab8d1ad is hosted-green. The clean 14-repository native SDK built successfully; selected runtime qualification and independent review are in progress. Formal P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "REF-01",
-      "title": "Clean headless native reference image under development",
-      "detail": "V6 full14-repo SDK retry is running at two CMake jobs on independently reviewed tree6f227fcc. Corrected dependency image6d0b8f40 was inspected read-only:690 installed packages,615 fixed-snapshot fetches, actual required Bullet/protoc/cppzmq headers; both Bullet engines remain skipped. Prior V5 built through sensors then failed unchanged common-test CMake on missing legacy headers; failure retained, no tests disabled and no Rust Bullet backend introduced. Source/provenance review and53 tool controls pass. Ignored runtime qualification scripts now have negative inventory/duplicate/evidence-retention controls but no native pass yet. Ordinary two-job repo checks continue; latency gates/benchmarks wait for SDK clear. Full SDK/inventory/native tests/immutable image/P0/P2 qualification remain open."
+      "title": "Qualify clean headless native reference SDK",
+      "detail": "Immutable local SDK image 11b7378c built all 14 pinned C++ repositories with tests enabled and records 690 packages plus 4743 installed paths. Ten unchanged selected originals and the unchanged 100-step Server/TPE/IMU fixture pass; both IMU runs exposed a log-path warning on read-only HOME. A private writable log tmpfs correction is being verified without suppressing diagnostics. Inventory retains 578 configurations, 4589 case expansions and 597 explicit gaps (596 wrapper/unrecognized, one Zenoh-disabled empty binary); no full inventory credit. Recipe remains unpublished pending independent actual-image/projection review and strict staged, normal and hosted gates. Local image has not been published to a registry; no new performance or P0/P2 acceptance."
     },
     {
       "id": "CORE-02",
