@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T05:51:12.442588Z",
+  "updated_at": "2026-10-26T06:11:32.165776Z",
   "state": "active",
   "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
   "model": "Coordinator; architecture, integration and review",
@@ -9,7 +9,7 @@
     {
       "id": "REF-01",
       "title": "Clean headless native reference image under development",
-      "detail": "V5 full14-repo SDK attempt built through sensors, then failed unmodified physics common-test CMake on unconditional BULLET_INCLUDE_DIR-NOTFOUND. No SDK image or native-test credit. Independently reviewed V6 adds actual reference-only Bullet development headers and documents the need; both Bullet engines remain skipped and no Rust Bullet backend is introduced. All53 tool controls pass. Corrected dependency stage is downloading the same fixed signed snapshot (slower server throughput); ordinary repo checks continue at two jobs, latency suites wait for clear. Earlier missing libprotoc/cppzmq failures/corrections retained. Runtime smoke proof scripts prepared but unqualified. Clean full SDK, inventory, actual tests, immutable image and P0/P2 acceptance remain open."
+      "detail": "V6 full14-repo SDK retry is running at two CMake jobs on independently reviewed tree6f227fcc. Corrected dependency image6d0b8f40 was inspected read-only:690 installed packages,615 fixed-snapshot fetches, actual required Bullet/protoc/cppzmq headers; both Bullet engines remain skipped. Prior V5 built through sensors then failed unchanged common-test CMake on missing legacy headers; failure retained, no tests disabled and no Rust Bullet backend introduced. Source/provenance review and53 tool controls pass. Ignored runtime qualification scripts now have negative inventory/duplicate/evidence-retention controls but no native pass yet. Ordinary two-job repo checks continue; latency gates/benchmarks wait for SDK clear. Full SDK/inventory/native tests/immutable image/P0/P2 qualification remain open."
     },
     {
       "id": "CORE-02",
