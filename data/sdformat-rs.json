@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T05:52:58Z",
+  "updated_at": "2026-10-26T06:06:19Z",
   "state": "active",
-  "summary": "The fixed observable DOMLink.MutableByIndex and DOMLink.MutableByName originals are public and hosted-green after independent review. 115 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
+  "summary": "The fixed observable DOMLight.SpotLightNegativeValues and AttenuationClamp originals are public and hosted-green after independent review. 117 complete and 16 partial original cases are reviewed; broader Light XML and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port native Light clamp value originals",
-      "detail": "Read-only inventory of DOMLight.SpotLightNegativeValues and DOMLight.AttenuationClamp identifies fixed scalar clamp behavior. Ownership, native baseline, implementation and independent review are pending. Light XML, pose/Element and general configuration remain unclaimed."
+      "title": "Port remaining native Light value originals",
+      "detail": "Inventory native DOMLight.DefaultConstruction and ownership originals against current owned Light fields; record exact baseline and bounded scope before implementation. Light XML, Element/rendering and broad parser behavior remain unclaimed."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Light scalar clamp originals",
+      "commit": "3a04c865c0c3e1f57318b8e32fa724fcf819f4bd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3a04c865c0c3e1f57318b8e32fa724fcf819f4bd"
+    },
     {
       "title": "Port native Link mutable collection originals",
       "commit": "4c39d4b79aa67df83605535d4492c80be666ba62",
@@ -515,28 +520,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "4c39d4b79aa67df83605535d4492c80be666ba62",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4c39d4b79aa67df83605535d4492c80be666ba62",
-    "rust_tests": 284,
+    "revision": "3a04c865c0c3e1f57318b8e32fa724fcf819f4bd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3a04c865c0c3e1f57318b8e32fa724fcf819f4bd",
+    "rust_tests": 287,
     "coverage": {
       "lines": [
-        4336,
-        4357
+        4365,
+        4386
       ],
       "regions": [
-        7386,
-        7606
+        7407,
+        7627
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 115,
+      "ported": 117,
       "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40276339156"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40277647034"
     },
-    "note": "Pinned DOMLink.MutableByIndex/MutableByName native2/0 and reviewer raw-parent Rust originals2/0 plus supplemental duplicate1/0; six-family Add/lookup/name/rename/relookup values retained. Independent source/final receipts SHAb1eb36e5/01a85e4d, normal protected hook284 Rust/16 tools, production4336/4357 lines7386/7606 regions, author changed22/22. Initial receipt-schema hook setup failure retained and corrected by reviewer without source changes. Name-only ParticleEmitter/Projector and parsed setup do not qualify family XML/configuration; V6 APT/Msgs overlap correctness-only."
+    "note": "Pinned DOMLight.SpotLightNegativeValues/AttenuationClamp native2/0 and reviewer raw-parent Rust originals2/0 plus supplemental1/0. Exact scalar clamp values/order retained. Independent source/final receipts SHA540cbe4e/bafc8473, normal protected hook287 Rust/16 tools, production4365/4386 lines7407/7627 regions, changed29/29. Public Light gains six scalar fields and drops Eq; XML/pose/nonfinite/Element/rendering remain open. Two-job V6 dependency overlap was correctness-only."
   }
 }
