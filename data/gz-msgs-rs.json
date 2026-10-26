@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T05:25:43Z",
+  "updated_at": "2026-10-26T05:36:36Z",
   "state": "active",
-  "summary": "Quoted Vector3d numeric compatibility is staged and strict-gate green pending independent review; published quoted float hexadecimal slice remains hosted-green, and broader MSG-02 remains open.",
+  "summary": "Quoted Vector3d numeric compatibility passed the exact source gate and independent review; normal protected hook and hosted qualification remain pending, and broader MSG-02 is open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public d26b0d8 hosted run40271485838 remains the accepted quality revision. Next six-file Vector3d quoted-number candidate on parent d26b0d8 has exact staged gate green:127 Rust tests including30 CLI,5,363 pinned native status/full-wire outcomes,strict >95% coverage,27 prior fixture hashes unchanged. Independent semantic review, protected hook, publication and hosted CI remain pending. Gate had no timing assertions and overlapped Root V5 SDK build at two Cargo jobs; no performance claim."
+      "detail": "Public d26b0d8 hosted run40271485838 remains the accepted quality revision. The next seven-file Vector3d quoted-number candidate on parent d26b0d8 has exact staged gate green:127 Rust including30 CLI,5,363 pinned native status/full-wire outcomes and strict >95% coverage;27 older fixture hashes unchanged. Independent source and final metadata reviews approved exact bounded scope and protected hashes. Root V6 SDK build has the current heavy window, so Msgs normal protected hook, public push and hosted CI remain pending. No timing or broad MSG-02 parity claim."
     }
   ],
   "accepted_slices": [
