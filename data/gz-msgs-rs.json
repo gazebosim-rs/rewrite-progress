@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T06:23:50Z",
+  "updated_at": "2026-10-26T06:30:33Z",
   "state": "active",
-  "summary": "Bounded top-level Quaternion quoted numeric JSON is public and protected-hook green; exact hosted CI is running. Broader MSG-02 remains open.",
+  "summary": "Bounded top-level Quaternion quoted numeric JSON is public and hosted-green; nested Pose and broader MSG-02 remain open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public 7c6d98016f3e7fdcdfee649ee3299c87da9a8821 fixes only top-level Quaternion x/y/z/w quoted finite numeric compatibility. The 408-observation fixture has155 native-positive exact wires and253 rejects;28 older fixture hashes are unchanged. Independent source/final reviews approved, normal protected hook passed128 Rust tests including31 CLI,5,771 pinned native status/full-wire outcomes and strict >95% coverage. Hosted messages run40279507589 for the exact commit is in progress; no hosted acceptance or nested Pose/general MSG-02 claim yet. The first source gate stopped at formatting before tests and was corrected; no timing claim from Cargo2 overlap with Root SDK."
+      "detail": "Public 7c6d98016f3e7fdcdfee649ee3299c87da9a8821 hosted run40279507589 succeeded on exact SHA after128 Rust tests including31 CLI,5,771 pinned native JSON status/full-wire outcomes, strict >95% coverage, staged-index and fresh-cache source-package checks. The accepted top-level Quaternion x/y/z/w fixture has408 distinct observations,155 native-positive exact wires,253 rejects and28 unchanged prior hashes; independent source/final reviews approved. The first format-only gate failure is retained and was corrected before passed source and protected-hook gates. A read-only next Pose probe confirms quoted nested components and duplicate message-merge gaps; no nested Pose or full MSG-02 acceptance credit."
     }
   ],
   "accepted_slices": [
@@ -322,6 +322,11 @@
       "title": "Bounded top-level Vector3d quoted numeric JSON with 5,363 native outcomes",
       "commit": "e400a26743b77b81be2262cabacf8b3315ec9eef",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e400a26743b77b81be2262cabacf8b3315ec9eef"
+    },
+    {
+      "title": "Bounded top-level Quaternion quoted numeric JSON with 5,771 native outcomes",
+      "commit": "7c6d98016f3e7fdcdfee649ee3299c87da9a8821",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7c6d98016f3e7fdcdfee649ee3299c87da9a8821"
     }
   ],
   "remaining": [
@@ -348,10 +353,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40279507589"
     },
-    "note": "Exact public 7c6d980 normal protected hook passed128 Rust/31 CLI,5,771 native exact outcomes and strict coverage. Hosted run40279507589 remains in progress; bounded Quaternion slice is not yet hosted-accepted. MSG-02 remains open.",
+    "note": "Public 7c6d980 normal protected hook and hosted40279507589 succeeded:128 Rust/31 CLI,5,771 exact native JSON outcomes,strict coverage,staged-index and fresh-cache package gates. Only bounded Quaternion top-level numeric parity is accepted; no full MSG-02 or timing claim.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7c6d98016f3e7fdcdfee649ee3299c87da9a8821"
   }
 }
