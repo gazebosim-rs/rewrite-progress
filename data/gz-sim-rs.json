@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T03:07:30.663591+00:00",
+  "updated_at": "2026-10-26T03:27:56.619493Z",
   "state": "active",
   "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
   "model": "Coordinator; architecture, integration and review",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-02",
       "title": "Implement confirmed D23 static and world-axis corrections",
-      "detail": "Owner confirmed corrected behavior with preserved assertions/native difference records. Unpublished Root prototype keeps static ModelBounds immobile/zero velocity and accepts rotated model/link world-velocity inputs. Focused low-level2 and scene3 tests pass, covering pause/reset/public IDs/IMU and retained native rotated data. Fresh native static6observations plus unchanged Model.BasicAPI1/0 pass. Existing Rust-only obsolete rotation rejection assertions are retained as unsupported-wrench negatives with independent disposition required. Full staged/review/normal/hosted gates and broader TPE remain open."
+      "detail": "Confirmed D23 source frozen43b54bef for independent review; strict full staged gate running. Focused low-level3 and loaded-scene4 tests pass. Reviewer found valid empty static models lack ModelBounds; immutable Motion::new_fixed now preserves static policy without contact geometry and through core/loaded resets. Static-bounds callers remain supported. Native6 full-state observations, unchanged Model.BasicAPI1/0 and all30 actual native Server input controls replayed; old fixtures/tolerances retained. Two Rust-only obsolete rotation rejections retain their Unsupported/atomicity assertions as wrench negatives, pending independent disposition. Not accepted or counted complete; normal/hosted gates and broader TPE remain open."
     },
     {
       "id": "FUEL-01",
