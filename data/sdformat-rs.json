@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T16:25:40.293668+00:00",
+  "updated_at": "2026-10-26T16:39:14.000491+00:00",
   "state": "active",
-  "summary": "Owned Visual cloning and five fixed copy/move originals are public with exact hosted CI success after independent source/final review and mandatory normal hooks. The accepted ledger has 148 complete and 25 partial originals; broader SDF semantics remain open.",
+  "summary": "Owned Collision cloning and five fixed pose originals are public with exact hosted CI success after independent source/final reviews and mandatory normal hooks. The accepted ledger has 153 complete and 25 partial originals; broader SDF semantics remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Qualify bounded Collision ownership",
-      "detail": "Public candidate685ff8d passed independent source/protected/final reviews and mandatory normal hooks:348 Rust/16 tooling, strict4771/4795 lines7915/8157 regions and staged4549/4566. Exact hosted CI is in progress. Candidate adds five fixed pose originals; accepted public credit remains148 complete/25 partial."
+      "title": "Prepare bounded Link ownership",
+      "detail": "Static next proposal adds Clone for owned Link and Inertial metadata, five fixed final-name originals and supplemental nested ownership checks. The native MoveConstructor case actually invokes a copy; that operation will be retained. Fresh native baseline, source, tests, reviews and all gates remain unrun. No new Link original credit."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Clone owned Collision metadata and port five fixed pose cases",
+      "commit": "685ff8d9c6b264eb046fd2d0e8de1e84a3d088e8",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/685ff8d9c6b264eb046fd2d0e8de1e84a3d088e8"
+    },
     {
       "title": "Clone owned Visual metadata and port five fixed ownership cases",
       "commit": "bccc97287c2c2f3ce3ea405a0a0a27ed29dffdce",
@@ -595,13 +600,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 148,
+      "ported": 153,
       "partial": 25
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40358636368"
     },
-    "note": "Public Collision candidate passed source/protected/final review, full author gate and mandatory normal hooks. Strict coverage remains4771/4795 lines7915/8157 regions, staged4549/4566 and zero changed instrumented lines; no exclusions. Exact hosted CI remains pending. Native five originals5/0, private Rust6/0 and pose/sign countercontrols preserve signed component<=1e-3 without quaternion sign relaxation; nested ownership checks are supplemental. No default EMPTY geometry, Element, parser/resource/physics, general C++ identity or performance claim."
+    "note": "Public685ff8d passed independent source/protected/final review, full author gate, mandatory normal hook and exact hosted CI:348 Rust/16 tooling, strict4771/4795 lines7915/8157 regions and staged4549/4566, zero changed instrumented lines, no exclusions. Native5/0, privateRust6/0 and pose/sign countercontrols preserve signed component<=1e-3 without quaternion sign relaxation; nested ownership checks are supplemental. No default EMPTY geometry, Element, parser/resource/physics, general C++ identity or performance claim."
   }
 }
