@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T05:36:36Z",
+  "updated_at": "2026-10-26T05:48:07Z",
   "state": "active",
-  "summary": "Quoted Vector3d numeric compatibility passed the exact source gate and independent review; normal protected hook and hosted qualification remain pending, and broader MSG-02 is open.",
+  "summary": "Quoted Vector3d numeric compatibility is published with its protected hook green; hosted CI is running and broader MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public d26b0d8 hosted run40271485838 remains the accepted quality revision. The next seven-file Vector3d quoted-number candidate on parent d26b0d8 has exact staged gate green:127 Rust including30 CLI,5,363 pinned native status/full-wire outcomes and strict >95% coverage;27 older fixture hashes unchanged. Independent source and final metadata reviews approved exact bounded scope and protected hashes. Root V6 SDK build has the current heavy window, so Msgs normal protected hook, public push and hosted CI remain pending. No timing or broad MSG-02 parity claim."
+      "detail": "Public e400a26743b77b81be2262cabacf8b3315ec9eef contains the bounded top-level Vector3d x/y/z quoted-number correction. Independent source and final metadata reviews approved exact seven-file tree88142b77; normal protected hook passed 127 Rust including30 CLI,5,363 pinned native status/full-wire outcomes and strict >95% coverage. Hosted messages run40276156061 is in progress; accepted-slice credit waits for success. Root V6 dependency build overlapped correctness checks at two Cargo jobs, with no timing claim. Broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -331,8 +331,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "d26b0d8a8930258a353532f926571b371b6b2df1",
-    "rust_tests": 126,
+    "revision": "e400a26743b77b81be2262cabacf8b3315ec9eef",
+    "rust_tests": 127,
     "coverage": {
       "lines": null,
       "regions": null
@@ -343,10 +343,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40271485838"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40276156061"
     },
-    "note": "Public d26b0d8 normal hook and hosted40271485838 succeeded:126 Rust,5,044 exact native JSON rows,strict coverage,staged-index and fresh-cache source-package checks. Other descriptors and MSG-02 broad acceptance remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d26b0d8a8930258a353532f926571b371b6b2df1"
+    "note": "Public e400a26 normal hook passed:127 Rust,5,363 exact native JSON status/full-wire outcomes,strict >95% coverage and source-package checks. Hosted run40276156061 is in progress. Bounded Vector3d scope only; no full MSG-02 acceptance or timing claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e400a26743b77b81be2262cabacf8b3315ec9eef"
   }
 }
