@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T00:21:32.788260+00:00",
+  "updated_at": "2026-10-26T00:46:15.267828+00:00",
   "state": "active",
-  "summary": "Centered cylinder support is accepted at d4aaab2: independent review, protected238 Rust/24 tooling/15 C++ checks and exact hosted CI all passed. The next Transport consumer integration is under strict verification and independent review.",
+  "summary": "Accepted public1c32b9d integrates reviewed local Transport delivery and bounded service responses:239 Rust tests,24 tooling checks,15 C++ scenarios and exact hosted CI pass. The current-pin native comparison is independently reviewed and its data publication is under protected checks.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -48,16 +48,21 @@
     },
     {
       "id": "IO-01",
-      "title": "Validate published Transport c21 consumer integration",
-      "detail": "Frozen Root consumer c6beec57 passed its exact staged gate:239 Rust tests,24 tooling checks and all15 unchanged C++ scenarios. Every crate remains >95% lines/regions; workspace3535/3572 and5395/5514. Existing service timeout assertions now pass with public producer c21; old failed f816 evidence remains intact. Independent consumer replay/review, exact producer hosted40248292544, final metadata and normal/hosted consumer checks remain. Accepted public simulator still pins2a."
+      "title": "Accepted Transport integration; remaining IO contracts",
+      "detail": "Public1c32b9d pins hosted-green c21. Independent source/API/test/final review, private first-frame/reset and prior service-timeout regression, exact staged and normal239 Rust/24 tooling/all15 unchanged C++ scenarios pass. Every production crate remains >95% lines/regions; exact consumer hosted40249610531 SUCCESS. Old failed f816 adoption is retained. Broader IO01/P2 and complete callback/discovery/service behaviors remain open."
     },
     {
-      "id": "REF-02",
-      "title": "Publish complete retained performance history and qualify new pin",
-      "detail": "All seven predeclared Transport comparisons retain all154 observations, including regressions and warmup pairs. Final paired candidate/earlier-Rust ratio1.03598,95% interval[0.99243,1.07658]: point overhead3.598% is inside proposed5%, upper-bound guarantee remains unproven. Independent public projection review approved all samples/statistics. Separate historical public05/native report retains all11 pairs, ratio0.70018 limited to selected TPE/IMU streams. Full balanced robotics, ratified budgets and P2 remain open."
+      "id": "REF-03",
+      "title": "Publish reviewed exact-current-pin native comparison",
+      "detail": "Public1c32 current-pin native/Rust complete-stream comparison passed independent source/build/library/raw-row/statistics review: native median65.229us/request, Rust37.211us; paired Rust/native0.56948,95% interval[0.55765,0.58286]. All11 pairs and extremes retained, only declaredwarmup0 excluded. Selected two-model TPE/noise-free1000HzIMU/clock/pose stream fixture,20ms host pacing excluded from work time,shared CPU31; no balanced/general/P2 claim. Data publication is running its protected hook. All seven earlier within-Rust experiments/all154 observations are already public and unchanged."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Reviewed separate-Node delivery and bounded service-response integration",
+      "commit": "1c32b9d9480c3926b9bb0dc5acd23ac708cf7135",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1c32b9d9480c3926b9bb0dc5acd23ac708cf7135"
+    },
     {
       "title": "Centered Z-axis cylinder loading, dynamics and native TPE contact controls",
       "commit": "d4aaab213aa91f64138636be401979def4daf419",
@@ -317,8 +322,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue.",
-    "Transport consumer acceptance awaits exact producer hosted success and remaining independent/final consumer checks. Final measured point overhead3.598% meets proposed5%, but 95% interval[0.99243,1.07658] does not establish a 5% upper bound or ratified performance acceptance. All seven experiments and the original failed adoption remain retained."
+    "Owner decision pending for two native TPE quirks: static models moving under stored velocity and rotated-link world-velocity conversion. Independent reference, geometry and other milestone work can continue."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -336,11 +340,12 @@
     "CLI-01": "in_progress",
     "IO-01": "in_progress",
     "PHY-02": "in_progress",
-    "FUEL-01": "in_progress"
+    "FUEL-01": "in_progress",
+    "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "d4aaab213aa91f64138636be401979def4daf419",
-    "rust_tests": 238,
+    "revision": "1c32b9d9480c3926b9bb0dc5acd23ac708cf7135",
+    "rust_tests": 239,
     "coverage": {
       "lines": [
         3535,
@@ -358,10 +363,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40247499908"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40249610531"
     },
-    "note": "Independent source/native/assertion and final metadata reviews approved; exact staged and normal protected hook238 Rust/24 tools/15 unchanged C++ scenarios pass. Every production crate >95% lines/regions; workspace3535/3572 lines5395/5514 regions; changed Rapier9/9 and scene12/12. Exact hosted40247499908 SUCCESS on public d4aaab2. Native CylinderShape remains partial; no original retirement, solver/performance or full LOAD/PHY/P2 acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d4aaab213aa91f64138636be401979def4daf419"
+    "note": "Independent source/API/assertion/final metadata review approved. Exact staged and normal protected239 Rust/24 tools/15 unchanged C++ scenarios pass; all production crates >95% lines/regions, workspace3535/3572 and5395/5514. No executable Rust production delta in consumer; independent producer coverage2486/2543 and3690/3846 plus hosted40248292544 SUCCESS. Consumer exact hosted40249610531 SUCCESS on public1c32b9d. No complete IO01/P2 or final performance-budget acceptance.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1c32b9d9480c3926b9bb0dc5acd23ac708cf7135"
   },
   "phase_status": {
     "P0": "in_progress",
