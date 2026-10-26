@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T05:13:00.255109Z",
+  "updated_at": "2026-10-26T05:51:12.442588Z",
   "state": "active",
   "summary": "All four agents are active. Public simulator f118fff inventory tooling passed exact hosted CI:239 Rust/35 tooling/15 C++ checks. Owner-confirmed D23 static/world-axis correction is now under implementation and native comparison.",
   "model": "Coordinator; architecture, integration and review",
@@ -9,7 +9,7 @@
     {
       "id": "REF-01",
       "title": "Clean headless native reference image under development",
-      "detail": "Corrected V5 full14-repo native SDK build is running at two CMake jobs on reviewed tree12b3abe7. Dependency image5ff99bba verified read-only:688 installed packages,613 fixed-snapshot fetches, exact lock/amd64 and required libprotoc/cppzmq headers/library present. V3 first SDK failure (missing development package) retained; both actual omissions are independently reviewed corrections, not test reductions. Pre-build provenance source review and53 tool controls pass; no clean SDK/image/native execution/P0/P2 credit yet. Ordinary non-timing repo checks may overlap at two jobs with recorded context; latency gates/benchmarks wait for SDK clear. Current public simulator ab8d1ad remains exact-hosted-green."
+      "detail": "V5 full14-repo SDK attempt built through sensors, then failed unmodified physics common-test CMake on unconditional BULLET_INCLUDE_DIR-NOTFOUND. No SDK image or native-test credit. Independently reviewed V6 adds actual reference-only Bullet development headers and documents the need; both Bullet engines remain skipped and no Rust Bullet backend is introduced. All53 tool controls pass. Corrected dependency stage is downloading the same fixed signed snapshot (slower server throughput); ordinary repo checks continue at two jobs, latency suites wait for clear. Earlier missing libprotoc/cppzmq failures/corrections retained. Runtime smoke proof scripts prepared but unqualified. Clean full SDK, inventory, actual tests, immutable image and P0/P2 acceptance remain open."
     },
     {
       "id": "CORE-02",
