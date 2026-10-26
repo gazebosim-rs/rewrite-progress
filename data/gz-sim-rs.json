@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T22:28:55.489428+00:00",
+  "updated_at": "2026-10-26T23:23:54.206599+00:00",
   "state": "active",
-  "summary": "The full staged IMU rate-control check passed271 Rust and83 tooling tests, with every production crate above95% line and region coverage. Independent coverage binding, the normal protected commit and exact hostedCI are next. Formal headless and repository completion remain open.",
+  "summary": "Runtime IMU rate control is published and exact-CI qualified, including real C++ clients, strict coverage and reviewed current-source performance. Next: native activation semantics and loaded IMU control. The full rewrite and formal headless phase remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -23,8 +23,8 @@
     },
     {
       "id": "SENSOR-01",
-      "title": "Runtime IMU rate control under development; full sensor scope open",
-      "detail": "Frozen candidate49751dcd passes the canonical staged gate:271 Rust/0failed/0ignored,83 tooling tests, all9 production crates >95% lines and regions; workspace3801/3841lines5828/5959regions, changedScene52/52Server177/180. RawJSON/LCOV/mergedprofiles retained for independent recomputation. Earlier fresh independent89+6effectiveproductioncontrols+89restored checks cover capped one-way rates, raw-deadline coupling, reset queues, same-topic providers and bounded overload handling. Actual C++ old15 plusnewTPE/Rapier rate/reset processes and3 lifecycle controls remain required. Source32/protected reviewse050/a1deb approved; two Sensor cases remainPARTIAL, no original retirement. Independent coverage/finalbinding, normal protected commit and exact hostedCI pending; broaderSENSOR01/IO01/P2 open."
+      "title": "Runtime IMU rates accepted; activation baseline next",
+      "detail": "Publica8b80129 exact40414745428 SUCCESS. Canonical source11665+mandatorynormal24753 pass271Rust/0fail/0ignored,83tools,17functionalC++ scenarios+3separate controls; all9productioncrates>95%lines/regions,workspace3801/3841+5828/5959,changedScene52/52Server177/180. Independent source/runtime/full/final/normal reviews approved including89+6effectivecontrols+89restored. Two Sensor cases remainPARTIAL; no retirement/pin/policy/tolerance/Fuel changes. Next activation task/prototype/portablecollector preparedonly: capture native active/force/deadline semantics and original constructor assertions before production edits; no activation run or implementation claimed. Triggers/metrics/registration/otherfamilies/fullSENSOR01/IO01/P2 stayopen."
     },
     {
       "id": "SLICE-01",
@@ -59,10 +59,15 @@
     {
       "id": "REF-03",
       "title": "SDK equal-work observations accepted; balanced suite remains open",
-      "detail": "Accepted25f682f historical SDK report remains unchanged. New rate-sourceb08/326 input measurements are independently approved79315c8f, public fullreport projectiondf2ad1e8. Two separate11-pair128-step TPE clock/pose/IMU batches retain all44processes and10nonwarmuppairs each. Author native61.646us/Rust39.741us; paired Rust/native ratio0.63979 CI[0.61952,0.65813]. Independent61.163/39.275us; ratio0.64388 CI[0.63129,0.65692]. Worklatency excludes recorded20ms host pacing; allcomplete decoded work/source/compiler/library identities bound. This is selected shared-host evidence, not rate-change, causal, unpaced-throughput, balanced robotics or general simulator performance. Candidate normal/public/hosted qualification pending; broadREF03/P0/P2 open."
+      "detail": "Accepted25f682f historical SDK report remains unchanged. New rate-sourceb08/326 input measurements are independently approved79315c8f, public fullreport projectiondf2ad1e8. Two separate11-pair128-step TPE clock/pose/IMU batches retain all44processes and10nonwarmuppairs each. Author native61.646us/Rust39.741us; paired Rust/native ratio0.63979 CI[0.61952,0.65813]. Independent61.163/39.275us; ratio0.64388 CI[0.63129,0.65692]. Worklatency excludes recorded20ms host pacing; allcomplete decoded work/source/compiler/library identities bound. This is selected shared-host evidence, not rate-change, causal, unpaced-throughput, balanced robotics or general simulator performance. Current-source report accepted with publica8b80129/exact40414745428SUCCESS and independently reviewed normal4fa187e6. BroadREF03/P0/P2 open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Native-compatible runtime IMU rate control, bounded one-way services and real C++ reset clients",
+      "commit": "a8b80129071039568471efb9e9a56edd02b8effb",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a8b80129071039568471efb9e9a56edd02b8effb"
+    },
     {
       "title": "Centered Z-axis capsules on full-f64 Rapier and native TPE model bounds with independent native/physical checks",
       "commit": "22a536c6918f55314ea7566fe783d06f4ce54e75",
@@ -365,7 +370,7 @@
     }
   ],
   "remaining": [
-    "Complete formal P0 provenance/inventory, broader world/resource loading, TPE and dynamic physics, sensor noise/seeds/activation and IO compatibility; selected integration evidence alone does not complete P2.",
+    "Complete formal P0 provenance/inventory, broader world/resource loading, remaining physics, activation/triggers/metrics, runtime sensor lifecycle and IO compatibility; selected integration evidence does not complete P2.",
     "DART and MuJoCo adapters, remaining TPE capabilities, general articulations/forces and complete backend capability contract.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
@@ -392,29 +397,29 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "22a536c6918f55314ea7566fe783d06f4ce54e75",
-    "rust_tests": 253,
+    "revision": "a8b80129071039568471efb9e9a56edd02b8effb",
+    "rust_tests": 271,
     "coverage": {
       "lines": [
-        3569,
-        3605
+        3801,
+        3841
       ],
       "regions": [
-        5446,
-        5565
+        5828,
+        5959
       ]
     },
     "upstream": {
       "total": null,
       "ported": 3,
-      "partial": 6
+      "partial": 8
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40365209522"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40414745428"
     },
-    "note": "Public22a536c exacthosted40365209522SUCCESS. Independent runtimea4a140bf/final91618b95,native1223 andfresh7/0+3productioncontrolfailures/restored7/0. Strictsource36995+mandatorynormal89274 pass253Rust/75tooling/15unchangedrealCpp; all9productioncrates>95%lines/regions,workspace3569/3605and5446/5565,changedRapier6/6Scene13/13. CapsuleShape PARTIAL only: positivegeometry/nativebounds+supplementarycontacts covered; emptydefault/mutableAPI remainsunported. No new fullcase/retirement/performance/P0/P2/fullrewrite credit. Allproducerpins/oldfixtures/assertions/tolerances/policy preserved.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/22a536c6918f55314ea7566fe783d06f4ce54e75"
+    "note": "Publica8b80129 exact40414745428SUCCESS; independentruntimeafc2/sourcefullb264/final3dd580/normal4fa187 approved. Source+normal271Rust83tools,17functionalCpp+3controls; all9cratesstrict>95both,changedScene52/52Server177/180. Nativecap/phase/reset/globalrawdeadline andone-wayDouble/Emptyservices, minimalwarmpool/boundedoverload metrics qualified. TwoSensororiginalsPARTIAL only; no retirement/pin/oldassertion/tolerance/policy change. SelectedTPE128step clock/pose/IMU worklatency batches approved79315/projectiondf2: separatepairedratios0.63979 and0.64388; no balanced/general/causal/unpacedthroughput/P2/fullrewrite claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a8b80129071039568471efb9e9a56edd02b8effb"
   },
   "phase_status": {
     "P0": "in_progress",
