@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T09:35:58.714216+00:00",
+  "updated_at": "2026-10-26T09:44:30.061224+00:00",
   "state": "active",
   "summary": "The numeric XML correction is public and passes its exact hosted CI after independent review and normal hooks. Subnormal scalar, pose and color values reject before emission. There are 127 complete and 22 partial reviewed original cases; broader SDF scope remains open.",
   "model": "gpt-6.1-sol / high",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-01",
       "title": "Review bounded Physics XML values",
-      "detail": "Independent partial source review and full author verification passed: 316 Rust tests, 16 tooling tests, formatting, Clippy and docs. Working-tree coverage is 4725/4750 lines and 7853/8094 regions, with 44/44 changed lines. Final metadata review, normal hooks and publication remain pending. Both Physics XML originals retain Element/console gaps; public quality below describes 4a25e2a."
+      "detail": "Independent partial source and final metadata reviews are approved. Full author verification passed 316 Rust tests and 16 tooling tests; coverage is 4725/4750 lines and 7853/8094 regions, with 44/44 changed lines. The mandatory normal commit hook is running at Cargo 2. Publication and exact new CI remain pending. Both Physics XML originals retain Element/console gaps; public quality below describes 4a25e2a."
     }
   ],
   "accepted_slices": [
