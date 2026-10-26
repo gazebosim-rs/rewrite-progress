@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T04:23:46Z",
+  "updated_at": "2026-10-26T05:09:08Z",
   "state": "active",
-  "summary": "Forty-nine reviewed complete and nineteen partial upstream ports. Public metadata correction 80c2c4b fixes two response-lambda callback-order credits after independent review; hosted CI 40267750828 succeeded. NET-02 and broader performance qualification remain open.",
+  "summary": "Forty-nine hosted-qualified complete and nineteen partial upstream ports. A reviewed same-Node one-way callback slice is public at d53e422 with exact protected checks green; hosted CI is pending.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic, service and origin contracts",
-      "detail": "Public 80c2c4b corrects the two response-lambda ledger rows to partial while retaining native/Rust payload, response and once evidence. Exact staged/protected gates and hosted run40267750828 passed. The one-way lambda V1 immediate-return gap remains unpublished evidence; a substantive same-Node callback API is under bounded implementation and review."
+      "detail": "Public d53e422 adds an independently reviewed owned one-way callback API and fixed same-Node post-request flag mapping; local staged/protected native and coverage gates passed. Hosted run 40272566932 is pending, so credit remains 49 complete/19 partial. C++ API and process-global other-Node semantics remain open."
     }
   ],
   "accepted_slices": [
@@ -362,17 +362,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "80c2c4b38bf466b889a11119fefdfcde178cbbcb",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/80c2c4b38bf466b889a11119fefdfcde178cbbcb",
-    "rust_tests": 203,
+    "revision": "d53e42261bb0cf555611780316bb35d2b087e8d3",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d53e42261bb0cf555611780316bb35d2b087e8d3",
+    "rust_tests": 210,
     "coverage": {
       "lines": [
-        2533,
-        2594
+        2645,
+        2714
       ],
       "regions": [
-        3739,
-        3902
+        3893,
+        4071
       ]
     },
     "upstream": {
@@ -381,9 +381,9 @@
       "partial": 19
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40267750828"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40272566932"
     },
-    "note": "Exact reviewer-bound metadata correction treeca50ddb9, staged and normal protected hook passed, public 80c2c4b hosted run40267750828 SUCCESS. 49 complete/19 partial; callback return timing gap explicit, source/test/native positive evidence preserved; lost-output101 unclassified."
+    "note": "Exact reviewer-bound tree 896860fb and normal protected hook passed pinned native/Rust/strict coverage; hosted run 40272566932 is still in progress. 49 hosted-qualified complete/19 partial; one new fixed observable original awaits hosted acceptance. Historical lost-output101 remains unclassified."
   }
 }
