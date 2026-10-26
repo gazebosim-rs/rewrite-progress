@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T09:33:45Z",
+  "updated_at": "2026-10-26T09:50:39Z",
   "state": "active",
-  "summary": "Reviewed Header/stamp behavior and corrected automatic changed-line enforcement pass the combined exact source gate; final binding and publication gates remain.",
+  "summary": "Header/stamp merging and automatic changed-line enforcement are public after the protected hook; exact hosted verification is running.",
   "model": "GPT-6 Astra high \u2014 Messages owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Combined source tree a54edf4b passed 131 Rust tests including 34 CLI, 6,598 native outcomes, 2976/2996 owned production lines, 4884/4948 regions and automatic 63/63 added executable CLI lines. Independent Header and corrected policy source reviews are approved; retained staged evidence is complete. Seven changed-line controls, ten snapshot controls and existing strict/vendor/source-package checks pass. Final metadata tree 3e7a5837 is awaiting independent binding, then the normal protected hook and exact hosted candidate qualification. Public revision remains 65958f65 with its historical per-file gates; the new automatic changed-line policy is not yet public. Header.data has two explicit accepted wrong-wire gaps and MSG02 stays open."
+      "detail": "Public 4cc842e3 passed independent Header/policy source reviews, Transport final binding, exact combined source gate and normal protected hook on tree3e7a5837. Evidence:131 Rust/34 CLI,6,598 native outcomes,2976/2996 owned lines,4884/4948 regions and automatic63/63 added lines; retained staged evidence complete. Exact hosted40302314150 is running, so this new slice is not yet accepted. Next isolated Header.data candidate targets ordinary repeated-array append; singleton/nested-array/null-entry forms and inner Map.value duplicates remain explicit pending boundaries. Broader MSG02 stays open."
     }
   ],
   "accepted_slices": [
@@ -351,11 +351,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "65958f65a6592a10b40c368ced5e480bce8e4724",
-    "rust_tests": 130,
+    "revision": "4cc842e3a267e9b1e305c92eb924c9d48b8cabd8",
+    "rust_tests": 131,
     "coverage": {
-      "lines": null,
-      "regions": null
+      "lines": [
+        2976,
+        2996
+      ],
+      "regions": [
+        4884,
+        4948
+      ]
     },
     "upstream": {
       "total": 83,
@@ -363,10 +369,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40291464209"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40302314150"
     },
-    "note": "Public65958f65 exact hosted40291464209 SUCCESS;130Rust/33CLI,6,523native,existing strict whole-file/vendor coverage and mandatory staged/source-package gates. Historical runner did not separately enforce root-source changed-line coverage; do not infer that metric from its green result. New Header candidate has independent semantic review and supplemental63/63 added lines but remains unpublished pending automatic policy correction and combined gates. No timing claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/65958f65a6592a10b40c368ced5e480bce8e4724"
+    "note": "Exact public4cc842e3 normal hook passed with independent source/final review,131Rust/34CLI,6,598native and strict owned/vendor plus automatic63/63 root changed-line coverage. Complete retained stage evidence. Exact hosted result pending. Historical green runs did not establish separate changed-root coverage; this revision corrects that enforcement. Header.data and broaderMSG02 remain open. No timing claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/4cc842e3a267e9b1e305c92eb924c9d48b8cabd8"
   }
 }
