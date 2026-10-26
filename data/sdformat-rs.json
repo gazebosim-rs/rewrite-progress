@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T06:36:44Z",
+  "updated_at": "2026-10-26T07:00:20Z",
   "state": "active",
-  "summary": "Five fixed observable DOMLight copy and move originals are public and hosted-green after independent review. 122 complete and 17 partial original cases are reviewed; Light Element, semantic-pose errors and broad XML semantics remain open.",
+  "summary": "Bounded DOMLight XML value roundtrips are public and hosted-green after independent partial review. 122 complete and 19 partial original cases are reviewed; Element and console observations and broad Light grammar remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port bounded Light XML roundtrip",
-      "detail": "Pinned native DOMLight.ToElement and ToElementErrorOutput originals pass2/0; isolated standalone Light XML emit/load fixed-value prototype and selected Rust tests pass. Element ownership/identity, console capture and general schema remain partial; independent review and publication pending."
+      "title": "Port bounded Frame XML roundtrips",
+      "detail": "Pinned DOMFrame.ToElement and ToElementErrorOutput native originals pass2/0; isolated ownership and provenance are recorded before edits. Element pointer, console capture and graph integration remain outside this bounded value roundtrip."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port bounded native Light XML value roundtrips as partial originals",
+      "commit": "b3b2f0146946567ecacaa570cc1c5ce4d88292bd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b3b2f0146946567ecacaa570cc1c5ce4d88292bd"
+    },
     {
       "title": "Port native Light copy and move originals",
       "commit": "c70a086beda8a1dd6360ae07455659d871a20abd",
@@ -530,28 +535,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c70a086beda8a1dd6360ae07455659d871a20abd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c70a086beda8a1dd6360ae07455659d871a20abd",
-    "rust_tests": 293,
+    "revision": "b3b2f0146946567ecacaa570cc1c5ce4d88292bd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b3b2f0146946567ecacaa570cc1c5ce4d88292bd",
+    "rust_tests": 297,
     "coverage": {
       "lines": [
-        4375,
-        4396
+        4569,
+        4594
       ],
       "regions": [
-        7411,
-        7631
+        7689,
+        7930
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 122,
-      "partial": 17
+      "partial": 19
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40280010042"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40282673371"
     },
-    "note": "Pinned five DOMLight copy/move originals native5/0 and reviewer raw-parent Rust5/0. Fixed final value/name assertions retained via Clone/clone_from/move/replace; C++ operator/pointer/moved-from state unclaimed. Independent source/final receipts SHA5766dfda/efca13a0, normal protected hook293 Rust/16 tools, production4375/4396 lines7411/7631 regions, no production changed. Root V6 SDK overlap was correctness-only."
+    "note": "Pinned two DOMLight ToElement originals native2/0 and reviewer raw-parent Rust4/0; bounded standalone XML value roundtrip only, with native Element pointer and console-buffer observations unported. Independent source/final receipts SHA1ca50fc1/b7d8ba20; normal protected hook297 Rust/16 tools, production4569/4594 lines7689/7930 regions, changed188/192. Native library loaded emitted XML; Root V6 SDK and Msgs Pose overlap was correctness-only."
   }
 }
