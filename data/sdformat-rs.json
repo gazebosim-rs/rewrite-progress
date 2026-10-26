@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T04:27:35Z",
+  "updated_at": "2026-10-26T04:49:15Z",
   "state": "active",
-  "summary": "The fixed observable DOMModel.AddModifyFrame original is public and hosted-green after independent review. 109 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
+  "summary": "The fixed observable DOMLink.AddSensor original is public and hosted-green after independent review. 110 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port native Link sensor collection original",
-      "detail": "Isolated ownership and pinned DOMLink.AddSensor native1/0 baseline on hosted-green public 66a5eee; typed owned sensor insertion draft, selected/full Rust gate and independent review pending. Default untyped Sensor state and C++ pointer/method identity unclaimed."
+      "title": "Port native Link collision and visual collection originals",
+      "detail": "Isolated ownership and pinned DOMLink.AddCollision/AddVisual native2/0 baseline on hosted-green public 06d32aa; selected Rust2/0 passes after rebase. Full strict gate, independent review, normal hook and hosted qualification pending. Default unparsed object state and C++ pointer/method identity unclaimed."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Link sensor collection original",
+      "commit": "06d32aa2351c5f6dc2501a4ae624681f4efc4ea4",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/06d32aa2351c5f6dc2501a4ae624681f4efc4ea4"
+    },
     {
       "title": "Port native Model frame mutation original",
       "commit": "66a5eee35e750355b0845e3e8dc30fa6f1480b1b",
@@ -495,28 +500,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "66a5eee35e750355b0845e3e8dc30fa6f1480b1b",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/66a5eee35e750355b0845e3e8dc30fa6f1480b1b",
-    "rust_tests": 277,
+    "revision": "06d32aa2351c5f6dc2501a4ae624681f4efc4ea4",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/06d32aa2351c5f6dc2501a4ae624681f4efc4ea4",
+    "rust_tests": 278,
     "coverage": {
       "lines": [
-        4255,
-        4276
+        4269,
+        4290
       ],
       "regions": [
-        7295,
-        7515
+        7311,
+        7531
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 109,
+      "ported": 110,
       "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40268905409"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40270710475"
     },
-    "note": "Pinned DOMModel.AddModifyFrame native1/0 and reviewer raw-parent Rust1/0; fixed add, duplicate, clear, reinsert, index, mutable rename and old/new lookup values retained. Independent source/final receipts SHA21125852/8a78ec6d, normal hook277 Rust/16 tools, production4255/4276 lines7295/7515 regions, changed3/3. Parsed valid owned setup; C++ pointer/method identity and prebuilt graph mutation unclaimed."
+    "note": "Pinned DOMLink.AddSensor native1/0 and reviewer raw-parent Rust1/0; direct-name add, duplicate rejection, clear, reinsert and index-name values retained. Independent source/final receipts SHA725c28eb/59469050, normal hook278 Rust/16 tools, production4269/4290 lines7311/7531 regions, changed13/13. Typed parsed IMU substitutes untyped default only for fixed observations; build overlap correctness-only, no timing claim."
   }
 }
