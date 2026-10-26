@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T16:39:14.000491+00:00",
+  "updated_at": "2026-10-26T17:47:04.593730+00:00",
   "state": "active",
-  "summary": "Owned Collision cloning and five fixed pose originals are public with exact hosted CI success after independent source/final reviews and mandatory normal hooks. The accepted ledger has 153 complete and 25 partial originals; broader SDF semantics remain open.",
+  "summary": "Owned Link and Inertial cloning plus five fixed Link name originals are public with exact hosted CI success after independent source/final reviews and mandatory normal hooks. The accepted ledger has 158 complete and 25 partial originals; broader SDF semantics remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Prepare bounded Link ownership",
-      "detail": "Static next proposal adds Clone for owned Link and Inertial metadata, five fixed final-name originals and supplemental nested ownership checks. The native MoveConstructor case actually invokes a copy; that operation will be retained. Fresh native baseline, source, tests, reviews and all gates remain unrun. No new Link original credit."
+      "title": "Research Model namespace gap",
+      "detail": "All five native Model ownership originals also require namespace presence/value observations absent from the current Rust Model. Static research distinguishes raw/resolved optional namespaces, name substitution and include overrides. No source or native probe has run for the next scope; no Model credit."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Clone owned Link and Inertial metadata with five fixed name originals",
+      "commit": "ef3866412bf65490de91955bcf85a472b4228e79",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ef3866412bf65490de91955bcf85a472b4228e79"
+    },
     {
       "title": "Clone owned Collision metadata and port five fixed pose cases",
       "commit": "685ff8d9c6b264eb046fd2d0e8de1e84a3d088e8",
@@ -585,9 +590,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "685ff8d9c6b264eb046fd2d0e8de1e84a3d088e8",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/685ff8d9c6b264eb046fd2d0e8de1e84a3d088e8",
-    "rust_tests": 348,
+    "revision": "ef3866412bf65490de91955bcf85a472b4228e79",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ef3866412bf65490de91955bcf85a472b4228e79",
+    "rust_tests": 354,
     "coverage": {
       "lines": [
         4771,
@@ -600,13 +605,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 153,
+      "ported": 158,
       "partial": 25
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40358636368"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40369261559"
     },
-    "note": "Public685ff8d passed independent source/protected/final review, full author gate, mandatory normal hook and exact hosted CI:348 Rust/16 tooling, strict4771/4795 lines7915/8157 regions and staged4549/4566, zero changed instrumented lines, no exclusions. Native5/0, privateRust6/0 and pose/sign countercontrols preserve signed component<=1e-3 without quaternion sign relaxation; nested ownership checks are supplemental. No default EMPTY geometry, Element, parser/resource/physics, general C++ identity or performance claim."
+    "note": "Public ef386641 passed independent source/final review, full author gate, mandatory normal hook and exact hosted core:354 Rust/16 tooling, strict4771/4795 lines7915/8157 regions and staged4549/4566,zero changed instrumented lines and no exclusions. Five fixed final-name originals retain the native MoveConstructor case actual copy operation. Fresh native5/0/privateRust6/0 and production-only clone-name-loss countercontrol restored/replayed. Nested inertial/metadata ownership checks are supplemental, with no extra Inertial original, Element, graph rebuilding, resource/physics, C++ identity or performance claim."
   }
 }
