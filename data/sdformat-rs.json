@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T03:17:49Z",
+  "updated_at": "2026-10-26T03:32:14Z",
   "state": "active",
-  "summary": "Two DOMJoint mutable sensor name originals are public and hosted-green after independent review. 104 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
+  "summary": "Two DOMModel owned collection originals are public and hosted-green after independent review. 106 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port native Model owned collection originals",
-      "detail": "Read-only native audit and isolated ownership started for DOMModel.AddJoint and AddModel on public a1b0ee7; no source acceptance, general mutation API or parser-wide behavior claimed."
+      "title": "Port native Model mutable member originals",
+      "detail": "Isolated ownership and pinned native2/0 baseline on public 3c9d36f; two-case source draft in progress. Independent review, gates and hosted qualification pending. No graph mutation or C++ pointer/method claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Model collection insertion originals",
+      "commit": "3c9d36f8c384d42f975fe31b3cb291fa20dd5d3f",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3c9d36f8c384d42f975fe31b3cb291fa20dd5d3f"
+    },
     {
       "title": "Port native joint mutable sensor value originals",
       "commit": "a1b0ee731ec7aa684b344b368f80f13cc666bdc3",
@@ -480,28 +485,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a1b0ee731ec7aa684b344b368f80f13cc666bdc3",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a1b0ee731ec7aa684b344b368f80f13cc666bdc3",
-    "rust_tests": 272,
+    "revision": "3c9d36f8c384d42f975fe31b3cb291fa20dd5d3f",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3c9d36f8c384d42f975fe31b3cb291fa20dd5d3f",
+    "rust_tests": 274,
     "coverage": {
       "lines": [
-        4205,
-        4226
+        4233,
+        4254
       ],
       "regions": [
-        7235,
-        7455
+        7267,
+        7487
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 104,
+      "ported": 106,
       "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40263088196"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40264242627"
     },
-    "note": "Pinned DOMJoint.MutableByIndex and MutableByName native2/0 and reviewed Rust2/0; exact rename/relookup values retained. Independent source/final receipts SHA6a9ea39d/a50e2d29, normal protected hook passed272 Rust/16 tools, production4205/4226 lines7235/7455 regions. Test-only, no executable production delta. Empty/count Rust checks supplemental; native pointer/method identity, default Sensor construction, duplicate policy and broad grammar unclaimed."
+    "note": "Pinned DOMModel.AddJoint and AddModel native2/0 and reviewed Rust2/0; unique add, duplicate rejection, clear, reinsert and index/name observations retained. Independent source/final receipts SHAf8e1bd1d/3d889119, normal hook274 Rust/16 tools, production4233/4254 lines7267/7487 regions, changed26/26. Parsed static and valid inserted setup; prebuilt graph not updated, no arbitrary scoped uniqueness or Element parity."
   }
 }
