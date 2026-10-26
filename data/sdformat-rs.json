@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T07:00:20Z",
+  "updated_at": "2026-10-26T07:33:30Z",
   "state": "active",
-  "summary": "Bounded DOMLight XML value roundtrips are public and hosted-green after independent partial review. 122 complete and 19 partial original cases are reviewed; Element and console observations and broad Light grammar remain open.",
+  "summary": "Bounded DOMFrame XML value roundtrips are public and hosted-green after independent partial review. 122 complete and 21 partial original cases are reviewed; Element, console and standalone graph behavior remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port bounded Frame XML roundtrips",
-      "detail": "Pinned DOMFrame.ToElement and ToElementErrorOutput native originals pass2/0; isolated ownership and provenance are recorded before edits. Element pointer, console capture and graph integration remain outside this bounded value roundtrip."
+      "title": "Port next native Frame DOM values",
+      "detail": "Inventorying DOMframe.Construction default/set values and standalone graph-error limits after the reviewed XML roundtrip. Source ownership and native baseline are the next step."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port bounded native Frame XML value roundtrips as partial originals",
+      "commit": "d9560becb4ebdc74ef92d1664218b8c717423f55",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/d9560becb4ebdc74ef92d1664218b8c717423f55"
+    },
     {
       "title": "Port bounded native Light XML value roundtrips as partial originals",
       "commit": "b3b2f0146946567ecacaa570cc1c5ce4d88292bd",
@@ -535,28 +540,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "b3b2f0146946567ecacaa570cc1c5ce4d88292bd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b3b2f0146946567ecacaa570cc1c5ce4d88292bd",
-    "rust_tests": 297,
+    "revision": "d9560becb4ebdc74ef92d1664218b8c717423f55",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/d9560becb4ebdc74ef92d1664218b8c717423f55",
+    "rust_tests": 300,
     "coverage": {
       "lines": [
-        4569,
-        4594
+        4646,
+        4671
       ],
       "regions": [
-        7689,
-        7930
+        7788,
+        8029
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 122,
-      "partial": 19
+      "partial": 21
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40282673371"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40286173293"
     },
-    "note": "Pinned two DOMLight ToElement originals native2/0 and reviewer raw-parent Rust4/0; bounded standalone XML value roundtrip only, with native Element pointer and console-buffer observations unported. Independent source/final receipts SHA1ca50fc1/b7d8ba20; normal protected hook297 Rust/16 tools, production4569/4594 lines7689/7930 regions, changed188/192. Native library loaded emitted XML; Root V6 SDK and Msgs Pose overlap was correctness-only."
+    "note": "Pinned two DOMFrame ToElement originals native2/0 and reviewer raw-source Rust3/0; bounded standalone attached/bare Frame value roundtrips only, native Element pointer and console-buffer observations unported. Source/final receipts SHAb360a215/b53d564e, normal protected hook300 Rust/16 tools, production4646/4671 lines7788/8029 regions, changed75/75. Both emitted XML variants load in byte-identical pinned native SDF1.12 library; no timing claim."
   }
 }
