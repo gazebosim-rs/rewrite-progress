@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T09:05:42Z",
+  "updated_at": "2026-10-26T09:32:25Z",
   "state": "active",
-  "summary": "Fifty-three reviewed complete and nineteen partial upstream ports. Public 315cf3b passed exact source, normal protected and hosted checks for publication receive ordering; broad NET-01/NET-02 scope remains.",
+  "summary": "Fifty-four reviewed complete and nineteen partial upstream ports. Public b869bc7 adds the fixed local wrong-request service original after exact source and normal protected checks; exact hosted qualification is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public 315cf3b is hosted-green on exact run 40292391143. The next wrong-request service original passed its exact frozen source gate (214 Rust tests, native Node 52/0, unchanged strict production coverage) and is in independent raw-source/native/control review; it is not yet published or hosted-qualified."
+      "detail": "Public b869bc7 has independent source/final binding and a passed normal protected hook on tree 84805107. Exact hosted run 40299936911 is in progress; general native callback lifetime and scheduler/API equivalence remain open."
     },
     {
       "id": "NET-02",
@@ -372,6 +372,11 @@
       "title": "Publication receive wait starts after connection readiness",
       "commit": "315cf3b2d9411acd94cc68c019198b972dcc82ec",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/315cf3b2d9411acd94cc68c019198b972dcc82ec"
+    },
+    {
+      "title": "Fixed same-Node wrong-request service observations with live owned observers",
+      "commit": "b869bc7c3fb88eac16b3dbb65e60b00d0079e678",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b869bc7c3fb88eac16b3dbb65e60b00d0079e678"
     }
   ],
   "remaining": [
@@ -387,9 +392,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "315cf3b2d9411acd94cc68c019198b972dcc82ec",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/315cf3b2d9411acd94cc68c019198b972dcc82ec",
-    "rust_tests": 213,
+    "revision": "b869bc7c3fb88eac16b3dbb65e60b00d0079e678",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b869bc7c3fb88eac16b3dbb65e60b00d0079e678",
+    "rust_tests": 214,
     "coverage": {
       "lines": [
         2645,
@@ -402,13 +407,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 53,
+      "ported": 54,
       "partial": 19
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40292391143"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40299936911"
     },
-    "note": "Reviewed source e2d658a8 and final tree 16e80704 passed the mandatory normal protected hook and exact hosted run 40292391143 SUCCESS on public 315cf3b. 213 Rust passed, zero failed/ignored; native Node 51/0; production coverage 2645/2714 lines and 3893/4071 regions, no production edit. Scaled controls establish wait placement only; scheduler/full-window equivalence and callback API identity remain unclaimed. Historical lost-output 101 remains unclassified."
+    "note": "Reviewed source 0971286b and final tree 84805107 passed the mandatory normal protected hook: 214 Rust passed, zero failed/ignored; native Node 52/0; production coverage 2645/2714 lines and 3893/4071 regions, no production edit. Independent native/raw Rust 1/0 and valid async Int32(5) control exercised real data/result then failed the retained false callback predicate. Exact hosted 40299936911 is in progress, not success. Native unbounded async lifetime versus owned ten-second bound and C++ callback API/scheduling remain unclaimed; historical lost-output 101 remains unclassified."
   }
 }
