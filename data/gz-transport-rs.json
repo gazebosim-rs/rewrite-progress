@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T08:02:21Z",
+  "updated_at": "2026-10-26T08:28:17Z",
   "state": "active",
-  "summary": "Fifty-three reviewed complete and nineteen partial upstream ports. Public 02cbb68 passed exact source, normal protected and hosted checks for the corrected mixed-type two-subscriber original; broad NET-01/NET-02 scope remains.",
+  "summary": "Fifty-three reviewed complete and nineteen partial upstream ports. Public315cf3b aligns the publication receive wait after connection readiness; reviewed exact source and normal protected checks passed, exact hosted qualification is running.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public 02cbb68 is hosted-green on exact run40287897483. A separate one-file wrong-type-publication receive-deadline correction passed its own exact staged gate on treee2d658a8 and awaits independent review; no production source change."
+      "detail": "Public315cf3b has source review, exact final binding and normal protected hook passed on tree16e80704; exact hosted run40292391143 is in progress. Original counts remain53/19; the correction changes only test wait ordering and scoped evidence."
     },
     {
       "id": "NET-02",
@@ -367,6 +367,11 @@
       "title": "Mixed-type two-subscriber fixed observable original with retained receive lifetimes",
       "commit": "02cbb6836b74d4c5ffd9d212952bdf8b5ef65cd8",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/02cbb6836b74d4c5ffd9d212952bdf8b5ef65cd8"
+    },
+    {
+      "title": "Publication receive wait starts after connection readiness",
+      "commit": "315cf3b2d9411acd94cc68c019198b972dcc82ec",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/315cf3b2d9411acd94cc68c019198b972dcc82ec"
     }
   ],
   "remaining": [
@@ -374,7 +379,7 @@
     "Wire statistics, throttling, authentication, SQLite logs/replay and complete legacy CLI.",
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
     "Equal-fidelity latency, throughput and allocation measurements.",
-    "Align the previously accepted wrong-type-publication receive deadline after readiness in a separate reviewed test correction; preserve its passing fixed-original history without claiming delayed-connection timeout equivalence."
+    "Exact hosted qualification of the reviewed publication wait-order correction on public315cf3b is pending in run40292391143; full timeout-window and scheduler equivalence remain unclaimed."
   ],
   "blockers": [],
   "plan_status": {
@@ -383,8 +388,8 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "02cbb6836b74d4c5ffd9d212952bdf8b5ef65cd8",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/02cbb6836b74d4c5ffd9d212952bdf8b5ef65cd8",
+    "revision": "315cf3b2d9411acd94cc68c019198b972dcc82ec",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/315cf3b2d9411acd94cc68c019198b972dcc82ec",
     "rust_tests": 213,
     "coverage": {
       "lines": [
@@ -402,9 +407,9 @@
       "partial": 19
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40287897483"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40292391143"
     },
-    "note": "Corrected source dc5763ba and final treefaeae393 independently reviewed; mandatory normal protected hook and exact hosted40287897483 SUCCESS on public02cbb68. Node51/0,213Rust/0fail/0ignored,strict2645/2714 lines3893/4071 regions, no production edit. Superseded f4df remains unapproved despite its old local pass. Callback API/scheduling and other matrix remain open; historical lost-output101 unclassified."
+    "note": "Reviewed sourcee2d658a8 and finaltree16e80704 passed mandatory normal protected hook:213Rust/0fail/0ignored,Node51/0,strict2645/2714 lines3893/4071 regions,no production edit. Exact hosted40292391143 is in progress, not success. Scaled ordering controls establish relative placement only; scheduler/full-window equivalence and callbackAPI identity remain unclaimed. Historical lost-output101 remains unclassified."
   }
 }
