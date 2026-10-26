@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T00:30:59Z",
+  "updated_at": "2026-10-26T01:22:36Z",
   "state": "active",
-  "summary": "Bounded Time sec/nsec numeric JSON passed independent review, protected checks and exact hosted CI; MSG-02 remains open.",
+  "summary": "Bounded quoted Double_V/Float_V JSON compatibility passed independent review and protected checks; hosted qualification is running and MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Time numeric slice a6123a6 is public and hosted-green on exact run 40249108460: reviewer-bound seven-file tree, 121 Rust checks, strict >95% production coverage, 2,563 native status/full-wire observations (2,562 distinct type/input pairs), 21 prior fixture hashes exact. The initial stale historical assertion failure was retained and corrected without changing prior fixtures. Next measured gap is quoted Double_V/Float_V numeric overflow and noncanonical nonfinite spellings; isolated read-only 128-row characterization/source audit underway. Broader MSG-02 remains open."
+      "detail": "Quoted float slice 47f44dd is public after exact reviewer-bound 122 Rust, strict >95% staged gate and normal hook; hosted run 40253495539 is pending. Native parity corpus has 2,815 status/full-wire observations, with 60 explicit native-only quoted whitespace gaps and 48 jointly rejected controls. Next read-only boundary audit found unquoted Float_V max-rounding and separate Double_V one-ULP wire differences; broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -287,6 +287,11 @@
       "title": "Bounded Time sec/nsec numeric JSON with 2,563 native observations",
       "commit": "a6123a61606bedfa8a37427c32a0db4bbc155768",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a6123a61606bedfa8a37427c32a0db4bbc155768"
+    },
+    {
+      "title": "Bounded quoted Double_V/Float_V numeric admission with 2,815 native observations and explicit whitespace gaps",
+      "commit": "47f44ddb30482ccd226d30f681ca5fc788da89e0",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/47f44ddb30482ccd226d30f681ca5fc788da89e0"
     }
   ],
   "remaining": [
@@ -301,8 +306,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "a6123a61606bedfa8a37427c32a0db4bbc155768",
-    "rust_tests": 121,
+    "revision": "47f44ddb30482ccd226d30f681ca5fc788da89e0",
+    "rust_tests": 122,
     "coverage": {
       "lines": null,
       "regions": null
@@ -313,10 +318,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40249108460"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40253495539"
     },
-    "note": "Exact reviewer-bound seven-file staged gate, normal protected hook and hosted run 40249108460 passed on public a6123a6: 121 Rust checks, strict production >95% coverage, 2,563 pinned native status/full-wire observations with one retained duplicate type/input, 21 prior fixture hashes exact. Independent reviewer reproduced corpus and 120 additional bounded forms; general MSG-02 remains open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a6123a61606bedfa8a37427c32a0db4bbc155768"
+    "note": "Exact seven-file reviewer-bound staged gate and normal protected hook passed on public 47f44dd; 122 Rust checks and strict production >95% coverage. Independent native peer replayed all 2,815 status/full-wire observations; 22 prior fixtures retained. Hosted run 40253495539 remains pending; 60 quoted whitespace native-only gaps and wider MSG-02 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/47f44ddb30482ccd226d30f681ca5fc788da89e0"
   }
 }
