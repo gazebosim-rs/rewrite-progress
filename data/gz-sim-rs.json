@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T00:46:15.267828+00:00",
+  "updated_at": "2026-10-26T01:24:12.292091+00:00",
   "state": "active",
-  "summary": "Accepted public1c32b9d integrates reviewed local Transport delivery and bounded service responses:239 Rust tests,24 tooling checks,15 C++ scenarios and exact hosted CI pass. The current-pin native comparison is independently reviewed and its data publication is under protected checks.",
+  "summary": "Public66e5559 publishes the independently reviewed current-pin native/Rust comparison; exact hosted CI passed239 Rust/24 tooling/15 C++ checks. Next, a reference inventory collector is under strict verification, with237 listed configurations and724 retained gaps.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -53,11 +53,21 @@
     },
     {
       "id": "REF-03",
-      "title": "Publish reviewed exact-current-pin native comparison",
-      "detail": "Public1c32 current-pin native/Rust complete-stream comparison passed independent source/build/library/raw-row/statistics review: native median65.229us/request, Rust37.211us; paired Rust/native0.56948,95% interval[0.55765,0.58286]. All11 pairs and extremes retained, only declaredwarmup0 excluded. Selected two-model TPE/noise-free1000HzIMU/clock/pose stream fixture,20ms host pacing excluded from work time,shared CPU31; no balanced/general/P2 claim. Data publication is running its protected hook. All seven earlier within-Rust experiments/all154 observations are already public and unchanged."
+      "title": "Published current-pin native comparison; balanced suite remains",
+      "detail": "Public66e5559 publishes all11 current-pin native/Rust pairs and exact review receipts. Measured source1c32/c21: native median65.229us/request, Rust37.211us; paired Rust/native0.56948,95% interval[0.55765,0.58286]. All extremes retained, only declaredwarmup0 excluded. Selected two-model TPE/noise-free1000HzIMU/clock/pose fixture,20ms pacing excluded from work latency,shared CPU31; no balanced/general/P2 claim. Data publication protected239 Rust/24 tools/15 C++ and exact hosted40251239484 SUCCESS; older datasets unchanged."
+    },
+    {
+      "id": "REF-02",
+      "title": "Verify configured native runtime-test inventory tooling",
+      "detail": "New collector candidate a58047f1 preserves CTest configuration identity including cwd/ordered envmods, uses native CMake reset behavior, retains partial failures and checks executable hashes after listing. Ten new integrity tests plus24 original tooling controls pass34 locally. Fresh five-build replay lists237 configurations/2388 case expansions and retains724 unqualified entries, with no listing failures. Listing earns no execution-pass credit; strict gate and independent review are running. Complete wrappers/build profiles/runtime results and immutable reference image remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Qualified current-pin native/Rust stream measurement and retained raw observations",
+      "commit": "66e55596fc977791191ef3159bdf13505156e9fc",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66e55596fc977791191ef3159bdf13505156e9fc"
+    },
     {
       "title": "Reviewed separate-Node delivery and bounded service-response integration",
       "commit": "1c32b9d9480c3926b9bb0dc5acd23ac708cf7135",
@@ -344,7 +354,7 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "1c32b9d9480c3926b9bb0dc5acd23ac708cf7135",
+    "revision": "66e55596fc977791191ef3159bdf13505156e9fc",
     "rust_tests": 239,
     "coverage": {
       "lines": [
@@ -363,10 +373,10 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40249610531"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40251239484"
     },
-    "note": "Independent source/API/assertion/final metadata review approved. Exact staged and normal protected239 Rust/24 tools/15 unchanged C++ scenarios pass; all production crates >95% lines/regions, workspace3535/3572 and5395/5514. No executable Rust production delta in consumer; independent producer coverage2486/2543 and3690/3846 plus hosted40248292544 SUCCESS. Consumer exact hosted40249610531 SUCCESS on public1c32b9d. No complete IO01/P2 or final performance-budget acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1c32b9d9480c3926b9bb0dc5acd23ac708cf7135"
+    "note": "Independent native/source/build/binary/library/raw-row/statistics and final metadata reviews approved. Normal protected239 Rust/24 tools/15 unchanged C++ scenarios pass, every production crate >95% lines/regions, workspace3535/3572 and5395/5514; data-only publication has no code/test/pin/history delta. Exact hosted40251239484 SUCCESS. Measured code is public1c32/c21; complete balanced performance budgets, REF/P0 and P2 remain open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/66e55596fc977791191ef3159bdf13505156e9fc"
   },
   "phase_status": {
     "P0": "in_progress",
