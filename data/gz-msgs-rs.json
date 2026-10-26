@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T02:37:41Z",
+  "updated_at": "2026-10-26T03:00:32Z",
   "state": "active",
-  "summary": "Public portable JSON verifier is hosted-green; a bounded Double_V decimal wire correction is in independent review and MSG-02 remains open.",
+  "summary": "Bounded Double_V decimal wire correction is public after independent review and protected checks; hosted qualification is in progress and MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public448267a is hosted-green40258911434 after123 Rust and3,037 exact native rows; prior hosted40257819363 failure retained. New unpublished Double_V decimal candidate treea4c15d50 is source-frozen for independent review after exact staged124 Rust/3,172 native rows and strict coverage. Prior18 historical one-bit controls now require parity; 135 new native rows, deterministic460-token sweep and public-parent negative proof retained. Broader MSG-02 remains open."
+      "detail": "Public 34de42e passed independent source review, normal hook,124 Rust tests and3,172 exact native JSON observations; hosted run40261863110 is pending. The correction is limited to top-level unquoted finite dotted/exponent Double_V.data. Broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -302,6 +302,11 @@
       "title": "Portable pinned native JSON replay with 3,037 exact outcomes across compiler builds",
       "commit": "448267a5e3e64ed2260a01118f82307bc566cd8b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/448267a5e3e64ed2260a01118f82307bc566cd8b"
+    },
+    {
+      "title": "Bounded unquoted Double_V decimal wire parity with 3,172 native observations",
+      "commit": "34de42e13d3e588848050eab85e6612b3ec5086c",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/34de42e13d3e588848050eab85e6612b3ec5086c"
     }
   ],
   "remaining": [
@@ -316,8 +321,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "448267a5e3e64ed2260a01118f82307bc566cd8b",
-    "rust_tests": 123,
+    "revision": "34de42e13d3e588848050eab85e6612b3ec5086c",
+    "rust_tests": 124,
     "coverage": {
       "lines": null,
       "regions": null
@@ -328,10 +333,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40258911434"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40261863110"
     },
-    "note": "Public448267a passed normal hook and hosted40258911434: 123 Rust,3,037 exact native rows,strict coverage. New Double_V candidate is in review on a separate staged tree and has not changed public quality revision or CI status. Prior hosted40257819363 cross-host ELF failure retained; MSG-02 open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/448267a5e3e64ed2260a01118f82307bc566cd8b"
+    "note": "Public 34de42e passed normal protected hook and exact staged gate:124 Rust,3,172 exact native JSON rows,strict coverage. Hosted run40261863110 pending; prior portable-verifier hosted failure40257819363 retained and repaired run40258911434 succeeded. MSG-02 open.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/34de42e13d3e588848050eab85e6612b3ec5086c"
   }
 }
