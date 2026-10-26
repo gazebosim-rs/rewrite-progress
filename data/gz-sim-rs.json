@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T07:46:53.914698Z",
+  "updated_at": "2026-10-26T07:59:12.938575Z",
   "state": "active",
-  "summary": "The clean native headless SDK and selected runtime checks passed independent review. Its recipe is in the mandatory protected commit checks; formal P2 remains open.",
+  "summary": "Reviewed native headless SDK recipe d0b7fb3 is public and passed protected local checks; exact hosted CI is running. Formal P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "REF-01",
       "title": "Publish reviewed clean headless reference SDK",
-      "detail": "Independently reviewed local SDK image 11b7378c builds all14 pinned native repositories and records690 packages/4743 installed paths. Ten unchanged originals and100 exact1ms native Server/TPE/IMU observations pass; independent same-image replay confirms clean XML and empty stderr after a private writable Gazebo log tmpfs correction. Exact frozen source gate passed246 Rust/53 tooling/15 actual C++ client scenarios with strict unchanged coverage. Final13-file metadata/source binding approved; mandatory normal commit hook is running. Expanded inventory still has597 explicit gaps; full profiles, image registry/license distribution review, native-client SDK adoption, REF01/P0/P2 remain open. No new performance claim."
+      "detail": "Public d0b7fb3 contains the pinned14-repository headless SDK recipe, full environment/installed-file manifest and reviewed selected native evidence. Independent10-original and100-step Server/TPE/IMU runs have clean stderr; source gate and mandatory normal hook passed246 Rust/53 tooling/15 real C++ scenarios with strict coverage. Exact hosted40288622843 is running; acceptance waits for its result. Inventory retains597 gaps, broader profiles and REF01/P0/P2 remain open. A separate external collector draft is being reviewed to classify pinned result-file guards without counting registrations as test passes or Rust ports."
     },
     {
       "id": "CORE-02",
@@ -367,7 +367,7 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "ab8d1adf47364c61620f57d95e07b0906351dae1",
+    "revision": "d0b7fb3db3a7dfb8e8f95b432c73cfed8aa8ef3b",
     "rust_tests": 246,
     "coverage": {
       "lines": [
@@ -385,11 +385,11 @@
       "partial": 5
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40266257423"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40288622843"
     },
-    "note": "Public ab8d1ad passed independent source/native/assertion/projection and final metadata reviews plus exact staged and normal246 Rust/41 tooling/15 actual C++ child-client gates. All9 production crates>95% lines/regions; workspace3548/3584lines5419/5538regions, changedTPE27/27 scene11/11. Exact hosted40266257423 SUCCESS on matching headSha. Corrected D23 static/world-axis scope accepted; full reference image/inventory, PHY02 and P2 remain open.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ab8d1adf47364c61620f57d95e07b0906351dae1"
+    "note": "Exact reviewed source and final13-file protected checks passed246 Rust/53 tooling/15 actual C++ child scenarios. All9 Rust crates exceed95% lines/regions; workspace3548/3584 and5419/5538, no production Rust changes. Public d0b7fb3 exact hosted CI is pending; no completed formal REF01/P0/P2 or new performance claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d0b7fb3db3a7dfb8e8f95b432c73cfed8aa8ef3b"
   },
   "phase_status": {
     "P0": "in_progress",
