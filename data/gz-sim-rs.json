@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T07:59:12.938575Z",
+  "updated_at": "2026-10-26T08:06:05.125633Z",
   "state": "active",
-  "summary": "Reviewed native headless SDK recipe d0b7fb3 is public and passed protected local checks; exact hosted CI is running. Formal P2 remains open.",
+  "summary": "Published d0b7fb3 native headless SDK recipe passed independent review, protected checks and exact hosted CI. Reference inventory expansion is next; formal P2 remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "REF-01",
-      "title": "Publish reviewed clean headless reference SDK",
-      "detail": "Public d0b7fb3 contains the pinned14-repository headless SDK recipe, full environment/installed-file manifest and reviewed selected native evidence. Independent10-original and100-step Server/TPE/IMU runs have clean stderr; source gate and mandatory normal hook passed246 Rust/53 tooling/15 real C++ scenarios with strict coverage. Exact hosted40288622843 is running; acceptance waits for its result. Inventory retains597 gaps, broader profiles and REF01/P0/P2 remain open. A separate external collector draft is being reviewed to classify pinned result-file guards without counting registrations as test passes or Rust ports."
+      "title": "Expand reviewed reference inventory coverage",
+      "detail": "Accepted public d0b7fb3 provides a reproducible14-repository native headless SDK recipe, environment/4743-path manifest and reviewed clean10-original+100-step Server/TPE/IMU evidence. Exact hosted40288622843 SUCCESS on matching headSha after strict246 Rust/53 tooling/15 actual C++ client checks. External inventory classifier is under preuse review: exact pinned result-file guards will be listed separately from cases, passes and Rust ports; all existing597gap evidence remains unchanged. Wider profiles, image registry/license distribution review, SDK consumer integration, REF01/P0/P2 remain open. Replacement SDF/Transport owners use gpt-6.1-sol high after capacity failures; Msgs owner continues gpt-6-sol high."
     },
     {
       "id": "CORE-02",
@@ -68,6 +68,11 @@
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Pinned headless native SDK recipe, immutable environment and independently replayed selected originals/Server TPE IMU evidence",
+      "commit": "d0b7fb3db3a7dfb8e8f95b432c73cfed8aa8ef3b",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d0b7fb3db3a7dfb8e8f95b432c73cfed8aa8ef3b"
+    },
     {
       "title": "Corrected TPE static and world-axis velocity behavior with empty-model reset and retained native differences",
       "commit": "ab8d1adf47364c61620f57d95e07b0906351dae1",
@@ -385,10 +390,10 @@
       "partial": 5
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40288622843"
     },
-    "note": "Exact reviewed source and final13-file protected checks passed246 Rust/53 tooling/15 actual C++ child scenarios. All9 Rust crates exceed95% lines/regions; workspace3548/3584 and5419/5538, no production Rust changes. Public d0b7fb3 exact hosted CI is pending; no completed formal REF01/P0/P2 or new performance claim.",
+    "note": "Public d0b7fb3 passed independent full source/provenance/assertion/projection review, same-image native replay, final13-file binding, exact source and normal protected gates, then exact hosted40288622843 SUCCESS. Local246 Rust/53 tooling/15 real C++ child scenarios; all9 crates>95% lines/regions,3548/3584lines5419/5538regions, no production Rust edits. Selected native SDK evidence accepted; full REF01/P0/P2 and new performance claims remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d0b7fb3db3a7dfb8e8f95b432c73cfed8aa8ef3b"
   },
   "phase_status": {
