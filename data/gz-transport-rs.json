@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T04:02:09Z",
+  "updated_at": "2026-10-26T04:11:27Z",
   "state": "active",
-  "summary": "Forty-nine reviewed complete and nineteen partial upstream ports. A source-backed callback-order audit revoked two local response-lambda complete credits; their payload, response and invocation observations remain valid. Metadata-only public correction is in review. NET-02 and broader performance qualification remain open.",
+  "summary": "Forty-nine reviewed complete and nineteen partial upstream ports. Public metadata correction 80c2c4b fixes two response-lambda callback-order credits after independent review; hosted CI is queued. NET-02 and broader performance qualification remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Retained topic, service and origin contracts",
-      "detail": "The two public e5ae228 response-lambda tests retain native/Rust payload, response and once evidence, but native invokes the callback before actual Node::Request returns while Rust invokes it after Node::request returns inside a test adapter. Independent correction receipt SHA187fcf78 requires both ledger rows partial; metadata-only correction is pending exact gate and publication. The new one-way lambda V1 has the same timing gap and remains unpublished partial evidence."
+      "detail": "Public 80c2c4b corrects the two response-lambda ledger rows to partial while retaining native/Rust payload, response and once evidence. Exact staged and protected native/coverage gates passed; hosted run40267750828 is queued. The one-way lambda V1 immediate-return gap remains unpublished evidence; a substantive same-Node callback API is under bounded implementation review."
     }
   ],
   "accepted_slices": [
@@ -342,6 +342,11 @@
       "title": "Reviewed local service lambda observable assertion ports",
       "commit": "e5ae2286c82f0b4fa59f9839304e56a364153854",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/e5ae2286c82f0b4fa59f9839304e56a364153854"
+    },
+    {
+      "title": "Corrected response-lambda callback timing dispositions",
+      "commit": "80c2c4b38bf466b889a11119fefdfcde178cbbcb",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/80c2c4b38bf466b889a11119fefdfcde178cbbcb"
     }
   ],
   "remaining": [
@@ -357,8 +362,8 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "e5ae2286c82f0b4fa59f9839304e56a364153854",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/e5ae2286c82f0b4fa59f9839304e56a364153854",
+    "revision": "80c2c4b38bf466b889a11119fefdfcde178cbbcb",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/80c2c4b38bf466b889a11119fefdfcde178cbbcb",
     "rust_tests": 203,
     "coverage": {
       "lines": [
@@ -376,9 +381,9 @@
       "partial": 19
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40265379958"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40267750828"
     },
-    "note": "Public e5ae228 hosted run40265379958 succeeded, but independent source audit subsequently revoked two faithful_port ledger credits for the immediate post-Node::Request callback timing predicate. Corrected count49 complete/19 partial is shown now; metadata-only ledger publication is pending normal gate. Native payload/result/once evidence and prior receipts remain retained; lost-output101 unclassified."
+    "note": "Exact reviewer-bound metadata correction treeca50ddb9, staged and normal protected hook passed, public 80c2c4b hosted run40267750828 queued. 49 complete/19 partial; callback return timing gap explicit, source/test/native positive evidence preserved; lost-output101 unclassified."
   }
 }
