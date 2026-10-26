@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T04:49:15Z",
+  "updated_at": "2026-10-26T05:17:14Z",
   "state": "active",
-  "summary": "The fixed observable DOMLink.AddSensor original is public and hosted-green after independent review. 110 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
+  "summary": "The fixed observable DOMLink.AddCollision and DOMLink.AddVisual originals are public and hosted-green after independent review. 112 complete and 16 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Port native Link collision and visual collection originals",
-      "detail": "Isolated ownership and pinned DOMLink.AddCollision/AddVisual native2/0 baseline on hosted-green public 06d32aa; selected Rust2/0 passes after rebase. Full strict gate, independent review, normal hook and hosted qualification pending. Default unparsed object state and C++ pointer/method identity unclaimed."
+      "title": "Review native Link light collection original",
+      "detail": "Next bounded case DOMLink.AddLight is in read-only source/API inventory. Native baseline, ownership, implementation, full gate and independent review are pending. Light configuration, parsing, default-state and broader mutable Link originals remain unclaimed."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port native Link collision and visual collection originals",
+      "commit": "18f0c68104f7870e9ddb7ada0d144887294dc8e1",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/18f0c68104f7870e9ddb7ada0d144887294dc8e1"
+    },
     {
       "title": "Port native Link sensor collection original",
       "commit": "06d32aa2351c5f6dc2501a4ae624681f4efc4ea4",
@@ -500,28 +505,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "06d32aa2351c5f6dc2501a4ae624681f4efc4ea4",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/06d32aa2351c5f6dc2501a4ae624681f4efc4ea4",
-    "rust_tests": 278,
+    "revision": "18f0c68104f7870e9ddb7ada0d144887294dc8e1",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/18f0c68104f7870e9ddb7ada0d144887294dc8e1",
+    "rust_tests": 280,
     "coverage": {
       "lines": [
-        4269,
-        4290
+        4297,
+        4318
       ],
       "regions": [
-        7311,
-        7531
+        7343,
+        7563
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 110,
+      "ported": 112,
       "partial": 16
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40270710475"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40273080173"
     },
-    "note": "Pinned DOMLink.AddSensor native1/0 and reviewer raw-parent Rust1/0; direct-name add, duplicate rejection, clear, reinsert and index-name values retained. Independent source/final receipts SHA725c28eb/59469050, normal hook278 Rust/16 tools, production4269/4290 lines7311/7531 regions, changed13/13. Typed parsed IMU substitutes untyped default only for fixed observations; build overlap correctness-only, no timing claim."
+    "note": "Pinned DOMLink.AddCollision/AddVisual native2/0 and reviewer raw-parent Rust2/0; count, add, duplicate rejection, clear, reinsert and index-name values retained. Independent source/final receipts SHA4958a542/defe824b, normal protected hook280 Rust/16 tools, production4297/4318 lines7343/7563 regions, author changed26/26. Parsed valid Rust values substitute native defaults only for fixed observations; SDK build overlap correctness-only, no timing claim."
   }
 }
