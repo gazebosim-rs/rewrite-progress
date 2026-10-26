@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T09:44:30.061224+00:00",
+  "updated_at": "2026-10-26T09:48:48.352412+00:00",
   "state": "active",
-  "summary": "The numeric XML correction is public and passes its exact hosted CI after independent review and normal hooks. Subnormal scalar, pose and color values reject before emission. There are 127 complete and 22 partial reviewed original cases; broader SDF scope remains open.",
+  "summary": "Bounded Physics XML values are public after independent partial review and normal hooks; exact hosted CI is running. There are 127 complete and 24 partial reviewed original cases. Element, console and broader SDF scope remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Review bounded Physics XML values",
-      "detail": "Independent partial source and final metadata reviews are approved. Full author verification passed 316 Rust tests and 16 tooling tests; coverage is 4725/4750 lines and 7853/8094 regions, with 44/44 changed lines. The mandatory normal commit hook is running at Cargo 2. Publication and exact new CI remain pending. Both Physics XML originals retain Element/console gaps; public quality below describes 4a25e2a."
+      "title": "Qualify bounded Physics XML value ports",
+      "detail": "Public e262de3 passed the normal hook: 316 Rust tests, 16 tooling tests, formatting, Clippy and docs. Exact hosted run 40302323810 is pending. Six fixed values roundtrip through the existing typed world loader; Element and console observations remain unported. No engine runtime or performance claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Port bounded Physics XML values as two partial originals; hosted pending",
+      "commit": "e262de326d4d02409321a8589c81d83981db9173",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e262de326d4d02409321a8589c81d83981db9173"
+    },
     {
       "title": "Reject numeric XML values that cannot roundtrip",
       "commit": "4a25e2a449b6b6dcea5da80b42af6dc839d405b0",
@@ -555,28 +560,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "4a25e2a449b6b6dcea5da80b42af6dc839d405b0",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4a25e2a449b6b6dcea5da80b42af6dc839d405b0",
-    "rust_tests": 311,
+    "revision": "e262de326d4d02409321a8589c81d83981db9173",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e262de326d4d02409321a8589c81d83981db9173",
+    "rust_tests": 316,
     "coverage": {
       "lines": [
-        4679,
-        4704
+        4725,
+        4750
       ],
       "regions": [
-        7818,
-        8059
+        7853,
+        8094
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 127,
-      "partial": 22
+      "partial": 24
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40295563369"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40302323810"
     },
-    "note": "Public 4a25e2a passed the normal hook: 311 Rust tests, 16 tooling tests, formatting, Clippy and docs. Production coverage is 4679/4704 lines and 7818/8059 regions; changed lines are 18/18, and the staged whole-source check is 4463/4481. Independent source and final reviews bind 12 selected Rust tests, 4 native originals, separate parent/candidate probes for four gaps, eight unchanged boundary observations and three failing guard mutants. Loader, FFI, graph, fixtures, original assertions and exclusions are unchanged. The four XML originals remain partial; no new original is credited. Exact hosted run 40295563369 passed on 4a25e2a. No performance claim."
+    "note": "Public e262de3 passed normal hooks with 316 Rust and 16 tooling tests. Coverage is 4725/4750 lines and 7853/8094 regions; changed lines are 44/44, staged whole-source 4507/4525. Independent source a52dce24 and final 2f10de8f reviews bind fresh private Rust 5/0, native originals 2/0, regenerated XML, a fresh native helper using the byte-identical pinned library, and failing contacts-loss/range-guard controls. Six original values are preserved; update-rate and boundaries are supplemental. Both originals remain partial for Element/console observations. No full grammar, native XML byte, engine runtime, error-vector or performance claim. Exact new hosted CI is pending."
   }
 }
