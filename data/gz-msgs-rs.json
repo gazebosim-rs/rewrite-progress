@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T06:30:33Z",
+  "updated_at": "2026-10-26T07:20:47Z",
   "state": "active",
-  "summary": "Bounded top-level Quaternion quoted numeric JSON is public and hosted-green; nested Pose and broader MSG-02 remain open.",
+  "summary": "Bounded Pose.position/orientation child quoted numeric JSON is public and hosted-green; repeated-parent merge and broader MSG-02 remain open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public 7c6d98016f3e7fdcdfee649ee3299c87da9a8821 hosted run40279507589 succeeded on exact SHA after128 Rust tests including31 CLI,5,771 pinned native JSON status/full-wire outcomes, strict >95% coverage, staged-index and fresh-cache source-package checks. The accepted top-level Quaternion x/y/z/w fixture has408 distinct observations,155 native-positive exact wires,253 rejects and28 unchanged prior hashes; independent source/final reviews approved. The first format-only gate failure is retained and was corrected before passed source and protected-hook gates. A read-only next Pose probe confirms quoted nested components and duplicate message-merge gaps; no nested Pose or full MSG-02 acceptance credit."
+      "detail": "Public 896073fe7e60a11a0f37584d1ed3134722d002a6 hosted run40283877263 succeeded on exact SHA after129 Rust tests including32 CLI,6,469 pinned native JSON outcomes, strict >95% owned coverage, staged-index and fresh-cache source-package checks. The accepted bounded Pose child fixture has694 pairwise distinct parity observations (257 native-positive exact wires,437 rejects) and29 unchanged prior hashes; independent source/final reviews approved. Four native-positive repeated-parent message-merge forms remain pinned as pending (two rejected, two accepted wrong-wire). A separate 43-form read-only characterization found additional repeated-parent accepted-wire gaps for the next bounded slice; no repeated-parent, deeper Pose or full MSG-02 acceptance credit."
     }
   ],
   "accepted_slices": [
@@ -327,6 +327,11 @@
       "title": "Bounded top-level Quaternion quoted numeric JSON with 5,771 native outcomes",
       "commit": "7c6d98016f3e7fdcdfee649ee3299c87da9a8821",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7c6d98016f3e7fdcdfee649ee3299c87da9a8821"
+    },
+    {
+      "title": "Bounded Pose child quoted numeric JSON with 6,469 native outcomes and explicit repeated-parent merge gaps",
+      "commit": "896073fe7e60a11a0f37584d1ed3134722d002a6",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/896073fe7e60a11a0f37584d1ed3134722d002a6"
     }
   ],
   "remaining": [
@@ -341,8 +346,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "7c6d98016f3e7fdcdfee649ee3299c87da9a8821",
-    "rust_tests": 128,
+    "revision": "896073fe7e60a11a0f37584d1ed3134722d002a6",
+    "rust_tests": 129,
     "coverage": {
       "lines": null,
       "regions": null
@@ -354,9 +359,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40279507589"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40283877263"
     },
-    "note": "Public 7c6d980 normal protected hook and hosted40279507589 succeeded:128 Rust/31 CLI,5,771 exact native JSON outcomes,strict coverage,staged-index and fresh-cache package gates. Only bounded Quaternion top-level numeric parity is accepted; no full MSG-02 or timing claim.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7c6d98016f3e7fdcdfee649ee3299c87da9a8821"
+    "note": "Public 896073fe7e60a11a0f37584d1ed3134722d002a6 normal protected hook and hosted40283877263 succeeded:129 Rust/32 CLI,6,469 exact pinned native JSON outcomes,strict coverage,staged-index and fresh-cache package gates. Only one top-level Pose.position/orientation child occurrence quoted numeric parity is accepted; four repeated-parent merge cases and broader MSG-02 remain open. No timing claim.",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/896073fe7e60a11a0f37584d1ed3134722d002a6"
   }
 }
