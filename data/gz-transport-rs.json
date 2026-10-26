@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-26T10:30:42Z",
+  "updated_at": "2026-10-26T11:00:08Z",
   "state": "active",
-  "summary": "Fifty-six reviewed complete and nineteen partial upstream ports. Public cda96dc passed exact source, normal protected and hosted checks for two fixed local wrong-response service originals; broad NET-01/NET-02 scope remains.",
+  "summary": "Fifty-six accepted complete and nineteen partial upstream ports; two additional reviewed mixed wrong/good response service originals are public and await exact hosted qualification.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Public cda96dc is hosted-green on exact run 40306497060. Next bounded work ports the two mixed wrong/good response service originals: pinned native 2/0 and selected Rust 2/0 pass, while full gate and independent review remain pending."
+      "detail": "Public 1d1eb0c passed exact source and normal protected gates for the two mixed wrong/good response originals. Exact hosted run 40311599435 is in progress; accepted count remains 56 until it succeeds."
     },
     {
       "id": "NET-02",
@@ -397,9 +397,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "cda96dc9d150dd1613b6b2d53f9e26568423b0a7",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cda96dc9d150dd1613b6b2d53f9e26568423b0a7",
-    "rust_tests": 216,
+    "revision": "1d1eb0ced8cb0d3af5b9e0f56f3cf4f044e1e647",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/1d1eb0ced8cb0d3af5b9e0f56f3cf4f044e1e647",
+    "rust_tests": 218,
     "coverage": {
       "lines": [
         2645,
@@ -416,9 +416,9 @@
       "partial": 19
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40306497060"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40311599435"
     },
-    "note": "Reviewed source b9af1579 and final tree b70cc691 passed the mandatory normal protected hook and exact hosted run 40306497060 SUCCESS on public cda96dc. 216 Rust passed, zero failed/ignored; native Node 54/0; production coverage 2645/2714 lines and 3893/4071 regions, zero production edit. Independent native 2/0, raw Rust 3/0 and two valid-response controls exercised provider/observer Int32(5)/true then failed the retained 300 ms false callback flags. Native unbounded async lifetime, C++ callback API and scheduling limits remain explicit. Historical lost-output 101 remains unclassified."
+    "note": "Reviewed source db694f30 and final tree 2223d358 passed exact source and mandatory normal protected hook; public 1d1eb0c exact hosted run 40311599435 is in progress, not a pass. 218 Rust passed, zero failed/ignored; native Node 56/0; production coverage 2645/2714 lines and 3893/4071 regions, zero production edit. Independent native 2/0, raw Rust 2/0, valid wrong-response controls and required good-response Timeout controls retain fixed predicates. Thirty-second owned async bounds, fresh ten-second good observation, native unbounded lifetime and secondary failed-control unwind errors remain explicit. Two new mappings await hosted acceptance; historical lost-output 101 is unclassified."
   }
 }
