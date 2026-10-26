@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T01:22:36Z",
+  "updated_at": "2026-10-26T01:24:08Z",
   "state": "active",
-  "summary": "Bounded quoted Double_V/Float_V JSON compatibility passed independent review and protected checks; hosted qualification is running and MSG-02 remains open.",
+  "summary": "Bounded quoted Double_V/Float_V JSON compatibility passed independent review, protected checks and exact hosted CI; MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Quoted float slice 47f44dd is public after exact reviewer-bound 122 Rust, strict >95% staged gate and normal hook; hosted run 40253495539 is pending. Native parity corpus has 2,815 status/full-wire observations, with 60 explicit native-only quoted whitespace gaps and 48 jointly rejected controls. Next read-only boundary audit found unquoted Float_V max-rounding and separate Double_V one-ULP wire differences; broader MSG-02 remains open."
+      "detail": "Quoted float slice 47f44dd is public after exact reviewer-bound 122 Rust, strict >95% staged gate and normal hook; hosted run 40253495539 passed. Native parity corpus has 2,815 status/full-wire observations, with 60 explicit native-only quoted whitespace gaps and 48 jointly rejected controls. Next read-only boundary audit found unquoted Float_V max-rounding and separate Double_V one-ULP wire differences; broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -318,10 +318,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40253495539"
     },
-    "note": "Exact seven-file reviewer-bound staged gate and normal protected hook passed on public 47f44dd; 122 Rust checks and strict production >95% coverage. Independent native peer replayed all 2,815 status/full-wire observations; 22 prior fixtures retained. Hosted run 40253495539 remains pending; 60 quoted whitespace native-only gaps and wider MSG-02 remain open.",
+    "note": "Exact seven-file reviewer-bound staged gate and normal protected hook passed on public 47f44dd; 122 Rust checks and strict production >95% coverage. Independent native peer replayed all 2,815 status/full-wire observations; 22 prior fixtures retained. Hosted run 40253495539 passed on the exact public revision; 60 quoted whitespace native-only gaps and wider MSG-02 remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/47f44ddb30482ccd226d30f681ca5fc788da89e0"
   }
 }
