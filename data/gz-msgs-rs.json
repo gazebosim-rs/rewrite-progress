@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T05:48:07Z",
+  "updated_at": "2026-10-26T05:56:34Z",
   "state": "active",
-  "summary": "Quoted Vector3d numeric compatibility is published with its protected hook green; hosted CI is running and broader MSG-02 remains open.",
+  "summary": "Bounded quoted Vector3d numeric compatibility is public and hosted-green; the next Quaternion boundary is characterized, while broader MSG-02 remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public e400a26743b77b81be2262cabacf8b3315ec9eef contains the bounded top-level Vector3d x/y/z quoted-number correction. Independent source and final metadata reviews approved exact seven-file tree88142b77; normal protected hook passed 127 Rust including30 CLI,5,363 pinned native status/full-wire outcomes and strict >95% coverage. Hosted messages run40276156061 is in progress; accepted-slice credit waits for success. Root V6 dependency build overlapped correctness checks at two Cargo jobs, with no timing claim. Broader MSG-02 remains open."
+      "detail": "Public e400a26743b77b81be2262cabacf8b3315ec9eef hosted run40276156061 succeeded after127 Rust tests,5,363 pinned native JSON status/full-wire outcomes, strict >95% coverage, staged-index and fresh-cache source-package checks. The accepted top-level Vector3d x/y/z fixture has319 observations,126 native-positive exact wires,193 rejects and27 unchanged prior hashes; independent source/final reviews approved. A read-only next Quaternion probe has384 observations and104 current native/Rust mismatches, but no source candidate or credit. Broader MSG-02 remains open."
     }
   ],
   "accepted_slices": [
@@ -317,6 +317,11 @@
       "title": "Bounded quoted Double_V/Float_V hexadecimal edge-whitespace parity with 5,044 native observations",
       "commit": "d26b0d8a8930258a353532f926571b371b6b2df1",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d26b0d8a8930258a353532f926571b371b6b2df1"
+    },
+    {
+      "title": "Bounded top-level Vector3d quoted numeric JSON with 5,363 native outcomes",
+      "commit": "e400a26743b77b81be2262cabacf8b3315ec9eef",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e400a26743b77b81be2262cabacf8b3315ec9eef"
     }
   ],
   "remaining": [
@@ -343,10 +348,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40276156061"
     },
-    "note": "Public e400a26 normal hook passed:127 Rust,5,363 exact native JSON status/full-wire outcomes,strict >95% coverage and source-package checks. Hosted run40276156061 is in progress. Bounded Vector3d scope only; no full MSG-02 acceptance or timing claim.",
+    "note": "Public e400a267 normal protected hook and hosted40276156061 succeeded:127 Rust,5,363 exact native JSON outcomes,strict coverage,staged-index and fresh-cache source-package gates. This is only the bounded Vector3d slice; no full MSG-02 acceptance or timing claim.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e400a26743b77b81be2262cabacf8b3315ec9eef"
   }
 }
