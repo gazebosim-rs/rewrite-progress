@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T19:24:17.774523+00:00",
+  "updated_at": "2026-10-26T21:32:29.897889+00:00",
   "state": "active",
-  "summary": "Capsule support remains published and CI-green. Runtime IMU rate services now pass all51 server library tests; independent native TPE/DART reset packet references are approved. Full-system scheduling, stale-request generations and new C++ interoperability remain under development.",
+  "summary": "Headless runtime IMU rates now pass a 270-test diagnostic run with all nine crates above95% lines/regions. Real C++ rate/reset clients and delayed/error/unwind controls pass. Exact integrated source review, staged acceptance and equal-work performance qualification remain in progress.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "Runtime IMU rate control under development; full sensor scope open",
-      "detail": "Runtime-rate WIP: unchanged native originals2/0; approved base45 admissions+5 phase+12 nonfinite rows and two-provider/single-recipient reference. Local Scene get/set tests3/0+SceneLib27/0. Server warm minimal worker pool now passes allocator3/0+wire3/0 and all51 ServerLib tests (old45+new6), including paused rates, malformed/local ignored outcomes, deletion/provider restoration, both resets, shutdown and shared-topic multiplicity. Empty is one-way: handoff never proves completion. Independent static kernel62fe and Server1b9b bind exact source, no runtime/full coverage credit. Native finite reset author+independent TPE/DART approved66aedb:8 datasets/384 decoded packets,48samples/71ticks each; reset restores1000Hz. Remaining: source-discovered raw future-deadline global gate for0/NaN (new paired connected-peer capture pending prereview), stale queued-request generation cancellation, actual new C++ client/acquisition, full strict coverage, metadata/final review, protected normal+exactCI. Public accepted quality stays22a536c; no SENSOR01/P2 completion."
+      "detail": "Unaccepted integrated source b08c406f: phase-preserving capped IMU rates and one-way Double/Empty endpoints; distinct same-topic providers, minimal warm workers, bounded ingress, local outcomes and aggregate queue-drop metrics. Diagnostic79869 passes270Rust/0failed/0ignored, all9crates>95both, workspace3801/3841lines5828/5959regions; no staged/normal/hosted acceptance yet. Additional None/Always single-IMU zero/NaN test2/0 onTPE/Rapier closes reviewer regression gap; next fullcount unverified. Actual C++ old15 plusnewTPE/Rapier rate/reset cases and100ms-delivery/nonzero-exit/Rust-unwind-SIGKILL controls pass. Independent native raw-deadline/reset references66aed/6f768 and public reproducibility bindingd1ab; exact code review/negativecontrols, strict staged+normal, source-package/SDK and current-source equal-work evidence remain. Allproducerpins/Fuel/oldassertions unchanged; broadSENSOR01/IO01/P2 not complete."
     },
     {
       "id": "SLICE-01",
