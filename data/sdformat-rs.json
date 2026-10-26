@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T23:15:17.362114+00:00",
+  "updated_at": "2026-10-26T23:35:02.086969+00:00",
   "state": "active",
-  "summary": "The standalone model-include candidate passes independent source and final binding plus full canonical verification: 373 Rust tests, sixteen tooling tests and strict production coverage. Accepted main remains a912e8f with 163 complete / 25 partial originals; the candidate needs its mandatory normal hook, publication and exact hosted CI.",
+  "summary": "Standalone model includes and native root placement semantics are public after independent source/final reviews, full canonical verification, mandatory normal hooks and exact hosted success. One unchanged six-predicate original is added: 164 complete and 25 partial mappings. Broader SDF-02 remains open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Publish reviewed root-level model include candidate",
-      "detail": "All six original IncludeModelEmptyNamespace predicates and the exact 1.6 mesh fixture are preserved. All 34 native observations remain explicit, including five native rejections and a known mixed-root subset gap. Independent controls detect dispatcher, root-relative and nonzero placement defects. The full author gate passes 373 Rust / 16 tooling tests with 4809/4833 lines, 7966/8208 regions and all 14 changed executable lines covered; final binding recomputes the unfiltered evidence. The staged candidate adds one original mapping, preserves all earlier mappings, and awaits its mandatory normal commit and exact hosted qualification. Broader SDF-02 remains open."
+      "title": "Qualify world-scope merge includes and world joints",
+      "detail": "The new standalone model-include slice is accepted with all 34 native observations, six selected Rust tests and the exact SDF 1.6 mesh fixture. Next, characterize real world-merge model/frame/joint behavior against the pinned source and unchanged native originals before implementing it. World merge remains Unsupported; World currently lacks global joints and merge provenance. No new native run, source change or whole packet completion is claimed yet."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Load root-level model includes with native placement semantics",
+      "commit": "b94017ec5c87ee321ab2519f16bf3047f39914c5",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b94017ec5c87ee321ab2519f16bf3047f39914c5"
+    },
     {
       "title": "Parse model and include namespace metadata with native XML semantics",
       "commit": "a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5",
@@ -591,9 +596,7 @@
     "Remaining sensor families, complete DOM/setter/Element contracts, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
-  "blockers": [
-    "Mandatory normal verification awaits coordinated lossless cache recovery; its cold target must retain the agreed disk safety margin."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-02": "in_progress",
     "API-01": "in_progress",
@@ -602,28 +605,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a912e8ffd58d413f7dd5ce8ae23ce2678508b4b5",
-    "rust_tests": 367,
+    "revision": "b94017ec5c87ee321ab2519f16bf3047f39914c5",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b94017ec5c87ee321ab2519f16bf3047f39914c5",
+    "rust_tests": 373,
     "coverage": {
       "lines": [
-        4799,
-        4823
+        4809,
+        4833
       ],
       "regions": [
-        7945,
-        8187
+        7966,
+        8208
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 163,
+      "ported": 164,
       "partial": 25
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40394672288"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40419834584"
     },
-    "note": "Public a912e8f passed independent semantic/helper/final reviews, full author checks, mandatory normal hooks and exact hosted core. 367 Rust tests and 16 tooling tests passed; strict unfiltered coverage is 4799/4823 lines and 7945/8187 regions, all 21 changed lines covered, staged all-source 4573/4590. Native 98-row source/actual/replay and two production rejection controls passed after exact restoration. Five original Model ownership bodies are unchanged. Root-level include loading, Rust native OriginalVersion access, serialization, graph mutation/runtime, performance and SDF-02 completion remain unqualified; no original retirement was added. Earlier preflight and verifier setup failures remain retained and uncredited."
+    "note": "Independent source/final binding preserves all prior mappings and all six IncludeModelEmptyNamespace predicates with the exact fixture. Full author and mandatory normal gates pass 373 Rust and 16 tooling tests. Strict unfiltered coverage is 4809/4833 lines and 7966/8208 regions; all 14 changed executable lines are covered, staged all-source 4583/4600. The 34-row native corpus retains 28 supported cases, five native rejections and one known mixed-root subset gap. Nonzero placement rejection controls fail correctly after an earlier test-sensitivity finding. Actor/light/URDF includes, world merge, serialization, native OriginalVersion facade, physical runtime and full SDF-02 remain open; no broader completion claim."
   }
 }
