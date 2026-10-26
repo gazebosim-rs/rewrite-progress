@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-26T04:59:21Z",
+  "updated_at": "2026-10-26T05:04:02Z",
   "state": "active",
-  "summary": "Bounded quoted hexadecimal Float_V/Double_V edge whitespace is public and independently reviewed; hosted CI is running. Broader MSG-02 qualification remains open.",
+  "summary": "Bounded quoted hexadecimal Float_V/Double_V edge whitespace is public and hosted-green; broader MSG-02 qualification remains open.",
   "model": "Assigned Messages repository owner",
   "active": [
     {
       "id": "MSG-02",
       "title": "Broader descriptor and release qualification",
-      "detail": "Public d26b0d8 normal protected hook passed on the exact reviewed tree: 5,044 native status/full-wire outcomes, 29 CLI tests and strict coverage. The new fixture has 768 unique type+input observations, 360 exact native-positive wires and 408 rejects; 26 earlier fixture hashes are unchanged. Independent source and final metadata reviews approved the bounded slice. Hosted run 40271485838 is still in progress; no MSG-02 completion claim."
+      "detail": "Public d26b0d8 hosted run40271485838 succeeded after126 Rust tests,5,044 exact native JSON status/full-wire outcomes, strict coverage, staged-index and fresh-cache source-package checks. The accepted fixture has768 unique type+input observations,360 native-positive exact wires and408 rejects;26 prior hashes remain unchanged. Independent source/final metadata reviews approved this bounded slice. Broader MSG-02 remains open; next grammar gap has no source candidate yet."
     }
   ],
   "accepted_slices": [
@@ -312,6 +312,11 @@
       "title": "Bounded quoted Float_V/Double_V edge-whitespace parity with 4,276 native observations",
       "commit": "5fe0f2d10d261312d2913e2bcfc75de4d91bbac9",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fe0f2d10d261312d2913e2bcfc75de4d91bbac9"
+    },
+    {
+      "title": "Bounded quoted Double_V/Float_V hexadecimal edge-whitespace parity with 5,044 native observations",
+      "commit": "d26b0d8a8930258a353532f926571b371b6b2df1",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d26b0d8a8930258a353532f926571b371b6b2df1"
     }
   ],
   "remaining": [
@@ -338,10 +343,10 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40271485838"
     },
-    "note": "Public d26b0d8 exact reviewed tree passed normal protected hook: native 5,044 exact JSON rows, 29 CLI tests, strict >95% coverage, staged-index and source-package checks. Hosted run 40271485838 remains in progress. MSG-02 remains open.",
+    "note": "Public d26b0d8 normal hook and hosted40271485838 succeeded:126 Rust,5,044 exact native JSON rows,strict coverage,staged-index and fresh-cache source-package checks. Other descriptors and MSG-02 broad acceptance remain open.",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d26b0d8a8930258a353532f926571b371b6b2df1"
   }
 }
