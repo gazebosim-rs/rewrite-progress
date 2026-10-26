@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T00:28:54Z",
+  "updated_at": "2026-10-26T00:52:09Z",
   "state": "active",
-  "summary": "Native JointAxis zero-norm setter original is public and hosted-green after independent review. 93 complete and 12 partial original cases are reviewed; broader DOM/parser and SDF parity remain open.",
+  "summary": "JointAxis XML near-zero threshold correction is public and hosted-green after independent review. 93 complete and 12 partial original cases remain reviewed; broader DOM/parser and SDF parity remain open.",
   "model": "gpt-6-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Match native near-zero joint axis XML loading",
-      "detail": "Isolated bounded parser correction keeps all160 prior native corpus rows and adds five near-zero/accepted threshold observations; fresh native165 rows and original1/0, selected Rust3/0; full gate and peer review pending."
+      "title": "Match native JointAxis infinite limits",
+      "detail": "Isolated native DOMJointAxis.InfiniteLimits original1/0 and unchanged fixture expose Rust nonfinite limit conversion gap. Selected Rust original plus existing axis corpus pass after bounded axis-limit handling; 56 source-hashed native token probes and full gate/peer review remain pending."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Match native JointAxis XML near-zero threshold",
+      "commit": "f07c4021426b9e256b0b387dd026deef18cc3dcb",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f07c4021426b9e256b0b387dd026deef18cc3dcb"
+    },
     {
       "title": "Match native JointAxis zero-norm setter original",
       "commit": "060cac920d01d6f369c85ed6894334043c80011c",
@@ -445,9 +450,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "060cac920d01d6f369c85ed6894334043c80011c",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/060cac920d01d6f369c85ed6894334043c80011c",
-    "rust_tests": 253,
+    "revision": "f07c4021426b9e256b0b387dd026deef18cc3dcb",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f07c4021426b9e256b0b387dd026deef18cc3dcb",
+    "rust_tests": 254,
     "coverage": {
       "lines": [
         4085,
@@ -465,8 +470,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40249325866"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40251157552"
     },
-    "note": "Pinned DOMJointAxis.ZeroNormVectorReturnsError native1/0 and private raw-parent Rust2/0; independent source/final receipts SHAd6ba792f/60f56ef2. Normal protected staged hook passed253Rust/16tools,4085/4105 production lines7067/7276 regions, staged3895/3908 executable lines. Pre-receipt candidate tree801f454b differs from receipt-envelope public tree88fd9a84 only by reviewer-owned reference/review.json. Complete observed valid UnitX/zero error first message; native full error vector/code, method identity, XML parser near-zero threshold, Element/graph and broad SDF parity remain open. Exact hosted run40249325866 SUCCESS; Root consumer pin coordinator-owned."
+    "note": "Pinned native165 axis-limit corpus rows and unchanged partial DOMJointAxis.Construction original1/0; independent source/final receipts SHA7f3698a8/7514dd4d. Normal protected staged hook passed254 Rust/16 tools, 4085/4105 production lines7067/7276 regions, staged3895/3908 executable lines. Pre-receipt candidate tree92eebf2b differs from receipt-envelope public tree157ea35a only by reviewer-owned reference/review.json. Exact hosted run40251157552 SUCCESS. No complete Construction original, full native error vector/Element/graph or broad SDF claim; Root consumer pin coordinator-owned."
   }
 }
