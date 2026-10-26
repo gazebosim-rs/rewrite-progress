@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T09:48:48.352412+00:00",
+  "updated_at": "2026-10-26T09:51:40.040886+00:00",
   "state": "active",
-  "summary": "Bounded Physics XML values are public after independent partial review and normal hooks; exact hosted CI is running. There are 127 complete and 24 partial reviewed original cases. Element, console and broader SDF scope remain open.",
+  "summary": "Bounded Physics XML values are public and pass exact hosted CI after independent partial review and normal hooks. There are 127 complete and 24 partial reviewed original cases. Element, console and broader SDF scope remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Qualify bounded Physics XML value ports",
-      "detail": "Public e262de3 passed the normal hook: 316 Rust tests, 16 tooling tests, formatting, Clippy and docs. Exact hosted run 40302323810 is pending. Six fixed values roundtrip through the existing typed world loader; Element and console observations remain unported. No engine runtime or performance claim."
+      "title": "Inventory world atmosphere metadata",
+      "detail": "Public e262de3 passed exact hosted run 40302323810 and normal hooks with 316 Rust tests and 16 tooling tests. Read-only inventory now covers native Atmosphere defaults/set/copy values and World metadata. Native boundary probes and a bounded source claim are next; no new source is accepted yet."
     }
   ],
   "accepted_slices": [
     {
-      "title": "Port bounded Physics XML values as two partial originals; hosted pending",
+      "title": "Port bounded Physics XML values as two partial originals",
       "commit": "e262de326d4d02409321a8589c81d83981db9173",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e262de326d4d02409321a8589c81d83981db9173"
     },
@@ -579,9 +579,9 @@
       "partial": 24
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40302323810"
     },
-    "note": "Public e262de3 passed normal hooks with 316 Rust and 16 tooling tests. Coverage is 4725/4750 lines and 7853/8094 regions; changed lines are 44/44, staged whole-source 4507/4525. Independent source a52dce24 and final 2f10de8f reviews bind fresh private Rust 5/0, native originals 2/0, regenerated XML, a fresh native helper using the byte-identical pinned library, and failing contacts-loss/range-guard controls. Six original values are preserved; update-rate and boundaries are supplemental. Both originals remain partial for Element/console observations. No full grammar, native XML byte, engine runtime, error-vector or performance claim. Exact new hosted CI is pending."
+    "note": "Public e262de3 passed normal hooks with 316 Rust and 16 tooling tests. Coverage is 4725/4750 lines and 7853/8094 regions; changed lines are 44/44, staged whole-source 4507/4525. Independent source a52dce24 and final 2f10de8f reviews bind fresh private Rust 5/0, native originals 2/0, regenerated XML, a fresh native helper using the byte-identical pinned library, and failing contacts-loss/range-guard controls. Six original values are preserved; update-rate and boundaries are supplemental. Both originals remain partial for Element/console observations. No full grammar, native XML byte, engine runtime, error-vector or performance claim. Exact hosted run 40302323810 passed on public e262de3."
   }
 }
