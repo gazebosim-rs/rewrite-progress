@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-26T19:03:54.667649+00:00",
+  "updated_at": "2026-10-26T20:22:31.760320+00:00",
   "state": "active",
   "summary": "Owned Model namespace metadata and Model/Frame cloning are public with exact hosted CI success after independent source/final reviews and mandatory normal hooks. Five original name and optional namespace cases bring the accepted ledger to 163 complete and 25 partial; XML namespace parsing and broader SDF semantics remain open.",
   "model": "gpt-6.1-sol / high",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Implement native-qualified model and include namespaces",
-      "detail": "Independent static/source review and a distinct 98-row native replay passed. An isolated parser draft now supports nonempty model namespace attributes, native empty-as-absent behavior, include overrides, CDATA trimming and rename resolution. Selected Rust checks pass 13/0, including all 98 projections and malformed-input guards; a new native reproducer verifies the same corpus. Independent parser source/final review, full strict gates, normal hooks and hosted CI remain pending. Five original ownership bodies are unchanged; accepted metrics remain 163 complete/25 partial. No new original retirement, root-level include support or SDF-02 completion."
+      "title": "Qualify model/include namespace XML parsing",
+      "detail": "Public candidate a912e8f passed independent source, portable-helper and final reviews, the full 367 Rust/16 tooling gate, and mandatory normal hooks. Strict coverage is 4799/4823 lines and 7945/8187 regions; all 21 changed lines are covered. Exact hosted run 40394672288 is in progress. Accepted metrics remain on 5306e46; the ledger stays 163 complete/25 partial. The 98 native projections are supplemental, with no new original retirement or SDF-02 completion."
+    },
+    {
+      "id": "SDF-02",
+      "title": "Prepare root-level model include loading",
+      "detail": "The exact unchanged native IncludesTest.IncludeModelEmptyNamespace baseline passed 1/0 before source edits. The Rust root dispatcher currently rejects include elements. A bounded follow-on will preserve all six original predicates and the exact 1.6 mesh fixture through an injected resolver; merge/multiple/mixed-root and pose/error behavior needs native characterization. No new implementation or credit yet."
     }
   ],
   "accepted_slices": [
