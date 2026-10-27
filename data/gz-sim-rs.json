@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T22:28:55.014774+00:00",
+  "updated_at": "2026-10-27T22:32:13.017545+00:00",
   "state": "active",
-  "summary": "Prepared root-clock publication is reviewed and published. Both strict local gates passed; exact hosted CI is running. Networked headless CLI development is next; broad phase acceptance remains open.",
+  "summary": "Prepared root-clock publication is reviewed, published and passing exact hosted CI. Both strict local gates passed. The next networked headless CLI slice is drafted; broad phase acceptance remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Both strict local gates accepted; exact hosted CI running",
-      "detail": "Source and ordinary commit-hook runs each passed 286 Rust tests and 88 tooling tests. Production workspace coverage: 3877/3917 lines and 5956/6092 regions; all nine crates strictly exceed 95% for both. Changed executable lines:44/44. Independent retention, source, compiler and commit adoption reviews passed. Hosted run40594126244 is still pending."
+      "title": "Strict source, ordinary hook and exact hosted CI accepted",
+      "detail": "Source and ordinary commit-hook runs each passed 286 Rust tests and 88 tooling tests. Production workspace coverage: 3877/3917 lines and 5956/6092 regions; all nine crates strictly exceed 95% for both. Changed executable lines:44/44. Independent retention, source, compiler and commit adoption reviews passed. Exact hosted run40594126244 attempt1 and verify-core job122505559566 completed successfully; an independent reviewer bound the API result to the published commit."
     },
     {
       "id": "REF-03",
@@ -391,10 +391,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40594126244"
     },
-    "note": "Exact published commit passed independently reviewed staged-source and ordinary mandatory commit-hook checks:286 Rust tests,88 tooling tests, all nine production crates strictly above95% lines and regions,44/44 changed lines. Exact hosted CI is running. Selected C++ interoperability and TPE performance evidence do not complete formal P2 or broad rewrite parity."
+    "note": "Exact published commit passed independently reviewed staged-source and ordinary mandatory commit-hook checks:286 Rust tests,88 tooling tests, all nine production crates strictly above95% lines and regions,44/44 changed lines. Exact hosted CI40594126244 attempt1 passed and was independently verified. Selected C++ interoperability and TPE performance evidence do not complete formal P2 or broad rewrite parity."
   },
   "phase_status": {
     "P0": "in_progress",
