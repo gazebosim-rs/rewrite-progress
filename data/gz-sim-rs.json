@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T06:33:23.453362+00:00",
+  "updated_at": "2026-10-27T07:38:50.739537+00:00",
   "state": "active",
   "summary": "The selected headless baseline remains CI-qualified at 3a9fa1e. Root clock reference behavior passed fresh independent replay; a Rust draft is under development, with first-frame readiness failures retained and being fixed at the transport boundary.",
   "model": "Coordinator; architecture, integration and review",
@@ -14,7 +14,7 @@
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "Independent C++ cold/warm TopicInfo reference completed. Transport is implementing bounded prepare-phase readiness while preserving its immediate snapshot API. Candidate code and failing tests do not change accepted quality below."
+      "detail": "Independent C++ cold/warm TopicInfo reference completed. A transport candidate passed 108 selected checks and Clippy; explicit deadline handling is being refined before independent acceptance and simulator adoption. Root first-frame regressions remain preserved; no discovery or worker waits enter tick. Accepted quality below is unchanged."
     }
   ],
   "accepted_slices": [
