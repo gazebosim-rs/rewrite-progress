@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T00:29:30.703387+00:00",
+  "updated_at": "2026-10-27T00:46:52.518755+00:00",
   "state": "active",
-  "summary": "Runtime IMU rate control is published and CI-qualified. Local IMU activation now passes its first90 selected Rust checks after an independently replayed native baseline; peer review and full acceptance checks remain pending. Formal headless and full-rewrite scope remain open.",
+  "summary": "Runtime IMU rate controls remain published and CI-qualified. Local IMU activation has passed its first90 selected Rust checks, independent static review, and public native reproduction; independent runtime and full acceptance checks remain pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "IMU rates accepted; local activation under review",
-      "detail": "Accepted commit a8b80129 passed exact CI40414745428, source and normal gates:271 Rust tests,83 tooling tests,17 functional C++ scenarios and3 lifecycle controls; every production crate exceeds95% line/region coverage. New activation work has independently replayed18 native BaseSensor observations and the unchanged constructor test. A focused local Bevy activation API and sampling gate now pass90 selected checks (27 existing scene,6 new activation,57 server). Tests cover preserved phase, peer admission, velocity/noise history, pause, loaded resets, removal and terminal-error atomicity. This uncommitted increment still requires independent source/runtime controls, strict full coverage, performance, normal hooks and exact CI. It introduces no wire endpoint or forced-update API and does not claim full native IMUServer activation parity. Broader sensor and P2 scope stay open."
+      "detail": "Accepted a8b80129 retains exact CI40414745428, source/normal271 Rust and83 tooling tests,17 functional C++ scenarios plus3 lifecycle controls, strict coverage in all9 production crates. Unpublished activation passes first90 selected checks and independent static review. The public reproducer passes all18 BaseSensor observations and the unchanged original constructor test; actual public provenance review is pending. A fresh independent runtime replay with six production controls is allocated. Full coverage, current-source performance, normal hooks and exact hosted CI remain required. Native forced acquisition and full Sensor framework are not claimed."
     },
     {
       "id": "SLICE-01",
