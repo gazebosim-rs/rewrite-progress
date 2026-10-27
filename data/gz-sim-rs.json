@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T11:30:55.811245+00:00",
+  "updated_at": "2026-10-27T11:41:34.385972+00:00",
   "state": "active",
-  "summary": "The accepted headless baseline remains 3a9fa1e. The private clock integration now has eight passing functional checks plus a separate passing Clippy completion, independently verified. Accepted-pin and C++ SDK replay remain pending.",
+  "summary": "Accepted headless baseline remains 3a9fa1e. Eight private clock functional checks and a separate Clippy pass have independent review. C++ replay tooling is being extended. Transport publication is awaiting a reviewed rerun after a disk accounting stop; no test assertion failure was reported.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "The corrected resettable fixture preserves all clock/reset assertions. All seven clock cases and the committed-reset case pass; a separate Clippy-only completion passes on the same private source/lock/compiler graph. Prior setup and fixture failures remain preserved. Independent review qualifies these as provisional: no full simulator coverage, C++ replay or release acceptance yet."
+      "detail": "The corrected resettable fixture preserves all clock/reset assertions. All seven clock cases and the committed-reset case pass; a separate Clippy-only completion passes on the same private source/lock/compiler graph. Prior setup and fixture failures remain preserved. Independent review qualifies these as provisional: no full simulator coverage, C++ replay or release acceptance yet. New replay tooling retains the original scenarios and adds the two root-clock backend cases, plus the existing rate lifecycle controls. SDK execution remains unrun. The stream benchmark now prepares root ownership before warmup and checks both endpoint enqueue counters; this is unaccepted harness work, not a new speedup."
     },
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "The API passed independent 110-test suites before and after five effective mutation controls, then the unchanged strict gate with 276 Rust tests, 24 tooling tests and >95% unfiltered line/region coverage. Independent full/final bindings are complete. Normal verification, publication and simulator pin adoption remain pending."
+      "detail": "Readiness passed independent mutation controls and strict source coverage (276 Rust / 24 tooling tests). Mandatory normal run stopped at its conservative target limit, with all failures and artifacts preserved; it did not complete or commit. A cumulative resource plan is under independent review. Publication, exact hosted CI and simulator pin adoption remain pending."
     }
   ],
   "accepted_slices": [
