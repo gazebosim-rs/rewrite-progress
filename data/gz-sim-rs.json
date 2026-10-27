@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T19:13:04.101783+00:00",
+  "updated_at": "2026-10-27T20:45:56.371957+00:00",
   "state": "active",
-  "summary": "Both current-source TPE clock/pose/IMU measurement batches passed independent raw-data review, showing about 34\u201335% lower paired work latency. Full source quality stopped at a compiler-artifact resource cap; runner recovery is in progress.",
+  "summary": "The current source run completed successfully: 286 Rust tests, 88 tooling tests and strict line/region coverage checks. Independent artifact review and the mandatory normal hook/public CI remain pending; both scoped TPE performance batches are independently accepted.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Recover bounded source gate; performance evidence independently accepted",
-      "detail": "The tmpfs source run passed Clippy and 88 tooling tests, then stopped at a resource cap during instrumented test compilation. No full Rust-test or coverage pass is claimed. Independent failure audit verified original source, cache seeds and SDK executables are unchanged and child processes are clear. Agents are preparing recovery with durable failure-counter records and funded incremental resource limits. Two separately reviewed 128-step TPE measurement batches retained all samples: paired Rust/native work-latency ratios 0.6564 and 0.6508. These results cover the selected clock/pose/IMU workload; full quality, normal hook and exact public CI remain pending."
+      "title": "Source gate completed; verify evidence and prepare normal hook",
+      "detail": "The unchanged canonical staged source run exited successfully after the observer-only fixes. Rust tests: 286 passed, zero failed or ignored; tooling: 88 passed. Workspace production coverage is 3877/3917 lines and 5956/6092 regions; every production crate passed strict >95% checks, with 44/44 changed executable lines covered. All 55 compiler-recorded executables and raw profiles were retained. Independent full artifact/protection review is ongoing. The mandatory ordinary commit hook and exact public CI have not run for this candidate. Earlier failed runs remain recorded separately."
     }
   ],
   "accepted_slices": [
@@ -346,9 +346,7 @@
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [
-    "The first tmpfs source gate stopped at its cumulative compiler-artifact allocation cap before instrumented Cargo returned. Original source and evidence are preserved. The failing counter snapshot was not persisted; a reviewed recovery must retain known debt and explicitly qualify the unknown historical amount. Test assertions and coverage thresholds are unchanged."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
