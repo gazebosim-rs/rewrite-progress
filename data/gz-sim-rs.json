@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T02:57:37.890256+00:00",
+  "updated_at": "2026-10-27T03:21:12.542758+00:00",
   "state": "active",
-  "summary": "Lossless recovery is independently complete; the exclusive activation commit retry is running with26.25GB initial free space. Source, strict full coverage and current-source performance reviews are approved. Hosted CI and current-revision headless acceptance follow.",
+  "summary": "Loaded IMU activation is published and CI-qualified at8d065a1. Both normal and source gates passed279 Rust/88 tooling tests with strict coverage in all9 crates. Coordinator now closes the current headless acceptance matrix while repository owners advance their reviewed slices.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -18,13 +18,13 @@
     },
     {
       "id": "CORE-02",
-      "title": "Complete headless lifecycle and remaining P2 composition",
-      "detail": "Selected loaded lifecycle, stable IDs, typed faults, inputs, contacts, joints andrealC++control/removal/reset witnesses exist. A read-only15-row P2 audit found stale acceptance bindings rather than an established missing selected physical capability. After activation publication, coordinator will bind the current exact selected-fixture composition/dependency closure/performance/gates and obtain independent phase disposition; addonly genuinely unwitnessed boundary tests. Broad CORE/P0/physics/sensor/release scope remains open."
+      "title": "Bind the current fifteen-row headless acceptance matrix",
+      "detail": "Current15-row/36-witness draft binds selectedload/frames/TPE/Rapier/IMU/realCppcontrol/input/joint/removal/reset/quality/performance evidence. Native60Hz defaultpose admission andsubscriber suppression alreadyimplemented; oldunthrottledblocker isstale. Refresh exactcurrentpins/dependencyclosure/normal/hosted proof andobtainindependentformal-scope disposition; preservebroaderDAG/packet gaps, addonlyanactualuncoveredboundarytest."
     },
     {
       "id": "SENSOR-01",
-      "title": "IMU rates accepted; local activation under review",
-      "detail": "Final18-file activation retry independently bound. Source279 Rust/88 tooling,17 real C++ scenarios+3 lifecycle controls andall9 strictcoverage checks approved; scoped22-pair/44-observation SDK measurements and exact measured-source reconstruction approved. The first normal attempt stopped at its disk safety floor with no commit. Independently audited lossless archival recovered23.842GBlogical; all source/proofs unchanged. Exclusive normal retry nowrunning with26.25GBinitialfree, >=14GiBreserve andunchanged2GiBfloor. No parallel builds; exact hosted CI stillrequired."
+      "title": "Loaded IMU activation accepted; broader sensor contract remains open",
+      "detail": "Published8d065a1 passed exacthosted40442119648 andnormal/source279Rust88tooling/17Cpp+3controls withall9strictcoverage. Ordinarylocal activation preservesfinitephase,peeradmission,velocity/noisehistory,cachedsample suppression, pause/removal andloadedreset; invalididentity/terminalfaults areatomic. Independent91+6effectivecontrols+91restored plus18nativeBaseSensor observations approved. Constructor2getterassertions remainpartial; forcedacquisition,genericregistration/metrics andfullSensor/nativewhole-server parity remainopen."
     },
     {
       "id": "SLICE-01",
@@ -367,10 +367,15 @@
       "title": "Coordinated typed SDF adoption with explicit sensor/joint boundaries and static-frame qualification",
       "commit": "d029884bfc8f1e0938134a7fb193202c21ab0a7d",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d029884bfc8f1e0938134a7fb193202c21ab0a7d"
+    },
+    {
+      "title": "Loaded IMU activation with phase/noise/history and lifecycle preservation",
+      "commit": "8d065a1a3750d282bada085df4a29a8139a3e875",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8d065a1a3750d282bada085df4a29a8139a3e875"
     }
   ],
   "remaining": [
-    "Complete formal P0 provenance/inventory, broader world/resource loading, remaining physics, activation/triggers/metrics, runtime sensor lifecycle and IO compatibility; selected integration evidence does not complete P2.",
+    "Complete formal P0 provenance/inventory and current P2 dependency/evidence closure; broader world/resource loading, physics, sensor registration/triggered acquisition/metrics and IO compatibility remain open.",
     "DART and MuJoCo adapters, remaining TPE capabilities, general articulations/forces and complete backend capability contract.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
@@ -397,29 +402,29 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "a8b80129071039568471efb9e9a56edd02b8effb",
-    "rust_tests": 271,
+    "revision": "8d065a1a3750d282bada085df4a29a8139a3e875",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8d065a1a3750d282bada085df4a29a8139a3e875",
+    "rust_tests": 279,
     "coverage": {
       "lines": [
-        3801,
-        3841
+        3830,
+        3870
       ],
       "regions": [
-        5828,
-        5959
+        5873,
+        6004
       ]
     },
     "upstream": {
       "total": null,
       "ported": 3,
-      "partial": 8
+      "partial": 9
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40414745428"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40442119648"
     },
-    "note": "Accepted public commit a8b80129 passed exact hosted CI40414745428 and independent source, native, runtime, coverage, final and normal reviews. Source and normal gates passed271 Rust/83 tooling tests,17 functional C++ scenarios and3 lifecycle controls. All9 crates exceed95% lines/regions; changed scene52/52 and server177/180. Two Sensor originals remain partial; no retirement, pin, assertion, tolerance or coverage-policy change. Two separate current-source TPE clock/pose/IMU batches have paired Rust/native work-latency ratios0.63979 and0.64388. These are selected shared-host results, not balanced robotics, general simulator or full P2 acceptance.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a8b80129071039568471efb9e9a56edd02b8effb"
+    "note": "Accepted exact8d065a1 source and mandatory normal279Rust/88tooling,17realCppfunctional scenarios+3lifecyclecontrols; all9crates>95%lines/regions andchangedScene22/22Server7/7. Independentnative/source/runtime/full/performance/projection/final/normalreviews passed; no originalretired/assertion/tolerance/pin/coveragepolicychange. Separatecurrent-source default-active sharedhostTPEstream batches pairedRust/native0.63209 and0.64465; noactivation-toggle/causal/general/balancedrobotics/P2claim. Firstdiskguardfailure retained; exclusive retry passedafterverifiedlosslessrecovery."
   },
   "phase_status": {
     "P0": "in_progress",
