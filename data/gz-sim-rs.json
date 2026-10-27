@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T04:39:52.683898+00:00",
+  "updated_at": "2026-10-27T05:19:05.515922+00:00",
   "state": "active",
-  "summary": "Current selected headless evidence is accepted at 3a9fa1e: protected normal checks, independent review and exact hosted CI passed. Root clock compatibility is the next simulator slice; broader P2 prerequisites remain open.",
+  "summary": "Current selected headless evidence remains accepted at 3a9fa1e. Simulator work now targets native root clock admission; its unchanged native Time test passed and the six-scenario characterization helper is under review.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
-      "title": "Native root clock admission",
-      "detail": "Source-backed native-first task: advertise root clock only under the observed native publisher-admission rules. Original clock test collector is under independent review; no implementation or test-port credit yet."
+      "title": "Root clock admission and run preparation",
+      "detail": "Unchanged native Time original passed with its missing-DART-plugin qualification retained. Six-case native helper is prepared for independent review: existing matching/mismatched publishers, late publisher, release, reset and second server. Native initial discovery waits must stay outside the simulation tick. No Rust implementation credit yet."
     }
   ],
   "accepted_slices": [
