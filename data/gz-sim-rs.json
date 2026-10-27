@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T00:56:35.060264+00:00",
+  "updated_at": "2026-10-27T01:11:21.255268+00:00",
   "state": "active",
-  "summary": "Local IMU activation now has independent source/runtime approval:91 positive checks, six effective production controls and91 restored checks. Complete coverage, current-source performance and publication gates remain pending; accepted quality stays at the published rate-control commit.",
+  "summary": "IMU activation now passes the canonical staged gate and independent full coverage review:279 Rust tests,88 tooling tests, all9 crates above95%. Current-source SDK functional/performance qualification and publication gates are next; published acceptance remains at a8b80129.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "IMU rates accepted; local activation under review",
-      "detail": "Accepted a8b80129 retains CI40414745428,271 Rust/83 tooling tests,17 functional C++ scenarios plus3 lifecycle controls, strict coverage in all9 production crates. Unpublished activation now passes independent91-check replay, six effective mutants and91 restored checks;88 tooling tests pass. A missed history sensitivity case was detected and fixed with an added natural Rapier gravity witness while retaining all prior assertions. Public native reproduction and provenance are approved for18 BaseSensor observations and the unchanged original constructor test; only2 active-getter assertions are partially ported. Strict full coverage, current-source equal-work evidence, normal hooks and exact hosted CI remain pending. No forced Rust API or full Sensor/P2 acceptance."
+      "detail": "Unpublished activation source tree fd0f396a passes279 Rust/88 tooling tests with all17 functional C++ scenarios plus3 lifecycle controls retained. Independent full review recomputes workspace3830/3870 lines and5873/6004 regions; every9 production crate and changedScene22/22,Server7/7 exceed95%. Independent91+6effectivecontrols+91restored replay and native18-observation reproduction are approved; only2 active getters are a partial original port. Fresh current-source Release build is independently qualified; SDK functional comparison is running before paired measurements. Final metadata, mandatory normal hook and exact hosted CI remain pending. P2 and full rewrite stay open."
     },
     {
       "id": "SLICE-01",
