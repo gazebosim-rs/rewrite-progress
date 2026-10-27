@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T01:53:11.222909+00:00",
+  "updated_at": "2026-10-27T02:57:37.890256+00:00",
   "state": "active",
-  "summary": "Activation source, runtime, full coverage and performance reviews passed. The normal commit gate stopped at its disk-space safety floor; no commit was accepted. Evidence is preserved while inactive build caches are archived losslessly before an exclusive retry with a larger reserve.",
+  "summary": "Lossless recovery is independently complete; the exclusive activation commit retry is running with26.25GB initial free space. Source, strict full coverage and current-source performance reviews are approved. Hosted CI and current-revision headless acceptance follow.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "IMU rates accepted; local activation under review",
-      "detail": "Source279 Rust/88 tooling tests,17 functional C++ scenarios+3 lifecycle controls andall9 strictcoverage checks independently approved. Both22-pair/44-observation current-source SDK batches and public lossless projection are approved. Final18-file metadata binding approved. Normal commit attempt stopped during coverage build at shared2GiB diskfloor; it is NOT a passing normal gate and created no accepted commit. All evidence preserved; larger lossless cache recovery and exclusive normal retry next. Exact hosted CI remains required; broadSENSOR/P2 remain open."
+      "detail": "Final18-file activation retry independently bound. Source279 Rust/88 tooling,17 real C++ scenarios+3 lifecycle controls andall9 strictcoverage checks approved; scoped22-pair/44-observation SDK measurements and exact measured-source reconstruction approved. The first normal attempt stopped at its disk safety floor with no commit. Independently audited lossless archival recovered23.842GBlogical; all source/proofs unchanged. Exclusive normal retry nowrunning with26.25GBinitialfree, >=14GiBreserve andunchanged2GiBfloor. No parallel builds; exact hosted CI stillrequired."
     },
     {
       "id": "SLICE-01",
@@ -376,9 +376,7 @@
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [
-    "Workspace disk headroom: the normal coverage build and concurrent bounded review reached the2GiB safety floor. Both stopped without changing assertions or coverage gates. All failed scratch/source/raw evidence is retained; independently reviewed lossless cache recovery is being prepared. The normal retry will have an exclusive cold-build allocation and at least14GiB initial free space."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
