@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T01:38:27.129212+00:00",
+  "updated_at": "2026-10-27T01:53:11.222909+00:00",
   "state": "active",
-  "summary": "IMU activation has passed independent source, runtime, complete coverage and current-source performance reviews. The mandatory normal commit hook is running; exact hosted CI follows. The next coordinator task is the current-revision headless acceptance matrix.",
+  "summary": "Activation source, runtime, full coverage and performance reviews passed. The normal commit gate stopped at its disk-space safety floor; no commit was accepted. Evidence is preserved while inactive build caches are archived losslessly before an exclusive retry with a larger reserve.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "SENSOR-01",
       "title": "IMU rates accepted; local activation under review",
-      "detail": "Final staged activation candidate retains279 Rust/88 tooling tests,17 functional C++ scenarios and3 lifecycle controls; independent full coverage:3830/3870lines,5873/6004regions,all9 crates andchangedlines>95%. Both current-source SDK batches are reviewed:22pairs/44process observations preserved; pairedRust/native ratios0.63209 and0.64465 fordefault-activeTPEstreams, with noactivation-toggle/causal/generalclaim. Public lossless projection and exact339-file measured-source reconstruction approved. Final metadata binding approved; mandatory normal hook running, exact hosted CI stillrequired. Only2 original Sensor getters partiallyported; fullSENSOR/P2open."
+      "detail": "Source279 Rust/88 tooling tests,17 functional C++ scenarios+3 lifecycle controls andall9 strictcoverage checks independently approved. Both22-pair/44-observation current-source SDK batches and public lossless projection are approved. Final18-file metadata binding approved. Normal commit attempt stopped during coverage build at shared2GiB diskfloor; it is NOT a passing normal gate and created no accepted commit. All evidence preserved; larger lossless cache recovery and exclusive normal retry next. Exact hosted CI remains required; broadSENSOR/P2 remain open."
     },
     {
       "id": "SLICE-01",
@@ -376,7 +376,9 @@
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Workspace disk headroom: the normal coverage build and concurrent bounded review reached the2GiB safety floor. Both stopped without changing assertions or coverage gates. All failed scratch/source/raw evidence is retained; independently reviewed lossless cache recovery is being prepared. The normal retry will have an exclusive cold-build allocation and at least14GiB initial free space."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
