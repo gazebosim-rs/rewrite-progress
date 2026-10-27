@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T10:33:11.942601+00:00",
+  "updated_at": "2026-10-27T10:48:44.719544+00:00",
   "state": "active",
-  "summary": "The accepted headless baseline remains3a9fa1e. A reviewed private Linux consumer probe is compiling the clock preparation changes against the proposed Transport API; release-pin adoption and canonical simulator acceptance remain pending.",
+  "summary": "The accepted headless baseline remains 3a9fa1e. The private Linux clock probe compiled and passed six of seven cases; a reviewed reset-fixture correction awaits guarded replay.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "Seven unit regressions and two C++ backend cases are prepared. The private Linux probe is running the seven clock cases, committed-reset case and Clippy with an isolated dependency override. An earlier setup-only offline metadata failure is preserved; no Rust result or C++ runtime success is claimed yet. Main manifest, lockfile and accepted quality are unchanged."
+      "detail": "All three earlier first-frame regressions now pass. One reset case incorrectly used a bare simulation without a reset handler; its fixture now loads a resettable scene and keeps all assertions. The failed 6/7 run and executable are preserved. The corrected case, committed-reset case and Clippy await replay; both C++ backend cases remain unrun."
     },
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "Readiness passed independent110-test suites before and after five effective mutation controls, then the unchanged strict producer gate276Rust/24tools with >95% unfiltered line and region coverage. Independent full/final bindings are complete. Normal commit/publication and the simulator dependency pin remain pending."
+      "detail": "The API passed independent 110-test suites before and after five effective mutation controls, then the unchanged strict gate with 276 Rust tests, 24 tooling tests and >95% unfiltered line/region coverage. Independent full/final bindings are complete. Normal verification, publication and simulator pin adoption remain pending."
     }
   ],
   "accepted_slices": [
