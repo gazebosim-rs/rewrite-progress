@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T10:48:44.719544+00:00",
+  "updated_at": "2026-10-27T11:30:55.811245+00:00",
   "state": "active",
-  "summary": "The accepted headless baseline remains 3a9fa1e. The private Linux clock probe compiled and passed six of seven cases; a reviewed reset-fixture correction awaits guarded replay.",
+  "summary": "The accepted headless baseline remains 3a9fa1e. The private clock integration now has eight passing functional checks plus a separate passing Clippy completion, independently verified. Accepted-pin and C++ SDK replay remain pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "All three earlier first-frame regressions now pass. One reset case incorrectly used a bare simulation without a reset handler; its fixture now loads a resettable scene and keeps all assertions. The failed 6/7 run and executable are preserved. The corrected case, committed-reset case and Clippy await replay; both C++ backend cases remain unrun."
+      "detail": "The corrected resettable fixture preserves all clock/reset assertions. All seven clock cases and the committed-reset case pass; a separate Clippy-only completion passes on the same private source/lock/compiler graph. Prior setup and fixture failures remain preserved. Independent review qualifies these as provisional: no full simulator coverage, C++ replay or release acceptance yet."
     },
     {
       "id": "NET-01",
