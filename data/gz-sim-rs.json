@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T22:54:17.152486+00:00",
+  "updated_at": "2026-10-27T23:14:42.233258+00:00",
   "state": "active",
-  "summary": "Published root-clock integration passes exact hosted CI. The next networked CLI draft passes independently checked unit and executable tests, including finite-step budgets across reset; real C++ CLI tests and strict acceptance remain pending.",
+  "summary": "The networked CLI draft now passes independently reviewed real C++ interoperability and signal shutdown on TPE and Rapier, plus all focused CLI/reset-budget tests. Full strict staged acceptance and publication remain pending; published root-clock CI stays green.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Published root/world clock integration; develop networked headless CLI",
-      "detail": "Published f3cd6d6 passed independent source, mandatory commit-hook and exact hosted CI. Selected C++ library-level scenarios remain accepted. The isolated networked CLI draft now passes 1 unit test, all 10 CLI tests and a real-process finite-budget regression across pause/reset/multistep on TPE and Rapier. Raw results and unchanged source were independently verified. Actual C++ clients against the CLI executable, signal shutdown, native reference qualification and full strict coverage/hooks remain pending; this draft is not published."
+      "detail": "The isolated CLI draft passes 1 pacing unit test, all 10 CLI tests, a real-process pause/reset/multistep iteration-budget test, and a real C++ executable test on both TPE and Rapier. C++ root/world Clock bytes match at0/1/2ms, remote stepping works, and SIGINT/SIGTERM exit successfully. Independent source, raw test/compiler/library and test-integrity reviews passed for the staged candidate. Complete canonical coverage, mandatory commit hook and exact hosted CI remain pending; this draft is not published."
     },
     {
       "id": "QLT-01",
-      "title": "Strict source, ordinary hook and exact hosted CI accepted",
-      "detail": "Source and ordinary commit-hook runs each passed 286 Rust tests and 88 tooling tests. Production workspace coverage: 3877/3917 lines and 5956/6092 regions; all nine crates strictly exceed 95% for both. Changed executable lines:44/44. Independent retention, source, compiler and commit adoption reviews passed. Exact hosted run40594126244 attempt1 and verify-core job122505559566 completed successfully; an independent reviewer bound the API result to the published commit."
+      "title": "Prepare unchanged canonical gate for reviewed CLI candidate",
+      "detail": "Published f3cd6d6 retains accepted strict local and hosted checks. The next CLI candidate has independent source and focused-runtime approval. Its canonical staged verifier and complete executable/raw-profile retention observer remain unchanged. The bounded caller passed independent integrity controls. Current disk admission is not funded; a narrow cleanup of obsolete generated consumer compiler caches is being reviewed. Test, assertion and coverage thresholds are unchanged."
     },
     {
       "id": "REF-03",
@@ -351,7 +351,9 @@
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Local disk admission currently prevents the full CLI staged gate; reviewed cleanup of obsolete generated compiler caches is in progress."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
