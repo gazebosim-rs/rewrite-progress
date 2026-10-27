@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T20:45:56.371957+00:00",
+  "updated_at": "2026-10-27T22:28:55.014774+00:00",
   "state": "active",
-  "summary": "The current source run completed successfully: 286 Rust tests, 88 tooling tests and strict line/region coverage checks. Independent artifact review and the mandatory normal hook/public CI remain pending; both scoped TPE performance batches are independently accepted.",
+  "summary": "Prepared root-clock publication is reviewed and published. Both strict local gates passed; exact hosted CI is running. Networked headless CLI development is next; broad phase acceptance remains open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
-      "title": "Current-pin C++ interoperability verified; finish headless acceptance",
-      "detail": "Both verified Rust integration binaries executed against the immutable native SDK. Author and fresh independent runs passed all 19 functional C++ scenarios plus 3 separate lifecycle controls; each retained 17 compiler receipts (16 clock, 1 rate). New root/world Clock bytes match at 0/1/2 ms on both TPE and Rapier. Independent raw/archive/source/compiler/library and stopped-container/process checks passed. Earlier observer failures are preserved. The nine-file simulator candidate remains unpublished pending full strict quality and equal-work performance gates."
-    },
-    {
-      "id": "NET-01",
-      "title": "Coordinate discovery and publication readiness",
-      "detail": "Transport cffaca6 passed independent mandatory normal review and exact hosted CI40516831480. The simulator candidate now pins that accepted revision; all other dependency and Fuel pins are unchanged and independently checked. Broader transport capabilities remain open."
+      "title": "Published root/world clock integration; develop networked headless CLI",
+      "detail": "Published f3cd6d6 after independent source, ordinary commit-hook and exact adoption review. Real C++ author and independent clients passed 19 functional scenarios and 3 separate lifecycle controls, including identical root/world Clock bytes on TPE and Rapier. The existing CLI remains offline-only; live server startup, pacing, termination and executable-level C++ interoperability are the next bounded slice."
     },
     {
       "id": "QLT-01",
-      "title": "Source gate completed; verify evidence and prepare normal hook",
-      "detail": "The unchanged canonical staged source run exited successfully after the observer-only fixes. Rust tests: 286 passed, zero failed or ignored; tooling: 88 passed. Workspace production coverage is 3877/3917 lines and 5956/6092 regions; every production crate passed strict >95% checks, with 44/44 changed executable lines covered. All 55 compiler-recorded executables and raw profiles were retained. Independent full artifact/protection review is ongoing. The mandatory ordinary commit hook and exact public CI have not run for this candidate. Earlier failed runs remain recorded separately."
+      "title": "Both strict local gates accepted; exact hosted CI running",
+      "detail": "Source and ordinary commit-hook runs each passed 286 Rust tests and 88 tooling tests. Production workspace coverage: 3877/3917 lines and 5956/6092 regions; all nine crates strictly exceed 95% for both. Changed executable lines:44/44. Independent retention, source, compiler and commit adoption reviews passed. Hosted run40594126244 is still pending."
+    },
+    {
+      "id": "REF-03",
+      "title": "Scoped equal-work TPE performance evidence accepted",
+      "detail": "Two separate independently verified paired batches measured clock/pose/IMU work latency at about34-35% lower for Rust. Shared-host TPE observation workload only; excludes pacing and does not establish balanced robotics or full simulator performance. Public evidence packaging remains pending."
     }
   ],
   "accepted_slices": [
@@ -337,6 +337,11 @@
       "title": "Current fifteen-contract headless evidence and normal dependency closure",
       "commit": "3a9fa1ec6657821a402526dc2563a2aba1034938",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3a9fa1ec6657821a402526dc2563a2aba1034938"
+    },
+    {
+      "title": "Prepared root clock publication with exact C++ root/world bytes and strict independently reviewed local gates",
+      "commit": "f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23"
     }
   ],
   "remaining": [
@@ -367,17 +372,17 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "3a9fa1ec6657821a402526dc2563a2aba1034938",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3a9fa1ec6657821a402526dc2563a2aba1034938",
-    "rust_tests": 279,
+    "revision": "f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23",
+    "rust_tests": 286,
     "coverage": {
       "lines": [
-        3830,
-        3870
+        3877,
+        3917
       ],
       "regions": [
-        5873,
-        6004
+        5956,
+        6092
       ]
     },
     "upstream": {
@@ -386,10 +391,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40450269066"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40594126244"
     },
-    "note": "Exact normal and hosted gates at 3a9fa1e: 279 Rust tests, 88 tooling tests, 17 real C++ functional scenarios and 3 separate lifecycle controls. All nine production crates strictly exceed 95% lines and regions. Metadata refresh binds 15 contracts/36 witnesses/96 inputs and 259 normal Linux packages; formal P2 and SLICE-01 remain in progress. No broader parity or balanced robotics performance claim."
+    "note": "Exact published commit passed independently reviewed staged-source and ordinary mandatory commit-hook checks:286 Rust tests,88 tooling tests, all nine production crates strictly above95% lines and regions,44/44 changed lines. Exact hosted CI is running. Selected C++ interoperability and TPE performance evidence do not complete formal P2 or broad rewrite parity."
   },
   "phase_status": {
     "P0": "in_progress",
