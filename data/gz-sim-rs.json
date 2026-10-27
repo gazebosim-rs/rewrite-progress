@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T18:39:13.951037+00:00",
+  "updated_at": "2026-10-27T19:13:04.101783+00:00",
   "state": "active",
-  "summary": "The current headless candidate passed real C++ interoperability in both author and fresh independent SDK runs: 19 functional scenarios and 3 lifecycle controls, including root clocks on TPE and Rapier. Full coverage, performance and publication gates remain pending.",
+  "summary": "Both current-source TPE clock/pose/IMU measurement batches passed independent raw-data review, showing about 34\u201335% lower paired work latency. Full source quality stopped at a compiler-artifact resource cap; runner recovery is in progress.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Verified storage recovery; prepare funded full quality run",
-      "detail": "Verified lossless recovery retained all source and raw evidence. The new tmpfs quality caller passed independent source review and 22 controls; concrete placement and full canonical gates are pending. The current-source optimized executable passed independent artifact/source/profile review. Author and fresh independent 2-step functional benchmark batches both passed all eight pairs and raw/provenance checks. Full 128-step measurements require separate admission; no new performance or coverage conclusion is claimed."
+      "title": "Recover bounded source gate; performance evidence independently accepted",
+      "detail": "The tmpfs source run passed Clippy and 88 tooling tests, then stopped at a resource cap during instrumented test compilation. No full Rust-test or coverage pass is claimed. Independent failure audit verified original source, cache seeds and SDK executables are unchanged and child processes are clear. Agents are preparing recovery with durable failure-counter records and funded incremental resource limits. Two separately reviewed 128-step TPE measurement batches retained all samples: paired Rust/native work-latency ratios 0.6564 and 0.6508. These results cover the selected clock/pose/IMU workload; full quality, normal hook and exact public CI remain pending."
     }
   ],
   "accepted_slices": [
@@ -347,7 +347,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "The current canonical quality allocation requires 9 GiB free; disk space is about 5.60 GiB after verified cache recovery. A bounded executable-memory workspace is being reviewed to fund the unchanged tests and coverage gates."
+    "The first tmpfs source gate stopped at its cumulative compiler-artifact allocation cap before instrumented Cargo returned. Original source and evidence are preserved. The failing counter snapshot was not persisted; a reviewed recovery must retain known debt and explicitly qualify the unknown historical amount. Test assertions and coverage thresholds are unchanged."
   ],
   "plan_status": {
     "REF-01": "in_progress",
