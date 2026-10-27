@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T04:32:24.818910+00:00",
+  "updated_at": "2026-10-27T04:39:52.683898+00:00",
   "state": "active",
-  "summary": "The current fifteen-row headless evidence refresh is published at 3a9fa1e after independent review and the protected normal hook passed. Exact hosted verification is running; formal P2 remains open.",
+  "summary": "Current selected headless evidence is accepted at 3a9fa1e: protected normal checks, independent review and exact hosted CI passed. Root clock compatibility is the next simulator slice; broader P2 prerequisites remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
-      "id": "SLICE-01",
-      "title": "Current headless acceptance evidence",
-      "detail": "Published 3a9fa1e binds 15 contracts, 36 passing witnesses, 96 inputs and 259 normal dependencies. Its normal gate passed 279 Rust/88 tooling tests with strict coverage in nine crates. Exact CI 40450269066 is pending; accepted quality below remains at 8d065a1."
+      "id": "IO-01",
+      "title": "Native root clock admission",
+      "detail": "Source-backed native-first task: advertise root clock only under the observed native publisher-admission rules. Original clock test collector is under independent review; no implementation or test-port credit yet."
     }
   ],
   "accepted_slices": [
@@ -322,6 +322,11 @@
       "title": "Loaded IMU activation with phase/noise/history and lifecycle preservation",
       "commit": "8d065a1a3750d282bada085df4a29a8139a3e875",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8d065a1a3750d282bada085df4a29a8139a3e875"
+    },
+    {
+      "title": "Current fifteen-contract headless evidence and normal dependency closure",
+      "commit": "3a9fa1ec6657821a402526dc2563a2aba1034938",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3a9fa1ec6657821a402526dc2563a2aba1034938"
     }
   ],
   "remaining": [
@@ -352,8 +357,8 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "8d065a1a3750d282bada085df4a29a8139a3e875",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8d065a1a3750d282bada085df4a29a8139a3e875",
+    "revision": "3a9fa1ec6657821a402526dc2563a2aba1034938",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3a9fa1ec6657821a402526dc2563a2aba1034938",
     "rust_tests": 279,
     "coverage": {
       "lines": [
@@ -372,9 +377,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40442119648"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40450269066"
     },
-    "note": "Accepted exact8d065a1 source and mandatory normal279Rust/88tooling,17realCppfunctional scenarios+3lifecyclecontrols; all9crates>95%lines/regions andchangedScene22/22Server7/7. Independentnative/source/runtime/full/performance/projection/final/normalreviews passed; no originalretired/assertion/tolerance/pin/coveragepolicychange. Separatecurrent-source default-active sharedhostTPEstream batches pairedRust/native0.63209 and0.64465; noactivation-toggle/causal/general/balancedrobotics/P2claim. Firstdiskguardfailure retained; exclusive retry passedafterverifiedlosslessrecovery."
+    "note": "Exact normal and hosted gates at 3a9fa1e: 279 Rust tests, 88 tooling tests, 17 real C++ functional scenarios and 3 separate lifecycle controls. All nine production crates strictly exceed 95% lines and regions. Metadata refresh binds 15 contracts/36 witnesses/96 inputs and 259 normal Linux packages; formal P2 and SLICE-01 remain in progress. No broader parity or balanced robotics performance claim."
   },
   "phase_status": {
     "P0": "in_progress",
