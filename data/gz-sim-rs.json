@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T22:32:13.017545+00:00",
+  "updated_at": "2026-10-27T22:54:17.152486+00:00",
   "state": "active",
-  "summary": "Prepared root-clock publication is reviewed, published and passing exact hosted CI. Both strict local gates passed. The next networked headless CLI slice is drafted; broad phase acceptance remains open.",
+  "summary": "Published root-clock integration passes exact hosted CI. The next networked CLI draft passes independently checked unit and executable tests, including finite-step budgets across reset; real C++ CLI tests and strict acceptance remain pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Published root/world clock integration; develop networked headless CLI",
-      "detail": "Published f3cd6d6 after independent source, ordinary commit-hook and exact adoption review. Real C++ author and independent clients passed 19 functional scenarios and 3 separate lifecycle controls, including identical root/world Clock bytes on TPE and Rapier. The existing CLI remains offline-only; live server startup, pacing, termination and executable-level C++ interoperability are the next bounded slice."
+      "detail": "Published f3cd6d6 passed independent source, mandatory commit-hook and exact hosted CI. Selected C++ library-level scenarios remain accepted. The isolated networked CLI draft now passes 1 unit test, all 10 CLI tests and a real-process finite-budget regression across pause/reset/multistep on TPE and Rapier. Raw results and unchanged source were independently verified. Actual C++ clients against the CLI executable, signal shutdown, native reference qualification and full strict coverage/hooks remain pending; this draft is not published."
     },
     {
       "id": "QLT-01",
