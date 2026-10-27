@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T07:51:00.682283+00:00",
+  "updated_at": "2026-10-27T08:53:54.543922+00:00",
   "state": "active",
-  "summary": "The selected headless baseline remains CI-qualified at 3a9fa1e. Root clock run preparation now has a reviewed draft with one deadline for discovery and both publication refreshes; producer acceptance and executable consumer checks remain pending.",
+  "summary": "The accepted headless baseline remains 3a9fa1e. Run-boundary clock preparation and real C++ root/world clock regression cases are implemented as reviewed drafts; executable simulator checks and accepted transport adoption remain pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "Six native scenarios independently qualified. The earlier Rust draft passed 3 of 6 focused checks; its first-frame failures and binaries are preserved. The new draft keeps those assertions, adds an invalid-deadline regression, and refreshes world/root membership outside tick. Static review found no logic blocker; all seven current tests are unrun pending the reviewed Transport API/pin."
+      "detail": "The six native reference scenarios remain independently qualified. The draft now has seven unit regressions and two additive C++ backend cases comparing full clock messages at 0/1/2 ms. Static review preserves all old assertions and keeps shared C++ compilation in the existing test entrypoint. Current draft tests are unrun; the earlier three first-frame failures and binaries remain preserved."
     },
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "Independent C++ cold/warm TopicInfo reference completed. A transport candidate passed 108 selected checks and Clippy; explicit deadline handling is being refined before independent acceptance and simulator adoption. Root first-frame regressions remain preserved; no discovery or worker waits enter tick. Accepted quality below is unchanged."
+      "detail": "The proposed readiness API passed an independent 110-test suite, five effective production mutation controls and restored 110 tests. Canonical coverage, publication and simulator pin adoption are still pending. A stricter resource plan and lossless cache recovery are under review; no simulation-step waits or coverage waivers are introduced."
     }
   ],
   "accepted_slices": [
