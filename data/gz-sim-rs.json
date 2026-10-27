@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T13:12:17.283073+00:00",
+  "updated_at": "2026-10-27T14:18:08.749632+00:00",
   "state": "active",
   "summary": "Accepted baseline remains 3a9fa1e. The new C++ clock client compiles and links against the pinned legacy reference, independently verified. Eight private Rust functional checks and separate Clippy pass remain provisional; current-pin SDK execution is pending.",
   "model": "Coordinator; architecture, integration and review",
@@ -9,12 +9,12 @@
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "Current root-clock C++ source compiles/links against the pinned legacy reference, independently verified; no new client/server run yet. The assembled SDK replay wrapper now passed independent source review and 47 isolated controls, including cleanup under persistent disk failure and explicit process ownership. Its accepted-pin two-ELF build core is under review. Actual build/resource admission, current-pin SDK replay, full coverage and equal-work performance remain pending; eight Rust checks plus separate Clippy remain private-graph evidence."
+      "detail": "The new C++ clock client has independent compile/link verification. SDK wrapper source passed 47 isolated controls; its two-ELF build core passed 27 controls and the source exporter passed 20 isolated Git controls with primary-index preservation. The bounded build executor is being implemented. Actual accepted-pin compilation, C++ server interoperability, full simulator coverage and equal-work performance remain pending."
     },
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "The identity-aware descriptor fix passed independent review, and lossless recovery of stale compiler outputs reclaimed 1,462,330,710 bytes while preserving all current outputs and failures. The next mandatory normal run is awaiting its revised resource/integration review. Readiness source coverage passed previously (276 Rust / 24 tooling tests); publication, exact hosted CI and simulator pin adoption remain pending."
+      "detail": "Transport mandatory normal verification passed and independent review approved 276 Rust tests, 24 tooling checks, 109 native checks and unchanged strict coverage. Commit cffaca6 is public; its exact hosted CI is still running. Simulator pin adoption awaits hosted success. Previous failures remain preserved."
     }
   ],
   "accepted_slices": [
