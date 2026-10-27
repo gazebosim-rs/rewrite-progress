@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T17:05:21.965952+00:00",
+  "updated_at": "2026-10-27T17:42:00.869473+00:00",
   "state": "active",
   "summary": "The current headless candidate passed real C++ interoperability in both author and fresh independent SDK runs: 19 functional scenarios and 3 lifecycle controls, including root clocks on TPE and Rapier. Full coverage, performance and publication gates remain pending.",
   "model": "Coordinator; architecture, integration and review",
@@ -18,8 +18,8 @@
     },
     {
       "id": "QLT-01",
-      "title": "Recover storage for full current-source quality gate",
-      "detail": "The original clock discovery blocker is cleared by both real C++ SDK runs. Full coverage remains unrun for this candidate. Source and isolated controls for the canonical quality runner passed independent review; numeric allocation remains unfunded. Performance adapter review found a harness-path mismatch, which is being corrected before any benchmark execution."
+      "title": "Verified storage recovery; prepare funded full quality run",
+      "detail": "Independent completion verified all 1,973 lossless archives and 16,060 protected files, recovering 2.45 GB of inactive build storage. Source, fixtures, raw evidence and current SDK executables are preserved. A small host probe verified executable tmpfs capacity; its quality/staged-check layout and memory limits still require review before a build. Benchmark harness source and resource-accounting fixes pass isolated controls; the partial-output retention fix is under final review. No new full coverage or performance result is claimed."
     }
   ],
   "accepted_slices": [
@@ -347,7 +347,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "The complete current-candidate coverage run needs a 9 GiB free-space allocation; only about 3.35 GiB is currently available. Owners are preparing lossless recovery of inactive build caches. Strict coverage gates remain unchanged."
+    "The current canonical quality allocation requires 9 GiB free; disk space is about 5.60 GiB after verified cache recovery. A bounded executable-memory workspace is being reviewed to fund the unchanged tests and coverage gates."
   ],
   "plan_status": {
     "REF-01": "in_progress",
