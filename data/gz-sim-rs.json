@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T15:58:12.178097+00:00",
+  "updated_at": "2026-10-27T17:05:21.965952+00:00",
   "state": "active",
   "summary": "The current headless candidate passed real C++ interoperability in both author and fresh independent SDK runs: 19 functional scenarios and 3 lifecycle controls, including root clocks on TPE and Rapier. Full coverage, performance and publication gates remain pending.",
   "model": "Coordinator; architecture, integration and review",
@@ -15,6 +15,11 @@
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
       "detail": "Transport cffaca6 passed independent mandatory normal review and exact hosted CI40516831480. The simulator candidate now pins that accepted revision; all other dependency and Fuel pins are unchanged and independently checked. Broader transport capabilities remain open."
+    },
+    {
+      "id": "QLT-01",
+      "title": "Recover storage for full current-source quality gate",
+      "detail": "The original clock discovery blocker is cleared by both real C++ SDK runs. Full coverage remains unrun for this candidate. Source and isolated controls for the canonical quality runner passed independent review; numeric allocation remains unfunded. Performance adapter review found a harness-path mismatch, which is being corrected before any benchmark execution."
     }
   ],
   "accepted_slices": [
@@ -342,7 +347,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Root clock compatibility cannot be accepted until initial discovery and publisher-interest preparation deliver the first expected clock frame. Transport and simulator owners are implementing that contract."
+    "The complete current-candidate coverage run needs a 9 GiB free-space allocation; only about 3.35 GiB is currently available. Owners are preparing lossless recovery of inactive build caches. Strict coverage gates remain unchanged."
   ],
   "plan_status": {
     "REF-01": "in_progress",
