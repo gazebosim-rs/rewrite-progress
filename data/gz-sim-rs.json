@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T11:41:34.385972+00:00",
+  "updated_at": "2026-10-27T12:46:15.114330+00:00",
   "state": "active",
-  "summary": "Accepted headless baseline remains 3a9fa1e. Eight private clock functional checks and a separate Clippy pass have independent review. C++ replay tooling is being extended. Transport publication is awaiting a reviewed rerun after a disk accounting stop; no test assertion failure was reported.",
+  "summary": "Accepted baseline remains 3a9fa1e. The new C++ clock client compiles and links against the pinned legacy reference, independently verified. Eight private Rust functional checks and separate Clippy pass remain provisional; current-pin SDK execution is pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "The corrected resettable fixture preserves all clock/reset assertions. All seven clock cases and the committed-reset case pass; a separate Clippy-only completion passes on the same private source/lock/compiler graph. Prior setup and fixture failures remain preserved. Independent review qualifies these as provisional: no full simulator coverage, C++ replay or release acceptance yet. New replay tooling retains the original scenarios and adds the two root-clock backend cases, plus the existing rate lifecycle controls. SDK execution remains unrun. The stream benchmark now prepares root ownership before warmup and checks both endpoint enqueue counters; this is unaccepted harness work, not a new speedup."
+      "detail": "Current root-clock C++ source compiles/links with the pinned native compiler and 24 library identities; independent review verified the ELF and clean owned-process shutdown. This is compile-only, not a client/server replay. The two-test SDK capsule passed 37 pure admission controls and static review. Its executable wrapper is receiving reviewed process-inspection and emergency-cleanup fixes. The seven clock plus committed-reset checks and separate Clippy pass remain private-graph evidence; accepted-pin replay, full coverage and performance remain pending."
     },
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "Readiness passed independent mutation controls and strict source coverage (276 Rust / 24 tooling tests). Mandatory normal run stopped at its conservative target limit, with all failures and artifacts preserved; it did not complete or commit. A cumulative resource plan is under independent review. Publication, exact hosted CI and simulator pin adoption remain pending."
+      "detail": "Readiness strict source coverage passed (276 Rust / 24 tooling tests). The later mandatory normal attempt stopped on a file-descriptor inspection permission race, below its disk cap and above its free-space floor. All failure evidence remains preserved; no commit or test assertion failure was reported. Owners are reviewing an identity-aware inspection fix and lossless stale-cache recovery before another normal run. Publication, exact hosted CI and simulator pin adoption remain pending."
     }
   ],
   "accepted_slices": [
