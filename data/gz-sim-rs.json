@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T07:38:50.739537+00:00",
+  "updated_at": "2026-10-27T07:51:00.682283+00:00",
   "state": "active",
-  "summary": "The selected headless baseline remains CI-qualified at 3a9fa1e. Root clock reference behavior passed fresh independent replay; a Rust draft is under development, with first-frame readiness failures retained and being fixed at the transport boundary.",
+  "summary": "The selected headless baseline remains CI-qualified at 3a9fa1e. Root clock run preparation now has a reviewed draft with one deadline for discovery and both publication refreshes; producer acceptance and executable consumer checks remain pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
       "title": "Root clock run preparation and publication",
-      "detail": "Six native scenarios independently qualified. Rust draft preserves Run-boundary admission and shared clock payloads; focused checks currently pass 3 of 6. Failures expose initially stale cross-node subscription snapshots. No sleeps or waits are added to the simulation tick."
+      "detail": "Six native scenarios independently qualified. The earlier Rust draft passed 3 of 6 focused checks; its first-frame failures and binaries are preserved. The new draft keeps those assertions, adds an invalid-deadline regression, and refreshes world/root membership outside tick. Static review found no logic blocker; all seven current tests are unrun pending the reviewed Transport API/pin."
     },
     {
       "id": "NET-01",
