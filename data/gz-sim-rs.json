@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-26T23:23:54.206599+00:00",
+  "updated_at": "2026-10-27T00:29:30.703387+00:00",
   "state": "active",
-  "summary": "Runtime IMU rate control is published and exact-CI qualified, including real C++ clients, strict coverage and reviewed current-source performance. Next: native activation semantics and loaded IMU control. The full rewrite and formal headless phase remain open.",
+  "summary": "Runtime IMU rate control is published and CI-qualified. Local IMU activation now passes its first90 selected Rust checks after an independently replayed native baseline; peer review and full acceptance checks remain pending. Formal headless and full-rewrite scope remain open.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
@@ -23,8 +23,8 @@
     },
     {
       "id": "SENSOR-01",
-      "title": "Runtime IMU rates accepted; activation baseline next",
-      "detail": "Publica8b80129 exact40414745428 SUCCESS. Canonical source11665+mandatorynormal24753 pass271Rust/0fail/0ignored,83tools,17functionalC++ scenarios+3separate controls; all9productioncrates>95%lines/regions,workspace3801/3841+5828/5959,changedScene52/52Server177/180. Independent source/runtime/full/final/normal reviews approved including89+6effectivecontrols+89restored. Two Sensor cases remainPARTIAL; no retirement/pin/policy/tolerance/Fuel changes. Next activation task/prototype/portablecollector preparedonly: capture native active/force/deadline semantics and original constructor assertions before production edits; no activation run or implementation claimed. Triggers/metrics/registration/otherfamilies/fullSENSOR01/IO01/P2 stayopen."
+      "title": "IMU rates accepted; local activation under review",
+      "detail": "Accepted commit a8b80129 passed exact CI40414745428, source and normal gates:271 Rust tests,83 tooling tests,17 functional C++ scenarios and3 lifecycle controls; every production crate exceeds95% line/region coverage. New activation work has independently replayed18 native BaseSensor observations and the unchanged constructor test. A focused local Bevy activation API and sampling gate now pass90 selected checks (27 existing scene,6 new activation,57 server). Tests cover preserved phase, peer admission, velocity/noise history, pause, loaded resets, removal and terminal-error atomicity. This uncommitted increment still requires independent source/runtime controls, strict full coverage, performance, normal hooks and exact CI. It introduces no wire endpoint or forced-update API and does not claim full native IMUServer activation parity. Broader sensor and P2 scope stay open."
     },
     {
       "id": "SLICE-01",
@@ -418,7 +418,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40414745428"
     },
-    "note": "Publica8b80129 exact40414745428SUCCESS; independentruntimeafc2/sourcefullb264/final3dd580/normal4fa187 approved. Source+normal271Rust83tools,17functionalCpp+3controls; all9cratesstrict>95both,changedScene52/52Server177/180. Nativecap/phase/reset/globalrawdeadline andone-wayDouble/Emptyservices, minimalwarmpool/boundedoverload metrics qualified. TwoSensororiginalsPARTIAL only; no retirement/pin/oldassertion/tolerance/policy change. SelectedTPE128step clock/pose/IMU worklatency batches approved79315/projectiondf2: separatepairedratios0.63979 and0.64388; no balanced/general/causal/unpacedthroughput/P2/fullrewrite claim.",
+    "note": "Accepted public commit a8b80129 passed exact hosted CI40414745428 and independent source, native, runtime, coverage, final and normal reviews. Source and normal gates passed271 Rust/83 tooling tests,17 functional C++ scenarios and3 lifecycle controls. All9 crates exceed95% lines/regions; changed scene52/52 and server177/180. Two Sensor originals remain partial; no retirement, pin, assertion, tolerance or coverage-policy change. Two separate current-source TPE clock/pose/IMU batches have paired Rust/native work-latency ratios0.63979 and0.64388. These are selected shared-host results, not balanced robotics, general simulator or full P2 acceptance.",
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a8b80129071039568471efb9e9a56edd02b8effb"
   },
   "phase_status": {
