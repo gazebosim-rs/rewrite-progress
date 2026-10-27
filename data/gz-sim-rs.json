@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-27T14:18:08.749632+00:00",
+  "updated_at": "2026-10-27T15:58:12.178097+00:00",
   "state": "active",
-  "summary": "Accepted baseline remains 3a9fa1e. The new C++ clock client compiles and links against the pinned legacy reference, independently verified. Eight private Rust functional checks and separate Clippy pass remain provisional; current-pin SDK execution is pending.",
+  "summary": "The current headless candidate passed real C++ interoperability in both author and fresh independent SDK runs: 19 functional scenarios and 3 lifecycle controls, including root clocks on TPE and Rapier. Full coverage, performance and publication gates remain pending.",
   "model": "Coordinator; architecture, integration and review",
   "active": [
     {
       "id": "IO-01",
-      "title": "Root clock run preparation and publication",
-      "detail": "The new C++ clock client has independent compile/link verification. SDK wrapper source passed 47 isolated controls; its two-ELF build core passed 27 controls and the source exporter passed 20 isolated Git controls with primary-index preservation. The bounded build executor is being implemented. Actual accepted-pin compilation, C++ server interoperability, full simulator coverage and equal-work performance remain pending."
+      "title": "Current-pin C++ interoperability verified; finish headless acceptance",
+      "detail": "Both verified Rust integration binaries executed against the immutable native SDK. Author and fresh independent runs passed all 19 functional C++ scenarios plus 3 separate lifecycle controls; each retained 17 compiler receipts (16 clock, 1 rate). New root/world Clock bytes match at 0/1/2 ms on both TPE and Rapier. Independent raw/archive/source/compiler/library and stopped-container/process checks passed. Earlier observer failures are preserved. The nine-file simulator candidate remains unpublished pending full strict quality and equal-work performance gates."
     },
     {
       "id": "NET-01",
       "title": "Coordinate discovery and publication readiness",
-      "detail": "Transport mandatory normal verification passed and independent review approved 276 Rust tests, 24 tooling checks, 109 native checks and unchanged strict coverage. Commit cffaca6 is public; its exact hosted CI is still running. Simulator pin adoption awaits hosted success. Previous failures remain preserved."
+      "detail": "Transport cffaca6 passed independent mandatory normal review and exact hosted CI40516831480. The simulator candidate now pins that accepted revision; all other dependency and Fuel pins are unchanged and independently checked. Broader transport capabilities remain open."
     }
   ],
   "accepted_slices": [
