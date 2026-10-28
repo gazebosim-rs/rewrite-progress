@@ -1,15 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-28T03:05:33Z",
+  "updated_at": "2026-10-28T04:47:00Z",
   "state": "active",
-  "summary": "P2 is closed for the selected headless world; P3 starts with the DART adapter (PHY-03).",
+  "summary": "P3 started: a shared dynamic physics backend contract is in place with Rapier migrated onto it; DART and MuJoCo adapters are being built in parallel.",
   "model": "Coordinator (Claude Opus 5.5, taking over from the previous agent)",
   "active": [
     {
+      "id": "PHY-01",
+      "title": "Shared dynamic backend contract",
+      "detail": "DynamicBackend trait, type-erased PhysicsBackend resource, explicit Unsupported/Native errors and StepFault reporting; Rapier and the scene migrated."
+    },
+    {
       "id": "PHY-03",
-      "title": "DART native adapter",
-      "detail": "Planning the DART adapter: native build, safe ownership and same-version parity against upstream DART."
+      "title": "DART adapter",
+      "detail": "cxx bridge to DART 6.13.2 with same-version parity against the native gz-physics dartsim plugin."
+    },
+    {
+      "id": "PHY-04",
+      "title": "MuJoCo adapter",
+      "detail": "MuJoCo 3.11.0 binding with topology-edit state preservation and parity against the native gz-physics mujoco plugin."
     }
   ],
   "accepted_slices": [
@@ -347,6 +357,11 @@
       "title": "P2 closed for the selected headless world",
       "commit": "d58223d7f33051dcc1eb3db33fe3aff5226f0b0c",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d58223d7f33051dcc1eb3db33fe3aff5226f0b0c"
+    },
+    {
+      "title": "Shared dynamic physics backend contract with Rapier and scene migrated",
+      "commit": "8e9cf523722ae11f0f8164fa3d899c7ddc3371e9",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8e9cf523722ae11f0f8164fa3d899c7ddc3371e9"
     }
   ],
   "remaining": [
@@ -375,12 +390,13 @@
     "PHY-02": "in_progress",
     "FUEL-01": "in_progress",
     "REF-03": "in_progress",
-    "PHY-03": "in_progress"
+    "PHY-03": "in_progress",
+    "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "d58223d7f33051dcc1eb3db33fe3aff5226f0b0c",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d58223d7f33051dcc1eb3db33fe3aff5226f0b0c",
-    "rust_tests": 294,
+    "revision": "8e9cf523722ae11f0f8164fa3d899c7ddc3371e9",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8e9cf523722ae11f0f8164fa3d899c7ddc3371e9",
+    "rust_tests": 299,
     "coverage": {
       "lines": [
         3985,
@@ -398,9 +414,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40623779793"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40633256795"
     },
-    "note": "Hosted CI 40623779793 and the local staged gate/pre-commit hook passed at this commit: 294 Rust tests, all nine production crates strictly above 95% lines and regions. P2 is closed for the selected world only; broader packets remain open."
+    "note": "Hosted CI 40633256795 and the local staged gate passed at this commit: 299 Rust tests, all production crates strictly above 95% lines and regions, every changed line covered. P2 is closed for the selected world only; broader packets remain open."
   },
   "phase_status": {
     "P0": "in_progress",
