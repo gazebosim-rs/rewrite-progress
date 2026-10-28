@@ -1,25 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-28T00:03:35.938071+00:00",
+  "updated_at": "2026-10-28T01:38:58Z",
   "state": "active",
-  "summary": "The reviewed networked CLI passes real C++ and shutdown regressions. Its unchanged canonical staged gate is running: all 292 Rust tests passed; coverage processing and complete executable/profile retention are still in progress.",
-  "model": "Coordinator; architecture, integration and review",
+  "summary": "Networked headless CLI server mode landed: a real C++ transport client drives the executable on TPE and Rapier; next is closing the remaining P2 headless gaps.",
+  "model": "Coordinator (Claude Opus 5.5, taking over from the previous agent)",
   "active": [
     {
       "id": "IO-01",
-      "title": "Published root/world clock integration; develop networked headless CLI",
-      "detail": "The isolated CLI draft passes fifteen independently reviewed focused tests: pacing, all ten CLI cases, real C++ executable interoperability on TPE/Rapier, reset-aware finite step budgets, consuming shutdown, and a blocked-output repeated-signal regression. The old signal bug was reproduced and its executable preserved; the fix keeps signal actions through process exit. Full canonical coverage, mandatory commit hook and exact hosted CI remain required before publishing the draft."
+      "title": "Remaining headless IO compatibility",
+      "detail": "Next: native-compatible topic-name sanitization for world names (currently InvalidName) and the remaining P2 world/resource, sensor and IO gaps."
     },
     {
-      "id": "QLT-01",
-      "title": "Canonical staged gate running; 292 Rust tests passed",
-      "detail": "The unchanged full staged verifier is running against the independently reviewed CLI candidate. All 292 Rust tests passed with zero failures or ignored tests; Clippy, 88 tooling tests and docs checks ran. The qualified observer is retaining every emitted executable and raw profile before coverage checks complete. This is not yet a passing gate. Reviewed cleanup reclaimed 1.64 GB of obsolete consumer build caches while preserving SDK/performance/test evidence, source and Fuel work."
-    },
-    {
-      "id": "REF-03",
-      "title": "Scoped equal-work TPE performance evidence accepted",
-      "detail": "Two separate independently verified paired batches measured clock/pose/IMU work latency at about34-35% lower for Rust. Shared-host TPE observation workload only; excludes pacing and does not establish balanced robotics or full simulator performance. Public evidence packaging remains pending."
+      "id": "SLICE-01",
+      "title": "P2 headless end-to-end acceptance",
+      "detail": "Re-auditing what P2 still needs against PLAN.md exit evidence."
     }
   ],
   "accepted_slices": [
@@ -342,6 +337,11 @@
       "title": "Prepared root clock publication with exact C++ root/world bytes and strict independently reviewed local gates",
       "commit": "f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23"
+    },
+    {
+      "title": "Networked headless CLI server mode with C++ client interop on TPE and Rapier",
+      "commit": "a549c526690c77335d375927878e76515d2aa269",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a549c526690c77335d375927878e76515d2aa269"
     }
   ],
   "remaining": [
@@ -372,17 +372,17 @@
     "REF-03": "in_progress"
   },
   "quality": {
-    "revision": "f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f3cd6d67d0bd0e8d69a11de0c11930b8e1e7db23",
-    "rust_tests": 286,
+    "revision": "a549c526690c77335d375927878e76515d2aa269",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a549c526690c77335d375927878e76515d2aa269",
+    "rust_tests": 293,
     "coverage": {
       "lines": [
-        3877,
-        3917
+        3984,
+        4026
       ],
       "regions": [
-        5956,
-        6092
+        6132,
+        6276
       ]
     },
     "upstream": {
@@ -392,9 +392,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40594126244"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40615519132"
     },
-    "note": "Exact published commit passed independently reviewed staged-source and ordinary mandatory commit-hook checks:286 Rust tests,88 tooling tests, all nine production crates strictly above95% lines and regions,44/44 changed lines. Exact hosted CI40594126244 attempt1 passed and was independently verified. Selected C++ interoperability and TPE performance evidence do not complete formal P2 or broad rewrite parity."
+    "note": "Hosted CI 40615519132, local staged gate and pre-commit hook passed at this commit: 293 Rust tests, all nine production crates strictly above 95% lines and regions. Selected C++ interoperability does not complete formal P2 or broad parity."
   },
   "phase_status": {
     "P0": "in_progress",
