@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-28T11:38:17Z",
+  "updated_at": "2026-10-28T13:45:33Z",
   "state": "active",
-  "summary": "Native MuJoCo 3.11.0 backend landed with 1e-14 same-engine parity against the gz-physics plugin; the DART adapter is in review with conditioning limits for the packaged DART build.",
+  "summary": "Native DART 6.13.2 and MuJoCo 3.11.0 backends landed alongside Rapier and TPE, each with same-engine parity against the native gz-physics plugins; broader P3 physics capabilities remain.",
   "model": "Coordinator (Claude Opus 5.5, taking over from the previous agent)",
   "active": [
     {
       "id": "PHY-03",
-      "title": "DART adapter",
-      "detail": "Same-version parity with the native dartsim plugin is bit-identical or within 1e-14; adding documented admission limits so packaged DART (assertions on) cannot abort on admitted input."
+      "title": "DART adapter follow-ups",
+      "detail": "First slice landed with bit-identical or 1e-14 parity and documented admission limits (D25); remaining: server reset native comparison on DART, articulation, limits and damping."
     },
     {
       "id": "PHY-04",
       "title": "MuJoCo adapter follow-ups",
-      "detail": "First slice landed; low-severity follow-ups and broader capabilities (limits, damping, articulation) remain."
+      "detail": "First slice landed; low-severity follow-ups and broader capabilities remain."
     }
   ],
   "accepted_slices": [
@@ -362,11 +362,16 @@
       "title": "Native MuJoCo 3.11.0 backend with same-engine parity and CLI selection",
       "commit": "074c29b4d7d51dc27f94069ed8aa22bd17af80f4",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/074c29b4d7d51dc27f94069ed8aa22bd17af80f4"
+    },
+    {
+      "title": "Native DART 6.13.2 backend with same-engine parity, admission limits and CLI selection",
+      "commit": "85dd4ab6a5902cec88c968f9524e94795237aecc",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/85dd4ab6a5902cec88c968f9524e94795237aecc"
     }
   ],
   "remaining": [
     "Complete formal P0 provenance/inventory and current P2 dependency/evidence closure; broader world/resource loading, physics, sensor registration/triggered acquisition/metrics and IO compatibility remain open.",
-    "DART adapter landing, remaining TPE capabilities, general articulations/forces/limits and complete backend capability contract.",
+    "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
@@ -394,9 +399,9 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "074c29b4d7d51dc27f94069ed8aa22bd17af80f4",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/074c29b4d7d51dc27f94069ed8aa22bd17af80f4",
-    "rust_tests": 361,
+    "revision": "85dd4ab6a5902cec88c968f9524e94795237aecc",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/85dd4ab6a5902cec88c968f9524e94795237aecc",
+    "rust_tests": 448,
     "coverage": {
       "lines": [
         3985,
@@ -414,9 +419,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40680298180"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40697592148"
     },
-    "note": "Hosted CI 40680298180 (including a from-source MuJoCo build) and the local staged gate passed at this commit: 361 Rust tests, all production crates strictly above 95% lines and regions. P2 is closed for the selected world only; broader packets remain open."
+    "note": "Hosted CI 40697592148 (OSRF DART packages and a from-source MuJoCo build) and the local staged gate passed at this commit: all production crates strictly above 95% lines and regions, every changed line covered. P2 is closed for the selected world only; broader packets remain open."
   },
   "phase_status": {
     "P0": "in_progress",
