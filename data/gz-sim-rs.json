@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-28T02:37:03Z",
+  "updated_at": "2026-10-28T03:05:33Z",
   "state": "active",
-  "summary": "World names are now sanitized like native Gazebo topics, verified with the native gz CLI; next is deciding P2 closure for the selected headless world.",
+  "summary": "P2 is closed for the selected headless world; P3 starts with the DART adapter (PHY-03).",
   "model": "Coordinator (Claude Opus 5.5, taking over from the previous agent)",
   "active": [
     {
-      "id": "SLICE-01",
-      "title": "P2 headless end-to-end acceptance",
-      "detail": "Audited selected-world exit evidence against PLAN.md; awaiting owner decision on formal P2 closure versus further gap work."
+      "id": "PHY-03",
+      "title": "DART native adapter",
+      "detail": "Planning the DART adapter: native build, safe ownership and same-version parity against upstream DART."
     }
   ],
   "accepted_slices": [
@@ -342,6 +342,11 @@
       "title": "Native-compatible world-name topic sanitization",
       "commit": "1cc54cc0f676df606bb06ef80ce1183b42a2014b",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1cc54cc0f676df606bb06ef80ce1183b42a2014b"
+    },
+    {
+      "title": "P2 closed for the selected headless world",
+      "commit": "d58223d7f33051dcc1eb3db33fe3aff5226f0b0c",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d58223d7f33051dcc1eb3db33fe3aff5226f0b0c"
     }
   ],
   "remaining": [
@@ -364,16 +369,17 @@
     "PHY-05": "in_progress",
     "SENSOR-01": "in_progress",
     "LOAD-01": "in_progress",
-    "SLICE-01": "in_progress",
+    "SLICE-01": "complete",
     "CLI-01": "in_progress",
     "IO-01": "in_progress",
     "PHY-02": "in_progress",
     "FUEL-01": "in_progress",
-    "REF-03": "in_progress"
+    "REF-03": "in_progress",
+    "PHY-03": "in_progress"
   },
   "quality": {
-    "revision": "1cc54cc0f676df606bb06ef80ce1183b42a2014b",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1cc54cc0f676df606bb06ef80ce1183b42a2014b",
+    "revision": "d58223d7f33051dcc1eb3db33fe3aff5226f0b0c",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d58223d7f33051dcc1eb3db33fe3aff5226f0b0c",
     "rust_tests": 294,
     "coverage": {
       "lines": [
@@ -392,15 +398,15 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40620833484"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40623779793"
     },
-    "note": "Hosted CI 40620833484 and the local staged gate/pre-commit hook passed at this commit: 294 Rust tests, all nine production crates strictly above 95% lines and regions. Selected C++ interoperability does not complete formal P2 or broad parity."
+    "note": "Hosted CI 40623779793 and the local staged gate/pre-commit hook passed at this commit: 294 Rust tests, all nine production crates strictly above 95% lines and regions. P2 is closed for the selected world only; broader packets remain open."
   },
   "phase_status": {
     "P0": "in_progress",
     "P1": "in_progress",
-    "P2": "in_progress",
-    "P3": "not_started",
+    "P2": "complete",
+    "P3": "in_progress",
     "P4": "not_started",
     "P5": "not_started",
     "P6": "not_started",
