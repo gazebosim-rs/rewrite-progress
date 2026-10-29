@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T16:36:30Z",
+  "updated_at": "2026-10-29T16:38:03Z",
   "state": "active",
-  "summary": "IMU configuration and standalone sensor XML is published after independent review and strict staged checks. Exact hosted CI is running; full compatibility remains in development.",
+  "summary": "Typed IMU configuration and standalone sensor XML is accepted with exact hosted CI success. The ledger has 169 complete and 34 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "IMU output retains six full Noise records, raw zero/non-unit vectors, parent-frame strings and orientation flags. Shared noise emission preserves accepted FT output byte for byte; joint XML remains FT-only. Independent review passed 33 Rust checks, all twenty-four IMU native outcomes and four exchanges plus the complete FT regression replay. Normal staged verification passed 433 Rust tests and strict coverage. Exact hosted CI remains pending; two new original mappings stay partial for Element identity."
+      "detail": "Accepted IMU output preserves all six Noise records, raw reference vectors and orientation metadata; FT output remains byte-identical after shared emission. Remaining work includes other sensor families, plugins/extensions, IMU/other-family joint serialization, retained physics and generic Element contracts, full schema/version conversion and automatic inertia. Runtime sensor behavior remains separate; no consumer pin change."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize typed IMU configurations and standalone sensors",
+      "commit": "3603dc102550f3b66a7bafc93d406b2f94c1cded",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3603dc102550f3b66a7bafc93d406b2f94c1cded"
+    },
     {
       "title": "Serialize typed force torque configurations and joint sensors",
       "commit": "dfbb11a5774f572d2a888dd9d469a17398c53949",
@@ -681,12 +686,12 @@
     "upstream": {
       "total": 1344,
       "ported": 169,
-      "partial": 32
+      "partial": 34
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40913154392"
     },
-    "note": "Normal unchanged staged gate passed 433 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed executable lines 160/168 (>95%). Independent fresh replay passed 33 Rust checks, 24 IMU native outcomes/four exchanges and all 32 FT outcomes/six exchanges. Six FT exports match accepted output byte for byte. Original assertions/payload boundaries unchanged, Element identity partial, no runtime claim. Exact hosted CI pending."
+    "note": "Normal unchanged staged gate and exact hosted CI passed 433 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed executable lines 160/168 (>95%). Independent fresh replay passed 33 Rust checks, 24 IMU native outcomes/four exchanges and all 32 FT outcomes/six exchanges. Six FT exports match accepted output byte for byte. Original assertions and joint/payload boundaries unchanged; two new mappings remain partial for Element/null identity, no runtime claim."
   }
 }
