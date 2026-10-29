@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T15:45:46.394350+00:00",
+  "updated_at": "2026-10-29T16:02:06.261718+00:00",
   "state": "active",
-  "summary": "Floating declaration formatting is under independent review; the published bytes revision remains fully qualified.",
+  "summary": "Floating declarations are published after independent review and strict local gates; exact hosted CI is running.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Floating defaults under review",
-      "detail": "The candidate uses Rust std numeric rounding with a private pinned protobuf precision/layout adapter. Author checks pass 36 focused debug and three release tests plus Clippy. Fresh native evidence includes 21397 numeric-policy controls and 280 descriptor observations: 244 exact positive layouts, eight preserved parser differences and 28 rejection/unsupported controls. Independent review, the normal staged hook and exact hosted CI remain pending. Parser, wire, safety boundaries and 83 original mappings are unchanged. Broader metadata/tooling/packaging and equal-work performance remain open."
+      "title": "Floating declarations awaiting hosted qualification",
+      "detail": "Published ordinary proto2 floating default formatting delegates numeric digits and rounding to Rust std under the native protobuf precision/layout policy. Independent debug/release and native replay passed 21,397 numeric observations plus 280 descriptor controls, retaining eight named decoder differences and all rejection boundaries. The normal staged gate passed 162 Rust tests, strict production/owned-vendor coverage and all 38 changed executable lines. Exact hosted CI remains pending. All 83 original mappings, parser, wire and safety boundaries remain unchanged; broader tooling/release/performance scope stays open."
     }
   ],
   "accepted_slices": [
@@ -441,17 +441,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "f2108e32fd811062697aeafa160e5ce1ff467eab",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f2108e32fd811062697aeafa160e5ce1ff467eab",
-    "rust_tests": 158,
+    "revision": "38a44f0c39228b97e9f7af2f5152d01a8f9cc31c",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/38a44f0c39228b97e9f7af2f5152d01a8f9cc31c",
+    "rust_tests": 162,
     "coverage": {
       "lines": [
-        3175,
-        3195
+        3212,
+        3233
       ],
       "regions": [
-        5254,
-        5344
+        5336,
+        5427
       ]
     },
     "upstream": {
@@ -460,9 +460,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40895724034"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40907415228"
     },
-    "note": "Independent raw-source debug/release review passed all byte/default native controls and verified unchanged safety/parser/wire files. The single normal staged hook passed complete Rust/native suites, downstream consumer, formatting, Clippy, strict production/owned-vendor coverage and 5/5 changed executable lines. Exact hosted package and fresh-cache checks passed."
+    "note": "Independent exported-source debug/release review and fresh native corpora passed. The single normal Main hook passed formatting, Clippy, complete Rust/native suites, downstream consumer, strict production and owned-vendor coverage, and 38/38 changed executable lines. Exact hosted packaging/fresh-cache proof is still running; this slice is not yet in accepted_slices."
   }
 }
