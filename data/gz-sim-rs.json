@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T17:19:54Z",
+  "updated_at": "2026-10-29T17:37:29Z",
   "state": "active",
-  "summary": "Acyclic Rapier revolute scene loading is published after independent review and strict staged verification. Exact hosted CI is running; P3 remains open.",
+  "summary": "Acyclic Rapier revolute scene loading passed independent review, strict staged verification and exact hosted CI. P3 continues with contact-default corrections, native articulations and limits.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Acyclic local-link revolute scenes",
-      "detail": "Published acyclic local-link Rapier revolute graphs, model contact groups, noncanonical world joints and validated loaded lifecycle. Independent review caught and fixed recursive cycle-check stack overflow; direct native contact counts strengthened evidence. Normal staged hook passed; exact hosted CI is running. No full P3 or speedup claim."
+      "title": "Top-level unjointed model contact defaults",
+      "detail": "A native-backed regression reproduced internal collisions in top-level multi-link Rapier models without joints. A bounded group-assignment correction passes135 source scene tests and Clippy and is awaiting independent review. Nested policy, native adapters and scene input admission are unchanged."
     }
   ],
   "accepted_slices": [
@@ -397,6 +397,11 @@
       "title": "Construction-time Rapier contact-exclusion groups with full-width identities and tested lifecycle",
       "commit": "675c4e079150c56675e18dd398f26a9661dd8c75",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/675c4e079150c56675e18dd398f26a9661dd8c75"
+    },
+    {
+      "title": "Acyclic local-link Rapier revolute scenes with iterative validation and direct native contact evidence",
+      "commit": "a2d960439751ecfa50f71f3520d281b8a47bd385",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a2d960439751ecfa50f71f3520d281b8a47bd385"
     }
   ],
   "remaining": [
@@ -448,10 +453,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40919297170"
     },
-    "note": "Independent final source/native/disposition review and normal staged hook passed 483 Rust and 88 tooling tests. All eleven production crates exceed 95% line/region coverage; changed scene executable lines70/71. The iterative graph check has a public20,000-edge regression. Six baseline native contact controls retain actual counts/owner pairs and runtime hashes. Exact hosted acceptance is pending. Scope is top-level dynamic local-link revolute graphs on Rapier; native larger graphs, limits and broader conformance/performance remain open."
+    "note": "Independent final source/native/disposition review and normal staged hook passed 483 Rust and 88 tooling tests. All eleven production crates exceed 95% line/region coverage; changed scene executable lines70/71. The iterative graph check has a public20,000-edge regression. Six baseline native contact controls retain actual counts/owner pairs and runtime hashes. Exact hosted run40919297170 passed. Scope is top-level dynamic local-link revolute graphs on Rapier; native larger graphs, limits and broader conformance/performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
