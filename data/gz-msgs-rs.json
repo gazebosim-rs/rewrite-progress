@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:52:25.519293+00:00",
+  "updated_at": "2026-10-29T13:13:28.693580+00:00",
   "state": "active",
-  "summary": "All ten integer declaration kinds passed exact hosted CI; ordinary boolean declarations are under independent review after focused native and Rust tests.",
+  "summary": "Ordinary Boolean default declarations are published after independent review and strict local checks; exact hosted CI is running.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Ordinary boolean default declarations",
-      "detail": "The next bounded candidate uses existing reflection values and Rust boolean spelling for ordinary proto2 true/false declarations. A fresh native corpus covers 28 controls: thirteen supported layouts, ten rejected literals and retained oneof/repeated/proto3/unknown-option limits. All 27 focused Rust tests and Clippy pass; independent review and the single final-main staged gate remain required. Prior integer declarations passed their separate exact hosted run. String/bytes, floating and enum default declarations, wider tooling, packaging and performance qualification remain open. All parser, wire, raw-metadata and 83 upstream assertion mappings are preserved."
+      "title": "Boolean declarations and wider Messages parity",
+      "detail": "The published Boolean slice uses existing reflection values and standard true/false spelling. Its 28 native controls cover thirteen supported layouts, ten invalid literals and retained oneof/repeated/proto3/unknown-option limits. The single final-main hook passes 150 Rust tests, 7559 existing native JSON outcomes and 1094 native declaration observations. Production coverage is 3160/3180 lines and 5228/5318 regions, with the one changed executable line covered; owned vendors remain above 95%. Exact hosted CI is running. Integer declarations passed their separate hosted run. String/bytes, floating and enum defaults, wider tooling, packaging and performance qualification remain open. All 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
@@ -421,17 +421,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "eab87eb61991d92a8998b91617809fa048ae0cb9",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/eab87eb61991d92a8998b91617809fa048ae0cb9",
-    "rust_tests": 147,
+    "revision": "c6d62328e48e813f12446b43daaf312d0860015a",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c6d62328e48e813f12446b43daaf312d0860015a",
+    "rust_tests": 150,
     "coverage": {
       "lines": [
-        3159,
-        3179
+        3160,
+        3180
       ],
       "regions": [
-        5225,
-        5315
+        5228,
+        5318
       ]
     },
     "upstream": {
@@ -440,9 +440,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40875334240"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40879692209"
     },
-    "note": "Exact hosted 40875334240 succeeded for this public commit, including primary verification, staged-hook regression, deterministic source package and fresh-cache consumer checks. The single final-main local hook passed 147 Rust tests, 7559 existing native JSON outcomes, 1066 native declaration observations, strict production/owned-vendor coverage and 4/4 changed executable lines. Broader MSG-02 remains open."
+    "note": "Independent source and fresh 27-test review passed, including all old declaration/parser/wire assertions. The single mandatory staged hook passed full Rust/native tests, formatting, Clippy, gate regressions, downstream consumer, strict production and owned-vendor coverage and 1/1 changed executable lines. Exact hosted source package and fresh-cache checks remain pending."
   }
 }
