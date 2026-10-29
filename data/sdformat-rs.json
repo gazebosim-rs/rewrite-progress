@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:06:35Z",
+  "updated_at": "2026-10-29T14:26:26Z",
   "state": "active",
-  "summary": "Typed standalone axis XML is accepted and hosted CI passes. The ledger now has 173 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
+  "summary": "Bounded standalone joint XML is under independent review. Typed axis XML remains the latest accepted slice; full SDFormat compatibility is still in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "The accepted typed axis XML reader/writer preserves direction/frame, dynamics, limits/stops and mimic metadata without graph or physics admission. Native fixture regeneration, direct native XML loading in Rust and actual Rust XML loading in native JointAxis pass. Seventeen native outcomes retain sixteen exact matches and one named XYZ difference under the existing Rust UnitX policy. Remaining work includes complete joint serialization, schema/version conversion, automatic inertia, general retained DOM contracts and the remaining original mappings."
+      "detail": "The new joint reader/writer preserves raw pose/frame, endpoints, both axes and modern screw pitch; unsupported retained sensor/physics payloads return errors. Author checks passed 416 Rust tests and twenty-three native outcomes with actual XML exchange; reviewer-requested caller diagnostic location handling and its focused regression now pass. Final independent replay and strict staged coverage remain pending. Complete joint serialization, schema/version conversion, automatic inertia and general retained DOM contracts remain."
     }
   ],
   "accepted_slices": [
