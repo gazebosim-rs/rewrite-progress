@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T16:17:46Z",
+  "updated_at": "2026-10-29T16:28:09Z",
   "state": "active",
-  "summary": "Two-link Rapier SDF revolutes passed independent review, strict staged verification and exact hosted CI. P3 continues with collision policy, larger articulations, native body-joint adapters and limits.",
+  "summary": "Rapier contact groups passed independent review, strict staged verification and exact hosted CI. General local-link revolute scene loading is under implementation; P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Model collision policy for larger articulated scenes",
-      "detail": "Published programmatic Rapier contact groups after independent review and strict staged checks. Exact hosted CI is running. Native model-collision behavior is being characterized before extending SDF articulation admission; larger trees, native body-joint adapters and limits remain open."
+      "title": "Acyclic local-link revolute scenes",
+      "detail": "Unaccepted scene candidate passes 129 source tests and Clippy, including three-link relative motion/lifecycle, noncanonical world joints and exact former topology-rejection inputs. Source/disposition review and qualified native model-contact provenance remain before strict staged/hosted checks. Native larger-graph adapters, limits and broader conformance remain open."
     }
   ],
   "accepted_slices": [
@@ -392,6 +392,11 @@
       "title": "Bounded two-link SDF revolutes with relative samples, child-frame poses and validated endpoint lifecycle",
       "commit": "9e8e05604a186b586be6c896778e086f58675565",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9e8e05604a186b586be6c896778e086f58675565"
+    },
+    {
+      "title": "Construction-time Rapier contact-exclusion groups with full-width identities and tested lifecycle",
+      "commit": "675c4e079150c56675e18dd398f26a9661dd8c75",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/675c4e079150c56675e18dd398f26a9661dd8c75"
     }
   ],
   "remaining": [
@@ -443,10 +448,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40909716107"
     },
-    "note": "Independent review and normal staged gate passed 477 Rust and 88 tooling tests. All eleven production crates exceed 95% line/region coverage; changed contract lines10/10 and Rapier49/50. Programmatic contact-only groups support full-width IDs, 64 simultaneous groups, normal/prepared reset and external-ground contacts. Native adapters explicitly reject this new capability. Exact hosted acceptance is pending; no scene expansion or speedup claim."
+    "note": "Independent review and normal staged gate passed 477 Rust and 88 tooling tests. All eleven production crates exceed 95% line/region coverage; changed contract lines10/10 and Rapier49/50. Programmatic contact-only groups support full-width IDs, 64 simultaneous groups, normal/prepared reset and external-ground contacts. Native adapters explicitly reject this new capability. Exact hosted run40909716107 passed; no scene expansion or speedup claim."
   },
   "phase_status": {
     "P0": "in_progress",
