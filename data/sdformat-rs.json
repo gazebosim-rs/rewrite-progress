@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:59:55Z",
+  "updated_at": "2026-10-29T18:01:40Z",
   "state": "active",
-  "summary": "Seven original ToElement cases now have independently reviewed complete Rust assertion mappings with exact hosted CI success. The ledger has 176 complete and 28 partial mappings; full compatibility remains in development.",
+  "summary": "Typed Altimeter XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 178 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed Altimeter XML and standalone Sensor output",
-      "detail": "Published candidate fe2e2ec passed independent review (26 relevant Rust tests, sixteen native cases, fourteen actual exports and both originals) and the single strict staged hook: 446 Rust and seventeen tooling tests, 6067/6103 lines, 9719/9978 regions, actual changed lines 46/46. Exact hosted run 40926559520 is queued. Accepted ledger stays 176 complete/28 partial until success; candidate would be 178/28. Prior FT/IMU output and Joint force-torque-only admission are preserved."
+      "title": "Implement bounded AirPressure XML and standalone Sensor output",
+      "detail": "Next family preserves current typed pressure Noise and reference-altitude metadata through existing parser/XML helpers. Preserve configured and edited altitude assertions, actual native exchanges/quiet checks, shared serializer bytes and narrow constructor-input mappings. No atmospheric calculation, Joint sensor admission or consumer pin changes are implied."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize typed Altimeter configurations and standalone sensors",
+      "commit": "fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6"
+    },
     {
       "title": "Complete seven faithful ToElement assertion translations",
       "commit": "91c8c331fc26d48f1e324e93dea08ce48b498e43",
@@ -680,28 +685,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "91c8c331fc26d48f1e324e93dea08ce48b498e43",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/91c8c331fc26d48f1e324e93dea08ce48b498e43",
-    "rust_tests": 441,
+    "revision": "fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6",
+    "rust_tests": 446,
     "coverage": {
       "lines": [
-        6021,
-        6057
+        6067,
+        6103
       ],
       "regions": [
-        9645,
-        9907
+        9719,
+        9978
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 176,
+      "ported": 178,
       "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40924365122"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40926559520"
     },
-    "note": "Single normal staged hook and exact hosted CI passed 441 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage. No production source changed. Independent review replayed 15 relevant Rust tests and nine unchanged native originals; two adversarial controls confirm quiet checks reject stdout/stderr noise. Seven exact output/constructor mappings complete; no general Element equivalence or runtime claim."
+    "note": "Single normal staged hook and exact hosted CI passed 446 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; actual changed executable lines 46/46. Independent review passed 26 relevant Rust checks, sixteen native outcomes, fourteen actual exports, exact fixture and both originals with empty stderr. All prior FT/IMU exports remain byte-identical; Joint remains force-torque-only and no runtime measurement is claimed."
   }
 }
