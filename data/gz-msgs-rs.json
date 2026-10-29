@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T20:09:44.470759+00:00",
+  "updated_at": "2026-10-29T20:29:43.723739+00:00",
   "state": "active",
-  "summary": "Packed-f64 qualification is accepted after exact hosted CI. Development continues on native-backed standard field-option formatting; the runtime optimization remains an unadopted upstream draft.",
+  "summary": "Standard field boolean declarations are accepted after exact hosted CI; work continues on bounded native-backed CType/JSType metadata formatting.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Native standard field-option formatting",
-      "detail": "Independent review and the single normal strict Main gate passed. Commit 8da0695 is public; its exact hosted CI is running. All 165 Rust tests, 354 native field-option observations, unchanged no-patch downstream consumer and coverage gates passed locally; changed production lines are 16/16 covered. Acceptance remains pending exact hosted success."
+      "title": "Native enum-valued field-option formatting",
+      "detail": "The accepted boolean slice passed 165 Rust tests, strict coverage and exact hosted source-package checks. Read-only CType/JSType characterization covers 736 native cases. The next bounded formatter extension uses maintained reflected enum descriptors, preserves unknown enum-number errors and loader metadata, and needs separate review of eight exact prior Rust-only capability predicates. No parser, dependency, runtime or upstream-credit expansion."
     },
     {
       "id": "MSG-02-upstream",
@@ -447,6 +447,11 @@
       "title": "Native packed-f64 bit/framing qualification and exact Rust partial-state boundaries",
       "commit": "075a9031718ff6fa693b1703d996a6acc27314fe",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/075a9031718ff6fa693b1703d996a6acc27314fe"
+    },
+    {
+      "title": "Native standard field boolean declarations with preserved metadata and explicit invalid-shape guards",
+      "commit": "8da0695e9826d0e4bf9f5b440bb205ce1d62efee",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8da0695e9826d0e4bf9f5b440bb205ce1d62efee"
     }
   ],
   "remaining": [
@@ -481,9 +486,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40946448474"
     },
-    "note": "Published reviewed slice passed one normal strict staged gate, all 165 Rust tests, native declarations and unchanged clean downstream consumer. Production totals cover all 19 owned files; changed production lines are 16/16. Exact hosted qualification remains pending; accepted slice list is unchanged."
+    "note": "Independent fresh-source/target review, one normal strict staged hook and exact hosted source-package/fresh-cache CI passed. All 165 Rust tests, 354 complete native field-option observations, strict coverage and unchanged clean no-patch downstream consumer passed. Production totals cover 19 files; all 16 changed production lines are covered. Original 83 upstream mappings are unchanged."
   }
 }
