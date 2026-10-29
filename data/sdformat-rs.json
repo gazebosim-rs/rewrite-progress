@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:02:37Z",
+  "updated_at": "2026-10-29T14:06:35Z",
   "state": "active",
-  "summary": "Typed standalone axis XML is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
+  "summary": "Typed standalone axis XML is accepted and hosted CI passes. The ledger now has 173 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify published standalone axis XML",
-      "detail": "The new typed reader/writer preserves direction/frame, dynamics, limits/stops and mimic metadata without resolving a model graph. Independent review passed source/error-boundary checks, native fixture regeneration, direct native XML loading in Rust and actual Rust XML loading in native JointAxis. Seventeen native outcomes retain sixteen exact matches and one named XYZ difference preserving the existing Rust UnitX policy. The mandatory hook passed 409 Rust tests and 16 tooling tests with strict coverage; hosted CI is running. Accepted mappings remain 172 complete and 25 partial."
+      "title": "Continue robotics and retained SDFormat compatibility",
+      "detail": "The accepted typed axis XML reader/writer preserves direction/frame, dynamics, limits/stops and mimic metadata without graph or physics admission. Native fixture regeneration, direct native XML loading in Rust and actual Rust XML loading in native JointAxis pass. Seventeen native outcomes retain sixteen exact matches and one named XYZ difference under the existing Rust UnitX policy. Remaining work includes complete joint serialization, schema/version conversion, automatic inertia, general retained DOM contracts and the remaining original mappings."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Add typed standalone axis XML roundtrips",
+      "commit": "fb3538c0afa919b3c0b2f62750f999c1f92c67f7",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fb3538c0afa919b3c0b2f62750f999c1f92c67f7"
+    },
     {
       "title": "Qualify complete joint poses and loaded source identity",
       "commit": "ec94eb2d8a7575bc0ec84e9827fb515da28ec24a",
@@ -655,13 +660,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 172,
+      "ported": 173,
       "partial": 25
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40887441663"
     },
-    "note": "The mandatory staged hook passed; exact hosted CI is running. Actual changed executable lines are 129/129 covered. Independent native/source/error review passed with sixteen exact native outcomes and one explicit existing-policy XYZ difference. The protected threshold assertion, old originals, constructor partial and all tolerances are unchanged. Standalone metadata does not imply model graph or physics admission; full SDF-02 remains open."
+    "note": "Mandatory staged hook and exact hosted CI passed 409 Rust tests and 16 tooling tests. Production coverage is 5263/5290 lines and 8674/8929 regions; actual changed executable lines are 129/129 covered. Independent native/source/error review passed with sixteen exact native outcomes and one explicit existing-policy XYZ difference. The protected threshold assertion, old originals, constructor partial and all tolerances are unchanged. Standalone metadata does not imply model graph or physics admission; full SDF-02 remains open."
   }
 }
