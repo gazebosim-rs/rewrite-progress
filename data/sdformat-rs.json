@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T23:36:12Z",
+  "updated_at": "2026-10-29T23:38:15Z",
   "state": "active",
-  "summary": "Direct document Light metadata is accepted with exact hosted CI; 189 complete and 24 partial original mappings. World wind/magnetic metadata is under independent review; full compatibility remains in development.",
+  "summary": "World wind/magnetic metadata and direct document Lights are accepted with exact hosted CI success. The ledger is 189 complete and 25 partial original mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Characterize wind and magnetic World metadata",
-      "detail": "Reviewed World wind/magnetic metadata is public at e29f9750cd5c4613a07cded7ca44241d8f17217c. One normal strict staged hook passed 495 Rust/17 tooling, coverage 6607/6639 lines and 10485/10722 regions, actual executable diff 15/15. Root fresh source/target/native peers passed eight affected Rust controls, native 35/raw-ctor/full-projection/original evidence. Exact hosted CI 40974206443 is in progress. Accepted quality/counts stay at 4bdcc6e, 189 complete/24 partial until success; candidate adds one partial mapping only. No runtime or complete-original claim."
+      "title": "Continue retained SDFormat compatibility",
+      "detail": "Bounded World wind/magnetic vectors are accepted: strict 495 Rust/17 tooling and exact hosted qualification passed after independent native/source review. No runtime wind force, sensor conversion or complete DOMWorld.Load claim. The owner is temporarily cross-reviewing the coordinated Messages fixed32/Float_V test slice before selecting the next bounded SDF capability; remaining retained scope is unchanged."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Load World wind and magnetic metadata with native defaults",
+      "commit": "e29f9750cd5c4613a07cded7ca44241d8f17217c",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e29f9750cd5c4613a07cded7ca44241d8f17217c"
+    },
     {
       "title": "Load direct document lights with native schema and frame semantics",
       "commit": "4bdcc6ebdb9a16d1c858a799059b2bb51586b1c2",
@@ -740,28 +745,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "4bdcc6ebdb9a16d1c858a799059b2bb51586b1c2",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/4bdcc6ebdb9a16d1c858a799059b2bb51586b1c2",
-    "rust_tests": 492,
+    "revision": "e29f9750cd5c4613a07cded7ca44241d8f17217c",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e29f9750cd5c4613a07cded7ca44241d8f17217c",
+    "rust_tests": 495,
     "coverage": {
       "lines": [
-        6588,
-        6620
+        6607,
+        6639
       ],
       "regions": [
-        10440,
-        10677
+        10485,
+        10722
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 189,
-      "partial": 24
+      "partial": 25
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40969948350"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40974206443"
     },
-    "note": "One normal strict staged hook and exact hosted CI passed 492 Rust and seventeen tooling tests, formatting, Clippy, docs and coverage; actual changed executable lines 103/103. Independent review passed 41 Rust checks, all 42 native schema/eleven document controls/raw profiles, complete full-projection observation equality and unchanged LoadLights. Every original assertion/direct signed pose/four-ULP bound retained; one explicit Spot type predicate corrected during review. Exact old missing-type inputs remain failures with independently approved precise classification. Standalone/default/numeric behavior preserved; no broader scene/gui/wind/projector/include/rendering claim. Prior 211 exports/Spot bytes are author evidence."
+    "note": "One normal strict staged hook and exact hosted CI passed 495 Rust/17 tooling tests, formatting, Clippy, docs and >95% line/region coverage; actual executable changed lines 15/15. Independent Root fresh source/target/native peers passed final eight Rust controls, 35 actual native inputs, raw/constructor profiles, full-versus-projected nine-vector exact bits and unchanged DOMWorld.Load. Exact old Wind input gained independently approved complete positive metadata/Light/pose assertions before its temporary Rust-only rejection changed. Strict finite/exact-three/unknown/duplicate policies remain explicit; no runtime, complete-original, source pointer identity or consumer-pin claim."
   }
 }
