@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T12:44:34.300517+00:00",
+  "updated_at": "2026-10-29T12:50:32.382653+00:00",
   "state": "active",
-  "summary": "Both discovered remap-list mappings are published and hosted green. The exact Int32 subscriber-only fixture is in its reviewed staged gate.",
+  "summary": "The exact Int32 subscriber-only original fixture is published. Its normal gate passed; latest hosted verification is running.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Published 648d7cb has 89 complete and 17 partial upstream mappings. Wider discovery, callbacks, service, lifecycle and network contracts remain open."
+      "detail": "Published 2139e8e has 90 complete and 16 partial upstream mappings. Wider discovery, callback, service, lifecycle and network contracts remain open."
     },
     {
       "id": "NET-02",
-      "title": "Exact Int32 subscriber-only original fixture",
-      "detail": "The published remapped service/topic slice648d7cb is hosted green. A separate test retains the existing StringMsg subscriber-only variant and adds the native exact Int32 subscription, size/index, unsubscribe, clear and empty second list. Author two-test and native original checks passed; independent source/runtime/docs review approved the selected case. Its normal staged hook is running. No production, dependency or gate changes; broader registry, initialization, convergence and latency remain open."
+      "title": "Latest hosted verification and retained discovery contracts",
+      "detail": "The exact Int32 subscriber-only test preserves the native subscription, list, unsubscribe, clear and empty-list sequence while retaining the older StringMsg variant. Independent source/runtime/docs review and the normal staged gate passed. Latest run40876042834 is running. The earlier combined service/topic remap commit648d7cb is hosted green. Broader registry, initialization, remote convergence and latency remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Exact native Int32 subscriber-only topic-list fixture while retaining the StringMsg variant",
+      "commit": "2139e8ed389c434e063263fb910cfd55b34f2c3e",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2139e8ed389c434e063263fb910cfd55b34f2c3e"
+    },
     {
       "title": "Remapped topic listing through discovered query, preserving subscriber-only visibility and the original local test",
       "commit": "648d7cb850b1082b45372b30edce907dcb8305c0",
@@ -470,9 +475,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "648d7cb850b1082b45372b30edce907dcb8305c0",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/648d7cb850b1082b45372b30edce907dcb8305c0",
-    "rust_tests": 280,
+    "revision": "2139e8ed389c434e063263fb910cfd55b34f2c3e",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2139e8ed389c434e063263fb910cfd55b34f2c3e",
+    "rust_tests": 281,
     "coverage": {
       "lines": [
         2988,
@@ -485,13 +490,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 89,
-      "partial": 17
+      "ported": 90,
+      "partial": 16
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40873762561"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40876042834"
     },
-    "note": "The normal staged hook passed 280 Rust checks, 24 tooling checks and all required native C++ interoperability tests. Coverage is 2988/3047 production lines and 4394/4565 regions; neither remap-list slice changes executable production lines, dependencies or gates. Both selected originals were independently compared and replayed; older local-list tests remain unchanged. Hosted run40873762561 passed both policy and native parity/coverage jobs for exact commit648d7cb. The coverage counts above are from the local normal staged gate. Branch concurrency supersedes earlier runs, so the older service-only run is not claimed as hosted success. There are 89 complete, 17 partial and 312 pending original cases. Wider NET-01/NET-02, convergence and general latency remain open."
+    "note": "The normal staged hook passed 281 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions; this slice changes no executable production lines, dependencies or gates. The old StringMsg test body remains unchanged; the new exact Int32 fixture preserves every selected native predicate, including list clear. Independent reviewers compared native source and replayed both focused tests. Hosted verification for exact2139e8e is running; prior648d7cb passed policy and native parity/coverage. There are 90 complete, 16 partial and 312 pending original cases; broad NET-01/NET-02 and latency/global-registry completion remain open."
   }
 }
