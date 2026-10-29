@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T21:32:31.102446Z",
+  "updated_at": "2026-10-29T22:09:54.571949Z",
   "state": "active",
-  "summary": "The minimal inline destructor lifetime fix is accepted at 2207842 after independent review, strict staged gates and exact hosted success. Counts remain 97 faithful / 9 partial; a separate bounded one-way callback repair is being qualified privately.",
+  "summary": "The bounded cross-Node one-way callback repair is published at 940c26a after independent review and the strict staged gate. Exact hosted qualification is running; accepted counts remain 97 faithful / 9 partial.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Separate bounded cross-Node one-way callback repair",
-      "detail": "Published 2207842 is exact hosted green; captured-value cleanup stays inside inline request admission. Private one-way implementation reuses weak admitted declarations, preserves own receiver priority and worker metadata, bounds dispatcher/request lifetime, and adds native two-Node and actual wire controls. An explicit queued setup translation preserves all protected error/count/progress predicates; no new deadline or original credit is proposed. Independent review and full normal gates remain."
+      "title": "Published bounded cross-Node one-way callback repair",
+      "detail": "940c26a reuses admitted weak declarations, preserves own receiver priority and worker-only metadata, holds thread/request permits through real user cleanup, and adds native two-Node plus bidirectional wire controls. The protected queued error/count/progress control uses the explicitly reviewed queued setup. No new execution deadline or upstream credit. Exact hosted qualification is running; next retained discovery assertions are being characterized read-only."
     }
   ],
   "accepted_slices": [
@@ -528,17 +528,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "220784279be109562950bf0058d617d7c3a7d8c7",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/220784279be109562950bf0058d617d7c3a7d8c7",
-    "rust_tests": 334,
+    "revision": "940c26acd8142fb281da983eecd54278c7229a80",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/940c26acd8142fb281da983eecd54278c7229a80",
+    "rust_tests": 344,
     "coverage": {
       "lines": [
-        3729,
-        3826
+        3794,
+        3897
       ],
       "regions": [
-        5417,
-        5660
+        5510,
+        5757
       ]
     },
     "upstream": {
@@ -547,9 +547,9 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40954109468"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40962102791"
     },
-    "note": "Normal strict staged hook passed 334 Rust tests across 28 executable harnesses, 24 tooling checks and required native suites. Coverage is 3729/3826 lines, 5417/5660 regions and 1/1 changed executable line. Independent fresh source/target and C++ peer replay passed 122 library tests and 12 public callback regressions. Removing only the added strong callback drop independently fails the blocked-destructor capacity assertion 0 versus 1. User destruction now precedes completion/admission release outside locks; ordinary Rust Drop panic behavior remains, with guards releasing on unwind and typed invocation panic handling unchanged. Only three paths changed; no wire/API/dependency/gate/ledger credit expansion. Exact hosted run 40954109468 succeeded. Prior direct lambda a014e88 exact hosted run 40947807641 succeeded; accepted counts stay 97 faithful and 9 partial."
+    "note": "Normal strict staged hook passed 344 Rust tests across 29 executable harnesses, 24 tooling checks and required pinned native suites. Coverage: 3794/3897 lines, 5510/5757 regions and 131/135 changed executable lines. Independent fresh source/target and C++ peer replay passed 127 library tests and 24 public/native regressions. Suppressing only foreign inline selection fails the immediate completion assertion; removing only callback cleanup ordering fails the blocked-destructor QueueFull assertion. Nine reviewed paths preserve old payload/count/error assertions, same-Node priority, raw wire, worker-only metadata and ordinary Drop unwind semantics. No added execution timeout, API/dependency/gate/ledger changes or new upstream credit. Exact hosted run 40962102791 is running. Previous 2207842 remains exact hosted accepted."
   }
 }
