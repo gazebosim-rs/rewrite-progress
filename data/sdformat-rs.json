@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T21:03:00Z",
+  "updated_at": "2026-10-29T21:04:59Z",
   "state": "active",
   "summary": "Bounded Contact Sensor metadata/XML output is accepted with exact hosted CI success. The ledger remains 184 complete and 28 partial mappings; no duplicate original credit, full compatibility still in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify legacy Sensor XML output",
-      "detail": "Published 56a85faf after independent final review and one normal strict staged hook: 479 Rust and seventeen tooling tests, lines 6488/6523, regions 10283/10529, actual changed executable lines 2/2. Exact hosted run 40954343169 is pending, so accepted quality stays at prior Contact revision. Native sixteen inputs/twenty-two outputs and unchanged original passed; all 189 prior export comparisons are author-only. No extra original credit."
+      "title": "Implement explicit IMU input-origin metadata",
+      "detail": "Legacy Sensor output is accepted after exact hosted success. Next bounded work adds genuine optional IMU declaration Source, preserves immutable emission and every configured/reload/edit value. Native lifecycle and omitted-group controls characterized; concrete literal source-oracle tests prepared. Existing whole-value predicates remain unchanged until independent transition review. No pointer identity or mutation claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve legacy Sensor raw kinds and effective classification in XML output",
+      "commit": "56a85faf7e477459b3ac0f416eda1b7e60b93420",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/56a85faf7e477459b3ac0f416eda1b7e60b93420"
+    },
     {
       "title": "Serialize Contact Sensor metadata with lossless text boundaries",
       "commit": "a5dbc64b75e6a13a472e0f0acfb0e41acc121b19",
@@ -720,17 +725,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a5dbc64b75e6a13a472e0f0acfb0e41acc121b19",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a5dbc64b75e6a13a472e0f0acfb0e41acc121b19",
-    "rust_tests": 476,
+    "revision": "56a85faf7e477459b3ac0f416eda1b7e60b93420",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/56a85faf7e477459b3ac0f416eda1b7e60b93420",
+    "rust_tests": 479,
     "coverage": {
       "lines": [
         6488,
         6523
       ],
       "regions": [
-        10280,
-        10526
+        10283,
+        10529
       ]
     },
     "upstream": {
@@ -740,8 +745,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40951078751"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40954343169"
     },
-    "note": "Single normal staged hook and exact hosted CI passed 476 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 86/86. Independent review passed eleven Rust checks, sixteen native Load/Element inputs, seventeen outputs, exact native producer limitation and unchanged DOMLink.Sensors. Prior 172 byte comparisons remain author evidence. No native writer parity, collision/runtime resolution or new original credit is claimed."
+    "note": "One normal strict staged hook and exact hosted CI passed 479 Rust and seventeen tooling tests, formatting, Clippy, docs and coverage. Actual changed executable lines 2/2. Independent final review passed fourteen Rust checks, sixteen native inputs, twenty-two actual outputs and unchanged DOMSensor.Type. Exact temporary Rust-only predicate transitions were approved before edits; all genuine originals retained. Prior 189 unchanged export comparisons remain author-only. No native producer-byte parity or extra original credit."
   }
 }
