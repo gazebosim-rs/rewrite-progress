@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T13:20:25.517161+00:00",
+  "updated_at": "2026-10-29T13:33:51.116814+00:00",
   "state": "active",
-  "summary": "Four selected discovery-list and topic-information mappings are published. Latest commit bdf7c9a passed its staged and hosted gates.",
+  "summary": "A four-node AllTopicInfo readiness mapping passed focused native/Rust checks and independent review. The latest published commit remains hosted green.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Retained endpoint metadata and discovery scope",
-      "detail": "Latest commit bdf7c9a is hosted green after independent review and a normal staged gate with 282 Rust and 24 tooling checks. Four selected original mappings were completed without production, dependency or gate-policy changes. Full endpoint metadata, process-global startup, remote convergence and general latency remain open. A read-only follow-up found native AllTopicInfo takes separate per-topic snapshots; its older atomic-vector partial rationale should be corrected in future tested work. No new implementation is started."
+      "title": "Four-node AllTopicInfo original mapping",
+      "detail": "The new test preserves the old snapshot variant and uses accepted startup queries before actual name enumeration and successful per-topic results. Exact native success, vector size three, topic presence and endpoint counts are retained. Native AllTopicInfo is a sequence of per-topic snapshots, not an atomic global vector. Focused author two-test and native-original checks passed; independent source/runtime/docs review approved selected-case promotion. Final metadata re-check and one normal staged gate precede publication. Full metadata, global initialization, ownership, dynamic behavior, traffic and latency remain open."
     }
   ],
   "accepted_slices": [
