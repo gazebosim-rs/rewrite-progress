@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T12:40:51Z",
+  "updated_at": "2026-10-29T12:45:56Z",
   "state": "active",
-  "summary": "PBR declarations are accepted. Screw-joint pitch unit conformance is under review; accepted mappings remain 169 complete and 25 partial.",
+  "summary": "Screw-joint pitch unit conformance is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review screw-joint pitch units and precedence",
-      "detail": "The candidate completes the existing native ScrewThreadPitch original using its unchanged five-joint fixture, preserving defaults, modern-over-legacy precedence, handedness and both unit conventions. An explicit classic-unit observation reflects the existing authoritative metres-per-revolution field. Eighteen native exact-bit cases and all 400 candidate Rust tests pass, as does Clippy. Independent review, strict staged coverage and exact hosted CI remain required. This adds no screw-joint physics; published quality evidence still describes the accepted PBR commit."
+      "title": "Qualify published screw-joint unit conformance",
+      "detail": "The full native ScrewThreadPitch original is ported on its unchanged five-joint fixture with preserved assertions and tolerances. An explicit classic-unit observation reflects the authoritative metres-per-revolution field. Root independently replayed three Rust tests, eighteen exact-bit native cases and the unchanged original. The mandatory hook passed 400 Rust tests and 16 tooling tests with strict coverage. Exact hosted CI is running; accepted counts remain 169 complete and 25 partial. This adds no screw constraints or physics-admission changes."
     }
   ],
   "accepted_slices": [
@@ -625,17 +625,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "bd1c2df613d1cbbebbe714b323b5bbd580b754b0",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bd1c2df613d1cbbebbe714b323b5bbd580b754b0",
-    "rust_tests": 397,
+    "revision": "19af2f72b9fc5f9a50180caad256c7096337811f",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/19af2f72b9fc5f9a50180caad256c7096337811f",
+    "rust_tests": 400,
     "coverage": {
       "lines": [
-        5140,
-        5167
+        5143,
+        5170
       ],
       "regions": [
-        8512,
-        8767
+        8515,
+        8770
       ]
     },
     "upstream": {
@@ -644,9 +644,9 @@
       "partial": 25
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40873947478"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40875891973"
     },
-    "note": "Mandatory staged hook and exact hosted CI passed 397 Rust tests and 16 tooling tests. Production coverage is 5140/5167 lines and 8512/8767 regions; actual changed executable lines are 116/116 covered. Independent replay passed four PBR Rust tests, thirty native workflow cases and unchanged Material.PbrDOM. Existing fixtures, numerical tolerances, coverage thresholds and consumer pins are unchanged. Full SDF-02 remains open; no performance claim is made."
+    "note": "The mandatory staged hook passed; exact hosted CI is still running. Actual changed executable lines are 3/3 covered. Independent Rust and native replay passed. The original fixture and numerical tolerances are unchanged. No parser, range or physics policy changed; the simulator pin stays unchanged. Full SDF-02 remains open."
   }
 }
