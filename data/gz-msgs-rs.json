@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T18:13:20.201962+00:00",
+  "updated_at": "2026-10-29T18:31:03.999144+00:00",
   "state": "active",
-  "summary": "Codec baseline is accepted. Profiling produced an independently checked runtime-helper experiment; production adoption is held to preserve standard no-patch dependency identity.",
+  "summary": "Packed-f64 wire qualification passed independent review and is running the strict staged gate. The codec baseline is accepted; the optimization remains an upstream-only local draft.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Prepare upstream runtime optimization evidence",
-      "detail": "Packed-double profiling led to an isolated five-line maintained-runtime helper experiment. Independent correctness checks passed 413 upstream tests, six strengthened controls, no-std and all 45 C++/Rust work cases. Complete paired reports and remaining decode/regression tradeoffs await independent measurement review. Local vendoring would break an existing clean no-patch standard prost/prost-types identity test, which is preserved. Only an upstream-ready patch and PR draft are prepared; no external publication or production change is authorized."
+      "title": "Qualify packed-f64 wire and decoder boundaries",
+      "detail": "A six-path test/provenance supplement preserves the original 70-case corpus and adds 64 actual installed/fresh C++ cases, exact float bits and malformed-length boundaries. Two new Rust tests retain strict/compatible admission, raw forwarding and partial-vector/cursor/error behavior across every two-chunk split. Independent fresh-source/target review and author Clippy passed; the single normal Main staged gate is running. No decoder, dependency, ledger or performance-acceptance change."
+    },
+    {
+      "id": "MSG-02-upstream",
+      "title": "Local upstream runtime draft ready",
+      "detail": "Correctness and complete performance-report review passed for the isolated five-line packed-encode helper. Honest decode/roundtrip deficits and unchanged-path regressions are retained. Production adoption is held to preserve the existing no-patch standard prost/prost-types identity contract. A patch and concise PR draft are prepared locally; no external publication or new fork is authorized."
     }
   ],
   "accepted_slices": [
@@ -444,7 +449,7 @@
     "Broader XML, CLI grammar/dynamic-descriptor info and formatting qualification",
     "Descriptor installation/global/cache compatibility decisions and qualification",
     "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending",
-    "Packed LaserScan serialization regression: profile actual hot paths/allocations and evaluate maintained-runtime improvements against the preserved baseline"
+    "Packed LaserScan decode remains slower; encode-helper adoption needs a maintained route preserving standard no-patch type identity and reviewed performance evidence"
   ],
   "blockers": [],
   "plan_status": {
