@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:28:14Z",
+  "updated_at": "2026-10-29T14:31:12Z",
   "state": "active",
-  "summary": "Bounded standalone joint XML is under independent review. A ledger audit corrects accepted counts to 169 complete and 29 partial; four older entries were incorrectly counted as complete.",
+  "summary": "Bounded standalone joint XML is published after independent review and strict staged checks; exact hosted CI is running. Accepted original counts remain 169 complete and 29 partial pending CI.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "The new joint reader/writer preserves raw pose/frame, endpoints, both axes and modern screw pitch; unsupported retained sensor/physics payloads return errors. Author checks passed 416 Rust tests and twenty-three native outcomes with actual XML exchange; reviewer-requested caller diagnostic location handling and its focused regression now pass. Final independent replay and strict staged coverage remain pending. Complete joint serialization, schema/version conversion, automatic inertia and general retained DOM contracts remain."
+      "detail": "The new joint reader/writer preserves raw pose/frame, endpoints, both axes and modern screw pitch, with explicit unsupported payload errors and caller-located diagnostics. Independent review passed 48 fresh Rust checks and all twenty-three native outcomes with actual XML exchange. The normal staged hook passed 417 Rust tests, sixteen tooling tests and strict coverage; exact hosted CI remains pending. Full joint serialization, schema/version conversion, automatic inertia and general retained DOM contracts remain."
     }
   ],
   "accepted_slices": [
@@ -645,17 +645,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "fb3538c0afa919b3c0b2f62750f999c1f92c67f7",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fb3538c0afa919b3c0b2f62750f999c1f92c67f7",
-    "rust_tests": 409,
+    "revision": "cb8f8037edb1c8262c21cd1c92da610abf6d2c03",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/cb8f8037edb1c8262c21cd1c92da610abf6d2c03",
+    "rust_tests": 417,
     "coverage": {
       "lines": [
-        5263,
-        5290
+        5454,
+        5481
       ],
       "regions": [
-        8674,
-        8929
+        8928,
+        9182
       ]
     },
     "upstream": {
@@ -664,9 +664,9 @@
       "partial": 29
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40887441663"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40892179405"
     },
-    "note": "Mandatory staged hook and exact hosted CI passed 409 Rust tests and 16 tooling tests. Production coverage is 5263/5290 lines and 8674/8929 regions; actual changed executable lines are 129/129 covered. Independent native/source/error review passed with sixteen exact native outcomes and one explicit existing-policy XYZ difference. The protected threshold assertion, old originals, constructor partial and all tolerances are unchanged. Standalone metadata does not imply model graph or physics admission; full SDF-02 remains open. Accepted original counts now follow reviewed status across both ledger lists: four entries stored under ports are explicitly partial; this corrects earlier reporting without changing assertions or accepted code."
+    "note": "Normal unchanged staged hook passed 417 Rust and sixteen tooling tests, format, Clippy, docs and strict production coverage. True changed executable lines are 193/193. Independent reviewer fresh replay passed 48 focused Rust tests and native23, byte-identical fixture and actual Rust-to-native XML. Native original emits expected type-none sensor errors. Joint.ToElement remains partial; accepted original counts await exact CI and correctly count reviewed status across both ledger lists."
   }
 }
