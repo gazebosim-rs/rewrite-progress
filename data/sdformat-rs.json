@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:42:09Z",
+  "updated_at": "2026-10-29T14:49:37Z",
   "state": "active",
-  "summary": "Joint semantic-pose default-target and local-scope queries are under independent review. Standalone joint XML remains the latest accepted slice; full compatibility remains in development.",
+  "summary": "Joint semantic-pose queries are published after independent review and strict staged checks. Exact hosted CI is running; original counts remain 169 complete and 30 partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "The new joint_pose API reuses loaded graph math, defaults to the declared child frame including offsets, and resolves explicit targets strictly in the containing model/world scope. Author full 420 Rust tests, Clippy and forty-six native queries pass, including unknown or ambiguous short targets, nested scopes and world joints. Final independent replay and strict staged/hosted checks remain pending. Existing original mappings are unchanged; remaining scope includes full retained DOM, serialization, schema conversion and automatic inertia."
+      "detail": "The published joint_pose API uses native declared-child-frame defaults and strict local target scope, including offsets and nested/world queries. Independent review passed 29 fresh focused Rust tests and forty-six native queries with unchanged originals. Normal staged verification passed all 420 Rust tests and strict coverage; exact hosted CI remains pending. Full retained DOM, serialization, schema conversion and automatic inertia remain."
     }
   ],
   "accepted_slices": [
@@ -650,17 +650,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "cb8f8037edb1c8262c21cd1c92da610abf6d2c03",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/cb8f8037edb1c8262c21cd1c92da610abf6d2c03",
-    "rust_tests": 417,
+    "revision": "c91f3b454997d46ddb62909d95140f70c68d9e35",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c91f3b454997d46ddb62909d95140f70c68d9e35",
+    "rust_tests": 420,
     "coverage": {
       "lines": [
-        5454,
-        5481
+        5481,
+        5509
       ],
       "regions": [
-        8928,
-        9182
+        8973,
+        9228
       ]
     },
     "upstream": {
@@ -669,9 +669,9 @@
       "partial": 30
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40892179405"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40895259980"
     },
-    "note": "Normal unchanged staged hook and exact hosted CI passed 417 Rust and sixteen tooling tests, format, Clippy, docs and strict production coverage. True changed executable lines are 193/193. Independent reviewer fresh replay passed 48 focused Rust tests and native23, byte-identical fixture and actual Rust-to-native XML. Native original emits expected type-none sensor errors. Joint.ToElement remains partial. Reviewed-status counting across both ledger lists corrects earlier reporting; four older entries stored under ports are partial, with no assertions or accepted code removed."
+    "note": "Normal unchanged staged hook passed 420 Rust and sixteen tooling tests, format, Clippy, docs and strict production coverage. True changed executable lines are 25/26, strictly greater than 95%. Independent reviewer fresh replay passed 29 focused Rust tests, all 46 native queries and unchanged native original/frame assertions. Loaded immutable graph query only; physical child body frame remains distinct from declared child frame. No original credit or physics execution claim."
   }
 }
