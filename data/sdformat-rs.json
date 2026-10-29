@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T12:27:50Z",
+  "updated_at": "2026-10-29T12:31:55Z",
   "state": "active",
-  "summary": "Loaded model-element queries are accepted. Typed PBR material declarations are now under review; accepted mappings remain 168 complete and 25 partial.",
+  "summary": "Typed metallic and specular PBR declarations are reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review typed metallic and specular PBR declarations",
-      "detail": "The candidate retains workflow presence, map strings, native scalar metadata, light-map UV sets and source provenance without loading textures or selecting a renderer. The unchanged native Material.PbrDOM original and thirty supplementary native cases pass. All 397 candidate Rust tests and Clippy pass. Independent review, strict staged coverage and exact hosted CI remain required; the public quality figures still describe the accepted model-element commit."
+      "title": "Qualify published PBR material declarations",
+      "detail": "The candidate preserves workflow presence, unresolved map strings, native scalar metadata, light-map UV sets and source provenance. Root independently replayed four Rust tests, thirty native workflow cases and the unchanged Material.PbrDOM original. The mandatory staged hook passed 397 Rust tests and 16 tooling tests with strict production and changed-line coverage. Exact hosted CI is running; accepted upstream counts remain 168 complete and 25 partial until it passes."
     }
   ],
   "accepted_slices": [
@@ -620,17 +620,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "27cb23601a4e8f38eb39c37764c91dd4d31520bd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/27cb23601a4e8f38eb39c37764c91dd4d31520bd",
-    "rust_tests": 393,
+    "revision": "bd1c2df613d1cbbebbe714b323b5bbd580b754b0",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bd1c2df613d1cbbebbe714b323b5bbd580b754b0",
+    "rust_tests": 397,
     "coverage": {
       "lines": [
-        5032,
-        5058
+        5140,
+        5167
       ],
       "regions": [
-        8297,
-        8543
+        8512,
+        8767
       ]
     },
     "upstream": {
@@ -639,9 +639,9 @@
       "partial": 25
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40871649865"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40873947478"
     },
-    "note": "Mandatory staged hook and exact hosted CI passed 393 Rust tests and 16 tooling tests. Production coverage is 5032/5058 lines and 8297/8543 regions; actual changed executable lines are 91/93 covered. Independent replay passed 35 relevant Rust tests and both unchanged native include originals. Fixtures, numerical tolerances, include-depth admission and coverage thresholds are unchanged. Full SDF-02 remains open; no performance claim is made."
+    "note": "The mandatory staged hook passed; exact hosted verification is still running. Actual changed production executable lines are 116/116 covered. Independent native and Rust review passed. Existing fixture assertions, coverage thresholds and consumer pins are unchanged. Texture IO, rendering, serialization and full SDF-02 remain open."
   }
 }
