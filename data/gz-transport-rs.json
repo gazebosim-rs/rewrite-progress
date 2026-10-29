@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T13:13:00.299896+00:00",
+  "updated_at": "2026-10-29T13:20:25.517161+00:00",
   "state": "active",
-  "summary": "The subscriber-only TopicInfo startup-query mapping is published. Its normal staged gate passed; exact latest hosted verification is running.",
+  "summary": "Four selected discovery-list and topic-information mappings are published. Latest commit bdf7c9a passed its staged and hosted gates.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Hosted verification and remaining topic metadata contracts",
-      "detail": "The ready TopicInfo port preserves the exact native Int32 subscription and endpoint predicates through the accepted bounded startup API. The older snapshot test remains. Independent review and the normal staged gate passed. Latest hosted run 40878751243 is running; the prior Int32 fixture commit 2139e8e is hosted green. Full endpoint metadata, process-global initialization, remote convergence and general latency remain open."
+      "title": "Retained endpoint metadata and discovery scope",
+      "detail": "Latest commit bdf7c9a is hosted green after independent review and a normal staged gate with 282 Rust and 24 tooling checks. Four selected original mappings were completed without production, dependency or gate-policy changes. Full endpoint metadata, process-global startup, remote convergence and general latency remain open. A read-only follow-up found native AllTopicInfo takes separate per-topic snapshots; its older atomic-vector partial rationale should be corrected in future tested work. No new implementation is started."
     }
   ],
   "accepted_slices": [
@@ -499,9 +499,9 @@
       "partial": 15
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40878751243"
     },
-    "note": "The normal staged hook passed 282 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions. The slice changes no executable production lines, dependencies or gates. Independent reviewers compared the selected native predicates and replayed both snapshot and ready-query tests. The original snapshot remains unchanged; the five-second query deadline changes no original untimed predicate. Exact latest hosted verification is running; prior commit 2139e8e passed policy and native parity/coverage. There are 91 complete, 15 partial and 312 pending original cases. Full endpoint metadata, global startup and general latency remain open."
+    "note": "The normal staged hook passed 282 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions. The slice changes no executable production lines, dependencies or gates. Independent reviewers compared the selected native predicates and replayed both snapshot and ready-query tests. The original snapshot remains unchanged; the five-second query deadline changes no original untimed predicate. Hosted run 40878751243 passed policy and native parity/coverage for exact commit bdf7c9a; prior commits 2139e8e and 648d7cb are also green. The earlier service-only run was superseded, and its code is included in the latest passing head. There are 91 complete, 15 partial and 312 pending original cases. Full endpoint metadata, global startup and general latency remain open."
   }
 }
