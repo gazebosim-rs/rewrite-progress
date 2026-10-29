@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T15:18:17Z",
+  "updated_at": "2026-10-29T15:19:21Z",
   "state": "active",
-  "summary": "Selected real C++ headless interoperability passed on all four retained engines. Rapier body-to-body revolutes now also passed strict staged checks and exact hosted CI; bounded two-link SDF loading is under development.",
+  "summary": "Two-link Rapier SDF revolutes are published after independent review and strict staged verification. Exact hosted CI is running; the selected four-engine C++ headless milestone remains accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
       "title": "Bounded two-link SDF body-joint loading",
-      "detail": "Independent repair review approved the two-link SDF implementation. Full author scene suite passes 126 tests and Clippy; moving-frame, reset/removal, endpoint velocity and original model-ownership regressions pass. The normal staged hook is running, including real C++ peers and strict coverage. No new scene acceptance is claimed before that gate and exact hosted CI."
+      "detail": "Published two-link SDF constraints after repairing independently reproduced endpoint-velocity and model-ownership defects. Normal staged hook passed 471 Rust and 88 tooling tests; all eleven production crates exceed 95% line/region coverage, with 122/122 changed executable scene lines covered. Exact hosted CI is running. Larger trees, native body-joint adapters and limits remain open."
     }
   ],
   "accepted_slices": [
@@ -419,17 +419,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "26ca44f0272f8697ef345bf778e8ad1467181ec4",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/26ca44f0272f8697ef345bf778e8ad1467181ec4",
-    "rust_tests": 463,
+    "revision": "9e8e05604a186b586be6c896778e086f58675565",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9e8e05604a186b586be6c896778e086f58675565",
+    "rust_tests": 471,
     "coverage": {
       "lines": [
-        6350,
-        6416
+        6460,
+        6525
       ],
       "regions": [
-        9895,
-        10121
+        10079,
+        10306
       ]
     },
     "upstream": {
@@ -438,10 +438,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40891584298"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40900247474"
     },
-    "note": "Independent review and normal staged hook passed: 463 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage. Changed executable lines cover 12/12 shared-contract and 127/127 Rapier lines. Actual body-to-body constraints include rotating-parent, reset, endpoint removal and atomic rejection tests. Native DART/MuJoCo return explicit Unsupported for this new primitive. SDF joint-tree loading remains open. Exact hosted CI 40891584298 passed; previously accepted four-engine C++ interoperability remains qualified at ca37d5c."
+    "note": "Independent repair review and the unchanged normal staged hook passed 471 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage; changed scene executable lines 122/122. New tests preserve moving child-frame offsets, relative samples, reset/removal and explicit topology/native capability boundaries. Missing endpoint velocities and foreign owner defects found by review are repaired with durable regressions. Exact hosted acceptance is pending. No larger-tree, native body-joint, upstream articulation-family completion or new performance claim."
   },
   "phase_status": {
     "P0": "in_progress",
