@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T15:13:21Z",
+  "updated_at": "2026-10-29T15:18:17Z",
   "state": "active",
-  "summary": "Hosted CI evidence cleanup is under independent review. The latest accepted capability is native joint semantic-pose queries; broad SDFormat compatibility remains in development.",
+  "summary": "Evidence-only CI artifact selection is published after independent review and normal staged checks. Exact hosted CI and downloaded archive validation are pending; compatibility work continues.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "CI artifact selection is narrowed to exact coverage/test evidence and a verification log, excluding regenerable build targets and profiles. Failed instrumented Cargo output is saved before the same failure propagates. All seventeen tooling tests and a controlled actual-workflow pipeline failure check pass; final independent review, normal staged checks and exact hosted CI remain pending. Production and original mappings are unchanged."
+      "detail": "Hosted artifacts select five exact coverage/test/log files and omit regenerable targets and profiles. Independent review verified all seventeen tooling tests, unchanged failure status and both captured log streams. Normal staged verification passed 420 Rust tests and strict unchanged production coverage. Exact hosted CI and actual artifact contents remain pending; no original mappings or production behavior changed."
     }
   ],
   "accepted_slices": [
@@ -655,8 +655,8 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c91f3b454997d46ddb62909d95140f70c68d9e35",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c91f3b454997d46ddb62909d95140f70c68d9e35",
+    "revision": "a69a83b7f546eb6b4aeaf041996de49f8e6744f5",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a69a83b7f546eb6b4aeaf041996de49f8e6744f5",
     "rust_tests": 420,
     "coverage": {
       "lines": [
@@ -674,9 +674,9 @@
       "partial": 30
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40895259980"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40900144051"
     },
-    "note": "Normal unchanged staged hook and exact hosted CI passed 420 Rust and sixteen tooling tests, format, Clippy, docs and strict production coverage. True changed executable lines are 25/26, strictly greater than 95%. Independent reviewer fresh replay passed 29 focused Rust tests, all 46 native queries and unchanged native original/frame assertions. Loaded immutable graph query only; physical child body frame remains distinct from declared child frame. No additional original credit or physics execution claim."
+    "note": "Normal unchanged staged gate passed 420 Rust and seventeen tooling tests, format, Clippy, docs and unchanged strict production coverage. No production executable lines changed. Independent reviewer verified exact workflow success/failure exit status, both log streams, original Cargo exception propagation and five-file artifact selection. Exact hosted CI and downloaded archive contents remain pending; source provenance and original mappings are unchanged."
   }
 }
