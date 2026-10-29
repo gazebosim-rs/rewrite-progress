@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:31:12Z",
+  "updated_at": "2026-10-29T14:35:16Z",
   "state": "active",
-  "summary": "Bounded standalone joint XML is published after independent review and strict staged checks; exact hosted CI is running. Accepted original counts remain 169 complete and 29 partial pending CI.",
+  "summary": "Bounded standalone joint XML is accepted and exact hosted CI passes. The ledger has 169 complete and 30 partial mappings, counted by reviewed status across both lists; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "The new joint reader/writer preserves raw pose/frame, endpoints, both axes and modern screw pitch, with explicit unsupported payload errors and caller-located diagnostics. Independent review passed 48 fresh Rust checks and all twenty-three native outcomes with actual XML exchange. The normal staged hook passed 417 Rust tests, sixteen tooling tests and strict coverage; exact hosted CI remains pending. Full joint serialization, schema/version conversion, automatic inertia and general retained DOM contracts remain."
+      "detail": "The accepted joint reader/writer preserves raw pose/frame, endpoints, both axes and modern screw pitch, with explicit unsupported payload errors and caller-located diagnostics. Native fixture regeneration, direct native XML loading in Rust and actual Rust XML loading in native Joint pass. Remaining work includes sensor/physics payload serialization, constructor/general DOM contracts, complete schema/version conversion, automatic inertia and remaining original mappings."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Add bounded standalone joint XML with explicit payload boundaries",
+      "commit": "cb8f8037edb1c8262c21cd1c92da610abf6d2c03",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/cb8f8037edb1c8262c21cd1c92da610abf6d2c03"
+    },
     {
       "title": "Add typed standalone axis XML roundtrips",
       "commit": "fb3538c0afa919b3c0b2f62750f999c1f92c67f7",
@@ -661,12 +666,12 @@
     "upstream": {
       "total": 1344,
       "ported": 169,
-      "partial": 29
+      "partial": 30
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40892179405"
     },
-    "note": "Normal unchanged staged hook passed 417 Rust and sixteen tooling tests, format, Clippy, docs and strict production coverage. True changed executable lines are 193/193. Independent reviewer fresh replay passed 48 focused Rust tests and native23, byte-identical fixture and actual Rust-to-native XML. Native original emits expected type-none sensor errors. Joint.ToElement remains partial; accepted original counts await exact CI and correctly count reviewed status across both ledger lists."
+    "note": "Normal unchanged staged hook and exact hosted CI passed 417 Rust and sixteen tooling tests, format, Clippy, docs and strict production coverage. True changed executable lines are 193/193. Independent reviewer fresh replay passed 48 focused Rust tests and native23, byte-identical fixture and actual Rust-to-native XML. Native original emits expected type-none sensor errors. Joint.ToElement remains partial. Reviewed-status counting across both ledger lists corrects earlier reporting; four older entries stored under ports are partial, with no assertions or accepted code removed."
   }
 }
