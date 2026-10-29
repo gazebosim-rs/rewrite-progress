@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:15:33.360472+00:00",
+  "updated_at": "2026-10-29T12:27:38.339714+00:00",
   "state": "active",
-  "summary": "Integer-default declaration formatting has resumed; focused Rust and native comparisons pass, with independent review and full gates pending.",
+  "summary": "Proto2 integer declaration formatting is published after independent review and strict local checks; exact hosted CI is running.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Proto2 integer declaration formatting",
-      "detail": "The recovered candidate formats ordinary proto2 int32, int64, uint32 and uint64 defaults from effective values while preserving raw descriptors. All 22 focused Rust tests pass, including 472 exact fresh C++ declaration observations and the unchanged 990 parser observations. Contracts now state this bounded support. Independent review, strict staged coverage and hosted CI remain required. The existing 83 original mappings are unchanged; broader XML, tooling, packaging and performance qualification remain open."
+      "title": "Proto2 integer declarations and wider Messages parity",
+      "detail": "Published four-kind proto2 integer declaration formatting preserves effective values, raw descriptor spelling and native option order. The final-main staged hook passes 145 Rust tests, all 7559 existing native JSON outcomes and 472 exact fresh native declaration observations. Production coverage is 3159/3179 lines and 5225/5315 regions, with all 16 changed executable lines covered. Owned dependency coverage remains above 95%. Exact hosted CI is running. The first hook correctly blocked duplicated validation at 14/15 changed lines; combining kind/value validation fixed it without changing tests or gates. Broader XML, tooling, packaging and performance qualification remain open; all 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
@@ -411,16 +411,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "d99f47583df4e0fe3f4cd8cb5a3143f0436f1b25",
-    "rust_tests": 142,
+    "revision": "28e69e6a494ad6c6a74ad944cb7b1737371952d0",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/28e69e6a494ad6c6a74ad944cb7b1737371952d0",
+    "rust_tests": 145,
     "coverage": {
       "lines": [
-        3148,
-        3168
+        3159,
+        3179
       ],
       "regions": [
-        5196,
-        5286
+        5225,
+        5315
       ]
     },
     "upstream": {
@@ -429,10 +430,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40449583662"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40873367770"
     },
-    "note": "Exact hosted40449583662 attempt1 SUCCESS: verification, staged checks, source-package and fresh-cache checks. Independent source0c227/full7dc369/final17b922/normal4b940; canonical source81858 and normal70259 passed142 Rust/45 CLI/7559 native;36/36 changed, unchanged vendor proofs. All42 old fixtures/assertions retained. Native80 admission/wire comparison corrects22 parent rejections and10 wrong wires, preserves25 controls/23 rejects. Numeric exit-code/diagnostic equivalence and general-parser qualification remain unclaimed. Retained resource/preflight failures remain distinct; no policy/config waiver or MSG-02 completion.",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d99f47583df4e0fe3f4cd8cb5a3143f0436f1b25"
+    "note": "Independent source and focused native review passed. The final-main mandatory staged hook passed formatting, Clippy, gate regression tests, source packaging, downstream consumer, full Rust tests, native JSON replay, strict per-file and owned-vendor line/region coverage and 16/16 changed executable lines. Hosted source-package and fresh-cache checks remain pending for this exact commit."
   }
 }
