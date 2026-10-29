@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T18:29:28Z",
+  "updated_at": "2026-10-29T18:31:49Z",
   "state": "active",
-  "summary": "Typed AirPressure XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 180 complete and 28 partial mappings; full compatibility remains in development.",
+  "summary": "Typed Magnetometer XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 181 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed Magnetometer XML and standalone Sensor output",
-      "detail": "Published candidate f437d37 passed independent 35-test review, seventeen native cases, fifteen exchanges, exact fixture/original, plus independent shared IMU/FT replays. Single normal staged hook passed 455 Rust and seventeen tooling tests, 6178/6214 lines and 9882/10139 regions; actual changed lines 64/64. Exact hosted run 40931255279 is in progress. Accepted remains 180 complete/28 partial; candidate becomes 181/28 only after success. All 39 prior output-byte comparisons remain author evidence."
+      "title": "Implement bounded NavSat XML and standalone Sensor output",
+      "detail": "Next mature family preserves four typed position/velocity Noise records using existing parser/XML helpers, with exact native original and actual exchanges. Canonical output and legacy gps admission will remain explicit, preserving public kind semantics. Preserve earlier bytes, narrow constructor-input mappings and Joint force-torque-only admission; no navigation measurement or runtime admission is implied."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize typed Magnetometer configurations and standalone sensors",
+      "commit": "f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4"
+    },
     {
       "title": "Serialize typed AirPressure configurations and standalone sensors",
       "commit": "d24da9cedb5b9abadaef7043ac647a8528b78376",
@@ -690,28 +695,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "d24da9cedb5b9abadaef7043ac647a8528b78376",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/d24da9cedb5b9abadaef7043ac647a8528b78376",
-    "rust_tests": 451,
+    "revision": "f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4",
+    "rust_tests": 455,
     "coverage": {
       "lines": [
-        6123,
-        6159
+        6178,
+        6214
       ],
       "regions": [
-        9795,
-        10052
+        9882,
+        10139
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 180,
+      "ported": 181,
       "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40928628122"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40931255279"
     },
-    "note": "Single normal staged hook and exact hosted CI passed 451 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 55/55. Independent review passed 31 relevant Rust checks, seventeen native outcomes, fifteen actual exports, exact fixture and both originals with empty stderr. All 24 prior FT/IMU/Altimeter outputs stay byte-identical. Joint remains force-torque-only; no atmospheric calculation is claimed."
+    "note": "Single normal staged hook and exact hosted CI passed 455 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 64/64. Independent review passed 35 relevant Rust checks, seventeen native outcomes, fifteen exchanges, exact fixture/original and shared IMU24/FT32 native replays. All 39 prior export-byte comparisons remain author evidence. Original-X approximate inequality is retained; no loaded identity or runtime claim."
   }
 }
