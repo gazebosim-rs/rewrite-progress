@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T13:23:42Z",
+  "updated_at": "2026-10-29T13:27:31Z",
   "state": "active",
-  "summary": "Complete joint-pose conformance is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
+  "summary": "Complete joint-pose conformance is accepted and hosted CI passes. The ledger now has 172 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify published complete joint-pose conformance",
-      "detail": "The faithful DOMJoint.Complete port preserves nine indexed raw poses, named screw-joint presence, matching loaded source-child presence and classic pitch 20 on the existing unchanged fixture. Root independently replayed the Rust and native originals and checked the precise loaded identity mapping and original bounds. The mandatory hook passed 402 Rust tests and 16 tooling tests with strict coverage. Exact hosted CI is running; accepted mappings remain 171 complete and 25 partial. No production parser, API or physics capability changed."
+      "title": "Continue robotics and retained SDFormat conformance",
+      "detail": "The accepted DOMJoint.Complete port preserves all nine indexed raw poses, exact loaded screw-joint identity and classic pitch 20 on the existing unchanged fixture. Root independently replayed native and fresh Rust originals and reviewed the narrowly scoped loaded-source mapping. Remaining work includes complete joint/axis serialization, retained schema/version conversions, automatic inertia and remaining original mappings. Generic Element/constructor semantics and physics execution are separate contracts."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Qualify complete joint poses and loaded source identity",
+      "commit": "ec94eb2d8a7575bc0ec84e9827fb515da28ec24a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ec94eb2d8a7575bc0ec84e9827fb515da28ec24a"
+    },
     {
       "title": "Qualify world-joint child-frame and pose semantics",
       "commit": "b7812ae88b23c768016d040d8aee5f5c1f31b52d",
@@ -650,13 +655,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 171,
+      "ported": 172,
       "partial": 25
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40881467278"
     },
-    "note": "The mandatory staged hook passed; exact hosted CI is running. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent source/assertion/native review and fixture comparison passed. Original direct pose bounds and four-ULP pitch comparison remain intact. Generic Joint Element/constructor contracts and full SDF-02 remain open."
+    "note": "Mandatory staged hook and exact hosted CI passed 402 Rust tests and 16 tooling tests. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent source/assertion/native review and byte-identical fixture comparison passed. Original direct pose bounds and four-ULP pitch comparison remain intact. Generic Joint Element/constructor contracts and full SDF-02 remain open."
   }
 }
