@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:41:50.452393+00:00",
+  "updated_at": "2026-10-29T12:49:40.058422+00:00",
   "state": "active",
-  "summary": "All ten ordinary proto2 integer declaration kinds are published after review and strict local checks; their exact hosted CI is running.",
+  "summary": "All ten integer declaration kinds are published with exact CI pending; ordinary boolean declarations now pass focused native and Rust tests.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Ordinary integer declarations and remaining Messages parity",
-      "detail": "The published expansion covers sint/fixed/sfixed in addition to int/uint declarations. All 147 Rust tests, 7559 existing native JSON observations and 1066 native declaration observations pass locally. Every new input is bound to the unchanged parser corpus; all 384 newly supported admitted cases check registry, direct descriptor, factory and CLI output. Production coverage remains 3159/3179 lines and 5225/5315 regions, with 4/4 changed executable lines covered. Exact hosted CI is running; the prior four-kind slice passed its separate hosted run. Broader XML, tooling, packaging and performance qualification remain open; all 83 original mappings are unchanged."
+      "title": "Ordinary boolean default declarations",
+      "detail": "The next bounded candidate uses existing reflection values and Rust boolean spelling for ordinary proto2 true/false declarations. A fresh native corpus covers 28 controls: thirteen supported layouts, ten rejected literals and retained oneof/repeated/proto3/unknown-option limits. All 27 focused Rust tests and Clippy pass; independent review and the single final-main staged gate remain required. Prior integer declarations retain their separate pending hosted run. String/bytes, floating and enum default declarations, wider tooling, packaging and performance qualification remain open. All parser, wire, raw-metadata and 83 upstream assertion mappings are preserved."
     }
   ],
   "accepted_slices": [
