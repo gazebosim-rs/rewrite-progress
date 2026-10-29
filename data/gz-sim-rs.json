@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T17:37:29Z",
+  "updated_at": "2026-10-29T18:09:49Z",
   "state": "active",
-  "summary": "Acyclic Rapier revolute scene loading passed independent review, strict staged verification and exact hosted CI. P3 continues with contact-default corrections, native articulations and limits.",
+  "summary": "Acyclic Rapier articulation and top-level model contact defaults passed independent review, strict staged verification and exact hosted CI. P3 remains open for limits and native articulation.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Top-level unjointed model contact defaults",
-      "detail": "A native-backed regression reproduced internal collisions in top-level multi-link Rapier models without joints. A bounded group-assignment correction passes135 source scene tests and Clippy and is awaiting independent review. Nested policy, native adapters and scene input admission are unchanged."
+      "title": "Joint-limit contract characterization",
+      "detail": "The native-default contact correction is accepted at6397aa2. Inspecting retained native position-limit tests and the pinned Rapier joint-limit API before the next bounded implementation. Native DART body trees also require ownership/conditioning work; no new limit or native articulation capability is claimed."
     }
   ],
   "accepted_slices": [
@@ -402,6 +402,11 @@
       "title": "Acyclic local-link Rapier revolute scenes with iterative validation and direct native contact evidence",
       "commit": "a2d960439751ecfa50f71f3520d281b8a47bd385",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a2d960439751ecfa50f71f3520d281b8a47bd385"
+    },
+    {
+      "title": "Native default contact exclusion for top-level unjointed multi-link Rapier models",
+      "commit": "6397aa2fd0c3428b509e992702a058898455d7e1",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/6397aa2fd0c3428b509e992702a058898455d7e1"
     }
   ],
   "remaining": [
@@ -434,17 +439,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "a2d960439751ecfa50f71f3520d281b8a47bd385",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a2d960439751ecfa50f71f3520d281b8a47bd385",
-    "rust_tests": 483,
+    "revision": "6397aa2fd0c3428b509e992702a058898455d7e1",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/6397aa2fd0c3428b509e992702a058898455d7e1",
+    "rust_tests": 486,
     "coverage": {
       "lines": [
-        6550,
-        6616
+        6551,
+        6617
       ],
       "regions": [
-        10226,
-        10456
+        10228,
+        10458
       ]
     },
     "upstream": {
@@ -454,9 +459,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40919297170"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40925347408"
     },
-    "note": "Independent final source/native/disposition review and normal staged hook passed 483 Rust and 88 tooling tests. All eleven production crates exceed 95% line/region coverage; changed scene executable lines70/71. The iterative graph check has a public20,000-edge regression. Six baseline native contact controls retain actual counts/owner pairs and runtime hashes. Exact hosted run40919297170 passed. Scope is top-level dynamic local-link revolute graphs on Rapier; native larger graphs, limits and broader conformance/performance remain open."
+    "note": "Independent before-fail/after-pass review, normal staged hook and exact hosted40925347408 passed486 Rust/88tooling. Every production crate exceeds95%line/region coverage; changed scene lines2/2. Top-level multi-direct-link Rapier models now preserve native default internal-contact exclusion without requiring joints. Native/nested policy and scene input admission remain unchanged. No numerical solver parity or new performance claim."
   },
   "phase_status": {
     "P0": "in_progress",
