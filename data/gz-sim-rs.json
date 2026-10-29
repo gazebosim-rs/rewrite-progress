@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T18:09:49Z",
+  "updated_at": "2026-10-29T18:36:49Z",
   "state": "active",
   "summary": "Acyclic Rapier articulation and top-level model contact defaults passed independent review, strict staged verification and exact hosted CI. P3 remains open for limits and native articulation.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Joint-limit contract characterization",
-      "detail": "The native-default contact correction is accepted at6397aa2. Inspecting retained native position-limit tests and the pinned Rapier joint-limit API before the next bounded implementation. Native DART body trees also require ownership/conditioning work; no new limit or native articulation capability is claimed."
+      "title": "Finite joint limits and reduced-coordinate solver qualification",
+      "detail": "Construction-time limits are implemented in an isolated candidate but remain unaccepted: stronger torque/wrap tests found impulse-solver overshoot and lost winding near a full turn. Native DART controls retain the bounds. Maintained Rapier multibody coordinates avoid winding loss in exploratory probes; topology, lifecycle, fidelity and scoped solver cost still need qualification. Existing assertions, accepted solver behavior and production settings remain unchanged."
     }
   ],
   "accepted_slices": [
