@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T14:22:39.693775+00:00",
+  "updated_at": "2026-10-29T14:27:08.180258+00:00",
   "state": "active",
-  "summary": "The owned service-provider metadata slice passed independent source/native review and focused checks. Its normal staged gate is running; published ee5a39b remains hosted green.",
+  "summary": "Owned service-provider metadata is published after independent native/source review and the full normal staged gate. Exact hosted verification is queued; prior service-list startup commit ee5a39b is hosted green.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Published ee5a39b retains 92 complete and 14 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
+      "detail": "Published cf1a29d retains 92 complete and 14 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
     },
     {
       "id": "NET-02",
       "title": "Owned service-provider metadata snapshot",
-      "detail": "The owned known_service_info snapshot is independently approved after fresh source, target and native-peer replay. All eight admitted fields, equal-signature multiplicity, filters, expiry, errors and ownership boundaries passed. The normal staged gate is running before publication. Native process-global identities, provider liveness, convergence and latency remain outside this slice."
+      "detail": "The owned known_service_info query is accepted and published. It preserves eight admitted native provider fields, equal-signature multiplicity, filters and original-name qualification. Owned strings remain readable after retirement without keeping the provider live. Native process-global identities, convergence and latency are not claimed. Exact hosted CI is pending; the next retained discovery gap is being inspected."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Owned service provider address, identity, scope, socket and descriptor snapshots",
+      "commit": "cf1a29d457c0cf5be7d330c684f31571b0d61510",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cf1a29d457c0cf5be7d330c684f31571b0d61510"
+    },
     {
       "title": "Bounded service discovery startup listing with explicit deadline, queue and shutdown behavior",
       "commit": "ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457",
@@ -488,17 +493,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457",
-    "rust_tests": 288,
+    "revision": "cf1a29d457c0cf5be7d330c684f31571b0d61510",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cf1a29d457c0cf5be7d330c684f31571b0d61510",
+    "rust_tests": 293,
     "coverage": {
       "lines": [
-        3036,
-        3092
+        3071,
+        3127
       ],
       "regions": [
-        4471,
-        4638
+        4531,
+        4698
       ]
     },
     "upstream": {
@@ -507,9 +512,9 @@
       "partial": 14
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40887333239"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40891441453"
     },
-    "note": "The normal staged hook passed 288 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3036/3092 production lines and 4471/4638 regions, with all 45 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all five focused checks and reviewed final code/docs. Existing assertions, dependencies and gates are unchanged; no upstream case was promoted. Hosted run 40887333239 completed successfully for exact commit ee5a39b, including policy and native parity/coverage jobs. The preceding d08b6a0 run40884010190 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Global initialization, convergence, full metadata and native timing remain open."
+    "note": "The normal staged hook passed 293 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3071/3127 production lines and 4531/4698 regions, with all 42 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all five focused checks, including six every-field native fixtures, and reviewed final code/docs. Type-only APIs keep their filters and clone cost. Existing assertions, dependencies and gates are unchanged; no upstream case was promoted. Hosted run 40891441453 is queued for exact commit cf1a29d; this is not a hosted pass. Prior ee5a39b run40887333239 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Native process-global identity, general discovery/liveness and timing remain open."
   }
 }
