@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T14:39:13Z",
+  "updated_at": "2026-10-29T14:45:34Z",
   "state": "active",
   "summary": "Selected real C++ headless interoperability passed on all four retained engines. Rapier body-to-body revolutes now also passed strict staged checks and exact hosted CI; bounded two-link SDF loading is under development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "PHY-05",
       "title": "Bounded two-link SDF body-joint loading",
-      "detail": "The reviewed Rapier body-joint primitive passed exact hosted CI. A new scene regression reproduced the previous topology rejection; initial two-link lowering now passes that reset/removal test. Moving-endpoint, frame and unsupported-topology tests, independent review and strict gates remain before scene acceptance. Native body-joint adapters and larger-tree collision policy remain open."
+      "detail": "Two-link SDF lowering now passes 123 scene tests and Clippy, including moving relative coordinates, child-attached joint poses, reset/removal, nine parent/sampling corruption controls, native capability rejection and topology boundaries. Independent review is underway; strict staged and hosted checks remain. Larger trees and native body-joint adapters remain open."
     }
   ],
   "accepted_slices": [
