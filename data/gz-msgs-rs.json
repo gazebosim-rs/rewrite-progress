@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T13:40:58.123815+00:00",
+  "updated_at": "2026-10-29T13:54:57.725843+00:00",
   "state": "active",
-  "summary": "Ordinary valid-UTF8 string declarations are published after independent review and strict local checks; exact hosted CI is queued.",
+  "summary": "Ordinary valid-UTF8 string declarations passed independent review, strict local checks and exact hosted CI; enum characterization is next.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "String declarations and remaining Messages parity",
-      "detail": "The published string slice reuses the existing quote/escape helper and preserves raw metadata. Its 54 native controls include 49 supported layouts, every ASCII byte, literal escapes and Unicode, plus explicit unsupported-shape and invalid-UTF8 boundaries. The single final-main hook passes 153 Rust tests, 7559 existing native JSON outcomes and all 1148 native declaration observations. Production coverage is 3161/3181 lines and 5231/5321 regions, with the changed executable line covered; owned vendors remain above 95%. Exact hosted CI is queued. Invalid UTF8 retains its documented decoder rejection. Bytes, floating and enum defaults, wider tooling, packaging and performance work remain open; all 83 original mappings are unchanged."
+      "title": "Enum characterization and remaining Messages parity",
+      "detail": "The published string slice reuses the existing quote/escape helper and preserves raw metadata. Its 54 native controls include 49 supported layouts, every ASCII byte, literal escapes and Unicode, plus explicit unsupported-shape and invalid-UTF8 boundaries. The single final-main hook passes 153 Rust tests, 7559 existing native JSON outcomes and all 1148 native declaration observations. Production coverage is 3161/3181 lines and 5231/5321 regions, with the changed executable line covered; owned vendors remain above 95%. Exact hosted CI passed; native enum-default characterization is next. Invalid UTF8 retains its documented decoder rejection. Bytes, floating and enum defaults, wider tooling, packaging and performance work remain open; all 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
@@ -412,6 +412,11 @@
       "title": "Native-exact ordinary proto2 Boolean default declarations",
       "commit": "c6d62328e48e813f12446b43daaf312d0860015a",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c6d62328e48e813f12446b43daaf312d0860015a"
+    },
+    {
+      "title": "Native-exact ordinary valid-UTF8 proto2 string default declarations",
+      "commit": "88729e20bfa17bcc92badb9e03b5fe11e701689a",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/88729e20bfa17bcc92badb9e03b5fe11e701689a"
     }
   ],
   "remaining": [
@@ -445,9 +450,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40883832013"
     },
-    "note": "Independent source and fresh focused review passed. The single normal staged hook passed all Rust/native tests, including the unchanged 594-row integer suite, formatting, Clippy, check regressions, downstream consumer, strict production/owned-vendor coverage and 1/1 changed executable lines. Exact hosted package and fresh-cache checks remain pending."
+    "note": "Independent source and fresh focused review passed. The single normal staged hook passed all Rust/native tests, including the unchanged 594-row integer suite, formatting, Clippy, check regressions, downstream consumer, strict production/owned-vendor coverage and 1/1 changed executable lines. Exact hosted package and fresh-cache checks passed."
   }
 }
