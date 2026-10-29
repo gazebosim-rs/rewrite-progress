@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T15:23:53Z",
+  "updated_at": "2026-10-29T15:42:32Z",
   "state": "active",
-  "summary": "Evidence-only CI artifacts are accepted: exact hosted CI and the downloaded five-file archive pass. Native joint semantic-pose support is available; full SDFormat compatibility remains in development.",
+  "summary": "Typed force/torque sensor and joint XML is implemented and awaiting independent review. Evidence-only CI artifacts remain the latest accepted slice; full compatibility is still in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Next family inspection targets typed force/torque sensor XML and its joint serialization, using native ToElement originals. Other sensor families, plugins/extensions and joint physics payloads remain explicitly unsupported for serialization. Broader retained DOM, schema conversion, automatic inertia and original mappings remain in development; no consumer pin or runtime wrench change is claimed."
+      "detail": "New typed configuration output preserves six complete noise records, frame/direction and current force_torque sensor envelopes in joint XML. Other families, plugins/extensions and physics remain explicitly unsupported; old IMU rejection assertions are unchanged. Author checks passed 427 Rust tests, Clippy, thirty-one native outcomes, generated fixture regeneration and five actual Rust-to-native exchanges. Two original ToElement ports remain partial for generic Element identity. Independent review and strict staged/hosted checks remain pending."
     }
   ],
   "accepted_slices": [
