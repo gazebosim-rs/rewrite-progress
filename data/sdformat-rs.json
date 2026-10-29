@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T13:12:16Z",
+  "updated_at": "2026-10-29T13:14:48Z",
   "state": "active",
-  "summary": "World-joint child-frame conformance is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
+  "summary": "World-joint child-frame conformance is accepted and hosted CI passes. The ledger now has 171 complete and 25 partial mappings; complete joint-pose conformance is the next task.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify published world-joint frame conformance",
-      "detail": "The faithful LoadWorldJointChildFrame port preserves all native metadata, index, endpoint and nine pose assertions on the unchanged fixture. Root independently replayed the original and fresh Rust port and checked the exact native pose comparison semantics. The mandatory hook passed 401 Rust tests and 16 tooling tests with strict coverage. Exact hosted CI is running; accepted counts remain 170 complete and 25 partial. No production parser, API or physics capability changed."
+      "title": "Characterize complete joint poses and loaded identity",
+      "detail": "The next candidate ports DOMJoint.Complete on the existing unchanged nine-joint fixture. It checks raw translations and rotations, classic screw pitch and the presence of the matching explicitly named loaded joint child. The existing immutable model snapshot supplies that last predicate without adding a generic DOM or production API. The unchanged native original passes; Rust characterization and independent review are under way. No physics capability changes are claimed."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Qualify world-joint child-frame and pose semantics",
+      "commit": "b7812ae88b23c768016d040d8aee5f5c1f31b52d",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7812ae88b23c768016d040d8aee5f5c1f31b52d"
+    },
     {
       "title": "Qualify screw-joint pitch units and classic observations",
       "commit": "19af2f72b9fc5f9a50180caad256c7096337811f",
@@ -645,13 +650,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 170,
+      "ported": 171,
       "partial": 25
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40879523306"
     },
-    "note": "The mandatory staged hook passed; exact hosted CI is still running. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent native/Rust replay and fixture comparison passed. All original pose bounds and direct quaternion signs remain intact. Physics capability, consumer pins and full SDF-02 scope are unchanged."
+    "note": "Mandatory staged hook and exact hosted CI passed 401 Rust tests and 16 tooling tests. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent native/Rust replay and byte-identical fixture comparison passed. Every original metadata, endpoint and nine pose assertion retains its original bound and direct quaternion signs. Full SDF-02 remains open."
   }
 }
