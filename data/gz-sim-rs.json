@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-28T13:45:33Z",
+  "updated_at": "2026-10-29T12:08:47Z",
   "state": "active",
-  "summary": "Native DART 6.13.2 and MuJoCo 3.11.0 backends landed alongside Rapier and TPE, each with same-engine parity against the native gz-physics plugins; broader P3 physics capabilities remain.",
-  "model": "Coordinator (Claude Opus 5.5, taking over from the previous agent)",
+  "summary": "The selected headless milestone is complete. Physics work continues with DART server reset comparisons and independent repository work.",
+  "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-03",
-      "title": "DART adapter follow-ups",
-      "detail": "First slice landed with bit-identical or 1e-14 parity and documented admission limits (D25); remaining: server reset native comparison on DART, articulation, limits and damping."
-    },
-    {
-      "id": "PHY-04",
-      "title": "MuJoCo adapter follow-ups",
-      "detail": "First slice landed; low-severity follow-ups and broader capabilities remain."
+      "title": "DART server reset and runtime library tests",
+      "detail": "Run the existing native reset observations on DART as well as Rapier, and verify server test binaries load the pinned native library."
     }
   ],
   "accepted_slices": [
@@ -370,7 +365,7 @@
     }
   ],
   "remaining": [
-    "Complete formal P0 provenance/inventory and current P2 dependency/evidence closure; broader world/resource loading, physics, sensor registration/triggered acquisition/metrics and IO compatibility remain open.",
+    "Complete broader reference provenance and test inventory, world/resource loading, sensor and transport compatibility; P2 is closed for the selected headless world.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
