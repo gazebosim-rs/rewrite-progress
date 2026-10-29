@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T13:09:54Z",
+  "updated_at": "2026-10-29T13:29:49Z",
   "state": "active",
   "summary": "The selected headless milestone is complete. Native MuJoCo recovery tests passed hosted CI; real C++ interoperability is being extended to DART and MuJoCo.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "PHY-03",
       "title": "Real C++ peers on all retained physics engines",
-      "detail": "Extend the unchanged CLI/server clock, pose, IMU, removal, reset and sampling assertions to DART and MuJoCo while retaining every TPE/Rapier scenario. CLI author tests pass; the expanded server matrix is running."
+      "detail": "Author and independent four-engine C++ matrices pass. The first staged run exposed a UDP discovery-port reservation race and rejected the candidate. Fixtures now retain reusable port guards without receiving multicast; deterministic ownership checks and CLI replay pass, and full server revalidation is running. No retry, timeout or assertion was weakened."
     }
   ],
   "accepted_slices": [
