@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:49:40.058422+00:00",
+  "updated_at": "2026-10-29T12:52:25.519293+00:00",
   "state": "active",
-  "summary": "All ten integer declaration kinds are published with exact CI pending; ordinary boolean declarations now pass focused native and Rust tests.",
+  "summary": "All ten integer declaration kinds passed exact hosted CI; ordinary boolean declarations are under independent review after focused native and Rust tests.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Ordinary boolean default declarations",
-      "detail": "The next bounded candidate uses existing reflection values and Rust boolean spelling for ordinary proto2 true/false declarations. A fresh native corpus covers 28 controls: thirteen supported layouts, ten rejected literals and retained oneof/repeated/proto3/unknown-option limits. All 27 focused Rust tests and Clippy pass; independent review and the single final-main staged gate remain required. Prior integer declarations retain their separate pending hosted run. String/bytes, floating and enum default declarations, wider tooling, packaging and performance qualification remain open. All parser, wire, raw-metadata and 83 upstream assertion mappings are preserved."
+      "detail": "The next bounded candidate uses existing reflection values and Rust boolean spelling for ordinary proto2 true/false declarations. A fresh native corpus covers 28 controls: thirteen supported layouts, ten rejected literals and retained oneof/repeated/proto3/unknown-option limits. All 27 focused Rust tests and Clippy pass; independent review and the single final-main staged gate remain required. Prior integer declarations passed their separate exact hosted run. String/bytes, floating and enum default declarations, wider tooling, packaging and performance qualification remain open. All parser, wire, raw-metadata and 83 upstream assertion mappings are preserved."
     }
   ],
   "accepted_slices": [
@@ -402,6 +402,11 @@
       "title": "Native-exact ordinary proto2 int32/int64/uint32/uint64 default declarations",
       "commit": "28e69e6a494ad6c6a74ad944cb7b1737371952d0",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/28e69e6a494ad6c6a74ad944cb7b1737371952d0"
+    },
+    {
+      "title": "Native-exact declaration defaults for all ten ordinary integer scalar kinds",
+      "commit": "eab87eb61991d92a8998b91617809fa048ae0cb9",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/eab87eb61991d92a8998b91617809fa048ae0cb9"
     }
   ],
   "remaining": [
@@ -435,9 +440,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40875334240"
     },
-    "note": "Independent source, assertion and fresh 24-test review passed. The single final-main staged hook passed formatting, Clippy, check regressions, downstream consumer, full Rust/native tests, strict production and owned-vendor coverage and 4/4 changed executable lines. Exact hosted package and fresh-cache qualification remain pending. The preceding four-kind revision has separate hosted success."
+    "note": "Exact hosted 40875334240 succeeded for this public commit, including primary verification, staged-hook regression, deterministic source package and fresh-cache consumer checks. The single final-main local hook passed 147 Rust tests, 7559 existing native JSON outcomes, 1066 native declaration observations, strict production/owned-vendor coverage and 4/4 changed executable lines. Broader MSG-02 remains open."
   }
 }
