@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T21:01:40.362859Z",
+  "updated_at": "2026-10-29T21:32:31.102446Z",
   "state": "active",
-  "summary": "A minimal inline request lifetime fix is published after independent review and the strict staged gate; exact hosted CI is running. Direct lambda originals remain accepted at 97 faithful / 9 partial. Separate one-way callback repair is next.",
+  "summary": "The minimal inline destructor lifetime fix is accepted at 2207842 after independent review, strict staged gates and exact hosted success. Counts remain 97 faithful / 9 partial; a separate bounded one-way callback repair is being qualified privately.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,13 +13,13 @@
     },
     {
       "id": "NET-02",
-      "title": "Destructor fix hosted qualification and separate one-way repair",
-      "detail": "Published 2207842 retains admission through last captured user destruction before completion; normal/unwinding destruction and registry reentry are tested. Exact hosted run 40954109468 is pending. No new credit, API or wire change; accepted counts remain 97 faithful and 9 partial. Separate one-way work addresses reproduced cross-Node immediate completion and blocked dispatcher bounds, with protected queued-control setup translation under review."
+      "title": "Separate bounded cross-Node one-way callback repair",
+      "detail": "Published 2207842 is exact hosted green; captured-value cleanup stays inside inline request admission. Private one-way implementation reuses weak admitted declarations, preserves own receiver priority and worker metadata, bounds dispatcher/request lifetime, and adds native two-Node and actual wire controls. An explicit queued setup translation preserves all protected error/count/progress predicates; no new deadline or original credit is proposed. Independent review and full normal gates remain."
     }
   ],
   "accepted_slices": [
     {
-      "title": "Reviewed inline request admission through last captured destructor; hosted qualification pending",
+      "title": "Reviewed inline request admission through last captured destructor",
       "commit": "220784279be109562950bf0058d617d7c3a7d8c7",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/220784279be109562950bf0058d617d7c3a7d8c7"
     },
@@ -547,9 +547,9 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40954109468"
     },
-    "note": "Normal strict staged hook passed 334 Rust tests across 28 executable harnesses, 24 tooling checks and required native suites. Coverage is 3729/3826 lines, 5417/5660 regions and 1/1 changed executable line. Independent fresh source/target and C++ peer replay passed 122 library tests and 12 public callback regressions. Removing only the added strong callback drop independently fails the blocked-destructor capacity assertion 0 versus 1. User destruction now precedes completion/admission release outside locks; ordinary Rust Drop panic behavior remains, with guards releasing on unwind and typed invocation panic handling unchanged. Only three paths changed; no wire/API/dependency/gate/ledger credit expansion. Exact hosted run 40954109468 is pending. Prior direct lambda a014e88 exact hosted run 40947807641 succeeded; accepted counts stay 97 faithful and 9 partial."
+    "note": "Normal strict staged hook passed 334 Rust tests across 28 executable harnesses, 24 tooling checks and required native suites. Coverage is 3729/3826 lines, 5417/5660 regions and 1/1 changed executable line. Independent fresh source/target and C++ peer replay passed 122 library tests and 12 public callback regressions. Removing only the added strong callback drop independently fails the blocked-destructor capacity assertion 0 versus 1. User destruction now precedes completion/admission release outside locks; ordinary Rust Drop panic behavior remains, with guards releasing on unwind and typed invocation panic handling unchanged. Only three paths changed; no wire/API/dependency/gate/ledger credit expansion. Exact hosted run 40954109468 succeeded. Prior direct lambda a014e88 exact hosted run 40947807641 succeeded; accepted counts stay 97 faithful and 9 partial."
   }
 }
