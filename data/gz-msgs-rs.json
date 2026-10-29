@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T13:54:57.725843+00:00",
+  "updated_at": "2026-10-29T14:00:16.876247+00:00",
   "state": "active",
-  "summary": "Ordinary valid-UTF8 string declarations passed independent review, strict local checks and exact hosted CI; enum characterization is next.",
+  "summary": "String declarations passed exact hosted CI; ordinary enum declarations are under independent review.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Enum characterization and remaining Messages parity",
-      "detail": "The published string slice reuses the existing quote/escape helper and preserves raw metadata. Its 54 native controls include 49 supported layouts, every ASCII byte, literal escapes and Unicode, plus explicit unsupported-shape and invalid-UTF8 boundaries. The single final-main hook passes 153 Rust tests, 7559 existing native JSON outcomes and all 1148 native declaration observations. Production coverage is 3161/3181 lines and 5231/5321 regions, with the changed executable line covered; owned vendors remain above 95%. Exact hosted CI passed; native enum-default characterization is next. Invalid UTF8 retains its documented decoder rejection. Bytes, floating and enum defaults, wider tooling, packaging and performance work remain open; all 83 original mappings are unchanged."
+      "title": "Native-backed enum defaults under review",
+      "detail": "The enum candidate preserves selected names and aliases through existing validated reflection metadata. Author checks pass 26 focused Rust tests, all-target Clippy and 81 new native controls, including 64 supported layouts. Omitted defaults retain an implied first value without inventing a clause; malformed names and unsupported shapes remain explicit. Independent review, the normal staged hook and exact hosted CI are pending. The published String revision below remains the latest qualified code. Bytes/floating defaults, wider tooling, packaging and performance remain open; all 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
