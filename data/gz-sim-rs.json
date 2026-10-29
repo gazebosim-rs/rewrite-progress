@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T19:30:20Z",
+  "updated_at": "2026-10-29T19:43:57Z",
   "state": "active",
-  "summary": "Unbounded reduced-coordinate Rapier articulations passed independent review and the normal strict staged gate; exact hosted CI is pending. P3 remains open for finite limits, offset COM and native body trees.",
+  "summary": "Programmatic unbounded reduced-coordinate Rapier articulations passed independent review, strict staged checks and exact hosted CI. P3 continues with native position limits and broader articulation compatibility.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Hosted qualification of unbounded reduced-coordinate articulations",
-      "detail": "Published50b28e5 after independent source/physical review and502 Rust/88tooling checks. All eleven production crates exceed95% line/region coverage; exact hosted40940534150 is pending, so this slice is not yet counted accepted. Existing impulse APIs, scene selection and solver settings are preserved. Finite-limit and offset-COM failure evidence remains explicit open scope."
+      "title": "Native DART world-revolute position limits",
+      "detail": "Implementing finite limit edits and clearing through maintained DART joint APIs in an isolated candidate. Construction/reset values are separated from runtime edits; native conditioning and existing behavior must remain intact. Compilation passes; physical/native tests and independent review are still pending. Rapier finite-limit and offset-COM failure evidence remains open."
     }
   ],
   "accepted_slices": [
@@ -407,6 +407,11 @@
       "title": "Native default contact exclusion for top-level unjointed multi-link Rapier models",
       "commit": "6397aa2fd0c3428b509e992702a058898455d7e1",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/6397aa2fd0c3428b509e992702a058898455d7e1"
+    },
+    {
+      "title": "Centered unbounded reduced-coordinate Rapier articulations with continuous coordinates, stable split/reset ownership and completed-step velocity sampling",
+      "commit": "50b28e5326dcb18b78ca62f81f528d06b01688fd",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/50b28e5326dcb18b78ca62f81f528d06b01688fd"
     }
   ],
   "remaining": [
@@ -458,10 +463,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40940534150"
     },
-    "note": "Independent fresh58-test Rapier replay plus rotating-axis control and14/12 real native checks passed. Normal staged hook passed502 Rust/88tooling; changed physics12/12 and Rapier280/282. All production crates exceed95%lines/regions. Exact hosted40940534150 remains pending; no new upstream case credit, scene adoption, finite-limit/general COM capability or performance claim."
+    "note": "Independent fresh58-test Rapier replay plus rotating-axis control and14/12 real native checks passed. Normal staged hook passed502 Rust/88tooling, all eleven crates above95%line/region coverage; changed shared physics12/12 and Rapier280/282. Exact hosted40940534150 succeeded at50b28e5. New API is programmatic, centered and unbounded; no common-test credit, scene migration, finite limits, general offset-COM dynamics or speedup claim."
   },
   "phase_status": {
     "P0": "in_progress",
