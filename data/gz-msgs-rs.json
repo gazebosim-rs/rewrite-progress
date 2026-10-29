@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:33:52.725890+00:00",
+  "updated_at": "2026-10-29T12:39:11.947662+00:00",
   "state": "active",
-  "summary": "Four-kind integer declarations are published with hosted CI pending; the remaining six integer kinds now pass focused native and Rust tests.",
+  "summary": "Four-kind integer declarations passed exact hosted CI; the reviewed remaining six-kind expansion is running its strict local gate.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Complete ordinary integer declaration kinds",
-      "detail": "The next candidate adds sint32/sint64, fixed32/fixed64 and sfixed32/sfixed64 formatting. Fresh C++ replay characterizes all 594 existing parser rows for these kinds, with 384 admitted cases checked through registry, direct descriptors, factory and CLI. All 24 focused Rust tests and Clippy pass; independent review and the full staged gate remain required. The four-kind published commit retains its separate pending hosted CI. All original parser, wire, raw-metadata and 83 upstream assertion mappings remain unchanged; broader Messages parity is open."
+      "detail": "The reviewed next candidate adds sint32/sint64, fixed32/fixed64 and sfixed32/sfixed64 declarations. Fresh C++ replay covers 594 unchanged parser inputs, with 384 admitted cases checked through registry, direct descriptors, factory and CLI. All 24 focused Rust tests, Clippy and independent review pass; the single final-main staged gate is running. The preceding four-kind commit passed its separate exact hosted CI. Parser, wire, raw-metadata and all 83 original mappings remain unchanged; broader Messages parity is open."
     }
   ],
   "accepted_slices": [
@@ -397,6 +397,11 @@
       "title": "Standalone Header.Map scalar, nested and duplicate value normalization",
       "commit": "d99f47583df4e0fe3f4cd8cb5a3143f0436f1b25",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d99f47583df4e0fe3f4cd8cb5a3143f0436f1b25"
+    },
+    {
+      "title": "Native-exact ordinary proto2 int32/int64/uint32/uint64 default declarations",
+      "commit": "28e69e6a494ad6c6a74ad944cb7b1737371952d0",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/28e69e6a494ad6c6a74ad944cb7b1737371952d0"
     }
   ],
   "remaining": [
@@ -430,9 +435,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40873367770"
     },
-    "note": "Independent source and focused native review passed. The final-main mandatory staged hook passed formatting, Clippy, gate regression tests, source packaging, downstream consumer, full Rust tests, native JSON replay, strict per-file and owned-vendor line/region coverage and 16/16 changed executable lines. Hosted source-package and fresh-cache checks remain pending for this exact commit."
+    "note": "Exact hosted run 40873367770 succeeded for this published commit, including primary verification, staged-hook regression, deterministic source package and fresh-cache consumer checks. Local mandatory hook passed 145 Rust tests, 7559 existing native JSON observations, 472 exact native declaration comparisons and 16/16 changed executable lines, with strict production and owned-vendor coverage. Broader MSG-02 remains open."
   }
 }
