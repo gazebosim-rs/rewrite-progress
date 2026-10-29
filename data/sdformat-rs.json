@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T15:18:17Z",
+  "updated_at": "2026-10-29T15:23:53Z",
   "state": "active",
-  "summary": "Evidence-only CI artifact selection is published after independent review and normal staged checks. Exact hosted CI and downloaded archive validation are pending; compatibility work continues.",
+  "summary": "Evidence-only CI artifacts are accepted: exact hosted CI and the downloaded five-file archive pass. Native joint semantic-pose support is available; full SDFormat compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Hosted artifacts select five exact coverage/test/log files and omit regenerable targets and profiles. Independent review verified all seventeen tooling tests, unchanged failure status and both captured log streams. Normal staged verification passed 420 Rust tests and strict unchanged production coverage. Exact hosted CI and actual artifact contents remain pending; no original mappings or production behavior changed."
+      "detail": "Next family inspection targets typed force/torque sensor XML and its joint serialization, using native ToElement originals. Other sensor families, plugins/extensions and joint physics payloads remain explicitly unsupported for serialization. Broader retained DOM, schema conversion, automatic inertia and original mappings remain in development; no consumer pin or runtime wrench change is claimed."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Publish useful CI evidence without regenerable build products",
+      "commit": "a69a83b7f546eb6b4aeaf041996de49f8e6744f5",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a69a83b7f546eb6b4aeaf041996de49f8e6744f5"
+    },
     {
       "title": "Resolve joint poses with native child-frame defaults and local targets",
       "commit": "c91f3b454997d46ddb62909d95140f70c68d9e35",
@@ -674,9 +679,9 @@
       "partial": 30
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40900144051"
     },
-    "note": "Normal unchanged staged gate passed 420 Rust and seventeen tooling tests, format, Clippy, docs and unchanged strict production coverage. No production executable lines changed. Independent reviewer verified exact workflow success/failure exit status, both log streams, original Cargo exception propagation and five-file artifact selection. Exact hosted CI and downloaded archive contents remain pending; source provenance and original mappings are unchanged."
+    "note": "Normal staged gate and exact hosted CI passed 420 Rust and seventeen tooling tests with unchanged strict production coverage. No production executable lines changed. Independent review verified failure status and log retention. The actual downloaded hosted artifact contains exactly five evidence/log files (3,991,434 compressed bytes), with no targets/raw/merged build data; source digest and coverage match local staged evidence. Production, source provenance and original mappings are unchanged."
   }
 }
