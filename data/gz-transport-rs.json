@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T15:18:20.391403+00:00",
+  "updated_at": "2026-10-29T15:35:51.637652+00:00",
   "state": "active",
-  "summary": "Owned publication metadata is published after independent native/source review and the full normal staged gate. Exact hosted verification is running; prior cf1a29d is hosted green.",
+  "summary": "Published publication metadata commit 3dfd5a2 passed exact hosted verification. Native subscriber-storage characterization is complete; a bounded metadata-cache proposal preserves the existing typed views.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Owned message-publication metadata",
-      "detail": "The owned known_topic_publishers snapshot is accepted and published with native effective rate/throttled options and actual advertised control metadata. Nine-field native comparisons, raw-record immutability, scopes/domains/lifetime and errors passed author and independent checks. Exact hosted CI is pending. Subscriber metadata still requires retaining fields that the current interest cache discards; no new source edits are underway."
+      "title": "Owned subscriber metadata characterization",
+      "detail": "Fresh native storage controls show first-record retention by topic/process/address/node: control, scope, descriptor and rate changes do not add records, while distinct addresses/nodes/processes do. Generic node retirement removes all matching addresses. Existing Rust typed-view assertions intentionally retain descriptor variants. A separate bounded full-metadata cache and owned subscriber snapshot are proposed to preserve those assertions; no identity/source changes have been made. Global discovery, liveness and performance remain open."
     }
   ],
   "accepted_slices": [
@@ -517,9 +517,9 @@
       "partial": 14
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40899529464"
     },
-    "note": "The normal staged hook passed 299 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3120/3176 production lines and 4611/4778 regions, with all 45 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all six focused checks, including six every-field native fixtures and eight effective flag/rate controls. Raw records, emitted wire, existing APIs/assertions, dependencies and gates are unchanged. No original case was promoted. Hosted run 40899529464 is in progress for exact commit 3dfd5a2; this is not a hosted pass. Prior cf1a29d run40891441453 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Subscriber metadata, native process-global identity, general discovery/liveness and performance remain open."
+    "note": "The normal staged hook passed 299 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3120/3176 production lines and 4611/4778 regions, with all 45 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all six focused checks, including six every-field native fixtures and eight effective flag/rate controls. Raw records, emitted wire, existing APIs/assertions, dependencies and gates are unchanged. No original case was promoted. Hosted run 40899529464 completed successfully for exact commit 3dfd5a2, including policy and native parity/coverage jobs. Prior cf1a29d run40891441453 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Subscriber metadata, native process-global identity, general discovery/liveness and performance remain open."
   }
 }
