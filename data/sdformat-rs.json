@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:06:37Z",
+  "updated_at": "2026-10-29T17:24:48Z",
   "state": "active",
-  "summary": "Bounded base-camera XML and native parser corrections are under independent review. IMU XML remains the latest accepted capability; full compatibility remains in development.",
+  "summary": "Bounded base-camera XML and native parser corrections are published after independent review and strict staged checks. Exact hosted CI is running; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Base camera identity/pose/image/clip/save/trigger output passes 438 Rust tests and Clippy, thirty-three native outcomes and twenty-five actual XML exchanges. Native controls cover aliases, anti-aliasing, presence/name/save/lens defaults and schema ranges; all old assertions remain unchanged. Nondefault advanced optics and Camera Sensor/Joint output remain explicit errors. Independent parser/assertion review and strict staged/hosted checks remain pending."
+      "detail": "Base camera output covers the exact retained ToElement surface and rejects advanced payload loss. Review fixed signed-zero omission and disabled-path validation; all old assertions remain unchanged. Independent replay passed 22 repository tests plus two private regressions, thirty-four native outcomes and twenty-six actual exchanges. Normal gate passed 441 Rust tests and changed lines 214/214. Exact hosted CI remains pending; Camera Sensor/Joint/rendering and generic Element identity remain unqualified."
     }
   ],
   "accepted_slices": [
@@ -670,17 +670,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "3603dc102550f3b66a7bafc93d406b2f94c1cded",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3603dc102550f3b66a7bafc93d406b2f94c1cded",
-    "rust_tests": 433,
+    "revision": "b21cc2c4612494f89450836f5110843123ff56f7",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b21cc2c4612494f89450836f5110843123ff56f7",
+    "rust_tests": 441,
     "coverage": {
       "lines": [
-        5799,
-        5835
+        6021,
+        6057
       ],
       "regions": [
-        9377,
-        9639
+        9645,
+        9907
       ]
     },
     "upstream": {
@@ -689,9 +689,9 @@
       "partial": 34
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40913154392"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40921016702"
     },
-    "note": "Normal unchanged staged gate and exact hosted CI passed 433 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed executable lines 160/168 (>95%). Independent fresh replay passed 33 Rust checks, 24 IMU native outcomes/four exchanges and all 32 FT outcomes/six exchanges. Six FT exports match accepted output byte for byte. Original assertions and joint/payload boundaries unchanged; two new mappings remain partial for Element/null identity, no runtime claim."
+    "note": "Normal unchanged staged gate passed 441 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; actual changed lines 214/214. Independent review passed 22 repository tests plus both private regressions, all 34 native outcomes and 26 exchanges, including signed-zero guards and save-path validation. Parser/native default corrections retain public constructors and old assertions. One new original mapping remains partial for Element identity; exact hosted CI pending."
   }
 }
