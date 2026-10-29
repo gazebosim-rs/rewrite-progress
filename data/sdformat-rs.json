@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T12:10:08Z",
+  "updated_at": "2026-10-29T12:15:04Z",
   "state": "active",
-  "summary": "Development has resumed on loaded model-element queries. Native include tests and eighteen selected Rust tests pass; a full-suite parser stack regression is being repaired before review.",
+  "summary": "Loaded model-element queries are reviewed and published. All 393 Rust tests and strict staged coverage pass; hosted verification is running before acceptance.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Complete loaded model-element query semantics",
-      "detail": "Recovering the unfinished immutable direct-child snapshot implementation. It preserves child order, explicit name attributes and absent-versus-false presence after include expansion. Two fresh native include originals and eighteen selected Rust tests pass. The first full suite exposed stack overflow at the existing recursive include bound; the fix will preserve that bound and the original assertions. Independent review, strict staged coverage and hosted CI remain required."
+      "title": "Qualify published model-element queries",
+      "detail": "The immutable direct-child snapshot preserves repeated tags, explicit name attributes and absent-versus-false presence through include expansion. The original MergeInclude test retains all prior assertions and now checks the remaining element predicates. The full suite caught a recursive include stack regression; the fix preserves the original bound and assertions. Independent review passed35 relevant Rust tests and2 unchanged native include originals. The mandatory staged hook passed393 Rust tests and16 tooling tests with production line and region coverage above95%. Exact hosted verification is running; accepted upstream counts remain167 complete and26 partial until it passes."
     }
   ],
   "accepted_slices": [
@@ -615,17 +615,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c2dc977852ddac67ad6b827bf4f35570666ab56b",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c2dc977852ddac67ad6b827bf4f35570666ab56b",
-    "rust_tests": 385,
+    "revision": "27cb23601a4e8f38eb39c37764c91dd4d31520bd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/27cb23601a4e8f38eb39c37764c91dd4d31520bd",
+    "rust_tests": 393,
     "coverage": {
       "lines": [
-        4941,
-        4965
+        5032,
+        5058
       ],
       "regions": [
-        8178,
-        8421
+        8297,
+        8543
       ]
     },
     "upstream": {
@@ -634,9 +634,9 @@
       "partial": 26
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40474694153"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40871649865"
     },
-    "note": "Mandatory canonical source and normal gates pass 385 Rust and 16 tooling tests, zero failures or ignored tests. Strict unfiltered coverage is 4941/4965 lines and 8178/8421 regions; executable additions 84/84, distinct normal staged all-source 4711/4728. Both independent full and normal bindings verify 139 actually captured profiles. PlacementFrame is complete and MergeInclude remains partial; no generic Element lifetime/serialization, full SDF-02, typed sensor runtime, physical behavior or performance claim. Existing qualified native build and all prior failures remain explicit."
+    "note": "Mandatory staged hook passed; exact hosted verification is still running. Existing fixtures, numerical tolerances, include-depth admission and coverage thresholds remain unchanged. Full SDF-02 and general mutable Element/serialization semantics remain open."
   }
 }
