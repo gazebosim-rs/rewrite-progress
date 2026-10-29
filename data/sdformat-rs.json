@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T16:01:21Z",
+  "updated_at": "2026-10-29T16:29:24Z",
   "state": "active",
-  "summary": "Typed force/torque configuration plus bounded sensor/joint XML is accepted with exact hosted CI success. The ledger has 169 complete and 32 partial mappings; full compatibility remains in development.",
+  "summary": "Typed IMU configuration and standalone sensor XML is under independent review. Force/torque XML remains the latest accepted capability; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Accepted force_torque output preserves six complete noise records, frame/direction and current sensor envelopes in joint declaration order. Native evidence includes thirty-two outcomes and six actual XML exchanges. Remaining serialization work includes other sensor families, plugins/extensions, retained physics and generic Element contracts. Full schema/version conversion, automatic inertia and remaining original mappings are still open; no runtime wrench claim or consumer pin change."
+      "detail": "The new IMU reader/writer preserves six Noise records, orientation metadata and raw zero/non-unit reference vectors. Matching standalone sensor output is implemented while joint XML stays FT-only and existing rate/numeric policies remain intact. Author checks passed 433 Rust tests, Clippy, twenty-four native outcomes and four actual exchanges. Accepted FT output remains byte-identical after shared-noise extraction. Independent review and strict staged/hosted gates remain pending; Element/runtime/physics boundaries are explicit."
     }
   ],
   "accepted_slices": [
