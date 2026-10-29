@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T22:33:42Z",
+  "updated_at": "2026-10-29T22:44:30Z",
   "state": "active",
   "summary": "Programmatic unbounded reduced-coordinate Rapier articulations passed independent review, strict staged checks and exact hosted CI. P3 continues with native position limits and broader articulation compatibility.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "PHY-03",
-      "title": "Qualifying deferred DART joint-effort commands",
-      "detail": "Joint effort commands are published in 1982aa0 after independent review and strict local checks: 511 Rust tests, 89 tooling checks, and 45/45 changed production lines covered. DART world hinges support atomic preparation, failed-step retry and reset/retirement. Exact hosted CI is running; acceptance is pending. Other adapters and finite limits remain unsupported."
+      "id": "PHY-04",
+      "title": "Extending generalized effort to MuJoCo world hinges",
+      "detail": "A private direct generalized-force implementation passes seven physical/lifecycle controls, including changed DOF addresses and retained effort after native faults. Native C++ reference, boundary review, strict coverage and hosted qualification remain. DART effort is accepted at 1982aa0; finite limits and moving-parent actuation remain open."
     },
     {
       "id": "PHY-05",
@@ -417,6 +417,11 @@
       "title": "Centered unbounded reduced-coordinate Rapier articulations with continuous coordinates, stable split/reset ownership and completed-step velocity sampling",
       "commit": "50b28e5326dcb18b78ca62f81f528d06b01688fd",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/50b28e5326dcb18b78ca62f81f528d06b01688fd"
+    },
+    {
+      "title": "Deferred DART world-hinge effort with atomic preparation, reset/retirement and C++ force-pulse parity",
+      "commit": "1982aa06c78a020510774f4cb7ea1f978e073373",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1982aa06c78a020510774f4cb7ea1f978e073373"
     }
   ],
   "remaining": [
@@ -468,10 +473,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40965980708"
     },
-    "note": "Independent source, physical and native review and one mandatory staged hook passed: 511 Rust tests, 89 tooling checks, all eleven production crates strictly above 95% line/region coverage, and 45/45 changed production lines covered. Six actual C++ plugin effort observations match. Exact hosted qualification remains pending; the accepted list retains the prior simulator slice."
+    "note": "Independent source, physical and native review, one mandatory staged hook and exact hosted CI passed for 1982aa0. There are 511 Rust tests and 89 tooling checks; all eleven production crates are strictly above 95% line/region coverage, with 45/45 changed production lines covered. Six actual C++ plugin effort observations match. Scope is DART world hinges; no new original-test credit, other-adapter, finite-limit or performance acceptance."
   },
   "phase_status": {
     "P0": "in_progress",
