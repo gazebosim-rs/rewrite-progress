@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T14:00:16.876247+00:00",
+  "updated_at": "2026-10-29T14:12:10.320874+00:00",
   "state": "active",
-  "summary": "String declarations passed exact hosted CI; ordinary enum declarations are under independent review.",
+  "summary": "Ordinary enum declarations are published after independent review and strict local checks; exact hosted CI is running.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Native-backed enum defaults under review",
-      "detail": "The enum candidate preserves selected names and aliases through existing validated reflection metadata. Author checks pass 26 focused Rust tests, all-target Clippy and 81 new native controls, including 64 supported layouts. Omitted defaults retain an implied first value without inventing a clause; malformed names and unsupported shapes remain explicit. Independent review, the normal staged hook and exact hosted CI are pending. The published String revision below remains the latest qualified code. Bytes/floating defaults, wider tooling, packaging and performance remain open; all 83 original mappings are unchanged."
+      "title": "Enum declarations and remaining Messages parity",
+      "detail": "The published enum slice preserves selected alias names and rejects malformed explicit default identifiers without changing reflection admission. Its 96 native controls include 69 supported layouts, ten matching malformed declarations and retained shape boundaries. The single normal hook passes 156 Rust tests, 7559 native JSON outcomes and all 1244 declaration observations. Production coverage is 3171/3191 lines and 5248/5338 regions, with 9/9 changed executable lines covered. Exact hosted CI is running. General malformed enum metadata, bytes/floating defaults, wider tooling, packaging and equal-work performance remain open; all 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
@@ -431,17 +431,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "88729e20bfa17bcc92badb9e03b5fe11e701689a",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/88729e20bfa17bcc92badb9e03b5fe11e701689a",
-    "rust_tests": 153,
+    "revision": "9764799c0ef0ca287c5953f4bb1df76ae7a37f59",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9764799c0ef0ca287c5953f4bb1df76ae7a37f59",
+    "rust_tests": 156,
     "coverage": {
       "lines": [
-        3161,
-        3181
+        3171,
+        3191
       ],
       "regions": [
-        5231,
-        5321
+        5248,
+        5338
       ]
     },
     "upstream": {
@@ -450,9 +450,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40883832013"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40889052828"
     },
-    "note": "Independent source and fresh focused review passed. The single normal staged hook passed all Rust/native tests, including the unchanged 594-row integer suite, formatting, Clippy, check regressions, downstream consumer, strict production/owned-vendor coverage and 1/1 changed executable lines. Exact hosted package and fresh-cache checks passed."
+    "note": "Independent source/native re-review passed, including the matching malformed-name boundary found during review. The single normal staged hook passed all Rust/native suites, downstream consumer, formatting, Clippy, strict production/owned-vendor coverage and 9/9 changed executable lines. Exact hosted package and fresh-cache checks remain pending."
   }
 }
