@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T19:43:57Z",
+  "updated_at": "2026-10-29T20:05:39Z",
   "state": "active",
   "summary": "Programmatic unbounded reduced-coordinate Rapier articulations passed independent review, strict staged checks and exact hosted CI. P3 continues with native position limits and broader articulation compatibility.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Native DART world-revolute position limits",
-      "detail": "Implementing finite limit edits and clearing through maintained DART joint APIs in an isolated candidate. Construction/reset values are separated from runtime edits; native conditioning and existing behavior must remain intact. Compilation passes; physical/native tests and independent review are still pending. Rapier finite-limit and offset-COM failure evidence remains open."
+      "title": "Qualifying native DART position-limit conditioning",
+      "detail": "An isolated limit-edit/reset implementation passes five new physical tests and the existing DART package. Independent subprocess probes found14 native aborts with tiny contacting constrained bodies;480 matched no-limit controls passed. Finite support remains unaccepted while admission and pre-solve conditioning are qualified. No tests, native safety guards, solver settings or tolerances were weakened."
     }
   ],
   "accepted_slices": [
