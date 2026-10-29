@@ -1,20 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T22:44:30Z",
+  "updated_at": "2026-10-29T23:25:28Z",
   "state": "active",
-  "summary": "Programmatic unbounded reduced-coordinate Rapier articulations passed independent review, strict staged checks and exact hosted CI. P3 continues with native position limits and broader articulation compatibility.",
+  "summary": "DART world-hinge effort is accepted; the reviewed MuJoCo effort extension passed strict local checks and is published with hosted qualification pending. P3 continues.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-04",
       "title": "Extending generalized effort to MuJoCo world hinges",
-      "detail": "A private direct generalized-force implementation passes seven physical/lifecycle controls, including changed DOF addresses and retained effort after native faults. Native C++ reference, boundary review, strict coverage and hosted qualification remain. DART effort is accepted at 1982aa0; finite limits and moving-parent actuation remain open."
+      "detail": "Eight physical/native/lifecycle controls, a twenty-hinge compile-count control and the real C++ SDK six-pulse oracle passed independent review. Mandatory staged checks passed 520 Rust and 90 tooling tests with strict per-crate coverage. Commit 91ba258 is published; exact hosted CI remains pending."
     },
     {
       "id": "PHY-05",
       "title": "Finite-limit numerical qualification remains open",
       "detail": "Private DART conditioning has isolation/rollback controls, but frozen-friction behavior, physical reference differences, native assertion domains and cost remain unqualified. Retained Rapier first-crossing and winding failures also remain unresolved. No tests, tolerances or solver settings were weakened; no finite-limit support is accepted."
+    },
+    {
+      "id": "PHY-03",
+      "title": "Hardening the native angular-constraint boundary",
+      "detail": "A private subprocess study reproduced native aborts when implicit default hinge limits combine tiny angular inertia with contacts. A narrower inverse-response guard passes the existing DART suite; regression, native characterization and independent review remain. No new safety or finite-limit support is accepted."
     }
   ],
   "accepted_slices": [
@@ -454,17 +459,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "1982aa06c78a020510774f4cb7ea1f978e073373",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1982aa06c78a020510774f4cb7ea1f978e073373",
-    "rust_tests": 511,
+    "revision": "91ba2581ff69b7cb835ff4e72241e177bda6e0f1",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/91ba2581ff69b7cb835ff4e72241e177bda6e0f1",
+    "rust_tests": 520,
     "coverage": {
       "lines": [
-        6875,
-        6943
+        6922,
+        6990
       ],
       "regions": [
-        10718,
-        10950
+        10795,
+        11027
       ]
     },
     "upstream": {
@@ -473,10 +478,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40965980708"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40972986397"
     },
-    "note": "Independent source, physical and native review, one mandatory staged hook and exact hosted CI passed for 1982aa0. There are 511 Rust tests and 89 tooling checks; all eleven production crates are strictly above 95% line/region coverage, with 45/45 changed production lines covered. Six actual C++ plugin effort observations match. Scope is DART world hinges; no new original-test credit, other-adapter, finite-limit or performance acceptance."
+    "note": "Independent source/native/FFI review and the normal staged hook passed: 520 Rust tests, 90 tooling checks, all eleven production crates strictly above 95% lines and regions, and 46/46 changed production lines covered. MuJoCo direct generalized force matches six C++ SDK pulses. Exact hosted acceptance is pending; no new original-test, finite-limit, moving-parent or performance credit."
   },
   "phase_status": {
     "P0": "in_progress",
