@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T14:12:10.320874+00:00",
+  "updated_at": "2026-10-29T14:26:33.952306+00:00",
   "state": "active",
-  "summary": "Ordinary enum declarations are published after independent review and strict local checks; exact hosted CI is running.",
+  "summary": "Ordinary enum declarations passed independent review, strict staged checks and exact hosted CI; broader Messages work remains active.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Enum declarations and remaining Messages parity",
-      "detail": "The published enum slice preserves selected alias names and rejects malformed explicit default identifiers without changing reflection admission. Its 96 native controls include 69 supported layouts, ten matching malformed declarations and retained shape boundaries. The single normal hook passes 156 Rust tests, 7559 native JSON outcomes and all 1244 declaration observations. Production coverage is 3171/3191 lines and 5248/5338 regions, with 9/9 changed executable lines covered. Exact hosted CI is running. General malformed enum metadata, bytes/floating defaults, wider tooling, packaging and equal-work performance remain open; all 83 original mappings are unchanged."
+      "title": "Remaining declaration and Messages compatibility",
+      "detail": "The published enum slice preserves selected alias names and rejects malformed explicit default identifiers without changing reflection admission. Its 96 native controls include 69 supported layouts, ten matching malformed declarations and retained shape boundaries. The single normal hook passes 156 Rust tests, 7559 native JSON outcomes and all 1244 declaration observations. Production coverage is 3171/3191 lines and 5248/5338 regions, with 9/9 changed executable lines covered. Exact hosted CI passed. General malformed enum metadata, bytes/floating defaults, wider tooling, packaging and equal-work performance remain open; all 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
@@ -417,6 +417,11 @@
       "title": "Native-exact ordinary valid-UTF8 proto2 string default declarations",
       "commit": "88729e20bfa17bcc92badb9e03b5fe11e701689a",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/88729e20bfa17bcc92badb9e03b5fe11e701689a"
+    },
+    {
+      "title": "Ordinary proto2 enum defaults with preserved aliases and explicit identifier rejection",
+      "commit": "9764799c0ef0ca287c5953f4bb1df76ae7a37f59",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9764799c0ef0ca287c5953f4bb1df76ae7a37f59"
     }
   ],
   "remaining": [
@@ -450,9 +455,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40889052828"
     },
-    "note": "Independent source/native re-review passed, including the matching malformed-name boundary found during review. The single normal staged hook passed all Rust/native suites, downstream consumer, formatting, Clippy, strict production/owned-vendor coverage and 9/9 changed executable lines. Exact hosted package and fresh-cache checks remain pending."
+    "note": "Independent source/native re-review passed, including the matching malformed-name boundary found during review. The single normal staged hook passed all Rust/native suites, downstream consumer, formatting, Clippy, strict production/owned-vendor coverage and 9/9 changed executable lines. Exact hosted package and fresh-cache checks passed."
   }
 }
