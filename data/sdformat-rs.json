@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T18:01:40Z",
+  "updated_at": "2026-10-29T18:06:45Z",
   "state": "active",
   "summary": "Typed Altimeter XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 178 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Implement bounded AirPressure XML and standalone Sensor output",
-      "detail": "Next family preserves current typed pressure Noise and reference-altitude metadata through existing parser/XML helpers. Preserve configured and edited altitude assertions, actual native exchanges/quiet checks, shared serializer bytes and narrow constructor-input mappings. No atmospheric calculation, Joint sensor admission or consumer pin changes are implied."
+      "title": "Review AirPressure XML and standalone Sensor output",
+      "detail": "Working-tree candidate passes 451 author Rust tests and Clippy, seventeen native outcomes, fifteen actual XML exchanges, exact fixture and both unchanged originals. All 24 prior FT/IMU/Altimeter exports stay byte-identical. Exact constructor-only mapping, original four-ULP altitude/noise assertions and actual quiet controls are under independent review. Strict staged and hosted gates remain pending; accepted ledger stays 178 complete/28 partial."
     }
   ],
   "accepted_slices": [
