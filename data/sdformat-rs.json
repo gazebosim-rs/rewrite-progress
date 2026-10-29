@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T19:39:50Z",
+  "updated_at": "2026-10-29T19:42:29Z",
   "state": "active",
-  "summary": "Typed AirSpeed XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 183 complete and 28 partial mappings; full compatibility remains in development.",
+  "summary": "Canonical Lidar metadata/XML and CPU/GPU Sensor output are accepted with exact hosted CI success. The ledger has 184 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed canonical Lidar metadata/XML",
-      "detail": "Published candidate c25d7ce passed independent 48-test review, thirty-four native outcomes, thirty-one actual exchanges, exact fixture/original. Single normal staged hook passed 468 Rust and seventeen tooling tests, 6397/6432 lines and 10160/10405 regions; actual changed lines 105/105. Exact hosted run 40942082571 is in progress. Accepted remains 183 complete/28 partial; candidate 184/28 only after success. Inverted metadata, five advanced +0-bit guards and canonical/legacy boundaries stay explicit."
+      "title": "Connect bounded Camera XML to canonical Sensor output",
+      "detail": "Reuse the accepted base-camera writer and all existing optics/name/precision guards for canonical camera Sensor envelopes. Native preflight matches all 34 accepted base projections/statuses; new actual exchanges will cover both poses and envelope data. Keep plugins/Joint restrictions and unnamed-value rejection explicit; no extra upstream-original credit or rendering/runtime claim is inferred."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize canonical Lidar metadata and standalone sensors",
+      "commit": "c25d7ce0f8dc6a977c040d9820d541240cf4b510",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c25d7ce0f8dc6a977c040d9820d541240cf4b510"
+    },
     {
       "title": "Serialize typed AirSpeed configurations and standalone sensors",
       "commit": "a17fcaa899eeba8795454dfd13527739fd942397",
@@ -705,28 +710,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a17fcaa899eeba8795454dfd13527739fd942397",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a17fcaa899eeba8795454dfd13527739fd942397",
-    "rust_tests": 463,
+    "revision": "c25d7ce0f8dc6a977c040d9820d541240cf4b510",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c25d7ce0f8dc6a977c040d9820d541240cf4b510",
+    "rust_tests": 468,
     "coverage": {
       "lines": [
-        6288,
-        6324
+        6397,
+        6432
       ],
       "regions": [
-        10039,
-        10291
+        10160,
+        10405
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 183,
+      "ported": 184,
       "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40937248025"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40942082571"
     },
-    "note": "Single normal staged hook and exact hosted CI passed 463 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 42/42. Independent review passed 43 relevant Rust checks, fourteen native outcomes, twelve exchanges, exact fixture and original. All 71 prior-byte comparisons remain author evidence. Default/configured/edited Noise, no-Errors ABI and scoped constructor mapping are preserved; no runtime calculation is claimed."
+    "note": "Single normal staged hook and exact hosted CI passed 468 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 105/105. Independent review passed 48 relevant Rust checks, thirty-four native outcomes, thirty-one exchanges, exact fixture and original. All 83 prior-byte comparisons remain author evidence. Inverted metadata, five advanced +0-bit guards and canonical/legacy boundaries are explicit; no ray generation or ordering policy claim."
   }
 }
