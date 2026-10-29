@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T23:40:07.495374+00:00",
+  "updated_at": "2026-10-29T23:47:56.785009+00:00",
   "state": "active",
-  "summary": "Extension-range formatting is accepted; the separate fixed32 Float_V wire qualification candidate is under independent review.",
+  "summary": "Extension-range formatting is accepted; independently reviewed fixed32 Float_V qualification is running the strict staged gate.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Packed Float_V fixed32 wire qualification",
-      "detail": "A separate 61-case corpus agrees between fresh canonical and installed native parsers: 31 compatible/native accepts, 28 strict accepts and 30 rejects. Author six old/new Rust checks, old 64-case fixed64 replay and all-target Clippy pass. Exact bits, Header/data tags, raw forwarding, typed known serialization and Rust-only partial-state/cursor controls are covered. Independent review is underway. Production runtime, old peer/include/schema/header/fixed64 inputs and all upstream mappings remain unchanged."
+      "detail": "Independent fresh-source review passed six old/new Rust checks, all 61 complete canonical/installed native observations and the unchanged 64-case fixed64 replay. Exact f32 bits, Header/data tags, raw forwarding, typed known serialization and Rust-only partial-state/cursor controls are covered. The normal strict staged gate is running; no candidate acceptance or performance credit is claimed. Production runtime, dependencies, old peer/schema/header/fixed64 inputs and all 83 upstream mappings remain unchanged."
     },
     {
       "id": "MSG-02-upstream",
