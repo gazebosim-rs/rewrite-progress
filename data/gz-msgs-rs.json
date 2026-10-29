@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T17:47:44.455444+00:00",
+  "updated_at": "2026-10-29T18:02:04.927991+00:00",
   "state": "active",
-  "summary": "Representative codec baseline accepted after independent fidelity/compiler/measurement review, strict staged checks and exact hosted CI. Profiling the packed LaserScan regression is under development.",
+  "summary": "The 45-case codec baseline is accepted. An isolated upstream-runtime encode optimization is under review; packed decode and broader MSG-02 work remain open.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Profile packed LaserScan codec regression",
-      "detail": "Accepted baseline preserves 45 equal-work codec/envelope cases and all 450 paired samples, including slower Rust LaserScan results. Exact hosted CI passed for 45f29b7. Diagnostic userspace sampling now identifies the packed-double runtime path as dominant across fresh/reused modes; actual allocation profiling is underway before selecting a maintained-runtime optimization. No broad performance or MSG-02 acceptance claim."
+      "title": "Review isolated packed fixed-width runtime experiment",
+      "detail": "Actual userspace CPU and heap profiling identified prost packed-double loops. Thin LTO did not resolve the issue. An isolated five-line helper experiment using maintained bytes/bytemuck primitives passed independent correctness review, all 413 upstream tests, six strengthened bit/chunk/cursor controls and all 45 C++/Rust work cases. Complete paired before/after, dependency-only control and native-relative reports are awaiting independent measurement review. Local encoding gains coexist with remaining decode/roundtrip deficits and modest unchanged-path regressions. No production dependency/vendor change or broad speedup acceptance."
     }
   ],
   "accepted_slices": [
