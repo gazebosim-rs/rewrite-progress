@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T18:51:27.177711+00:00",
+  "updated_at": "2026-10-29T18:54:41.071145+00:00",
   "state": "active",
-  "summary": "Packed-f64 qualification is published after independent review and strict staged checks; exact hosted CI is running. Native field-option behavior is now under development.",
+  "summary": "Packed-f64 qualification is accepted after exact hosted CI. Development continues on native-backed standard field-option formatting; the runtime optimization remains an unadopted upstream draft.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Packed-f64 hosted qualification; native field options next",
-      "detail": "Published 075a903 retains the original 70-case wire corpus and adds 64 native observations plus exact partial-state/chunk controls. Its strict local gate passed; exact hosted CI remains pending. The next behavior task characterizes 124 native standard-field-option cases and implements only justified boolean formatting through existing helpers, preserving raw metadata, loader/wire behavior and old assertions."
+      "title": "Native standard field-option formatting",
+      "detail": "The accepted packed-f64 slice adds 64 native observations while preserving the original 70-case corpus. The next task characterized 124 native descriptor cases and exact CLI outputs for standard lazy/unverified_lazy/weak field options. Rust registry admission remains broader than native for invalid shapes; any new formatter support must retain explicit rejection and existing error precedence. No decoder/dependency or old assertion change."
     },
     {
       "id": "MSG-02-upstream",
@@ -442,6 +442,11 @@
       "title": "Representative native/Rust equal-work codec baseline and effective compiler controls",
       "commit": "45f29b7b333e9187f16e5a542241eacf80cb6ff7",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/45f29b7b333e9187f16e5a542241eacf80cb6ff7"
+    },
+    {
+      "title": "Native packed-f64 bit/framing qualification and exact Rust partial-state boundaries",
+      "commit": "075a9031718ff6fa693b1703d996a6acc27314fe",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/075a9031718ff6fa693b1703d996a6acc27314fe"
     }
   ],
   "remaining": [
@@ -476,9 +481,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40932618554"
     },
-    "note": "Independent fresh-source/target review and the single normal staged hook passed, including all 164 Rust tests, 64 actual native packed-f64 observations, strict production/vendor coverage and the unchanged clean no-patch consumer. Exact hosted source-package/fresh-cache qualification is running. Production decoder/dependencies and original 83 upstream mappings are unchanged."
+    "note": "Independent fresh-source/target review, the single normal staged hook and exact hosted source-package/fresh-cache CI passed. All 164 Rust tests, 64 native packed-f64 observations, strict coverage and the unchanged clean no-patch consumer pass. Production decoder/dependencies and original 83 upstream mappings remain unchanged."
   }
 }
