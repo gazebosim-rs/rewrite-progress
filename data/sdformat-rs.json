@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T13:27:31Z",
+  "updated_at": "2026-10-29T13:50:54Z",
   "state": "active",
-  "summary": "Complete joint-pose conformance is accepted and hosted CI passes. The ledger now has 172 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
+  "summary": "Standalone axis XML is under review. Native/Rust XML exchange passes; a documented normalization difference preserves the existing Rust unit-axis policy.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Continue robotics and retained SDFormat conformance",
-      "detail": "The accepted DOMJoint.Complete port preserves all nine indexed raw poses, exact loaded screw-joint identity and classic pitch 20 on the existing unchanged fixture. Root independently replayed native and fresh Rust originals and reviewed the narrowly scoped loaded-source mapping. Remaining work includes complete joint/axis serialization, retained schema/version conversions, automatic inertia and remaining original mappings. Generic Element/constructor semantics and physics execution are separate contracts."
+      "title": "Review typed standalone axis XML roundtrips",
+      "detail": "The candidate reads and writes direction/frame, dynamics, limits/stops and mimic metadata without resolving a model graph. All 409 candidate Rust tests and Clippy pass. Native output regenerates byte for byte, and actual Rust output loads in native JointAxis with the original values. Seventeen native outcomes retain sixteen exact matches and one named XYZ difference at magnitude 1e-6; native raw bits and the protected Rust UnitX assertion are both preserved. Independent source/native/error-boundary review, strict staged coverage and hosted CI remain required. Accepted mappings stay 172 complete and 25 partial."
     }
   ],
   "accepted_slices": [
