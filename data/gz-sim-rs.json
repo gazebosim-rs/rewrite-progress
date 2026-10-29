@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T18:36:49Z",
+  "updated_at": "2026-10-29T19:07:34Z",
   "state": "active",
   "summary": "Acyclic Rapier articulation and top-level model contact defaults passed independent review, strict staged verification and exact hosted CI. P3 remains open for limits and native articulation.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Finite joint limits and reduced-coordinate solver qualification",
-      "detail": "Construction-time limits are implemented in an isolated candidate but remain unaccepted: stronger torque/wrap tests found impulse-solver overshoot and lost winding near a full turn. Native DART controls retain the bounds. Maintained Rapier multibody coordinates avoid winding loss in exploratory probes; topology, lifecycle, fidelity and scoped solver cost still need qualification. Existing assertions, accepted solver behavior and production settings remain unchanged."
+      "title": "Reduced-coordinate articulation implementation and physics qualification",
+      "detail": "An isolated additive centered-inertia Rapier multibody implementation is ready for independent review: all57 Rapier tests, real DART/MuJoCo Unsupported controls and Clippy pass. New tests cover continuous coordinates, actual torque, frames, contacts, live splits, both resets and atomic admission. Default solver settings and existing impulse/scene behavior are preserved. Offset-COM and finite-limit failures remain explicitly retained as open scope; no new capability or speedup is counted yet."
     }
   ],
   "accepted_slices": [
