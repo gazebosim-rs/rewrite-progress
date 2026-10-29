@@ -1,16 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T23:25:28Z",
+  "updated_at": "2026-10-29T23:42:01Z",
   "state": "active",
-  "summary": "DART world-hinge effort is accepted; the reviewed MuJoCo effort extension passed strict local checks and is published with hosted qualification pending. P3 continues.",
+  "summary": "Deferred world-hinge effort is accepted on DART and MuJoCo after independent native review, strict local checks and exact hosted CI. P3 remains in progress.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
-    {
-      "id": "PHY-04",
-      "title": "Extending generalized effort to MuJoCo world hinges",
-      "detail": "Eight physical/native/lifecycle controls, a twenty-hinge compile-count control and the real C++ SDK six-pulse oracle passed independent review. Mandatory staged checks passed 520 Rust and 90 tooling tests with strict per-crate coverage. Commit 91ba258 is published; exact hosted CI remains pending."
-    },
     {
       "id": "PHY-05",
       "title": "Finite-limit numerical qualification remains open",
@@ -427,6 +422,11 @@
       "title": "Deferred DART world-hinge effort with atomic preparation, reset/retirement and C++ force-pulse parity",
       "commit": "1982aa06c78a020510774f4cb7ea1f978e073373",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1982aa06c78a020510774f4cb7ea1f978e073373"
+    },
+    {
+      "title": "Deferred MuJoCo world-hinge effort with direct generalized force, stable DOF remapping and six native C++ SDK pulses",
+      "commit": "91ba2581ff69b7cb835ff4e72241e177bda6e0f1",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/91ba2581ff69b7cb835ff4e72241e177bda6e0f1"
     }
   ],
   "remaining": [
@@ -478,10 +478,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40972986397"
     },
-    "note": "Independent source/native/FFI review and the normal staged hook passed: 520 Rust tests, 90 tooling checks, all eleven production crates strictly above 95% lines and regions, and 46/46 changed production lines covered. MuJoCo direct generalized force matches six C++ SDK pulses. Exact hosted acceptance is pending; no new original-test, finite-limit, moving-parent or performance credit."
+    "note": "Independent source/native/FFI review, the normal staged hook and exact hosted CI passed: 520 Rust tests, 90 tooling checks, all eleven production crates strictly above 95% lines and regions, and 46/46 changed production lines covered. MuJoCo direct generalized force matches six C++ SDK pulses. Scope is existing world hinges; no new original-test, finite-limit, moving-parent or performance credit."
   },
   "phase_status": {
     "P0": "in_progress",
