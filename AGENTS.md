@@ -18,3 +18,6 @@ The user requested an online tracker and instructed repository agents to update 
 - Run `python3 scripts/update-status.py <repository> <status-json> --dry-run`, then
   the same command without `--dry-run` to publish. Network permission may be needed.
 - Do not modify the Fuel implementation. Its owner reports its own status.
+- Write summaries, details and remaining scope as plain sentences that the owner
+  and the next agent can read; do not use compressed shorthand or internal IDs.
+
