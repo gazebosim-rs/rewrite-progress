@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:26:37Z",
+  "updated_at": "2026-10-29T17:34:09Z",
   "state": "active",
   "summary": "Bounded base-camera XML and native parser corrections are accepted with exact hosted CI success. The ledger has 169 complete and 35 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Accepted base-camera output preserves the retained ToElement surface and exact non-pose metadata. Native controls corrected parser aliases/defaults and caught signed-zero/path validation loss. Remaining work includes advanced optics, Camera Sensor/Joint output, other sensor families, generic Element/input-origin contracts, full schema conversion and automatic inertia. A precise residual-assertion audit will distinguish faithful Result/XML translations from genuine missing state; no count promotion is inferred."
+      "title": "Review exact ToElement assertion translations",
+      "detail": "Seven existing Frame/Physics/ForceTorque/Camera original mappings are under independent review with actual Frame/Physics empty-console checks and direct signed quaternion bounds. All 441 author Rust tests, seventeen tooling tests, Clippy and nine unchanged native originals pass. Candidate 176 complete/28 partial is not accepted; public accepted baseline remains 169/35. IMU/Light input-origin state and Joint type-none sensor assertions remain concrete open scope."
     }
   ],
   "accepted_slices": [
