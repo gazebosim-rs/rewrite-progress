@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:45:42Z",
+  "updated_at": "2026-10-29T17:48:09Z",
   "state": "active",
-  "summary": "Bounded base-camera XML and native parser corrections are accepted with exact hosted CI success. The ledger has 169 complete and 35 partial mappings; full compatibility remains in development.",
+  "summary": "Seven original ToElement cases now have independently reviewed complete Rust assertion mappings with exact hosted CI success. The ledger has 176 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed ToElement assertion translations",
-      "detail": "Published candidate 91c8c33 passed independent review with 15 Rust tests, nine native originals and two adversarial controls, then the normal strict hook with 441 Rust and seventeen tooling tests. Coverage remains 6021/6057 lines and 9645/9907 regions; no production source changed. Exact hosted run 40924365122 is queued. Seven candidate complete mappings would move 169/35 to 176/28 only after CI success. IMU/Light input-origin and Joint type-none sensor assertions stay partial."
+      "title": "Implement bounded Altimeter XML and standalone sensor output",
+      "detail": "Next substantive family reuses typed Altimeter noise records and existing parser/shared XML helpers, with exact original assertions, actual native exchanges and console controls. Preserve FT/IMU output, Joint force-torque-only admission, explicit runtime boundaries and case-specific input-origin mappings. IMU/Light origin and Joint type-none sensor assertions remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Complete seven faithful ToElement assertion translations",
+      "commit": "91c8c331fc26d48f1e324e93dea08ce48b498e43",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/91c8c331fc26d48f1e324e93dea08ce48b498e43"
+    },
     {
       "title": "Serialize bounded base cameras with native parser defaults",
       "commit": "b21cc2c4612494f89450836f5110843123ff56f7",
@@ -675,8 +680,8 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "b21cc2c4612494f89450836f5110843123ff56f7",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b21cc2c4612494f89450836f5110843123ff56f7",
+    "revision": "91c8c331fc26d48f1e324e93dea08ce48b498e43",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/91c8c331fc26d48f1e324e93dea08ce48b498e43",
     "rust_tests": 441,
     "coverage": {
       "lines": [
@@ -690,13 +695,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 169,
-      "partial": 35
+      "ported": 176,
+      "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40921016702"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40924365122"
     },
-    "note": "Normal unchanged staged gate and exact hosted CI passed 441 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; actual changed lines 214/214. Independent review passed 22 repository tests plus both private regressions, all 34 native outcomes and 26 exchanges. Parser corrections retain constructor values and all old assertions. One new original mapping remains partial for input-Element residue pending explicit mapping review; no advanced optics or rendering/runtime claim."
+    "note": "Single normal staged hook and exact hosted CI passed 441 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage. No production source changed. Independent review replayed 15 relevant Rust tests and nine unchanged native originals; two adversarial controls confirm quiet checks reject stdout/stderr noise. Seven exact output/constructor mappings complete; no general Element equivalence or runtime claim."
   }
 }
