@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T17:34:25.885402+00:00",
+  "updated_at": "2026-10-29T17:47:44.455444+00:00",
   "state": "active",
-  "summary": "Representative codec baseline is published after independent review and strict local gates; exact hosted qualification is running. Packed LaserScan profiling is next.",
+  "summary": "Representative codec baseline accepted after independent fidelity/compiler/measurement review, strict staged checks and exact hosted CI. Profiling the packed LaserScan regression is under development.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Codec baseline awaiting hosted qualification",
-      "detail": "Published 45 codec/envelope cases from ten randomized paired repeats with full wire/work fidelity, effective compiler records and uncertainty. Independent build/measurement review passed, including eight controlled failure/compiler checks, 77 fresh compiler invocations and all 450 paired samples. The single normal Main gate passed full existing suites, all 45 non-timing fidelity controls and strict unchanged production coverage. Exact hosted qualification remains pending. Packed LaserScan results are slower on Rust and remain visible; profiling actual hot paths is next, with no broad performance or MSG-02 acceptance claim."
+      "title": "Profile packed LaserScan codec regression",
+      "detail": "Accepted baseline preserves 45 equal-work codec/envelope cases and all 450 paired samples, including slower Rust LaserScan results. Exact hosted CI passed for 45f29b7. Diagnostic userspace sampling now identifies the packed-double runtime path as dominant across fresh/reused modes; actual allocation profiling is underway before selecting a maintained-runtime optimization. No broad performance or MSG-02 acceptance claim."
     }
   ],
   "accepted_slices": [
@@ -432,6 +432,11 @@
       "title": "Ordinary proto2 floating declarations using std-backed native precision/layout policy",
       "commit": "38a44f0c39228b97e9f7af2f5152d01a8f9cc31c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/38a44f0c39228b97e9f7af2f5152d01a8f9cc31c"
+    },
+    {
+      "title": "Representative native/Rust equal-work codec baseline and effective compiler controls",
+      "commit": "45f29b7b333e9187f16e5a542241eacf80cb6ff7",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/45f29b7b333e9187f16e5a542241eacf80cb6ff7"
     }
   ],
   "remaining": [
@@ -466,9 +471,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40922307492"
     },
-    "note": "Independent fidelity, effective compiler/settings and final measurement review passed. The single normal Main staged hook passed all existing Rust/native/tooling checks plus eight compiler/failure controls and 45 actual non-timing codec work cases. Production code, dependencies, schemas and original assertions remain unchanged; exact hosted source-package/fresh-cache qualification is still running."
+    "note": "Independent fidelity, effective compiler/settings and final measurement review passed. The single normal Main hook and exact hosted CI passed all existing Rust/native/tooling checks, eight compiler/failure controls, 45 actual non-timing codec work cases and source-package/fresh-cache qualification. Production code, dependencies, schemas and original assertions are unchanged. The mixed benchmark results include slower packed LaserScan operations; MSG-02 remains open."
   }
 }
