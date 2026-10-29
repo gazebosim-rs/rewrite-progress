@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T19:07:34Z",
+  "updated_at": "2026-10-29T19:30:20Z",
   "state": "active",
-  "summary": "Acyclic Rapier articulation and top-level model contact defaults passed independent review, strict staged verification and exact hosted CI. P3 remains open for limits and native articulation.",
+  "summary": "Unbounded reduced-coordinate Rapier articulations passed independent review and the normal strict staged gate; exact hosted CI is pending. P3 remains open for finite limits, offset COM and native body trees.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Reduced-coordinate articulation implementation and physics qualification",
-      "detail": "An isolated additive centered-inertia Rapier multibody implementation is ready for independent review: all57 Rapier tests, real DART/MuJoCo Unsupported controls and Clippy pass. New tests cover continuous coordinates, actual torque, frames, contacts, live splits, both resets and atomic admission. Default solver settings and existing impulse/scene behavior are preserved. Offset-COM and finite-limit failures remain explicitly retained as open scope; no new capability or speedup is counted yet."
+      "title": "Hosted qualification of unbounded reduced-coordinate articulations",
+      "detail": "Published50b28e5 after independent source/physical review and502 Rust/88tooling checks. All eleven production crates exceed95% line/region coverage; exact hosted40940534150 is pending, so this slice is not yet counted accepted. Existing impulse APIs, scene selection and solver settings are preserved. Finite-limit and offset-COM failure evidence remains explicit open scope."
     }
   ],
   "accepted_slices": [
@@ -439,17 +439,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "6397aa2fd0c3428b509e992702a058898455d7e1",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/6397aa2fd0c3428b509e992702a058898455d7e1",
-    "rust_tests": 486,
+    "revision": "50b28e5326dcb18b78ca62f81f528d06b01688fd",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/50b28e5326dcb18b78ca62f81f528d06b01688fd",
+    "rust_tests": 502,
     "coverage": {
       "lines": [
-        6551,
-        6617
+        6829,
+        6897
       ],
       "regions": [
-        10228,
-        10458
+        10642,
+        10874
       ]
     },
     "upstream": {
@@ -458,10 +458,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40925347408"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40940534150"
     },
-    "note": "Independent before-fail/after-pass review, normal staged hook and exact hosted40925347408 passed486 Rust/88tooling. Every production crate exceeds95%line/region coverage; changed scene lines2/2. Top-level multi-direct-link Rapier models now preserve native default internal-contact exclusion without requiring joints. Native/nested policy and scene input admission remain unchanged. No numerical solver parity or new performance claim."
+    "note": "Independent fresh58-test Rapier replay plus rotating-axis control and14/12 real native checks passed. Normal staged hook passed502 Rust/88tooling; changed physics12/12 and Rapier280/282. All production crates exceed95%lines/regions. Exact hosted40940534150 remains pending; no new upstream case credit, scene adoption, finite-limit/general COM capability or performance claim."
   },
   "phase_status": {
     "P0": "in_progress",
