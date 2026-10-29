@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T20:04:23.253503+00:00",
+  "updated_at": "2026-10-29T20:09:44.470759+00:00",
   "state": "active",
   "summary": "Packed-f64 qualification is accepted after exact hosted CI. Development continues on native-backed standard field-option formatting; the runtime optimization remains an unadopted upstream draft.",
   "model": "Messages implementation agent",
@@ -9,7 +9,7 @@
     {
       "id": "MSG-02",
       "title": "Native standard field-option formatting",
-      "detail": "Independent review approved the seven-path native field-option slice after fresh source/target tests and all 354 complete native peer/CLI observations. Author 32 focused tests and Clippy passed. The single normal strict Main commit gate is running; exact hosted CI must pass before acceptance. Three standard metadata flags are added with explicit invalid-shape rejection; parsing, wire behavior, dependencies and all 83 upstream mappings remain unchanged."
+      "detail": "Independent review and the single normal strict Main gate passed. Commit 8da0695 is public; its exact hosted CI is running. All 165 Rust tests, 354 native field-option observations, unchanged no-patch downstream consumer and coverage gates passed locally; changed production lines are 16/16 covered. Acceptance remains pending exact hosted success."
     },
     {
       "id": "MSG-02-upstream",
@@ -462,17 +462,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "075a9031718ff6fa693b1703d996a6acc27314fe",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/075a9031718ff6fa693b1703d996a6acc27314fe",
-    "rust_tests": 164,
+    "revision": "8da0695e9826d0e4bf9f5b440bb205ce1d62efee",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8da0695e9826d0e4bf9f5b440bb205ce1d62efee",
+    "rust_tests": 165,
     "coverage": {
       "lines": [
-        3212,
-        3233
+        3229,
+        3250
       ],
       "regions": [
-        5337,
-        5427
+        5357,
+        5447
       ]
     },
     "upstream": {
@@ -481,9 +481,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40932618554"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40946448474"
     },
-    "note": "Independent fresh-source/target review, the single normal staged hook and exact hosted source-package/fresh-cache CI passed. All 164 Rust tests, 64 native packed-f64 observations, strict coverage and the unchanged clean no-patch consumer pass. Production decoder/dependencies and original 83 upstream mappings remain unchanged."
+    "note": "Published reviewed slice passed one normal strict staged gate, all 165 Rust tests, native declarations and unchanged clean downstream consumer. Production totals cover all 19 owned files; changed production lines are 16/16. Exact hosted qualification remains pending; accepted slice list is unchanged."
   }
 }
