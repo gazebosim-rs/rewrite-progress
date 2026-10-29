@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T12:08:47Z",
+  "updated_at": "2026-10-29T12:15:40Z",
   "state": "active",
-  "summary": "The selected headless milestone is complete. Physics work continues with DART server reset comparisons and independent repository work.",
+  "summary": "The selected headless milestone is complete. DART server reset comparisons and runtime-library tests are published; exact hosted verification is pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-03",
-      "title": "DART server reset and runtime library tests",
-      "detail": "Run the existing native reset observations on DART as well as Rapier, and verify server test binaries load the pinned native library."
+      "title": "Hosted verification of DART server reset comparisons",
+      "detail": "Published fifteen backend/scenario comparisons with every existing assertion preserved. The mandatory staged gate passed 450 Rust and 88 tooling tests; all eleven production crates exceeded strict coverage thresholds."
     }
   ],
   "accepted_slices": [
@@ -394,17 +394,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "85dd4ab6a5902cec88c968f9524e94795237aecc",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/85dd4ab6a5902cec88c968f9524e94795237aecc",
-    "rust_tests": 448,
+    "revision": "c9449ac51c3a16d405b6fce88f69880fc373f70d",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c9449ac51c3a16d405b6fce88f69880fc373f70d",
+    "rust_tests": 450,
     "coverage": {
       "lines": [
-        3985,
-        4027
+        6221,
+        6288
       ],
       "regions": [
-        6132,
-        6277
+        9745,
+        9973
       ]
     },
     "upstream": {
@@ -413,10 +413,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40697592148"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40871693297"
     },
-    "note": "Hosted CI 40697592148 (OSRF DART packages and a from-source MuJoCo build) and the local staged gate passed at this commit: all production crates strictly above 95% lines and regions, every changed line covered. P2 is closed for the selected world only; broader packets remain open."
+    "note": "The mandatory exact staged gate passed: 450 Rust tests and 88 tooling tests, all eleven production crates strictly above 95% lines and regions, changed executable lines 7/7. Three ignored child-entry helpers are invoked by their parent tests. Hosted CI for this published commit is pending; wider physics and release scope remain open."
   },
   "phase_status": {
     "P0": "in_progress",
