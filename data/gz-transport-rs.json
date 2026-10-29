@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T12:21:40.431671+00:00",
+  "updated_at": "2026-10-29T12:32:07.550621+00:00",
   "state": "active",
-  "summary": "The discovered ServiceListRemap port is published; its exact hosted check is running. The topic-list remap mapping is next.",
+  "summary": "Both discovered remap-list mappings are published and independently reviewed. Exact latest hosted verification is running.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Published e143a6b has 88 complete and 18 partial upstream mappings. Wider discovery, callbacks, service, lifecycle and network contracts remain open."
+      "detail": "Published 648d7cb has 89 complete and 17 partial upstream mappings. Wider discovery, callbacks, service, lifecycle and network contracts remain open."
     },
     {
       "id": "NET-02",
-      "title": "Remapped discovery listing assertions",
-      "detail": "ServiceListRemap now uses known_services for the original one-node list predicates, with a separate withdrawal/recreation supplement. Independent review and the normal staged gate passed. Hosted run40872346161 is running. The next bounded task adds equivalent TopicListRemap predicates through known_topics while retaining its older local-list test. No broader registry, remote convergence or latency acceptance."
+      "title": "Hosted verification of discovered remap lists",
+      "detail": "ServiceListRemap and TopicListRemap now exercise known_services and known_topics for their exact one-Node predicates. Older local-inspection tests remain, and separate lifecycle checks cover service withdrawal/recreation and subscriber-only topic visibility. Independent source/runtime/docs review and normal staged gates passed. Latest hosted run40873762561 is running; no hosted success is claimed."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Remapped topic listing through discovered query, preserving subscriber-only visibility and the original local test",
+      "commit": "648d7cb850b1082b45372b30edce907dcb8305c0",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/648d7cb850b1082b45372b30edce907dcb8305c0"
+    },
     {
       "title": "Remapped service listing through the discovered worker query, retaining the local test and separate lifecycle checks",
       "commit": "e143a6b823cf2b3721d2c207b00dd276bbb32020",
@@ -465,28 +470,28 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "e143a6b823cf2b3721d2c207b00dd276bbb32020",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/e143a6b823cf2b3721d2c207b00dd276bbb32020",
-    "rust_tests": 278,
+    "revision": "648d7cb850b1082b45372b30edce907dcb8305c0",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/648d7cb850b1082b45372b30edce907dcb8305c0",
+    "rust_tests": 280,
     "coverage": {
       "lines": [
         2988,
         3047
       ],
       "regions": [
-        4395,
+        4394,
         4565
       ]
     },
     "upstream": {
       "total": 418,
-      "ported": 88,
-      "partial": 18
+      "ported": 89,
+      "partial": 17
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40872346161"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40873762561"
     },
-    "note": "The normal staged hook passed 278 Rust checks, 24 tooling checks and required native C++ interoperability. Coverage is 2988/3047 production lines and 4395/4565 regions; this test-only slice changes no executable production lines. Focused author tests passed the old local-list check and both new checks; the unchanged native original passed. Independent reviewers compared the original source and replayed the new tests. Hosted verification is running, not yet successful. There are 88 complete, 18 partial and 312 pending original cases; broad NET-01/NET-02 completion and performance remain open."
+    "note": "The normal staged hook passed 280 Rust checks, 24 tooling checks and all required native C++ interoperability tests. Coverage is 2988/3047 production lines and 4394/4565 regions; neither remap-list slice changes executable production lines, dependencies or gates. Both selected originals were independently compared and replayed; older local-list tests remain unchanged. Hosted verification for the exact latest commit is running. Branch concurrency supersedes earlier runs, so the older service-only run is not claimed as hosted success. There are 89 complete, 17 partial and 312 pending original cases. Wider NET-01/NET-02, convergence and general latency remain open."
   }
 }
