@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T14:36:25Z",
+  "updated_at": "2026-10-29T14:39:13Z",
   "state": "active",
-  "summary": "All four retained engines passed selected real C++ headless interoperability. Programmatic Rapier body-to-body revolutes are published with strict local checks passed; exact hosted CI is running.",
+  "summary": "Selected real C++ headless interoperability passed on all four retained engines. Rapier body-to-body revolutes now also passed strict staged checks and exact hosted CI; bounded two-link SDF loading is under development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Body-to-body revolute primitive",
-      "detail": "Published Rapier moving/fixed-parent constraints with relative samples, endpoint retirement and prepared reset. Independent review and normal staged gate passed 463 Rust tests and 88 tooling tests. Exact hosted CI is running. SDF link-tree wiring and native body-joint adapters remain open."
+      "title": "Bounded two-link SDF body-joint loading",
+      "detail": "The reviewed Rapier body-joint primitive passed exact hosted CI. A new scene regression reproduced the previous topology rejection; initial two-link lowering now passes that reset/removal test. Moving-endpoint, frame and unsupported-topology tests, independent review and strict gates remain before scene acceptance. Native body-joint adapters and larger-tree collision policy remain open."
     }
   ],
   "accepted_slices": [
@@ -382,6 +382,11 @@
       "title": "Real C++ headless interoperability qualified on TPE, Rapier, DART and MuJoCo",
       "commit": "ca37d5ce08e0290b594f17ae9e7742b1752f451d",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ca37d5ce08e0290b594f17ae9e7742b1752f451d"
+    },
+    {
+      "title": "Full-f64 Rapier body-to-body revolutes with rotating-parent samples and reset/removal safety",
+      "commit": "26ca44f0272f8697ef345bf778e8ad1467181ec4",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/26ca44f0272f8697ef345bf778e8ad1467181ec4"
     }
   ],
   "remaining": [
@@ -433,10 +438,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40891584298"
     },
-    "note": "Independent review and normal staged hook passed: 463 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage. Changed executable lines cover 12/12 shared-contract and 127/127 Rapier lines. Actual body-to-body constraints include rotating-parent, reset, endpoint removal and atomic rejection tests. Native DART/MuJoCo return explicit Unsupported for this new primitive. SDF joint-tree loading remains open. Exact hosted CI is pending; previously accepted four-engine C++ interoperability remains qualified at ca37d5c."
+    "note": "Independent review and normal staged hook passed: 463 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage. Changed executable lines cover 12/12 shared-contract and 127/127 Rapier lines. Actual body-to-body constraints include rotating-parent, reset, endpoint removal and atomic rejection tests. Native DART/MuJoCo return explicit Unsupported for this new primitive. SDF joint-tree loading remains open. Exact hosted CI 40891584298 passed; previously accepted four-engine C++ interoperability remains qualified at ca37d5c."
   },
   "phase_status": {
     "P0": "in_progress",
