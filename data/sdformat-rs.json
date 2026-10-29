@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T12:18:45Z",
+  "updated_at": "2026-10-29T12:27:50Z",
   "state": "active",
-  "summary": "Loaded model-element queries are accepted and hosted CI passes. The upstream ledger now has 168 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
+  "summary": "Loaded model-element queries are accepted. Typed PBR material declarations are now under review; accepted mappings remain 168 complete and 25 partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Continue retained SDFormat compatibility",
-      "detail": "The reviewed loaded-model snapshot slice is accepted. It preserves direct child order, explicit names, include expansion and absent-versus-false presence. The full suite caught and fixed a recursive include stack regression without changing admission bounds or assertions. Remaining work includes generic Element/Param behavior, serialization, retained schema conversion, automatic inertia and the remaining original tests."
+      "title": "Review typed metallic and specular PBR declarations",
+      "detail": "The candidate retains workflow presence, map strings, native scalar metadata, light-map UV sets and source provenance without loading textures or selecting a renderer. The unchanged native Material.PbrDOM original and thirty supplementary native cases pass. All 397 candidate Rust tests and Clippy pass. Independent review, strict staged coverage and exact hosted CI remain required; the public quality figures still describe the accepted model-element commit."
     }
   ],
   "accepted_slices": [
