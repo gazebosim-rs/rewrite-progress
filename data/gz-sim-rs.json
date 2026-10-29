@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T22:25:07Z",
+  "updated_at": "2026-10-29T22:33:42Z",
   "state": "active",
   "summary": "Programmatic unbounded reduced-coordinate Rapier articulations passed independent review, strict staged checks and exact hosted CI. P3 continues with native position limits and broader articulation compatibility.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "PHY-03",
       "title": "Qualifying deferred DART joint-effort commands",
-      "detail": "Independent review passed nine public physical/lifecycle controls and six fresh C++ plugin force-pulse observations. Deferred effort combines atomically with world wrenches and survives failed-step retry; retirement and both resets clear commands. The reviewed slice is running the mandatory staged hook; accepted quality remains at the prior revision until exact hosted CI passes. Other adapters and finite limits remain unsupported."
+      "detail": "Joint effort commands are published in 1982aa0 after independent review and strict local checks: 511 Rust tests, 89 tooling checks, and 45/45 changed production lines covered. DART world hinges support atomic preparation, failed-step retry and reset/retirement. Exact hosted CI is running; acceptance is pending. Other adapters and finite limits remain unsupported."
     },
     {
       "id": "PHY-05",
@@ -449,17 +449,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "50b28e5326dcb18b78ca62f81f528d06b01688fd",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/50b28e5326dcb18b78ca62f81f528d06b01688fd",
-    "rust_tests": 502,
+    "revision": "1982aa06c78a020510774f4cb7ea1f978e073373",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1982aa06c78a020510774f4cb7ea1f978e073373",
+    "rust_tests": 511,
     "coverage": {
       "lines": [
-        6829,
-        6897
+        6875,
+        6943
       ],
       "regions": [
-        10642,
-        10874
+        10718,
+        10950
       ]
     },
     "upstream": {
@@ -468,10 +468,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40940534150"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40965980708"
     },
-    "note": "Independent fresh58-test Rapier replay plus rotating-axis control and14/12 real native checks passed. Normal staged hook passed502 Rust/88tooling, all eleven crates above95%line/region coverage; changed shared physics12/12 and Rapier280/282. Exact hosted40940534150 succeeded at50b28e5. New API is programmatic, centered and unbounded; no common-test credit, scene migration, finite limits, general offset-COM dynamics or speedup claim."
+    "note": "Independent source, physical and native review and one mandatory staged hook passed: 511 Rust tests, 89 tooling checks, all eleven production crates strictly above 95% line/region coverage, and 45/45 changed production lines covered. Six actual C++ plugin effort observations match. Exact hosted qualification remains pending; the accepted list retains the prior simulator slice."
   },
   "phase_status": {
     "P0": "in_progress",
