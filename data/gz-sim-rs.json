@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T12:15:40Z",
+  "updated_at": "2026-10-29T12:21:38Z",
   "state": "active",
-  "summary": "The selected headless milestone is complete. DART server reset comparisons and runtime-library tests are published; exact hosted verification is pending.",
+  "summary": "The selected headless milestone is complete. DART reset checks are published, and a reproduced MuJoCo topology-admission defect is being repaired.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-03",
       "title": "Hosted verification of DART server reset comparisons",
       "detail": "Published fifteen backend/scenario comparisons with every existing assertion preserved. The mandatory staged gate passed 450 Rust and 88 tooling tests; all eleven production crates exceeded strict coverage thresholds."
+    },
+    {
+      "id": "PHY-04",
+      "title": "Reject unsafe hinge-to-free velocity conversions",
+      "detail": "A new regression reproduces hinge removal beyond MuJoCo generalized velocity limits. The guard and full MuJoCo suite pass locally; independent review and the mandatory staged gate remain pending."
     }
   ],
   "accepted_slices": [
