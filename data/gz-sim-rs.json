@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T13:29:49Z",
+  "updated_at": "2026-10-29T14:24:15Z",
   "state": "active",
-  "summary": "The selected headless milestone is complete. Native MuJoCo recovery tests passed hosted CI; real C++ interoperability is being extended to DART and MuJoCo.",
+  "summary": "All four retained physics engines passed selected real C++ headless interoperability and hosted CI. Programmatic body-to-body Rapier revolutes are now under strict staged verification.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "PHY-03",
-      "title": "Real C++ peers on all retained physics engines",
-      "detail": "Author and independent four-engine C++ matrices pass. The first staged run exposed a UDP discovery-port reservation race and rejected the candidate. Fixtures now retain reusable port guards without receiving multicast; deterministic ownership checks and CLI replay pass, and full server revalidation is running. No retry, timeout or assertion was weakened."
+      "id": "PHY-05",
+      "title": "Body-to-body revolute primitive",
+      "detail": "Implemented moving/fixed-parent Rapier constraints with relative joint samples, endpoint retirement and prepared reset. Seven new physical/lifecycle/error tests and native Unsupported controls pass independent review. The normal staged gate is running; SDF link-tree wiring and native body-joint adapters remain open."
     }
   ],
   "accepted_slices": [
@@ -377,6 +377,11 @@
       "title": "Actual native contact-exhaustion recovery through MuJoCo backend steps",
       "commit": "0312c3c93e5ce67847a6a954237822a6ebf0a304",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0312c3c93e5ce67847a6a954237822a6ebf0a304"
+    },
+    {
+      "title": "Real C++ headless interoperability qualified on TPE, Rapier, DART and MuJoCo",
+      "commit": "ca37d5ce08e0290b594f17ae9e7742b1752f451d",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ca37d5ce08e0290b594f17ae9e7742b1752f451d"
     }
   ],
   "remaining": [
@@ -409,9 +414,9 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "0312c3c93e5ce67847a6a954237822a6ebf0a304",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0312c3c93e5ce67847a6a954237822a6ebf0a304",
-    "rust_tests": 453,
+    "revision": "ca37d5ce08e0290b594f17ae9e7742b1752f451d",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ca37d5ce08e0290b594f17ae9e7742b1752f451d",
+    "rust_tests": 454,
     "coverage": {
       "lines": [
         6236,
@@ -429,9 +434,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40875528990"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40884876987"
     },
-    "note": "Exact published0312c3c passed hosted40875528990 and its mandatory staged gate:453 Rust/88 tooling, all11production crates strictly above95% lines/regions. Reduced-arena test qualifies the real recovery path, not default memory capacity/contact accuracy. The expanded all-backend C++ interoperability work is separate and under validation."
+    "note": "Exact hosted40884876987 and normal staged hook passed:454 Rust/88tooling, all11production crates strictly above95%lines/regions. Real C++ clients cover39server clock/IMU cases,4rate/reset functional cases,4CLI cases plus3TPE lifecycle controls; Rust-peer CLI budgets cover4engines. The initial rejected gate exposed a UDP port race; repaired guards passed review/full checks without retries or weakened protocol assertions. Body-revolute work is separate and unaccepted pending its own gates."
   },
   "phase_status": {
     "P0": "in_progress",
