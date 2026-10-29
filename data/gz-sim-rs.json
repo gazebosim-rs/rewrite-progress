@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T15:40:17Z",
+  "updated_at": "2026-10-29T15:48:42Z",
   "state": "active",
   "summary": "Two-link Rapier SDF revolutes passed independent review, strict staged verification and exact hosted CI. P3 continues with collision policy, larger articulations, native body-joint adapters and limits.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "PHY-05",
       "title": "Model collision policy for larger articulated scenes",
-      "detail": "Accepted two-link SDF constraints at 9e8e056 with 471 Rust tests and exact hosted CI. Investigating Rapier model-wide self-collision filtering before admitting larger trees. Existing two-link and native capability boundaries remain explicit; no larger-tree or speedup claim."
+      "detail": "A new programmatic Rapier contact-exclusion primitive is implemented in an isolated worktree. Six physical/lifecycle tests pass, including 64 simultaneous groups, retained external-floor contact and prepared same-epoch restoration; existing Rapier suite and native Unsupported controls pass. Independent review is queued. No scene expansion or new acceptance claim before strict gates."
     }
   ],
   "accepted_slices": [
