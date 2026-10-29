@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T22:31:41.952469+00:00",
+  "updated_at": "2026-10-29T22:52:48.976651+00:00",
   "state": "active",
-  "summary": "Ordinary proto2 extension-range formatting is published after independent review and the strict local gate; exact hosted qualification is running.",
+  "summary": "Ordinary proto2 extension-range formatting is accepted after exact hosted qualification; bounded packed-float wire characterization continues.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Ordinary proto2 extension-range declarations",
-      "detail": "The bounded source-order/endpoint formatter and maintained raw-options accessor are published. Independent native123/consumer/source/transition review passed; all171 Rust tests and strict line/region/changed-line gates pass locally. One compiler-omitted closing parenthesis required an independently reviewed annotation under the unchanged vendor policy; the mandatory hook retry passed. Exact hosted qualification remains pending, so no range acceptance or upstream credit is claimed."
+      "title": "Packed Float_V fixed32 wire qualification",
+      "detail": "Read-only installed-native characterization covers 56 bit, length, alignment, truncation and wrong-wire cases: 27 native/compatible accepts versus 25 strict Rust accepts, with exact float32 bits, raw forwarding and known serialization. Fresh canonical native comparison and durable partial-state controls remain to qualify. The accepted fixed64 corpus and all runtime/source boundaries stay unchanged; no custom codec or broad performance claim is proposed."
     },
     {
       "id": "MSG-02-upstream",
@@ -462,6 +462,11 @@
       "title": "Native standard descriptor-accessor metadata declarations with preserved historical inputs",
       "commit": "2a25ed94905d5ea3e2a9e42f6e57329ccf6dd10e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2a25ed94905d5ea3e2a9e42f6e57329ccf6dd10e"
+    },
+    {
+      "title": "Ordinary proto2 extension ranges with preserved raw options and native validation boundaries",
+      "commit": "7d4062f425670cf00c59781fd5dadebfbfe0f9d5",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7d4062f425670cf00c59781fd5dadebfbfe0f9d5"
     }
   ],
   "remaining": [
@@ -496,9 +501,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40966466888"
     },
-    "note": "Independent fresh-source/native/accessor/transition review and the mandatory normal strict staged gate passed. All19 production files retain strict line and region coverage; changed production lines47/47 are covered. Vendor-owned reflect coverage is103/105 lines214/216 regions and derive6/6,8/8. Exact hosted source-package/fresh-cache qualification is pending; no dependency, loader-admission, wire, performance or83mapping claim changed."
+    "note": "Independent source/accessor/native/transition review, the mandatory strict staged gate and exact hosted source-package/fresh-cache qualification passed. All 171 Rust tests and 123 complete native observations pass. All 19 production files retain strict line and region coverage; changed production lines are 47/47. Vendor-owned reflect coverage is 103/105 lines and 214/216 regions; derive is 6/6 and 8/8. No dependency, loader-admission, wire, performance or upstream mapping claim changed."
   }
 }
