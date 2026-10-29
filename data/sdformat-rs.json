@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T12:49:04Z",
+  "updated_at": "2026-10-29T13:08:08Z",
   "state": "active",
-  "summary": "Screw-joint pitch unit conformance is accepted and hosted CI passes. The ledger now has 170 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
+  "summary": "World-joint child-frame conformance is under review. Existing behavior passes the faithful original; accepted mappings remain 170 complete and 25 partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Continue robotics and retained SDFormat conformance",
-      "detail": "The accepted screw-pitch slice preserves the original five-joint fixture assertions, modern-over-legacy precedence and both handedness/unit conventions. Root independently replayed three Rust tests, eighteen exact-bit native cases and the unchanged original. Remaining robotics conformance includes world-joint frame aliases and the remaining original mappings; general schema conversion, automatic inertia and serialization also remain open."
+      "title": "Review world-joint frame aliases and resolved poses",
+      "detail": "The unchanged native LoadWorldJointChildFrame fixture now has a faithful Rust original port. It preserves all presence, name, index, raw-pose and endpoint assertions and nine semantic pose queries, including the child-frame offset. No parser, API or physics capability changes were needed. The native original, all 401 candidate Rust tests and Clippy pass. Independent review, strict staged verification and exact hosted CI remain required; published quality evidence still describes the accepted screw-pitch commit."
     }
   ],
   "accepted_slices": [
