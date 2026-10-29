@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:35:16Z",
+  "updated_at": "2026-10-29T14:42:09Z",
   "state": "active",
-  "summary": "Bounded standalone joint XML is accepted and exact hosted CI passes. The ledger has 169 complete and 30 partial mappings, counted by reviewed status across both lists; full compatibility remains in development.",
+  "summary": "Joint semantic-pose default-target and local-scope queries are under independent review. Standalone joint XML remains the latest accepted slice; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "The accepted joint reader/writer preserves raw pose/frame, endpoints, both axes and modern screw pitch, with explicit unsupported payload errors and caller-located diagnostics. Native fixture regeneration, direct native XML loading in Rust and actual Rust XML loading in native Joint pass. Remaining work includes sensor/physics payload serialization, constructor/general DOM contracts, complete schema/version conversion, automatic inertia and remaining original mappings."
+      "detail": "The new joint_pose API reuses loaded graph math, defaults to the declared child frame including offsets, and resolves explicit targets strictly in the containing model/world scope. Author full 420 Rust tests, Clippy and forty-six native queries pass, including unknown or ambiguous short targets, nested scopes and world joints. Final independent replay and strict staged/hosted checks remain pending. Existing original mappings are unchanged; remaining scope includes full retained DOM, serialization, schema conversion and automatic inertia."
     }
   ],
   "accepted_slices": [
