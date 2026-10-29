@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:24:48Z",
+  "updated_at": "2026-10-29T17:26:37Z",
   "state": "active",
-  "summary": "Bounded base-camera XML and native parser corrections are published after independent review and strict staged checks. Exact hosted CI is running; full compatibility remains in development.",
+  "summary": "Bounded base-camera XML and native parser corrections are accepted with exact hosted CI success. The ledger has 169 complete and 35 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Base camera output covers the exact retained ToElement surface and rejects advanced payload loss. Review fixed signed-zero omission and disabled-path validation; all old assertions remain unchanged. Independent replay passed 22 repository tests plus two private regressions, thirty-four native outcomes and twenty-six actual exchanges. Normal gate passed 441 Rust tests and changed lines 214/214. Exact hosted CI remains pending; Camera Sensor/Joint/rendering and generic Element identity remain unqualified."
+      "detail": "Accepted base-camera output preserves the retained ToElement surface and exact non-pose metadata. Native controls corrected parser aliases/defaults and caught signed-zero/path validation loss. Remaining work includes advanced optics, Camera Sensor/Joint output, other sensor families, generic Element/input-origin contracts, full schema conversion and automatic inertia. A precise residual-assertion audit will distinguish faithful Result/XML translations from genuine missing state; no count promotion is inferred."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize bounded base cameras with native parser defaults",
+      "commit": "b21cc2c4612494f89450836f5110843123ff56f7",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b21cc2c4612494f89450836f5110843123ff56f7"
+    },
     {
       "title": "Serialize typed IMU configurations and standalone sensors",
       "commit": "3603dc102550f3b66a7bafc93d406b2f94c1cded",
@@ -686,12 +691,12 @@
     "upstream": {
       "total": 1344,
       "ported": 169,
-      "partial": 34
+      "partial": 35
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40921016702"
     },
-    "note": "Normal unchanged staged gate passed 441 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; actual changed lines 214/214. Independent review passed 22 repository tests plus both private regressions, all 34 native outcomes and 26 exchanges, including signed-zero guards and save-path validation. Parser/native default corrections retain public constructors and old assertions. One new original mapping remains partial for Element identity; exact hosted CI pending."
+    "note": "Normal unchanged staged gate and exact hosted CI passed 441 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; actual changed lines 214/214. Independent review passed 22 repository tests plus both private regressions, all 34 native outcomes and 26 exchanges. Parser corrections retain constructor values and all old assertions. One new original mapping remains partial for input-Element residue pending explicit mapping review; no advanced optics or rendering/runtime claim."
   }
 }
