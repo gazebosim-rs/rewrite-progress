@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T16:44:35.767032+00:00",
+  "updated_at": "2026-10-29T17:34:25.885402+00:00",
   "state": "active",
-  "summary": "Floating declarations are qualified; the representative codec baseline is under independent review, including slower packed LaserScan results.",
+  "summary": "Representative codec baseline is published after independent review and strict local gates; exact hosted qualification is running. Packed LaserScan profiling is next.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Representative codec baseline under independent review",
-      "detail": "The candidate independently constructs native/Rust Clock, IMU, Pose_V and LaserScan values, passes 45 complete wire/work controls, and retains all 45 timing cases from ten randomized paired repeats with uncertainty/provenance. Time owned-envelope cases are separate. Preliminary reviewed-workload data is mixed: packed 1,080-range LaserScan ratios favor C++; no optimization or broad performance acceptance is claimed. Independent measurement/fidelity review, one normal staged gate and exact hosted CI remain pending. Runtime code, dependencies, schemas, safety boundaries and all 83 upstream mappings are unchanged; live formatter overview is being reconciled."
+      "title": "Codec baseline awaiting hosted qualification",
+      "detail": "Published 45 codec/envelope cases from ten randomized paired repeats with full wire/work fidelity, effective compiler records and uncertainty. Independent build/measurement review passed, including eight controlled failure/compiler checks, 77 fresh compiler invocations and all 450 paired samples. The single normal Main gate passed full existing suites, all 45 non-timing fidelity controls and strict unchanged production coverage. Exact hosted qualification remains pending. Packed LaserScan results are slower on Rust and remain visible; profiling actual hot paths is next, with no broad performance or MSG-02 acceptance claim."
     }
   ],
   "accepted_slices": [
@@ -438,7 +438,8 @@
     "Consumer adoption and wider wire qualification; direct prost/reflection remain stricter than native C++",
     "Broader XML, CLI grammar/dynamic-descriptor info and formatting qualification",
     "Descriptor installation/global/cache compatibility decisions and qualification",
-    "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending"
+    "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending",
+    "Packed LaserScan serialization regression: profile actual hot paths/allocations and evaluate maintained-runtime improvements against the preserved baseline"
   ],
   "blockers": [],
   "plan_status": {
@@ -446,8 +447,8 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "38a44f0c39228b97e9f7af2f5152d01a8f9cc31c",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/38a44f0c39228b97e9f7af2f5152d01a8f9cc31c",
+    "revision": "45f29b7b333e9187f16e5a542241eacf80cb6ff7",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/45f29b7b333e9187f16e5a542241eacf80cb6ff7",
     "rust_tests": 162,
     "coverage": {
       "lines": [
@@ -465,9 +466,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40907415228"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40922307492"
     },
-    "note": "Independent exported-source debug/release review and fresh native corpora passed. The single normal Main hook passed 162 Rust tests, formatting, Clippy, complete native suites, downstream consumer, strict production/owned-vendor coverage and 38/38 changed executable lines. Exact hosted source packaging and fresh-cache install/consumer qualification passed."
+    "note": "Independent fidelity, effective compiler/settings and final measurement review passed. The single normal Main staged hook passed all existing Rust/native/tooling checks plus eight compiler/failure controls and 45 actual non-timing codec work cases. Production code, dependencies, schemas and original assertions remain unchanged; exact hosted source-package/fresh-cache qualification is still running."
   }
 }
