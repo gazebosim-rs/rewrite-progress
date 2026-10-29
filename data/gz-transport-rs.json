@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T13:56:28.677610+00:00",
+  "updated_at": "2026-10-29T14:02:17.549965+00:00",
   "state": "active",
-  "summary": "The bounded service-list startup API passed independent source/native review and focused checks. Its mandatory staged gate is running; published d08b6a0 remains hosted green.",
+  "summary": "The bounded service-list startup API is published after independent native/source review and the full normal staged gate. Exact hosted verification is running.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Published d08b6a0 has 92 complete and 14 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
+      "detail": "Published ee5a39b retains 92 complete and 14 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
     },
     {
       "id": "NET-02",
       "title": "Bounded service discovery startup query",
-      "detail": "The explicit deadline service-list query is implemented and independently approved after fresh private/public/native replay. Immediate known_services, bounded pending capacity, deadlines, shutdown and warm behavior are preserved. The normal staged gate is running before publication. Startup does not imply convergence or delivery readiness; no original case has been promoted."
+      "detail": "The bounded service-list startup query is accepted and published. Immediate known_services, explicit deadlines, pending queue limits, cancellation and warm behavior are preserved. Native and Rust first/warm snapshots agree for three service signatures and absence. Hosted verification is pending; initialization still does not imply convergence or delivery readiness. Independent Msgs enum-declaration review is underway alongside the Transport CI watcher."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Bounded service discovery startup listing with explicit deadline, queue and shutdown behavior",
+      "commit": "ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457"
+    },
     {
       "title": "Four-node AllTopicInfo original through actual ready queries, retaining the snapshot variant",
       "commit": "d08b6a0b2fdd9f74ac1646dae8708f596c200ab2",
@@ -470,7 +475,7 @@
     }
   ],
   "remaining": [
-    "Complete bounded service discovery startup behavior with independent review and all required gates; retain current original assertions and selected-case dispositions.",
+    "Continue retained discovery, metadata, service and lifecycle contracts with native-backed production behavior and preserved original assertions.",
     "Complete the broader NET-01 matrix including physical scope topology, service scope, relay, default interface selection, remaining query contracts and retained assertion ports.",
     "Broader publication/subscriber/service rate and formatting scope,wire statistics,authentication,SQLite logs/replay and complete legacy CLI.",
     "Retained upstream assertion contracts, baseline execution and remaining Rust ports.",
@@ -483,17 +488,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "d08b6a0b2fdd9f74ac1646dae8708f596c200ab2",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/d08b6a0b2fdd9f74ac1646dae8708f596c200ab2",
-    "rust_tests": 283,
+    "revision": "ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/ee5a39bd1bc98b7c3835b5b809c5a6e4b5afb457",
+    "rust_tests": 288,
     "coverage": {
       "lines": [
-        2988,
-        3047
+        3036,
+        3092
       ],
       "regions": [
-        4394,
-        4565
+        4471,
+        4638
       ]
     },
     "upstream": {
@@ -502,9 +507,9 @@
       "partial": 14
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40884010190"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40887333239"
     },
-    "note": "The normal staged hook passed 283 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions. Independent reviewers replayed old/new AllTopicInfo mappings and the pinned native original, confirming success, actual vector size three, names and all six endpoint counts. Existing tests remain unchanged. Hosted run 40884010190 completed successfully for exact commit d08b6a0, including policy and native parity/coverage jobs. There are 92 complete, 14 partial and 312 pending original cases. Full metadata, global startup, ownership, dynamic behavior, traffic and latency remain open."
+    "note": "The normal staged hook passed 288 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3036/3092 production lines and 4471/4638 regions, with all 45 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all five focused checks and reviewed final code/docs. Existing assertions, dependencies and gates are unchanged; no upstream case was promoted. Hosted run 40887333239 is in progress for exact commit ee5a39b; it is not yet a hosted pass. The preceding d08b6a0 run40884010190 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Global initialization, convergence, full metadata and native timing remain open."
   }
 }
