@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T18:12:50Z",
+  "updated_at": "2026-10-29T18:14:32Z",
   "state": "active",
-  "summary": "Typed Altimeter XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 178 complete and 28 partial mappings; full compatibility remains in development.",
+  "summary": "Typed AirPressure XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 180 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed AirPressure XML and standalone Sensor output",
-      "detail": "Published candidate d24da9c passed independent 31-test review, seventeen native cases, fifteen actual exports, exact fixture and both originals. Single strict staged hook passed 451 Rust and seventeen tooling tests, 6123/6159 lines and 9795/10052 regions; actual changed lines 55/55. Exact hosted run 40928628122 is queued. Accepted remains 178 complete/28 partial until success; candidate would be 180/28. All 24 prior serializer exports and Joint force-torque-only admission remain preserved."
+      "title": "Implement bounded Magnetometer XML and standalone Sensor output",
+      "detail": "Next family preserves three typed Noise records, edited X-bias output and unchanged original-source values, with actual native exchanges and exact original assertion review. Reuse existing Noise/parser helpers and preserve prior XML bytes, narrow input-origin mappings and Joint force-torque-only admission. No magnetic-field calculation or runtime admission is implied."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize typed AirPressure configurations and standalone sensors",
+      "commit": "d24da9cedb5b9abadaef7043ac647a8528b78376",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/d24da9cedb5b9abadaef7043ac647a8528b78376"
+    },
     {
       "title": "Serialize typed Altimeter configurations and standalone sensors",
       "commit": "fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6",
@@ -685,28 +690,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fe2e2ece8b9a849129d18021b7f56e25a4c5c3a6",
-    "rust_tests": 446,
+    "revision": "d24da9cedb5b9abadaef7043ac647a8528b78376",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/d24da9cedb5b9abadaef7043ac647a8528b78376",
+    "rust_tests": 451,
     "coverage": {
       "lines": [
-        6067,
-        6103
+        6123,
+        6159
       ],
       "regions": [
-        9719,
-        9978
+        9795,
+        10052
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 178,
+      "ported": 180,
       "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40926559520"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40928628122"
     },
-    "note": "Single normal staged hook and exact hosted CI passed 446 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; actual changed executable lines 46/46. Independent review passed 26 relevant Rust checks, sixteen native outcomes, fourteen actual exports, exact fixture and both originals with empty stderr. All prior FT/IMU exports remain byte-identical; Joint remains force-torque-only and no runtime measurement is claimed."
+    "note": "Single normal staged hook and exact hosted CI passed 451 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 55/55. Independent review passed 31 relevant Rust checks, seventeen native outcomes, fifteen actual exports, exact fixture and both originals with empty stderr. All 24 prior FT/IMU/Altimeter outputs stay byte-identical. Joint remains force-torque-only; no atmospheric calculation is claimed."
   }
 }
