@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T19:24:00.526662Z",
+  "updated_at": "2026-10-29T19:42:55.525228Z",
   "state": "active",
-  "summary": "Immediate local service resolution is accepted at 68fd81a after exact hosted success. Bounded response callbacks now pass author library, lifecycle and real native controls and are under independent review.",
+  "summary": "Bounded owned response service and request callbacks are published after independent review and the normal strict staged gate. Exact hosted CI is running; two member-service original promotions remain conditional.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,11 +13,16 @@
     },
     {
       "id": "NET-02",
-      "title": "Bounded response callback implementation and independent review",
-      "detail": "New owned service and request callback APIs preserve immediate exact local completion, bound dispatch threads and request admission, and keep existing queued/one-way APIs. Author 120 library tests, four new public/native tests and four prior member controls pass; unchanged pinned native originals pass 2/0. Independent source/native review is underway. No new original-case credit is accepted yet."
+      "title": "Owned response callback hosted qualification",
+      "detail": "Published 3a44171 preserves immediate exact local server/response completion with no queued duplicate, separate bounded request/thread admission and owned cancellation/panic/reentrancy behavior. Existing queued and one-way APIs remain unchanged. Exact hosted run 40942433988 is pending. Only the two reviewed member-service original rows propose new credit; accepted counters remain 93 faithful and 13 partial until success. Direct lambda originals are the next separate follow-up."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Reviewed bounded owned response callbacks and immediate local member-service predicates; hosted qualification pending",
+      "commit": "3a441718bf575a66034d58624948985c22b4a333",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3a441718bf575a66034d58624948985c22b4a333"
+    },
     {
       "title": "Reviewed immediate admitted local service resolver with bounded stale-copy masking",
       "commit": "68fd81a1b65382e37804d9b6d73a28a3f154c126",
@@ -513,17 +518,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "68fd81a1b65382e37804d9b6d73a28a3f154c126",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/68fd81a1b65382e37804d9b6d73a28a3f154c126",
-    "rust_tests": 320,
+    "revision": "3a441718bf575a66034d58624948985c22b4a333",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3a441718bf575a66034d58624948985c22b4a333",
+    "rust_tests": 330,
     "coverage": {
       "lines": [
-        3414,
-        3478
+        3729,
+        3825
       ],
       "regions": [
-        4990,
-        5168
+        5417,
+        5658
       ]
     },
     "upstream": {
@@ -532,9 +537,9 @@
       "partial": 13
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40933363746"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40942433988"
     },
-    "note": "Normal staged verification passed 320 Rust tests, 24 tooling checks and required pinned native originals. Coverage is 3414/3478 lines, 4990/5168 regions and 181/187 changed executable lines. Independent fresh source/target/native replay passed 114 library tests, all 18 prior service assertions and four new public/native controls. Existing assertions remain; private fixture construction now shares the admitted vector. The accepted ledger promotes only ResolveServiceTypesAmbiguous as a direct faithful port with zero timeout and no readiness barrier; prior barrier variant remains. Exact hosted run 40933363746 succeeded; accepted counts are 93 faithful and 13 partial. No new metadata-view merge, wire/dependency change or full process-global identity claim. The late-first-packet gap remains explicit. Prior 5c6e41e hosted run 40922482259 succeeded."
+    "note": "Normal strict staged hook passed 330 Rust tests across 28 executable harnesses, 24 tooling checks and required pinned native suites. Coverage is 3729/3825 lines, 5417/5658 regions and 315/328 changed executable lines. Independent fresh source/target and native peer replay passed 120 library tests, four unchanged member-service tests, four new public/native controls and the two unchanged C++ originals. Independent request/response type-guard mutants fail zero-invocation counters despite caught panics. An initial private cold-discovery fixture timeout was diagnosed and repaired using the existing local queue and command-drain setup; all original bounds/assertions remain. Only ClassMemberCallbackService and WithoutInput propose faithful credit, conditional on exact hosted run 40942433988; accepted counters remain 93/13 until success, then 95/11. Queued/one-way behavior, dependencies, wire and other original credits remain unchanged. Global identity, broader scheduling and remote immediate-completion claims remain open."
   }
 }
