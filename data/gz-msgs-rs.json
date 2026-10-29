@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:27:38.339714+00:00",
+  "updated_at": "2026-10-29T12:33:52.725890+00:00",
   "state": "active",
-  "summary": "Proto2 integer declaration formatting is published after independent review and strict local checks; exact hosted CI is running.",
+  "summary": "Four-kind integer declarations are published with hosted CI pending; the remaining six integer kinds now pass focused native and Rust tests.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Proto2 integer declarations and wider Messages parity",
-      "detail": "Published four-kind proto2 integer declaration formatting preserves effective values, raw descriptor spelling and native option order. The final-main staged hook passes 145 Rust tests, all 7559 existing native JSON outcomes and 472 exact fresh native declaration observations. Production coverage is 3159/3179 lines and 5225/5315 regions, with all 16 changed executable lines covered. Owned dependency coverage remains above 95%. Exact hosted CI is running. The first hook correctly blocked duplicated validation at 14/15 changed lines; combining kind/value validation fixed it without changing tests or gates. Broader XML, tooling, packaging and performance qualification remain open; all 83 original mappings are unchanged."
+      "title": "Complete ordinary integer declaration kinds",
+      "detail": "The next candidate adds sint32/sint64, fixed32/fixed64 and sfixed32/sfixed64 formatting. Fresh C++ replay characterizes all 594 existing parser rows for these kinds, with 384 admitted cases checked through registry, direct descriptors, factory and CLI. All 24 focused Rust tests and Clippy pass; independent review and the full staged gate remain required. The four-kind published commit retains its separate pending hosted CI. All original parser, wire, raw-metadata and 83 upstream assertion mappings remain unchanged; broader Messages parity is open."
     }
   ],
   "accepted_slices": [
