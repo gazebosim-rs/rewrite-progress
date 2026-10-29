@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T21:07:12.577201+00:00",
+  "updated_at": "2026-10-29T21:23:39.806095+00:00",
   "state": "active",
-  "summary": "Standard field boolean declarations are accepted after exact hosted CI; work continues on bounded native-backed CType/JSType metadata formatting.",
+  "summary": "CType/JSType declaration formatting is accepted after exact hosted CI; work continues on the remaining native standard-message-option CLI gap.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Native enum-valued field-option formatting",
-      "detail": "The independently reviewed enum-option slice passed its single normal strict Main gate and is public at 715b8f9. All 166 Rust tests, 736 new complete native observations, preserved original fixtures and clean no-patch downstream consumer passed locally. Changed production coverage is 26/27 lines, strictly above 95%. Exact hosted qualification is running; acceptance remains pending."
+      "title": "Retained standard message-option CLI behavior",
+      "detail": "The enum-option slice passed exact hosted source-package qualification. Read-only pinned native characterization covers 98 no_standard_descriptor_accessor presence/order/context cases and unhandled MessageSet guards. The next bounded task targets the existing StandardMessageOption direct and complete historical CLI input, using maintained boolean reflection without C++ API emulation or wire expansion. Old predicates stay unchanged until concrete transition review."
     },
     {
       "id": "MSG-02-upstream",
@@ -452,6 +452,11 @@
       "title": "Native standard field boolean declarations with preserved metadata and explicit invalid-shape guards",
       "commit": "8da0695e9826d0e4bf9f5b440bb205ce1d62efee",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8da0695e9826d0e4bf9f5b440bb205ce1d62efee"
+    },
+    {
+      "title": "Native CType/JSType declarations with preserved raw metadata and reviewed exact capability transitions",
+      "commit": "715b8f99c9e5654ac6354460bc3790e6e6ed88d4",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/715b8f99c9e5654ac6354460bc3790e6e6ed88d4"
     }
   ],
   "remaining": [
@@ -486,9 +491,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40954860366"
     },
-    "note": "One normal strict staged gate passed after independent source/native/transition review. All 166 Rust tests and 736 native observations pass; original 83 mappings, fixture bytes, dependencies and clean downstream contract are unchanged. Coverage spans 19 production files, with changed lines 26/27. Exact hosted success is still required before acceptance."
+    "note": "Independent fresh-source/native/transition review, one normal strict staged gate and exact hosted source-package/fresh-cache CI passed. All 166 Rust tests and 736 complete native observations passed; original fixture/descriptor bytes and 83 upstream mappings remain unchanged. Coverage spans all 19 production files; changed lines are 26/27, strictly over 95%. No dependency, decoder or performance claim changed."
   }
 }
