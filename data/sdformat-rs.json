@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T16:38:03Z",
+  "updated_at": "2026-10-29T17:06:37Z",
   "state": "active",
-  "summary": "Typed IMU configuration and standalone sensor XML is accepted with exact hosted CI success. The ledger has 169 complete and 34 partial mappings; full compatibility remains in development.",
+  "summary": "Bounded base-camera XML and native parser corrections are under independent review. IMU XML remains the latest accepted capability; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "Accepted IMU output preserves all six Noise records, raw reference vectors and orientation metadata; FT output remains byte-identical after shared emission. Remaining work includes other sensor families, plugins/extensions, IMU/other-family joint serialization, retained physics and generic Element contracts, full schema/version conversion and automatic inertia. Runtime sensor behavior remains separate; no consumer pin change."
+      "detail": "Base camera identity/pose/image/clip/save/trigger output passes 438 Rust tests and Clippy, thirty-three native outcomes and twenty-five actual XML exchanges. Native controls cover aliases, anti-aliasing, presence/name/save/lens defaults and schema ranges; all old assertions remain unchanged. Nondefault advanced optics and Camera Sensor/Joint output remain explicit errors. Independent parser/assertion review and strict staged/hosted checks remain pending."
     }
   ],
   "accepted_slices": [
