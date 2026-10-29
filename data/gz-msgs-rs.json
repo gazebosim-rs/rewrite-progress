@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T18:02:04.927991+00:00",
+  "updated_at": "2026-10-29T18:13:20.201962+00:00",
   "state": "active",
-  "summary": "The 45-case codec baseline is accepted. An isolated upstream-runtime encode optimization is under review; packed decode and broader MSG-02 work remain open.",
+  "summary": "Codec baseline is accepted. Profiling produced an independently checked runtime-helper experiment; production adoption is held to preserve standard no-patch dependency identity.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Review isolated packed fixed-width runtime experiment",
-      "detail": "Actual userspace CPU and heap profiling identified prost packed-double loops. Thin LTO did not resolve the issue. An isolated five-line helper experiment using maintained bytes/bytemuck primitives passed independent correctness review, all 413 upstream tests, six strengthened bit/chunk/cursor controls and all 45 C++/Rust work cases. Complete paired before/after, dependency-only control and native-relative reports are awaiting independent measurement review. Local encoding gains coexist with remaining decode/roundtrip deficits and modest unchanged-path regressions. No production dependency/vendor change or broad speedup acceptance."
+      "title": "Prepare upstream runtime optimization evidence",
+      "detail": "Packed-double profiling led to an isolated five-line maintained-runtime helper experiment. Independent correctness checks passed 413 upstream tests, six strengthened controls, no-std and all 45 C++/Rust work cases. Complete paired reports and remaining decode/regression tradeoffs await independent measurement review. Local vendoring would break an existing clean no-patch standard prost/prost-types identity test, which is preserved. Only an upstream-ready patch and PR draft are prepared; no external publication or production change is authorized."
     }
   ],
   "accepted_slices": [
