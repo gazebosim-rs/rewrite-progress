@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T15:59:15Z",
+  "updated_at": "2026-10-29T16:01:21Z",
   "state": "active",
-  "summary": "Typed force/torque sensor and joint XML is published after independent review and strict staged checks. Exact hosted CI is running; full compatibility remains in development.",
+  "summary": "Typed force/torque configuration plus bounded sensor/joint XML is accepted with exact hosted CI success. The ledger has 169 complete and 32 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "ForceTorque XML preserves six complete noise records and frame/direction; bounded Sensor/Joint XML preserves current force_torque envelopes in order. Independent review passed 32 fresh Rust checks, 32 native outcomes and six actual exchanges. Normal gate passed all 427 Rust tests and changed-line coverage 213/213. Other families, plugins/extensions, physics and generic Element identity remain unqualified. Exact hosted CI remains pending; accepted original counts stay 169 complete/30 partial until it passes."
+      "detail": "Accepted force_torque output preserves six complete noise records, frame/direction and current sensor envelopes in joint declaration order. Native evidence includes thirty-two outcomes and six actual XML exchanges. Remaining serialization work includes other sensor families, plugins/extensions, retained physics and generic Element contracts. Full schema/version conversion, automatic inertia and remaining original mappings are still open; no runtime wrench claim or consumer pin change."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize typed force torque configurations and joint sensors",
+      "commit": "dfbb11a5774f572d2a888dd9d469a17398c53949",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/dfbb11a5774f572d2a888dd9d469a17398c53949"
+    },
     {
       "title": "Publish useful CI evidence without regenerable build products",
       "commit": "a69a83b7f546eb6b4aeaf041996de49f8e6744f5",
@@ -676,12 +681,12 @@
     "upstream": {
       "total": 1344,
       "ported": 169,
-      "partial": 30
+      "partial": 32
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40906976028"
     },
-    "note": "Normal unchanged staged gate passed 427 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed lines 213/213. Fresh independent review passed 32 relevant Rust checks, all 32 native outcomes, generated fixture and six actual Rust-to-native exchanges plus two unchanged originals. Both mappings remain partial for generic Element/null identity; other sensor families/plugins/extensions/physics stay explicit errors, no runtime wrench claim. Exact hosted CI is pending."
+    "note": "Normal unchanged staged gate and exact hosted CI passed 427 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed lines 213/213. Fresh independent review passed 32 relevant Rust checks, all 32 native outcomes, generated fixture and six actual Rust-to-native exchanges plus two unchanged originals with empty stderr. Both new mappings are partial for generic Element/null identity; other sensor families/plugins/extensions/physics stay explicit errors. No runtime wrench claim."
   }
 }
