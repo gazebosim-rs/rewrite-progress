@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:34:09Z",
+  "updated_at": "2026-10-29T17:45:42Z",
   "state": "active",
   "summary": "Bounded base-camera XML and native parser corrections are accepted with exact hosted CI success. The ledger has 169 complete and 35 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review exact ToElement assertion translations",
-      "detail": "Seven existing Frame/Physics/ForceTorque/Camera original mappings are under independent review with actual Frame/Physics empty-console checks and direct signed quaternion bounds. All 441 author Rust tests, seventeen tooling tests, Clippy and nine unchanged native originals pass. Candidate 176 complete/28 partial is not accepted; public accepted baseline remains 169/35. IMU/Light input-origin state and Joint type-none sensor assertions remain concrete open scope."
+      "title": "Qualify reviewed ToElement assertion translations",
+      "detail": "Published candidate 91c8c33 passed independent review with 15 Rust tests, nine native originals and two adversarial controls, then the normal strict hook with 441 Rust and seventeen tooling tests. Coverage remains 6021/6057 lines and 9645/9907 regions; no production source changed. Exact hosted run 40924365122 is queued. Seven candidate complete mappings would move 169/35 to 176/28 only after CI success. IMU/Light input-origin and Joint type-none sensor assertions stay partial."
     }
   ],
   "accepted_slices": [
