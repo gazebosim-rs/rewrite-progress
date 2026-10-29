@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T12:39:11.947662+00:00",
+  "updated_at": "2026-10-29T12:41:50.452393+00:00",
   "state": "active",
-  "summary": "Four-kind integer declarations passed exact hosted CI; the reviewed remaining six-kind expansion is running its strict local gate.",
+  "summary": "All ten ordinary proto2 integer declaration kinds are published after review and strict local checks; their exact hosted CI is running.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Complete ordinary integer declaration kinds",
-      "detail": "The reviewed next candidate adds sint32/sint64, fixed32/fixed64 and sfixed32/sfixed64 declarations. Fresh C++ replay covers 594 unchanged parser inputs, with 384 admitted cases checked through registry, direct descriptors, factory and CLI. All 24 focused Rust tests, Clippy and independent review pass; the single final-main staged gate is running. The preceding four-kind commit passed its separate exact hosted CI. Parser, wire, raw-metadata and all 83 original mappings remain unchanged; broader Messages parity is open."
+      "title": "Ordinary integer declarations and remaining Messages parity",
+      "detail": "The published expansion covers sint/fixed/sfixed in addition to int/uint declarations. All 147 Rust tests, 7559 existing native JSON observations and 1066 native declaration observations pass locally. Every new input is bound to the unchanged parser corpus; all 384 newly supported admitted cases check registry, direct descriptor, factory and CLI output. Production coverage remains 3159/3179 lines and 5225/5315 regions, with 4/4 changed executable lines covered. Exact hosted CI is running; the prior four-kind slice passed its separate hosted run. Broader XML, tooling, packaging and performance qualification remain open; all 83 original mappings are unchanged."
     }
   ],
   "accepted_slices": [
@@ -416,9 +416,9 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "28e69e6a494ad6c6a74ad944cb7b1737371952d0",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/28e69e6a494ad6c6a74ad944cb7b1737371952d0",
-    "rust_tests": 145,
+    "revision": "eab87eb61991d92a8998b91617809fa048ae0cb9",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/eab87eb61991d92a8998b91617809fa048ae0cb9",
+    "rust_tests": 147,
     "coverage": {
       "lines": [
         3159,
@@ -435,9 +435,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40873367770"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40875334240"
     },
-    "note": "Exact hosted run 40873367770 succeeded for this published commit, including primary verification, staged-hook regression, deterministic source package and fresh-cache consumer checks. Local mandatory hook passed 145 Rust tests, 7559 existing native JSON observations, 472 exact native declaration comparisons and 16/16 changed executable lines, with strict production and owned-vendor coverage. Broader MSG-02 remains open."
+    "note": "Independent source, assertion and fresh 24-test review passed. The single final-main staged hook passed formatting, Clippy, check regressions, downstream consumer, full Rust/native tests, strict production and owned-vendor coverage and 4/4 changed executable lines. Exact hosted package and fresh-cache qualification remain pending. The preceding four-kind revision has separate hosted success."
   }
 }
