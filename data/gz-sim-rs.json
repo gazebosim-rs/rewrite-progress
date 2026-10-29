@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T12:30:11Z",
+  "updated_at": "2026-10-29T12:44:29Z",
   "state": "active",
-  "summary": "The selected headless milestone is complete. DART server reset checks passed hosted CI; reviewed MuJoCo hinge-removal fixes are published and awaiting hosted verification.",
+  "summary": "The selected headless milestone is complete. MuJoCo hinge-removal fixes passed hosted CI, and real contact-exhaustion recovery tests are published.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-04",
-      "title": "Hosted verification of MuJoCo hinge-removal fixes",
-      "detail": "Both reproduced defects are fixed: unsafe free velocity is rejected before removal, and an unstepped hinge retains its projected velocity. Independent review and the full staged gate passed; exact hosted verification is running."
+      "title": "Qualify real backend contact-exhaustion recovery",
+      "detail": "A real 60-body contact workload with a reduced test arena now exercises backend warning reporting, continued stepping, zero-step retention and reset recovery. Independent replay and the mandatory staged gate passed; exact hosted verification is running."
     }
   ],
   "accepted_slices": [
@@ -367,6 +367,11 @@
       "title": "DART server reset comparisons and verified runtime library pinning",
       "commit": "c9449ac51c3a16d405b6fce88f69880fc373f70d",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c9449ac51c3a16d405b6fce88f69880fc373f70d"
+    },
+    {
+      "title": "MuJoCo hinge removal rejects invalid free velocities and preserves unstepped hinge state",
+      "commit": "9cbb7cb3e8e7988313c2c4711dcd16c39a1d4679",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9cbb7cb3e8e7988313c2c4711dcd16c39a1d4679"
     }
   ],
   "remaining": [
@@ -399,16 +404,16 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "9cbb7cb3e8e7988313c2c4711dcd16c39a1d4679",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9cbb7cb3e8e7988313c2c4711dcd16c39a1d4679",
-    "rust_tests": 452,
+    "revision": "0312c3c93e5ce67847a6a954237822a6ebf0a304",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0312c3c93e5ce67847a6a954237822a6ebf0a304",
+    "rust_tests": 453,
     "coverage": {
       "lines": [
         6236,
         6303
       ],
       "regions": [
-        9768,
+        9769,
         9996
       ]
     },
@@ -419,9 +424,9 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40873469093"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40875528990"
     },
-    "note": "Full staged commit hook passed 452 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage; changed executable lines 16/16. Three ignored child-entry helpers run explicitly through their parent tests. Exact hosted verification is pending. Earlier DART integration c9449ac passed exact hosted run 40871693297. Broader physics and release scope remain open."
+    "note": "Mandatory staged gate passed 453 Rust and 88 tooling tests. All eleven production crates exceed strict 95% line and region thresholds; this test/docs slice changes no production executable lines. Three ignored child-entry helpers run explicitly in parent tests. Exact hosted verification is pending. Hinge fixes 9cbb7cb passed exact run40873469093. Test-only reduced arena does not establish production default memory capacity or accuracy after dropped contacts."
   },
   "phase_status": {
     "P0": "in_progress",
