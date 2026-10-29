@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T23:50:29.623015Z",
+  "updated_at": "2026-10-29T23:58:53.969504Z",
   "state": "active",
-  "summary": "Public cf8f2ec remains exact hosted accepted with 99 faithful ports and 7 partial mappings. The independently reviewed queued local service implementation is in its full canonical Main gate; no new accepted slice or credit yet.",
+  "summary": "The reviewed bounded cross-Node queued service implementation is public at 5d8bdd0 after the complete canonical Main hook passed. Exact hosted qualification is running. Accepted upstream counts stay 99 faithful and 7 partial; no new credit.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Reviewed queued local services in canonical Main qualification",
-      "detail": "Independent fresh candidate replay passed 134 library and 31 public/native tests, versus 127 and 24 for the accepted baseline; the final seven bounded controls also passed with proper loopback. The full detached staged check passed and does not waive Main gates. An initial Main run used a different SDK and failed the unchanged native warm TopicList <2ms assertion during overlapping service discovery. Same-SDK controls preserve that assertion: all five isolated runs pass; shared-port unrelated service traffic causes two of five failures at 100ms; identical traffic on another service port passes all five. The full normal Main hook now uses the recorded Release/ZeroMQ SDK while other transport-backed gates are inactive. Failed setup, diagnostic and Main runs remain unaccepted; no source, assertion, timeout or gate change and no extra upstream credit."
+      "title": "Public queued local services awaiting exact hosted acceptance",
+      "detail": "Seven reviewed paths reuse weak admitted declarations and the original bounded sender; own receiver priority, final live checks, worker pending limits/deadlines, provider reply lane and mandatory ZeroMQ replies remain. Main hook passed 360 Rust tests across 30 harnesses, 24 tooling checks and required native suites with the recorded Release/ZeroMQ SDK. Initial different-SDK warm native timing failure is retained; controlled unrelated service traffic reproduced the 100 ms shared-mutex block without changing assertions, and the canonical full gate passed with transport-backed gates serialized. Exact hosted run 40976507911 is active. Local transport peers stay stopped during simulator qualification; next scope investigation is read-only."
     }
   ],
   "accepted_slices": [
@@ -538,17 +538,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "cf8f2ec923ef5d640449ee1ace67997d4bd0476e",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cf8f2ec923ef5d640449ee1ace67997d4bd0476e",
-    "rust_tests": 346,
+    "revision": "5d8bdd0aaf4ec2d7e2731767c9ab88cf3a03e50f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/5d8bdd0aaf4ec2d7e2731767c9ab88cf3a03e50f",
+    "rust_tests": 360,
     "coverage": {
       "lines": [
-        3794,
-        3897
+        3940,
+        4041
       ],
       "regions": [
-        5510,
-        5757
+        5697,
+        5942
       ]
     },
     "upstream": {
@@ -557,9 +557,9 @@
       "partial": 7
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40965969969"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40976507911"
     },
-    "note": "Normal strict staged hook passed 346 Rust tests across 29 exact executable harnesses, 24 tooling checks and required pinned native suites. Production coverage remains 3794/3897 lines and 5510/5757 regions; no production lines changed. Independent fresh source/target/C++ peer replay passed all four old/new Rust variants and the unchanged native pair 2/0. Author wrong-topic-child controls fail both readiness checks, including two local workers. Exactly two selected ledger rows now have accepted faithful-port credit: 99 faithful / 7 partial, with 312 pending unchanged. Raw per-worker identities, remote-receipt and broader global/timing limits remain explicit. Exact run 40965969969 succeeded for cf8f2ec. Previous one-way repair 940c26a is exact hosted accepted at run40962102791."
+    "note": "Fresh complete normal Main hook passed 360 Rust tests across 30 exact executable harnesses, 24 tooling checks and required unchanged native suites. Coverage: 3940/4041 production lines, 5697/5942 regions and 135/135 changed executable lines. Independent candidate 134 library and 31 public/native tests passed against accepted baseline 127 and 24; final seven bounded receive controls passed. Queue payload is Service-owned and weakly refers to the original admitted sender; suspended in-flight sender leases may delay concurrent disconnect, while quiescent closure and existing admitted-request semantics remain. Author negatives fail handoff and sender-retention assertions; diagnostic merged coverage is not acceptance evidence. Main qualification used the pinned canonical Release/ZeroMQ SDK after a retained different-SDK native timing failure; isolated/same-port/different-port native controls identify unrelated service-discovery mutex interference. No assertion, timeout, gate, wire, dependency, scope-option API or upstream credit change. Exact hosted run 40976507911 is pending; prior cf8f2ec remains exact hosted accepted at 99 faithful / 7 partial."
   }
 }
