@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T13:50:54Z",
+  "updated_at": "2026-10-29T14:02:37Z",
   "state": "active",
-  "summary": "Standalone axis XML is under review. Native/Rust XML exchange passes; a documented normalization difference preserves the existing Rust unit-axis policy.",
+  "summary": "Typed standalone axis XML is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review typed standalone axis XML roundtrips",
-      "detail": "The candidate reads and writes direction/frame, dynamics, limits/stops and mimic metadata without resolving a model graph. All 409 candidate Rust tests and Clippy pass. Native output regenerates byte for byte, and actual Rust output loads in native JointAxis with the original values. Seventeen native outcomes retain sixteen exact matches and one named XYZ difference at magnitude 1e-6; native raw bits and the protected Rust UnitX assertion are both preserved. Independent source/native/error-boundary review, strict staged coverage and hosted CI remain required. Accepted mappings stay 172 complete and 25 partial."
+      "title": "Qualify published standalone axis XML",
+      "detail": "The new typed reader/writer preserves direction/frame, dynamics, limits/stops and mimic metadata without resolving a model graph. Independent review passed source/error-boundary checks, native fixture regeneration, direct native XML loading in Rust and actual Rust XML loading in native JointAxis. Seventeen native outcomes retain sixteen exact matches and one named XYZ difference preserving the existing Rust UnitX policy. The mandatory hook passed 409 Rust tests and 16 tooling tests with strict coverage; hosted CI is running. Accepted mappings remain 172 complete and 25 partial."
     }
   ],
   "accepted_slices": [
@@ -640,17 +640,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "ec94eb2d8a7575bc0ec84e9827fb515da28ec24a",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ec94eb2d8a7575bc0ec84e9827fb515da28ec24a",
-    "rust_tests": 402,
+    "revision": "fb3538c0afa919b3c0b2f62750f999c1f92c67f7",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/fb3538c0afa919b3c0b2f62750f999c1f92c67f7",
+    "rust_tests": 409,
     "coverage": {
       "lines": [
-        5143,
-        5170
+        5263,
+        5290
       ],
       "regions": [
-        8515,
-        8770
+        8674,
+        8929
       ]
     },
     "upstream": {
@@ -659,9 +659,9 @@
       "partial": 25
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40881467278"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40887441663"
     },
-    "note": "Mandatory staged hook and exact hosted CI passed 402 Rust tests and 16 tooling tests. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent source/assertion/native review and byte-identical fixture comparison passed. Original direct pose bounds and four-ULP pitch comparison remain intact. Generic Joint Element/constructor contracts and full SDF-02 remain open."
+    "note": "The mandatory staged hook passed; exact hosted CI is running. Actual changed executable lines are 129/129 covered. Independent native/source/error review passed with sixteen exact native outcomes and one explicit existing-policy XYZ difference. The protected threshold assertion, old originals, constructor partial and all tolerances are unchanged. Standalone metadata does not imply model graph or physics admission; full SDF-02 remains open."
   }
 }
