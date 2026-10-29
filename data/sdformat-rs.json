@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T17:48:09Z",
+  "updated_at": "2026-10-29T17:54:09Z",
   "state": "active",
   "summary": "Seven original ToElement cases now have independently reviewed complete Rust assertion mappings with exact hosted CI success. The ledger has 176 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Implement bounded Altimeter XML and standalone sensor output",
-      "detail": "Next substantive family reuses typed Altimeter noise records and existing parser/shared XML helpers, with exact original assertions, actual native exchanges and console controls. Preserve FT/IMU output, Joint force-torque-only admission, explicit runtime boundaries and case-specific input-origin mappings. IMU/Light origin and Joint type-none sensor assertions remain open."
+      "title": "Review Altimeter XML and matching standalone Sensor output",
+      "detail": "Working-tree candidate adds typed Altimeter XML using existing Noise and parser rules. All 446 author Rust tests and Clippy pass. Native replay passes sixteen actual cases, fourteen actual Rust-to-native exports, exact fixture and both unchanged originals. Six prior force/torque and four IMU outputs stay byte-identical. Independent review, strict staged hook and exact hosted CI remain pending; accepted ledger remains 176 complete/28 partial. Joint force-torque-only and runtime boundaries stay explicit."
     }
   ],
   "accepted_slices": [
