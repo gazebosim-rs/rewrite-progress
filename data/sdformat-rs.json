@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T12:45:56Z",
+  "updated_at": "2026-10-29T12:49:04Z",
   "state": "active",
-  "summary": "Screw-joint pitch unit conformance is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
+  "summary": "Screw-joint pitch unit conformance is accepted and hosted CI passes. The ledger now has 170 complete and 25 partial mappings; full SDFormat compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify published screw-joint unit conformance",
-      "detail": "The full native ScrewThreadPitch original is ported on its unchanged five-joint fixture with preserved assertions and tolerances. An explicit classic-unit observation reflects the authoritative metres-per-revolution field. Root independently replayed three Rust tests, eighteen exact-bit native cases and the unchanged original. The mandatory hook passed 400 Rust tests and 16 tooling tests with strict coverage. Exact hosted CI is running; accepted counts remain 169 complete and 25 partial. This adds no screw constraints or physics-admission changes."
+      "title": "Continue robotics and retained SDFormat conformance",
+      "detail": "The accepted screw-pitch slice preserves the original five-joint fixture assertions, modern-over-legacy precedence and both handedness/unit conventions. Root independently replayed three Rust tests, eighteen exact-bit native cases and the unchanged original. Remaining robotics conformance includes world-joint frame aliases and the remaining original mappings; general schema conversion, automatic inertia and serialization also remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Qualify screw-joint pitch units and classic observations",
+      "commit": "19af2f72b9fc5f9a50180caad256c7096337811f",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/19af2f72b9fc5f9a50180caad256c7096337811f"
+    },
     {
       "title": "Retain metallic and specular PBR material declarations",
       "commit": "bd1c2df613d1cbbebbe714b323b5bbd580b754b0",
@@ -640,13 +645,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 169,
+      "ported": 170,
       "partial": 25
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40875891973"
     },
-    "note": "The mandatory staged hook passed; exact hosted CI is still running. Actual changed executable lines are 3/3 covered. Independent Rust and native replay passed. The original fixture and numerical tolerances are unchanged. No parser, range or physics policy changed; the simulator pin stays unchanged. Full SDF-02 remains open."
+    "note": "Mandatory staged hook and exact hosted CI passed 400 Rust tests and 16 tooling tests. Production coverage is 5143/5170 lines and 8515/8770 regions; actual changed executable lines are 3/3 covered. Independent replay passed three Rust tests, eighteen exact-bit native cases and unchanged DOMJoint.ScrewThreadPitch. Fixtures, tolerances, parser/range/physics policies and consumer pins are unchanged. Full SDF-02 remains open."
   }
 }
