@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T14:26:26Z",
+  "updated_at": "2026-10-29T14:28:14Z",
   "state": "active",
-  "summary": "Bounded standalone joint XML is under independent review. Typed axis XML remains the latest accepted slice; full SDFormat compatibility is still in development.",
+  "summary": "Bounded standalone joint XML is under independent review. A ledger audit corrects accepted counts to 169 complete and 29 partial; four older entries were incorrectly counted as complete.",
   "model": "Repository owner",
   "active": [
     {
@@ -660,13 +660,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 173,
-      "partial": 25
+      "ported": 169,
+      "partial": 29
     },
     "ci": {
       "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40887441663"
     },
-    "note": "Mandatory staged hook and exact hosted CI passed 409 Rust tests and 16 tooling tests. Production coverage is 5263/5290 lines and 8674/8929 regions; actual changed executable lines are 129/129 covered. Independent native/source/error review passed with sixteen exact native outcomes and one explicit existing-policy XYZ difference. The protected threshold assertion, old originals, constructor partial and all tolerances are unchanged. Standalone metadata does not imply model graph or physics admission; full SDF-02 remains open."
+    "note": "Mandatory staged hook and exact hosted CI passed 409 Rust tests and 16 tooling tests. Production coverage is 5263/5290 lines and 8674/8929 regions; actual changed executable lines are 129/129 covered. Independent native/source/error review passed with sixteen exact native outcomes and one explicit existing-policy XYZ difference. The protected threshold assertion, old originals, constructor partial and all tolerances are unchanged. Standalone metadata does not imply model graph or physics admission; full SDF-02 remains open. Accepted original counts now follow reviewed status across both ledger lists: four entries stored under ports are explicitly partial; this corrects earlier reporting without changing assertions or accepted code."
   }
 }
