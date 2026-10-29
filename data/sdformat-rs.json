@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T18:36:49Z",
+  "updated_at": "2026-10-29T18:46:34Z",
   "state": "active",
   "summary": "Typed Magnetometer XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 181 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review NavSat XML and canonical standalone Sensor output",
-      "detail": "Working-tree candidate passes 459 author Rust tests and Clippy, nineteen native outcomes, seventeen actual exports, exact fixture and unchanged original. All 54 prior FT/IMU/Altimeter/AirPressure/Magnetometer exports remain byte-identical. Canonical navsat with legacy gps payload is covered; raw gps kind output remains explicitly unsupported with old parser/public kind preserved. Independent exact-case review and strict staged/hosted gates remain pending; accepted stays 181 complete/28 partial."
+      "title": "Qualify reviewed NavSat XML and canonical Sensor output",
+      "detail": "Published candidate 3e29416 passed independent 39-test review, nineteen native outcomes, seventeen exchanges, exact fixture and original. Single normal staged hook passed 459 Rust and seventeen tooling tests, 6245/6281 lines and 9973/10226 regions; actual changed lines 66/66. Exact hosted run 40933942516 is queued. Accepted stays 181 complete/28 partial until success; candidate 182/28. Canonical-only output and existing gps parser/public kind boundaries remain explicit."
     }
   ],
   "accepted_slices": [
