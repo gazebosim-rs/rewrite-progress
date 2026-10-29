@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T13:43:40.220674+00:00",
+  "updated_at": "2026-10-29T13:51:10.665358+00:00",
   "state": "active",
-  "summary": "The four-node AllTopicInfo mapping is published after independent review and the full local gate. Its exact hosted verification is running; bounded service-list startup behavior is the next production slice.",
+  "summary": "The published four-node AllTopicInfo mapping is hosted green at d08b6a0. The bounded service-list startup API passed focused checks and is under independent replay.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Bounded service discovery startup query",
-      "detail": "Inspecting and implementing an explicit deadline service-list query while preserving immediate known_services. Native service enumeration waits startup without a subscriber request. Per-worker initialization, bounded queues and real C++ service-peer checks are planned; global sharing and latency remain open."
+      "detail": "The explicit deadline service-list query is implemented, preserving immediate known_services. Five focused Rust/real C++ checks and all-target Clippy pass. Independent source/native/docs review is in progress. Per-worker startup does not imply convergence or delivery readiness; no original case has been promoted."
     }
   ],
   "accepted_slices": [
@@ -502,9 +502,9 @@
       "partial": 14
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40884010190"
     },
-    "note": "The normal staged hook passed 283 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions. Independent reviewers replayed old/new AllTopicInfo mappings and the pinned native original, confirming success, actual vector size three, names and all six endpoint counts. Existing tests remain unchanged. Hosted run 40884010190 is in progress for exact commit d08b6a0; this is not a hosted pass. There are 92 complete, 14 partial and 312 pending original cases. Full metadata, global startup, ownership, dynamic behavior, traffic and latency remain open."
+    "note": "The normal staged hook passed 283 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions. Independent reviewers replayed old/new AllTopicInfo mappings and the pinned native original, confirming success, actual vector size three, names and all six endpoint counts. Existing tests remain unchanged. Hosted run 40884010190 completed successfully for exact commit d08b6a0, including policy and native parity/coverage jobs. There are 92 complete, 14 partial and 312 pending original cases. Full metadata, global startup, ownership, dynamic behavior, traffic and latency remain open."
   }
 }
