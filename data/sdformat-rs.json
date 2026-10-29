@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T16:29:24Z",
+  "updated_at": "2026-10-29T16:36:30Z",
   "state": "active",
-  "summary": "Typed IMU configuration and standalone sensor XML is under independent review. Force/torque XML remains the latest accepted capability; full compatibility remains in development.",
+  "summary": "IMU configuration and standalone sensor XML is published after independent review and strict staged checks. Exact hosted CI is running; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Continue robotics and retained SDFormat compatibility",
-      "detail": "The new IMU reader/writer preserves six Noise records, orientation metadata and raw zero/non-unit reference vectors. Matching standalone sensor output is implemented while joint XML stays FT-only and existing rate/numeric policies remain intact. Author checks passed 433 Rust tests, Clippy, twenty-four native outcomes and four actual exchanges. Accepted FT output remains byte-identical after shared-noise extraction. Independent review and strict staged/hosted gates remain pending; Element/runtime/physics boundaries are explicit."
+      "detail": "IMU output retains six full Noise records, raw zero/non-unit vectors, parent-frame strings and orientation flags. Shared noise emission preserves accepted FT output byte for byte; joint XML remains FT-only. Independent review passed 33 Rust checks, all twenty-four IMU native outcomes and four exchanges plus the complete FT regression replay. Normal staged verification passed 433 Rust tests and strict coverage. Exact hosted CI remains pending; two new original mappings stay partial for Element identity."
     }
   ],
   "accepted_slices": [
@@ -665,17 +665,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "dfbb11a5774f572d2a888dd9d469a17398c53949",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/dfbb11a5774f572d2a888dd9d469a17398c53949",
-    "rust_tests": 427,
+    "revision": "3603dc102550f3b66a7bafc93d406b2f94c1cded",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3603dc102550f3b66a7bafc93d406b2f94c1cded",
+    "rust_tests": 433,
     "coverage": {
       "lines": [
-        5696,
-        5724
+        5799,
+        5835
       ],
       "regions": [
-        9228,
-        9485
+        9377,
+        9639
       ]
     },
     "upstream": {
@@ -684,9 +684,9 @@
       "partial": 32
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40906976028"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40913154392"
     },
-    "note": "Normal unchanged staged gate and exact hosted CI passed 427 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed lines 213/213. Fresh independent review passed 32 relevant Rust checks, all 32 native outcomes, generated fixture and six actual Rust-to-native exchanges plus two unchanged originals with empty stderr. Both new mappings are partial for generic Element/null identity; other sensor families/plugins/extensions/physics stay explicit errors. No runtime wrench claim."
+    "note": "Normal unchanged staged gate passed 433 Rust and seventeen tooling tests, format, Clippy, docs and strict production coverage; true changed executable lines 160/168 (>95%). Independent fresh replay passed 33 Rust checks, 24 IMU native outcomes/four exchanges and all 32 FT outcomes/six exchanges. Six FT exports match accepted output byte for byte. Original assertions/payload boundaries unchanged, Element identity partial, no runtime claim. Exact hosted CI pending."
   }
 }
