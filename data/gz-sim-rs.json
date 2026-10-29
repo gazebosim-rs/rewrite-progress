@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T15:19:21Z",
+  "updated_at": "2026-10-29T15:40:17Z",
   "state": "active",
-  "summary": "Two-link Rapier SDF revolutes are published after independent review and strict staged verification. Exact hosted CI is running; the selected four-engine C++ headless milestone remains accepted.",
+  "summary": "Two-link Rapier SDF revolutes passed independent review, strict staged verification and exact hosted CI. P3 continues with collision policy, larger articulations, native body-joint adapters and limits.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-05",
-      "title": "Bounded two-link SDF body-joint loading",
-      "detail": "Published two-link SDF constraints after repairing independently reproduced endpoint-velocity and model-ownership defects. Normal staged hook passed 471 Rust and 88 tooling tests; all eleven production crates exceed 95% line/region coverage, with 122/122 changed executable scene lines covered. Exact hosted CI is running. Larger trees, native body-joint adapters and limits remain open."
+      "title": "Model collision policy for larger articulated scenes",
+      "detail": "Accepted two-link SDF constraints at 9e8e056 with 471 Rust tests and exact hosted CI. Investigating Rapier model-wide self-collision filtering before admitting larger trees. Existing two-link and native capability boundaries remain explicit; no larger-tree or speedup claim."
     }
   ],
   "accepted_slices": [
@@ -387,6 +387,11 @@
       "title": "Full-f64 Rapier body-to-body revolutes with rotating-parent samples and reset/removal safety",
       "commit": "26ca44f0272f8697ef345bf778e8ad1467181ec4",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/26ca44f0272f8697ef345bf778e8ad1467181ec4"
+    },
+    {
+      "title": "Bounded two-link SDF revolutes with relative samples, child-frame poses and validated endpoint lifecycle",
+      "commit": "9e8e05604a186b586be6c896778e086f58675565",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9e8e05604a186b586be6c896778e086f58675565"
     }
   ],
   "remaining": [
@@ -438,10 +443,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40900247474"
     },
-    "note": "Independent repair review and the unchanged normal staged hook passed 471 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage; changed scene executable lines 122/122. New tests preserve moving child-frame offsets, relative samples, reset/removal and explicit topology/native capability boundaries. Missing endpoint velocities and foreign owner defects found by review are repaired with durable regressions. Exact hosted acceptance is pending. No larger-tree, native body-joint, upstream articulation-family completion or new performance claim."
+    "note": "Independent repair review and the unchanged normal staged hook passed 471 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage; changed scene executable lines 122/122. New tests preserve moving child-frame offsets, relative samples, reset/removal and explicit topology/native capability boundaries. Missing endpoint velocities and foreign owner defects found by review are repaired with durable regressions. Exact hosted run 40900247474 passed. No larger-tree, native body-joint, upstream articulation-family completion or new performance claim."
   },
   "phase_status": {
     "P0": "in_progress",
