@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T13:14:48Z",
+  "updated_at": "2026-10-29T13:23:42Z",
   "state": "active",
-  "summary": "World-joint child-frame conformance is accepted and hosted CI passes. The ledger now has 171 complete and 25 partial mappings; complete joint-pose conformance is the next task.",
+  "summary": "Complete joint-pose conformance is reviewed and published. The mandatory staged gate passes; exact hosted CI is running before acceptance.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Characterize complete joint poses and loaded identity",
-      "detail": "The next candidate ports DOMJoint.Complete on the existing unchanged nine-joint fixture. It checks raw translations and rotations, classic screw pitch and the presence of the matching explicitly named loaded joint child. The existing immutable model snapshot supplies that last predicate without adding a generic DOM or production API. The unchanged native original passes; Rust characterization and independent review are under way. No physics capability changes are claimed."
+      "title": "Qualify published complete joint-pose conformance",
+      "detail": "The faithful DOMJoint.Complete port preserves nine indexed raw poses, named screw-joint presence, matching loaded source-child presence and classic pitch 20 on the existing unchanged fixture. Root independently replayed the Rust and native originals and checked the precise loaded identity mapping and original bounds. The mandatory hook passed 402 Rust tests and 16 tooling tests with strict coverage. Exact hosted CI is running; accepted mappings remain 171 complete and 25 partial. No production parser, API or physics capability changed."
     }
   ],
   "accepted_slices": [
@@ -635,9 +635,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "b7812ae88b23c768016d040d8aee5f5c1f31b52d",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7812ae88b23c768016d040d8aee5f5c1f31b52d",
-    "rust_tests": 401,
+    "revision": "ec94eb2d8a7575bc0ec84e9827fb515da28ec24a",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ec94eb2d8a7575bc0ec84e9827fb515da28ec24a",
+    "rust_tests": 402,
     "coverage": {
       "lines": [
         5143,
@@ -654,9 +654,9 @@
       "partial": 25
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40879523306"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40881467278"
     },
-    "note": "Mandatory staged hook and exact hosted CI passed 401 Rust tests and 16 tooling tests. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent native/Rust replay and byte-identical fixture comparison passed. Every original metadata, endpoint and nine pose assertion retains its original bound and direct quaternion signs. Full SDF-02 remains open."
+    "note": "The mandatory staged hook passed; exact hosted CI is running. Production coverage remains 5143/5170 lines and 8515/8770 regions; production code is unchanged. Independent source/assertion/native review and fixture comparison passed. Original direct pose bounds and four-ULP pitch comparison remain intact. Generic Joint Element/constructor contracts and full SDF-02 remain open."
   }
 }
