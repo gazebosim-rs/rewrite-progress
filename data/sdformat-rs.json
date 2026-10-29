@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-29T18:46:34Z",
+  "updated_at": "2026-10-29T18:48:43Z",
   "state": "active",
-  "summary": "Typed Magnetometer XML and matching standalone Sensor output are accepted with exact hosted CI success. The ledger has 181 complete and 28 partial mappings; full compatibility remains in development.",
+  "summary": "Typed NavSat XML and canonical standalone Sensor output are accepted with exact hosted CI success. The ledger has 182 complete and 28 partial mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed NavSat XML and canonical Sensor output",
-      "detail": "Published candidate 3e29416 passed independent 39-test review, nineteen native outcomes, seventeen exchanges, exact fixture and original. Single normal staged hook passed 459 Rust and seventeen tooling tests, 6245/6281 lines and 9973/10226 regions; actual changed lines 66/66. Exact hosted run 40933942516 is queued. Accepted stays 181 complete/28 partial until success; candidate 182/28. Canonical-only output and existing gps parser/public kind boundaries remain explicit."
+      "title": "Implement bounded AirSpeed XML and standalone Sensor output",
+      "detail": "Next mature family preserves pressure Noise default/configured/edited values with exact native original and actual XML exchanges. Reuse existing parser/Noise helpers, prior output bytes and narrow constructor-input mappings. Keep Joint force-torque-only and no pressure-to-speed, wind or atmosphere calculation claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize typed NavSat configurations and canonical sensors",
+      "commit": "3e2941633413fb9075b54cf2ace7f11ff60dd62a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3e2941633413fb9075b54cf2ace7f11ff60dd62a"
+    },
     {
       "title": "Serialize typed Magnetometer configurations and standalone sensors",
       "commit": "f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4",
@@ -695,28 +700,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f437d37fa36b994a9871b8d6b0dbfecf9e5b87e4",
-    "rust_tests": 455,
+    "revision": "3e2941633413fb9075b54cf2ace7f11ff60dd62a",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/3e2941633413fb9075b54cf2ace7f11ff60dd62a",
+    "rust_tests": 459,
     "coverage": {
       "lines": [
-        6178,
-        6214
+        6245,
+        6281
       ],
       "regions": [
-        9882,
-        10139
+        9973,
+        10226
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 181,
+      "ported": 182,
       "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40931255279"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40933942516"
     },
-    "note": "Single normal staged hook and exact hosted CI passed 455 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 64/64. Independent review passed 35 relevant Rust checks, seventeen native outcomes, fifteen exchanges, exact fixture/original and shared IMU24/FT32 native replays. All 39 prior export-byte comparisons remain author evidence. Original-X approximate inequality is retained; no loaded identity or runtime claim."
+    "note": "Single normal staged hook and exact hosted CI passed 459 Rust and seventeen tooling tests, format, Clippy, docs and strict coverage; actual changed executable lines 66/66. Independent review passed 39 relevant Rust checks, nineteen native outcomes, seventeen exchanges, exact fixture and original. All 54 prior-byte comparisons remain author evidence. Canonical-only output, existing gps parsing/public kind and Joint boundaries are explicit."
   }
 }
