@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T15:48:42Z",
+  "updated_at": "2026-10-29T16:17:46Z",
   "state": "active",
   "summary": "Two-link Rapier SDF revolutes passed independent review, strict staged verification and exact hosted CI. P3 continues with collision policy, larger articulations, native body-joint adapters and limits.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "PHY-05",
       "title": "Model collision policy for larger articulated scenes",
-      "detail": "A new programmatic Rapier contact-exclusion primitive is implemented in an isolated worktree. Six physical/lifecycle tests pass, including 64 simultaneous groups, retained external-floor contact and prepared same-epoch restoration; existing Rapier suite and native Unsupported controls pass. Independent review is queued. No scene expansion or new acceptance claim before strict gates."
+      "detail": "Published programmatic Rapier contact groups after independent review and strict staged checks. Exact hosted CI is running. Native model-collision behavior is being characterized before extending SDF articulation admission; larger trees, native body-joint adapters and limits remain open."
     }
   ],
   "accepted_slices": [
@@ -424,17 +424,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "9e8e05604a186b586be6c896778e086f58675565",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9e8e05604a186b586be6c896778e086f58675565",
-    "rust_tests": 471,
+    "revision": "675c4e079150c56675e18dd398f26a9661dd8c75",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/675c4e079150c56675e18dd398f26a9661dd8c75",
+    "rust_tests": 477,
     "coverage": {
       "lines": [
-        6460,
-        6525
+        6515,
+        6581
       ],
       "regions": [
-        10079,
-        10306
+        10154,
+        10382
       ]
     },
     "upstream": {
@@ -443,10 +443,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40900247474"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40909716107"
     },
-    "note": "Independent repair review and the unchanged normal staged hook passed 471 Rust and 88 tooling tests. All eleven production crates strictly exceed 95% line and region coverage; changed scene executable lines 122/122. New tests preserve moving child-frame offsets, relative samples, reset/removal and explicit topology/native capability boundaries. Missing endpoint velocities and foreign owner defects found by review are repaired with durable regressions. Exact hosted run 40900247474 passed. No larger-tree, native body-joint, upstream articulation-family completion or new performance claim."
+    "note": "Independent review and normal staged gate passed 477 Rust and 88 tooling tests. All eleven production crates exceed 95% line/region coverage; changed contract lines10/10 and Rapier49/50. Programmatic contact-only groups support full-width IDs, 64 simultaneous groups, normal/prepared reset and external-ground contacts. Native adapters explicitly reject this new capability. Exact hosted acceptance is pending; no scene expansion or speedup claim."
   },
   "phase_status": {
     "P0": "in_progress",
