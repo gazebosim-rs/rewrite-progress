@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T13:01:35.685886+00:00",
+  "updated_at": "2026-10-29T13:13:00.299896+00:00",
   "state": "active",
-  "summary": "The exact Int32 subscriber-only fixture is published and hosted green. The ready TopicInfo original mapping is in its reviewed staged gate.",
+  "summary": "The subscriber-only TopicInfo startup-query mapping is published. Its normal staged gate passed; exact latest hosted verification is running.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Published 2139e8e has 90 complete and 16 partial upstream mappings. Wider discovery, callback, service, lifecycle and network contracts remain open."
+      "detail": "Published bdf7c9a has 91 complete and 15 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
     },
     {
       "id": "NET-02",
-      "title": "Subscriber-only TopicInfo through startup query",
-      "detail": "Published2139e8e is hosted green. The next separate test calls the accepted topic_info startup API with exact Int32 subscription, successful query, zero publishers, one subscriber and Int32 type. The older immediate snapshot test remains. Author two-test/native checks and independent source/runtime/docs review passed; the normal staged gate is running. README stale candidate/freeze wording is corrected in the same slice. Full endpoint metadata, process-global initialization, remote convergence and general latency remain open."
+      "title": "Hosted verification and remaining topic metadata contracts",
+      "detail": "The ready TopicInfo port preserves the exact native Int32 subscription and endpoint predicates through the accepted bounded startup API. The older snapshot test remains. Independent review and the normal staged gate passed. Latest hosted run 40878751243 is running; the prior Int32 fixture commit 2139e8e is hosted green. Full endpoint metadata, process-global initialization, remote convergence and general latency remain open."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Subscriber-only topic information through the bounded startup query, retaining the immediate snapshot test",
+      "commit": "bdf7c9a050449a72a4d745c0460d52282ee6f23a",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/bdf7c9a050449a72a4d745c0460d52282ee6f23a"
+    },
     {
       "title": "Exact native Int32 subscriber-only topic-list fixture while retaining the StringMsg variant",
       "commit": "2139e8ed389c434e063263fb910cfd55b34f2c3e",
@@ -475,9 +480,9 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "2139e8ed389c434e063263fb910cfd55b34f2c3e",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2139e8ed389c434e063263fb910cfd55b34f2c3e",
-    "rust_tests": 281,
+    "revision": "bdf7c9a050449a72a4d745c0460d52282ee6f23a",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/bdf7c9a050449a72a4d745c0460d52282ee6f23a",
+    "rust_tests": 282,
     "coverage": {
       "lines": [
         2988,
@@ -490,13 +495,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 90,
-      "partial": 16
+      "ported": 91,
+      "partial": 15
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40876042834"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40878751243"
     },
-    "note": "The normal staged hook passed 281 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions; this slice changes no executable production lines, dependencies or gates. The old StringMsg test body remains unchanged; the new exact Int32 fixture preserves every selected native predicate, including list clear. Independent reviewers compared native source and replayed both focused tests. Hosted run40876042834 passed policy and native parity/coverage for exact2139e8e; prior648d7cb is also green. There are 90 complete, 16 partial and 312 pending original cases; broad NET-01/NET-02 and latency/global-registry completion remain open."
+    "note": "The normal staged hook passed 282 Rust checks, 24 tooling checks and all required native C++ interoperability. Local coverage is 2988/3047 production lines and 4394/4565 regions. The slice changes no executable production lines, dependencies or gates. Independent reviewers compared the selected native predicates and replayed both snapshot and ready-query tests. The original snapshot remains unchanged; the five-second query deadline changes no original untimed predicate. Exact latest hosted verification is running; prior commit 2139e8e passed policy and native parity/coverage. There are 91 complete, 15 partial and 312 pending original cases. Full endpoint metadata, global startup and general latency remain open."
   }
 }
