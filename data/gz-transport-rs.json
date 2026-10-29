@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-29T15:14:07.773768+00:00",
+  "updated_at": "2026-10-29T15:18:20.391403+00:00",
   "state": "active",
-  "summary": "The publication metadata candidate passed independent source/native review and all six focused checks. Its normal staged gate is running; published cf1a29d remains hosted green.",
+  "summary": "Owned publication metadata is published after independent native/source review and the full normal staged gate. Exact hosted verification is running; prior cf1a29d is hosted green.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Published cf1a29d retains 92 complete and 14 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
+      "detail": "Published 3dfd5a2 retains 92 complete and 14 partial upstream mappings. Broader discovery, callback, service, lifecycle and network contracts remain open."
     },
     {
       "id": "NET-02",
       "title": "Owned message-publication metadata",
-      "detail": "The known_topic_publishers slice is independently approved after fresh source, Cargo target and native peer replay. All nine fields, eight effective flag/rate combinations, raw-record immutability, worker visibility, filters, lifetime and bounded errors match the documented scope. The normal strict staged gate is running before publication. Global identity, subscriber metadata, convergence, liveness and performance remain open."
+      "detail": "The owned known_topic_publishers snapshot is accepted and published with native effective rate/throttled options and actual advertised control metadata. Nine-field native comparisons, raw-record immutability, scopes/domains/lifetime and errors passed author and independent checks. Exact hosted CI is pending. Subscriber metadata still requires retaining fields that the current interest cache discards; no new source edits are underway."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Owned publication metadata with native effective flag/rate semantics and preserved raw records",
+      "commit": "3dfd5a2a54b9d4862eca12ca60fe2043f916185d",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3dfd5a2a54b9d4862eca12ca60fe2043f916185d"
+    },
     {
       "title": "Owned service provider address, identity, scope, socket and descriptor snapshots",
       "commit": "cf1a29d457c0cf5be7d330c684f31571b0d61510",
@@ -493,17 +498,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "cf1a29d457c0cf5be7d330c684f31571b0d61510",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/cf1a29d457c0cf5be7d330c684f31571b0d61510",
-    "rust_tests": 293,
+    "revision": "3dfd5a2a54b9d4862eca12ca60fe2043f916185d",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/3dfd5a2a54b9d4862eca12ca60fe2043f916185d",
+    "rust_tests": 299,
     "coverage": {
       "lines": [
-        3071,
-        3127
+        3120,
+        3176
       ],
       "regions": [
-        4531,
-        4698
+        4611,
+        4778
       ]
     },
     "upstream": {
@@ -512,9 +517,9 @@
       "partial": 14
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40891441453"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/40899529464"
     },
-    "note": "The normal staged hook passed 293 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3071/3127 production lines and 4531/4698 regions, with all 42 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all five focused checks, including six every-field native fixtures, and reviewed final code/docs. Type-only APIs keep their filters and clone cost. Existing assertions, dependencies and gates are unchanged; no upstream case was promoted. Hosted run 40891441453 completed successfully for exact commit cf1a29d, including policy and native parity/coverage jobs. Prior ee5a39b run40887333239 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Native process-global identity, general discovery/liveness and timing remain open."
+    "note": "The normal staged hook passed 299 Rust checks, 24 tooling checks and required native C++ originals/interoperability. Local coverage is 3120/3176 production lines and 4611/4778 regions, with all 45 changed executable lines covered. A separate reviewer source, Cargo target and fresh native peer passed all six focused checks, including six every-field native fixtures and eight effective flag/rate controls. Raw records, emitted wire, existing APIs/assertions, dependencies and gates are unchanged. No original case was promoted. Hosted run 40899529464 is in progress for exact commit 3dfd5a2; this is not a hosted pass. Prior cf1a29d run40891441453 succeeded. There are 92 complete, 14 partial and 312 pending original cases. Subscriber metadata, native process-global identity, general discovery/liveness and performance remain open."
   }
 }
