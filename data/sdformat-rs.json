@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T08:44:55Z",
+  "updated_at": "2026-10-30T08:50:37Z",
   "state": "active",
-  "summary": "Bounded Collision metadata serialization is accepted after independent native review, staged verification and exact hosted CI.",
+  "summary": "Collision writer is accepted; the ownership setup correction and two original mappings passed independent review.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Reconcile Collision metadata original assertions",
-      "detail": "Five previously credited ownership tests retained all pose assertions but used a Box in a setup where native constructs Empty; correcting that setup is under pre-change review. The two genuine ToElement originals are ready for separately reviewed mapping. Constructor, Element identity, semantic pose, type-only BOX and automatic inertia remain explicit gaps.",
+      "detail": "The five ownership cases now use genuine Empty setup in the reviewed candidate, with the prior configured Box destination retained separately. Two complete ToElement mappings passed independent review, along with 13 Rust checks and seven native originals. Normal staged/exact hosted checks remain pending; accepted ledger remains 201/27. Constructor, Element identity, semantic pose, type-only BOX, auto-inertia, version conversions and merge/include gaps remain.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/260b23f0faacfa0016ceefc9013d312c6525d41e"
     }
   ],
