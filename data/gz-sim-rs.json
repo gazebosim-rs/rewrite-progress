@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T17:33:52.448095+00:00",
+  "updated_at": "2026-10-30T17:46:09.849086+00:00",
   "state": "active",
-  "summary": "Owned visual geometry is accepted in the Bevy scene through reset, with all strict local and exact hosted checks passing. Clean DART reference qualification and optional rendering continue; the renderer worker still fails its region coverage gate and remains private.",
+  "summary": "Owned visual geometry is accepted in Main. The private Bevy software-rendering profile now passes strict line and region coverage; full staged and hosted integration checks remain required. Clean DART reference recipe checks and original simulator qualification continue.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -29,12 +29,12 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "A private clean system-DART image built from signed, checksum-pinned OSRF 6.13.2 packages and fresh pinned physics/simulator sources. Read-only inspection and isolated articulated smoke pass exact module/hash checks. Original physics CTest execution passes 155 registrations, with 318 completed cases and 171 explicitly recorded skips; missing feature lists and upstream exclusions are classified. Earlier three permission-only guard failures are retained; corrected private build-cache scratch changed no source or test assertions. Recipe publication and broader qualification remain open; no full P0 or performance acceptance is claimed."
+      "detail": "The clean signed OSRF DART 6.13.2 reference image built and passed independent read-only package/source/cache/library checks. Independent bounded replay passed eleven original physics registrations and articulated smoke; the full author physics run retains 318 completed cases and 171 skips. The reviewed recipe is in the mandatory staged gate. Its first sandbox run failed existing loopback tests with EPERM; the unchanged gate is rerunning with loopback allowed. Remaining profile execution and broader P0 qualification stay open."
     },
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Accepted af35578a077a5544839111c8d80dcb479d80d12f retains all 72 raw math capture files, every case identity and generating-program hashes. Author and independent immutable-image executions passed all 135 registrations and 658 cases, with zero skips/errors; five data-integrity controls and the full unchanged staged/hosted gates pass. This adds no Rust port credit; the math ABI guard overlaps the earlier ten-command baseline. Complete source-ledger reconciliation and other native profiles remain open."
+      "detail": "Accepted native math baseline af35578 retains 135 passing registrations and 658 completed cases with independent replay. New clean DART image enumeration now lists all 431 configured physics/simulator registrations, 214 gtest configurations and 1846 expanded cases with zero inventory gaps. Physics lists match all 489 runtime identities exactly; 171 remain skips. These list-only observations add no Rust port or execution credit. Complete source-ledger reconciliation and other profiles remain open."
     },
     {
       "id": "REF-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "Accepted e72c99c787d74d7ee761ed8a5b83928ad5b3d61a retains parsed visual geometry in Bevy scene metadata through reset, without GPU dependencies or new callbacks. Independent review, five focused controls, Clippy, the full local gate and exact hosted 41096869144 pass: 629 Rust, 117 tooling, 34/34 changed executable lines and strict coverage in all 11 production crates. The private combined llvmpipe profile passes behavior checks but worker regions remain 356/385 (92.47%), below the strict threshold; lines are 253/263. No renderer runtime or physical GPU qualification is accepted."
+      "detail": "Accepted e72c99c retains parsed visual geometry through scene reset with 629 Rust, 117 tooling, 34/34 changed executable lines and exact hosted 41096869144 passing. Separately, the private real llvmpipe profile now passes all six selected production crates: worker 261/269 lines and 358/375 regions; profile total 1395/1427 lines and 1998/2069 regions. Real process lifecycle controls and intentional software device destruction pass. Full staged headless plus renderer checks, hosted CI, scene integration and physical GPU qualification remain open; no renderer runtime is accepted in Main."
     },
     {
       "id": "QLT-01",
