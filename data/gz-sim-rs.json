@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T01:35:24Z",
+  "updated_at": "2026-10-30T01:50:54Z",
   "state": "active",
-  "summary": "Programmatic world-hinge effort is accepted on DART, MuJoCo and Rapier after independent native review, strict staged checks and exact hosted CI. P3 remains in progress.",
+  "summary": "Loaded scene joint effort is published after independent review and strict staged checks; exact hosted qualification is running. Persistent Bevy force control is under review. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-01",
-      "title": "Qualifying reviewed loaded-scene joint effort",
-      "detail": "Independent fresh-source review passed 147 candidate scene tests plus a separate alias regression. Review found and fixed copied-handle redirection using a private original public joint identity; prior commands remain intact after rejection and repair. The ordinary staged test, native interoperability and strict coverage gate is running. Accepted quality still describes the previous published revision. Persistent ApplyJointForce controllers and transport remain open."
+      "title": "Reviewing persistent Bevy joint-force control",
+      "detail": "A new programmatic latest-value component applies force once per advancing step after joint preflight. Author checks passed 396 tests across all five affected crates, including nine new physical/lifecycle controls and a default capability control. Pure backend validation preserves existing queues during setting changes. Independent review is running; SDF configuration, initial controller installation and command transport remain open."
     },
     {
       "id": "PHY-05",
@@ -469,17 +469,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "62597084d753d00e52604a036dcfe9b2105cba9f",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/62597084d753d00e52604a036dcfe9b2105cba9f",
-    "rust_tests": 535,
+    "revision": "98ecd4232cb7b4b0f3459cfffec3c0736aea8941",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/98ecd4232cb7b4b0f3459cfffec3c0736aea8941",
+    "rust_tests": 547,
     "coverage": {
       "lines": [
-        6982,
-        7056
+        7030,
+        7105
       ],
       "regions": [
-        10899,
-        11134
+        10986,
+        11223
       ]
     },
     "upstream": {
@@ -488,10 +488,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40979793823"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40987161372"
     },
-    "note": "Independent final source/physical/native review, the normal staged hook and exact hosted CI passed: 535 Rust tests, 91 tooling checks, all eleven production crates strictly above95% lines and regions, changed Rapier production62/62. Ten new controls and six actual C++ plugin rates qualify world/fixed-parent actuation only. Moving parents remain explicitly unsupported; no full original-system, finite-limit, cross-engine position or performance credit."
+    "note": "Published loaded-scene input passed independent fresh-source review and the normal staged hook: 547 Rust tests, 91 tooling checks, every production crate strictly above 95% line and region coverage, and 76/76 changed executable scene lines. Exact hosted qualification is still running; this slice is not yet listed as accepted. Review caught and fixed copied-handle redirection. Existing native force-pulse rates and lifecycle assertions are preserved. No original-system, finite-limit or performance completion is claimed."
   },
   "phase_status": {
     "P0": "in_progress",
