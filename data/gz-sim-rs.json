@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T20:28:14.152220+00:00",
+  "updated_at": "2026-10-30T21:01:21.370772+00:00",
   "state": "active",
-  "summary": "The first bounded Bevy offscreen renderer is accepted after independent review, full staged checks and exact hosted success. Scene extraction, broader physics and sensor compatibility remain under development.",
+  "summary": "Canonical scene-to-renderer integration passed independent review and is running both required staged profiles. The next DART joint-state correction is published and awaiting exact hosted acceptance; independent repository work continues.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "PHY-05",
       "title": "Qualifying broader motion and joint-limit domains",
-      "detail": "Accepted ownership prerequisite 87b9d77c (qualified at exact hosted revision 34b61408) binds DART body slots to native ownership. A separate dependent-coordinate joint-state correction passed independent source review and a fresh reviewer build of 79 focused tests, including actual native fixture compilation and loaded-library checks. Its complete normal staged gate is running. These corrections preserve current one-body admission; moving-parent joints, generalized contact and effort safety, coupled cache refresh, endpoint removal/reset, compound-shape parity and performance remain open."
+      "detail": "Published correction c3e05d78 uses dependent DART coordinate indices for constrained velocity and impulse operations and joint-local rollback state. Independent source review and a fresh reviewer build of 79 focused controls passed, followed by the complete normal staged gate; exact hosted run 41127331239 remains pending. It preserves current one-body joint admission. Moving-parent joints, generalized contact and effort safety, coupled cache refresh, endpoint removal/reset, compound-shape parity and performance remain open."
     },
     {
       "id": "PHY-03",
@@ -34,7 +34,7 @@
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "New-image inventory lists 431 physics/simulator registrations and 1846 cases. Independent raw-data audit covers the first eight simulator batches: 1042 exact IDs, 1035 successes and seven failures. Further source-checked captures now report 1227 IDs, with 1219 successes, seven preserved failures and one original disabled case; final aggregate review remains pending. Five failed identities also pass a separate unchanged-original offline run with a bound DeliveryBot 2 cache, without erasing first failures or adding unique IDs. The remaining 17 configurations and 130 cases retain explicit prerequisites. These reference results are not Rust migration credit."
+      "detail": "The new-image inventory lists 431 physics/simulator registrations and 1846 cases. Reviewed native simulator captures now contain 1231 distinct IDs: 1223 successes, seven preserved failures and one original disabled case, across 244 registrations and 122 configurations. The last addition independently audited four unchanged multicopter cases and their original guard. Another 16 configurations and 126 cases remain unrun with explicit prerequisites. Five original failed identities also pass a separate bound DeliveryBot cache profile; first failures remain recorded. These are native reference results, not Rust migration credit."
     },
     {
       "id": "REF-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Accepted 34b61408 passes exact hosted run 41119924798 and the complete normal staged gate: 631 headless and 127 renderer-profile test executions, 149 tooling checks, real C++ clients and strict line/region coverage for all 16 production crates across the required profiles. The renderer runs isolated software-Vulkan tests for bounded unlit 64\u00d764 box scenes with f64 frame/origin conversion and bounded IPC. Canonical ECS snapshot extraction is being implemented in isolation; calibrated camera/lidar sensors, assets and physical GPU qualification remain open. The broader rendering packet is not complete."
+      "detail": "The bounded renderer is accepted at revision 34b61408 after exact hosted run 41119924798. Canonical scene extraction now passes independent source review, a fresh reviewer build of nine extraction and four fault/epoch tests, and an actual same-graph ECS-to-worker image lifecycle replay. It uses an optional CPU-only bridge, stable IDs and committed timestamps; no rendering systems run implicitly. The complete staged headless and expanded renderer profiles are running. Private renderer-profile results cover 341 test executions with strict per-crate thresholds; these are not yet accepted Main metrics. Calibrated sensors, assets, physical GPU qualification and comparative performance remain open."
     },
     {
       "id": "QLT-01",
