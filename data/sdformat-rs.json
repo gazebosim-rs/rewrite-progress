@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T07:53:03Z",
+  "updated_at": "2026-10-30T07:55:26Z",
   "state": "active",
-  "summary": "Reviewed collision density metadata passed its staged gate and is pushed; exact hosted CI is pending.",
+  "summary": "Collision density presence and effective defaults are accepted after independent native review, the normal staged gate and exact hosted CI.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify collision density and prepare Collision serialization",
-      "detail": "Density commit 005fda0 passed independent native review and the normal staged hook, and is pushed to Main. Exact hosted CI remains pending; accepted evidence below still refers to ce5b2e9. Genuine Collision serialization will use actual Empty geometry and density presence after acceptance. No physics or dependency pin change.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0"
+      "title": "Build genuine Collision metadata serialization",
+      "detail": "Density is accepted with presence and effective default preserved. A separate Collision writer candidate uses actual Empty geometry and density states; review and normal qualification remain pending. No physics or consumer pin change.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0bf5742278707003fdebb2e1a2c5a1cac9"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve optional Collision density metadata",
+      "commit": "005fda0bf5742278707003fdebb2e1a2c5a1cac9",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0bf5742278707003fdebb2e1a2c5a1cac9"
+    },
     {
       "title": "Preserve native Empty geometry values and defaults",
       "commit": "ce5b2e90be21e3452d5144f25f813bbf389aca4f",
@@ -796,17 +801,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "ce5b2e90be21e3452d5144f25f813bbf389aca4f",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ce5b2e90be21e3452d5144f25f813bbf389aca4f",
-    "rust_tests": 547,
+    "revision": "005fda0bf5742278707003fdebb2e1a2c5a1cac9",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0bf5742278707003fdebb2e1a2c5a1cac9",
+    "rust_tests": 550,
     "coverage": {
       "lines": [
-        7543,
-        7570
+        7550,
+        7577
       ],
       "regions": [
-        11825,
-        12065
+        11840,
+        12079
       ]
     },
     "upstream": {
@@ -816,8 +821,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41017181681"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41022794046"
     },
-    "note": "Normal strict gate and exact hosted success passed 547 Rust/17 tooling, formatting, Clippy, docs and required coverage; actual changed executable 11/11. Independent fresh-source review passed 33 distinct Rust checks/all 17 tooling, native 38 profiles/exact constructor fixture/20 Geometry-or-Visual exchanges/18 named strict differences, plus Geometry48/46/two originals and Visual28/26/original. Prior independent approvals verified native positives and concrete Rust assertions before replacing only exact temporary rejection cases. Shared allowed/cardinality policy and Visual None distinction remain, source/frame/full-object positives strengthened. Existing static-model preimage guard preserved through reversible reviewed successor metadata. No ledger promotion, density, physics, Element-origin or consumer pin change."
+    "note": "Independent review reproduced 14 native profiles, ten setter states and 15 focused Rust checks. Normal staged hook and exact hosted CI passed 550 Rust and 17 tooling controls; staged changed lines 7215/7236, hosted Main has no changed-line denominator. Native subnormal setter emission loss is recorded without altering stored metadata. Ledger remains 201 complete/27 partial; no physics, writer or consumer pin included."
   }
 }
