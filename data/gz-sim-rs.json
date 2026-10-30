@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T03:45:01Z",
+  "updated_at": "2026-10-30T04:52:32Z",
   "state": "active",
-  "summary": "Persistent Bevy joint-force control is accepted after independent review, strict staged checks and exact hosted CI. Recognized SDF controller configuration and reset metadata are under development. P3 remains open.",
+  "summary": "Configured ApplyJointForce controllers and reset metadata are accepted after independent review, strict staged checks and exact hosted CI. Real C++ force-topic delivery and lifecycle controls are under development. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-CONTROL",
-      "title": "Reviewing recognized ApplyJointForce configuration",
-      "detail": "The private canonical model configuration slice passed all166 Scene tests, seven new public controls, two private controls, Clippy and fourteen actual native clone/Get observations. Maintained XML parsers preserve lexical boundaries and native ASCII/CDATA text rules. Independent review and strict staged/hosted qualification remain required. Transport delivery and the original plane/moving-parent fixture remain unqualified."
+      "title": "Implementing bounded native joint-force transport input",
+      "detail": "A private C++ typed Double publisher controls paused and advancing world hinges on Rapier, DART and MuJoCo. Author tests preserve latest-value commands, reject nonfinite input and accept default zero. Queue/reset, endpoint fanout, lifecycle and negative controls are being added before independent review and strict qualification. Full original system and moving-parent fixture remain open."
     },
     {
       "id": "PHY-05",
@@ -447,6 +447,11 @@
       "title": "Persistent Bevy joint-force control with pure backend admission, indexed entity ownership, native pulse-rate parity and reset/retirement behavior",
       "commit": "19c7f7c319a8e30f82e644c3299577b8f7619960",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/19c7f7c319a8e30f82e644c3299577b8f7619960"
+    },
+    {
+      "title": "Configured joint-force controllers with native lexical text probes, validated target ownership and zero-command reset restoration",
+      "commit": "340600b296a0dbc91ec52f97822b472e65a001a8",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/340600b296a0dbc91ec52f97822b472e65a001a8"
     }
   ],
   "remaining": [
@@ -480,17 +485,17 @@
     "SYS-CONTROL": "in_progress"
   },
   "quality": {
-    "revision": "19c7f7c319a8e30f82e644c3299577b8f7619960",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/19c7f7c319a8e30f82e644c3299577b8f7619960",
-    "rust_tests": 558,
+    "revision": "340600b296a0dbc91ec52f97822b472e65a001a8",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/340600b296a0dbc91ec52f97822b472e65a001a8",
+    "rust_tests": 567,
     "coverage": {
       "lines": [
-        7109,
-        7184
+        7269,
+        7345
       ],
       "regions": [
-        11088,
-        11325
+        11326,
+        11572
       ]
     },
     "upstream": {
@@ -500,9 +505,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40993007439"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41000708476"
     },
-    "note": "Accepted persistent-force integration passed independent fresh-source review, the normal staged hook and exact hosted CI40993007439. All eleven production crates exceed 95% lines and regions; changed executable lines are102/102 across five crates. Ten controls exercise physical forcing, pause/reset/retirement, native pulse rates and indexed ownership against wrong-body forcing. Full ApplyJointForce SDF/transport/original coverage and broader performance remain open."
+    "note": "Configured controller integration passed independent fresh-source review, the normal staged hook and exact hosted CI41000708476. All eleven production crates exceed 95% lines and regions; changed executable lines are154/154. The gate includes567 Rust and92 tooling tests, with fourteen native clone/Get observations. Full ApplyJointForce transport/original coverage and broader performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
