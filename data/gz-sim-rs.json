@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T08:36:17Z",
+  "updated_at": "2026-10-30T08:39:17Z",
   "state": "active",
   "summary": "IMU Scene callbacks now follow live sensor demand and are accepted after independent review, strict staged checks and exact hosted CI. The next activation work covers empty server calls, retained transport workers and other system families; full zero-idle compliance remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,12 +9,7 @@
     {
       "id": "LOAD-01",
       "title": "Recognizing built-in Physics world configuration",
-      "detail": "A separate source candidate admits the exact empty Physics record from the original ApplyJointForce world and reuses the selected backend without a loader or duplicate systems. Four-engine step/reset and strict XML controls pass; independent review and full staged/hosted checks remain. Engine payloads, plane geometry and moving-parent actuation stay open; no whole original-system credit."
-    },
-    {
-      "id": "QLT-01",
-      "title": "Hardening changed-line coverage against diff header text",
-      "detail": "Independently reviewed hunk-count parsing is published at a00581b. Its ordinary full staged hook passed 592 Rust and 95 tooling checks with unchanged strict production coverage. Exact hosted run 41026174136 is pending; accepted production milestone evidence remains at 121071a."
+      "detail": "The exact empty Physics record from the original ApplyJointForce world is independently approved and in the full staged gate. Author full Scene 176 checks and fresh reviewer four-engine configuration/reset and strict XML controls pass. Selected backend and schedule counts are preserved, with no loader or duplicate system. Engine payloads, plane geometry and moving-parent actuation remain open."
     },
     {
       "id": "ACT-01",
@@ -482,6 +477,11 @@
       "title": "IMU Scene callbacks follow live sensor demand, with final-consumer retirement, interest-buffer release, reset reconstruction and observer-safe model removal",
       "commit": "121071aa5f9bf60aef3f50bd13fa2e8e194d3225",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/121071aa5f9bf60aef3f50bd13fa2e8e194d3225"
+    },
+    {
+      "title": "Counted coverage diff hunks prevent source text from redirecting changed-line ownership",
+      "commit": "a00581b34f6c3b6a157dbf7eb5944b552b63ba0c",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a00581b34f6c3b6a157dbf7eb5944b552b63ba0c"
     }
   ],
   "remaining": [
@@ -516,8 +516,8 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "121071aa5f9bf60aef3f50bd13fa2e8e194d3225",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/121071aa5f9bf60aef3f50bd13fa2e8e194d3225",
+    "revision": "a00581b34f6c3b6a157dbf7eb5944b552b63ba0c",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a00581b34f6c3b6a157dbf7eb5944b552b63ba0c",
     "rust_tests": 592,
     "coverage": {
       "lines": [
@@ -536,9 +536,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41018562516"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41026174136"
     },
-    "note": "Accepted revision 121071a passed independent review, a complete staged run (592 Rust tests and 92 tooling checks), and exact hosted run 41018562516. All 11 production crates exceed 95% line and region coverage; 77 of 80 changed executable lines are covered. A resolved disk-space failure required a fresh complete rerun, with no merged results or weakened gates. The accepted scope is Scene callbacks and interest state; server workers and equal-work performance measurements remain open."
+    "note": "Exact hosted CI and the full staged hook passed on a00581b: 592 Rust and 95 tooling checks. Production coverage remains 7547/7629 lines and 11752/12006 regions, strictly above 95% in every crate. This tooling-only change adds no production Rust lines (changed-line denominator is not applicable). The accepted IMU production slice separately measured 77/80 changed executable lines. The new Physics configuration candidate is not yet accepted."
   },
   "phase_status": {
     "P0": "in_progress",
