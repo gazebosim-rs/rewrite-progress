@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T05:52:50Z",
+  "updated_at": "2026-10-30T05:55:26Z",
   "state": "active",
-  "summary": "Standalone Plugin metadata is independently reviewed and public after its normal strict staged gate; exact hosted CI is running. Accepted mappings remain 200 complete/27 partial until success.",
+  "summary": "Standalone Plugin metadata is accepted after independent review, the normal strict staged gate and exact hosted success. Original mappings are now 201 complete/27 partial; broader SDF and runtime work remains open.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Await exact hosted Plugin metadata qualification",
-      "detail": "Published Plugin metadata commit b5c3715 passed the normal strict gate: 543 Rust/17 tooling, 7535/7562 lines, 11814/12054 regions and 74/74 actual changed executable lines (includes moved serializer). Fresh independent review passed 33 Rust controls and native 13/fixture/11/original plus Visual 28/fixture/25/original. Exact hosted 41010712924 is in progress. Accepted 200/27; reviewed candidate 201/27. No host/execution, child DOM or stream/mutation claim; SDF opaque metadata remains preserved.",
+      "title": "Inspect next retained SDF capability",
+      "detail": "Plugin metadata commit b5c3715 is accepted with exact hosted success. Public read/write preserves opaque metadata without any system host/execution; shared Visual body/output/diagnostics remain intact. The owner is inspecting the next valid retained SDF gap while keeping default/unsupported domains explicit, and is available for coordinated independent reviews. No Fuel or consumer-pin changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b5c3715bdd44e4456008a6f4176e2af0e9674a06"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Roundtrip standalone opaque Plugin metadata",
+      "commit": "b5c3715bdd44e4456008a6f4176e2af0e9674a06",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b5c3715bdd44e4456008a6f4176e2af0e9674a06"
+    },
     {
       "title": "Roundtrip typed Atmosphere metadata through XML",
       "commit": "b69a4579d1e5c5869ae24d18dfc9651cf1bebe08",
@@ -801,13 +806,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 200,
+      "ported": 201,
       "partial": 27
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41010712924"
     },
-    "note": "Published Plugin metadata commit b5c3715 passed the normal strict gate: 543 Rust/17 tooling, 7535/7562 lines, 11814/12054 regions and 74/74 actual changed executable lines (includes moved serializer). Fresh independent review passed 33 Rust controls and native 13/fixture/11/original plus Visual 28/fixture/25/original. Exact hosted 41010712924 is in progress. Accepted 200/27; reviewed candidate 201/27. No host/execution, child DOM or stream/mutation claim; SDF opaque metadata remains preserved."
+    "note": "Normal strict hook and exact hosted success passed 543 Rust/17 tooling tests, formatting, Clippy, docs and required coverage: 7535/7562 lines, 11814/12054 regions; 74/74 actual changed executable lines (includes moved serializer body). Fresh independent review passed 33 selected Rust controls, native 13 inputs/exact fixture/11 actual exchanges/unchanged Plugin original plus accepted Visual 28/fixture/25/original. Shared serializer branch body mechanically byte-identical; Visual diagnostics retained. Complete original setup/output/reload name/file/child count/name mapping reviewed using public metadata and maintained XML observations, no child DOM facade. Opaque attributes/comments/CDATA/prefix/order and owned-attribute guards remain. No host/runtime execution, stream-format/insertion-failure/mutation/identity or performance claim."
   }
 }
