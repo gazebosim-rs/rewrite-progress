@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T00:28:20.480492+00:00",
+  "updated_at": "2026-10-30T00:48:49.033819+00:00",
   "state": "active",
-  "summary": "Reviewed packed integer-vector qualification is published after the strict staged gate; exact hosted qualification is pending.",
+  "summary": "Packed integer-vector qualification is accepted; explicit-false MessageSet metadata formatting is the next bounded task.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Packed integer-vector wire boundaries",
-      "detail": "Published 6338a42 after independent eight-check Rust/new-native208/unchanged-native61+64 review and the single normal strict staged gate: 175 Rust tests pass. Exact hosted qualification is pending. Native 140/strict 112/compatible 124 admissions, including 16 native overflow inputs still rejected by Rust, remain explicit. Runtime, dependencies and all prior protected inputs are unchanged. No full MSG-02 or performance acceptance is claimed."
+      "title": "Ordinary explicit-false MessageSet metadata",
+      "detail": "Prepare stronger native-positive controls for the four exact existing descriptors and CLI observations whose message_set_wire_format option is explicitly false. Immutable 98-case corpus and peer bytes, raw option presence and true-MessageSet unsupported guards remain protected. Source adoption and predicate transitions require independent review; no loader, wire or runtime expansion is planned."
     },
     {
       "id": "MSG-02-upstream",
@@ -472,6 +472,11 @@
       "title": "Packed Float_V exact-bit, Header, framing and partial-state qualification",
       "commit": "24ed3a7e372a38ab58d03317ce73c608c115a7ea",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/24ed3a7e372a38ab58d03317ce73c608c115a7ea"
+    },
+    {
+      "title": "Packed signed/unsigned integer-vector widths, framing and explicit native-overflow boundaries",
+      "commit": "6338a42392aae29bcba8fd99b7fb1fb90465f3f5",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/6338a42392aae29bcba8fd99b7fb1fb90465f3f5"
     }
   ],
   "remaining": [
@@ -506,9 +511,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40979821469"
     },
-    "note": "Independent fresh-source review and the mandatory strict staged gate passed. All 175 Rust tests pass; 208 new native observations and unchanged 61-case fixed32/64-case fixed64 native replays qualify the stated boundaries. All 19 production files retain strict line and region coverage; no executable production lines were added. Vendor-owned reflect coverage remains 103/105 lines and 214/216 regions; derive 6/6 and 8/8. Exact hosted qualification remains pending, so this slice is not yet accepted."
+    "note": "Independent fresh-source review, the mandatory strict staged gate and exact hosted source-package/fresh-cache qualification passed. All 175 Rust tests pass; 208 native integer-vector observations and unchanged 61-case fixed32/64-case fixed64 replays qualify the stated boundaries. All 19 production files retain strict coverage; no executable production lines were added. Vendor-owned reflect coverage remains 103/105 lines and 214/216 regions; derive 6/6 and 8/8. Runtime, dependencies, prior protected inputs and all 83 original mappings remain unchanged. No full MSG-02 or performance acceptance is claimed."
   }
 }
