@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T05:03:22Z",
+  "updated_at": "2026-10-30T05:13:09Z",
   "state": "active",
-  "summary": "Configured ApplyJointForce controllers and reset metadata are accepted after independent review, strict staged checks and exact hosted CI. Real C++ force-topic delivery and lifecycle controls are under development. P3 remains open.",
+  "summary": "Bounded native joint-force topic commands are independently reviewed, published and pass the full strict staged gate. Exact hosted CI is running; the configured-controller slice remains the latest accepted simulator increment. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-CONTROL",
-      "title": "Reviewing bounded native joint-force transport",
-      "detail": "Private author checks pass all74 server unit tests,166 Scene tests,92 tooling checks and Clippy. Real C++ Double publishers exercise Rapier, DART and MuJoCo physical response, pause/latest/default/NaN behavior, loaded reset/removal and unread wire queue cancellation. Internal controls cover endpoint collision fanout, finite budgets, malformed input, indexed identity and terminal reset failures. Independent review and strict staged/hosted qualification remain pending; full original-system and broader performance scope remain open."
+      "title": "Qualifying native joint-force input in hosted CI",
+      "detail": "The published slice passed independent fresh-source review and the normal staged gate:575 Rust tests,92 tooling checks, all eleven crates above95% lines/regions, and188/191 changed executable lines. Actual C++ Double publishers cover all three dynamic engines, pause/latest/default/NaN behavior, loaded reset/removal and unread queue cancellation. Endpoint fanout, bounded budgets and terminal worker failure are checked. Exact hosted CI41007140738 is pending; no full original-system or performance completion."
     },
     {
       "id": "PHY-05",
@@ -485,17 +485,17 @@
     "SYS-CONTROL": "in_progress"
   },
   "quality": {
-    "revision": "340600b296a0dbc91ec52f97822b472e65a001a8",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/340600b296a0dbc91ec52f97822b472e65a001a8",
-    "rust_tests": 567,
+    "revision": "b25a4277c7dabe2c3547b7f217d3c6ed9aa2cce7",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b25a4277c7dabe2c3547b7f217d3c6ed9aa2cce7",
+    "rust_tests": 575,
     "coverage": {
       "lines": [
-        7269,
-        7345
+        7459,
+        7536
       ],
       "regions": [
-        11326,
-        11572
+        11628,
+        11868
       ]
     },
     "upstream": {
@@ -504,10 +504,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41000708476"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41007140738"
     },
-    "note": "Configured controller integration passed independent fresh-source review, the normal staged hook and exact hosted CI41000708476. All eleven production crates exceed 95% lines and regions; changed executable lines are154/154. The gate includes567 Rust and92 tooling tests, with fourteen native clone/Get observations. Full ApplyJointForce transport/original coverage and broader performance remain open."
+    "note": "Published joint-force transport integration passed independent review and the normal strict staged hook with575 Rust and92 tooling tests. All eleven production crates exceed95% line and region coverage; changed executable lines are188/191 across Scene and Server. Actual native C++ publishers qualify bounded world-hinge control, reset/retirement and old-queue cancellation. Exact hosted CI is still pending, so accepted slices have not advanced. Original ApplyJointForce fixture and comparative performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
