@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T02:43:55Z",
+  "updated_at": "2026-10-30T03:20:11Z",
   "state": "active",
-  "summary": "Persistent Bevy joint-force control is published after independent review and strict staged checks; exact hosted qualification is running. SDF controller configuration and transport integration are next. P3 remains open.",
+  "summary": "Persistent Bevy joint-force control is accepted after independent review, strict staged checks and exact hosted CI. Recognized SDF controller configuration and reset metadata are under development. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-01",
-      "title": "Qualifying persistent force and preparing configured controllers",
-      "detail": "The reviewed implementation passed 558 Rust tests, 91 tooling checks, strict per-crate coverage and all 102 changed executable lines. Exact hosted qualification is running. Preparation now covers strict recognized ApplyJointForce model configuration, initial zero command and reset metadata, with later bounded real C++ transport delivery. The original plane and moving-parent fixture remains unqualified."
+      "title": "Implementing recognized ApplyJointForce configuration",
+      "detail": "A private Scene slice recognizes the canonical model plugin, resolves one direct local joint, installs zero force and restores immutable configuration on reset. Five smoke controls pass. Native probing caught split-CDATA/comment and Unicode-trimming differences; lexical validation and ASCII/native text rules now prevent silently selecting another joint. Full conformance controls, reference bindings, review and staged/hosted qualification remain. Transport delivery is not implemented yet."
     },
     {
       "id": "PHY-05",
@@ -442,6 +442,11 @@
       "title": "Loaded-joint effort by validated public identity with preserved backend queues, native rate parity and copied-handle admission controls",
       "commit": "98ecd4232cb7b4b0f3459cfffec3c0736aea8941",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/98ecd4232cb7b4b0f3459cfffec3c0736aea8941"
+    },
+    {
+      "title": "Persistent Bevy joint-force control with pure backend admission, indexed entity ownership, native pulse-rate parity and reset/retirement behavior",
+      "commit": "19c7f7c319a8e30f82e644c3299577b8f7619960",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/19c7f7c319a8e30f82e644c3299577b8f7619960"
     }
   ],
   "remaining": [
@@ -493,10 +498,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40993007439"
     },
-    "note": "Published persistent-force integration passed independent fresh-source review and the normal staged hook. All eleven production crates exceed 95% lines and regions; changed executable lines are 102/102 across five crates. Review caught scheduled handle swaps, including moved identity components; actual indexed ownership now prevents wrong-body forcing. Exact hosted CI remains pending. No full ApplyJointForce system, new original-test or performance completion is claimed."
+    "note": "Accepted persistent-force integration passed independent fresh-source review, the normal staged hook and exact hosted CI40993007439. All eleven production crates exceed 95% lines and regions; changed executable lines are102/102 across five crates. Ten controls exercise physical forcing, pause/reset/retirement, native pulse rates and indexed ownership against wrong-body forcing. Full ApplyJointForce SDF/transport/original coverage and broader performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
