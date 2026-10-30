@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T01:53:24Z",
+  "updated_at": "2026-10-30T01:55:24Z",
   "state": "active",
-  "summary": "Seven-variant primitive Geometry XML and supported Surface XML are accepted with exact hosted success. The ledger is 191 complete/27 partial original mappings; broad retained compatibility remains in development.",
+  "summary": "Valid Mesh metadata XML is accepted after independent review, the strict staged hook and exact hosted success. The ledger is 193 complete/27 partial original mappings; broad retained compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify published valid Mesh metadata XML",
-      "detail": "Reviewed Mesh slice a8bb353 is public after the single normal strict staged hook: 512 Rust/17 tooling checks, >95% coverage (6895/6925 lines,10905/11135 regions), actual new executable98/98. Independent final review passed30 Rust checks, full Mesh28/18, Geometry48/44 and Contact16/17 native proofs and quiet adversarial controls. Exact hosted CI40988440259 is still running; candidate193 complete/27 partial is not accepted yet. Accepted quality stays bef73c6 and191/27. Mesh does not resolve/decode assets; invalid Geometry producer errors remain partial.",
+      "title": "Characterize valid Heightmap metadata XML",
+      "detail": "The Mesh slice is accepted at a8bb353 with exact hosted CI success. Next is bounded Heightmap URI, size/position, paging/sampling, texture and blend metadata serialization through the existing reader. Native defaults, invalid producer errors and exact original assertions will be characterized before implementation; temporary rejection transitions require independent prior review. No terrain decoding, rendering, physics, full Geometry credit, Fuel or consumer-pin changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a8bb35346d7497c3b0d534b4d9744ec57b885aa0"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve valid Mesh metadata in standalone and Geometry XML",
+      "commit": "a8bb35346d7497c3b0d534b4d9744ec57b885aa0",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a8bb35346d7497c3b0d534b4d9744ec57b885aa0"
+    },
     {
       "title": "Serialize supported primitive geometry with native Plane semantics",
       "commit": "bef73c679180605c18a4d85b4ec88638c2e9a323",
@@ -756,28 +761,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "bef73c679180605c18a4d85b4ec88638c2e9a323",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bef73c679180605c18a4d85b4ec88638c2e9a323",
-    "rust_tests": 507,
+    "revision": "a8bb35346d7497c3b0d534b4d9744ec57b885aa0",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a8bb35346d7497c3b0d534b4d9744ec57b885aa0",
+    "rust_tests": 512,
     "coverage": {
       "lines": [
-        6801,
-        6832
+        6895,
+        6925
       ],
       "regions": [
-        10780,
-        11011
+        10905,
+        11135
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 191,
+      "ported": 193,
       "partial": 27
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40982760070"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40988440259"
     },
-    "note": "One normal strict staged hook and exact hosted CI passed 507 Rust/17 tooling tests, formatting, Clippy, docs and >95% line/region coverage; actual new executable lines 93/93. Independent fresh-source review passed 23 Rust checks, 48 native inputs, seven exact fixtures, six Plane setter/reload profiles, 43 actual exchanges and both unchanged full originals with distinct stderr. Every selected seven-block type/presence/absence/output predicate is mapped; both originals remain partial for complex shapes. Adversarial quiet capture checks pass. Existing document defaults/parser/normalization and old assertions are unchanged. Raw Plane emission follows existing reload normalization with no new epsilon or arbitrary-normal bit identity promise; scalar/vector numeric boundaries are qualified. No physics/resource/pointer-origin/performance/consumer-pin claim."
+    "note": "One normal strict hook and exact hosted CI passed 512 Rust/17 tooling tests, formatting, Clippy, docs and >95% line/region coverage; actual new executable lines 98/98. Independent fresh-source review passed 30 relevant Rust controls, Mesh 28 native inputs/two exact fixtures/three exact old-input controls/18 real exchanges/both unchanged originals, Geometry 48/44 and Contact 16/17 regressions. Private stdout/stderr injections failed quiet capture. Every exact Mesh original predicate, including successful literal optimization-string parsing, is retained. Three temporary Rust-only Geometry rejections were independently approved before stronger native-positive replacement with the same inputs/URIs. Invalid default Mesh producer error contracts remain unported in both partial Geometry originals. No resource IO, decoding, rendering, physics, pointer identity, performance or consumer-pin claim."
   }
 }
