@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T05:52:27Z",
+  "updated_at": "2026-10-30T07:17:32Z",
   "state": "active",
-  "summary": "Real C++ joint-force control on Rapier, DART and MuJoCo is accepted after independent review, strict staged checks and exact hosted CI. A Bevy system-retirement primitive is published and awaiting hosted qualification; full demand-driven zero-idle activation remains open.",
+  "summary": "Demand-driven IMU callbacks are published after independent review and strict staged checks. Exact hosted CI is running. The Bevy retirement boundary and native C++ force control are accepted; broader system and worker cleanup remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ACT-01",
-      "title": "Integrating demand-driven built-in lifecycle",
-      "detail": "Published core primitive cf9e184 passed independent review and full normal staged584 Rust/92 tooling checks, all11 crates above95% lines/regions and16/16 changed executable lines. It retires systems through pinned Bevy and immediately releases per-system state; collective/set-level condition state remains explicitly retained. Exact hosted41010658024 is pending. Scene demand, IMU/ingress callbacks, last-consumer worker teardown and equal-work CPU/memory evidence remain to implement."
+      "title": "Qualifying demand-driven IMU callbacks",
+      "detail": "Published IMU Scene registration/retirement passed fresh independent review, all 203 core/Scene tests, the existing server/native suite and the full staged gate. Seven lifecycle controls cover the four engines, including schedule-built observer mutation and explicit committed failure. Sensorless worlds have no IMU sampling/reset callbacks or interest state; loaded reset restores them. Hosted run 41018562516 is pending. Empty server calls, rate workers, joint systems and equal-work CPU/memory measurements remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -462,6 +462,11 @@
       "title": "Bounded built-in joint-force transport with actual C++ control on Rapier/DART/MuJoCo, pause/reset/removal and unread wire queue cancellation; clean SDK child runtime setup",
       "commit": "30c632da1c574fcb33486a00a0744c8f63322669",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/30c632da1c574fcb33486a00a0744c8f63322669"
+    },
+    {
+      "title": "Explicit Bevy lifecycle retirement with immediate owned-system/per-system-condition destruction, retained ordering, reactivation/reset/fault isolation and documented collective-condition limit",
+      "commit": "cf9e1848f9445c863083472e08a3be665ee79aa9",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cf9e1848f9445c863083472e08a3be665ee79aa9"
     }
   ],
   "remaining": [
@@ -496,17 +501,17 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "cf9e1848f9445c863083472e08a3be665ee79aa9",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cf9e1848f9445c863083472e08a3be665ee79aa9",
-    "rust_tests": 584,
+    "revision": "121071aa5f9bf60aef3f50bd13fa2e8e194d3225",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/121071aa5f9bf60aef3f50bd13fa2e8e194d3225",
+    "rust_tests": 592,
     "coverage": {
       "lines": [
-        7475,
-        7552
+        7547,
+        7629
       ],
       "regions": [
-        11645,
-        11886
+        11752,
+        12006
       ]
     },
     "upstream": {
@@ -516,9 +521,9 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41010658024"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41018562516"
     },
-    "note": "Latest published retirement primitive passed independent review and the full normal staged gate:584 Rust/92 tooling, all11 crates above95% lines/regions,16/16 changed lines. Exact hosted41010658024 is pending, so this primitive is not yet accepted. Prior native force integration30c632d passed exact hosted41008910670 SUCCESS after clean-parent SDK replay; that bounded slice is accepted. Full zero-idle/system parity and performance remain open."
+    "note": "Published revision 121071a passed independent review and a complete successful staged run: 592 Rust tests and 92 tooling checks. All 11 production crates exceed 95% line and region coverage; 77 of 80 changed executable lines are covered. The first gate stopped on disk exhaustion; only completed owned build caches were deleted, then the entire unchanged gate ran again without merging results. Exact hosted CI is pending. Scene callbacks and interest state retire with the last IMU; server workers, other families and performance evidence remain open."
   },
   "phase_status": {
     "P0": "in_progress",
