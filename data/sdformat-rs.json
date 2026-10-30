@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T11:21:56Z",
+  "updated_at": "2026-10-30T11:25:07Z",
   "state": "active",
-  "summary": "Coverage tooling correction passed exact hosted CI; world-merge metadata is published and under verification.",
+  "summary": "World-merge metadata passed exact hosted checks; direct-world metadata is published and undergoing verification.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify world extension metadata and legacy merge semantics",
-      "detail": "World-merge metadata passed independent native review and local staged checks and is undergoing exact hosted CI. Direct-world metadata passed independent native review and local staged checks; legacy collision positives await source review. Consumer adoption remains pending.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/52f59d53d2d6c46c35b2e3c01684fe4c56d94be2"
+      "title": "Qualify direct-world extensions and legacy merge semantics",
+      "detail": "Direct-world qualified metadata passed independent native review and local staged checks and is undergoing exact hosted CI. Legacy collision positives await source review; their existing regression assertions remain in place. Consumer adoption remains pending.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7b96537bf4ab73a859ecc5d5cc02e81f33b5402"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain qualified world-merge extension metadata",
+      "commit": "52f59d53d2d6c46c35b2e3c01684fe4c56d94be2",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/52f59d53d2d6c46c35b2e3c01684fe4c56d94be2"
+    },
     {
       "title": "Harden exact-byte coverage syntax evidence",
       "commit": "0fee663e782c5d0969090aca921b42e5f5c35300",
@@ -826,17 +831,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "0fee663e782c5d0969090aca921b42e5f5c35300",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0fee663e782c5d0969090aca921b42e5f5c35300",
-    "rust_tests": 566,
+    "revision": "52f59d53d2d6c46c35b2e3c01684fe4c56d94be2",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/52f59d53d2d6c46c35b2e3c01684fe4c56d94be2",
+    "rust_tests": 569,
     "coverage": {
       "lines": [
         7635,
         7662
       ],
       "regions": [
-        11956,
-        12195
+        11958,
+        12197
       ]
     },
     "upstream": {
@@ -846,8 +851,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41047170025"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41047531438"
     },
-    "note": "Independent source review, normal staged checks and exact hosted CI passed 566 Rust and 33 tooling checks. This tooling-only parent diff has no added production source lines; full-source coverage is 7297/7318. Existing production line and region thresholds remain enforced."
+    "note": "Independent review reproduced 14 native observations and seven focused Rust tests. Normal staged and exact hosted checks passed 569 Rust and 33 tooling tests; changed executable lines 7/7, full-source coverage 7297/7318. Direct-world metadata and consumer support remain separate."
   }
 }
