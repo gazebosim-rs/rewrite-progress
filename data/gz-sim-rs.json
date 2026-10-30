@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T05:44:10Z",
+  "updated_at": "2026-10-30T05:52:27Z",
   "state": "active",
-  "summary": "The reviewed native-client SDK setup repair is published and exact hosted CI is running. Built-in system activation/retirement is under implementation; complete zero-idle compliance remains open.",
+  "summary": "Real C++ joint-force control on Rapier, DART and MuJoCo is accepted after independent review, strict staged checks and exact hosted CI. A Bevy system-retirement primitive is published and awaiting hosted qualification; full demand-driven zero-idle activation remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ACT-01",
-      "title": "Built-in systems with demand-driven lifetime",
-      "detail": "A three-file core retirement primitive passed independent fresh-source review and all29 core tests, including nine lifecycle controls. It uses pinned Bevy removal/rebuild to release system Local/query state and per-system conditions before returning, with no absent callback checks. Collective/set-level condition state remains a documented limitation. The full mandatory staged gate is running; Scene demand, IMU/ingress callbacks, final-consumer worker teardown and equal-work CPU/memory evidence remain unimplemented."
+      "title": "Integrating demand-driven built-in lifecycle",
+      "detail": "Published core primitive cf9e184 passed independent review and full normal staged584 Rust/92 tooling checks, all11 crates above95% lines/regions and16/16 changed executable lines. It retires systems through pinned Bevy and immediately releases per-system state; collective/set-level condition state remains explicitly retained. Exact hosted41010658024 is pending. Scene demand, IMU/ingress callbacks, last-consumer worker teardown and equal-work CPU/memory evidence remain to implement."
     },
     {
       "id": "SYS-CONTROL",
-      "title": "Qualifying repaired native client interoperability",
-      "detail": "Published repair30c632d preserves all force-input assertions/timeouts. Both actual C++ tests pass independently with the parent SDK library path absent, including all three dynamic engines and queue/reset controls. The normal strict staged gate passed; exact repaired hosted CI41008910670 remains pending."
+      "title": "Extending retained controller behavior beyond world hinges",
+      "detail": "Accepted30c632d passed exact hosted41008910670 and all required local checks. Real C++ publishers cover persistent commands, paused/default/nonfinite behavior, native physical rate, loaded reset/removal and old bounded queue cancellation on all three dynamic engines. Full original ApplyJointForce fixture still requires plane geometry, moving-parent actuation and world physics selection; no full original-system or performance completion."
     },
     {
       "id": "PHY-05",
@@ -457,6 +457,11 @@
       "title": "Configured joint-force controllers with native lexical text probes, validated target ownership and zero-command reset restoration",
       "commit": "340600b296a0dbc91ec52f97822b472e65a001a8",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/340600b296a0dbc91ec52f97822b472e65a001a8"
+    },
+    {
+      "title": "Bounded built-in joint-force transport with actual C++ control on Rapier/DART/MuJoCo, pause/reset/removal and unread wire queue cancellation; clean SDK child runtime setup",
+      "commit": "30c632da1c574fcb33486a00a0744c8f63322669",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/30c632da1c574fcb33486a00a0744c8f63322669"
     }
   ],
   "remaining": [
@@ -491,17 +496,17 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "30c632da1c574fcb33486a00a0744c8f63322669",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/30c632da1c574fcb33486a00a0744c8f63322669",
-    "rust_tests": 575,
+    "revision": "cf9e1848f9445c863083472e08a3be665ee79aa9",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cf9e1848f9445c863083472e08a3be665ee79aa9",
+    "rust_tests": 584,
     "coverage": {
       "lines": [
-        7459,
-        7536
+        7475,
+        7552
       ],
       "regions": [
-        11628,
-        11868
+        11645,
+        11886
       ]
     },
     "upstream": {
@@ -511,9 +516,9 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41008910670"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41010658024"
     },
-    "note": "Native force input and its SDK child-library-path repair passed independent replay and mandatory staged checks:575 Rust/92 tooling; all11 crates above95% lines and regions. Clean-parent-environment C++ tests now pass all three dynamic engines. Exact repaired hosted CI41008910670 is pending; accepted slices remain unchanged. D26 activation lifecycle work is separate and incomplete."
+    "note": "Latest published retirement primitive passed independent review and the full normal staged gate:584 Rust/92 tooling, all11 crates above95% lines/regions,16/16 changed lines. Exact hosted41010658024 is pending, so this primitive is not yet accepted. Prior native force integration30c632d passed exact hosted41008910670 SUCCESS after clean-parent SDK replay; that bounded slice is accepted. Full zero-idle/system parity and performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
