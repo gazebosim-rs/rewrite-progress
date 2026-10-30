@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T11:56:06Z",
+  "updated_at": "2026-10-30T12:11:03Z",
   "state": "active",
-  "summary": "The exact coverage-input correction passed hosted CI. Bounded DART static planes and scene lifecycle support are published after full local checks; their exact hosted CI is pending. Moving-parent actuation, complete idle-resource teardown and performance qualification remain open.",
+  "summary": "Bounded DART static planes and their scene lifecycle passed exact hosted CI: native frames, finite collision footprint, inherited static state, removal and loaded reset are qualified. Joint-demand callback teardown is now in its full normal commit checks; moving-parent actuation and broader performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Accepted IMU sampling/reset callbacks are absent in sensorless scenes, retire after the last consumer and restore on loaded reset. Seven lifecycle controls cover the four engines, including schedule-built observers and explicit committed failure. Exact hosted run 41018562516 passed. Empty server ingress/publication, retained rate/force worker Nodes, joint/input/physics callbacks and matched CPU/memory measurements remain to implement and qualify."
+      "detail": "A reviewed joint-demand lifecycle candidate passed 194 Scene tests and Clippy, including 11 focused absence/removal/reset/observer controls across three dynamic engines and TPE absence. Its full normal commit hook is running. Independent review caught and fixed cross-family retirement: schedule observers removing the last joint or IMU now trigger coherent lifecycle-boundary cleanup; unsupported additions get a terminal committed fault. Accepted scope remains prior IMU lifecycle until full local and exact hosted checks pass. Persistent force/input/physics callbacks and server workers remain open; no CPU/RSS improvement claim."
     },
     {
       "id": "SYS-CONTROL",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Qualifying static planes and their scene lifecycle",
-      "detail": "Published 7f6c7af67d75cf561dd9f0b89f216be7e1891841 passed independent source/native/scene review and the full normal commit hook: 608 Rust, 103 tooling, strict per-crate coverage, 116/116 changed executable lines. Bounded centered local +Z DART planes preserve native finite cube geometry, frames, removal and reset, including inherited static state. Exact hosted CI is pending; other engines/normals/offsets and the complete original ApplyJointForce remain open."
+      "detail": "Accepted 7f6c7af passed exact hosted 41051460995 and the full normal hook, independent native/scene review, 608 Rust and 103 tooling checks and 116/116 changed executable lines. Centered local +Z DART planes preserve the native finite cube, ignored physical size, link frames, inherited static state, model removal and loaded reset. Other engines, normals/offsets and custom plane inertia remain explicit unsupported scope. Larger articulation and performance qualification remain open."
     }
   ],
   "accepted_slices": [
@@ -497,6 +497,11 @@
       "title": "Exact LF and byte-preserving coverage input accounting with regression controls",
       "commit": "a61a151e23d6260bef84d8b4156b54b045064fbf",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a61a151e23d6260bef84d8b4156b54b045064fbf"
+    },
+    {
+      "title": "Bounded native DART static planes with scene frames, inherited-static loading, removal and reset",
+      "commit": "7f6c7af67d75cf561dd9f0b89f216be7e1891841",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7f6c7af67d75cf561dd9f0b89f216be7e1891841"
     }
   ],
   "remaining": [
@@ -531,17 +536,17 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "a61a151e23d6260bef84d8b4156b54b045064fbf",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a61a151e23d6260bef84d8b4156b54b045064fbf",
-    "rust_tests": 597,
+    "revision": "7f6c7af67d75cf561dd9f0b89f216be7e1891841",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7f6c7af67d75cf561dd9f0b89f216be7e1891841",
+    "rust_tests": 608,
     "coverage": {
       "lines": [
-        7631,
-        7713
+        7703,
+        7785
       ],
       "regions": [
-        11874,
-        12130
+        11974,
+        12231
       ]
     },
     "upstream": {
@@ -551,9 +556,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41047141240"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41051460995"
     },
-    "note": "Exact hosted CI and the full staged gate passed on a61a151: 597 Rust and 101 tooling checks. Production coverage is unchanged; all 11 crates strictly exceed 95% lines and regions. This correction adds no production Rust lines. Published plane/scene commit 7f6c7af passed 608 Rust and 103 tooling checks locally, workspace 7703/7785 lines and 11974/12231 regions, changed 116/116; exact hosted acceptance is pending."
+    "note": "Exact hosted CI and the full normal commit hook passed on 7f6c7af: 608 Rust and 103 tooling checks, changed executable lines 116/116. All 11 production crates strictly exceed 95% lines and regions. The DART plane/scene controls compare 49 native frame/trajectory samples across seven cases at 1e-14 absolute tolerance and preserve removal/reset and old error priority. Other engines, arbitrary plane normals/offsets, moving-parent actuation, full original ApplyJointForce, complete zero-idle activation and new performance improvement remain unqualified."
   },
   "phase_status": {
     "P0": "in_progress",
