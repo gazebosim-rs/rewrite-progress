@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T05:03:12Z",
+  "updated_at": "2026-10-30T05:05:01Z",
   "state": "active",
-  "summary": "Lossless Material/PBR metadata XML is accepted after independent review, a normal strict staged hook and exact hosted success. Constructor states that native emission loses remain explicitly Unsupported; original mappings stay 197 complete/27 partial.",
+  "summary": "Visual metadata XML is independently reviewed and publicly pushed after its normal strict staged gate; exact hosted CI is running. Accepted original mappings remain 197 complete/27 partial until qualification succeeds.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed Visual metadata XML",
-      "detail": "Visual metadata candidate is independently approved: fresh reviewer source/target passed 30 Rust checks, 28 native inputs/one exact fixture/25 actual output exchanges/unchanged original, plus Geometry and Material regressions. Exact original owned-Geometry/EMPTY mapping is approved without pointer equivalence. Normal strict staged hook is running; exact hosted qualification remains pending. Accepted counts remain 197 complete/27 partial; reviewed candidate 198/27. No assets/rendering/physics, Fuel or consumer-pin change.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/295e99140a04fb289cd187cd0d08fb4c591aa12b"
+      "title": "Await exact hosted Visual qualification",
+      "detail": "Published Visual commit c64c46d passed the normal strict gate: 534 Rust/17 tooling checks, 7435/7462 lines, 11694/11935 regions and 143/143 actual new executable lines. Fresh independent review passed 30 Rust and native 28/one fixture/25 exchanges/original plus Geometry/Material regressions. Exact hosted 41006374491 is in progress. Accepted 197/27; reviewed candidate 198/27. EMPTY by-value representation is precise; native <empty> reader gap and all asset/render/physics boundaries remain.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c64c46d56542d140ab74aab652fc5dc5fabfa788"
     }
   ],
   "accepted_slices": [
@@ -776,17 +776,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "295e99140a04fb289cd187cd0d08fb4c591aa12b",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/295e99140a04fb289cd187cd0d08fb4c591aa12b",
-    "rust_tests": 528,
+    "revision": "c64c46d56542d140ab74aab652fc5dc5fabfa788",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c64c46d56542d140ab74aab652fc5dc5fabfa788",
+    "rust_tests": 534,
     "coverage": {
       "lines": [
-        7281,
-        7309
+        7435,
+        7462
       ],
       "regions": [
-        11496,
-        11736
+        11694,
+        11935
       ]
     },
     "upstream": {
@@ -795,9 +795,9 @@
       "partial": 27
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41001931762"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41006374491"
     },
-    "note": "One normal strict hook and exact hosted CI passed 528 Rust/17 tooling tests, formatting, Clippy, docs and >95% coverage; actual new executable 231/231. Independent fresh-source review passed 22 Rust controls, new53 native inputs/three exact fixtures/44 real exports/two unchanged native originals, plus retained Material110/direct-float ABI/original, PBR30/original and Axis17/fixture/exchange/original pipelines. Private stdout/stderr injections failed quiet capture; restored source passed. Float32/canonical signed NaN/Inf bits, raw attributes, script order, kind/hidden-field/default guards and shared unchanged Axis formatter are reviewed. Full native original constructor states keep every inactive field and remain explicitly Unsupported in Rust; separate loaded-domain controls gain no original or ledger credit. Native producer omissions are not copied as silent loss. Numeric boundary, asset IO, renderer/runtime, constructor-success and performance gaps remain open."
+    "note": "Published Visual commit c64c46d passed the normal strict gate: 534 Rust/17 tooling checks, 7435/7462 lines, 11694/11935 regions and 143/143 actual new executable lines. Fresh independent review passed 30 Rust and native 28/one fixture/25 exchanges/original plus Geometry/Material regressions. Exact hosted 41006374491 is in progress. Accepted 197/27; reviewed candidate 198/27. EMPTY by-value representation is precise; native <empty> reader gap and all asset/render/physics boundaries remain."
   }
 }
