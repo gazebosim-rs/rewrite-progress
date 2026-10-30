@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T02:40:24.170139+00:00",
+  "updated_at": "2026-10-30T02:46:23.858151+00:00",
   "state": "active",
   "summary": "Explicit-false MessageSet metadata formatting is accepted; bounded source-aware nested extension declarations are implemented and awaiting independent review.",
   "model": "Messages implementation agent",
@@ -9,7 +9,7 @@
     {
       "id": "MSG-02",
       "title": "Source-aware nested extension declarations awaiting review",
-      "detail": "A maintained-reflection formatter preserves source order and consecutive extendee grouping for ordinary proto2 declarations with original JSON-name absence. Author checks pass 15 Rust tests, 120 complete pinned native peer/CLI observations and all-target Clippy; 107 layouts are supported versus 114 native admissions. Explicit JSON names/defaults/groups/nonempty options/true MessageSet remain unsupported; standalone descriptors cannot recover original presence. Existing tests, descriptors, native peer, dependencies and 83-case ledger remain unchanged. Independent review, strict coverage and exact hosted qualification are pending; accepted Main is unchanged."
+      "detail": "A maintained-reflection formatter preserves source order and consecutive extendee grouping for ordinary proto2 declarations with original JSON-name absence. Author checks pass 15 Rust tests, 125 complete pinned native peer/CLI observations and all-target Clippy; 108 layouts are supported versus 115 native admissions. Explicit JSON names/defaults/groups/nonempty options/true MessageSet remain unsupported; standalone descriptors cannot recover original presence. Existing tests, descriptors, native peer, dependencies and 83-case ledger remain unchanged. Independent review, strict coverage and exact hosted qualification are pending; accepted Main is unchanged. Review found source-directory-dependent native CLI error paths; deterministic relative paths now replay byte-exactly in a separate raw export. New malformed-name controls retain native leading-digit admission while rejecting empty/space/newline/Unicode names. Final independent recheck is pending."
     },
     {
       "id": "MSG-02-upstream",
