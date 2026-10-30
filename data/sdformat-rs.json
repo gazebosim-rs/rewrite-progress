@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T08:25:22Z",
+  "updated_at": "2026-10-30T08:28:06Z",
   "state": "active",
-  "summary": "The narrow impl-declaration coverage fix passed independent review and its staged hook; exact hosted CI is pending.",
+  "summary": "The narrow impl-declaration coverage fix is accepted after independent review and exact hosted CI.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify a narrow coverage gate follow-up",
-      "detail": "Commit 384b33f passed independent review and normal staged verification and is pushed. Exact hosted CI is pending. Its bare-identifier impl rule preserves covered-line checks; the Collision writer remains a separate candidate.",
+      "title": "Review genuine Collision metadata serialization",
+      "detail": "A separate Collision writer candidate on the accepted gate base uses actual Empty geometry, optional density and Surface metadata. Its native reference exchanges and focused tests pass; independent review, staged and exact hosted qualification remain pending. No physics or consumer pin change.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/384b33f2fc01746a83ab02893f97b0a4f0a3ff78"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Recognize plain impl declarations without masking code coverage",
+      "commit": "384b33f2fc01746a83ab02893f97b0a4f0a3ff78",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/384b33f2fc01746a83ab02893f97b0a4f0a3ff78"
+    },
     {
       "title": "Bind changed-line coverage to frozen parent and CI event base",
       "commit": "5172ee247683e698ab00f40cf8af0e0eeac67516",
@@ -806,8 +811,8 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "5172ee247683e698ab00f40cf8af0e0eeac67516",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5172ee247683e698ab00f40cf8af0e0eeac67516",
+    "revision": "384b33f2fc01746a83ab02893f97b0a4f0a3ff78",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/384b33f2fc01746a83ab02893f97b0a4f0a3ff78",
     "rust_tests": 550,
     "coverage": {
       "lines": [
@@ -826,8 +831,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41025131418"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41026303408"
     },
-    "note": "Independent review passed 22 tooling controls and initial, zero-base, diff-spoof, comment and mixed unmapped-line boundaries. Normal staged and exact hosted checks passed 550 Rust/22 tooling; hosted confirms event base 005fda0 and exact target. This gate-only revision has no added source lines; full-source 7215/7236. Total lines 7550/7577 and regions 11840/12079. Density exact hosted parent-diff remains 7/7 instrumented changed lines. Ledger remains 201 complete/27 partial."
+    "note": "Independent review passed 23 tooling controls and mapped-uncovered, inline, generic, trait and path impostor checks. Normal staged and exact hosted checks passed 550 Rust/23 tooling; hosted confirms event base 5172ee2 and exact target. No source lines were added; full-source 7215/7236. Total lines 7550/7577 and regions 11840/12079. Ledger remains 201 complete/27 partial."
   }
 }
