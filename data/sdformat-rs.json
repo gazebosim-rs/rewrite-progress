@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T08:23:43Z",
+  "updated_at": "2026-10-30T08:25:22Z",
   "state": "active",
-  "summary": "The parent-bound coverage gate is accepted; a narrow declaration recognition follow-up is independently reviewed and staged.",
+  "summary": "The narrow impl-declaration coverage fix passed independent review and its staged hook; exact hosted CI is pending.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Qualify a narrow coverage gate follow-up",
-      "detail": "A writer diagnostic exposed a false positive on a plain impl declaration. A bare-identifier-only recognition fix passed independent review and 23 tooling checks; normal staged and exact hosted checks remain. The separately reviewed Collision writer waits for this follow-up.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5172ee247683e698ab00f40cf8af0e0eeac67516"
+      "detail": "Commit 384b33f passed independent review and normal staged verification and is pushed. Exact hosted CI is pending. Its bare-identifier impl rule preserves covered-line checks; the Collision writer remains a separate candidate.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/384b33f2fc01746a83ab02893f97b0a4f0a3ff78"
     }
   ],
   "accepted_slices": [
