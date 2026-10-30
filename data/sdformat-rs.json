@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T11:28:26Z",
+  "updated_at": "2026-10-30T21:36:24.714148Z",
   "state": "active",
-  "summary": "Qualified world extension metadata passed exact hosted checks; legacy model-merge collision work is under review.",
+  "summary": "Reviewed native custom-sensor metadata is published after its full staged gate; exact hosted verification is in progress.",
   "model": "Repository owner",
   "active": [
     {
-      "id": "SDF-02",
-      "title": "Qualify legacy model-merge name collisions",
-      "detail": "A bounded legacy link/frame collision candidate has native-backed ordering and pose observations and awaits independent source review. Existing regression assertions remain in place; consumer adoption of world extension metadata is still required.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7b96537bf4ab73a859ecc5d5cc02e81f33b5402"
+      "id": "SDF-01",
+      "title": "Qualify native custom-sensor metadata",
+      "detail": "The unchanged environmental world loads with optional custom subtype and arbitrary ordered raw fields. Independent source/native review and the full staged gate passed; exact hosted checks remain pending. Consumer pin and original-test counts are unchanged.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8b17dfd7171688626bcf0f045ba3493cd262f8a2"
     }
   ],
   "accepted_slices": [
@@ -821,6 +821,9 @@
     }
   ],
   "remaining": [
+    "Exact hosted qualification of the published custom-sensor metadata change.",
+    "Consumer adoption must explicitly support or reject custom metadata before updating the simulator producer pin.",
+    "Custom sensor runtime, generic mutable Element APIs and custom XML output remain outside this parser metadata change.",
     "Complete primitive Element/error/mutation contracts, PBR and unsupported Surface fields; basic material, heightmap/polyline metadata and full Shapes assertions are delivered.",
     "Complete nonfinite scalar and vector-stream parity; retain documented native inertial-frame limitations and explicit consumer validation.",
     "Complete retained schema/version conversions, remaining merge/schema extensions, automatic inertia and import/export semantics; bounded model-scope merge and pure config selection are delivered.",
@@ -836,17 +839,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "b7b96537bf4ab73a859ecc5d5cc02e81f33b5402",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7b96537bf4ab73a859ecc5d5cc02e81f33b5402",
-    "rust_tests": 571,
+    "revision": "8b17dfd7171688626bcf0f045ba3493cd262f8a2",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8b17dfd7171688626bcf0f045ba3493cd262f8a2",
+    "rust_tests": 589,
     "coverage": {
       "lines": [
-        7648,
-        7675
+        7689,
+        7716
       ],
       "regions": [
-        11992,
-        12231
+        12067,
+        12305
       ]
     },
     "upstream": {
@@ -855,9 +858,9 @@
       "partial": 27
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41047907673"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41132109988"
     },
-    "note": "Independent review reproduced 13 direct-world and 14 prior native observations. Normal staged and exact hosted checks passed 571 Rust and 33 tooling tests; changed executable lines 13/13, full-source coverage 7308/7329. Unqualified unknown world children and broader SDF-02 behavior remain explicit boundaries; simulator consumers must support or reject retained metadata before adopting the dependency."
+    "note": "Published commit passed the full normal protected staged hook:589 Rust/39 tooling,changed28/28,full-source7342/7363. Independent source/native replay passed7 new Rust/11 native observations; the separately reviewed narrow syntax proof passed16 helper/39 tooling controls including real DA0 and region failures. An additional public ownership test was independently source-reviewed. The first failed hook remains recorded. Narrow syn-based declaration/delimiter proof preserves measured DA/region authority and all thresholds. Exact hosted success is still required; no additional original-test credit, runtime support, consumer pin adoption or whole-SDF acceptance is claimed."
   }
 }
