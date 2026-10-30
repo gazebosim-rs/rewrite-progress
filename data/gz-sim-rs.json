@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T02:27:21Z",
+  "updated_at": "2026-10-30T02:43:55Z",
   "state": "active",
-  "summary": "Loaded scene joint effort is accepted after independent review, strict staged checks and exact hosted CI. Persistent Bevy force control is under review. P3 remains open.",
+  "summary": "Persistent Bevy joint-force control is published after independent review and strict staged checks; exact hosted qualification is running. SDF controller configuration and transport integration are next. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "PHY-01",
-      "title": "Qualifying reviewed persistent Bevy joint-force control",
-      "detail": "Independent review approved all 13 paths after actual public-identity index checks fixed scheduled handle swaps. Fresh review passed 397 candidate checks across five crates and a final 157-test scene replay, plus separate reviewer probes. Ten new scene controls cover forcing, pause/reset/retirement, error preservation, native pulse rates and unchanged native body state after ownership faults. The normal staged gate is running. SDF controller configuration, initial installation and joint command transport remain open."
+      "title": "Qualifying persistent force and preparing configured controllers",
+      "detail": "The reviewed implementation passed 558 Rust tests, 91 tooling checks, strict per-crate coverage and all 102 changed executable lines. Exact hosted qualification is running. Preparation now covers strict recognized ApplyJointForce model configuration, initial zero command and reset metadata, with later bounded real C++ transport delivery. The original plane and moving-parent fixture remains unqualified."
     },
     {
       "id": "PHY-05",
@@ -474,17 +474,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "98ecd4232cb7b4b0f3459cfffec3c0736aea8941",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/98ecd4232cb7b4b0f3459cfffec3c0736aea8941",
-    "rust_tests": 547,
+    "revision": "19c7f7c319a8e30f82e644c3299577b8f7619960",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/19c7f7c319a8e30f82e644c3299577b8f7619960",
+    "rust_tests": 558,
     "coverage": {
       "lines": [
-        7030,
-        7105
+        7109,
+        7184
       ],
       "regions": [
-        10986,
-        11223
+        11088,
+        11325
       ]
     },
     "upstream": {
@@ -493,10 +493,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40987161372"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40993007439"
     },
-    "note": "Accepted loaded-scene input passed independent fresh-source review, the normal staged hook and exact hosted CI40987161372: 547 Rust tests, 91 tooling checks, every production crate strictly above 95% line and region coverage, and 76/76 changed executable scene lines. Review caught and fixed copied-handle redirection at admission. Existing native force-pulse rates and lifecycle assertions are preserved. No original-system, finite-limit or performance completion is claimed."
+    "note": "Published persistent-force integration passed independent fresh-source review and the normal staged hook. All eleven production crates exceed 95% lines and regions; changed executable lines are 102/102 across five crates. Review caught scheduled handle swaps, including moved identity components; actual indexed ownership now prevents wrong-body forcing. Exact hosted CI remains pending. No full ApplyJointForce system, new original-test or performance completion is claimed."
   },
   "phase_status": {
     "P0": "in_progress",
