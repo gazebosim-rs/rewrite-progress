@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T21:00:25.828714Z",
+  "updated_at": "2026-10-30T21:12:03.616357Z",
   "state": "active",
-  "summary": "Application-owned SIGINT/SIGTERM publisher shutdown originals are accepted at 730d3a6 after independent review, the full ordinary staged hook and exact hosted success. All 490 Rust tests and 42 tools passed. Ledger totals are now 119 faithful, 7 partial and 292 pending; no production signal handler or runtime API was added.",
+  "summary": "Owned SIM/REAL/SYS NetworkClock is public at 8cc6295 after independent review and the full ordinary staged hook: 501 Rust tests, 42 tools and 60/60 changed executable lines passed. Exact hosted qualification is pending; accepted signal730 remains latest, with 119 faithful, 7 partial and 292 pending. Three reviewed candidate rows would become 122/7/289 after success.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Independently reviewed NetworkClock in mandatory staged qualification",
-      "detail": "A separate bounded SIM/REAL/SYS clock uses the existing Node and shared callback dispatcher, with coherent signed samples and native int32-second wire narrowing. Independent fresh source/target debug and release each passed two pure, seven public and two native/wire controls; all three unchanged native originals, 42 tools and Clippy also passed. A release fixture headroom assumption was corrected without changing lifecycle predicates, deadlines or the separate capacity-one test. The ordinary full staged gate is running; exact hosted qualification and acceptance remain pending. Exactly three candidate rows would give 122 faithful, 7 partial and 289 pending; accepted totals remain 119/7/292. Node statistics lifecycle behavior remains held on the unanswered owner decision."
+      "title": "Owned NetworkClock exact hosted qualification pending",
+      "detail": "Public 8cc6295 adds coherent selected signed clock samples and actual canonical publication through an existing Node/shared dispatcher. It preserves native int32-second setter narrowing, missing-field value behavior, actual self-observation and owned admission/retirement. Independent fresh source/target debug/release and real native controls passed; the full staged gate passed 501 Rust / 42 tools with separate strict coverage for both owned crates. Exact hosted 41129099874 is pending. Source review fixed one test command-headroom assumption while preserving all lifecycle predicates and capacity-one assertions. WallClock, BadNetworkClock and Node statistics lifecycle remain separate; no new clock ledger credit is accepted until hosted success."
     }
   ],
   "accepted_slices": [
@@ -620,17 +620,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "730d3a6ecd97b9c97f0472d15c4cb223bff7c057",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/730d3a6ecd97b9c97f0472d15c4cb223bff7c057",
-    "rust_tests": 490,
+    "revision": "8cc6295d640d96da9b1829c92e614df45080050f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8cc6295d640d96da9b1829c92e614df45080050f",
+    "rust_tests": 501,
     "coverage": {
       "lines": [
-        5072,
-        5165
+        5135,
+        5228
       ],
       "regions": [
-        7178,
-        7426
+        7265,
+        7512
       ]
     },
     "upstream": {
@@ -639,9 +639,9 @@
       "partial": 7
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41120577494"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41129099874"
     },
-    "note": "Exact public 730d3a6 passed hosted 41120577494 after the ordinary canonical staged commit hook in its reviewed worktree; clean Main was fast-forwarded to that checked commit and pushed. Full 490 Rust tests, 42 tools, retained native groups and required immutable NSS cases passed. Coverage: aggregate 5072/5165 lines and 7178/7426 regions; parent 4991/5084 lines and 7058/7304 regions; owned sys 81/81 lines and 120/122 regions. No production code changed, so changed executable coverage is legitimately 0/0. Independent fresh source/target passed signal debug 3 and release 3 harness functions, native 2 originals and 42 tools; each profile includes two actual child ports plus an inert helper entry. Exactly the two complete signal rows gained faithful credit, giving 119 faithful, 7 partial and 292 pending. There is no implicit Node signal API or broader scheduling/preemption claim."
+    "note": "Public 8cc6295 passed the ordinary canonical full staged hook in its reviewed worktree; clean Main was fast-forwarded to that checked commit and pushed. Full 501 Rust tests, 42 tools, retained native groups and required immutable NSS cases passed. Aggregate 5135/5228 lines and 7265/7512 regions; parent 5054/5147 lines and 7145/7390 regions; owned sys 81/81 lines and 120/122 regions. Changed executable lines 60/60, all in parent; sys has no changes. Independent fresh source/target debug/release each passed 2 pure + 7 public + 2 native/wire controls, rebuilt 63 actual SDK states and 13 setter inputs across 3 bases in both directions; native 3 originals, Clippy and 42 tools passed. A real release fixture QueueFull was diagnosed and corrected with explicit five-command setup headroom, with no retry/deadline/lifecycle predicate weakening; separate capacity-one rollback remains. Candidate 122/7/289 is conditional on exact hosted 41129099874; displayed accepted totals remain 119/7/292. Native inline timing/global identity, WallClock/BadNetworkClock and Node statistics are not broadly claimed."
   }
 }
