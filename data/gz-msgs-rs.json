@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T13:22:47.783279+00:00",
+  "updated_at": "2026-10-30T13:44:19.899550+00:00",
   "state": "active",
-  "summary": "Successful descriptor-file caching and explicit runtime install-share discovery are accepted after independent review, normal strict staged checks and exact hosted CI. Full MSG-02 remains open for retained release behavior and performance.",
+  "summary": "Bounded CLI descriptor-file diagnostics are accepted after independent review, both normal staged gates and exact hosted CI. Existing strict wire/schema differences remain explicit; full MSG-02 and P0 reference closure remain open.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Verify published CLI diagnostics and close P0 reference inventory",
-      "detail": "Published ae3721d contains independently reviewed CLI file diagnostics and explicit descriptor wrong-wire differences. Both mandatory full normal staged hooks passed; exact hosted run41062398415 is in progress, so the new slice is not accepted yet. Next priority is the coordinator-assigned REF02 audit of11 unresolved native registrations, separating listing from actual execution and Rust dispositions. MSG02 release/runtime and LaserScan performance requirements remain open."
+      "title": "Reconcile P0 reference registrations and remaining MSG-02 scope",
+      "detail": "Accepted Messages ae3721d passed exact hosted41062398415, including strict verification, staged-tree checks and fresh-cache installation. Priority now shifts to the coordinator-assigned REF02 audit:10 unresolved non-gtest registrations executed successfully in the immutable SDK and one is profile-blocked by disabled Zenoh; these are not gtest listings, Rust ports or full P0 acceptance. Source/collector/disposition reconciliation is still pending review. MSG02 schema-validation, wrong-wire/release-layout and LaserScan performance requirements remain open."
     },
     {
       "id": "MSG-02-upstream",
@@ -522,12 +522,17 @@
       "title": "Lazy explicit runtime install-share discovery with isolated explicit factories",
       "commit": "8939b4271f238cc8bee6f4846be05bd54306ea72",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8939b4271f238cc8bee6f4846be05bd54306ea72"
+    },
+    {
+      "title": "Bounded CLI file diagnostics with explicit schema and descriptor wrong-wire differences",
+      "commit": "ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7"
     }
   ],
   "remaining": [
     "Consumer adoption and wider wire qualification; direct prost/reflection remain stricter than native C++",
     "Remaining declaration families/options and full CLI grammar qualification; Linux OS-byte arguments accepted",
-    "Absent-variable compiled install-prefix/release layout; native malformed-descriptor diagnostics and remaining distribution policy",
+    "Absent-variable compiled install-prefix/release layout; native schema-validation console and descriptor wrong-wire release dispositions and remaining distribution policy",
     "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending",
     "Packed LaserScan decode remains slower; encode-helper adoption needs a maintained route preserving standard no-patch type identity and reviewed performance evidence"
   ],
@@ -556,9 +561,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41062398415"
     },
-    "note": "Published after independent fresh-source review and both full normal staged gates. Exact hosted41062398415 remains pending; no new accepted-slice promotion. Original implementation changed97/97 executable lines; additive wrong-wire controls have no executable additions. Full186 Rust checks, both environment/workflow harnesses, unchanged owned vendor-patch qualification and19-file production coverage pass. Native80 full CLI observations plus five unchanged originals retain sorted-list/help bindings and explicit schema/wrong-wire/admission differences. All83 original mappings remain unchanged. Cache and explicit runtime-prefix remain accepted at8939; new diagnostic slice awaits exact hosted success."
+    "note": "Exact hosted41062398415 completed successfully at this published revision, including strict verification, staged-tree checks and fresh-cache source-package installation. Independent fresh-source reviews and both entire normal local staged gates passed. Implementation changed97/97 executable lines; additive wrong-wire qualification has no executable additions.186 regular Rust tests plus both environment/workflow harnesses and19-file production coverage pass; owned derive/reflect patch qualification unchanged. Native80 complete records plus five unchanged originals retain explicit sorted-list/help and schema/wrong-wire/admission differences. All83 existing original mappings are unchanged; no additional original credit. Broader MSG02 runtime, release-layout and LaserScan performance remain open."
   }
 }
