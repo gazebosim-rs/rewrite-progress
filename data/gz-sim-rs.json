@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T21:59:14.739674+00:00",
+  "updated_at": "2026-10-30T22:30:16.059093+00:00",
   "state": "active",
-  "summary": "Canonical ECS scenes now render through the isolated Bevy worker with verified material updates, removal and reset. The bounded slice passed exact hosted checks; calibrated cameras and a separately reviewed teardown correction remain under development.",
+  "summary": "The reviewed renderer teardown correction is published after complete local gates and awaits exact hosted acceptance. Calibrated camera work and standalone SDF/Transport extensions continue; accepted scene-to-image evidence remains unchanged.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Accepted 68474de passes independent source review, a fresh reviewer build of nine extraction and four fault/epoch controls, an actual same-graph image lifecycle replay, the complete staged gate and exact hosted run 41131229533. Its on-demand CPU-only bridge extracts actual visual geometry with stable IDs and committed epoch/time; real Vulkan frames follow material updates, model removal and reset. The gate runs 633 headless and 341 renderer-profile test executions, 149 tooling checks and strict coverage for all 17 production crates. Private calibrated camera work and a separately reviewed teardown correction remain unaccepted. Assets, camera/lidar sensors, physical GPUs and comparative performance remain open."
+      "detail": "Accepted scene-to-image revision 68474de retains exact hosted success. Reviewed teardown correction 2b08506 now passes independent source and real-worker review plus the full normal staged gate: 633 headless and 345 renderer-profile test executions, with strict coverage in all required production crates. Exact hosted run 41138287566 is pending. The correction preserves immediate explicit-shutdown retirement/reaping checks and final Drop ownership; hard OS/driver stalls can delay final joining. Private calibrated RGB work has real software-Vulkan image controls but still requires final profile, independent review and hosted qualification. Camera scheduling, assets, physical GPU and comparative performance remain open."
     },
     {
       "id": "QLT-01",
@@ -592,7 +592,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "A separately identified renderer Drop-timeout ownership defect and unreliable immediate Linux task-list teardown assertion are being corrected. The fix is not yet accepted; broader lifecycle qualification remains open."
+    "The published renderer teardown correction still requires exact hosted qualification before the known ownership defect is closed."
   ],
   "plan_status": {
     "REF-01": "in_progress",
