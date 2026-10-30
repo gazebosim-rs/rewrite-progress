@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T08:52:16Z",
+  "updated_at": "2026-10-30T08:54:43Z",
   "state": "active",
-  "summary": "Collision family reconciliation passed independent review and staged verification; exact hosted CI is pending.",
+  "summary": "Collision ownership setups and two complete writer originals are reconciled and accepted after independent review and exact hosted CI.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Reconcile Collision metadata original assertions",
-      "detail": "Commit 9a00ab3 corrects five prior ownership setups to genuine Empty and retains the former Box destination separately; two writer originals gain reviewed candidate mappings. Normal staged verification passed 557 Rust/23 tooling. Exact hosted CI remains pending, so accepted ledger remains 201/27; constructor, Element, semantic pose, type-only BOX, auto-inertia, version conversion and merge/include gaps remain.",
+      "title": "Continue Collision and SDF compatibility gaps",
+      "detail": "Five previously credited ownership tests now use genuine Empty setup, retaining the former Box destination separately; two ToElement originals are mapped. Constructor and Element identity, semantic pose, type-only BOX and auto-inertia remain open. Continue version/schema conversions and merge/include compatibility alongside this family.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9a00ab305237efb970119ddffd7b058e606e66ba"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Reconcile Collision ownership setups and two writer originals",
+      "commit": "9a00ab305237efb970119ddffd7b058e606e66ba",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9a00ab305237efb970119ddffd7b058e606e66ba"
+    },
     {
       "title": "Serialize bounded Collision metadata with genuine Empty and density",
       "commit": "260b23f0faacfa0016ceefc9013d312c6525d41e",
@@ -816,9 +821,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "260b23f0faacfa0016ceefc9013d312c6525d41e",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/260b23f0faacfa0016ceefc9013d312c6525d41e",
-    "rust_tests": 556,
+    "revision": "9a00ab305237efb970119ddffd7b058e606e66ba",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9a00ab305237efb970119ddffd7b058e606e66ba",
+    "rust_tests": 557,
     "coverage": {
       "lines": [
         7635,
@@ -831,13 +836,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 201,
+      "ported": 203,
       "partial": 27
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41028236807"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41029340630"
     },
-    "note": "Independent fresh-source review passed six Rust checks, exact native constructor fixture, two Rust-to-native exchanges and both unchanged originals. Normal staged and exact hosted checks passed 556 Rust/23 tooling; hosted parent-bound changed executable 82/82 and full-source 7297/7318. Ledger remains 201 complete/27 partial pending family reconciliation; five older ownership cases used a different Box setup despite native Empty and are being corrected."
+    "note": "Independent fresh-source review replayed 13 Rust checks, seven unchanged native originals and exact writer exchanges; original signed pose predicates and previous configured Box destination remain. Normal staged and exact hosted checks passed 557 Rust/23 tooling, no added production source and full-source 7297/7318. Constructor/Element identity, semantic pose, type-only BOX, auto-inertia and broader SDF-02 conversion/merge remain open."
   }
 }
