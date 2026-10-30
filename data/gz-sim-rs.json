@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T07:17:32Z",
+  "updated_at": "2026-10-30T07:40:43Z",
   "state": "active",
-  "summary": "Demand-driven IMU callbacks are published after independent review and strict staged checks. Exact hosted CI is running. The Bevy retirement boundary and native C++ force control are accepted; broader system and worker cleanup remains open.",
+  "summary": "IMU Scene callbacks now follow live sensor demand and are accepted after independent review, strict staged checks and exact hosted CI. The next activation work covers empty server calls, retained transport workers and other system families; full zero-idle compliance remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ACT-01",
-      "title": "Qualifying demand-driven IMU callbacks",
-      "detail": "Published IMU Scene registration/retirement passed fresh independent review, all 203 core/Scene tests, the existing server/native suite and the full staged gate. Seven lifecycle controls cover the four engines, including schedule-built observer mutation and explicit committed failure. Sensorless worlds have no IMU sampling/reset callbacks or interest state; loaded reset restores them. Hosted run 41018562516 is pending. Empty server calls, rate workers, joint systems and equal-work CPU/memory measurements remain open."
+      "title": "Extending built-in activation beyond IMU Scene callbacks",
+      "detail": "Accepted IMU sampling/reset callbacks are absent in sensorless scenes, retire after the last consumer and restore on loaded reset. Seven lifecycle controls cover the four engines, including schedule-built observers and explicit committed failure. Exact hosted run 41018562516 passed. Empty server ingress/publication, retained rate/force worker Nodes, joint/input/physics callbacks and matched CPU/memory measurements remain to implement and qualify."
     },
     {
       "id": "SYS-CONTROL",
@@ -467,6 +467,11 @@
       "title": "Explicit Bevy lifecycle retirement with immediate owned-system/per-system-condition destruction, retained ordering, reactivation/reset/fault isolation and documented collective-condition limit",
       "commit": "cf9e1848f9445c863083472e08a3be665ee79aa9",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cf9e1848f9445c863083472e08a3be665ee79aa9"
+    },
+    {
+      "title": "IMU Scene callbacks follow live sensor demand, with final-consumer retirement, interest-buffer release, reset reconstruction and observer-safe model removal",
+      "commit": "121071aa5f9bf60aef3f50bd13fa2e8e194d3225",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/121071aa5f9bf60aef3f50bd13fa2e8e194d3225"
     }
   ],
   "remaining": [
@@ -520,10 +525,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41018562516"
     },
-    "note": "Published revision 121071a passed independent review and a complete successful staged run: 592 Rust tests and 92 tooling checks. All 11 production crates exceed 95% line and region coverage; 77 of 80 changed executable lines are covered. The first gate stopped on disk exhaustion; only completed owned build caches were deleted, then the entire unchanged gate ran again without merging results. Exact hosted CI is pending. Scene callbacks and interest state retire with the last IMU; server workers, other families and performance evidence remain open."
+    "note": "Accepted revision 121071a passed independent review, a complete staged run (592 Rust tests and 92 tooling checks), and exact hosted run 41018562516. All 11 production crates exceed 95% line and region coverage; 77 of 80 changed executable lines are covered. A resolved disk-space failure required a fresh complete rerun, with no merged results or weakened gates. The accepted scope is Scene callbacks and interest state; server workers and equal-work performance measurements remain open."
   },
   "phase_status": {
     "P0": "in_progress",
