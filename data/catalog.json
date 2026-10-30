@@ -6,7 +6,7 @@
     {
       "id": "P0",
       "title": "Freeze and measure",
-      "scope": "Pin upstream main SHAs, build the C++ reference, enumerate tests and system behavior, collect baseline workloads, evaluate Avian/Rapier, resolve extension policy",
+      "scope": "Pin upstream main SHAs, build the C++ reference, enumerate tests and system behavior, collect baseline workloads, evaluate Avian/Rapier, define demand-driven system activation",
       "acceptance": "Reproducible reference image and commands; complete test ledger; benchmark raw data; backend decision; explicit environment failures"
     },
     {
@@ -117,13 +117,13 @@
       "acceptance": "Unit/property tests >95%; no-render dependency closure; documented toolchain/Bevy pairing"
     },
     {
-      "id": "EXT-01",
+      "id": "ACT-01",
       "owner": "gz-sim-rs",
-      "phase": "P1",
-      "group": "Foundation and reference tasks",
-      "depends_on": "API-01",
-      "title": "Specify and implement native extension ABI descriptor, lifecycle and plugin host",
-      "acceptance": "Rust and small C/C++ sample plugins load; mismatch/stale handle/teardown tests; no Rust layouts exported"
+      "phase": "P3",
+      "group": "Runtime and physics tasks",
+      "depends_on": "CORE-02, LOAD-01",
+      "title": "Built-in systems activated by loaded world/model demand",
+      "acceptance": "No scheduled callbacks, idle polling or system-owned allocations/workers/endpoints while absent; last-consumer teardown, shared dependencies, reactivation/reset/multiworld and equal-work CPU/memory evidence. D26 supersedes the system plugin ABI task."
     },
     {
       "id": "MSG-01",
@@ -168,7 +168,7 @@
       "group": "Independent repository tasks",
       "depends_on": "MSG-01, API-01",
       "title": "Protocol inventory and minimal discovery/pub-sub/service Rust API",
-      "acceptance": "Real C++\u2194Rust peers in both directions; timeout/reconnect/shutdown tests"
+      "acceptance": "Real C++↔Rust peers in both directions; timeout/reconnect/shutdown tests"
     },
     {
       "id": "NET-02",
@@ -239,7 +239,7 @@
       "phase": "P2",
       "group": "Runtime and physics tasks",
       "depends_on": "PHY-00, PHY-01, CORE-02",
-      "title": "Selected Rust engine plugin and explicit stepping/precision",
+      "title": "Selected Rust engine adapter and explicit stepping/precision",
       "acceptance": "Capability probes, accuracy tests, sync overhead and deterministic-profile evidence"
     },
     {
@@ -418,9 +418,9 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Simulator system families",
-      "depends_on": "EXT-01",
+      "depends_on": "API-01, ACT-01",
       "title": "Extension systems",
-      "acceptance": "Python/system extension migration and external-language lifecycle contract"
+      "acceptance": "Retained external-language workflows and lifecycle mapping; no dynamic simulation system loader"
     },
     {
       "id": "WORLD-01",
@@ -454,7 +454,7 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Non-system features and release tasks",
-      "depends_on": "EXT-01, WORLD-01",
+      "depends_on": "API-01, WORLD-01",
       "title": "Inventory Python workflows; choose focused bindings and migration path",
       "acceptance": "Retained Python tests/workflows; no accidental GIL on numerical hot paths"
     },
