@@ -1,16 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T09:15:50Z",
+  "updated_at": "2026-10-30T09:41:29Z",
   "state": "active",
-  "summary": "Canonical empty Physics world configuration is accepted after independent review, strict staged checks and exact hosted CI. The next slice retains bounded legacy engine metadata so native input fixtures can load without removing world records.",
+  "summary": "Canonical Physics engine records are accepted under explicit backend selection. Native input fixtures now load their complete original SDF, with unchanged physical assertions. Broader actuation, idle-resource teardown and performance qualification remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
-    {
-      "id": "LOAD-01",
-      "title": "Accepting native engine records under explicit backend selection",
-      "detail": "The independently reviewed follow-up is published at f38168e. Full staged checks passed 597 Rust and 95 tooling tests, 46/46 changed executable lines, and strict line/region coverage in all 11 crates. Retained native input/TPE fixtures now load complete original XML without changing physical assertions. Exact hosted qualification remains pending. There is no library lookup or post-load configuration resource; automatic engine selection, plane geometry and moving-parent actuation remain open."
-    },
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
@@ -487,6 +482,11 @@
       "title": "Canonical empty Physics world metadata maps to the existing built-in system without a loader or duplicate callbacks",
       "commit": "86eb56f769268b067edb3b7184af3b67b61eefaa",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/86eb56f769268b067edb3b7184af3b67b61eefaa"
+    },
+    {
+      "title": "Canonical engine records accepted under explicit backend selection; retained native input fixtures load without record stripping",
+      "commit": "f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e"
     }
   ],
   "remaining": [
@@ -521,17 +521,17 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "86eb56f769268b067edb3b7184af3b67b61eefaa",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/86eb56f769268b067edb3b7184af3b67b61eefaa",
-    "rust_tests": 595,
+    "revision": "f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e",
+    "rust_tests": 597,
     "coverage": {
       "lines": [
-        7594,
-        7676
+        7631,
+        7713
       ],
       "regions": [
-        11815,
-        12070
+        11874,
+        12130
       ]
     },
     "upstream": {
@@ -541,9 +541,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41028601233"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41031958768"
     },
-    "note": "Exact hosted CI and the full staged gate passed on 86eb56f: 595 Rust and 95 tooling checks; actual changed executable lines 43/43. All 11 production crates strictly exceed 95% lines and regions. Four-engine configuration/state/schedule/reset controls and existing real C++ client tests pass. This bounded mapping does not qualify the full original ApplyJointForce world, complete zero-idle activation or equal-work performance improvements."
+    "note": "Exact hosted CI and the full staged gate passed on f38168e: 597 Rust and 95 tooling checks; actual changed executable lines 46/46. All 11 production crates strictly exceed 95% lines and regions. Four-engine backend identity/state/reset controls and existing real C++ client tests pass. No automatic SDF engine selection, full original ApplyJointForce, complete zero-idle activation or new performance improvement is claimed."
   },
   "phase_status": {
     "P0": "in_progress",
