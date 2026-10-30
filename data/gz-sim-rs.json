@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T16:40:23.484035+00:00",
+  "updated_at": "2026-10-30T17:27:35.909437+00:00",
   "state": "active",
   "summary": "The native math reference baseline is accepted: all 135 configured CTest registrations and 658 gtest cases passed independent replay and exact hosted checks. Clean DART reference qualification and optional Bevy rendering continue; broader P0 and the Rust math migration remain incomplete.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "Private production renderer/client/protocol/worker layout now uses real Cargo-built worker tests and llvmpipe frames. Independent review caught and fixed two capture/cancellation correlation bugs. The combined feature gate correctly remains red on worker coverage, despite passing behavioral tests; physical GPU is unqualified. Coordinator is retaining owned scene visual geometry as a separately reviewed prerequisite. No renderer code is accepted in Main."
+      "detail": "Published e72c99c787d74d7ee761ed8a5b83928ad5b3d61a retains actual parsed visual geometry in Bevy scene metadata through reset, without GPU dependencies or new callbacks. Independent source review, five focused controls, Clippy and the complete local gate pass: 629 Rust, 117 tooling, 34/34 changed lines and strict per-crate coverage. Exact hosted 41096869144 is pending. The separate real llvmpipe worker/layout remains private; its combined coverage gate is still red, with physical GPU unqualified. No renderer runtime is accepted in Main."
     },
     {
       "id": "QLT-01",
@@ -609,7 +609,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41084314020"
     },
-    "note": "Native math baseline commit af35578 passed independent source/data/runtime review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 626 Rust and 117 tooling checks plus all existing real C++ clients. Workspace coverage remains 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Native math 135 CTest registrations / 658 completed cases are reference results, not Rust migration credit. Private DART qualification, visual-geometry and rendering work are excluded from accepted metrics."
+    "note": "Native math baseline commit af35578 passed independent source/data/runtime review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 626 Rust and 117 tooling checks plus all existing real C++ clients. Workspace coverage remains 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Native math 135 CTest registrations / 658 completed cases are reference results, not Rust migration credit. Private DART qualification, visual-geometry and rendering work are excluded from accepted metrics. Published scene-geometry candidate e72c99c passed its full local 629-Rust/117-tooling gate with 34/34 changed lines; its exact hosted result is pending and is not included in accepted quality above."
   },
   "phase_status": {
     "P0": "in_progress",
