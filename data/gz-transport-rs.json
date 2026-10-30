@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T20:07:03.550919Z",
+  "updated_at": "2026-10-30T20:25:00.873564Z",
   "state": "active",
-  "summary": "Application-owned SIGINT/SIGTERM publisher shutdown originals are public at 730d3a6 after independent review and the full ordinary staged hook: 490 Rust tests and 42 tools passed. Exact hosted qualification is pending; d6cdcf6 remains the latest accepted slice. Accepted ledger totals remain 117 faithful, 7 partial and 294 pending; exactly two reviewed candidate rows would become 119/7/292 after success.",
+  "summary": "Application-owned SIGINT/SIGTERM publisher shutdown originals are accepted at 730d3a6 after independent review, the full ordinary staged hook and exact hosted success. All 490 Rust tests and 42 tools passed. Ledger totals are now 119 faithful, 7 partial and 292 pending; no production signal handler or runtime API was added.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Accepted totals are 117 faithful, 7 partial and 294 pending cases, with complete source assertions and explicit setup translations. Typed/raw shared callbacks, owned retirement, RAII originals and the selected CallbackScope original are accepted through 38c0d4f. Broader discovery, global ownership and whole-runtime parity remain open."
+      "detail": "Accepted totals are 119 faithful, 7 partial and 292 pending cases, with complete source assertions and explicit setup translations. Typed/raw shared callbacks, owned retirement, selected lifetime originals and the two application-owned signal termination cases are accepted through 730d3a6. Broader discovery, global ownership and whole-runtime parity remain open."
     },
     {
       "id": "NET-02",
-      "title": "Signal originals exact hosted qualification and owned NetworkClock implementation",
-      "detail": "Public 730d3a6 adds isolated application-owned signal ports with native payload, every publish result, 500 ms/10 ms timing, count below 200, resets and join preserved. No production signal handler or runtime API was added; the maintained signal library is dev-only. Independent fresh source/target debug and release, unchanged native originals, tooling and the ordinary full gate passed. Exact hosted 41120577494 is pending. A separate bounded SIM/REAL/SYS clock implementation reuses the existing Node callback dispatcher; only pure tests/builds have run, with actual native values and wire qualification still pending. The Node statistics lifecycle decision remains unanswered."
+      "title": "Bounded owned SIM/REAL/SYS NetworkClock implementation",
+      "detail": "Accepted 730d3a6 preserves both complete application-owned signal originals, with a dev-only maintained signal library and no production handler. A separate bounded SIM/REAL/SYS clock implementation reuses the existing Node and callback dispatcher. Initial author controls passed the three unchanged native originals, 63 actual SDK value/wire states and bidirectional C++/Rust payload checks, including signed and native int32-second narrowing edges. Final lifecycle/release qualification, independent review and normal staged/exact hosted checks remain pending; no clock ledger credit is claimed. The Node statistics lifecycle decision remains unanswered."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Complete application-owned SIGINT/SIGTERM publisher shutdown originals in isolated children",
+      "commit": "730d3a6ecd97b9c97f0472d15c4cb223bff7c057",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/730d3a6ecd97b9c97f0472d15c4cb223bff7c057"
+    },
     {
       "title": "Native Linux GNU interface selection through an owned bounded first-A NSS boundary",
       "commit": "d6cdcf6cc046f8042592cc8b5d1ec66ad2f0b21d",
@@ -607,7 +612,7 @@
     "Equal-fidelity latency, throughput and allocation measurements."
   ],
   "blockers": [
-    "Owner decision pending: should Rust runtime statistics enable/disable be idempotent with documented differences, or reproduce native publisher-invalidating quirks? Dependent Node runtime behavior is on hold; repository remains active through independent pure value/framing work."
+    "Owner decision pending: should Rust runtime statistics enable/disable be idempotent with documented differences, or reproduce native publisher-invalidating quirks? Dependent Node runtime behavior is on hold; the repository remains active through other retained transport and lifecycle work."
   ],
   "plan_status": {
     "NET-01": "in_progress",
@@ -630,13 +635,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 117,
+      "ported": 119,
       "partial": 7
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41120577494"
     },
-    "note": "Public 730d3a6 passed the ordinary canonical staged commit hook in its reviewed worktree, then clean Main was fast-forwarded to that checked commit and pushed. Full 490 Rust tests, 42 tools, retained native groups and required immutable NSS cases passed. Coverage: aggregate 5072/5165 lines and 7178/7426 regions; parent 4991/5084 lines and 7058/7304 regions; owned sys 81/81 lines and 120/122 regions. No production code changed, so changed executable coverage is legitimately 0/0. Independent fresh source/target passed signal debug 3 and release 3 harness functions, native 2 originals and 42 tools; each profile includes two actual child ports plus an inert helper entry. The two reviewed ledger rows are conditional candidates (119 faithful, 7 partial, 292 pending); displayed accepted totals remain 117/7/294 until exact hosted success. There is no implicit Node signal API or broader scheduling claim."
+    "note": "Exact public 730d3a6 passed hosted 41120577494 after the ordinary canonical staged commit hook in its reviewed worktree; clean Main was fast-forwarded to that checked commit and pushed. Full 490 Rust tests, 42 tools, retained native groups and required immutable NSS cases passed. Coverage: aggregate 5072/5165 lines and 7178/7426 regions; parent 4991/5084 lines and 7058/7304 regions; owned sys 81/81 lines and 120/122 regions. No production code changed, so changed executable coverage is legitimately 0/0. Independent fresh source/target passed signal debug 3 and release 3 harness functions, native 2 originals and 42 tools; each profile includes two actual child ports plus an inert helper entry. Exactly the two complete signal rows gained faithful credit, giving 119 faithful, 7 partial and 292 pending. There is no implicit Node signal API or broader scheduling/preemption claim."
   }
 }
