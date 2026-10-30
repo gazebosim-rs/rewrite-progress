@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T08:14:48Z",
+  "updated_at": "2026-10-30T08:17:10Z",
   "state": "active",
-  "summary": "The reviewed changed-line gate correction passed its staged hook and is pushed; exact hosted CI is pending.",
+  "summary": "Parent-bound changed-line coverage is accepted after independent review, normal staged verification and exact hosted CI.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Correct parent-bound changed-line coverage gate",
-      "detail": "Gate commit 5172ee2 passed independent source/tooling review and normal staged verification, and is pushed. Exact hosted CI is pending; accepted density metrics remain below. The separate Collision writer waits for gate acceptance.",
+      "title": "Qualify genuine Collision metadata serialization",
+      "detail": "The gate correction is accepted. A separate writer candidate preserves actual Empty geometry, optional density and bounded Surface data; independent review and qualification remain pending. No physics or consumer pin change.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5172ee247683e698ab00f40cf8af0e0eeac67516"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Bind changed-line coverage to frozen parent and CI event base",
+      "commit": "5172ee247683e698ab00f40cf8af0e0eeac67516",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5172ee247683e698ab00f40cf8af0e0eeac67516"
+    },
     {
       "title": "Preserve optional Collision density metadata",
       "commit": "005fda0bf5742278707003fdebb2e1a2c5a1cac9",
@@ -801,8 +806,8 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "005fda0bf5742278707003fdebb2e1a2c5a1cac9",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0bf5742278707003fdebb2e1a2c5a1cac9",
+    "revision": "5172ee247683e698ab00f40cf8af0e0eeac67516",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5172ee247683e698ab00f40cf8af0e0eeac67516",
     "rust_tests": 550,
     "coverage": {
       "lines": [
@@ -821,8 +826,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41022794046"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41025131418"
     },
-    "note": "Independent review reproduced 14 native profiles, ten setter states and 15 focused Rust checks. Normal staged and exact hosted CI passed 550 Rust and 17 tooling controls. The staged export conservatively measured all instrumented source lines (7215/7236); hosted Main reported 0 changed lines. An independent intersection of this exact commit parent diff with hosted LCOV found all 7/7 instrumented changed lines covered. Native subnormal setter emission loss is recorded without altering stored metadata. Ledger remains 201 complete/27 partial; no physics, writer or consumer pin included."
+    "note": "Independent review passed 22 tooling controls and initial, zero-base, diff-spoof, comment and mixed unmapped-line boundaries. Normal staged and exact hosted checks passed 550 Rust/22 tooling; hosted confirms event base 005fda0 and exact target. This gate-only revision has no added source lines; full-source 7215/7236. Total lines 7550/7577 and regions 11840/12079. Density exact hosted parent-diff remains 7/7 instrumented changed lines. Ledger remains 201 complete/27 partial."
   }
 }
