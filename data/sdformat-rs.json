@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T02:55:42Z",
+  "updated_at": "2026-10-30T02:58:05Z",
   "state": "active",
-  "summary": "Valid Heightmap and Mesh metadata XML are accepted after independent review, normal strict staged hooks and exact hosted success. The ledger is 195 complete/27 partial original mappings; broad retained compatibility remains in development.",
+  "summary": "Ordered Polyline, Heightmap and Mesh metadata XML are accepted after independent review, normal strict hooks and exact hosted success. The ledger is 197 complete/27 partial original mappings; broad retained compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify published ordered Polyline metadata XML",
-      "detail": "Reviewed Polyline commit bdd1b84 is public after one normal strict hook: 522 Rust/17 tooling checks, coverage 7045/7075 lines and 11124/11355 regions, actual new executable 74/74. Independent review passed 21 Rust checks and complete Polyline 19 native inputs/nine exports/two originals/default-insertion profile, plus Heightmap 28/15, Mesh 28/18 and Geometry 48/46 regressions. Exact hosted run 40994439755 is pending. Candidate 197 complete/27 partial stays distinct from accepted 195/27. Ordered groups/points are preserved; empty groups/point vectors reject rather than silently gain a point. No full Geometry, meshing, rendering, physics, Fuel or consumer-pin change.",
+      "title": "Characterize bounded Material and PBR XML",
+      "detail": "Polyline commit bdd1b84 is accepted with exact hosted CI success. Next is native characterization of existing Material/PBR metadata: float32 colors/render order, shader/raw attributes, maps/workflows and script URIs. Unsupported edited states and retained numeric policies stay explicit; no full original credit until every block is independently checked. The owner is also assigned a coordinated independent Transport review before further Material implementation. No asset decoding, rendering, physics, Fuel or consumer-pin changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bdd1b846e6a84d307afc406cfdcebc695ca0fae4"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve ordered Polyline points and multiple Geometry groups in XML",
+      "commit": "bdd1b846e6a84d307afc406cfdcebc695ca0fae4",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bdd1b846e6a84d307afc406cfdcebc695ca0fae4"
+    },
     {
       "title": "Preserve valid Heightmap metadata and ordered texture/blend XML",
       "commit": "2e101eac61ec21cb85074c17a7f5826f2f808026",
@@ -766,28 +771,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "2e101eac61ec21cb85074c17a7f5826f2f808026",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/2e101eac61ec21cb85074c17a7f5826f2f808026",
-    "rust_tests": 517,
+    "revision": "bdd1b846e6a84d307afc406cfdcebc695ca0fae4",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/bdd1b846e6a84d307afc406cfdcebc695ca0fae4",
+    "rust_tests": 522,
     "coverage": {
       "lines": [
-        6981,
-        7011
+        7045,
+        7075
       ],
       "regions": [
-        11044,
-        11274
+        11124,
+        11355
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 195,
+      "ported": 197,
       "partial": 27
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40992173547"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40994439755"
     },
-    "note": "One normal strict hook and exact hosted CI passed 517 Rust/17 tooling tests, formatting, Clippy, docs and >95% coverage; actual new executable 103/103. Independent fresh-source review passed 27 selected Rust controls and complete Heightmap 28 native inputs/one fixture/two exact old-input controls/15 real exchanges/two originals, plus Mesh 28/18, Geometry 48/45 and Contact 16/17 native regressions and originals. Private stdout/stderr injections failed quiet capture; restored source passed. Exact original field/count/scalar/vector/quiet predicates are retained; two temporary Rust-only Geometry rejections were approved before stronger positives with identical inputs/URIs. Shared text extraction preserves Mesh codes/messages and Contact accepted output. Native default producer error34, full Geometry partial contracts, resource IO, terrain generation, rendering, physics and performance claims remain open."
+    "note": "One normal strict hook and exact hosted CI passed 522 Rust/17 tooling tests, formatting, Clippy, docs and >95% coverage; actual new executable 74/74. Independent fresh-source review passed 21 selected Rust controls and full Polyline 19 inputs/one fixture/two retained-input controls/nine real exchanges/two originals/native ADD1/1 and default insertion profile, plus Heightmap 28/15, Mesh 28/18 and Geometry 48/46 regressions/originals. Private stdout/stderr injections failed quiet capture; restored source passed. Two temporary Geometry rejections were approved before full native-positive replacement with unchanged inputs/URIs. Ordered groups/points and numeric policies are preserved; empty groups/point vectors reject rather than silently gain a point. Geometry originals stay partial for invalid/default producer contracts; no insertion/OOM, meshing, asset/runtime or performance claim."
   }
 }
