@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T17:27:35.909437+00:00",
+  "updated_at": "2026-10-30T17:33:52.448095+00:00",
   "state": "active",
-  "summary": "The native math reference baseline is accepted: all 135 configured CTest registrations and 658 gtest cases passed independent replay and exact hosted checks. Clean DART reference qualification and optional Bevy rendering continue; broader P0 and the Rust math migration remain incomplete.",
+  "summary": "Owned visual geometry is accepted in the Bevy scene through reset, with all strict local and exact hosted checks passing. Clean DART reference qualification and optional rendering continue; the renderer worker still fails its region coverage gate and remains private.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -39,12 +39,12 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The corrected local DART capture and its source passed independent review: ten fresh 1000-step sample processes retain complete four-joint trajectories, semantic names, exact selected module paths/hashes and stable libraries. This installed local profile is not an immutable build qualification or Rust speedup. A clean system-DART image recipe has signed package provenance and tooling checks; its build is next. Many-entity and camera/lidar baselines and ratified budgets remain open."
+      "detail": "The corrected local DART capture passed independent source review and ten fresh 1000-step sample processes. A separate clean system-DART image has now built and passed bounded articulated smoke with exact mapped modules; those timings are diagnostic during concurrent work. Quiet-resource balanced measurements, many-entity and camera/lidar baselines and ratified budgets remain open."
     },
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "Published e72c99c787d74d7ee761ed8a5b83928ad5b3d61a retains actual parsed visual geometry in Bevy scene metadata through reset, without GPU dependencies or new callbacks. Independent source review, five focused controls, Clippy and the complete local gate pass: 629 Rust, 117 tooling, 34/34 changed lines and strict per-crate coverage. Exact hosted 41096869144 is pending. The separate real llvmpipe worker/layout remains private; its combined coverage gate is still red, with physical GPU unqualified. No renderer runtime is accepted in Main."
+      "detail": "Accepted e72c99c787d74d7ee761ed8a5b83928ad5b3d61a retains parsed visual geometry in Bevy scene metadata through reset, without GPU dependencies or new callbacks. Independent review, five focused controls, Clippy, the full local gate and exact hosted 41096869144 pass: 629 Rust, 117 tooling, 34/34 changed executable lines and strict coverage in all 11 production crates. The private combined llvmpipe profile passes behavior checks but worker regions remain 356/385 (92.47%), below the strict threshold; lines are 253/263. No renderer runtime or physical GPU qualification is accepted."
     },
     {
       "id": "QLT-01",
@@ -552,6 +552,11 @@
       "title": "Complete configured native math runtime baseline with 658 original cases, retained raw corpus and independent replay",
       "commit": "af35578a077a5544839111c8d80dcb479d80d12f",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/af35578a077a5544839111c8d80dcb479d80d12f"
+    },
+    {
+      "title": "Owned parsed visual geometry retained through Bevy scene reset without GPU dependencies",
+      "commit": "e72c99c787d74d7ee761ed8a5b83928ad5b3d61a",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e72c99c787d74d7ee761ed8a5b83928ad5b3d61a"
     }
   ],
   "remaining": [
@@ -587,17 +592,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "af35578a077a5544839111c8d80dcb479d80d12f",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/af35578a077a5544839111c8d80dcb479d80d12f",
-    "rust_tests": 626,
+    "revision": "e72c99c787d74d7ee761ed8a5b83928ad5b3d61a",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e72c99c787d74d7ee761ed8a5b83928ad5b3d61a",
+    "rust_tests": 629,
     "coverage": {
       "lines": [
-        7809,
-        7891
+        7839,
+        7922
       ],
       "regions": [
-        12120,
-        12383
+        12165,
+        12432
       ]
     },
     "upstream": {
@@ -607,9 +612,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41084314020"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41096869144"
     },
-    "note": "Native math baseline commit af35578 passed independent source/data/runtime review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 626 Rust and 117 tooling checks plus all existing real C++ clients. Workspace coverage remains 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Native math 135 CTest registrations / 658 completed cases are reference results, not Rust migration credit. Private DART qualification, visual-geometry and rendering work are excluded from accepted metrics. Published scene-geometry candidate e72c99c passed its full local 629-Rust/117-tooling gate with 34/34 changed lines; its exact hosted result is pending and is not included in accepted quality above."
+    "note": "Visual geometry commit e72c99c passed independent review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 629 Rust and 117 tooling checks plus the existing real C++ clients. All 11 production crates exceed 95% line and region coverage; all 34 changed executable lines are covered. Private DART qualification and rendering work are excluded. Native math reference results remain 135 passing registrations and 658 completed cases, without Rust migration credit."
   },
   "phase_status": {
     "P0": "in_progress",
