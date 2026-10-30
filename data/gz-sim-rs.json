@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T03:20:11Z",
+  "updated_at": "2026-10-30T03:45:01Z",
   "state": "active",
   "summary": "Persistent Bevy joint-force control is accepted after independent review, strict staged checks and exact hosted CI. Recognized SDF controller configuration and reset metadata are under development. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "PHY-01",
-      "title": "Implementing recognized ApplyJointForce configuration",
-      "detail": "A private Scene slice recognizes the canonical model plugin, resolves one direct local joint, installs zero force and restores immutable configuration on reset. Five smoke controls pass. Native probing caught split-CDATA/comment and Unicode-trimming differences; lexical validation and ASCII/native text rules now prevent silently selecting another joint. Full conformance controls, reference bindings, review and staged/hosted qualification remain. Transport delivery is not implemented yet."
+      "id": "SYS-CONTROL",
+      "title": "Reviewing recognized ApplyJointForce configuration",
+      "detail": "The private canonical model configuration slice passed all166 Scene tests, seven new public controls, two private controls, Clippy and fourteen actual native clone/Get observations. Maintained XML parsers preserve lexical boundaries and native ASCII/CDATA text rules. Independent review and strict staged/hosted qualification remain required. Transport delivery and the original plane/moving-parent fixture remain unqualified."
     },
     {
       "id": "PHY-05",
@@ -476,7 +476,8 @@
     "FUEL-01": "in_progress",
     "REF-03": "in_progress",
     "PHY-03": "in_progress",
-    "PHY-04": "in_progress"
+    "PHY-04": "in_progress",
+    "SYS-CONTROL": "in_progress"
   },
   "quality": {
     "revision": "19c7f7c319a8e30f82e644c3299577b8f7619960",
@@ -512,5 +513,8 @@
     "P5": "not_started",
     "P6": "not_started",
     "P7": "not_started"
+  },
+  "system_status": {
+    "apply_joint_force": "in_progress"
   }
 }
