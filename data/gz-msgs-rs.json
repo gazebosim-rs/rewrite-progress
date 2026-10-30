@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-29T23:51:01.081242+00:00",
+  "updated_at": "2026-10-30T00:07:20.057600+00:00",
   "state": "active",
-  "summary": "Independently reviewed Float_V wire qualification is published after the strict staged gate; exact hosted qualification is pending.",
+  "summary": "Packed Float_V wire qualification is accepted; native-backed packed-varint characterization is underway.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Packed Float_V fixed32 wire qualification",
-      "detail": "Published 24ed3a7 after independent six-check Rust/native61/unchanged-native64 review and the single mandatory strict staged gate: 173 Rust tests pass. Exact hosted qualification is pending. Runtime, dependencies, old peer/schema/header/fixed64 inputs and all 83 upstream mappings are unchanged. Packed-varint characterization is the next bounded compatibility task; no full MSG-02 or performance acceptance is claimed."
+      "title": "Packed integer-vector wire boundaries",
+      "detail": "Private native characterization covers four canonical signed/unsigned 32/64-bit vector types. Fresh canonical and installed parsers agree on 96 width/sign/framing cases plus a 1,024-case terminating-byte sweep. Native accepts overflowing ten-byte varints that unchanged strict and compatible Rust decoding reject; this difference will remain explicit in the next bounded compatibility corpus. No runtime or decoder adoption has occurred."
     },
     {
       "id": "MSG-02-upstream",
@@ -467,6 +467,11 @@
       "title": "Ordinary proto2 extension ranges with preserved raw options and native validation boundaries",
       "commit": "7d4062f425670cf00c59781fd5dadebfbfe0f9d5",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7d4062f425670cf00c59781fd5dadebfbfe0f9d5"
+    },
+    {
+      "title": "Packed Float_V exact-bit, Header, framing and partial-state qualification",
+      "commit": "24ed3a7e372a38ab58d03317ce73c608c115a7ea",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/24ed3a7e372a38ab58d03317ce73c608c115a7ea"
     }
   ],
   "remaining": [
@@ -501,9 +506,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40975802416"
     },
-    "note": "Independent fresh-source review and the mandatory strict staged gate passed. All 173 Rust tests pass, with 61 new native Float_V observations and the unchanged 64-case fixed64 replay. All 19 production files retain strict line and region coverage; no executable production lines were added. Vendor-owned reflect coverage remains 103/105 lines and 214/216 regions; derive 6/6 and 8/8. Exact hosted qualification remains pending, so this slice is not yet accepted."
+    "note": "Independent fresh-source review, the mandatory strict staged gate and exact hosted source-package/fresh-cache qualification passed. All 173 Rust tests pass. New native Float_V corpus has 61 complete observations; unchanged native fixed64 replay has 64. All 19 production files retain strict line and region coverage; no executable production lines were added. Vendor-owned reflect coverage remains 103/105 lines and 214/216 regions; derive 6/6 and 8/8. Runtime, dependencies, old fixtures/peer/schema and all 83 original mappings remain unchanged. This is bounded wire compatibility evidence, not full MSG-02 or performance acceptance."
   }
 }
