@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T12:59:42Z",
+  "updated_at": "2026-10-30T13:13:23Z",
   "state": "active",
   "summary": "Loaded-joint preflight and sampling demand passed exact hosted CI. Jointless scenes have no such callbacks; last-consumer retirement and loaded reset are qualified. Persistent-controller demand is now in independent review. Server workers, generic input/physics activation, broader actuation and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -14,7 +14,7 @@
     {
       "id": "SYS-CONTROL",
       "title": "Extending retained controller behavior beyond world hinges",
-      "detail": "Accepted30c632d passed exact hosted41008910670 and all required local checks. Real C++ publishers cover persistent commands, paused/default/nonfinite behavior, native physical rate, loaded reset/removal and old bounded queue cancellation on all three dynamic engines. Full original ApplyJointForce fixture still requires plane geometry, moving-parent actuation and world physics selection; no full original-system or performance completion."
+      "detail": "Accepted bounded control supports real C++ publishers, pause/reset/removal and native physical rates on three dynamic engines. Bounded DART planes are now accepted. The full original ApplyJointForce fixture still requires moving-parent actuation and remaining world/backend behavior; no full original-system or performance completion is claimed."
     },
     {
       "id": "PHY-05",
@@ -25,6 +25,21 @@
       "id": "PHY-03",
       "title": "Qualifying static planes and their scene lifecycle",
       "detail": "Accepted 7f6c7af passed exact hosted 41051460995 and the full normal hook, independent native/scene review, 608 Rust and 103 tooling checks and 116/116 changed executable lines. Centered local +Z DART planes preserve the native finite cube, ignored physical size, link frames, inherited static state, model removal and loaded reset. Other engines, normals/offsets and custom plane inertia remain explicit unsupported scope. Larger articulation and performance qualification remain open."
+    },
+    {
+      "id": "REF-01",
+      "title": "Close P0 reference-environment qualification",
+      "detail": "Pinned baseline SHAs and the selected reproducible headless image exist; all 14 native repositories were built in that profile. Broader backend, renderer/GPU and language profile execution is not yet qualified. Record exact successful and unavailable profiles and their evidence; this does not require completing their Rust ports."
+    },
+    {
+      "id": "REF-02",
+      "title": "Close P0 native test inventory and ledger reconciliation",
+      "detail": "The selected immutable headless listing contains 1,175 registrations, 578 gtest configurations and 4,589 expanded cases. Eleven registrations remain unqualified in the latest accepted inventory, and other profiles plus complete source-ledger reconciliation remain open. Resolve or explicitly review each remaining disposition; listings are not execution passes or Rust-port completion."
+    },
+    {
+      "id": "REF-03",
+      "title": "Close P0 balanced-robotics baseline measurements",
+      "detail": "Selected headless streaming and kernel measurements exist. The representative articulated-robot, many-entity, camera/lidar native baseline, raw repeated samples/variance, complete hardware/configuration record and ratified budgets are still missing. Capture native baselines separately from later Rust speedup qualification; unavailable configurations need explicit evidence."
     }
   ],
   "accepted_slices": [
