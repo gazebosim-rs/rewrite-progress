@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T21:36:24.714148Z",
+  "updated_at": "2026-10-30T21:41:38.930568Z",
   "state": "active",
-  "summary": "Reviewed native custom-sensor metadata is published after its full staged gate; exact hosted verification is in progress.",
+  "summary": "Native custom-sensor metadata is qualified by independent review, the full protected staged gate and exact hosted CI; broader SDF fidelity remains open.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Qualify native custom-sensor metadata",
-      "detail": "The unchanged environmental world loads with optional custom subtype and arbitrary ordered raw fields. Independent source/native review and the full staged gate passed; exact hosted checks remain pending. Consumer pin and original-test counts are unchanged.",
+      "title": "Remaining parser and DOM fidelity",
+      "detail": "The custom-sensor metadata slice is accepted. Complete retained sensor/Element/output contracts and broader schema/conversion fidelity remain unfinished; this does not activate sensor runtime or update the simulator pin.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8b17dfd7171688626bcf0f045ba3493cd262f8a2"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve native custom-sensor subtype and ordered opaque metadata",
+      "commit": "8b17dfd7171688626bcf0f045ba3493cd262f8a2",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8b17dfd7171688626bcf0f045ba3493cd262f8a2"
+    },
     {
       "title": "Retain direct qualified world extension metadata",
       "commit": "b7b96537bf4ab73a859ecc5d5cc02e81f33b5402",
@@ -821,7 +826,6 @@
     }
   ],
   "remaining": [
-    "Exact hosted qualification of the published custom-sensor metadata change.",
     "Consumer adoption must explicitly support or reject custom metadata before updating the simulator producer pin.",
     "Custom sensor runtime, generic mutable Element APIs and custom XML output remain outside this parser metadata change.",
     "Complete primitive Element/error/mutation contracts, PBR and unsupported Surface fields; basic material, heightmap/polyline metadata and full Shapes assertions are delivered.",
@@ -858,9 +862,9 @@
       "partial": 27
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41132109988"
     },
-    "note": "Published commit passed the full normal protected staged hook:589 Rust/39 tooling,changed28/28,full-source7342/7363. Independent source/native replay passed7 new Rust/11 native observations; the separately reviewed narrow syntax proof passed16 helper/39 tooling controls including real DA0 and region failures. An additional public ownership test was independently source-reviewed. The first failed hook remains recorded. Narrow syn-based declaration/delimiter proof preserves measured DA/region authority and all thresholds. Exact hosted success is still required; no additional original-test credit, runtime support, consumer pin adoption or whole-SDF acceptance is claimed."
+    "note": "Exact hosted run41132109988 and the full normal protected staged hook both passed589 Rust/39 tooling; hosted source digest matches the reviewed snapshot. Coverage7689/7716lines,12067/12305regions,changed28/28 andfullsource7342/7363 match local evidence. Independent source/native replay passed7 new Rust/11 native observations; the separately reviewed narrow syntax proof passed16 helper/39 tooling controls, including real DA0 and region failures. The additional public ownership test was independently source-reviewed and is covered by full qualification. The first failed hook remains recorded. Measured DA/region authority and all thresholds are preserved. No additional original-test credit, runtime support, consumer pin adoption or whole-SDF completion is claimed."
   }
 }
