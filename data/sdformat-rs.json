@@ -1,25 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T11:19:09Z",
+  "updated_at": "2026-10-30T11:21:56Z",
   "state": "active",
-  "summary": "Coverage tooling is published and awaiting exact hosted checks; world extension metadata and legacy merge work are in review.",
+  "summary": "Coverage tooling correction passed exact hosted CI; world-merge metadata is published and under verification.",
   "model": "Repository owner",
   "active": [
     {
-      "id": "QLT-01",
-      "title": "Qualify coverage tooling correction",
-      "detail": "Independently reviewed and normal staged checks passed; exact hosted CI is running. Accepted coverage evidence remains tied to the prior successful revision until CI passes.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0fee663e782c5d0969090aca921b42e5f5c35300"
-    },
-    {
       "id": "SDF-02",
-      "title": "Qualify world extensions and legacy merge semantics",
-      "detail": "World merge and direct-world metadata candidates passed independent native review and local staged checks. Legacy name-collision positives are under independent source review; original regression boundaries remain in place. Consumer adoption and exact hosted checks remain pending.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9a00ab305237efb970119ddffd7b058e606e66ba"
+      "title": "Qualify world extension metadata and legacy merge semantics",
+      "detail": "World-merge metadata passed independent native review and local staged checks and is undergoing exact hosted CI. Direct-world metadata passed independent native review and local staged checks; legacy collision positives await source review. Consumer adoption remains pending.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/52f59d53d2d6c46c35b2e3c01684fe4c56d94be2"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Harden exact-byte coverage syntax evidence",
+      "commit": "0fee663e782c5d0969090aca921b42e5f5c35300",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0fee663e782c5d0969090aca921b42e5f5c35300"
+    },
     {
       "title": "Reconcile Collision ownership setups and two writer originals",
       "commit": "9a00ab305237efb970119ddffd7b058e606e66ba",
@@ -827,9 +826,9 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "9a00ab305237efb970119ddffd7b058e606e66ba",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9a00ab305237efb970119ddffd7b058e606e66ba",
-    "rust_tests": 557,
+    "revision": "0fee663e782c5d0969090aca921b42e5f5c35300",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0fee663e782c5d0969090aca921b42e5f5c35300",
+    "rust_tests": 566,
     "coverage": {
       "lines": [
         7635,
@@ -847,8 +846,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41029340630"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41047170025"
     },
-    "note": "Independent fresh-source review replayed 13 Rust checks, seven unchanged native originals and exact writer exchanges; original signed pose predicates and previous configured Box destination remain. Normal staged and exact hosted checks passed 557 Rust/23 tooling, no added production source and full-source 7297/7318. Constructor/Element identity, semantic pose, type-only BOX, auto-inertia and broader SDF-02 conversion/merge remain open."
+    "note": "Independent source review, normal staged checks and exact hosted CI passed 566 Rust and 33 tooling checks. This tooling-only parent diff has no added production source lines; full-source coverage is 7297/7318. Existing production line and region thresholds remain enforced."
   }
 }
