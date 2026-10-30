@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T11:29:48.728214Z",
+  "updated_at": "2026-10-30T11:48:32.828406Z",
   "state": "active",
-  "summary": "Accepted Main remains 33d98df: 417 Rust and 27 tooling checks, with 111 faithful, 7 partial and 300 pending cases. Independent review approved demand-created typed callbacks and a separate owned-unsubscribe follow-up, including real native lifecycle controls. Normal staged gates and exact hosted checks remain pending. The Node statistics lifecycle decision is still open.",
+  "summary": "Public 32ff368 passed the normal staged LF-accounting gate: 417 Rust, 35 tooling checks and unchanged strict coverage; exact hosted CI is pending. Callback and owned-unsubscribe candidates have independent approval and await their own qualification. Accepted ledger remains 111 faithful, 7 partial and 300 pending.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -580,8 +580,8 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "33d98df79588be3d5ac49128bf28eb7dedcfacfc",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/33d98df79588be3d5ac49128bf28eb7dedcfacfc",
+    "revision": "32ff36879df16c35fb8d57ae9ac980bbc243a28a",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32ff36879df16c35fb8d57ae9ac980bbc243a28a",
     "rust_tests": 417,
     "coverage": {
       "lines": [
@@ -599,9 +599,9 @@
       "partial": 7
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41030883190"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41050378868"
     },
-    "note": "The complete normal canonical staged hook passed 417 Rust checks across 38 executable harnesses, 27 tooling checks and all required unchanged native groups. Production coverage remains 4364/4446 lines and 6160/6376 regions; no production source changed (0/0 changed lines), and ownership/exclusions/thresholds are unchanged. Independent fresh-export review passed all 27 tools and an additional real-Git raw-string/two-hunk control; the actual original function fails the durable new control. The historical wrong selection accepts 2/2 synthetic changed LCOV lines while the correct selection rejects the uncovered real line (1/2); this is selector evidence, not LLVM/native execution evidence. Old/new selectors agree on the actual accepted formatter source diff, without claiming every historical slice was audited. Exact hosted 41030883190 completed SUCCESS at full SHA 33d98df79588be3d5ac49128bf28eb7dedcfacfc. No ledger, API, dependency, wire or Node statistics lifecycle change."
+    "note": "The normal canonical staged hook passed 417 Rust tests across 38 executable harnesses, 35 tooling checks and all required native groups at public 32ff368. Strict production coverage is 4364/4446 lines and 6160/6376 regions; no production Rust source changed (0/0 changed lines). Exact-byte/LF accounting reuses the reviewed simulator correction with independent source and 35-tool review; ownership, thresholds and exclusions remain unchanged. Exact hosted 41050378868 is pending, so the new slice is not yet accepted. No ledger or runtime wire/API change."
   }
 }
