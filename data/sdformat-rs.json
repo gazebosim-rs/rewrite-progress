@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T08:42:26Z",
+  "updated_at": "2026-10-30T08:44:55Z",
   "state": "active",
-  "summary": "The reviewed Collision writer passed its normal staged gate and is pushed; exact hosted CI is pending.",
+  "summary": "Bounded Collision metadata serialization is accepted after independent native review, staged verification and exact hosted CI.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify Collision metadata serialization",
-      "detail": "Writer commit 260b23f passed independent native/source review and normal staged verification, including 82/82 actual changed executable lines. Exact hosted CI remains pending; accepted evidence below is for 384b33f. Ledger remains 201/27.",
+      "title": "Reconcile Collision metadata original assertions",
+      "detail": "Five previously credited ownership tests retained all pose assertions but used a Box in a setup where native constructs Empty; correcting that setup is under pre-change review. The two genuine ToElement originals are ready for separately reviewed mapping. Constructor, Element identity, semantic pose, type-only BOX and automatic inertia remain explicit gaps.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/260b23f0faacfa0016ceefc9013d312c6525d41e"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize bounded Collision metadata with genuine Empty and density",
+      "commit": "260b23f0faacfa0016ceefc9013d312c6525d41e",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/260b23f0faacfa0016ceefc9013d312c6525d41e"
+    },
     {
       "title": "Recognize plain impl declarations without masking code coverage",
       "commit": "384b33f2fc01746a83ab02893f97b0a4f0a3ff78",
@@ -811,17 +816,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "384b33f2fc01746a83ab02893f97b0a4f0a3ff78",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/384b33f2fc01746a83ab02893f97b0a4f0a3ff78",
-    "rust_tests": 550,
+    "revision": "260b23f0faacfa0016ceefc9013d312c6525d41e",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/260b23f0faacfa0016ceefc9013d312c6525d41e",
+    "rust_tests": 556,
     "coverage": {
       "lines": [
-        7550,
-        7577
+        7635,
+        7662
       ],
       "regions": [
-        11840,
-        12079
+        11956,
+        12195
       ]
     },
     "upstream": {
@@ -831,8 +836,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41026303408"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41028236807"
     },
-    "note": "Independent review passed 23 tooling controls and mapped-uncovered, inline, generic, trait and path impostor checks. Normal staged and exact hosted checks passed 550 Rust/23 tooling; hosted confirms event base 5172ee2 and exact target. No source lines were added; full-source 7215/7236. Total lines 7550/7577 and regions 11840/12079. Ledger remains 201 complete/27 partial."
+    "note": "Independent fresh-source review passed six Rust checks, exact native constructor fixture, two Rust-to-native exchanges and both unchanged originals. Normal staged and exact hosted checks passed 556 Rust/23 tooling; hosted parent-bound changed executable 82/82 and full-source 7297/7318. Ledger remains 201 complete/27 partial pending family reconciliation; five older ownership cases used a different Box setup despite native Empty and are being corrected."
   }
 }
