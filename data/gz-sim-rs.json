@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T13:13:23Z",
+  "updated_at": "2026-10-30T13:18:51Z",
   "state": "active",
   "summary": "Loaded-joint preflight and sampling demand passed exact hosted CI. Jointless scenes have no such callbacks; last-consumer retirement and loaded reset are qualified. Persistent-controller demand is now in independent review. Server workers, generic input/physics activation, broader actuation and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -40,6 +40,11 @@
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
       "detail": "Selected headless streaming and kernel measurements exist. The representative articulated-robot, many-entity, camera/lidar native baseline, raw repeated samples/variance, complete hardware/configuration record and ratified budgets are still missing. Capture native baselines separately from later Rust speedup qualification; unavailable configurations need explicit evidence."
+    },
+    {
+      "id": "RENDER-01",
+      "title": "Starting optional Bevy offscreen rendering",
+      "detail": "A dedicated rendering worker is implementing the first isolated renderer slice. Initial dependency and GPU qualification checks are underway for Bevy 0.20. The target is a real no-window primitive/camera render, derived f64 Z-up scene snapshots and bounded readback lifecycle. Default headless builds must remain free of renderer/GPU dependencies. No rendering, sensor parity or performance completion is claimed."
     }
   ],
   "accepted_slices": [
@@ -553,7 +558,8 @@
     "PHY-03": "in_progress",
     "PHY-04": "in_progress",
     "SYS-CONTROL": "in_progress",
-    "ACT-01": "in_progress"
+    "ACT-01": "in_progress",
+    "RENDER-01": "in_progress"
   },
   "quality": {
     "revision": "2671fe4068939eee6b51b31eaa4f45ad3bf7a6ff",
@@ -585,7 +591,7 @@
     "P1": "in_progress",
     "P2": "complete",
     "P3": "in_progress",
-    "P4": "not_started",
+    "P4": "in_progress",
     "P5": "not_started",
     "P6": "not_started",
     "P7": "not_started"
