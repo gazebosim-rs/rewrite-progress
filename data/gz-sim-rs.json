@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T11:19:56Z",
+  "updated_at": "2026-10-30T11:56:06Z",
   "state": "active",
-  "summary": "A reviewed coverage-input correction is published and awaiting exact hosted CI. DART static-plane adapter checks pass locally; scene lowering is in independent review. Broader actuation, idle-resource teardown and performance qualification remain open.",
+  "summary": "The exact coverage-input correction passed hosted CI. Bounded DART static planes and scene lifecycle support are published after full local checks; their exact hosted CI is pending. Moving-parent actuation, complete idle-resource teardown and performance qualification remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -24,12 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Qualifying static planes and their scene lifecycle",
-      "detail": "The bounded DART adapter passed independent native replay (49 samples across seven cases), 603 Rust and 103 tooling checks, strict per-crate coverage and 56/56 changed executable lines locally. Scene lowering has five focused controls, including native frame/trajectory comparisons and inherited-static/reset behavior. Review caught and fixed an old error-priority regression; final review and full scene qualification remain pending. No full original ApplyJointForce or performance completion is claimed."
-    },
-    {
-      "id": "REF-02",
-      "title": "Verifying published coverage input correction",
-      "detail": "Reviewed a61a151e23d6260bef84d8b4156b54b045064fbf preserves exact LF boundaries and byte identities in coverage inputs. Its full local staged gate passed 597 Rust and 101 tooling checks; exact hosted run 41047141240 is pending. Accepted quality remains the prior verified public revision until CI passes."
+      "detail": "Published 7f6c7af67d75cf561dd9f0b89f216be7e1891841 passed independent source/native/scene review and the full normal commit hook: 608 Rust, 103 tooling, strict per-crate coverage, 116/116 changed executable lines. Bounded centered local +Z DART planes preserve native finite cube geometry, frames, removal and reset, including inherited static state. Exact hosted CI is pending; other engines/normals/offsets and the complete original ApplyJointForce remain open."
     }
   ],
   "accepted_slices": [
@@ -497,6 +492,11 @@
       "title": "Canonical engine records accepted under explicit backend selection; retained native input fixtures load without record stripping",
       "commit": "f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e"
+    },
+    {
+      "title": "Exact LF and byte-preserving coverage input accounting with regression controls",
+      "commit": "a61a151e23d6260bef84d8b4156b54b045064fbf",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a61a151e23d6260bef84d8b4156b54b045064fbf"
     }
   ],
   "remaining": [
@@ -531,8 +531,8 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f38168e5ee8a8d30dba507ab3cc7aa8bde17c67e",
+    "revision": "a61a151e23d6260bef84d8b4156b54b045064fbf",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a61a151e23d6260bef84d8b4156b54b045064fbf",
     "rust_tests": 597,
     "coverage": {
       "lines": [
@@ -551,9 +551,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41031958768"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41047141240"
     },
-    "note": "Exact hosted CI and the full staged gate passed on f38168e: 597 Rust and 95 tooling checks; actual changed executable lines 46/46. All 11 production crates strictly exceed 95% lines and regions. Four-engine backend identity/state/reset controls and existing real C++ client tests pass. No automatic SDF engine selection, full original ApplyJointForce, complete zero-idle activation or new performance improvement is claimed."
+    "note": "Exact hosted CI and the full staged gate passed on a61a151: 597 Rust and 101 tooling checks. Production coverage is unchanged; all 11 crates strictly exceed 95% lines and regions. This correction adds no production Rust lines. Published plane/scene commit 7f6c7af passed 608 Rust and 103 tooling checks locally, workspace 7703/7785 lines and 11974/12231 regions, changed 116/116; exact hosted acceptance is pending."
   },
   "phase_status": {
     "P0": "in_progress",
