@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T02:46:23.858151+00:00",
+  "updated_at": "2026-10-30T03:00:38.746601+00:00",
   "state": "active",
-  "summary": "Explicit-false MessageSet metadata formatting is accepted; bounded source-aware nested extension declarations are implemented and awaiting independent review.",
+  "summary": "Bounded source-aware nested extension declarations are independently reviewed and published after strict local qualification; exact hosted CI is pending.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Source-aware nested extension declarations awaiting review",
-      "detail": "A maintained-reflection formatter preserves source order and consecutive extendee grouping for ordinary proto2 declarations with original JSON-name absence. Author checks pass 15 Rust tests, 125 complete pinned native peer/CLI observations and all-target Clippy; 108 layouts are supported versus 115 native admissions. Explicit JSON names/defaults/groups/nonempty options/true MessageSet remain unsupported; standalone descriptors cannot recover original presence. Existing tests, descriptors, native peer, dependencies and 83-case ledger remain unchanged. Independent review, strict coverage and exact hosted qualification are pending; accepted Main is unchanged. Review found source-directory-dependent native CLI error paths; deterministic relative paths now replay byte-exactly in a separate raw export. New malformed-name controls retain native leading-digit admission while rejecting empty/space/newline/Unicode names. Final independent recheck is pending."
+      "title": "Published nested extension declarations awaiting exact CI",
+      "detail": "Final independent review passed 15 focused Rust checks and 125 complete pinned native peer/CLI observations: 108 source-aware layouts match versus 115 native admissions. The normal Main staged hook passed all 176 Rust tests, clean downstream consumer, unchanged strict production/vendor coverage and 71/71 changed lines. Exact hosted qualification is pending; prior accepted slice remains 3479155. Explicit JSON names/defaults/groups/nonempty options/true MessageSet and standalone unknown-presence descriptors remain unsupported. Original tests, descriptors, peer, dependencies and 83-case ledger are unchanged."
     },
     {
       "id": "MSG-02-upstream",
@@ -497,17 +497,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "3479155f0399beb69180fbe6072325941b36aefb",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/3479155f0399beb69180fbe6072325941b36aefb",
-    "rust_tests": 175,
+    "revision": "a2b0079888a32136b69aac13b0ddfede8a13f734",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a2b0079888a32136b69aac13b0ddfede8a13f734",
+    "rust_tests": 176,
     "coverage": {
       "lines": [
-        3317,
-        3340
+        3388,
+        3410
       ],
       "regions": [
-        5466,
-        5557
+        5575,
+        5665
       ]
     },
     "upstream": {
@@ -516,9 +516,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40984581697"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40994818141"
     },
-    "note": "Independent prepared/final source and protected-transition reviews, the mandatory strict staged gate and exact hosted source-package/fresh-cache qualification passed. All 175 Rust tests pass; 15/15 changed production lines are covered. All 19 production files retain strict line and region coverage; vendor-owned reflect remains 103/105 lines and 214/216 regions, derive 6/6 and 8/8. Immutable 98-case corpus, peer/reference, raw metadata, dependencies, wire behavior and all 83 original mappings remain unchanged. No broader MessageSet or full MSG-02/performance acceptance is claimed."
+    "note": "Independent fresh source/native review and normal Main strict staged qualification passed; exact hosted qualification remains pending. All 176 Rust checks and clean downstream consumer pass. All 19 production files retain strict line and region coverage; 71/71 changed production lines covered. Vendor-owned reflect remains 103/105 lines and 214/216 regions, derive 6/6 and 8/8. Old descriptor/native-peer/schema/corpus bytes, wire behavior and all 83 original mappings are preserved. No runtime extension, full MSG-02 or performance acceptance is claimed."
   }
 }
