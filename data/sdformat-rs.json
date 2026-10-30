@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T05:16:42Z",
+  "updated_at": "2026-10-30T05:21:13Z",
   "state": "active",
-  "summary": "Atmosphere metadata XML is reviewed and public after its normal strict staged gate; exact hosted CI is running. Accepted mappings remain 198 complete/27 partial until qualification succeeds.",
+  "summary": "Atmosphere metadata XML is accepted after independent review, the normal strict staged gate and exact hosted success. Original mappings are now 200 complete/27 partial; broader SDF/runtime gaps remain open.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Await exact hosted Atmosphere qualification",
-      "detail": "Published Atmosphere commit b69a457 passed the normal strict gate: 539 Rust/17 tooling, 7488/7515 lines, 11751/11991 regions and 51/51 actual new executable lines. Fresh independent review passed 14 Rust controls and native 23 inputs/fixture/14 exchanges/defaults/two originals plus adversarial quiet checks. Exact hosted 41007506290 is in progress. Accepted 198/27; reviewed candidate 200/27. No atmosphere runtime, Collision, Fuel or consumer-pin changes.",
+      "title": "Review Messages and inspect next SDF metadata scope",
+      "detail": "Atmosphere commit b69a457 is accepted with exact hosted success. The SDF owner is available for the coordinated Messages enum-option independent review and is inspecting standalone Plugin metadata read/write using the accepted opaque serializer. No dynamic simulation plugin host is planned; SDF plugin metadata remains preserved. Broader metadata/Element/conversion/resource and runtime gaps remain open; no Fuel or consumer-pin changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b69a4579d1e5c5869ae24d18dfc9651cf1bebe08"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Roundtrip typed Atmosphere metadata through XML",
+      "commit": "b69a4579d1e5c5869ae24d18dfc9651cf1bebe08",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b69a4579d1e5c5869ae24d18dfc9651cf1bebe08"
+    },
     {
       "title": "Serialize bounded Visual metadata and opaque plugins",
       "commit": "c64c46d56542d140ab74aab652fc5dc5fabfa788",
@@ -796,13 +801,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 198,
+      "ported": 200,
       "partial": 27
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41007506290"
     },
-    "note": "Published Atmosphere commit b69a457 passed the normal strict gate: 539 Rust/17 tooling, 7488/7515 lines, 11751/11991 regions and 51/51 actual new executable lines. Fresh independent review passed 14 Rust controls and native 23 inputs/fixture/14 exchanges/defaults/two originals plus adversarial quiet checks. Exact hosted 41007506290 is in progress. Accepted 198/27; reviewed candidate 200/27. No atmosphere runtime, Collision, Fuel or consumer-pin changes."
+    "note": "Normal strict hook and exact hosted success passed 539 Rust/17 tooling checks, formatting, Clippy, docs and required coverage: 7488/7515 lines, 11751/11991 regions; actual new executable 51/51. Independent fresh-source review passed 14 selected Rust checks and reproduced 23 native inputs/one fixture/14 actual exchanges/world defaults/both unchanged originals. Temperature absolute <=1e-6 and positive finite scalar four-ULP original bounds remain; private stdout/stderr injections each failed actual quiet capture, restored source passed. Existing type/default/unknown/duplicate/nonfinite admission and immutable source/XML behavior remain. No atmosphere/weather/sensor runtime, Collision broadening or performance claim."
   }
 }
