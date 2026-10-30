@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T07:09:10Z",
+  "updated_at": "2026-10-30T07:53:03Z",
   "state": "active",
-  "summary": "Native-valid Empty geometry values/defaults are accepted after independent native/positive/source review, normal staged success and exact hosted success. Missing Collision geometry now has a real Empty representation; original mappings remain 201 complete/27 partial.",
+  "summary": "Reviewed collision density metadata passed its staged gate and is pushed; exact hosted CI is pending.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Prepare genuine Collision metadata serialization",
-      "detail": "Empty commit ce5b2e9 is accepted: default/bare/explicit geometry and missing-Collision defaults roundtrip through actual Empty values. Visual absent/bare None remains distinct. Consumers must explicitly reject/support Empty before a simulator dependency pin update; no physics, density or pin change here. Next Collision serialization can preserve its genuine EMPTY constructor setup. OS-byte Messages review is approved, final metadata pending. Remaining density/Element/resource/runtime work is explicit.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ce5b2e90be21e3452d5144f25f813bbf389aca4f"
+      "title": "Qualify collision density and prepare Collision serialization",
+      "detail": "Density commit 005fda0 passed independent native review and the normal staged hook, and is pushed to Main. Exact hosted CI remains pending; accepted evidence below still refers to ce5b2e9. Genuine Collision serialization will use actual Empty geometry and density presence after acceptance. No physics or dependency pin change.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0"
     }
   ],
   "accepted_slices": [
