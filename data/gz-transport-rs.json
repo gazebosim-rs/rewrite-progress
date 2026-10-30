@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T11:48:32.828406Z",
+  "updated_at": "2026-10-30T12:05:00.820075Z",
   "state": "active",
-  "summary": "Public 32ff368 passed the normal staged LF-accounting gate: 417 Rust, 35 tooling checks and unchanged strict coverage; exact hosted CI is pending. Callback and owned-unsubscribe candidates have independent approval and await their own qualification. Accepted ledger remains 111 faithful, 7 partial and 300 pending.",
+  "summary": "LF accounting is accepted at 32ff368 after exact hosted success. Public callback commit b860b64 passed its normal gate with 437 Rust tests, 35 tooling checks and 329/329 changed lines; its own exact hosted verification is pending. Accepted ledger remains 111 faithful, 7 partial and 300 pending. The separate unsubscribe follow-up is independently reviewed.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -14,10 +14,15 @@
     {
       "id": "NET-02",
       "title": "Shared asynchronous typed callback implementation; statistics policy pending",
-      "detail": "Independent callback qualification with fresh source and target passed the required serial 165 library, 111 unchanged interop and 11 public tests, release 9 pure plus 11 public controls, both unchanged native originals and Clippy with six canonical peers. Native readiness retains 10 seconds and 10 ms polling; only untimed native completion has a one-second Rust bound. Separate owned-unsubscribe review passed 14 pure, 5 public/native and 3 unchanged native originals, with author debug/release qualification and explicit live-lease versus native stored-ID semantics. Exactly two lambda cases and then three subscriber cases are reviewed conditional candidates. Accepted credit and quality totals remain unchanged until normal staged and exact hosted qualification. A separately reviewed LF accounting correction will qualify first. Global ordering, raw-inline and native identity limits remain explicit. The owner statistics enable/disable choice is still pending; no dependent Node behavior is adopted."
+      "detail": "Demand-created typed callbacks are public at b860b64 after independent fresh-source review and the normal canonical staged gate. That gate passed 437 Rust tests, 35 tooling controls, all required native groups and strict owned coverage. Exact hosted 41052553612 is pending, so the two Lambda ledger promotions remain conditional. Readiness preserves native 10 seconds and 10 ms polling; only untimed native completion has an explicit one-second Rust bound. The separate owned-unsubscribe follow-up has independent source, 14-pure, five-public/native and three-original approval, including its additive rebase. It remains conditional on preceding qualification. Global ordering, raw-inline and native identity limits remain explicit. The owner statistics enable/disable choice is still pending; no dependent Node behavior is adopted."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve exact LF coverage inputs across Git, Cargo JSON, dep-info and LCOV",
+      "commit": "32ff36879df16c35fb8d57ae9ac980bbc243a28a",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32ff36879df16c35fb8d57ae9ac980bbc243a28a"
+    },
     {
       "title": "Counted-hunk changed-line selection prevents added raw-string data from spoofing file headers",
       "commit": "33d98df79588be3d5ac49128bf28eb7dedcfacfc",
@@ -580,17 +585,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "32ff36879df16c35fb8d57ae9ac980bbc243a28a",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/32ff36879df16c35fb8d57ae9ac980bbc243a28a",
-    "rust_tests": 417,
+    "revision": "b860b64e26877a05e94ecabf982da24ad70d00af",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b860b64e26877a05e94ecabf982da24ad70d00af",
+    "rust_tests": 437,
     "coverage": {
       "lines": [
-        4364,
-        4446
+        4689,
+        4794
       ],
       "regions": [
-        6160,
-        6376
+        6595,
+        6855
       ]
     },
     "upstream": {
@@ -600,8 +605,8 @@
     },
     "ci": {
       "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41050378868"
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41052553612"
     },
-    "note": "The normal canonical staged hook passed 417 Rust tests across 38 executable harnesses, 35 tooling checks and all required native groups at public 32ff368. Strict production coverage is 4364/4446 lines and 6160/6376 regions; no production Rust source changed (0/0 changed lines). Exact-byte/LF accounting reuses the reviewed simulator correction with independent source and 35-tool review; ownership, thresholds and exclusions remain unchanged. Exact hosted 41050378868 is pending, so the new slice is not yet accepted. No ledger or runtime wire/API change."
+    "note": "Public b860b64 passed the ordinary canonical staged hook: 437 Rust tests, 35 tools, all required native groups, 4689/4794 lines, 6595/6855 regions and 329/329 changed executable lines. Independent review covered lifecycle/admission/destruction, decode/type guards, FIFO/backpressure, exact readiness and both unchanged native Lambda originals. Exact hosted 41052553612 remains pending; accepted dashboard counters stay 111/7/300 despite the two reviewed conditional ledger rows in source. LF accounting at parent32ff368 has exact hosted SUCCESS41050378868. No global callback ordering, raw-inline, broad identity or performance acceptance is implied."
   }
 }
