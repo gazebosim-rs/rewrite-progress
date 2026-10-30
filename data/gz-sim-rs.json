@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T17:46:09.849086+00:00",
+  "updated_at": "2026-10-30T17:55:16.305187+00:00",
   "state": "active",
   "summary": "Owned visual geometry is accepted in Main. The private Bevy software-rendering profile now passes strict line and region coverage; full staged and hosted integration checks remain required. Clean DART reference recipe checks and original simulator qualification continue.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -29,12 +29,12 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "The clean signed OSRF DART 6.13.2 reference image built and passed independent read-only package/source/cache/library checks. Independent bounded replay passed eleven original physics registrations and articulated smoke; the full author physics run retains 318 completed cases and 171 skips. The reviewed recipe is in the mandatory staged gate. Its first sandbox run failed existing loopback tests with EPERM; the unchanged gate is rerunning with loopback allowed. Remaining profile execution and broader P0 qualification stay open."
+      "detail": "Published reviewed clean DART recipe 028f63fed78d34b4c02dc4a626312fdecb3c0ddf passes the full unchanged staged gate: 629 Rust, 125 tooling checks, real native clients and strict coverage in all 11 production crates. Exact hosted run 41102226966 is pending, so accepted quality remains e72c99c. Independent immutable-image inspection, eleven original physics registrations and bounded articulated smoke pass. First sandbox loopback EPERM failure is preserved; the unchanged gate passed with local sockets allowed. Broader reference qualification remains open."
     },
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Accepted native math baseline af35578 retains 135 passing registrations and 658 completed cases with independent replay. New clean DART image enumeration now lists all 431 configured physics/simulator registrations, 214 gtest configurations and 1846 expanded cases with zero inventory gaps. Physics lists match all 489 runtime identities exactly; 171 remain skips. These list-only observations add no Rust port or execution credit. Complete source-ledger reconciliation and other profiles remain open."
+      "detail": "Accepted math baseline retains 135 passing registrations and 658 completed cases. The new DART image lists 431 configured physics/simulator registrations, 214 gtest configurations and 1846 expanded cases with zero inventory gaps. Independent data audit verifies 54 original simulator registrations and 695 completed case identities across disjoint batches; more native execution continues. Physics runtime remains 318 completed and 171 skipped. These reference results add no Rust port credit. Complete source-ledger reconciliation and other profiles remain open."
     },
     {
       "id": "REF-03",
@@ -614,7 +614,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41096869144"
     },
-    "note": "Visual geometry commit e72c99c passed independent review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 629 Rust and 117 tooling checks plus the existing real C++ clients. All 11 production crates exceed 95% line and region coverage; all 34 changed executable lines are covered. Private DART qualification and rendering work are excluded. Native math reference results remain 135 passing registrations and 658 completed cases, without Rust migration credit."
+    "note": "Visual geometry commit e72c99c passed independent review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 629 Rust and 117 tooling checks plus the existing real C++ clients. All 11 production crates exceed 95% line and region coverage; all 34 changed executable lines are covered. Private DART qualification and rendering work are excluded. Native math reference results remain 135 passing registrations and 658 completed cases, without Rust migration credit. Published recipe 028f63f passes the complete local gate with 125 tooling checks; its exact hosted 41102226966 remains pending and is excluded from accepted quality."
   },
   "phase_status": {
     "P0": "in_progress",
