@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T11:25:07Z",
+  "updated_at": "2026-10-30T11:28:26Z",
   "state": "active",
-  "summary": "World-merge metadata passed exact hosted checks; direct-world metadata is published and undergoing verification.",
+  "summary": "Qualified world extension metadata passed exact hosted checks; legacy model-merge collision work is under review.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify direct-world extensions and legacy merge semantics",
-      "detail": "Direct-world qualified metadata passed independent native review and local staged checks and is undergoing exact hosted CI. Legacy collision positives await source review; their existing regression assertions remain in place. Consumer adoption remains pending.",
+      "title": "Qualify legacy model-merge name collisions",
+      "detail": "A bounded legacy link/frame collision candidate has native-backed ordering and pose observations and awaits independent source review. Existing regression assertions remain in place; consumer adoption of world extension metadata is still required.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7b96537bf4ab73a859ecc5d5cc02e81f33b5402"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain direct qualified world extension metadata",
+      "commit": "b7b96537bf4ab73a859ecc5d5cc02e81f33b5402",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7b96537bf4ab73a859ecc5d5cc02e81f33b5402"
+    },
     {
       "title": "Retain qualified world-merge extension metadata",
       "commit": "52f59d53d2d6c46c35b2e3c01684fe4c56d94be2",
@@ -831,17 +836,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "52f59d53d2d6c46c35b2e3c01684fe4c56d94be2",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/52f59d53d2d6c46c35b2e3c01684fe4c56d94be2",
-    "rust_tests": 569,
+    "revision": "b7b96537bf4ab73a859ecc5d5cc02e81f33b5402",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b7b96537bf4ab73a859ecc5d5cc02e81f33b5402",
+    "rust_tests": 571,
     "coverage": {
       "lines": [
-        7635,
-        7662
+        7648,
+        7675
       ],
       "regions": [
-        11958,
-        12197
+        11992,
+        12231
       ]
     },
     "upstream": {
@@ -851,8 +856,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41047531438"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41047907673"
     },
-    "note": "Independent review reproduced 14 native observations and seven focused Rust tests. Normal staged and exact hosted checks passed 569 Rust and 33 tooling tests; changed executable lines 7/7, full-source coverage 7297/7318. Direct-world metadata and consumer support remain separate."
+    "note": "Independent review reproduced 13 direct-world and 14 prior native observations. Normal staged and exact hosted checks passed 571 Rust and 33 tooling tests; changed executable lines 13/13, full-source coverage 7308/7329. Unqualified unknown world children and broader SDF-02 behavior remain explicit boundaries; simulator consumers must support or reject retained metadata before adopting the dependency."
   }
 }
