@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T00:09:21Z",
+  "updated_at": "2026-10-30T00:12:06Z",
   "state": "active",
-  "summary": "World wind/magnetic metadata is accepted with exact hosted CI. Supported Surface XML is independently reviewed and awaiting strict qualification; accepted ledger remains 189 complete/25 partial.",
+  "summary": "Supported Surface XML and World wind/magnetic metadata are accepted with exact hosted CI success. The ledger is 191 complete and 25 partial original mappings; full compatibility remains in development.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify supported Surface XML read/write",
-      "detail": "Reviewed Surface XML is public at 2dbd442dc60899e81ba4bcd0105b552c587ed633 after one normal strict hook: 501 Rust/17 tooling, lines 6703/6735, regions 10638/10871, actual new executable lines 90/90. Independent review passed 19 Rust controls, 34 native inputs, two exact fixtures, 17 actual exchanges and both unchanged originals, plus adversarial quiet checks. Exact hosted CI 40977812737 is running; accepted quality/counts remain e29f975, 189 complete/25 partial until success. Candidate is 191/25, with no runtime or origin-identity claim."
+      "title": "Continue retained valid SDFormat compatibility",
+      "detail": "Surface XML is accepted after independent native/original review, the normal strict hook and exact hosted success. The next bounded valid serialization/include/conversion gap is being selected from the retained inventory. Joint invalid-NONE output remains partial with strict writer/reader behavior preserved; no new document admission, runtime, pointer-origin or broad DOM claim."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Roundtrip supported surface metadata with native XML evidence",
+      "commit": "2dbd442dc60899e81ba4bcd0105b552c587ed633",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/2dbd442dc60899e81ba4bcd0105b552c587ed633"
+    },
     {
       "title": "Load World wind and magnetic metadata with native defaults",
       "commit": "e29f9750cd5c4613a07cded7ca44241d8f17217c",
@@ -745,28 +750,28 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "e29f9750cd5c4613a07cded7ca44241d8f17217c",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e29f9750cd5c4613a07cded7ca44241d8f17217c",
-    "rust_tests": 495,
+    "revision": "2dbd442dc60899e81ba4bcd0105b552c587ed633",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/2dbd442dc60899e81ba4bcd0105b552c587ed633",
+    "rust_tests": 501,
     "coverage": {
       "lines": [
-        6607,
-        6639
+        6703,
+        6735
       ],
       "regions": [
-        10485,
-        10722
+        10638,
+        10871
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 189,
+      "ported": 191,
       "partial": 25
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40974206443"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/40977812737"
     },
-    "note": "One normal strict staged hook and exact hosted CI passed 495 Rust/17 tooling tests, formatting, Clippy, docs and >95% line/region coverage; actual executable changed lines 15/15. Independent Root fresh source/target/native peers passed final eight Rust controls, 35 actual native inputs, raw/constructor profiles, full-versus-projected nine-vector exact bits and unchanged DOMWorld.Load. Exact old Wind input gained independently approved complete positive metadata/Light/pose assertions before its temporary Rust-only rejection changed. Strict finite/exact-three/unknown/duplicate policies remain explicit; no runtime, complete-original, source pointer identity or consumer-pin claim."
+    "note": "One normal strict staged hook and exact hosted CI passed 501 Rust/17 tooling tests, formatting, Clippy, docs and >95% line/region coverage; actual executable changed lines 90/90. Independent fresh source/target review passed 19 Rust controls, 34 actual native inputs, two exact native fixtures, 17 actual Rust/native exchanges and both unchanged originals. Full original mask/ODE/Bullet/torsional field assertions retain four-ULP scalars/direct vector bounds; private stdout/stderr injections correctly fail actual quiet capture. Exactly two output/value/console cases gain complete credit; no input Element identity mapping. Existing parser/surface/Joint assertions and admission stay unchanged; Joint invalid NONE overwrite/ignored-error/source-self-count residue is explicitly partial. No runtime/performance/consumer-pin claim."
   }
 }
