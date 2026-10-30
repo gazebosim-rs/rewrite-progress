@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T07:40:43Z",
+  "updated_at": "2026-10-30T08:15:33Z",
   "state": "active",
   "summary": "IMU Scene callbacks now follow live sensor demand and are accepted after independent review, strict staged checks and exact hosted CI. The next activation work covers empty server calls, retained transport workers and other system families; full zero-idle compliance remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
+    {
+      "id": "QLT-01",
+      "title": "Hardening changed-line coverage against diff header text",
+      "detail": "A separate tooling-only fix tracks hunk counts so Rust raw-string contents cannot redirect later changed-line coverage. All 95 author tooling checks pass; independent review is pending. Accepted production evidence and coverage thresholds are unchanged."
+    },
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
