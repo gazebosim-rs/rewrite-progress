@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T22:59:28.981325+00:00",
+  "updated_at": "2026-10-30T23:30:08.876419+00:00",
   "state": "active",
   "summary": "The renderer teardown correction is accepted after independent reviews, complete staged checks and exact hosted success. Calibrated camera, standalone SDF scene metadata and remaining Transport compatibility work continue.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Accepted teardown revision 2b08506 passes exact hosted run 41138287566 and the complete staged gate: 633 headless and 345 renderer-profile test executions, 149 tooling checks and strict coverage for all 17 production crates. Independent reviews retain immediate explicit-shutdown retirement/reaping assertions, verify final Drop ownership and separate Linux task-list visibility from actual joins. Hard OS/driver stalls may delay final joining. Private calibrated RGB work has actual client/ECS-to-worker software-Vulkan image controls and a passing one-profile report; final independent review, complete staged profiles and hosted qualification remain required. Camera scheduling, assets, physical GPUs and comparative performance remain open."
+      "detail": "Accepted teardown revision 2b08506 retains exact hosted success, 633 headless and 345 renderer-profile test executions, 149 tooling checks and strict coverage for all 17 production crates. Private calibrated RGB work now has actual client/ECS-to-worker image controls and reviewed projection evidence. Review added deterministic busy-state and camera/scene atomicity controls; the earlier private profile is historical and a fresh current-source renderer profile is required before final independent approval. Complete staged profiles and exact hosted qualification will follow. Camera scheduling, assets, native sensor parity, physical GPUs and comparative performance remain open."
     },
     {
       "id": "QLT-01",
