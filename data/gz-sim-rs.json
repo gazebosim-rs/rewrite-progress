@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T05:32:52Z",
+  "updated_at": "2026-10-30T05:44:10Z",
   "state": "active",
   "summary": "The reviewed native-client SDK setup repair is published and exact hosted CI is running. Built-in system activation/retirement is under implementation; complete zero-idle compliance remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "ACT-01",
       "title": "Built-in systems with demand-driven lifetime",
-      "detail": "Owner decision D26 retires the earlier runtime system plugin ABI/host. Built-in systems must run only for loaded world/model needs, with no absent-system callbacks, polling, owned allocations, workers or endpoints. Independently reviewed guidance records current unconditional joint/IMU callbacks, empty force polling and retained force workers as remaining gaps. Implementation will qualify last-consumer teardown, reactivation/reset, dependency and multiworld behavior; zero-idle compliance is not yet claimed."
+      "detail": "A three-file core retirement primitive passed independent fresh-source review and all29 core tests, including nine lifecycle controls. It uses pinned Bevy removal/rebuild to release system Local/query state and per-system conditions before returning, with no absent callback checks. Collective/set-level condition state remains a documented limitation. The full mandatory staged gate is running; Scene demand, IMU/ingress callbacks, final-consumer worker teardown and equal-work CPU/memory evidence remain unimplemented."
     },
     {
       "id": "SYS-CONTROL",
