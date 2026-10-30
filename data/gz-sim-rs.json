@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T18:20:12.381463+00:00",
+  "updated_at": "2026-10-30T18:33:44.620793+00:00",
   "state": "active",
-  "summary": "The clean DART reference recipe is accepted after independent review, the complete staged gate and exact hosted CI. Optional Bevy rendering is undergoing its full Main integration gate. Original C++ reference execution now records 1035 successful cases and seven explicit prerequisite failures; broader qualification remains open.",
+  "summary": "The optional Bevy renderer is published and passes the full local staged gate. Hosted acceptance is held by a runner namespace permission failure; the reviewed job setup repair is in the unchanged full gate. The clean DART reference recipe remains accepted; broader native and physics qualification continues.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "PHY-05",
       "title": "Qualifying broader motion and joint-limit domains",
-      "detail": "Moving-parent actuation and finite limits remain open. The retained Rapier rotating-parent and first-crossing probes, plus private DART conditioning studies, are not acceptance evidence. Native larger articulations and balanced-workload accuracy/performance remain required."
+      "detail": "Native DART probes now expose free-root and world-root articulation ownership, DOF indexing, fixed-parent mobility, merge/split, restore and point-impulse behavior. A private ownership-only BodyNodePtr change passes focused existing backend, removal and reset checks. It does not admit body-to-body joints: generalized contact, velocity/impulse bounds, endpoint removal and reset contracts still need qualification. Actual double_pendulum also requires contact-bearing free-root trees, multiple collision shapes and COM offsets; no balanced-workload parity or performance claim is made."
     },
     {
       "id": "PHY-03",
@@ -29,12 +29,12 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "Accepted 028f63fed78d34b4c02dc4a626312fdecb3c0ddf passes the full unchanged staged gate and exact hosted 41102226966:629 Rust,125 tooling, real C++ clients and strict coverage for all11 production crates. The signed, checksum-pinned OSRF6.13.2 recipe leaves historical reference identities and Rust engine pins unchanged. Independent image inspection, eleven original physics registrations and bounded articulated smoke pass. Image distribution, additional native profiles and full P0 qualification remain open."
+      "detail": "Accepted 028f63fed78d34b4c02dc4a626312fdecb3c0ddf passes independent review, the full staged gate and exact hosted 41102226966: 629 Rust tests, 125 tooling checks, real C++ clients and strict coverage in all 11 production crates. Its signed, checksum-pinned OSRF 6.13.2 recipe preserves historical reference identities and Rust engine pins. Independent image inspection, eleven original physics registrations and bounded articulated smoke pass. Image distribution, remaining profiles and full P0 qualification stay open."
     },
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Accepted math baseline retains135 passing registrations and658 completed cases. New-image listing covers431 physics/simulator registrations,214 configurations and1846 cases without inventory gaps. Independent raw-data audit of eight original simulator batches verifies166 registrations,83 disjoint configurations and1042 exact IDs:1035 successful and7 failed. Five failures need an unpinned remote model; one original fixture requires unavailable Bullet Featherstone; one needs remote actor plus Ogre2/camera setup. Failures stay failures, with retained behavior pending appropriate profiles or rehosting. These results add no Rust migration credit; broader source-ledger reconciliation stays open."
+      "detail": "New-image inventory lists 431 physics/simulator registrations, 214 configurations and 1846 cases. Independent raw-data audit of eight simulator batches verifies 166 registrations and 1042 exact case IDs: 1035 successful and seven failed. The failures retain missing remote assets, an unavailable Bullet Featherstone fixture, and actor/rendering prerequisites. All 55 unrun simulator configurations now have source and prerequisite mappings; those mappings are not passes. A separate bound-cache DeliveryBot qualification is under development. Accepted math results remain 135 registrations and 658 completed cases. None of these reference counts imply Rust migration completion."
     },
     {
       "id": "REF-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "All57 independently reviewed renderer integration files are staged in Main; the normal gate now runs headless and renderer profiles, real native clients and strict per-crate/changed-line checks. The earlier private llvmpipe profile passed all six selected crates:worker261/269lines358/375regions;profile1395/1427lines1998/2069regions. Full staged and exact hosted success remain required before acceptance. Simulator snapshot production, physical GPU and calibrated sensor qualification remain open."
+      "detail": "Published 46778c85446cb9612539d420fd3a0c7bc765c82f passes the full normal staged gate: 629 headless and 127 renderer-profile tests, 149 tooling checks, real native clients and strict coverage for all 16 production crates across both profiles. Headless coverage is 7839/7922 lines and 12165/12432 regions; renderer coverage is 1395/1427 lines and 1998/2069 regions. Hosted 41106417943 failed before verification because Ubuntu rejected the required user-namespace mapping. A reviewed job-only setup and cleanup repair is undergoing the same full gate. Renderer acceptance, scene snapshot production, calibrated sensors and physical GPU qualification remain open."
     },
     {
       "id": "QLT-01",
@@ -571,7 +571,9 @@
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Renderer acceptance awaits a repaired exact hosted run. The first hosted attempt failed the required user-namespace setup before running verification; the reviewed repair preserves every test and coverage gate."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
