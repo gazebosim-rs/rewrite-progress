@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T08:46:18Z",
+  "updated_at": "2026-10-30T09:05:15Z",
   "state": "active",
-  "summary": "IMU Scene callbacks now follow live sensor demand and are accepted after independent review, strict staged checks and exact hosted CI. The next activation work covers empty server calls, retained transport workers and other system families; full zero-idle compliance remains open.",
+  "summary": "Canonical empty Physics world configuration is accepted after independent review, strict staged checks and exact hosted CI. The next slice retains bounded legacy engine metadata so native input fixtures can load without removing world records.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "LOAD-01",
-      "title": "Recognizing built-in Physics world configuration",
-      "detail": "Independently reviewed empty built-in Physics world configuration is published at 86eb56f. The full staged gate passed 595 Rust and 95 tooling checks, 43/43 changed executable lines, and strict coverage in all 11 crates. Exact hosted run 41028601233 remains pending, so this slice is not yet accepted. No loader or duplicate systems; engine payloads, plane geometry and moving-parent actuation remain open."
+      "title": "Retaining canonical engine metadata in native world fixtures",
+      "detail": "The accepted empty Physics configuration reuses the selected backend without a loader or duplicate systems. A separate candidate admits canonical DART/MuJoCo/TPE filename metadata under explicit Rust engine priority and removes record stripping from retained native input/TPE fixtures without changing their bytes or physical assertions. Independent review and complete qualification remain; automatic selection, plane geometry and moving-parent actuation stay open."
     },
     {
       "id": "ACT-01",
@@ -482,6 +482,11 @@
       "title": "Counted coverage diff hunks prevent source text from redirecting changed-line ownership",
       "commit": "a00581b34f6c3b6a157dbf7eb5944b552b63ba0c",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a00581b34f6c3b6a157dbf7eb5944b552b63ba0c"
+    },
+    {
+      "title": "Canonical empty Physics world metadata maps to the existing built-in system without a loader or duplicate callbacks",
+      "commit": "86eb56f769268b067edb3b7184af3b67b61eefaa",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/86eb56f769268b067edb3b7184af3b67b61eefaa"
     }
   ],
   "remaining": [
@@ -516,17 +521,17 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "a00581b34f6c3b6a157dbf7eb5944b552b63ba0c",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a00581b34f6c3b6a157dbf7eb5944b552b63ba0c",
-    "rust_tests": 592,
+    "revision": "86eb56f769268b067edb3b7184af3b67b61eefaa",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/86eb56f769268b067edb3b7184af3b67b61eefaa",
+    "rust_tests": 595,
     "coverage": {
       "lines": [
-        7547,
-        7629
+        7594,
+        7676
       ],
       "regions": [
-        11752,
-        12006
+        11815,
+        12070
       ]
     },
     "upstream": {
@@ -536,9 +541,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41026174136"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41028601233"
     },
-    "note": "Exact hosted CI and the full staged hook passed on a00581b: 592 Rust and 95 tooling checks. Production coverage remains 7547/7629 lines and 11752/12006 regions, strictly above 95% in every crate. This tooling-only change adds no production Rust lines (changed-line denominator is not applicable). The accepted IMU production slice separately measured 77/80 changed executable lines. The new Physics configuration candidate is not yet accepted."
+    "note": "Exact hosted CI and full staged gate passed on86eb56f:595 Rust and95 tooling checks; actual changed executable lines43/43. All11 production crates strictly exceed95% lines and regions. Four-engine configuration/state/schedule/reset controls and existing real C++ client tests pass. This bounded mapping does not qualify the full original ApplyJointForce world, complete zero-idle activation or equal-work performance improvements."
   },
   "phase_status": {
     "P0": "in_progress",
