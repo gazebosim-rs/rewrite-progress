@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T00:08:54Z",
+  "updated_at": "2026-10-30T00:39:52Z",
   "state": "active",
-  "summary": "DART and MuJoCo world-hinge effort is accepted. The independently reviewed DART angular-boundary guard passed strict local checks and is published with hosted qualification pending; P3 continues.",
+  "summary": "Programmatic world-hinge effort is accepted on DART, MuJoCo and Rapier after independent native review, strict staged checks and exact hosted CI. P3 remains in progress.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "PHY-03",
-      "title": "Qualifying the native angular-constraint boundary",
-      "detail": "A reviewed guard for actual mixed contact/active angular groups passed all preserved tests and the normal staged gate: 525 Rust, 90 tooling checks and strict per-crate coverage. Published eace659 awaits exact hosted acceptance. Independent clean-baseline subprocesses reproduced three native assertion failures; no numerical tolerance or solver setting changed."
+      "id": "PHY-01",
+      "title": "Preparing scene joint-command integration",
+      "detail": "The accepted backend effort primitives are ready for Bevy control systems. Pinned ApplyJointForce behavior and its original fixture are being mapped; scene plugin loading remains unsupported, and the original scene also requires unqualified plane/moving-parent scope. No simulator-system or new original-test credit is claimed."
     },
     {
       "id": "PHY-05",
-      "title": "Extending Rapier actuation while finite limits remain open",
-      "detail": "A private world/fixed-parent effort implementation passes seven physical/lifecycle controls across impulse and reduced coordinates. Its precise temporary Unsupported-test transition received independent prior approval. Moving-parent actuation remains unqualified after retained physical probes; final source/native review and strict gates remain. Finite-limit first-crossing and native conditioning research are also still open."
+      "title": "Qualifying broader motion and joint-limit domains",
+      "detail": "Moving-parent actuation and finite limits remain open. The retained Rapier rotating-parent and first-crossing probes, plus private DART conditioning studies, are not acceptance evidence. Native larger articulations and balanced-workload accuracy/performance remain required."
     }
   ],
   "accepted_slices": [
@@ -427,6 +427,16 @@
       "title": "Deferred MuJoCo world-hinge effort with direct generalized force, stable DOF remapping and six native C++ SDK pulses",
       "commit": "91ba2581ff69b7cb835ff4e72241e177bda6e0f1",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/91ba2581ff69b7cb835ff4e72241e177bda6e0f1"
+    },
+    {
+      "title": "Bounded native DART mixed angular/contact response with independent three-profile native failure reproductions and atomic refusal controls",
+      "commit": "eace659c6080e80d3b80f6a9d0fb9b7ff9ca55a5",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eace659c6080e80d3b80f6a9d0fb9b7ff9ca55a5"
+    },
+    {
+      "title": "Deferred Rapier world/fixed-parent effort on impulse and reduced hinges with atomic queue/lifecycle handling and native force-pulse rate parity",
+      "commit": "62597084d753d00e52604a036dcfe9b2105cba9f",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/62597084d753d00e52604a036dcfe9b2105cba9f"
     }
   ],
   "remaining": [
@@ -459,17 +469,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "eace659c6080e80d3b80f6a9d0fb9b7ff9ca55a5",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eace659c6080e80d3b80f6a9d0fb9b7ff9ca55a5",
-    "rust_tests": 525,
+    "revision": "62597084d753d00e52604a036dcfe9b2105cba9f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/62597084d753d00e52604a036dcfe9b2105cba9f",
+    "rust_tests": 535,
     "coverage": {
       "lines": [
-        6923,
-        6991
+        6982,
+        7056
       ],
       "regions": [
-        10796,
-        11028
+        10899,
+        11134
       ]
     },
     "upstream": {
@@ -478,10 +488,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40977497392"
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40979793823"
     },
-    "note": "Independent final source/native review and the mandatory staged hook passed: 525 Rust tests, 90 tooling checks, all eleven production crates strictly above 95% lines and regions; changed DART Rust line1/1. The guard reuses the existing inverse-response ceiling in actual mixed angular/contact groups and preserves isolated scalar work. Exact hosted acceptance is pending; no full safety proof, finite-limit, original-test or performance credit."
+    "note": "Independent final source/physical/native review, the normal staged hook and exact hosted CI passed: 535 Rust tests, 91 tooling checks, all eleven production crates strictly above95% lines and regions, changed Rapier production62/62. Ten new controls and six actual C++ plugin rates qualify world/fixed-parent actuation only. Moving parents remain explicitly unsupported; no full original-system, finite-limit, cross-engine position or performance credit."
   },
   "phase_status": {
     "P0": "in_progress",
