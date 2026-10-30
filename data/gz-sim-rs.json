@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T09:05:15Z",
+  "updated_at": "2026-10-30T09:15:50Z",
   "state": "active",
   "summary": "Canonical empty Physics world configuration is accepted after independent review, strict staged checks and exact hosted CI. The next slice retains bounded legacy engine metadata so native input fixtures can load without removing world records.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "LOAD-01",
-      "title": "Retaining canonical engine metadata in native world fixtures",
-      "detail": "The accepted empty Physics configuration reuses the selected backend without a loader or duplicate systems. A separate candidate admits canonical DART/MuJoCo/TPE filename metadata under explicit Rust engine priority and removes record stripping from retained native input/TPE fixtures without changing their bytes or physical assertions. Independent review and complete qualification remain; automatic selection, plane geometry and moving-parent actuation stay open."
+      "title": "Accepting native engine records under explicit backend selection",
+      "detail": "The independently reviewed follow-up is published at f38168e. Full staged checks passed 597 Rust and 95 tooling tests, 46/46 changed executable lines, and strict line/region coverage in all 11 crates. Retained native input/TPE fixtures now load complete original XML without changing physical assertions. Exact hosted qualification remains pending. There is no library lookup or post-load configuration resource; automatic engine selection, plane geometry and moving-parent actuation remain open."
     },
     {
       "id": "ACT-01",
@@ -543,7 +543,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41028601233"
     },
-    "note": "Exact hosted CI and full staged gate passed on86eb56f:595 Rust and95 tooling checks; actual changed executable lines43/43. All11 production crates strictly exceed95% lines and regions. Four-engine configuration/state/schedule/reset controls and existing real C++ client tests pass. This bounded mapping does not qualify the full original ApplyJointForce world, complete zero-idle activation or equal-work performance improvements."
+    "note": "Exact hosted CI and the full staged gate passed on 86eb56f: 595 Rust and 95 tooling checks; actual changed executable lines 43/43. All 11 production crates strictly exceed 95% lines and regions. Four-engine configuration/state/schedule/reset controls and existing real C++ client tests pass. This bounded mapping does not qualify the full original ApplyJointForce world, complete zero-idle activation or equal-work performance improvements."
   },
   "phase_status": {
     "P0": "in_progress",
