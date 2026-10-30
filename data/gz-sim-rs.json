@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-29T23:42:01Z",
+  "updated_at": "2026-10-30T00:08:54Z",
   "state": "active",
-  "summary": "Deferred world-hinge effort is accepted on DART and MuJoCo after independent native review, strict local checks and exact hosted CI. P3 remains in progress.",
+  "summary": "DART and MuJoCo world-hinge effort is accepted. The independently reviewed DART angular-boundary guard passed strict local checks and is published with hosted qualification pending; P3 continues.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "PHY-05",
-      "title": "Finite-limit numerical qualification remains open",
-      "detail": "Private DART conditioning has isolation/rollback controls, but frozen-friction behavior, physical reference differences, native assertion domains and cost remain unqualified. Retained Rapier first-crossing and winding failures also remain unresolved. No tests, tolerances or solver settings were weakened; no finite-limit support is accepted."
+      "id": "PHY-03",
+      "title": "Qualifying the native angular-constraint boundary",
+      "detail": "A reviewed guard for actual mixed contact/active angular groups passed all preserved tests and the normal staged gate: 525 Rust, 90 tooling checks and strict per-crate coverage. Published eace659 awaits exact hosted acceptance. Independent clean-baseline subprocesses reproduced three native assertion failures; no numerical tolerance or solver setting changed."
     },
     {
-      "id": "PHY-03",
-      "title": "Hardening the native angular-constraint boundary",
-      "detail": "A private subprocess study reproduced native aborts when implicit default hinge limits combine tiny angular inertia with contacts. A narrower inverse-response guard passes the existing DART suite; regression, native characterization and independent review remain. No new safety or finite-limit support is accepted."
+      "id": "PHY-05",
+      "title": "Extending Rapier actuation while finite limits remain open",
+      "detail": "A private world/fixed-parent effort implementation passes seven physical/lifecycle controls across impulse and reduced coordinates. Its precise temporary Unsupported-test transition received independent prior approval. Moving-parent actuation remains unqualified after retained physical probes; final source/native review and strict gates remain. Finite-limit first-crossing and native conditioning research are also still open."
     }
   ],
   "accepted_slices": [
@@ -459,17 +459,17 @@
     "PHY-04": "in_progress"
   },
   "quality": {
-    "revision": "91ba2581ff69b7cb835ff4e72241e177bda6e0f1",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/91ba2581ff69b7cb835ff4e72241e177bda6e0f1",
-    "rust_tests": 520,
+    "revision": "eace659c6080e80d3b80f6a9d0fb9b7ff9ca55a5",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eace659c6080e80d3b80f6a9d0fb9b7ff9ca55a5",
+    "rust_tests": 525,
     "coverage": {
       "lines": [
-        6922,
-        6990
+        6923,
+        6991
       ],
       "regions": [
-        10795,
-        11027
+        10796,
+        11028
       ]
     },
     "upstream": {
@@ -478,10 +478,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40972986397"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/40977497392"
     },
-    "note": "Independent source/native/FFI review, the normal staged hook and exact hosted CI passed: 520 Rust tests, 90 tooling checks, all eleven production crates strictly above 95% lines and regions, and 46/46 changed production lines covered. MuJoCo direct generalized force matches six C++ SDK pulses. Scope is existing world hinges; no new original-test, finite-limit, moving-parent or performance credit."
+    "note": "Independent final source/native review and the mandatory staged hook passed: 525 Rust tests, 90 tooling checks, all eleven production crates strictly above 95% lines and regions; changed DART Rust line1/1. The guard reuses the existing inverse-response ceiling in actual mixed angular/contact groups and preserves isolated scalar work. Exact hosted acceptance is pending; no full safety proof, finite-limit, original-test or performance credit."
   },
   "phase_status": {
     "P0": "in_progress",
