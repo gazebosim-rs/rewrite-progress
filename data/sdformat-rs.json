@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T05:15:07Z",
+  "updated_at": "2026-10-30T05:16:42Z",
   "state": "active",
-  "summary": "Visual metadata XML is accepted after independent review, the normal strict staged hook and exact hosted success. Original mappings are now 198 complete/27 partial; asset/rendering/runtime and broader SDF gaps remain open.",
+  "summary": "Atmosphere metadata XML is reviewed and public after its normal strict staged gate; exact hosted CI is running. Accepted mappings remain 198 complete/27 partial until qualification succeeds.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify reviewed Atmosphere metadata XML",
-      "detail": "Atmosphere metadata candidate is independently approved: fresh reviewer source/target passed 14 selected Rust checks and reproduced 23 native inputs, exact fixture, 14 actual XML exchanges, defaults and both unchanged originals. Private stdout/stderr injections failed actual quiet capture; restored source passes. Normal strict staged hook is running; exact hosted qualification remains pending. Accepted counts remain 198 complete/27 partial; reviewed candidate 200/27. Existing parser/numeric/origin and no-atmosphere-runtime boundaries remain.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c64c46d56542d140ab74aab652fc5dc5fabfa788"
+      "title": "Await exact hosted Atmosphere qualification",
+      "detail": "Published Atmosphere commit b69a457 passed the normal strict gate: 539 Rust/17 tooling, 7488/7515 lines, 11751/11991 regions and 51/51 actual new executable lines. Fresh independent review passed 14 Rust controls and native 23 inputs/fixture/14 exchanges/defaults/two originals plus adversarial quiet checks. Exact hosted 41007506290 is in progress. Accepted 198/27; reviewed candidate 200/27. No atmosphere runtime, Collision, Fuel or consumer-pin changes.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b69a4579d1e5c5869ae24d18dfc9651cf1bebe08"
     }
   ],
   "accepted_slices": [
@@ -781,17 +781,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c64c46d56542d140ab74aab652fc5dc5fabfa788",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c64c46d56542d140ab74aab652fc5dc5fabfa788",
-    "rust_tests": 534,
+    "revision": "b69a4579d1e5c5869ae24d18dfc9651cf1bebe08",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b69a4579d1e5c5869ae24d18dfc9651cf1bebe08",
+    "rust_tests": 539,
     "coverage": {
       "lines": [
-        7435,
-        7462
+        7488,
+        7515
       ],
       "regions": [
-        11694,
-        11935
+        11751,
+        11991
       ]
     },
     "upstream": {
@@ -800,9 +800,9 @@
       "partial": 27
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41006374491"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41007506290"
     },
-    "note": "One normal strict hook and exact hosted CI passed 534 Rust/17 tooling tests, formatting, Clippy, docs and required coverage: 7435/7462 lines, 11694/11935 regions; actual new executable 143/143. Independent fresh-source review passed 30 selected Rust controls and new 28 native inputs/one fixture/25 real exchanges/unchanged Visual original, plus Geometry 48/46 and Material 53/three fixtures/44 exchanges/originals. All original configured fields and direct pose bounds remain; safe access to owned Geometry supplies nonnullable-object guarantee, separate None checks EMPTY value. Native producer <empty> reader gap remains Unsupported; no general pointer/source or producer-byte equivalence. No resource IO, renderer, physics, plugin execution or performance claim."
+    "note": "Published Atmosphere commit b69a457 passed the normal strict gate: 539 Rust/17 tooling, 7488/7515 lines, 11751/11991 regions and 51/51 actual new executable lines. Fresh independent review passed 14 Rust controls and native 23 inputs/fixture/14 exchanges/defaults/two originals plus adversarial quiet checks. Exact hosted 41007506290 is in progress. Accepted 198/27; reviewed candidate 200/27. No atmosphere runtime, Collision, Fuel or consumer-pin changes."
   }
 }
