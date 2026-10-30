@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T22:01:59.749493Z",
+  "updated_at": "2026-10-30T22:20:45.326547Z",
   "state": "active",
   "summary": "Owned SIM/REAL/SYS NetworkClock is accepted at 8cc6295 after independent review, the full ordinary staged hook and exact hosted success. All 501 Rust tests, 42 tools and 60/60 changed executable lines passed. Ledger totals are now 122 faithful, 7 partial and 289 pending; broader clock and Node statistics behavior remain separate.",
   "model": "Codex transport owner",
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Owned WallClock implementation awaiting independent review",
-      "detail": "Accepted 8cc6295 NetworkClock remains exact-hosted green. A separate value-only WallClock candidate reuses SystemTime whole-second UTC anchoring plus Instant; it adds no Node, thread or dependency. Author debug/release each pass two private and five public/native checks, including seven controlled SDK values, explicit clock/range errors and the unchanged 100 ms original. All-target Clippy and 42 tools pass; focused module 38/38 lines and 70/70 regions is diagnostic only. Independent review, full staged gates and exact hosted checks remain pending; no WallClock credit is accepted. The Node statistics lifecycle decision remains unanswered."
+      "title": "Reviewed owned WallClock awaiting full staged and hosted qualification",
+      "detail": "Accepted 8cc6295 NetworkClock remains exact-hosted green. Separate value-only WallClock has independent fresh-source/target debug review: two private, five public/native and seven actual controlled SDK values plus the unchanged native original passed; source/library provenance and canonical linkage checked. Author debug/release, 42 tools and Clippy pass. Only WallClock is a reviewed conditional original: 123/7/288 applies only after full strict staged and exact hosted success. Current accepted totals remain122/7/289. The full gate is queued behind actual simulator native fixtures; no dependency, Node/thread, pins or statistics lifecycle policy change. The owner statistics choice remains unanswered."
     }
   ],
   "accepted_slices": [
