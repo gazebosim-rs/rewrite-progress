@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T15:16:32.287611+00:00",
+  "updated_at": "2026-10-30T16:40:23.484035+00:00",
   "state": "active",
-  "summary": "The reviewed native-registration baseline passed exact hosted CI: ten original commands are verified and one exact Zenoh-disabled registration remains profile-blocked. Broader P0 profiles, full ledger reconciliation, balanced workloads and optional rendering remain open.",
+  "summary": "The native math reference baseline is accepted: all 135 configured CTest registrations and 658 gtest cases passed independent replay and exact hosted checks. Clean DART reference qualification and optional Bevy rendering continue; broader P0 and the Rust math migration remain incomplete.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -29,12 +29,12 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "Pinned baseline SHAs and the selected reproducible headless image exist; all 14 native repositories were built in that profile. Broader backend, renderer/GPU and language profile execution is not yet qualified. Record exact successful and unavailable profiles and their evidence; this does not require completing their Rust ports."
+      "detail": "A private clean system-DART image built from signed, checksum-pinned OSRF 6.13.2 packages and fresh pinned physics/simulator sources. Read-only inspection and isolated articulated smoke pass exact module/hash checks. Original physics CTest execution passes 155 registrations, with 318 completed cases and 171 explicitly recorded skips; missing feature lists and upstream exclusions are classified. Earlier three permission-only guard failures are retained; corrected private build-cache scratch changed no source or test assertions. Recipe publication and broader qualification remain open; no full P0 or performance acceptance is claimed."
     },
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Accepted 062c356726f7b5a560054609ccc740084a877f3a passed independent source/native/package review, the complete unchanged staged gate and exact hosted 41076021294. All 626 Rust and 112 tooling checks pass; all 11 production crates exceed 95% line and region coverage. All 1,175 registration identities and 4,589 existing cases remain intact. Ten original non-gtest commands pass; one exact Zenoh-disabled registration stays blocked. Independently replayed native math results: 135 CTest/67 gtest configurations/658 cases are ready for a separate reviewed data slice, with no new Rust-port credit and no double-counting its ABI guard."
+      "detail": "Accepted af35578a077a5544839111c8d80dcb479d80d12f retains all 72 raw math capture files, every case identity and generating-program hashes. Author and independent immutable-image executions passed all 135 registrations and 658 cases, with zero skips/errors; five data-integrity controls and the full unchanged staged/hosted gates pass. This adds no Rust port credit; the math ABI guard overlaps the earlier ten-command baseline. Complete source-ledger reconciliation and other native profiles remain open."
     },
     {
       "id": "REF-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "Private optional Bevy rendering has produced real software-rendered frames and lifecycle controls. A demand-owned subprocess prototype avoids retained Bevy worker pools in the simulator process. Supervisor coverage remains below the strict gate, teardown failure limits remain open, and physical GPU qualification is unavailable. No Main renderer adoption or sensor parity is claimed."
+      "detail": "Private production renderer/client/protocol/worker layout now uses real Cargo-built worker tests and llvmpipe frames. Independent review caught and fixed two capture/cancellation correlation bugs. The combined feature gate correctly remains red on worker coverage, despite passing behavioral tests; physical GPU is unqualified. Coordinator is retaining owned scene visual geometry as a separately reviewed prerequisite. No renderer code is accepted in Main."
     },
     {
       "id": "QLT-01",
@@ -547,6 +547,11 @@
       "title": "Audited native wrappers, immutable-image runtime baseline, embedded contract packaging and server discovery-port regression repair",
       "commit": "062c356726f7b5a560054609ccc740084a877f3a",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/062c356726f7b5a560054609ccc740084a877f3a"
+    },
+    {
+      "title": "Complete configured native math runtime baseline with 658 original cases, retained raw corpus and independent replay",
+      "commit": "af35578a077a5544839111c8d80dcb479d80d12f",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/af35578a077a5544839111c8d80dcb479d80d12f"
     }
   ],
   "remaining": [
@@ -582,8 +587,8 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "062c356726f7b5a560054609ccc740084a877f3a",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/062c356726f7b5a560054609ccc740084a877f3a",
+    "revision": "af35578a077a5544839111c8d80dcb479d80d12f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/af35578a077a5544839111c8d80dcb479d80d12f",
     "rust_tests": 626,
     "coverage": {
       "lines": [
@@ -602,9 +607,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41076021294"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41084314020"
     },
-    "note": "Commit 062c356 passed independent review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 626 Rust and 112 tooling checks plus real C++ clients. Workspace coverage is 7809/7891 lines and 12120/12383 regions; every one of 11 production crates exceeds 95% for both. No production Rust changed. Ten unchanged native wrappers also passed independent immutable-image replay. One exact Zenoh-disabled registration remains blocked; broader REF-02 is incomplete. Historical failed socket-fixture verification is preserved; its deterministic reservation repair passed a real old-helper negative control. Private renderer and new native math data candidates are excluded from accepted metrics."
+    "note": "Native math baseline commit af35578 passed independent source/data/runtime review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 626 Rust and 117 tooling checks plus all existing real C++ clients. Workspace coverage remains 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Native math 135 CTest registrations / 658 completed cases are reference results, not Rust migration credit. Private DART qualification, visual-geometry and rendering work are excluded from accepted metrics."
   },
   "phase_status": {
     "P0": "in_progress",
