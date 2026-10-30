@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T21:27:39.304715Z",
+  "updated_at": "2026-10-30T22:01:59.749493Z",
   "state": "active",
   "summary": "Owned SIM/REAL/SYS NetworkClock is accepted at 8cc6295 after independent review, the full ordinary staged hook and exact hosted success. All 501 Rust tests, 42 tools and 60/60 changed executable lines passed. Ledger totals are now 122 faithful, 7 partial and 289 pending; broader clock and Node statistics behavior remain separate.",
   "model": "Codex transport owner",
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Retained clock and discovery behavior source audit",
-      "detail": "Accepted 8cc6295 supplies coherent SIM/REAL/SYS samples and actual canonical Clock publication through an existing Node/shared dispatcher, with native int32-second narrowing and owned admission/retirement. Full staged and exact hosted 41129099874 passed. Pure next-source observations confirm native WallClock anchors whole-second UTC then adds monotonic elapsed, so direct SystemTime::now would change values; no WallClock implementation or credit is claimed. Seven partial query rows and remaining original families stay under source audit. The Node statistics lifecycle choice remains unanswered."
+      "title": "Owned WallClock implementation awaiting independent review",
+      "detail": "Accepted 8cc6295 NetworkClock remains exact-hosted green. A separate value-only WallClock candidate reuses SystemTime whole-second UTC anchoring plus Instant; it adds no Node, thread or dependency. Author debug/release each pass two private and five public/native checks, including seven controlled SDK values, explicit clock/range errors and the unchanged 100 ms original. All-target Clippy and 42 tools pass; focused module 38/38 lines and 70/70 regions is diagnostic only. Independent review, full staged gates and exact hosted checks remain pending; no WallClock credit is accepted. The Node statistics lifecycle decision remains unanswered."
     }
   ],
   "accepted_slices": [
