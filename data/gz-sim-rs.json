@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T14:56:36.991640+00:00",
+  "updated_at": "2026-10-30T15:16:32.287611+00:00",
   "state": "active",
-  "summary": "The bounded native registration baseline is published after independent replay and the complete local gate; exact hosted CI is pending. Broader P0 reference profiles, full test-ledger reconciliation, balanced workloads and optional Bevy rendering remain open.",
+  "summary": "The reviewed native-registration baseline passed exact hosted CI: ten original commands are verified and one exact Zenoh-disabled registration remains profile-blocked. Broader P0 profiles, full ledger reconciliation, balanced workloads and optional rendering remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -34,12 +34,12 @@
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Published 062c356726f7b5a560054609ccc740084a877f3a passed independent native/tooling/package review and the complete local gate: 626 Rust, 112 tooling, real C++ clients and strict coverage for all 11 production crates. Ten original non-gtest commands pass; one exact Zenoh-disabled registration stays profile-blocked. Image input packaging and a real discovery-port fixture race are corrected without changing existing assertions. Exact hosted 41076021294 is pending. Separately, all 135 native math CTest registrations and 658 gtest cases ran successfully in the immutable SDK; their dataset/traceability review is pending and adds no Rust-port credit."
+      "detail": "Accepted 062c356726f7b5a560054609ccc740084a877f3a passed independent source/native/package review, the complete unchanged staged gate and exact hosted 41076021294. All 626 Rust and 112 tooling checks pass; all 11 production crates exceed 95% line and region coverage. All 1,175 registration identities and 4,589 existing cases remain intact. Ten original non-gtest commands pass; one exact Zenoh-disabled registration stays blocked. Independently replayed native math results: 135 CTest/67 gtest configurations/658 cases are ready for a separate reviewed data slice, with no new Rust-port credit and no double-counting its ABI guard."
     },
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The native DART double-pendulum capture implementation passed bounded independent review after exact local module path/hash binding, semantic joint names and pre-compilation compiler hashing were added. Corrected-source repeated capture is next after the Transport test window. Earlier data remains diagnostic. A fresh DART-enabled native image is being prepared because the installed physics artifact lacks clean system-DART build provenance. Many-entity and camera/lidar baselines and ratified budgets remain open."
+      "detail": "The corrected local DART capture and its source passed independent review: ten fresh 1000-step sample processes retain complete four-joint trajectories, semantic names, exact selected module paths/hashes and stable libraries. This installed local profile is not an immutable build qualification or Rust speedup. A clean system-DART image recipe has signed package provenance and tooling checks; its build is next. Many-entity and camera/lidar baselines and ratified budgets remain open."
     },
     {
       "id": "RENDER-01",
@@ -542,6 +542,11 @@
       "title": "User-approved Rust 1.97.1 baseline with complete headless/native/coverage requalification",
       "commit": "8e826d0abb34103f8bef848e91b8b7bc91a5d838",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8e826d0abb34103f8bef848e91b8b7bc91a5d838"
+    },
+    {
+      "title": "Audited native wrappers, immutable-image runtime baseline, embedded contract packaging and server discovery-port regression repair",
+      "commit": "062c356726f7b5a560054609ccc740084a877f3a",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/062c356726f7b5a560054609ccc740084a877f3a"
     }
   ],
   "remaining": [
@@ -577,9 +582,9 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "8e826d0abb34103f8bef848e91b8b7bc91a5d838",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8e826d0abb34103f8bef848e91b8b7bc91a5d838",
-    "rust_tests": 625,
+    "revision": "062c356726f7b5a560054609ccc740084a877f3a",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/062c356726f7b5a560054609ccc740084a877f3a",
+    "rust_tests": 626,
     "coverage": {
       "lines": [
         7809,
@@ -597,9 +602,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41067269660"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41076021294"
     },
-    "note": "Compiler-only commit 8e826d0 passed independent review, the unchanged complete staged hook under Rust 1.97.1 and exact hosted CI. All 625 Rust tests, 103 tooling checks and native client gates passed. Workspace coverage is 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Renderer prototypes and native baseline candidates are excluded from accepted coverage and phase completion. Published candidate 062c356 passed the complete local gate with 626 Rust and 112 tooling checks; exact hosted 41076021294 is pending, so accepted quality still points to 8e826d0."
+    "note": "Commit 062c356 passed independent review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 626 Rust and 112 tooling checks plus real C++ clients. Workspace coverage is 7809/7891 lines and 12120/12383 regions; every one of 11 production crates exceeds 95% for both. No production Rust changed. Ten unchanged native wrappers also passed independent immutable-image replay. One exact Zenoh-disabled registration remains blocked; broader REF-02 is incomplete. Historical failed socket-fixture verification is preserved; its deterministic reservation repair passed a real old-helper negative control. Private renderer and new native math data candidates are excluded from accepted metrics."
   },
   "phase_status": {
     "P0": "in_progress",
