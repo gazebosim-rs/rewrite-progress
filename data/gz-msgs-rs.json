@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T09:26:06.914303+00:00",
+  "updated_at": "2026-10-30T11:22:18.957953+00:00",
   "state": "active",
-  "summary": "Coverage-selector robustness is accepted after independent review, the normal strict gate and exact hosted CI. OS-byte CLI behavior remains accepted; successful factory-file cache closure is under author validation.",
+  "summary": "Successful file caching and explicit runtime install-share discovery are published after independent review and normal strict staged checks. Exact hosted qualification is in progress; full MSG-02 remains open.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Close successful factory-file cache behavior",
-      "detail": "Independent review requested for the stable12-path successful-file-cache candidate on acceptedc08e1e1. Final184 Rust tests, all-target Clippy, clean no-patch consumer and46 native workflows(44normal+2explicitloopabort differences) passed; five unchanged native originals also passed. Non-missing IO errors precede cache lookup; a cached-target-loop negative reproduced and nowpasses. Exact approved path-clean1.0.1 is the only new locked dependency; old packages/fixtures/83 mappings unchanged. Normal staged/exact hosted gates pending, install-share remains separate and slower LaserScan remains retained."
+      "detail": "Reviewed cache c979e874 is published as part of the 8939b427 chain. Its entire normal staged gate passed184 standard Rust tests,49/50 changed executable lines and retained strict production/vendor coverage. Independent fresh-source14 focused tests,46 native workflows (44 normal completions andtwo explicit abort differences),five unchanged originals and clean no-patch consumer passed. Exact hosted41047181834 at the published chain head is pending; no additional original-test or performance credit."
+    },
+    {
+      "id": "MSG-02-install-share",
+      "title": "Qualify explicit runtime install-share discovery",
+      "detail": "Published8939b427 passed the full ordinary staged hook:184 standard Rust tests plus existing/new harness controls,14/14 changed executable lines,3500/3523 production lines and5789/5887 regions across19files. Independent review passed14 retained regular tests,lazy-env harness,19 isolated workflows and actual CLI;16 native observations include15 normal completions andone explicit abort difference. with_paths remains isolated; absent-variable compiled-prefix/release-layout policy and malformed console diagnostics remain open. Exact hosted41047181834 is pending, so this is not yet accepted."
     },
     {
       "id": "MSG-02-upstream",
@@ -527,17 +532,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "c08e1e1f948a276e5e8f82353f881f23aa2fe1f7",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c08e1e1f948a276e5e8f82353f881f23aa2fe1f7",
-    "rust_tests": 181,
+    "revision": "8939b4271f238cc8bee6f4846be05bd54306ea72",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8939b4271f238cc8bee6f4846be05bd54306ea72",
+    "rust_tests": 184,
     "coverage": {
       "lines": [
-        3435,
-        3457
+        3500,
+        3523
       ],
       "regions": [
-        5667,
-        5763
+        5789,
+        5887
       ]
     },
     "upstream": {
@@ -546,9 +551,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41027272133"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41047181834"
     },
-    "note": "Pure-tooling selector correction passed independent fresh-source/control review, the ordinary181-test strict Main gate and exact hosted41027272133 at this exact revision. Production coverage remains3435/3457lines5667/5763regions across19files; changed executable additions are not applicable, not0/0 coverage. All actual vendor mappings retain derive6/6lines8/8regions and reflect103/105lines214/216regions. No production/dependency/vendor/83-ledger changes in this slice; full MSG-02/performance remain open."
+    "note": "The exact published cache/install-share chain passed independent review and normal local staged checks. Cache changed lines49/50; install-share changed lines14/14. Production coverage covers19files, with derive6/6lines8/8regions and reflect103/105lines214/216regions retained. Exact hosted qualification is in progress; neither new slice is accepted yet. All83 existing original mappings are unchanged; compiled-prefix/release-layout, formatting/runtime dispositions and slower LaserScan performance remain open."
   }
 }
