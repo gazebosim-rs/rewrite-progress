@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T08:15:33Z",
+  "updated_at": "2026-10-30T08:24:39Z",
   "state": "active",
   "summary": "IMU Scene callbacks now follow live sensor demand and are accepted after independent review, strict staged checks and exact hosted CI. The next activation work covers empty server calls, retained transport workers and other system families; full zero-idle compliance remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "QLT-01",
       "title": "Hardening changed-line coverage against diff header text",
-      "detail": "A separate tooling-only fix tracks hunk counts so Rust raw-string contents cannot redirect later changed-line coverage. All 95 author tooling checks pass; independent review is pending. Accepted production evidence and coverage thresholds are unchanged."
+      "detail": "Independently reviewed hunk-count parsing is published at a00581b. Its ordinary full staged hook passed 592 Rust and 95 tooling checks with unchanged strict production coverage. Exact hosted run 41026174136 is pending; accepted production milestone evidence remains at 121071a."
     },
     {
       "id": "ACT-01",
