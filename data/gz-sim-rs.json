@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T05:22:24Z",
+  "updated_at": "2026-10-30T05:32:52Z",
   "state": "active",
-  "summary": "Owner-directed built-in system activation is now the architecture priority. Published force input remains unaccepted while a hosted native-client SDK search-path failure is repaired; its local staged and independent checks passed.",
+  "summary": "The reviewed native-client SDK setup repair is published and exact hosted CI is running. Built-in system activation/retirement is under implementation; complete zero-idle compliance remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "SYS-CONTROL",
-      "title": "Repairing hosted native client library setup",
-      "detail": "Hosted CI41007140738 failed before the two new C++ peers ran because transitive SDK libraries were not on their child search path. A one-file fix aligns the force peer with the existing clock/rate harnesses. Assertions, physics behavior and gates are preserved; explicit clean-parent-environment replay and independent review are required before publication."
+      "title": "Qualifying repaired native client interoperability",
+      "detail": "Published repair30c632d preserves all force-input assertions/timeouts. Both actual C++ tests pass independently with the parent SDK library path absent, including all three dynamic engines and queue/reset controls. The normal strict staged gate passed; exact repaired hosted CI41008910670 remains pending."
     },
     {
       "id": "PHY-05",
@@ -491,8 +491,8 @@
     "ACT-01": "in_progress"
   },
   "quality": {
-    "revision": "b25a4277c7dabe2c3547b7f217d3c6ed9aa2cce7",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/b25a4277c7dabe2c3547b7f217d3c6ed9aa2cce7",
+    "revision": "30c632da1c574fcb33486a00a0744c8f63322669",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/30c632da1c574fcb33486a00a0744c8f63322669",
     "rust_tests": 575,
     "coverage": {
       "lines": [
@@ -510,10 +510,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "failure",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41007140738"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41008910670"
     },
-    "note": "Local reviewed/staged force input passed575 Rust and92 tooling tests with strict coverage, but exact hosted CI41007140738 failed before the two new native peers could execute: the child process lacked the pinned SDK library search path for a transitive library. A narrow harness fix is under review; no physics assertions, timeouts or coverage gates change. The slice remains unaccepted."
+    "note": "Native force input and its SDK child-library-path repair passed independent replay and mandatory staged checks:575 Rust/92 tooling; all11 crates above95% lines and regions. Clean-parent-environment C++ tests now pass all three dynamic engines. Exact repaired hosted CI41008910670 is pending; accepted slices remain unchanged. D26 activation lifecycle work is separate and incomplete."
   },
   "phase_status": {
     "P0": "in_progress",
