@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T14:24:24.389031+00:00",
+  "updated_at": "2026-10-30T14:56:36.991640+00:00",
   "state": "active",
-  "summary": "Rust 1.97.1 is accepted after independent review, the complete local gate and exact hosted CI. Built-in IMU, joint sampling and force callbacks follow bounded consumer demand. Reference inventory closure, native balanced-workload baselines and optional Bevy rendering remain under development.",
+  "summary": "The bounded native registration baseline is published after independent replay and the complete local gate; exact hosted CI is pending. Broader P0 reference profiles, full test-ledger reconciliation, balanced workloads and optional Bevy rendering remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -34,12 +34,12 @@
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Independent review is underway for a bounded packet preserving all 1,175 registration identities and existing case payloads. Ten unchanged non-gtest native wrappers actually passed in the immutable SDK; one exact Zenoh-disabled registration is explicitly profile-blocked. No broader ledger, gtest runtime or Rust-port completion is claimed."
+      "detail": "Published 062c356726f7b5a560054609ccc740084a877f3a passed independent native/tooling/package review and the complete local gate: 626 Rust, 112 tooling, real C++ clients and strict coverage for all 11 production crates. Ten original non-gtest commands pass; one exact Zenoh-disabled registration stays profile-blocked. Image input packaging and a real discovery-port fixture race are corrected without changing existing assertions. Exact hosted 41076021294 is pending. Separately, all 135 native math CTest registrations and 658 gtest cases ran successfully in the immutable SDK; their dataset/traceability review is pending and adds no Rust-port credit."
     },
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "A native DART double-pendulum capture is running with repeated fresh processes, raw q/dq trajectories, fixed CPU affinity and loaded-library hashes. It is an installed local profile pending independent review, not a qualified immutable DART build, full balanced suite or Rust speedup. Many-entity and camera/lidar baselines and ratified budgets remain open."
+      "detail": "The native DART double-pendulum capture implementation passed bounded independent review after exact local module path/hash binding, semantic joint names and pre-compilation compiler hashing were added. Corrected-source repeated capture is next after the Transport test window. Earlier data remains diagnostic. A fresh DART-enabled native image is being prepared because the installed physics artifact lacks clean system-DART build provenance. Many-entity and camera/lidar baselines and ratified budgets remain open."
     },
     {
       "id": "RENDER-01",
@@ -599,7 +599,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41067269660"
     },
-    "note": "Compiler-only commit 8e826d0 passed independent review, the unchanged complete staged hook under Rust 1.97.1 and exact hosted CI. All 625 Rust tests, 103 tooling checks and native client gates passed. Workspace coverage is 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Renderer prototypes and native baseline candidates are excluded from accepted coverage and phase completion."
+    "note": "Compiler-only commit 8e826d0 passed independent review, the unchanged complete staged hook under Rust 1.97.1 and exact hosted CI. All 625 Rust tests, 103 tooling checks and native client gates passed. Workspace coverage is 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Renderer prototypes and native baseline candidates are excluded from accepted coverage and phase completion. Published candidate 062c356 passed the complete local gate with 626 Rust and 112 tooling checks; exact hosted 41076021294 is pending, so accepted quality still points to 8e826d0."
   },
   "phase_status": {
     "P0": "in_progress",
