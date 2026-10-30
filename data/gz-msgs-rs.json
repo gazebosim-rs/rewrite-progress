@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T01:14:35.730905+00:00",
+  "updated_at": "2026-10-30T01:50:30.255177+00:00",
   "state": "active",
-  "summary": "Reviewed false-only MessageSet option formatting is published after the strict staged gate; exact hosted qualification is pending.",
+  "summary": "Explicit-false MessageSet metadata formatting is accepted; nested extension declarations remain in characterization.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Ordinary explicit-false MessageSet metadata",
-      "detail": "Published 3479155 after independent prepared/final source and exact four-case transition review. All 175 Rust tests, full 98-case native peer/CLI replay and the single normal strict staged gate pass; 15/15 changed production lines are covered. Current supported/native counts are 94/95; four true-MessageSet guards remain unsupported. Exact hosted qualification is pending. Raw metadata, immutable corpus/peer/reference, dependencies, wire behavior and all 83 mappings are unchanged."
+      "title": "Bounded nested extension declaration investigation",
+      "detail": "Native characterization distinguishes absent JSON names, explicit protobuf-default names and rejected custom names, and retains source-ordered extendee grouping. A maintained metadata path must be proved before source adoption. Explicit defaults, groups, true MessageSet and runtime extension decoding remain outside the proposed initial scope. Existing unsupported predicates and dependency identity remain protected."
     },
     {
       "id": "MSG-02-upstream",
@@ -477,6 +477,11 @@
       "title": "Packed signed/unsigned integer-vector widths, framing and explicit native-overflow boundaries",
       "commit": "6338a42392aae29bcba8fd99b7fb1fb90465f3f5",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/6338a42392aae29bcba8fd99b7fb1fb90465f3f5"
+    },
+    {
+      "title": "Ordinary explicit-false MessageSet option formatting with preserved metadata and true-feature guard",
+      "commit": "3479155f0399beb69180fbe6072325941b36aefb",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/3479155f0399beb69180fbe6072325941b36aefb"
     }
   ],
   "remaining": [
@@ -511,9 +516,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40984581697"
     },
-    "note": "Independent prepared/final source and protected-transition reviews plus the mandatory strict staged gate passed. All 175 Rust tests pass; 15/15 changed production lines are covered. Every one of 19 production files retains strict line and region coverage; vendor-owned reflect remains 103/105 lines and 214/216 regions, derive 6/6 and 8/8. Exact hosted qualification remains pending, so this slice is not accepted yet. No broader MessageSet, loader/wire/dependency or original-mapping claim."
+    "note": "Independent prepared/final source and protected-transition reviews, the mandatory strict staged gate and exact hosted source-package/fresh-cache qualification passed. All 175 Rust tests pass; 15/15 changed production lines are covered. All 19 production files retain strict line and region coverage; vendor-owned reflect remains 103/105 lines and 214/216 regions, derive 6/6 and 8/8. Immutable 98-case corpus, peer/reference, raw metadata, dependencies, wire behavior and all 83 original mappings remain unchanged. No broader MessageSet or full MSG-02/performance acceptance is claimed."
   }
 }
