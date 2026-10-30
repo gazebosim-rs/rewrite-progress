@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T20:26:31.724227+00:00",
+  "updated_at": "2026-10-30T20:28:14.152220+00:00",
   "state": "active",
-  "summary": "Renderer exact hosted acceptance is pending after complete local gates. The next DART joint-state correction is independently reviewed and running its mandatory staged checks. Repository owners continue custom SDF metadata, network clocks and canonical scene rendering extraction.",
+  "summary": "The first bounded Bevy offscreen renderer is accepted after independent review, full staged checks and exact hosted success. Scene extraction, broader physics and sensor compatibility remain under development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "PHY-05",
       "title": "Qualifying broader motion and joint-limit domains",
-      "detail": "Published ownership prerequisite 87b9d77c binds DART body slots to native ownership. A separate dependent-coordinate joint-state correction passed independent source review and a fresh reviewer build of 79 focused tests, including actual native fixture compilation and loaded-library checks. Its complete normal staged gate is running. These corrections preserve current one-body admission; moving-parent joints, generalized contact and effort safety, coupled cache refresh, endpoint removal/reset, compound-shape parity and performance remain open."
+      "detail": "Accepted ownership prerequisite 87b9d77c (qualified at exact hosted revision 34b61408) binds DART body slots to native ownership. A separate dependent-coordinate joint-state correction passed independent source review and a fresh reviewer build of 79 focused tests, including actual native fixture compilation and loaded-library checks. Its complete normal staged gate is running. These corrections preserve current one-body admission; moving-parent joints, generalized contact and effort safety, coupled cache refresh, endpoint removal/reset, compound-shape parity and performance remain open."
     },
     {
       "id": "PHY-03",
@@ -43,8 +43,8 @@
     },
     {
       "id": "RENDER-01",
-      "title": "Starting optional Bevy offscreen rendering",
-      "detail": "Published 34b61408c0f5f463b7ed632a1e657e3d0ce774a1 passes the complete normal staged gate: 631 headless and 127 renderer-profile test executions, 149 tooling checks, real native clients and strict coverage in all 16 production crates across both profiles. Exact hosted 41119924798 is running, so accepted quality remains 028f63f. Earlier hosted runs exposed namespace permissions and an executable-file-busy fixture failure; the job policy setup and immutable checked-in peers preserve all assertions, protocol bytes, delays and parallel tests. Scene snapshot production, calibrated sensors and physical GPU qualification remain open."
+      "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
+      "detail": "Accepted 34b61408 passes exact hosted run 41119924798 and the complete normal staged gate: 631 headless and 127 renderer-profile test executions, 149 tooling checks, real C++ clients and strict line/region coverage for all 16 production crates across the required profiles. The renderer runs isolated software-Vulkan tests for bounded unlit 64\u00d764 box scenes with f64 frame/origin conversion and bounded IPC. Canonical ECS snapshot extraction is being implemented in isolation; calibrated camera/lidar sensors, assets and physical GPU qualification remain open. The broader rendering packet is not complete."
     },
     {
       "id": "QLT-01",
@@ -562,6 +562,16 @@
       "title": "Signed checksum-pinned clean DART native reference build recipe",
       "commit": "028f63fed78d34b4c02dc4a626312fdecb3c0ddf",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/028f63fed78d34b4c02dc4a626312fdecb3c0ddf"
+    },
+    {
+      "title": "Bounded optional Bevy offscreen renderer with isolated worker, f64 frame conversion, bounded IPC and separate mandatory coverage profile",
+      "commit": "34b61408c0f5f463b7ed632a1e657e3d0ce774a1",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/34b61408c0f5f463b7ed632a1e657e3d0ce774a1"
+    },
+    {
+      "title": "DART body-slot native ownership with assertion-enabled native topology controls",
+      "commit": "87b9d77c24dd49e23f15b7f9d0eaba2d924243df",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/87b9d77c24dd49e23f15b7f9d0eaba2d924243df"
     }
   ],
   "remaining": [
@@ -597,9 +607,9 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "028f63fed78d34b4c02dc4a626312fdecb3c0ddf",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/028f63fed78d34b4c02dc4a626312fdecb3c0ddf",
-    "rust_tests": 629,
+    "revision": "34b61408c0f5f463b7ed632a1e657e3d0ce774a1",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/34b61408c0f5f463b7ed632a1e657e3d0ce774a1",
+    "rust_tests": 631,
     "coverage": {
       "lines": [
         7839,
@@ -617,9 +627,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41102226966"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41119924798"
     },
-    "note": "Clean DART recipe028f63f passed independent review, the complete unchanged staged gate and exact hosted CI under Rust1.97.1:629 Rust tests,125 tooling checks, real C++ clients and strict line/region coverage in all11 production crates. Workspace coverage remains7839/7922lines and12165/12432regions; this recipe changes no production Rust. The pending57-file rendering integration and native reference case counts are excluded from these accepted Rust metrics. No full P0 or performance acceptance is claimed."
+    "note": "Exact hosted revision 34b61408 and the complete normal staged gate pass after independent review: 631 headless test executions, 127 renderer-profile executions and 149 tooling checks. The displayed coverage is the headless profile: 7839/7922 lines and 12165/12432 regions. The separately required renderer profile covers 1395/1427 lines and 1998/2069 regions. All 16 production crates pass strictly greater than 95% lines and regions across these profiles; shared tests and core coverage are not summed as unique totals. Real C++ clients and software-Vulkan rendering run. Initial renderer scope is bounded unlit 64\u00d764 boxes; scene extraction, calibrated sensors, physical GPU, full P0 and comparative performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
