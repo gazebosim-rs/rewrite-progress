@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T13:18:51Z",
+  "updated_at": "2026-10-30T14:00:41Z",
   "state": "active",
   "summary": "Loaded-joint preflight and sampling demand passed exact hosted CI. Jointless scenes have no such callbacks; last-consumer retirement and loaded reset are qualified. Persistent-controller demand is now in independent review. Server workers, generic input/physics activation, broader actuation and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Accepted 2671fe4 passed exact hosted run 41055155796: 619 Rust, 103 tooling and 69/69 changed executable lines. Joint preflight/sampling demand, reset and cross-family retirement are qualified. The next persistent-controller candidate passed independent 200 Scene tests, Clippy and source review; its full normal commit hook is now running. Controller absence, typed activation, last-consumer teardown, reset and observer faults are covered; zero retains controller state. Generic input/physics callbacks, server workers and CPU/RSS measurements remain open."
+      "detail": "Accepted dae6f7d passed exact hosted run 41063235325 and the full hook: 625 Rust, 103 tooling and 42/42 changed executable lines. Persistent force application is absent without configured or typed controller demand, retires with the last controller and restores configured demand on loaded reset. Zero retains controller state. Joint/IMU/controller observer reconciliation is qualified. Generic input/physics callbacks, server worker teardown and CPU/RSS measurements remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -45,6 +45,11 @@
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
       "detail": "A dedicated rendering worker is implementing the first isolated renderer slice. Initial dependency and GPU qualification checks are underway for Bevy 0.20. The target is a real no-window primitive/camera render, derived f64 Z-up scene snapshots and bounded readback lifecycle. Default headless builds must remain free of renderer/GPU dependencies. No rendering, sensor parity or performance completion is claimed."
+    },
+    {
+      "id": "QLT-01",
+      "title": "Qualifying the user-approved Rust 1.97.1 compiler baseline",
+      "detail": "Published 8e826d0 changes only the workspace minimum compiler, pinned toolchain, CI install, README and recorded D27. Independent review and the complete unchanged local hook passed: 625 Rust, 103 tooling, native clients and strict coverage. Exact hosted run 41067269660 is pending. No independent repository toolchain, dependency lock or renderer feature is adopted by this compiler change."
     }
   ],
   "accepted_slices": [
@@ -527,6 +532,11 @@
       "title": "Loaded-joint preflight and sampling demand with last-consumer teardown, reset and cross-family observer reconciliation",
       "commit": "2671fe4068939eee6b51b31eaa4f45ad3bf7a6ff",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2671fe4068939eee6b51b31eaa4f45ad3bf7a6ff"
+    },
+    {
+      "title": "Persistent force callbacks follow configured or typed controller demand, with reset and observer-safe retirement",
+      "commit": "dae6f7d611fe9c156c5c2ec9fc97406e82de9723",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dae6f7d611fe9c156c5c2ec9fc97406e82de9723"
     }
   ],
   "remaining": [
@@ -562,17 +572,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "2671fe4068939eee6b51b31eaa4f45ad3bf7a6ff",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2671fe4068939eee6b51b31eaa4f45ad3bf7a6ff",
-    "rust_tests": 619,
+    "revision": "dae6f7d611fe9c156c5c2ec9fc97406e82de9723",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dae6f7d611fe9c156c5c2ec9fc97406e82de9723",
+    "rust_tests": 625,
     "coverage": {
       "lines": [
-        7766,
-        7848
+        7809,
+        7891
       ],
       "regions": [
-        12061,
-        12321
+        12120,
+        12383
       ]
     },
     "upstream": {
@@ -582,9 +592,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41055155796"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41063235325"
     },
-    "note": "Exact hosted CI and the full normal commit hook passed on 2671fe4: 619 Rust and 103 tooling tests, with 69/69 changed executable lines covered. All 11 production crates strictly exceed 95% lines and regions. Independent review passed 194 Scene tests and Clippy; 11 focused lifecycle controls preserve preflight, force and sample ordering, reset, native body state and terminal failure behavior. This qualifies joint preflight/sampling and cross-family retirement. Persistent force/input/physics callbacks, server worker teardown, whole-schedule zero memory, CPU/RSS improvement and the full original ApplyJointForce remain open."
+    "note": "Controller-demand commit dae6f7d passed exact hosted CI and its full normal hook under Rust 1.95: 625 Rust and 103 tooling tests, with 42/42 changed executable lines covered. All 11 production crates exceed 95% lines and regions. Independent review passed 200 Scene tests and Clippy. Configured and typed controllers own their force callback; zero retains controller state. Generic input/physics callbacks, server workers, measured CPU/RSS and full original ApplyJointForce remain open. The separately published Rust 1.97.1 baseline passed the same full local gate with unchanged coverage; its exact hosted acceptance is pending."
   },
   "phase_status": {
     "P0": "in_progress",
