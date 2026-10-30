@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T05:13:09Z",
+  "updated_at": "2026-10-30T05:19:37Z",
   "state": "active",
   "summary": "Bounded native joint-force topic commands are independently reviewed, published and pass the full strict staged gate. Exact hosted CI is running; the configured-controller slice remains the latest accepted simulator increment. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
+    {
+      "id": "ACT-01",
+      "title": "Built-in systems with demand-driven lifetime",
+      "detail": "Owner decision D26 retires the earlier runtime system plugin ABI/host. Built-in systems must run only for loaded world/model needs, with no absent-system callbacks, polling, owned allocations, workers or endpoints. Independently reviewed guidance records current unconditional joint/IMU callbacks, empty force polling and retained force workers as remaining gaps. Implementation will qualify last-consumer teardown, reactivation/reset, dependency and multiworld behavior; zero-idle compliance is not yet claimed."
+    },
     {
       "id": "SYS-CONTROL",
       "title": "Qualifying native joint-force input in hosted CI",
@@ -458,7 +463,7 @@
     "Complete broader reference provenance and test inventory, world/resource loading, sensor and transport compatibility; P2 is closed for the selected headless world.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
-    "All 78 system migrations, native plugin ABI, full world/logging/scripting/CLI behavior.",
+    "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [],
@@ -482,7 +487,8 @@
     "REF-03": "in_progress",
     "PHY-03": "in_progress",
     "PHY-04": "in_progress",
-    "SYS-CONTROL": "in_progress"
+    "SYS-CONTROL": "in_progress",
+    "ACT-01": "in_progress"
   },
   "quality": {
     "revision": "b25a4277c7dabe2c3547b7f217d3c6ed9aa2cce7",
