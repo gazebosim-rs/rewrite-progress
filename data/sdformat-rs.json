@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T05:05:01Z",
+  "updated_at": "2026-10-30T05:07:06Z",
   "state": "active",
-  "summary": "Visual metadata XML is independently reviewed and publicly pushed after its normal strict staged gate; exact hosted CI is running. Accepted original mappings remain 197 complete/27 partial until qualification succeeds.",
+  "summary": "Visual metadata XML is accepted after independent review, the normal strict staged hook and exact hosted success. Original mappings are now 198 complete/27 partial; asset/rendering/runtime and broader SDF gaps remain open.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Await exact hosted Visual qualification",
-      "detail": "Published Visual commit c64c46d passed the normal strict gate: 534 Rust/17 tooling checks, 7435/7462 lines, 11694/11935 regions and 143/143 actual new executable lines. Fresh independent review passed 30 Rust and native 28/one fixture/25 exchanges/original plus Geometry/Material regressions. Exact hosted 41006374491 is in progress. Accepted 197/27; reviewed candidate 198/27. EMPTY by-value representation is precise; native <empty> reader gap and all asset/render/physics boundaries remain.",
+      "title": "Select next retained SDF behavior",
+      "detail": "Visual commit c64c46d is accepted with exact hosted success. It adds standalone metadata read/write, opaque plugin preservation and the precise owned-Geometry/EMPTY mapping. The owner is inspecting the next valid retained SDF gap; Collision EMPTY/density and unsupported resources are not broadened merely for case credit. No Fuel or consumer-pin changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c64c46d56542d140ab74aab652fc5dc5fabfa788"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Serialize bounded Visual metadata and opaque plugins",
+      "commit": "c64c46d56542d140ab74aab652fc5dc5fabfa788",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c64c46d56542d140ab74aab652fc5dc5fabfa788"
+    },
     {
       "title": "Preserve losslessly representable Material and PBR metadata XML",
       "commit": "295e99140a04fb289cd187cd0d08fb4c591aa12b",
@@ -791,13 +796,13 @@
     },
     "upstream": {
       "total": 1344,
-      "ported": 197,
+      "ported": 198,
       "partial": 27
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41006374491"
     },
-    "note": "Published Visual commit c64c46d passed the normal strict gate: 534 Rust/17 tooling checks, 7435/7462 lines, 11694/11935 regions and 143/143 actual new executable lines. Fresh independent review passed 30 Rust and native 28/one fixture/25 exchanges/original plus Geometry/Material regressions. Exact hosted 41006374491 is in progress. Accepted 197/27; reviewed candidate 198/27. EMPTY by-value representation is precise; native <empty> reader gap and all asset/render/physics boundaries remain."
+    "note": "One normal strict hook and exact hosted CI passed 534 Rust/17 tooling tests, formatting, Clippy, docs and required coverage: 7435/7462 lines, 11694/11935 regions; actual new executable 143/143. Independent fresh-source review passed 30 selected Rust controls and new 28 native inputs/one fixture/25 real exchanges/unchanged Visual original, plus Geometry 48/46 and Material 53/three fixtures/44 exchanges/originals. All original configured fields and direct pose bounds remain; safe access to owned Geometry supplies nonnullable-object guarantee, separate None checks EMPTY value. Native producer <empty> reader gap remains Unsupported; no general pointer/source or producer-byte equivalence. No resource IO, renderer, physics, plugin execution or performance claim."
   }
 }
