@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T07:59:46Z",
+  "updated_at": "2026-10-30T08:14:48Z",
   "state": "active",
-  "summary": "Density is accepted with 7/7 actual changed lines confirmed; the separate changed-line gate correction is under independent review.",
+  "summary": "The reviewed changed-line gate correction passed its staged hook and is pushed; exact hosted CI is pending.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Correct parent-bound changed-line coverage gate",
-      "detail": "An isolated gate candidate binds staged coverage to the frozen tree and HEAD and hosted coverage to the event base, while preserving full-source and crate checks. Known-bad changed subsets and exact 95% fail. Independent review and normal staged/exact hosted qualification remain pending; the Collision writer waits separately.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/005fda0bf5742278707003fdebb2e1a2c5a1cac9"
+      "detail": "Gate commit 5172ee2 passed independent source/tooling review and normal staged verification, and is pushed. Exact hosted CI is pending; accepted density metrics remain below. The separate Collision writer waits for gate acceptance.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/5172ee247683e698ab00f40cf8af0e0eeac67516"
     }
   ],
   "accepted_slices": [
