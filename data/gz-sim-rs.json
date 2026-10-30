@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T12:11:03Z",
+  "updated_at": "2026-10-30T12:31:40Z",
   "state": "active",
-  "summary": "Bounded DART static planes and their scene lifecycle passed exact hosted CI: native frames, finite collision footprint, inherited static state, removal and loaded reset are qualified. Joint-demand callback teardown is now in its full normal commit checks; moving-parent actuation and broader performance remain open.",
+  "summary": "DART plane/scene support remains accepted. Joint preflight and sampling teardown is published after 619 Rust tests and strict local coverage; exact hosted CI is pending. Persistent-controller demand is the next implementation slice. Moving-parent actuation, full idle-worker teardown and performance qualification remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "A reviewed joint-demand lifecycle candidate passed 194 Scene tests and Clippy, including 11 focused absence/removal/reset/observer controls across three dynamic engines and TPE absence. Its full normal commit hook is running. Independent review caught and fixed cross-family retirement: schedule observers removing the last joint or IMU now trigger coherent lifecycle-boundary cleanup; unsupported additions get a terminal committed fault. Accepted scope remains prior IMU lifecycle until full local and exact hosted checks pass. Persistent force/input/physics callbacks and server workers remain open; no CPU/RSS improvement claim."
+      "detail": "Published 2671fe4068939eee6b51b31eaa4f45ad3bf7a6ff passed the full normal hook: 619 Rust, 103 tooling, workspace 7766/7848 lines and 12061/12321 regions, Scene 2312/2346 lines and 3562/3667 regions, changed 69/69. Exact hosted run 41055155796 is pending. Independent194-Scene-test review qualified initial joint absence, last-consumer removal, reset and cross-family observer reconciliation; accepted quality remains prior7f until hosted success. A separate persistent-controller callback-demand candidate is under development; generic input/physics callbacks, server workers and measured CPU/RSS remain open."
     },
     {
       "id": "SYS-CONTROL",
