@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T07:55:26Z",
+  "updated_at": "2026-10-30T07:56:30Z",
   "state": "active",
   "summary": "Collision density presence and effective defaults are accepted after independent native review, the normal staged gate and exact hosted CI.",
   "model": "Repository owner",
@@ -823,6 +823,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41022794046"
     },
-    "note": "Independent review reproduced 14 native profiles, ten setter states and 15 focused Rust checks. Normal staged hook and exact hosted CI passed 550 Rust and 17 tooling controls; staged changed lines 7215/7236, hosted Main has no changed-line denominator. Native subnormal setter emission loss is recorded without altering stored metadata. Ledger remains 201 complete/27 partial; no physics, writer or consumer pin included."
+    "note": "Independent review reproduced 14 native profiles, ten setter states and 15 focused Rust checks. Normal staged and exact hosted CI passed 550 Rust and 17 tooling controls. The staged export conservatively measured all instrumented source lines (7215/7236); hosted Main reported 0 changed lines. An independent intersection of this exact commit parent diff with hosted LCOV found all 7/7 instrumented changed lines covered. Native subnormal setter emission loss is recorded without altering stored metadata. Ledger remains 201 complete/27 partial; no physics, writer or consumer pin included."
   }
 }
