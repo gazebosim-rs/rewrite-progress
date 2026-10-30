@@ -1,15 +1,21 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T09:05:02Z",
+  "updated_at": "2026-10-30T11:19:09Z",
   "state": "active",
-  "summary": "Collision family reconciliation is accepted; world-scope merged extension metadata is under native and independent review.",
+  "summary": "Coverage tooling is published and awaiting exact hosted checks; world extension metadata and legacy merge work are in review.",
   "model": "Repository owner",
   "active": [
     {
+      "id": "QLT-01",
+      "title": "Qualify coverage tooling correction",
+      "detail": "Independently reviewed and normal staged checks passed; exact hosted CI is running. Accepted coverage evidence remains tied to the prior successful revision until CI passes.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0fee663e782c5d0969090aca921b42e5f5c35300"
+    },
+    {
       "id": "SDF-02",
-      "title": "Qualify world-merge custom metadata",
-      "detail": "A working-tree candidate preserves qualified opaque metadata and imported source identity for world-scope merged includes. Thirteen native observations and three Rust positives pass, including nested ordering. The exact prior rejection remains untouched pending pre-change review. Public World struct users must accommodate the new field, and simulator Scene must support or reject it before a future pin. Gate syntax handling is under separate assessment; no bypass or pin change.",
+      "title": "Qualify world extensions and legacy merge semantics",
+      "detail": "World merge and direct-world metadata candidates passed independent native review and local staged checks. Legacy name-collision positives are under independent source review; original regression boundaries remain in place. Consumer adoption and exact hosted checks remain pending.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/9a00ab305237efb970119ddffd7b058e606e66ba"
     }
   ],
