@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T12:38:41Z",
+  "updated_at": "2026-10-30T12:39:06Z",
   "state": "active",
   "summary": "Loaded-joint preflight and sampling demand passed exact hosted CI. Jointless scenes have no such callbacks; last-consumer retirement and loaded reset are qualified. Persistent-controller demand is now in independent review. Server workers, generic input/physics activation, broader actuation and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Accepted2671fe4 passed exact hosted41055155796 and the full hook (619 Rust,103 tooling,69/69 changed). Joint preflight and committed/reset sampling are absent without loaded joints, retire after the last model and restore on loaded reset; cross-family observer removals reconcile at lifecycle boundaries and unsupported additions fault explicitly. A separate persistent-controller callback-demand candidate has198 Scene and six focused tests plus Clippy passing and is in independent review. Generic input/physics callbacks, server workers and measured CPU/RSS remain open."
+      "detail": "Accepted 2671fe4 passed exact hosted run 41055155796 and the full hook: 619 Rust, 103 tooling and 69/69 changed executable lines. Joint preflight and committed/reset sampling are absent without loaded joints, retire after the last model and restore on loaded reset. Cross-family observer removals reconcile at lifecycle boundaries; unsupported additions fault explicitly. A separate persistent-controller candidate passed 198 Scene tests, six focused controls and Clippy, and is in independent review. Generic input/physics callbacks, server workers and CPU/RSS measurements remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -563,7 +563,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41055155796"
     },
-    "note": "Exact hosted CI and the full normal commit hook passed on2671fe4:619 Rust and103 tooling,69/69 changed executable lines. All11 production crates strictly exceed95% lines and regions. Independent194 Scene tests and Clippy plus11 focused lifecycle controls preserve preflight/force/sample ordering, reset, native body state and terminal failure behavior. Scope covers joint preflight/sampling and cross-family retirement only; persistent force/input/physics callbacks, server worker teardown, whole-schedule zero memory, CPU/RSS improvement and full original ApplyJointForce remain unqualified."
+    "note": "Exact hosted CI and the full normal commit hook passed on 2671fe4: 619 Rust and 103 tooling tests, with 69/69 changed executable lines covered. All 11 production crates strictly exceed 95% lines and regions. Independent review passed 194 Scene tests and Clippy; 11 focused lifecycle controls preserve preflight, force and sample ordering, reset, native body state and terminal failure behavior. This qualifies joint preflight/sampling and cross-family retirement. Persistent force/input/physics callbacks, server worker teardown, whole-schedule zero memory, CPU/RSS improvement and the full original ApplyJointForce remain open."
   },
   "phase_status": {
     "P0": "in_progress",
