@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T04:52:32Z",
+  "updated_at": "2026-10-30T05:03:22Z",
   "state": "active",
   "summary": "Configured ApplyJointForce controllers and reset metadata are accepted after independent review, strict staged checks and exact hosted CI. Real C++ force-topic delivery and lifecycle controls are under development. P3 remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-CONTROL",
-      "title": "Implementing bounded native joint-force transport input",
-      "detail": "A private C++ typed Double publisher controls paused and advancing world hinges on Rapier, DART and MuJoCo. Author tests preserve latest-value commands, reject nonfinite input and accept default zero. Queue/reset, endpoint fanout, lifecycle and negative controls are being added before independent review and strict qualification. Full original system and moving-parent fixture remain open."
+      "title": "Reviewing bounded native joint-force transport",
+      "detail": "Private author checks pass all74 server unit tests,166 Scene tests,92 tooling checks and Clippy. Real C++ Double publishers exercise Rapier, DART and MuJoCo physical response, pause/latest/default/NaN behavior, loaded reset/removal and unread wire queue cancellation. Internal controls cover endpoint collision fanout, finite budgets, malformed input, indexed identity and terminal reset failures. Independent review and strict staged/hosted qualification remain pending; full original-system and broader performance scope remain open."
     },
     {
       "id": "PHY-05",
