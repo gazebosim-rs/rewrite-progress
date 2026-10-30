@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T17:55:16.305187+00:00",
+  "updated_at": "2026-10-30T18:20:12.381463+00:00",
   "state": "active",
-  "summary": "Owned visual geometry is accepted in Main. The private Bevy software-rendering profile now passes strict line and region coverage; full staged and hosted integration checks remain required. Clean DART reference recipe checks and original simulator qualification continue.",
+  "summary": "The clean DART reference recipe is accepted after independent review, the complete staged gate and exact hosted CI. Optional Bevy rendering is undergoing its full Main integration gate. Original C++ reference execution now records 1035 successful cases and seven explicit prerequisite failures; broader qualification remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -29,12 +29,12 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "Published reviewed clean DART recipe 028f63fed78d34b4c02dc4a626312fdecb3c0ddf passes the full unchanged staged gate: 629 Rust, 125 tooling checks, real native clients and strict coverage in all 11 production crates. Exact hosted run 41102226966 is pending, so accepted quality remains e72c99c. Independent immutable-image inspection, eleven original physics registrations and bounded articulated smoke pass. First sandbox loopback EPERM failure is preserved; the unchanged gate passed with local sockets allowed. Broader reference qualification remains open."
+      "detail": "Accepted 028f63fed78d34b4c02dc4a626312fdecb3c0ddf passes the full unchanged staged gate and exact hosted 41102226966:629 Rust,125 tooling, real C++ clients and strict coverage for all11 production crates. The signed, checksum-pinned OSRF6.13.2 recipe leaves historical reference identities and Rust engine pins unchanged. Independent image inspection, eleven original physics registrations and bounded articulated smoke pass. Image distribution, additional native profiles and full P0 qualification remain open."
     },
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "Accepted math baseline retains 135 passing registrations and 658 completed cases. The new DART image lists 431 configured physics/simulator registrations, 214 gtest configurations and 1846 expanded cases with zero inventory gaps. Independent data audit verifies 54 original simulator registrations and 695 completed case identities across disjoint batches; more native execution continues. Physics runtime remains 318 completed and 171 skipped. These reference results add no Rust port credit. Complete source-ledger reconciliation and other profiles remain open."
+      "detail": "Accepted math baseline retains135 passing registrations and658 completed cases. New-image listing covers431 physics/simulator registrations,214 configurations and1846 cases without inventory gaps. Independent raw-data audit of eight original simulator batches verifies166 registrations,83 disjoint configurations and1042 exact IDs:1035 successful and7 failed. Five failures need an unpinned remote model; one original fixture requires unavailable Bullet Featherstone; one needs remote actor plus Ogre2/camera setup. Failures stay failures, with retained behavior pending appropriate profiles or rehosting. These results add no Rust migration credit; broader source-ledger reconciliation stays open."
     },
     {
       "id": "REF-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "Accepted e72c99c retains parsed visual geometry through scene reset with 629 Rust, 117 tooling, 34/34 changed executable lines and exact hosted 41096869144 passing. Separately, the private real llvmpipe profile now passes all six selected production crates: worker 261/269 lines and 358/375 regions; profile total 1395/1427 lines and 1998/2069 regions. Real process lifecycle controls and intentional software device destruction pass. Full staged headless plus renderer checks, hosted CI, scene integration and physical GPU qualification remain open; no renderer runtime is accepted in Main."
+      "detail": "All57 independently reviewed renderer integration files are staged in Main; the normal gate now runs headless and renderer profiles, real native clients and strict per-crate/changed-line checks. The earlier private llvmpipe profile passed all six selected crates:worker261/269lines358/375regions;profile1395/1427lines1998/2069regions. Full staged and exact hosted success remain required before acceptance. Simulator snapshot production, physical GPU and calibrated sensor qualification remain open."
     },
     {
       "id": "QLT-01",
@@ -557,6 +557,11 @@
       "title": "Owned parsed visual geometry retained through Bevy scene reset without GPU dependencies",
       "commit": "e72c99c787d74d7ee761ed8a5b83928ad5b3d61a",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e72c99c787d74d7ee761ed8a5b83928ad5b3d61a"
+    },
+    {
+      "title": "Signed checksum-pinned clean DART native reference build recipe",
+      "commit": "028f63fed78d34b4c02dc4a626312fdecb3c0ddf",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/028f63fed78d34b4c02dc4a626312fdecb3c0ddf"
     }
   ],
   "remaining": [
@@ -592,8 +597,8 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "e72c99c787d74d7ee761ed8a5b83928ad5b3d61a",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e72c99c787d74d7ee761ed8a5b83928ad5b3d61a",
+    "revision": "028f63fed78d34b4c02dc4a626312fdecb3c0ddf",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/028f63fed78d34b4c02dc4a626312fdecb3c0ddf",
     "rust_tests": 629,
     "coverage": {
       "lines": [
@@ -612,9 +617,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41096869144"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41102226966"
     },
-    "note": "Visual geometry commit e72c99c passed independent review, the complete unchanged staged gate and exact hosted CI under Rust 1.97.1: 629 Rust and 117 tooling checks plus the existing real C++ clients. All 11 production crates exceed 95% line and region coverage; all 34 changed executable lines are covered. Private DART qualification and rendering work are excluded. Native math reference results remain 135 passing registrations and 658 completed cases, without Rust migration credit. Published recipe 028f63f passes the complete local gate with 125 tooling checks; its exact hosted 41102226966 remains pending and is excluded from accepted quality."
+    "note": "Clean DART recipe028f63f passed independent review, the complete unchanged staged gate and exact hosted CI under Rust1.97.1:629 Rust tests,125 tooling checks, real C++ clients and strict line/region coverage in all11 production crates. Workspace coverage remains7839/7922lines and12165/12432regions; this recipe changes no production Rust. The pending57-file rendering integration and native reference case counts are excluded from these accepted Rust metrics. No full P0 or performance acceptance is claimed."
   },
   "phase_status": {
     "P0": "in_progress",
