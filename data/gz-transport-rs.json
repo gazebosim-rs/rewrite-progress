@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T12:23:42.358078Z",
+  "updated_at": "2026-10-30T12:45:35.466149Z",
   "state": "active",
-  "summary": "Shared typed callbacks are accepted at b860b64 after exact hosted success: 437 Rust tests, 35 tooling checks and 329/329 changed executable lines. Ledger is 113 faithful, 7 partial and 298 pending. The separately reviewed per-handle unsubscribe follow-up awaits its normal staged and exact hosted qualification. Node statistics lifecycle policy remains pending.",
+  "summary": "Public per-handle retirement commit 2fed754 passed its normal staged gate with 447 Rust tests, 35 tools and 14/14 changed lines; exact hosted verification is pending. Shared typed callbacks at b860b64 are accepted. Accepted ledger remains 113 faithful, 7 partial and 298 pending; the three retirement cases are conditional.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "NET-02",
       "title": "Shared asynchronous typed callback implementation; statistics policy pending",
-      "detail": "The demand-created shared per-Node typed callback API has independent review, a complete canonical staged gate and exact hosted SUCCESS at b860b64. Both selected native Lambda originals retain 10-second/10-ms readiness, all data/metadata predicates and an explicit one-second Rust completion bound. No global ordering, raw-inline or performance parity is implied. The separate owned-unsubscribe follow-up has final independent source, 14-pure, five-public/native and three-original approval, including readiness and additive rebase checks; its own full gate and exact CI remain pending. Source-only next investigation considers opaque callbacks with existing dispatcher reuse and no extra worker/dependency. The owner statistics enable/disable choice is still pending; no dependent Node behavior is adopted."
+      "detail": "Demand-created shared typed callbacks at b860b64 have exact hosted success. The separately reviewed per-handle retirement API is public at 2fed754 after the normal canonical gate: 447 Rust tests, 35 tooling checks and strict coverage. Exact hosted 41056724452 is pending, so three selected subscriber cases remain conditional. Live Rust registration state is explicitly distinct from native stored-ID validity; selected user work and capture disposal retain their entry/thread bounds. An isolated opaque-callback extension reuses the existing pool, passes 18 pure controls and is still under author qualification; it adds no new worker or dependency. Full CallbackScope credit is not claimed. The owner statistics lifecycle choice remains pending."
     }
   ],
   "accepted_slices": [
@@ -590,17 +590,17 @@
     "QLT-01": "in_progress"
   },
   "quality": {
-    "revision": "b860b64e26877a05e94ecabf982da24ad70d00af",
-    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/b860b64e26877a05e94ecabf982da24ad70d00af",
-    "rust_tests": 437,
+    "revision": "2fed75492b0eef4bb012c2d4f70f917115b20c2f",
+    "revision_url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2fed75492b0eef4bb012c2d4f70f917115b20c2f",
+    "rust_tests": 447,
     "coverage": {
       "lines": [
-        4689,
-        4794
+        4699,
+        4804
       ],
       "regions": [
-        6595,
-        6855
+        6610,
+        6870
       ]
     },
     "upstream": {
@@ -609,9 +609,9 @@
       "partial": 7
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41052553612"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41056724452"
     },
-    "note": "Exact hosted 41052553612 completed SUCCESS at b860b64e26877a05e94ecabf982da24ad70d00af. Its normal canonical staged hook passed 437 Rust tests, 35 tools, all required native groups, 4689/4794 production lines, 6595/6855 regions and 329/329 changed executable lines. Independent fresh-source review covered lifecycle/admission/destruction, decode/type entry guards, FIFO/backpressure, exact readiness and both unchanged native Lambda originals. Exactly those two whole cases move 111/7/300 to 113/7/298. LF accounting at parent 32ff368 also has exact hosted success. Broader process-global ordering, raw-inline behavior, identity and performance remain open."
+    "note": "The ordinary canonical staged hook at public 2fed754 passed 447 Rust tests, 35 tools, all required native groups, 4699/4804 lines, 6610/6870 regions and 14/14 changed executable lines. Independent source/runtime/metadata review verified all three native subscriber originals, exact readiness, shared opaque/live-state boundaries, cancellation and real-exit budgets. Exact hosted 41056724452 is pending; accepted ledger counters remain 113/7/298, while the three source rows are conditional candidates for 116/7/295. Previous callback b860b64 has exact hosted SUCCESS41052553612. No broad global identity, timing or raw-inline parity is implied."
   }
 }
