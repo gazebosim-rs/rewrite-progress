@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T21:31:11.810609+00:00",
+  "updated_at": "2026-10-30T21:59:14.739674+00:00",
   "state": "active",
-  "summary": "Canonical ECS-to-renderer integration is published after full local gates. Hosted qualification is pending; an earlier hosted shutdown-test failure is being investigated without bypassing checks. Transport NetworkClock is independently accepted.",
+  "summary": "Canonical ECS scenes now render through the isolated Bevy worker with verified material updates, removal and reset. The bounded slice passed exact hosted checks; calibrated cameras and a separately reviewed teardown correction remain under development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "PHY-05",
       "title": "Qualifying broader motion and joint-limit domains",
-      "detail": "Published correction c3e05d78 passed independent review, 79 fresh reviewer controls and the complete local staged gate. Exact hosted run 41127331239 failed an existing renderer-client teardown assertion, so it is not accepted. The failure is under investigation; the later published scene revision includes the correction. Current one-body admission remains unchanged. Moving-parent articulation, generalized contact/effort safety, coupled cache refresh, endpoint removal/reset and performance remain open."
+      "detail": "The DART dependent-coordinate and joint-local rollback correction is qualified in accepted descendant 68474de, including full staged and exact hosted verification. The earlier c3e05d78 hosted run failed an existing renderer teardown assertion; that failure remains recorded. Current one-body joint admission remains unchanged. Moving-parent articulation, generalized contact/effort safety, coupled cache refresh, endpoint removal/reset and performance remain open."
     },
     {
       "id": "PHY-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Published scene integration 68474de passes independent source review, a fresh reviewer build of nine extraction and four fault/epoch controls, an actual same-graph image lifecycle replay, and the complete normal staged gate: 633 headless and 341 renderer-profile test executions. Every production crate passes strict line/region coverage in its required profiles. Exact hosted run 41131229533 is pending. An earlier run exposed an immediate Linux task-list teardown assertion; investigation preserves the requirement that all owned work is joined. Camera calibration remains private and unaccepted; physical GPU, sensor and performance qualification remain open."
+      "detail": "Accepted 68474de passes independent source review, a fresh reviewer build of nine extraction and four fault/epoch controls, an actual same-graph image lifecycle replay, the complete staged gate and exact hosted run 41131229533. Its on-demand CPU-only bridge extracts actual visual geometry with stable IDs and committed epoch/time; real Vulkan frames follow material updates, model removal and reset. The gate runs 633 headless and 341 renderer-profile test executions, 149 tooling checks and strict coverage for all 17 production crates. Private calibrated camera work and a separately reviewed teardown correction remain unaccepted. Assets, camera/lidar sensors, physical GPUs and comparative performance remain open."
     },
     {
       "id": "QLT-01",
@@ -572,6 +572,16 @@
       "title": "DART body-slot native ownership with assertion-enabled native topology controls",
       "commit": "87b9d77c24dd49e23f15b7f9d0eaba2d924243df",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/87b9d77c24dd49e23f15b7f9d0eaba2d924243df"
+    },
+    {
+      "title": "Canonical ECS visual extraction with actual Bevy worker material-update, removal and reset image lifecycle",
+      "commit": "68474de46963b4be84c1ddb150f1a7cfda347f36",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/68474de46963b4be84c1ddb150f1a7cfda347f36"
+    },
+    {
+      "title": "DART dependent-coordinate velocity/impulse and joint-local rollback, qualified in exact hosted descendant 68474de",
+      "commit": "c3e05d78b4b22ce6f51305c50ccf0f8bd445eb30",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c3e05d78b4b22ce6f51305c50ccf0f8bd445eb30"
     }
   ],
   "remaining": [
@@ -582,7 +592,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Hosted qualification exposed a renderer-client teardown assertion. The team is distinguishing actual owned-thread retirement from Linux task-list visibility and checking bounded Drop ownership; acceptance remains held."
+    "A separately identified renderer Drop-timeout ownership defect and unreliable immediate Linux task-list teardown assertion are being corrected. The fix is not yet accepted; broader lifecycle qualification remains open."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -609,17 +619,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "34b61408c0f5f463b7ed632a1e657e3d0ce774a1",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/34b61408c0f5f463b7ed632a1e657e3d0ce774a1",
-    "rust_tests": 631,
+    "revision": "68474de46963b4be84c1ddb150f1a7cfda347f36",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/68474de46963b4be84c1ddb150f1a7cfda347f36",
+    "rust_tests": 633,
     "coverage": {
       "lines": [
-        7839,
-        7922
+        7850,
+        7933
       ],
       "regions": [
-        12165,
-        12432
+        12174,
+        12441
       ]
     },
     "upstream": {
@@ -629,9 +639,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41119924798"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41131229533"
     },
-    "note": "Exact hosted revision 34b61408 and the complete normal staged gate pass after independent review: 631 headless test executions, 127 renderer-profile executions and 149 tooling checks. The displayed coverage is the headless profile: 7839/7922 lines and 12165/12432 regions. The separately required renderer profile covers 1395/1427 lines and 1998/2069 regions. All 16 production crates pass strictly greater than 95% lines and regions across these profiles; shared tests and core coverage are not summed as unique totals. Real C++ clients and software-Vulkan rendering run. Initial renderer scope is bounded unlit 64\u00d764 boxes; scene extraction, calibrated sensors, physical GPU, full P0 and comparative performance remain open."
+    "note": "Exact hosted 68474de and the complete staged gate pass after independent review: 633 headless test executions, 341 renderer-profile executions and 149 tooling checks. Displayed coverage is headless: 7850/7933 lines and 12174/12441 regions. Separately required renderer coverage is 3859/3965 lines and 5750/5994 regions. All 17 production crates pass strictly greater than 95% lines and regions across required profiles; shared tests and core/scene coverage are not summed as unique totals. Actual C++ clients and software-Vulkan source-to-image lifecycle run. An earlier hosted task-list assertion failed; a real Drop-timeout ownership correction and reliable lifecycle diagnostics are separately under review. No calibrated sensor, physical GPU, full P0 or comparative performance acceptance is claimed."
   },
   "phase_status": {
     "P0": "in_progress",
