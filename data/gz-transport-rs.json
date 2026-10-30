@@ -1,23 +1,28 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T21:12:03.616357Z",
+  "updated_at": "2026-10-30T21:27:39.304715Z",
   "state": "active",
-  "summary": "Owned SIM/REAL/SYS NetworkClock is public at 8cc6295 after independent review and the full ordinary staged hook: 501 Rust tests, 42 tools and 60/60 changed executable lines passed. Exact hosted qualification is pending; accepted signal730 remains latest, with 119 faithful, 7 partial and 292 pending. Three reviewed candidate rows would become 122/7/289 after success.",
+  "summary": "Owned SIM/REAL/SYS NetworkClock is accepted at 8cc6295 after independent review, the full ordinary staged hook and exact hosted success. All 501 Rust tests, 42 tools and 60/60 changed executable lines passed. Ledger totals are now 122 faithful, 7 partial and 289 pending; broader clock and Node statistics behavior remain separate.",
   "model": "Codex transport owner",
   "active": [
     {
       "id": "NET-01",
       "title": "Retained Transport assertion and origin contracts",
-      "detail": "Accepted totals are 119 faithful, 7 partial and 292 pending cases, with complete source assertions and explicit setup translations. Typed/raw shared callbacks, owned retirement, selected lifetime originals and the two application-owned signal termination cases are accepted through 730d3a6. Broader discovery, global ownership and whole-runtime parity remain open."
+      "detail": "Accepted totals are 122 faithful, 7 partial and 289 pending cases, with complete source assertions and explicit setup translations. Shared callbacks, owned retirement, selected lifetime/signal originals and three selected NetworkClock Functionality originals are accepted through 8cc6295. Broader discovery, global ownership and whole-runtime parity remain open."
     },
     {
       "id": "NET-02",
-      "title": "Owned NetworkClock exact hosted qualification pending",
-      "detail": "Public 8cc6295 adds coherent selected signed clock samples and actual canonical publication through an existing Node/shared dispatcher. It preserves native int32-second setter narrowing, missing-field value behavior, actual self-observation and owned admission/retirement. Independent fresh source/target debug/release and real native controls passed; the full staged gate passed 501 Rust / 42 tools with separate strict coverage for both owned crates. Exact hosted 41129099874 is pending. Source review fixed one test command-headroom assumption while preserving all lifecycle predicates and capacity-one assertions. WallClock, BadNetworkClock and Node statistics lifecycle remain separate; no new clock ledger credit is accepted until hosted success."
+      "title": "Retained clock and discovery behavior source audit",
+      "detail": "Accepted 8cc6295 supplies coherent SIM/REAL/SYS samples and actual canonical Clock publication through an existing Node/shared dispatcher, with native int32-second narrowing and owned admission/retirement. Full staged and exact hosted 41129099874 passed. Pure next-source observations confirm native WallClock anchors whole-second UTC then adds monotonic elapsed, so direct SystemTime::now would change values; no WallClock implementation or credit is claimed. Seven partial query rows and remaining original families stay under source audit. The Node statistics lifecycle choice remains unanswered."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Bounded owned SIM/REAL/SYS NetworkClock with actual native wire fidelity and three complete Functionality originals",
+      "commit": "8cc6295d640d96da9b1829c92e614df45080050f",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/8cc6295d640d96da9b1829c92e614df45080050f"
+    },
     {
       "title": "Complete application-owned SIGINT/SIGTERM publisher shutdown originals in isolated children",
       "commit": "730d3a6ecd97b9c97f0472d15c4cb223bff7c057",
@@ -635,13 +640,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 119,
+      "ported": 122,
       "partial": 7
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41129099874"
     },
-    "note": "Public 8cc6295 passed the ordinary canonical full staged hook in its reviewed worktree; clean Main was fast-forwarded to that checked commit and pushed. Full 501 Rust tests, 42 tools, retained native groups and required immutable NSS cases passed. Aggregate 5135/5228 lines and 7265/7512 regions; parent 5054/5147 lines and 7145/7390 regions; owned sys 81/81 lines and 120/122 regions. Changed executable lines 60/60, all in parent; sys has no changes. Independent fresh source/target debug/release each passed 2 pure + 7 public + 2 native/wire controls, rebuilt 63 actual SDK states and 13 setter inputs across 3 bases in both directions; native 3 originals, Clippy and 42 tools passed. A real release fixture QueueFull was diagnosed and corrected with explicit five-command setup headroom, with no retry/deadline/lifecycle predicate weakening; separate capacity-one rollback remains. Candidate 122/7/289 is conditional on exact hosted 41129099874; displayed accepted totals remain 119/7/292. Native inline timing/global identity, WallClock/BadNetworkClock and Node statistics are not broadly claimed."
+    "note": "Exact public 8cc6295 passed hosted 41129099874 after the ordinary canonical full staged hook in its reviewed worktree; clean Main was fast-forwarded to that checked commit and pushed. Full 501 Rust tests, 42 tools, retained native groups and required immutable NSS cases passed. Aggregate 5135/5228 lines and 7265/7512 regions; parent 5054/5147 lines and 7145/7390 regions; owned sys 81/81 lines and 120/122 regions. Changed executable lines 60/60, all in parent; sys has no changes. Independent fresh source/target debug/release each passed 2 pure, 7 public and 2 native/wire controls, rebuilt 63 SDK states and 13 setter inputs across 3 bases in both directions; unchanged native 3 originals, Clippy and 42 tools passed. A real release fixture QueueFull was corrected with explicit five-command setup headroom, preserving every lifecycle predicate/deadline and the separate capacity-one control. Exactly three Functionality rows gained credit: 122 faithful, 7 partial, 289 pending. Native inline timing/global identity, WallClock/BadNetworkClock and Node statistics are not broadly claimed."
   }
 }
