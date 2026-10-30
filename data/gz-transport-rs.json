@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T12:45:35.466149Z",
+  "updated_at": "2026-10-30T13:06:22.893969Z",
   "state": "active",
-  "summary": "Public per-handle retirement commit 2fed754 passed its normal staged gate with 447 Rust tests, 35 tools and 14/14 changed lines; exact hosted verification is pending. Shared typed callbacks at b860b64 are accepted. Accepted ledger remains 113 faithful, 7 partial and 298 pending; the three retirement cases are conditional.",
+  "summary": "Owned subscription retirement is accepted at 2fed754 after exact hosted success: 447 Rust tests, 35 tooling checks and 14/14 changed lines. Ledger is 116 faithful, 7 partial and 295 pending. A separate opaque-callback extension passes author qualification and is under independent review; its whole-case credit remains unclaimed. Node statistics policy is still pending.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -14,10 +14,15 @@
     {
       "id": "NET-02",
       "title": "Shared asynchronous typed callback implementation; statistics policy pending",
-      "detail": "Demand-created shared typed callbacks at b860b64 have exact hosted success. The separately reviewed per-handle retirement API is public at 2fed754 after the normal canonical gate: 447 Rust tests, 35 tooling checks and strict coverage. Exact hosted 41056724452 is pending, so three selected subscriber cases remain conditional. Live Rust registration state is explicitly distinct from native stored-ID validity; selected user work and capture disposal retain their entry/thread bounds. An isolated opaque-callback extension reuses the existing pool, passes 18 pure controls and is still under author qualification; it adds no new worker or dependency. Full CallbackScope credit is not claimed. The owner statistics lifecycle choice remains pending."
+      "detail": "Shared typed callbacks and explicit per-handle retirement are accepted through public 2fed754. Exact hosted success qualifies the three selected subscriber lifecycle originals, preserving native readiness, quiet intervals, logical ownership and explicit live-Rust versus native stored-ID semantics. The separate opaque-callback candidate reuses the same dispatcher and admission path with no extra worker/dependency/pin; 18 pure and six public/native controls pass debug/release, plus affected 174-library/11-typed/5-owned regressions. Full CallbackScope source/reset/null-observation fidelity remains under independent review, with no new credit. Native replay is coordinated around the simulator gate. The owner statistics lifecycle choice remains unanswered and dependent Node behavior is untouched."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Explicit owned subscription retirement and three complete subscriber lifecycle originals",
+      "commit": "2fed75492b0eef4bb012c2d4f70f917115b20c2f",
+      "url": "https://github.com/gazebosim-rs/gz-transport-rs/commit/2fed75492b0eef4bb012c2d4f70f917115b20c2f"
+    },
     {
       "title": "Demand-created bounded shared typed callbacks with two complete lambda originals",
       "commit": "b860b64e26877a05e94ecabf982da24ad70d00af",
@@ -605,13 +610,13 @@
     },
     "upstream": {
       "total": 418,
-      "ported": 113,
+      "ported": 116,
       "partial": 7
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-transport-rs/actions/runs/41056724452"
     },
-    "note": "The ordinary canonical staged hook at public 2fed754 passed 447 Rust tests, 35 tools, all required native groups, 4699/4804 lines, 6610/6870 regions and 14/14 changed executable lines. Independent source/runtime/metadata review verified all three native subscriber originals, exact readiness, shared opaque/live-state boundaries, cancellation and real-exit budgets. Exact hosted 41056724452 is pending; accepted ledger counters remain 113/7/298, while the three source rows are conditional candidates for 116/7/295. Previous callback b860b64 has exact hosted SUCCESS41052553612. No broad global identity, timing or raw-inline parity is implied."
+    "note": "Exact hosted 41056724452 completed SUCCESS at 2fed75492b0eef4bb012c2d4f70f917115b20c2f. The normal canonical staged hook passed 447 Rust tests, 35 tools, all required unchanged native groups, 4699/4804 lines, 6610/6870 regions and 14/14 changed executable lines. Independent fresh-source review verified 14 pure and five public/native controls plus all three unchanged native originals and the corrected readiness replay. Exactly BoolOperatorTest, PubSubWithCreateSubscriber and PubSubWithMixedSubscribeAPIs move 113/7/298 to 116/7/295. The original weak post-drop wait remains distinct from supplemental quiet proof. Native stored-ID validity, live Rust registration and selected user completion are explicitly separate; no broad global identity, timing or raw-inline equivalence is claimed."
   }
 }
