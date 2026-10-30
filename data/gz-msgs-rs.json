@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-30T03:00:38.746601+00:00",
+  "updated_at": "2026-10-30T03:14:39.506853+00:00",
   "state": "active",
-  "summary": "Bounded source-aware nested extension declarations are independently reviewed and published after strict local qualification; exact hosted CI is pending.",
+  "summary": "Bounded source-aware nested extension declaration formatting is accepted after independent review, strict staged qualification and exact hosted success.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Published nested extension declarations awaiting exact CI",
-      "detail": "Final independent review passed 15 focused Rust checks and 125 complete pinned native peer/CLI observations: 108 source-aware layouts match versus 115 native admissions. The normal Main staged hook passed all 176 Rust tests, clean downstream consumer, unchanged strict production/vendor coverage and 71/71 changed lines. Exact hosted qualification is pending; prior accepted slice remains 3479155. Explicit JSON names/defaults/groups/nonempty options/true MessageSet and standalone unknown-presence descriptors remain unsupported. Original tests, descriptors, peer, dependencies and 83-case ledger are unchanged."
+      "title": "Remaining MSG-02 declaration and runtime qualification",
+      "detail": "Ordinary nested proto2 extension declarations with original JSON-name absence are accepted: 125 complete native observations, 108 supported layouts versus 115 native admissions; all 176 Rust checks, strict coverage and exact hosted qualification pass. Explicit JSON names/defaults/groups/nonempty options/true MessageSet and standalone unknown-presence declarations remain unsupported. Runtime extension decoding and full MSG-02 acceptance remain open; original peer/schema/corpus bytes, dependencies and all 83 mappings are preserved."
     },
     {
       "id": "MSG-02-upstream",
@@ -482,6 +482,11 @@
       "title": "Ordinary explicit-false MessageSet option formatting with preserved metadata and true-feature guard",
       "commit": "3479155f0399beb69180fbe6072325941b36aefb",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/3479155f0399beb69180fbe6072325941b36aefb"
+    },
+    {
+      "title": "Source-aware nested proto2 extension declarations with preserved order, metadata and explicit feature boundaries",
+      "commit": "a2b0079888a32136b69aac13b0ddfede8a13f734",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a2b0079888a32136b69aac13b0ddfede8a13f734"
     }
   ],
   "remaining": [
@@ -516,9 +521,9 @@
       "partial": 0
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/40994818141"
     },
-    "note": "Independent fresh source/native review and normal Main strict staged qualification passed; exact hosted qualification remains pending. All 176 Rust checks and clean downstream consumer pass. All 19 production files retain strict line and region coverage; 71/71 changed production lines covered. Vendor-owned reflect remains 103/105 lines and 214/216 regions, derive 6/6 and 8/8. Old descriptor/native-peer/schema/corpus bytes, wire behavior and all 83 original mappings are preserved. No runtime extension, full MSG-02 or performance acceptance is claimed."
+    "note": "Independent fresh source/native review and normal Main strict staged qualification passed; exact hosted verification, staged-boundary regressions and source-package fresh-cache qualification passed. All 176 Rust checks and clean downstream consumer pass. All 19 production files retain strict line and region coverage; 71/71 changed production lines covered. Vendor-owned reflect remains 103/105 lines and 214/216 regions, derive 6/6 and 8/8. Old descriptor/native-peer/schema/corpus bytes, wire behavior and all 83 original mappings are preserved. No runtime extension, full MSG-02 or performance acceptance is claimed."
   }
 }
