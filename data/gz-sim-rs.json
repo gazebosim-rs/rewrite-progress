@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T12:39:06Z",
+  "updated_at": "2026-10-30T12:59:42Z",
   "state": "active",
   "summary": "Loaded-joint preflight and sampling demand passed exact hosted CI. Jointless scenes have no such callbacks; last-consumer retirement and loaded reset are qualified. Persistent-controller demand is now in independent review. Server workers, generic input/physics activation, broader actuation and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Accepted 2671fe4 passed exact hosted run 41055155796 and the full hook: 619 Rust, 103 tooling and 69/69 changed executable lines. Joint preflight and committed/reset sampling are absent without loaded joints, retire after the last model and restore on loaded reset. Cross-family observer removals reconcile at lifecycle boundaries; unsupported additions fault explicitly. A separate persistent-controller candidate passed 198 Scene tests, six focused controls and Clippy, and is in independent review. Generic input/physics callbacks, server workers and CPU/RSS measurements remain open."
+      "detail": "Accepted 2671fe4 passed exact hosted run 41055155796: 619 Rust, 103 tooling and 69/69 changed executable lines. Joint preflight/sampling demand, reset and cross-family retirement are qualified. The next persistent-controller candidate passed independent 200 Scene tests, Clippy and source review; its full normal commit hook is now running. Controller absence, typed activation, last-consumer teardown, reset and observer faults are covered; zero retains controller state. Generic input/physics callbacks, server workers and CPU/RSS measurements remain open."
     },
     {
       "id": "SYS-CONTROL",
