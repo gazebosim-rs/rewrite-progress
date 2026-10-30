@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-transport-rs",
-  "updated_at": "2026-10-30T14:18:18.504093Z",
+  "updated_at": "2026-10-30T14:40:16.868665Z",
   "state": "active",
-  "summary": "Opaque callbacks are accepted at 38c0d4f after the strict normal gate and exact hosted success: 457 Rust tests, 35 tools and 58/58 changed executable lines. Ledger totals are 117 faithful, 7 partial and 294 pending. A private two-channel discovery relay implementation is ready for independent review. Dependent Node statistics lifecycle still waits on the owner choice.",
+  "summary": "Opaque callbacks remain accepted at 38c0d4f after the strict gate and exact hosted success: 457 Rust tests, 35 tools and 58/58 changed executable lines. Ledger totals remain 117 faithful, 7 partial and 294 pending. The private discovery relay is undergoing final frame-boundary requalification before independent review. Node statistics lifecycle still waits on the owner choice.",
   "model": "Codex transport owner",
   "active": [
     {
@@ -13,8 +13,8 @@
     },
     {
       "id": "NET-02",
-      "title": "Two-channel relay ready for independent review; statistics policy pending",
-      "detail": "A private implementation now forwards real discovery packets on both channels, retains original unknown/wrong-wire bytes, learns bounded IPv4 peers and exposes worker-owned relay admission/query APIs. Author validation passed 317 affected serial tests, including all 111 unchanged interoperability tests; the ten new controls also pass in release and instrumented profiles. The unchanged native relay original and actual C++ relay-to-Rust reinjection passed. Focused changed-line evidence is 134/134 and remains diagnostic. Independent review, the full normal staged coverage gate and exact hosted qualification are pending; no relay ledger credit or multi-host/global/environment completion is claimed. Existing GZ_RELAY rejection remains unchanged. Dependent Node statistics behavior is still held on the unanswered owner policy choice."
+      "title": "Discovery relay frame-boundary qualification; statistics policy pending",
+      "detail": "The private two-channel relay prototype has real native packet forwarding and bounded worker-owned peer APIs. A native-backed boundary control prompted a narrow Flags-only transformation revision. Four revised pure controls pass; revised runtime/profile coverage and independent review remain pending. Earlier 317-test affected and ten-control release/instrumented results, including diagnostic 134/134 changed lines, belong to the prior helper and do not qualify this revision. No relay ledger credit or multi-host/global/environment completion is claimed. Existing GZ_RELAY rejection is unchanged. Dependent Node statistics behavior remains held on the unanswered owner policy choice."
     }
   ],
   "accepted_slices": [
