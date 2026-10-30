@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-30T06:46:57Z",
+  "updated_at": "2026-10-30T07:09:10Z",
   "state": "active",
-  "summary": "Standalone Plugin metadata is accepted after independent review, the normal strict staged gate and exact hosted success. Original mappings are now 201 complete/27 partial; broader SDF and runtime work remains open.",
+  "summary": "Native-valid Empty geometry values/defaults are accepted after independent native/positive/source review, normal staged success and exact hosted success. Missing Collision geometry now has a real Empty representation; original mappings remain 201 complete/27 partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review native Empty defaults and roundtrip",
-      "detail": "Actual Empty metadata/default parsing and canonical output now pass 547 author Rust/17 tooling checks and Clippy. Prior independent scope/positive review approved the exact former standalone/Visual/missing+bare Collision negatives before stronger folds. Native proof passes 38 profiles, constructor fixture, 20 Geometry-or-Visual exchanges and 18 retained strict differences; Geometry 48/46/originals and Visual 28/26/original regressions pass. Final source review is pending before normal/hosted gates. Visual absent/bare None stays distinct; no density, physical shape, Element-origin credit or simulator pin changes. Consumer explicit handling is required before adoption. Accepted counts stay 201/27.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b5c3715bdd44e4456008a6f4176e2af0e9674a06"
+      "title": "Prepare genuine Collision metadata serialization",
+      "detail": "Empty commit ce5b2e9 is accepted: default/bare/explicit geometry and missing-Collision defaults roundtrip through actual Empty values. Visual absent/bare None remains distinct. Consumers must explicitly reject/support Empty before a simulator dependency pin update; no physics, density or pin change here. Next Collision serialization can preserve its genuine EMPTY constructor setup. OS-byte Messages review is approved, final metadata pending. Remaining density/Element/resource/runtime work is explicit.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ce5b2e90be21e3452d5144f25f813bbf389aca4f"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve native Empty geometry values and defaults",
+      "commit": "ce5b2e90be21e3452d5144f25f813bbf389aca4f",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ce5b2e90be21e3452d5144f25f813bbf389aca4f"
+    },
     {
       "title": "Roundtrip standalone opaque Plugin metadata",
       "commit": "b5c3715bdd44e4456008a6f4176e2af0e9674a06",
@@ -791,17 +796,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "b5c3715bdd44e4456008a6f4176e2af0e9674a06",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/b5c3715bdd44e4456008a6f4176e2af0e9674a06",
-    "rust_tests": 543,
+    "revision": "ce5b2e90be21e3452d5144f25f813bbf389aca4f",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/ce5b2e90be21e3452d5144f25f813bbf389aca4f",
+    "rust_tests": 547,
     "coverage": {
       "lines": [
-        7535,
-        7562
+        7543,
+        7570
       ],
       "regions": [
-        11814,
-        12054
+        11825,
+        12065
       ]
     },
     "upstream": {
@@ -811,8 +816,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41010712924"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41017181681"
     },
-    "note": "Normal strict hook and exact hosted success passed 543 Rust/17 tooling tests, formatting, Clippy, docs and required coverage: 7535/7562 lines, 11814/12054 regions; 74/74 actual changed executable lines (includes moved serializer body). Fresh independent review passed 33 selected Rust controls, native 13 inputs/exact fixture/11 actual exchanges/unchanged Plugin original plus accepted Visual 28/fixture/25/original. Shared serializer branch body mechanically byte-identical; Visual diagnostics retained. Complete original setup/output/reload name/file/child count/name mapping reviewed using public metadata and maintained XML observations, no child DOM facade. Opaque attributes/comments/CDATA/prefix/order and owned-attribute guards remain. No host/runtime execution, stream-format/insertion-failure/mutation/identity or performance claim."
+    "note": "Normal strict gate and exact hosted success passed 547 Rust/17 tooling, formatting, Clippy, docs and required coverage; actual changed executable 11/11. Independent fresh-source review passed 33 distinct Rust checks/all 17 tooling, native 38 profiles/exact constructor fixture/20 Geometry-or-Visual exchanges/18 named strict differences, plus Geometry48/46/two originals and Visual28/26/original. Prior independent approvals verified native positives and concrete Rust assertions before replacing only exact temporary rejection cases. Shared allowed/cardinality policy and Visual None distinction remain, source/frame/full-object positives strengthened. Existing static-model preimage guard preserved through reversible reviewed successor metadata. No ledger promotion, density, physics, Element-origin or consumer pin change."
   }
 }
