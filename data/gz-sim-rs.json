@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T21:01:21.370772+00:00",
+  "updated_at": "2026-10-30T21:31:11.810609+00:00",
   "state": "active",
-  "summary": "Canonical scene-to-renderer integration passed independent review and is running both required staged profiles. The next DART joint-state correction is published and awaiting exact hosted acceptance; independent repository work continues.",
+  "summary": "Canonical ECS-to-renderer integration is published after full local gates. Hosted qualification is pending; an earlier hosted shutdown-test failure is being investigated without bypassing checks. Transport NetworkClock is independently accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "PHY-05",
       "title": "Qualifying broader motion and joint-limit domains",
-      "detail": "Published correction c3e05d78 uses dependent DART coordinate indices for constrained velocity and impulse operations and joint-local rollback state. Independent source review and a fresh reviewer build of 79 focused controls passed, followed by the complete normal staged gate; exact hosted run 41127331239 remains pending. It preserves current one-body joint admission. Moving-parent joints, generalized contact and effort safety, coupled cache refresh, endpoint removal/reset, compound-shape parity and performance remain open."
+      "detail": "Published correction c3e05d78 passed independent review, 79 fresh reviewer controls and the complete local staged gate. Exact hosted run 41127331239 failed an existing renderer-client teardown assertion, so it is not accepted. The failure is under investigation; the later published scene revision includes the correction. Current one-body admission remains unchanged. Moving-parent articulation, generalized contact/effort safety, coupled cache refresh, endpoint removal/reset and performance remain open."
     },
     {
       "id": "PHY-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "The bounded renderer is accepted at revision 34b61408 after exact hosted run 41119924798. Canonical scene extraction now passes independent source review, a fresh reviewer build of nine extraction and four fault/epoch tests, and an actual same-graph ECS-to-worker image lifecycle replay. It uses an optional CPU-only bridge, stable IDs and committed timestamps; no rendering systems run implicitly. The complete staged headless and expanded renderer profiles are running. Private renderer-profile results cover 341 test executions with strict per-crate thresholds; these are not yet accepted Main metrics. Calibrated sensors, assets, physical GPU qualification and comparative performance remain open."
+      "detail": "Published scene integration 68474de passes independent source review, a fresh reviewer build of nine extraction and four fault/epoch controls, an actual same-graph image lifecycle replay, and the complete normal staged gate: 633 headless and 341 renderer-profile test executions. Every production crate passes strict line/region coverage in its required profiles. Exact hosted run 41131229533 is pending. An earlier run exposed an immediate Linux task-list teardown assertion; investigation preserves the requirement that all owned work is joined. Camera calibration remains private and unaccepted; physical GPU, sensor and performance qualification remain open."
     },
     {
       "id": "QLT-01",
@@ -581,7 +581,9 @@
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Hosted qualification exposed a renderer-client teardown assertion. The team is distinguishing actual owned-thread retirement from Linux task-list visibility and checking bounded Drop ownership; acceptance remains held."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
