@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-30T14:00:41Z",
+  "updated_at": "2026-10-30T14:24:24.389031+00:00",
   "state": "active",
-  "summary": "Loaded-joint preflight and sampling demand passed exact hosted CI. Jointless scenes have no such callbacks; last-consumer retirement and loaded reset are qualified. Persistent-controller demand is now in independent review. Server workers, generic input/physics activation, broader actuation and performance remain open.",
+  "summary": "Rust 1.97.1 is accepted after independent review, the complete local gate and exact hosted CI. Built-in IMU, joint sampling and force callbacks follow bounded consumer demand. Reference inventory closure, native balanced-workload baselines and optional Bevy rendering remain under development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -34,22 +34,22 @@
     {
       "id": "REF-02",
       "title": "Close P0 native test inventory and ledger reconciliation",
-      "detail": "The selected immutable headless listing contains 1,175 registrations, 578 gtest configurations and 4,589 expanded cases. Eleven registrations remain unqualified in the latest accepted inventory, and other profiles plus complete source-ledger reconciliation remain open. Resolve or explicitly review each remaining disposition; listings are not execution passes or Rust-port completion."
+      "detail": "Independent review is underway for a bounded packet preserving all 1,175 registration identities and existing case payloads. Ten unchanged non-gtest native wrappers actually passed in the immutable SDK; one exact Zenoh-disabled registration is explicitly profile-blocked. No broader ledger, gtest runtime or Rust-port completion is claimed."
     },
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Selected headless streaming and kernel measurements exist. The representative articulated-robot, many-entity, camera/lidar native baseline, raw repeated samples/variance, complete hardware/configuration record and ratified budgets are still missing. Capture native baselines separately from later Rust speedup qualification; unavailable configurations need explicit evidence."
+      "detail": "A native DART double-pendulum capture is running with repeated fresh processes, raw q/dq trajectories, fixed CPU affinity and loaded-library hashes. It is an installed local profile pending independent review, not a qualified immutable DART build, full balanced suite or Rust speedup. Many-entity and camera/lidar baselines and ratified budgets remain open."
     },
     {
       "id": "RENDER-01",
       "title": "Starting optional Bevy offscreen rendering",
-      "detail": "A dedicated rendering worker is implementing the first isolated renderer slice. Initial dependency and GPU qualification checks are underway for Bevy 0.20. The target is a real no-window primitive/camera render, derived f64 Z-up scene snapshots and bounded readback lifecycle. Default headless builds must remain free of renderer/GPU dependencies. No rendering, sensor parity or performance completion is claimed."
+      "detail": "Private optional Bevy rendering has produced real software-rendered frames and lifecycle controls. A demand-owned subprocess prototype avoids retained Bevy worker pools in the simulator process. Supervisor coverage remains below the strict gate, teardown failure limits remain open, and physical GPU qualification is unavailable. No Main renderer adoption or sensor parity is claimed."
     },
     {
       "id": "QLT-01",
-      "title": "Qualifying the user-approved Rust 1.97.1 compiler baseline",
-      "detail": "Published 8e826d0 changes only the workspace minimum compiler, pinned toolchain, CI install, README and recorded D27. Independent review and the complete unchanged local hook passed: 625 Rust, 103 tooling, native clients and strict coverage. Exact hosted run 41067269660 is pending. No independent repository toolchain, dependency lock or renderer feature is adopted by this compiler change."
+      "title": "Rust 1.97.1 compiler baseline accepted",
+      "detail": "Published 8e826d0abb34103f8bef848e91b8b7bc91a5d838 passed independent review, the complete unchanged local hook and exact hosted run 41067269660: 625 Rust tests, 103 tooling checks, real native clients and strict coverage for all 11 production crates. This compiler-only change adopts no renderer feature or independent repository compiler change."
     }
   ],
   "accepted_slices": [
@@ -537,6 +537,11 @@
       "title": "Persistent force callbacks follow configured or typed controller demand, with reset and observer-safe retirement",
       "commit": "dae6f7d611fe9c156c5c2ec9fc97406e82de9723",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dae6f7d611fe9c156c5c2ec9fc97406e82de9723"
+    },
+    {
+      "title": "User-approved Rust 1.97.1 baseline with complete headless/native/coverage requalification",
+      "commit": "8e826d0abb34103f8bef848e91b8b7bc91a5d838",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8e826d0abb34103f8bef848e91b8b7bc91a5d838"
     }
   ],
   "remaining": [
@@ -572,8 +577,8 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "dae6f7d611fe9c156c5c2ec9fc97406e82de9723",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dae6f7d611fe9c156c5c2ec9fc97406e82de9723",
+    "revision": "8e826d0abb34103f8bef848e91b8b7bc91a5d838",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8e826d0abb34103f8bef848e91b8b7bc91a5d838",
     "rust_tests": 625,
     "coverage": {
       "lines": [
@@ -592,9 +597,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41063235325"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41067269660"
     },
-    "note": "Controller-demand commit dae6f7d passed exact hosted CI and its full normal hook under Rust 1.95: 625 Rust and 103 tooling tests, with 42/42 changed executable lines covered. All 11 production crates exceed 95% lines and regions. Independent review passed 200 Scene tests and Clippy. Configured and typed controllers own their force callback; zero retains controller state. Generic input/physics callbacks, server workers, measured CPU/RSS and full original ApplyJointForce remain open. The separately published Rust 1.97.1 baseline passed the same full local gate with unchanged coverage; its exact hosted acceptance is pending."
+    "note": "Compiler-only commit 8e826d0 passed independent review, the unchanged complete staged hook under Rust 1.97.1 and exact hosted CI. All 625 Rust tests, 103 tooling checks and native client gates passed. Workspace coverage is 7809/7891 lines and 12120/12383 regions; all 11 production crates exceed 95% for both. No production Rust changed. Renderer prototypes and native baseline candidates are excluded from accepted coverage and phase completion."
   },
   "phase_status": {
     "P0": "in_progress",
