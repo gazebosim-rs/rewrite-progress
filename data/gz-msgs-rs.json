@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T00:45:32Z",
+  "updated_at": "2026-10-31T00:57:27Z",
   "state": "active",
-  "summary": "Investigating a bounded reflected packed-field decode optimization; generated LaserScan performance remains open.",
+  "summary": "A bounded reflected packed-field kind-reuse candidate is ready for independent review; generated LaserScan performance remains open.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Reflected packed-field decode cost",
-      "detail": "Private implementation hoists descriptor kind resolution while retaining maintained scalar parsers and packed merge-loop semantics. Focused validation and independent review are pending. The accepted generated-code LaserScan benchmark remains distinct and slower."
+      "title": "Reflected packed-field kind reuse review",
+      "detail": "Private runtime candidate preserves existing scalar parsers and error cursors. Sixteen new controls, existing contracts and signed-zero controls, formatting and Clippy pass. Focused new vendor additions cover23/23lines and132/136regions; full coverage, normal staged/native/hosted gates and performance qualification remain pending. Accepted counts still describe published ae3721d."
     }
   ],
   "accepted_slices": [
