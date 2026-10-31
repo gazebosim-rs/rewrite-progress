@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T21:01:43Z",
+  "updated_at": "2026-10-31T22:18:00Z",
   "state": "active",
-  "summary": "Local Zenoh headless validation passes: 783 tests and strict line/region coverage in all 12 headless crates. Rendering, equal-work app reference, staged and exact hosted qualification remain open.",
+  "summary": "Both local Zenoh coverage profiles pass. The independently reviewed matched TPE clock/pose/IMU comparison measures 63.29us native versus58.56us Rust per step. The normal combined staged hook is now running; hosted/release qualification remains open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "A complete local headless execution passes 783 tests, all three retained timing controls and real C++ Zenoh peer checks. Independent review confirms strict coverage in every one of 12 headless crates: workspace 9757/9931 lines and 14931/15372 regions; server 2401/2491 and 3478/3655. Changed coverage passes for proto177/178, CLI4/4 and server1591/1654. The IMU readiness repair preserves frame deadlines, timestamps, sequences, counters and noise assertions; no production waits were added. Coverage report handling now preserves all 57 owned records and 122 zero-hit entries exactly, while retaining the full generated-binding guard; no threshold or denominator was reduced. This is reviewed local execution and retained-data qualification, not current staged, renderer, hosted or full end-to-end acceptance. Three agents prepare current camera/renderer checks, build the separate equal-work C++ application reference and review integration. The real app build passed immutable-base preflight but stopped before compilation on source-cache ownership; its contained copy fix passed a real Git probe and is under review. Pressure/absence, equal-work measurements and final release gates remain required."
+      "detail": "Reviewed frozen-source diagnostics pass783 headless and435 renderer tests, real C++ Zenoh peers and actual software Vulkan workers. Every required crate exceeds95% for lines and regions: headless9757/9931 and14931/15372; renderer5058/5191 and7523/7830. A separate four-case regression proves IMU buffer release after last removal and reset failure. The source-built immutable C++ Zenoh app and exact Rust release/runtime closure are independently qualified. Seven alternating measured pairs of1000 steps validate the matched clock/pose/IMU workload: native63.29us, Rust58.56us median per-step latency (about7.5% lower); all raw physical/wire/count/cadence and library checks pass. This is one small TPE case, not balanced robotics or a whole-engine result. Historical direct and unpaced ratios remain contextual comparisons with unequal work. The NORMAL staged commit hook is checking the combined current tree with unchanged gates; no current hosted acceptance or public migration commit yet. Pressure/absence, broader systems and release work remain open."
     },
     {
       "id": "ACT-01",
