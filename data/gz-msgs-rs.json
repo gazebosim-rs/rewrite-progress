@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T03:53:37Z",
+  "updated_at": "2026-10-31T04:15:37Z",
   "state": "active",
-  "summary": "The reviewed opt-in append helper is published after the full local protected gate; exact hosted qualification is pending.",
+  "summary": "The optional standard-prost append helper is accepted after independent review, protected staging and exact hosted archive qualification.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Opt-in standard-prost append helper",
-      "detail": "Published candidate 19bf909 passed independent source/API review and the ordinary full protected staged gate:209 Rust tests,7559 native JSON outcomes, strict coverage on all20 production files and all owned vendor patches. Exact messages workflow41166237874 is running; whole-workflow success and downloaded evidence are still required. Accepted counters remain62ac297/202. Default codecs, consumer pins and schemas are unchanged; the public helper is not separately timed."
+      "title": "Typed codec throughput and retained wire qualification",
+      "detail": "Opt-in encode_append is accepted at 19bf909 with preserved prefixes, fallible reservation and returned-error rollback. The whole hosted workflow and downloaded archive/fresh-cache evidence passed. Default codecs and consumer pins are unchanged. The exact public helper has not been separately timed; reviewed precursor encoding gains do not establish native parity, a decode improvement or broader robotics/simulator performance."
     }
   ],
   "accepted_slices": [
@@ -527,6 +527,11 @@
       "title": "Reflected repeated-field kind reuse with preserved scalar parser and partial-state semantics",
       "commit": "62ac297e7bb4b87e23089c8f838f9ed32dc92832",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/62ac297e7bb4b87e23089c8f838f9ed32dc92832"
+    },
+    {
+      "title": "Opt-in slice-backed standard-prost append encoder",
+      "commit": "19bf909daa4a5d121d889cdeaded0561cf1c13f1",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/19bf909daa4a5d121d889cdeaded0561cf1c13f1"
     }
   ],
   "remaining": [
@@ -543,17 +548,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "62ac297e7bb4b87e23089c8f838f9ed32dc92832",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/62ac297e7bb4b87e23089c8f838f9ed32dc92832",
-    "rust_tests": 202,
+    "revision": "19bf909daa4a5d121d889cdeaded0561cf1c13f1",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/19bf909daa4a5d121d889cdeaded0561cf1c13f1",
+    "rust_tests": 209,
     "coverage": {
       "lines": [
-        3579,
-        3603
+        3620,
+        3644
       ],
       "regions": [
-        5902,
-        6007
+        5974,
+        6079
       ]
     },
     "upstream": {
@@ -563,8 +568,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41154966206"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41166237874"
     },
-    "note": "This quality record still describes accepted62ac297 and its exact successful hosted run. Published append-helper candidate19bf909 passed the complete local gate but hosted workflow41166237874 and downloaded source-archive/fresh-consumer evidence remain pending. No exact-helper timing, native parity or broader performance qualification is claimed."
+    "note": "Exact whole workflow 41166237874 passed for this public commit, including full verification, real partial-staging rejection, immutable source archive and fresh-cache installed CLI/downstream checks. Downloaded evidence binds all 893 source blobs and the Git tree to this revision; reviewed sources and coverage inputs match. Hosted and local results agree: 209 regular Rust tests, zero ignored, 7,559 native JSON outcomes, and strict line/region coverage on all 20 production files. The helper has 41/41 lines and 72/72 regions covered; owned derive patches remain 6/6 lines and 8/8 regions, and reflection patches 126/128 lines and 347/352 regions. All 83 original mappings remain unchanged. No default codec or consumer pin switch, exact-helper timing, native parity or broader MSG-02 completion is claimed."
   }
 }
