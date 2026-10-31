@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T09:06:15Z",
+  "updated_at": "2026-10-31T09:13:02Z",
   "state": "active",
-  "summary": "A native-backed private slice implements the eight remaining canonical integer extension-default kinds; historical transitions await prior review.",
+  "summary": "The remaining canonical integer extension-default packet is frozen for prior review; all historical predicates and fixtures remain unchanged.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Remaining canonical integer extension defaults",
-      "detail": "Native-first probes matched 132 canonical range/layout cases across UINT32/64, SINT32/64, FIXED32/64 and SFIXED32/64 using maintained I32/I64/U32/U64 values. The implementation preserves the exact raw-to-canonical guard and loader policy. Two new tests pass over 601 complete native rows: 283 supported, 165 formatter rejections and 153 loader rejections, including 97 native-positive cases and all 19 exact prior gaps. Seven historical positive transitions are prepared; old predicates, fixtures and native streams remain untouched pending independent prior approval. Retained checks, Clippy, review and full staged/hosted gates remain pending. Accepted quality stays 65ebd8a / 215 and original mappings stay 83; no parser/vendor/schema/default codec/pin/timing change."
+      "detail": "The eight-kind implementation uses maintained I32/I64/U32/U64 values and the exact canonical-decimal guard without changing loader policy. Two new tests pass across 601 complete native rows (283 supported, 165 formatter rejections, 153 loader rejections); 97 native-positive loader cases include all 19 exact historical gaps. Six unaffected extension tests, both retained integer snapshots, hostile-Git native replay and Clippy/fmt/Python checks pass. Nine source paths are frozen. Seven exact old positive dispositions, representing four descriptor payloads, await independent prior approval; old test files/fixtures/native streams remain byte-identical. Full staged/hosted gates remain unrun. Accepted quality stays 65ebd8a / 215 and original mappings stay 83; no parser/vendor/schema/default codec/pin/timing change."
     }
   ],
   "accepted_slices": [
