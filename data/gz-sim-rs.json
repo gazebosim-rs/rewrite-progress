@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T04:50:44.840617+00:00",
+  "updated_at": "2026-10-31T05:05:02.155450+00:00",
   "state": "active",
-  "summary": "Bounded DART moving-parent backend is accepted after exact hosted verification. World-rooted DART scene loading passed full local gates and awaits hosted verification. Camera publication has real software-rendered C++ delivery but still fails strict region coverage.",
+  "summary": "Review found a native rollback defect after rejected DART joint attachment. Repair is prioritized before new feature publishing. Explicit camera output passed strict private coverage and independent real C++/software-worker checks; full integration is held.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "id": "PHY-03",
-      "title": "Qualifying bounded DART articulated scenes",
-      "detail": "Backend f60d3a3 is accepted after full staged and exact hosted41168474334 success, verified against downloaded60-source/25-input evidence. Reviewed scene506f94a is published: its full staged gate passed672 headless and387 renderer executions,152 tooling checks, all17 production crates and60/60 changed scene lines in both profiles. Headless8187/8280 lines,12710/12999 regions; renderer4449/4566 and6636/6904. Exact hosted41169945049 remains pending. Controls cover native versus public declaration order, analytical coupled reaction, reset/restoration, external-contact load refusal and leaf-first removal. The original free-root contacting ApplyJointForce fixture, larger graphs and performance remain open."
+      "title": "Repairing rejected-joint rollback in the published DART backend",
+      "detail": "A new free-root extension probe exposed native child-velocity drift after two contact-refused attachments, then reproduced it using the already-published world-rooted topology. Rust cached states remained unchanged while later successful attachment revealed changed native motion. Two physics agents are isolating a minimal repair and strong failing-before/passing-after regression, separately from the unpublished seven-DOF extension. New camera publication is held; existing guards, solver settings and assertions remain unchanged. Scene506f94a already passed its full local gate and awaits exact hosted41169945049, but that does not qualify the newly found rollback sequence. Original ApplyJointForce contacts and larger graphs remain open."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Private gz-camera-output delivers actual SDF-derived software-rendered64x64 RGB and CameraInfo to Rust and a real C++ SDK subscriber with preserved acquisition timestamps. Real buffered-frame controls cover reset/removal/replacement/fault/lost demand and owner restart. Independent review passed18 CPU controls,2 protocol-error pipe tests,Clippy/fmt and24 profile controls; typed peer failures are not GPU device-fault injection. Latest measured strict coverage is286/301 lines but377/400 regions, so it remains unaccepted. Additional no-Ready and child-isolated thread-exhaustion controls passed and are being remeasured through the unchanged renderer profile. No threshold/exclusion change, default GPU dependency, automatic cadence, native image parity or full sensor-family claim."
+      "detail": "Private optional camera-output passed strict renderer coverage:287/300 lines and376/395 regions, with292/297 changed executable lines and all selected crates above95%. Root independently replayed all6 source-bound same-graph software-Vulkan worker controls, including real C++ Image/CameraInfo delivery and buffered-frame invalidation. Independent CPU18,typed protocol9-mode controls,Clippy/fmt and24 profile controls also passed. Constructor now retains validated immutable worker configuration instead of repeating an impossible fallible path conversion; executable authentication is not claimed. All23 reviewed source/guidance paths are retained locally but unstaged while the separate published DART rollback defect is repaired. Full Main headless/staged/hosted gates remain required; no cadence/native-image/physical-GPU/performance completion is claimed."
     },
     {
       "id": "QLT-01",
@@ -659,7 +659,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41168474334"
     },
-    "note": "Exact hosted f60d3a3 and all required steps passed after independent review and the unchanged full staged retry. Downloaded evidence matches all60 source hashes and25 build/check inputs against exact Git objects, plus both local coverage/changed-line maps. There were668 headless and383 renderer executions and152 tooling checks, not a summed unique count. Headless8129/8222 lines and12590/12875 regions; renderer4391/4508 and6516/6780. All17 crates pass required profile thresholds; changed DART150/151. The initial disk-space failure remains separate. Native observations and safety probes qualify only the bounded world-rooted two-body backend. Scene admission awaits its separate hosted result; no general articulation, external contact, original ApplyJointForce or comparative performance completion is claimed."
+    "note": "Exact hosted f60d3a3 and all required steps passed after independent review and the unchanged full staged retry. Downloaded evidence matches all60 source hashes and25 build/check inputs against exact Git objects, plus both local coverage/changed-line maps. There were668 headless and383 renderer executions and152 tooling checks, not a summed unique count. Headless8129/8222 lines and12590/12875 regions; renderer4391/4508 and6516/6780. All17 crates pass required profile thresholds; changed DART150/151. The initial disk-space failure remains separate. Native observations and safety probes qualify only the bounded world-rooted two-body backend. Scene admission awaits its separate hosted result; no general articulation, external contact, original ApplyJointForce or comparative performance completion is claimed. Follow-up review has since reproduced a refused-joint-attachment rollback defect in this published backend domain. The accepted CI result remains factual, but it does not cover that newly discovered sequence; a separate regression and repair are in progress before further simulator feature publication."
   },
   "phase_status": {
     "P0": "in_progress",
