@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T00:41:18.432761+00:00",
+  "updated_at": "2026-10-31T01:13:14.703523+00:00",
   "state": "active",
-  "summary": "The calibrated camera slice is published after complete staged checks and awaits exact hosted acceptance. A separate reviewed SDF consumer migration is being qualified to support correct lens-presence semantics without silently accepting unsupported metadata.",
+  "summary": "Bounded calibrated camera rendering is accepted after independent reviews, full staged qualification and exact hosted success. The SDF consumer migration is running mandatory checks; canonical camera sensor binding remains private and incomplete.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Published c94606b passes independent source/API/state reviews, four actual same-graph image/client/ECS replays and the complete normal staged gate: 633 headless and 358 renderer-profile test executions, with strict line/region coverage in all required crates. Exact hosted run 41150326340 is pending, so accepted quality remains 2b08506. The optional v2 request carries atomic camera/scene calibration; output remains 64\u00d764 unlit boxes. A private SDF pin/guard migration addresses omitted versus explicit lens values and newly exposed metadata before camera sensor binding. Sensor demand/sampling, Image/CameraInfo publication, variable resolution, native sensor image parity, physical GPUs and comparative performance remain open."
+      "detail": "Accepted c94606b passes exact hosted run 41150326340, the full staged gate and independent source/API/state plus actual same-graph image reviews. Its v2 atomic camera/scene requests support finite asymmetric pinhole projection, rebased camera pose, clipping and rejected/busy update atomicity for 64\u00d764 unlit box scenes. The gate runs 633 headless and 358 renderer-profile test executions with strict per-crate coverage. A separate SDF consumer migration is in the full staged gate, while data-only canonical camera binding remains private with its loader closed pending native precedence qualification. Sensor scheduling/demand, Image/CameraInfo publication, variable resolution, native image parity, physical GPUs and comparative performance remain open."
     },
     {
       "id": "QLT-01",
@@ -587,6 +587,11 @@
       "title": "Renderer teardown retains final ownership through joins with independent explicit-shutdown and child-reaping controls",
       "commit": "2b08506b75ad0270c90ddb736c50d34b2ddae1a3",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2b08506b75ad0270c90ddb736c50d34b2ddae1a3"
+    },
+    {
+      "title": "Bounded calibrated camera snapshots through actual Bevy workers with atomic busy/rejection, clipping and canonical scene image controls",
+      "commit": "c94606b02c3bbeb54b3e1c5026658b623c60d9ab",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c94606b02c3bbeb54b3e1c5026658b623c60d9ab"
     }
   ],
   "remaining": [
@@ -622,8 +627,8 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "2b08506b75ad0270c90ddb736c50d34b2ddae1a3",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/2b08506b75ad0270c90ddb736c50d34b2ddae1a3",
+    "revision": "c94606b02c3bbeb54b3e1c5026658b623c60d9ab",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c94606b02c3bbeb54b3e1c5026658b623c60d9ab",
     "rust_tests": 633,
     "coverage": {
       "lines": [
@@ -642,9 +647,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41138287566"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41150326340"
     },
-    "note": "Exact hosted 2b08506 and the full normal staged gate pass after two independent source reviews and actual worker lifecycle replay: 633 headless test executions, 345 renderer-profile executions and 149 tooling checks. Displayed headless coverage is 7850/7933 lines and 12174/12441 regions. Separately required renderer coverage is 3877/3983 lines and 5779/6024 regions. All 17 production crates pass strictly greater than 95% lines and regions across their required profiles; shared counts are not summed. Actual C++ clients and software-Vulkan lifecycle tests run. Final Drop retains ownership through joining; explicit timed shutdown still retains its handle on timeout, and hard OS/driver stalls may delay final destruction. Earlier failed hosted evidence remains recorded. Calibrated cameras, native sensor parity, physical GPUs, full P0 and comparative performance remain unaccepted."
+    "note": "Exact hosted c94606b and the full normal staged gate pass after independent reviews: 633 headless and 358 renderer-profile test executions, plus 149 tooling checks. Displayed headless coverage remains 7850/7933 lines and 12174/12441 regions. Separately required renderer coverage is 4177/4284 lines and 6154/6401 regions. All 17 production crates exceed 95% lines and regions across required profiles; shared counts are not summed. Worker changed lines are 91/91. Real C++ clients and software-Vulkan client/ECS camera image controls run. Output is bounded calibrated 64\u00d764 unlit boxes; no SDF sensor, RGB/CameraInfo publication, native image, hardware GPU or performance acceptance is claimed. Prior failed and superseded profile evidence stays distinct."
   },
   "phase_status": {
     "P0": "in_progress",
