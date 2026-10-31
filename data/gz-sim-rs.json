@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T13:11:06.292958+00:00",
+  "updated_at": "2026-10-31T13:36:13.338213+00:00",
   "state": "active",
   "summary": "Owner simplified scope: use Zenoh directly with C++ Gazebo interoperability; retire the Rust Transport rewrite and keep Messages as proto definitions only. Existing simulator results remain historical until the new network path is qualified.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "IO-01",
+      "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "D28/D29 stop all ZeroMQ implementation and Messages runtime/CLI/codec work. The target is four repositories, with no Rust transport successor. Match C++ Gazebo Zenoh topic keys, type/discovery metadata and service contracts; generate consumer bindings from216canonicalproto3 definitions. Native contract probes and schema-only transition preparation are active. Current Cargo pins remain unchanged until reviewed replacements pass retained simulator tests and strict gates. Historical ZeroMQ client passes do not qualify Zenoh."
+      "detail": "D28/D29 stop ZeroMQ and Messages runtime/CLI/codec work. The revised four-repository plan is public at e945288 after independent review and the complete unchanged local gate. Native C++ Zenoh probes verify Clock/IMU, force type filtering and bidirectional services. A direct Rust Zenoh1.8 probe is now being resolved and built; schema-only transition and consumer codegen qualification are pending. No migrated simulator or performance acceptance is claimed."
     },
     {
       "id": "ACT-01",
@@ -665,7 +665,8 @@
     "PHY-04": "in_progress",
     "SYS-CONTROL": "in_progress",
     "ACT-01": "in_progress",
-    "RENDER-01": "in_progress"
+    "RENDER-01": "in_progress",
+    "ZEN-01": "in_progress"
   },
   "quality": {
     "revision": "35d7fba2425783295af38a9a79463c35f7b675fa",
