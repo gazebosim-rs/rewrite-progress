@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T12:27:42Z",
+  "updated_at": "2026-10-31T13:04:07Z",
   "state": "active",
-  "summary": "The named-target fix has an actual LLVM diagnosis and a bounded AST proof candidate under independent review; accepted quality remains74fa759 with205 complete and29 partial mappings.",
+  "summary": "The reviewed URDF named-target fix passed the complete protected staged retry and published at8742ddc; exact hosted41203744863 remains pending.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "URDF named-extension regression fix",
-      "detail": "The approved named-target correction preserves all 84 prior controls and 31 generated XML snapshots. Its first staged gate failed closed; the temporary stage was cleaned up and the first log retained. One persistent ordinary diagnostic now retains actual raw/profdata/ELF/dep-info/LLVM/LCOV evidence: 646 Rust tests, 47 tools, 8336/8373 lines, 13134/13388 regions, 15/15 changed and 7957/7986 full-source lines. Only three changed lines have no DA or mapped regions: primitive tuple opening/closing and array-close/loop-block tokens. A helper-only AST candidate passed 35 helper tests, 48 tools, all-target Clippy and six genuine LLVM controls. Fresh helper replay resolves those three entries while preserving all counts and all 29 actual production DA0 records. Independent proof review and the normal staged retry remain pending, then exact hosted/source verification. Producer paths, Python predicates, thresholds, denominators, original credit and consumer pins are unchanged.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/74fa759fd11c019c72eac1b596e62273e77478fd"
+      "detail": "Independent semantic and AST proof reviews passed. The complete normal staged retry passed 649 Rust tests, 48 tools, 8336/8373 lines, 13134/13388 regions, 15/15 changed and 7957/7986 full-source lines. The exact checked tree was fast-forwarded into clean Main and published at8742ddc. All 731 downloaded source files, types and executable modes match the reviewed source/protected digests. Whole hosted41203744863 is running; its downloaded core evidence remains required before acceptance. The separate native scope is 29 named-target regressions, 84 retained controls and both unchanged originals. Source assertions, thresholds, denominators and original credit are unchanged. Accepted quality stays at74fa759 with205 complete/29 partial until hosted validation. Continuous-joint work remains separate and consumer pins are unchanged.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
     }
   ],
   "accepted_slices": [
@@ -879,7 +879,7 @@
     "API-01": "in_progress",
     "QLT-01": "in_progress",
     "SDF-01": "in_progress",
-    "SDF-02": "in_review"
+    "SDF-02": "in_progress"
   },
   "quality": {
     "revision": "74fa759fd11c019c72eac1b596e62273e77478fd",
