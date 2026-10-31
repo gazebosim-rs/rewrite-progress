@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T04:11:05.949306+00:00",
+  "updated_at": "2026-10-31T04:27:05.014325+00:00",
   "state": "active",
-  "summary": "SDF camera snapshots remain accepted. Independently reviewed DART moving-parent joints are in full workspace qualification; continuous sensor publishing and broader articulation remain unfinished.",
+  "summary": "Bounded DART backend joints passed full local qualification and are published for hosted verification. World-rooted DART scene loading and camera publication are advancing through independent review and real integration checks.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -17,14 +17,9 @@
       "detail": "Accepted bounded control supports real C++ publishers, pause/reset/removal and native physical rates on three dynamic engines. Bounded DART planes are now accepted. The full original ApplyJointForce fixture still requires moving-parent actuation and remaining world/backend behavior; no full original-system or performance completion is claimed."
     },
     {
-      "id": "PHY-05",
-      "title": "Qualifying bounded DART moving-parent joints",
-      "detail": "The private backend slice supports exactly a world-hinged dynamic parent and one revolute child. Independent review passed 115 package tests, 72 additional high-rate/extreme-mass subprocess probes, Clippy and 34 actual pinned-plugin observations. Root review found and fixed a root-joint removal path that would have admitted an unqualified free-root chain. Contacts involving the articulation and active multibody limit rows are refused before Dantzig. Provenance explicitly records the verified ROS-header/system-runtime SDK combination, not a clean homogeneous build. Root adopted 13 reviewed crate paths plus independently reviewed fixture/header tooling; the ordinary full staged hook is running. Scene admission, general graphs, contacts and performance qualification remain open. The first full hook stopped because disk space ran out while retaining coverage output; no code, test or threshold was changed. After removing only audited inactive Cargo caches, the identical 14-path staged tree is rebuilding through the ordinary full hook. Accepted counts remain unchanged. The original ApplyJointForce world needs a free-root chain with external contact, which this bounded backend does not admit."
-    },
-    {
       "id": "PHY-03",
-      "title": "Qualifying static planes and their scene lifecycle",
-      "detail": "Accepted 7f6c7af passed exact hosted 41051460995 and the full normal hook, independent native/scene review, 608 Rust and 103 tooling checks and 116/116 changed executable lines. Centered local +Z DART planes preserve the native finite cube, ignored physical size, link frames, inherited static state, model removal and loaded reset. Other engines, normals/offsets and custom plane inertia remain explicit unsupported scope. Larger articulation and performance qualification remain open."
+      "title": "Qualifying bounded DART articulated scenes",
+      "detail": "Reviewed backend f60d3a3 is published; its unchanged full staged retry passed 668 headless and 383 renderer executions plus 152 tooling checks, strict coverage in all production crates, and 150/151 changed DART lines. Headless coverage is 8129/8222 lines and 12590/12875 regions. The first attempt exhausted disk; only audited inactive Cargo caches were removed before the identical retry. Exact hosted run 41168474334 remains pending; accepted counters remain at 5669d79. The next four-path scene slice passed 227 focused package executions and independent replay of four new and 14 unchanged controls, including declaration order, coupled reaction, identity-preserving reset, external-contact refusal and leaf-first model removal. Its ordinary full staged gate is now running. This supports a world-rooted two-hinge chain only; the original free-root, contacting ApplyJointForce fixture remains unsupported."
     },
     {
       "id": "REF-01",
@@ -44,7 +39,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Accepted 5669d79 binds bounded HFOV-only 64\u00d764 cameras to canonical ECS poses, stable IDs and sparse reset metadata. Explicit snapshots render through a real Bevy worker. Independent source, native DOM and software-Vulkan checks passed, followed by the full staged gate and exact hosted run 41160470420. CPU Image/CameraInfo conversion is implemented privately with independent helper tests and a matching 325-byte native CameraInfo replay. Sensor scheduling, demand-driven publication, variable resolution, native image parity, physical GPUs and performance qualification remain unfinished. A private default-disabled CPU output pump now passes five focused controls, including actual worker-exit failure and idle/inflight sensor replacement. Review caught idle public-ID rebinding; corrected ownership now requires dropping old publishers before reconstruction. The default and opt-in server dependency graphs exclude GPU/window crates. Real Image/CameraInfo worker publication, native subscriber, full feature coverage and staged/hosted qualification remain unrun."
+      "detail": "Accepted 5669d79 provides explicit canonical SDF camera snapshots. A private CPU-only gz-camera-output crate now owns message conversion and one-acquisition output, with no server dependency or default GPU closure. Independent review passed 11 CPU tests, 24 profile controls, Clippy and actual dependency checks; a newly documented source-built native CameraInfo capture reproduced the full 325-byte fixture. Review fixed idle sensor rebinding and strengthened submitted-capture/readback-complete invalidation controls. Real Bevy-worker/Image/CameraInfo/native-subscriber execution is starting; those results and full per-crate/profile/changed coverage, staged and hosted gates remain pending. No automatic cadence, native image parity or full sensor-family acceptance is claimed."
     },
     {
       "id": "QLT-01",
