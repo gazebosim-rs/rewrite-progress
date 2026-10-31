@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T15:55:07.763980+00:00",
+  "updated_at": "2026-10-31T17:37:33.760823+00:00",
   "state": "active",
-  "summary": "The actual Rust Server now delivers clocks, poses and IMU readings to a real C++ Gazebo Zenoh client and accepts step/reset/pause controls. Camera migration passed independent review. These private increments still await complete migrated-system qualification.",
+  "summary": "C++ Gazebo now passes paired root/world clocks and step controls on all four Rust physics backends. CLI and root-clock test migrations passed independent review. Headless release acceptance still awaits lifecycle integration and the complete strict gates.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "A real selected C++ Gazebo Zenoh client now observes actual Server clocks at one, two and three milliseconds, four canonical pose records and three correctly stamped IMU readings with original metadata, sequence, covariance and physical assertions. Step/reset/pause exchange and both child exits pass. Three faithfully rehosted world tests also pass; they exposed and verified a correction for post-close ticks incorrectly succeeding. Camera direct publication passed independent review after fixing native-invalid topic admission. Consumer-generated protobuf wire compatibility and compiler/schema validation passed independent review. Force ingress tests and rate-service migration are under development. Root-clock election, removals, remaining legacy test/dependency migration, bounded service replies, complete owned coverage and full local/hosted gates remain open. Native query defaults are blocking; async syntax alone does not qualify reply behavior. No historical ZeroMQ result is counted as Zenoh acceptance."
+      "detail": "Independent review passed the retained13CLI+3live cases, including unchanged C++paired clock bytes acrossTPE/Rapier/DART/MuJoCo and signals. Seven retained root-clock cases plus a namespace/remap control pass independent review and fresh execution. Force counter repair passed independent9unit+3native checks. New IMU CPU leases hold no native handles; weak queued frames and IO-owned declarations passed nine real controls and genuine owned coverage, with final path review pending. The finite TCP candidate is implemented with a compile-time zero-linger setting and validated effective transport defaults; stopped-peer feasibility was independently reproduced, while broader application pressure qualification remains open. Actual native per-sensor probes settled remote rate fanout and preserved malformed Empty receipts. Direct rate wiring and Force IO ownership are under development. Reset readiness still waits synchronously, removal services and other legacy tests/dependencies remain, and complete owned coverage/equal-work/full local+hosted gates are outstanding. Historical ZeroMQ evidence is not current acceptance."
     },
     {
       "id": "ACT-01",
