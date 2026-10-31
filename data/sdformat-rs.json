@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T07:25:36.946878+00:00",
+  "updated_at": "2026-10-31T07:30:35.721451+00:00",
   "state": "active",
-  "summary": "Reviewed Link velocity-decay XML metadata is published after the full protected staged gate passed; exact hosted workflow verification remains pending.",
+  "summary": "Bounded Link velocity-decay XML metadata is accepted after independent semantic/proof review, the normal protected staged gate and exact hosted/source-bound evidence success; the retained URDF case remains partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Remaining World and schema fidelity",
-      "detail": "Published 19042a49 retains optional linear/angular XML metadata and actual source/raw XML, without a native Link getter or runtime damping. Independent semantic and bounded proof review passed. Ordinary protected staged retry passed 622 Rust tests, 46 tools, 7840/7867 lines, 12322/12564 regions and 14/14 measured changed lines. Exact whole hosted workflow 41180534193 and downloaded source-bound evidence remain pending; accepted quality, 203 complete/27 partial counts and consumer pins stay fixed.",
+      "detail": "Link retains optional linear/angular XML scalars, source and raw XML without native Link DOM getter or physical damping claims. The native-converted SDF projection maps only the original URDF extension decay assertions; Rust URDF import and remaining original assertions are open. Accepted counts are 203 complete/28 partial. Broader World/schema fidelity remains incomplete and consumer pins stay fixed.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/19042a49e1cb54044268ac7b7833ffa2a1c114b8"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain bounded Link velocity-decay XML metadata",
+      "commit": "19042a49e1cb54044268ac7b7833ffa2a1c114b8",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/19042a49e1cb54044268ac7b7833ffa2a1c114b8"
+    },
     {
       "title": "Retain inert World GUI declaration metadata",
       "commit": "15788855d43bf9aeec94c2d8af9c8c62a5a719d8",
@@ -846,8 +851,9 @@
     }
   ],
   "remaining": [
-    "Consumer adoption must explicitly support or reject GUI, Scene, spherical and custom metadata before changing the simulator producer pin.",
+    "Consumer adoption must explicitly support or reject Link velocity-decay XML metadata, GUI, Scene, spherical and custom metadata before changing the simulator producer pin.",
     "World.Load remains partial; Sky/Fog, GUI camera declarations, custom spherical surfaces/axes, remaining full original assertions, Element/path contracts and serialization are still open.",
+    "The URDF extension original remains partial: only decay Element observations on native-converted SDF are mapped; Rust URDF import, other extension assertions, mutable native Element aliasing and physical damping are unported.",
     "Custom sensor runtime, generic mutable Element APIs and custom XML output remain outside this parser metadata change.",
     "Complete primitive Element/error/mutation contracts, PBR and unsupported Surface fields; basic material, heightmap/polyline metadata and full Shapes assertions are delivered.",
     "Complete nonfinite scalar and vector-stream parity; retain documented native inertial-frame limitations and explicit consumer validation.",
@@ -861,31 +867,31 @@
     "API-01": "in_progress",
     "QLT-01": "in_progress",
     "SDF-01": "in_progress",
-    "SDF-02": "in_review"
+    "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "15788855d43bf9aeec94c2d8af9c8c62a5a719d8",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/15788855d43bf9aeec94c2d8af9c8c62a5a719d8",
-    "rust_tests": 616,
+    "revision": "19042a49e1cb54044268ac7b7833ffa2a1c114b8",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/19042a49e1cb54044268ac7b7833ffa2a1c114b8",
+    "rust_tests": 622,
     "coverage": {
       "lines": [
-        7825,
-        7852
+        7840,
+        7867
       ],
       "regions": [
-        12289,
-        12531
+        12322,
+        12564
       ]
     },
     "upstream": {
       "total": 1344,
       "ported": 203,
-      "partial": 27
+      "partial": 28
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41175822969"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41180534193"
     },
-    "note": "Exact hosted 1578885 whole workflow and every required step passed. Downloaded evidence matches the reviewed source/protected digests and clean published Main: 616 Rust tests, 45 tooling checks, 7825/7852 lines, 12289/12531 regions, 22/22 changed executable lines and 7473/7494 full-source lines. Separate pinned native qualification passed 54 controls, constructor/full-projection/unchanged World.Load and complete Light semantic pose. Only seven pre-approved exact predicate transitions changed; corpus bytes and numerical bounds remain unchanged. The first staged failure has a retained log but no raw snapshot; a distinct persistent approved-source LLVM diagnostic and independently approved single-prefix proof preceded the successful normal staged retry. World.Load remains partial, original-case counts and consumer pins are unchanged. No GUI runtime, plugin activation or performance claim."
+    "note": "Exact hosted19042a49 whole workflow and every required step passed. Downloaded core evidence is bound to that run/head SHA, and all709 downloaded source files match the reviewed source/protected digests and clean Main. Actual LLVM/LCOV/log validation confirms622 Rust tests,46 tools,7840/7867 lines,12322/12564 regions,14/14 measured changed lines and7487/7508 full-source lines. Separate pinned native qualification passed57 controls, constructor/shared Element copy mutation, full original URDF versus exact SDF projection and unchanged full original. Only decay assertions receive one partial mapping; no new complete original credit. The first staged failure retains its log but no raw snapshot; a distinct approved-source persistent LLVM diagnostic and independently approved single-prefix proof preceded the normal successful retry. Existing predicates/corpus, numerical bounds and consumer pins are unchanged. No damping implementation or performance claim."
   }
 }
