@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T02:55:46.305580+00:00",
+  "updated_at": "2026-10-31T03:44:11.268273+00:00",
   "state": "active",
-  "summary": "Canonical SDF camera binding is accepted after independent review, the full staged gate and exact hosted success. Continuous sensor output and broader rendering remain in development.",
+  "summary": "SDF camera snapshots remain accepted. Independently reviewed DART moving-parent joints are in full workspace qualification; continuous sensor publishing and broader articulation remain unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "id": "PHY-05",
-      "title": "Qualifying broader motion and joint-limit domains",
-      "detail": "The DART dependent-coordinate and joint-local rollback correction is qualified in accepted descendant 68474de, including full staged and exact hosted verification. The earlier c3e05d78 hosted run failed an existing renderer teardown assertion; that failure remains recorded. Current one-body joint admission remains unchanged. Moving-parent articulation, generalized contact/effort safety, coupled cache refresh, endpoint removal/reset and performance remain open."
+      "title": "Qualifying bounded DART moving-parent joints",
+      "detail": "The private backend slice supports exactly a world-hinged dynamic parent and one revolute child. Independent review passed 115 package tests, 72 additional high-rate/extreme-mass subprocess probes, Clippy and 34 actual pinned-plugin observations. Root review found and fixed a root-joint removal path that would have admitted an unqualified free-root chain. Contacts involving the articulation and active multibody limit rows are refused before Dantzig. Provenance explicitly records the verified ROS-header/system-runtime SDK combination, not a clean homogeneous build. Root adopted 13 reviewed crate paths plus independently reviewed fixture/header tooling; the ordinary full staged hook is running. Scene admission, general graphs, contacts and performance qualification remain open."
     },
     {
       "id": "PHY-03",
