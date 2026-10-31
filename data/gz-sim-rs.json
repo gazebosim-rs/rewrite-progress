@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T01:47:15.486163+00:00",
+  "updated_at": "2026-10-31T01:53:01.156957+00:00",
   "state": "active",
-  "summary": "Calibrated camera rendering is accepted. The reviewed SDF producer migration is published at 92b1703 after its full staged pass and awaits exact hosted checks. Canonical HFOV-only camera binding is under independent qualification.",
+  "summary": "The reviewed SDF producer migration is accepted after its full staged gate and exact hosted success. Calibrated rendering remains bounded; canonical HFOV-only camera binding is under independent review.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Accepted c94606b qualifies bounded calibrated 64\u00d764 camera snapshots. Reviewed producer migration 92b1703 passed the full staged gate (642 headless and 368 renderer test executions) and is published; exact hosted run 41155481713 remains pending, so accepted quality below stays at c946. Private HFOV-only SDF camera binding now passes lifecycle controls on four backends and an actual SDF\u2192canonical extraction\u2192Bevy-worker image control. Native SDFormat independently confirms inherited sensor pose. Native Ogre initialization crashes before a camera exists; K/P overrides and native-image parity remain unqualified. No sensor scheduler, Image/CameraInfo publication, variable resolution, physical GPU or comparative performance acceptance is claimed."
+      "detail": "Accepted 92b1703 qualifies the explicit producer migration; exact hosted 41155481713 and all required steps passed. Private HFOV-only SDF camera binding passed author lifecycle controls on four backends and an actual SDF-to-canonical-extraction-to-Bevy-worker image control. Root review removed unnecessary calibration branches and required sparse camera-only reset entries so no-camera worlds avoid per-node camera heap overhead. Fresh independent checks and strict staged/hosted qualification remain pending. Native SDFormat confirms inherited sensor pose; native Ogre initialization crashes before a camera exists. No K/P overrides, scheduler, Image/CameraInfo publication, variable resolution, native-image/physical-GPU parity or comparative performance acceptance is claimed."
     },
     {
       "id": "QLT-01",
@@ -592,6 +592,11 @@
       "title": "Bounded calibrated camera snapshots through actual Bevy workers with atomic busy/rejection, clipping and canonical scene image controls",
       "commit": "c94606b02c3bbeb54b3e1c5026658b623c60d9ab",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c94606b02c3bbeb54b3e1c5026658b623c60d9ab"
+    },
+    {
+      "title": "Reviewed SDF producer migration with explicit unsupported-metadata admission and retained native semantic differences",
+      "commit": "92b170381b0703aa475e62568a5377d6c9d0dec2",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/92b170381b0703aa475e62568a5377d6c9d0dec2"
     }
   ],
   "remaining": [
@@ -627,17 +632,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "c94606b02c3bbeb54b3e1c5026658b623c60d9ab",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c94606b02c3bbeb54b3e1c5026658b623c60d9ab",
-    "rust_tests": 633,
+    "revision": "92b170381b0703aa475e62568a5377d6c9d0dec2",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/92b170381b0703aa475e62568a5377d6c9d0dec2",
+    "rust_tests": 642,
     "coverage": {
       "lines": [
-        7850,
-        7933
+        7904,
+        7991
       ],
       "regions": [
-        12174,
-        12441
+        12323,
+        12595
       ]
     },
     "upstream": {
@@ -647,9 +652,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41150326340"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41155481713"
     },
-    "note": "Exact hosted c94606b and the full normal staged gate pass after independent reviews: 633 headless and 358 renderer-profile test executions, plus 149 tooling checks. Displayed headless coverage remains 7850/7933 lines and 12174/12441 regions. Separately required renderer coverage is 4177/4284 lines and 6154/6401 regions. All 17 production crates exceed 95% lines and regions across required profiles; shared counts are not summed. Worker changed lines are 91/91. Real C++ clients and software-Vulkan client/ECS camera image controls run. Output is bounded calibrated 64\u00d764 unlit boxes; no SDF sensor, RGB/CameraInfo publication, native image, hardware GPU or performance acceptance is claimed. Prior failed and superseded profile evidence stays distinct."
+    "note": "Exact hosted 92b1703 and every required step succeeded after independent review and the full staged gate: 642 headless and 368 renderer-profile test executions plus 149 tooling checks. Required headless coverage is 7904/7991 lines and 12323/12595 regions; separate renderer coverage is 4232/4343 lines and 6305/6557 regions. All 17 production crates exceed 95% lines and regions across required profiles. Execution counts are not summed across profiles. The producer remains explicitly pinned; unsupported fields are rejected and retained native differences are documented. Camera sensor binding, scheduling/publication, native image parity, physical GPU and broader performance remain incomplete."
   },
   "phase_status": {
     "P0": "in_progress",
