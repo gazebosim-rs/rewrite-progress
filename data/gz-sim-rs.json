@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T19:54:13.599214+00:00",
+  "updated_at": "2026-10-31T20:23:11Z",
   "state": "active",
-  "summary": "The source-built Zenoh client reference and retained C++ interoperability now pass. Strict server coverage diagnostics found real region/changed-line gaps; full-app performance reference qualification and complete release gates remain open.",
+  "summary": "The source-built Zenoh client reference and retained C++ interoperability pass. Reviewed boundary tests now pass the strict server diagnostic; complete headless/rendering gates and the full-app performance reference remain under development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "The Rust workspace has no old Transport, Messages runtime or ZeroMQ dependencies. Its first independently reviewed source-built Zenoh ON client reference validates; all four unchanged C++ fixtures compile against it, and fresh retained server, rate and CLI interoperability scenarios pass. Compiler-launcher provenance and exact reply-discard accounting findings are fixed. Promoted real-query regressions pass independently. A server-only diagnostic passed 131 non-timed lib controls and runtime-build checks but correctly failed strict region coverage (3441/3655) and changed-line coverage (1571/1654); actual gaps are being assigned, with no threshold/exclusion changes. Three timed paths and both complete profiles remain required. The client-only reference cannot qualify full Gazebo pipeline comparisons: affected Sim/Sensors app code must be rebuilt for Zenoh. Agents are reviewing selected consumers, repairing coverage gaps and preparing the separate app-reference contract. No OFF results or isolated passing subsets count as headless acceptance; pressure/absence, quiet equal-work, staged and exact hosted gates remain."
+      "detail": "The Rust workspace has no old Transport, Messages runtime or ZeroMQ dependencies. Its independently reviewed source-built Zenoh client reference validates; all four unchanged C++ fixtures compile, and fresh server, rate and CLI interoperability scenarios pass. Five reviewed WorldIo boundary/lifecycle controls now pass independently (21 focused tests total). The server-only follow-up passes unchanged strict checks:2398/2491 lines,3475/3655 regions,1588/1654 changed lines, with all sources counted. This covers136 non-timed lib controls plus Dart checks; three timed paths and both complete profiles remain required. Selected-reference evidence retention and isolated signed-snapshot CI provisioning have independent review and negative controls, but no current hosted qualification. Three agents prepare full headless checks, review rate/app-reference behavior and implement a separate full-app builder. The client SDK alone cannot qualify full Gazebo performance comparisons. Current camera/GPU replay, pressure/absence, quiet equal-work, staged and exact hosted gates remain open; no passing subset counts as headless acceptance."
     },
     {
       "id": "ACT-01",
