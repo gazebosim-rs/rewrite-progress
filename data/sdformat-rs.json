@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T11:59:32Z",
+  "updated_at": "2026-10-31T12:27:42Z",
   "state": "active",
-  "summary": "The reviewed URDF named-target fix failed closed in changed-source coverage classification; exact LLVM diagnosis is pending. Accepted quality remains74fa759 with205 complete and29 partial mappings.",
+  "summary": "The named-target fix has an actual LLVM diagnosis and a bounded AST proof candidate under independent review; accepted quality remains74fa759 with205 complete and29 partial mappings.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "URDF named-extension regression fix",
-      "detail": "Independent review approved the eight-path fix and existing review record. All 29 native regressions, 14 focused Rust tests, 84 prior controls and 31 unchanged generated XML snapshots passed. The ordinary protected staged gate passed 47 tooling tests, formatting, all-target Clippy, docs, the Rust suite and aggregate coverage checks, then failed with changed source has no instrumented executable lines. The first failure log is retained; its temporary stage was cleaned up, so raw LLVM from that attempt is not retained. A persistent ordinary diagnostic is held until actual simulator renderer target retirement provides capacity. No syntax category is inferred, and source, assertions, thresholds and denominators remain unchanged. No commit, publication, original credit or consumer-pin change.",
+      "detail": "The approved named-target correction preserves all 84 prior controls and 31 generated XML snapshots. Its first staged gate failed closed; the temporary stage was cleaned up and the first log retained. One persistent ordinary diagnostic now retains actual raw/profdata/ELF/dep-info/LLVM/LCOV evidence: 646 Rust tests, 47 tools, 8336/8373 lines, 13134/13388 regions, 15/15 changed and 7957/7986 full-source lines. Only three changed lines have no DA or mapped regions: primitive tuple opening/closing and array-close/loop-block tokens. A helper-only AST candidate passed 35 helper tests, 48 tools, all-target Clippy and six genuine LLVM controls. Fresh helper replay resolves those three entries while preserving all counts and all 29 actual production DA0 records. Independent proof review and the normal staged retry remain pending, then exact hosted/source verification. Producer paths, Python predicates, thresholds, denominators, original credit and consumer pins are unchanged.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/74fa759fd11c019c72eac1b596e62273e77478fd"
     }
   ],
@@ -879,7 +879,7 @@
     "API-01": "in_progress",
     "QLT-01": "in_progress",
     "SDF-01": "in_progress",
-    "SDF-02": "in_progress"
+    "SDF-02": "in_review"
   },
   "quality": {
     "revision": "74fa759fd11c019c72eac1b596e62273e77478fd",
