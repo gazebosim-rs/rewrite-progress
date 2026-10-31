@@ -1,576 +1,579 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T12:48:04Z",
+  "updated_at": "2026-10-31T13:13:31Z",
   "state": "active",
-  "summary": "Public-archive append benchmark preparation is accepted at a39a945 after whole hosted success and downloaded evidence verification; timing remains unmeasured.",
+  "summary": "D29 supersedes the custom Messages runtime: schema-only transition and consumer-owned code generation are pending; old runtime work is stopped and preserved.",
   "model": "Messages implementation agent",
   "active": [
     {
+      "id": "MSG-01",
+      "title": "Schema-only transition and consumer generation",
+      "detail": "Audit confirms 216 exact canonical schemas, all proto3 in package gz.msgs, with only external google/protobuf/any.proto imported by two files. Prepare an isolated proto-only tree with minimal identity/import validation, Apache-2.0 and preserved original notices. Simulator consumers must generate and share their own standard bindings and preserve retained schema/wire/domain assertions. No removal publication before the coordinated consumer transition; no generated Rust/runtime/Cargo codec package or hidden successor framework."
+    },
+    {
       "id": "MSG-02",
-      "title": "Exact public append-helper timing qualification",
-      "detail": "Accepted tooling a39a945 passed independent review, the complete unchanged protected retry, whole hosted workflow 41200381707 and downloaded 910-file source/coverage/preparation verification. Three independently compiled native/default/append executables retain all ten full historical wires and 45 cases at counts 1/3, with 270 zero-clock rows and no warmup. Raw compiler argv/profiles, standard package binding, consumer/generated inputs and executable hashes were checked. A separate ignored timing-driver adaptation is source-only and under Root review; no driver or timing run has occurred. The historical typed LaserScan deficit and broader performance/adoption scope remain open; original mappings remain 83 and default codecs/pins are unchanged."
+      "title": "Historical runtime scope superseded by D29",
+      "detail": "Codec, CLI, reflection, conversion-framework, loader optimization and benchmark work is stopped. Existing source, accepted commits, native results and all evidence remain preserved under their historical scope. Runtime metrics and original-case mappings do not establish the schema-only release or Zenoh migration. Root owns catalog retirement; removed work is not reported complete."
     }
   ],
   "accepted_slices": [
     {
-      "title": "Maintained canonical protobuf runtime and lossless wire envelope",
+      "title": "Historical pre-D29: Maintained canonical protobuf runtime and lossless wire envelope",
       "commit": "e1800c3e8d058ce7358b393e5f7aba6dd912920f",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e1800c3e8d058ce7358b393e5f7aba6dd912920f"
     },
     {
-      "title": "Primitive conversions and 14 reviewed assertion mappings",
+      "title": "Historical pre-D29: Primitive conversions and 14 reviewed assertion mappings",
       "commit": "b941c012e324d0f4ab627ac24d723bb31f4e7448",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/b941c012e324d0f4ab627ac24d723bb31f4e7448"
     },
     {
-      "title": "Native signed Time fields and exact boundary wire fixtures",
+      "title": "Historical pre-D29: Native signed Time fields and exact boundary wire fixtures",
       "commit": "a7ce983e5deb1bc182471e6328d7598204b33b63",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7ce983e5deb1bc182471e6328d7598204b33b63"
     },
     {
-      "title": "Complete canonical --info output and unchanged C++ workflow tests",
+      "title": "Historical pre-D29: Complete canonical --info output and unchanged C++ workflow tests",
       "commit": "22a0482fbf17e6469b59be4d217875262f916f94",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/22a0482fbf17e6469b59be4d217875262f916f94"
     },
     {
-      "title": "Legacy enum names and 197 native conversion comparisons",
+      "title": "Historical pre-D29: Legacy enum names and 197 native conversion comparisons",
       "commit": "2f283f382a3dd60477983f9770b1850d497775d0",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f283f382a3dd60477983f9770b1850d497775d0"
     },
     {
-      "title": "Native packed-cloud metadata and bounded native-endian byte access",
+      "title": "Historical pre-D29: Native packed-cloud metadata and bounded native-endian byte access",
       "commit": "78ebdb4f718dbed681bc8c31235178acae35eb3e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/78ebdb4f718dbed681bc8c31235178acae35eb3e"
     },
     {
-      "title": "Complete 271-name Factory listing and three original construction cases",
+      "title": "Historical pre-D29: Complete 271-name Factory listing and three original construction cases",
       "commit": "a7b99ec50b71d6417bc328cb45dbe2afcac4858b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a7b99ec50b71d6417bc328cb45dbe2afcac4858b"
     },
     {
-      "title": "Explicit descriptor loading, custom options and missing-import retry",
+      "title": "Historical pre-D29: Explicit descriptor loading, custom options and missing-import retry",
       "commit": "ca17919915f04fede714b021305cb12fdb48afdb",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca17919915f04fede714b021305cb12fdb48afdb"
     },
     {
-      "title": "Native explicit descriptor path traversal and duplicate loading",
+      "title": "Historical pre-D29: Native explicit descriptor path traversal and duplicate loading",
       "commit": "2f744840c4e5bb986bcc2237a0ba3dae2f66c19b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2f744840c4e5bb986bcc2237a0ba3dae2f66c19b"
     },
     {
-      "title": "MSG-01 formal coordinator acceptance",
+      "title": "Historical pre-D29: MSG-01 formal coordinator acceptance",
       "commit": "30ade168180f97aa0bcaf447b278aaf1c4c0a5ba",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/30ade168180f97aa0bcaf447b278aaf1c4c0a5ba/docs/acceptance/MSG-01.md"
     },
     {
-      "title": "Lazy instance factory and original concurrent/environment behavior",
+      "title": "Historical pre-D29: Lazy instance factory and original concurrent/environment behavior",
       "commit": "ca0ef2e996af391566f89946cce6669f0a11d9c6",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ca0ef2e996af391566f89946cce6669f0a11d9c6"
     },
     {
-      "title": "Original nested header sizes and multi-message ownership forms",
+      "title": "Historical pre-D29: Original nested header sizes and multi-message ownership forms",
       "commit": "9d1c1c1275ea555753e580326d7315c2abedcbb2",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9d1c1c1275ea555753e580326d7315c2abedcbb2"
     },
     {
-      "title": "Plane and bounding-box raw component conversions",
+      "title": "Historical pre-D29: Plane and bounding-box raw component conversions",
       "commit": "893817482c1d34f7409c5f4ba17098effc58771b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/893817482c1d34f7409c5f4ba17098effc58771b"
     },
     {
-      "title": "Packed-cloud/default values and nineteen original-case reviews",
+      "title": "Historical pre-D29: Packed-cloud/default values and nineteen original-case reviews",
       "commit": "35786194c030f5427396887c645701dcffe0172d",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/35786194c030f5427396887c645701dcffe0172d"
     },
     {
-      "title": "Quaternion/pose conversions and metadata-retaining component setters",
+      "title": "Historical pre-D29: Quaternion/pose conversions and metadata-retaining component setters",
       "commit": "97557fca8e4fec1fb50fb9f77dc057c97fc42b05",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/97557fca8e4fec1fb50fb9f77dc057c97fc42b05"
     },
     {
-      "title": "Inertial and mass-matrix conversion semantics",
+      "title": "Historical pre-D29: Inertial and mass-matrix conversion semantics",
       "commit": "1692bbc906ee8fa32bb7fb4a33234f10261d1acb",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1692bbc906ee8fa32bb7fb4a33234f10261d1acb"
     },
     {
-      "title": "Spherical coordinate enums, angles and raw surface components",
+      "title": "Historical pre-D29: Spherical coordinate enums, angles and raw surface components",
       "commit": "1f146e5c60f87893ae121782449731d9c7c80d0b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1f146e5c60f87893ae121782449731d9c7c80d0b"
     },
     {
-      "title": "Borrowed packed-cloud cursor identity and operators",
+      "title": "Historical pre-D29: Borrowed packed-cloud cursor identity and operators",
       "commit": "195644d8daeb1fa17ed8830e885a36f25ba71871",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/195644d8daeb1fa17ed8830e885a36f25ba71871"
     },
     {
-      "title": "Fuel model/world XML conversion and final original mapping",
+      "title": "Historical pre-D29: Fuel model/world XML conversion and final original mapping",
       "commit": "a0a7841ef85a633c3260fe9b8d0182c4acec38f5",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a0a7841ef85a633c3260fe9b8d0182c4acec38f5"
     },
     {
-      "title": "Native info error continuation, alias rules and exact diagnostics",
+      "title": "Historical pre-D29: Native info error continuation, alias rules and exact diagnostics",
       "commit": "4357fc1c1f8a245a822e97f61a012125e69f86a4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/4357fc1c1f8a245a822e97f61a012125e69f86a4"
     },
     {
-      "title": "Immutable source distributions and clean Cargo installs",
+      "title": "Historical pre-D29: Immutable source distributions and clean Cargo installs",
       "commit": "b18108331485d14e95916d9d3cbeeda259b23294",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/b18108331485d14e95916d9d3cbeeda259b23294"
     },
     {
-      "title": "Native-compatible canonical envelope decoding with lossless raw forwarding",
+      "title": "Historical pre-D29: Native-compatible canonical envelope decoding with lossless raw forwarding",
       "commit": "e2001a3bc5b54cb15ea1cc16deaefdf14719b2df",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e2001a3bc5b54cb15ea1cc16deaefdf14719b2df"
     },
     {
-      "title": "Complete JSON document framing and isolated reviewer-target policy",
+      "title": "Historical pre-D29: Complete JSON document framing and isolated reviewer-target policy",
       "commit": "92f5a99020c6063d5d42cb720b757474a65c7dda",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/92f5a99020c6063d5d42cb720b757474a65c7dda"
     },
     {
-      "title": "Bounded native CLI option combinations using a maintained lexer",
+      "title": "Historical pre-D29: Bounded native CLI option combinations using a maintained lexer",
       "commit": "a9811a99157936fe648bcd11a897c34eabdf6b6b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a9811a99157936fe648bcd11a897c34eabdf6b6b"
     },
     {
-      "title": "Native boolean flag values, ranges and callback precedence",
+      "title": "Historical pre-D29: Native boolean flag values, ranges and callback precedence",
       "commit": "5a68646a0ef537a11b1584ab58685ff9c0f44bb3",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5a68646a0ef537a11b1584ab58685ff9c0f44bb3"
     },
     {
-      "title": "Native info vector expansion and per-occurrence required values",
+      "title": "Historical pre-D29: Native info vector expansion and per-occurrence required values",
       "commit": "873a2e2eac23aeafda45fc7d2c7574db76a66ff2",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/873a2e2eac23aeafda45fc7d2c7574db76a66ff2"
     },
     {
-      "title": "Canonical and external descriptor CLI name inventory",
+      "title": "Historical pre-D29: Canonical and external descriptor CLI name inventory",
       "commit": "0104b887c7c4dda2efe1bd23edb52243430592f4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/0104b887c7c4dda2efe1bd23edb52243430592f4"
     },
     {
-      "title": "Bounded normalized-reflection external definitions with explicit raw-provenance gap",
+      "title": "Historical pre-D29: Bounded normalized-reflection external definitions with explicit raw-provenance gap",
       "commit": "771eb2163cd2835043ef9c2c390605b069db734c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/771eb2163cd2835043ef9c2c390605b069db734c"
     },
     {
-      "title": "Real worktree-hook Git-context isolation with intended-index preservation",
+      "title": "Historical pre-D29: Real worktree-hook Git-context isolation with intended-index preservation",
       "commit": "25a2b88407ecc542c4a6eb5aae00cf4db3933f73",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25a2b88407ecc542c4a6eb5aae00cf4db3933f73"
     },
     {
-      "title": "Native reserved declarations and UTF-8 byte escaping with overflow guards",
+      "title": "Historical pre-D29: Native reserved declarations and UTF-8 byte escaping with overflow guards",
       "commit": "25f7d611b553c0d4d72fcd84aec5f2cab9339712",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/25f7d611b553c0d4d72fcd84aec5f2cab9339712"
     },
     {
-      "title": "Source-aware raw JSON-name presence for registry/factory/CLI definitions",
+      "title": "Historical pre-D29: Source-aware raw JSON-name presence for registry/factory/CLI definitions",
       "commit": "617079cdafc8e20dc008967e27ddbba8b6d100fa",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/617079cdafc8e20dc008967e27ddbba8b6d100fa"
     },
     {
-      "title": "Bounded proto2 declarations and native-backed malformed-oneof guards",
+      "title": "Historical pre-D29: Bounded proto2 declarations and native-backed malformed-oneof guards",
       "commit": "d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d5f4416090bfb0e2a42cb07eb4e746cf3b2ef3f9"
     },
     {
-      "title": "Bounded descriptor byte-default rejection without reflection panics",
+      "title": "Historical pre-D29: Bounded descriptor byte-default rejection without reflection panics",
       "commit": "2cea810e929adb4f925750b325265a99f9ae78b4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2cea810e929adb4f925750b325265a99f9ae78b4"
     },
     {
-      "title": "Source-preserving registry integer defaults with bounded native LP64/C23 policy",
+      "title": "Historical pre-D29: Source-preserving registry integer defaults with bounded native LP64/C23 policy",
       "commit": "f0f236f028be20274dc8bf58f594fc849289769f",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f0f236f028be20274dc8bf58f594fc849289769f"
     },
     {
-      "title": "Bounded protobuf JSON bare keys and trailing object commas with 29 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON bare keys and trailing object commas with 29 native rows",
       "commit": "c1234c0a2e7d3a17c6135d8f3949e465da4dba08",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c1234c0a2e7d3a17c6135d8f3949e465da4dba08"
     },
     {
-      "title": "Bounded protobuf JSON repeated-field trailing array commas with 43 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON repeated-field trailing array commas with 43 native rows",
       "commit": "280d599b82ff27bafc341fdb73afd18cec7ee019",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/280d599b82ff27bafc341fdb73afd18cec7ee019"
     },
     {
-      "title": "Bounded protobuf JSON single quotes with 21 native parity rows and two explicit gaps",
+      "title": "Historical pre-D29: Bounded protobuf JSON single quotes with 21 native parity rows and two explicit gaps",
       "commit": "d6090c73d8dfc1d532224d6273a712f2820d4a41",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d6090c73d8dfc1d532224d6273a712f2820d4a41"
     },
     {
-      "title": "Bounded protobuf JSON unescaped raw controls with 140 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON unescaped raw controls with 140 native rows",
       "commit": "dcdbb741630d38e21ba5271a50cae04be1aee6c4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/dcdbb741630d38e21ba5271a50cae04be1aee6c4"
     },
     {
-      "title": "Bounded protobuf JSON escaped ASCII bytes with 396 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON escaped ASCII bytes with 396 native rows",
       "commit": "5fa067f47273f2ac46c8af7ba27bef66b6a3251e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fa067f47273f2ac46c8af7ba27bef66b6a3251e"
     },
     {
-      "title": "Bounded protobuf JSON escaped UTF-8 with 440 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON escaped UTF-8 with 440 native rows",
       "commit": "f46db31af457a2a2c815c823e46389d2cc7aaf9b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f46db31af457a2a2c815c823e46389d2cc7aaf9b"
     },
     {
-      "title": "Bounded native trailing-dot numeric grammar with second-dot rejection",
+      "title": "Historical pre-D29: Bounded native trailing-dot numeric grammar with second-dot rejection",
       "commit": "c2e15df04e8983d07879fdef0344e207996d643d",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c2e15df04e8983d07879fdef0344e207996d643d"
     },
     {
-      "title": "Bounded protobuf JSON bare negative-zero wire parity",
+      "title": "Historical pre-D29: Bounded protobuf JSON bare negative-zero wire parity",
       "commit": "11ea55557d9a6a111a440f05b9ad3b65c9a8427a",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/11ea55557d9a6a111a440f05b9ad3b65c9a8427a"
     },
     {
-      "title": "Bounded protobuf JSON VT/FF token whitespace with 591 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON VT/FF token whitespace with 591 native rows",
       "commit": "60e67ade72142d71c812b180bb7628c3bddcd4a1",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/60e67ade72142d71c812b180bb7628c3bddcd4a1"
     },
     {
-      "title": "Bounded protobuf JSON quoted hexadecimal floats with 809 native rows",
+      "title": "Historical pre-D29: Bounded protobuf JSON quoted hexadecimal floats with 809 native rows",
       "commit": "1c3c0b802cd17fd8c1f49fac4370db3103ba9028",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/1c3c0b802cd17fd8c1f49fac4370db3103ba9028"
     },
     {
-      "title": "Bounded repeated float data-key append behavior with 875 native JSON rows",
+      "title": "Historical pre-D29: Bounded repeated float data-key append behavior with 875 native JSON rows",
       "commit": "0d267506915119344467a56956ddb4408777158c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/0d267506915119344467a56956ddb4408777158c"
     },
     {
-      "title": "Bounded repeated integer data-key append behavior with 992 native JSON rows",
+      "title": "Historical pre-D29: Bounded repeated integer data-key append behavior with 992 native JSON rows",
       "commit": "8ab936c491305e7c4517225d9e58ef162081ef9e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8ab936c491305e7c4517225d9e58ef162081ef9e"
     },
     {
-      "title": "Bounded repeated StringMsg_V data-key append behavior with 1,038 native JSON rows",
+      "title": "Historical pre-D29: Bounded repeated StringMsg_V data-key append behavior with 1,038 native JSON rows",
       "commit": "115b467f612c41b9c0b4706b5032a4280a731e41",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/115b467f612c41b9c0b4706b5032a4280a731e41"
     },
     {
-      "title": "Bounded single scalar repeated data for six descriptors with 1,135 native JSON rows",
+      "title": "Historical pre-D29: Bounded single scalar repeated data for six descriptors with 1,135 native JSON rows",
       "commit": "6dc8845eb8584c16832aebe19f635cc0e7d34275",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/6dc8845eb8584c16832aebe19f635cc0e7d34275"
     },
     {
-      "title": "Bounded UInt64_V array numeric precision and range with 1,275 native JSON rows",
+      "title": "Historical pre-D29: Bounded UInt64_V array numeric precision and range with 1,275 native JSON rows",
       "commit": "cf0c44de2a40fe52310c03b7261abaea13103212",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/cf0c44de2a40fe52310c03b7261abaea13103212"
     },
     {
-      "title": "Bounded UInt64_V repeated data occurrence parity with 1,468 native JSON rows",
+      "title": "Historical pre-D29: Bounded UInt64_V repeated data occurrence parity with 1,468 native JSON rows",
       "commit": "755c185e3f9cb4c341d07fc3c6a9092608c8ba7c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/755c185e3f9cb4c341d07fc3c6a9092608c8ba7c"
     },
     {
-      "title": "Bounded UInt64_V dotted hexadecimal JSON with 1,690 native rows and two explicit gaps",
+      "title": "Historical pre-D29: Bounded UInt64_V dotted hexadecimal JSON with 1,690 native rows and two explicit gaps",
       "commit": "387b859d0ca7b43555b5ef7d7a1d5db0711b8420",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/387b859d0ca7b43555b5ef7d7a1d5db0711b8420"
     },
     {
-      "title": "Bounded UInt64_V undotted e/E hexadecimal JSON with 1,842 native rows",
+      "title": "Historical pre-D29: Bounded UInt64_V undotted e/E hexadecimal JSON with 1,842 native rows",
       "commit": "81f38c8225453a3c36b9b4a2bfee3fe7dc779a36",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/81f38c8225453a3c36b9b4a2bfee3fe7dc779a36"
     },
     {
-      "title": "Bounded Double_V/Float_V unquoted hexadecimal JSON with 2,166 native rows and six explicit gaps",
+      "title": "Historical pre-D29: Bounded Double_V/Float_V unquoted hexadecimal JSON with 2,166 native rows and six explicit gaps",
       "commit": "52895625cadb6a226b20579b3e83a8be0b6f9f12",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/52895625cadb6a226b20579b3e83a8be0b6f9f12"
     },
     {
-      "title": "Bounded Double_V/Float_V leading-zero floating JSON with 2,424 native rows",
+      "title": "Historical pre-D29: Bounded Double_V/Float_V leading-zero floating JSON with 2,424 native rows",
       "commit": "17b0b9b20d3886fe19eb274c0525afbc844cc274",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/17b0b9b20d3886fe19eb274c0525afbc844cc274"
     },
     {
-      "title": "Bounded Time sec/nsec numeric JSON with 2,563 native observations",
+      "title": "Historical pre-D29: Bounded Time sec/nsec numeric JSON with 2,563 native observations",
       "commit": "a6123a61606bedfa8a37427c32a0db4bbc155768",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a6123a61606bedfa8a37427c32a0db4bbc155768"
     },
     {
-      "title": "Bounded quoted Double_V/Float_V numeric admission with 2,815 native observations and explicit whitespace gaps",
+      "title": "Historical pre-D29: Bounded quoted Double_V/Float_V numeric admission with 2,815 native observations and explicit whitespace gaps",
       "commit": "47f44ddb30482ccd226d30f681ca5fc788da89e0",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/47f44ddb30482ccd226d30f681ca5fc788da89e0"
     },
     {
-      "title": "Bounded unquoted Float_V maximum rounding with 3,037 native observations and 18 explicit Double wire gaps",
+      "title": "Historical pre-D29: Bounded unquoted Float_V maximum rounding with 3,037 native observations and 18 explicit Double wire gaps",
       "commit": "cdf25b076ef4a7d3ea1d3449d74c688792f6197c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/cdf25b076ef4a7d3ea1d3449d74c688792f6197c"
     },
     {
-      "title": "Portable pinned native JSON replay with 3,037 exact outcomes across compiler builds",
+      "title": "Historical pre-D29: Portable pinned native JSON replay with 3,037 exact outcomes across compiler builds",
       "commit": "448267a5e3e64ed2260a01118f82307bc566cd8b",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/448267a5e3e64ed2260a01118f82307bc566cd8b"
     },
     {
-      "title": "Bounded unquoted Double_V decimal wire parity with 3,172 native observations",
+      "title": "Historical pre-D29: Bounded unquoted Double_V decimal wire parity with 3,172 native observations",
       "commit": "34de42e13d3e588848050eab85e6612b3ec5086c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/34de42e13d3e588848050eab85e6612b3ec5086c"
     },
     {
-      "title": "Bounded quoted Float_V/Double_V edge-whitespace parity with 4,276 native observations",
+      "title": "Historical pre-D29: Bounded quoted Float_V/Double_V edge-whitespace parity with 4,276 native observations",
       "commit": "5fe0f2d10d261312d2913e2bcfc75de4d91bbac9",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5fe0f2d10d261312d2913e2bcfc75de4d91bbac9"
     },
     {
-      "title": "Bounded quoted Double_V/Float_V hexadecimal edge-whitespace parity with 5,044 native observations",
+      "title": "Historical pre-D29: Bounded quoted Double_V/Float_V hexadecimal edge-whitespace parity with 5,044 native observations",
       "commit": "d26b0d8a8930258a353532f926571b371b6b2df1",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d26b0d8a8930258a353532f926571b371b6b2df1"
     },
     {
-      "title": "Bounded top-level Vector3d quoted numeric JSON with 5,363 native outcomes",
+      "title": "Historical pre-D29: Bounded top-level Vector3d quoted numeric JSON with 5,363 native outcomes",
       "commit": "e400a26743b77b81be2262cabacf8b3315ec9eef",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/e400a26743b77b81be2262cabacf8b3315ec9eef"
     },
     {
-      "title": "Bounded top-level Quaternion quoted numeric JSON with 5,771 native outcomes",
+      "title": "Historical pre-D29: Bounded top-level Quaternion quoted numeric JSON with 5,771 native outcomes",
       "commit": "7c6d98016f3e7fdcdfee649ee3299c87da9a8821",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7c6d98016f3e7fdcdfee649ee3299c87da9a8821"
     },
     {
-      "title": "Bounded Pose child quoted numeric JSON with 6,469 native outcomes and explicit repeated-parent merge gaps",
+      "title": "Historical pre-D29: Bounded Pose child quoted numeric JSON with 6,469 native outcomes and explicit repeated-parent merge gaps",
       "commit": "896073fe7e60a11a0f37584d1ed3134722d002a6",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/896073fe7e60a11a0f37584d1ed3134722d002a6"
     },
     {
-      "title": "Bounded direct scalar Pose child parent merges with6,523 native outcomes",
+      "title": "Historical pre-D29: Bounded direct scalar Pose child parent merges with6,523 native outcomes",
       "commit": "65958f65a6592a10b40c368ced5e480bce8e4724",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/65958f65a6592a10b40c368ced5e480bce8e4724"
     },
     {
-      "title": "Bounded Pose Header/stamp merging with automatic changed-root coverage and retained staged evidence",
+      "title": "Historical pre-D29: Bounded Pose Header/stamp merging with automatic changed-root coverage and retained staged evidence",
       "commit": "4cc842e3a267e9b1e305c92eb924c9d48b8cabd8",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/4cc842e3a267e9b1e305c92eb924c9d48b8cabd8"
     },
     {
-      "title": "Ordinary Pose Header.data array append with preserved earlier-entry validation",
+      "title": "Historical pre-D29: Ordinary Pose Header.data array append with preserved earlier-entry validation",
       "commit": "12814b4af826c90a79a1b347c35c2e28318b460c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/12814b4af826c90a79a1b347c35c2e28318b460c"
     },
     {
-      "title": "Ordinary inner Header.Map.value array append with preserved earlier-field validation",
+      "title": "Historical pre-D29: Ordinary inner Header.Map.value array append with preserved earlier-field validation",
       "commit": "5e147a1da763cf894cab193b6eecde2b210c7d78",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/5e147a1da763cf894cab193b6eecde2b210c7d78"
     },
     {
-      "title": "Singleton Header.data objects within Pose parents with preserved earlier-fragment validation",
+      "title": "Historical pre-D29: Singleton Header.data objects within Pose parents with preserved earlier-fragment validation",
       "commit": "94fd57149ef46f2f3342500fd7ba43d27da58ef6",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/94fd57149ef46f2f3342500fd7ba43d27da58ef6"
     },
     {
-      "title": "Scalar strings in Pose Header.Map.value entries with ordered append and earlier-field validation",
+      "title": "Historical pre-D29: Scalar strings in Pose Header.Map.value entries with ordered append and earlier-field validation",
       "commit": "65d8b53c8a2ea94d36360d7a43c974e6c2d7232f",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/65d8b53c8a2ea94d36360d7a43c974e6c2d7232f"
     },
     {
-      "title": "Bounded direct-null Header.Map.value arrays with 6,979 native outcomes",
+      "title": "Historical pre-D29: Bounded direct-null Header.Map.value arrays with 6,979 native outcomes",
       "commit": "a5112cd90ccd433fedb6207eab7f2bd8dbdc4b8d",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a5112cd90ccd433fedb6207eab7f2bd8dbdc4b8d"
     },
     {
-      "title": "Bounded nested Header.Map.value arrays with 7,127 native outcomes",
+      "title": "Historical pre-D29: Bounded nested Header.Map.value arrays with 7,127 native outcomes",
       "commit": "028bfdc57c3916f88321a4aba254cf2cbd6f3f74",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/028bfdc57c3916f88321a4aba254cf2cbd6f3f74"
     },
     {
-      "title": "Bounded direct-null Pose Header.data entries with7,207 native outcomes",
+      "title": "Historical pre-D29: Bounded direct-null Pose Header.data entries with7,207 native outcomes",
       "commit": "9b554fc65def5e127217bbb04f7842f9f1bb8910",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9b554fc65def5e127217bbb04f7842f9f1bb8910"
     },
     {
-      "title": "Bounded nested outer Pose Header.data arrays with7,303 native outcomes",
+      "title": "Historical pre-D29: Bounded nested outer Pose Header.data arrays with7,303 native outcomes",
       "commit": "328ba65d122e178493d27e13377ca08969800e5f",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/328ba65d122e178493d27e13377ca08969800e5f"
     },
     {
-      "title": "Bounded standalone Vector3d/Quaternion Header structure with7,415 native outcomes",
+      "title": "Historical pre-D29: Bounded standalone Vector3d/Quaternion Header structure with7,415 native outcomes",
       "commit": "69e7079002a4ec42d30e88c3e9baee0cca64516e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/69e7079002a4ec42d30e88c3e9baee0cca64516e"
     },
     {
-      "title": "Standalone Header duplicate fields and bounded data normalization",
+      "title": "Historical pre-D29: Standalone Header duplicate fields and bounded data normalization",
       "commit": "bab6f45f7d7321b50e318340a5ba74fe9144a8b0",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/bab6f45f7d7321b50e318340a5ba74fe9144a8b0"
     },
     {
-      "title": "Standalone Header.Map scalar, nested and duplicate value normalization",
+      "title": "Historical pre-D29: Standalone Header.Map scalar, nested and duplicate value normalization",
       "commit": "d99f47583df4e0fe3f4cd8cb5a3143f0436f1b25",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d99f47583df4e0fe3f4cd8cb5a3143f0436f1b25"
     },
     {
-      "title": "Native-exact ordinary proto2 int32/int64/uint32/uint64 default declarations",
+      "title": "Historical pre-D29: Native-exact ordinary proto2 int32/int64/uint32/uint64 default declarations",
       "commit": "28e69e6a494ad6c6a74ad944cb7b1737371952d0",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/28e69e6a494ad6c6a74ad944cb7b1737371952d0"
     },
     {
-      "title": "Native-exact declaration defaults for all ten ordinary integer scalar kinds",
+      "title": "Historical pre-D29: Native-exact declaration defaults for all ten ordinary integer scalar kinds",
       "commit": "eab87eb61991d92a8998b91617809fa048ae0cb9",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/eab87eb61991d92a8998b91617809fa048ae0cb9"
     },
     {
-      "title": "Native-exact ordinary proto2 Boolean default declarations",
+      "title": "Historical pre-D29: Native-exact ordinary proto2 Boolean default declarations",
       "commit": "c6d62328e48e813f12446b43daaf312d0860015a",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c6d62328e48e813f12446b43daaf312d0860015a"
     },
     {
-      "title": "Native-exact ordinary valid-UTF8 proto2 string default declarations",
+      "title": "Historical pre-D29: Native-exact ordinary valid-UTF8 proto2 string default declarations",
       "commit": "88729e20bfa17bcc92badb9e03b5fe11e701689a",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/88729e20bfa17bcc92badb9e03b5fe11e701689a"
     },
     {
-      "title": "Ordinary proto2 enum defaults with preserved aliases and explicit identifier rejection",
+      "title": "Historical pre-D29: Ordinary proto2 enum defaults with preserved aliases and explicit identifier rejection",
       "commit": "9764799c0ef0ca287c5953f4bb1df76ae7a37f59",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9764799c0ef0ca287c5953f4bb1df76ae7a37f59"
     },
     {
-      "title": "Admitted proto2 bytes declarations with shared quoting and preserved parser boundaries",
+      "title": "Historical pre-D29: Admitted proto2 bytes declarations with shared quoting and preserved parser boundaries",
       "commit": "f2108e32fd811062697aeafa160e5ce1ff467eab",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f2108e32fd811062697aeafa160e5ce1ff467eab"
     },
     {
-      "title": "Ordinary proto2 floating declarations using std-backed native precision/layout policy",
+      "title": "Historical pre-D29: Ordinary proto2 floating declarations using std-backed native precision/layout policy",
       "commit": "38a44f0c39228b97e9f7af2f5152d01a8f9cc31c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/38a44f0c39228b97e9f7af2f5152d01a8f9cc31c"
     },
     {
-      "title": "Representative native/Rust equal-work codec baseline and effective compiler controls",
+      "title": "Historical pre-D29: Representative native/Rust equal-work codec baseline and effective compiler controls",
       "commit": "45f29b7b333e9187f16e5a542241eacf80cb6ff7",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/45f29b7b333e9187f16e5a542241eacf80cb6ff7"
     },
     {
-      "title": "Native packed-f64 bit/framing qualification and exact Rust partial-state boundaries",
+      "title": "Historical pre-D29: Native packed-f64 bit/framing qualification and exact Rust partial-state boundaries",
       "commit": "075a9031718ff6fa693b1703d996a6acc27314fe",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/075a9031718ff6fa693b1703d996a6acc27314fe"
     },
     {
-      "title": "Native standard field boolean declarations with preserved metadata and explicit invalid-shape guards",
+      "title": "Historical pre-D29: Native standard field boolean declarations with preserved metadata and explicit invalid-shape guards",
       "commit": "8da0695e9826d0e4bf9f5b440bb205ce1d62efee",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8da0695e9826d0e4bf9f5b440bb205ce1d62efee"
     },
     {
-      "title": "Native CType/JSType declarations with preserved raw metadata and reviewed exact capability transitions",
+      "title": "Historical pre-D29: Native CType/JSType declarations with preserved raw metadata and reviewed exact capability transitions",
       "commit": "715b8f99c9e5654ac6354460bc3790e6e6ed88d4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/715b8f99c9e5654ac6354460bc3790e6e6ed88d4"
     },
     {
-      "title": "Native standard descriptor-accessor metadata declarations with preserved historical inputs",
+      "title": "Historical pre-D29: Native standard descriptor-accessor metadata declarations with preserved historical inputs",
       "commit": "2a25ed94905d5ea3e2a9e42f6e57329ccf6dd10e",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2a25ed94905d5ea3e2a9e42f6e57329ccf6dd10e"
     },
     {
-      "title": "Ordinary proto2 extension ranges with preserved raw options and native validation boundaries",
+      "title": "Historical pre-D29: Ordinary proto2 extension ranges with preserved raw options and native validation boundaries",
       "commit": "7d4062f425670cf00c59781fd5dadebfbfe0f9d5",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/7d4062f425670cf00c59781fd5dadebfbfe0f9d5"
     },
     {
-      "title": "Packed Float_V exact-bit, Header, framing and partial-state qualification",
+      "title": "Historical pre-D29: Packed Float_V exact-bit, Header, framing and partial-state qualification",
       "commit": "24ed3a7e372a38ab58d03317ce73c608c115a7ea",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/24ed3a7e372a38ab58d03317ce73c608c115a7ea"
     },
     {
-      "title": "Packed signed/unsigned integer-vector widths, framing and explicit native-overflow boundaries",
+      "title": "Historical pre-D29: Packed signed/unsigned integer-vector widths, framing and explicit native-overflow boundaries",
       "commit": "6338a42392aae29bcba8fd99b7fb1fb90465f3f5",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/6338a42392aae29bcba8fd99b7fb1fb90465f3f5"
     },
     {
-      "title": "Ordinary explicit-false MessageSet option formatting with preserved metadata and true-feature guard",
+      "title": "Historical pre-D29: Ordinary explicit-false MessageSet option formatting with preserved metadata and true-feature guard",
       "commit": "3479155f0399beb69180fbe6072325941b36aefb",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/3479155f0399beb69180fbe6072325941b36aefb"
     },
     {
-      "title": "Source-aware nested proto2 extension declarations with preserved order, metadata and explicit feature boundaries",
+      "title": "Historical pre-D29: Source-aware nested proto2 extension declarations with preserved order, metadata and explicit feature boundaries",
       "commit": "a2b0079888a32136b69aac13b0ddfede8a13f734",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a2b0079888a32136b69aac13b0ddfede8a13f734"
     },
     {
-      "title": "Declared deprecated extension options with explicit false/true metadata and preserved source-aware boundaries",
+      "title": "Historical pre-D29: Declared deprecated extension options with explicit false/true metadata and preserved source-aware boundaries",
       "commit": "6150fd0e584a2cee17f6dea5807034ba2733f28c",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/6150fd0e584a2cee17f6dea5807034ba2733f28c"
     },
     {
-      "title": "Declared packed nested extension options with repeated-packable guard and exact presence metadata",
+      "title": "Historical pre-D29: Declared packed nested extension options with repeated-packable guard and exact presence metadata",
       "commit": "f9bc25203594784e39a94e2ca8217ff6232fd3c8",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f9bc25203594784e39a94e2ca8217ff6232fd3c8"
     },
     {
-      "title": "Declared CType/JSType nested extension options with preserved metadata and native kind constraints",
+      "title": "Historical pre-D29: Declared CType/JSType nested extension options with preserved metadata and native kind constraints",
       "commit": "9dd9c0df011a661dcc7743b660f3ff6a91f06447",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/9dd9c0df011a661dcc7743b660f3ff6a91f06447"
     },
     {
-      "title": "Linux OS-byte CLI arguments with exact diagnostics and native option precedence",
+      "title": "Historical pre-D29: Linux OS-byte CLI arguments with exact diagnostics and native option precedence",
       "commit": "ed19951afef60185f3d9be5436e8d4616ded01c4",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ed19951afef60185f3d9be5436e8d4616ded01c4"
     },
     {
-      "title": "Coverage patch selector resists header-like hunk data",
+      "title": "Historical pre-D29: Coverage patch selector resists header-like hunk data",
       "commit": "c08e1e1f948a276e5e8f82353f881f23aa2fe1f7",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c08e1e1f948a276e5e8f82353f881f23aa2fe1f7"
     },
     {
-      "title": "Successful descriptor-file cache with native path identity and retry behavior",
+      "title": "Historical pre-D29: Successful descriptor-file cache with native path identity and retry behavior",
       "commit": "c979e874202b8a1c07d26d13eff7258352b58558",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/c979e874202b8a1c07d26d13eff7258352b58558"
     },
     {
-      "title": "Lazy explicit runtime install-share discovery with isolated explicit factories",
+      "title": "Historical pre-D29: Lazy explicit runtime install-share discovery with isolated explicit factories",
       "commit": "8939b4271f238cc8bee6f4846be05bd54306ea72",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/8939b4271f238cc8bee6f4846be05bd54306ea72"
     },
     {
-      "title": "Bounded CLI file diagnostics with explicit schema and descriptor wrong-wire differences",
+      "title": "Historical pre-D29: Bounded CLI file diagnostics with explicit schema and descriptor wrong-wire differences",
       "commit": "ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7"
     },
     {
-      "title": "Reflected repeated-field kind reuse with preserved scalar parser and partial-state semantics",
+      "title": "Historical pre-D29: Reflected repeated-field kind reuse with preserved scalar parser and partial-state semantics",
       "commit": "62ac297e7bb4b87e23089c8f838f9ed32dc92832",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/62ac297e7bb4b87e23089c8f838f9ed32dc92832"
     },
     {
-      "title": "Opt-in slice-backed standard-prost append encoder",
+      "title": "Historical pre-D29: Opt-in slice-backed standard-prost append encoder",
       "commit": "19bf909daa4a5d121d889cdeaded0561cf1c13f1",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/19bf909daa4a5d121d889cdeaded0561cf1c13f1"
     },
     {
-      "title": "Source-aware optional Boolean extension-default declarations and exact native controls",
+      "title": "Historical pre-D29: Source-aware optional Boolean extension-default declarations and exact native controls",
       "commit": "964f831d96f0faa3c6bde9a19882c0c86e563e71",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/964f831d96f0faa3c6bde9a19882c0c86e563e71"
     },
     {
-      "title": "Canonical INT32 extension defaults with six exact prior-approved native dispositions",
+      "title": "Historical pre-D29: Canonical INT32 extension defaults with six exact prior-approved native dispositions",
       "commit": "f186f9ef31d5c8547e24baaa7d048caf45ef0afe",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f186f9ef31d5c8547e24baaa7d048caf45ef0afe"
     },
     {
-      "title": "Canonical INT64 extension defaults with retained loader boundaries",
+      "title": "Historical pre-D29: Canonical INT64 extension defaults with retained loader boundaries",
       "commit": "65ebd8ab45ffd55659071f7a643d119839ad9c39",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/65ebd8ab45ffd55659071f7a643d119839ad9c39"
     },
     {
-      "title": "Remaining canonical integer extension defaults with seven exact approved historical dispositions",
+      "title": "Historical pre-D29: Remaining canonical integer extension defaults with seven exact approved historical dispositions",
       "commit": "2332cef9ac0aab40202d05808c10ec2efbad4228",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/2332cef9ac0aab40202d05808c10ec2efbad4228"
     },
     {
-      "title": "Verified public-archive append benchmark preparation (unmeasured)",
+      "title": "Historical pre-D29: Verified public-archive append benchmark preparation (unmeasured)",
       "commit": "a39a9455d731923bd316745c2dda21071408dcbf",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a39a9455d731923bd316745c2dda21071408dcbf"
     }
   ],
   "remaining": [
-    "Consumer adoption and wider wire qualification; direct prost/reflection remain stricter than native C++",
-    "Remaining declaration families/options and full CLI grammar qualification; Linux OS-byte arguments accepted",
-    "Absent-variable compiled install-prefix/release layout; native schema-validation console and descriptor wrong-wire release dispositions and remaining distribution policy",
-    "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending",
-    "Generated typed LaserScan decode remains slower; the accepted opt-in append helper still needs exact-helper performance qualification and separate consumer adoption decisions.",
-    "Final-source reflection timing remains unqualified; paired measurement and source, binary, compiler and native identity review are still required before a speedup claim."
+    "Prepare and independently review the canonical proto-only release tree and minimal standard schema validation.",
+    "Coordinate simulator consumer-owned generation with pinned maintained tooling, exact imports/options/tags and native wire conformance.",
+    "Retain old pinned runtime/history until consumer migration avoids broken dependencies; then coordinate schema-only publication.",
+    "Qualify the new schema-only scope without reusing historical runtime coverage or claiming an empty runtime passes 95%."
   ],
   "blockers": [],
   "plan_status": {
-    "MSG-01": "complete",
-    "MSG-02": "in_progress"
+    "MSG-01": "in_progress",
+    "MSG-02": "in_review"
   },
   "quality": {
     "revision": "a39a9455d731923bd316745c2dda21071408dcbf",
@@ -595,6 +598,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41200381707"
     },
-    "note": "Exact whole workflow 41200381707 succeeded, including full verification, real partial-staging rejection, immutable source archive, fresh-cache CLI/downstream checks and public append preparation from its own archive. Downloaded evidence verifies all 910 source blobs/modes/paths and complete Git commit/tree, all ten reviewed paths and all 20 coverage inputs. The unchanged mandatory checkers pass: 217 regular Rust tests, zero ignored, 7,559 native JSON outcomes and strict per-file line/region coverage. No executable production additions; owned derive/reflection patch gates remain unchanged. Uploaded preparation verifies all ten historical wires and 45 cases with 270 zero-clock rows, zero warmup, 78 compiler invocations / 22 runtime units for each Rust variant, identical consumer/lock/manifest, only append feature selection, exact public library binding and binary/generated-input hashes. The first local ENOSPC gate remains a failed attempt; the complete unchanged retry passed with no phase carry. All 83 original mappings remain unchanged. This accepts tooling preparation only: no timing, speedup, default adoption, schema/vendor/dependency/parser/pin change or MSG-02 completion claim."
+    "note": "HISTORICAL PRE-D29 RUNTIME EVIDENCE ONLY: revision a39a945 and whole workflow 41200381707 qualified the former custom library/tooling scope, with 217 Rust tests, 83 original mappings, 7,559 native JSON outcomes, prior Rust line/region coverage and verified source/preparation archives. These unchanged metrics are retained as history, not evidence that the new proto-only release or Zenoh consumer migration is complete. D29 stops further codec/runtime/CLI/reflection/conversion/loader and benchmark work. MSG-01 is reopened for canonical schema distribution and consumer-owned generation; retirement of obsolete packets/catalog counts is coordinated by Root. Main still contains the historical runtime until the migration is ready. No new schema-only acceptance or removed-scope completion claim."
   }
 }
