@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T02:02:15.955643+00:00",
+  "updated_at": "2026-10-31T02:07:32.063474+00:00",
   "state": "active",
-  "summary": "Reviewed audio-device metadata is published at c159f47 after the full protected staged pass; exact hosted checks remain pending. Broader SDF fidelity remains open.",
+  "summary": "World audio-device metadata is accepted after independent review, the protected staged gate and exact hosted success. Broader SDF and World.Load fidelity remain incomplete.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
       "title": "Remaining world and DOM metadata fidelity",
-      "detail": "Published c159f4780f100de35137fabdb6df6eacc97807fd passed independent final review and the full ordinary protected hook: 604 Rust tests, 43 tooling tests, strict 7738/7765 lines and 12159/12401 regions, and 5/5 changed executable lines. Native 31-control/default/full-projection/original evidence remains qualified. Exact hosted acceptance is pending, so accepted quality below stays779c23e. Audio is owned metadata only; no device/playback/worker or consumer pin. World.Load remains partial, counts203/27 unchanged. Spherical/GUI, Sky/Fog and native Element/path remain open.",
+      "detail": "Scene and audio-device metadata are accepted. The audio slice stores the native string/default without opening a device, audio engine or worker. Only four pre-reviewed capability predicates changed; corpus bytes and unrelated assertions remain unchanged. World.Load remains partial, counts203/27 unchanged. Spherical/GUI, Sky/Fog, Element/path, broader schema behavior and serialization remain open. No simulator consumer pin or audio activation changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c159f4780f100de35137fabdb6df6eacc97807fd"
     }
   ],
@@ -828,6 +828,11 @@
       "title": "Implement semantic SDF loading and strict staged quality gates",
       "commit": "7fa1fc2e2790855c0db9af7f1f370c233135c418",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7fa1fc2e2790855c0db9af7f1f370c233135c418"
+    },
+    {
+      "title": "Owned world audio-device metadata with preserved native string/default semantics and explicit strict duplicate policy",
+      "commit": "c159f4780f100de35137fabdb6df6eacc97807fd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c159f4780f100de35137fabdb6df6eacc97807fd"
     }
   ],
   "remaining": [
@@ -849,17 +854,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "779c23e02fe9cb6572918e1b332f237e3a4cdf7f",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/779c23e02fe9cb6572918e1b332f237e3a4cdf7f",
-    "rust_tests": 600,
+    "revision": "c159f4780f100de35137fabdb6df6eacc97807fd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c159f4780f100de35137fabdb6df6eacc97807fd",
+    "rust_tests": 604,
     "coverage": {
       "lines": [
-        7731,
-        7758
+        7738,
+        7765
       ],
       "regions": [
-        12140,
-        12382
+        12159,
+        12401
       ]
     },
     "upstream": {
@@ -869,8 +874,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41150604450"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41158096625"
     },
-    "note": "Exact hosted run41150604450 and the full normal protected staged hook passed600 Rust/43 tooling; hosted source digest and metrics match the independently reviewed snapshot. Coverage7731/7758lines,12140/12382regions,changed42/42 andfullsource7384/7405 match local evidence. Independent producer replay passed15 affected Rust/47 native controls, constructor/full-projection checks and two unchanged originals. Final independent closed syntax proof replay passed23 helper/43 tooling controls and Clippy after two scope corrections; actual DA0 and region authority and all thresholds remain unchanged. First failed hook, retained-data diagnostics and successful full retry remain distinct. World.Load stays partial, counts203/27 remain unchanged, and no additional complete original-test, runtime, consumer-pin or whole-SDF credit is claimed."
+    "note": "Exact hosted c159f47 and every required step passed after independent final source/assertion review and the full normal protected staged gate. Downloaded hosted evidence matches the reviewed source digest and local results: 604 Rust tests,43 tooling tests,7738/7765 lines,12159/12401 regions,5/5 changed executable lines and7389/7410 full-source lines. Pinned native31-control/default/full-projection/original replay is qualified. Audio is metadata only; World.Load remains partial and counts203 complete/27 partial are unchanged. No audio runtime, consumer pin, whole-case completion or performance claim."
   }
 }
