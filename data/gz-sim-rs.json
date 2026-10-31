@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T02:13:25.963790+00:00",
+  "updated_at": "2026-10-31T02:35:07.417208+00:00",
   "state": "active",
-  "summary": "The SDF producer migration remains accepted. Reviewed canonical HFOV-only camera binding is running full staged qualification; broader rendering and sensor output remain incomplete.",
+  "summary": "Canonical HFOV-only SDF camera binding is published at 5669d79 after independent review and the full staged pass. Exact hosted qualification is running; accepted quality remains92b1703.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Canonical HFOV-only camera binding passed independent source review, fresh scene/extraction tests, native SDFormat pose checks and a real software-Vulkan SDF-to-worker image replay. Sparse camera-only reset entries avoid per-node camera storage in worlds without cameras. The full staged gate first failed at the unchanged offline Fuel tests because sandbox namespace setup returned EPERM; that failed evidence is retained and the identical hook is rerunning with the required privileges. Accepted quality remains 92b1703. CPU Image/CameraInfo conversion is being developed separately. Scheduling, publication, native images, variable resolution, physical GPUs and comparative performance remain unfinished."
+      "detail": "Published5669d79 passed the ordinary privileged hook:653 headless and383 renderer test executions,149 tooling tests, strict per-crate/profile coverage. Headless aggregate7991/8083 lines and12447/12729 regions; renderer4391/4508 and6516/6780. Scene changed91/94 and extraction68/69 satisfy unchanged strict gates. Exact hosted41160470420 remains pending, so accepted quality below stays92b1703. The earlier sandbox namespaceEPERM attempt is retained separately. Binding keeps complete owned camera metadata, inherited live pose/stable IDs and sparse reset entries; an actual SDF-to-Bevy-worker image test passes. Private CPUImage/CameraInfo conversion has independent pure-helper and native325-byte layout replay. Scheduling/publication, variable resolution, native images, physical GPUs and comparative performance remain unfinished."
     },
     {
       "id": "QLT-01",
