@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T18:18:52.721673+00:00",
+  "updated_at": "2026-10-31T18:44:52.634195+00:00",
   "state": "active",
-  "summary": "The direct Zenoh migration is in integration testing. Clock/control, CLI, IMU and force ownership have independent reviews; removal services are now migrated and under review. Full headless acceptance is still pending.",
+  "summary": "Direct Zenoh rate controls and removal ownership have passed independent reviews. The legacy Node runtime is removed; native server tests and application-only options are being integrated. Full headless acceptance still requires the strict release gates.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "Three parallel agents are reviewing removal services, resolving native rate-client readiness, and migrating the remaining server client tests; the coordinator owns integration. Reviewed evidence includes retained CLI cases, paired C++ root/world clock bytes on all four physics backends, IMU ownership controls, and force IO plus CPU integration. Removal requests now use direct Zenoh and plain CPU reply slots; focused hierarchy, boundary and IO lifecycle controls pass, with independent review underway. Reset setup is explicit outside raw stepping. A real rate-only retirement regression was reproduced and fixed; its review is pending. A fresh native rate run failed on the first control query; bounded discovery readiness is being investigated without retrying requests or weakening assertions. The unused legacy Node/configuration dependency and some tests remain. Complete owned coverage, callback/shutdown pressure checks, equal-work performance evidence, and the full staged and hosted gates are still required. Historical ZeroMQ results do not establish Zenoh acceptance."
+      "detail": "Independent reviews now cover rate controls, CPU removal semantics, direct removal query ownership, rate-only retirement and joined callback teardown. Reviewers reproduced and fixed a false overflow count and strengthened a collision test. Current real C++ Zenoh server tests pass all 39 retained application scenarios plus TCP lifecycle; independent integration replay also passes. CLI tests pass after removal of the unused legacy Node runtime. A bounded response channel replaces a source-level reply-slot contention race; its review is underway, with the earlier native no-reply failure still recorded as having an unknown cause. Three parallel agents are reviewing application-only options, completing remaining direct-client tests and checking integration changes. Configuration helpers and pinned historical dependencies remain temporarily. The native CI bootstrap, complete owned coverage, pressure/absence controls, equal-work reference evidence, and full staged plus exact hosted gates are outstanding. Historical ZeroMQ evidence is not Zenoh acceptance."
     },
     {
       "id": "ACT-01",
