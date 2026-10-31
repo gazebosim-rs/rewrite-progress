@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T13:13:11Z",
+  "updated_at": "2026-10-31T13:39:01Z",
   "state": "active",
-  "summary": "URDF named-target material/friction fix accepted at8742ddc after full staged and exact hosted/source validation; original counts remain205 complete and29 partial.",
+  "summary": "The bounded two-link continuous-joint URDF slice has finished docs, provenance and exact original mapping and is frozen for review; accepted quality remains8742ddc with205 complete/29 partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Two-link continuous-joint URDF import",
-      "detail": "The separate candidate is rebased onto accepted8742ddc and reuses its reviewed generated-name admission rule. Continuous 5, retained single-link 11 and named-target 3 focused tests pass together (19 total). Native characterization retains 74 controls, the unchanged ValidContinuousJointedURDF original, and additional canonical/default-child frame probes. The narrow candidate maps continuous to revolute, preserves joint origin in the parent frame and child identity in the joint frame, and reuses existing SDF graphs. Missing limit presence is preserved rather than confused with urdf-rs zero defaults. Other joint types, fixed reduction, larger graphs, meshes and unsupported metadata remain rejected. Feature documentation, provenance driver, assertion mapping, independent review and full staged/hosted qualification remain pending; no feature credit or consumer pin changes.",
+      "detail": "The 13-path candidate on accepted8742ddc reuses pinned urdf-rs, admitted link payloads, the reviewed named-target guard and existing SDF graphs. The replay driver verifies 82 actual native inputs, raw copy mutation, four canonical/default-child/parent/model frame probes and the unchanged full ValidContinuousJointedURDF original. All 84 older controls, 29 named-target regressions, both older originals and 31 generated XML snapshots remain unchanged. Seven new plus fourteen retained focused Rust tests, focused Clippy, formatting and ledger checks pass. The pending ledger row maps exactly five original valid-load/name observations; no general articulated importer, reduction or runtime claim. Documentation and source separation are complete. Independent review, protected full staged/strict coverage and exact hosted/source validation remain pending; no large build started during the active simulator gate. Accepted counters, dependencies and consumer pins are unchanged.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
     }
   ],
@@ -884,7 +884,7 @@
     "API-01": "in_progress",
     "QLT-01": "in_progress",
     "SDF-01": "in_progress",
-    "SDF-02": "in_progress"
+    "SDF-02": "in_review"
   },
   "quality": {
     "revision": "8742ddcc02674cd5aceb1034183d98ee91c1f85a",
