@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T19:23:28.207254+00:00",
+  "updated_at": "2026-10-31T19:54:13.599214+00:00",
   "state": "active",
-  "summary": "The private Rust workspace now uses direct Zenoh and generated protobuf bindings without the old Transport or Messages runtimes. Independent integration reviews pass; reproducible native provisioning and strict release qualification remain.",
+  "summary": "The source-built Zenoh client reference and retained C++ interoperability now pass. Strict server coverage diagnostics found real region/changed-line gaps; full-app performance reference qualification and complete release gates remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "The SDK-free ServerOptions integration passed independent source review, 124 non-timed server controls and camera fault checks. Current author replays pass all 39 C++ server scenarios, seven native rate scenarios and retained CLI cases. A legacy invalid-IP CLI assertion was narrowly rehosted to an actual malformed TCP endpoint, preserving its failure and no-state-output predicates. Reply channels now preserve exact discarded-response accounting; independent real-query and shutdown reviews pass. Five valuable reviewer regressions were promoted into owned tests; all 16 world IO controls pass independently. Three agents now review the pinned Zenoh ON native bootstrap, common fixture compiler and camera reference migration. Signed snapshot/package verification passes; a compiler-launcher provenance finding is being repaired before the fresh SDK build. No native OFF evidence is credited. Full pressure/absence controls, strict complete coverage profiles, quiet equal-work measurements and unchanged staged plus exact hosted gates still block headless acceptance."
+      "detail": "The Rust workspace has no old Transport, Messages runtime or ZeroMQ dependencies. Its first independently reviewed source-built Zenoh ON client reference validates; all four unchanged C++ fixtures compile against it, and fresh retained server, rate and CLI interoperability scenarios pass. Compiler-launcher provenance and exact reply-discard accounting findings are fixed. Promoted real-query regressions pass independently. A server-only diagnostic passed 131 non-timed lib controls and runtime-build checks but correctly failed strict region coverage (3441/3655) and changed-line coverage (1571/1654); actual gaps are being assigned, with no threshold/exclusion changes. Three timed paths and both complete profiles remain required. The client-only reference cannot qualify full Gazebo pipeline comparisons: affected Sim/Sensors app code must be rebuilt for Zenoh. Agents are reviewing selected consumers, repairing coverage gaps and preparing the separate app-reference contract. No OFF results or isolated passing subsets count as headless acceptance; pressure/absence, quiet equal-work, staged and exact hosted gates remain."
     },
     {
       "id": "ACT-01",
