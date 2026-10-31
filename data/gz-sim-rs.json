@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T01:13:14.703523+00:00",
+  "updated_at": "2026-10-31T01:47:15.486163+00:00",
   "state": "active",
-  "summary": "Bounded calibrated camera rendering is accepted after independent reviews, full staged qualification and exact hosted success. The SDF consumer migration is running mandatory checks; canonical camera sensor binding remains private and incomplete.",
+  "summary": "Calibrated camera rendering is accepted. The reviewed SDF producer migration is published at 92b1703 after its full staged pass and awaits exact hosted checks. Canonical HFOV-only camera binding is under independent qualification.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Accepted c94606b passes exact hosted run 41150326340, the full staged gate and independent source/API/state plus actual same-graph image reviews. Its v2 atomic camera/scene requests support finite asymmetric pinhole projection, rebased camera pose, clipping and rejected/busy update atomicity for 64\u00d764 unlit box scenes. The gate runs 633 headless and 358 renderer-profile test executions with strict per-crate coverage. A separate SDF consumer migration is in the full staged gate, while data-only canonical camera binding remains private with its loader closed pending native precedence qualification. Sensor scheduling/demand, Image/CameraInfo publication, variable resolution, native image parity, physical GPUs and comparative performance remain open."
+      "detail": "Accepted c94606b qualifies bounded calibrated 64\u00d764 camera snapshots. Reviewed producer migration 92b1703 passed the full staged gate (642 headless and 368 renderer test executions) and is published; exact hosted run 41155481713 remains pending, so accepted quality below stays at c946. Private HFOV-only SDF camera binding now passes lifecycle controls on four backends and an actual SDF\u2192canonical extraction\u2192Bevy-worker image control. Native SDFormat independently confirms inherited sensor pose. Native Ogre initialization crashes before a camera exists; K/P overrides and native-image parity remain unqualified. No sensor scheduler, Image/CameraInfo publication, variable resolution, physical GPU or comparative performance acceptance is claimed."
     },
     {
       "id": "QLT-01",
