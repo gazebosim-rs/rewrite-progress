@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T15:41:53.167824+00:00",
+  "updated_at": "2026-10-31T15:55:07.763980+00:00",
   "state": "active",
-  "summary": "Direct Zenoh migration is under development. The actual Rust server now exchanges world clocks and step/reset/pause controls with a real C++ Gazebo Zenoh client. This private diagnostic does not complete headless acceptance.",
+  "summary": "The actual Rust Server now delivers clocks, poses and IMU readings to a real C++ Gazebo Zenoh client and accepts step/reset/pause controls. Camera migration passed independent review. These private increments still await complete migrated-system qualification.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "A real C++ Gazebo Zenoh client observes the actual Rust Server clock at one, two and three milliseconds, then requests reset and pause and observes zero time. The current integrated source replay passed with both processes exiting successfully. Consumer-generated bindings and their compiler/schema validation passed independent review, including signed-zero compatibility and real owned build-script coverage. Camera publication has passed author native delivery; independent review found and prompted a fix for native-invalid topic names, with final replay pending. Force ingress is being migrated next. Other server endpoints, removal of remaining legacy dependencies, complete lifecycle and strict integrated local/hosted coverage remain open. Native default queries use blocking congestion control, so bounded reply behavior still needs qualification. Historical ZeroMQ results do not qualify Zenoh."
+      "detail": "A real selected C++ Gazebo Zenoh client now observes actual Server clocks at one, two and three milliseconds, four canonical pose records and three correctly stamped IMU readings with original metadata, sequence, covariance and physical assertions. Step/reset/pause exchange and both child exits pass. Three faithfully rehosted world tests also pass; they exposed and verified a correction for post-close ticks incorrectly succeeding. Camera direct publication passed independent review after fixing native-invalid topic admission. Consumer-generated protobuf wire compatibility and compiler/schema validation passed independent review. Force ingress tests and rate-service migration are under development. Root-clock election, removals, remaining legacy test/dependency migration, bounded service replies, complete owned coverage and full local/hosted gates remain open. Native query defaults are blocking; async syntax alone does not qualify reply behavior. No historical ZeroMQ result is counted as Zenoh acceptance."
     },
     {
       "id": "ACT-01",
