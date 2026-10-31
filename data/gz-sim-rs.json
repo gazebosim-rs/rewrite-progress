@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T12:55:45.738959+00:00",
+  "updated_at": "2026-10-31T13:11:06.292958+00:00",
   "state": "active",
-  "summary": "DART free-root static contacts and the unchanged original ApplyJointForce world are accepted, including real C++ client interoperability and complete local/hosted verification. Broader headless, activation and performance acceptance remain open.",
+  "summary": "Owner simplified scope: use Zenoh directly with C++ Gazebo interoperability; retire the Rust Transport rewrite and keep Messages as proto definitions only. Existing simulator results remain historical until the new network path is qualified.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
+    {
+      "id": "IO-01",
+      "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
+      "detail": "D28/D29 stop all ZeroMQ implementation and Messages runtime/CLI/codec work. The target is four repositories, with no Rust transport successor. Match C++ Gazebo Zenoh topic keys, type/discovery metadata and service contracts; generate consumer bindings from216canonicalproto3 definitions. Native contract probes and schema-only transition preparation are active. Current Cargo pins remain unchanged until reviewed replacements pass retained simulator tests and strict gates. Historical ZeroMQ client passes do not qualify Zenoh."
+    },
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
@@ -630,7 +635,8 @@
     }
   ],
   "remaining": [
-    "Complete broader reference provenance and test inventory, world/resource loading, sensor and transport compatibility; P2 is closed for the selected headless world.",
+    "Qualify direct Zenoh networking against real C++ Gazebo peers and replace legacy runtime dependencies; preserve historical P2 results under their original scope. Complete broader reference provenance, inventory and world/resource loading.",
+    "Publish the schema-only Messages release after consumer-generated bindings and the canonical import closure are verified. No custom message runtime or standalone transport release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
@@ -684,12 +690,12 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41199185194"
     },
-    "note": "Whole exact hosted run and every job/step passed; downloaded62 Rust sources and26 inputs match Git objects and local maps. Independent LLVM recomputation and local/hosted summaries agree: headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. Every required crate exceeds95%. Rust changed0/0 is inapplicable because production changes are native; additional local GCC11/gcov11 coverage on exact native source:bridge504/527,header7/7,jointstate60/62,changed44/46.698 headless/414 renderer are separate execution counts, with3/1 helper-child entries explicitly run by parent harnesses. Original ApplyJointForce fixed Linux case adds one faithful mapping. First storage-failed attempt remains distinct from complete unchanged retry. No whole-system,zero-cost absence or balanced-performance acceptance."
+    "note": "Historical pre-Zenoh runtime evidence: Whole exact hosted run and every job/step passed; downloaded62 Rust sources and26 inputs match Git objects and local maps. Independent LLVM recomputation and local/hosted summaries agree: headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. Every required crate exceeds95%. Rust changed0/0 is inapplicable because production changes are native; additional local GCC11/gcov11 coverage on exact native source:bridge504/527,header7/7,jointstate60/62,changed44/46.698 headless/414 renderer are separate execution counts, with3/1 helper-child entries explicitly run by parent harnesses. Original ApplyJointForce fixed Linux case adds one faithful mapping. First storage-failed attempt remains distinct from complete unchanged retry. No whole-system,zero-cost absence or balanced-performance acceptance."
   },
   "phase_status": {
     "P0": "in_progress",
     "P1": "in_progress",
-    "P2": "complete",
+    "P2": "in_progress",
     "P3": "in_progress",
     "P4": "in_progress",
     "P5": "not_started",
