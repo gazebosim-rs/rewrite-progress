@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T02:22:04.702070+00:00",
+  "updated_at": "2026-10-31T02:29:13.635523+00:00",
   "state": "active",
-  "summary": "Earth/Moon World spherical-reference metadata is implemented privately and awaiting independent review; the accepted public producer remains the checked audio-device revision.",
+  "summary": "World spherical-reference metadata has independent semantic and fold review; protected staged coverage and exact hosted qualification remain pending.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
       "title": "World spherical-reference metadata review",
-      "detail": "Private candidate preserves optional presence, Earth/Moon surface, ENU orientation, native radians, elevation and source without coordinate transformations. Five focused Rust tests, all-target Clippy and 52 pinned native controls pass, including constructor, full/projected equality and unchanged DOMWorld.Load. One old empty-group rejection predicate is unchanged pending independent exact-input approval. Protected staged and exact hosted gates remain pending; World.Load stays partial and accepted counts remain 203/27."
+      "detail": "The private Earth/Moon/ENU metadata candidate preserves presence, native radians, elevation and owned source without geodesy. Independent review passed seven affected Rust checks and 57 pinned native controls plus constructor/full-projection/unchanged DOMWorld.Load. Only one exact pre-approved empty-group rejection predicate changed. Author full suite passes 608 Rust and 43 tooling checks; the last two supplemental negative assertions also pass affected replay. Protected staged coverage and exact hosted success remain pending; World.Load stays partial and accepted counts remain 203/27."
     }
   ],
   "accepted_slices": [
@@ -875,6 +875,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41158096625"
     },
-    "note": "Quality measurements and hosted success describe the accepted public audio-device revision. The private spherical-reference candidate has five focused Rust passes and 52 native controls; independent review, strict staged coverage and exact hosted success remain pending."
+    "note": "Quality measurements and hosted success describe the accepted public audio-device revision. The private spherical-reference candidate independently passes seven affected Rust checks and 57 native controls. Author full suite passes 608 Rust and 43 tooling tests. Protected staged coverage and exact hosted success remain pending."
   }
 }
