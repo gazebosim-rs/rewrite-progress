@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T06:23:18Z",
+  "updated_at": "2026-10-31T06:41:49Z",
   "state": "active",
-  "summary": "The reviewed canonical INT32 extension-default slice passed the full local gate and is published at f186f9e; exact hosted acceptance is pending.",
+  "summary": "Canonical INT32 extension-default declarations are accepted at f186f9e after prior/final independent review, full local gates and exact hosted source verification; MSG-02 remains open.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Canonical INT32 extension-default declarations",
-      "detail": "Independent prior and final review approved all 14 paths and exactly six historical-input positive dispositions. Published f186f9e passed the complete protected staged gate: 213 regular tests, zero ignored, 7,559 native JSON outcomes, and strict coverage across all 20 production files (3,632/3,656 lines; 6,000/6,105 regions; 10/10 executable added lines). Exact whole workflow 41176345544 is running; immutable source, coverage and fresh-cache proof verification remain mandatory. Accepted quality stays at 964f831 / 211 until that succeeds; original mappings remain 83, historical fixtures and other guards stay intact. No Node peers, timing, default codec or consumer pin changes."
+      "title": "Remaining declarations, interoperability and performance",
+      "detail": "Source-aware optional proto2 canonical INT32 defaults now match the bounded 97-row native corpus. Exactly six historical-input positive dispositions received prior independent approval; every fixture byte/native stream and other guard remains intact. Published f186f9e passed independent final review, the full protected gate and whole workflow 41176345544; all 901 downloaded source files and coverage inputs verify. Other defaults, native schema-validation diagnostics, remaining declarations/CLI/distribution, wider interoperability and performance remain open. Original mappings stay 83; no parser/vendor/schema/default codec/consumer pin changes or new timing claim."
     }
   ],
   "accepted_slices": [
@@ -537,6 +537,11 @@
       "title": "Source-aware optional Boolean extension-default declarations and exact native controls",
       "commit": "964f831d96f0faa3c6bde9a19882c0c86e563e71",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/964f831d96f0faa3c6bde9a19882c0c86e563e71"
+    },
+    {
+      "title": "Canonical INT32 extension defaults with six exact prior-approved native dispositions",
+      "commit": "f186f9ef31d5c8547e24baaa7d048caf45ef0afe",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f186f9ef31d5c8547e24baaa7d048caf45ef0afe"
     }
   ],
   "remaining": [
@@ -553,17 +558,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "964f831d96f0faa3c6bde9a19882c0c86e563e71",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/964f831d96f0faa3c6bde9a19882c0c86e563e71",
-    "rust_tests": 211,
+    "revision": "f186f9ef31d5c8547e24baaa7d048caf45ef0afe",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/f186f9ef31d5c8547e24baaa7d048caf45ef0afe",
+    "rust_tests": 213,
     "coverage": {
       "lines": [
-        3625,
-        3649
+        3632,
+        3656
       ],
       "regions": [
-        5985,
-        6090
+        6000,
+        6105
       ]
     },
     "upstream": {
@@ -573,8 +578,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41171394027"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41176345544"
     },
-    "note": "Exact whole workflow 41171394027 passed for this public commit, including full verification, real partial-staging rejection, immutable source archive and fresh-cache installed CLI/downstream checks. Downloaded evidence binds all 897 source files and the Git tree to this revision; all nine reviewed sources and coverage inputs match. Hosted and local results agree: 211 regular Rust tests, zero ignored, 7,559 native JSON outcomes, and strict line/region coverage on all 20 production files. Changed executable lines are 7/7 covered; owned derive patches remain 6/6 lines and 8/8 regions, and reflection patches 126/128 lines and 347/352 regions. All 83 original mappings remain unchanged. No default codec or consumer pin switch, exact-helper timing, native parity, general extension-default support or broader MSG-02 completion is claimed."
+    "note": "Exact whole workflow 41176345544 passed for this public commit, including full verification, real partial-staging rejection, immutable source archive and fresh-cache installed CLI/downstream checks. Downloaded evidence binds all 901 source files and complete Git tree to this revision; all 14 reviewed sources and coverage inputs match. Hosted and local results agree: 213 regular Rust tests, zero ignored, 7,559 native JSON outcomes, and strict line/region coverage on all 20 production files. Added executable lines are 10/10 covered; owned derive patches remain 6/6 lines and 8/8 regions, and reflection patches 126/128 lines and 347/352 regions. All 83 original mappings remain unchanged. No parser, vendor, schema, default codec or consumer pin switch, exact-helper timing, native parity, general extension-default support or broader MSG-02 completion is claimed."
   }
 }
