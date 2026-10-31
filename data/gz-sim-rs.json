@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T17:37:33.760823+00:00",
+  "updated_at": "2026-10-31T18:18:52.721673+00:00",
   "state": "active",
-  "summary": "C++ Gazebo now passes paired root/world clocks and step controls on all four Rust physics backends. CLI and root-clock test migrations passed independent review. Headless release acceptance still awaits lifecycle integration and the complete strict gates.",
+  "summary": "The direct Zenoh migration is in integration testing. Clock/control, CLI, IMU and force ownership have independent reviews; removal services are now migrated and under review. Full headless acceptance is still pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "Independent review passed the retained13CLI+3live cases, including unchanged C++paired clock bytes acrossTPE/Rapier/DART/MuJoCo and signals. Seven retained root-clock cases plus a namespace/remap control pass independent review and fresh execution. Force counter repair passed independent9unit+3native checks. New IMU CPU leases hold no native handles; weak queued frames and IO-owned declarations passed nine real controls and genuine owned coverage, with final path review pending. The finite TCP candidate is implemented with a compile-time zero-linger setting and validated effective transport defaults; stopped-peer feasibility was independently reproduced, while broader application pressure qualification remains open. Actual native per-sensor probes settled remote rate fanout and preserved malformed Empty receipts. Direct rate wiring and Force IO ownership are under development. Reset readiness still waits synchronously, removal services and other legacy tests/dependencies remain, and complete owned coverage/equal-work/full local+hosted gates are outstanding. Historical ZeroMQ evidence is not current acceptance."
+      "detail": "Three parallel agents are reviewing removal services, resolving native rate-client readiness, and migrating the remaining server client tests; the coordinator owns integration. Reviewed evidence includes retained CLI cases, paired C++ root/world clock bytes on all four physics backends, IMU ownership controls, and force IO plus CPU integration. Removal requests now use direct Zenoh and plain CPU reply slots; focused hierarchy, boundary and IO lifecycle controls pass, with independent review underway. Reset setup is explicit outside raw stepping. A real rate-only retirement regression was reproduced and fixed; its review is pending. A fresh native rate run failed on the first control query; bounded discovery readiness is being investigated without retrying requests or weakening assertions. The unused legacy Node/configuration dependency and some tests remain. Complete owned coverage, callback/shutdown pressure checks, equal-work performance evidence, and the full staged and hosted gates are still required. Historical ZeroMQ results do not establish Zenoh acceptance."
     },
     {
       "id": "ACT-01",
