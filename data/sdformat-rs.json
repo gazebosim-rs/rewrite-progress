@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T03:00:32.885522+00:00",
+  "updated_at": "2026-10-31T03:05:29.721847+00:00",
   "state": "active",
-  "summary": "World spherical-reference metadata and its independently reviewed syntax proof are published after the protected staged gate; exact hosted qualification is pending.",
+  "summary": "Bounded World spherical-reference metadata is accepted after independent review, the normal protected staged gate and exact hosted workflow success. World.Load remains partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Exact hosted qualification for spherical-reference metadata",
-      "detail": "Published 7f09072 retains optional Earth/Moon/ENU reference metadata without geodesy or runtime activation. Independent source, exact-predicate and minimal syntax-proof reviews passed. The normal protected staged retry passed 611 Rust tests, 44 tooling tests, 7802/7829 lines, 12245/12487 regions and 62/62 measured changed lines. The first staged failure had no retained raw snapshot; its log, a separate persistent approved-source LLVM diagnostic and the approved bounded proof remain distinct evidence. Exact hosted workflow success and source-bound artifacts are pending. World.Load remains partial; accepted counts 203/27 and the simulator pin are unchanged.",
+      "title": "Remaining world and DOM metadata fidelity",
+      "detail": "Optional Earth/Moon surface, ENU orientation, native radian references and elevation are now accepted owned metadata. Custom surfaces/axes, coordinate transforms, GUI, Sky/Fog, native Element/path identity, broader schema behavior and serialization remain unqualified. World.Load stays partial, counts 203 complete/27 partial are unchanged, and no simulator consumer pin or runtime activation changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7f09072fe5b9799fafb615532916a6213cb0cfcd"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Retain bounded World spherical-reference metadata",
+      "commit": "7f09072fe5b9799fafb615532916a6213cb0cfcd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7f09072fe5b9799fafb615532916a6213cb0cfcd"
+    },
     {
       "title": "Preserve bounded World Scene color and visibility metadata",
       "commit": "779c23e02fe9cb6572918e1b332f237e3a4cdf7f",
@@ -854,17 +859,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "c159f4780f100de35137fabdb6df6eacc97807fd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c159f4780f100de35137fabdb6df6eacc97807fd",
-    "rust_tests": 604,
+    "revision": "7f09072fe5b9799fafb615532916a6213cb0cfcd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/7f09072fe5b9799fafb615532916a6213cb0cfcd",
+    "rust_tests": 611,
     "coverage": {
       "lines": [
-        7738,
-        7765
+        7802,
+        7829
       ],
       "regions": [
-        12159,
-        12401
+        12245,
+        12487
       ]
     },
     "upstream": {
@@ -874,8 +879,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41158096625"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41162377411"
     },
-    "note": "Accepted public quality remains the exact checked audio-device revision c159f47. Spherical-reference revision 7f09072 is published and passed independent review plus the normal protected staged retry; exact hosted workflow success and downloaded source-bound evidence remain pending. No accepted quality or original-case counters advance yet."
+    "note": "Exact hosted 7f09072 whole workflow and every required core step passed. Downloaded evidence matches the reviewed source digest and clean published Main: 611 Rust tests, 44 tooling tests, 7802/7829 lines, 12245/12487 regions, 62/62 changed executable lines and 7451/7472 full-source lines. Separate pinned native qualification passed 57 controls, constructor/full-projection equality and unchanged DOMWorld.Load. The first staged failure has a retained log but no raw snapshot; a distinct persistent approved-source LLVM diagnostic and independently approved bounded syntax proof preceded the successful normal staged retry. World.Load remains partial, original-case counts and the consumer pin are unchanged. No geodesy, runtime activation or performance claim."
   }
 }
