@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T22:34:08.275616+00:00",
+  "updated_at": "2026-10-31T22:48:29.052940+00:00",
   "state": "active",
-  "summary": "The bounded legacy world-vector candidate passes 663 retained Rust tests and 83 pinned native controls. Final independent review and strict staged/hosted qualification remain pending.",
+  "summary": "The independently reviewed legacy world-vector candidate passed retained Rust/native checks, but its normal staged gate failed closed in changed-line coverage validation. A persistent diagnostic is running; acceptance is unchanged.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Load legacy world gravity and magnetic metadata",
-      "detail": "SDF1.4/1.5 first-physics gravity and magnetic fields project into World metadata while preserving actual input XML/version/source. Both unchanged converter originals and83 native controls pass. After independent prior approval, only the historical gravity rejection now uses the exhaustive same-input/URI positive; the corpus and unrelated negatives stay unchanged. All663 Rust tests and all-targetClippy pass. Both new original mappings stay partial; final source review, strict staged and exact hosted gates remain pending. Accepted3e9 quality206complete/29partial and consumer pins are unchanged."
+      "detail": "Both typed-load original mappings remain partial. Independent fresh source/target review passed six affected Rust tests,83 native controls,two unchanged originals and Clippy; author full663 tests pass. The first ordinary staged gate passed49 tooling checks and prior phases before failing changed-source instrumentation syntax validation. Its temporary raw snapshot was cleaned; the failure log is retained. One unchanged ordinary persistent diagnostic is collecting exact records before any correction. No source formatting, assertion, coverage threshold, consumer pin or accepted counter change."
     }
   ],
   "accepted_slices": [
@@ -887,7 +887,9 @@
     "Remaining sensor families, complete DOM/setter/Element contracts, serialization and CLI.",
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
-  "blockers": [],
+  "blockers": [
+    "The normal staged gate failed closed in changed-line validation; exact LLVM/LCOV diagnostics and any necessary independently reviewed correction are pending."
+  ],
   "plan_status": {
     "REF-02": "in_progress",
     "API-01": "in_progress",
