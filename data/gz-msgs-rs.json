@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T03:22:36Z",
+  "updated_at": "2026-10-31T03:30:29Z",
   "state": "active",
-  "summary": "An opt-in safe slice-backed append helper is in private implementation after independently reviewed bounded LaserScan experiments.",
+  "summary": "The private opt-in append helper is ready for independent source/API review; focused correctness and new-source coverage pass.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Opt-in standard-prost append helper",
-      "detail": "Private implementation preserves an existing Vec prefix, uses checked length arithmetic and fallible reservation, and restores logical length on returned encoding or incomplete-write errors. Focused native/scalar-width/buffer controls are being compiled. Independent review approved the precursor timing packet, but this public helper has not been separately timed or adopted. Default codecs, producer source acceptance, consumer pins and accepted counters remain at 62ac297."
+      "detail": "The frozen opt-in standard-prost helper preserves existing Vec prefixes, uses checked lengths and fallible reservation, and rolls back logical length on returned encoding or incomplete-write errors. Seven focused tests, 23 actual native wire comparisons, one doc example and Clippy pass; new production source has 41/41 lines and 72/72 regions covered. Independent source/API review and full normal protected staged/exact hosted checks remain pending. The helper itself is not separately timed or adopted; default codecs, consumer pins and accepted counters remain at 62ac297."
     }
   ],
   "accepted_slices": [
