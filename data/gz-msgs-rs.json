@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T05:09:02Z",
+  "updated_at": "2026-10-31T05:31:29Z",
   "state": "active",
-  "summary": "The reviewed Boolean extension-default slice passed the full local gate and is published at 964f831; exact hosted acceptance is pending.",
+  "summary": "Optional Boolean extension-default declarations are accepted at 964f831 after independent review, full local gates and exact hosted source verification; MSG-02 remains open.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Optional boolean extension-default declarations",
-      "detail": "Independent nine-path source/native review and the ordinary protected staged gate pass. Published candidate 964f831 has 211 regular tests, zero ignored, 7,559 native JSON outcomes, and strict per-file coverage across all 20 production files; local totals are 3,625/3,649 lines and 5,985/6,090 regions. Exact whole workflow 41171394027 is running; downloaded source/coverage verification remains mandatory. Accepted quality counters stay at 19bf909 / 209 until that succeeds. All 83 original mappings, default codec and consumer pins remain unchanged; no timing claim is made."
+      "title": "Remaining declaration and interoperability qualification",
+      "detail": "Source-aware optional proto2 Boolean extension defaults now match 56 pinned native descriptor/CLI observations with exact aliases, metadata snapshots and retained rejection guards. Published 964f831 passed independent review, the protected staged gate and whole workflow 41171394027; all 897 downloaded source files and coverage inputs verify. Other extension defaults, full native validation diagnostics, remaining retained declaration/CLI scope, broader interoperability and performance remain open. All 83 original mappings, default codec and consumer pins remain unchanged; no new timing or general extension-default claim is made."
     }
   ],
   "accepted_slices": [
@@ -532,6 +532,11 @@
       "title": "Opt-in slice-backed standard-prost append encoder",
       "commit": "19bf909daa4a5d121d889cdeaded0561cf1c13f1",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/19bf909daa4a5d121d889cdeaded0561cf1c13f1"
+    },
+    {
+      "title": "Source-aware optional Boolean extension-default declarations and exact native controls",
+      "commit": "964f831d96f0faa3c6bde9a19882c0c86e563e71",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/964f831d96f0faa3c6bde9a19882c0c86e563e71"
     }
   ],
   "remaining": [
@@ -539,7 +544,7 @@
     "Remaining declaration families/options and full CLI grammar qualification; Linux OS-byte arguments accepted",
     "Absent-variable compiled install-prefix/release layout; native schema-validation console and descriptor wrong-wire release dispositions and remaining distribution policy",
     "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending",
-    "Generated typed LaserScan decode remains slower; encode-helper adoption needs a maintained route preserving standard no-patch type identity and reviewed performance evidence",
+    "Generated typed LaserScan decode remains slower; the accepted opt-in append helper still needs exact-helper performance qualification and separate consumer adoption decisions.",
     "Final-source reflection timing remains unqualified; paired measurement and source, binary, compiler and native identity review are still required before a speedup claim."
   ],
   "blockers": [],
@@ -548,17 +553,17 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "19bf909daa4a5d121d889cdeaded0561cf1c13f1",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/19bf909daa4a5d121d889cdeaded0561cf1c13f1",
-    "rust_tests": 209,
+    "revision": "964f831d96f0faa3c6bde9a19882c0c86e563e71",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/964f831d96f0faa3c6bde9a19882c0c86e563e71",
+    "rust_tests": 211,
     "coverage": {
       "lines": [
-        3620,
-        3644
+        3625,
+        3649
       ],
       "regions": [
-        5974,
-        6079
+        5985,
+        6090
       ]
     },
     "upstream": {
@@ -568,8 +573,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41166237874"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41171394027"
     },
-    "note": "Exact whole workflow 41166237874 passed for this public commit, including full verification, real partial-staging rejection, immutable source archive and fresh-cache installed CLI/downstream checks. Downloaded evidence binds all 893 source blobs and the Git tree to this revision; reviewed sources and coverage inputs match. Hosted and local results agree: 209 regular Rust tests, zero ignored, 7,559 native JSON outcomes, and strict line/region coverage on all 20 production files. The helper has 41/41 lines and 72/72 regions covered; owned derive patches remain 6/6 lines and 8/8 regions, and reflection patches 126/128 lines and 347/352 regions. All 83 original mappings remain unchanged. No default codec or consumer pin switch, exact-helper timing, native parity or broader MSG-02 completion is claimed."
+    "note": "Exact whole workflow 41171394027 passed for this public commit, including full verification, real partial-staging rejection, immutable source archive and fresh-cache installed CLI/downstream checks. Downloaded evidence binds all 897 source files and the Git tree to this revision; all nine reviewed sources and coverage inputs match. Hosted and local results agree: 211 regular Rust tests, zero ignored, 7,559 native JSON outcomes, and strict line/region coverage on all 20 production files. Changed executable lines are 7/7 covered; owned derive patches remain 6/6 lines and 8/8 regions, and reflection patches 126/128 lines and 347/352 regions. All 83 original mappings remain unchanged. No default codec or consumer pin switch, exact-helper timing, native parity, general extension-default support or broader MSG-02 completion is claimed."
   }
 }
