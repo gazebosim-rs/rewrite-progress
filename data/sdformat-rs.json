@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T14:38:21Z",
+  "updated_at": "2026-10-31T14:43:50Z",
   "state": "active",
-  "summary": "Independent petgraph-only review passed; the ordinary complete protected staged gate is running. Continuous-joint proof review also passed but its retry is held until the dependency update is accepted. Accepted quality remains 8742ddc.",
+  "summary": "The reviewed petgraph 0.8.3 update passed the full protected gate and is published as 0437a54; exact hosted verification is running. Accepted quality remains 8742ddc until whole hosted/source validation.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Petgraph patch compatibility for headless consumer integration",
-      "detail": "Root independently reviewed the exact three-file dependency delta, source/archive/license/MSRV and baseline-versus-candidate consumer resolution evidence; fresh own source/target passed all 37 focused tests. The existing required receipt was refreshed and checked against both digests. One ordinary complete protected staged gate is running with two build jobs and unchanged source/tests/gates. Publication and whole exact hosted/source validation remain pending. The separate continuous-joint proof review passed but its build/adoption is held; no consumer pin or accepted counter changes.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
+      "detail": "Independently reviewed three-file dependency delta plus the existing required receipt passed one complete ordinary protected staged gate: 649 Rust/48 tooling tests, 8336/8373 lines, 13134/13388 regions and 7957/7986 full-source lines. There are no added production source lines. Clean Main was guarded fast-forwarded and the exact checked commit0437a54 published. Exact whole workflow41211452377 is running; downloaded evidence/source validation and acceptance remain pending. Actual consumer resolution conflict is fixed in the prepared candidate; no consumer pin or original-count promotion yet. The separate approved continuous-joint/proof bundle remains held until dependency acceptance.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/0437a54a0b546aea646e9574fe96f977a3e65f21"
     },
     {
       "id": "SDF-02",
@@ -885,8 +885,8 @@
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
   "blockers": [
-    "The petgraph compatibility update awaits the running protected staged gate and mandatory exact hosted/source acceptance before consumer migration.",
-    "Continuous-joint full retry/adoption is held until the separately reviewed dependency update is accepted."
+    "The published petgraph update awaits exact whole hosted workflow and downloaded source/evidence verification before consumer migration.",
+    "Continuous-joint full retry/adoption is held until the dependency update is accepted."
   ],
   "plan_status": {
     "REF-02": "in_progress",
