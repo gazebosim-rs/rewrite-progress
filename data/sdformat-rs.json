@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T09:54:12.184394+00:00",
+  "updated_at": "2026-10-31T10:31:23Z",
   "state": "active",
-  "summary": "Independent review approved the bounded single-link URDF import and two exact fixed-case mappings; normal protected staged/strict coverage and exact hosted qualification remain pending.",
+  "summary": "The bounded URDF import passed independent semantics review; its first staged gate failed closed on absent-DA syntax, now under bounded proof review.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Remaining World and schema fidelity",
-      "detail": "Fresh independent source/target passed9 focused Rust tests,Clippy,84 native controls,both unchanged originals and matching provenance;15 new dependency source/archive/license audits passed. Root reviewed actual admission,numeric/escaping,reused loader and immutable original/generated views. ValidBasicURDF3 and ParseWhitespace13 tree+3 text observations are approved as fixed-case mappings only. Author637 retained Rust/46 tools pass. Source is frozen for the existing review record and normal full staged gate; exact hosted/source evidence remains required. Accepted quality203 complete/29 partial and consumer pins remain fixed.",
+      "detail": "Independent review approved the bounded importer,84 native controls,two unchanged full originals and15 dependency audits. The first staged gate failed closed on opaque absent-DA syntax; its temporary snapshot was cleaned up. A persistent ordinary LLVM diagnostic measured8307/8357 lines,13092/13360 regions,421/439 changed lines and18 genuine DA0 runtime lines. Two reachable error tests pass11/11; syntax-proof changes and actualLLVM negative controls are under independent review. Producer/native/dependency bytes remain frozen; the full staged retry and exact whole hosted/source gates remain required. Accepted quality203 complete/29 partial and consumer pins are unchanged.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a6623124d325a664fe25ef44b424d07375ad2ef8"
     }
   ],
