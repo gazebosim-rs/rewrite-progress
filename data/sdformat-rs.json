@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T14:26:29Z",
+  "updated_at": "2026-10-31T14:33:31Z",
   "state": "active",
-  "summary": "A minimum two-file syntax-proof correction for the reviewed continuous-joint slice is ready for independent review. Accepted quality remains 8742ddc with 205 complete/29 partial.",
+  "summary": "A separate petgraph 0.8.3 dependency update is ready for independent review to remove an actual consumer resolution conflict. Continuous-joint syntax-proof review remains separate; accepted quality remains 8742ddc with 205 complete/29 partial.",
   "model": "Repository owner",
   "active": [
+    {
+      "id": "SDF-02",
+      "title": "Petgraph patch compatibility for headless consumer integration",
+      "detail": "A separate accepted8742-based three-file candidate updates only exact petgraph 0.8.1 to 0.8.3 plus the necessary lock closure removing unused allocator-api2 and a concise dependency note. An identical consumer requiring ^0.8.3 fails with accepted8742 and resolves to one 0.8.3 package with the candidate. All other package versions, owned source, tests, fixtures, proof and policies are unchanged. Package archive/source checks and license bytes are verified; the declared Rust minimum remains compatible. 37 retained graph/placement/semantic tests and focused Clippy, metadata/layout, ledger and formatting pass. Independent dependency review is pending before the existing receipt refresh and ordinary full protected gate. No consumer pin or accepted counters change.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
+    },
     {
       "id": "SDF-02",
       "title": "Two-link continuous-joint URDF import",
@@ -879,7 +885,8 @@
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
   "blockers": [
-    "The ordinary protected staged gate remains failed pending independent review of the bounded proof correction and a complete unchanged-policy retry."
+    "Accepted SDF exact petgraph 0.8.1 conflicts with the consumer requirement ^0.8.3. A bounded tested update awaits independent review and mandatory full gates.",
+    "The separate continuous-joint staged gate remains failed pending independent proof review and a complete unchanged-policy retry."
   ],
   "plan_status": {
     "REF-02": "in_progress",
