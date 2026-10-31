@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T03:44:11.268273+00:00",
+  "updated_at": "2026-10-31T04:11:05.949306+00:00",
   "state": "active",
   "summary": "SDF camera snapshots remain accepted. Independently reviewed DART moving-parent joints are in full workspace qualification; continuous sensor publishing and broader articulation remain unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -19,7 +19,7 @@
     {
       "id": "PHY-05",
       "title": "Qualifying bounded DART moving-parent joints",
-      "detail": "The private backend slice supports exactly a world-hinged dynamic parent and one revolute child. Independent review passed 115 package tests, 72 additional high-rate/extreme-mass subprocess probes, Clippy and 34 actual pinned-plugin observations. Root review found and fixed a root-joint removal path that would have admitted an unqualified free-root chain. Contacts involving the articulation and active multibody limit rows are refused before Dantzig. Provenance explicitly records the verified ROS-header/system-runtime SDK combination, not a clean homogeneous build. Root adopted 13 reviewed crate paths plus independently reviewed fixture/header tooling; the ordinary full staged hook is running. Scene admission, general graphs, contacts and performance qualification remain open."
+      "detail": "The private backend slice supports exactly a world-hinged dynamic parent and one revolute child. Independent review passed 115 package tests, 72 additional high-rate/extreme-mass subprocess probes, Clippy and 34 actual pinned-plugin observations. Root review found and fixed a root-joint removal path that would have admitted an unqualified free-root chain. Contacts involving the articulation and active multibody limit rows are refused before Dantzig. Provenance explicitly records the verified ROS-header/system-runtime SDK combination, not a clean homogeneous build. Root adopted 13 reviewed crate paths plus independently reviewed fixture/header tooling; the ordinary full staged hook is running. Scene admission, general graphs, contacts and performance qualification remain open. The first full hook stopped because disk space ran out while retaining coverage output; no code, test or threshold was changed. After removing only audited inactive Cargo caches, the identical 14-path staged tree is rebuilding through the ordinary full hook. Accepted counts remain unchanged. The original ApplyJointForce world needs a free-root chain with external contact, which this bounded backend does not admit."
     },
     {
       "id": "PHY-03",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Accepted 5669d79 binds bounded HFOV-only 64\u00d764 cameras to canonical ECS poses, stable IDs and sparse reset metadata. Explicit snapshots render through a real Bevy worker. Independent source, native DOM and software-Vulkan checks passed, followed by the full staged gate and exact hosted run 41160470420. CPU Image/CameraInfo conversion is implemented privately with independent helper tests and a matching 325-byte native CameraInfo replay. Sensor scheduling, demand-driven publication, variable resolution, native image parity, physical GPUs and performance qualification remain unfinished."
+      "detail": "Accepted 5669d79 binds bounded HFOV-only 64\u00d764 cameras to canonical ECS poses, stable IDs and sparse reset metadata. Explicit snapshots render through a real Bevy worker. Independent source, native DOM and software-Vulkan checks passed, followed by the full staged gate and exact hosted run 41160470420. CPU Image/CameraInfo conversion is implemented privately with independent helper tests and a matching 325-byte native CameraInfo replay. Sensor scheduling, demand-driven publication, variable resolution, native image parity, physical GPUs and performance qualification remain unfinished. A private default-disabled CPU output pump now passes five focused controls, including actual worker-exit failure and idle/inflight sensor replacement. Review caught idle public-ID rebinding; corrected ownership now requires dropping old publishers before reconstruction. The default and opt-in server dependency graphs exclude GPU/window crates. Real Image/CameraInfo worker publication, native subscriber, full feature coverage and staged/hosted qualification remain unrun."
     },
     {
       "id": "QLT-01",
