@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T11:41:10Z",
+  "updated_at": "2026-10-31T12:00:21Z",
   "state": "active",
-  "summary": "Public append benchmark preparation passed independent review; its first protected gate hit shared-disk ENOSPC and requires a complete unchanged retry.",
+  "summary": "The complete unchanged public-append tooling gate is retrying after the simulator profile retired; the first ENOSPC failure remains recorded.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Public append-helper benchmark qualification",
-      "detail": "The reviewed ten-path tooling packet retains successful immutable-public-archive native/default/append correctness: ten complete wires, 45 cases, 270 zero-clock rows, fourteen tooling controls and both feature Clippy. The ordinary full staged gate then failed because the native compiler and LLVM profiles could not write to the full shared disk during an unchanged INT64 test. No commit, full-gate or coverage acceptance is claimed. Source and all gates/assertions remain unchanged; a complete retry is required after the active shared profile phase. Accepted quality remains 2332cef / 217 and original mappings remain 83. No timing or default codec adoption."
+      "detail": "The independently reviewed ten-path packet is in one complete protected gate retry with every mandatory check rerun. The simulator temporary target has retired and the retry began with 56 GiB free. Source, assertions, coverage policy and staged bytes are unchanged; no phase carry from the first ENOSPC attempt. Earlier standalone correctness remains separate evidence: ten complete wires, 45 cases, 270 zero-clock rows and fourteen tooling controls against verified public 2332cef source. Accepted quality remains 2332cef / 217 and original mappings remain 83 until full local and exact hosted/downloaded qualification. No timing or default codec adoption."
     }
   ],
   "accepted_slices": [
@@ -562,9 +562,7 @@
     "Generated typed LaserScan decode remains slower; the accepted opt-in append helper still needs exact-helper performance qualification and separate consumer adoption decisions.",
     "Final-source reflection timing remains unqualified; paired measurement and source, binary, compiler and native identity review are still required before a speedup claim."
   ],
-  "blockers": [
-    "The complete protected gate must be rerun after shared-disk ENOSPC; no source or policy change is proposed."
-  ],
+  "blockers": [],
   "plan_status": {
     "MSG-01": "complete",
     "MSG-02": "in_progress"
