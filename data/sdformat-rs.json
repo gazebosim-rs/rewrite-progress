@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T22:22:42.776195+00:00",
+  "updated_at": "2026-10-31T22:34:08.275616+00:00",
   "state": "active",
-  "summary": "A bounded legacy world-vector conversion slice is in progress after the accepted continuous-joint importer. Native characterization passes; Rust replay and independent qualification are pending.",
+  "summary": "The bounded legacy world-vector candidate passes 663 retained Rust tests and 83 pinned native controls. Final independent review and strict staged/hosted qualification remain pending.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Load legacy world gravity and magnetic metadata",
-      "detail": "Source and tests project SDF1.4/1.5 first-physics fields into existing World metadata while preserving original XML/version/source. Eighty-two pinned native controls and both unchanged converter originals pass. Ambiguous direct, duplicate and later-profile cases remain explicitly unsupported. Both original typed-load mappings stay partial; converted Element/version APIs, independent review, strict staged and hosted gates remain pending. No consumer pins or accepted counters change."
+      "detail": "SDF1.4/1.5 first-physics gravity and magnetic fields project into World metadata while preserving actual input XML/version/source. Both unchanged converter originals and83 native controls pass. After independent prior approval, only the historical gravity rejection now uses the exhaustive same-input/URI positive; the corpus and unrelated negatives stay unchanged. All663 Rust tests and all-targetClippy pass. Both new original mappings stay partial; final source review, strict staged and exact hosted gates remain pending. Accepted3e9 quality206complete/29partial and consumer pins are unchanged."
     }
   ],
   "accepted_slices": [
