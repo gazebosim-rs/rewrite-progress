@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T13:38:42Z",
+  "updated_at": "2026-10-31T14:04:03Z",
   "state": "active",
-  "summary": "D29 schema-only candidate is privately reviewed and committed; consumer-owned standard code generation and coordinated publication remain pending. Historical runtime work is stopped and preserved.",
+  "summary": "Privately reviewed schema-only tree is frozen; standard Google Rust consumer feasibility passed bounded native controls. Consumer integration choice, independent replay and coordinated publication remain pending.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-01",
       "title": "Schema-only transition and standard consumer generation",
-      "detail": "The private candidate retains all 216 canonical proto3 files unchanged and removes the runtime only in its isolated branch. Independent fresh-source review, seven schema negative controls, real staged/alternate-index controls and standard protoc import/descriptor validation passed; the normal hook commit passed. Main remains the historical runtime and nothing was published. A source-only official Google Rust/upb consumer probe covers native signed zero, Clock/IMU and retained CameraInfo wire/domain controls; dependency resolution, generation, build, native pairs and consumer migration are still unrun. No hidden successor runtime or default adoption."
+      "detail": "The private schema-only candidate retains all 216 canonical proto3 files unchanged and passed independent source/schema/staged review and its normal hook. Main still contains the historical runtime; no removal was published. An isolated official Google Rust/upb consumer on simulator Rust 1.97.1 generated all canonical schemas and passed five author tests, eleven complete native wire pairs and strict owned linting, with generated-code lint allowances and native/license scope explicit. This is bounded feasibility, not simulator/Zenoh migration or adoption. A separate source-only two-predicate prost-derive signed-zero repair is prepared for comparison, unbuilt and unadopted. No generic SDK/runtime/CLI work resumed."
     }
   ],
   "accepted_slices": [
@@ -560,7 +560,7 @@
     }
   ],
   "remaining": [
-    "Resolve, compile and independently qualify consumer-owned standard code generation against retained native schema/wire/domain semantics, including the stock prost signed-zero mismatch.",
+    "Independently review/replay bounded standard consumer-codegen options and select the narrowest maintained integration preserving native signed-zero and retained message domain semantics.",
     "Migrate actual simulator consumers to local generated bindings and direct upstream Zenoh while preserving retained domain assertions and real coverage.",
     "Keep existing pinned runtime and all history/evidence until coordinated consumer migration permits schema-only publication; final publication review and whole hosted/source verification remain pending.",
     "Historical runtime metrics do not qualify the new schema-only scope; empty runtime coverage denominators are not a 95% pass."
