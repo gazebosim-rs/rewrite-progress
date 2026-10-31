@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T14:33:31Z",
+  "updated_at": "2026-10-31T14:38:21Z",
   "state": "active",
-  "summary": "A separate petgraph 0.8.3 dependency update is ready for independent review to remove an actual consumer resolution conflict. Continuous-joint syntax-proof review remains separate; accepted quality remains 8742ddc with 205 complete/29 partial.",
+  "summary": "Independent petgraph-only review passed; the ordinary complete protected staged gate is running. Continuous-joint proof review also passed but its retry is held until the dependency update is accepted. Accepted quality remains 8742ddc.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
       "title": "Petgraph patch compatibility for headless consumer integration",
-      "detail": "A separate accepted8742-based three-file candidate updates only exact petgraph 0.8.1 to 0.8.3 plus the necessary lock closure removing unused allocator-api2 and a concise dependency note. An identical consumer requiring ^0.8.3 fails with accepted8742 and resolves to one 0.8.3 package with the candidate. All other package versions, owned source, tests, fixtures, proof and policies are unchanged. Package archive/source checks and license bytes are verified; the declared Rust minimum remains compatible. 37 retained graph/placement/semantic tests and focused Clippy, metadata/layout, ledger and formatting pass. Independent dependency review is pending before the existing receipt refresh and ordinary full protected gate. No consumer pin or accepted counters change.",
+      "detail": "Root independently reviewed the exact three-file dependency delta, source/archive/license/MSRV and baseline-versus-candidate consumer resolution evidence; fresh own source/target passed all 37 focused tests. The existing required receipt was refreshed and checked against both digests. One ordinary complete protected staged gate is running with two build jobs and unchanged source/tests/gates. Publication and whole exact hosted/source validation remain pending. The separate continuous-joint proof review passed but its build/adoption is held; no consumer pin or accepted counter changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
     },
     {
@@ -885,8 +885,8 @@
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
   "blockers": [
-    "Accepted SDF exact petgraph 0.8.1 conflicts with the consumer requirement ^0.8.3. A bounded tested update awaits independent review and mandatory full gates.",
-    "The separate continuous-joint staged gate remains failed pending independent proof review and a complete unchanged-policy retry."
+    "The petgraph compatibility update awaits the running protected staged gate and mandatory exact hosted/source acceptance before consumer migration.",
+    "Continuous-joint full retry/adoption is held until the separately reviewed dependency update is accepted."
   ],
   "plan_status": {
     "REF-02": "in_progress",
