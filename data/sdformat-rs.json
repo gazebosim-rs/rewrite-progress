@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T10:58:38Z",
+  "updated_at": "2026-10-31T11:05:01Z",
   "state": "active",
-  "summary": "Reviewed bounded single-link URDF import published at74fa759 after the full protected gate; exact hosted workflow41194860350 is pending.",
+  "summary": "Bounded single-link URDF import accepted at74fa759 after independent review, strict staged gates and exact hosted/source verification;205 complete and29 partial original mappings.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Remaining World and schema fidelity",
-      "detail": "Independent semantics and diagnostic-driven syntax-proof review approved the bounded importer,84 native controls,two unchanged full originals and15 dependency audits. Ordinary protected staged gate passed643 Rust tests,47 tools,8320/8357 lines,13106/13360 regions,431/439 changed and7942/7971 full-source lines. Exact checked tree was fast-forwarded into clean Main and published74fa759. Whole hosted verify41194860350 is running; downloaded source/evidence validation remains required. Accepted quality203 complete/29 partial staysa662 until those gates pass. Single-link only; joints,multiple links,meshes,URDF materials and unsupported Gazebo semantics reject. Original/generated source snapshots remain distinct. Consumer pins are unchanged.",
+      "title": "Remaining articulated import and World fidelity",
+      "detail": "Accepted74fa759 adds an explicit single-link URDF API using pinned urdf-rs behind exhaustive admission,then the existing validated SDF loader. Original URDF and generated SDF snapshots are distinct. Independent review qualified84 native controls,both unchanged full originals and15 dependency audits. Whole exact hosted41194860350 and all726 downloaded source files verified643 Rust/47 tools,8320/8357 lines,13106/13360 regions,431/439 changed. Only ValidBasicURDF and ParseWhitespace receive complete fixed-case credit. General articulated import,mutable native Element and runtime behavior remain unported; consumer pins are unchanged.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/74fa759fd11c019c72eac1b596e62273e77478fd"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Bounded single-link URDF import with distinct original and generated source snapshots",
+      "commit": "74fa759fd11c019c72eac1b596e62273e77478fd",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/74fa759fd11c019c72eac1b596e62273e77478fd"
+    },
     {
       "title": "Retain native Model collision and auto-disable permission metadata",
       "commit": "a6623124d325a664fe25ef44b424d07375ad2ef8",
@@ -856,10 +861,11 @@
     }
   ],
   "remaining": [
+    "Extend the explicit bounded URDF importer to articulated links/joints and other required geometry/material/Gazebo semantics through native-qualified mappings; current API strictly rejects unknown or unsupported input before permissive dependency parsing.",
     "Consumer adoption must explicitly support or reject Model collision/auto-disable permission flags, Link velocity-decay XML metadata, GUI, Scene, spherical and custom metadata before changing the simulator producer pin.",
     "World.Load remains partial; Sky/Fog, GUI camera declarations, custom spherical surfaces/axes, remaining full original assertions, Element/path contracts and serialization are still open.",
     "Model.Construction remains partial: only four collision/auto-disable default/toggle observations are mapped through loaded defaults and owned assignment; constructor/Element, remaining collections/poses and runtime behavior are not qualified.",
-    "The URDF extension original remains partial: only decay Element observations on native-converted SDF are mapped; Rust URDF import, other extension assertions, mutable native Element aliasing and physical damping are unported.",
+    "The URDF extension original remains partial: only decay Element observations on native-converted SDF are mapped; the new separate single-link importer does not port that full extension case; other extension assertions, articulated import, mutable native Element aliasing and physical damping are unported.",
     "Custom sensor runtime, generic mutable Element APIs and custom XML output remain outside this parser metadata change.",
     "Complete primitive Element/error/mutation contracts, PBR and unsupported Surface fields; basic material, heightmap/polyline metadata and full Shapes assertions are delivered.",
     "Complete nonfinite scalar and vector-stream parity; retain documented native inertial-frame limitations and explicit consumer validation.",
@@ -873,31 +879,31 @@
     "API-01": "in_progress",
     "QLT-01": "in_progress",
     "SDF-01": "in_progress",
-    "SDF-02": "in_review"
+    "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "a6623124d325a664fe25ef44b424d07375ad2ef8",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a6623124d325a664fe25ef44b424d07375ad2ef8",
-    "rust_tests": 628,
+    "revision": "74fa759fd11c019c72eac1b596e62273e77478fd",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/74fa759fd11c019c72eac1b596e62273e77478fd",
+    "rust_tests": 643,
     "coverage": {
       "lines": [
-        7864,
-        7891
+        8320,
+        8357
       ],
       "regions": [
-        12361,
-        12603
+        13106,
+        13360
       ]
     },
     "upstream": {
       "total": 1344,
-      "ported": 203,
+      "ported": 205,
       "partial": 29
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41184733199"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41194860350"
     },
-    "note": "Exact hosteda6623124 whole workflow and every required step passed. Downloaded core evidence binds the same run/head SHA; all716 downloaded tracked source files match the reviewed source/protected digests and clean Main. Actual LLVM/LCOV/log validation confirms628 Rust tests,46 tools,7864/7891 lines,12361/12603 regions,24/24 measured changed lines and7511/7532 full-source lines. Separate pinned native qualification passed91 controls, constructor/value-copy mutation and unchanged full DOMModel.Construction. Only four flag value observations add one partial mapping; no complete original credit. Independent prior review approved precisely two old empty1.12/root.sdf transitions, and Root final review confirmed the exact fold. Other predicates/corpus and consumer pins are unchanged. The narrow new flag text boundary rejects native-invalid CR references without changing existing shared boolean callers. No collision filtering,sleeping runtime or performance claim."
+    "note": "Exact hosted74fa759 whole workflow and every required step passed. Downloaded core evidence binds the same run/head SHA; all726 downloaded tracked source files match the reviewed source/protected digests and clean Main. Actual LLVM/LCOV/log validation confirms643 Rust tests,47 tools,8320/8357 lines,13106/13360 regions,431/439 measured changed and7942/7971 full-source lines. Separate pinned native qualification passed84 controls and both unchanged full originals; native checks are not rerun by hosted CI. Independent review approved15 dependency source/archive/license audits,the strict admission/provenance mapping and the minimal diagnostic-driven syntax proof. Two complete fixed-case mappings cover ValidBasicURDF3 and ParseWhitespace13 tree+3 text observations,without general importer/XML/mutable Element credit. First failed staged snapshot was cleaned up; the actual ordinary LLVM diagnostic remains retained. Genuine DA0,region thresholds and all coverage denominators remain enforced. Consumer pins and Fuel are unchanged; no physical damping or performance claim."
   }
 }
