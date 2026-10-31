@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T23:32:26Z",
+  "updated_at": "2026-10-31T23:56:55Z",
   "state": "active",
-  "summary": "Zenoh migration 5870373 is accepted and schema-only Messages is complete. Published 1480725 releases CPU IMU output leases on explicit server shutdown; its full local gate and independent audit pass, with exact hosted CI running. The fresh P2 report and matched observations are under independent publication review.",
+  "summary": "The fresh P2 publication passed its full local gate and independent source/data review, but publication is held while a renderer shutdown failure in exact 1480725 hosted CI is diagnosed. Earlier Zenoh acceptance and completed schema-only Messages remain separate. No checks or deadlines have been relaxed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Extend the qualified direct Zenoh migration",
-      "detail": "Published 5870373 removes the legacy Rust Transport and Messages runtime dependencies. The normal combined staged hook passes 783 headless, 435 renderer and 217 tooling tests, real C++ Zenoh peers and software Vulkan workers. An independent audit verifies all 1762 retained artifacts and exact source/input bindings. Headless coverage is 9761/9935 lines and 14935/15376 regions; renderer 5058/5191 and 7523/7830; every required production crate exceeds 95% in both metrics. Last-stream IMU buffers release on removal and reset failure. A separately qualified source-built C++ application and exact Rust release pass seven alternating measured pairs of 1000 steps: native 63.29us versus Rust 58.56us per step, about 7.5% lower latency, for one small matched TPE clock/pose/IMU case. This does not establish balanced robotics or whole-engine performance. Historical direct and unpaced comparisons retain their unequal-work scope. Exact hosted run 41248418524 passed. Independent audit verifies all 1767 downloaded files, 68 production sources and 272 inputs against the published commit. Hosted headless coverage is 9763/9935 lines and 14937/15376 regions; renderer matches local totals. Real selected C++ peers, generated-schema guards and software Vulkan receipts are verified. Broader activation, pressure, reference and release acceptance remain open. The fresh fifteen-row P2 matrix, current 426-package headless dependency receipt and complete matched-stream observation projection are prepared for independent review and checked publication. Historical P2 files remain unchanged; phase closure waits for that public record and its exact checks, rather than unrelated broader ACT or balanced-robotics work."
+      "detail": "Published 5870373 removes the legacy Rust Transport and Messages runtime dependencies. The normal combined staged hook passes 783 headless, 435 renderer and 217 tooling tests, real C++ Zenoh peers and software Vulkan workers. An independent audit verifies all 1762 retained artifacts and exact source/input bindings. Headless coverage is 9761/9935 lines and 14935/15376 regions; renderer 5058/5191 and 7523/7830; every required production crate exceeds 95% in both metrics. Last-stream IMU buffers release on removal and reset failure. A separately qualified source-built C++ application and exact Rust release pass seven alternating measured pairs of 1000 steps: native 63.29us versus Rust 58.56us per step, about 7.5% lower latency, for one small matched TPE clock/pose/IMU case. This does not establish balanced robotics or whole-engine performance. Historical direct and unpaced comparisons retain their unequal-work scope. Exact hosted run 41248418524 passed. Independent audit verifies all 1767 downloaded files, 68 production sources and 272 inputs against the published commit. Hosted headless coverage is 9763/9935 lines and 14937/15376 regions; renderer matches local totals. Real selected C++ peers, generated-schema guards and software Vulkan receipts are verified. Broader activation, pressure, reference and release acceptance remain open. The fresh fifteen-row P2 matrix, current 426-package headless dependency receipt and complete matched-stream observation projection are prepared for independent review and checked publication. Historical P2 files remain unchanged; phase closure waits for that public record and its exact checks, rather than unrelated broader ACT or balanced-robotics work. The P2 publication candidate 25331ec passed the full normal staged hook after independent fifteen-row/data/provenance reviews. Its public push and phase advance are held pending diagnosis and correction of the current required renderer failure."
     },
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Published 1480725 releases CPU IMU output leases and vector storage before IO shutdown while retaining the simulation for inspection. Its new regression fails before the fix; all seven real-network shutdown controls pass after it. The complete ordinary staged hook and independent audit pass 784 headless, 435 renderer and 217 tooling tests, strict crate coverage and 1/1 changed executable line. Exact hosted run 41252543726 is pending. The first capacity-stopped attempt remains a failure distinct from the complete retry. Explicit post-shutdown tick admission is being characterized separately; retained unexpected Session-close behavior will not be silently changed. Full demand-only scheduling, endpoint retirement, zero-cost absence and CPU/RSS evidence remain open."
+      "detail": "Published 1480725 releases CPU IMU output leases and vector storage before IO shutdown while retaining the simulation for inspection. Its new regression fails before the fix; all seven real-network shutdown controls pass after it. The complete ordinary staged hook and independent audit pass 784 headless, 435 renderer and 217 tooling tests, strict crate coverage and 1/1 changed executable line. Exact hosted run 41252543726 failed in an unchanged renderer worker-exit test, so this follow-up remains unaccepted by hosted qualification. The first capacity-stopped attempt remains a failure distinct from the complete retry. Explicit post-shutdown tick admission is being characterized separately; retained unexpected Session-close behavior will not be silently changed. Full demand-only scheduling, endpoint retirement, zero-cost absence and CPU/RSS evidence remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Accepted78b702f passed exact hosted41178350561 and the unchanged full staged gate:676 headless and413 renderer executions, real C++ Image/CameraInfo delivery and strict per-crate coverage. Downloaded profiles bind62 production sources and26 inputs to exact Git objects. Camera287/300 lines and376/395 regions; changed292/297. Software Vulkan provides actual frames. Explicit caller-owned single-camera acquisitions preserve timestamps and invalidate buffered frames on reset/removal/replacement/fault. Automatic scheduling/default topics, physical GPU/native-image equivalence, other sensor families and performance remain open."
+      "detail": "Accepted78b702f passed exact hosted41178350561 and the unchanged full staged gate:676 headless and413 renderer executions, real C++ Image/CameraInfo delivery and strict per-crate coverage. Downloaded profiles bind62 production sources and26 inputs to exact Git objects. Camera287/300 lines and376/395 regions; changed292/297. Software Vulkan provides actual frames. Explicit caller-owned single-camera acquisitions preserve timestamps and invalidate buffered frames on reset/removal/replacement/fault. Automatic scheduling/default topics, physical GPU/native-image equivalence, other sensor families and performance remain open. Current exact hosted run 41252543726 at 1480725 failed disconnected_output_reports_failure_and_worker_exits at its retained 10-second exit bound (19 passes and one failure in that target). Worker/test sources match 5870373; cause is being investigated, not assumed unrelated. Partial logs and artifacts are retained, renderer coverage is incomplete, and no rerun or deadline relaxation is treated as acceptance."
     },
     {
       "id": "QLT-01",
@@ -647,7 +647,9 @@
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Required exact hosted renderer shutdown test failed at 1480725; root cause is under investigation. P2 publication and new simulator acceptance are held until a reviewed correction passes all required gates."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -693,10 +695,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "failure",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41252543726"
     },
-    "note": "Published shutdown follow-up 1480725 passed the complete normal staged hook and independent source/artifact audit: all 1762 artifacts, 68 production sources and 272 inputs bind to exact Git objects. 784 headless and 435 renderer tests are separate execution counts; 217 tooling tests pass. Every required production crate exceeds 95% lines and regions; renderer totals remain 5058/5191 and 7523/7830. The sole changed executable line is covered. Native C++ Zenoh, generated-schema and software Vulkan evidence passes locally. Exact hosted run 41252543726 is pending, so this follow-up has no hosted acceptance yet. Prior 5870373 remains independently accepted at exact hosted 41248418524. The narrow matched TPE timing evidence belongs to 5870373, not this shutdown fix. Whole ACT-01, balanced performance and release qualification remain open."
+    "note": "Published shutdown follow-up 1480725 passed the complete normal staged hook and independent source/artifact audit: all 1762 artifacts, 68 production sources and 272 inputs bind to exact Git objects. 784 headless and 435 renderer tests are separate execution counts; 217 tooling tests pass. Every required production crate exceeds 95% lines and regions; renderer totals remain 5058/5191 and 7523/7830. The sole changed executable line is covered. Native C++ Zenoh, generated-schema and software Vulkan evidence passes locally. Exact hosted run 41252543726 failed the retained renderer disconnected-output exit bound. Its renderer evidence is incomplete; the follow-up has no hosted acceptance. The failure is being diagnosed without changing assertions or deadlines. Prior 5870373 remains independently accepted at exact hosted 41248418524. The narrow matched TPE timing evidence belongs to 5870373, not this shutdown fix. Whole ACT-01, balanced performance and release qualification remain open."
   },
   "phase_status": {
     "P0": "in_progress",
