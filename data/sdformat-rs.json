@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T14:07:19Z",
+  "updated_at": "2026-10-31T14:13:44Z",
   "state": "active",
   "summary": "The independently reviewed continuous-joint slice failed the ordinary protected staged gate at changed-source instrumentation proof. Accepted quality remains 8742ddc with 205 complete/29 partial.",
   "model": "Repository owner",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-02",
       "title": "Two-link continuous-joint URDF import",
-      "detail": "Independent fresh review passed 21 focused Rust tests, all-target Clippy, native82 with copy/four frames and exact original, retained84+29 and both older originals. One complete ordinary staged gate passed 48 tooling tests, Clippy, documentation tests and the full Rust suite, then failed closed at changed-source instrumentation proof. No source or policy change, commit or publication followed. The failure log is retained; the temporary staged snapshot was automatically cleaned and raw coverage is not claimed retained. A persistent ordinary diagnostic is pending to identify actual missing DA/region records before proposing any correction. Exact five-observation original credit remains pending final gates; counters, dependencies and consumer pins are unchanged.",
+      "detail": "Independent fresh review passed 21 focused Rust tests, all-target Clippy and native82/copy/fourframes/exactoriginal plus retained84+29 and both older originals. The ordinary staged gate failed closed at changed-source instrumentation proof; its temporary snapshot was cleaned and its exact log remains separate. One persistent ordinary diagnostic reproduced the failure and retained raw profiles, LLVM, LCOV, binaries and dep-info. Actual 656 Rust/48 tooling tests pass. Measured coverage is 8573/8614 lines, 13553/13823 regions and 242/247 changed lines; five genuine changed DA0 records remain counted. Five distinct absent-DA lines with no spanning LLVM regions fail existing syntax proof. Exact source remains independently reviewed and unchanged; a minimum evidence-driven proof correction needs independent review before a complete staged retry. No commit/publication or acceptance promotion; counters, dependencies and pins unchanged.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
     }
   ],
@@ -879,7 +879,7 @@
     "Full assertion/fixture equivalence for retained upstream cases, reproducible reference build, fuzzing and comparative benchmarks."
   ],
   "blockers": [
-    "Protected staged verification rejected a changed source line without instrumented executable lines; exact diagnostic replay and independent review of any correction remain pending."
+    "Protected staged verification rejects five absent-DA/nonspanning-LLVM syntax lines. Exact retained diagnostics are available; no proof correction or full retry has been made."
   ],
   "plan_status": {
     "REF-02": "in_progress",
