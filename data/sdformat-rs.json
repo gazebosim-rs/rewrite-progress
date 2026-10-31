@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T00:32:30.323818Z",
+  "updated_at": "2026-10-31T00:35:19.206169Z",
   "state": "active",
-  "summary": "Reviewed bounded World Scene metadata is published after the full protected staged gate; exact hosted CI is pending and broader SDF fidelity remains open.",
+  "summary": "Bounded World Scene metadata is accepted after independent review, the full protected staged gate and exact hosted CI; broader SDF fidelity remains open.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
-      "title": "World Scene qualification and remaining DOM fidelity",
-      "detail": "Published Scene colors/visibility metadata preserves six exact capability transitions and five additional original getter observations. Local full checks pass; exact hosted qualification is pending. World.Load remains partial, counts stay203/27, and no simulator pin or runtime activation changes.",
+      "title": "Remaining world and DOM metadata fidelity",
+      "detail": "Scene ambient/background and visibility flags are accepted. World.Load remains partial, including audio/spherical/GUI and full Element/path assertions. Sky/Fog and broader schema fidelity remain open. No simulator pin or rendering activation changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/779c23e02fe9cb6572918e1b332f237e3a4cdf7f"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve bounded World Scene color and visibility metadata",
+      "commit": "779c23e02fe9cb6572918e1b332f237e3a4cdf7f",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/779c23e02fe9cb6572918e1b332f237e3a4cdf7f"
+    },
     {
       "title": "Preserve native custom-sensor subtype and ordered opaque metadata",
       "commit": "8b17dfd7171688626bcf0f045ba3493cd262f8a2",
@@ -863,9 +868,9 @@
       "partial": 27
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41150604450"
     },
-    "note": "Full ordinary protected hook passed600 Rust/43 tooling, changed42/42 and full-source7384/7405; source digest matches the independently reviewed snapshot. Independent producer replay passed15 Rust/47 native controls, constructor/full-projection checks and two unchanged originals; no native whole-case credit is added. The separate closed syntax proof passed final independent23 helper/43 tooling checks and Clippy after two scope corrections, with actual DA0 and region authority preserved. First failed hook and retained-data diagnostic remain distinct from the successful full retry. Exact hosted run41150604450 is pending; this feature is not accepted yet. Prior accepted slices and counts remain unchanged; no consumer pin adoption or whole-SDF completion."
+    "note": "Exact hosted run41150604450 and the full normal protected staged hook passed600 Rust/43 tooling; hosted source digest and metrics match the independently reviewed snapshot. Coverage7731/7758lines,12140/12382regions,changed42/42 andfullsource7384/7405 match local evidence. Independent producer replay passed15 affected Rust/47 native controls, constructor/full-projection checks and two unchanged originals. Final independent closed syntax proof replay passed23 helper/43 tooling controls and Clippy after two scope corrections; actual DA0 and region authority and all thresholds remain unchanged. First failed hook, retained-data diagnostics and successful full retry remain distinct. World.Load stays partial, counts203/27 remain unchanged, and no additional complete original-test, runtime, consumer-pin or whole-SDF credit is claimed."
   }
 }
