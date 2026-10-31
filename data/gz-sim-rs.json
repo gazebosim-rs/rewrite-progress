@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T09:57:12.356677+00:00",
+  "updated_at": "2026-10-31T10:25:39.986559+00:00",
   "state": "active",
-  "summary": "Reviewed DART free-root scenes passed the complete local gates and are published for exact hosted qualification. Bounded camera output remains accepted; articulation contacts and broader system compatibility are under development.",
+  "summary": "Bounded DART free-root two-link scenes are accepted after full local and hosted verification. Static-contact safety and the unchanged original force-command world are now being qualified in isolation.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "Published004baa8 passed the complete ordinary staged gate after independent131 DART/15 Scene/34 native-observation review. Required profile logs report689 headless and414 renderer executions; helper child entries are explicitly run by their parent harness, not credited as skipped successes. Headless8187/8280 lines and12712/13001 regions; renderer4736/4866 and7013/7299; DART changed1/1. Exact hosted41190363075 is running; accepted quality remains78b702f until whole-run/downloaded-source verification. Original ground-contact fixture now has34 fresh native physics observations, with no Rust contact acceptance yet. Generalized contact-response bounds are being investigated in isolation; external articulation contacts/original ApplyJointForce/performance remain open."
+      "detail": "Accepted004baa8 passed exact whole hosted41190363075, downloaded62-source/26-input verification, identical strict local/hosted profiles and additional native GCC coverage498/521 bridge lines. Profile executions689 headless/414 renderer; DART changed1/1. Independent131 DART/15 Scene/34 native observations verify free-root sampling, coupled force, parent reaction and lifecycle. Next static-contact prototype is under independent numerical review; a broader world-root proposal reproduced a native abort and remains refused. Exact original-world+C++client control passes only on the unaccepted narrowed prototype. No contact/original-system completion or performance claim."
     },
     {
       "id": "REF-01",
@@ -617,6 +617,11 @@
       "title": "Bounded explicit camera acquisitions with real Bevy workers, C++ Image/CameraInfo delivery and lifecycle-safe buffered publication",
       "commit": "78b702f9860448d8e4cecf64dba514663a69461c",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/78b702f9860448d8e4cecf64dba514663a69461c"
+    },
+    {
+      "title": "Bounded DART free-root parent-child scenes with coupled reactions, full-coordinate rollback and native parity",
+      "commit": "004baa81a3839b7100eee22d970dcf0a0b47eaf4",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/004baa81a3839b7100eee22d970dcf0a0b47eaf4"
     }
   ],
   "remaining": [
@@ -652,17 +657,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "78b702f9860448d8e4cecf64dba514663a69461c",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/78b702f9860448d8e4cecf64dba514663a69461c",
-    "rust_tests": 676,
+    "revision": "004baa81a3839b7100eee22d970dcf0a0b47eaf4",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/004baa81a3839b7100eee22d970dcf0a0b47eaf4",
+    "rust_tests": 689,
     "coverage": {
       "lines": [
         8187,
         8280
       ],
       "regions": [
-        12710,
-        12999
+        12712,
+        13001
       ]
     },
     "upstream": {
@@ -672,9 +677,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41178350561"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41190363075"
     },
-    "note": "Exact whole hosted run and all steps passed. Downloaded profiles verify62 production Rust sources and26 build/check inputs against exact Git objects and local source maps.676 headless and413 renderer executions are separate profile counts. Headless8187/8280 lines,12710/12999 regions; renderer4738/4866,7015/7299; camera287/300,376/395. All required crates exceed95% lines and regions, changed camera292/297. Hosted worker covers two more lines/regions than local; identical source hashes and denominators verified, both profiles pass independently. Real C++ clients and actual software-Vulkan worker controls pass. This accepts explicit bounded camera output, not automatic camera scheduling or a completed sensor/rendering phase."
+    "note": "Exact whole hosted run and every step/job passed; downloaded62 Rust source hashes and26 inputs match exactGitobjects and local source maps. Both hosted/local coverage and changed-line maps match. Headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. All required crates exceed95%; DARTchanged1/1. Additional local GCC11/gcov11 coverage on same native sources:bridge498/521,header7/7,joint-state23/23, all strictlyabove95%.689headless and414renderer are separate profile execution counts; deliberately ignored helper-child entries are executed explicitly by their parent harness. Independent131 DART/15 Scene/34 native reference observations qualify bounded free-root pairs without external articulation contacts. Static-contact prototype and originalforce-system world remain unaccepted."
   },
   "phase_status": {
     "P0": "in_progress",
