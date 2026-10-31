@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T00:02:59.492260+00:00",
+  "updated_at": "2026-10-31T00:41:18.432761+00:00",
   "state": "active",
-  "summary": "The calibrated camera slice passed independent source and real-image review and is running the complete mandatory staged gate. Accepted teardown and scene-to-image metrics remain unchanged; sensor binding and performance qualification remain open.",
+  "summary": "The calibrated camera slice is published after complete staged checks and awaits exact hosted acceptance. A separate reviewed SDF consumer migration is being qualified to support correct lens-presence semantics without silently accepting unsupported metadata.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "The reviewed 23-file calibrated camera slice is now in the complete staged gate. It adds explicit versioned atomic camera/scene requests, finite asymmetric pinhole projection and actual client/ECS-to-worker image controls. Independent fresh frame/native matrix controls, a second API/state review and four exact same-graph GPU replays pass. The current private renderer profile passed 358 tests with all active crates above strict line/region thresholds; changed worker lines are covered 91/91. These are not accepted Main metrics until the complete gate and exact hosted CI pass. Current accepted revision remains 2b08506. SDF camera sensor binding, demand/sampling, image/camera-info publication, variable resolution, native image parity, physical GPUs and comparative performance remain open."
+      "detail": "Published c94606b passes independent source/API/state reviews, four actual same-graph image/client/ECS replays and the complete normal staged gate: 633 headless and 358 renderer-profile test executions, with strict line/region coverage in all required crates. Exact hosted run 41150326340 is pending, so accepted quality remains 2b08506. The optional v2 request carries atomic camera/scene calibration; output remains 64\u00d764 unlit boxes. A private SDF pin/guard migration addresses omitted versus explicit lens values and newly exposed metadata before camera sensor binding. Sensor demand/sampling, Image/CameraInfo publication, variable resolution, native sensor image parity, physical GPUs and comparative performance remain open."
     },
     {
       "id": "QLT-01",
