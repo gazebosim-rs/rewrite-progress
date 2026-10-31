@@ -1,17 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T15:26:08Z",
-  "state": "active",
-  "summary": "Schema-only producer remains privately frozen. Consumer proto build/policy controls passed independent review; full simulator integration and coordinated schema publication remain pending.",
-  "model": "Messages implementation agent",
-  "active": [
-    {
-      "id": "MSG-01",
-      "title": "Schema-only transition and standard consumer generation",
-      "detail": "The private schema-only tree preserves all 216 canonical definitions; historical Main remains intact and no removal was published. A bounded simulator-owned standard prost generation/build-policy packet passed independent fresh-source review, 14 regular Rust tests with delegated child entries, 24 retained profile plus eight proto policy controls and Clippy. Actual owned coverage is 189/190 lines and 329/340 regions. A reproduced schema-root symlink acceptance was fixed and independently rejected. These are bounded consumer leaf results, not full workspace/renderer/hosted migration acceptance. Root coordinates actual server/camera/CLI Zenoh integration and publication; no generic Messages SDK/runtime/CLI/codec work continues."
-    }
-  ],
+  "updated_at": "2026-10-31T23:09:23.760100Z",
+  "state": "complete",
+  "summary": "D29 definition-only release verified: 216 unchanged canonical protobuf schemas, standard compiler validation and exact source archives. Former runtime/tooling scope remains retired.",
+  "model": "Independent schema/archive reviewer; coordinator-authorized status update",
+  "active": [],
   "accepted_slices": [
     {
       "title": "Historical pre-D29: Maintained canonical protobuf runtime and lossless wire envelope",
@@ -557,20 +551,38 @@
       "title": "Historical pre-D29: Verified public-archive append benchmark preparation (unmeasured)",
       "commit": "a39a9455d731923bd316745c2dda21071408dcbf",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a39a9455d731923bd316745c2dda21071408dcbf"
+    },
+    {
+      "title": "D29 schema-only release: 216 unchanged definitions and exact hosted source archive verified; retired runtime not newly completed",
+      "commit": "d030d06e7d2b83bdd251a24a6e851605ee35a633",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d030d06e7d2b83bdd251a24a6e851605ee35a633"
     }
   ],
-  "remaining": [
-    "Qualify actual simulator-owned generated bindings and direct Zenoh integration through mandatory full workspace/renderer profiles, native domain peers, staged checks, exact hosted workflow and downloaded source evidence.",
-    "Migrate actual simulator consumers to local generated bindings and direct upstream Zenoh while preserving retained domain assertions and real coverage.",
-    "Keep existing pinned runtime and all history/evidence until coordinated consumer migration permits schema-only publication; final publication review and whole hosted/source verification remain pending.",
-    "Historical runtime metrics do not qualify the new schema-only scope; empty runtime coverage denominators are not a 95% pass."
-  ],
+  "remaining": [],
   "blockers": [],
   "plan_status": {
-    "MSG-01": "in_progress",
-    "MSG-02": "in_review"
+    "MSG-01": "complete"
   },
   "quality": {
+    "revision": "d030d06e7d2b83bdd251a24a6e851605ee35a633",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/d030d06e7d2b83bdd251a24a6e851605ee35a633",
+    "rust_tests": null,
+    "coverage": {
+      "lines": null,
+      "regions": null
+    },
+    "upstream": {
+      "total": null,
+      "ported": null,
+      "partial": null
+    },
+    "ci": {
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41251110566"
+    },
+    "note": "NEW D29 DEFINITION-ONLY SCOPE COMPLETE. Exact hosted run 41251110566 passed at d030d06. Independent validation and the 229-file archive match Git objects, commit identity and checksums. All 216 canonical schemas match historical a39 and consumer 587; 216 is a file count, not a test count. Seven validation tests (including negative controls), real staged Git-context controls, protoc 3.21.12, imports and descriptor identity pass. Original OSRF, CogniPilot and Rudis notices remain intact. There is no Cargo runtime package, Rust test count or executable coverage denominator; null coverage is not a 95% pass. Consumer 587 separately passed hosted run 41248418524 with verified native/GPU and strict owned coverage evidence. HISTORICAL RUNTIME ONLY: a39/41200381707 had 217 Rust tests, 83 original mappings, 3638/3662 lines and 6009/6114 regions. Those metrics remain in historical_runtime_quality and accepted history; retired MSG-02 is not newly completed."
+  },
+  "historical_runtime_quality": {
     "revision": "a39a9455d731923bd316745c2dda21071408dcbf",
     "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/a39a9455d731923bd316745c2dda21071408dcbf",
     "rust_tests": 217,
