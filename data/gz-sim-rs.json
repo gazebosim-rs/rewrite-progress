@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T05:05:02.155450+00:00",
+  "updated_at": "2026-10-31T05:23:29.543684+00:00",
   "state": "active",
   "summary": "Review found a native rollback defect after rejected DART joint attachment. Repair is prioritized before new feature publishing. Explicit camera output passed strict private coverage and independent real C++/software-worker checks; full integration is held.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -19,7 +19,7 @@
     {
       "id": "PHY-03",
       "title": "Repairing rejected-joint rollback in the published DART backend",
-      "detail": "A new free-root extension probe exposed native child-velocity drift after two contact-refused attachments, then reproduced it using the already-published world-rooted topology. Rust cached states remained unchanged while later successful attachment revealed changed native motion. Two physics agents are isolating a minimal repair and strong failing-before/passing-after regression, separately from the unpublished seven-DOF extension. New camera publication is held; existing guards, solver settings and assertions remain unchanged. Scene506f94a already passed its full local gate and awaits exact hosted41169945049, but that does not qualify the newly found rollback sequence. Original ApplyJointForce contacts and larger graphs remain open."
+      "detail": "Two independent native failure families were reproduced on published506f94a: refused attachment/retry changed hidden child motion, and warmed surviving parent Jacobians lost impulse/velocity response after leaf retirement. A minimal13-line C++ repair invalidates DART Jacobian/derivative caches at three extraction boundaries, without new topology or solver changes. Independent red/green replay and119-test standard/native suites passed; native bridge coverage498/521 lines, all9 added executable lines covered, Clippy passed. Only three repair paths are in the unchanged full staged gate now running. Scene506 exact hosted41169945049 and downloaded60-source/25-input profiles also passed672 headless/387 renderer with60/60 changed scene lines; that prior CI did not include the new regressions. Further feature publication is held for repair qualification. Seven-DOF/free-root construction and original contacting ApplyJointForce remain unaccepted."
     },
     {
       "id": "REF-01",
