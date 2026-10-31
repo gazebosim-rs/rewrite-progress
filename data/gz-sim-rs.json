@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T10:25:39.986559+00:00",
+  "updated_at": "2026-10-31T11:52:04.333986+00:00",
   "state": "active",
-  "summary": "Bounded DART free-root two-link scenes are accepted after full local and hosted verification. Static-contact safety and the unchanged original force-command world are now being qualified in isolation.",
+  "summary": "Bounded DART free-root scenes remain accepted. Independently reviewed static-contact support and the unchanged original C++ force-command world are undergoing the complete staged verification retry.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -14,12 +14,12 @@
     {
       "id": "SYS-CONTROL",
       "title": "Extending retained controller behavior beyond world hinges",
-      "detail": "Accepted bounded control supports real C++ publishers, pause/reset/removal and native physical rates on three dynamic engines. Bounded DART planes are now accepted. The full original ApplyJointForce fixture still requires moving-parent actuation and remaining world/backend behavior; no full original-system or performance completion is claimed."
+      "detail": "The unchanged original ApplyJointForce world now passes a fresh real C++ publisher\u2192Rust simulator integration run on the reviewed candidate. Original fixture bytes, ten initial force assertions, command value and arrival bounds are retained; an independent reviewer replayed it. The retained original native gtest result and faithful assertion mapping are included. Full staged retry and exact hosted/source verification remain mandatory before crediting the one original case. Complete controller-family and absence acceptance remain open."
     },
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "Accepted004baa8 passed exact whole hosted41190363075, downloaded62-source/26-input verification, identical strict local/hosted profiles and additional native GCC coverage498/521 bridge lines. Profile executions689 headless/414 renderer; DART changed1/1. Independent131 DART/15 Scene/34 native observations verify free-root sampling, coupled force, parent reaction and lifecycle. Next static-contact prototype is under independent numerical review; a broader world-root proposal reproduced a native abort and remains refused. Exact original-world+C++client control passes only on the unaccepted narrowed prototype. No contact/original-system completion or performance claim."
+      "detail": "Accepted004baa8 passed exact whole hosted41190363075 and downloaded source/profile verification. The next bounded free-root/static-geometry contact implementation passed independent numerical, native, lifecycle and integration review. Additional local native coverage is504/527 bridge and60/62 joint-state lines, changed44/46. The first full staged run exhausted storage while writing buffered profile output; that profile outcome is unavailable. The unchanged24-file candidate is now running the full gate again. World-root articulation contacts, dynamic external contacts and active multibody limits remain refused. No contact acceptance or speedup claim."
     },
     {
       "id": "REF-01",
@@ -631,7 +631,9 @@
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Storage exhaustion interrupted the first full candidate gate. The unchanged full retry is active; another large local coverage build is waiting for its temporary target to retire. No gates or thresholds were changed."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
