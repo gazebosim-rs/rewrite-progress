@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "source_revision": "f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886",
-  "source_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/f0eeb2abced3a5e6f1f92c3d97d9f2fd4e6bf886/docs/IMPLEMENTATION_TASKS.md",
+  "source_revision": "e94528867242b4ba43ab57db76f3ce9fa54a6de4",
+  "source_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/e94528867242b4ba43ab57db76f3ce9fa54a6de4/docs/IMPLEMENTATION_TASKS.md",
   "phases": [
     {
       "id": "P0",
@@ -18,8 +18,8 @@
     {
       "id": "P2",
       "title": "End-to-end server",
-      "scope": "Load a simple SDF world, spawn entities, step TPE and one dynamic backend, publish clock/poses and IMU through transport, pause/reset/remove",
-      "acceptance": "Original and Rust runs agree on selected assertions; legacy C++ transport peer interoperates; bounded queues; first measured performance report"
+      "scope": "Load a simple SDF world, spawn entities, step TPE and one dynamic backend, publish clock/poses and IMU through Zenoh, pause/reset/remove",
+      "acceptance": "Original and Rust runs agree on selected assertions; C++ Gazebo Zenoh peer interoperates; historical ZeroMQ acceptance remains separate; bounded queues; first measured performance report"
     },
     {
       "id": "P3",
@@ -122,8 +122,8 @@
       "phase": "P3",
       "group": "Runtime and physics tasks",
       "depends_on": "CORE-02, LOAD-01",
-      "title": "Built-in systems activated by loaded world/model demand",
-      "acceptance": "No scheduled callbacks, idle polling or system-owned allocations/workers/endpoints while absent; last-consumer teardown, shared dependencies, reactivation/reset/multiworld and equal-work CPU/memory evidence. D26 supersedes the system plugin ABI task."
+      "title": "Built-in system demand from loaded world/models; activate/retire schedules and owned resources on structural lifecycle transitions",
+      "acceptance": "Absent-system zero invocation/allocation/worker/endpoint controls; last-consumer teardown; dependency/shared-consumer behavior; reactivation/reset/multiworld and equal-work CPU/memory evidence"
     },
     {
       "id": "MSG-01",
@@ -131,17 +131,8 @@
       "phase": "P1",
       "group": "Independent repository tasks",
       "depends_on": "REF-01, API-01",
-      "title": "Schema inventory, codegen/runtime/reflection evaluation, descriptors, basic conversions",
-      "acceptance": "Canonical schema hashes and mixed-language conformance corpus"
-    },
-    {
-      "id": "MSG-02",
-      "owner": "gz-msgs-rs",
-      "phase": "P5",
-      "group": "Independent repository tasks",
-      "depends_on": "MSG-01",
-      "title": "Complete conversions, message CLI/tooling, unknown-field and formatting contracts",
-      "acceptance": "Full retained msgs ledger, coverage and packaging"
+      "title": "D29: preserve canonical proto definitions, imports/options, tags/defaults and notices; remove the repository runtime after consumer migration",
+      "acceptance": "Schema hashes/import closure, standard protoc validation and consumer-owned generated binding checks"
     },
     {
       "id": "SDF-01",
@@ -160,24 +151,6 @@
       "depends_on": "SDF-01",
       "title": "Complete version conversions, nested/merge/frame/inertia/import/export semantics",
       "acceptance": "Full retained sdformat ledger, fuzzing and large-model benchmarks"
-    },
-    {
-      "id": "NET-01",
-      "owner": "gz-transport-rs",
-      "phase": "P1",
-      "group": "Independent repository tasks",
-      "depends_on": "MSG-01, API-01",
-      "title": "Protocol inventory and minimal discovery/pub-sub/service Rust API",
-      "acceptance": "Real C++↔Rust peers in both directions; timeout/reconnect/shutdown tests"
-    },
-    {
-      "id": "NET-02",
-      "owner": "gz-transport-rs",
-      "phase": "P5",
-      "group": "Independent repository tasks",
-      "depends_on": "NET-01",
-      "title": "Complete logging, statistics, auth/config behavior and CLI",
-      "acceptance": "Full retained transport ledger; load/overload/log interoperability"
     },
     {
       "id": "FUEL-01",
@@ -239,7 +212,7 @@
       "phase": "P2",
       "group": "Runtime and physics tasks",
       "depends_on": "PHY-00, PHY-01, CORE-02",
-      "title": "Selected Rust engine adapter and explicit stepping/precision",
+      "title": "Built-in Rust engine adapter and explicit stepping/precision",
       "acceptance": "Capability probes, accuracy tests, sync overhead and deterministic-profile evidence"
     },
     {
@@ -256,9 +229,9 @@
       "owner": "gz-sim-rs",
       "phase": "P2",
       "group": "Runtime and physics tasks",
-      "depends_on": "CORE-02, MSG-01, NET-01",
+      "depends_on": "CORE-02, MSG-01, ZEN-01",
       "title": "Clock/pose publication, commands/services and bounded transport integration",
-      "acceptance": "Actual legacy client interoperability; ordering/backpressure/shutdown cases"
+      "acceptance": "Actual C++ Zenoh client interoperability; ordering/backpressure/shutdown cases"
     },
     {
       "id": "LOAD-01",
@@ -400,7 +373,7 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Simulator system families",
-      "depends_on": "IO-01, NET-02",
+      "depends_on": "IO-01, ZEN-01",
       "title": "Comms systems",
       "acceptance": "Acoustic/RF/perfect communications, endpoint and triggered publishing semantics"
     },
@@ -409,7 +382,7 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Simulator system families",
-      "depends_on": "RENDER-03, NET-02, ASSET-01",
+      "depends_on": "RENDER-03, ZEN-01, ASSET-01",
       "title": "Media systems",
       "acceptance": "Recording, replay, exporting, effects and scene assets; no GUI dependency"
     },
@@ -436,7 +409,7 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Non-system features and release tasks",
-      "depends_on": "WORLD-01, SYS-WORLD, NET-02",
+      "depends_on": "WORLD-01, SYS-WORLD, ZEN-01",
       "title": "Levels, performers, distributed stepping/state and resource behavior",
       "acceptance": "Baseline distributed/levels tests; partition/disconnect/recovery and exact-step evidence"
     },
@@ -445,7 +418,7 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Non-system features and release tasks",
-      "depends_on": "NET-02, IO-01, SYS-MEDIA",
+      "depends_on": "ZEN-01, IO-01, SYS-MEDIA",
       "title": "State and transport recording/replay, format migration",
       "acceptance": "Existing logs readable, ordering/time/seek/reset and output fidelity tests"
     },
@@ -463,9 +436,9 @@
       "owner": "gz-sim-rs",
       "phase": "P5",
       "group": "Non-system features and release tasks",
-      "depends_on": "IO-01, MSG-02, NET-02, SDF-02",
+      "depends_on": "IO-01, MSG-01, ZEN-01, SDF-02",
       "title": "CLI grammar, discovery/dispatch, version/help, package ownership",
-      "acceptance": "Existing Ruby/CLI assertions ported; direct independent commands work"
+      "acceptance": "Retained simulator/SDF/Fuel command assertions ported; no standalone Messages/transport CLI"
     },
     {
       "id": "MATH-01",
@@ -502,6 +475,15 @@
       "depends_on": "All retained scope",
       "title": "Full parity/coverage/performance/lifecycle/release matrix",
       "acceptance": "P7 acceptance report; no unrun required cases or unexplained exclusions"
+    },
+    {
+      "id": "ZEN-01",
+      "owner": "gz-sim-rs",
+      "phase": "P2",
+      "group": "Direct Zenoh consumer integration",
+      "depends_on": "MSG-01, API-01",
+      "title": "In gz-sim-rs, use upstream Zenoh directly; replace legacy transport and packaged Messages dependencies",
+      "acceptance": "Pinned Zenoh/proto/codegen inputs; real C++ Zenoh pub/sub/query/reply; bounded queues, reset/removal/shutdown, schema fidelity, strict owned coverage and equal-work measurements"
     }
   ],
   "systems": [
@@ -1056,7 +1038,42 @@
     "gz-sim-rs",
     "sdformat-rs",
     "gz-msgs-rs",
-    "gz-transport-rs",
     "gz-fuel-tools-rs"
-  ]
+  ],
+  "retired_repositories": [
+    "gz-transport-rs"
+  ],
+  "retired_packets": [
+    {
+      "id": "MSG-02",
+      "owner": "gz-msgs-rs",
+      "phase": "P5",
+      "group": "Independent repository tasks",
+      "depends_on": "MSG-01",
+      "title": "Complete conversions, message CLI/tooling, unknown-field and formatting contracts",
+      "acceptance": "Full retained msgs ledger, coverage and packaging",
+      "retirement": "Owner scope change D28/D29: removed release responsibility; historical evidence retained."
+    },
+    {
+      "id": "NET-01",
+      "owner": "gz-transport-rs",
+      "phase": "P1",
+      "group": "Independent repository tasks",
+      "depends_on": "MSG-01, API-01",
+      "title": "Protocol inventory and minimal discovery/pub-sub/service Rust API",
+      "acceptance": "Real C++\u2194Rust peers in both directions; timeout/reconnect/shutdown tests",
+      "retirement": "Owner scope change D28/D29: removed release responsibility; historical evidence retained."
+    },
+    {
+      "id": "NET-02",
+      "owner": "gz-transport-rs",
+      "phase": "P5",
+      "group": "Independent repository tasks",
+      "depends_on": "NET-01",
+      "title": "Complete logging, statistics, auth/config behavior and CLI",
+      "acceptance": "Full retained transport ledger; load/overload/log interoperability",
+      "retirement": "Owner scope change D28/D29: removed release responsibility; historical evidence retained."
+    }
+  ],
+  "scope_note": "Owner scope change: four target repositories. Use Zenoh directly and keep Messages schema-only. NET-01, NET-02 and MSG-02 were retired, not completed; ZEN-01 now tracks C++ Gazebo interoperability. Packet totals reflect this scope change, not implementation progress. Historical ZeroMQ evidence remains in Git history."
 }

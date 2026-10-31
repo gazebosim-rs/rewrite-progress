@@ -12,7 +12,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = json.loads((ROOT / 'data/catalog.json').read_text())
-REPOSITORIES = set(CATALOG['repositories'])
+REPOSITORIES = set(CATALOG['repositories'] + CATALOG.get('retired_repositories', []))
 PACKET_STATES = {'not_started', 'in_progress', 'blocked', 'in_review', 'complete'}
 
 
@@ -46,7 +46,7 @@ def validate(data, repository):
         require(isinstance(item['title'], str) and public_url(item['url']), 'invalid accepted slice')
     for item in data['remaining'] + data['blockers']:
         require(isinstance(item, str), 'remaining work and blockers must be text')
-    packets = {item['id'] for item in CATALOG['packets']}
+    packets = {item['id'] for item in CATALOG['packets'] + CATALOG.get('retired_packets', [])}
     require(isinstance(data['plan_status'], dict), 'plan_status must be an object')
     require(all(key in packets and state in PACKET_STATES for key, state in data['plan_status'].items()), 'invalid packet ID or state')
     for key, names in [('phase_status', {p['id'] for p in CATALOG['phases']}), ('system_status', {s['name'] for s in CATALOG['systems']})]:

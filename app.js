@@ -130,6 +130,7 @@ async function refresh() {
   try {
     if (!catalog) {
       catalog = await json("data/catalog.json"); $("catalog-source").href = catalog.source_url;
+      $("scope-note").textContent = catalog.scope_note || ""; $("scope-note").hidden = !catalog.scope_note;
       for (const name of catalog.repositories) { const option = node("option", name); option.value = name; $("repo-filter").append(option); }
     }
     const failures = [];

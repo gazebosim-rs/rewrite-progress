@@ -53,3 +53,8 @@ Use the current UTC timestamp. The updater rejects older reports, validates
 known packet IDs, retries concurrent branch updates, and changes only the named
 owner's file. It uses the existing authenticated `gh` session; no credentials
 belong in the data. Keep local reports in your repository's ignored artifacts.
+
+Owner scope decisions may move repositories and packets to catalog
+`retired_repositories` and `retired_packets`. Their reports remain valid historical
+evidence, but retired packets do not count as completed or active release work.
+The dashboard must state when its denominator changes because of scope.
