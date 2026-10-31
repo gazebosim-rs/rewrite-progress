@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T14:10:41.783525+00:00",
+  "updated_at": "2026-10-31T15:41:53.167824+00:00",
   "state": "active",
-  "summary": "The revised scope is public and fully checked. Direct Rust Zenoh now passes an independent C++ Gazebo interoperability replay; consumer-generated protobuf bindings are being integrated privately. Simulator migration remains pending.",
+  "summary": "Direct Zenoh migration is under development. The actual Rust server now exchanges world clocks and step/reset/pause controls with a real C++ Gazebo Zenoh client. This private diagnostic does not complete headless acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "Exact Zenoh1.8 Rust Session APIs passed author and fresh-source/target independent C++ Gazebo probes: Clock/IMU payloads and type attachments, force mismatch filtering, bidirectional control and empty replies, native no-reply and explicit Rust errors. The revised plan e945288 passed complete local and exact hosted41206243415 checks, with62-source/26-input verification. Private consumer bindings now generate216canonical schemas with standard Rust tooling; signed-zero/native fixture and canonical type-name controls pass. A narrowly scoped third-party codegen compatibility repair is under review; no successor Messages SDK or transport facade. Production server/camera migration, lifecycle, strict owned coverage and equal-work performance remain open."
+      "detail": "A real C++ Gazebo Zenoh client observes the actual Rust Server clock at one, two and three milliseconds, then requests reset and pause and observes zero time. The current integrated source replay passed with both processes exiting successfully. Consumer-generated bindings and their compiler/schema validation passed independent review, including signed-zero compatibility and real owned build-script coverage. Camera publication has passed author native delivery; independent review found and prompted a fix for native-invalid topic names, with final replay pending. Force ingress is being migrated next. Other server endpoints, removal of remaining legacy dependencies, complete lifecycle and strict integrated local/hosted coverage remain open. Native default queries use blocking congestion control, so bounded reply behavior still needs qualification. Historical ZeroMQ results do not qualify Zenoh."
     },
     {
       "id": "ACT-01",
