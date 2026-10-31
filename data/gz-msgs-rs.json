@@ -1,17 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T01:22:23Z",
-  "state": "active",
-  "summary": "Reviewed reflected packed-field kind reuse is published after its full protected gate; exact hosted acceptance is pending.",
+  "updated_at": "2026-10-31T01:44:34Z",
+  "state": "idle",
+  "summary": "Reflected repeated-field kind reuse passed independent review and complete local and exact hosted qualification.",
   "model": "Messages implementation agent",
-  "active": [
-    {
-      "id": "MSG-02",
-      "title": "Exact hosted qualification for reflected kind reuse",
-      "detail": "Published 62ac297 passed independent review and the complete protected staged gate: 202 Rust tests, all retained native controls, required root and vendor coverage, and source/consumer controls. Exact hosted run 41154966206 is pending. Accepted counters still describe ae3721d. Generated typed LaserScan performance and qualified reflection timing remain open."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
     {
       "title": "Maintained canonical protobuf runtime and lossless wire envelope",
@@ -522,6 +516,11 @@
       "title": "Bounded CLI file diagnostics with explicit schema and descriptor wrong-wire differences",
       "commit": "ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7"
+    },
+    {
+      "title": "Reflected repeated-field kind reuse with preserved scalar parser and partial-state semantics",
+      "commit": "62ac297e7bb4b87e23089c8f838f9ed32dc92832",
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/62ac297e7bb4b87e23089c8f838f9ed32dc92832"
     }
   ],
   "remaining": [
@@ -529,7 +528,8 @@
     "Remaining declaration families/options and full CLI grammar qualification; Linux OS-byte arguments accepted",
     "Absent-variable compiled install-prefix/release layout; native schema-validation console and descriptor wrong-wire release dispositions and remaining distribution policy",
     "Binary/release packaging matrix and equal-work performance evidence; MSG-02 acceptance remains pending",
-    "Packed LaserScan decode remains slower; encode-helper adoption needs a maintained route preserving standard no-patch type identity and reviewed performance evidence"
+    "Generated typed LaserScan decode remains slower; encode-helper adoption needs a maintained route preserving standard no-patch type identity and reviewed performance evidence",
+    "Final-source reflection timing remains unqualified; paired measurement and source, binary, compiler and native identity review are still required before a speedup claim."
   ],
   "blockers": [],
   "plan_status": {
@@ -537,9 +537,9 @@
     "MSG-02": "in_progress"
   },
   "quality": {
-    "revision": "ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7",
-    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/ae3721d5f8c078e8fe8631a2b6bb89dd1949fdb7",
-    "rust_tests": 186,
+    "revision": "62ac297e7bb4b87e23089c8f838f9ed32dc92832",
+    "revision_url": "https://github.com/gazebosim-rs/gz-msgs-rs/commit/62ac297e7bb4b87e23089c8f838f9ed32dc92832",
+    "rust_tests": 202,
     "coverage": {
       "lines": [
         3579,
@@ -557,8 +557,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41062398415"
+      "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41154966206"
     },
-    "note": "Exact hosted41062398415 completed successfully at this published revision, including strict verification, staged-tree checks and fresh-cache source-package installation. Independent fresh-source reviews and both entire normal local staged gates passed. Implementation changed97/97 executable lines; additive wrong-wire qualification has no executable additions.186 regular Rust tests plus both environment/workflow harnesses and19-file production coverage pass; owned derive/reflect patch qualification unchanged. Native80 complete records plus five unchanged originals retain explicit sorted-list/help and schema/wrong-wire/admission differences. All83 existing original mappings are unchanged; no additional original credit. Broader MSG02 runtime, release-layout and LaserScan performance remain open."
+    "note": "Exact hosted run 41154966206 passed at this published revision, including full verification, the real partial-staging rejection and fresh-cache source-package installation. Independent fresh-source review and the entire normal local protected staged gate passed. Both local and hosted runs passed 202 regular Rust tests with zero ignored and reproduced 7,559 native JSON outcomes. Local root coverage spans all 19 production files; owned vendored derive coverage is 6/6 lines and 8/8 regions, and reflect coverage is 126/128 lines and 347/352 regions, matching hosted evidence. New vendor additions are fully owned; only an exact compiler-unmapped opening brace uses the existing syntax rule, with regions retained. Existing schemas, fixtures, Cargo files and all 83 original mappings are unchanged. No qualified speedup, generated typed LaserScan improvement, new original-test credit or broader MSG-02 completion is claimed."
   }
 }
