@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T13:36:13.338213+00:00",
+  "updated_at": "2026-10-31T14:10:41.783525+00:00",
   "state": "active",
-  "summary": "Owner simplified scope: use Zenoh directly with C++ Gazebo interoperability; retire the Rust Transport rewrite and keep Messages as proto definitions only. Existing simulator results remain historical until the new network path is qualified.",
+  "summary": "The revised scope is public and fully checked. Direct Rust Zenoh now passes an independent C++ Gazebo interoperability replay; consumer-generated protobuf bindings are being integrated privately. Simulator migration remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "D28/D29 stop ZeroMQ and Messages runtime/CLI/codec work. The revised four-repository plan is public at e945288 after independent review and the complete unchanged local gate. Native C++ Zenoh probes verify Clock/IMU, force type filtering and bidirectional services. A direct Rust Zenoh1.8 probe is now being resolved and built; schema-only transition and consumer codegen qualification are pending. No migrated simulator or performance acceptance is claimed."
+      "detail": "Exact Zenoh1.8 Rust Session APIs passed author and fresh-source/target independent C++ Gazebo probes: Clock/IMU payloads and type attachments, force mismatch filtering, bidirectional control and empty replies, native no-reply and explicit Rust errors. The revised plan e945288 passed complete local and exact hosted41206243415 checks, with62-source/26-input verification. Private consumer bindings now generate216canonical schemas with standard Rust tooling; signed-zero/native fixture and canonical type-name controls pass. A narrowly scoped third-party codegen compatibility repair is under review; no successor Messages SDK or transport facade. Production server/camera migration, lifecycle, strict owned coverage and equal-work performance remain open."
     },
     {
       "id": "ACT-01",
@@ -669,8 +669,8 @@
     "ZEN-01": "in_progress"
   },
   "quality": {
-    "revision": "35d7fba2425783295af38a9a79463c35f7b675fa",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/35d7fba2425783295af38a9a79463c35f7b675fa",
+    "revision": "e94528867242b4ba43ab57db76f3ce9fa54a6de4",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e94528867242b4ba43ab57db76f3ce9fa54a6de4",
     "rust_tests": 698,
     "coverage": {
       "lines": [
@@ -689,9 +689,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41199185194"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41206243415"
     },
-    "note": "Historical pre-Zenoh runtime evidence: Whole exact hosted run and every job/step passed; downloaded62 Rust sources and26 inputs match Git objects and local maps. Independent LLVM recomputation and local/hosted summaries agree: headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. Every required crate exceeds95%. Rust changed0/0 is inapplicable because production changes are native; additional local GCC11/gcov11 coverage on exact native source:bridge504/527,header7/7,jointstate60/62,changed44/46.698 headless/414 renderer are separate execution counts, with3/1 helper-child entries explicitly run by parent harnesses. Original ApplyJointForce fixed Linux case adds one faithful mapping. First storage-failed attempt remains distinct from complete unchanged retry. No whole-system,zero-cost absence or balanced-performance acceptance."
+    "note": "Verified Main e945288 changes architecture guidance only. Exact whole hosted41206243415 and downloaded62-source/26-input maps match the complete local gate; independently recomputed profile totals agree. Runtime counts/coverage below remain historical pre-Zenoh implementation evidence, not production Zenoh acceptance. Whole exact hosted run and every job/step passed; downloaded62 Rust sources and26 inputs match Git objects and local maps. Independent LLVM recomputation and local/hosted summaries agree: headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. Every required crate exceeds95%. Rust changed0/0 is inapplicable because production changes are native; additional local GCC11/gcov11 coverage on exact native source:bridge504/527,header7/7,jointstate60/62,changed44/46.698 headless/414 renderer are separate execution counts, with3/1 helper-child entries explicitly run by parent harnesses. Original ApplyJointForce fixed Linux case adds one faithful mapping. First storage-failed attempt remains distinct from complete unchanged retry. No whole-system,zero-cost absence or balanced-performance acceptance."
   },
   "phase_status": {
     "P0": "in_progress",
