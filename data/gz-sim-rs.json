@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T18:44:52.634195+00:00",
+  "updated_at": "2026-10-31T19:23:28.207254+00:00",
   "state": "active",
-  "summary": "Direct Zenoh rate controls and removal ownership have passed independent reviews. The legacy Node runtime is removed; native server tests and application-only options are being integrated. Full headless acceptance still requires the strict release gates.",
+  "summary": "The private Rust workspace now uses direct Zenoh and generated protobuf bindings without the old Transport or Messages runtimes. Independent integration reviews pass; reproducible native provisioning and strict release qualification remain.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "Independent reviews now cover rate controls, CPU removal semantics, direct removal query ownership, rate-only retirement and joined callback teardown. Reviewers reproduced and fixed a false overflow count and strengthened a collision test. Current real C++ Zenoh server tests pass all 39 retained application scenarios plus TCP lifecycle; independent integration replay also passes. CLI tests pass after removal of the unused legacy Node runtime. A bounded response channel replaces a source-level reply-slot contention race; its review is underway, with the earlier native no-reply failure still recorded as having an unknown cause. Three parallel agents are reviewing application-only options, completing remaining direct-client tests and checking integration changes. Configuration helpers and pinned historical dependencies remain temporarily. The native CI bootstrap, complete owned coverage, pressure/absence controls, equal-work reference evidence, and full staged plus exact hosted gates are outstanding. Historical ZeroMQ evidence is not Zenoh acceptance."
+      "detail": "The SDK-free ServerOptions integration passed independent source review, 124 non-timed server controls and camera fault checks. Current author replays pass all 39 C++ server scenarios, seven native rate scenarios and retained CLI cases. A legacy invalid-IP CLI assertion was narrowly rehosted to an actual malformed TCP endpoint, preserving its failure and no-state-output predicates. Reply channels now preserve exact discarded-response accounting; independent real-query and shutdown reviews pass. Five valuable reviewer regressions were promoted into owned tests; all 16 world IO controls pass independently. Three agents now review the pinned Zenoh ON native bootstrap, common fixture compiler and camera reference migration. Signed snapshot/package verification passes; a compiler-launcher provenance finding is being repaired before the fresh SDK build. No native OFF evidence is credited. Full pressure/absence controls, strict complete coverage profiles, quiet equal-work measurements and unchanged staged plus exact hosted gates still block headless acceptance."
     },
     {
       "id": "ACT-01",
