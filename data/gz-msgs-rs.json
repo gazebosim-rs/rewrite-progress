@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T13:13:31Z",
+  "updated_at": "2026-10-31T13:38:42Z",
   "state": "active",
-  "summary": "D29 supersedes the custom Messages runtime: schema-only transition and consumer-owned code generation are pending; old runtime work is stopped and preserved.",
+  "summary": "D29 schema-only candidate is privately reviewed and committed; consumer-owned standard code generation and coordinated publication remain pending. Historical runtime work is stopped and preserved.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-01",
-      "title": "Schema-only transition and consumer generation",
-      "detail": "Audit confirms 216 exact canonical schemas, all proto3 in package gz.msgs, with only external google/protobuf/any.proto imported by two files. Prepare an isolated proto-only tree with minimal identity/import validation, Apache-2.0 and preserved original notices. Simulator consumers must generate and share their own standard bindings and preserve retained schema/wire/domain assertions. No removal publication before the coordinated consumer transition; no generated Rust/runtime/Cargo codec package or hidden successor framework."
-    },
-    {
-      "id": "MSG-02",
-      "title": "Historical runtime scope superseded by D29",
-      "detail": "Codec, CLI, reflection, conversion-framework, loader optimization and benchmark work is stopped. Existing source, accepted commits, native results and all evidence remain preserved under their historical scope. Runtime metrics and original-case mappings do not establish the schema-only release or Zenoh migration. Root owns catalog retirement; removed work is not reported complete."
+      "title": "Schema-only transition and standard consumer generation",
+      "detail": "The private candidate retains all 216 canonical proto3 files unchanged and removes the runtime only in its isolated branch. Independent fresh-source review, seven schema negative controls, real staged/alternate-index controls and standard protoc import/descriptor validation passed; the normal hook commit passed. Main remains the historical runtime and nothing was published. A source-only official Google Rust/upb consumer probe covers native signed zero, Clock/IMU and retained CameraInfo wire/domain controls; dependency resolution, generation, build, native pairs and consumer migration are still unrun. No hidden successor runtime or default adoption."
     }
   ],
   "accepted_slices": [
@@ -565,10 +560,10 @@
     }
   ],
   "remaining": [
-    "Prepare and independently review the canonical proto-only release tree and minimal standard schema validation.",
-    "Coordinate simulator consumer-owned generation with pinned maintained tooling, exact imports/options/tags and native wire conformance.",
-    "Retain old pinned runtime/history until consumer migration avoids broken dependencies; then coordinate schema-only publication.",
-    "Qualify the new schema-only scope without reusing historical runtime coverage or claiming an empty runtime passes 95%."
+    "Resolve, compile and independently qualify consumer-owned standard code generation against retained native schema/wire/domain semantics, including the stock prost signed-zero mismatch.",
+    "Migrate actual simulator consumers to local generated bindings and direct upstream Zenoh while preserving retained domain assertions and real coverage.",
+    "Keep existing pinned runtime and all history/evidence until coordinated consumer migration permits schema-only publication; final publication review and whole hosted/source verification remain pending.",
+    "Historical runtime metrics do not qualify the new schema-only scope; empty runtime coverage denominators are not a 95% pass."
   ],
   "blockers": [],
   "plan_status": {
@@ -598,6 +593,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41200381707"
     },
-    "note": "HISTORICAL PRE-D29 RUNTIME EVIDENCE ONLY: revision a39a945 and whole workflow 41200381707 qualified the former custom library/tooling scope, with 217 Rust tests, 83 original mappings, 7,559 native JSON outcomes, prior Rust line/region coverage and verified source/preparation archives. These unchanged metrics are retained as history, not evidence that the new proto-only release or Zenoh consumer migration is complete. D29 stops further codec/runtime/CLI/reflection/conversion/loader and benchmark work. MSG-01 is reopened for canonical schema distribution and consumer-owned generation; retirement of obsolete packets/catalog counts is coordinated by Root. Main still contains the historical runtime until the migration is ready. No new schema-only acceptance or removed-scope completion claim."
+    "note": "HISTORICAL PRE-D29 RUNTIME EVIDENCE ONLY: revision a39a945 and whole workflow 41200381707 qualified the former custom library/tooling scope, with 217 Rust tests, 83 original mappings, 7,559 native JSON outcomes, prior Rust line/region coverage and verified source/preparation archives. These unchanged metrics are retained as history, not evidence that the new proto-only release or Zenoh consumer migration is complete. D29 stops further codec/runtime/CLI/reflection/conversion/loader and benchmark work. MSG-01 is reopened for canonical schema distribution and consumer-owned generation; Root records retired runtime packets separately from active release counts. Main still contains the historical runtime until the migration is ready. No new schema-only acceptance or removed-scope completion claim."
   }
 }
