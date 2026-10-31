@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T14:04:03Z",
+  "updated_at": "2026-10-31T14:56:34Z",
   "state": "active",
-  "summary": "Privately reviewed schema-only tree is frozen; standard Google Rust consumer feasibility passed bounded native controls. Consumer integration choice, independent replay and coordinated publication remain pending.",
+  "summary": "Schema-only candidate remains privately frozen. Consumer-owned build validation and narrow generated-source coverage controls are prepared for independent review; production migration/publication remain pending.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-01",
       "title": "Schema-only transition and standard consumer generation",
-      "detail": "The private schema-only candidate retains all 216 canonical proto3 files unchanged and passed independent source/schema/staged review and its normal hook. Main still contains the historical runtime; no removal was published. An isolated official Google Rust/upb consumer on simulator Rust 1.97.1 generated all canonical schemas and passed five author tests, eleven complete native wire pairs and strict owned linting, with generated-code lint allowances and native/license scope explicit. This is bounded feasibility, not simulator/Zenoh migration or adoption. A separate source-only two-predicate prost-derive signed-zero repair is prepared for comparison, unbuilt and unadopted. No generic SDK/runtime/CLI work resumed."
+      "detail": "The privately reviewed schema tree preserves all 216 canonical proto files and Main remains the historical runtime. Standard Google Rust feasibility passed bounded native controls. A separate simulator-owned standard prost candidate uses the independently reviewed minimal signed-zero dependency repair. Its build now validates exact schemas/compiler/Any/imports/descriptors; a narrow dev-only Syn audit accounts only for the generated include facade and retains a measured owned build-script denominator. Author leaf checks pass 13 regular Rust controls plus delegated child entries, strict lint and isolated 185/186 line, 323/333 region coverage. Coverage policy changes await independent review and full mandatory workspace/renderer/hosted qualification. No old SDK runtime, reflection, CLI or benchmark work resumed."
     }
   ],
   "accepted_slices": [
