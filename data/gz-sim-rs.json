@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T02:35:07.417208+00:00",
+  "updated_at": "2026-10-31T02:55:46.305580+00:00",
   "state": "active",
-  "summary": "Canonical HFOV-only SDF camera binding is published at 5669d79 after independent review and the full staged pass. Exact hosted qualification is running; accepted quality remains92b1703.",
+  "summary": "Canonical SDF camera binding is accepted after independent review, the full staged gate and exact hosted success. Continuous sensor output and broader rendering remain in development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -43,8 +43,8 @@
     },
     {
       "id": "RENDER-01",
-      "title": "Integrating canonical scene snapshots with the accepted offscreen renderer",
-      "detail": "Published5669d79 passed the ordinary privileged hook:653 headless and383 renderer test executions,149 tooling tests, strict per-crate/profile coverage. Headless aggregate7991/8083 lines and12447/12729 regions; renderer4391/4508 and6516/6780. Scene changed91/94 and extraction68/69 satisfy unchanged strict gates. Exact hosted41160470420 remains pending, so accepted quality below stays92b1703. The earlier sandbox namespaceEPERM attempt is retained separately. Binding keeps complete owned camera metadata, inherited live pose/stable IDs and sparse reset entries; an actual SDF-to-Bevy-worker image test passes. Private CPUImage/CameraInfo conversion has independent pure-helper and native325-byte layout replay. Scheduling/publication, variable resolution, native images, physical GPUs and comparative performance remain unfinished."
+      "title": "Building sensor output from accepted camera snapshots",
+      "detail": "Accepted 5669d79 binds bounded HFOV-only 64\u00d764 cameras to canonical ECS poses, stable IDs and sparse reset metadata. Explicit snapshots render through a real Bevy worker. Independent source, native DOM and software-Vulkan checks passed, followed by the full staged gate and exact hosted run 41160470420. CPU Image/CameraInfo conversion is implemented privately with independent helper tests and a matching 325-byte native CameraInfo replay. Sensor scheduling, demand-driven publication, variable resolution, native image parity, physical GPUs and performance qualification remain unfinished."
     },
     {
       "id": "QLT-01",
@@ -597,6 +597,11 @@
       "title": "Reviewed SDF producer migration with explicit unsupported-metadata admission and retained native semantic differences",
       "commit": "92b170381b0703aa475e62568a5377d6c9d0dec2",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/92b170381b0703aa475e62568a5377d6c9d0dec2"
+    },
+    {
+      "title": "Canonical SDF camera metadata and pose binding with sparse reset ownership and real Bevy snapshot extraction",
+      "commit": "5669d79bbf8bb62c26483be9364bb856d057ddfd",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5669d79bbf8bb62c26483be9364bb856d057ddfd"
     }
   ],
   "remaining": [
@@ -632,17 +637,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "92b170381b0703aa475e62568a5377d6c9d0dec2",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/92b170381b0703aa475e62568a5377d6c9d0dec2",
-    "rust_tests": 642,
+    "revision": "5669d79bbf8bb62c26483be9364bb856d057ddfd",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5669d79bbf8bb62c26483be9364bb856d057ddfd",
+    "rust_tests": 653,
     "coverage": {
       "lines": [
-        7904,
-        7991
+        7991,
+        8083
       ],
       "regions": [
-        12323,
-        12595
+        12447,
+        12729
       ]
     },
     "upstream": {
@@ -652,9 +657,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41155481713"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41160470420"
     },
-    "note": "Exact hosted 92b1703 and every required step succeeded after independent review and the full staged gate: 642 headless and 368 renderer-profile test executions plus 149 tooling checks. Required headless coverage is 7904/7991 lines and 12323/12595 regions; separate renderer coverage is 4232/4343 lines and 6305/6557 regions. All 17 production crates exceed 95% lines and regions across required profiles. Execution counts are not summed across profiles. The producer remains explicitly pinned; unsupported fields are rejected and retained native differences are documented. Camera sensor binding, scheduling/publication, native image parity, physical GPU and broader performance remain incomplete."
+    "note": "Exact hosted 5669d79 and every required step passed after independent review and the full ordinary staged gate. Downloaded hosted evidence matches all 60 production source hashes and both local coverage profiles: 653 headless and 383 renderer test executions, plus 149 tooling checks. Headless coverage is 7991/8083 lines and 12447/12729 regions; separate renderer coverage is 4391/4508 lines and 6516/6780 regions. All 17 production crates exceed 95% lines and regions across required profiles. Scene changed lines are 91/94 and extraction 68/69. Counts are not summed across profiles. The earlier sandbox setup failure remains distinct. This accepts explicit bounded SDF camera snapshots, not continuous Image/CameraInfo publication, native images, physical GPU behavior or comparative performance."
   },
   "phase_status": {
     "P0": "in_progress",
