@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T20:37:22Z",
+  "updated_at": "2026-10-31T21:01:43Z",
   "state": "active",
-  "summary": "The source-built Zenoh reference and strict server diagnostic pass. The complete headless run exposed a late IMU receipt failure; its readiness fix is under review. Full rendering, performance-reference and release gates remain open.",
+  "summary": "Local Zenoh headless validation passes: 783 tests and strict line/region coverage in all 12 headless crates. Rendering, equal-work app reference, staged and exact hosted qualification remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "Direct Zenoh and consumer-generated protobuf bindings replace all old Rust Transport/Messages runtime and ZeroMQ dependencies. Real source-built C++ server, rate and CLI interoperability scenarios pass. Five independently reviewed WorldIo controls pass (21 focused tests), and the server-only diagnostic passes unchanged strict checks:2398/2491 lines,3475/3655 regions,1588/1654 changed lines. The complete headless attempt passed140 server controls, all three timing controls and DART fuzzing, but one retained late-IMU receipt timed out; no complete profile or coverage acceptance is claimed. A test-client readiness candidate preserves all frame deadlines, timestamps, sequences and assertions while diagnosis/review continues. Three agents handle full-profile verification, full-app builder implementation and independent review. Current camera/GPU replay, stopped-peer pressure/absence, quiet equal-work, staged and exact hosted gates remain required. Client-only SDK qualification is not full Gazebo app performance qualification."
+      "detail": "A complete local headless execution passes 783 tests, all three retained timing controls and real C++ Zenoh peer checks. Independent review confirms strict coverage in every one of 12 headless crates: workspace 9757/9931 lines and 14931/15372 regions; server 2401/2491 and 3478/3655. Changed coverage passes for proto177/178, CLI4/4 and server1591/1654. The IMU readiness repair preserves frame deadlines, timestamps, sequences, counters and noise assertions; no production waits were added. Coverage report handling now preserves all 57 owned records and 122 zero-hit entries exactly, while retaining the full generated-binding guard; no threshold or denominator was reduced. This is reviewed local execution and retained-data qualification, not current staged, renderer, hosted or full end-to-end acceptance. Three agents prepare current camera/renderer checks, build the separate equal-work C++ application reference and review integration. The real app build passed immutable-base preflight but stopped before compilation on source-cache ownership; its contained copy fix passed a real Git probe and is under review. Pressure/absence, equal-work measurements and final release gates remain required."
     },
     {
       "id": "ACT-01",
