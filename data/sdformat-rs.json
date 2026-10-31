@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T13:04:07Z",
+  "updated_at": "2026-10-31T13:13:11Z",
   "state": "active",
-  "summary": "The reviewed URDF named-target fix passed the complete protected staged retry and published at8742ddc; exact hosted41203744863 remains pending.",
+  "summary": "URDF named-target material/friction fix accepted at8742ddc after full staged and exact hosted/source validation; original counts remain205 complete and29 partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "URDF named-extension regression fix",
-      "detail": "Independent semantic and AST proof reviews passed. The complete normal staged retry passed 649 Rust tests, 48 tools, 8336/8373 lines, 13134/13388 regions, 15/15 changed and 7957/7986 full-source lines. The exact checked tree was fast-forwarded into clean Main and published at8742ddc. All 731 downloaded source files, types and executable modes match the reviewed source/protected digests. Whole hosted41203744863 is running; its downloaded core evidence remains required before acceptance. The separate native scope is 29 named-target regressions, 84 retained controls and both unchanged originals. Source assertions, thresholds, denominators and original credit are unchanged. Accepted quality stays at74fa759 with205 complete/29 partial until hosted validation. Continuous-joint work remains separate and consumer pins are unchanged.",
+      "title": "Two-link continuous-joint URDF import",
+      "detail": "The separate candidate is rebased onto accepted8742ddc and reuses its reviewed generated-name admission rule. Continuous 5, retained single-link 11 and named-target 3 focused tests pass together (19 total). Native characterization retains 74 controls, the unchanged ValidContinuousJointedURDF original, and additional canonical/default-child frame probes. The narrow candidate maps continuous to revolute, preserves joint origin in the parent frame and child identity in the joint frame, and reuses existing SDF graphs. Missing limit presence is preserved rather than confused with urdf-rs zero defaults. Other joint types, fixed reduction, larger graphs, meshes and unsupported metadata remain rejected. Feature documentation, provenance driver, assertion mapping, independent review and full staged/hosted qualification remain pending; no feature credit or consumer pin changes.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Reject URDF material and friction declarations native conversion leaves unapplied",
+      "commit": "8742ddcc02674cd5aceb1034183d98ee91c1f85a",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a"
+    },
     {
       "title": "Bounded single-link URDF import with distinct original and generated source snapshots",
       "commit": "74fa759fd11c019c72eac1b596e62273e77478fd",
@@ -882,17 +887,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "74fa759fd11c019c72eac1b596e62273e77478fd",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/74fa759fd11c019c72eac1b596e62273e77478fd",
-    "rust_tests": 643,
+    "revision": "8742ddcc02674cd5aceb1034183d98ee91c1f85a",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8742ddcc02674cd5aceb1034183d98ee91c1f85a",
+    "rust_tests": 649,
     "coverage": {
       "lines": [
-        8320,
-        8357
+        8336,
+        8373
       ],
       "regions": [
-        13106,
-        13360
+        13134,
+        13388
       ]
     },
     "upstream": {
@@ -902,8 +907,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41194860350"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41203744863"
     },
-    "note": "Exact hosted74fa759 whole workflow and every required step passed. Downloaded core evidence binds the same run/head SHA; all726 downloaded tracked source files match the reviewed source/protected digests and clean Main. Actual LLVM/LCOV/log validation confirms643 Rust tests,47 tools,8320/8357 lines,13106/13360 regions,431/439 measured changed and7942/7971 full-source lines. Separate pinned native qualification passed84 controls and both unchanged full originals; native checks are not rerun by hosted CI. Independent review approved15 dependency source/archive/license audits,the strict admission/provenance mapping and the minimal diagnostic-driven syntax proof. Two complete fixed-case mappings cover ValidBasicURDF3 and ParseWhitespace13 tree+3 text observations,without general importer/XML/mutable Element credit. First failed staged snapshot was cleaned up; the actual ordinary LLVM diagnostic remains retained. Genuine DA0,region thresholds and all coverage denominators remain enforced. Consumer pins and Fuel are unchanged; no physical damping or performance claim. A newly reproduced named-target material/friction mismatch beyond the earlier qualified corpus is being corrected in a separate reviewed candidate; these accepted measurements describe the historical74fa759 gates."
+    "note": "Exact whole hosted8742ddc and every required step passed. Downloaded core evidence and all 731 source files/types/modes match the reviewed source/protected digests and clean Main. LLVM/LCOV/log validation confirms 649 Rust tests, 48 tools, 8336/8373 lines, 13134/13388 regions, 15/15 changed and 7957/7986 full-source lines. Separately qualified native scope is 29 named-target regressions, all 84 retained controls and both unchanged originals; hosted CI does not rerun native reference checks. The correction rejects only material/friction targets with native-generated lump-prefixed names, including suffix-completed and decoded tokens, while preserving all 31 previously accepted generated XML snapshots. The first failed staged export was cleaned up; one persistent ordinary diagnostic remains retained. Independent helper review and genuine LLVM controls qualified only three absent-DA delimiter forms, preserving every measured count and all 29 actual production DA0 records. No threshold, denominator, exclusion or original-credit change. Counts remain 205 complete/29 partial; consumer pins and Fuel are unchanged."
   }
 }
