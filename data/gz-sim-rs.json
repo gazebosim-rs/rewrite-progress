@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T22:36:52Z",
+  "updated_at": "2026-10-31T23:01:25Z",
   "state": "active",
-  "summary": "Direct Zenoh networking and consumer-generated protobuf bindings are published in 5870373. The complete normal staged hook and independent artifact audit pass; exact hosted CI is running. One matched TPE clock/pose/IMU workload measures about 7.5% lower Rust latency.",
+  "summary": "Direct Zenoh migration 5870373 passed the full local gate, exact hosted CI and independent downloaded source/input/coverage audit. Schema-only Messages publication can now proceed. Broader activation, systems and release work remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
-      "title": "Migrate directly to Zenoh and consumer-generated protobuf bindings",
-      "detail": "Published 5870373 removes the legacy Rust Transport and Messages runtime dependencies. The normal combined staged hook passes 783 headless, 435 renderer and 217 tooling tests, real C++ Zenoh peers and software Vulkan workers. An independent audit verifies all 1762 retained artifacts and exact source/input bindings. Headless coverage is 9761/9935 lines and 14935/15376 regions; renderer 5058/5191 and 7523/7830; every required production crate exceeds 95% in both metrics. Last-stream IMU buffers release on removal and reset failure. A separately qualified source-built C++ application and exact Rust release pass seven alternating measured pairs of 1000 steps: native 63.29us versus Rust 58.56us per step, about 7.5% lower latency, for one small matched TPE clock/pose/IMU case. This does not establish balanced robotics or whole-engine performance. Historical direct and unpaced comparisons retain their unequal-work scope. Exact hosted run 41248418524 is pending; broader activation, pressure, reference and release acceptance remain open."
+      "title": "Extend the qualified direct Zenoh migration",
+      "detail": "Published 5870373 removes the legacy Rust Transport and Messages runtime dependencies. The normal combined staged hook passes 783 headless, 435 renderer and 217 tooling tests, real C++ Zenoh peers and software Vulkan workers. An independent audit verifies all 1762 retained artifacts and exact source/input bindings. Headless coverage is 9761/9935 lines and 14935/15376 regions; renderer 5058/5191 and 7523/7830; every required production crate exceeds 95% in both metrics. Last-stream IMU buffers release on removal and reset failure. A separately qualified source-built C++ application and exact Rust release pass seven alternating measured pairs of 1000 steps: native 63.29us versus Rust 58.56us per step, about 7.5% lower latency, for one small matched TPE clock/pose/IMU case. This does not establish balanced robotics or whole-engine performance. Historical direct and unpaced comparisons retain their unequal-work scope. Exact hosted run 41248418524 passed. Independent audit verifies all 1767 downloaded files, 68 production sources and 272 inputs against the published commit. Hosted headless coverage is 9763/9935 lines and 14937/15376 regions; renderer matches local totals. Real selected C++ peers, generated-schema guards and software Vulkan receipts are verified. Broader activation, pressure, reference and release acceptance remain open."
     },
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Accepted dae6f7d passed exact hosted run 41063235325 and the full hook: 625 Rust, 103 tooling and 42/42 changed executable lines. Persistent force application is absent without configured or typed controller demand, retires with the last controller and restores configured demand on loaded reset. Zero retains controller state. Joint/IMU/controller observer reconciliation is qualified. Generic input/physics callbacks, server worker teardown and CPU/RSS measurements remain open."
+      "detail": "Accepted dae6f7d passed exact hosted run 41063235325 and the full hook: 625 Rust, 103 tooling and 42/42 changed executable lines. Persistent force application is absent without configured or typed controller demand, retires with the last controller and restores configured demand on loaded reset. Zero retains controller state. Joint/IMU/controller observer reconciliation is qualified. Generic input/physics callbacks, server worker teardown and CPU/RSS measurements remain open. A new bounded shutdown follow-up reproduces retained CPU IMU leases before the fix and passes seven real-network shutdown controls after it. Independent review approved the one-line release and new live-Server test. Its ordinary full staged retry is running after a storage guard stopped the first attempt; no new shutdown acceptance is claimed."
     },
     {
       "id": "SYS-CONTROL",
@@ -632,10 +632,15 @@
       "title": "Bounded DART free-root static contacts and the faithful original ApplyJointForce world with a real C++ publisher",
       "commit": "35d7fba2425783295af38a9a79463c35f7b675fa",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/35d7fba2425783295af38a9a79463c35f7b675fa"
+    },
+    {
+      "title": "Direct Zenoh consumer networking and standard generated protobuf bindings, verified by exact hosted C++/GPU/strict coverage evidence",
+      "commit": "5870373f0d8280601b051f2cbb1bb0aba264f70f",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/5870373f0d8280601b051f2cbb1bb0aba264f70f"
     }
   ],
   "remaining": [
-    "Complete exact hosted validation of published direct Zenoh networking and generated bindings, then broaden headless activation/pressure and system qualification. Preserve historical P2 results under their original scope. Complete broader reference provenance, inventory and world/resource loading.",
+    "Broaden the qualified direct Zenoh headless migration with full activation/pressure and remaining system behavior. Preserve historical P2 results under their original scope. Complete broader reference provenance, inventory and world/resource loading.",
     "Publish the schema-only Messages release after consumer-generated bindings and the canonical import closure are verified. No custom message runtime or standalone transport release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
@@ -674,11 +679,11 @@
     "rust_tests": 783,
     "coverage": {
       "lines": [
-        9761,
+        9763,
         9935
       ],
       "regions": [
-        14935,
+        14937,
         15376
       ]
     },
@@ -688,10 +693,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41248418524"
     },
-    "note": "Published direct-Zenoh commit 5870373 passed the complete configured normal staged hook. Independent audit verifies all 1762 artifact hashes, 68 production sources and 272 inputs against exact Git objects. 783 headless and 435 renderer tests are separate execution counts; 217 tooling tests also pass. All required production crates exceed 95% lines and regions; renderer totals are 5058/5191 and 7523/7830. Complete unfiltered LLVM/LCOV evidence and uncovered entries remain retained. Real C++ Zenoh clients and software Vulkan workers pass locally. Exact hosted CI 41248418524 remains pending and is not yet accepted. The independently reviewed matched two-model TPE stream comparison is approximately 7.5% lower Rust latency, with no balanced or whole-system performance claim. No full zero-cost absence, upstream parity or release completion claim."
+    "note": "Published direct-Zenoh commit 5870373 passed the complete configured normal staged hook and exact whole hosted run 41248418524. Independent downloaded audit verifies all 1767 files, 68 production sources and 272 inputs against exact Git objects, both full unfiltered/owned coverage views, all strict crate/workspace/changed gates, native C++ Zenoh and software Vulkan receipts. 783 headless and 435 renderer tests are separate execution counts; 217 tooling tests also pass. Hosted headless coverage is 9763/9935 lines and 14937/15376 regions; local is 9761/9935 and 14935/15376. Renderer agrees at 5058/5191 and 7523/7830; all required production crates exceed 95% for both metrics. The independently reviewed matched two-model TPE stream comparison measures about 7.5% lower Rust latency, with no balanced or whole-system performance claim. Uncommitted shutdown follow-up evidence is separate. No full zero-cost absence, upstream parity or release completion claim."
   },
   "phase_status": {
     "P0": "in_progress",
