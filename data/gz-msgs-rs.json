@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T03:30:29Z",
+  "updated_at": "2026-10-31T03:53:37Z",
   "state": "active",
-  "summary": "The private opt-in append helper is ready for independent source/API review; focused correctness and new-source coverage pass.",
+  "summary": "The reviewed opt-in append helper is published after the full local protected gate; exact hosted qualification is pending.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Opt-in standard-prost append helper",
-      "detail": "The frozen opt-in standard-prost helper preserves existing Vec prefixes, uses checked lengths and fallible reservation, and rolls back logical length on returned encoding or incomplete-write errors. Seven focused tests, 23 actual native wire comparisons, one doc example and Clippy pass; new production source has 41/41 lines and 72/72 regions covered. Independent source/API review and full normal protected staged/exact hosted checks remain pending. The helper itself is not separately timed or adopted; default codecs, consumer pins and accepted counters remain at 62ac297."
+      "detail": "Published candidate 19bf909 passed independent source/API review and the ordinary full protected staged gate:209 Rust tests,7559 native JSON outcomes, strict coverage on all20 production files and all owned vendor patches. Exact messages workflow41166237874 is running; whole-workflow success and downloaded evidence are still required. Accepted counters remain62ac297/202. Default codecs, consumer pins and schemas are unchanged; the public helper is not separately timed."
     }
   ],
   "accepted_slices": [
@@ -565,6 +565,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41154966206"
     },
-    "note": "Accepted production evidence remains the exact public 62ac297 commit and its successful hosted run. New append helper implementation, review and mandatory staged/hosted qualification are pending. The reviewed precursor showed bounded LaserScan encoding gains over Vec on one host; native 1080 encode/decode deficits and broader performance qualification remain open."
+    "note": "This quality record still describes accepted62ac297 and its exact successful hosted run. Published append-helper candidate19bf909 passed the complete local gate but hosted workflow41166237874 and downloaded source-archive/fresh-consumer evidence remain pending. No exact-helper timing, native parity or broader performance qualification is claimed."
   }
 }
