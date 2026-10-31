@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T04:35:04Z",
+  "updated_at": "2026-10-31T04:47:42Z",
   "state": "active",
-  "summary": "The accepted append helper remains qualified at 19bf909; optional boolean extension-default formatting is now in private implementation.",
+  "summary": "The accepted append helper remains qualified at 19bf909; the optional Boolean extension-default slice is frozen for independent review.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
       "title": "Optional boolean extension-default declarations",
-      "detail": "A private source-aware formatter slice reuses maintained reflection defaults without changing parsing, wire behavior or raw metadata. Two focused Rust tests and 56 complete pinned native descriptor/CLI observations pass, covering 32 supported layouts, 14 retained formatting rejections and 10 loader rejections. Retained regressions, Clippy, independent review and normal staged/hosted gates remain pending. All 83 original mappings and accepted 19bf909 / 209 counters stay unchanged; no new timing, default codec or consumer pin change is claimed."
+      "detail": "The private source-aware formatter reuses maintained reflection defaults and preserves parsing, raw metadata, wire behavior and rejection guards. Two new tests and 56 complete pinned native descriptor/CLI rows pass, including 32 supported layouts, 14 formatting rejections and 10 loader rejections. Seven new/retained test targets pass 22 tests with zero ignored; all-target Clippy and exact native reference replay pass. Focused changed-code diagnostics cover 7/7 executable added lines and 18/18 intersecting regions; the full strict inventory gate is still pending. Independent review is active. All 83 original mappings and accepted 19bf909 / 209 counters remain unchanged; no new timing, default codec or consumer pin change is claimed."
     }
   ],
   "accepted_slices": [
