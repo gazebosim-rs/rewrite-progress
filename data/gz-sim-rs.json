@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T05:23:29.543684+00:00",
+  "updated_at": "2026-10-31T06:15:46.143990+00:00",
   "state": "active",
-  "summary": "Review found a native rollback defect after rejected DART joint attachment. Repair is prioritized before new feature publishing. Explicit camera output passed strict private coverage and independent real C++/software-worker checks; full integration is held.",
+  "summary": "The DART rollback/retirement repair is published and accepted after full hosted verification. Bounded world-rooted DART scenes are qualified. Explicit camera output passes private coverage and independent C++/software-worker tests; full simulator integration gates remain next.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "id": "PHY-03",
-      "title": "Repairing rejected-joint rollback in the published DART backend",
-      "detail": "Two independent native failure families were reproduced on published506f94a: refused attachment/retry changed hidden child motion, and warmed surviving parent Jacobians lost impulse/velocity response after leaf retirement. A minimal13-line C++ repair invalidates DART Jacobian/derivative caches at three extraction boundaries, without new topology or solver changes. Independent red/green replay and119-test standard/native suites passed; native bridge coverage498/521 lines, all9 added executable lines covered, Clippy passed. Only three repair paths are in the unchanged full staged gate now running. Scene506 exact hosted41169945049 and downloaded60-source/25-input profiles also passed672 headless/387 renderer with60/60 changed scene lines; that prior CI did not include the new regressions. Further feature publication is held for repair qualification. Seven-DOF/free-root construction and original contacting ApplyJointForce remain unaccepted."
+      "title": "Extending DART beyond the qualified world-rooted chain",
+      "detail": "Repair c5f73a1 passed full staged and exact hosted41173269592 with downloaded source-bound profiles; independent baseline failures and119 standard/native tests plus498/521 native lines qualify the cache invalidation. Scene506 is also qualified with672/387 executions and60/60 changed scene lines. Seven-DOF free-root extension remains private: preliminary native34 observations and192 safety subprocesses do not replace old-negative dispositions, complete Scene consumer qualification, coverage or gates. External articulation contacts/original ApplyJointForce ground behavior,larger graphs and comparative performance remain open."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Private optional camera-output passed strict renderer coverage:287/300 lines and376/395 regions, with292/297 changed executable lines and all selected crates above95%. Root independently replayed all6 source-bound same-graph software-Vulkan worker controls, including real C++ Image/CameraInfo delivery and buffered-frame invalidation. Independent CPU18,typed protocol9-mode controls,Clippy/fmt and24 profile controls also passed. Constructor now retains validated immutable worker configuration instead of repeating an impossible fallible path conversion; executable authentication is not claimed. All23 reviewed source/guidance paths are retained locally but unstaged while the separate published DART rollback defect is repaired. Full Main headless/staged/hosted gates remain required; no cadence/native-image/physical-GPU/performance completion is claimed."
+      "detail": "The reviewed23-path camera/guidance slice is retained locally for full simulator integration now that the separate DART repair is qualified. Private renderer coverage passed287/300 lines,376/395 regions and292/297 changed lines; Root independently replayed all6 actual software-Vulkan worker controls including real C++ Image/CameraInfo delivery, timestamp preservation and buffered-frame lifecycle invalidation. Independent18 CPU/protocol9-mode/Clippy/fmt/profile24 controls passed. It is an explicit one-camera owner with no default GPU dependency or automatic cadence. Main full headless/renderer/staged and exact hosted qualification remain required before publication/acceptance; no native-image/physical-GPU/fullfamily/performance claim."
     },
     {
       "id": "QLT-01",
@@ -602,6 +602,16 @@
       "title": "Bounded DART moving-parent backend with coupled effort, lifecycle safety and independently verified native observations",
       "commit": "f60d3a3a2a0e851369bd665b893827d5c0185600",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f60d3a3a2a0e851369bd665b893827d5c0185600"
+    },
+    {
+      "title": "World-rooted two-link DART scenes with stable declaration identities, coupled effort and leaf-first lifecycle",
+      "commit": "506f94a991f54e61ea747408b108adc00f563933",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/506f94a991f54e61ea747408b108adc00f563933"
+    },
+    {
+      "title": "Native DART extraction-cache repair with independently failing-before/passing-after rollback, impulse and velocity regressions",
+      "commit": "c5f73a18a5c7923321e62cc5007361a90f68c21c",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c5f73a18a5c7923321e62cc5007361a90f68c21c"
     }
   ],
   "remaining": [
@@ -637,17 +647,17 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "f60d3a3a2a0e851369bd665b893827d5c0185600",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f60d3a3a2a0e851369bd665b893827d5c0185600",
-    "rust_tests": 668,
+    "revision": "c5f73a18a5c7923321e62cc5007361a90f68c21c",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c5f73a18a5c7923321e62cc5007361a90f68c21c",
+    "rust_tests": 676,
     "coverage": {
       "lines": [
-        8129,
-        8222
+        8187,
+        8280
       ],
       "regions": [
-        12590,
-        12875
+        12710,
+        12999
       ]
     },
     "upstream": {
@@ -657,9 +667,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41168474334"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41173269592"
     },
-    "note": "Exact hosted f60d3a3 and all required steps passed after independent review and the unchanged full staged retry. Downloaded evidence matches all60 source hashes and25 build/check inputs against exact Git objects, plus both local coverage/changed-line maps. There were668 headless and383 renderer executions and152 tooling checks, not a summed unique count. Headless8129/8222 lines and12590/12875 regions; renderer4391/4508 and6516/6780. All17 crates pass required profile thresholds; changed DART150/151. The initial disk-space failure remains separate. Native observations and safety probes qualify only the bounded world-rooted two-body backend. Scene admission awaits its separate hosted result; no general articulation, external contact, original ApplyJointForce or comparative performance completion is claimed. Follow-up review has since reproduced a refused-joint-attachment rollback defect in this published backend domain. The accepted CI result remains factual, but it does not cover that newly discovered sequence; a separate regression and repair are in progress before further simulator feature publication."
+    "note": "Exact hosted c5f73a1 and all jobs/steps passed after independent clean-baseline failing regressions and the unchanged full staged gate. Downloaded profiles match60 production Rust source hashes and25 build/check inputs against exact Git objects, plus both local coverage/changed maps. Native GCC evidence is separately bound to all3 exact native source hashes:bridge498/521 lines,all9 added executable lines covered. There were676 headless and387 renderer executions and152 tooling checks, not a summed unique count. Headless8187/8280 lines and12710/12999 regions; renderer4449/4566 and6636/6904. All17 production crates pass required profiles. Scene506 also passed exact41169945049 and downloaded source verification. The discovered hidden-native-Jacobian rollback/retirement defect is repaired without new topology or solver changes. Camera publication,7DOF/free-root construction,external articulation contacts and broader performance remain unaccepted."
   },
   "phase_status": {
     "P0": "in_progress",
