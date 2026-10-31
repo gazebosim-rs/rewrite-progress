@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-10-31T12:00:54.004423+00:00",
+  "updated_at": "2026-10-31T12:55:45.738959+00:00",
   "state": "active",
-  "summary": "Reviewed DART static contacts and the unchanged original C++ force-command world are published after the complete local gate passed. Exact hosted verification is running; accepted counters remain on the prior verified revision.",
+  "summary": "DART free-root static contacts and the unchanged original ApplyJointForce world are accepted, including real C++ client interoperability and complete local/hosted verification. Broader headless, activation and performance acceptance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -14,12 +14,12 @@
     {
       "id": "SYS-CONTROL",
       "title": "Extending retained controller behavior beyond world hinges",
-      "detail": "Published35d7fba includes the faithful Linux original ApplyJointForce command case: unchanged world bytes, ten initial force observations, real C++ Double publisher, original command/arrival/final tolerances. Independent fresh replay and complete local gate pass. Exact hosted41199185194/downloaded-source verification remain pending, so accepted original-case credit stays unchanged. Full controller-family, zero-cost absence and performance remain open."
+      "detail": "Accepted35d7fba adds one faithful Linux original ApplyJointForce command case on the unchanged native world: ten initial force observations, real C++ Double publisher, original command/arrival/final tolerances. Retained original native execution, independent fresh Rust integration replay and full exact hosted verification agree. Full controller-family behavior, zero-cost absence and performance remain open."
     },
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "Reviewed commit35d7fba passed the full unchanged staged retry:698 headless/414 renderer executions, strict per-crate coverage, source-hash verification and complete retained evidence. Headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. Additional native coverage504/527 bridge,60/62 joint-state, changed44/46. Exact hosted41199185194 is running; acceptance awaits whole success and downloaded-source verification. Scope is free-root two-link articulation against static geometry; world-root/dynamic contacts and active multibody limits remain refused."
+      "detail": "Accepted35d7fba passed complete local and exact hosted41199185194 gates. Downloaded62 production source hashes and26 inputs match exact Git objects; independently recomputed LLVM totals equal local reports.698 headless/414 renderer executions; native changed44/46 separately. Free-root two-link articulation against static geometry is qualified. World-root/dynamic external contacts, active multibody limits and broader articulated domains remain refused; no solver-wide or performance completion."
     },
     {
       "id": "REF-01",
@@ -622,6 +622,11 @@
       "title": "Bounded DART free-root parent-child scenes with coupled reactions, full-coordinate rollback and native parity",
       "commit": "004baa81a3839b7100eee22d970dcf0a0b47eaf4",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/004baa81a3839b7100eee22d970dcf0a0b47eaf4"
+    },
+    {
+      "title": "Bounded DART free-root static contacts and the faithful original ApplyJointForce world with a real C++ publisher",
+      "commit": "35d7fba2425783295af38a9a79463c35f7b675fa",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/35d7fba2425783295af38a9a79463c35f7b675fa"
     }
   ],
   "remaining": [
@@ -657,9 +662,9 @@
     "RENDER-01": "in_progress"
   },
   "quality": {
-    "revision": "004baa81a3839b7100eee22d970dcf0a0b47eaf4",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/004baa81a3839b7100eee22d970dcf0a0b47eaf4",
-    "rust_tests": 689,
+    "revision": "35d7fba2425783295af38a9a79463c35f7b675fa",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/35d7fba2425783295af38a9a79463c35f7b675fa",
+    "rust_tests": 698,
     "coverage": {
       "lines": [
         8187,
@@ -672,14 +677,14 @@
     },
     "upstream": {
       "total": null,
-      "ported": 3,
+      "ported": 4,
       "partial": 9
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41190363075"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41199185194"
     },
-    "note": "Exact whole hosted run and every step/job passed; downloaded62 Rust source hashes and26 inputs match exactGitobjects and local source maps. Both hosted/local coverage and changed-line maps match. Headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. All required crates exceed95%; DARTchanged1/1. Additional local GCC11/gcov11 coverage on same native sources:bridge498/521,header7/7,joint-state23/23, all strictlyabove95%.689headless and414renderer are separate profile execution counts; deliberately ignored helper-child entries are executed explicitly by their parent harness. Independent131 DART/15 Scene/34 native reference observations qualify bounded free-root pairs without external articulation contacts. Static-contact prototype and originalforce-system world remain unaccepted."
+    "note": "Whole exact hosted run and every job/step passed; downloaded62 Rust sources and26 inputs match Git objects and local maps. Independent LLVM recomputation and local/hosted summaries agree: headless8187/8280 lines12712/13001 regions; renderer4736/4866 and7013/7299. Every required crate exceeds95%. Rust changed0/0 is inapplicable because production changes are native; additional local GCC11/gcov11 coverage on exact native source:bridge504/527,header7/7,jointstate60/62,changed44/46.698 headless/414 renderer are separate execution counts, with3/1 helper-child entries explicitly run by parent harnesses. Original ApplyJointForce fixed Linux case adds one faithful mapping. First storage-failed attempt remains distinct from complete unchanged retry. No whole-system,zero-cost absence or balanced-performance acceptance."
   },
   "phase_status": {
     "P0": "in_progress",
