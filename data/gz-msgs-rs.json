@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T01:49:44Z",
+  "updated_at": "2026-10-31T01:53:16Z",
   "state": "active",
-  "summary": "Investigating the generated typed LaserScan buffer path using source inspection and controlled compilation only.",
+  "summary": "Controlled compilation found a standard-API slice-buffer route for generated LaserScan encoding; execution remains pending.",
   "model": "Messages implementation agent",
   "active": [
     {
       "id": "MSG-02",
-      "title": "Generated typed LaserScan buffer-path investigation",
-      "detail": "Qualified release code retains a per-double Vec capacity check in packed encoding; native uses block copies. A private safe initialized-slice encoding experiment preserves standard Message identity and owned/reused Vec output contracts. Only source inspection and compilation are running during shared GPU activity; correctness execution and quiet timing are pending. Accepted counters remain at 62ac297."
+      "title": "Generated typed LaserScan buffer-path experiment",
+      "detail": "Two consumers compiled with identical source, lockfile and audited release settings; a feature selects Vec or safe initialized-slice output. The slice path emits vector copy loops while charging zero-fill and resize work. No measured executable or fidelity control has run during shared GPU activity, so correctness, allocation behavior and performance remain unqualified. Accepted counters remain at 62ac297."
     }
   ],
   "accepted_slices": [
