@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T09:24:25.468369Z",
+  "updated_at": "2026-11-01T09:57:09.501414Z",
   "state": "active",
-  "summary": "P2 headless acceptance remains complete. Main0608577 now includes qualified rate-controller retirement and reset setup reliability, alongside the published scoped C3 performance report. Automatic camera execution, automatic-inertia consumption and balanced-reference prerequisites continue; the wider rewrite is unfinished.",
+  "summary": "P2 headless acceptance remains complete. Main3d290ee now consumes qualified automatic primitive inertia and retains collision density across reset, following the accepted reset reliability fix and scoped C3 report. Automatic-camera execution and a separate native DART reference qualification continue; the wider rewrite is unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -29,7 +29,7 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "The separately reviewed Zenoh+DART reference build remains active in its own exact clean-DART image/container. Fresh same-image selected Zenoh client, Physics and Sensors builds/installations are complete; Sim compilation is underway. Signed package/compiler/header/library and fresh-prefix checks remain strict. Unchanged B03 untimed smoke/runtime maps and final image qualification are still pending; no prefix swap or timing/performance credit."
+      "detail": "Fresh same-image selected Zenoh client, Physics, Sensors and Sim builds/installations completed. The first native builder then failed closed before B03 at ambiguous DART/TPE depfile selection; a reviewed correction continued from preserved outputs, then stopped before B03 at nested flags.make lookup. Both minimal evidence-layout fixes passed independent source/unit review; bounded post-build continuation is authorized, preserving original failures and compiled state. B03/probe/runtime maps/image qualification remain pending; no fresh whole-bootstrap or timing credit."
     },
     {
       "id": "REF-02",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Independent real namespace controls approved the new camera fixture isolation (3/3, including zero-selector and same-namespace rejection). Production and all retained application assertions/deadlines stayed unchanged. Full default-thread CPU CameraOutput/Server/Scene qualification is now running after the preserved first46/49 result; Scene3 corrected boundary tests pass. Native8-topic/8-activation records and generating sources are retained with declared public path projections. Software-worker/C++ image-info and complete strict gates remain pending."
+      "detail": "Current21-path automatic-camera source/CPU packet is independently reviewed: all50 CameraOutput/default-thread controls,166 Server and64 Scene controls pass, including a real post-tick accepted-reset publication red/green regression. Native8-topic/8-activation provenance is checked. Actual automatic-path software rendering and unchanged C++ Image+CameraInfo receipt remain pending; bounded warm-target reuse is authorized after preserving only relevant missing outputs, without duplicating the whole graph. Full strict/hosted and CLI/fullManager/rate/GPU parity remain open."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Review commit3d290ee adopts accepted producerb246 and collision-density metadata on Main060. Its complete normal gate and independent source/profile/native audit passed825 headless,483 renderer and223 tooling checks; both Scene profiles cover17/17 changed lines and every required crate exceeds95% lines/regions. Exact hosted41290666226 and official downloaded audit are running before Main adoption. No backend limits or unrelated dependency records changed; Main still pins1b until acceptance."
+      "detail": "Main3d290ee now pins accepted producerb246 after full normal/exact hosted/source/native qualification. Qualified single origin boxes/spheres with explicit density use producer-computed inertia; collision entities retain density presence/value across reset without recomputation. Existing manual/static/backend limits and unrelated negative assertions remain. Broader automatic-inertia domains and mutable SDFormat parity remain open."
     }
   ],
   "accepted_slices": [
@@ -677,6 +677,11 @@
       "title": "Retired absent rate-controller ownership and repaired transient cold setup admission with one bounded deadline; full normal/exact hosted/source/native checks passed",
       "commit": "060857766fe245ddc23b143044f2f7555bb4100c",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/060857766fe245ddc23b143044f2f7555bb4100c"
+    },
+    {
+      "title": "Qualified single-box/sphere automatic-inertia consumption and collision-density metadata/reset restoration, preserving backend admission policies; exact hosted/source/native/coverage checks passed",
+      "commit": "3d290ee4b137f357f8ec615131d41de58a04ba86",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3d290ee4b137f357f8ec615131d41de58a04ba86"
     }
   ],
   "remaining": [
@@ -715,17 +720,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "060857766fe245ddc23b143044f2f7555bb4100c",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/060857766fe245ddc23b143044f2f7555bb4100c",
-    "rust_tests": 813,
+    "revision": "3d290ee4b137f357f8ec615131d41de58a04ba86",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3d290ee4b137f357f8ec615131d41de58a04ba86",
+    "rust_tests": 825,
     "coverage": {
       "lines": [
-        9820,
-        9992
+        9838,
+        10009
       ],
       "regions": [
-        15038,
-        15466
+        15054,
+        15484
       ]
     },
     "upstream": {
@@ -735,9 +740,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41287528044"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41290666226"
     },
-    "note": "Main0608577 includes optional rate-controller retirement and bounded cold setup admission. The complete normal gate, exact hosted41287528044 and official source/profile/native audit passed813 headless,471 renderer and223 tooling checks. All required crates exceed95% lines and regions; changed Server63/64 locally. All1037 Git files/modes and1783 artifact files bind to the commit; native C++ and software Vulkan pass. Cold enqueue plus receipt shares one existing five-second budget at unchanged queue capacity; frame admission stays nonblocking. The original failed aace workflow is preserved separately; controlled Full-queue reproduction establishes the repaired race class without proving the original interleaving. Full ACT and broad release qualification remain open."
+    "note": "Main3d290ee adopts accepted SDFormatb246 and retains explicit collision density/reset presence without recalculating producer inertia. Complete normal and exact hosted41290666226/source/native audit pass825 headless,483 renderer and223 tooling checks. All1041 Git files/modes and1786 official artifacts bind to the commit; every required crate exceeds95% lines/regions. Scene changed17/17 in both profiles. Headless9838/10009+15054/15484; renderer5258/5384+7801/8107. Two former density refusals have independently reviewed exhaustive positive replacements; all other predicates/backend limits remain. Automatic camera and broader automatic inertia/release work remain unfinished."
   },
   "phase_status": {
     "P0": "in_progress",
