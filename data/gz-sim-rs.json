@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T07:59:35.544998Z",
+  "updated_at": "2026-11-01T08:00:34.809957Z",
   "state": "active",
   "summary": "P2 headless acceptance is complete, and Main067c41d now publishes the independently audited C3 performance report. Rendering lifecycle, automatic-inertia consumption and system activation continue. The reproduced cold-setup admission race has a reviewed fix undergoing full integration checks; the original failed candidate remains unreleased.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -683,7 +683,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Rate-controller acceptance awaits full integration qualification of the reviewed cold-setup fix. A controlled reproduction proved live Full admission failure; the original hosted failure interleaving remains unknown and preserved. Accepted Main is unaffected."
+    "Rate-controller acceptance awaits full integration qualification of the reviewed cold-setup fix. A controlled test proved live Full admission failure in a setup path that also exists on accepted Main; the original hosted interleaving remains unknown. The failed optional-rates candidate is not on Main."
   ],
   "plan_status": {
     "REF-01": "in_progress",
