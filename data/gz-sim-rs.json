@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T09:18:05.071504Z",
+  "updated_at": "2026-11-01T09:24:25.468369Z",
   "state": "active",
   "summary": "P2 headless acceptance remains complete. Main0608577 now includes qualified rate-controller retirement and reset setup reliability, alongside the published scoped C3 performance report. Automatic camera execution, automatic-inertia consumption and balanced-reference prerequisites continue; the wider rewrite is unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -29,7 +29,7 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "The separately reviewed Zenoh+DART reference build is running in its own exact clean-DART image. Fresh same-image selected Zenoh client, Physics and Sensors builds/installations completed; Sim compilation is underway. Signed package/compiler/header/library and fresh-prefix checks remain strict. Unchanged B03 untimed smoke/runtime maps and final image qualification are still pending; no old app reuse, prefix swap or performance credit."
+      "detail": "The separately reviewed Zenoh+DART reference build remains active in its own exact clean-DART image/container. Fresh same-image selected Zenoh client, Physics and Sensors builds/installations are complete; Sim compilation is underway. Signed package/compiler/header/library and fresh-prefix checks remain strict. Unchanged B03 untimed smoke/runtime maps and final image qualification are still pending; no prefix swap or timing/performance credit."
     },
     {
       "id": "REF-02",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "The automatic-camera draft passes10 new controls in isolation, but its first complete default-thread CPU run passed46/49 with three new network-fixture failures; original tests remained passing. A reviewed fixture repair now uses isolated user/network namespaces and distinct loopback addresses, retaining single rebinds, child-execution checks and every assertion/deadline. No production workaround, retries or suite serialization. Native8-topic/8-activation characterizations remain scoped; software-worker/C++ image-info execution and full strict qualification are pending."
+      "detail": "Independent real namespace controls approved the new camera fixture isolation (3/3, including zero-selector and same-namespace rejection). Production and all retained application assertions/deadlines stayed unchanged. Full default-thread CPU CameraOutput/Server/Scene qualification is now running after the preserved first46/49 result; Scene3 corrected boundary tests pass. Native8-topic/8-activation records and generating sources are retained with declared public path projections. Software-worker/C++ image-info and complete strict gates remain pending."
     },
     {
       "id": "QLT-01",
