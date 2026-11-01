@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T10:56:39.553327Z",
+  "updated_at": "2026-11-01T11:19:48.199895Z",
   "state": "active",
-  "summary": "P2 headless acceptance remains complete. Main3d290ee now consumes qualified automatic primitive inertia and retains collision density across reset, following the accepted reset reliability fix and scoped C3 report. Automatic-camera execution and a separate native DART reference qualification continue; the wider rewrite is unfinished.",
+  "summary": "P2 headless acceptance remains complete. Main now includes the independently qualified separate Zenoh/DART reference recipe. Automatic-camera integration is held by its strict coverage gate while meaningful missing tests are added; world-light metadata implementation continues. The wider rewrite remains unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -29,7 +29,7 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "The separate Zenoh+DART candidate image and unchanged B03 smoke passed independent read-only closure/source/package/provenance review. The five-file recipe/probe/lock/unit/doc change passed the complete normal hook in751seconds and was published on review branch ce071305. Exact hosted and downloaded artifact qualification are pending before Main acceptance. Both earlier pre-probe layout failures remain distinct; actual passing execution was a reviewed continuation. No balanced timings, Rust B03 admission or whole-P0 completion is claimed."
+      "detail": "Main ce071305 publishes the separately qualified Zenoh/DART reference recipe after the full normal hook, exact hosted41298713640 and independent official source/profile/native audit passed. The unchanged native seven-link/four-joint/sun B03 smoke passed in a reviewed continuation; both pre-probe layout failures remain distinct. This closes one native reference prerequisite, not whole P0, fresh whole-bootstrap success, Rust B03 admission or balanced performance."
     },
     {
       "id": "REF-02",
@@ -39,12 +39,12 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Balanced-robotics baseline remains incomplete. The separate Zenoh+DART native-app build will qualify the actual DART/Zenoh closure and unchanged seven-link/four-joint/sun B03 fixture before any timing. Rust still needs world-light metadata and broader DART chain qualification for that exact fixture. Existing local mixed/diagnostic timings are not matched release evidence; quiet-resource measurements and ratified budgets remain open."
+      "detail": "The separate native Zenoh/DART reference and unchanged B03 smoke are qualified as an untimed prerequisite. Rust still needs world-light metadata and broader DART chain admission; no fixture light or guard is removed to obtain parity. Balanced robotics accuracy, quiet matched measurements and ratified budgets remain open. Existing small TPE C3 measurements keep their original scope."
     },
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Automatic single-camera source and composed CPU/software/C++ evidence passed independent review. Root integrated it onto accepted Main3d, retaining collision density and world Sensors intent together across reset. The52 CameraOutput,166 Server and64 Scene CPU controls, three software lifecycle cases, helper controls and corrected unchanged C++ Image/CameraInfo receipt establish focused evidence. The integrated source, dependency closure and documentation passed independent review. The full normal hook is running; exact hosted qualification remains required before Main acceptance. Earlier failures are preserved; CLI/multiple cameras/native Manager/camera set_rate/physical GPU remain open."
+      "detail": "Automatic-camera integration passed independent source review but its mandatory normal gate failed strict region coverage:1267/1365 in CameraOutput, below the required greater-than95%. No commit or publication occurred. The failed stage is retained. Meaningful lifecycle and identity/hierarchy tests are being added in isolation with independent review; production behavior, assertions, deadlines and coverage gates remain unchanged. CLI/multiple cameras/native Manager/camera set_rate/physical GPU remain open."
     },
     {
       "id": "QLT-01",
@@ -682,6 +682,11 @@
       "title": "Qualified single-box/sphere automatic-inertia consumption and collision-density metadata/reset restoration, preserving backend admission policies; exact hosted/source/native/coverage checks passed",
       "commit": "3d290ee4b137f357f8ec615131d41de58a04ba86",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3d290ee4b137f357f8ec615131d41de58a04ba86"
+    },
+    {
+      "title": "Separate native Zenoh/DART reference recipe with independently qualified unchanged B03 smoke continuation; complete normal and exact hosted/source/profile/native publication checks passed",
+      "commit": "ce071305b014f1fc216e21c5a0ccd39a46a5f0b0",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ce071305b014f1fc216e21c5a0ccd39a46a5f0b0"
     }
   ],
   "remaining": [
@@ -720,16 +725,16 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "3d290ee4b137f357f8ec615131d41de58a04ba86",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/3d290ee4b137f357f8ec615131d41de58a04ba86",
+    "revision": "ce071305b014f1fc216e21c5a0ccd39a46a5f0b0",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ce071305b014f1fc216e21c5a0ccd39a46a5f0b0",
     "rust_tests": 825,
     "coverage": {
       "lines": [
-        9838,
+        9836,
         10009
       ],
       "regions": [
-        15054,
+        15052,
         15484
       ]
     },
@@ -740,9 +745,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41290666226"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41298713640"
     },
-    "note": "Main3d290ee adopts accepted SDFormatb246 and retains explicit collision density/reset presence without recalculating producer inertia. Complete normal and exact hosted41290666226/source/native audit pass825 headless,483 renderer and223 tooling checks. All1041 Git files/modes and1786 official artifacts bind to the commit; every required crate exceeds95% lines/regions. Scene changed17/17 in both profiles. Headless9838/10009+15054/15484; renderer5258/5384+7801/8107. Two former density refusals have independently reviewed exhaustive positive replacements; all other predicates/backend limits remain. Automatic camera and broader automatic inertia/release work remain unfinished."
+    "note": "Main ce071305 passed the complete normal hook and exact hosted41298713640/source/profile/native audit:825 headless,483 renderer,237 tooling;1046 Git files/modes,70 production sources,272 verifier inputs and1785 official artifacts verified. Every required crate exceeds95% lines and regions. Headless9836/10009 lines15052/15484 regions; renderer5256/5384 and7799/8107. Native reference recipe publication is accepted; local actual B03 evidence is a reviewed continuation, not fresh whole-bootstrap or performance qualification. Camera integration failed its separate strict coverage gate and remains unpublished."
   },
   "phase_status": {
     "P0": "in_progress",
