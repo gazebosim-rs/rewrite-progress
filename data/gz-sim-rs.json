@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T13:55:17.275972Z",
+  "updated_at": "2026-11-01T15:40:38.457818Z",
   "state": "active",
-  "summary": "P2 remains complete. The programmatic single-camera application is now accepted on Main with real C++ Image/CameraInfo interoperability and software-renderer checks. World-light integration, broader DART articulation and remaining SDF semantics continue; the wider rewrite is unfinished.",
+  "summary": "P2 is complete. Main now retains world-light metadata and reset state alongside the accepted automatic single-camera application. Broader DART articulation, rendering and SDF semantics remain in development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "A qualified native free-root three-body serial-chain control passed two scenarios,2000steps and14 recorded states in the pinned DART6.13.2/ODE environment. A bounded backend extension is being implemented with contacts and active-limit restrictions retained; adapter parity, rollback, lifetime and child-process boundary checks remain required. Scene/B03 admission and multiple collisions remain unchanged. Existing accepted pair/static-contact behavior is preserved."
+      "detail": "The backend-only free-root three-body serial-chain candidate passes 151 DART package tests. Its native reference covers two scenarios, 2000 steps, 14 states and 36 unit impulses; child-process boundaries cover 42 admitted and six explicitly refused cases. Final independent review and full workspace qualification remain pending. Three-body contacts, Scene/B03 admission and multiple collisions remain unsupported; existing pair/static-contact behavior is retained."
     },
     {
       "id": "REF-01",
@@ -39,12 +39,12 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Native Zenoh/DART reference remains an untimed prerequisite. World-light metadata/reset integration passed its complete normal hook in603seconds and independent stage/source/native/coverage audit; review branch db9d002 is published. Exact hosted41313302279 and official artifact qualification remain pending before Main. The earlier16/17 line-attribution failure is retained, every cold error region remains counted, and no gate or assertion changed. B03 still needs broader DART topology and multiple-collision admission; balanced accuracy, quiet measurements and budgets remain open."
+      "detail": "Main db9d002 accepts world-light construction metadata and shared reset configuration after the complete normal hook, exact hosted run 41313302279 and independent official artifact audit. Renderer extraction and Server light-pose publication still explicitly refuse unsupported lighting. The unchanged B03 world still needs broader DART topology and multiple collisions. Balanced accuracy, quiet measurements and budgets remain open."
     },
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Main e0b1f6b qualifies programmatic automatic single-camera output from explicit world Sensors intent. The complete normal hook, independent review, exact hosted41307067791 and official source/profile/native audit pass832 headless,509 renderer and237 tooling checks. Actual C++ Image/CameraInfo receipts and software Vulkan workers pass. Default Server stays headless and refuses configured camera execution without an owner. CLI ownership, multiple cameras, full native Manager, camera set_rate and physical GPU remain open."
+      "detail": "Automatic single-camera output is accepted with real C++ Image/CameraInfo and software Vulkan checks. A separate renderer-only directional-light candidate now has source and controls for explicit lux, atomic installation and retirement, and restoration of the old unlit path. It has not compiled or run yet. SDF intensity calibration, light streaming, CLI ownership, multiple cameras, full native Manager and physical GPU remain open."
     },
     {
       "id": "QLT-01",
@@ -692,6 +692,11 @@
       "title": "Programmatic single-camera activation, lifecycle and default-headless refusal; strict local and exact hosted/source/native/coverage checks with real C++ Image/CameraInfo receipts passed",
       "commit": "e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0"
+    },
+    {
+      "title": "World-light construction metadata and shared reset configuration, with strict local and hosted qualification",
+      "commit": "db9d002b74ed695dd848e117e64ace908eaa45d9",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/db9d002b74ed695dd848e117e64ace908eaa45d9"
     }
   ],
   "remaining": [
@@ -730,17 +735,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0",
-    "rust_tests": 832,
+    "revision": "db9d002b74ed695dd848e117e64ace908eaa45d9",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/db9d002b74ed695dd848e117e64ace908eaa45d9",
+    "rust_tests": 842,
     "coverage": {
       "lines": [
-        9909,
-        10083
+        9922,
+        10097
       ],
       "regions": [
-        15154,
-        15587
+        15186,
+        15624
       ]
     },
     "upstream": {
@@ -750,9 +755,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41307067791"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41313302279"
     },
-    "note": "Main e0b1f6b passed the full normal hook and exact hosted41307067791 plus independent official source/profile/native audit.832 headless,509 renderer,237 tooling;1055 Git files/modes,71 production sources,272 verifier inputs and1819 official artifacts verified. All required crates exceed95% lines and regions. Headless9909/10083 lines15154/15587 regions; renderer5645/5750 and8424/8733. Actual C++ Image/CameraInfo at1ms and software Vulkan pass. Original coverage failure and capacity stop remain separate. This is one64x64 RGB camera application, not full rendering/Manager/CLI/ACT completion."
+    "note": "Main db9d002 passed the complete normal hook, exact hosted run 41313302279 and independent official source/profile/native audit: 842 headless, 520 renderer and 237 tooling checks. The audit binds 1062 Git files, 71 production sources, 272 inputs and 1822 official artifacts. All required crates exceed 95% lines and regions. Renderer coverage is 5658/5764 lines and 8455/8770 regions. Real C++ camera receipts and software Vulkan pass. The earlier changed-line failure remains distinct; its cold error regions are still counted. This accepts Core light metadata and reset only; light rendering, light wire publication and B03 remain open."
   },
   "phase_status": {
     "P0": "in_progress",
