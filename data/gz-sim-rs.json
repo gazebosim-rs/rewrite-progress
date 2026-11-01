@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T17:46:05.421755Z",
+  "updated_at": "2026-11-01T18:47:27.137398Z",
   "state": "active",
-  "summary": "P2 is complete. Main now supports bounded contact-free DART three-body chains after native, strict coverage and exact hosted qualification. World Light include adoption and explicit-lux Bevy rendering are tested candidates awaiting combined qualification; broader contacts, B03 and the rewrite remain unfinished.",
+  "summary": "P2 is complete. Main accepts external world Light metadata and an explicit-lux Bevy directional renderer, with full local and hosted qualification. Native-backed Light pose streaming and bounded DART static contacts are being implemented; Scene lighting, B03 and broader rewrite scope remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "IO-01",
       "title": "Extend I/O beyond the qualified headless contract",
-      "detail": "Direct upstream Zenoh and consumer-generated protobuf migration is complete for current consumers. P2 is accepted on Main c3f5a2f with real C++ pub/sub/query/reply, bounded selected queues, reset/removal/shutdown, source/schema fidelity and the reviewed first equal-work report. Broader stopped-peer pressure, additional system endpoints and distributed/logging behavior remain separate implementation work. Main promotion workflow41272913232 also passed after exact candidate41270504128 and its independent artifact audit."
+      "detail": "The accepted P2 direct-Zenoh contract remains unchanged. A new Light pose prototype constructs native-derived Visual identities and validates complete hierarchy before publication. Native references observe 12 lights plus 12 children and real empty-world receipts; exact old XML controls also pass. Focused Scene/reset and packet controls pass; real C++ peer, full coverage and hosted qualification are still pending. Scene lighting and radiometry are separate."
     },
     {
       "id": "ACT-01",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "Main f19d195 accepts the bounded contact-free free-root serial three-body DART backend after a complete normal hook, exact hosted41328864338 and independent official source/profile/native audit. Both Rust and native guards retain three-body contact refusal. A separate native-only static-contact study is underway; Scene/B03 and multiple collisions remain unsupported. The earlier sandbox TCP setup failure is preserved separately from the permission-corrected passing hook."
+      "detail": "Main f19d195 accepts contact-free serial three-body DART chains. Native static-contact studies now include exact old Rust test inputs and boundary/footprint controls; real Rust spawning confirms 84 of 126 generated classes accept all bodies and 42 do not. An isolated static-contact candidate is being implemented with dynamic-contact, conditioning and limit guards retained. It is unqualified; Scene/B03 and multiple collisions remain unsupported."
     },
     {
       "id": "REF-01",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "The explicit-lux directional renderer candidate passes all 13 package tests, including real capture replacement/removal, stale-frame suppression and exact unlit restoration on llvmpipe. A reviewed transition fix preserves the old unlit path without unnecessary lighting cleanup. The combined full local hook is now running; strict coverage and exact hosted acceptance remain pending. SDF intensity mapping, Scene light extraction, broader camera support and physical GPU remain open."
+      "detail": "Main a5b296c accepts explicit-lux directional renderer input after full local and exact hosted qualification. Its 13 package controls include actual readback replacement/removal and exact unlit restoration on llvmpipe. The ordinary unlit path skips lighting cleanup. SDF intensity mapping, Scene light extraction, broader camera support and physical GPU remain open."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Accepted producer13adde94 now has a reviewed simulator adoption candidate with revision-only manifest/lock changes and the unchanged imported light fixture. All nine Scene world-light controls pass, including provenance, frame overrides and reset identity across four backends. It is combined with the separate explicit-lux renderer input for mandatory qualification; the public simulator pin remains b246 until that succeeds."
+      "detail": "Main a5b296c adopts accepted producer13adde94 for world Light includes, with revision-only dependency changes and native fixture provenance. All four backends retain included Light metadata, resolved frame poses and reset identity. Latest producer fc5d4d4 separately accepts owned World light collection helpers; the simulator stays pinned to13 until another reviewed adoption. Broader automatic-inertia and mutable graph/Element domains remain open."
     }
   ],
   "accepted_slices": [
@@ -702,6 +702,11 @@
       "title": "Bounded contact-free DART serial three-body chains with native parity, preserved boundaries and full local/hosted qualification",
       "commit": "f19d195031bdd68a987b7f12825099cf88a337cb",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f19d195031bdd68a987b7f12825099cf88a337cb"
+    },
+    {
+      "title": "World Light include adoption and explicit-lux Bevy renderer with real readback lifecycle and full local/hosted qualification",
+      "commit": "a5b296c1d857011ab86c6decb7cf1bd908df76ff",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a5b296c1d857011ab86c6decb7cf1bd908df76ff"
     }
   ],
   "remaining": [
@@ -740,16 +745,16 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "f19d195031bdd68a987b7f12825099cf88a337cb",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f19d195031bdd68a987b7f12825099cf88a337cb",
-    "rust_tests": 854,
+    "revision": "a5b296c1d857011ab86c6decb7cf1bd908df76ff",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a5b296c1d857011ab86c6decb7cf1bd908df76ff",
+    "rust_tests": 855,
     "coverage": {
       "lines": [
-        9938,
+        9940,
         10113
       ],
       "regions": [
-        15207,
+        15208,
         15645
       ]
     },
@@ -760,9 +765,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41328864338"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41333890290"
     },
-    "note": "Main f19d195 passed the full local hook (616 seconds), exact hosted run 41328864338 and independent official source, profile and native audit. There were 854 headless, 520 renderer and 237 tooling checks. All required crates exceed 95% lines and regions. Headless coverage is 9938/10113 lines and 15207/15645 regions; renderer coverage is 5660/5764 lines and 8457/8770 regions. The audit verifies 1066 Git files and modes, 71 production sources, 272 inputs and 1876 artifacts. Local and hosted observations remain separate. Native peers and software Vulkan pass. Three-body contacts, Scene/B03 and performance remain unqualified. The earlier sandbox TCP failure is preserved separately."
+    "note": "Main a5b296c passed the full local hook (617 seconds), exact hosted run 41333890290 and independent official source, profile and native audit. There were 855 headless, 526 renderer and 237 tooling checks. All required crates exceed 95% lines and regions. Official renderer coverage is 5778/5890 lines and 8588/8908 regions; changed renderer coverage is 132/133, with the real cold line retained. The audit verifies 1069 Git files and modes, 71 production sources, 272 inputs and 1875 artifacts. Local and hosted observations remain separate. Native peers, automatic camera receipts and software Vulkan pass. This accepts explicit programmatic lux input, not SDF radiometry, Scene light extraction, native pixels, physical GPU or B03."
   },
   "phase_status": {
     "P0": "in_progress",
