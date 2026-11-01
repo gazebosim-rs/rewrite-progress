@@ -1,15 +1,16 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-01T00:26:43.817225+00:00",
+  "updated_at": "2026-11-01T00:37:14.384076+00:00",
   "state": "active",
-  "summary": "Accepted SDF486 remains unchanged while a bounded standalone lidar/ray alias reader is being implemented and reviewed. No simulator pin changes.",
+  "summary": "Standalone lidar/ray alias metadata is independently reviewed and published at419bb62 after the normal strict staged gate. Exact hosted verification remains pending; accepted quality stays486.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
       "title": "Standalone lidar/ray alias metadata admission",
-      "detail": "Reuse the existing typed scan/range/Noise/provenance parser for four native root aliases. Author667 retained Rust tests,Clippy/formatting,64 native controls,two native Load controls and all4 unchanged Lidar originals pass. Independent review and normal strict staged/hosted gates remain pending; accepted quality and206/31 original credit stay unchanged."
+      "detail": "Reviewed419bb62 passes the complete local staged gate:667 Rust/49 tooling tests,8607/8648 lines,13613/13883 regions and2/2 changed lines. All753 downloaded source bytes/modes match. Exact whole hosted41257360186 and downloaded coverage audit remain pending; no original-case or simulator-pin credit.",
+      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41257360186"
     }
   ],
   "accepted_slices": [
