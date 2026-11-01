@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T15:40:38.457818Z",
+  "updated_at": "2026-11-01T16:49:03.353057Z",
   "state": "active",
   "summary": "P2 is complete. Main now retains world-light metadata and reset state alongside the accepted automatic single-camera application. Broader DART articulation, rendering and SDF semantics remain in development.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "The backend-only free-root three-body serial-chain candidate passes 151 DART package tests. Its native reference covers two scenarios, 2000 steps, 14 states and 36 unit impulses; child-process boundaries cover 42 admitted and six explicitly refused cases. Final independent review and full workspace qualification remain pending. Three-body contacts, Scene/B03 admission and multiple collisions remain unsupported; existing pair/static-contact behavior is retained."
+      "detail": "The backend-only free-root three-body serial-chain candidate passes 151 DART package tests and independent final review. The first full hook was blocked by sandbox permissions during unchanged local TCP setup, before DART execution; the complete unchanged hook is now running with required permissions. Native reference parity and 48 child-process controls remain precursor evidence. Scene/B03, multiple collisions and three-body contacts remain unsupported."
     },
     {
       "id": "REF-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Main3d290ee now pins accepted producerb246 after full normal/exact hosted/source/native qualification. Qualified single origin boxes/spheres with explicit density use producer-computed inertia; collision entities retain density presence/value across reset without recomputation. Existing manual/static/backend limits and unrelated negative assertions remain. Broader automatic-inertia domains and mutable SDFormat parity remain open."
+      "detail": "Main retains accepted producer b246 automatic-inertia behavior. Producer13adde94 now separately accepts bounded world Light includes after 688 Rust and 50 tooling checks, its full local hook, exact hosted41326073574 and official independent audit. A reviewed simulator pin/fixture/reset candidate is prepared and locked metadata resolves; consumer execution and full qualification are still pending. No Light renderer or Server pose-wire acceptance follows."
     }
   ],
   "accepted_slices": [
