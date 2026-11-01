@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T22:27:58Z",
+  "updated_at": "2026-11-01T22:54:17Z",
   "state": "active",
   "summary": "P2 is complete. Main accepts external world Light metadata and an explicit-lux Bevy directional renderer, with full local and hosted qualification. Native-backed Light pose streaming and bounded DART static contacts are being implemented; Scene lighting, B03 and broader rewrite scope remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "IO-01",
       "title": "Extend I/O beyond the qualified headless contract",
-      "detail": "The complete reviewed31-path Light/DART integration remains unchanged. Full verification hit a disk guard; existing failed-evidence retention now preserves reports/raw/native receipts while orphaned fresh compiler trees are retired. Warm normal caches are retained, providing15GB for the current mandatory full-hook run. No extra tests or lint rounds are added; staged, hosted and Main acceptance remain pending."
+      "detail": "Review commit 573da7c passed the complete 639-second local hook and independent audit: 868 headless, 528 renderer and 237 tooling checks, strict production and changed coverage, 21 actual C++ Light frames, and all 39 cold regions preserved. The checked review branch is public; exact hosted run 41358158691 is executing full verification. Main remains a5 pending the official hosted audit. The next completed Scene feature is in its first consolidated mandatory gate."
     },
     {
       "id": "ACT-01",
