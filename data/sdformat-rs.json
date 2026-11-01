@@ -1,16 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-01T00:44:21.676847+00:00",
+  "updated_at": "2026-11-01T01:14:29.346975+00:00",
   "state": "active",
-  "summary": "Standalone lidar/ray alias metadata is accepted at419bb62 after independent review, the complete strict staged gate and exact whole hosted/source verification. No full LiDAR or runtime claim.",
+  "summary": "Accepted SDF419 quality remains unchanged while a bounded legacy IMU Noise projection is prepared for independent review. No simulator pin changes.",
   "model": "Repository owner",
   "active": [
     {
-      "id": "SDF-01",
-      "title": "Remaining DOM and sensor metadata fidelity",
-      "detail": "Four standalone Lidar aliases now share existing typed scan/range/Noise and source parsing. Missing groups and unknown data remain explicit failures; Sensor grammar and canonical output identity stay bounded. DOMLidar.Load null/Element/native-enum observations remain unported. Accepted original credit stays206 complete/31 partial; broader DOM/frame/include/conversion work and simulator integration remain.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41257360186"
+      "id": "SDF-02",
+      "title": "Legacy IMU Noise conversion for direct old-schema models",
+      "detail": "SDF 1.4/1.5 direct-model rate/acceleration Noise projects into six existing owned records. Author 17 focused Rust tests, 69 native controls and unchanged converter original pass; Clippy and formatting pass. The old rejection remains and fails on successful new loading while an exhaustive same-input/URI positive awaits prior review. Nested/mixed/modern legacy inputs remain unsupported; no accepted credit or full conversion claim."
     }
   ],
   "accepted_slices": [
