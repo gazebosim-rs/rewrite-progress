@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T03:02:59.443317Z",
+  "updated_at": "2026-11-01T03:42:34.846884Z",
   "state": "active",
-  "summary": "Integration branch a08a1a4 passed the full local gate and exact hosted CI; the downloaded source/profile audit is underway. Optional force ingress is running its full gate. Worker peer-loss hardening passed independent review and focused failure controls and will be integrated next. Main and P2 acceptance remain held until the reliability change is fully qualified.",
+  "summary": "The integration branch passed exact CI and independent downloaded source/profile audit. Optional force ingress is public on review branch c580c858 after its full local gate and audit. The first worker-hardening gate exposed a TCP lifecycle fixture collision; a reviewed private-network isolation fix preserves every single-bind assertion. The new full gate is running; Main and P2 remain held.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "ZEN-01",
       "title": "Extend the qualified direct Zenoh migration",
-      "detail": "Published 5870373 replaces the legacy Transport and Messages runtimes with upstream Zenoh and consumer-generated bindings. Its complete local and exact hosted 41248418524 gates, real selected C++ peers and independent source/coverage audit passed. Seven alternating measured pairs of 1000 steps qualify one small matched TPE clock/pose/IMU workload: native 63.29 microseconds versus Rust 58.56 microseconds per step, about 7.5% lower latency. This does not establish balanced robotics or whole-engine performance; historical unequal-work comparisons remain separate. Integration branch a08a1a4 now publicly contains the reviewed fifteen-row P2 matrix, current headless dependency receipt and complete matched observation projection. Its full local gate and exact hosted 41265120588 passed; the downloaded integration audit is underway. Main publication and phase advance await full qualification of the reviewed worker peer-loss reliability change. Broader activation, pressure, systems, native inventory and release acceptance remain open."
+      "detail": "Published 5870373 replaces the legacy Transport and Messages runtimes with upstream Zenoh and consumer-generated bindings. Its complete local and exact hosted 41248418524 gates, real selected C++ peers and independent source/coverage audit passed. Seven alternating measured pairs of 1000 steps qualify one small matched TPE clock/pose/IMU workload: native 63.29 microseconds versus Rust 58.56 microseconds per step, about 7.5% lower latency. This does not establish balanced robotics or whole-engine performance; historical unequal-work comparisons remain separate. Integration branch a08a1a4 now publicly contains the reviewed fifteen-row P2 matrix, current headless dependency receipt and complete matched observation projection. Its full local gate and exact hosted 41265120588 passed; the downloaded integration audit passed. Main publication and phase advance await full qualification of the reviewed worker peer-loss reliability change. Broader activation, pressure, systems, native inventory and release acceptance remain open."
     },
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "The terminal-frame admission guard and actual Git SDF486 integration are published on review branch a08a1a4. The complete local hook and independent audit pass; exact hosted 41265120588 also passed and its downloaded audit is underway. This prevents post-shutdown tick/update/reset preparation from mutating retained simulation state while preserving unexpected direct Session-close behavior. A separate optional CPU force-ingress change reproduces three real lifetime failures on baseline, then passes the three final regressions and all 152 server tests, including real C++ force cases. Independent review approved the six-path change after replacing synthetic loss increments with actual lifetime and queue-Full witnesses. Its full ordinary staged gate is running. Shared IO reconciliation, remaining generic dispatch, broader resource absence and equal-work CPU/RSS qualification remain open; no full ACT-01 or performance completion is claimed."
+      "detail": "Integration branch a08a1a4 passed its full local gate, exact hosted 41265120588 and independent audit of all 979 Git source files, 69 production sources, 272 inputs and both complete profiles. It includes terminal admission, SDF486 and camera cadence. Optional CPU force ingress c580c858 is now public on a review branch after its full local gate and independent audit: 800 headless, 453 renderer and 217 tooling tests pass. Exact hosted 41269314914 is running. It retires absent CPU state and duplicate metric ownership, preserving real shared-endpoint, reset, late-Full and native force assertions. The worker follow-up gate encountered an existing TCP lifecycle test collision; the reviewed isolated fixture retains all immediate single-bind checks. Broader shared IO reconciliation, generic dispatch, zero-cost absence and equal-work CPU/RSS evidence remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Review branch a08a1a4 adds application-owned single-camera cadence from loaded metadata, demand and committed timestamps, with buffered-frame invalidation and explicit retirement outside stepping. Its full local hook passes 797 headless, 453 renderer and 217 tooling tests; the independent audit verifies 1769 artifacts, 69 production sources and 272 inputs. Camera coverage is 518/530 lines and 687/719 regions, with 94/94 changed lines. Exact hosted 41265120588 passed; downloaded source/profile auditing is underway. Separate worker peer-loss hardening passed author 14 unit and 23 direct-worker tests and five independent owned-child controls. It preserves the original ten-second assertions, adds an eight-second fatal-exit backstop and distinguishes controlled cleanup stalls from the unproven original timeout cause. Full combined gates and exact hosted qualification are pending. Main/P2 remain held. Automatic Server camera integration, physical GPU/native image parity, other sensor families and full ACT-01 remain open."
+      "detail": "Application-owned camera cadence in a08a1a4 is qualified on its review branch by full local and exact hosted checks plus independent source/profile audit. Camera coverage is 518/530 lines and 687/719 regions, with 94/94 changed lines. Worker peer-loss hardening passed author 14 unit and 23 direct-worker controls and five independent guard controls, preserving the original ten-second assertions. Its first full gate stopped before the renderer profile because an existing TCP lifecycle test encountered AddrInUse. The independently reviewed fixture now uses a private network namespace and parent-held identical host address, retains every immediate single-bind assertion, and rejects zero-test execution; no retries or release waits were introduced. The new complete gate is running. Original renderer timeout and socket-collision ownership remain unproven; no Main/P2 acceptance yet. Loaded frame-ID derivation is under native characterization. Automatic Server camera integration, physical GPUs, other sensor families and broad performance remain open."
     },
     {
       "id": "QLT-01",
@@ -648,7 +648,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Required exact hosted renderer shutdown test failed at 1480725; root cause is under investigation. P2 publication and new simulator acceptance are held until a reviewed correction passes all required gates."
+    "Main/P2 await full qualification of worker peer-loss hardening. Its first full gate stopped at an existing TCP listener test with AddrInUse after close. A controlled successor reproduced that race class; the original socket owner is unknown. Independently reviewed namespace isolation preserves immediate release assertions, and a new whole gate is running. No test retry, timeout increase or passing claim replaces the first failure."
   ],
   "plan_status": {
     "REF-01": "in_progress",
