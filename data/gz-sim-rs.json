@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T07:29:16.203079Z",
+  "updated_at": "2026-11-01T07:59:35.544998Z",
   "state": "active",
-  "summary": "P2 headless acceptance remains complete. Main de758d8 includes reviewed camera frame selection, accepted SDFormat1b parsing and explicit benchmark source contexts, with exact hosted/source/native/coverage qualification. Broader systems, physics and sensors continue; an unreleased rate-controller candidate is being fixed after a genuine hosted reset-admission failure.",
+  "summary": "P2 headless acceptance is complete, and Main067c41d now publishes the independently audited C3 performance report. Rendering lifecycle, automatic-inertia consumption and system activation continue. The reproduced cold-setup admission race has a reviewed fix undergoing full integration checks; the original failed candidate remains unreleased.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "The optional CPU rate-controller candidate passed its full local gate and independent source/native/coverage audit at aacebc. Exact hosted41283132043 then failed one new shared-provider lifecycle test during reset setup admission (154 server tests passed, one failed). It remains unreleased; author and independent reviewer are diagnosing queue/fixture synchronization while preserving capacities, assertions and deadlines. Accepted Main de remains unchanged. Broader shared-I/O absence and ACT completion remain open."
+      "detail": "A controlled real callback/full-queue test reproduced precommit cold setup admission failure, distinct from the unknown original hosted interleaving. The reviewed fix uses the already-locked crossbeam channel at unchanged capacity, preserving nonblocking frame admission and a single existing five-second cold enqueue-plus-receipt budget. Typed close-during-admission behavior was separately reproduced and corrected. All161 default-thread server tests, six focused controls and native scenarios pass. The exact stacked rate-retirement/fix candidate is now running the complete normal gate; exact hosted qualification remains required. Broad ACT absence is still open."
     },
     {
       "id": "SYS-CONTROL",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Main c98d834 includes the loaded-camera-frame helper:39 focused CPU tests and the full800 headless/467 renderer/217 tooling gate passed. Exact hosted attempt two and independently downloaded source/profile/native auditing passed; initial capacity and snapshot-download failures remain recorded separately. Automatic Server camera management, full native rendering-manager semantics, physical GPU/image parity and other sensor families remain open."
+      "detail": "Accepted camera frame selection and explicit bounded output remain on Main. The next bounded slice is examining native Sensors-system activation/default-topic contracts and a minimal automatic single-camera lifecycle using the existing Bevy/pump path. Absent worlds must install no camera work, endpoints or workers; blocking setup/retirement stays outside physics ticking. No automatic scheduling or physical GPU parity is claimed yet."
     },
     {
       "id": "QLT-01",
@@ -54,12 +54,12 @@
     {
       "id": "PERF-01",
       "title": "Measure the current accepted release at equal work",
-      "detail": "The C3 small paced TPE batch and51-path report/projection passed independent source/data/statistical review. Review commit067c41d passed its full ordinary gate and independent1779-artifact audit, with raw profiles remerged byte-identically. Its exact hosted41284829159 is running. Main de remains unchanged until accepted integration. The report preserves measured C3 identity and seven measured pairs; no latest-Main, balanced-robotics or causal speedup claim follows."
+      "detail": "Main067c41d publishes the reviewed C3 report and complete privacy-safe text observations after full local/exact hosted/source/native qualification. Seven measured pairs give63,501.247 ns native and58,582.404 ns Rust median per step,7.746% lower for this small paced TPE Clock/Pose/IMU workload. Measured program C3 and later tool identities remain explicit. Single-host/batch limits apply; balanced robotics, many-entity, camera/lidar and latest-Main measurements remain open."
     },
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Main de758d8 now adopts accepted producer1b after independent review, complete combined normal checks, exact hosted41279424345 and official source/profile/native auditing. Legacy six-channel IMU noise and manual false/zero inertia use existing lowering; lidar execution remains explicitly refused. Newer automatic-box and proposed sphere producer features remain outside this simulator pin/admission."
+      "detail": "Main retains accepted producer1b. New accepted producerb246 adds qualified automatic origin-box/sphere inertia, but no simulator admission follows yet. A separate readiness slice is testing a diagnostic pin and proposing explicit CollisionDensity construction metadata with initial-scene capture/reset, preserving computed inertial lowering and all other guards. Prepared all-backend/manual/static/negative/reset positives must pass review and full integration checks before density refusal changes."
     }
   ],
   "accepted_slices": [
@@ -667,6 +667,11 @@
       "title": "Accepted SDFormat legacy IMU/manual inertia consumer adoption and explicit benchmark source-context integration; combined normal and exact hosted source/native/coverage checks passed",
       "commit": "de758d8ed96c8e632dd6cb9010835bff627eeadf",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/de758d8ed96c8e632dd6cb9010835bff627eeadf"
+    },
+    {
+      "title": "Published independently audited C3 matched TPE stream report and complete privacy-safe observation packet; normal and exact hosted/source/native checks passed",
+      "commit": "067c41d5f32d9f75c5c90e6033f40b001422423d",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/067c41d5f32d9f75c5c90e6033f40b001422423d"
     }
   ],
   "remaining": [
@@ -678,7 +683,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
   "blockers": [
-    "Optional rate-controller acceptance is held after exact hosted41283132043 failed its new shared-provider reset test with an unavailable world-I/O setup queue. Main de758d8 is unaffected; the failure is preserved and diagnosis is underway without reruns or weakened assertions."
+    "Rate-controller acceptance awaits full integration qualification of the reviewed cold-setup fix. A controlled reproduction proved live Full admission failure; the original hosted failure interleaving remains unknown and preserved. Accepted Main is unaffected."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -707,8 +712,8 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "de758d8ed96c8e632dd6cb9010835bff627eeadf",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/de758d8ed96c8e632dd6cb9010835bff627eeadf",
+    "revision": "067c41d5f32d9f75c5c90e6033f40b001422423d",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/067c41d5f32d9f75c5c90e6033f40b001422423d",
     "rust_tests": 804,
     "coverage": {
       "lines": [
@@ -727,9 +732,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41279424345"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41284829159"
     },
-    "note": "Main de758d8 adopts accepted SDFormat1b parsing and the reviewed native/Rust/tool source-context separation. Complete normal combined gate and exact hosted41279424345 passed804 headless,471 renderer and223 tooling checks. Independent official-artifact audit verifies986 Git files/modes,70 production sources,272 inputs and1783 retained files; all1713 raw profiles remerge byte-identically across both profiles. Native C++ and software Vulkan checks pass. Every required production crate exceeds95% lines and regions; headless9779/9955 and14963/15406, renderer5240/5367 and7784/8089. This does not adopt automatic-box inertia or claim current-Main performance. P2 remains complete; broad activation, sensors, physics and release qualification remain open."
+    "note": "Main067c41d publishes the reviewed C3 matched-stream report and privacy-safe observations. Its complete ordinary gate, exact hosted41284829159 and independent downloaded audit pass804 headless,471 renderer and223 tooling checks. All1037 Git files/modes and1783 official artifacts bind to the commit, with70 production sources/272 inputs and1713 byte-identical raw-profile remerges. Every required crate exceeds95% lines and regions; native C++ and software Vulkan checks pass. The measured program is C3, not this publication commit. Optional rate retirement/cold-admission repairs remain unaccepted until their own full integration gates; full rewrite/ACT/balanced robotics qualification remains open."
   },
   "phase_status": {
     "P0": "in_progress",
