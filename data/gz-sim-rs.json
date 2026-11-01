@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T17:26:32.466563Z",
+  "updated_at": "2026-11-01T17:46:05.421755Z",
   "state": "active",
   "summary": "P2 is complete. Main now supports bounded contact-free DART three-body chains after native, strict coverage and exact hosted qualification. World Light include adoption and explicit-lux Bevy rendering are tested candidates awaiting combined qualification; broader contacts, B03 and the rewrite remain unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "The explicit-lux directional renderer candidate passes all 13 package tests, including actual screenshot replacement/removal, stale-frame suppression and exact calibrated unlit restoration on asserted llvmpipe. Production remains separate from SDF intensity conversion and Scene extraction. Combined strict staged/hosted qualification is pending. Existing automatic camera output remains accepted; CLI, multiple cameras, full native Manager and physical GPU remain open."
+      "detail": "The explicit-lux directional renderer candidate passes all 13 package tests, including real capture replacement/removal, stale-frame suppression and exact unlit restoration on llvmpipe. A reviewed transition fix preserves the old unlit path without unnecessary lighting cleanup. The combined full local hook is now running; strict coverage and exact hosted acceptance remain pending. SDF intensity mapping, Scene light extraction, broader camera support and physical GPU remain open."
     },
     {
       "id": "QLT-01",
@@ -762,7 +762,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41328864338"
     },
-    "note": "Main f19d195 passed the complete permission-corrected normal hook in616seconds, exact hosted41328864338 and independent official source/profile/native audit. Official results:854 headless,520 renderer,237 tooling;1066 Git files/modes,71 production sources,272 inputs,1876 artifacts. All required crates exceed95% lines and regions; DART changed coverage13/13. Official renderer coverage is5660/5764 lines and8457/8770 regions. Local and hosted coverage observations remain separate, not asserted identical. Native peers and software Vulkan pass. Three-body contacts, Scene/B03, broader numeric safety and performance remain unqualified; the prior564second sandbox TCP failure remains separate."
+    "note": "Main f19d195 passed the full local hook (616 seconds), exact hosted run 41328864338 and independent official source, profile and native audit. There were 854 headless, 520 renderer and 237 tooling checks. All required crates exceed 95% lines and regions. Headless coverage is 9938/10113 lines and 15207/15645 regions; renderer coverage is 5660/5764 lines and 8457/8770 regions. The audit verifies 1066 Git files and modes, 71 production sources, 272 inputs and 1876 artifacts. Local and hosted observations remain separate. Native peers and software Vulkan pass. Three-body contacts, Scene/B03 and performance remain unqualified. The earlier sandbox TCP failure is preserved separately."
   },
   "phase_status": {
     "P0": "in_progress",
