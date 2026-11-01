@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "repository": "gz-msgs-rs",
-  "updated_at": "2026-10-31T23:09:23.760100Z",
+  "updated_at": "2026-11-01T23:19:16.384652Z",
   "state": "complete",
-  "summary": "D29 definition-only release verified: 216 unchanged canonical protobuf schemas, standard compiler validation and exact source archives. Former runtime/tooling scope remains retired.",
-  "model": "Independent schema/archive reviewer; coordinator-authorized status update",
+  "summary": "D29 schema-only scope is accepted at d030d06: all 216 canonical protobuf definitions match simulator Main 573da7c. Runtime, codec, reflection and Messages CLI work is retired.",
+  "model": "Independent Messages source and qualification reviewer; coordinator-authorized report update",
   "active": [],
   "accepted_slices": [
     {
@@ -580,7 +580,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41251110566"
     },
-    "note": "NEW D29 DEFINITION-ONLY SCOPE COMPLETE. Exact hosted run 41251110566 passed at d030d06. Independent validation and the 229-file archive match Git objects, commit identity and checksums. All 216 canonical schemas match historical a39 and consumer 587; 216 is a file count, not a test count. Seven validation tests (including negative controls), real staged Git-context controls, protoc 3.21.12, imports and descriptor identity pass. Original OSRF, CogniPilot and Rudis notices remain intact. There is no Cargo runtime package, Rust test count or executable coverage denominator; null coverage is not a 95% pass. Consumer 587 separately passed hosted run 41248418524 with verified native/GPU and strict owned coverage evidence. HISTORICAL RUNTIME ONLY: a39/41200381707 had 217 Rust tests, 83 original mappings, 3638/3662 lines and 6009/6114 regions. Those metrics remain in historical_runtime_quality and accepted history; retired MSG-02 is not newly completed."
+    "note": "D29 definition-only scope is complete at public d030d06. Existing exact hosted run 41251110566 and its independent official archive audit remain the release evidence: 229 Git files, 216 unchanged canonical schemas, standard protoc 3.21.12, pinned Any import and descriptor identity, negative validation and staged Git-context controls. The current source audit confirms all 216 canonical files match simulator Main 573da7cff8fa81b9696e4f022c933622226c9782 byte for byte; active simulator and SDF manifests have no former Messages runtime dependency. Original schema notices remain intact. This tree contains no runtime package, codec, reflection framework or Messages CLI and has no executable coverage denominator: null coverage is not a 95% pass. No new tests, compilation or CI run were performed for this report. Consumer generation, real domain interoperability and owned coverage remain separately qualified in the simulator. Historical runtime counts below remain historical; retired MSG-02 is not newly completed."
   },
   "historical_runtime_quality": {
     "revision": "a39a9455d731923bd316745c2dda21071408dcbf",
@@ -605,6 +605,6 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-msgs-rs/actions/runs/41200381707"
     },
-    "note": "HISTORICAL PRE-D29 RUNTIME EVIDENCE ONLY: revision a39a945 and whole workflow 41200381707 qualified the former custom library/tooling scope, with 217 Rust tests, 83 original mappings, 7,559 native JSON outcomes, prior Rust line/region coverage and verified source/preparation archives. These unchanged metrics are retained as history, not evidence that the new proto-only release or Zenoh consumer migration is complete. D29 stops further codec/runtime/CLI/reflection/conversion/loader and benchmark work. MSG-01 is reopened for canonical schema distribution and consumer-owned generation; Root records retired runtime packets separately from active release counts. Main still contains the historical runtime until the migration is ready. No new schema-only acceptance or removed-scope completion claim."
+    "note": "Historical pre-D29 measurements only: a39a945 and hosted run 41200381707 recorded 217 Rust tests, 83 original mappings, 7,559 native JSON outcomes, 3638/3662 lines and 6009/6114 regions. These counts and accepted slices are preserved as history, not coverage or completion evidence for the schema-only release or completion of the former full runtime scope. D29 retired further custom codec, runtime, CLI, reflection, conversion, loader and benchmark work. Messages Main now contains only canonical definitions and schema validation; MSG-01 completion uses that revised scope, while MSG-02 remains retired."
   }
 }
