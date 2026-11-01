@@ -1,19 +1,24 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-01T00:37:14.384076+00:00",
+  "updated_at": "2026-11-01T00:44:21.676847+00:00",
   "state": "active",
-  "summary": "Standalone lidar/ray alias metadata is independently reviewed and published at419bb62 after the normal strict staged gate. Exact hosted verification remains pending; accepted quality stays486.",
+  "summary": "Standalone lidar/ray alias metadata is accepted at419bb62 after independent review, the complete strict staged gate and exact whole hosted/source verification. No full LiDAR or runtime claim.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-01",
-      "title": "Standalone lidar/ray alias metadata admission",
-      "detail": "Reviewed419bb62 passes the complete local staged gate:667 Rust/49 tooling tests,8607/8648 lines,13613/13883 regions and2/2 changed lines. All753 downloaded source bytes/modes match. Exact whole hosted41257360186 and downloaded coverage audit remain pending; no original-case or simulator-pin credit.",
+      "title": "Remaining DOM and sensor metadata fidelity",
+      "detail": "Four standalone Lidar aliases now share existing typed scan/range/Noise and source parsing. Missing groups and unknown data remain explicit failures; Sensor grammar and canonical output identity stay bounded. DOMLidar.Load null/Element/native-enum observations remain unported. Accepted original credit stays206 complete/31 partial; broader DOM/frame/include/conversion work and simulator integration remain.",
       "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41257360186"
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Read standalone CPU/GPU lidar and ray aliases as owned metadata",
+      "commit": "419bb62a4bfb1945552aac9acbc67ff327126996",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/419bb62a4bfb1945552aac9acbc67ff327126996"
+    },
     {
       "title": "Load bounded legacy world gravity and magnetic metadata",
       "commit": "486b3e06014daee361b35a944bd35921f65d9690",
@@ -902,17 +907,17 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "486b3e06014daee361b35a944bd35921f65d9690",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/486b3e06014daee361b35a944bd35921f65d9690",
-    "rust_tests": 663,
+    "revision": "419bb62a4bfb1945552aac9acbc67ff327126996",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/419bb62a4bfb1945552aac9acbc67ff327126996",
+    "rust_tests": 667,
     "coverage": {
       "lines": [
         8607,
         8648
       ],
       "regions": [
-        13612,
-        13882
+        13613,
+        13883
       ]
     },
     "upstream": {
@@ -922,8 +927,8 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41251065108"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41257360186"
     },
-    "note": "The ordinary full staged retry and exact whole hosted41251065108 attempt1 passed:663 Rust/49 tooling tests,47/47 measured changed lines and8215/8248 full-source lines. All747 downloaded source bytes/types/modes match the reviewed commit; independent audit recomputed all37 production summaries and8248 LCOV hit booleans equal to local evidence. Existing41 cold LLVM lines/270 regions remain counted. Separate source-bound native83 controls and both unchanged full converter originals passed; hosted CI does not rerun native reference. Only the exact pre-approved gravity rejection became a stronger same-input/URI positive; historical corpus and unrelated assertions remain unchanged. The first failed staged raw snapshot was cleaned, its log retained, and a distinct persistent actual LLVM diagnostic/source archive remains preserved. Two independently prior-approved idiomatic expression refactors passed ordinary coverage; no proof/exclusion/threshold change. Both new original mappings stay partial; no full XML/Element/version conversion or consumer-pin credit."
+    "note": "The ordinary full staged gate and exact whole hosted41257360186 attempt1 passed:667 Rust/49 tooling tests,2/2 measured changed lines and8215/8248 full-source lines. All753 downloaded source bytes/modes match exact Git419 and reviewed source/protected digests. All37 per-file summaries and8248 LCOV hit booleans equal local staged evidence;41 cold LLVM lines,270 cold regions and33 cold LCOV lines remain counted. Independent review used fresh source/target for11 focused Rust tests,64 native controls,two Load controls,all4 unchanged Lidar originals,hostile-Git integrity,Clippy and formatting. Native evidence is separate; hosted does not rerun the C++ reference. Prior assertions/corpora/Cargo/policy and original credit206/31 remain unchanged. The consumer pin stays486. No null/mutable Element,full LiDAR,measurement or new simulator behavior is claimed."
   }
 }
