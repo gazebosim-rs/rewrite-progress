@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T06:51:11.286494Z",
+  "updated_at": "2026-11-01T07:25:28.643477Z",
   "state": "active",
-  "summary": "P2 headless end-to-end acceptance is complete on Main c3f5a2f: real C++ Zenoh peers, selected physics/IMU/control lifecycle, strict coverage and the reviewed performance report are qualified. Exact candidate CI and downloaded audit passed before the fast-forward. A fresh Main promotion workflow is running separately. Broader physics, sensors, systems and performance qualification continue; the full rewrite is not complete.",
+  "summary": "P2 headless acceptance remains complete. Main de758d8 includes reviewed camera frame selection, accepted SDFormat1b parsing and explicit benchmark source contexts, with exact hosted/source/native/coverage qualification. Broader systems, physics and sensors continue; an unreleased rate-controller candidate is being fixed after a genuine hosted reset-admission failure.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Main de758d8 retains accepted terminal and optional CPU force lifecycle behavior. A separately reviewed five-path optional rate-controller patch passes155 server tests, all17 focused Rates controls, actual native rate scenarios and Clippy. Real nonzero queue loss survives final retirement and loaded reset. Exact approved bytes are integrated on de; its complete normal gate is running. Existing empty vectors already held no provider heap, so this removes empty CPU ownership/dispatch without claiming an allocation leak or whole ACT completion. Shared-IO absence, generic dispatch and broader CPU/RSS evidence remain open."
+      "detail": "The optional CPU rate-controller candidate passed its full local gate and independent source/native/coverage audit at aacebc. Exact hosted41283132043 then failed one new shared-provider lifecycle test during reset setup admission (154 server tests passed, one failed). It remains unreleased; author and independent reviewer are diagnosing queue/fixture synchronization while preserving capacities, assertions and deadlines. Accepted Main de remains unchanged. Broader shared-I/O absence and ACT completion remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -54,7 +54,7 @@
     {
       "id": "PERF-01",
       "title": "Measure the current accepted release at equal work",
-      "detail": "The current-C3 small paced TPE Clock/Pose/IMU batch passed independent raw/source/library/statistical auditing. Its exact source-context tooling is accepted on Main de; Tool2 also passed its own exact hosted/source audit. A51-path report and complete privacy-safe text projection packet passed independent review and is being prepared for ordinary publication checks. It preserves measured C3 identity and seven measured pairs plus one warmup; no current-Main, balanced-robotics or causal speedup claim follows."
+      "detail": "The C3 small paced TPE Clock/Pose/IMU batch and51-path privacy-safe report packet passed independent source/data/statistical review. The de-based report candidate067c41d passed the complete ordinary gate:804 headless,471 renderer and223 tooling checks with strict per-crate coverage. Independent retained-evidence auditing and exact hosted publication checks follow. Measured identity remains C3 with seven measured pairs; no latest-Main, balanced-robotics or causal performance claim follows."
     },
     {
       "id": "SDF-02",
@@ -677,7 +677,9 @@
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [],
+  "blockers": [
+    "Optional rate-controller acceptance is held after exact hosted41283132043 failed its new shared-provider reset test with a full world-I/O setup queue. Main de758d8 is unaffected; the failure is preserved and diagnosis is underway without reruns or weakened assertions."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
