@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T20:19:17Z",
+  "updated_at": "2026-11-01T21:35:44Z",
   "state": "active",
   "summary": "P2 is complete. Main accepts external world Light metadata and an explicit-lux Bevy directional renderer, with full local and hosted qualification. Native-backed Light pose streaming and bounded DART static contacts are being implemented; Scene lighting, B03 and broader rewrite scope remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -9,7 +9,7 @@
     {
       "id": "IO-01",
       "title": "Extend I/O beyond the qualified headless contract",
-      "detail": "World Light pose streaming passes real C++ Zenoh and lifecycle controls. Two full hooks exposed a retained identity expectation and strict changed-line attribution; independently reviewed stronger hierarchy checks and a semantics-preserving call refactor address them without weakening gates. The reviewed Light and DART static-contact slices are now in one31-path integration undergoing the complete normal hook; actual cold-region and hosted qualification remain pending."
+      "detail": "Reviewed world Light pose streaming and DART static contacts are in one unchanged31-path integration. Genuine metadata/hierarchy controls address prior coverage gaps without weakening gates; all eight packet tests pass. The last full hook hit its unchanged disk guard after producing headless coverage, so it is not acceptance. A cache-cleanup mistake was fully corrected byte-for-byte; archives are protected outside Cargo. Audited compiler-only cleanup provides14GB for the current full-hook run. Hosted and Main acceptance remain pending."
     },
     {
       "id": "ACT-01",
