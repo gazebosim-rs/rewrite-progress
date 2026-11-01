@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T08:45:12.736505Z",
+  "updated_at": "2026-11-01T09:12:43.465690Z",
   "state": "active",
   "summary": "P2 headless acceptance remains complete. Main0608577 now includes qualified rate-controller retirement and reset setup reliability, alongside the published scoped C3 performance report. Automatic camera execution, automatic-inertia consumption and balanced-reference prerequisites continue; the wider rewrite is unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -29,7 +29,7 @@
     {
       "id": "REF-01",
       "title": "Close P0 reference-environment qualification",
-      "detail": "Accepted 028f63fed78d34b4c02dc4a626312fdecb3c0ddf passes independent review, the full staged gate and exact hosted 41102226966: 629 Rust tests, 125 tooling checks, real C++ clients and strict coverage in all 11 production crates. Its signed, checksum-pinned OSRF 6.13.2 recipe preserves historical reference identities and Rust engine pins. Independent image inspection, eleven original physics registrations and bounded articulated smoke pass. Image distribution, remaining profiles and full P0 qualification stay open."
+      "detail": "Existing reference acceptance remains unchanged. A separately reviewed five-file Zenoh+DART app recipe passed33 focused source/unit controls and now builds in its own exact clean-DART image/container with signed package/header/library checks. Fresh same-image Zenoh client completed; DART Physics compilation is underway, with fresh Sensors/Sim and unchanged B03 untimed smoke still pending. No old app reuse, prefix swap, new image qualification or performance credit is claimed."
     },
     {
       "id": "REF-02",
@@ -39,12 +39,12 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The corrected local DART capture passed independent source review and ten fresh 1000-step sample processes. A separate clean system-DART image has now built and passed bounded articulated smoke with exact mapped modules; those timings are diagnostic during concurrent work. Quiet-resource balanced measurements, many-entity and camera/lidar baselines and ratified budgets remain open."
+      "detail": "Balanced-robotics baseline remains incomplete. The separate Zenoh+DART native-app build will qualify the actual DART/Zenoh closure and unchanged seven-link/four-joint/sun B03 fixture before any timing. Rust still needs world-light metadata and broader DART chain qualification for that exact fixture. Existing local mixed/diagnostic timings are not matched release evidence; quiet-resource measurements and ratified budgets remain open."
     },
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Native CPU probes passed8 topic cases and8 zero-step activation cases in the qualified immutable app image. They distinguish default camera metadata from actual WORLD Sensors activation and native-valid unsupported duplicate/model configurations. A concrete automatic CameraServer inside camera-output is being implemented with a one-way Server dependency, no default renderer closure, and typed default-Server refusal for unmet camera execution before advertisements. Scheduling/software-worker/native-client lifecycle checks remain pending; no full Manager, CLI, set_rate or physical GPU completion."
+      "detail": "Automatic CameraServer implementation now passes10 new real-loopback CPU lifecycle controls on accepted060, including startup failure/single-rebind cleanup, pending-reset-before-epoch refusal, committed/reset reconstruction errors, shutdown, info-only and replacement. Additional Scene/Server tests are compiling. Native probes passed8 topic and8 zero-step activation cases with explicit partial scope. Software-worker/C++ image-info tests and complete strict gates remain pending; no CLI/fullManager/camera-rate/physical-GPU completion."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "An exact13-path consumer adoption of accepted producerb246 is running its complete normal gate on Main060. It retains finite positive CollisionDensity only on collision entities and restores density presence/value on reset; producer-computed mass/tensor remain authoritative. All668 dependency identities stay fixed; only SDF source/existing Parry edge changes and the Server crossbeam edge is preserved. Two exact earlier density refusals have independently reviewed positive replacements. Actual Main still pins1b until full local/exact hosted/source qualification passes."
+      "detail": "Review commit3d290ee adopts accepted producerb246 and collision-density metadata on Main060. Its complete normal gate and independent source/profile/native audit passed825 headless,483 renderer and223 tooling checks; both Scene profiles cover17/17 changed lines and every required crate exceeds95% lines/regions. Exact hosted41290666226 and official downloaded audit are running before Main adoption. No backend limits or unrelated dependency records changed; Main still pins1b until acceptance."
     }
   ],
   "accepted_slices": [
