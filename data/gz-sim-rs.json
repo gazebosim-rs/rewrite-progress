@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T23:15:33Z",
+  "updated_at": "2026-11-01T23:47:00Z",
   "state": "active",
-  "summary": "Main now accepts native world Light pose streaming with real C++ Zenoh peers and bounded DART three-body static contacts. The completed Scene serial-chain follow-up passed its single consolidated local gate and awaits hosted qualification. Broader rendering, B03 and rewrite scope remain open.",
+  "summary": "Main accepts bounded DART Scene free-root serial three-link/two-revolute loading, with reversed declarations and exact-input native comparisons. Compound collisions, nonzero center of mass, B03, broader articulation and rendering remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -23,8 +23,8 @@
     },
     {
       "id": "PHY-03",
-      "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "Main 573da7c accepts bounded free-root serial three-body contact against static external geometry, retaining dynamic-contact, conditioning and active-limit guards. The next Scene consumer commit f0007073 passed its first consolidated local hook and independent audit, with exact native SDF body/joint comparisons; hosted run 41361046705 is pending. Multiple collisions and B03 remain unsupported."
+      "title": "Extend DART Scene admission beyond the qualified serial chain",
+      "detail": "Main f0007073 adds bounded free-root serial three-link/two-revolute Scene loading, parent-first solver construction with declaration-order public IDs, direct-backend loaded reset/removal controls and exact-input ten-tick native body/joint/frame comparisons. The complete local hook, exact hosted run 41361046705 and independent official source/profile/native audit passed. One collision per link, centered mass and existing backend guards remain; compound collisions and B03 are not accepted."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Main db9d002 accepts world-light construction metadata and shared reset configuration after the complete normal hook, exact hosted run 41313302279 and independent official artifact audit. Renderer extraction and Server light-pose publication still explicitly refuse unsupported lighting. The unchanged B03 world still needs broader DART topology and multiple collisions. Balanced accuracy, quiet measurements and budgets remain open."
+      "detail": "Accepted native reference and bounded Scene serial-chain increments do not qualify balanced robotics. The unchanged Rust B03 world is still rejected at the base link compound-collision boundary. Center-of-mass and broader collision/capability limits, balanced accuracy, quiet measurements and budgets remain open."
     },
     {
       "id": "RENDER-01",
@@ -60,6 +60,11 @@
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
       "detail": "Main a5b296c adopts accepted producer13adde94 for world Light includes, with revision-only dependency changes and native fixture provenance. All four backends retain included Light metadata, resolved frame poses and reset identity. Latest producer fc5d4d4 separately accepts owned World light collection helpers; the simulator stays pinned to13 until another reviewed adoption. Broader automatic-inertia and mutable graph/Element domains remain open."
+    },
+    {
+      "id": "LOAD-01",
+      "title": "Prepare a separate compound-collision Scene follow-up",
+      "detail": "The accepted serial-chain slice keeps one collision per link and centered mass. Compound-collision admission is being prepared separately; no implementation or qualification result is claimed for that follow-up."
     }
   ],
   "accepted_slices": [
@@ -712,6 +717,11 @@
       "title": "Native world Light pose streaming and bounded DART three-body static contacts, with full local and exact hosted qualification",
       "commit": "573da7cff8fa81b9696e4f022c933622226c9782",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/573da7cff8fa81b9696e4f022c933622226c9782"
+    },
+    {
+      "title": "Bounded DART Scene free-root serial chains with exact-input native body/joint/frame comparisons and full local/hosted qualification",
+      "commit": "f00070734f1d889c367c2f908ab3a3c79a61d8e0",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f00070734f1d889c367c2f908ab3a3c79a61d8e0"
     }
   ],
   "remaining": [
@@ -720,7 +730,8 @@
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
-    "Complete upstream parity, feature coverage, comparative performance and release qualification."
+    "Complete upstream parity, feature coverage, comparative performance and release qualification.",
+    "Scene still requires one supported collision per link and centered mass. Compound collisions, nonzero center of mass, B03 and broader backend capability remain unqualified."
   ],
   "blockers": [
     "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
@@ -752,17 +763,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "573da7cff8fa81b9696e4f022c933622226c9782",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/573da7cff8fa81b9696e4f022c933622226c9782",
-    "rust_tests": 868,
+    "revision": "f00070734f1d889c367c2f908ab3a3c79a61d8e0",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f00070734f1d889c367c2f908ab3a3c79a61d8e0",
+    "rust_tests": 871,
     "coverage": {
       "lines": [
-        10000,
-        10177
+        10020,
+        10195
       ],
       "regions": [
-        15300,
-        15741
+        15333,
+        15775
       ]
     },
     "upstream": {
@@ -772,9 +783,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41358158691"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41361046705"
     },
-    "note": "Published Main 573da7c after independent review, the complete 639-second local hook, exact hosted run 41358158691 and official downloaded source/profile/native audit. Hosted checks passed 868 headless, 528 renderer and 237 tooling tests; delegated counts remain separate. Every required crate exceeds 95% lines and regions. Renderer coverage is 5792/5904 lines and 8608/8929 regions. The audit verifies 1084 Git blobs and modes, 71 sources, 272 inputs and 2052 artifacts, including 21 actual Light receipts and all 39 original cold regions. This accepts complete world Light hierarchy/pose publication and bounded direct DART static contacts. Scene lighting, general topology/contacts, multiple collisions, B03, native pixels and comparative performance remain unqualified."
+    "note": "Published Main f0007073 after independent source review, the complete 641-second local hook, exact hosted run 41361046705 and official downloaded source/profile/native audit. Hosted checks passed 871 headless, 531 renderer and 237 tooling tests; profile counts remain separate. Every required production crate exceeds 95% lines and regions. Renderer coverage is 5810/5922 lines and 8639/8963 regions. The audit verifies 1090 Git blobs and modes, 71 source bindings, 272 inputs and 2055 artifact files. The exact synthetic native comparison covers both declaration orders, all thirteen body fields, joint position/rate and resolved semantic frames for ten one-millisecond steps with .7/-.2 efforts. Loaded reset/removal is qualified against direct backend controls, not claimed as native reset parity. B03 remains rejected at its compound-collision boundary. Nonzero center of mass, compound/general topology and contacts, Scene light rendering, radiometric mapping, native pixels, physical GPU and new comparative performance remain unqualified."
   },
   "phase_status": {
     "P0": "in_progress",
