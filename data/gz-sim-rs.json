@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T08:00:34.809957Z",
+  "updated_at": "2026-11-01T08:45:12.736505Z",
   "state": "active",
-  "summary": "P2 headless acceptance is complete, and Main067c41d now publishes the independently audited C3 performance report. Rendering lifecycle, automatic-inertia consumption and system activation continue. The reproduced cold-setup admission race has a reviewed fix undergoing full integration checks; the original failed candidate remains unreleased.",
+  "summary": "P2 headless acceptance remains complete. Main0608577 now includes qualified rate-controller retirement and reset setup reliability, alongside the published scoped C3 performance report. Automatic camera execution, automatic-inertia consumption and balanced-reference prerequisites continue; the wider rewrite is unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "A controlled real callback/full-queue test reproduced precommit cold setup admission failure, distinct from the unknown original hosted interleaving. The reviewed fix uses the already-locked crossbeam channel at unchanged capacity, preserving nonblocking frame admission and a single existing five-second cold enqueue-plus-receipt budget. Typed close-during-admission behavior was separately reproduced and corrected. All161 default-thread server tests, six focused controls and native scenarios pass. The exact stacked rate-retirement/fix candidate is now running the complete normal gate; exact hosted qualification remains required. Broad ACT absence is still open."
+      "detail": "Main0608577 qualifies optional CPU rate ownership, final-consumer retirement, nonzero loss preservation and cold reset reconstruction. Six real admission/closure controls, default-thread server tests, complete normal and exact hosted/source/native checks pass. Queue capacity/FIFO and nonblocking frame behavior remain; cold setup has one five-second enqueue-plus-receipt budget. Original aace failure is retained, not rerun as passing. Shared-I/O absence, other generic dispatch and broader CPU/RSS evidence remain open."
     },
     {
       "id": "SYS-CONTROL",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Accepted camera frame selection and explicit bounded output remain on Main. The next bounded slice is examining native Sensors-system activation/default-topic contracts and a minimal automatic single-camera lifecycle using the existing Bevy/pump path. Absent worlds must install no camera work, endpoints or workers; blocking setup/retirement stays outside physics ticking. No automatic scheduling or physical GPU parity is claimed yet."
+      "detail": "Native CPU probes passed8 topic cases and8 zero-step activation cases in the qualified immutable app image. They distinguish default camera metadata from actual WORLD Sensors activation and native-valid unsupported duplicate/model configurations. A concrete automatic CameraServer inside camera-output is being implemented with a one-way Server dependency, no default renderer closure, and typed default-Server refusal for unmet camera execution before advertisements. Scheduling/software-worker/native-client lifecycle checks remain pending; no full Manager, CLI, set_rate or physical GPU completion."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Main retains accepted producer1b. New accepted producerb246 adds qualified automatic origin-box/sphere inertia, but no simulator admission follows yet. A separate readiness slice is testing a diagnostic pin and proposing explicit CollisionDensity construction metadata with initial-scene capture/reset, preserving computed inertial lowering and all other guards. Prepared all-backend/manual/static/negative/reset positives must pass review and full integration checks before density refusal changes."
+      "detail": "An exact13-path consumer adoption of accepted producerb246 is running its complete normal gate on Main060. It retains finite positive CollisionDensity only on collision entities and restores density presence/value on reset; producer-computed mass/tensor remain authoritative. All668 dependency identities stay fixed; only SDF source/existing Parry edge changes and the Server crossbeam edge is preserved. Two exact earlier density refusals have independently reviewed positive replacements. Actual Main still pins1b until full local/exact hosted/source qualification passes."
     }
   ],
   "accepted_slices": [
@@ -672,6 +672,11 @@
       "title": "Published independently audited C3 matched TPE stream report and complete privacy-safe observation packet; normal and exact hosted/source/native checks passed",
       "commit": "067c41d5f32d9f75c5c90e6033f40b001422423d",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/067c41d5f32d9f75c5c90e6033f40b001422423d"
+    },
+    {
+      "title": "Retired absent rate-controller ownership and repaired transient cold setup admission with one bounded deadline; full normal/exact hosted/source/native checks passed",
+      "commit": "060857766fe245ddc23b143044f2f7555bb4100c",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/060857766fe245ddc23b143044f2f7555bb4100c"
     }
   ],
   "remaining": [
@@ -682,9 +687,7 @@
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification."
   ],
-  "blockers": [
-    "Rate-controller acceptance awaits full integration qualification of the reviewed cold-setup fix. A controlled test proved live Full admission failure in a setup path that also exists on accepted Main; the original hosted interleaving remains unknown. The failed optional-rates candidate is not on Main."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -712,17 +715,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "067c41d5f32d9f75c5c90e6033f40b001422423d",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/067c41d5f32d9f75c5c90e6033f40b001422423d",
-    "rust_tests": 804,
+    "revision": "060857766fe245ddc23b143044f2f7555bb4100c",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/060857766fe245ddc23b143044f2f7555bb4100c",
+    "rust_tests": 813,
     "coverage": {
       "lines": [
-        9779,
-        9955
+        9820,
+        9992
       ],
       "regions": [
-        14963,
-        15406
+        15038,
+        15466
       ]
     },
     "upstream": {
@@ -732,9 +735,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41284829159"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41287528044"
     },
-    "note": "Main067c41d publishes the reviewed C3 matched-stream report and privacy-safe observations. Its complete ordinary gate, exact hosted41284829159 and independent downloaded audit pass804 headless,471 renderer and223 tooling checks. All1037 Git files/modes and1783 official artifacts bind to the commit, with70 production sources/272 inputs and1713 byte-identical raw-profile remerges. Every required crate exceeds95% lines and regions; native C++ and software Vulkan checks pass. The measured program is C3, not this publication commit. Optional rate retirement/cold-admission repairs remain unaccepted until their own full integration gates; full rewrite/ACT/balanced robotics qualification remains open."
+    "note": "Main0608577 includes optional rate-controller retirement and bounded cold setup admission. The complete normal gate, exact hosted41287528044 and official source/profile/native audit passed813 headless,471 renderer and223 tooling checks. All required crates exceed95% lines and regions; changed Server63/64 locally. All1037 Git files/modes and1783 artifact files bind to the commit; native C++ and software Vulkan pass. Cold enqueue plus receipt shares one existing five-second budget at unchanged queue capacity; frame admission stays nonblocking. The original failed aace workflow is preserved separately; controlled Full-queue reproduction establishes the repaired race class without proving the original interleaving. Full ACT and broad release qualification remain open."
   },
   "phase_status": {
     "P0": "in_progress",
