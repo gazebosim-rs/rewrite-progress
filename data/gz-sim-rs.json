@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T12:55:00.827435Z",
+  "updated_at": "2026-11-01T13:26:46.822266Z",
   "state": "active",
-  "summary": "P2 headless acceptance remains complete. Main now includes the independently qualified separate Zenoh/DART reference recipe. Automatic-camera integration is held by its strict coverage gate while meaningful missing tests are added; world-light metadata implementation continues. The wider rewrite remains unfinished.",
+  "summary": "P2 remains complete. The programmatic single-camera application is now accepted on Main with real C++ Image/CameraInfo interoperability and software-renderer checks. World-light integration, broader DART articulation and remaining SDF semantics continue; the wider rewrite is unfinished.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -39,12 +39,12 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Native Zenoh/DART reference qualification is complete as an untimed prerequisite. Reviewed world-light metadata/reset is integrated atop the camera candidate, preserving density and Sensors intent together; the new shared-reset regression passes and the complete normal hook is running. Renderer and Server pose publication explicitly refuse unqualified lighting. Unchanged B03 still needs broader DART topology and multiple-collision admission; balanced accuracy, quiet measurements and budgets remain open."
+      "detail": "Native Zenoh/DART reference qualification remains an untimed prerequisite. World-light metadata/reset source and shared-reset controls are reviewed, but its full integration stopped at strict changed-line coverage16/17; no publication occurred. The cold identity-error path remains retained while line attribution is investigated without artificial tests or weaker gates. B03 still needs broader DART topology and multiple-collision admission; balanced accuracy, quiet measurements and budgets remain open."
     },
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "The repaired automatic-camera candidate passed the complete normal hook in604seconds, including strict owned coverage and real C++ Image/CameraInfo receipts. Independent source/profile/native auditing passed and review branch e0b1f6b is published. Exact hosted41307067791 and downloaded artifact qualification are pending before Main acceptance. The original coverage failure and later capacity stop remain separately recorded; no threshold, assertion or deadline changed."
+      "detail": "Main e0b1f6b qualifies programmatic automatic single-camera output from explicit world Sensors intent. The complete normal hook, independent review, exact hosted41307067791 and official source/profile/native audit pass832 headless,509 renderer and237 tooling checks. Actual C++ Image/CameraInfo receipts and software Vulkan workers pass. Default Server stays headless and refuses configured camera execution without an owner. CLI ownership, multiple cameras, full native Manager, camera set_rate and physical GPU remain open."
     },
     {
       "id": "QLT-01",
@@ -687,6 +687,11 @@
       "title": "Separate native Zenoh/DART reference recipe with independently qualified unchanged B03 smoke continuation; complete normal and exact hosted/source/profile/native publication checks passed",
       "commit": "ce071305b014f1fc216e21c5a0ccd39a46a5f0b0",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ce071305b014f1fc216e21c5a0ccd39a46a5f0b0"
+    },
+    {
+      "title": "Programmatic single-camera activation, lifecycle and default-headless refusal; strict local and exact hosted/source/native/coverage checks with real C++ Image/CameraInfo receipts passed",
+      "commit": "e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0"
     }
   ],
   "remaining": [
@@ -725,17 +730,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "ce071305b014f1fc216e21c5a0ccd39a46a5f0b0",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ce071305b014f1fc216e21c5a0ccd39a46a5f0b0",
-    "rust_tests": 825,
+    "revision": "e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e0b1f6bdc904719cf5d2da7ffd714c7a120df9a0",
+    "rust_tests": 832,
     "coverage": {
       "lines": [
-        9836,
-        10009
+        9909,
+        10083
       ],
       "regions": [
-        15052,
-        15484
+        15154,
+        15587
       ]
     },
     "upstream": {
@@ -745,9 +750,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41298713640"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41307067791"
     },
-    "note": "Main ce071305 passed the complete normal hook and exact hosted41298713640/source/profile/native audit:825 headless,483 renderer,237 tooling;1046 Git files/modes,70 production sources,272 verifier inputs and1785 official artifacts verified. Every required crate exceeds95% lines and regions. Headless9836/10009 lines15052/15484 regions; renderer5256/5384 and7799/8107. Native reference recipe publication is accepted; local actual B03 evidence is a reviewed continuation, not fresh whole-bootstrap or performance qualification. Camera integration failed its separate strict coverage gate and remains unpublished."
+    "note": "Main e0b1f6b passed the full normal hook and exact hosted41307067791 plus independent official source/profile/native audit.832 headless,509 renderer,237 tooling;1055 Git files/modes,71 production sources,272 verifier inputs and1819 official artifacts verified. All required crates exceed95% lines and regions. Headless9909/10083 lines15154/15587 regions; renderer5645/5750 and8424/8733. Actual C++ Image/CameraInfo at1ms and software Vulkan pass. Original coverage failure and capacity stop remain separate. This is one64x64 RGB camera application, not full rendering/Manager/CLI/ACT completion."
   },
   "phase_status": {
     "P0": "in_progress",
