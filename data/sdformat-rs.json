@@ -1,16 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-10-31T23:19:35.152256+00:00",
+  "updated_at": "2026-11-01T00:14:38.396909+00:00",
   "state": "active",
-  "summary": "Bounded legacy world gravity and magnetic metadata is accepted at486b3e0 after independent review, the complete strict staged gate and exact hosted/source verification. Converter cases remain partial.",
+  "summary": "Accepted SDF486 remains unchanged while a bounded standalone lidar/ray alias reader is being implemented and reviewed. No simulator pin changes.",
   "model": "Repository owner",
   "active": [
     {
-      "id": "SDF-02",
-      "title": "Remaining frame, resource and version-conversion gaps",
-      "detail": "SDF1.4/1.5 first-physics world vectors now load through existing metadata while original version/XML/source remain intact. Direct conflicts, duplicate and later-profile fields keep explicit strict refusals; converted Element/XML/version APIs remain unported. Both original converter mappings are partial, bringing accepted credit to206 complete/31 partial. Larger conversion/include/schema and importer work remains. No simulator consumer pin or runtime behavior changes.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41251065108"
+      "id": "SDF-01",
+      "title": "Standalone lidar/ray alias metadata admission",
+      "detail": "Reuse the existing typed scan/range/Noise/provenance parser for four native root aliases. Author11 focused Rust tests,64 native controls,two native Load controls and all4 unchanged Lidar originals pass. Full retained checks and independent review are pending; no new original-case or full LiDAR credit."
     }
   ],
   "accepted_slices": [
