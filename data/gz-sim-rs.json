@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T04:31:41.079005Z",
+  "updated_at": "2026-11-01T04:48:10.236490Z",
   "state": "active",
   "summary": "P2 headless end-to-end acceptance is complete on Main c3f5a2f: real C++ Zenoh peers, selected physics/IMU/control lifecycle, strict coverage and the reviewed performance report are qualified. Exact candidate CI and downloaded audit passed before the fast-forward. A fresh Main promotion workflow is running separately. Broader physics, sensors, systems and performance qualification continue; the full rewrite is not complete.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Main c3f5a2f qualifies application-owned single-camera cadence and bounded worker peer-loss termination. All462 renderer executions and strict crate coverage pass with real software Vulkan/native camera peers. The worker guard is admitted before GPU allocation, arms before failed-reply logging and skips Rust GPU destruction on fatal output loss, with an eight-second fallback and unchanged original ten-second assertions. Original timeout cause remains unproven; controlled cleanup-stall regressions and exact hosted qualification establish the engineering bound. Loaded frame-ID helper39 CPU tests and independent review pass, but its full gate stopped for disk reserve and will rerun unchanged after compiler-cache relief. Automatic Server camera management, physical GPU/image parity and other sensor families remain open."
+      "detail": "Main c3f5a2f qualifies application-owned single-camera cadence and bounded worker peer-loss termination. All462 renderer executions and strict crate coverage pass with real software Vulkan/native camera peers. The worker guard is admitted before GPU allocation, arms before failed-reply logging and skips Rust GPU destruction on fatal output loss, with an eight-second fallback and unchanged original ten-second assertions. Original timeout cause remains unproven; controlled cleanup-stall regressions and exact hosted qualification establish the engineering bound. Loaded frame-ID helper39 CPU tests and independent review pass, the first full gate stopped for disk reserve and remains recorded. After safe inactive compiler-cache cleanup, the complete normal gate is running again with the same reserve guard, thresholds and assertions; it also includes independently reviewed P2 acceptance documentation. No new helper acceptance is claimed yet. Automatic Server camera management, physical GPU/image parity and other sensor families remain open."
     },
     {
       "id": "QLT-01",
@@ -54,7 +54,12 @@
     {
       "id": "PERF-01",
       "title": "Measure the current accepted release at equal work",
-      "detail": "The first matched small TPE report at5870373 remains unchanged and scoped. A new c3 source-bound optimized ELF has been built and its17-library/interpreter closure matches the qualified host overlay; no current c3 timings have been claimed. Prepare a fresh loader-only overlay, then measure with the unchanged matched driver only when local builds are quiet. Balanced robotics, many-entity and camera/lidar budgets remain open."
+      "detail": "The first matched small TPE report at5870373 remains unchanged and scoped. A new c3 source-bound optimized ELF has been built and its17-library/interpreter closure matches the qualified host overlay; no current c3 timings have been claimed. The first loader preparation failed closed on a source-path mismatch. A reviewed tool change is being prepared to distinguish the immutable native application source context from the current Rust build context, while preserving workload bytes, validation and old results. Runtime qualification and timings remain pending; builds must be quiet before measurement. Balanced robotics, many-entity and camera/lidar budgets remain open."
+    },
+    {
+      "id": "SDF-02",
+      "title": "Adopt accepted manual inertia and legacy IMU parsing",
+      "detail": "A separate simulator candidate updates the actual Git dependency from accepted producer486 to accepted1b, preserving every other one of the668 lockfile package records and all existing production and test sources. Four supplemental admission tests cover legacy six-channel seeded noise/reset, resource provenance, manual inertia and backend wrench policy, overflow refusal, and explicit lidar refusal. Producer-owner readiness passes15 focused checks; independent full-candidate review and Clippy are underway. Full simulator staged and exact hosted qualification remain required. The separate automatic-box producer candidate is not adopted."
     }
   ],
   "accepted_slices": [
