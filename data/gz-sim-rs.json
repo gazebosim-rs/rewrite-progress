@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T22:54:17Z",
+  "updated_at": "2026-11-01T23:15:33Z",
   "state": "active",
-  "summary": "P2 is complete. Main accepts external world Light metadata and an explicit-lux Bevy directional renderer, with full local and hosted qualification. Native-backed Light pose streaming and bounded DART static contacts are being implemented; Scene lighting, B03 and broader rewrite scope remain open.",
+  "summary": "Main now accepts native world Light pose streaming with real C++ Zenoh peers and bounded DART three-body static contacts. The completed Scene serial-chain follow-up passed its single consolidated local gate and awaits hosted qualification. Broader rendering, B03 and rewrite scope remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "IO-01",
       "title": "Extend I/O beyond the qualified headless contract",
-      "detail": "Review commit 573da7c passed the complete 639-second local hook and independent audit: 868 headless, 528 renderer and 237 tooling checks, strict production and changed coverage, 21 actual C++ Light frames, and all 39 cold regions preserved. The checked review branch is public; exact hosted run 41358158691 is executing full verification. Main remains a5 pending the official hosted audit. The next completed Scene feature is in its first consolidated mandatory gate."
+      "detail": "Main 573da7c accepts complete world Light and derived visual pose groups, stable owned IDs and loaded reset with seven real C++ Zenoh cases. Full local, exact hosted and official artifact audits passed before publication. Broader I/O, light commands and Scene lighting remain open."
     },
     {
       "id": "ACT-01",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extending DART beyond the qualified world-rooted chain",
-      "detail": "The reviewed bounded static-contact candidate passes159 unfiltered DART tests, all-target Clippy,96 child controls and qualified native replay. Two approved stronger static-contact assertions retain genuine dynamic/conditioning negatives; other59oldtestfiles are unchanged. Its12filepayload is integrated byteexact with Light poses for full qualification. Scene/B03 and multiple collisions remain unsupported."
+      "detail": "Main 573da7c accepts bounded free-root serial three-body contact against static external geometry, retaining dynamic-contact, conditioning and active-limit guards. The next Scene consumer commit f0007073 passed its first consolidated local hook and independent audit, with exact native SDF body/joint comparisons; hosted run 41361046705 is pending. Multiple collisions and B03 remain unsupported."
     },
     {
       "id": "REF-01",
@@ -707,6 +707,11 @@
       "title": "World Light include adoption and explicit-lux Bevy renderer with real readback lifecycle and full local/hosted qualification",
       "commit": "a5b296c1d857011ab86c6decb7cf1bd908df76ff",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a5b296c1d857011ab86c6decb7cf1bd908df76ff"
+    },
+    {
+      "title": "Native world Light pose streaming and bounded DART three-body static contacts, with full local and exact hosted qualification",
+      "commit": "573da7cff8fa81b9696e4f022c933622226c9782",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/573da7cff8fa81b9696e4f022c933622226c9782"
     }
   ],
   "remaining": [
@@ -747,17 +752,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "a5b296c1d857011ab86c6decb7cf1bd908df76ff",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a5b296c1d857011ab86c6decb7cf1bd908df76ff",
-    "rust_tests": 855,
+    "revision": "573da7cff8fa81b9696e4f022c933622226c9782",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/573da7cff8fa81b9696e4f022c933622226c9782",
+    "rust_tests": 868,
     "coverage": {
       "lines": [
-        9940,
-        10113
+        10000,
+        10177
       ],
       "regions": [
-        15208,
-        15645
+        15300,
+        15741
       ]
     },
     "upstream": {
@@ -767,9 +772,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41333890290"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41358158691"
     },
-    "note": "Main a5b296c passed the full local hook (617 seconds), exact hosted run 41333890290 and independent official source, profile and native audit. There were 855 headless, 526 renderer and 237 tooling checks. All required crates exceed 95% lines and regions. Official renderer coverage is 5778/5890 lines and 8588/8908 regions; changed renderer coverage is 132/133, with the real cold line retained. The audit verifies 1069 Git files and modes, 71 production sources, 272 inputs and 1875 artifacts. Local and hosted observations remain separate. Native peers, automatic camera receipts and software Vulkan pass. This accepts explicit programmatic lux input, not SDF radiometry, Scene light extraction, native pixels, physical GPU or B03."
+    "note": "Published Main 573da7c after independent review, the complete 639-second local hook, exact hosted run 41358158691 and official downloaded source/profile/native audit. Hosted checks passed 868 headless, 528 renderer and 237 tooling tests; delegated counts remain separate. Every required crate exceeds 95% lines and regions. Renderer coverage is 5792/5904 lines and 8608/8929 regions. The audit verifies 1084 Git blobs and modes, 71 sources, 272 inputs and 2052 artifacts, including 21 actual Light receipts and all 39 original cold regions. This accepts complete world Light hierarchy/pose publication and bounded direct DART static contacts. Scene lighting, general topology/contacts, multiple collisions, B03, native pixels and comparative performance remain unqualified."
   },
   "phase_status": {
     "P0": "in_progress",
