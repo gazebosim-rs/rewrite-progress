@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T05:53:45.855529Z",
+  "updated_at": "2026-11-01T06:19:32.107886Z",
   "state": "active",
   "summary": "P2 headless end-to-end acceptance is complete on Main c3f5a2f: real C++ Zenoh peers, selected physics/IMU/control lifecycle, strict coverage and the reviewed performance report are qualified. Exact candidate CI and downloaded audit passed before the fast-forward. A fresh Main promotion workflow is running separately. Broader physics, sensors, systems and performance qualification continue; the full rewrite is not complete.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -14,7 +14,7 @@
     {
       "id": "ACT-01",
       "title": "Extending built-in activation beyond IMU Scene callbacks",
-      "detail": "Main c3f5a2f contains reviewed terminal admission and optional CPU force ingress. Full local and exact hosted gates plus independent source/profile/native audits pass800 headless and462 renderer tests. Absent/final-consumer CPU force state retires while the actual world-lifetime loss metric and shared endpoint/reset/late-Full semantics remain. The repaired TCP lifecycle fixture preserves all immediate single-bind assertions in a private network namespace; the original failed run remains recorded. Full shared-IO absence, generic dispatch retirement, CPU/RSS evidence and broad ACT01 completion remain open. A new bounded implementation is inspecting optional Server rate-controller ownership so absent or retired IMU rate control has no CPU provider state or poll callbacks; no new absence result is claimed yet."
+      "detail": "Main c3f5a2f contains reviewed terminal admission and optional CPU force ingress. Full local and exact hosted gates plus independent source/profile/native audits pass800 headless and462 renderer tests. Absent/final-consumer CPU force state retires while the actual world-lifetime loss metric and shared endpoint/reset/late-Full semantics remain. The repaired TCP lifecycle fixture preserves all immediate single-bind assertions in a private network namespace; the original failed run remains recorded. Full shared-IO absence, generic dispatch retirement, CPU/RSS evidence and broad ACT01 completion remain open. A bounded optional Server rate-controller patch is implemented and undergoing focused lifecycle checks and independent review. It removes empty rate poll/retire dispatch and drops CPU ownership after last removal; tests preserve nonzero shared loss across retirement/reset. The previous empty vector already held no provider heap, so no allocation-leak fix or broad ACT completion is claimed."
     },
     {
       "id": "SYS-CONTROL",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Accepted1b producer adoption passes independent source review,15 focused checks/Clippy and the complete ordinary simulator gate at49a1893. Exact hosted qualification is running. A separate combined candidate applies those exact five paths and the reviewed two-context benchmark fix on accepted camera Main c98, with no overlapping source edits; updated guidance passed independent review and the complete combined normal gate is running. Exact combined hosted/source qualification remains required before Main adoption. No automatic-box consumer admission is claimed."
+      "detail": "The accepted1b producer adoption passes independent review,15 focused checks/Clippy, complete normal simulator checks and exact hosted41277962883. Its unchanged five paths and the reviewed benchmark-tool fix are combined on camera Main c98 at review commitde758d8. The complete combined ordinary gate and source/profile/native audit passed; exact combined hosted41279424345 and its downloaded audit remain before Main adoption. The newer automatic-box producer remains outside this simulator pin/admission."
     }
   ],
   "accepted_slices": [
