@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-01T23:47:00Z",
+  "updated_at": "2026-11-02T00:41:11Z",
   "state": "active",
-  "summary": "Main accepts bounded DART Scene free-root serial three-link/two-revolute loading, with reversed declarations and exact-input native comparisons. Compound collisions, nonzero center of mass, B03, broader articulation and rendering remain open.",
+  "summary": "Main accepts bounded DART Scene free-root serial chains. A completed, independently reviewed compound-collision follow-up is running its full mandatory hook; actual native reference observations are captured, with Rust parity and final qualification pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -63,8 +63,8 @@
     },
     {
       "id": "LOAD-01",
-      "title": "Prepare a separate compound-collision Scene follow-up",
-      "detail": "The accepted serial-chain slice keeps one collision per link and centered mass. Compound-collision admission is being prepared separately; no implementation or qualification result is claimed for that follow-up."
+      "title": "Qualify bounded compound-collision Scene loading",
+      "detail": "The complete 20-path DART/Scene implementation and all assertions have independent source review. Six exact native inputs produced thirty complete body-state rows with three actual floor responses; raw data, compiler inputs and qualified libraries were independently audited. The single full mandatory Rust hook is now running. Rust/native parity and full qualification remain pending. The original native link failure and subsequent library-binding failure remain separate from the successful third capture. Accepted Main f0007073, B03 refusal, centered-mass and broader topology/performance limits are unchanged."
     }
   ],
   "accepted_slices": [
