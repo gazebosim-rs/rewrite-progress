@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T14:03:59.849779+00:00",
+  "updated_at": "2026-11-02T14:14:29.910383+00:00",
   "state": "active",
   "summary": "Combined local translation and rotation now uses the existing single automatic box/sphere inertia path on accepted Main. Native invalid/nonfinite aggregation is conservatively refused; closed frame/attribute/override and numerical domains remain unchanged. Simulator adoption stays separate.",
   "model": "Repository owner",
-  "active": [],
+  "active": [
+    {
+      "id": "SDF-02",
+      "title": "Review bounded single-cylinder automatic inertia source",
+      "detail": "A complete isolated source batch adds Cylinder through locked Parry with a Y-to-Z moment permutation and existing local-pose/numeric/manual validation. Rotated cylinders extend the existing attributed native-order scalar boundary; no new dependency, tolerance or public API. Fixed 24-case native capture source, complete same-input helper, scalar/differential/metadata/import/negative regressions and documentation are authored. Independent source review is pending. Native capture, tests, lint and coverage are unrun; the exact retained cylinder rejection stays unchanged pending independent stronger-positive disposition. Accepted Main quality and original counts below remain unchanged; no simulator pin or Fuel changes."
+    }
+  ],
   "accepted_slices": [
     {
       "title": "Compose existing local translation and rotation for automatic single box/sphere inertia",
