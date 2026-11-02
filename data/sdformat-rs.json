@@ -1,18 +1,17 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T16:34:58.367295+00:00",
+  "updated_at": "2026-11-02T17:10:29.834416+00:00",
   "state": "active",
-  "summary": "Single-cylinder automatic inertia is accepted on Main within the existing one-local-collision pose/density/numeric domain. Parry admission and the attributed SDK-order rotation path preserve existing bounds. Failed native calculations retaining default inertials remain refusals; simulator adoption is separate.",
+  "summary": "Origin-centered numeric-identity capsule automatic inertia is accepted on Main using maintained Parry and the existing strict validation pipeline. Native error defaults, zero mass and unsupported pose families remain refusals. Nonidentity capsule poses are the next bounded source task; simulator adoption remains separate.",
   "model": "Repository owner",
-  "active": [
-    {
-      "id": "SDF-02",
-      "title": "Qualify reviewed origin-centered capsule inertia on hosted CI",
-      "detail": "Reviewed branch a44bf8b passed the complete mandatory hook:733 Rust tests,59 tooling checks,9042/9089 lines,14363/14642 regions and22/22 changed lines; independent retained source/native/coverage audit is clear. Exact hosted run41482643644 is running; official artifact audit and Root Main promotion remain pending. The two prior strict-source failures and capacity-stopped partial remain separate. Final axis projection is the same bit permutation with named moments, without numeric/test/policy changes. Native24/original1 evidence preserves three error-retained defaults, zero mass and seven warnings; translated/rotated/mixed capsules stay refused. Accepted Main quality below remains unchanged; no consumer or Fuel changes."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
+    {
+      "title": "Compute bounded origin-centered capsule automatic inertia with maintained Parry",
+      "commit": "a44bf8be09aff979449afddc8c75118c4ae1a227",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a44bf8be09aff979449afddc8c75118c4ae1a227"
+    },
     {
       "title": "Compute bounded single-cylinder automatic inertia using maintained Parry and native-order rotated values",
       "commit": "907c96ccfd62c5f64bd232d136f0c68364bda090",
@@ -976,16 +975,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "907c96ccfd62c5f64bd232d136f0c68364bda090",
-    "rust_tests": 730,
+    "revision": "a44bf8be09aff979449afddc8c75118c4ae1a227",
+    "rust_tests": 733,
     "coverage": {
       "lines": [
-        9027,
-        9074
+        9042,
+        9089
       ],
       "regions": [
-        14334,
-        14613
+        14363,
+        14642
       ]
     },
     "upstream": {
@@ -995,9 +994,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41466173426"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41482643644"
     },
-    "note": "Accepted Main907c96c was fast-forwarded and publicly pushed by Root after the ordinary mandatory hook, independent retained audit, exact hosted41466173426 attempt1 whole success and independent official source/artifact auditda7c30e9/summaryc6d7922e. Actual730 Rust tests in215 clean summaries and59 tooling checks passed with formatting/all-target Clippy/doc;37 production files have9027/9074 lines and14334/14613 regions. All858 official Git blobs/modes, ZIP digest/size, owned coverage summaries and LCOV hit booleans matched local. Strict parent-diff16/16 remains distinct from actual hosted full-source8622/8656; all34 cold lines remain. Cylinder uses locked Parry from_cylinder with a Y-to-Z principal permutation, existing local pose/translation/manual validation and a narrowly attributed SDK-order scalar provider for rotated values. Four-ULP bounds, old scalar arms, density metadata/defaults, pose attributes/references, override/multiplicity and numerical closures remain unchanged. One fixed24-case native correctness capture plus unchanged DOMCylinder.CalculateInertial original passed:18 genuine zero-error valid aggregates, two finite-invalid density extremes and two nonfinite translation extremes; two additional stored-valid defaults follow explicit load/direct error19 for radius extremes and remain refusals, not successful shape calculations. All five warning rows are retained. Only one independently approved exact old cylinder.sdf assertion changed to a complete same-input helper; every other old predicate and corpus is preserved. No native/compiler/product reruns during independent audits, new dependency/public API, original-case completion, simulator pin, Fuel, performance or broad phase-completion claim. Original counts remain207 complete/35 partial of1344.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/907c96ccfd62c5f64bd232d136f0c68364bda090"
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/a44bf8be09aff979449afddc8c75118c4ae1a227",
+    "note": "Accepted Maina44bf8b was fast-forwarded and publicly pushed by Root after the completed mandatory hook, independent retained audit565adf01, exact hosted41482643644 attempt1 whole success and independent official source/artifact auditf484bbcf/summarybef8d5. Actual733 Rust tests in216 clean summaries and59 tooling checks passed with formatting/all-target Clippy/doc. Owned37 production files have9042/9089 lines and14363/14642 regions; all865 official Git blobs/modes, ZIP digest/size and every owned local/hosted coverage summary and LCOV hit boolean were verified. Strict parent-diff22/22 is distinct from actual hosted full-source8637/8671; all34 cold DA lines remain. The bounded origin/numeric-identity Capsule path uses locked Parry with Y-to-Z principal mapping, exact native-density-prefix representability and public finite-matrix validation, preserving current manual/numeric guards and four-ULP comparisons without a capsule formula or aggregation provider. All651 inherited test/tool files remain byte-identical; translated/rotated/mixed capsules, pose attributes/references, overrides and multiple collisions stay closed. Native24 plus the unchanged original1pass are retained: three calculation errors keep valid default inertials, minimum radius yields zero mass/tensor despite native-valid flags, and seven warnings remain; none masquerades as a supported Rust positive. Earlier410s opaque-macro and398s unmeasured-header failures passed runtime precursors but remained failures. The exact axis permutation was expressed using named principal components and complete match arms, without math/bound/test/policy changes. A later322s capacity stop had no complete verdict; after the overlapping heavy gate retired, one unchanged continuation passed396s with guards. All failures and partial data remain separate. No extra native capture, compiler/product replay during audits, original-case completion, consumer pin, Fuel, performance or broad automatic-inertia claim. Original counts remain207 complete/35 partial of1344."
   }
 }
