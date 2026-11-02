@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T07:54:48.061439Z",
+  "updated_at": "2026-11-02T09:57:07.012598Z",
   "state": "active",
   "summary": "Main accepts bounded DART compounds with explicit offset COM and Scene link-origin velocity, input, IMU and reset semantics, backed by actual native comparisons and full local/hosted qualification. B03, broader physics/rendering and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Fresh native B03 origin and COM-point observations passed independent source and retained-data audit. All 101 cached snapshots reproduce the historical capture exactly by identity; the existing Rust observations were reused. Fresh comparison first differs beyond 1e-12 at step 37 and still has a later maximum difference of about 0.02284. Whole-world trajectory parity and equal-work performance remain unqualified."
+      "detail": "Fresh native B03 observations and their complete 101-frame cached-history fidelity are independently audited. The current Rust candidate retained only steps 1, 10 and 100; its first two snapshots agree within 1e-12, while step 100 fails. This does not identify the first divergent integration step. Raw native frame diagnostics are in source preparation; full trajectory parity and equal-work performance remain unqualified."
     },
     {
       "id": "RENDER-01",
@@ -59,12 +59,12 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "The simulator remains pinned to producer 13adde94. Producer Main a549b745 separately accepts bounded rotation-only automatic inertia for a single box or sphere after strict local checks, exact hosted CI and independent official audit. Consumer adoption will be reviewed with the next producer correction; it has not happened automatically. Broader inertia and mutable graph domains remain open."
+      "detail": "Producer Main c94da539 accepts native radian-Euler constructor semantics after 715 Rust tests, 59 tooling checks, strict coverage, exact hosted CI and independent official audit. Accepted simulator Main remains pinned to 13adde94. The isolated consumer candidate pins c94da539 but failed its B03 comparison; adoption remains unaccepted. Degree and quaternion-input paths are unchanged."
     },
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Accepted simulator Main remains e55356c8. The reviewed child-frame serial candidate failed its consolidated mandatory hook after 361 seconds at the unchanged 1e-12 B03 motion comparison. Its 486 retained Rust values are identical to the prior run. New backend and native-reference controls passed before Cargo stopped; renderer and final coverage were not reached. Fresh native observations are audited and retained separately from historical cached data. A confirmed producer Euler-constructor difference is being corrected; its role in B03 divergence remains unproven."
+      "detail": "Accepted simulator Main remains e55356c8. The reviewed constructor-adoption and child-frame candidate failed its single mandatory hook after 359 seconds, without a capacity stop or commit. Rust observations changed; retained steps 1 and 10 remain within 1e-12 of fresh native state, while step 100 still fails, with maximum difference about 0.0001593. Renderer and final coverage were not reached. Public-API raw-frame diagnostics are being prepared to investigate remaining construction differences; no new probe or tolerance change has run."
     }
   ],
   "accepted_slices": [
