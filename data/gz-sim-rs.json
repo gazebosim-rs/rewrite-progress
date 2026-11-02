@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T04:30:57.807115Z",
+  "updated_at": "2026-11-02T05:46:26.045149Z",
   "state": "active",
   "summary": "Main accepts bounded DART compounds with explicit offset COM and Scene link-origin velocity, input, IMU and reset semantics, backed by actual native comparisons and full local/hosted qualification. B03, broader physics/rendering and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Main e55356c8 extends bounded one-to-three primitive DART compounds to explicit offset COM. Actual six-case reference compares thirty complete body/frame states; a separate two-representation gauge reference compares twenty-two states at the unchanged 1e-12 bound. Existing topology, external dynamic-contact, plane and other-backend guards remain. B03 still returns typed joint-admission refusal. Serial two-edge assembly is source-complete and prior-reviewed, with no execution or acceptance yet; broader topology/contact and performance remain open."
+      "detail": "Accepted Main e55356c8 supports bounded primitive DART compounds with explicit offset COM. The new atomic serial-assembly candidate failed its mandatory B03 comparison; it is not accepted. Audited per-tick diagnostics show native link components can be stale while joint samples refresh each tick. Later joint divergence remains unexplained. Fresh native frame observations are being implemented separately; broader topology, contacts and performance remain open."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The actual pinned native B03 Server baseline separately captures 100 one-millisecond steps, all seven body/four joint queries and 486 retained snapshot values with independently audited source/compiler/library provenance. Rust B03 still refuses construction with Physics(InvalidJoint); no whole-world trajectory parity or equal-work performance is qualified. Serial assembly is source-complete and prior-reviewed but unexecuted. Balanced accuracy, quiet measurements and budgets remain open."
+      "detail": "The audited native B03 Server capture retains 486 snapshot values, but its body getters read potentially stale ECS components. Separate native and Rust diagnostics retain all 101 frames and exactly reproduce all original step 1, 10 and 100 snapshot values. Fresh native frame observations are being implemented without changing the physical world. Joint divergence remains unresolved; whole-world trajectory parity and equal-work performance are not qualified."
     },
     {
       "id": "RENDER-01",
@@ -64,7 +64,7 @@
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Accepted Main remains e55356c8. The reviewed atomic serial-assembly candidate has actual selected-plugin reference evidence: eight rows/560 values, 672 compiler inputs and both 37-library maps, plus a separately audited 486-value native B03 Server baseline. The first required hook stopped after20 seconds on private-helper Clippy type complexity; its assertion-identical alias correction was reviewed. The affected full hook then failed after359 seconds on the NEW B03 native comparison at tick100: base-link x-position differs by about2.04e-11, exceeding unchanged1e-12. No capacity stop occurred; final strict coverage/renderer/hosted qualification remains incomplete. Failure retained, source held, no retry or tolerance change; B03 motion and serial acceptance remain unqualified."
+      "detail": "Accepted Main remains e55356c8. Atomic serial assembly failed its full mandatory hook after 359 seconds at unchanged 1e-12 B03 trajectory bounds. Audited 101-frame observations explain early body mismatches as stale native ECS link rows. Joint velocity differs from step 39 and position from 51, so this does not explain all later physics divergence. Source work is adding fresh native query frames, preserving historical captures and all cached-frame fidelity checks. No tolerance change, passing retry or B03 acceptance is claimed."
     }
   ],
   "accepted_slices": [
