@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T16:25:56.175428Z",
+  "updated_at": "2026-11-02T17:07:56.451475Z",
   "state": "active",
-  "summary": "Main accepts B03 sampled native-reference motion and Gazebo C++ clock/pose/control/reset interoperability using unmodified upstream Rust Zenoh. A separately configured physics-only equal-work benchmark is undergoing qualification; full-Server performance and broader physics/rendering remain open.",
+  "summary": "Main accepts the configured physics-only B03 equal-work baseline: Rust Scene is 2.043246 times slower on this workload. B03 Gazebo C++ interoperability uses unmodified upstream Rust Zenoh. A reviewed contact-factorization optimization is undergoing its first required correctness gate; broader physics/rendering and full-Server performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance."
+      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance. A per-query-pass factorization reuse candidate has completed source review and is in its first mandatory local correctness gate; no candidate timing or speedup is claimed."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The physics-only baseline and CI acquisition correction passed local qualification and independent audits; checked candidate e829be51 awaits exact hosted acceptance. Eight configured pairs matched 129600 values. Median window: native 11.743475 ms versus Rust Scene 23.994811 ms, so Rust is 2.043246 times slower here. A per-pass factorization optimization is source-reviewed but untested. Three prior baseline CI attempts stopped before verification on snapshot HTTP 500/502/503. The corrective child adds bounded APT retries, skips translation downloads and fails on any update error; pins, signatures, versions and tests are unchanged. No full-Server or rewrite speedup is claimed."
+      "detail": "Accepted Main e829be51 publishes the configured physics-only baseline and signed-snapshot acquisition correction after full local checks, exact hosted run 41481267132 and independent official audit. Eight configured pairs matched 129600 scalar values at 1e-12. Median windows: native 11.743475 ms, Rust Scene 23.994811 ms; Rust is 2.043246 times slower. The workload excludes Server, network, sensors and rendering. Three prior pre-verification HTTP 500/502/503 failures remain recorded. Broader balanced workloads and whole P0 remain open."
     },
     {
       "id": "RENDER-01",
@@ -742,6 +742,11 @@
       "title": "Loaded B03 Gazebo C++ clock, complete local poses, control/reset and native body-pose interoperability over unmodified upstream Rust Zenoh",
       "commit": "43cf8e6900ec769815c8a56600b29ae7b93554f7",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/43cf8e6900ec769815c8a56600b29ae7b93554f7"
+    },
+    {
+      "title": "Configured physics-only B03 baseline, complete paired observations and strict signed-snapshot CI acquisition",
+      "commit": "e829be51d42fed27268606528ba758a93efc37a2",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e829be51d42fed27268606528ba758a93efc37a2"
     }
   ],
   "remaining": [
@@ -754,8 +759,7 @@
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
   "blockers": [
-    "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue.",
-    "Exact hosted acceptance of the measured physics-only baseline is pending on the checked CI-recovery candidate after upstream snapshot failures. All package pins, signatures, versions and verification gates remain required."
+    "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -784,8 +788,8 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "43cf8e6900ec769815c8a56600b29ae7b93554f7",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/43cf8e6900ec769815c8a56600b29ae7b93554f7",
+    "revision": "e829be51d42fed27268606528ba758a93efc37a2",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e829be51d42fed27268606528ba758a93efc37a2",
     "rust_tests": 924,
     "coverage": {
       "lines": [
@@ -804,9 +808,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41456359319"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41481267132"
     },
-    "note": "Accepted Main 43cf8e69 after the complete 666-second local hook, exact hosted 41456359319 and independent official source/profile/native audit. Results: 924 headless, 546 renderer and 237 tooling tests; inherited ignored counts remain 5/3. Hosted headless coverage is 10583/10775 lines and 16123/16603 regions; renderer is 5944/6058 lines and 8829/9161 regions. Every production crate/workspace exceeds 95% lines and regions; all 39 inherited Light cold spans remain cold, critical error zero. Audit binds 1138 Git blobs/modes, 71 sources, 272 inputs and 2100 official artifacts. Twelve actual Clock/Pose protobuf receipts verify six delivery boundaries, complete 27-record groups, stable IDs/parents and reset. Native projection covers seven body world poses at 1/10/100 and post-reset 1 ms, compared at 1e-12; other records/reset retain owned Scene/local-snapshot checks. Parent B03 physics independently compares 486 fresh values at three snapshots, not all-101-step parity. Upstream Rust Zenoh is unmodified; C++ is the external test peer. New physics-only benchmark results, full-Server equal-work ratios, broad articulation/contact completion, radiometry, physical GPU and original-system completion remain unqualified."
+    "note": "Accepted Main e829be51 after mandatory local gates, exact hosted run 41481267132 and independent official source/profile/native/archive audit. Results: 924 headless, 546 renderer and 249 tooling checks; inherited ignored counts remain 5/3. Hosted headless coverage: 10583/10775 lines and 16123/16603 regions. Renderer: 5944/6058 lines and 8829/9161 regions. All production crates/workspace exceed 95% lines and regions; 39 inherited cold spans and critical error zero are preserved. Audit binds 1146 Git blobs/modes, 71 sources, 272 inputs and 2102 official artifacts. The immutable 119-member physics-only archive proves 129600 scalar comparisons, maximum error 4.440892098500626e-16. Rust/native median window ratio is 2.043246: Rust is slower. Accepted B03 clock/pose/control/reset uses unmodified Rust Zenoh with an external C++ peer. Full-Server performance, broad articulation/contact completion, radiometry, physical GPU and original-system completion remain open."
   },
   "phase_status": {
     "P0": "in_progress",
