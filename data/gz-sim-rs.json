@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T13:50:21.750998Z",
+  "updated_at": "2026-11-02T14:50:55.382102Z",
   "state": "active",
-  "summary": "Main accepts bounded DART serial assembly and fresh-native B03 body/joint motion, with producer joint-pose correction and complete local/hosted qualification. Gazebo C++ interoperability testing for this loaded workload is undergoing hosted qualification; broader physics, rendering and equal-work performance remain open.",
+  "summary": "Main accepts B03 sampled native-reference motion and Gazebo C++ clock/pose/control/reset interoperability using unmodified upstream Rust Zenoh. A separately configured physics-only equal-work benchmark is undergoing qualification; full-Server performance and broader physics/rendering remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "IO-01",
       "title": "Extend I/O beyond the qualified headless contract",
-      "detail": "Main 573da7c accepts complete world Light and derived visual pose groups, stable owned IDs and loaded reset with seven real C++ Zenoh cases. Full local, exact hosted and official artifact audits passed before publication. Broader I/O, light commands and Scene lighting remain open."
+      "detail": "Main 43cf8e69 accepts loaded B03 clock, complete 27-record local pose groups, control/reset and stable ownership with an actual Gazebo C++ peer, in addition to prior Light/headless contracts. Upstream Rust Zenoh is used directly and unmodified. Broader I/O and commands remain open."
     },
     {
       "id": "ACT-01",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Accepted Main e55356c8 supports bounded primitive DART compounds with explicit offset COM. The new child-frame serial-assembly candidate remains unaccepted after its B03 comparison failed. Fresh native origin and COM-point observations are independently audited; later physical divergence remains unresolved. Broader topology, contacts and performance remain open."
+      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Bounded B03 correctness is accepted on Main 8ebb02db at the unchanged 1/10/100-step snapshots. Earlier complete native and Rust diagnostics remain historical evidence. Performance actors still differ in observation and endpoint work and contact configuration; no equal-work eligibility or speedup ratio is claimed. Complete matched-work baseline measurement remains open."
+      "detail": "A completed, independently source-reviewed physics-only benchmark is undergoing its first actual build/protocol/paired-correctness qualification. Native and Rust actors have no Server/network/IO, explicit unlimited per-pair contacts and honestly labeled settings. All 100 paired frames (16200 values) and actual library bindings must pass before timing is eligible. This is a separate configured contract, not original-default or full-Server equal work; no speedup is claimed."
     },
     {
       "id": "RENDER-01",
@@ -59,12 +59,12 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Producer Main c94da539 accepts native radian-Euler constructor semantics after 715 Rust tests, 59 tooling checks, strict coverage, exact hosted CI and independent official audit. Accepted simulator Main remains pinned to 13adde94. The isolated consumer candidate pins c94da539 but failed its B03 comparison; adoption remains unaccepted. Degree and quaternion-input paths are unchanged."
+      "detail": "Accepted simulator Main 43cf8e69 pins producer f0d05146, including native radian constructor and scoped-root joint-pose corrections. Producer Main has separately advanced to f4d2e19 with qualified combined translation/rotation automatic inertia for a single box/sphere; that newer producer is not adopted implicitly by the simulator. Broader SDF/geometry coverage remains open."
     },
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Accepted Main 8ebb02db retains qualified DART serial construction/reset and sampled B03 motion with producer f0d05146. Separate candidate 43cf8e69 passed its complete 666-second local gate and independent retained audit: 924 headless, 546 renderer and 237 tooling tests, strict coverage and all inherited cold regions preserved. Twelve actual Gazebo C++ Clock/Pose protobuf receipts prove six-phase delivery and reset against the native reference. Exact hosted qualification remains pending. Upstream Rust Zenoh is unmodified; C++ is only the external test peer."
+      "detail": "Main 43cf8e69 accepts bounded DART serial construction/reset, sampled fresh-native B03 motion and actual Gazebo C++ clock/pose/control/reset delivery. All local, exact hosted and independent official checks passed before publication. Broader loaded topology, contacts and geometry remain open; no transport rewrite or modified Zenoh is introduced."
     }
   ],
   "accepted_slices": [
@@ -737,6 +737,11 @@
       "title": "Bounded DART atomic serial assembly, producer native joint-pose adoption and strict fresh-native B03 motion with full local/hosted qualification",
       "commit": "8ebb02dbfa1f3281cd256377f229c0b9f94674ea",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8ebb02dbfa1f3281cd256377f229c0b9f94674ea"
+    },
+    {
+      "title": "Loaded B03 Gazebo C++ clock, complete local poses, control/reset and native body-pose interoperability over unmodified upstream Rust Zenoh",
+      "commit": "43cf8e6900ec769815c8a56600b29ae7b93554f7",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/43cf8e6900ec769815c8a56600b29ae7b93554f7"
     }
   ],
   "remaining": [
@@ -746,7 +751,7 @@
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification.",
-    "DART Scene accepts bounded primitive compounds, offset COM and a free-root three-body/two-revolute serial chain with B03 sampled motion. Broader topology, limits, contacts and backend capability remain unqualified; the loaded-B03 Gazebo C++ interoperability case and equal-work performance remain separate."
+    "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
   "blockers": [
     "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
@@ -778,16 +783,16 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "8ebb02dbfa1f3281cd256377f229c0b9f94674ea",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8ebb02dbfa1f3281cd256377f229c0b9f94674ea",
-    "rust_tests": 923,
+    "revision": "43cf8e6900ec769815c8a56600b29ae7b93554f7",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/43cf8e6900ec769815c8a56600b29ae7b93554f7",
+    "rust_tests": 924,
     "coverage": {
       "lines": [
-        10587,
+        10583,
         10775
       ],
       "regions": [
-        16128,
+        16123,
         16603
       ]
     },
@@ -798,9 +803,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41447340434"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41456359319"
     },
-    "note": "Accepted Main 8ebb02db after the complete 650-second local hook, exact hosted 41447340434 attempt 1 and independent official source/raw/profile/native audit. Results: 923 headless, 546 renderer and 237 tooling tests; inherited ignored counts remain 5/3. Hosted headless coverage is 10587/10775 lines and 16128/16603 regions; renderer is 5944/6058 lines and 8829/9161 regions. Every required production crate and workspace exceeds 95% lines and regions. Audit binds 1137 Git files/modes, 71 sources, 272 inputs and 2069 official artifacts. All 39 inherited cold spans retain zero hits. B03 compares all 486 fresh-native body/joint fields at unchanged 1/10/100-step snapshots and 1e-12; this is not all-101-step parity. Native COM, gauge and serial references remain separate and verified. Failed earlier candidates/helper attempts remain historical. The new loaded-B03 Gazebo C++ wire case is a separate locally checked candidate awaiting hosted qualification; it is not part of this Main acceptance. No equal-work speedup, broad articulation/contact completion, radiometry, physical GPU or original-system completion claim."
+    "note": "Accepted Main 43cf8e69 after the complete 666-second local hook, exact hosted 41456359319 and independent official source/profile/native audit. Results: 924 headless, 546 renderer and 237 tooling tests; inherited ignored counts remain 5/3. Hosted headless coverage is 10583/10775 lines and 16123/16603 regions; renderer is 5944/6058 lines and 8829/9161 regions. Every production crate/workspace exceeds 95% lines and regions; all 39 inherited Light cold spans remain cold, critical error zero. Audit binds 1138 Git blobs/modes, 71 sources, 272 inputs and 2100 official artifacts. Twelve actual Clock/Pose protobuf receipts verify six delivery boundaries, complete 27-record groups, stable IDs/parents and reset. Native projection covers seven body world poses at 1/10/100 and post-reset 1 ms, compared at 1e-12; other records/reset retain owned Scene/local-snapshot checks. Parent B03 physics independently compares 486 fresh values at three snapshots, not all-101-step parity. Upstream Rust Zenoh is unmodified; C++ is the external test peer. New physics-only benchmark results, full-Server equal-work ratios, broad articulation/contact completion, radiometry, physical GPU and original-system completion remain unqualified."
   },
   "phase_status": {
     "P0": "in_progress",
