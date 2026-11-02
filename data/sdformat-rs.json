@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T03:46:36.608374+00:00",
+  "updated_at": "2026-11-02T04:32:31.145204+00:00",
   "state": "active",
   "summary": "Translation-only collision poses in the bounded automatic box/sphere inertia loader are accepted on Main after the mandatory local hook, exact hosted success and independent official audit. Native nonfinite aggregate output remains explicitly refused; broader automatic inertia is partial.",
   "model": "Repository owner",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-02",
       "title": "Prepare bounded origin-centered collision rotation",
-      "detail": "The first mandatory rotation hook passed 56 tooling tests, formatting, Clippy and rustdoc, then failed instrumented Rust tests. One authorized persistent diagnostic on the unchanged tree recovered the actual failure: all four identity-target tests passed; three of four new rotation tests passed, and the native differential failed on a tiny mixed-box product of inertia (Rust 6.394884621840902e-14, native 5.684341886080802e-14) under the unchanged four-ULP assertion. No further case search, numerical-bound change or qualification retry has run. Native data remains 24 finite outputs, 22 valid and two finite invalid aggregates with empty error vectors; warnings and cancellation terms are retained. A source-only failure-log retention proposal is separate. Numerical qualification and independent review remain open; accepted Main stays c6c4bb8 and no consumer pin/Fuel change is made."
+      "detail": "The first rotation hook and one persistent diagnostic retain a real four-ULP mixed-box failure. One authorized standard-library analysis of only that captured case found the Parry principal moment bit-identical to native and isolated a one-ULP quaternion difference; SDK-ordered construction reproduced all nine recorded matrix entries. A completed correction keeps Parry primitive moments and public glam matrix operations, with only a private SDK-ordered Euler/matrix adapter for missing expression and normalization semantics. The four-ULP gate, all numerical helpers, native data and other admission limits remain unchanged. A minimal verifier correction preserves captured failure streams before the same exception, with its existing regression strengthened. Independent final source/data/arithmetic review and corrected mandatory qualification are pending; no additional Rust/native run, candidate search, consumer pin or Fuel change. Accepted Main remains c6c4bb8."
     }
   ],
   "accepted_slices": [
