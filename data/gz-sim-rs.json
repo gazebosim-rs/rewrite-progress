@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T14:50:55.382102Z",
+  "updated_at": "2026-11-02T16:01:40.835840Z",
   "state": "active",
   "summary": "Main accepts B03 sampled native-reference motion and Gazebo C++ clock/pose/control/reset interoperability using unmodified upstream Rust Zenoh. A separately configured physics-only equal-work benchmark is undergoing qualification; full-Server performance and broader physics/rendering remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "A completed, independently source-reviewed physics-only benchmark is undergoing its first actual build/protocol/paired-correctness qualification. Native and Rust actors have no Server/network/IO, explicit unlimited per-pair contacts and honestly labeled settings. All 100 paired frames (16200 values) and actual library bindings must pass before timing is eligible. This is a separate configured contract, not original-default or full-Server equal work; no speedup is claimed."
+      "detail": "Candidate dff3bc7 passed complete local qualification (924 headless, 546 renderer, 249 tooling tests) and independent retained/data audits. Eight configured physics-only pairs matched all 129600 scalar comparisons; the measured median window is 11.743475 ms native versus 23.994811 ms Rust Scene, so Rust is 2.043246 times slower here. Full-Server/default/rewrite speedup remains unqualified. The first two hosted attempts stopped before verification because Ubuntu snapshot HTTP 503 blocked installation. A same-run recovery is pending after one exact index returned HTTP 200; pins, signatures and checks are unchanged."
     },
     {
       "id": "RENDER-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Accepted simulator Main 43cf8e69 pins producer f0d05146, including native radian constructor and scoped-root joint-pose corrections. Producer Main has separately advanced to f4d2e19 with qualified combined translation/rotation automatic inertia for a single box/sphere; that newer producer is not adopted implicitly by the simulator. Broader SDF/geometry coverage remains open."
+      "detail": "Accepted simulator Main 43cf8e69 pins producer f0d05146. The independent producer report tracks further qualified single-primitive inertia increments, including combined poses and cylinders; these are not adopted implicitly by the simulator. Broader SDF/geometry support remains open."
     },
     {
       "id": "LOAD-01",
@@ -754,7 +754,8 @@
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
   "blockers": [
-    "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
+    "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue.",
+    "Exact hosted acceptance of the locally qualified physics-only benchmark remains pending after Ubuntu snapshot HTTP 503 prevented package installation on two attempts. Recovery keeps all pins, signatures and verification requirements intact."
   ],
   "plan_status": {
     "REF-01": "in_progress",
