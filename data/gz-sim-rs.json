@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T00:59:07Z",
+  "updated_at": "2026-11-02T01:03:56Z",
   "state": "active",
-  "summary": "Main remains f0007073. The reviewed compound-collision branch passed the full local hook and retained audit, but its exact hosted run stopped before feature verification because the signed Ubuntu snapshot service returned HTTP503.",
+  "summary": "Main remains f0007073. The compound review branch passed its full local hook and independent audit; exact hosted attempt2 is running after the signed-snapshot service recovered from the preserved attempt1 HTTP503 bootstrap failure.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -64,7 +64,7 @@
     {
       "id": "LOAD-01",
       "title": "Qualify bounded compound-collision Scene loading",
-      "detail": "Published review branch6e330abc passed the full644-second local hook and independent retained source/raw/profile/native audit:887headless and537renderer tests, all required crates above95% lines/regions,39 inherited cold regions preserved. Six actual native inputs/thirty states and three floor responses are audited. Exact hosted41369851664 failed at locked package installation after three signed snapshot endpoints returned HTTP503; feature verification was skipped and no coverage artifact exists. No retry or Main acceptance. Earlier native link/library failures and initial Clippy failure remain separate; offsetCOM, B03 and broader performance remain open."
+      "detail": "Published review branch6e330abc passed the full644-second local hook and independent source/raw/profile/native audit:887headless/537renderer/237tooling checks, strict coverage and39inherited regions preserved. Six native inputs/thirty states/three floor responses are audited. Hosted attempt1 failed before featurechecks because all3locked signed-snapshot endpoints returned HTTP503. After independent HTTP200 recovery checks, only that failed job was rerun once for the unchangedcommit as run41369851664 attempt2; it is active, with no repeated local verification or acceptance. OffsetCOM, B03 and performance remain open."
     }
   ],
   "accepted_slices": [
@@ -734,8 +734,7 @@
     "Scene still requires one supported collision per link and centered mass. Compound collisions, nonzero center of mass, B03 and broader backend capability remain unqualified."
   ],
   "blockers": [
-    "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue.",
-    "Compound exact hosted qualification is blocked by HTTP503 from the locked Ubuntu snapshot service; the failed run reached no feature tests or coverage."
+    "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -783,10 +782,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "failure",
+      "state": "pending",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41369851664"
     },
-    "note": "Review-branch local evidence only: full mandatory hook and independent audit passed at6e330abc;887headless/537renderer tests,237tooling checks, strict headless10182/10360lines15586/16032regions and renderer5850/5962lines8683/9008regions, each required crate above95%. Exact hosted run41369851664 failed before featureverification at signed snapshot HTTP503; no hosted coverage/artifact or acceptance is claimed. Accepted Main remains f0007073. Six native inputs/thirty complete state rows and all390numeric fields were independently bound to qualified compiler/library provenance. All39 inherited baseline regions remain; critical Light error region is still cold. OffsetCOM, B03/fullrobot behavior, broader contacts/topology, Scene lighting, physicalGPU and new performance remain unqualified."
+    "note": "Review-branch local evidence only: full mandatory hook and independent audit passed at6e330abc;887headless/537renderer tests,237tooling checks, strict headless10182/10360lines15586/16032regions and renderer5850/5962lines8683/9008regions, each required crate above95%. Exact hosted run41369851664 attempt1 failed before featureverification at signed snapshot HTTP503. The exact endpoints recovered; one authorized failed-job rerun is now active as attempt2 for the unchangedcommit. Hosted qualification/acceptance remain pending, and the first failure stays separate. Accepted Main remains f0007073. Six native inputs/thirty complete state rows and all390numeric fields were independently bound to qualified compiler/library provenance. All39 inherited baseline regions remain; critical Light error region is still cold. OffsetCOM, B03/fullrobot behavior, broader contacts/topology, Scene lighting, physicalGPU and new performance remain unqualified."
   },
   "phase_status": {
     "P0": "in_progress",
