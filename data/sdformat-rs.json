@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T00:43:26.334840+00:00",
+  "updated_at": "2026-11-02T00:58:35.996775+00:00",
   "state": "active",
-  "summary": "Local identity collision poses for bounded automatic inertia passed the full local mandatory hook. Independent retained-evidence review and hosted qualification are pending; accepted Main remains e196b687.",
+  "summary": "Local identity collision poses for bounded automatic box/sphere inertia are accepted on Main after the full mandatory hook, exact hosted success and independent official source/artifact audit. Broader pose and automatic-inertia behavior remain partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify bounded local identity collision poses",
-      "detail": "Default-Euler numeric identity with no pose attributes reuses the existing parser, density fallback and box/sphere kernel. Two exact historical rejection rows now use independently source-reviewed complete positives; four additional regressions preserve closed pose families, density presence and import/clone provenance. The mandatory local hook passed 697 Rust and 50 tooling tests plus strict coverage. Independent retained audit and hosted qualification are pending; no new original credit or consumer pin is claimed."
+      "title": "Prepare translation-only collision poses",
+      "detail": "Source-only inspection of pinned native behavior and existing Parry center-of-mass/transform APIs for one box or sphere. Rotation must remain numeric identity with no pose attributes; density defaults, validators and provenance stay intact. Old negative expectations are held for prior review. No tests, lints, builds or native probes have run for this next slice."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Support local identity collision poses in bounded automatic inertia",
+      "commit": "8df897c0b691429f1ec6bb8c0fa7c889fafedb50",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8df897c0b691429f1ec6bb8c0fa7c889fafedb50"
+    },
     {
       "title": "Use default collision density for bounded automatic box/sphere inertia",
       "commit": "e196b6875088aeeebbe2baa91a88275f5469b03e",
@@ -959,9 +964,10 @@
       "partial": 35
     },
     "ci": {
-      "state": "unknown",
-      "url": null
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41369038964"
     },
-    "note": "Local mandatory-hook evidence only for the independently source-reviewed identity-pose follow-up; this commit is not yet published or accepted on Main. All-target Clippy, formatting, 697 Rust tests, 50 tooling tests and unchanged strict coverage gates passed. Parent-diff coverage is 4/4 and full-source coverage is 8415/8448. Compiler/LLVM child cleanup was confirmed before the next simulator hook. The first hook stopped at duplicate test-module loading after tooling/formatting; the reviewed module-alias correction preserves every assertion, native bit, corpus, tolerance, production operation and gate. Existing native goldens anchor both exact historical inputs; no new native probes or full-original completion are claimed. Independent retained-data audit, exact hosted CI and official artifact/source qualification remain pending. Main remains accepted e196b687. Pose attributes, nonidentity transforms, frame-relative automatic inertia and broader aggregation stay outside this slice. Original counts remain unchanged; no Fuel, consumer pin, dependency or compiler change."
+    "note": "Accepted Main 8df897c passed the complete mandatory staged hook and exact hosted run 41369038964 attempt 1: 697 Rust and 50 tooling tests, 8816/8857 lines and 13936/14205 regions. Independent official audit verified all 812 Git blobs/modes, source/review bindings, every production summary and all owned local/hosted LCOV hit booleans; the audited report retains 33 cold LCOV lines. Local strict parent-diff and independent hosted replay are 4/4; hosted used actual base-zero full-source mode 8415/8448. The two exact historical identity inputs now use reviewed complete native-value/source/frame positives, with unchanged corpora, old counts, numeric limits and tolerances. Four additional regressions cover ordinary Euler spellings, closed pose families, cloning/import provenance and inherited density presence. The first mandatory hook stopped at Clippy duplicate module loading; the reviewed alias correction changes no assertion or production behavior. Existing native goldens anchor the inputs; no new native probe, full frame-relative original, generic Element or consumer adoption is claimed. Rotation/frame/degree/quaternion families remain outside this accepted identity slice. Original counts remain 207 complete and 35 partial. The translation-only follow-up is source-only and unverified; no Fuel, compiler/dependency or simulator pin change.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8df897c0b691429f1ec6bb8c0fa7c889fafedb50"
   }
 }
