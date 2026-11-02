@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T02:32:55.788980+00:00",
+  "updated_at": "2026-11-02T02:42:35.980791+00:00",
   "state": "active",
   "summary": "Local identity collision poses for bounded automatic box/sphere inertia are accepted on Main after the full mandatory hook, exact hosted success and independent official source/artifact audit. Broader pose and automatic-inertia behavior remain partial.",
   "model": "Repository owner",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-02",
       "title": "Qualify bounded collision translations",
-      "detail": "The reviewed translation batch reuses Parry with the pinned native single-collision accumulation order. One native capture retained all 24 outcomes: 18 finite/valid and six nonfinite/invalid Root aggregates, with warnings and empty error vectors recorded. Independent final source/data review passed. The first mandatory hook passed 54 tooling tests and formatting, then failed Clippy compilation on a new whole-Inertial equality assertion; the source correction compares all four fields against the same default without changing production or assertion intent. Independent fix review and corrected mandatory qualification are pending; Rust runtime, coverage and hosted checks remain unrun."
+      "detail": "The completed translation batch passed its corrected mandatory staged hook locally: 701 Rust and 54 tooling tests, strict coverage 8850/8891 lines and 13999/14268 regions, with 34/34 changed lines covered. Independent source/native-data review retained all 24 native outcomes: 18 finite/valid and six nonfinite/invalid Root aggregates, empty error vectors and recorded warnings. The first Clippy compile failure remains separate; its reviewed default-field correction changes no production or assertion intent. Independent retained audit, review-branch publication and exact hosted/source qualification are pending; accepted Main remains 8df897c."
     }
   ],
   "accepted_slices": [
@@ -967,7 +967,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41369038964"
     },
-    "note": "Accepted Main 8df897c passed the complete mandatory staged hook and exact hosted run 41369038964 attempt 1: 697 Rust and 50 tooling tests, 8816/8857 lines and 13936/14205 regions. Independent official audit verified all 812 Git blobs/modes, source/review bindings, every production summary and all owned local/hosted LCOV hit booleans; the audited report retains 33 cold LCOV lines. Local strict parent-diff and independent hosted replay are 4/4; hosted used actual base-zero full-source mode 8415/8448. The two exact historical identity inputs now use reviewed complete native-value/source/frame positives, with unchanged corpora, old counts, numeric limits and tolerances. Four additional regressions cover ordinary Euler spellings, closed pose families, cloning/import provenance and inherited density presence. The first mandatory hook stopped at Clippy duplicate module loading; the reviewed alias correction changes no assertion or production behavior. Existing native goldens anchor the inputs; no new native probe, full frame-relative original, generic Element or consumer adoption is claimed. Rotation/frame/degree/quaternion families remain outside this accepted identity slice. Original counts remain 207 complete and 35 partial. The translation-only follow-up has reviewed native/source evidence but its first mandatory hook failed during new-test Clippy compilation; Rust runtime and coverage remain unrun, and its fieldwise source correction awaits review and mandatory qualification; no Fuel, compiler/dependency or simulator pin change.",
+    "note": "Accepted Main 8df897c passed the complete mandatory staged hook and exact hosted run 41369038964 attempt 1: 697 Rust and 50 tooling tests, 8816/8857 lines and 13936/14205 regions. Independent official audit verified all 812 Git blobs/modes, source/review bindings, every production summary and all owned local/hosted LCOV hit booleans; the audited report retains 33 cold LCOV lines. Local strict parent-diff and independent hosted replay are 4/4; hosted used actual base-zero full-source mode 8415/8448. The two exact historical identity inputs now use reviewed complete native-value/source/frame positives, with unchanged corpora, old counts, numeric limits and tolerances. Four additional regressions cover ordinary Euler spellings, closed pose families, cloning/import provenance and inherited density presence. The first mandatory hook stopped at Clippy duplicate module loading; the reviewed alias correction changes no assertion or production behavior. Existing native goldens anchor the inputs; no new native probe, full frame-relative original, generic Element or consumer adoption is claimed. Rotation/frame/degree/quaternion families remain outside this accepted identity slice. Original counts remain 207 complete and 35 partial. The translation-only follow-up passed its corrected mandatory hook locally with 701 Rust/54 tooling tests and strict coverage; independent retained/exact hosted audits remain pending and it is not accepted on Main; no Fuel, compiler/dependency or simulator pin change.",
     "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8df897c0b691429f1ec6bb8c0fa7c889fafedb50"
   }
 }
