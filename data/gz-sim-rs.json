@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T19:03:26.473680Z",
+  "updated_at": "2026-11-02T20:02:36.857674Z",
   "state": "active",
-  "summary": "Main accepts the qualified contact-factorization optimization and its audited local physics-only improvement. Metric-depth functional tests passed, but its strict region coverage gate failed; reviewed lifecycle controls await the next parent integration. The primitive-inertia consumer and public measurement appendix passed local checks and await exact hosted acceptance. Broader simulator and full-Server scope remain open.",
+  "summary": "Main adopts qualified centered cylinder/capsule automatic inertia and publishes the complete source-bound contact measurement appendix. Metric-depth passed corrected local checks and independent audit; exact hosted acceptance is pending. Its bounded worker/client depth extension is source-reviewed and remains unrun until the renderer parent is accepted. Broad simulator and full-Server performance scope remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Main a5b296c accepts explicit-lux directional renderer input with full qualification. Pinned SDF/native sources define intensity as relative power with no lux conversion, while Bevy requires lux. Owner policy choice is pending: explicit application-provided calibration or native-image calibration first. No conversion is assumed; Scene extraction, broader cameras and physical GPU remain open. The renderer-only metric-depth feature passed 549 renderer tests, including all three new depth tests, in its first normal gate. Acceptance was blocked by gz-renderer region coverage 1009/1066 (94.65%, required strictly above 95%). Meaningful admission, cancellation and completion-error controls are independently source-reviewed, with production code and old assertions unchanged. Its corrected gate waits for accepted consumer parent integration to avoid a redundant rebase/check round. Near-plane intersections remain explicitly unsupported; no full sensor or physical-GPU parity is claimed."
+      "detail": "Main a5b296c accepts explicit-lux directional renderer input with full qualification. Pinned SDF/native sources define intensity as relative power with no lux conversion, while Bevy requires lux. Owner policy choice is pending: explicit application-provided calibration or native-image calibration first. No conversion is assumed; Scene extraction, broader cameras and physical GPU remain open. Renderer review 386482e5 passed its corrected full local gate and independent retained audit: 928 headless, 553 renderer and 254 tooling checks, including six depth controls. gz-renderer coverage is 786/811 lines and 1019/1066 regions, strictly above 95%; original 1009/1066 failure remains recorded. Exact hosted run 41514311845 and official audit are pending, so no Main acceptance yet. Near-plane intersections remain unsupported and no full sensor/physical-GPU parity is claimed. The worker/client protocol-v3 extension is authored and independently source-reviewed, with compilation/GPU checks held for the accepted renderer parent."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Accepted simulator Main f136e821 still pins producer f0d05146. Root consumer review c5dd02c0 adopts accepted producer a44bf8be and publishes the source-bound contact measurement appendix: its first normal gate passed (928 headless, 547 renderer) plus independent retained/source/archive audit. Exact hosted run 41505982041 is pending; no Main adoption yet. Producer Main 4e4a919b separately qualifies translated capsules, outside this consumer pin. The appendix measured f136/f0d, not the later consumer revision."
+      "detail": "Accepted simulator Main c5dd02c0 pins producer a44bf8be. Exact native-backed centered cylinder/capsule regressions cover mass/tensor, four-backend forces, density, removal and reset. The first complete local gate, exact hosted run 41505982041 and independent official audit passed: 928 headless, 547 renderer and 254 tooling checks. The same commit publishes all 141 actual contact measurement members and their source/provenance report; measured identities remain f136/f0d, not the later consumer pin. Producer Main 1594ac36 separately adds translated capsules and explicit default-Euler attributes, outside this consumer pin."
     },
     {
       "id": "LOAD-01",
@@ -752,6 +752,11 @@
       "title": "Per-pass articulated contact factorization with unchanged numerical guards and audited local equal-work improvement",
       "commit": "f136e8211559dfdd831d39ce73e8132e413404a4",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f136e8211559dfdd831d39ce73e8132e413404a4"
+    },
+    {
+      "title": "Qualified primitive automatic-inertia consumer adoption and complete source-bound contact measurement publication",
+      "commit": "c5dd02c0700baec963464c9e0ce6a8dbc0dfae12",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c5dd02c0700baec963464c9e0ce6a8dbc0dfae12"
     }
   ],
   "remaining": [
@@ -793,9 +798,9 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "f136e8211559dfdd831d39ce73e8132e413404a4",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f136e8211559dfdd831d39ce73e8132e413404a4",
-    "rust_tests": 927,
+    "revision": "c5dd02c0700baec963464c9e0ce6a8dbc0dfae12",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/c5dd02c0700baec963464c9e0ce6a8dbc0dfae12",
+    "rust_tests": 928,
     "coverage": {
       "lines": [
         10585,
@@ -813,9 +818,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41497378596"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41505982041"
     },
-    "note": "Accepted Main f136e821 after the complete corrected 644-second normal hook, exact hosted run 41497378596 and independent official audit. Results: 927 headless, 546 renderer and 254 tooling checks; inherited ignored counts 5/3. Hosted headless coverage is 10585/10775 lines and 16126/16603 regions; renderer is 5946/6058 lines and 8831/9161 regions. All production crates/workspace exceed 95% lines and regions; 39 inherited cold spans and critical error zero are preserved. Audit binds 1149 Git blobs/modes, 71 sources, 272 inputs and 2105 official artifacts; 1704 headless and 222 renderer raw profiles were independently remerged. Historical seven-mode native replay is bound through reviewed source and passing logs; its temporary raw/ELF/maps are not retained by the existing successful exporter. Independent data audit c62aa191 qualifies the separate one-batch physics-only measurement, with all 129600 values within 1e-12. Original baseline archive remains immutable; broader backend, rendering, original-system and full-Server performance scope remains open."
+    "note": "Accepted Main c5dd02c0 after its first 646-second normal integration gate, exact hosted run 41505982041 and independent official source/profile/native/archive audit. Results: 928 headless, 547 renderer and 254 tooling checks; inherited delegated helper counts remain 5/3. Hosted headless coverage: 10585/10775 lines and 16126/16603 regions; renderer: 5946/6058 lines and 8831/9161 regions. Every production crate/workspace exceeds 95% lines and regions; all 39 inherited cold spans remain cold. Audit binds 1155 Git files/modes, 71 sources, 272 inputs and 2107 official artifacts. Selected producer native inputs/observations match accepted a44 source exactly. All 141 new and 119 original measurement archive members are preserved with measured Git identities, independent of the later consumer pin. No new timing batch ran; physical GPU, full native sensor/system parity and full-Server performance remain open."
   },
   "phase_status": {
     "P0": "in_progress",
