@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T13:32:47.413009Z",
+  "updated_at": "2026-11-02T13:50:21.750998Z",
   "state": "active",
-  "summary": "Main accepts bounded DART serial assembly and fresh-native B03 body/joint motion, with producer joint-pose correction and complete local/hosted qualification. Gazebo C++ interoperability testing for this loaded workload is next; broader physics, rendering and equal-work performance remain open.",
+  "summary": "Main accepts bounded DART serial assembly and fresh-native B03 body/joint motion, with producer joint-pose correction and complete local/hosted qualification. Gazebo C++ interoperability testing for this loaded workload is undergoing hosted qualification; broader physics, rendering and equal-work performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -64,7 +64,7 @@
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Main 8ebb02db accepts bounded DART serial construction/reset and B03 motion against fresh-native body/joint snapshots, with published producer f0d05146. Complete local checks, exact hosted CI and independent official audit passed. The next source-reviewed slice tests Gazebo C++ delivery of loaded-B03 clock, poses, control and reset using unmodified upstream Rust Zenoh; that new wire case is still unrun."
+      "detail": "Accepted Main 8ebb02db retains qualified DART serial construction/reset and sampled B03 motion with producer f0d05146. Separate candidate 43cf8e69 passed its complete 666-second local gate and independent retained audit: 924 headless, 546 renderer and 237 tooling tests, strict coverage and all inherited cold regions preserved. Twelve actual Gazebo C++ Clock/Pose protobuf receipts prove six-phase delivery and reset against the native reference. Exact hosted qualification remains pending. Upstream Rust Zenoh is unmodified; C++ is only the external test peer."
     }
   ],
   "accepted_slices": [
@@ -800,7 +800,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41447340434"
     },
-    "note": "Accepted Main 8ebb02db after the complete 650-second local hook, exact hosted 41447340434 attempt 1 and independent official source/raw/profile/native audit. Results: 923 headless, 546 renderer and 237 tooling tests; inherited ignored counts remain 5/3. Hosted headless coverage is 10587/10775 lines and 16128/16603 regions; renderer is 5944/6058 lines and 8829/9161 regions. Every required production crate and workspace exceeds 95% lines and regions. Audit binds 1137 Git files/modes, 71 sources, 272 inputs and 2069 official artifacts. All 39 inherited cold spans retain zero hits. B03 compares all 486 fresh-native body/joint fields at unchanged 1/10/100-step snapshots and 1e-12; this is not all-101-step parity. Native COM, gauge and serial references remain separate and verified. Failed earlier candidates/helper attempts remain historical. The new loaded-B03 Gazebo C++ wire case remains unrun. No equal-work speedup, broad articulation/contact completion, radiometry, physical GPU or original-system completion claim."
+    "note": "Accepted Main 8ebb02db after the complete 650-second local hook, exact hosted 41447340434 attempt 1 and independent official source/raw/profile/native audit. Results: 923 headless, 546 renderer and 237 tooling tests; inherited ignored counts remain 5/3. Hosted headless coverage is 10587/10775 lines and 16128/16603 regions; renderer is 5944/6058 lines and 8829/9161 regions. Every required production crate and workspace exceeds 95% lines and regions. Audit binds 1137 Git files/modes, 71 sources, 272 inputs and 2069 official artifacts. All 39 inherited cold spans retain zero hits. B03 compares all 486 fresh-native body/joint fields at unchanged 1/10/100-step snapshots and 1e-12; this is not all-101-step parity. Native COM, gauge and serial references remain separate and verified. Failed earlier candidates/helper attempts remain historical. The new loaded-B03 Gazebo C++ wire case is a separate locally checked candidate awaiting hosted qualification; it is not part of this Main acceptance. No equal-work speedup, broad articulation/contact completion, radiometry, physical GPU or original-system completion claim."
   },
   "phase_status": {
     "P0": "in_progress",
