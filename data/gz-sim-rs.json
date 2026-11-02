@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T18:38:32.500805Z",
+  "updated_at": "2026-11-02T19:03:26.473680Z",
   "state": "active",
-  "summary": "Main accepts per-pass articulated contact factorization after full local and exact hosted qualification. Its audited physics-only batch reduced Rust median time from 23.99 to 17.55 ms, about 27% less time; native measured 11.67 ms. Metric-depth rendering is source-reviewed and entering qualification. Broader physics, sensors and full-Server performance remain open.",
+  "summary": "Main accepts the qualified contact-factorization optimization and its audited local physics-only improvement. Metric-depth functional tests passed, but its strict region coverage gate failed; reviewed lifecycle controls await the next parent integration. The primitive-inertia consumer and public measurement appendix passed local checks and await exact hosted acceptance. Broader simulator and full-Server scope remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Main a5b296c accepts explicit-lux directional renderer input with full qualification. Pinned SDF/native sources define intensity as relative power with no lux conversion, while Bevy requires lux. Owner policy choice is pending: explicit application-provided calibration or native-image calibration first. No conversion is assumed; Scene extraction, broader cameras and physical GPU remain open. A renderer-only metric-depth feature completed independent source review on accepted f136e821 and is entering its one required normal gate. Near-plane intersections are explicitly unsupported; no full sensor or physical-GPU parity claim is made."
+      "detail": "Main a5b296c accepts explicit-lux directional renderer input with full qualification. Pinned SDF/native sources define intensity as relative power with no lux conversion, while Bevy requires lux. Owner policy choice is pending: explicit application-provided calibration or native-image calibration first. No conversion is assumed; Scene extraction, broader cameras and physical GPU remain open. The renderer-only metric-depth feature passed 549 renderer tests, including all three new depth tests, in its first normal gate. Acceptance was blocked by gz-renderer region coverage 1009/1066 (94.65%, required strictly above 95%). Meaningful admission, cancellation and completion-error controls are independently source-reviewed, with production code and old assertions unchanged. Its corrected gate waits for accepted consumer parent integration to avoid a redundant rebase/check round. Near-plane intersections remain explicitly unsupported; no full sensor or physical-GPU parity is claimed."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Accepted simulator Main f136e821 still pins producer f0d05146. Producer Main 4e4a919b separately qualifies translated capsule inertia; it is not adopted implicitly. Root has a source candidate for producer a44bf8be centered cylinder/capsule adoption, with independent regression review ongoing and consumer verification unrun. Later translation support remains outside this pin."
+      "detail": "Accepted simulator Main f136e821 still pins producer f0d05146. Root consumer review c5dd02c0 adopts accepted producer a44bf8be and publishes the source-bound contact measurement appendix: its first normal gate passed (928 headless, 547 renderer) plus independent retained/source/archive audit. Exact hosted run 41505982041 is pending; no Main adoption yet. Producer Main 4e4a919b separately qualifies translated capsules, outside this consumer pin. The appendix measured f136/f0d, not the later consumer revision."
     },
     {
       "id": "LOAD-01",
