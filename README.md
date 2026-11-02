@@ -18,6 +18,17 @@ plan packet. `plan_status` may say `complete` only when the packet's documented
 acceptance evidence is met. Coverage is a quality measurement, not rewrite progress.
 Fuel has an independent owner; unknown status is displayed as unknown.
 
+The top progress bar counts accepted phase gates from the simulator's live report.
+It is unweighted and does not estimate engineering effort. Missing phase data shows
+an unavailable state rather than fabricated progress.
+
+The coordinator owns `data/forecast.json` on `main`: a dated planning forecast,
+separate from acceptance evidence. `remaining_months` and `preview_weeks` contain
+minimum, midpoint and maximum values. Reassess the estimate when scope or delivery
+rate materially changes and after significant milestones. Remaining time does not
+automatically decrease with the calendar; estimates over 30 days old are flagged.
+A failed forecast refresh preserves the last loaded forecast with its original date.
+
 See [agent update instructions](AGENTS.md) and [the data contract](status-contract.md).
 
 Copyright (C) 2026 Open Source Robotics Foundation. Licensed under

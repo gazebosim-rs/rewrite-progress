@@ -6,6 +6,8 @@ const STATUS_ROOT = "https://raw.githubusercontent.com/gazebosim-rs/rewrite-prog
 const labels = {active: "Active", idle: "Idle", unknown: "Unreported", in_progress: "In progress", in_review: "In review", not_started: "Not started", blocked: "Blocked", complete: "Accepted", success: "Passed", failure: "Failed", pending: "Pending"};
 const reports = new Map();
 let catalog;
+let forecast;
+let forecastUnavailable = false;
 let fetching = false;
 const $ = id => document.getElementById(id);
 const node = (tag, text, className) => {
@@ -30,6 +32,37 @@ function packetState(packet) {
 function timestamp(value) {
   const date = new Date(value);
   return Number.isFinite(date.getTime()) ? date.toLocaleString(undefined, {dateStyle: "medium", timeStyle: "short"}) : "Unknown time";
+}
+function validateForecast(value) {
+  const ordered = range => Array.isArray(range) && range.length === 3 && range.every(n => Number.isFinite(n) && n > 0) && range[0] <= range[1] && range[1] <= range[2];
+  if (value?.schema_version !== 1 || !/^\d{4}-\d{2}-\d{2}$/.test(value.as_of) || !Number.isFinite(Date.parse(value.as_of)) || !ordered(value.remaining_months) || !ordered(value.preview_weeks) || typeof value.assumption !== "string" || typeof value.scope !== "string" || !["Low", "Medium", "High"].includes(value.confidence)) throw new Error("Invalid forecast");
+  return value;
+}
+function renderOutlook() {
+  const phases = reports.get("gz-sim-rs")?.phase_status;
+  const available = catalog.phases.length > 0 && catalog.phases.every(phase => ["complete", "in_progress", "in_review", "not_started", "blocked"].includes(phases?.[phase.id]));
+  const progress = $("phase-progress");
+  if (available) {
+    const accepted = catalog.phases.filter(phase => phases[phase.id] === "complete").length;
+    progress.max = catalog.phases.length; progress.value = accepted;
+    $("phase-count").textContent = `${accepted} / ${catalog.phases.length}`;
+    progress.setAttribute("aria-valuetext", `${accepted} of ${catalog.phases.length} phase gates accepted`);
+  } else {
+    progress.removeAttribute("value"); progress.removeAttribute("aria-valuetext");
+    $("phase-count").textContent = "Status unavailable";
+  }
+  if (!forecast) {
+    $("forecast-range").textContent = "Estimate unavailable";
+    $("forecast-date").textContent = "Refresh to retry. See the implementation plan for remaining scope.";
+    return;
+  }
+  const [min, midpoint, max] = forecast.remaining_months;
+  $("forecast-range").textContent = `${min}–${max} months remaining`;
+  $("forecast-detail").textContent = `${forecast.scope} · ${midpoint}-month midpoint · ${forecast.confidence.toLowerCase()} confidence. ${forecast.assumption}`;
+  $("forecast-preview").textContent = `Selected robots, controllers and cameras preview: ${forecast.preview_weeks[0]}–${forecast.preview_weeks[2]} weeks.`;
+  const date = new Date(`${forecast.as_of}T12:00:00Z`);
+  const stale = Date.now() - date.getTime() > 30 * 86400_000;
+  $("forecast-date").textContent = `Estimated ${date.toLocaleDateString(undefined, {dateStyle: "medium", timeZone: "UTC"})}. Dated planning estimate, not an automatic countdown.${stale ? " Estimate needs review." : ""}${forecastUnavailable ? " Refresh failed; showing the last loaded estimate." : ""}`;
 }
 function renderOverview() {
   const phases = reports.get("gz-sim-rs")?.phase_status || {};
@@ -134,16 +167,21 @@ async function refresh() {
       for (const name of catalog.repositories) { const option = node("option", name); option.value = name; $("repo-filter").append(option); }
     }
     const failures = [];
-    await Promise.all(catalog.repositories.map(async name => {
+    await Promise.all([
+      (async () => {
+        try { forecast = validateForecast(await json(`data/forecast.json?t=${Math.floor(Date.now() / 60_000)}`)); forecastUnavailable = false; }
+        catch { forecastUnavailable = true; }
+      })(),
+      ...catalog.repositories.map(async name => {
       try {
         const report = await json(`${STATUS_ROOT}${name}.json?t=${Math.floor(Date.now() / 60_000)}`);
         if (report.schema_version !== 1 || report.repository !== name || !Array.isArray(report.active) || !Array.isArray(report.remaining) || !Array.isArray(report.accepted_slices) || !Array.isArray(report.blockers) || typeof report.plan_status !== "object") throw new Error("Invalid report");
         reports.set(name, report);
       } catch { failures.push(name); }
-    }));
+    })]);
     $("notice").hidden = failures.length === 0;
     $("notice").textContent = failures.length ? `Could not refresh ${failures.join(", ")}. Previously loaded reports, if available, are retained with their original timestamps. Refresh to retry.` : "";
-    renderOverview(); renderActive(); renderRepos(); renderPackets();
+    renderOutlook(); renderOverview(); renderActive(); renderRepos(); renderPackets();
     $("sync-status").textContent = `Checked ${timestamp(new Date().toISOString())} · ${catalog.repositories.length - failures.length}/${catalog.repositories.length} reports fetched`;
   } catch { $("notice").hidden = false; $("notice").textContent = "The plan catalog could not be loaded. Refresh to retry, or open the linked implementation plan."; $("sync-status").textContent = "Refresh failed"; }
   finally { fetching = false; $("refresh").disabled = false; }

@@ -21,3 +21,7 @@ The user requested an online tracker and instructed repository agents to update 
 - Write summaries, details and remaining scope as plain sentences that the owner
   and the next agent can read; do not use compressed shorthand or internal IDs.
 
+- The coordinator also owns `data/forecast.json` on `main`. Keep the dated time
+  forecast separate from accepted phase counts; reassess after significant
+  milestones, scope changes or a material change in delivery rate. Never infer
+  an engineering completion percentage from elapsed time.
