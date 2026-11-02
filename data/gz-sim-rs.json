@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T09:57:07.012598Z",
+  "updated_at": "2026-11-02T12:16:00.496846Z",
   "state": "active",
   "summary": "Main accepts bounded DART compounds with explicit offset COM and Scene link-origin velocity, input, IMU and reset semantics, backed by actual native comparisons and full local/hosted qualification. B03, broader physics/rendering and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Fresh native B03 observations and their complete 101-frame cached-history fidelity are independently audited. The current Rust candidate retained only steps 1, 10 and 100; its first two snapshots agree within 1e-12, while step 100 fails. This does not identify the first divergent integration step. Raw native frame diagnostics are in source preparation; full trajectory parity and equal-work performance remain unqualified."
+      "detail": "The public native plugin diagnostic exactly reproduces all 16,362 fresh Server body/joint values across 101 frames. Pre-joint-pose-correction Rust diagnostics reproduced their failed candidate exactly and first exceeded 1e-12 at step 35, with transient maximum difference about 0.02225 at step 94. Raw frames, joint semantic inputs and ordered contact observations are independently audited. Complete consumer qualification and equal-work performance remain open."
     },
     {
       "id": "RENDER-01",
@@ -64,7 +64,7 @@
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Accepted simulator Main remains e55356c8. The reviewed constructor-adoption and child-frame candidate failed its single mandatory hook after 359 seconds, without a capacity stop or commit. Rust observations changed; retained steps 1 and 10 remain within 1e-12 of fresh native state, while step 100 still fails, with maximum difference about 0.0001593. Renderer and final coverage were not reached. Public-API raw-frame diagnostics are being prepared to investigate remaining construction differences; no new probe or tolerance change has run."
+      "detail": "Accepted simulator Main remains e55356c8. Published SDF f0d05146 adds independently qualified scoped-root joint semantic-pose evaluation. Its consumer gate passed strict fresh-native B03 motion, then failed after 367 seconds in a newly reached serial lifecycle identity helper. A bounded test-helper correction preserves the failed tree and all trajectory, identity and backend assertions. Later suites and final coverage remain unqualified; no simulator acceptance or causal claim is made."
     }
   ],
   "accepted_slices": [
