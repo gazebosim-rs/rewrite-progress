@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T17:37:25.370740Z",
+  "updated_at": "2026-11-02T18:07:57.414012Z",
   "state": "active",
-  "summary": "Main accepts the configured physics-only B03 equal-work baseline: Rust Scene is 2.043246 times slower on this workload. B03 Gazebo C++ interoperability uses unmodified upstream Rust Zenoh. The reviewed contact-factorization candidate needs a historical-reference source-binding correction before further qualification; broader physics/rendering and full-Server performance remain open.",
+  "summary": "Main accepts the configured physics-only B03 baseline, where Rust Scene is 2.043246 times slower. The contact-factorization candidate passed corrected local qualification and retained evidence audit; exact hosted checks and its new measurement audit remain pending. Broader physics/rendering and full-Server performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance. A per-query-pass factorization reuse candidate passed source review. Its first normal gate stopped on the historical native fixture header binding before native replay; all three added regressions passed, but later checks and final coverage remain unrun. The immutable oracle is preserved while replay provenance is corrected. No candidate timing or speedup is claimed."
+      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance. A per-query-pass factorization reuse candidate passed its corrected full local gate: 927 headless, 546 renderer and 254 tooling checks, plus independent retained audit. The original 316-second historical-header binding failure remains recorded; immutable numeric oracle and all guards are preserved. Review commit f136e821 awaits exact hosted run 41497378596 and official audit. Its one new equal-work batch completed, with data audit pending; no accepted candidate speedup is claimed."
     },
     {
       "id": "REF-01",
