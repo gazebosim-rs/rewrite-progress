@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T16:16:49.443294Z",
+  "updated_at": "2026-11-02T16:25:56.175428Z",
   "state": "active",
   "summary": "Main accepts B03 sampled native-reference motion and Gazebo C++ clock/pose/control/reset interoperability using unmodified upstream Rust Zenoh. A separately configured physics-only equal-work benchmark is undergoing qualification; full-Server performance and broader physics/rendering remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Candidate dff3bc7 passed complete local qualification (924 headless, 546 renderer, 249 tooling tests) and independent data/retained audits. Eight configured physics-only pairs matched 129600 scalar comparisons. Median window: native 11.743475 ms, Rust Scene 23.994811 ms; Rust is 2.043246 times slower here, with no full-Server/rewrite speedup claim. Three hosted attempts stopped before verification on Ubuntu snapshot HTTP 500/502/503. A reviewed CI-only corrective child is undergoing its mandatory local gate: bounded APT retries, no translation downloads and fail-on-any update error; pins, signatures, versions and checks stay intact."
+      "detail": "The physics-only baseline and CI acquisition correction passed local qualification and independent audits; checked candidate e829be51 awaits exact hosted acceptance. Eight configured pairs matched 129600 values. Median window: native 11.743475 ms versus Rust Scene 23.994811 ms, so Rust is 2.043246 times slower here. A per-pass factorization optimization is source-reviewed but untested. Three prior baseline CI attempts stopped before verification on snapshot HTTP 500/502/503. The corrective child adds bounded APT retries, skips translation downloads and fails on any update error; pins, signatures, versions and tests are unchanged. No full-Server or rewrite speedup is claimed."
     },
     {
       "id": "RENDER-01",
@@ -755,7 +755,7 @@
   ],
   "blockers": [
     "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue.",
-    "Hosted acceptance of the locally qualified physics-only baseline is held by Ubuntu snapshot failures before package installation/verification. A reviewed acquisition-resilience correction is being qualified without changing pins, signatures, versions or required checks."
+    "Exact hosted acceptance of the measured physics-only baseline is pending on the checked CI-recovery candidate after upstream snapshot failures. All package pins, signatures, versions and verification gates remain required."
   ],
   "plan_status": {
     "REF-01": "in_progress",
