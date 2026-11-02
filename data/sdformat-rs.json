@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T20:02:20.783499+00:00",
+  "updated_at": "2026-11-02T20:33:56.190265+00:00",
   "state": "active",
   "summary": "Explicit default radian Euler collision-pose attributes are accepted within the existing automatic primitive inertia domains. Existing parsing and maintained/native-ordered math remain unchanged; frames, true degrees, quaternion formats and rotated/mixed Capsule stay closed. Simulator adoption and broader SDFormat behavior remain separate.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review origin single-box/sphere automatic mass override",
-      "detail": "A complete isolated source batch off accepted1594 adds only a positive mass child for one local origin-centered numeric-identity Box/Sphere. Existing Parry geometry and base/aggregate/manual guards remain first; maintained set_mass(M,true) supplies adjusted moments and exact parsed M is retained. Native uses ordered divide-then-multiply, while Parry stores reciprocal mass/principals, so unchanged four-ULP parity is unqualified; no custom formula/provider/fallback/cutoff or dependency change is introduced. Fixed24 reference cases, complete observer/provenance protocol, owned/manual/XML-specificSource/frame/clone/include/density and closed/error regressions are authored. Native observations are empty and all new capture/Rust/lint/coverage checks are UNRUN. Six exact old expectations across four Rust files and every other assertion/corpus remain unchanged pending actual native and independent PRIOR review. Transformed/other-shape overrides, other inertial payloads and multiple collisions remain closed. Consumer/Fuel unchanged; accepted Main quality below stays1594."
+      "title": "Qualify origin single-box/sphere automatic mass overrides",
+      "detail": "The complete source, native evidence and six exact stronger-positive transitions have independent review clearance. Only local origin-centered numeric-identity Box/Sphere mass overrides are added; maintained Parry adjustment supplies moments while exact parsed requested mass is retained. Existing base/manual/numeric guards remain first, with no custom fallback or tolerance change. One native capture retained all24 outcomes:23 complete observations plus one exact controlled subnormal-load refusal with unavailable DOM/map. Reviewed data-only finishing reused every observer output without recompilation/rerun and executed only the original case that had not run, once. Native zero/minimum-normal validity, negative/nonfinite/error defaults and warning distinctions remain explicit. Six prior expectations now use complete same-input helpers; all other tables/order/corpora/predicates stay unchanged. One ordinary mandatory hook is now running; Rust four-ULP parity, full-suite/coverage and hosted qualification are not yet established. Accepted Main quality below remains1594; consumer/Fuel are unchanged."
     }
   ],
   "accepted_slices": [
