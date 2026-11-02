@@ -1,18 +1,23 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T02:42:35.980791+00:00",
+  "updated_at": "2026-11-02T02:59:06.687127+00:00",
   "state": "active",
-  "summary": "Local identity collision poses for bounded automatic box/sphere inertia are accepted on Main after the full mandatory hook, exact hosted success and independent official source/artifact audit. Broader pose and automatic-inertia behavior remain partial.",
+  "summary": "Translation-only collision poses in the bounded automatic box/sphere inertia loader are accepted on Main after the mandatory local hook, exact hosted success and independent official audit. Native nonfinite aggregate output remains explicitly refused; broader automatic inertia is partial.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Qualify bounded collision translations",
-      "detail": "The completed translation batch passed its corrected mandatory staged hook locally: 701 Rust and 54 tooling tests, strict coverage 8850/8891 lines and 13999/14268 regions, with 34/34 changed lines covered. Independent source/native-data review retained all 24 native outcomes: 18 finite/valid and six nonfinite/invalid Root aggregates, empty error vectors and recorded warnings. The first Clippy compile failure remains separate; its reviewed default-field correction changes no production or assertion intent. Independent retained audit, review-branch publication and exact hosted/source qualification are pending; accepted Main remains 8df897c."
+      "title": "Continue bounded SDF semantic loading",
+      "detail": "Translation-only automatic box/sphere inertia is accepted. Rotation and frame/degree/quaternion pose attributes, multiple-collision aggregation, overrides and broader mutable/conversion semantics remain outside this slice. No next implementation claim or simulator dependency adoption is made."
     }
   ],
   "accepted_slices": [
+    {
+      "title": "Preserve selected-native single-collision accumulation for translated automatic box/sphere inertia",
+      "commit": "c6c4bb8561f7dbaa56f26d7578702ecc94eab07d",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c6c4bb8561f7dbaa56f26d7578702ecc94eab07d"
+    },
     {
       "title": "Support local identity collision poses in bounded automatic inertia",
       "commit": "8df897c0b691429f1ec6bb8c0fa7c889fafedb50",
@@ -946,16 +951,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "8df897c0b691429f1ec6bb8c0fa7c889fafedb50",
-    "rust_tests": 697,
+    "revision": "c6c4bb8561f7dbaa56f26d7578702ecc94eab07d",
+    "rust_tests": 701,
     "coverage": {
       "lines": [
-        8816,
-        8857
+        8850,
+        8891
       ],
       "regions": [
-        13936,
-        14205
+        13999,
+        14268
       ]
     },
     "upstream": {
@@ -965,9 +970,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41369038964"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41379392752"
     },
-    "note": "Accepted Main 8df897c passed the complete mandatory staged hook and exact hosted run 41369038964 attempt 1: 697 Rust and 50 tooling tests, 8816/8857 lines and 13936/14205 regions. Independent official audit verified all 812 Git blobs/modes, source/review bindings, every production summary and all owned local/hosted LCOV hit booleans; the audited report retains 33 cold LCOV lines. Local strict parent-diff and independent hosted replay are 4/4; hosted used actual base-zero full-source mode 8415/8448. The two exact historical identity inputs now use reviewed complete native-value/source/frame positives, with unchanged corpora, old counts, numeric limits and tolerances. Four additional regressions cover ordinary Euler spellings, closed pose families, cloning/import provenance and inherited density presence. The first mandatory hook stopped at Clippy duplicate module loading; the reviewed alias correction changes no assertion or production behavior. Existing native goldens anchor the inputs; no new native probe, full frame-relative original, generic Element or consumer adoption is claimed. Rotation/frame/degree/quaternion families remain outside this accepted identity slice. Original counts remain 207 complete and 35 partial. The translation-only follow-up passed its corrected mandatory hook locally with 701 Rust/54 tooling tests and strict coverage; independent retained/exact hosted audits remain pending and it is not accepted on Main; no Fuel, compiler/dependency or simulator pin change.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/8df897c0b691429f1ec6bb8c0fa7c889fafedb50"
+    "note": "Accepted Main c6c4bb8 passed the complete mandatory staged hook and exact hosted run 41379392752 attempt 1: 701 Rust tests, 54 tooling tests, 8850/8891 lines and 13999/14268 regions. Independent official audit verified all 821 Git blobs/modes, source/review bindings, every production summary and all owned local/hosted LCOV hit booleans. Strict parent-diff coverage is 34/34; hosted full-source coverage is 8446/8479, retaining all 33 cold LCOV lines. The single reviewed native capture retains all 24 outcomes and warnings: 18 finite/valid Root aggregates and six nonfinite/invalid Root aggregates; every direct collision inertial is finite/valid and every native error vector is empty. Rust explicitly returns Unsupported for those nonfinite aggregates instead of returning a different valid DOM. No finite COM/tensor residual difference was observed; the private compatibility step follows the selected native operation order without claiming arbitrary-f64 parity. Only the reviewed exact historical translation inputs now use stronger complete-value/source/frame positives; corpora, counts, existing tolerances and the Parry geometry kernels are unchanged. The first mandatory attempt failed Clippy compilation on a new Inertial equality assertion; its separately reviewed fieldwise correction changes no public type or assertion intent. Original counts remain 207 complete and 35 partial. No consumer pin, Fuel, compiler/dependency, performance or broad phase-completion claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/c6c4bb8561f7dbaa56f26d7578702ecc94eab07d"
   }
 }
