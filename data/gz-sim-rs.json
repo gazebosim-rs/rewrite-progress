@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T02:51:17Z",
+  "updated_at": "2026-11-02T03:04:19Z",
   "state": "active",
   "summary": "Main accepts bounded centered-COM DART links with one to three local primitive collisions on one body, including Scene metadata/reset and six exact-input native comparisons. Offset COM, B03, broader physics/rendering and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -64,7 +64,7 @@
     {
       "id": "LOAD-01",
       "title": "Qualify offset-COM Scene point semantics",
-      "detail": "Accepted Main remains6e330abc. The offset-COM follow-up has reviewed backend/Scene origin-velocity/IMU/reset source and actual native references. Its initial compile error and later new cross-origin equality failure remain separate. One exact native22-row diagnostic reproduces both Rust failure values despite equivalent initial physical states; it observes a post-step SDK difference without proving its mechanism. The reviewed correction preserves exact inputs, initial equivalence, one-shot wrench,10\u00d71ms and1e-12, comparing each representation to all actual body/frame/shape rows. One affected mandatory full hook is now active. No corrected Rust parity/full qualification or B03 motion/performance acceptance is claimed."
+      "detail": "Accepted Main remains6e330abc. The offset-COM candidate now passes its native-backed COM/gauge comparisons, including exact per-representation1e-12 checks and one-shot wrench. The367-second affected hook then failed only the never-accepted B03 construction positive with Physics(InvalidJoint); no final coverage/renderer qualification followed. Independent prior review restored the exact B03 metadata test structure/fullsunDTO with that observed typed joint-admission negative, keeping all contact/conditioning guards. One affected full hook is active for this completed correction. Final COM coverage/renderer/hosted acceptance and B03 construction/motion/performance remain pending; earlier compile/gauge failures are separate."
     }
   ],
   "accepted_slices": [
