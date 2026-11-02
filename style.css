@@ -13,3 +13,8 @@
 #phase-progress::-webkit-progress-bar{background:var(--line);border-radius:8px}#phase-progress::-webkit-progress-value{background:var(--accent);border-radius:8px}#phase-progress::-moz-progress-bar{background:var(--accent);border-radius:8px}
 #phase-progress:indeterminate{opacity:.35}.outlook p{font-size:12px;margin:10px 0 0}.forecast{border-left:1px solid var(--line);padding-left:32px}.forecast>strong{font-size:clamp(23px,2.5vw,34px);font-weight:550;letter-spacing:-.8px}#forecast-preview{color:var(--accent)}#forecast-date{font-size:11px}
 @media(max-width:700px){.outlook{grid-template-columns:1fr;padding:20px;gap:24px}.forecast{border-left:0;border-top:1px solid var(--line);padding:22px 0 0}.outlook h2{font-size:20px}}
+
+.delivery-state{margin:12px 0 0;padding:12px 18px;border-left:3px solid var(--amber);background:var(--surface);font-size:13px;color:var(--amber)}
+.delivery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.delivery-card{padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);min-width:0}.delivery-card .repo-top{font-size:11px;flex-wrap:wrap}.delivery-card .repo-top strong{color:var(--accent)}.delivery-card h3{font-size:17px;line-height:1.35;margin:14px 0 10px}.delivery-card p{font-size:12px;color:var(--muted)}.delivery-card details{font-size:12px;border-top:1px solid var(--line);padding-top:12px}.delivery-card:first-child{border-top:2px solid var(--accent)}
+@media(max-width:1100px){.delivery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.delivery-grid{grid-template-columns:1fr}}

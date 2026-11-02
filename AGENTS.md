@@ -25,3 +25,12 @@ The user requested an online tracker and instructed repository agents to update 
   forecast separate from accepted phase counts; reassess after significant
   milestones, scope changes or a material change in delivery rate. Never infer
   an engineering completion percentage from elapsed time.
+
+- D30 replaces the full-rewrite-first forecast with weekly deliveries M1–M12.
+  Coordinator owns `data/delivery.json`, mirrored from gz-sim-rs
+  `planning/delivery-phases.json`. Each budget is 1–5 working days including
+  review and required checks. Keep original P0–P7 status and evidence separate.
+  No M1 acceptance without an actual live Rapier/gzweb-rs run.
+- Planning updates do not resume paused agents or the continuation automation.
+  Forecast schema 2 targets the next runnable MVP after explicit resume; do not
+  display the retired 4–8 month whole-rewrite forecast as the next delivery.

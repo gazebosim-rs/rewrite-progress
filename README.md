@@ -18,16 +18,21 @@ plan packet. `plan_status` may say `complete` only when the packet's documented
 acceptance evidence is met. Coverage is a quality measurement, not rewrite progress.
 Fuel has an independent owner; unknown status is displayed as unknown.
 
-The top progress bar counts accepted phase gates from the simulator's live report.
-It is unweighted and does not estimate engineering effort. Missing phase data shows
-an unavailable state rather than fabricated progress.
+The top progress bar counts accepted M1–M12 deliveries from `data/delivery.json`
+on `main`. These short deliveries are distinct from historical P0–P7 gates.
+Missing schedule data shows an unavailable state. Each phase is budgeted at
+most five working days, including review and mandatory checks. No milestone is
+accepted from its presence in the plan or from older headless evidence.
 
-The coordinator owns `data/forecast.json` on `main`: a dated planning forecast,
-separate from acceptance evidence. `remaining_months` and `preview_weeks` contain
-minimum, midpoint and maximum values. Reassess the estimate when scope or delivery
-rate materially changes and after significant milestones. Remaining time does not
-automatically decrease with the calendar; estimates over 30 days old are flagged.
-A failed forecast refresh preserves the last loaded forecast with its original date.
+The coordinator owns the mirrored weekly plan `data/delivery.json` and the dated
+schema-2 `data/forecast.json` on `main`. Canonical scope is in gz-sim-rs
+`docs/DELIVERY_PLAN.md` and `planning/delivery-phases.json`. Keep both plan copies
+synchronized when accepting a milestone or changing scope. `target_working_days`
+is a 1–5 day scope budget after explicit resume, not a guaranteed countdown or a
+whole-rewrite estimate. `execution_state` makes a pause explicit. Reassess after
+the first day of real browser integration and each significant milestone. A
+failed refresh preserves last-good data with an explicit warning. Estimates over
+30 days old are flagged. The full rewrite has no scheduled completion date.
 
 See [agent update instructions](AGENTS.md) and [the data contract](status-contract.md).
 

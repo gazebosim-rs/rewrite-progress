@@ -7,6 +7,8 @@ const labels = {active: "Active", idle: "Idle", unknown: "Unreported", in_progre
 const reports = new Map();
 let catalog;
 let forecast;
+let delivery;
+let deliveryUnavailable = false;
 let forecastUnavailable = false;
 let fetching = false;
 const $ = id => document.getElementById(id);
@@ -34,35 +36,53 @@ function timestamp(value) {
   return Number.isFinite(date.getTime()) ? date.toLocaleString(undefined, {dateStyle: "medium", timeStyle: "short"}) : "Unknown time";
 }
 function validateForecast(value) {
-  const ordered = range => Array.isArray(range) && range.length === 3 && range.every(n => Number.isFinite(n) && n > 0) && range[0] <= range[1] && range[1] <= range[2];
-  if (value?.schema_version !== 1 || !/^\d{4}-\d{2}-\d{2}$/.test(value.as_of) || !Number.isFinite(Date.parse(value.as_of)) || !ordered(value.remaining_months) || !ordered(value.preview_weeks) || typeof value.assumption !== "string" || typeof value.scope !== "string" || !["Low", "Medium", "High"].includes(value.confidence)) throw new Error("Invalid forecast");
+  if (value?.schema_version !== 2 || !/^\d{4}-\d{2}-\d{2}$/.test(value.as_of) || !Number.isFinite(Date.parse(value.as_of)) || !Number.isInteger(value.target_working_days) || value.target_working_days < 1 || value.target_working_days > 5 || typeof value.assumption !== "string" || typeof value.scope !== "string" || typeof value.clock !== "string" || !["Low", "Medium", "High"].includes(value.confidence)) throw new Error("Invalid forecast");
+  return value;
+}
+function validateDelivery(value) {
+  const states = ["complete", "in_progress", "in_review", "not_started", "blocked"];
+  if (value?.schema_version !== 1 || !["paused", "active"].includes(value.execution_state) || !Array.isArray(value.phases) || !value.phases.length || typeof value.status !== "object" || !value.status || typeof value.later_work !== "string") throw new Error("Invalid delivery plan");
+  const ids = new Set();
+  for (const phase of value.phases) {
+    if (typeof phase.id !== "string" || ids.has(phase.id) || !Number.isInteger(phase.max_working_days) || phase.max_working_days < 1 || phase.max_working_days > 5 || !states.includes(value.status[phase.id]) || !["title", "scope", "acceptance", "excluded"].every(key => typeof phase[key] === "string")) throw new Error("Invalid delivery phase");
+    ids.add(phase.id);
+  }
+  if (!ids.has(value.current_phase)) throw new Error("Invalid current phase");
   return value;
 }
 function renderOutlook() {
-  const phases = reports.get("gz-sim-rs")?.phase_status;
-  const available = catalog.phases.length > 0 && catalog.phases.every(phase => ["complete", "in_progress", "in_review", "not_started", "blocked"].includes(phases?.[phase.id]));
   const progress = $("phase-progress");
-  if (available) {
-    const accepted = catalog.phases.filter(phase => phases[phase.id] === "complete").length;
-    progress.max = catalog.phases.length; progress.value = accepted;
-    $("phase-count").textContent = `${accepted} / ${catalog.phases.length}`;
-    progress.setAttribute("aria-valuetext", `${accepted} of ${catalog.phases.length} phase gates accepted`);
+  if (delivery) {
+    const accepted = delivery.phases.filter(phase => delivery.status[phase.id] === "complete").length;
+    progress.max = delivery.phases.length; progress.value = accepted;
+    $("phase-count").textContent = `${accepted} / ${delivery.phases.length}`;
+    progress.setAttribute("aria-valuetext", `${accepted} of ${delivery.phases.length} weekly deliveries accepted`);
+    $("delivery-state").textContent = `${delivery.execution_state === "paused" ? "Implementation paused — the delivery clock starts only after explicit resume." : "Implementation active — working-day budgets include review and mandatory checks."}${deliveryUnavailable ? " Schedule refresh failed; showing the last loaded plan." : ""}`;
+    $("deliveries").replaceChildren(...delivery.phases.map(phase => {
+      const card = node("article", undefined, "delivery-card");
+      const top = node("div", undefined, "repo-top");
+      top.append(node("strong", `${phase.id} · ${phase.max_working_days} working days`), tag(delivery.status[phase.id]));
+      const criteria = node("details");
+      criteria.append(node("summary", "Acceptance and limits"), node("p", phase.acceptance), node("p", `Deferred: ${phase.excluded}`, "muted"));
+      card.append(top, node("h3", phase.title), node("p", phase.scope), criteria); return card;
+    }));
+    $("delivery-later").textContent = delivery.later_work;
   } else {
     progress.removeAttribute("value"); progress.removeAttribute("aria-valuetext");
-    $("phase-count").textContent = "Status unavailable";
+    $("phase-count").textContent = "Schedule unavailable";
+    $("delivery-state").textContent = "Delivery schedule could not be loaded. Refresh to retry or open the implementation plan.";
   }
   if (!forecast) {
     $("forecast-range").textContent = "Estimate unavailable";
     $("forecast-date").textContent = "Refresh to retry. See the implementation plan for remaining scope.";
     return;
   }
-  const [min, midpoint, max] = forecast.remaining_months;
-  $("forecast-range").textContent = `${min}–${max} months remaining`;
-  $("forecast-detail").textContent = `${forecast.scope} · ${midpoint}-month midpoint · ${forecast.confidence.toLowerCase()} confidence. ${forecast.assumption}`;
-  $("forecast-preview").textContent = `Selected robots, controllers and cameras preview: ${forecast.preview_weeks[0]}–${forecast.preview_weeks[2]} weeks.`;
+  $("forecast-range").textContent = "≤1 working week to MVP";
+  $("forecast-detail").textContent = `${forecast.scope} · Target: ${forecast.target_working_days} working days · ${forecast.confidence.toLowerCase()} confidence. ${forecast.assumption}`;
+  $("forecast-preview").textContent = forecast.clock;
   const date = new Date(`${forecast.as_of}T12:00:00Z`);
   const stale = Date.now() - date.getTime() > 30 * 86400_000;
-  $("forecast-date").textContent = `Estimated ${date.toLocaleDateString(undefined, {dateStyle: "medium", timeZone: "UTC"})}. Dated planning estimate, not an automatic countdown.${stale ? " Estimate needs review." : ""}${forecastUnavailable ? " Refresh failed; showing the last loaded estimate." : ""}`;
+  $("forecast-date").textContent = `Planned ${date.toLocaleDateString(undefined, {dateStyle: "medium", timeZone: "UTC"})}. Scope budget, not a guaranteed date. Full rewrite completion is unscheduled.${stale ? " Estimate needs review." : ""}${forecastUnavailable ? " Refresh failed; showing the last loaded estimate." : ""}`;
 }
 function renderOverview() {
   const phases = reports.get("gz-sim-rs")?.phase_status || {};
@@ -93,6 +113,14 @@ function renderOverview() {
   }));
 }
 function renderActive() {
+  if (!delivery) {
+    $("active-work").replaceChildren(node("p", "Current execution status is unavailable. Refresh the delivery schedule before treating historical repository activity as current work.", "muted"));
+    return;
+  }
+  if (delivery?.execution_state === "paused") {
+    $("active-work").replaceChildren(node("p", "Implementation agents are paused. Next on explicit resume: M1 live Rapier primitives in gzweb-rs. Existing candidate work and accepted evidence are preserved.", "muted"));
+    return;
+  }
   const cards = [];
   for (const name of catalog.repositories) {
     const report = reports.get(name);
@@ -162,12 +190,16 @@ async function refresh() {
   fetching = true; $("refresh").disabled = true; $("sync-status").textContent = "Checking public reports…";
   try {
     if (!catalog) {
-      catalog = await json("data/catalog.json"); $("catalog-source").href = catalog.source_url;
+      catalog = await json("data/catalog.json"); $("catalog-source").href = catalog.delivery_source_url || catalog.source_url;
       $("scope-note").textContent = catalog.scope_note || ""; $("scope-note").hidden = !catalog.scope_note;
       for (const name of catalog.repositories) { const option = node("option", name); option.value = name; $("repo-filter").append(option); }
     }
     const failures = [];
     await Promise.all([
+      (async () => {
+        try { delivery = validateDelivery(await json(`data/delivery.json?t=${Math.floor(Date.now() / 60_000)}`)); deliveryUnavailable = false; }
+        catch { deliveryUnavailable = true; }
+      })(),
       (async () => {
         try { forecast = validateForecast(await json(`data/forecast.json?t=${Math.floor(Date.now() / 60_000)}`)); forecastUnavailable = false; }
         catch { forecastUnavailable = true; }

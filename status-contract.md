@@ -58,3 +58,15 @@ Owner scope decisions may move repositories and packets to catalog
 `retired_repositories` and `retired_packets`. Their reports remain valid historical
 evidence, but retired packets do not count as completed or active release work.
 The dashboard must state when its denominator changes because of scope.
+
+## Weekly deliveries (D30)
+
+P0–P7 `phase_status` remains historical/long-term acceptance evidence. The current
+M1–M12 schedule and its acceptance states live separately in coordinator-owned
+`data/delivery.json` on `main`, mirrored from gz-sim-rs's
+`planning/delivery-phases.json`. This file uses `execution_state` (`paused` or
+`active`), `current_phase`, and `status` with the packet-state vocabulary. Every
+phase has `max_working_days` between one and five, scope, acceptance and explicit
+exclusions. No acceptance transfers automatically from an old phase or packet.
+The forecast schema 2 contains a dated next-delivery target, not months to the
+whole rewrite. A planning update does not reactivate execution.
