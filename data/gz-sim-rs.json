@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T20:52:56.169788Z",
-  "state": "idle",
-  "summary": "Implementation is paused. D30 prioritizes an M1 Rapier primitive MVP running live in gzweb-rs, then mesh, sensor and system deliveries each scoped to at most five working days. No new delivery is accepted yet. Existing Main 386482e5 headless and renderer evidence is preserved.",
+  "updated_at": "2026-11-02T22:33:50.311634Z",
+  "state": "active",
+  "summary": "M1 implementation resumed: Rapier primitive world to a real gzweb-rs live viewer, with a bounded local browser connection and selectable runtime without native physics engines. No M1 acceptance or successful browser execution is claimed yet.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
-  "active": [],
+  "active": [
+    {
+      "id": "M1",
+      "title": "Runnable Rapier primitives in gzweb-rs",
+      "detail": "Coordinator owns simulator/bridge integration; viewer owner implements the live browser consumer; runtime owner removes native SDK dependencies from the selectable profile; source review precedes the first completed vertical-slice build/probe."
+    }
+  ],
   "accepted_slices": [
     {
       "title": "Native-compatible runtime IMU rate control, bounded one-way services and real C++ reset clients",
@@ -713,9 +719,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification.",
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
-  "blockers": [
-    "Implementation paused by owner; no delivery clock runs until explicit resume."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
