@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T05:46:26.045149Z",
+  "updated_at": "2026-11-02T07:54:48.061439Z",
   "state": "active",
   "summary": "Main accepts bounded DART compounds with explicit offset COM and Scene link-origin velocity, input, IMU and reset semantics, backed by actual native comparisons and full local/hosted qualification. B03, broader physics/rendering and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Accepted Main e55356c8 supports bounded primitive DART compounds with explicit offset COM. The new atomic serial-assembly candidate failed its mandatory B03 comparison; it is not accepted. Audited per-tick diagnostics show native link components can be stale while joint samples refresh each tick. Later joint divergence remains unexplained. Fresh native frame observations are being implemented separately; broader topology, contacts and performance remain open."
+      "detail": "Accepted Main e55356c8 supports bounded primitive DART compounds with explicit offset COM. The new child-frame serial-assembly candidate remains unaccepted after its B03 comparison failed. Fresh native origin and COM-point observations are independently audited; later physical divergence remains unresolved. Broader topology, contacts and performance remain open."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The audited native B03 Server capture retains 486 snapshot values, but its body getters read potentially stale ECS components. Separate native and Rust diagnostics retain all 101 frames and exactly reproduce all original step 1, 10 and 100 snapshot values. Fresh native frame observations are being implemented without changing the physical world. Joint divergence remains unresolved; whole-world trajectory parity and equal-work performance are not qualified."
+      "detail": "Fresh native B03 origin and COM-point observations passed independent source and retained-data audit. All 101 cached snapshots reproduce the historical capture exactly by identity; the existing Rust observations were reused. Fresh comparison first differs beyond 1e-12 at step 37 and still has a later maximum difference of about 0.02284. Whole-world trajectory parity and equal-work performance remain unqualified."
     },
     {
       "id": "RENDER-01",
@@ -59,12 +59,12 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Main a5b296c adopts accepted producer13adde94 for world Light includes, with revision-only dependency changes and native fixture provenance. All four backends retain included Light metadata, resolved frame poses and reset identity. Latest producer fc5d4d4 separately accepts owned World light collection helpers; the simulator stays pinned to13 until another reviewed adoption. Broader automatic-inertia and mutable graph/Element domains remain open."
+      "detail": "The simulator remains pinned to producer 13adde94. Producer Main a549b745 separately accepts bounded rotation-only automatic inertia for a single box or sphere after strict local checks, exact hosted CI and independent official audit. Consumer adoption will be reviewed with the next producer correction; it has not happened automatically. Broader inertia and mutable graph domains remain open."
     },
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Accepted Main remains e55356c8. Atomic serial assembly failed its full mandatory hook after 359 seconds at unchanged 1e-12 B03 trajectory bounds. Audited 101-frame observations explain early body mismatches as stale native ECS link rows. Joint velocity differs from step 39 and position from 51, so this does not explain all later physics divergence. Source work is adding fresh native query frames, preserving historical captures and all cached-frame fidelity checks. No tolerance change, passing retry or B03 acceptance is claimed."
+      "detail": "Accepted simulator Main remains e55356c8. The reviewed child-frame serial candidate failed its consolidated mandatory hook after 361 seconds at the unchanged 1e-12 B03 motion comparison. Its 486 retained Rust values are identical to the prior run. New backend and native-reference controls passed before Cargo stopped; renderer and final coverage were not reached. Fresh native observations are audited and retained separately from historical cached data. A confirmed producer Euler-constructor difference is being corrected; its role in B03 divergence remains unproven."
     }
   ],
   "accepted_slices": [
