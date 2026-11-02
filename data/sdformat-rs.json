@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T15:03:17.842558+00:00",
+  "updated_at": "2026-11-02T15:20:08.817239+00:00",
   "state": "active",
   "summary": "Single-cylinder automatic inertia is accepted on Main within the existing one-local-collision pose/density/numeric domain. Parry admission and the attributed SDK-order rotation path preserve existing bounds. Failed native calculations retaining default inertials remain refusals; simulator adoption is separate.",
   "model": "Repository owner",
-  "active": [],
+  "active": [
+    {
+      "id": "SDF-02",
+      "title": "Review origin-centered capsule automatic-inertia source",
+      "detail": "A complete isolated source batch uses maintained Parry for one numeric-identity origin Capsule and maps Y-axis principal moments to SDF Z. It adds a Source-justified native density-prefix finite check and existing public matrix finite-validation convention, without capsule mass/moment/aggregation formulas or new dependencies. Fixed24 native inputs, an unchanged original reference invocation, full owned/source/differential/manual/include and closed-domain regression source are authored. Independent source review is pending; all native, Rust, lint and coverage checks are unrun. Every old test/corpus remains unchanged, including translated/rotated/mixed capsule refusals. Accepted Main quality and original counts below remain unchanged; no consumer or Fuel changes."
+    }
+  ],
   "accepted_slices": [
     {
       "title": "Compute bounded single-cylinder automatic inertia using maintained Parry and native-order rotated values",
