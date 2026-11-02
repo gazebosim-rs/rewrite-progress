@@ -1,18 +1,17 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T14:53:36.072885+00:00",
+  "updated_at": "2026-11-02T15:03:17.842558+00:00",
   "state": "active",
-  "summary": "Combined local translation and rotation now uses the existing single automatic box/sphere inertia path on accepted Main. Native invalid/nonfinite aggregation is conservatively refused; closed frame/attribute/override and numerical domains remain unchanged. Simulator adoption stays separate.",
+  "summary": "Single-cylinder automatic inertia is accepted on Main within the existing one-local-collision pose/density/numeric domain. Parry admission and the attributed SDK-order rotation path preserve existing bounds. Failed native calculations retaining default inertials remain refusals; simulator adoption is separate.",
   "model": "Repository owner",
-  "active": [
-    {
-      "id": "SDF-02",
-      "title": "Qualify single-cylinder automatic inertia",
-      "detail": "Reviewed branch907c96c passed the one mandatory local hook:730 Rust tests,59 tooling checks,9027/9074 lines,14334/14613 regions and16/16 changed executable lines. Independent retained source/native/coverage audit is clear; exact hosted run41466173426 is in progress and official audit/Main promotion remain pending. The fixed native24 capture and unchanged original test passed, retaining two radius-error default inertials separately from18 genuine zero-error valid aggregates, two invalid density extremes and two nonfinite translation extremes. Only the independently approved exact old cylinder negative now calls its complete same-input helper, at unchanged four-ULP bounds. Accepted Main quality below remains unchanged; no simulator pin or Fuel changes."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
+    {
+      "title": "Compute bounded single-cylinder automatic inertia using maintained Parry and native-order rotated values",
+      "commit": "907c96ccfd62c5f64bd232d136f0c68364bda090",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/907c96ccfd62c5f64bd232d136f0c68364bda090"
+    },
     {
       "title": "Compose existing local translation and rotation for automatic single box/sphere inertia",
       "commit": "f4d2e19c810a8db7d176d4b134303db1a415928f",
@@ -971,16 +970,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "f4d2e19c810a8db7d176d4b134303db1a415928f",
-    "rust_tests": 726,
+    "revision": "907c96ccfd62c5f64bd232d136f0c68364bda090",
+    "rust_tests": 730,
     "coverage": {
       "lines": [
-        9013,
-        9060
+        9027,
+        9074
       ],
       "regions": [
-        14307,
-        14586
+        14334,
+        14613
       ]
     },
     "upstream": {
@@ -990,9 +989,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41455593990"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41466173426"
     },
-    "note": "Accepted Main f4d2e19 was fast-forwarded and publicly pushed by Root after the ordinary mandatory hook, independent retained audit, exact hosted41455593990 attempt1 whole success and independent official source/artifact audit828731c8/summary5a9b528e. Actual726 Rust tests in214 clean summaries and59 tooling checks passed, with formatting/all-target Clippy/doc and strict9013/9060 lines14307/14586 regions. All849 official Git blobs/modes, ZIP digest/size and every owned local/hosted coverage summary and LCOV hit boolean match. Strict parent-diff2/2 and actual hosted full-source8608/8642 remain distinct; all34 cold DA lines remain. Only the combined local translation/rotation refusal was removed for existing single automatic box/sphere inertia: accepted Parry admission, SDK scalar/matrix operations, accumulation and manual validation are reused unchanged. One native correctness capture retained all24 fixed cases:18 finite-valid aggregates,2 finite-invalid and4 nonfinite-invalid, all24 direct inertials valid, empty native error vectors and two default-density warnings. No finite-valid center/tensor residual was observed, without a general claim. Conservative inherited Rust numeric refusals are retained; invalid/nonfinite native DOM is not treated as valid. Two exact old mixed-pose inputs now call independently approved complete same-input helpers at unchanged four-ULP bounds; every other old predicate and corpus is retained. The earlier0.5005s driver preflight KeyError occurred before output directory/compiler/native execution and remains separate. Original207 complete/35 partial counts are unchanged. No simulator pin, Fuel, performance, general automatic-inertia or broad phase-completion claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f4d2e19c810a8db7d176d4b134303db1a415928f"
+    "note": "Accepted Main907c96c was fast-forwarded and publicly pushed by Root after the ordinary mandatory hook, independent retained audit, exact hosted41466173426 attempt1 whole success and independent official source/artifact auditda7c30e9/summaryc6d7922e. Actual730 Rust tests in215 clean summaries and59 tooling checks passed with formatting/all-target Clippy/doc;37 production files have9027/9074 lines and14334/14613 regions. All858 official Git blobs/modes, ZIP digest/size, owned coverage summaries and LCOV hit booleans matched local. Strict parent-diff16/16 remains distinct from actual hosted full-source8622/8656; all34 cold lines remain. Cylinder uses locked Parry from_cylinder with a Y-to-Z principal permutation, existing local pose/translation/manual validation and a narrowly attributed SDK-order scalar provider for rotated values. Four-ULP bounds, old scalar arms, density metadata/defaults, pose attributes/references, override/multiplicity and numerical closures remain unchanged. One fixed24-case native correctness capture plus unchanged DOMCylinder.CalculateInertial original passed:18 genuine zero-error valid aggregates, two finite-invalid density extremes and two nonfinite translation extremes; two additional stored-valid defaults follow explicit load/direct error19 for radius extremes and remain refusals, not successful shape calculations. All five warning rows are retained. Only one independently approved exact old cylinder.sdf assertion changed to a complete same-input helper; every other old predicate and corpus is preserved. No native/compiler/product reruns during independent audits, new dependency/public API, original-case completion, simulator pin, Fuel, performance or broad phase-completion claim. Original counts remain207 complete/35 partial of1344.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/907c96ccfd62c5f64bd232d136f0c68364bda090"
   }
 }
