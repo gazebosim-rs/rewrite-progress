@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T12:44:55.628571Z",
+  "updated_at": "2026-11-02T13:32:47.413009Z",
   "state": "active",
-  "summary": "Main accepts bounded DART compounds with explicit offset COM and Scene link-origin velocity, input, IMU and reset semantics, backed by actual native comparisons and full local/hosted qualification. B03, broader physics/rendering and performance remain open.",
+  "summary": "Main accepts bounded DART serial assembly and fresh-native B03 body/joint motion, with producer joint-pose correction and complete local/hosted qualification. Gazebo C++ interoperability testing for this loaded workload is next; broader physics, rendering and equal-work performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "The public native plugin diagnostic exactly reproduces all 16,362 fresh Server body/joint values across 101 frames. Pre-joint-pose-correction Rust diagnostics reproduced their failed candidate exactly and first exceeded 1e-12 at step 35, with transient maximum difference about 0.02225 at step 94. Raw frames, joint semantic inputs and ordered contact observations are independently audited. Complete consumer qualification and equal-work performance remain open."
+      "detail": "Bounded B03 correctness is accepted on Main 8ebb02db at the unchanged 1/10/100-step snapshots. Earlier complete native and Rust diagnostics remain historical evidence. Performance actors still differ in observation and endpoint work and contact configuration; no equal-work eligibility or speedup ratio is claimed. Complete matched-work baseline measurement remains open."
     },
     {
       "id": "RENDER-01",
@@ -64,7 +64,7 @@
     {
       "id": "LOAD-01",
       "title": "Extend Scene loading beyond qualified offset-COM semantics",
-      "detail": "Accepted simulator Main remains e55356c8. Consumer candidate 8ebb02db adopts published SDF f0d05146 and passed its complete mandatory local gate in 650 seconds, including strict fresh-native B03 body/joint motion, serial lifecycle, world-light reset, all backends, existing real C++ Zenoh cases and rendering/coverage checks. Independent retained audit passed; exact hosted CI remains an acceptance prerequisite. Prior failed helper attempts are preserved; the separate loaded-B03 C++ interoperability case has only source review and remains unrun."
+      "detail": "Main 8ebb02db accepts bounded DART serial construction/reset and B03 motion against fresh-native body/joint snapshots, with published producer f0d05146. Complete local checks, exact hosted CI and independent official audit passed. The next source-reviewed slice tests Gazebo C++ delivery of loaded-B03 clock, poses, control and reset using unmodified upstream Rust Zenoh; that new wire case is still unrun."
     }
   ],
   "accepted_slices": [
@@ -732,6 +732,11 @@
       "title": "Bounded DART offset-COM compounds and Scene link-origin velocity/input/IMU/reset semantics with actual native references and full local/hosted qualification",
       "commit": "e55356c8d6a80246d67b5bceb37a93faf1508e6b",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e55356c8d6a80246d67b5bceb37a93faf1508e6b"
+    },
+    {
+      "title": "Bounded DART atomic serial assembly, producer native joint-pose adoption and strict fresh-native B03 motion with full local/hosted qualification",
+      "commit": "8ebb02dbfa1f3281cd256377f229c0b9f94674ea",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8ebb02dbfa1f3281cd256377f229c0b9f94674ea"
     }
   ],
   "remaining": [
@@ -741,7 +746,7 @@
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification.",
-    "DART Scene accepts bounded one-to-three local primitive collisions with explicit offset COM. B03 construction/motion, broader topology/contacts and backend capability remain unqualified."
+    "DART Scene accepts bounded primitive compounds, offset COM and a free-root three-body/two-revolute serial chain with B03 sampled motion. Broader topology, limits, contacts and backend capability remain unqualified; the loaded-B03 Gazebo C++ interoperability case and equal-work performance remain separate."
   ],
   "blockers": [
     "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
@@ -773,17 +778,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "e55356c8d6a80246d67b5bceb37a93faf1508e6b",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e55356c8d6a80246d67b5bceb37a93faf1508e6b",
-    "rust_tests": 899,
+    "revision": "8ebb02dbfa1f3281cd256377f229c0b9f94674ea",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8ebb02dbfa1f3281cd256377f229c0b9f94674ea",
+    "rust_tests": 923,
     "coverage": {
       "lines": [
-        10218,
-        10396
+        10587,
+        10775
       ],
       "regions": [
-        15659,
-        16108
+        16128,
+        16603
       ]
     },
     "upstream": {
@@ -793,9 +798,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41383974766"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41447340434"
     },
-    "note": "Accepted Main e55356c8 after the complete 648-second local hook, exact hosted 41383974766 and independent official source/raw/profile/native audit. Official results: 899 headless tests, 543 renderer tests and 237 tooling checks; inherited ignored counts remain 5/3. Strict headless coverage is 10218/10396 lines and 15659/16108 regions; renderer coverage is 5881/5992 lines and 8745/9072 regions. Every required production crate exceeds 95% lines and regions. Audit binds 1113 Git files/modes, 71 sources, 272 inputs and 2062 artifacts. All 39 inherited cold spans remain cold, including the critical Light error region with zero hits. Six-case COM reference binds 30x22 actual values and the separate gauge reference binds 22x43 actual values, compared at 1e-12. Initial compile, gauge-premise and B03-positive failures plus the 580-second capacity stop remain separate; archives/outside coverage were preserved in capacity repair. B03 retains typed joint-admission refusal. No B03 construction/motion, continuous native IMU, radiometry, physical GPU, original system completion or new performance claim."
+    "note": "Accepted Main 8ebb02db after the complete 650-second local hook, exact hosted 41447340434 attempt 1 and independent official source/raw/profile/native audit. Results: 923 headless, 546 renderer and 237 tooling tests; inherited ignored counts remain 5/3. Hosted headless coverage is 10587/10775 lines and 16128/16603 regions; renderer is 5944/6058 lines and 8829/9161 regions. Every required production crate and workspace exceeds 95% lines and regions. Audit binds 1137 Git files/modes, 71 sources, 272 inputs and 2069 official artifacts. All 39 inherited cold spans retain zero hits. B03 compares all 486 fresh-native body/joint fields at unchanged 1/10/100-step snapshots and 1e-12; this is not all-101-step parity. Native COM, gauge and serial references remain separate and verified. Failed earlier candidates/helper attempts remain historical. The new loaded-B03 Gazebo C++ wire case remains unrun. No equal-work speedup, broad articulation/contact completion, radiometry, physical GPU or original-system completion claim."
   },
   "phase_status": {
     "P0": "in_progress",
