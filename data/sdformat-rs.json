@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T14:39:51.086960+00:00",
+  "updated_at": "2026-11-02T14:53:36.072885+00:00",
   "state": "active",
   "summary": "Combined local translation and rotation now uses the existing single automatic box/sphere inertia path on accepted Main. Native invalid/nonfinite aggregation is conservatively refused; closed frame/attribute/override and numerical domains remain unchanged. Simulator adoption stays separate.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Review actual single-cylinder automatic-inertia reference data",
-      "detail": "The complete source batch passed independent source/protocol review. Its one native capture completed all 24 children and the unchanged original test, retaining 340 compiler inputs and 11 mapped libraries. Eighteen cases have genuine zero-error valid aggregates; two density extremes are finite-invalid and two translation extremes nonfinite-invalid. Two radius extremes report calculation error 19 while retaining valid default inertials; those defaults are explicitly not shape successes. Five warning outputs are retained. Independent actual-data and final source review is pending. Rust/lint/coverage are unrun; the exact old cylinder rejection remains unchanged until approved stronger-positive disposition. Accepted Main quality and original counts below remain unchanged; no consumer or Fuel changes."
+      "title": "Qualify single-cylinder automatic inertia",
+      "detail": "Reviewed branch907c96c passed the one mandatory local hook:730 Rust tests,59 tooling checks,9027/9074 lines,14334/14613 regions and16/16 changed executable lines. Independent retained source/native/coverage audit is clear; exact hosted run41466173426 is in progress and official audit/Main promotion remain pending. The fixed native24 capture and unchanged original test passed, retaining two radius-error default inertials separately from18 genuine zero-error valid aggregates, two invalid density extremes and two nonfinite translation extremes. Only the independently approved exact old cylinder negative now calls its complete same-input helper, at unchanged four-ULP bounds. Accepted Main quality below remains unchanged; no simulator pin or Fuel changes."
     }
   ],
   "accepted_slices": [
