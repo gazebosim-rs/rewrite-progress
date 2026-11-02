@@ -1,18 +1,17 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T13:45:09.253410+00:00",
+  "updated_at": "2026-11-02T14:03:59.849779+00:00",
   "state": "active",
-  "summary": "Loaded joint_pose now follows pinned native containing-scope full-chain evaluation, including nested model aliases, on accepted Main. General pose_of precision shortcuts, public types and existing assertions remain unchanged. Simulator adoption and B03 trajectory fidelity remain separate work.",
+  "summary": "Combined local translation and rotation now uses the existing single automatic box/sphere inertia path on accepted Main. Native invalid/nonfinite aggregation is conservatively refused; closed frame/attribute/override and numerical domains remain unchanged. Simulator adoption stays separate.",
   "model": "Repository owner",
-  "active": [
-    {
-      "id": "SDF-02",
-      "title": "Qualify combined local collision translation and rotation for automatic box/sphere inertia",
-      "detail": "Reviewed branch f4d2e19 passed the one mandatory local hook: 726 Rust tests, 59 tooling checks, 9013/9060 lines, 14307/14586 regions and 2/2 changed executable lines. Independent retained source/native/coverage audit is clear. Exact hosted run 41455593990 is in progress; independent official artifact audit and Root Main promotion remain pending. One actual 24-case native capture retained 18 valid, two finite-invalid and four nonfinite-invalid aggregate results, empty error vectors and two warnings. Only two independently approved same-input old assertions were replaced with complete four-ULP positives. The earlier pre-compiler driver failure remains separate. Accepted Main quality below is unchanged; no simulator pin or Fuel changes."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
+    {
+      "title": "Compose existing local translation and rotation for automatic single box/sphere inertia",
+      "commit": "f4d2e19c810a8db7d176d4b134303db1a415928f",
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f4d2e19c810a8db7d176d4b134303db1a415928f"
+    },
     {
       "title": "Preserve native scoped-root evaluation in loaded joint poses",
       "commit": "f0d05146300e31237d0cf0a6024fdfd9b0ef4226",
@@ -966,16 +965,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "f0d05146300e31237d0cf0a6024fdfd9b0ef4226",
-    "rust_tests": 723,
+    "revision": "f4d2e19c810a8db7d176d4b134303db1a415928f",
+    "rust_tests": 726,
     "coverage": {
       "lines": [
-        9014,
-        9061
+        9013,
+        9060
       ],
       "regions": [
-        14309,
-        14588
+        14307,
+        14586
       ]
     },
     "upstream": {
@@ -985,9 +984,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41438358157"
+      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41455593990"
     },
-    "note": "Accepted Main f0d05146 was fast-forwarded and publicly pushed by Root after the ordinary mandatory hook, independent retained audit, exact hosted41438358157 attempt1 whole success and independent official artifact/source audit. Actual723 Rust tests/213 clean summaries and59 tooling checks passed;37 production files have9014/9061 lines and14309/14588 regions. All841 official Git blobs/modes, ZIP digest and every owned local/hosted coverage summary and LCOV hit boolean were verified. Strict parent-diff74/75 and actual hosted full-source8609/8643 remain distinguished; all34 cold LCOV lines remain, including the genuinely cold changed graph503 call-error propagation line. The existing joint_pose API now evaluates full containing-model/world chains in pinned SDK order, preserving explicit/default model alias edge identity, local target/error/source and loaded-snapshot semantics. General pose_of/resolve_pose shortcuts, all633 inherited test/tool files, native fixtures, bounds, public fields and dependencies remain unchanged. Four existing actual named-joint SemanticPose observations and the full unchanged B03 XML supply the new golden data; no new native capture was made for this slice. Nonzero observed pose components use exact bits; zero values are numeric only, with signed-zero qualification limited. The first394s mandatory attempt passed723Rust/59tools but failed opaque-syntax classification; one retained pure AST query identified a diagnostic literal, and the reviewed static-message binding preserved error laziness and all math without any policy change. That failure remains separate from the final pass. Original counts remain207 complete/35 partial of1344. No simulator pin or Fuel change, B03 causality/fix, physics admission, performance or broad phase-completion claim.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f0d05146300e31237d0cf0a6024fdfd9b0ef4226"
+    "note": "Accepted Main f4d2e19 was fast-forwarded and publicly pushed by Root after the ordinary mandatory hook, independent retained audit, exact hosted41455593990 attempt1 whole success and independent official source/artifact audit828731c8/summary5a9b528e. Actual726 Rust tests in214 clean summaries and59 tooling checks passed, with formatting/all-target Clippy/doc and strict9013/9060 lines14307/14586 regions. All849 official Git blobs/modes, ZIP digest/size and every owned local/hosted coverage summary and LCOV hit boolean match. Strict parent-diff2/2 and actual hosted full-source8608/8642 remain distinct; all34 cold DA lines remain. Only the combined local translation/rotation refusal was removed for existing single automatic box/sphere inertia: accepted Parry admission, SDK scalar/matrix operations, accumulation and manual validation are reused unchanged. One native correctness capture retained all24 fixed cases:18 finite-valid aggregates,2 finite-invalid and4 nonfinite-invalid, all24 direct inertials valid, empty native error vectors and two default-density warnings. No finite-valid center/tensor residual was observed, without a general claim. Conservative inherited Rust numeric refusals are retained; invalid/nonfinite native DOM is not treated as valid. Two exact old mixed-pose inputs now call independently approved complete same-input helpers at unchanged four-ULP bounds; every other old predicate and corpus is retained. The earlier0.5005s driver preflight KeyError occurred before output directory/compiler/native execution and remains separate. Original207 complete/35 partial counts are unchanged. No simulator pin, Fuel, performance, general automatic-inertia or broad phase-completion claim.",
+    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/f4d2e19c810a8db7d176d4b134303db1a415928f"
   }
 }
