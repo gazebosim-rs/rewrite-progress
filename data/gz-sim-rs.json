@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T04:08:30.118211Z",
+  "updated_at": "2026-11-02T04:09:50.508529Z",
   "state": "active",
-  "summary": "Main accepts bounded centered-COM DART links with one to three local primitive collisions on one body, including Scene metadata/reset and six exact-input native comparisons. Offset COM, B03, broader physics/rendering and performance remain open.",
+  "summary": "Main accepts bounded DART compounds with explicit offset COM and Scene link-origin velocity, input, IMU and reset semantics, backed by actual native comparisons and full local/hosted qualification. B03, broader physics/rendering and performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Main6e330abc adds one to three explicitly positioned/rotated sphere, box, cylinder or capsule collisions on one DART body with centered explicit inertia. Scene retains collision metadata/density, stable link/body identities, reset/removal and other-engine/plane guards. Six native inputs and thirty complete13-field states over600individual1ms steps include three actual static-floor responses. Sixteen new controls, full local hook, exact hosted41369851664 attempt2 and independent official source/raw/profile/native audit passed. OffsetCOM, B03, broader topology/contacts and performance remain unqualified."
+      "detail": "Main e55356c8 extends bounded one-to-three primitive DART compounds to explicit offset COM. Actual six-case reference compares thirty complete body/frame states; a separate two-representation gauge reference compares twenty-two states at the unchanged 1e-12 bound. Existing topology, external dynamic-contact, plane and other-backend guards remain. B03 still returns typed joint-admission refusal. Serial two-edge assembly is source-complete and prior-reviewed, with no execution or acceptance yet; broader topology/contact and performance remain open."
     },
     {
       "id": "REF-01",
@@ -39,7 +39,7 @@
     {
       "id": "REF-03",
       "title": "Close P0 balanced-robotics baseline measurements",
-      "detail": "Accepted native reference and bounded Scene serial-chain increments do not qualify balanced robotics. The unchanged Rust B03 world is still rejected at the base link compound-collision boundary. Center-of-mass and broader collision/capability limits, balanced accuracy, quiet measurements and budgets remain open."
+      "detail": "The actual pinned native B03 Server baseline separately captures 100 one-millisecond steps, all seven body/four joint queries and 486 retained snapshot values with independently audited source/compiler/library provenance. Rust B03 still refuses construction with Physics(InvalidJoint); no whole-world trajectory parity or equal-work performance is qualified. Serial assembly is source-complete and prior-reviewed but unexecuted. Balanced accuracy, quiet measurements and budgets remain open."
     },
     {
       "id": "RENDER-01",
@@ -63,8 +63,8 @@
     },
     {
       "id": "LOAD-01",
-      "title": "Qualify offset-COM Scene point semantics",
-      "detail": "Accepted Main remains6e330abc pending coordinator promotion. Review commit e55356c8 passes the complete648-second local hook, exact hosted41383974766 and independent official source/raw/native/strict-coverage audit:899 headless/543 renderer/237 tooling checks, inherited ignored5/3. All39 parent cold spans remain cold. Six-input COM and two-representation gauge comparisons pass at1e-12; Scene link-origin velocity/input/IMU/reset controls qualify this bounded review increment. B03 retains typed Physics(InvalidJoint) refusal. Three earlier new-test failures and580-second capacity interruption remain separate; Root capacity repair preserved archives/outside coverage and unchanged-source completion had12.40GB minimum free. No B03 construction/motion, broader topology or performance claim."
+      "title": "Extend Scene loading beyond qualified offset-COM semantics",
+      "detail": "Main e55356c8 accepts Scene link-origin velocity, configured world-velocity input, IMU finite differences and loaded reset for bounded DART offset-COM compounds; backend BodyState velocity remains at COM. Complete 648-second local hook, exact hosted 41383974766 and independent official audit passed: 899 headless, 543 renderer and 237 tooling checks. All 39 inherited cold spans remain cold. Three earlier new-test failures and the 580-second capacity stop remain separate; capacity repair preserved archives and outside coverage. B03 construction/motion, continuous native IMU parity and performance remain unqualified."
     }
   ],
   "accepted_slices": [
@@ -727,6 +727,11 @@
       "title": "Bounded DART compound-link primitives and Scene loading with sixteen controls, thirty actual native body states and full local/hosted qualification",
       "commit": "6e330abc56b001082320347ea665482865deeaa9",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/6e330abc56b001082320347ea665482865deeaa9"
+    },
+    {
+      "title": "Bounded DART offset-COM compounds and Scene link-origin velocity/input/IMU/reset semantics with actual native references and full local/hosted qualification",
+      "commit": "e55356c8d6a80246d67b5bceb37a93faf1508e6b",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e55356c8d6a80246d67b5bceb37a93faf1508e6b"
     }
   ],
   "remaining": [
@@ -736,7 +741,7 @@
     "Bevy rendering, asset pipeline, sensor scheduling/noise and remaining sensor families.",
     "All 78 system migrations, built-in system activation/teardown, full world/logging/scripting/CLI behavior.",
     "Complete upstream parity, feature coverage, comparative performance and release qualification.",
-    "DART Scene now admits one to three bounded local primitive collisions per link with centered mass. Nonzero center of mass, B03 and broader backend capability remain unqualified."
+    "DART Scene accepts bounded one-to-three local primitive collisions with explicit offset COM. B03 construction/motion, broader topology/contacts and backend capability remain unqualified."
   ],
   "blockers": [
     "Scene directional lighting awaits an owner choice of intensity-to-lux calibration policy; independent implementation and qualification continue."
@@ -768,17 +773,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "6e330abc56b001082320347ea665482865deeaa9",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/6e330abc56b001082320347ea665482865deeaa9",
-    "rust_tests": 887,
+    "revision": "e55356c8d6a80246d67b5bceb37a93faf1508e6b",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e55356c8d6a80246d67b5bceb37a93faf1508e6b",
+    "rust_tests": 899,
     "coverage": {
       "lines": [
-        10184,
-        10360
+        10218,
+        10396
       ],
       "regions": [
-        15587,
-        16032
+        15659,
+        16108
       ]
     },
     "upstream": {
@@ -788,9 +793,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41369851664"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41383974766"
     },
-    "note": "Accepted Main6e330abc after independent source review, full644-second local hook, exact hosted41369851664 attempt2 success and official downloaded source/profile/raw/native audit. Hosted887headless/537renderer/237tooling checks passed; inherited ignored counts5/3 remain. Strict headless10184/10360lines15587/16032regions and renderer5852/5962lines8685/9008regions; every required production crate exceeds95% lines/regions. Audit binds1099Gitblobs/modes,71sources,272inputs,2058artifacts and all39inherited cold regions. Six exact native inputs/thirty complete13-field states and all390numeric fields retain actual qualified compiler/library provenance; sixteen new controls passed. Hosted attempt1 failed before featurechecks at signed-snapshot HTTP503 and remains separate; one failed-job rerun followed verified endpoint recovery, without source/pin changes. OffsetCOM, B03/fullrobot trajectories, broader topology/contacts, Scene light rendering, radiometry, physicalGPU and new comparative performance remain unqualified."
+    "note": "Accepted Main e55356c8 after the complete 648-second local hook, exact hosted 41383974766 and independent official source/raw/profile/native audit. Official results: 899 headless tests, 543 renderer tests and 237 tooling checks; inherited ignored counts remain 5/3. Strict headless coverage is 10218/10396 lines and 15659/16108 regions; renderer coverage is 5881/5992 lines and 8745/9072 regions. Every required production crate exceeds 95% lines and regions. Audit binds 1113 Git files/modes, 71 sources, 272 inputs and 2062 artifacts. All 39 inherited cold spans remain cold, including the critical Light error region with zero hits. Six-case COM reference binds 30x22 actual values and the separate gauge reference binds 22x43 actual values, compared at 1e-12. Initial compile, gauge-premise and B03-positive failures plus the 580-second capacity stop remain separate; archives/outside coverage were preserved in capacity repair. B03 retains typed joint-admission refusal. No B03 construction/motion, continuous native IMU, radiometry, physical GPU, original system completion or new performance claim."
   },
   "phase_status": {
     "P0": "in_progress",
