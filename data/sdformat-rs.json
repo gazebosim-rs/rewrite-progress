@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-02T04:51:53.297762+00:00",
+  "updated_at": "2026-11-02T05:19:29.844561+00:00",
   "state": "active",
   "summary": "Translation-only collision poses in the bounded automatic box/sphere inertia loader are accepted on Main after the mandatory local hook, exact hosted success and independent official audit. Native nonfinite aggregate output remains explicitly refused; broader automatic inertia is partial.",
   "model": "Repository owner",
@@ -9,7 +9,7 @@
     {
       "id": "SDF-02",
       "title": "Prepare bounded origin-centered collision rotation",
-      "detail": "The reviewed SDK-ordered rotation correction passed mandatory tooling (56 tests), formatting, Clippy and rustdoc, but its corrected instrumented Rust run still failed the unchanged four-ULP native differential: anisotropic mixed-box iyz was 4.6967674437578495 versus native 4.696767443757793. The earlier isotropic mixed-box failure was passed before this final corpus row; no complete 24-case, full-suite or coverage qualification is claimed. The new failure-output retention worked and preserved the exact assertion in the ordinary hook log. Both mandatory failures and the single earlier diagnostic remain distinct. No further execution, bound/cutoff/geometry-formula change, native search, consumer pin or Fuel change has run. Accepted Main remains c6c4bb8; the remaining numerical source/kernel gap needs review."
+      "detail": "The two retained rotation hook failures exposed distinct precision gaps. A single all-nine-entry analysis of the second failure showed native-compatible rotation but Parry principal rounding of 2/0/1 ULP amplifying to a failed 64-ULP product. After that concrete proof, the coordinator approved a narrow source-scope exception: private SDK-ordered mass/principal evaluation only for newly rotated existing boxes/spheres. Parry admission and every accepted unrotated/translation/manual path remain retained. The completed source batch adds all-24 captured raw-scalar and source-derived overflow controls, keeps four-ULP helpers, goldens and all prior limits unchanged, and preserves exact upstream attribution. Final independent source/data review and corrected mandatory qualification are pending; no new test, native capture, arithmetic search, dependency, consumer pin or Fuel change. Main remains c6c4bb8."
     }
   ],
   "accepted_slices": [
