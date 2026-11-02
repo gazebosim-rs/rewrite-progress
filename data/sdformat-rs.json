@@ -1,16 +1,15 @@
 {
   "schema_version": 1,
   "repository": "sdformat-rs",
-  "updated_at": "2026-11-01T23:51:31.896839+00:00",
+  "updated_at": "2026-11-02T00:43:26.334840+00:00",
   "state": "active",
-  "summary": "Default collision density for bounded automatic box/sphere inertia is accepted on Main after the full strict local hook, exact hosted success and independent source/artifact audits. Broader automatic inertia remains partial.",
+  "summary": "Local identity collision poses for bounded automatic inertia passed the full local mandatory hook. Independent retained-evidence review and hosted qualification are pending; accepted Main remains e196b687.",
   "model": "Repository owner",
   "active": [
     {
       "id": "SDF-02",
-      "title": "Source-only local identity-pose follow-up",
-      "detail": "A completed source batch on accepted default-density commit e196b687 preserves density fallback and prepares default-Euler local identity-pose handling. The two historical identity expectations remain held for independent review. No identity-pose tests, lints, builds or native probes have run; this follow-up is not accepted.",
-      "evidence_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e196b6875088aeeebbe2baa91a88275f5469b03e"
+      "title": "Qualify bounded local identity collision poses",
+      "detail": "Default-Euler numeric identity with no pose attributes reuses the existing parser, density fallback and box/sphere kernel. Two exact historical rejection rows now use independently source-reviewed complete positives; four additional regressions preserve closed pose families, density presence and import/clone provenance. The mandatory local hook passed 697 Rust and 50 tooling tests plus strict coverage. Independent retained audit and hosted qualification are pending; no new original credit or consumer pin is claimed."
     }
   ],
   "accepted_slices": [
@@ -942,16 +941,16 @@
     "SDF-02": "in_progress"
   },
   "quality": {
-    "revision": "e196b6875088aeeebbe2baa91a88275f5469b03e",
-    "rust_tests": 693,
+    "revision": "8df897c0b691429f1ec6bb8c0fa7c889fafedb50",
+    "rust_tests": 697,
     "coverage": {
       "lines": [
-        8812,
-        8853
+        8816,
+        8857
       ],
       "regions": [
-        13930,
-        14199
+        13936,
+        14205
       ]
     },
     "upstream": {
@@ -960,10 +959,9 @@
       "partial": 35
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/sdformat-rs/actions/runs/41363205324"
+      "state": "unknown",
+      "url": null
     },
-    "note": "Accepted Main e196b687 passed the complete ordinary staged hook and exact hosted run 41363205324 attempt 1: 693 Rust and 50 tooling tests, 8812/8853 lines and 13930/14199 regions. Independent official audit verified all 808 Git blobs/modes, source/protected bindings, all 37 production summaries and local/hosted owned LCOV hit equality; all 33 cold LCOV lines remain. Local strict parent-diff coverage and independent hosted replay are 3/3; hosted used actual base-zero full-source mode 8412/8445. The bounded single-origin box/sphere loader retains omitted density as None and empty/whitespace density as Some(1000), using the existing Parry kernel and unchanged manual validator. Exact historical inputs now have independently reviewed stronger positives with unchanged corpora, native bits, counts and tolerances. Separate local native evidence covers 86 density observations, the unchanged broader native density original and two fixed-input oracles with 40 sphere projections; the hosted audit did not rerun native code. Strict warning-policy partial DOM, link density, translated poses, aggregation and broader native automatic-inertia behavior remain unqualified. Original port counts remain unchanged. The first lost temporary failure log, one persistent diagnostic, formatting failure and final pass remain distinct. Identity-pose source is unexecuted and awaits independent review. No Fuel, simulator consumer pin, dependency/toolchain or coverage-policy changes are claimed.",
-    "revision_url": "https://github.com/gazebosim-rs/sdformat-rs/commit/e196b6875088aeeebbe2baa91a88275f5469b03e"
+    "note": "Local mandatory-hook evidence only for the independently source-reviewed identity-pose follow-up; this commit is not yet published or accepted on Main. All-target Clippy, formatting, 697 Rust tests, 50 tooling tests and unchanged strict coverage gates passed. Parent-diff coverage is 4/4 and full-source coverage is 8415/8448. Compiler/LLVM child cleanup was confirmed before the next simulator hook. The first hook stopped at duplicate test-module loading after tooling/formatting; the reviewed module-alias correction preserves every assertion, native bit, corpus, tolerance, production operation and gate. Existing native goldens anchor both exact historical inputs; no new native probes or full-original completion are claimed. Independent retained-data audit, exact hosted CI and official artifact/source qualification remain pending. Main remains accepted e196b687. Pose attributes, nonidentity transforms, frame-relative automatic inertia and broader aggregation stay outside this slice. Original counts remain unchanged; no Fuel, consumer pin, dependency or compiler change."
   }
 }
