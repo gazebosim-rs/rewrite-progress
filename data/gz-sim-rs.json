@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T18:18:58.886820Z",
+  "updated_at": "2026-11-02T18:38:32.500805Z",
   "state": "active",
-  "summary": "Main retains the accepted physics-only B03 baseline. A source-reviewed contact-factorization candidate passed corrected local qualification and independent data audit: Rust median fell from 23.99 to 17.55 ms, about 27% less time; its native peer measured 11.67 ms. Exact hosted acceptance remains pending. Broader physics/rendering and full-Server performance remain open.",
+  "summary": "Main accepts per-pass articulated contact factorization after full local and exact hosted qualification. Its audited physics-only batch reduced Rust median time from 23.99 to 17.55 ms, about 27% less time; native measured 11.67 ms. Metric-depth rendering is source-reviewed and entering qualification. Broader physics, sensors and full-Server performance remain open.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -24,7 +24,7 @@
     {
       "id": "PHY-03",
       "title": "Extend DART Scene admission beyond the qualified serial chain",
-      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance. The contact-factorization candidate passed its corrected local gate (927 headless, 546 renderer, 254 tooling) and independent retained/data audits. Its single configured batch matched all 129600 values at 1e-12: native median 11.673473 ms, Rust 17.553577 ms. Rust took 26.8443% less time than the prior 23.994811 ms batch and remained 1.503715 times slower than its native peer. This is one host and physics-only workload, including Scene synchronization. Review f136e821 awaits exact hosted run 41497378596 and official audit; Main is unchanged. The initial 316-second replay-binding failure and subsequent metadata audit refusal remain distinct, with the oracle and numerical guards preserved."
+      "detail": "Main 43cf8e69 accepts bounded offset-COM primitive compounds and a free-root three-body/two-revolute DART chain, with serial lifecycle/reset and strict fresh-native B03 body/joint comparisons at 1/10/100 snapshots. Actual Gazebo C++ control/clock/pose/reset delivery is also qualified. This does not accept all-101-step parity, general articulations, broader contacts/meshes or matched performance. Accepted Main f136e821 reuses factorization within an immutable contact query pass, preserving all numerical guards and the historical oracle. Full local and exact hosted run 41497378596 plus independent official audit passed: 927 headless, 546 renderer and 254 tooling checks. Its audited one-host physics-only batch matched 129600 values: native 11.673473 ms, Rust 17.553577 ms. Rust took 26.8443% less time than the prior batch and remained 1.503715 times slower than its native peer. Scene synchronization is included; full-Server performance remains open. The initial replay-binding failure and metadata audit refusal remain recorded separately."
     },
     {
       "id": "REF-01",
@@ -44,7 +44,7 @@
     {
       "id": "RENDER-01",
       "title": "Building sensor output from accepted camera snapshots",
-      "detail": "Main a5b296c accepts explicit-lux directional renderer input with full qualification. Pinned SDF/native sources define intensity as relative power with no lux conversion, while Bevy requires lux. Owner policy choice is pending: explicit application-provided calibration or native-image calibration first. No conversion is assumed; Scene extraction, broader cameras and physical GPU remain open."
+      "detail": "Main a5b296c accepts explicit-lux directional renderer input with full qualification. Pinned SDF/native sources define intensity as relative power with no lux conversion, while Bevy requires lux. Owner policy choice is pending: explicit application-provided calibration or native-image calibration first. No conversion is assumed; Scene extraction, broader cameras and physical GPU remain open. A renderer-only metric-depth feature completed independent source review on accepted f136e821 and is entering its one required normal gate. Near-plane intersections are explicitly unsupported; no full sensor or physical-GPU parity claim is made."
     },
     {
       "id": "QLT-01",
@@ -59,7 +59,7 @@
     {
       "id": "SDF-02",
       "title": "Adopt accepted manual inertia and legacy IMU parsing",
-      "detail": "Accepted simulator Main 43cf8e69 pins producer f0d05146. The independent producer report tracks further qualified single-primitive inertia increments, including combined poses and cylinders; these are not adopted implicitly by the simulator. Broader SDF/geometry support remains open. A separate Root source candidate adopts accepted producer a44bf8be and adds native-backed centered cylinder/capsule backend/reset checks; independent source review is pending and no consumer verification has run."
+      "detail": "Accepted simulator Main f136e821 still pins producer f0d05146. Producer Main 4e4a919b separately qualifies translated capsule inertia; it is not adopted implicitly. Root has a source candidate for producer a44bf8be centered cylinder/capsule adoption, with independent regression review ongoing and consumer verification unrun. Later translation support remains outside this pin."
     },
     {
       "id": "LOAD-01",
@@ -747,6 +747,11 @@
       "title": "Configured physics-only B03 baseline, complete paired observations and strict signed-snapshot CI acquisition",
       "commit": "e829be51d42fed27268606528ba758a93efc37a2",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e829be51d42fed27268606528ba758a93efc37a2"
+    },
+    {
+      "title": "Per-pass articulated contact factorization with unchanged numerical guards and audited local equal-work improvement",
+      "commit": "f136e8211559dfdd831d39ce73e8132e413404a4",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f136e8211559dfdd831d39ce73e8132e413404a4"
     }
   ],
   "remaining": [
@@ -788,16 +793,16 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "e829be51d42fed27268606528ba758a93efc37a2",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e829be51d42fed27268606528ba758a93efc37a2",
-    "rust_tests": 924,
+    "revision": "f136e8211559dfdd831d39ce73e8132e413404a4",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f136e8211559dfdd831d39ce73e8132e413404a4",
+    "rust_tests": 927,
     "coverage": {
       "lines": [
-        10583,
+        10585,
         10775
       ],
       "regions": [
-        16123,
+        16126,
         16603
       ]
     },
@@ -808,9 +813,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41481267132"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41497378596"
     },
-    "note": "Accepted Main e829be51 after mandatory local gates, exact hosted run 41481267132 and independent official source/profile/native/archive audit. Results: 924 headless, 546 renderer and 249 tooling checks; inherited ignored counts remain 5/3. Hosted headless coverage: 10583/10775 lines and 16123/16603 regions. Renderer: 5944/6058 lines and 8829/9161 regions. All production crates/workspace exceed 95% lines and regions; 39 inherited cold spans and critical error zero are preserved. Audit binds 1146 Git blobs/modes, 71 sources, 272 inputs and 2102 official artifacts. The immutable 119-member physics-only archive proves 129600 scalar comparisons, maximum error 4.440892098500626e-16. Rust/native median window ratio is 2.043246: Rust is slower. Accepted B03 clock/pose/control/reset uses unmodified Rust Zenoh with an external C++ peer. Full-Server performance, broad articulation/contact completion, radiometry, physical GPU and original-system completion remain open."
+    "note": "Accepted Main f136e821 after the complete corrected 644-second normal hook, exact hosted run 41497378596 and independent official audit. Results: 927 headless, 546 renderer and 254 tooling checks; inherited ignored counts 5/3. Hosted headless coverage is 10585/10775 lines and 16126/16603 regions; renderer is 5946/6058 lines and 8831/9161 regions. All production crates/workspace exceed 95% lines and regions; 39 inherited cold spans and critical error zero are preserved. Audit binds 1149 Git blobs/modes, 71 sources, 272 inputs and 2105 official artifacts; 1704 headless and 222 renderer raw profiles were independently remerged. Historical seven-mode native replay is bound through reviewed source and passing logs; its temporary raw/ELF/maps are not retained by the existing successful exporter. Independent data audit c62aa191 qualifies the separate one-batch physics-only measurement, with all 129600 values within 1e-12. Original baseline archive remains immutable; broader backend, rendering, original-system and full-Server performance scope remains open."
   },
   "phase_status": {
     "P0": "in_progress",
