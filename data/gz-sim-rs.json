@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-03T04:26:54.753221+00:00",
+  "updated_at": "2026-11-03T05:08:07.425433+00:00",
   "state": "active",
-  "summary": "M1 runs live in gzweb-rs with 20 moving Rapier primitive bodies and working controls. The simulator passed its complete local gates and independent evidence review; viewer qualification and exact hosted CI remain pending, so M1 is not yet accepted.",
+  "summary": "M1 already runs live with Rapier primitives and working browser controls. A compatible upstream executor patch replaces a yanked dependency; updated viewer builds and fresh live observations precede final qualification. M1 acceptance remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M1",
-      "title": "Finish verification of the runnable Rapier MVP",
-      "detail": "Both current viewer bundles build, and the actual WebGL2 browser shows 21 visual entities with committed pause, resume and reset. Simulator commit 1a2648de passed 952 headless, 555 renderer and 276 tooling checks, plus ten tests of the build without native physics libraries. Independent review confirmed the unchanged per-crate coverage gates. Its hosted run is https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41577873518; viewer final checks are now running."
+      "title": "Qualify the patched runnable MVP",
+      "detail": "Simulator review commit 1a2648de passed its full local gates, independent audit and hosted CI. The viewer passed five hosted jobs; its advisory gate rejected the old executor dependency. Both repositories now select the compatible upstream patch without changing features, assertions or quality policies. The patched simulator builds; current WebGPU/WebGL2 viewer builds and a fresh control/reconnect observation come before qualification of this new dependency graph."
     }
   ],
   "accepted_slices": [
@@ -710,7 +710,7 @@
     }
   ],
   "remaining": [
-    "Finish the viewer required checks and exact hosted CI for both repositories, then accept M1 and update the delivery ledger. Mesh visuals, mesh collisions, individual sensors and focused systems remain later weekly deliveries; broad P0\u2013P7 compatibility is deferred.",
+    "Complete patched viewer builds and fresh browser evidence, then required local and exact hosted qualification for the patched simulator and viewer. Only then accept M1. Mesh visuals, mesh collisions, individual sensors and focused systems remain later weekly deliveries.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
