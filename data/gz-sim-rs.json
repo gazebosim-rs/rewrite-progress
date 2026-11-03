@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-03T05:08:07.425433+00:00",
+  "updated_at": "2026-11-03T07:40:39.084970+00:00",
   "state": "active",
-  "summary": "M1 already runs live with Rapier primitives and working browser controls. A compatible upstream executor patch replaces a yanked dependency; updated viewer builds and fresh live observations precede final qualification. M1 acceptance remains pending.",
+  "summary": "M1 is accepted and published: a live Rapier f64 box/sphere world in gzweb-rs with pause, resume, reset and reconnect. M2 now adds local glTF visuals while retaining primitive collisions, targeted within three working days.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M1",
-      "title": "Qualify the patched runnable MVP",
-      "detail": "Simulator review commit 1a2648de passed its full local gates, independent audit and hosted CI. The viewer passed five hosted jobs; its advisory gate rejected the old executor dependency. Both repositories now select the compatible upstream patch without changing features, assertions or quality policies. The patched simulator builds; current WebGPU/WebGL2 viewer builds and a fresh control/reconnect observation come before qualification of this new dependency graph."
+      "id": "M2",
+      "title": "Local mesh visualization",
+      "detail": "Reuse the accepted live scene and maintained viewer loader. Add bounded local glTF 2.0 resources, correct mesh scale and orientation, and clear asset errors. Mesh collisions and remote assets remain later scope. Finish implementation and independent source review before one consolidated required verification pass."
     }
   ],
   "accepted_slices": [
@@ -707,10 +707,15 @@
       "title": "Calibrated programmatic box metric depth from the retained Bevy attachment with bounded readback lifecycle",
       "commit": "386482e5365d827a1c0d1e8ad7ca654fe93902bf",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/386482e5365d827a1c0d1e8ad7ca654fe93902bf"
+    },
+    {
+      "title": "M1 runnable Rapier primitive MVP with actual live browser controls, reconnect, clean Ubuntu runtime and independently audited local and exact hosted qualification",
+      "commit": "35100cf8b487db787d38e0b1d6075278a82408d3",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/35100cf8b487db787d38e0b1d6075278a82408d3"
     }
   ],
   "remaining": [
-    "Complete patched viewer builds and fresh browser evidence, then required local and exact hosted qualification for the patched simulator and viewer. Only then accept M1. Mesh visuals, mesh collisions, individual sensors and focused systems remain later weekly deliveries.",
+    "M2: local glTF 2.0 visuals with primitive collisions, correct transforms and resource paths, and clear missing/invalid asset errors. Target three working days including review and required verification. Mesh collisions, individual sensors and focused systems follow in bounded weekly deliveries.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
@@ -747,17 +752,17 @@
     "PERF-01": "in_progress"
   },
   "quality": {
-    "revision": "386482e5365d827a1c0d1e8ad7ca654fe93902bf",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/386482e5365d827a1c0d1e8ad7ca654fe93902bf",
-    "rust_tests": 928,
+    "revision": "35100cf8b487db787d38e0b1d6075278a82408d3",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/35100cf8b487db787d38e0b1d6075278a82408d3",
+    "rust_tests": 952,
     "coverage": {
       "lines": [
-        10585,
-        10775
+        11026,
+        11224
       ],
       "regions": [
-        16126,
-        16603
+        16744,
+        17247
       ]
     },
     "upstream": {
@@ -767,9 +772,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41514311845"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41590174007"
     },
-    "note": "Accepted Main 386482e5 after the corrected 645-second normal renderer gate, independent retained review, exact hosted run 41514311845 and independent official source/profile/native audit. Results: 928 headless, 553 renderer and 254 tooling checks; inherited delegated helper counts remain 5/3. Hosted headless coverage: 10585/10775 lines and 16126/16603 regions; renderer: 6196/6320 lines and 9150/9500 regions. gz-renderer is 786/811 lines and 1019/1066 regions; strict changed coverage is 250/260. Every production crate/workspace exceeds 95% lines and regions; all 39 inherited cold spans remain cold. Audit binds 1156 Git files/modes, 72 sources, 272 inputs and 2107 official artifacts. Six source-bound asserted-llvmpipe depth controls pass; no separate raw depth pixel archive is claimed. The first 641-second coverage failure is retained separately. Both historical measurement archives remain exact; measured f136/f0d is distinct from the later a44 consumer pin. No new timing, native sensor near-plane parity, physical GPU, loaded depth extraction or whole-original completion is claimed."
+    "note": "M1 accepted on published simulator 35100cf8 and viewer 0db1f4e4. Normal local staged hooks, independent source review and exact hosted CI passed: simulator run 41590174007 and all six viewer jobs in 41590911006. Simulator results: 952 headless, 555 renderer, 276 tooling and 10 native-off checks. Hosted headless coverage is 11026/11224 lines and 16744/17247 regions; separate renderer coverage is 6201/6327 lines and 9154/9506 regions. Both profiles exceed the retained strict gates separately; no profile union is claimed. Eight real C++ peer scenarios remain qualified. Official source, archive and native evidence were independently audited; full-profile executable records are metadata-only, not retained ELFs. The actual browser shows 20 dynamic bodies and ground with pause/resume/reset, reconnect and shutdown/restart behavior, using the maintained WebGL2 fallback. The Rapier-only executable also runs in a read-only, network-disabled Ubuntu 24.04 container with only fixture and executable mounted. Viewer hosted coverage is 54249/55767 lines; both compressed WASM variants remain below the unchanged 14 MB cap. This is bounded M1 acceptance, not full compatibility or a performance result. Details: docs/M1_ACCEPTANCE.md. Other historical qualifications and pending worktrees are preserved."
   },
   "phase_status": {
     "P0": "in_progress",
