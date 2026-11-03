@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-03",
-  "scope": "M4: demand-activated IMU sensor model",
-  "target_working_days": 3,
+  "scope": "M5: bounded RGB camera model",
+  "target_working_days": 5,
   "confidence": "Medium",
-  "assumption": "M1\u2013M3 are accepted. Reuse the existing IMU model, loaded SDF demand, Rapier state and upstream Zenoh integration; prove units, frame, sample counts, timestamps, pause/reset and last-consumer teardown.",
-  "clock": "M4 started on 2026-11-03 after mesh-collision acceptance. Three working days includes review and mandatory checks and is a scope target, not a guaranteed date. Other sensors and full noise-model parity remain deferred."
+  "assumption": "M1\u2013M4 are accepted. Connect one SDF RGB camera to existing offscreen Bevy rendering and bounded canonical image delivery; reuse camera metadata, worker and lifecycle APIs.",
+  "clock": "M5 started on 2026-11-03 after IMU acceptance. Five working days includes review and mandatory checks and is a scope target, not a guaranteed date. Camera arrays, distortion, thermal, segmentation and other sensor families remain deferred."
 }
