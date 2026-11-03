@@ -77,7 +77,7 @@ function renderOutlook() {
     $("forecast-date").textContent = "Refresh to retry. See the implementation plan for remaining scope.";
     return;
   }
-  $("forecast-range").textContent = "≤1 working week to MVP";
+  $("forecast-range").textContent = `≤${forecast.target_working_days} working days to next delivery`;
   $("forecast-detail").textContent = `${forecast.scope} · Target: ${forecast.target_working_days} working days · ${forecast.confidence.toLowerCase()} confidence. ${forecast.assumption}`;
   $("forecast-preview").textContent = forecast.clock;
   const date = new Date(`${forecast.as_of}T12:00:00Z`);
@@ -118,7 +118,8 @@ function renderActive() {
     return;
   }
   if (delivery?.execution_state === "paused") {
-    $("active-work").replaceChildren(node("p", "Implementation agents are paused. Next on explicit resume: M1 live Rapier primitives in gzweb-rs. Existing candidate work and accepted evidence are preserved.", "muted"));
+    const next = delivery.phases.find(phase => phase.id === delivery.current_phase);
+    $("active-work").replaceChildren(node("p", `Implementation agents are paused. Next on explicit resume: ${next.id} · ${next.title}. Existing candidate work and accepted evidence are preserved.`, "muted"));
     return;
   }
   const cards = [];
