@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-03T20:36:42.600702+00:00",
+  "updated_at": "2026-11-03T23:10:13.954697+00:00",
   "state": "active",
-  "summary": "M5 is accepted: one admitted SDF RGB camera connects to the existing offscreen Bevy worker and real canonical Zenoh image delivery, with bounded demand, timing, pause/reset, removal and overload controls. M6 next connects calibrated metric depth to one loaded SDF camera and a bounded stream, targeted within five working days including review and mandatory checks.",
+  "summary": "M6 is accepted and published: one loaded depth camera delivers canonical axial metres through the existing renderer and bounded worker, with timing, frame, clipping, pause/reset, removal and overload controls. M7 now adds one planar CPU lidar using Rapier collision queries and inspectable scan visualization, scoped to five working days including review and required checks.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M6",
-      "title": "Bounded metric-depth camera model",
-      "detail": "Connect the existing metric-depth renderer to one loaded SDF camera and a bounded consumer stream. Prove calibrated primitive-scene depths, documented background/clipping, timestamps, reset epochs, removal and bounded delivery. Target at most five working days including complete implementation/docs/source review and consolidated mandatory checks. RGB-D registration, point clouds and depth noise parity remain deferred; no M6 execution or acceptance is claimed."
+      "id": "M7",
+      "title": "Bounded CPU ray lidar model",
+      "detail": "Implement one planar CPU lidar using Rapier queries against admitted primitive and mesh collisions. Prove analytic ranges, min/max range, frame, acquisition timing and pause/reset, and allow inspection of the actual scan in visualization. Reuse sensor scheduling, canonical messages and demand lifecycle; preserve IMU, RGB/depth and native-free defaults. GPU lidar, noise parity and broader sensor families remain deferred."
     }
   ],
   "accepted_slices": [
@@ -732,10 +732,15 @@
       "title": "M5 bounded SDF RGB camera through the existing offscreen worker and canonical Zenoh output; local strict/native-free proofs and exact hosted CI 41703668173 passed",
       "commit": "60a3a71096e5eff19c0e09392dc5b9c0348ae350",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/60a3a71096e5eff19c0e09392dc5b9c0348ae350"
+    },
+    {
+      "title": "M6 loaded metric-depth camera with actual canonical R_FLOAT32 images, calibrated axial metres, documented clipping and bounded lifecycle controls; exact hosted CI and independent evidence reviews passed",
+      "commit": "7fccd049f373aef5c2ea6c8feb41339ea955e62e",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7fccd049f373aef5c2ea6c8feb41339ea955e62e"
     }
   ],
   "remaining": [
-    "M6: connect the existing metric-depth renderer to one loaded SDF camera and a bounded consumer stream. Prove calibrated primitive-scene metric depths, documented background/clipping behavior, reset epochs, removal and bounded delivery. Target five working days including review and mandatory checks; RGB-D registration, point clouds and depth noise parity remain deferred.",
+    "M7: deliver one planar CPU ray lidar with Rapier collision queries and actual scan visualization. Target at most five working days including independent review and required checks; GPU lidar, noise parity and broader sensor families remain deferred.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
@@ -773,17 +778,17 @@
     "ASSET-01": "in_progress"
   },
   "quality": {
-    "revision": "60a3a71096e5eff19c0e09392dc5b9c0348ae350",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/60a3a71096e5eff19c0e09392dc5b9c0348ae350",
-    "rust_tests": 1028,
+    "revision": "7fccd049f373aef5c2ea6c8feb41339ea955e62e",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7fccd049f373aef5c2ea6c8feb41339ea955e62e",
+    "rust_tests": 1029,
     "coverage": {
       "lines": [
-        12119,
-        12342
+        12120,
+        12343
       ],
       "regions": [
-        18443,
-        19018
+        18445,
+        19020
       ]
     },
     "upstream": {
@@ -793,9 +798,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41703668173"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41726703723"
     },
-    "note": "Accepted and published on Main after independent official audit. Feature 60a3a710 passed the normal staged gate in 1131.278 seconds with no capacity stop; exact hosted CI 41703668173 succeeded. Independent local retained audit is clear. Local results are 1028 headless, 637 renderer and 289 tooling passes, with five/four delegated ignored helper entries. Separate local coverage is headless 12119/12342 lines and 18443/19018 regions, renderer 7339/7485 and 10888/11320; every required crate passes both strict metrics, without profile union. Parent-relative changed executable coverage is CLI 92/92 in both profiles, camera-output 24/24 and render-client 1/1 in renderer. Original native-free ten cases/four retained ELFs/fourteen raw profiles remain separate from RGB eight cases/two retained ELFs/thirty-one raw profiles; both closures are system-only and RGB excludes GPU dependencies. Four real-worker controls pass actual pixels, calibration, canonical Image/CameraInfo delivery, 1/100/200 ms acquisition, paused silence, Busy without repeated physics, reset invalidation, removal and actual CLI/worker publication with exactly 10000 advancing ticks. Full-profile executable records, including the prepared CLI/worker, are metadata-only; no retained image buffers or independently re-exported full-profile ELFs are claimed. Local audit checks 2340 artifact hashes and 562 distinct Git source/input bindings including 78 production sources; nine existing C++ peer scenarios preserve compatibility evidence, not new C++ camera parity. Earlier failures remain retained, including constructor/unwind contract and strict changed-coverage failures, with the original constructor contract preserved and CLI camera listening disabled. No M5 browser RGB display, performance, general GPU/backend or broader camera-family qualification is claimed. Official attempt 1 passed all 16 steps; 1239 Git blobs and modes and 562 distinct source/input bindings match. Hosted headless coverage is 12119/12342 lines and 18443/19018 regions; renderer coverage is 7340/7485 and 10889/11320, kept separate from the local totals. The single extra worker line and region are legitimate separate-run hits. All four official raw merges reproduce byte for byte. M1\u2013M4 demonstrations and legacy P0\u2013P7/system/Fuel/evidence labels remain unchanged."
+    "note": "Accepted and published on Main after independent source, local and official audits. The final normal staged gate passed in 1138.283 seconds; exact hosted CI 41726703723 passed all 16 steps at 7fccd049. Actual results are 1029 headless, 663 renderer and 289 tooling passes, including five real depth, four retained RGB and 34 support-worker controls. Separate local and hosted coverage is headless 12120/12343 lines and 18445/19020 regions, renderer 7503/7650 and 11102/11539; every owned crate exceeds both strict metrics, without profile union. Parent-relative changed lines pass at camera-output 42/44, render-client 18/18, protocol 14/14, render-scene 30/30, worker 98/98 and Scene 3/3; cold lines remain in the denominator. The original native-free ten cases/four ELFs/fourteen raw profiles remain separate from the camera nine cases/two ELFs/thirty-three raw profiles, including actual depth no-interest admission. Six auxiliary native-free ELFs are retained; 285 full-profile executable records, including prepared CLI/worker identities, are metadata only. Local audit verifies 2365 artifact hashes and 566 distinct source/input bindings including 78 production files. Official audit verifies 1248 Git blobs and modes and all four raw merges from 1746 headless, 358 renderer, 14 original and 33 camera profiles; local renderer raw count is 354 and kept distinct. Actual canonical R_FLOAT32 axial metres, calibration, background/far infinity, explicit near refusal, timing/frame, pause/reset/removal, committed-tick Busy and finite CLI delivery pass. Pixel buffers were not saved; no C++ depth parity, browser depth display, performance or general GPU qualification is claimed. Nine existing C++ peers and historical evidence remain preserved. M1\u2013M5 demos and legacy P0\u2013P7/system/Fuel labels remain unchanged."
   },
   "phase_status": {
     "P0": "in_progress",
