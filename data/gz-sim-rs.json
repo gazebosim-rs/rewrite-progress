@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-02T22:33:50.311634Z",
+  "updated_at": "2026-11-03T01:10:28.836986+00:00",
   "state": "active",
-  "summary": "M1 implementation resumed: Rapier primitive world to a real gzweb-rs live viewer, with a bounded local browser connection and selectable runtime without native physics engines. No M1 acceptance or successful browser execution is claimed yet.",
+  "summary": "M1 has a real Rapier-to-gzweb-rs browser vertical slice: 20 moving primitive bodies, committed pause/reset/resume, fresh reconnect and clean shutdown were observed. Final UI corrections, current-source bundles and mandatory qualification remain in progress; no M1 acceptance is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M1",
-      "title": "Runnable Rapier primitives in gzweb-rs",
-      "detail": "Coordinator owns simulator/bridge integration; viewer owner implements the live browser consumer; runtime owner removes native SDK dependencies from the selectable profile; source review precedes the first completed vertical-slice build/probe."
+      "title": "Qualify the runnable Rapier primitive MVP",
+      "detail": "The maintained Bevy viewer consumes the bounded local bridge. Core controls and motion were observed in an actual WebGL2 browser. Reviewed corrections add truthful visual rows and suppress unsupported automatic requests. Final current-source WebGPU/GL builds and one consolidated required verification batch precede release."
     }
   ],
   "accepted_slices": [
@@ -710,7 +710,7 @@
     }
   ],
   "remaining": [
-    "M1 first after explicit resume: Rapier-only primitive runtime and a real gzweb-rs scene, pose, pause/resume/reset and reconnect connection; target five working days including review and required checks. Later weekly deliveries add mesh visuals/collisions, individual sensors and focused systems.",
+    "Finish the reviewed M1 UI corrections and current-source bundles, then complete owned coverage, the native-off runtime proof, required staged checks, independent evidence review and hosted CI. Only then accept the first weekly delivery. Later weekly phases add mesh visuals/collisions, individual sensors and focused systems.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
