@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-03T01:10:28.836986+00:00",
+  "updated_at": "2026-11-03T04:26:54.753221+00:00",
   "state": "active",
-  "summary": "M1 has a real Rapier-to-gzweb-rs browser vertical slice: 20 moving primitive bodies, committed pause/reset/resume, fresh reconnect and clean shutdown were observed. Final UI corrections, current-source bundles and mandatory qualification remain in progress; no M1 acceptance is claimed.",
+  "summary": "M1 runs live in gzweb-rs with 20 moving Rapier primitive bodies and working controls. The simulator passed its complete local gates and independent evidence review; viewer qualification and exact hosted CI remain pending, so M1 is not yet accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M1",
-      "title": "Qualify the runnable Rapier primitive MVP",
-      "detail": "The maintained Bevy viewer consumes the bounded local bridge. Core controls and motion were observed in an actual WebGL2 browser. Reviewed corrections add truthful visual rows and suppress unsupported automatic requests. Final current-source WebGPU/GL builds and one consolidated required verification batch precede release."
+      "title": "Finish verification of the runnable Rapier MVP",
+      "detail": "Both current viewer bundles build, and the actual WebGL2 browser shows 21 visual entities with committed pause, resume and reset. Simulator commit 1a2648de passed 952 headless, 555 renderer and 276 tooling checks, plus ten tests of the build without native physics libraries. Independent review confirmed the unchanged per-crate coverage gates. Its hosted run is https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41577873518; viewer final checks are now running."
     }
   ],
   "accepted_slices": [
@@ -710,7 +710,7 @@
     }
   ],
   "remaining": [
-    "Finish the reviewed M1 UI corrections and current-source bundles, then complete owned coverage, the native-off runtime proof, required staged checks, independent evidence review and hosted CI. Only then accept the first weekly delivery. Later weekly phases add mesh visuals/collisions, individual sensors and focused systems.",
+    "Finish the viewer required checks and exact hosted CI for both repositories, then accept M1 and update the delivery ledger. Mesh visuals, mesh collisions, individual sensors and focused systems remain later weekly deliveries; broad P0\u2013P7 compatibility is deferred.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
