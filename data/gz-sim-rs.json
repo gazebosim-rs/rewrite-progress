@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-03T11:27:07.791250+00:00",
+  "updated_at": "2026-11-03T14:07:06.615024+00:00",
   "state": "active",
-  "summary": "M2 is accepted and published: local glTF visuals run live in gzweb-rs with correct transforms, embedded materials, motion, controls, reconnect and visible invalid-image errors. M3 now adds Rapier static triangle-mesh and dynamic convex-hull collisions, targeted within five working days.",
+  "summary": "M3 is accepted and published: Rapier static mesh surfaces and admitted convex dynamic meshes pass geometry, contact and reset checks, with live browser motion and reset. M4 now connects one demand-activated IMU model to the live world, targeted within three working days.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M3",
-      "title": "Rapier mesh collisions",
-      "detail": "Reuse the admitted local glTF inputs and maintained geometry libraries. Add static triangle-mesh contact and one admitted dynamic convex hull; preserve visual/physics scale and frames, reset behavior and explicit refusal of unsupported nonconvex dynamic input. Automatic decomposition, heightmaps, general formats and unrelated qualifications remain deferred. Finish implementation and independent source review before the consolidated mandatory checks."
+      "id": "M4",
+      "title": "Demand-activated IMU model",
+      "detail": "Reuse the existing IMU model, loaded SDF demand, live Rapier state and upstream Zenoh messages. Prove units, frame, sample counts and timestamps, pause/reset and last-consumer teardown; a no-IMU world owns no IMU callbacks or buffers. Other sensor families, full noise-model parity and unrelated qualifications remain deferred. Complete implementation and independent source review before consolidated mandatory verification."
     }
   ],
   "accepted_slices": [
@@ -717,10 +717,15 @@
       "title": "M2 local glTF visualization with actual mesh motion and controls, reconnect, explicit startup failures and a visible production corrupt-PNG error; required local/hosted checks and independent evidence review passed",
       "commit": "7b8a4e10fb06ee4077e5092c588f309811a128b5",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7b8a4e10fb06ee4077e5092c588f309811a128b5"
+    },
+    {
+      "title": "M3 Rapier static triangle surfaces and already-convex dynamic mesh collisions, with frames, inertia, contact, failure atomicity, reset ownership and reviewed actual browser motion/reset; required checks and exact hosted CI passed",
+      "commit": "ea8048f1bf8c1ac3067bb29b07caa62651b6e202",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ea8048f1bf8c1ac3067bb29b07caa62651b6e202"
     }
   ],
   "remaining": [
-    "M3: static triangle-mesh and dynamic convex-hull collision from admitted local glTF, with geometry/contact/reset checks and explicit unsupported nonconvex dynamic rejection. Target five working days including review and required checks. Later individual sensors and focused systems remain bounded weekly deliveries.",
+    "M4: connect one demand-activated IMU model to the live Rapier world and canonical messages. Prove units, frame, sample counts, timestamps, pause/reset and last-consumer teardown; a no-IMU world owns no IMU callbacks or buffers. Target three working days including review and mandatory checks; other sensors and full noise-model parity remain deferred.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
@@ -758,17 +763,17 @@
     "ASSET-01": "in_progress"
   },
   "quality": {
-    "revision": "7b8a4e10fb06ee4077e5092c588f309811a128b5",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7b8a4e10fb06ee4077e5092c588f309811a128b5",
-    "rust_tests": 975,
+    "revision": "ea8048f1bf8c1ac3067bb29b07caa62651b6e202",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ea8048f1bf8c1ac3067bb29b07caa62651b6e202",
+    "rust_tests": 1016,
     "coverage": {
       "lines": [
-        11393,
-        11598
+        12044,
+        12264
       ],
       "regions": [
-        17340,
-        17866
+        18345,
+        18908
       ]
     },
     "upstream": {
@@ -778,9 +783,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41612752387"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41644722929"
     },
-    "note": "M2 is accepted on simulator 7b8a4e10 and viewer 5b67f45f after normal local gates, exact hosted CI 41612752387 and 41618298656, independent source/data reviews and actual WebGL2 browser acceptance. Hosted headless coverage is 11393/11598 lines and 17340/17866 regions; the separate renderer profile is 6203/6327 lines and 9156/9506 regions. Every required simulator crate passes both strict metrics; CLI coverage is 994/1011 lines and 1535/1599 regions. Hosted full-source changed CLI coverage is 935/945, distinct from the local parent-relative 353/357. Actual results: 975 headless, 555 renderer, 276 tooling and ten native-off passes, with eight selected C++ Zenoh peers retaining their source and executable identities. Full-profile Rust executable records remain metadata-only; four native-off executables are retained. The actual browser shows the green local mesh, sphere and ground, physical motion, committed controls and reconnect. A separate corrupt-PNG world reports one visible production UI decoding error; partial geometry may remain visible. Actual CLI startup rejects missing or malformed glTF and missing buffers before stepping. The qualified instrumented native-free executable was reused, with no extra build or performance claim. Viewer workspace line coverage is 54487/56020; 1074 native tests, three separate Fuel cases and seven legacy parity worlds pass. Five inherited ignored entries remain unchanged. Both WASM flavors meet the unchanged 14 MB gzip limit. Captures show background 1 fps and startup Waiting/CUA timeouts, not WebGPU runtime, texture-sampling measurements or performance acceptance. Broad asset compatibility remains partial; historical work and pending candidates are preserved. See docs/M2_ACCEPTANCE.md."
+    "note": "M3 is accepted on public simulator ea8048f1, reusing the unchanged accepted viewer 5b67f45f. The normal staged hook passed in 897.212 seconds; exact hosted CI 41644722929 passed all sixteen steps, with independent source, local/official data and actual-browser evidence reviews. Hosted headless coverage is 12044/12264 lines and 18345/18908 regions; the separate renderer profile is 6256/6382 lines and 9233/9588 regions. Every included crate passes strict line and region thresholds separately. Assets pass at 505/515 lines and 819/847 regions; Rapier at 1300/1307 and 1998/2013. Parent-relative changed lines are assets 327/328, physics 11/11, Rapier 236/238 and Scene 52/52; hosted zero/full-source thresholds also pass separately. Logs show 1016 headless, 559 renderer and 276 tooling passes, plus ten native-off cases and eight retained real C++ Zenoh peers. Five/three ignored parent entries remain delegated helpers. Audits checked 2149 local artifact hashes, 557 source/input bindings and all 1217 official source blobs/modes. Full-profile executable records remain metadata-only; four native-off executables and thirteen actual raw profiles are retained, with a system-library-only closure. Hosted SDK libraries remain remotely metadata-bound. The actual browser shows mesh motion/contact at 9.875 seconds, committed pause at 19.765 seconds, and reset to epoch 1/time zero with original apparent placement. The exact qualified instrumented CLI and accepted viewer bundles were reused; no additional build, performance claim or screenshot-derived quantitative geometry claim is made. Dynamic admission is bounded to 512 distinct positions and 1024 faces, with exact-coordinate seam identification and conservative f64 convex-boundary checks. Unsupported nonconvex/open meshes are refused; automatic decomposition and general formats remain deferred. Broad compatibility inventories are unchanged. See docs/M3_ACCEPTANCE.md."
   },
   "phase_status": {
     "P0": "in_progress",
