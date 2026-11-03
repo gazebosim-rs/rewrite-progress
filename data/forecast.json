@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-03",
-  "scope": "M2: local glTF visuals with primitive collisions",
-  "target_working_days": 3,
+  "scope": "M3: Rapier mesh collisions",
+  "target_working_days": 5,
   "confidence": "Medium",
-  "assumption": "M1 is accepted on both public Main branches. Reuse the existing glTF loader and live scene path; add bounded local resource serving, mesh transforms and clear asset errors.",
-  "clock": "M2 started on 2026-11-03 after M1 acceptance. Three working days includes review and required verification and is a scope target, not a guaranteed date."
+  "assumption": "M1 and M2 are accepted on both public Main branches. Reuse local glTF inputs and maintained Rapier geometry APIs; add static triangle-mesh and admitted dynamic convex-hull collision with geometry, contact and reset checks.",
+  "clock": "M3 started on 2026-11-03 after M2 acceptance. Five working days includes review and required verification and is a scope target, not a guaranteed date. Automatic decomposition and broader asset formats remain deferred."
 }
