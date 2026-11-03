@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-03",
-  "scope": "M3: Rapier mesh collisions",
-  "target_working_days": 5,
+  "scope": "M4: demand-activated IMU sensor model",
+  "target_working_days": 3,
   "confidence": "Medium",
-  "assumption": "M1 and M2 are accepted on both public Main branches. Reuse local glTF inputs and maintained Rapier geometry APIs; add static triangle-mesh and admitted dynamic convex-hull collision with geometry, contact and reset checks.",
-  "clock": "M3 started on 2026-11-03 after M2 acceptance. Five working days includes review and required verification and is a scope target, not a guaranteed date. Automatic decomposition and broader asset formats remain deferred."
+  "assumption": "M1\u2013M3 are accepted. Reuse the existing IMU model, loaded SDF demand, Rapier state and upstream Zenoh integration; prove units, frame, sample counts, timestamps, pause/reset and last-consumer teardown.",
+  "clock": "M4 started on 2026-11-03 after mesh-collision acceptance. Three working days includes review and mandatory checks and is a scope target, not a guaranteed date. Other sensors and full noise-model parity remain deferred."
 }
