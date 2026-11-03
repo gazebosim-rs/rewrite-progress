@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-03T14:07:06.615024+00:00",
+  "updated_at": "2026-11-03T16:13:16.443284+00:00",
   "state": "active",
-  "summary": "M3 is accepted and published: Rapier static mesh surfaces and admitted convex dynamic meshes pass geometry, contact and reset checks, with live browser motion and reset. M4 now connects one demand-activated IMU model to the live world, targeted within three working days.",
+  "summary": "M4 is accepted and published: one live Rapier IMU demo passes SI units, frame, exact timing/counts, demand/teardown and real canonical Zenoh delivery checks. M5 now connects one RGB camera to existing offscreen rendering and bounded image delivery, targeted within five working days.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M4",
-      "title": "Demand-activated IMU model",
-      "detail": "Reuse the existing IMU model, loaded SDF demand, live Rapier state and upstream Zenoh messages. Prove units, frame, sample counts and timestamps, pause/reset and last-consumer teardown; a no-IMU world owns no IMU callbacks or buffers. Other sensor families, full noise-model parity and unrelated qualifications remain deferred. Complete implementation and independent source review before consolidated mandatory verification."
+      "id": "M5",
+      "title": "Bounded RGB camera model",
+      "detail": "Activate one configured SDF RGB camera with existing offscreen Bevy rendering, worker and canonical output. Prove real timestamped images at requested rate, frame, pause/reset, removal and overload behavior. Start with the admitted 64\u00d764 opaque box scene; broader geometry, arrays, distortion, thermal, segmentation and other sensor families remain deferred. Finish the complete implementation/docs/source-review batch before consolidated mandatory verification."
     }
   ],
   "accepted_slices": [
@@ -722,10 +722,15 @@
       "title": "M3 Rapier static triangle surfaces and already-convex dynamic mesh collisions, with frames, inertia, contact, failure atomicity, reset ownership and reviewed actual browser motion/reset; required checks and exact hosted CI passed",
       "commit": "ea8048f1bf8c1ac3067bb29b07caa62651b6e202",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ea8048f1bf8c1ac3067bb29b07caa62651b6e202"
+    },
+    {
+      "title": "M4 live Rapier IMU example and same-input analytic, cadence, demand/teardown and real canonical Zenoh regression controls; exact hosted CI and independent evidence reviews passed",
+      "commit": "eae6f3b81ed5e52d74648dfd1634ae95a8e9a41b",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eae6f3b81ed5e52d74648dfd1634ae95a8e9a41b"
     }
   ],
   "remaining": [
-    "M4: connect one demand-activated IMU model to the live Rapier world and canonical messages. Prove units, frame, sample counts, timestamps, pause/reset and last-consumer teardown; a no-IMU world owns no IMU callbacks or buffers. Target three working days including review and mandatory checks; other sensors and full noise-model parity remain deferred.",
+    "M5: connect one admitted SDF RGB camera to existing offscreen Bevy rendering and bounded canonical image delivery. Prove real pixels, timestamps, requested cadence, frame, pause/reset, removal and overload controls. Target five working days including review and mandatory checks; broader camera/sensor parity remains deferred.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
@@ -763,9 +768,9 @@
     "ASSET-01": "in_progress"
   },
   "quality": {
-    "revision": "ea8048f1bf8c1ac3067bb29b07caa62651b6e202",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ea8048f1bf8c1ac3067bb29b07caa62651b6e202",
-    "rust_tests": 1016,
+    "revision": "eae6f3b81ed5e52d74648dfd1634ae95a8e9a41b",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/eae6f3b81ed5e52d74648dfd1634ae95a8e9a41b",
+    "rust_tests": 1020,
     "coverage": {
       "lines": [
         12044,
@@ -783,9 +788,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41644722929"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41659117101"
     },
-    "note": "M3 is accepted on public simulator ea8048f1, reusing the unchanged accepted viewer 5b67f45f. The normal staged hook passed in 897.212 seconds; exact hosted CI 41644722929 passed all sixteen steps, with independent source, local/official data and actual-browser evidence reviews. Hosted headless coverage is 12044/12264 lines and 18345/18908 regions; the separate renderer profile is 6256/6382 lines and 9233/9588 regions. Every included crate passes strict line and region thresholds separately. Assets pass at 505/515 lines and 819/847 regions; Rapier at 1300/1307 and 1998/2013. Parent-relative changed lines are assets 327/328, physics 11/11, Rapier 236/238 and Scene 52/52; hosted zero/full-source thresholds also pass separately. Logs show 1016 headless, 559 renderer and 276 tooling passes, plus ten native-off cases and eight retained real C++ Zenoh peers. Five/three ignored parent entries remain delegated helpers. Audits checked 2149 local artifact hashes, 557 source/input bindings and all 1217 official source blobs/modes. Full-profile executable records remain metadata-only; four native-off executables and thirteen actual raw profiles are retained, with a system-library-only closure. Hosted SDK libraries remain remotely metadata-bound. The actual browser shows mesh motion/contact at 9.875 seconds, committed pause at 19.765 seconds, and reset to epoch 1/time zero with original apparent placement. The exact qualified instrumented CLI and accepted viewer bundles were reused; no additional build, performance claim or screenshot-derived quantitative geometry claim is made. Dynamic admission is bounded to 512 distinct positions and 1024 faces, with exact-coordinate seam identification and conservative f64 convex-boundary checks. Unsupported nonconvex/open meshes are refused; automatic decomposition and general formats remain deferred. Broad compatibility inventories are unchanged. See docs/M3_ACCEPTANCE.md."
+    "note": "M4 is accepted on public simulator eae6f3b8 with unchanged viewer 5b67f45f. This qualifies the existing IMU implementation through a runnable 100 Hz rotated-sensor example and four focused controls; no production code was added. The single consolidated normal staged pass took 910.222 seconds, exact hosted CI 41659117101 passed all sixteen steps, and independent source/local/official/browser evidence reviews are clear. Hosted and local headless coverage is 12044/12264 lines and 18345/18908 regions; separate renderer coverage is 6256/6382 and 9233/9588. Every included crate exceeds both strict metrics. Parent production changed coverage is 0/0, not new production-coverage credit; hosted zero/full-source gates pass separately at 11570/11720 headless and 6116/6172 renderer. Actual results are 1020 headless, 559 renderer and 276 tooling passes, with five/three delegated ignored parent helpers unchanged. All four new IMU cases pass: SI/sensor-axis and angular controls, exact 1/10/20 ms acquisition, pause/reset and loaded-consumer retirement, subscriber demand/activation, and actual two-session upstream Zenoh delivery with Prost decoding across resets. Wire timestamps and sequence restart; local epochs are not an extra canonical wire field. Audits verified 2150 local artifact hashes, 558 source/input bindings, 1227 official source blobs/modes, ten native-off cases with four retained executables and thirteen raw profiles, and eight existing C++ peer identities. Full-profile Rust executable records remain metadata-only; hosted SDK libraries remain remotely metadata-bound. Browser captures show the body world at 26.414 seconds, pause at 30.220 and reset epoch 1/time zero. Screenshots do not prove IMU values; named tests establish units, frames, counts, covariance and wire values. Qualified native-free executable and accepted viewer bundles were reused without a build or performance claim. This is not new C++ sensor parity or full noise-model acceptance. See docs/M4_ACCEPTANCE.md."
   },
   "phase_status": {
     "P0": "in_progress",
