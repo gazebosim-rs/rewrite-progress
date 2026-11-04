@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-04T19:31:01.177849+00:00",
+  "updated_at": "2026-11-04T22:19:44.676256+00:00",
   "state": "active",
-  "summary": "M1\u2013M9 remain accepted. M10 simulator and viewer candidates passed required checks and independent audits, but actual browser qualification confirmed event-queue overflow. The current fix adds bounded, opt-in publication credit; M10 is not accepted.",
+  "summary": "M1\u2013M9 remain accepted. M10 publication credit passed simulator local verification and all viewer checks; exact simulator CI and actual browser lifecycle acceptance remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M10",
-      "title": "Interactive world lifecycle: browser backpressure",
-      "detail": "Preserve the 64-event queue and all existing checks. Add one in-flight publication with explicit ready credit only for lifecycle-enabled clients; keep commands and committed replies independent. The wire contract has been independently reviewed; implementation, regressions and source review precede the next required verification pass."
+      "title": "Interactive world lifecycle: final credit qualification",
+      "detail": "One normal lifecycle publication stays in flight until validated consumer Ready; commands and exact committed replies remain independent. The 64-event queue and all quality gates are unchanged. Simulator local checks and independent retained audit passed; viewer checks, exact CI, both release budgets and independent audits passed. Finish exact simulator CI, official audit and actual browser editing/reconnect acceptance."
     }
   ],
   "accepted_slices": [
@@ -770,7 +770,7 @@
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
   "blockers": [
-    "Actual production browser logs confirm event queue full and repeated disconnects during M10 lifecycle publication. Stable editing and reconnect acceptance remain pending; passing CI alone does not accept M10."
+    "The earlier browser qualification failed on event-queue overflow. The corrected publication-credit path still needs successful actual browser qualification before M10 acceptance."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -800,17 +800,17 @@
     "ASSET-01": "in_progress"
   },
   "quality": {
-    "revision": "0f0f031e258da6d8c8f7de17fc694295431addb6",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/0f0f031e258da6d8c8f7de17fc694295431addb6",
-    "rust_tests": 1146,
+    "revision": "d3967b6178e8cba2056ba744f38499d03833edd0",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d3967b6178e8cba2056ba744f38499d03833edd0",
+    "rust_tests": 1204,
     "coverage": {
       "lines": [
-        16131,
-        16490
+        17613,
+        18013
       ],
       "regions": [
-        24042,
-        24845
+        26102,
+        27002
       ]
     },
     "upstream": {
@@ -819,10 +819,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41817794153"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41924068764"
     },
-    "note": "M9 Main 0f0f031e passed the normal 1411.351-second staged gate, exact hosted CI41817794153 (all 16 steps, attempt 1), and independent source/local/official/browser reviews. Actual results are 1,146 headless, 716 renderer and 289 tooling passes; five/four delegated ignored entries remain separate. Official headless coverage is 16131/16490 lines and 24042/24845 regions, versus 16135/16490 and 24046/24845 locally; the difference is four Server lines and regions. Renderer matches local at 9594/9834 lines and 14123/14750 regions. Scene renderer is 4724/4874 lines and 7159/7535 regions. Every owned crate, separate workspace profile and changed-line gate passes strictly, without union or relaxed thresholds.\n\nThe admitted chain uses maintained Rapier reduced coordinates and native torque-capped position/velocity motors. Position targets are continuous; prepared waypoint bias respects the configured target-speed bound. These are not hard physical speed caps or joint stops, and no native ABS/PID or general articulation parity is claimed. The accepted M8 motor policy and moving-parent effort refusals remain unchanged. Bad commands, constructor atomicity, identity, reset/removal, pending work, callback retirement and absent-family behavior pass. Earlier real tracking, compilation, regression-assumption and coverage failures remain preserved; all original numerical assertions and gates remain intact.\n\nIndependent audits checked 1,307 official Git blobs/modes and 610 source/input bindings. Four raw merges are byte-exact from 1752/358/14/33 official inputs; local renderer has 354. Six actual auxiliary ELF copies are retained; 291 full-profile executable records are metadata-only. Existing native-free and camera feature proofs and five depth/four RGB/34 support controls pass. Nine existing C++ peer chains and remote SDK identities retain provenance, but remote DSO bytes were not archived or locally rehashed. No new controller C++ parity or performance qualification is claimed.\n\nFive independently viewed browser images show three visuals, real base/child motion from canonical Double commands, pause acknowledged at epoch 0/time 59.315 seconds and reset at epoch 1/time zero with restored poses. The finite sender was built once in 26.992 seconds with its full normal Cargo JSON and actual executable retained. Command exits/timing are coordinator observations, not independent execution logs; screenshots do not measure angles or encoded IDs. Accepted viewer 19be release bundles and Main 516a docs/test-clock child are reused unchanged. Accepted manual qualification was not replayed.\n\nM9 acceptance metadata follows its normal required gate/CI while isolated M10 source progresses. Legacy P0\u2013P7, broader system inventory, upstream and independent Fuel evidence stay unchanged. M10 is the next delivery target; full compatibility remains an unscheduled backlog.\n\nM10 update: simulator review candidate 2094159e passed local verification, exact CI41862346228 attempt 3 and independent retained evidence audits. Attempts 1 and 2 remain recorded snapshot HTTP 503/500 setup failures. Viewer diagnostic candidate 74496593 passed exact CI41891459744, local/official audits and both unchanged 14 MB release budgets. Actual browser diagnostics then confirmed queue overflow. These candidate checks do not transfer M10 acceptance; quality metrics above remain the accepted M9 baseline. The opt-in publication-credit correction is source work, with no new pass or acceptance claimed."
+    "note": "M10 review candidate d3967b61 passed the unchanged normal 1431.357-second local staged gate and independent retained audit: 1,204 headless, 760 renderer and 289 tooling passes. Eight new credit functions pass once in each profile. The headless line/region measurements above are LOCAL; exact hosted CI41924068764 is pending, not passed. Separate renderer coverage is 10985/11255 lines and 16080/16763 regions. All required per-crate, workspace and changed-line gates pass strictly; CLI changed lines are 76/78. Four raw merges are byte-exact. A verified 24,459,152-byte durable lossless archive retains the complete local packet; raw RAM evidence also remains. Retention limits remain explicit: normal full-profile ELF paths are metadata-only, while six auxiliary ELF copies and existing local native-peer files are retained.\n\nViewer candidate 138f5759 passed normal hooks, exact CI41913892125, independent source/local/official audits and both unchanged 14 MB release budgets. An earlier new reset-fixture assertion was corrected to retain the existing UI fence until the fresh Scene; original assertions remain. The original browser overflow and earlier simulator scratch-capacity stop are preserved. Capacity was repaired by byte-preserving cache relocation and unchanged physical resource floors. No mandatory check, queue bound or numerical tolerance was weakened.\n\nM10 is NOT accepted: exact simulator hosted verification, independent official review and actual matching browser spawn/remove/state/reset/reconnect observations remain. M1\u2013M9 acceptance and deferred compatibility/Fuel scope are unchanged.\n\nHistorical accepted baseline and prior candidate evidence:\nM9 Main 0f0f031e passed the normal 1411.351-second staged gate, exact hosted CI41817794153 (all 16 steps, attempt 1), and independent source/local/official/browser reviews. Actual results are 1,146 headless, 716 renderer and 289 tooling passes; five/four delegated ignored entries remain separate. Official headless coverage is 16131/16490 lines and 24042/24845 regions, versus 16135/16490 and 24046/24845 locally; the difference is four Server lines and regions. Renderer matches local at 9594/9834 lines and 14123/14750 regions. Scene renderer is 4724/4874 lines and 7159/7535 regions. Every owned crate, separate workspace profile and changed-line gate passes strictly, without union or relaxed thresholds.\n\nThe admitted chain uses maintained Rapier reduced coordinates and native torque-capped position/velocity motors. Position targets are continuous; prepared waypoint bias respects the configured target-speed bound. These are not hard physical speed caps or joint stops, and no native ABS/PID or general articulation parity is claimed. The accepted M8 motor policy and moving-parent effort refusals remain unchanged. Bad commands, constructor atomicity, identity, reset/removal, pending work, callback retirement and absent-family behavior pass. Earlier real tracking, compilation, regression-assumption and coverage failures remain preserved; all original numerical assertions and gates remain intact.\n\nIndependent audits checked 1,307 official Git blobs/modes and 610 source/input bindings. Four raw merges are byte-exact from 1752/358/14/33 official inputs; local renderer has 354. Six actual auxiliary ELF copies are retained; 291 full-profile executable records are metadata-only. Existing native-free and camera feature proofs and five depth/four RGB/34 support controls pass. Nine existing C++ peer chains and remote SDK identities retain provenance, but remote DSO bytes were not archived or locally rehashed. No new controller C++ parity or performance qualification is claimed.\n\nFive independently viewed browser images show three visuals, real base/child motion from canonical Double commands, pause acknowledged at epoch 0/time 59.315 seconds and reset at epoch 1/time zero with restored poses. The finite sender was built once in 26.992 seconds with its full normal Cargo JSON and actual executable retained. Command exits/timing are coordinator observations, not independent execution logs; screenshots do not measure angles or encoded IDs. Accepted viewer 19be release bundles and Main 516a docs/test-clock child are reused unchanged. Accepted manual qualification was not replayed.\n\nM9 acceptance metadata follows its normal required gate/CI while isolated M10 source progresses. Legacy P0\u2013P7, broader system inventory, upstream and independent Fuel evidence stay unchanged. M10 is the next delivery target; full compatibility remains an unscheduled backlog.\n\nM10 update: simulator review candidate 2094159e passed local verification, exact CI41862346228 attempt 3 and independent retained evidence audits. Attempts 1 and 2 remain recorded snapshot HTTP 503/500 setup failures. Viewer diagnostic candidate 74496593 passed exact CI41891459744, local/official audits and both unchanged 14 MB release budgets. Actual browser diagnostics then confirmed queue overflow. These candidate checks do not transfer M10 acceptance; quality metrics above remain the accepted M9 baseline. The opt-in publication-credit correction is source work, with no new pass or acceptance claimed."
   },
   "phase_status": {
     "P0": "in_progress",
