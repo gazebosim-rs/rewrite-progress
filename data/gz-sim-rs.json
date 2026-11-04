@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-04T01:59:12.307415+00:00",
+  "updated_at": "2026-11-04T06:01:31.707950+00:00",
   "state": "active",
-  "summary": "M1\u2013M7 are accepted and published. M7 adds one bounded planar CPU lidar with read-only Rapier queries, canonical LaserScan output and an actual measured-scan viewer; analytic ranges, lifecycle and browser pause/reset/resume pass. M8 now delivers one two-wheel Rapier differential-drive robot with real velocity commands, odometry and live visualization, scoped to at most five working days including review and required checks.",
+  "summary": "M1\u2013M8 are accepted and published. M8 delivers a real two-wheel Rapier robot with canonical commands and encoder odometry; physical driving/turning, limits, lifecycle and actual browser controls pass. M9 now adds one admitted revolute chain with position and velocity controllers, scoped to at most five working days including review and required checks.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M8",
-      "title": "Two-wheel Rapier differential drive",
-      "detail": "Implement one configured wheel pair, real velocity commands, encoder odometry and live gzweb-rs motion. The maintained native Rapier motor dependency has independent Source review; encoder geometry/odometry Source is being connected to Scene, bounded canonical IO and a runnable robot. M8 tests/lint/builds remain deferred until the whole feature, regression source, docs and independent review are complete. Prove driving/turning, wheel target and actuation bounds, frames, pause/reset and absent-system teardown. No Ackermann, tracked or general drivetrain parity."
+      "id": "M9",
+      "title": "Rapier joint position and velocity controllers",
+      "detail": "Reuse maintained native motors, joint state and bounded canonical IO for one admitted revolute chain. Prove commands move displayed joints with documented limits, stable IDs, bad-command rejection, reset and removal. Complete Source, regressions, docs and independent review before consolidated required verification; general articulations and mimic/transmissions remain excluded."
     }
   ],
   "accepted_slices": [
@@ -747,10 +747,15 @@
       "title": "M7 accepted: bounded CPU lidar, analytic/mesh rays, canonical LaserScan and actual measured-scan pause/reset/resume",
       "commit": "9a652063d85938143ac298f428b55dd68a7f22da",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9a652063d85938143ac298f428b55dd68a7f22da"
+    },
+    {
+      "title": "M8 accepted: contact-authoritative differential drive, canonical commands/encoder odometry and actual browser motion/control review",
+      "commit": "fc9673881bae5b0c28e8e22fe2ab013d3f87f117",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fc9673881bae5b0c28e8e22fe2ab013d3f87f117"
     }
   ],
   "remaining": [
-    "M8: deliver one two-wheel Rapier differential-drive robot from real velocity commands, with encoder odometry and live gzweb-rs visualization. Prove forward motion/turning, configured wheel-target/actuation bounds, odometry frames, pause/reset and last-system teardown within at most five working days including independent review and mandatory checks. Ackermann, tracked and general drivetrain parity remain excluded.",
+    "M9: deliver one admitted Rapier revolute chain with position and velocity controllers, real displayed joint motion, documented limits and stable IDs; bad commands, reset and removal must pass within at most five working days including review and required checks. General articulations, mimic/transmission semantics and other controller families remain excluded.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
@@ -788,17 +793,17 @@
     "ASSET-01": "in_progress"
   },
   "quality": {
-    "revision": "9a652063d85938143ac298f428b55dd68a7f22da",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9a652063d85938143ac298f428b55dd68a7f22da",
-    "rust_tests": 1059,
+    "revision": "fc9673881bae5b0c28e8e22fe2ab013d3f87f117",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fc9673881bae5b0c28e8e22fe2ab013d3f87f117",
+    "rust_tests": 1094,
     "coverage": {
       "lines": [
-        13271,
-        13536
+        14814,
+        15142
       ],
       "regions": [
-        19985,
-        20644
+        22179,
+        22925
       ]
     },
     "upstream": {
@@ -808,9 +813,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41747544467"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/41776261368"
     },
-    "note": "M7 is accepted and published after independent source/local/official and actual browser evidence reviews. Final normal simulator staged gate1180.316s and exact hosted41747544467/9a652063 passed all16 steps. Actual1059 headless,670 renderer and289 tooling checks pass; five/four delegated ignored helpers are not counted as passes. Official headless coverage13271/13536 lines19985/20644 regions differs from local13269/13536 and19982/20644; renderer7984/8154 and11743/12231 matches local. Every production crate, workspace and parent-changed line gate passes separately with no profile union. Changed Server417/427 official versus415/427 local remains distinct. Official audit verifies1267Gitblobs/modes and579 source/input bindings, with all four raw merges byte-identical from1747/358/14/33 inputs; local renderer raw354 remains separate. Originalnative-free10 and separatecamera9 controls pass; six actual auxiliary ELF copies are retained, while286 full-profile ELF records are metadata only. Nine existing C++ peers and24 hosted SDK DSO metadata paths retain provenance; remote DSO bytes are not locally rehashed and no new C++ lidar parity or performance gain is claimed.\n\nViewer Main19be842d passed normal87.020s/prepush185.060s hooks, exact41748284641/all6jobs and independent source/local/official/browser audits. Hosted1083 native tests pass with5 unchanged ignored; separateFuel3/startup1 and7 parity pairs pass with25 existing allowlisted differences. Official viewer LCOV54685/56247=97.222963% remains distinct from local54686/56247=97.224741%. Local current WebGPU12,892,886B/WebGL2 12,868,306B gzip each pass the unchanged14,000,000B budget; hosted Wasm is debug compile, not archived release proof. Actual WebGL2 images show3 measured rays and2 unchanged visual entities; pause retains the fan, reset clears it at epoch1/time0, and resume restores it. Saved resumed image38.743s is distinct from earlier thread-only20.791s. No WebGPU runtime/universal GPU/browser-performance claim is made.\n\nParent M6 metadata0b9541dc is also published after normal1127.283s and exact41740088744 attempt2/all16 passed with independent official audit. Attempt1 remains a preserved real failure of3 unchanged20-second readback deadlines; cause remains undetermined. The one same-SHA retry changed no timeout, assertion or job and does not erase/diagnose those failures. M7metadata and viewer-docs closeout normal gates/CI may finish without replaying accepted manual qualification. Earlier viewer-component historical entry described its publication before full M7 acceptance; this final9a652063 record closes that phase. Canonical current phase is M8; legacy P0\u2013P7/system/upstream/Fuel evidence stays unchanged."
+    "note": "M8 Main fc967388 passed the normal1163.291-second staged gate, exact hosted41776261368/all16steps and independent source/local/official/browser reviews. Actual1094 headless,688 renderer and289 tooling checks pass; five/four delegated ignored helpers are separate. Official headless14814/15142 lines22179/22925 regions differs from local22178 regions; renderer8902/9120 and13133/13702 differs from local8900/9120 and13131/13702. Scene renderer4030/4160 lines6167/6487 regions passes the unchanged strict95% gate. Every ownedcrate/workspace/changedline gate passes separately, without union. ParentchangedScene882/905 bothprofiles, Rapier99/99, physics20/20; Server475/498 hosted versus477/498 local bothpass.\n\nOfficial audit verifies1285Gitblobs/modes and592source/inputbindings; four rawmerges are byte-exact from1749/358/14/33 inputs, with localrenderer354 distinct. Six actual auxiliary ELF copies are retained, while288 fullprofile executable records are metadata-only. Originalnativefree10/separatecamera9 and inherited5depth4RGB34support pass. Nine existing C++ peers and24remote SDK library metadata identities retain provenance; remote DSO bytes were not locally rehashed, and no new C++ DiffDrive parity/performance is claimed.\n\nFive independently viewed images show real robot translation/turning from finite canonical commands, pauseACKepoch0/time71.123s and resetACKepoch1/time0 with restoredpose and4visuals. Quantitative limits/frames/cadence come from separate automated controls; target-speed bounds are not hard physical speed caps. Qualified CLI/fixture/source/viewer and retainedsenderELF hashes verify. Complete normal sender CargoJSON was not retained; build40.01s/commandexits/startupReconnect are coordinator-recorded observations, explicitly separate from independent evidence. Accepted19be viewer release bundles are reused unchanged, including both14MB budgets. Viewer Main516a is a checked docs/test-clock child with exact41764832136/all6jobs and independent audit; original417570 Quiet-test failure remains preserved, with its actual timing interleaving unmeasured.\n\nM7 metadata4a985bfb is checked/audited/published. M6metadata41740088744 attempt1 remains a real undiagnosed three-readback-timeout failure; attempt2 success did not erase or diagnose it. M8 earlier failures remain preserved; strict coverage/assertions/gates were never weakened. M8 acceptance metadata may finish normal gates/CI while M9 Source progresses; accepted manual qualification is not replayed. Legacy P0\u2013P7, system inventory, upstream and independent Fuel evidence stay unchanged."
   },
   "phase_status": {
     "P0": "in_progress",
