@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "as_of": "2026-11-04",
-  "scope": "M10: Interactive world lifecycle",
+  "as_of": "2026-11-05",
+  "scope": "M11: Focused recording and replay",
   "target_working_days": 5,
   "confidence": "Medium",
-  "assumption": "M1\u2013M9 are accepted. Expose focused spawn/remove and entity-state operations to the live browser for the admitted MVP scene.",
-  "clock": "M10 starts after joint-controller acceptance on 2026-11-04. Five working days includes review and required checks and is a scope target, not a guaranteed date. Spawn/remove primitives and one local mesh without stale IDs or visuals; rejected requests must be atomic and reconnect must obtain a current snapshot. Multiworld, levels and distributed stepping remain deferred."
+  "assumption": "M1\u2013M10 are accepted and published. Record one admitted local scene, poses and committed world/lifecycle controls, then replay timestamps and entity lifecycle in gzweb-rs.",
+  "clock": "M11 starts after interactive world-lifecycle acceptance on 2026-11-05 UTC. Five working days includes independent review and required checks and is a scope target, not a guaranteed countdown. Prove malformed input refusal and bounded buffering. Historical log-format compatibility, full sensor recording, seeking and browser file import remain deferred."
 }
