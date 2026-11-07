@@ -70,3 +70,8 @@ phase has `max_working_days` between one and five, scope, acceptance and explici
 exclusions. No acceptance transfers automatically from an old phase or packet.
 The forecast schema 2 contains a dated next-delivery target, not months to the
 whole rewrite. A planning update does not reactivate execution.
+
+When every scheduled phase is accepted, the dashboard shows that the next
+delivery is unselected. The retained working-day budget does not schedule an
+additional phase or imply that the full rewrite is complete. A later delivery
+needs a named scope in the schedule before the forecast target is shown again.

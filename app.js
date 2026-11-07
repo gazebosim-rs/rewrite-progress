@@ -52,12 +52,14 @@ function validateDelivery(value) {
 }
 function renderOutlook() {
   const progress = $("phase-progress");
+  const allAccepted = delivery && delivery.phases.every(phase => delivery.status[phase.id] === "complete");
   if (delivery) {
     const accepted = delivery.phases.filter(phase => delivery.status[phase.id] === "complete").length;
     progress.max = delivery.phases.length; progress.value = accepted;
     $("phase-count").textContent = `${accepted} / ${delivery.phases.length}`;
     progress.setAttribute("aria-valuetext", `${accepted} of ${delivery.phases.length} weekly deliveries accepted`);
-    $("delivery-state").textContent = `${delivery.execution_state === "paused" ? "Implementation paused — the delivery clock starts only after explicit resume." : "Implementation active — working-day budgets include review and mandatory checks."}${deliveryUnavailable ? " Schedule refresh failed; showing the last loaded plan." : ""}`;
+    const state = allAccepted ? "All scheduled deliveries accepted. Select the next bounded increment before starting implementation." : delivery.execution_state === "paused" ? "Implementation paused — the delivery clock starts only after explicit resume." : "Implementation active — working-day budgets include review and mandatory checks.";
+    $("delivery-state").textContent = `${state}${deliveryUnavailable ? " Schedule refresh failed; showing the last loaded plan." : ""}`;
     $("deliveries").replaceChildren(...delivery.phases.map(phase => {
       const card = node("article", undefined, "delivery-card");
       const top = node("div", undefined, "repo-top");
@@ -71,6 +73,13 @@ function renderOutlook() {
     progress.removeAttribute("value"); progress.removeAttribute("aria-valuetext");
     $("phase-count").textContent = "Schedule unavailable";
     $("delivery-state").textContent = "Delivery schedule could not be loaded. Refresh to retry or open the implementation plan.";
+  }
+  if (allAccepted) {
+    $("forecast-range").textContent = "Next delivery unselected";
+    $("forecast-detail").textContent = `All ${delivery.phases.length} scheduled deliveries are accepted. This count does not measure completion of the full rewrite.`;
+    $("forecast-preview").textContent = delivery.later_work;
+    $("forecast-date").textContent = `A later increment needs a named scope and working-day budget before work starts.${deliveryUnavailable ? " Schedule refresh failed; showing the last loaded plan." : ""}`;
+    return;
   }
   if (!forecast) {
     $("forecast-range").textContent = "Estimate unavailable";
