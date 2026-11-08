@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T20:13:58.461161+00:00",
+  "updated_at": "2026-11-08T20:23:27.364732+00:00",
   "state": "active",
-  "summary": "M1\u2013M25 are accepted and M25 remains verified Latest. M26 AirSpeed and M27 PosePublisher implementation, regressions, guides and shared integration passed independent Source review. The first full normal run found three test-contract assertion failures; a reviewed test-only correction batch is in the full mandatory retry. No M26/M27 acceptance or hosted pass is claimed.",
+  "summary": "M1\u2013M25 are accepted and M25 remains verified Latest. M26 AirSpeed and M27 PosePublisher Source is reviewed. The first normal run found three test assertions; the second caught an unavailable World.clone call in the test correction. Production code is unchanged. The owned-fixture correction is independently reviewed; the third complete mandatory normal attempt is now running on tree 9f542c80. No M26/M27 acceptance or hosted pass is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "Next bounded AirSpeed increment",
-      "detail": "Complete AirSpeed and shared Source is reviewed. The first full normal run failed three Scene assertions: one inspected generic StepError text instead of retained typed fault, and two legacy tests still classified new AirSpeed support as unsupported. All actual failures were batched; exact typed-fault assertions and the named Rapier positive capability case now preserve all other refusals/tolerances. Production code is unchanged. The independently reviewed full normal retry is running on tree 7352faff."
+      "detail": "AirSpeed implementation, regressions, guide and shared integration passed independent Source review. The first normal failure batch corrected three test-contract assertions. The second attempt failed compilation because a test used World.clone; that one line now uses the existing owned fixture parser, preserving all assertions. Both failures are retained. The third complete mandatory normal attempt is running on candidate tree 9f542c80; production code is unchanged."
     },
     {
       "id": "SYS-CONTROL",
       "title": "Next bounded PosePublisher increment",
-      "detail": "PosePublisher Source, actual native timing arithmetic, bounded discovery/callback readiness, regressions and guide are reviewed. Shared loading/reset/weak IO/generation and all six live/initial/remapped publication-family collision controls are integrated. The complete mandatory normal retry runs serially before focused native capture, local audit, exact hosted CI and official audit. No partial test output is relabelled phase acceptance."
+      "detail": "PosePublisher implementation and shared loading/reset/IO integration are independently reviewed. The third full mandatory normal attempt is now running and still precedes focused current-source native capture, independent native/local audit, exact hosted CI and official audit. No partial result is phase acceptance."
     },
     {
       "id": "PKG-01",
@@ -830,7 +830,7 @@
     }
   ],
   "remaining": [
-    "Complete the actual full normal retry and focused current-source AirSpeed/PosePublisher native proof, then independent native/local DATA and exact hosted CI/official DATA before qualified Main acceptance. Preserve the original failed tree, raw logs and partial profiles; batch any additional actual failures before affected reruns.",
+    "Complete the currently running third full normal attempt from the independently reviewed test-only correction, then focused current-source AirSpeed/PosePublisher native proof, independent native/local DATA and exact hosted CI/official DATA before qualified Main acceptance. Preserve both actual failures and batch further real failures before affected reruns.",
     "Finish each complete implementation, regressions and guides before one consolidated full normal hook, strict actual-parent/per-crate/workspace line and region gates, exact hosted CI and independent local/official DATA. Preserve all retained failures and mandatory checks.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
