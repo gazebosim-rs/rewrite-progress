@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-08",
-  "scope": "M21 altimeter noise and M22 air-pressure noise; M1\u2013M20 accepted and published",
+  "scope": "M21/M22 qualification with parallel M23 magnetometer and M24 planar CPU-lidar noise source; M1\u2013M20 accepted",
   "target_working_days": 5,
   "confidence": "Medium",
-  "assumption": "M20 is published on qualified Main 9a3e81c as m20-preview (release 438259397), after exact hosted CI, official/local/package/install/browser proofs and all seven asset digest/body/Latest API readbacks. M21 and M22 have complete independently reviewed Source/regression/docs batches in separate lanes and one integrated frozen candidate. One consolidated native capture passed all ten modes with independent retained DATA; the first mandatory full normal hook failed two regression fixtures. Corrections are being batched for independent review before the next required pass. Neither phase inherits acceptance; exact local/hosted/native audits and qualified promotion remain mandatory. Local heavy work stays serial.",
+  "assumption": "M20 remains the checked installed preview and Latest. M21/M22 has fresh native DATA and is running its corrected mandatory full normal hook after two preserved fixture failures. Two further bounded source lanes now implement magnetometer Gaussian/quantized noise and planar CPU-lidar white Gaussian noise with zero minimum. Their source is independent; integration and checks require the finally qualified M21/M22 parent. All full normal, strict coverage, exact hosted CI, independent audits and qualified promotion requirements remain. The schedule expands from 22 to 24 named deliveries; accepted count remains 20, not a whole-rewrite percentage.",
   "clock": "Implementation is active. Each phase is scoped to at most five working days including review and mandatory checks; this is a scope budget, not a promised completion date. After acceptance, the owner directs continuing to the next useful bounded phase while retained work remains."
 }

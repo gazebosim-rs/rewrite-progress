@@ -379,6 +379,34 @@
       "acceptance": "Meaningful deterministic/noisy invalid, seeded independence, demand/rate/pause/reset and actual canonical wire controls; focused pinned native evidence; complete source/docs and independent review before one full normal hook, strict coverage and exact hosted CI; independent retained audits and qualified parent/Main promotion before acceptance.",
       "excluded": "Shared noise-model rewrite, native RNG byte equality, new sensor family/atmosphere/backend/transport/framework/UI, multiple sensors or runtime sensor spawning, reference/rate services and performance claims.",
       "evidence": "docs/M21_M22_DELIVERY.md"
+    },
+    {
+      "id": "M23",
+      "title": "Loaded magnetometer Gaussian noise",
+      "max_working_days": 5,
+      "depends_on": [
+        "M17",
+        "M21",
+        "M22"
+      ],
+      "scope": "Gaussian and Gaussian-quantized X/Y/Z noise after resolving the existing single Rapier magnetometer field into sensor axes, with native zero-elapsed XYZ order and maintained seeded streams.",
+      "acceptance": "Complete source/regressions/docs and independent review before one consolidated full normal hook, strict workspace/per-crate/actual-parent coverage and exact hosted CI; focused pinned native and actual canonical wire evidence; independent retained audits and qualified parent/Main promotion before acceptance.",
+      "excluded": "Shared noise-model rewrite, native RNG/reset byte equality, geographic field models, multiple sensors, new backend/transport/UI and performance claims.",
+      "evidence": "docs/M23_M24_DELIVERY.md"
+    },
+    {
+      "id": "M24",
+      "title": "Planar CPU-lidar white Gaussian noise",
+      "max_working_days": 5,
+      "depends_on": [
+        "M7",
+        "M21",
+        "M22"
+      ],
+      "scope": "Finite mean/nonnegative standard-deviation Gaussian range noise for one existing planar Rapier CPU lidar with zero range minimum; native activation, finite-hit beam order, skipped infinite misses and finite post-noise clipping, preserving all noise-free behavior.",
+      "acceptance": "Complete source/regressions/docs and independent review before one consolidated full normal hook, strict workspace/per-crate/actual-parent coverage and exact hosted CI; focused pinned native and actual canonical wire evidence; independent retained audits and qualified parent/Main promotion before acceptance.",
+      "excluded": "Noisy nonzero minimum, bias/dynamic bias/quantized noise/nondefault precision, GPU lidar, intensity/pointclouds, raw out-of-range native fraction parity, new physics/transport/UI and performance claims.",
+      "evidence": "docs/M23_M24_DELIVERY.md"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -404,13 +432,17 @@
     "M19": "complete",
     "M20": "complete",
     "M21": "in_progress",
-    "M22": "in_progress"
+    "M22": "in_progress",
+    "M23": "in_progress",
+    "M24": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-08",
   "active_phases": [
     "M21",
-    "M22"
+    "M22",
+    "M23",
+    "M24"
   ],
   "execution_policy": "D31/D32: independent Source lanes in separate worktrees with one integrator; serial local heavy checks. Finish Source/regressions/docs and independent review before one consolidated full normal hook. Exact hosted CI and actual artifact/browser proofs precede acceptance/publication.",
   "parallel_groups": [
@@ -445,7 +477,15 @@
       ],
       "integration": "Independent leaf/source/test lanes and one integrator. Source may overlap frozen locally qualified M20 hosted/artifact qualification; local heavy checks stay serial and final M20 acceptance is a prerequisite.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M23",
+        "M24"
+      ],
+      "integration": "Disjoint Source lanes may overlap M21/M22 qualification. Integrate onto the finally qualified M21/M22 parent before checks; one integrator serializes local heavy work and neither phase inherits acceptance.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M20 are accepted and published at qualified Main 9a3e81c; actual m20-preview asset/body/tag/Latest API readbacks close M20. M21/M22 Source is independently reviewed and integrated, with no new-phase checks or inherited acceptance. Continue bounded deliveries under D32."
+  "acceptance_boundary": "M1\u2013M20 are accepted and published on qualified Main 9a3e81c. M21/M22 has reviewed source and fresh native DATA; its corrected full normal hook is running after two preserved regression-fixture failures. M23/M24 source proceeds in separate worktrees and requires the finally qualified M21/M22 parent before any new checks. No new phase acceptance is inferred."
 }
