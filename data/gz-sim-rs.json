@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T23:41:45.614753+00:00",
+  "updated_at": "2026-11-08T23:43:18.544855+00:00",
   "state": "active",
-  "summary": "M1\u2013M25 are accepted and M25 remains verified Latest. M26 AirSpeed and M27 PosePublisher implementation and shared Source are independently reviewed. The third complete mandatory normal hook and all strict coverage gates passed at commit 3cbc23ddd60bbf4514c8d2354aa0a7d9ea3f9800, tree 9f542c80, with actual exit 0. Both earlier failures remain retained. Focused current-source native comparisons are now running. Independent native/local DATA, exact hosted CI and official DATA remain required before qualified Main acceptance; no M26/M27 acceptance or hosted pass is claimed.",
+  "summary": "M1\u2013M25 are accepted and M25 remains verified Latest. M26 AirSpeed and M27 PosePublisher implementation and shared Source are independently reviewed. The third complete mandatory normal hook and all strict coverage gates passed with actual exit 0 at commit 3cbc23ddd60bbf4514c8d2354aa0a7d9ea3f9800, tree 9f542c80. The focused native batch exited 1: eight modes passed, while the PosePublisher rewind mode reached its callback completion deadline. The cause is under investigation; no product defect is yet confirmed and no owner action is requested. Independent native/local DATA, exact hosted CI and official DATA remain pending before qualified Main acceptance. M26/M27 are not accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "Next bounded AirSpeed increment",
-      "detail": "AirSpeed implementation, regressions, guide and shared integration passed independent Source review. The complete mandatory normal hook and strict workspace/per-crate/actual-parent coverage gates passed with actual exit 0 at commit 3cbc23ddd60bbf4514c8d2354aa0a7d9ea3f9800, tree 9f542c80. The first assertion failures and second test-only World.clone compilation failure remain retained; production code was unchanged by their corrections. Focused native comparisons are running; independent local DATA is not yet complete."
+      "detail": "AirSpeed implementation, regressions, guide and shared integration passed independent Source review. The complete mandatory normal hook and strict workspace/per-crate/actual-parent coverage gates passed with actual exit 0 at commit 3cbc23ddd60bbf4514c8d2354aa0a7d9ea3f9800, tree 9f542c80. All three AirSpeed native modes exited 0 in a combined batch that ultimately exited 1 at PosePublisher rewind. No independent native/local DATA clearance or phase acceptance is claimed; original normal failures remain retained."
     },
     {
       "id": "SYS-CONTROL",
       "title": "Next bounded PosePublisher increment",
-      "detail": "PosePublisher implementation and shared loading/reset/IO integration are independently reviewed. The third complete mandatory normal hook and strict coverage gates passed. Focused current-source AirSpeed/PosePublisher native comparisons are now running once. Native DATA, independent local DATA, exact hosted CI and official DATA still precede qualified Main acceptance. No phase acceptance follows from a normal pass alone."
+      "detail": "PosePublisher implementation and shared loading/reset/IO integration are independently reviewed, and the third complete mandatory normal hook passed all strict coverage gates. Five PosePublisher native modes exited 0; rewind exited 1 after the reset callback completion deadline, leaving the combined native batch failed after 73.077169 seconds. Cause remains under investigation, with no confirmed product defect or owner action. Native/local DATA, exact hosted CI, official DATA and qualified Main acceptance remain pending; no automatic retry or acceptance is inferred."
     },
     {
       "id": "PKG-01",
@@ -830,7 +830,7 @@
     }
   ],
   "remaining": [
-    "Complete the active focused current-source AirSpeed/PosePublisher native comparisons and independent native/local DATA, then exact hosted CI and official DATA before qualified Main acceptance. The normal hook and all mandatory strict coverage gates passed; preserve both earlier actual failures and batch any new real failures before affected reruns.",
+    "Diagnose the actual PosePublisher native rewind callback deadline and batch any evidenced correction before an affected Root-released native continuation. Preserve the combined batch exit 1 and all eight completed mode exits 0. The normal hook and strict coverage gates passed, but independent native/local DATA, exact hosted CI, official DATA and qualified Main acceptance remain required.",
     "Finish each complete implementation, regressions and guides before one consolidated full normal hook, strict actual-parent/per-crate/workspace line and region gates, exact hosted CI and independent local/official DATA. Preserve all retained failures and mandatory checks.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
