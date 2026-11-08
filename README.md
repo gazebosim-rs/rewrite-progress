@@ -18,7 +18,7 @@ plan packet. `plan_status` may say `complete` only when the packet's documented
 acceptance evidence is met. Coverage is a quality measurement, not rewrite progress.
 Fuel has an independent owner; unknown status is displayed as unknown.
 
-The top progress bar counts accepted M1–M12 deliveries from `data/delivery.json`
+The top progress bar counts accepted named deliveries from `data/delivery.json`
 on `main`. These short deliveries are distinct from historical P0–P7 gates.
 Missing schedule data shows an unavailable state. Each phase is budgeted at
 most five working days, including review and mandatory checks. No milestone is

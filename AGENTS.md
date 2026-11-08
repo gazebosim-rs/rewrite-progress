@@ -26,7 +26,7 @@ The user requested an online tracker and instructed repository agents to update 
   milestones, scope changes or a material change in delivery rate. Never infer
   an engineering completion percentage from elapsed time.
 
-- D30 replaces the full-rewrite-first forecast with weekly deliveries M1–M12.
+- D30 replaces the full-rewrite-first forecast with bounded weekly deliveries.
   Coordinator owns `data/delivery.json`, mirrored from gz-sim-rs
   `planning/delivery-phases.json`. Each budget is 1–5 working days including
   review and required checks. Keep original P0–P7 status and evidence separate.
