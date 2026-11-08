@@ -38,7 +38,7 @@ function render(plan, forecast) {
 }
 
 const current = render(schedule, outlook);
-assert.equal(current.elements.get("phase-count").textContent, "12 / 12");
+assert.equal(current.elements.get("phase-count").textContent, "14 / 14");
 assert.equal(current.elements.get("forecast-range").textContent, "Next delivery unselected");
 assert.match(current.elements.get("delivery-state").textContent, /All scheduled deliveries accepted/);
 assert.match(current.elements.get("forecast-detail").textContent, /does not measure completion of the full rewrite/);
@@ -49,7 +49,7 @@ assert.equal(noForecast.elements.get("forecast-range").textContent, "Next delive
 const unfinished = JSON.parse(JSON.stringify(schedule));
 unfinished.status.M12 = "in_progress";
 const active = render(unfinished, outlook);
-assert.equal(active.elements.get("phase-count").textContent, "11 / 12");
+assert.equal(active.elements.get("phase-count").textContent, "13 / 14");
 assert.match(active.elements.get("forecast-range").textContent, /^≤5 working days to next delivery$/);
 assert.match(active.elements.get("delivery-state").textContent, /Implementation active/);
 
