@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T14:03:37.033216+00:00",
+  "updated_at": "2026-11-08T14:27:44.026395+00:00",
   "state": "active",
-  "summary": "M1\u2013M20 are accepted and published. The checked M20 installed lifecycle preview is Latest after all seven API asset digests matched. M21/M22 Source and fresh native DATA passed review; their one mandatory full normal hook is running.",
+  "summary": "M1\u2013M20 are accepted and published. M21/M22 fresh native DATA passed; their mandatory normal hook found two failing regression fixtures. Corrections are being batched for independent review before another required pass.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
-      "title": "M21/M22 consolidated normal qualification",
-      "detail": "The complete altimeter and air-pressure noise batch is frozen at tree aec84bd5 after independent Source review and one formatting pass. The single native batch passed 35 actual zero/reaped stages across all ten modes (430 printed rows), followed by independent retained DATA. The full unchanged normal hook is running; no normal/local/hosted/phase acceptance is inferred. Fresh noise evidence stays distinct from inherited magnetic/joint-state proof."
+      "title": "M21/M22 regression corrections",
+      "detail": "The first consolidated headless run found an altimeter parser-admission expectation failure and an air-pressure invalid-output fixture failure. Both are under source review. No new acceptance or hosted success is claimed; the M20 installed preview remains Latest."
     }
   ],
   "accepted_slices": [
@@ -826,7 +826,9 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification.",
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
-  "blockers": [],
+  "blockers": [
+    "M21/M22 mandatory qualification requires the two observed regression failures to be corrected and independently reviewed, then the required normal and hosted checks to pass."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
