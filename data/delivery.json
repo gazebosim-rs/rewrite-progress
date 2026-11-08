@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "execution_state": "active",
   "current_phase": "M19",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -290,7 +290,13 @@
       "scope": "One loaded ideal Rapier magnetometer transforms a finite constant SDF world magnetic field into the resolved sensor frame and publishes canonical upstream Zenoh Magnetometer messages.",
       "acceptance": "Actual pinned native model and moving-pose observations, all emitted field/frame/time/sequence values, canonical wire, cadence/demand/pause/reset/removal and atomic-refusal/stale-generation controls pass; all mandatory gates and independent audits precede qualified Main promotion.",
       "excluded": "Noise, geographic/spherical-coordinate field calculation, sensor UI, new transport/framework and other backend support.",
-      "evidence": "docs/M17_MAGNETOMETER.md"
+      "evidence": "docs/M17_MAGNETOMETER.md",
+      "accepted_at": "2026-11-08T08:55:26.028313+00:00",
+      "accepted_commits": {
+        "gz-sim-rs": "c7402b45ae8541aa395aaed565cf3a3dc77347e7",
+        "gzweb-rs": "c40418cd85e21db2bd0271919c90eda0c1184ece"
+      },
+      "acceptance_receipt": "https://github.com/gazebosim-rs/gz-sim-rs/releases/download/m17-m18-features/m17-m18-acceptance.json"
     },
     {
       "id": "M18",
@@ -302,7 +308,13 @@
       "scope": "One top-level Rapier model publishes actual admitted single-axis joint position/velocity and supported metadata in canonical Model messages, with bounded built-in topic/filter/rate configuration.",
       "acceptance": "Actual pinned native packets and backend component observations establish every emitted field, topic/filter/order and equal-time/pause/reset cadence; real moving-joint canonical delivery, lifecycle and endpoint-conflict controls pass with all mandatory gates and independent audits.",
       "excluded": "Unavailable force values, multiaxis or dynamically created joints, nested-model expansion, new solver/controllers, UI or general plugin framework.",
-      "evidence": "docs/M18_JOINT_STATE.md"
+      "evidence": "docs/M18_JOINT_STATE.md",
+      "accepted_at": "2026-11-08T08:55:26.028313+00:00",
+      "accepted_commits": {
+        "gz-sim-rs": "c7402b45ae8541aa395aaed565cf3a3dc77347e7",
+        "gzweb-rs": "c40418cd85e21db2bd0271919c90eda0c1184ece"
+      },
+      "acceptance_receipt": "https://github.com/gazebosim-rs/gz-sim-rs/releases/download/m17-m18-features/m17-m18-acceptance.json"
     },
     {
       "id": "M19",
@@ -337,15 +349,13 @@
     "M14": "complete",
     "M15": "complete",
     "M16": "complete",
-    "M17": "in_progress",
-    "M18": "in_progress",
+    "M17": "complete",
+    "M18": "complete",
     "M19": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-08T05:58:40.655341+00:00",
   "active_phases": [
-    "M17",
-    "M18",
     "M19"
   ],
   "execution_policy": "D31: one integrator and serial local heavy work. After exact parent normal/native/independent-local proofs pass, reviewed M19 local checks may overlap parent hosted CI. Acceptance/publication requires the finally qualified exact parent plus all child gates and artifact proofs; parent source fixes require rebase and affected checks.",
@@ -375,5 +385,5 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M16 are accepted at Main 5f53c92e. M17/M18 native comparison and independent native DATA have passed; the corrected parent final hook, local audit and exact hosted qualification remain pending. M19 source, regressions and shared planning are independently reviewed in parallel; no new installer check/build/install/browser result or phase acceptance is claimed. Each final acceptance requires all exact gates, artifact proofs and qualified Main promotion under D31."
+  "acceptance_boundary": "M1\u2013M18 are accepted and published through qualified Main c7402b45 with exact hosted/native/local/official evidence. M19 e807a97 has passed normal/local/exact hosted/official gates, fresh release inputs, full package/relocation DATA and clean Ubuntu non-root installation DATA. Actual installed-browser forward/turn/Pause/Reset/owned shutdown and its independent DATA remain required before qualified Main and public preview acceptance."
 }
