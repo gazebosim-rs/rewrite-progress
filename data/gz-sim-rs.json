@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T06:01:31.954930+00:00",
+  "updated_at": "2026-11-08T06:14:53.460429+00:00",
   "state": "active",
-  "summary": "M1\u2013M16 remain accepted and published. M17 magnetometer and M18 joint-state publication are in their full normal-hook retry after a reviewed compile correction. M19 refreshed installer source preparation has started in a separate worktree while qualification runs; no new phase acceptance or installer result is claimed.",
+  "summary": "M1\u2013M16 remain accepted and published. M17/M18 qualification found two new tests using explicitly unsupported moving-parent effort. Both were corrected together to use the existing bounded motor, with refusal/state-preservation controls and independent review; the affected full normal-hook retry is running. M19 packaging source and regressions are independently reviewed in a separate worktree.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "M17 ideal magnetometer",
-      "detail": "The complete model, Scene, Server, regression and documentation batch has independent source clearance. Shared integration is complete, and the consolidated normal hook is running after the reviewed tuple-getter correction. The reviewed native reference and retained-data procedures are ready but unexecuted. New native/wire evidence, strict coverage, hosted CI and final audits remain required."
+      "detail": "Ideal magnetometer model, Scene/Server integration, coexistence regressions and documentation are independently reviewed. The normal hook is running after the batched joint-state test correction. Actual native evidence, complete coverage, exact hosted CI and final audits remain required; no phase acceptance is claimed."
     },
     {
       "id": "SYS-CONTROL",
       "title": "M18 joint-state publication",
-      "detail": "Joint-state publication, canonical metadata, native cadence including paused equal time, reset identity ownership and endpoint reservations are implemented and independently reviewed. The first gate found three compiler diagnostics at two callers of the model-ID/publication getter; all were corrected together, with a prepared-ID drift regression. The full-hook retry is running; no new test or acceptance result is claimed."
+      "detail": "The previous full hook compiled successfully but two new motion tests requested explicitly unsupported Rapier moving-parent effort. Both now use the existing bounded velocity motor and preserve all original publication/cadence/reset assertions, with explicit typed refusal and unchanged-state controls. The entire correction and guide update are independently reviewed; one affected full-hook retry is running."
     },
     {
       "id": "PKG-01",
       "title": "M19 refreshed installed preview",
-      "detail": "Packaging source and regression code now include the M17/M18 coexistence robot, its copied relative OBJ asset and dedicated installation/capability guides. The verifier retains complete legacy-guide compatibility. Independent whole-source review is pending. M19 must advance onto qualified M17/M18 Main before checks; fresh release builds, notices, clean installation, real installed browser proof and mandatory gates remain required."
+      "detail": "The complete packaging source, regression code, copied coexistence fixture and dedicated guides have independent source clearance. The fixed relative OBJ asset is included, and complete legacy guide-pair verification remains supported. M19 checks wait for qualified M17/M18 Main and shared planning review. Fresh release ELFs, notices, clean installation and actual installed browser proof remain required."
     }
   ],
   "accepted_slices": [
@@ -806,7 +806,7 @@
   ],
   "remaining": [
     "Complete the reviewed M19 native-free installer refresh after qualified M17/M18 Main, preserving the published M12 installer and accepted viewer bytes.",
-    "Complete M15/M16 native and browser proofs, the full required hook, strict coverage, exact hosted CI and independent review/audits before acceptance. Then select and start the next useful bounded phase under the standing continuation instruction.",
+    "Finish M17/M18 native/canonical evidence, the complete normal hook, strict coverage, exact hosted CI and independent audits before qualified Main acceptance; then complete the already-started M19 installer refresh and continue to the next useful bounded delivery.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
