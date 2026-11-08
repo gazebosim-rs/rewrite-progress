@@ -483,9 +483,9 @@
         "M23",
         "M24"
       ],
-      "integration": "Disjoint Source lanes may overlap M21/M22 qualification. Integrate onto the finally qualified M21/M22 parent before checks; one integrator serializes local heavy work and neither phase inherits acceptance.",
+      "integration": "Disjoint Source lanes integrate on the exact locally qualified M21/M22 candidate. After actual full normal/native/local DATA pass, reviewed provisional local checks may overlap parent hosted CI with local heavy work serial. Child retained qualification and publication require the finally accepted parent and all child gates; parent corrections require rebase and affected checks.",
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M20 are accepted and published on qualified Main 9a3e81c. M21/M22 review 36eb202c passed the full normal hook and independent local DATA; exact hosted CI 42493504723 attempt 1 is in progress. M23/M24 Source is independently reviewed and integrated on that candidate, with checks held until the exact parent qualifies. No new phase acceptance is inferred."
+  "acceptance_boundary": "Source-review checkpoint: M1\u2013M20 accepted; M21/M22 review 36eb202c passed full normal/native/local DATA while exact hosted CI 42493504723 attempt 1 is pending. M23/M24 reviewed provisional local checks may overlap that hosted run. Parent final acceptance, child retained audits and all normal/strict/hosted gates remain mandatory before publication or acceptance; actual later acceptance belongs to release receipts/tracker/next metadata increment. Frozen source is never mutated to record a later outcome."
 }
