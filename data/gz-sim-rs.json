@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T15:14:11.638850+00:00",
+  "updated_at": "2026-11-08T15:47:55.195076+00:00",
   "state": "active",
-  "summary": "M1\u2013M20 are accepted and published. M21/M22 passed the full normal hook and independent local DATA; exact hosted CI is running. M23/M24 Source is independently reviewed and integrated, with new checks held for the qualified parent.",
+  "summary": "M1\u2013M20 are accepted. M21/M22 exact hosted CI is running after full normal/local qualification. M23/M24 passed native capture and independent DATA and is running its provisional consolidated normal hook in parallel with parent CI.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -13,13 +13,13 @@
     },
     {
       "id": "SENSOR-02",
-      "title": "M23 magnetometer noise source",
-      "detail": "The complete sensor-axis Gaussian/quantized noise implementation, meaningful regression sources, native helper and guide passed independent Source review. It is integrated on the M21/M22 candidate; checks wait for that exact parent to qualify."
+      "title": "M23 magnetic noise provisional qualification",
+      "detail": "Reviewed source passed fresh native capture and independent DATA: canonical magnetic vectors/headers are distinct from CPU-lidar direct range results. The one consolidated full normal hook is running provisionally. No Rust pass, acceptance or installed archive update is inferred."
     },
     {
       "id": "SENSOR-03",
-      "title": "M24 planar CPU-lidar noise source",
-      "detail": "The complete zero-minimum Gaussian mean/stddev implementation, tests, direct native range helper and guide passed independent Source review. Existing noise-free nonzero-minimum behavior stays intact. No M24 checks have run."
+      "title": "M24 planar CPU-lidar provisional qualification",
+      "detail": "The combined native batch passed all 38 stages across 13 modes with 690 printed rows; CPU modes are direct range results, not native wire/timestamp proof. Independent DATA passed. Local heavy work is serial while the child full normal hook overlaps parent hosted CI."
     }
   ],
   "accepted_slices": [
@@ -837,7 +837,7 @@
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
   "blockers": [
-    "Exact hosted run 42493504723 and independent official audit/qualified promotion remain before M21/M22 acceptance and M23/M24 checks."
+    "Final M21/M22 hosted/official acceptance and all M23/M24 retained/hosted gates remain mandatory before child publication or acceptance. Parent corrections require rebasing and affected checks."
   ],
   "plan_status": {
     "REF-01": "in_progress",
