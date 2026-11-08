@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-08",
-  "scope": "M21/M22 qualification with parallel M23 magnetometer and M24 planar CPU-lidar noise source; M1\u2013M20 accepted",
+  "scope": "M21/M22 hosted recovery, M23/M24 provisional qualification and M25 updated installed preview source",
   "target_working_days": 5,
   "confidence": "Medium",
-  "assumption": "M20 remains the checked installed preview and Latest. M21/M22 review 36eb202c passed full normal/local qualification; exact hosted CI 42493504723 attempt 1 is running. Both next source batches passed independent review. M23/M24 fresh native capture passed 38 stages/13 modes and independent DATA; its consolidated full normal hook is running provisionally in parallel with parent CI. Local heavy work stays serial. Child retained audits, acceptance and publication still require the finally accepted parent and every child normal/strict/hosted gate. Parent corrections require rebase and affected checks. The schedule has 24 named deliveries and 20 accepted phases, not a whole-rewrite percentage.",
+  "assumption": "M20 remains the checked installed preview and Latest. M21/M22 full local qualification passed, but hosted attempt 1 failed at an LLVM linker SIGBUS of unknown cause; one unchanged exact-commit attempt 2 is running with every mandatory job retained. M23/M24 native DATA and full normal passed provisionally. M25 source prepares a fresh distribution through M24 with four copied noise examples and real finite installed execution. All parent/child gates, independent audits, fresh artifact/install/browser evidence and publication readbacks remain required. The schedule expands from 24 to 25 named deliveries; accepted count stays 20 and is not a whole-rewrite percentage.",
   "clock": "Implementation is active. Each phase is scoped to at most five working days including review and mandatory checks; this is a scope budget, not a promised completion date. After acceptance, the owner directs continuing to the next useful bounded phase while retained work remains."
 }
