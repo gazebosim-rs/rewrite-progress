@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-08",
-  "scope": "M20 installed lifecycle preview qualification; parallel M21/M22 sensor-noise Source; M1\u2013M19 accepted and published",
+  "scope": "M21 altimeter noise and M22 air-pressure noise; M1\u2013M20 accepted and published",
   "target_working_days": 5,
   "confidence": "Medium",
-  "assumption": "M19 remains the published accepted preview. Frozen M20 review 9a3e81c passed its full normal hook and independent local/package/install/browser proofs; exact hosted CI and official audit, qualified promotion and checked asset publication remain required. M21 altimeter noise and M22 air-pressure noise are independently reviewed leaf batches in separate worktrees over that conditional parent. Shared integration and bounded native-proof preparation remain active; no M21/M22 checks or acceptance has run. Local heavy qualification stays serial, and parent corrections require rebase and affected checks.",
+  "assumption": "M20 is published on qualified Main 9a3e81c as m20-preview (release 438259397), after exact hosted CI, official/local/package/install/browser proofs and all seven asset digest/body/Latest API readbacks. M21 and M22 have complete independently reviewed Source/regression/docs batches in separate lanes and one integrated frozen candidate. One consolidated native capture passed all ten modes with independent retained DATA; the mandatory full normal hook is running. Neither phase inherits acceptance; exact local/hosted/native audits and qualified promotion remain mandatory. Local heavy work stays serial.",
   "clock": "Implementation is active. Each phase is scoped to at most five working days including review and mandatory checks; this is a scope budget, not a promised completion date. After acceptance, the owner directs continuing to the next useful bounded phase while retained work remains."
 }
