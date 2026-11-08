@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-07",
-  "scope": "M15 ideal air pressure and M16 local OBJ in parallel; M1\u2013M14 accepted",
+  "scope": "M17 ideal magnetometer and M18 joint-state publication in parallel; M1\u2013M16 accepted",
   "target_working_days": 5,
-  "confidence": "High",
-  "assumption": "M15 and M16 are independent bounded increments over accepted M13/M14. Source work and review may overlap, with one integrator and serial heavy local qualification. Neither new phase is accepted before actual functional proofs and all required checks.",
+  "confidence": "Medium",
+  "assumption": "The two bounded leaf implementations share existing accepted sensor and joint infrastructure. Source and independent review proceed in parallel, with one integration owner and serial heavy local qualification. Native reference, canonical wire and all required gates remain pending for the new phases.",
   "clock": "Implementation is active. Each phase is scoped to at most five working days including review and mandatory checks; this is a scope budget, not a promised completion date. After acceptance, the owner directs continuing to the next useful bounded phase while retained work remains."
 }
