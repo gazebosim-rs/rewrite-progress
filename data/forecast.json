@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-07",
-  "scope": "M1\u2013M14 delivered; next bounded increment unselected",
+  "scope": "M15 ideal air pressure and M16 local OBJ in parallel; M1\u2013M14 accepted",
   "target_working_days": 5,
   "confidence": "High",
-  "assumption": "M13 ideal altimeter and M14 local ASCII/binary STL support are accepted together after independent review, the full normal gate, exact hosted CI, native reference and actual browser proofs. All fourteen scheduled deliveries are complete. These counts do not measure completion of the full rewrite.",
-  "clock": "A future cycle needs a named scope of at most five working days including independent review and mandatory checks before implementation starts. This retained budget is not a countdown or a promised delivery date. Full compatibility remains an unscheduled backlog."
+  "assumption": "M15 and M16 are independent bounded increments over accepted M13/M14. Source work and review may overlap, with one integrator and serial heavy local qualification. Neither new phase is accepted before actual functional proofs and all required checks.",
+  "clock": "Implementation is active. Each phase is scoped to at most five working days including review and mandatory checks; this is a scope budget, not a promised completion date. After acceptance, the owner directs continuing to the next useful bounded phase while retained work remains."
 }

@@ -37,19 +37,22 @@ function render(plan, forecast) {
   return {elements, context};
 }
 
-const current = render(schedule, outlook);
-assert.equal(current.elements.get("phase-count").textContent, "14 / 14");
+const accepted = JSON.parse(JSON.stringify(schedule));
+for (const phase of accepted.phases) accepted.status[phase.id] = "complete";
+const total = accepted.phases.length;
+const current = render(accepted, outlook);
+assert.equal(current.elements.get("phase-count").textContent, `${total} / ${total}`);
 assert.equal(current.elements.get("forecast-range").textContent, "Next delivery unselected");
 assert.match(current.elements.get("delivery-state").textContent, /All scheduled deliveries accepted/);
 assert.match(current.elements.get("forecast-detail").textContent, /does not measure completion of the full rewrite/);
 
-const noForecast = render(schedule, undefined);
+const noForecast = render(accepted, undefined);
 assert.equal(noForecast.elements.get("forecast-range").textContent, "Next delivery unselected");
 
-const unfinished = JSON.parse(JSON.stringify(schedule));
+const unfinished = JSON.parse(JSON.stringify(accepted));
 unfinished.status.M12 = "in_progress";
 const active = render(unfinished, outlook);
-assert.equal(active.elements.get("phase-count").textContent, "13 / 14");
+assert.equal(active.elements.get("phase-count").textContent, `${total - 1} / ${total}`);
 assert.match(active.elements.get("forecast-range").textContent, /^≤5 working days to next delivery$/);
 assert.match(active.elements.get("delivery-state").textContent, /Implementation active/);
 
@@ -57,7 +60,7 @@ unfinished.execution_state = "paused";
 assert.match(render(unfinished, outlook).elements.get("delivery-state").textContent, /Implementation paused/);
 assert.equal(render(unfinished, undefined).elements.get("forecast-range").textContent, "Estimate unavailable");
 
-const nextFixture = JSON.parse(JSON.stringify(schedule));
+const nextFixture = JSON.parse(JSON.stringify(accepted));
 nextFixture.phases.push({...nextFixture.phases[0], id: "NEXT_FIXTURE", title: "Test fixture only"});
 nextFixture.current_phase = "NEXT_FIXTURE";
 nextFixture.status.NEXT_FIXTURE = "not_started";
