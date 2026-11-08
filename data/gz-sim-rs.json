@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T05:44:05.042601+00:00",
+  "updated_at": "2026-11-08T06:01:31.954930+00:00",
   "state": "active",
-  "summary": "M1\u2013M16 remain accepted and published at Main 5f53c92e. The complete M17 magnetometer and M18 joint-state Source batch is independently reviewed. The first normal hook stopped at a Server getter type mismatch before tests; its batched correction and regression are reviewed, and the full-hook retry is running.",
+  "summary": "M1\u2013M16 remain accepted and published. M17 magnetometer and M18 joint-state publication are in their full normal-hook retry after a reviewed compile correction. M19 refreshed installer source preparation has started in a separate worktree while qualification runs; no new phase acceptance or installer result is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -15,6 +15,11 @@
       "id": "SYS-CONTROL",
       "title": "M18 joint-state publication",
       "detail": "Joint-state publication, canonical metadata, native cadence including paused equal time, reset identity ownership and endpoint reservations are implemented and independently reviewed. The first gate found three compiler diagnostics at two callers of the model-ID/publication getter; all were corrected together, with a prepared-ID drift regression. The full-hook retry is running; no new test or acceptance result is claimed."
+    },
+    {
+      "id": "PKG-01",
+      "title": "M19 refreshed installed preview",
+      "detail": "Packaging source and regression code now include the M17/M18 coexistence robot, its copied relative OBJ asset and dedicated installation/capability guides. The verifier retains complete legacy-guide compatibility. Independent whole-source review is pending. M19 must advance onto qualified M17/M18 Main before checks; fresh release builds, notices, clean installation, real installed browser proof and mandatory gates remain required."
     }
   ],
   "accepted_slices": [
@@ -800,6 +805,7 @@
     }
   ],
   "remaining": [
+    "Complete the reviewed M19 native-free installer refresh after qualified M17/M18 Main, preserving the published M12 installer and accepted viewer bytes.",
     "Complete M15/M16 native and browser proofs, the full required hook, strict coverage, exact hosted CI and independent review/audits before acceptance. Then select and start the next useful bounded phase under the standing continuation instruction.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
@@ -836,7 +842,8 @@
     "ZEN-01": "complete",
     "PERF-01": "in_progress",
     "ASSET-01": "in_progress",
-    "SENSOR-02": "in_progress"
+    "SENSOR-02": "in_progress",
+    "PKG-01": "in_progress"
   },
   "quality": {
     "revision": "5f53c92e04822ec25b00ca8483d2890bd1f70d40",
