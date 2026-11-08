@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T06:14:53.460429+00:00",
+  "updated_at": "2026-11-08T07:06:58.550060+00:00",
   "state": "active",
-  "summary": "M1\u2013M16 remain accepted and published. M17/M18 qualification found two new tests using explicitly unsupported moving-parent effort. Both were corrected together to use the existing bounded motor, with refusal/state-preservation controls and independent review; the affected full normal-hook retry is running. M19 packaging source and regressions are independently reviewed in a separate worktree.",
+  "summary": "M1\u2013M16 remain accepted and published. M17/M18 native comparison and independent retained-data audit have passed after fixing two observer assumptions. The corrected maintained candidate is now in its final full normal hook. M19 installer source and regressions are independently reviewed, including an explicit additional local HTTP port that preserves older services.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "M17 ideal magnetometer",
-      "detail": "Ideal magnetometer model, Scene/Server integration, coexistence regressions and documentation are independently reviewed. The normal hook is running after the batched joint-state test correction. Actual native evidence, complete coverage, exact hosted CI and final audits remain required; no phase acceptance is claimed."
+      "detail": "The native magnetic model, rotation and translation modes passed in the complete 29-stage reference run, with independent retained-data audit. The corrected maintained candidate is in its full normal hook; local audit, exact hosted CI and final acceptance remain pending. The earlier complete Rust candidate passed strict coverage, but that result does not qualify the later observer-source correction."
     },
     {
       "id": "SYS-CONTROL",
       "title": "M18 joint-state publication",
-      "detail": "The previous full hook compiled successfully but two new motion tests requested explicitly unsupported Rapier moving-parent effort. Both now use the existing bounded velocity motor and preserve all original publication/cadence/reset assertions, with explicit typed refusal and unchanged-state controls. The entire correction and guide update are independently reviewed; one affected full-hook retry is running."
+      "detail": "Native default, filtered and rate modes passed every packet/component/count/cadence/value/motion assertion, with independent data audit. The observer uses finite paused updates and requests actual measurements for all observed joints without changing packet filtering. Both earlier native failures and the prior compile/motion-test failures remain retained. Final full normal-hook verification is running; no phase acceptance is claimed."
     },
     {
       "id": "PKG-01",
       "title": "M19 refreshed installed preview",
-      "detail": "The complete packaging source, regression code, copied coexistence fixture and dedicated guides have independent source clearance. The fixed relative OBJ asset is included, and complete legacy guide-pair verification remains supported. M19 checks wait for qualified M17/M18 Main and shared planning review. Fresh release ELFs, notices, clean installation and actual installed browser proof remain required."
+      "detail": "The complete package source, regressions, copied robot/OBJ, dedicated guides and legacy-guide compatibility have independent source clearance. HTTP 8082 is explicitly admitted by launcher and exact local origin lists; defaults and other refusals remain. Local M19 checks may overlap parent hosted CI after exact parent normal/native/local proofs pass, with local heavy work serial. Fresh release builds, notices, package, clean installation and actual installed browser proof remain required before acceptance."
     }
   ],
   "accepted_slices": [
