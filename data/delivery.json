@@ -347,6 +347,32 @@
       "acceptance": "Meaningful default/opt-in pairing and real socket credit/catalog/coexistence controls; complete guide-pair verification; full normal hook, strict workspace/per-crate/parent gates and exact hosted CI; independently audited native-free package, supported non-root installation and actual opted-in browser robot controls/owned clean shutdown before qualified publication.",
       "excluded": "Wire or renderer changes, queue/deadline widening, silent default changes, robot/sensor/joint removal, new transport/runtime/framework, general cold-start or performance claim.",
       "evidence": "docs/M20_DELIVERY.md"
+    },
+    {
+      "id": "M21",
+      "title": "Loaded altimeter Gaussian noise",
+      "max_working_days": 5,
+      "depends_on": [
+        "M13",
+        "M20"
+      ],
+      "scope": "Gaussian and Gaussian-quantized position/velocity noise on the existing single loaded Rapier altimeter, reusing maintained seeded streams, native zero-elapsed noise application and the unchanged ideal/reference model.",
+      "acceptance": "Meaningful deterministic/noisy invalid, seeded independence, demand/rate/pause/reset and actual canonical wire controls; focused pinned native evidence; complete source/docs and independent review before one full normal hook, strict coverage and exact hosted CI; independent retained audits and qualified parent/Main promotion before acceptance.",
+      "excluded": "Shared noise-model rewrite, native RNG byte equality, new sensor family/atmosphere/backend/transport/framework/UI, multiple sensors or runtime sensor spawning, reference/rate services and performance claims.",
+      "evidence": "docs/M21_M22_DELIVERY.md"
+    },
+    {
+      "id": "M22",
+      "title": "Loaded air-pressure Gaussian noise",
+      "max_working_days": 5,
+      "depends_on": [
+        "M15",
+        "M20"
+      ],
+      "scope": "Gaussian and Gaussian-quantized noise on the existing single loaded Rapier air-pressure channel, retaining the ideal atmosphere and native zero-elapsed application and double sqrt(stddev) published variance.",
+      "acceptance": "Meaningful deterministic/noisy invalid, seeded independence, demand/rate/pause/reset and actual canonical wire controls; focused pinned native evidence; complete source/docs and independent review before one full normal hook, strict coverage and exact hosted CI; independent retained audits and qualified parent/Main promotion before acceptance.",
+      "excluded": "Shared noise-model rewrite, native RNG byte equality, new sensor family/atmosphere/backend/transport/framework/UI, multiple sensors or runtime sensor spawning, reference/rate services and performance claims.",
+      "evidence": "docs/M21_M22_DELIVERY.md"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -370,12 +396,16 @@
     "M17": "complete",
     "M18": "complete",
     "M19": "complete",
-    "M20": "in_progress"
+    "M20": "in_progress",
+    "M21": "in_progress",
+    "M22": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-08T10:54:32.848678+00:00",
   "active_phases": [
-    "M20"
+    "M20",
+    "M21",
+    "M22"
   ],
   "execution_policy": "D31/D32: independent Source lanes in separate worktrees with one integrator; serial local heavy checks. Finish Source/regressions/docs and independent review before one consolidated full normal hook. Exact hosted CI and actual artifact/browser proofs precede acceptance/publication.",
   "parallel_groups": [
@@ -402,7 +432,15 @@
       ],
       "integration": "independent source leaves, one integrator and one complete qualified candidate; frozen M15/M16 closeout proceeds separately",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M21",
+        "M22"
+      ],
+      "integration": "Independent leaf/source/test lanes and one integrator. Source may overlap frozen locally qualified M20 hosted/artifact qualification; local heavy checks stay serial and final M20 acceptance is a prerequisite.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M19 are accepted and published; qualified Main e807a97d and actual m19-preview asset readbacks close M19. M20 is in progress and inherits no acceptance. Continue the next useful bounded delivery after every accepted phase while retained work remains under D32."
+  "acceptance_boundary": "M1\u2013M19 are accepted and published at qualified Main e807a97d. M20 review commit 9a3e81c passed normal/local qualification; exact hosted, package/install/browser and publication remain separate. M21/M22 source proceeds in independent lanes over that conditional parent and inherits no acceptance. Continue bounded deliveries under D32."
 }
