@@ -3,7 +3,7 @@
   "decision": "D30",
   "as_of": "2026-11-09",
   "execution_state": "active",
-  "current_phase": "M26",
+  "current_phase": "M28",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -464,7 +464,12 @@
       "scope": "One direct-link top-level Rapier AirSpeed sensor with default atmosphere, zero wind and exactly default no-noise metadata; native sensor-point/frame velocity, float arithmetic and actual published numeric pressure units, canonical demand-aware output and lifetime.",
       "acceptance": "Complete source, meaningful regressions, guides and independent Source review before one full normal hook with strict per-crate/workspace/actual-M25-parent line and region coverage; focused actual native and canonical wire proofs plus independent DATA; exact hosted CI and independent official DATA with durable originals, then qualified Main before acceptance.",
       "excluded": "AirSpeed noise, wind/configured atmosphere, multiple or nested sensors, runtime spawning, new backend, transport/runtime framework, services, UI widget and performance claims.",
-      "evidence": "docs/M26_M27_DELIVERY.md"
+      "evidence": "docs/M26_M27_DELIVERY.md",
+      "accepted_at": "2026-11-09T06:36:36.827365+00:00",
+      "accepted_commits": {
+        "gz-sim-rs": "0f52559202b58b73adfdb79a59b02fd7d3c99272"
+      },
+      "acceptance_evidence": "docs/M26_M27_ACCEPTANCE.md"
     },
     {
       "id": "M27",
@@ -476,7 +481,12 @@
       "scope": "One built-in top-level flat-model vector PosePublisher with model/link selection only, actual native parent-relative frames/headers and unpaused cadence; bounded canonical output and atomic lifecycle.",
       "acceptance": "Complete source, meaningful regressions, guides and independent Source review before one full normal hook with strict per-crate/workspace/actual-M25-parent line and region coverage; focused actual native and canonical wire proofs plus independent DATA; exact hosted CI and independent official DATA with durable originals, then qualified Main before acceptance.",
       "excluded": "Nested, visual/collision/sensor pose records, static publisher, multiple publishers, runtime plugin spawning, dynamic plugin host, viewer/protocol change, new worker/transport framework and performance claims.",
-      "evidence": "docs/M26_M27_DELIVERY.md"
+      "evidence": "docs/M26_M27_DELIVERY.md",
+      "accepted_at": "2026-11-09T06:36:36.827365+00:00",
+      "accepted_commits": {
+        "gz-sim-rs": "0f52559202b58b73adfdb79a59b02fd7d3c99272"
+      },
+      "acceptance_evidence": "docs/M26_M27_ACCEPTANCE.md"
     },
     {
       "id": "M28",
@@ -533,20 +543,18 @@
     "M23": "complete",
     "M24": "complete",
     "M25": "complete",
-    "M26": "in_progress",
-    "M27": "in_progress",
+    "M26": "complete",
+    "M27": "complete",
     "M28": "in_progress",
     "M29": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-08",
+  "phase_started_at": "2026-11-09",
   "active_phases": [
-    "M26",
-    "M27",
     "M28",
     "M29"
   ],
-  "execution_policy": "D30\u2013D32: frozen locally qualified M26/M27 candidate 0f525592 completes exact hosted/official/Main qualification while disjoint M28 noise and M29 packaging Source preparation overlaps. No child acceptance or check is inherited. One integrator, independent review and serial local heavy work; rebase/review affected child Source if the parent changes. Every original five-day budget and mandatory gate remains.",
+  "execution_policy": "D30\u2013D32: M26/M27 accepted at exact qualified Main0f525592 after final normal/native/local/exact hosted42570074529/official DATA. Complete M28 noise and M29 package Source batches over that accepted parent have independent review; one integrator and serial heavy qualification follow. Preserve every individual native/wire/package/install/browser criterion, strict gate, original failure and five-day budget. No child acceptance is inherited.",
   "parallel_groups": [
     {
       "phases": [
@@ -616,5 +624,5 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M25 accepted; M25 Main08ae5525 remains verified Latest. M26/M27 candidate0f525592 passed final normal/strict coverage, focused native and independent native/local DATA; exact hosted42570074529 and official/Main acceptance remain pending. M28/M29 are selected Source preparation only; no child implementation, check or acceptance is claimed."
+  "acceptance_boundary": "M1\u2013M27 accepted at qualified Main0f525592; M25 remains the verified installed Latest. M28/M29 complete implementation, regressions and guides passed independent Source review and integration/format review. Their native/full normal/exact hosted/independent DATA and fresh M29 distribution/install/browser/publication proofs remain unrun or pending; no child acceptance is claimed."
 }
