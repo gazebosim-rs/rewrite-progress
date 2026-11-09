@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-09T19:18:06.780637+00:00",
+  "updated_at": "2026-11-09T20:04:58.356654+00:00",
   "state": "active",
-  "summary": "M1\u2013M33 remain accepted; M32 stays installed Latest. Both M34/M35 implementations passed independent Source review. The first native-reference batch failed compiling the wrench helper because it names an unavailable SDK header. All nine odometry capture children exited zero before that failure; retained independent DATA is pending, and those cases will not be replayed. The original failed batch is preserved.",
+  "summary": "M1\u2013M33 remain accepted; M32 stays installed Latest. M34/M35 implementation and independent Source review are complete. Retained native DATA now confirms 221 odometry packet triples and 32 wrench command records. The exact odometry input/output fixture has passed independent DATA and is attached to Rust regressions. The consolidated normal hook, coverage and hosted qualification are next; neither new phase is accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "IO-01",
       "title": "M34 ground-truth odometry",
-      "detail": "M34 source and shared integration passed independent review and pinned formatting. Its original-system plugin/helper compiled, and all nine odometry capture children exited zero. The combined native wrapper subsequently failed at the separate wrench helper compile. Retained-only independent DATA must establish the scoped observations before exact-bit and canonical-wire replay fixtures are generated; no Rust verification or M34 acceptance yet."
+      "detail": "M34 original-system records cover 299 unpaused plus two paused inputs, 221 observed triples and 663 canonical packets. Retained finalization and independent literal-fixture DATA passed without replaying native captures. New private Rust numeric-bit and canonical-byte regressions are attached; final Source review and consolidated normal/strict coverage/exact hosted/local/official qualification remain."
     },
     {
       "id": "IO-01",
       "title": "M35 canonical link-wrench inputs",
-      "detail": "M35 source and shared integration passed independent review. Its original-system plugin compiled and linked, but the helper failed at missing sdf/SDF.hh; the installed SDK provides SDFImpl.hh. A source-only correction is being reviewed. No wrench oracle mode executed. Retain successful plugin builds and odometry observations, then release only the affected continuation after independent retained DATA and Source clearance. No repeated successful campaign or weakened check."
+      "detail": "M35 affected continuation passed all eight modes and 32 full wrench command records after the sole missing-header correction. Independent retained DATA passed. Original plugin builds and odometry observations were reused, while original native/reader failures remain preserved. Native unpaused zero-duration behavior differs explicitly from the selected advancing-only Rust policy. Rust verification and acceptance remain pending."
     }
   ],
   "accepted_slices": [
@@ -855,7 +855,7 @@
     }
   ],
   "remaining": [
-    "Complete the retained native DATA audit and reviewed affected-only wrench helper correction/continuation, add exact native scalar/wire fixture regressions, then run the one complete normal/strict coverage/exact hosted/local/official qualification for M34/M35.",
+    "Complete final source review, then one consolidated full normal hook, strict coverage, exact hosted CI and independent local/official qualification for M34/M35. Preserve native captures and the original failed results; M32 remains installed Latest.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
