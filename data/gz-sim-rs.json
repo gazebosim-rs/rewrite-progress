@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-09T11:34:43.281135+00:00",
+  "updated_at": "2026-11-09T11:50:59.049198+00:00",
   "state": "active",
-  "summary": "M1\u2013M29 remain accepted and M29 is installed Latest. M30 LogicalCamera and M31 static-vector PosePublisher have passing independent native proofs. The normal integration gate failed in 21 headless cases: the pinned SDF parser rejects LogicalCamera configuration, with additional collider and fixed-joint fixture failures. A latent geometry-size fixture issue was also found in source review. Narrow parser and fixture corrections are being implemented in parallel; coverage, hosted CI and acceptance remain pending.",
+  "summary": "M1\u2013M29 remain accepted and M29 is installed Latest. M30 LogicalCamera and M31 static-vector PosePublisher retain passing native proofs. The parser and fixture corrections have independent source review; the narrow SDF dependency passed its full normal hook and strict coverage in 450.118 seconds. Its independent retained audit and exact hosted qualification precede the corrected simulator gate. Neither new phase is accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "M30 ideal CPU LogicalCamera",
-      "detail": "Native reference and independent DATA passed 36 image/frustum pairs; the actual 19-row Rust fixture is retained. The integration run exposed LogicalCamera child rejection at the consumed SDF pin, two empty-collider fixture failures, and a latent geometry-size fixture that removes colliders. A LogicalCamera-only raw XML admission fix and valid collision fixtures are being reviewed without broadening physics or changing visibility arithmetic."
+      "detail": "The narrow SDF correction admits only the matching LogicalCamera raw configuration child. Its full normal hook passed: 59 tooling tests, formatting, Clippy, documentation tests, instrumented Rust tests, strict line/region coverage and all three changed executable lines. Exact hosted and independent dependency audits are pending. Valid collision and geometry-size fixtures are reviewed; the native 36-pair proof and 19-row Rust fixture remain unchanged."
     },
     {
       "id": "IO-01",
       "title": "M31 static-vector PosePublisher",
-      "detail": "The native proof and independent DATA passed seven modes/461 vectors. The integration run found one test that loaded unsupported physical fixed joints. Its correction will retain fixed metadata classification and explicit backend refusal, with acquisition/removal tested on an admitted jointless world. Other M31 controls passed in that failed run; this is not phase acceptance."
+      "detail": "The native proof and independent DATA passed seven modes/461 vectors. The corrected test preserves fixed metadata classification and explicit physical fixed-joint refusal, with all-static acquisition/removal in an admitted jointless world. Independent review passed. The integrated full normal, strict coverage and hosted CI remain mandatory before acceptance."
     }
   ],
   "accepted_slices": [
@@ -847,8 +847,7 @@
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
   "blockers": [
-    "The consumed SDF revision rejects the logical_camera configuration child before the strict Scene consumer runs. A narrow dependency fix requires its own review and mandatory qualification.",
-    "The failed integration run also exposed invalid collision and fixed-joint fixtures. These are being corrected while preserving backend admission and assertion strength."
+    "The corrected SDF dependency still needs independent retained DATA and exact hosted qualification before simulator consumption. The subsequent consolidated simulator normal/coverage and hosted gates remain unrun."
   ],
   "plan_status": {
     "REF-01": "in_progress",
