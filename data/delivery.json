@@ -626,6 +626,20 @@
       "excluded": "TPE, model/canonical-link indirection, nested/jointed/multilink bodies, noncentered inertial centers, offsets, future targets, contact/reaction sensing, new physics/frameworks, package/browser refresh and performance or trajectory claims.",
       "evidence": "docs/M34_M35_DELIVERY.md",
       "source_preparation_only": false
+    },
+    {
+      "id": "M36",
+      "title": "Canonical wrench-to-odometry integration",
+      "max_working_days": 5,
+      "depends_on": [
+        "M34",
+        "M35"
+      ],
+      "scope": "One centered free Rapier body receives canonical once/persistent/clear commands and publishes three real ground-truth odometry streams, with actual counter fences and existing APIs. Source preparation may overlap parent qualification; execution waits for the accepted exact parent.",
+      "acceptance": "Meaningful combined command/motion/feedback, pause/reset/demand/removal/shutdown controls and a real canonical C++ peer; complete independent source review, one full normal hook, strict coverage, exact hosted CI and independent local/official DATA before qualified Main acceptance.",
+      "excluded": "Production expansion, new backends/dependencies/frameworks/schemas, model-template plugin admission, new native captures, package/browser refresh and performance/trajectory claims.",
+      "evidence": "docs/M36_DELIVERY.md",
+      "source_preparation_only": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -664,15 +678,17 @@
     "M32": "complete",
     "M33": "complete",
     "M34": "in_progress",
-    "M35": "in_progress"
+    "M35": "in_progress",
+    "M36": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-09",
   "active_phases": [
     "M34",
-    "M35"
+    "M35",
+    "M36"
   ],
-  "execution_policy": "D30\u2013D32 continuous delivery: M1\u2013M33 accepted at qualified Main17dd62f2 after full normal hook, exact hosted CI42667053571 attempt1 and independent local/official DATA. M34/M35 have independently reviewed contracts and disjoint source implementation released over that accepted parent. Root owns shared integration and serial local heavy jobs. Complete both code/regressions/docs and independent Source review before one reviewed native batch and consolidated full normal/strict coverage/exact hosted/local/official qualification. No acceptance transfer.",
+  "execution_policy": "D30\u2013D32 continuous delivery: M1\u2013M33 accepted at qualified Main17dd62f2 after full normal hook, exact hosted CI42667053571 attempt1 and independent local/official DATA. M34/M35 have independently reviewed contracts and disjoint source implementation released over that accepted parent. Root owns shared integration and serial local heavy jobs. Complete both code/regressions/docs and independent Source review before one reviewed native batch and consolidated full normal/strict coverage/exact hosted/local/official qualification. No acceptance transfer. M36 is selected for disjoint source preparation during M34/M35 qualification; its checks and publication require the actual accepted exact parent and independent whole-source review.",
   "parallel_groups": [
     {
       "phases": [
@@ -765,7 +781,16 @@
       ],
       "integration": "Disjoint contract and leaf source preparation overlaps M33 hosted closeout. Root alone owns shared admission/scheduling/reset/IO/counters and both maintained peer registry and CLI guards. Detailed contracts require independent review before implementation; actual accepted-parent binding precedes all native/full verification/publication. No acceptance transfers from M33 or between phases.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M34",
+        "M35",
+        "M36"
+      ],
+      "integration": "Frozen M34/M35 qualification overlaps disjoint M36 source preparation only. All M36 checks/publication require the actual accepted exact M34/M35 parent and complete independent review; parent corrections require affected rebase/review. Root alone releases heavy jobs. No acceptance transfer.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M33 accepted; M32 stays installed Latest. M34/M35 source implementation is active, with no child native/check execution released. Each new behavior and all required qualification remain prerequisites to acceptance."
+  "acceptance_boundary": "M1\u2013M33 accepted; M32 stays installed Latest. M34/M35 implementation, independent source review and native reference DATA are complete. The audited native odometry fixture is attached to exact Rust numeric/wire regressions. Full normal hook, strict coverage, exact hosted CI and independent local/official DATA remain required before acceptance. M36 source preparation is active without checks or acceptance; its accepted-parent dependency remains mandatory."
 }
