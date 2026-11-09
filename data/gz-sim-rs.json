@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-08T23:49:46.782726+00:00",
+  "updated_at": "2026-11-09T06:00:36.156410+00:00",
   "state": "active",
-  "summary": "M1\u2013M25 are accepted and M25 remains verified Latest. M26 AirSpeed and M27 PosePublisher Source is independently reviewed. The revised focused native batch passed all nine modes with actual exit 0, and independent native DATA passed. The original failed native batch remains retained: its queued reset consumed an unpaused measurement iteration; a reviewed helper/guide-only correction now applies and witnesses reset while paused. The final complete mandatory normal hook is running on tree c2cd94713d4e228755b6dc62acef382b37464490. Independent final local DATA, exact hosted CI and official DATA still precede qualified Main acceptance. M26/M27 are not accepted.",
+  "summary": "M1\u2013M25 are accepted and M25 remains verified Latest. M26 AirSpeed and M27 PosePublisher passed the final complete mandatory normal hook, strict coverage, focused native comparisons and independent native/local DATA at commit 0f52559202b58b73adfdb79a59b02fd7d3c99272, tree c2cd94713d4e228755b6dc62acef382b37464490. Exact hosted CI run 42570074529 is active. All earlier assertion/compiler/native-fixture failures remain retained. Whole hosted success, independent official DATA and qualified Main promotion remain required; M26/M27 are not accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "Next bounded AirSpeed increment",
-      "detail": "AirSpeed implementation, regressions, guide and shared integration passed independent Source review. All three AirSpeed modes and all six PosePublisher modes passed in the revised focused native batch: 32 stages, 342 canonical rows, actual exit 0. Independent native DATA passed. The earlier Rust normal pass at 3cbc23ddd60bbf4514c8d2354aa0a7d9ea3f9800 remains separate; the final complete mandatory normal hook is now running on tree c2cd94713d4e228755b6dc62acef382b37464490. Final local DATA and hosted/official qualification remain pending."
+      "detail": "AirSpeed implementation, regressions, guide and shared integration are independently reviewed. The final normal hook and all strict workspace/per-crate/actual-parent coverage gates passed at commit 0f52559202b58b73adfdb79a59b02fd7d3c99272. The nine-mode focused native batch and independent native/local DATA passed. Exact hosted CI run 42570074529 is active; official DATA and qualified Main promotion remain pending. Prior normal failures are preserved without relabelling old passes."
     },
     {
       "id": "SYS-CONTROL",
       "title": "Next bounded PosePublisher increment",
-      "detail": "PosePublisher implementation and shared loading/reset/IO integration are independently reviewed. The original rewind native failure is retained. Source tracing established queued-control/reset-only iteration semantics; the narrowly reviewed native helper/guide correction preserves ten actual advancing steps, three rewind messages and all deadlines/assertions. The revised nine-mode native batch and independent native DATA passed. The final complete mandatory normal hook is running; final local DATA, exact hosted CI, official DATA and qualified Main acceptance remain required."
+      "detail": "PosePublisher implementation and shared loading/reset/IO integration are independently reviewed. The original native rewind failure remains retained separately from the narrowly corrected helper/guide and successful current-source native proof. The final complete mandatory normal hook, strict coverage and independent native/local DATA passed. Exact hosted CI run 42570074529 is active; whole hosted success, official DATA and qualified Main promotion still precede phase acceptance."
     },
     {
       "id": "PKG-01",
@@ -830,7 +830,7 @@
     }
   ],
   "remaining": [
-    "Complete the currently running final mandatory normal hook on tree c2cd94713d4e228755b6dc62acef382b37464490, then independent final local DATA, exact hosted CI and official DATA before qualified Main acceptance. Focused native comparisons and independent native DATA passed. Preserve the original native exit 1 and all earlier normal failures; no old pass is relabelled as the final candidate qualification.",
+    "Complete exact hosted CI run 42570074529, independently audit its durable original evidence, then promote the qualified exact commit to Main before M26/M27 acceptance. Final normal/strict coverage and independent native/local DATA passed at 0f52559202b58b73adfdb79a59b02fd7d3c99272. Preserve every original failure and retain separate source identities; no hosted or phase acceptance is inferred while CI is active.",
     "Finish each complete implementation, regressions and guides before one consolidated full normal hook, strict actual-parent/per-crate/workspace line and region gates, exact hosted CI and independent local/official DATA. Preserve all retained failures and mandatory checks.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
