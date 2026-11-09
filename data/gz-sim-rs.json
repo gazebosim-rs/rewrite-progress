@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-09T10:36:07.408913+00:00",
+  "updated_at": "2026-11-09T11:06:01.581218+00:00",
   "state": "active",
-  "summary": "M1\u2013M29 remain accepted; M29 is installed Latest. M30/M31 implementation and integration have independent Source review. M31 native evidence passed seven modes and 461 vectors, followed by independent DATA. M30 reference validation exposed a nominal frustum-edge assumption; a stronger signed-zero witness batch is being prepared without a visibility epsilon. Full normal/coverage and hosted checks remain pending.",
+  "summary": "M1\u2013M29 remain accepted; M29 is installed Latest. M30 LogicalCamera and M31 static-vector PosePublisher implementations, integration and native proofs have independent Source/DATA review. Native runs passed 36 paired LogicalCamera acquisitions and seven PosePublisher modes/461 vectors. The full normal-hook retry is running after one unnecessary mutable test binding was corrected without assertion or runtime changes. Coverage, exact hosted CI and final independent audits remain pending; neither new phase is accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "M30 ideal CPU LogicalCamera",
-      "detail": "LogicalCamera source, regression code, example, guide and shared loading/reset/IO integration are reviewed. The first native helper compile failed at a glibc name collision; its corrected successor compiled, then a combined boundary guard failed after six successful near/far rows. The failing count was not logged. Preserve all original nominal inputs, add explicit zero-distance face-center and neighboring controls, improve actual plane diagnostics and compare the captured native classifications in Rust. No visibility epsilon or product defect is inferred."
+      "detail": "The corrected native reference passed 36 image/frustum pairs, preserving all original nominal points and adding exact-zero/adjacent witnesses. Actual nominal side points have tiny negative signed distance; no visibility epsilon or production arithmetic change was added. Independent native DATA and the actual 19-row typed Rust replay fixture passed review. The initial helper compile/name collision and generic boundary failure remain preserved. Full normal Rust/wire/lifecycle/coverage and hosted qualification are now pending in the integrated retry."
     },
     {
       "id": "IO-01",
       "title": "M31 static-vector PosePublisher",
-      "detail": "Static-vector PosePublisher source and shared two-channel reservations/reset integration are reviewed. Its actual native run passed seven modes and 461 keyed vectors in 45.648 seconds; the independent retained DATA audit also passed. Capture provenance remains separate from subsequent LogicalCamera corrections. Full Rust/wire/lifecycle/coverage/hosted qualification and Main acceptance remain mandatory; this is not phase acceptance."
+      "detail": "The actual native proof passed seven modes and 461 keyed vectors in 45.648 seconds, followed by independent retained DATA. The first full normal hook stopped at one unnecessary mut in a new IO test before tests/coverage; only that binding qualifier and factual notes changed. All assertions, production code and both native captures are retained. The reviewed full normal retry is running; exact hosted CI, audits and Main acceptance remain mandatory."
     }
   ],
   "accepted_slices": [
@@ -835,9 +835,9 @@
     }
   ],
   "remaining": [
-    "Finish the reviewed LogicalCamera boundary-reference correction, actual capture and typed Rust replay fixture.",
-    "Run the complete required normal hook, strict coverage, exact hosted CI and independent local/official audits before accepting M30/M31.",
-    "Keep M29 installed Latest; select the next useful bounded phase after acceptance.",
+    "Complete the running full normal hook and every strict coverage/Rust/wire/lifecycle gate for the reviewed M30/M31 candidate.",
+    "Require independent local DATA, exact hosted CI and independent official DATA before qualified Main acceptance of M30/M31.",
+    "Keep M29 installed Latest; select and continue the next useful bounded phase after acceptance.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
@@ -846,9 +846,7 @@
     "Complete upstream parity, feature coverage, comparative performance and release qualification.",
     "DART Scene accepts bounded primitive compounds, offset COM, a free-root three-body/two-revolute chain and B03 sampled motion plus real Gazebo C++ delivery/reset. Broader topology, limits, contacts and backend capabilities remain unqualified. Configured physics-only and full-Server performance are separate remaining scopes."
   ],
-  "blockers": [
-    "M30 native reference validation failed at the first nominal side-edge combined guard after six near/far successes; actual failing count was not retained. Correct the signed-zero witness assumptions and diagnostics before affected native validation."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
