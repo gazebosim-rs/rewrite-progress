@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-09T06:47:52.642437+00:00",
+  "updated_at": "2026-11-09T07:05:31.321536+00:00",
   "state": "active",
-  "summary": "M1\u2013M27 are accepted on qualified Main 0f525592 after final normal/strict coverage, exact hosted CI 42570074529 attempt 1/all 16 steps and independent native/local/official audits. M25 remains verified installed Latest. M28/M29 implementation, regression and guide sources passed independent integrated review; M28 native comparisons and independent native DATA passed. The consolidated M28/M29 mandatory normal hook is now running. Child hosted, package/install/browser and publication evidence remain pending.",
+  "summary": "M1\u2013M27 are accepted on qualified Main 0f525592; M25 remains verified installed Latest. M28/M29 source and independent native evidence passed review. The first normal hook stopped before tests on a missing leading zero in one new test literal. The independently reviewed one-character correction is in the full mandatory retry. Production code and the original passing native capture are unchanged; no child acceptance or hosted/package/install/browser success is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-02",
       "title": "M28 AirSpeed pressure noise verification",
-      "detail": "The complete AirSpeed pressure-noise implementation, regressions and guide are independently reviewed. One native SensorFactory batch passed all nine modes, 29 stages and 140 canonical rows, followed by independent native DATA. It verifies the native pre-100 float/noise/float/scaling boundary, signed pressure, unchanged temperature, quantization, fixed zero-elapsed bias and bounded white-noise moments. The full mandatory normal hook is running; no child phase acceptance is inferred."
+      "detail": "The reviewed AirSpeed pressure-noise native batch passed nine modes, 29 stages and 140 rows plus independent DATA. The first normal hook failed compiling one test literal (.0065_f32); it now reads 0.0065_f32 with the same numerical assertion. The complete available failure batch contains no other diagnostic. The original failed tree and log remain frozen, and the full required retry is running in an isolated successor tree. Unchanged native inputs retain their original capture identity rather than being rerun or relabelled."
     },
     {
       "id": "PKG-01",
@@ -830,7 +830,7 @@
     }
   ],
   "remaining": [
-    "Finish the actual consolidated M28/M29 normal hook and strict coverage, then independent local DATA, exact hosted CI and official DATA. Build fresh release inputs and notices, assemble/audit the ordinary-file preview, prove clean non-root installation with seven actual example loads/steps, new installed browser controls and owned shutdown, then verify Main/tag/assets/body/Latest publication before acceptance. Preserve every original failure and unchanged accepted behavior.",
+    "Complete the actual full M28/M29 normal retry after the reviewed test-only syntax correction, then independent local DATA, exact hosted CI and official DATA. Require every fresh release/notices/archive/relocation, clean non-root seven-example installation, live browser/owned shutdown and verified publication proof before child acceptance. Preserve the failed original and all unchanged accepted behavior.",
     "Finish each complete implementation, regressions and guides before one consolidated full normal hook, strict actual-parent/per-crate/workspace line and region gates, exact hosted CI and independent local/official DATA. Preserve all retained failures and mandatory checks.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
