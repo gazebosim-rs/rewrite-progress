@@ -768,6 +768,20 @@
       "excluded": "Renderer rebuild, optional RGB/depth/native-backend distributions, new packaging/runtime framework, altered default robot, browser telemetry widgets, cross-engine trajectory/performance or universal-platform claims.",
       "evidence": "docs/M43_M44_DELIVERY.md",
       "source_preparation_only": false
+    },
+    {
+      "id": "M45",
+      "title": "CUSTOM world-relative IMU angles",
+      "max_working_days": 5,
+      "depends_on": [
+        "M43",
+        "M44"
+      ],
+      "scope": "Source-only preparation for finite effective CUSTOM IMU reference RPY with explicit parent_frame world in the existing centered, zero-heading domain. Preserve empty-parent initial-reference bits, named references, motion/noise/covariance and demand/lifecycle behavior.",
+      "acceptance": "Actual accepted M43/M44 parent and complete independent Source review before execution; fresh scoped original component/literal DATA, meaningful Scene and exact live canonical functional proofs, unchanged full normal/strict workspace/per-crate/actual-parent coverage, local and exact hosted/official DATA, normal Main/readback and acceptance record. No acceptance transfer from preparation or parent.",
+      "excluded": "Other parents, geodesy/spherical metadata in the new branch, translated sensors, runtime setters, parser presence/XML inspection, new API/schema/framework/dependency, renderer/package/browser refresh, Physics/RNG/performance parity claims.",
+      "evidence": "docs/M45_DELIVERY.md",
+      "source_preparation_only": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -815,13 +829,15 @@
     "M41": "complete",
     "M42": "complete",
     "M43": "in_progress",
-    "M44": "in_progress"
+    "M44": "in_progress",
+    "M45": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-10",
   "active_phases": [
     "M43",
-    "M44"
+    "M44",
+    "M45"
   ],
   "execution_policy": "D30\u2013D32: disjoint M43 Scene/reference/Server source and M44 packaging work over accepted Main73e03. Root owns shared integration and serial heavy operations. Finish bounded source, regression code, guides and independent review; batch findings before one complete normal/strict/exact hosted/local and official qualification. Fresh distribution, installation, canonical force feedback, browser and publication proofs are required before either phase is accepted.",
   "parallel_groups": [
@@ -957,9 +973,18 @@
       ],
       "integration": "Disjoint Scene and Server/reference leaves and maintained packaging source may proceed in parallel over accepted73e03. M44 depends on integrated M43 for actual builds and installation. Root serializes local heavy operations; source review and hosted CI may overlap. Keep every feature and distribution acceptance proof and all prior accepted evidence.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M43",
+        "M44",
+        "M45"
+      ],
+      "integration": "Frozen M43/M44 closeout has priority while disjoint M45 Scene and Server/reference Source preparation overlaps under D31. Actual accepted M43/M44 parent, completed bounded Source/regression/docs and independent review precede every M45 native/build/test/qualification/publication operation. Root integrates shared seams and alone releases serial heavy jobs; no acceptance transfers.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M42 accepted at qualified Main73e03 after actual full normal, exact CI42808865907 attempt1 and independent local/official DATA. M40 release440119258 remains the latest installed preview. M43/M44 are in progress with reviewed source preparation, not accepted; scoped native component and literal DATA passed; Rust and fresh distribution qualification remain pending.",
+  "acceptance_boundary": "M43/M44 all local native/literal, normal/strict/local DATA and fresh release/package/install/installed-feedback/browser/independent visual proofs passed on provisional review 9a40768d/tree5872e52f. Exact hosted CI42845720294 attempt1, independent official DATA and normal Main/tag/seven-assets/body/Latest readbacks plus atomic acceptance remain pending. M45 is Source-only preparation: no execution or qualification/publication until the actual accepted M43/M44 parent, completed bounded Source/regressions/docs and independent review, followed by Root release. No phase inherits acceptance from prior results.",
   "current_delivery_group": [
     "M43",
     "M44"
