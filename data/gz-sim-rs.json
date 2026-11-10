@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-10T06:23:16.528029+00:00",
+  "updated_at": "2026-11-10T06:49:25.483495+00:00",
   "state": "active",
-  "summary": "M1\u2013M38 are accepted at qualified Main 00382fbc; M37 release 439888006 remains installed Latest. Atomic M39/M40 complete feature, package and shared Source has independent review and one mechanical formatting pass. Original-system reference acquisition and independent native/literal DATA passed: 36 configurations, 1,152 inputs, 986 observed triples, 166 suppressed inputs and 2,958 packets. The full normal hook is running on staged tree 974c43f4 over accepted 00382fbc, with no result yet. Rust coverage, exact hosted CI, local/official DATA and fresh distribution qualification remain pending. Neither phase is accepted.",
+  "summary": "M1\u2013M38 remain accepted at qualified Main 00382fbc; M37 release 439888006 remains installed Latest. The first atomic M39/M40 normal hook returned actual exit 1 after 1,486.283 seconds. One new Scene test incorrectly expected an internal Bevy entity handle to survive healthy loaded reset (19v0 versus 6v0); the existing contract preserves public IDs while reconstructing entities. The isolated test/docs correction reacquires the restored owner and has independent Source review; the mandatory complete normal retry is running on corrected tree eef62a84 over accepted 00382fbc with no result yet. Native/literal DATA and partial new numeric/wire controls passed, but headless coverage and renderer qualification were not reached. No retry result, overall qualification or phase acceptance is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "IO-01",
-      "title": "M39 odometry translation offsets: full normal running",
-      "detail": "The complete reviewed Source and actual native/literal fixtures are integrated. Native DATA ecd05da4 and literal DATA effbc94f passed after the 34-mode acquisition; 36 configurations bind 1,152 inputs, 986 observed triples, 166 suppressed inputs and 2,958 packets. Root normal session 94600 is running the complete hook on staged tree 974c43f4 over accepted 00382fbc. No normal result, Rust qualification, coverage count, hosted CI or local/official DATA result is inferred."
+      "title": "M39 odometry translation offsets: complete normal retry running",
+      "detail": "Root normal session 94600 retired with actual exit 1 in 1486.283 seconds on original tree 974c43f4 over accepted 00382fbc. The sole reported failure is the default-Two positive case asserting old internal Bevy handle equality after healthy reset; later public-ID assertions and subsequent explicit-Two/Three cases in that test were not reached. The isolated correction reacquires the restored owner while preserving exact public IDs, full mode/offset metadata, absent sample and numeric/history/epoch/revision assertions. The exact test/docs-only correction is independently Source CLEAR. Mandatory complete normal retry Root 66540 is running on corrected tree eef62a84 over accepted 00382fbc, using reviewed retry procedure 3410; no result is inferred. Production and native fixtures are unchanged."
     },
     {
       "id": "PKG-01",
       "title": "M40 fifteen-example Ubuntu preview: combined qualification pending",
-      "detail": "The reviewed package/qualifier/guides preserve the thirteen-example prefix, dual OBJ, default robot/launcher/c404 viewer and append M38/M39. One mechanical formatting pass is complete; the combined normal hook is active without a result. Fresh build, actual notice/ELF metadata, package/relocation, nonroot fifteen-command install, browser/shutdown and Main/tag/assets/body/Latest readbacks remain mandatory before atomic acceptance. M37 stays installed Latest; no new distribution result is claimed."
+      "detail": "The fifteen-example package/qualifier/guides and held operational procedures retain all old controls and distribution guards. The first combined normal hook failed a test-only reset-handle premise; 384 aggregate Python cases and fifteen other new controls, including 986 exact native numeric outputs and 2,958 wire packets, passed as partial evidence. Headless coverage and renderer were not reached. The independently reviewed corrected whole normal retry is running without a result. Fresh hosted/local/official DATA and every build/notices/package/relocation/nonroot install/browser/shutdown/Main/tag/assets/body/Latest readback remain required. M37 stays installed Latest; no new distribution result or atomic acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -875,7 +875,7 @@
     }
   ],
   "remaining": [
-    "Finish the running complete atomic M39/M40 normal hook and inspect its actual result; require unchanged strict coverage, exact hosted CI and independent local/official DATA. Native and literal DATA have passed, but no current Rust or distribution qualification is claimed. Require every fresh fifteen-example build/notices/package/relocation/nonroot install/browser/shutdown/Main/tag/assets/body/Latest readback before accepting either phase. Preserve M37 release and all old fixtures/failures; no results transfer.",
+    "Finish and inspect the actual complete atomic M39/M40 normal retry Root 66540 on corrected tree eef62a84 over accepted 00382fbc. Corrected Source and retry procedure are independently reviewed; no retry result is yet known. Preserve original tree 974c43f4, first normal 94600 actual exit 1 and all logs. Native/literal DATA and partial numeric/wire passes do not transfer whole qualification. Require unchanged strict coverage, exact hosted CI, independent local/official DATA and every fresh fifteen-example distribution/install/browser/publication readback before accepting either phase.",
     "Continue P3/P4 physics, assets and sensor behavior beyond accepted P2; complete built-in activation, broader pressure, original system inventory and reference qualification.",
     "Keep canonical schema definitions and consumer-owned standard code generation verified as new endpoints are added. No standalone Transport or Messages runtime release remains in scope.",
     "General articulations, joint limits/damping, contacts and meshes on DART/MuJoCo/Rapier, remaining TPE capabilities and per-backend conformance against gz-physics common tests.",
