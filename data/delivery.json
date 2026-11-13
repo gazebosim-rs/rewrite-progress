@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-13",
+  "as_of": "2026-11-13T21:40:45.131564+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1396,11 +1396,11 @@
       "source_preparation_basis_accepted": false,
       "integrated_parent": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
       "source_preparation_started_at": "2026-11-13T19:23:20.389222+00:00",
-      "contract_sha256": "30223033c1efdf6017f6fae768daa03cbb78b7ba71156cdd5bf8ac8edf9da4bb",
+      "contract_sha256": "30e6cea81b818c5448b6d81b87a8781fd88523d07f29dca8c95e3ee210326c77",
       "source_authorship_released": true,
       "operations_released": false,
       "checks_run": false,
-      "current_stage": "Initial14 Source leaves adopted onto qualified M55; documentation, registries and native proof pending, no checks",
+      "current_stage": "Implementation, regression Source, documentation and registration integrated and independently Source-reviewed; native reference methods under preparation, no M56 checks",
       "current_native_provider_availability": "One fixed original-DSO input diagnostic remains failed for an empty RUNPATH entry. The separately reviewed direct-object input/helper Source is complete; no helper has been compiled or captured. No original provider or SDK was rebuilt.",
       "selection_sha256": "2bb7cc58db737142009c7df3ee21633e682018a7135693c3013c47bb42005066",
       "authorship_release_sha256": "671be22718c9b298a2cc456c5f1c3c51635307d67cff53af68eb566adbc37e6e",
@@ -1429,19 +1429,35 @@
       },
       "qualified_parent_proposed": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
       "Source_integration": {
-        "state": "initial14_Source_adopted_no_checks",
+        "state": "complete31_pre_observed_Source_integrated_reviewed_frozen_no_checks",
         "parent": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
         "release_sha256": "9ad8a59a71fab3ba444dad6e70943270eb4b0cf53fd12c18c92be25a8d4775f9",
-        "adoption_sha256": "c1a01a5d486c71a6ebcc84badecda7900b725889ce10c7b4a339737fb627a6b6",
-        "Source_leaves": 14,
+        "adoption_sha256": "3828ae25e467356514180715c47c4e2a843e63ec0dda9f1230dfa909649d0bd5",
+        "Source_leaves": 31,
         "owner_leaves_exact": 10,
         "Root_Rust_additive_leaves": 3,
         "new_example": 1,
-        "documentation_and_registries_complete": false,
-        "native_capture_or_product_checks_run": false
+        "documentation_and_registries_complete": true,
+        "native_capture_or_product_checks_run": false,
+        "initial14_adoption_sha256": "c1a01a5d486c71a6ebcc84badecda7900b725889ce10c7b4a339737fb627a6b6",
+        "independent_whole_Source_review_clear": true,
+        "staged_Source_tree": "d170091ea88a95272795e1ebce7e497073c661a7",
+        "Source_entries": 1760,
+        "coordinator_Source_sha256": "a6d490975d7d5e3c79799c11e0784e68cc6aa1a854d5f2e2b4bd76621ba8e9e6",
+        "registration_Source_sha256": "5382c8daece58a7ecf622a7d068f2623a090007835582977db0c2891a40eef0f"
       },
-      "integration_source_overlap_review_pending": true,
-      "integration_source_overlap_review_clear": false
+      "integration_source_overlap_review_pending": false,
+      "integration_source_overlap_review_clear": true,
+      "source_preparation_contract_sha256": "30223033c1efdf6017f6fae768daa03cbb78b7ba71156cdd5bf8ac8edf9da4bb",
+      "reference_input_Source": {
+        "fixed_Source_header_cards": 83,
+        "fixed_Source_and_metadata_pins": 117,
+        "final_Source_input_pins": 165,
+        "independent_whole_Source_review_clear": true,
+        "input_contract_sha256": "921589eb6d2634765376a017468cec3f1f92ae12e0960d851a861f9598f19afe",
+        "current_tool_object_or_provider_identity_claimed": false,
+        "new_helper_compiled_or_executed": false
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -1766,19 +1782,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M42 are accepted; M40 remains installed Latest. M43–M55 are locally qualified but unaccepted. M55 full normal attempt3 and corrected independent results audit passed; both failed normals and the failed reader method remain preserved. M56’s initial14 Source leaves are adopted onto qualified M55; documentation, registries, native proof and checks remain pending. Every hosted/official/accepted-predecessor/Main gate remains.",
+  "acceptance_boundary": "M1–M42 are accepted; M40 remains installed Latest. M43–M55 are locally qualified but unaccepted. M55 passed its full normal hook and corrected independent results audit; both normal failures and the reader failure remain preserved. M56’s 31 integration files are source-reviewed. Native reference evidence, observed-data tests and final verification remain pending. Hosted qualification, official audit, accepted predecessors and Main/readbacks still precede acceptance.",
   "current_delivery_group": [
     "M43",
     "M44"
   ],
-  "current_development_phase": "M55",
+  "current_development_phase": "M56",
   "board": {
-    "updated_at": "2026-11-13T21:21:58.850281+00:00",
+    "updated_at": "2026-11-13T21:40:45.131564+00:00",
     "current": {
-      "title": "M56 · Odometry integration and reference preparation",
+      "title": "M56 · Native reference and verification preparation",
       "items": [
-        "M55 passed full local verification and its independent results audit; release gates remain held.",
-        "M56’s first14 Source leaves are adopted onto qualified M55; shared documentation, registries and native proof remain pending."
+        "M56 implementation, documentation and registration are integrated and source-reviewed.",
+        "Capture and audit tooling are being prepared in parallel; M56 native execution and final verification are pending."
       ]
     },
     "done": [
@@ -1787,8 +1803,8 @@
       "M43–M55 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Complete M56 documentation and registry integration while preserving every qualified-parent repair.",
-      "Complete the M56 reference inputs, fresh capture and independent native/literal evidence.",
+      "Capture the original-System odometry reference and complete independent native and literal checks.",
+      "Add observed-data tests, then run M56’s full verification and strict coverage.",
       "Complete hosted qualification and dependency-ordered releases."
     ],
     "blocker": {
