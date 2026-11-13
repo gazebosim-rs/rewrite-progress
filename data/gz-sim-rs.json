@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T13:22:01.567334+00:00",
+  "updated_at": "2026-11-13T15:13:32.967850+00:00",
   "state": "active",
-  "summary": "M53 passed full local verification and independent results audit. Reviewed M54 multiple-lidar work is moving into integration, with component-reference preparation in parallel.",
+  "summary": "M54 full normal verification is running after native and fixture audits passed. M55 independent PosePublisher source work is proceeding in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-01",
-      "title": "M54 \u00b7 Multiple-lidar integration",
-      "detail": "Scene, Server and shared implementation batches passed independent review. Root is preparing integration over locally qualified M53; agents prepare the component reference and its fixed provider inputs. No M54 check or release acceptance is claimed."
+      "title": "M54 \u00b7 Multiple-lidar verification",
+      "detail": "The reviewed full normal and strict coverage run is active. Native capture and independent native and fixture audits passed. Final results and the independent local results audit remain pending."
+    },
+    {
+      "id": "SYS-EXTENSION",
+      "title": "M55 \u00b7 Independent PosePublishers",
+      "detail": "Disjoint Scene, Server and shared source lanes are open for up to eight publishers. Existing math and clocks stay unchanged. Integration waits for M54 verification, results audit and preservation of any repairs."
     }
   ],
   "accepted_slices": [
@@ -890,10 +895,9 @@
     }
   ],
   "remaining": [
-    "Integrate the reviewed M54 implementation over qualified M53.",
-    "Complete the M54 component reference, literal-data audit and strict checks.",
-    "Complete hosted qualification and release closeout for queued phases in dependency order.",
-    "Continue remaining physics/backend, rendering/sensor, asset/world, CLI and performance work."
+    "Complete M54 full local verification and independent results audit.",
+    "Prepare the next bounded increment in parallel where dependencies permit.",
+    "Complete hosted qualification, official audits and dependency-ordered releases."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -950,7 +954,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M53 passed 1,867 headless and 1,107 renderer tests (overlapping profiles), 403 Python checks and 27 finite examples, with all strict coverage gates and independent retained DATA. Its first normal failure and audit-method failure remain preserved. This is local qualification; hosted and release acceptance remain pending."
+    "note": "M53 full local normal verification and independent results audit passed. M54 native and fixture audits passed; its full normal run is active. M55 is source preparation. M1\u2013M42 remain accepted, with M40 installed Latest. Hosted snapshot failures still block releases."
   },
   "phase_status": {
     "P0": "in_progress",
