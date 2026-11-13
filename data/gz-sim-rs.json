@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T18:57:26.186047+00:00",
+  "updated_at": "2026-11-13T19:27:52.477589+00:00",
   "state": "active",
-  "summary": "M55\u2019s reviewed test-ID correction is in one full normal and strict coverage retry. The first failure is preserved; final results and the independent audit remain pending.",
+  "summary": "M55\u2019s verification retry failed four cases. The three causes are identified and one correction batch is under review. M56 Source preparation is selected in parallel; integration waits for M55.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M55 \u00b7 Full verification retry",
-      "detail": "The lossless ID conversion and affected formatting passed review. One corrected full normal/strict coverage run is active. The first compile failure remains preserved; no M55 Rust qualification or release is claimed."
+      "title": "M55 \u00b7 Batched test corrections",
+      "detail": "The second full normal run failed four cases in three targets. Fix the wrench-test premise, legitimate remap compatibility and global-fault cache expectation as one reviewed batch, then one consolidated retry. Native evidence is retained."
     }
   ],
   "accepted_slices": [
@@ -890,9 +890,9 @@
     }
   ],
   "remaining": [
-    "Complete the reviewed correction and one full verification retry.",
-    "Audit retained results only after the complete normal hook succeeds.",
-    "Complete hosted qualification and dependency-ordered releases."
+    "Review and complete the M55 correction batch before one consolidated retry.",
+    "Audit retained results after full normal success.",
+    "Continue M56 Source work separately; complete hosted qualification before releases."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -949,7 +949,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Last locally qualified Rust revision is M54: 1,886 headless and 1,117 overlapping renderer passes, 403 Python checks and 28 finite examples. M55 native/literal evidence passed. Its first normal failed Clippy test compilation; the reviewed corrected full retry is active. M1\u2013M42 acceptance, M40 Latest and hosted holds are unchanged."
+    "note": "Last locally qualified Rust revision is M54: 1,886 headless and 1,117 overlapping renderer passes, 403 Python checks and 28 finite examples. M55 native/literal evidence passed; its second normal failed four cases and is unqualified. M56 Source preparation is separate. Acceptance and hosted holds are unchanged."
   },
   "phase_status": {
     "P0": "in_progress",
