@@ -4,6 +4,6 @@
   "scope": "M54 multiple-lidar qualification, with disjoint M55 source preparation.",
   "target_working_days": 5,
   "confidence": "Low",
-  "assumption": "M54 full normal verification is running after native and fixture audits passed. M55 source development runs in parallel; its integration waits for M54 results and audit. Hosted snapshot recovery remains a separate release blocker.",
+  "assumption": "Two failures from M54 full normal verification are being corrected as one batch before a consolidated retry. M55 source development continues independently. Hosted snapshot recovery remains a separate release blocker.",
   "clock": "Development is active. Each bounded capability includes review and mandatory checks; five working days is a scope budget, not a release promise."
 }
