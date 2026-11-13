@@ -75,3 +75,25 @@ When every scheduled phase is accepted, the dashboard shows that the next
 delivery is unselected. The retained working-day budget does not schedule an
 additional phase or imply that the full rewrite is complete. A later delivery
 needs a named scope in the schedule before the forecast target is shown again.
+
+## Current board (2026-11-13 owner correction)
+
+The main board answers **Now / Done / Next**, followed by one release blocker.
+`data/delivery.json` may include a coordinator-owned `board` object with a dated
+`current` title and items, `done` and `next` lists, a `blocker` text/link, and a
+stable `history_url`. Each list has at most four items of at most 240 characters;
+the title is at most 120 characters and the blocker at most 300. Use plain
+sentences and distinguish locally verified work from accepted releases.
+
+Replace current summaries when facts change. Never prepend a new checkpoint to
+an old summary, scope, detail, quality note or forecast. Put detailed proof in
+linked repository records; Git history retains old reports. Keep accepted slices,
+other owners' reports and broad compatibility states intact. Historical schedules,
+repository evidence and the full backlog stay collapsed on the main page.
+
+For `gz-sim-rs`, keep the summary under 240 characters, at most three active cards
+with details under 450 characters, at most three blockers under 300 characters,
+at most eight remaining items under 240 characters, and the quality note under
+600 characters. These limits apply only to the coordinator's current prose; they
+do not delete accepted evidence or rewrite other owners' records. A forecast's
+`as_of` is a calendar date (`YYYY-MM-DD`), not a timestamp.

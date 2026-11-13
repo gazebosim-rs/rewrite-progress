@@ -3,46 +3,32 @@
      SPDX-License-Identifier: Apache-2.0 -->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Live implementation and verification status for the Gazebo Rust rewrite.">
-  <title>Gazebo Rust · Rewrite progress</title>
-  <link rel="stylesheet" href="style.css?v=237a28f0b308">
-  <script src="app.js?v=b47f25645630" defer></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Current work, completed capabilities and next steps for Gazebo Rust.">
+  <title>Gazebo Rust · Progress board</title>
+  <link rel="stylesheet" href="style.css?v=concise-board"><script src="app.js?v=concise-board" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to progress</a>
-  <header>
-    <div class="brand"><span class="mark" aria-hidden="true">g▧</span><span>GAZEBO <b>RUST</b><small>REWRITE TRACKER</small></span></div>
-    <nav aria-label="Primary"><a href="#developing">In development</a><a href="#remaining">Remaining work</a><a href="https://github.com/gazebosim-rs/gz-sim-rs/blob/main/docs/DELIVERY_PLAN.md">Delivery plan ↗</a></nav>
-  </header>
+  <header><div class="brand"><span class="mark" aria-hidden="true">g▧</span><span>GAZEBO <b>RUST</b><small>PROGRESS BOARD</small></span></div><nav aria-label="Primary"><a href="#developing">Now</a><a href="#completed">Done</a><a href="#next">Next</a><a href="#delivery-history">History</a><a href="#remaining">Backlog</a></nav></header>
   <main id="main">
-    <section class="outlook" aria-labelledby="outlook-title">
-      <div>
-        <p class="eyebrow">PROJECT OUTLOOK</p><h2 id="outlook-title">MVP first. Useful releases every week.</h2>
-        <div class="progress-label"><label for="phase-progress">Weekly deliveries accepted</label><strong id="phase-count">Loading…</strong></div>
-        <progress id="phase-progress" aria-describedby="progress-note"></progress>
-        <p id="progress-note" class="muted">Accepted weekly deliveries, not a percentage of engineering effort. Old P0–P7 evidence is tracked separately below.</p>
-      </div>
-      <div class="forecast">
-        <p class="eyebrow">NEXT DELIVERY TARGET</p><strong id="forecast-range">Loading estimate…</strong>
-        <p id="forecast-detail" class="muted"></p><p id="forecast-preview"></p>
-        <p id="forecast-date" class="muted">Working-day target starts when implementation resumes.</p>
-      </div>
-    </section>
-    <p id="delivery-state" class="delivery-state" role="status">Loading delivery schedule…</p>
-    <section class="intro">
-      <div><p class="eyebrow">IMPLEMENTATION / LIVE STATUS</p><h1>One rewrite.<br><span>The whole picture.</span></h1><p class="lede">Track what is built, what is being developed, and what remains across the Gazebo Rust repositories.</p></div>
-      <aside class="sync"><span class="pulse" aria-hidden="true"></span><strong>Agent-maintained status</strong><p id="sync-status" role="status">Loading public reports…</p><button id="refresh" type="button">Refresh reports ↻</button><p class="muted">Refreshes every minute while open. GitHub caching can delay updates; each report shows its own timestamp.</p></aside>
-    </section>
+    <section class="intro"><div><p class="eyebrow">PROJECT STATUS</p><h1>Gazebo Rust progress</h1><p class="lede">MVP delivered. Current work, completed capabilities and next steps.</p></div><aside class="sync"><strong>Live status</strong><p id="sync-status" role="status">Loading public reports…</p><button id="refresh" type="button">Refresh ↻</button><p class="muted">Reports refresh every minute.</p></aside></section>
     <div id="notice" class="notice" role="status" hidden></div>
-    <section aria-labelledby="delivery-title"><div class="section-head"><h2 id="delivery-title">Weekly delivery plan</h2><span class="muted">Each phase ≤5 working days, including review and checks</span></div><p class="explanation">Ship the primitive MVP first. Each later phase adds a small usable capability. Budgets are targets, not guarantees; split oversized work without weakening acceptance. The full rewrite remains a deferred backlog without a fixed completion date.</p><div id="deliveries" class="delivery-grid"></div><p id="delivery-later" class="explanation"></p></section>
-    <section aria-labelledby="overview-title"><div class="section-head"><h2 id="overview-title">Long-term compatibility inventory</h2><span class="muted">Acceptance gates, not estimates</span></div><div id="metrics" class="metrics"></div><p class="explanation">Reviewed increments can be useful while a broad plan item remains incomplete. Packet counts are unweighted; they are not a percentage of engineering effort. Coverage measures tested code, not feature completeness.</p><p id="scope-note" class="explanation" hidden></p><div id="phases" class="phases"></div></section>
-    <section id="developing" aria-labelledby="developing-title"><div class="section-head"><h2 id="developing-title">Under development</h2><a href="#repositories">View repository evidence ↓</a></div><div id="active-work" class="active-work"></div></section>
-    <section id="repositories" aria-labelledby="repositories-title"><div class="section-head"><h2 id="repositories-title">Repository reports</h2><span class="muted">Independent ownership · shared contracts</span></div><div id="repo-grid" class="repo-grid"></div></section>
-    <section id="remaining" aria-labelledby="remaining-title"><div class="section-head"><h2 id="remaining-title">Deferred compatibility backlog</h2><span id="packet-count" class="muted"></span></div><div class="filters"><label>Search the plan<input id="search" type="search" placeholder="e.g. MuJoCo, sensors, ABI"></label><label>Repository<select id="repo-filter"><option value="all">All repositories</option></select></label><label>Status<select id="state-filter"><option value="all">All work</option><option value="remaining">Remaining work</option><option value="in_progress">In progress</option><option value="in_review">In review</option><option value="blocked">Blocked</option><option value="not_started">Not started</option><option value="unknown">Unreported</option><option value="complete">Accepted</option></select></label></div><div class="table-wrap"><table><caption class="sr-only">Implementation packets, owners, status and acceptance criteria</caption><thead><tr><th>Work packet</th><th>Owner / phase</th><th>Status</th><th>Acceptance evidence required</th></tr></thead><tbody id="packets"></tbody></table></div><p id="empty-filter" hidden>No packets match these filters.</p><details class="system-detail"><summary id="system-summary">Simulator systems inventory</summary><p>Every system is retained unless the plan explicitly records a disposition. Family progress alone does not migrate an individual system.</p><div id="systems" class="system-grid"></div></details></section>
-    <section class="closing"><h2>What counts as done?</h2><p>The retained behavior and upstream assertions must pass, each owned crate must exceed 95% line and region coverage, and the required compatibility, performance and release checks must have evidence. Historical P0–P7 gates remain visible; they are not prerequisites for the primitive MVP. Each weekly delivery must meet its own published acceptance criteria.</p><a href="https://github.com/gazebosim-rs/rewrite-progress/blob/main/AGENTS.md">How agents update this tracker ↗</a></section>
-  </main>
-  <footer><span>gazebosim-rs / rewrite-progress</span><div><a id="catalog-source" href="https://github.com/gazebosim-rs/gz-sim-rs/blob/main/docs/IMPLEMENTATION_TASKS.md">Plan source</a><a href="https://github.com/gazebosim-rs/rewrite-progress/tree/status/data">Status history ↗</a><a href="https://github.com/gazebosim-rs/rewrite-progress">Dashboard source ↗</a></div></footer>
-</body>
-</html>
+    <p id="delivery-state" class="delivery-state" role="status">Loading current status…</p>
+    <section class="board" aria-label="Current work, completed work and next steps">
+      <article id="developing" class="board-card"><p class="eyebrow">CURRENT FOCUS</p><h2>Now</h2><div id="board-current"></div></article>
+      <article id="completed" class="board-card"><p class="eyebrow">COMPLETED WORK</p><h2>Done</h2><div id="board-done"></div></article>
+      <article id="next" class="board-card"><p class="eyebrow">REMAINING WORK</p><h2>Next</h2><div id="board-next"></div></article>
+    </section>
+    <div id="board-blocker" class="notice" hidden></div><p id="board-updated" class="muted board-updated"></p>
+    <details id="delivery-history" class="archive"><summary>Delivery history and release queue <span id="phase-count">Loading…</span></summary>
+      <section class="outlook" aria-labelledby="outlook-title"><div><h2 id="outlook-title">Accepted capabilities</h2><label for="phase-progress">Weekly deliveries accepted</label><progress id="phase-progress" aria-describedby="progress-note"></progress><p id="progress-note" class="muted">Acceptance count, not a measure of total engineering effort.</p></div><div class="forecast"><strong id="forecast-range"></strong><p id="forecast-detail" class="muted"></p><p id="forecast-preview"></p><p id="forecast-date" class="muted"></p></div></section>
+      <h2>Awaiting release</h2><p class="explanation">Local verification and release acceptance are separate. Open a phase for its full scope and criteria.</p><div id="deliveries" class="delivery-grid"></div>
+      <details class="archive"><summary>Accepted deliveries</summary><div id="accepted-deliveries" class="delivery-grid"></div></details><p id="delivery-later" class="explanation"></p><a id="board-history" href="https://github.com/gazebosim-rs/rewrite-progress/commits/status/">Detailed status history ↗</a>
+    </details>
+    <details id="repositories" class="archive"><summary>Repository reports and verification evidence</summary><section aria-labelledby="developing-title"><h2 id="developing-title">Reported repository activity</h2><div id="active-work" class="active-work"></div></section><section aria-labelledby="repositories-title"><h2 id="repositories-title">Repository evidence</h2><div id="repo-grid" class="repo-grid"></div></section></details>
+    <details class="archive"><summary>Long-term compatibility inventory</summary><section aria-labelledby="overview-title"><h2 id="overview-title">Historical plan gates</h2><div id="metrics" class="metrics"></div><p class="explanation">Coverage measures tested code, not feature completeness. These broader gates remain separate from accepted weekly capabilities.</p><p id="scope-note" class="explanation" hidden></p><div id="phases" class="phases"></div></section></details>
+    <details id="remaining" class="archive"><summary>Full remaining backlog <span id="packet-count" class="muted"></span></summary><section aria-labelledby="remaining-title"><h2 id="remaining-title">Deferred compatibility work</h2><div class="filters"><label>Search the plan<input id="search" type="search" placeholder="e.g. MuJoCo, sensors, ABI"></label><label>Repository<select id="repo-filter"><option value="all">All repositories</option></select></label><label>Status<select id="state-filter"><option value="remaining">Remaining work</option><option value="all">All work</option><option value="in_progress">In progress</option><option value="in_review">In review</option><option value="blocked">Blocked</option><option value="not_started">Not started</option><option value="unknown">Unreported</option><option value="complete">Accepted</option></select></label></div><div class="table-wrap"><table><caption class="sr-only">Implementation packets, owners, status and acceptance criteria</caption><thead><tr><th>Work packet</th><th>Owner / phase</th><th>Status</th><th>Acceptance evidence required</th></tr></thead><tbody id="packets"></tbody></table></div><p id="empty-filter" hidden>No packets match these filters.</p><details class="system-detail"><summary id="system-summary">Simulator systems inventory</summary><div id="systems" class="system-grid"></div></details></section></details>
+    <section class="closing"><h2>What counts as done?</h2><p>A capability is accepted after its required behavior, review, tests, strict coverage, hosted CI and release checks pass. Locally verified work is labeled separately.</p></section>
+  </main><footer><span>gazebosim-rs / rewrite-progress</span><div><a id="catalog-source" href="https://github.com/gazebosim-rs/gz-sim-rs/blob/main/docs/DELIVERY_PLAN.md">Plan source</a><a href="https://github.com/gazebosim-rs/rewrite-progress/tree/status/data">Status history ↗</a><a href="https://github.com/gazebosim-rs/rewrite-progress">Dashboard source ↗</a></div></footer>
+</body></html>

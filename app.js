@@ -48,7 +48,30 @@ function validateDelivery(value) {
     ids.add(phase.id);
   }
   if (!ids.has(value.current_phase)) throw new Error("Invalid current phase");
+  if (value.board) {
+    const board = value.board;
+    const shortList = list => Array.isArray(list) && list.length > 0 && list.length <= 4 && list.every(text => typeof text === "string" && text.length <= 240);
+    if (!board.current || typeof board.current.title !== "string" || board.current.title.length > 120 || !shortList(board.current.items) || !shortList(board.done) || !shortList(board.next) || typeof board.updated_at !== "string" || !Number.isFinite(Date.parse(board.updated_at)) || typeof board.blocker?.text !== "string" || board.blocker.text.length > 300 || typeof board.blocker.url !== "string" || !board.blocker.url.startsWith("https://github.com/gazebosim-rs/") || typeof board.history_url !== "string" || !board.history_url.startsWith("https://github.com/gazebosim-rs/")) throw new Error("Invalid current board");
+  }
   return value;
+}
+function renderBoard() {
+  const board = delivery?.board;
+  const list = items => { const ul = node("ul"); for (const item of items) ul.append(node("li", item)); return ul; };
+  if (!board) {
+    $("board-current").replaceChildren(node("p", "Current board unavailable. Refresh or open the delivery history."));
+    $("board-done").replaceChildren(node("p", "Consult accepted delivery records."));
+    $("board-next").replaceChildren(node("p", "Consult the remaining backlog."));
+    $("board-blocker").hidden = true;
+    return;
+  }
+  $("board-current").replaceChildren(node("h3", board.current.title), list(board.current.items));
+  $("board-done").replaceChildren(list(board.done));
+  $("board-next").replaceChildren(list(board.next));
+  $("board-blocker").replaceChildren(node("strong", "Release blocker: "), node("span", board.blocker.text), link(" View failed CI ↗", board.blocker.url));
+  $("board-blocker").hidden = !board.blocker.text;
+  $("board-updated").textContent = `Board updated ${timestamp(board.updated_at)}. Detailed evidence is below.`;
+  $("board-history").href = board.history_url;
 }
 function renderOutlook() {
   const progress = $("phase-progress");
@@ -60,14 +83,17 @@ function renderOutlook() {
     progress.setAttribute("aria-valuetext", `${accepted} of ${delivery.phases.length} weekly deliveries accepted`);
     const state = allAccepted ? "All scheduled deliveries accepted. Select the next bounded increment before starting implementation." : delivery.execution_state === "paused" ? "Implementation paused — the delivery clock starts only after explicit resume." : "Implementation active — working-day budgets include review and mandatory checks.";
     $("delivery-state").textContent = `${state}${deliveryUnavailable ? " Schedule refresh failed; showing the last loaded plan." : ""}`;
-    $("deliveries").replaceChildren(...delivery.phases.map(phase => {
+    const cards = phases => phases.map(phase => {
       const card = node("article", undefined, "delivery-card");
       const top = node("div", undefined, "repo-top");
       top.append(node("strong", `${phase.id} · ${phase.max_working_days} working days`), tag(delivery.status[phase.id]));
       const criteria = node("details");
       criteria.append(node("summary", "Acceptance and limits"), node("p", phase.acceptance), node("p", `Deferred: ${phase.excluded}`, "muted"));
-      card.append(top, node("h3", phase.title), node("p", phase.scope), criteria); return card;
-    }));
+      criteria.append(node("p", phase.scope));
+      card.append(top, node("h3", phase.title), criteria); return card;
+    });
+    $("deliveries").replaceChildren(...cards(delivery.phases.filter(phase => delivery.status[phase.id] !== "complete")));
+    $("accepted-deliveries").replaceChildren(...cards(delivery.phases.filter(phase => delivery.status[phase.id] === "complete")));
     $("delivery-later").textContent = delivery.later_work;
   } else {
     progress.removeAttribute("value"); progress.removeAttribute("aria-valuetext");
@@ -86,7 +112,7 @@ function renderOutlook() {
     $("forecast-date").textContent = "Refresh to retry. See the implementation plan for remaining scope.";
     return;
   }
-  $("forecast-range").textContent = `≤${forecast.target_working_days} working days to next delivery`;
+  $("forecast-range").textContent = delivery?.execution_state === "paused" ? "Development paused" : `≤${forecast.target_working_days} working days to next delivery`;
   $("forecast-detail").textContent = `${forecast.scope} · Target: ${forecast.target_working_days} working days · ${forecast.confidence.toLowerCase()} confidence. ${forecast.assumption}`;
   $("forecast-preview").textContent = forecast.clock;
   const date = new Date(`${forecast.as_of}T12:00:00Z`);
@@ -127,8 +153,8 @@ function renderActive() {
     return;
   }
   if (delivery?.execution_state === "paused") {
-    const next = delivery.phases.find(phase => phase.id === delivery.current_phase);
-    $("active-work").replaceChildren(node("p", `Implementation agents are paused. Next on explicit resume: ${next.id} · ${next.title}. Existing candidate work and accepted evidence are preserved.`, "muted"));
+    const next = delivery.phases.find(phase => phase.id === (delivery.current_development_phase || delivery.current_phase));
+    $("active-work").replaceChildren(node("p", `Development paused. Current capability: ${next.id} · ${next.title}. An existing final verification may finish; new work waits for resume.`, "muted"));
     return;
   }
   const cards = [];
@@ -168,10 +194,13 @@ function renderRepos() {
     if (quality.revision_url) evidence.append(link(`Evidence ${quality.revision?.slice(0, 7) || "revision"} ↗`, quality.revision_url));
     else if (/^[a-f0-9]{40}$/.test(quality.revision)) evidence.append(node("span", `Measured ${quality.revision.slice(0, 7)} · publication unconfirmed`, "muted"));
     else if (quality.revision) evidence.append(node("span", quality.revision, "muted"));
-    card.append(evidence, node("p", quality.note || "No quality evidence reported.", "quality-note"));
+    const qualification = node("details");
+    qualification.append(node("summary", "Qualification notes"), node("p", quality.note || "No quality evidence reported.", "quality-note"));
+    if (report.history_url) qualification.append(link("Previous detailed report ↗", report.history_url));
+    card.append(evidence, qualification);
     const upstream = quality.upstream;
     if (upstream?.total !== null && upstream?.total !== undefined) card.append(node("p", `Upstream inventory: ${upstream.total} cases · fully ported: ${upstream.ported ?? "unreported"} · partial: ${upstream.partial ?? "unreported"}. Native reference passes do not imply Rust parity.`, "quality-note"));
-    if (report.blockers.length) card.append(node("p", `Blockers: ${report.blockers.join(" · ")}`, "blockers"));
+    if (report.blockers.length) card.append(detail("Reported blockers", report.blockers, item => node("span", item)));
     card.append(detail("Reviewed increments", report.accepted_slices, item => link(item.title, item.url)), detail("Remaining scope", report.remaining, item => node("span", item)));
     return card;
   }));
@@ -223,7 +252,7 @@ async function refresh() {
     })]);
     $("notice").hidden = failures.length === 0;
     $("notice").textContent = failures.length ? `Could not refresh ${failures.join(", ")}. Previously loaded reports, if available, are retained with their original timestamps. Refresh to retry.` : "";
-    renderOutlook(); renderOverview(); renderActive(); renderRepos(); renderPackets();
+    renderBoard(); renderOutlook(); renderOverview(); renderActive(); renderRepos(); renderPackets();
     $("sync-status").textContent = `Checked ${timestamp(new Date().toISOString())} · ${catalog.repositories.length - failures.length}/${catalog.repositories.length} reports fetched`;
   } catch { $("notice").hidden = false; $("notice").textContent = "The plan catalog could not be loaded. Refresh to retry, or open the linked implementation plan."; $("sync-status").textContent = "Refresh failed"; }
   finally { fetching = false; $("refresh").disabled = false; }

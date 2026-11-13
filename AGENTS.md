@@ -34,3 +34,13 @@ The user requested an online tracker and instructed repository agents to update 
 - Planning updates do not resume paused agents or the continuation automation.
   Forecast schema 2 targets the next runnable MVP after explicit resume; do not
   display the retired 4–8 month whole-rewrite forecast as the next delivery.
+
+## Keep the board current and concise
+
+Replace current summaries; never prepend old checkpoints. The main page is a
+Now / Done / Next board with one release blocker. Keep detailed evidence behind
+links and historical catalogs collapsed. Follow the prose limits in
+`status-contract.md`; preserve other owners' reports and accepted evidence.
+For a completed board change, run `node tests/outlook.test.cjs` and
+`python3 -m unittest discover -s tests -p 'test_*.py'` once after Source review,
+then inspect the actual page before calling the board fixed.

@@ -69,6 +69,12 @@ def validate(data, repository):
     require(ci.get('state', 'unknown') in {'success', 'failure', 'pending', 'unknown'}, 'invalid CI state')
     require(ci.get('url') is None or public_url(ci['url']), 'CI link must be public project evidence')
     require(quality.get('revision_url') is None or public_url(quality['revision_url']), 'revision link must be public project evidence')
+    if repository == 'gz-sim-rs':
+        require(len(data['summary']) <= 240, 'current summary must be concise (240 characters)')
+        require(len(data['active']) <= 3 and all(len(item['title']) <= 120 and len(item['detail']) <= 450 for item in data['active']), 'use at most three concise current work cards')
+        require(len(data['blockers']) <= 3 and all(len(item) <= 300 for item in data['blockers']), 'keep current blockers concise')
+        require(len(data['remaining']) <= 8 and all(len(item) <= 240 for item in data['remaining']), 'keep remaining work concise')
+        require(len(quality['note']) <= 600, 'link detailed evidence instead of appending report history')
     return data
 
 
