@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-13T17:15:23.352051+00:00",
+  "as_of": "2026-11-13T18:50:32.825694+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1208,16 +1208,16 @@
       "source_preparation_basis_accepted": false,
       "integrated_parent": "d140e51e56b8c83d3857ad16977472412a9629f8",
       "source_preparation_started_at": "2026-11-13T15:12:17.540182+00:00",
-      "contract_sha256": "a054e92fe31c137458770f17f1cd5c4b3ca775fb0c4387e162bba510db8ebc56",
-      "checks_run": false,
+      "contract_sha256": "bf2c7ebbfb6e56014cc959adee3a1584d4b9bc26329e34f0ed68d96af4854292",
+      "checks_run": true,
       "source_authorship_released": true,
       "operations_released": true,
       "runtime_Source_batches_complete": true,
-      "current_native_provider_availability": "Retained DSO/object identities observed unchanged; DSO input not admitted due to empty RUNPATH entry. A new direct-object helper recipe is Source preparation only.",
+      "current_native_provider_availability": "The old DSO input remains rejected for an empty RUNPATH entry. The separately reviewed new helper linked the unchanged original System object and completed capture; native DATA, generation and literal DATA passed. No original provider or SDK was rebuilt.",
       "root_shared_Source_review": "SDF whole6path CLEAR",
       "Scene_Source_review": "SDF whole3path CLEAR",
       "Server_Source_review": "SDF and Light whole5path CLEAR",
-      "current_stage": "Source integration composed over locally qualified M54; final overlap review pending",
+      "current_stage": "Lossless test correction and affected formatting passed; full retry preparation",
       "native_input_diagnostic": {
         "actual_root_exit_code": 1,
         "actual_readelf_children": 2,
@@ -1229,9 +1229,57 @@
       },
       "revised_reference_Source_proposal_sha256": "fbdad455a7223f32eb593640bb8a0d3d9a266efdf915c06347bd909a914280ef",
       "revised_reference_Source_decision_sha256": "26c7dbe2c7259cf1fb1cd0e6d5d98d9e8a3aeac3bba73926b6b998c9f4a4a9ac",
-      "operation_scope": "Exactly one bounded read-only provider metadata diagnostic ran and failed admission; helper/capture/build/formatter/tests/CI operations remain held.",
+      "operation_scope": "The original DSO diagnostic remains failed. New capture, native DATA, export and literal DATA passed. The first normal failed at one test ID comparison before Rust tests/coverage. The lossless correction and affected formatting passed; the failure-retaining full retry, results audit and release gates remain pending.",
       "runtime_Source_independent_review_clear": true,
-      "integration_source_overlap_review_pending": true
+      "integration_source_overlap_review_pending": false,
+      "final_qualification_Source_root": "/home/nkoenig/work/gazebo/rust/gz-sim-m55-observed-multiple-pose-publishers",
+      "observed_control_Source_complete": true,
+      "integration_source_overlap_review_clear": true,
+      "native_capture_passed": true,
+      "independent_native_DATA_passed": true,
+      "independent_literal_DATA_passed": true,
+      "operation_status": {
+        "native_capture": "actual0,30childstages",
+        "independent_native_DATA": "actual0",
+        "fixture_generation": "actual0",
+        "independent_literal_DATA": "actual0",
+        "observed_control_Source": "complete and independently reviewed; one lossless ID comparison correction reviewed",
+        "hosted_CI_publication_and_acceptance": "held",
+        "formatter": "actual0 before first full normal",
+        "Rust_Python_tests_lint_full_normal_strict_coverage": "first normal actual1 during Clippy test compilation; no Rust tests or coverage; corrected retry held",
+        "corrective_formatter": "actual0; all34 corrected Source bytes unchanged"
+      },
+      "native_reference": "planning/reference/m55-multiple-pose-publishers.json",
+      "native_evidence": {
+        "capture_result_sha256": "df62946ee38411b7176af00081d7883ac2fc7f51fef2073da9282662c17c7de6",
+        "native_DATA_report_sha256": "f453636447ad0d600294b0919d16de35930f996c84e01b1d7219033c70173c7a",
+        "literal_DATA_report_sha256": "31e23ef58f73dfd4acfaf2184043170af7362df48d98692819dd4f8db76808bb",
+        "input_domain": "DIRECT_ORIGINAL_OBJECT_SYSTEM_LOCAL_POSE_ECM",
+        "configuration_count": 10,
+        "direct_post_update_calls": 40,
+        "input_rows": 40,
+        "observed_vectors": 65,
+        "canonical_packets": 65,
+        "pose_records": 95,
+        "original_Physics_or_Server_equivalence": false
+      },
+      "observed_control_Source_independent_review_clear": true,
+      "new_Source_declarations_headless": 17,
+      "new_Source_declarations_renderer": 10,
+      "formatter_actual_exit_code": 0,
+      "actual_normal_attempt1": {
+        "actual_root_exit_code": 1,
+        "controller_elapsed_seconds": 190.70420404011384,
+        "failed_source_tree": "8c28c5f0e5efa037a7416ec08050f4aee7994409",
+        "failure_receipt_sha256": "20e25e93d5438934f20fa9d03d00a2e0110864e47cbc1e651f587de343669c1e",
+        "compiler_diagnostics": [
+          "E0308",
+          "E0277"
+        ],
+        "finding_classes": 1,
+        "Rust_tests_or_coverage_reached": false,
+        "qualified": false
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -1554,19 +1602,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M42 are accepted; M40 remains installed Latest. M43\u2013M54 passed local qualification but remain unaccepted. M55 Source is composed over locally qualified M54 and final overlap review is pending. Hosted snapshot recovery is unconfirmed; all release gates remain mandatory.",
+  "acceptance_boundary": "M1\u2013M42 are accepted; M40 remains installed Latest. M43\u2013M54 are locally qualified but unaccepted. M55 native/literal evidence and Source review passed; its first full normal failed Clippy test compilation. The lossless correction, retry and independent results audit remain required. Hosted recovery and all release gates remain mandatory.",
   "current_delivery_group": [
     "M43",
     "M44"
   ],
   "current_development_phase": "M55",
   "board": {
-    "updated_at": "2026-11-13T17:15:23.352051+00:00",
+    "updated_at": "2026-11-13T18:50:32.825694+00:00",
     "current": {
-      "title": "M55 \u00b7 Independent PosePublishers",
+      "title": "M55 \u00b7 Verification retry preparation",
       "items": [
-        "Integrate the reviewed Scene and Server source onto locally qualified M54.",
-        "Prepare native reference capture, independent evidence audit and fixture checks in parallel."
+        "The first compile failure is preserved; the lossless test ID correction passed review.",
+        "Corrective formatting passed. Finish the retained-failure procedure and full verification retry."
       ]
     },
     "done": [
@@ -1575,8 +1623,8 @@
       "M43\u2013M54 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Preserve M54 repairs through M55 overlap review and integration.",
-      "Capture and audit M55 native evidence, then complete consolidated verification.",
+      "Complete the reviewed correction and one affected full verification retry.",
+      "Audit retained normal results only after full success.",
       "Complete hosted qualification and dependency-ordered releases."
     ],
     "blocker": {
