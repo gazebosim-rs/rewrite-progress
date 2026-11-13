@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-13T15:13:32.967850+00:00",
+  "as_of": "2026-11-13T15:21:56.341914+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1153,6 +1153,33 @@
         "input_domain": "DIRECT_SENSOR_FACTORY_POSE_AND_RAY_RESULTS",
         "original_System_or_Physics_equivalence": false
       }
+    },
+    {
+      "id": "M55",
+      "title": "Independent loaded PosePublishers",
+      "max_working_days": 5,
+      "depends_on": [
+        "M54"
+      ],
+      "scope": "Zero through eight top-level flat Rapier PosePublishers, at most 128 selected model/link records each and 1,024 aggregate, with up to 16 dynamic/static channels. Preserve frame classification, local transforms, lexical Rust wire order and independent existing clocks; validate full owner/original/prepared/endpoint sets before IO.",
+      "acceptance": "Complete Source/regressions/guides and independent review. Final integration follows actual M54 normal and local DATA, preserving every repair. Exact current native input diagnostic, fresh scoped original-System controlled-input capture and independent native/literal DATA precede observed consumers. Full normal/strict coverage, independent local DATA, accepted predecessor, hosted/official audit and Main/readbacks precede acceptance.",
+      "excluded": "Nested models, new record types/backend/solver/plugins/interest gate/noise/latching framework. No sorted native wire equivalence, Physics/reset/demand transfer, SDK/provider build or CI workaround.",
+      "evidence": "docs/M55_DELIVERY.md",
+      "source_preparation_only": true,
+      "provisional_local_only": true,
+      "source_preparation_basis_commit": "9bf3ada4675022b45e39d5f089e1bb3aaeaa2c04",
+      "source_preparation_basis_accepted": false,
+      "integrated_parent": null,
+      "source_preparation_started_at": "2026-11-13T15:12:17.540182+00:00",
+      "contract_sha256": "c6fed84247dc4b17c1836c8d8ca45ece26b02c3d1e698268d398a5af1ba7d1f8",
+      "checks_run": false,
+      "source_authorship_released": true,
+      "operations_released": false,
+      "runtime_Source_batches_complete": false,
+      "current_native_provider_availability": "UNKNOWN",
+      "root_shared_Source_review": "SDF whole6path CLEAR",
+      "Scene_Source_review": "SDF whole3path CLEAR",
+      "Server_Source_review": "authoring queued after M54 retained DATA procedure Source"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -1210,7 +1237,8 @@
     "M51": "in_progress",
     "M52": "in_progress",
     "M53": "in_progress",
-    "M54": "in_progress"
+    "M54": "in_progress",
+    "M55": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-10",
@@ -1226,7 +1254,8 @@
     "M51",
     "M52",
     "M53",
-    "M54"
+    "M54",
+    "M55"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -1463,6 +1492,14 @@
       ],
       "integration": "M53 corrected full normal verification overlaps M54 Scene and Server source preparation on qualified unaccepted M52. Final integration waits for actual M53 normal and independent DATA and preserves its repairs. Independent Source review precedes all new operations; Root serializes heavy work.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M54",
+        "M55"
+      ],
+      "integration": "M54 sole normal verification overlaps disjoint M55 Source preparation on qualified, unaccepted M53 9bf3. M55 final integration waits for actual M54 full normal and independent DATA, retains every repair and requires complete overlap review. Root serializes all heavy execution. No Source qualification or acceptance transfers.",
+      "max_working_days": 5
     }
   ],
   "acceptance_boundary": "M1\u2013M42 are accepted; M40 remains installed Latest. M43\u2013M53 passed local qualification but remain unaccepted. M54 implementation batches are independently Source-reviewed; integration over qualified M53 follows overlap review. Hosted snapshot recovery is unconfirmed; all release gates remain mandatory.",
@@ -1470,7 +1507,7 @@
     "M43",
     "M44"
   ],
-  "current_development_phase": "M54",
+  "current_development_phase": "M55",
   "board": {
     "updated_at": "2026-11-13T15:13:32.967850+00:00",
     "current": {
