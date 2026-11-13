@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-13T13:22:01.567334+00:00",
+  "as_of": "2026-11-13T15:13:32.967850+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1102,18 +1102,57 @@
       "acceptance": "Complete implementation, meaningful regressions and guides with independent Source review. Final integration follows successful M53 normal and independent DATA, retaining its fixes. Reviewed current component inputs, fresh component scan capture, independent native and literal DATA precede observed consumers. Full normal, unchanged strict coverage, independent local DATA, accepted predecessor, hosted success, official audit and Main readbacks precede release.",
       "excluded": "GPU/multilayer/interpolated scans, intensity or point-cloud expansion; native System/ECM/physics/demand/scheduling/RNG equivalence; new solver, backend, framework, SDK/provider build, CI workaround or transferred acceptance.",
       "evidence": "docs/M54_DELIVERY.md",
-      "source_preparation_only": true,
+      "source_preparation_only": false,
       "provisional_local_only": true,
       "source_preparation_basis_commit": "1ed59a7348a3dee94cdae8b7a4bbd847cbd9911b",
       "source_preparation_basis_accepted": false,
-      "integrated_parent": null,
+      "integrated_parent": "9bf3ada4675022b45e39d5f089e1bb3aaeaa2c04",
       "source_preparation_started_at": "2026-11-13T12:54:06.578509+00:00",
-      "contract_sha256": "bde4c749f7209a7196dce6541295d54a74c0e2eafa35fa1ced4c9587a64adbe1",
+      "contract_sha256": "e5d337508e71755a1f2ac53c8083e5d3948fb774e00f524d5f7911039eb9c378",
       "checks_run": false,
       "source_authorship_released": true,
-      "operations_released": false,
+      "operations_released": true,
       "runtime_Source_batches_complete": true,
-      "runtime_Source_independent_review_clear": true
+      "runtime_Source_independent_review_clear": true,
+      "integration_source_overlap_review_pending": false,
+      "integration_source_overlap_review_clear": true,
+      "preparation_contract_sha256": "bde4c749f7209a7196dce6541295d54a74c0e2eafa35fa1ced4c9587a64adbe1",
+      "component_input_diagnostic": {
+        "actual_root_exit_code": 0,
+        "result_sha256": "12e3b83ec60dc7f020efcdb5603624e48df3bc664909d71b736d0ecd1d3a2ea3",
+        "component_bytes": 1375024,
+        "component_sha256": "2947b2d4007f36eb0d2dfabc36233710587ddac416460fa1a90d37935549933a",
+        "direct_dependency_names": 11,
+        "reachable_saved_metadata_nodes": 35,
+        "native_capture_performed": false,
+        "provider_or_SDK_rebuilt": false
+      },
+      "current_stage": "Full normal verification active; no final result yet",
+      "native_component_capture_passed": true,
+      "independent_native_DATA_passed": true,
+      "independent_literal_DATA_passed": true,
+      "observed_consumers_Source_review_clear": true,
+      "new_Source_declarations_headless": 17,
+      "new_Source_declarations_renderer": 10,
+      "operation_status": {
+        "native_component_capture": "actual0,25childstages",
+        "independent_native_DATA": "actual0",
+        "fixture_generation": "actual0",
+        "independent_literal_DATA": "actual0",
+        "formatter": "actual0; independent Source review clear",
+        "Rust_Python_tests_and_lint": "not_run",
+        "full_normal_and_strict_coverage": "active; final result pending",
+        "hosted_CI": "held",
+        "publication_and_acceptance": "held"
+      },
+      "native_reference": "planning/reference/m54-multiple-lidars.json",
+      "native_evidence": {
+        "capture_result_sha256": "f983520536276bb13f41471ad321c1763ed010daac8486ce63c57b1ec0f30d6e",
+        "native_DATA_report_sha256": "2e3fc58ea336ba1c14006f86b172158c802e16b0815fbc027318155ea29c7f0d",
+        "literal_DATA_report_sha256": "3a6bab986daf2f8150c892499cc07a8efd03dffa7adb6256e885c8c1081dccb6",
+        "input_domain": "DIRECT_SENSOR_FACTORY_POSE_AND_RAY_RESULTS",
+        "original_System_or_Physics_equivalence": false
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -1433,13 +1472,13 @@
   ],
   "current_development_phase": "M54",
   "board": {
-    "updated_at": "2026-11-13T13:22:01.567334+00:00",
+    "updated_at": "2026-11-13T15:13:32.967850+00:00",
     "current": {
-      "title": "M54 \u00b7 Multiple-lidar integration",
+      "title": "M54 verification \u00b7 M55 source development",
       "items": [
-        "M53 full local verification and independent results audit passed.",
-        "M54 Scene, Server and shared implementation batches passed independent review.",
-        "Root is preparing integration; component-reference preparation continues in parallel."
+        "M54 full normal verification and strict coverage are running.",
+        "M54 native component capture and independent native and fixture audits passed.",
+        "M55 independent PosePublisher source development is running in parallel."
       ]
     },
     "done": [
@@ -1448,8 +1487,8 @@
       "M43\u2013M53 passed local checks and independent results audits. Hosted qualification is still required before release."
     ],
     "next": [
-      "Integrate M54 over the verified M53 parent, preserving all fixes.",
-      "Complete M54\u2019s component reference, literal-data audit and strict verification.",
+      "Audit M54\u2019s retained results after full normal verification completes.",
+      "Complete and review M55\u2019s Scene, Server and shared source batches.",
       "Recover hosted qualification and release queued phases in dependency order."
     ],
     "blocker": {
