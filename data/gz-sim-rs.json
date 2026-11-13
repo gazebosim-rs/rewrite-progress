@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T15:13:32.967850+00:00",
+  "updated_at": "2026-11-13T15:46:54.164177+00:00",
   "state": "active",
-  "summary": "M54 full normal verification is running after native and fixture audits passed. M55 independent PosePublisher source work is proceeding in parallel.",
+  "summary": "M54 verification found two regression failures; corrections are being batched. M55 PosePublisher source development continues independently.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-01",
-      "title": "M54 \u00b7 Multiple-lidar verification",
-      "detail": "The reviewed full normal and strict coverage run is active. Native capture and independent native and fixture audits passed. Final results and the independent local results audit remain pending."
+      "title": "M54 \u00b7 Batched regression corrections",
+      "detail": "The full normal run failed on a malformed identity-test XML fixture and legacy collision-error precedence. Original evidence is preserved. Both corrections will be reviewed before one consolidated retry."
     },
     {
       "id": "SYS-EXTENSION",
       "title": "M55 \u00b7 Independent PosePublishers",
-      "detail": "Disjoint Scene, Server and shared source lanes are open for up to eight publishers. Existing math and clocks stay unchanged. Integration waits for M54 verification, results audit and preservation of any repairs."
+      "detail": "Scene and shared identity work passed independent source review. Server and native-reference source work continues. Integration waits for M54 correction, qualification and results audit."
     }
   ],
   "accepted_slices": [
@@ -954,7 +954,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M53 full local normal verification and independent results audit passed. M54 native and fixture audits passed; its full normal run is active. M55 is source preparation. M1\u2013M42 remain accepted, with M40 installed Latest. Hosted snapshot failures still block releases."
+    "note": "M53 full local verification and independent results audit passed. M54 native and fixture audits passed, but full normal verification failed in two cases. M55 is source preparation. M1\u2013M42 remain accepted, with M40 installed Latest. Hosted snapshot failures also block releases."
   },
   "phase_status": {
     "P0": "in_progress",
