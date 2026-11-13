@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T21:40:45.131564+00:00",
+  "updated_at": "2026-11-13T22:22:41.751086+00:00",
   "state": "active",
-  "summary": "M56 implementation, documentation and registration passed source review. Native reference capture and audit tooling are being prepared in parallel; M55 remains locally qualified.",
+  "summary": "M56 source integration is reviewed. The reference controller failed its result-record limit; raw output is retained and a compact record plus durable failure ledger is being reviewed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M56 \u00b7 Reference capture preparation",
-      "detail": "All 31 integration files are source-reviewed on qualified M55. The native helper and its closed inputs are reviewed; the capture procedure is being prepared. No M56 native capture or verification has run."
+      "title": "M56 \u00b7 Evidence record correction",
+      "detail": "Preserve the failed controller and its raw outputs. Review compact references to complete retained data and metadata, keeping the 2 MiB record cap and every validation rule."
     },
     {
       "id": "REF-01",
-      "title": "M56 \u00b7 Independent evidence checks",
-      "detail": "Prepare the independent odometry evidence auditor against the agreed three-channel schema. Actual native capture, literal evidence, observed-data tests and final verification remain pending."
+      "title": "M56 \u00b7 Durable execution evidence",
+      "detail": "Add a small execution ledger before final result persistence, preserving genuine child exits and guard/error state on failure. It must never turn a failed controller into success."
     }
   ],
   "accepted_slices": [
@@ -895,11 +895,12 @@
     }
   ],
   "remaining": [
-    "Capture the original-System odometry reference and complete independent native and literal checks.",
-    "Add observed-data tests, then run M56\u2019s full verification and strict coverage.",
-    "Complete hosted qualification and dependency-ordered releases."
+    "Review the compact evidence records and durable execution ledger without loosening limits.",
+    "Complete native reference capture and independent native and literal checks.",
+    "Add observed-data tests, then complete M56 verification and dependency-ordered release gates."
   ],
   "blockers": [
+    "The M56 reference controller returned 1 while saving an oversized result; no complete qualification record exists.",
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
   ],
   "plan_status": {
@@ -954,7 +955,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M55 is locally qualified at fcfa7176: 1,905 headless and 1,127 overlapping renderer passes, 403 Python checks and 29 finite examples. Full normal and independent local DATA passed; workspace and per-crate strict coverage held. Changed Scene lines16/16 both profiles, Server237/246 headless, not100%. Both failed normals and the reader failure are retained. M56\u2019s 31 integration files are source-reviewed; no M56 checks or native capture have run. Acceptance and hosted holds are unchanged."
+    "note": "M55 is locally qualified at fcfa7176: 1,905 headless and 1,127 overlapping renderer passes, 403 Python checks and 29 finite examples. Full normal, strict workspace/per-crate coverage and independent DATA passed; Scene changed16/16 both profiles, Server237/246 headless, not100%. M56\u2019s 31 integration files are source-reviewed. Its native controller failed result persistence; raw output is partial evidence, not qualification. All failures and release holds remain."
   },
   "phase_status": {
     "P0": "in_progress",
