@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-13T16:34:12.600766+00:00",
+  "as_of": "2026-11-13T17:15:23.352051+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1127,7 +1127,7 @@
         "native_capture_performed": false,
         "provider_or_SDK_rebuilt": false
       },
-      "current_stage": "Corrected full normal attempt2 active; first failure retained",
+      "current_stage": "Locally qualified; hosted/official/accepted-predecessor gates held",
       "native_component_capture_passed": true,
       "independent_native_DATA_passed": true,
       "independent_literal_DATA_passed": true,
@@ -1140,8 +1140,8 @@
         "fixture_generation": "actual0",
         "independent_literal_DATA": "actual0",
         "formatter": "actual0; independent Source review clear",
-        "Rust_Python_tests_and_lint": "executed within actual failed normal run; two headless cases failed and remaining qualification is incomplete",
-        "full_normal_and_strict_coverage": "attempt2 active after complete correction Source/formatter review; actual final result pending",
+        "Rust_Python_tests_and_lint": "passed within corrected full normal attempt2; first normal failure preserved",
+        "full_normal_and_strict_coverage": "actual0; independent retained local DATA actual0",
         "hosted_CI": "held",
         "publication_and_acceptance": "held"
       },
@@ -1162,11 +1162,29 @@
         "qualified": false
       },
       "actual_normal_attempt2": {
-        "state": "active_not_passed",
+        "state": "passed_independent_local_DATA_clear",
         "Root_watch": 29290,
         "tree": "d7eee501720de607ed7803be8fb6d34c21f7d420",
         "release_sha256": "3021f54d69c2f811bd7f92c393053a99657c5f5a329d075e8b84ade1365b9846",
-        "actual_exit_code": null
+        "actual_exit_code": 0,
+        "commit": "d140e51e56b8c83d3857ad16977472412a9629f8",
+        "result_sha256": "023c6212acfd399753d9f172cb2113a10ca68c9a5198e26d1b5751c343c9f876",
+        "controller_elapsed_seconds": 2172.873944218969
+      },
+      "independent_local_DATA": {
+        "actual_root_exit_code": 0,
+        "report_sha256": "a912f21918dd9431b184497addca7b238c99decfc5841f9df05500030f4bec21",
+        "actual_receipt_sha256": "aaaefacafa679dad6ef2531b52a5f20e3289047aad50bcccc07eee991513a6e8",
+        "headless_profile_passes": 1886,
+        "renderer_profile_passes_overlapping": 1117,
+        "Python_aggregate": 403,
+        "finite_examples": 28,
+        "raw_profiles_once_LAST": [
+          1821,
+          396,
+          42,
+          33
+        ]
       }
     },
     {
@@ -1186,16 +1204,16 @@
       "source_preparation_basis_accepted": false,
       "integrated_parent": null,
       "source_preparation_started_at": "2026-11-13T15:12:17.540182+00:00",
-      "contract_sha256": "e0bebacf7f87a7200fd98dd7e4c556d4369f9b9e428f9ecce3c1ba132dbc647d",
+      "contract_sha256": "a054e92fe31c137458770f17f1cd5c4b3ca775fb0c4387e162bba510db8ebc56",
       "checks_run": false,
       "source_authorship_released": true,
       "operations_released": true,
-      "runtime_Source_batches_complete": false,
+      "runtime_Source_batches_complete": true,
       "current_native_provider_availability": "Retained DSO/object identities observed unchanged; DSO input not admitted due to empty RUNPATH entry. A new direct-object helper recipe is Source preparation only.",
       "root_shared_Source_review": "SDF whole6path CLEAR",
       "Scene_Source_review": "SDF whole3path CLEAR",
-      "Server_Source_review": "authoring in progress",
-      "current_stage": "Disjoint Source development; M54 parent qualification remains held",
+      "Server_Source_review": "SDF and Light whole5path CLEAR",
+      "current_stage": "Complete Source batches; M54 overlap/adoption and native evidence tooling",
       "native_input_diagnostic": {
         "actual_root_exit_code": 1,
         "actual_readelf_children": 2,
@@ -1207,7 +1225,8 @@
       },
       "revised_reference_Source_proposal_sha256": "fbdad455a7223f32eb593640bb8a0d3d9a266efdf915c06347bd909a914280ef",
       "revised_reference_Source_decision_sha256": "26c7dbe2c7259cf1fb1cd0e6d5d98d9e8a3aeac3bba73926b6b998c9f4a4a9ac",
-      "operation_scope": "Exactly one bounded read-only provider metadata diagnostic ran and failed admission; helper/capture/build/formatter/tests/CI operations remain held."
+      "operation_scope": "Exactly one bounded read-only provider metadata diagnostic ran and failed admission; helper/capture/build/formatter/tests/CI operations remain held.",
+      "runtime_Source_independent_review_clear": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -1537,24 +1556,23 @@
   ],
   "current_development_phase": "M55",
   "board": {
-    "updated_at": "2026-11-13T16:34:12.600766+00:00",
+    "updated_at": "2026-11-13T17:15:23.352051+00:00",
     "current": {
-      "title": "M54 verification retry \u00b7 M55 source development",
+      "title": "M55 \u00b7 Independent PosePublishers",
       "items": [
-        "M54\u2019s corrected full verification is running; the first failure remains preserved.",
-        "Both M54 regression corrections passed independent source and formatting review.",
-        "M55 source work continues; native capture and integration remain held."
+        "Integrate the reviewed Scene and Server source onto locally qualified M54.",
+        "Prepare native reference capture, independent evidence audit and fixture checks in parallel."
       ]
     },
     "done": [
       "MVP and M1\u2013M42 accepted and published.",
       "M40 is the latest installable preview.",
-      "M43\u2013M53 passed local checks and independent results audits. Hosted qualification is still required before release."
+      "M43\u2013M54 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Audit M54 retained results only after corrected full verification succeeds.",
-      "Complete and review M55 Server/helper source and its exact native input recipe.",
-      "Recover hosted qualification and release queued phases in dependency order."
+      "Preserve M54 repairs through M55 overlap review and integration.",
+      "Capture and audit M55 native evidence, then complete consolidated verification.",
+      "Complete hosted qualification and dependency-ordered releases."
     ],
     "blocker": {
       "text": "Release is blocked by Ubuntu snapshot setup failures in hosted CI. Recovery has not been confirmed.",
