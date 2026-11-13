@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T12:32:00.106929+00:00",
+  "updated_at": "2026-11-13T13:22:01.567334+00:00",
   "state": "active",
-  "summary": "Development resumed. M53 corrected verification is running; three agents handle audit preparation, review and next-phase planning. M1\u2013M42 remain accepted.",
+  "summary": "M53 passed full local verification and independent results audit. Reviewed M54 multiple-lidar work is moving into integration, with component-reference preparation in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-01",
-      "title": "M53 \u00b7 Independent logical cameras",
-      "detail": "The reviewed Scene and Server fixture correction is running the full normal hook. Audit preparation, independent review and next-phase planning are assigned in parallel. No M53 qualification pass is claimed."
+      "title": "M54 \u00b7 Multiple-lidar integration",
+      "detail": "Scene, Server and shared implementation batches passed independent review. Root is preparing integration over locally qualified M53; agents prepare the component reference and its fixed provider inputs. No M54 check or release acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -890,9 +890,9 @@
     }
   ],
   "remaining": [
-    "Run the corrected M53 full checks, then independently audit their results.",
-    "Complete hosted qualification and release closeout for M43\u2013M53 in dependency order.",
-    "Continue the next bounded capability.",
+    "Integrate the reviewed M54 implementation over qualified M53.",
+    "Complete the M54 component reference, literal-data audit and strict checks.",
+    "Complete hosted qualification and release closeout for queued phases in dependency order.",
     "Continue remaining physics/backend, rendering/sensor, asset/world, CLI and performance work."
   ],
   "blockers": [
@@ -928,17 +928,17 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "1ed59a7348a3dee94cdae8b7a4bbd847cbd9911b",
+    "revision": "9bf3ada4675022b45e39d5f089e1bb3aaeaa2c04",
     "revision_url": null,
-    "rust_tests": 1848,
+    "rust_tests": 1867,
     "coverage": {
       "lines": [
-        33260,
-        34117
+        33375,
+        34231
       ],
       "regions": [
-        50667,
-        52568
+        50896,
+        52794
       ]
     },
     "upstream": {
@@ -950,7 +950,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Latest locally qualified revision: M52. It passed 1,848 headless and 1,096 renderer tests (overlapping profiles), 403 Python checks and 26 finite examples, with all strict coverage gates. M53 first verification failed five fixture cases; corrections are reviewed and the full retry is running. Local qualification does not grant release acceptance."
+    "note": "M53 passed 1,867 headless and 1,107 renderer tests (overlapping profiles), 403 Python checks and 27 finite examples, with all strict coverage gates and independent retained DATA. Its first normal failure and audit-method failure remain preserved. This is local qualification; hosted and release acceptance remain pending."
   },
   "phase_status": {
     "P0": "in_progress",
