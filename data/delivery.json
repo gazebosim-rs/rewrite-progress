@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-13T18:50:32.825694+00:00",
+  "as_of": "2026-11-13T18:57:26.186047+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1217,7 +1217,7 @@
       "root_shared_Source_review": "SDF whole6path CLEAR",
       "Scene_Source_review": "SDF whole3path CLEAR",
       "Server_Source_review": "SDF and Light whole5path CLEAR",
-      "current_stage": "Lossless test correction and affected formatting passed; full retry preparation",
+      "current_stage": "Corrected full normal and strict coverage active; first failure preserved",
       "native_input_diagnostic": {
         "actual_root_exit_code": 1,
         "actual_readelf_children": 2,
@@ -1229,7 +1229,7 @@
       },
       "revised_reference_Source_proposal_sha256": "fbdad455a7223f32eb593640bb8a0d3d9a266efdf915c06347bd909a914280ef",
       "revised_reference_Source_decision_sha256": "26c7dbe2c7259cf1fb1cd0e6d5d98d9e8a3aeac3bba73926b6b998c9f4a4a9ac",
-      "operation_scope": "The original DSO diagnostic remains failed. New capture, native DATA, export and literal DATA passed. The first normal failed at one test ID comparison before Rust tests/coverage. The lossless correction and affected formatting passed; the failure-retaining full retry, results audit and release gates remain pending.",
+      "operation_scope": "The original DSO diagnostic remains failed. New capture/native DATA/export/literal DATA passed. First normal failed at one test ID comparison before Rust tests/coverage; the reviewed lossless correction and affected formatting passed. One full normal/strict coverage retry is active, with results audit/hosted/acceptance still pending.",
       "runtime_Source_independent_review_clear": true,
       "integration_source_overlap_review_pending": false,
       "final_qualification_Source_root": "/home/nkoenig/work/gazebo/rust/gz-sim-m55-observed-multiple-pose-publishers",
@@ -1246,7 +1246,7 @@
         "observed_control_Source": "complete and independently reviewed; one lossless ID comparison correction reviewed",
         "hosted_CI_publication_and_acceptance": "held",
         "formatter": "actual0 before first full normal",
-        "Rust_Python_tests_lint_full_normal_strict_coverage": "first normal actual1 during Clippy test compilation; no Rust tests or coverage; corrected retry held",
+        "Rust_Python_tests_lint_full_normal_strict_coverage": "corrected attempt2 active; first attempt actual1 retained",
         "corrective_formatter": "actual0; all34 corrected Source bytes unchanged"
       },
       "native_reference": "planning/reference/m55-multiple-pose-publishers.json",
@@ -1279,6 +1279,15 @@
         "finding_classes": 1,
         "Rust_tests_or_coverage_reached": false,
         "qualified": false
+      },
+      "actual_normal_attempt2": {
+        "state": "active_not_passed",
+        "Root_solewatch": 26065,
+        "tree": "46554800f076627d2f6d6b1c55bb2c34fda4d773",
+        "parent": "d140e51e56b8c83d3857ad16977472412a9629f8",
+        "method_sha256": "4b340fa8fe62d73c1b5b23b66afbdc9606eb5d2a589e183959778ce0455210d4",
+        "release_sha256": "f92e2abc1d54b2e0756912617e720fcb110a44cea50e7411ca11a35414d7dea4",
+        "actual_exit_code": null
       }
     }
   ],
@@ -1609,12 +1618,12 @@
   ],
   "current_development_phase": "M55",
   "board": {
-    "updated_at": "2026-11-13T18:50:32.825694+00:00",
+    "updated_at": "2026-11-13T18:57:26.186047+00:00",
     "current": {
-      "title": "M55 \u00b7 Verification retry preparation",
+      "title": "M55 \u00b7 Full verification retry",
       "items": [
-        "The first compile failure is preserved; the lossless test ID correction passed review.",
-        "Corrective formatting passed. Finish the retained-failure procedure and full verification retry."
+        "The one test ID-width correction passed Source review and affected formatting.",
+        "One corrected full normal/strict coverage run is active; the first failure is preserved."
       ]
     },
     "done": [
@@ -1623,8 +1632,8 @@
       "M43\u2013M54 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Complete the reviewed correction and one affected full verification retry.",
-      "Audit retained normal results only after full success.",
+      "Finish the corrected M55 full verification run.",
+      "Audit retained results only after full normal success.",
       "Complete hosted qualification and dependency-ordered releases."
     ],
     "blocker": {
