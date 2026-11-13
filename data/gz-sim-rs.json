@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T15:46:54.164177+00:00",
+  "updated_at": "2026-11-13T17:15:23.352051+00:00",
   "state": "active",
-  "summary": "M54 verification found two regression failures; corrections are being batched. M55 PosePublisher source development continues independently.",
+  "summary": "M54 passed local verification and its independent results audit. M55 source is reviewed; integration and native evidence tooling are progressing in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "SENSOR-01",
-      "title": "M54 \u00b7 Batched regression corrections",
-      "detail": "The full normal run failed on a malformed identity-test XML fixture and legacy collision-error precedence. Original evidence is preserved. Both corrections will be reviewed before one consolidated retry."
-    },
-    {
       "id": "SYS-EXTENSION",
       "title": "M55 \u00b7 Independent PosePublishers",
-      "detail": "Scene and shared identity work passed independent source review. Server and native-reference source work continues. Integration waits for M54 correction, qualification and results audit."
+      "detail": "Scene, Server and shared source passed review. Integration will retain M54\u2019s complete fixes. Native capture, results audit and fixture tooling are being prepared in parallel; no M55 capture or verification has run."
     }
   ],
   "accepted_slices": [
@@ -895,9 +890,9 @@
     }
   ],
   "remaining": [
-    "Complete M54 full local verification and independent results audit.",
-    "Prepare the next bounded increment in parallel where dependencies permit.",
-    "Complete hosted qualification, official audits and dependency-ordered releases."
+    "Integrate reviewed M55 source and complete native evidence.",
+    "Run consolidated M55 verification and independent results audit.",
+    "Complete hosted qualification and dependency-ordered releases."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -932,17 +927,17 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "9bf3ada4675022b45e39d5f089e1bb3aaeaa2c04",
+    "revision": "d140e51e56b8c83d3857ad16977472412a9629f8",
     "revision_url": null,
-    "rust_tests": 1867,
+    "rust_tests": 1886,
     "coverage": {
       "lines": [
-        33375,
-        34231
+        33685,
+        34545
       ],
       "regions": [
-        50896,
-        52794
+        51402,
+        53327
       ]
     },
     "upstream": {
@@ -954,7 +949,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M53 full local verification and independent results audit passed. M54 native and fixture audits passed, but full normal verification failed in two cases. M55 is source preparation. M1\u2013M42 remain accepted, with M40 installed Latest. Hosted snapshot failures also block releases."
+    "note": "M54 full normal and independent local DATA passed: 1,886 headless and 1,117 overlapping renderer passes, 403 Python checks and 28 finite examples. Strict coverage passed; the first failure is preserved. These are local results. M1\u2013M42 acceptance and M40 Latest are unchanged; hosted snapshot failure still blocks releases."
   },
   "phase_status": {
     "P0": "in_progress",
