@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T11:44:00.799461+00:00",
-  "state": "idle",
-  "summary": "Development paused. M53 implementation and reference audits are complete; its existing full verification is running. M1\u2013M42 are accepted.",
+  "updated_at": "2026-11-13T12:32:00.106929+00:00",
+  "state": "active",
+  "summary": "Development resumed. M53 corrected verification is running; three agents handle audit preparation, review and next-phase planning. M1\u2013M42 remain accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SENSOR-01",
       "title": "M53 \u00b7 Independent logical cameras",
-      "detail": "Implementation and native/fixture audits are complete. The already-running full verification may finish. New development and the local results audit are paused."
+      "detail": "The reviewed Scene and Server fixture correction is running the full normal hook. Audit preparation, independent review and next-phase planning are assigned in parallel. No M53 qualification pass is claimed."
     }
   ],
   "accepted_slices": [
@@ -890,9 +890,9 @@
     }
   ],
   "remaining": [
-    "Finish M53 verification and independent results audit after resume.",
+    "Run the corrected M53 full checks, then independently audit their results.",
     "Complete hosted qualification and release closeout for M43\u2013M53 in dependency order.",
-    "Select the next bounded capability.",
+    "Continue the next bounded capability.",
     "Continue remaining physics/backend, rendering/sensor, asset/world, CLI and performance work."
   ],
   "blockers": [
@@ -950,7 +950,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Latest locally qualified revision: M52. It passed 1,848 headless and 1,096 renderer tests (overlapping profiles), 403 Python checks and 26 finite examples, with all strict coverage gates. M53 has no completed verification result yet. Local qualification does not grant release acceptance."
+    "note": "Latest locally qualified revision: M52. It passed 1,848 headless and 1,096 renderer tests (overlapping profiles), 403 Python checks and 26 finite examples, with all strict coverage gates. M53 first verification failed five fixture cases; corrections are reviewed and the full retry is running. Local qualification does not grant release acceptance."
   },
   "phase_status": {
     "P0": "in_progress",
