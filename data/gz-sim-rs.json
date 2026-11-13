@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-13T19:27:52.477589+00:00",
+  "updated_at": "2026-11-13T20:29:42.728886+00:00",
   "state": "active",
-  "summary": "M55\u2019s verification retry failed four cases. The three causes are identified and one correction batch is under review. M56 Source preparation is selected in parallel; integration waits for M55.",
+  "summary": "M55\u2019s complete reviewed correction batch is in one full verification run. M56 Source is implemented and independently reviewed in parallel; reference-helper work and qualified-parent integration remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M55 \u00b7 Batched test corrections",
-      "detail": "The second full normal run failed four cases in three targets. Fix the wrench-test premise, legitimate remap compatibility and global-fault cache expectation as one reviewed batch, then one consolidated retry. Native evidence is retained."
+      "title": "M55 \u00b7 Full verification",
+      "detail": "One complete normal/strict coverage run is active after the reviewed five-file correction batch. Both failed runs remain preserved; the independent retained-results audit follows actual full success."
+    },
+    {
+      "id": "REF-01",
+      "title": "M56 \u00b7 Odometry reference preparation",
+      "detail": "Scene, Server and shared API Source batches are independently reviewed. The original library failed fixed-input admission; a separate direct-object reference design is under input/helper preparation. No helper capture or integration has run."
     }
   ],
   "accepted_slices": [
@@ -890,9 +895,9 @@
     }
   ],
   "remaining": [
-    "Review and complete the M55 correction batch before one consolidated retry.",
-    "Audit retained results after full normal success.",
-    "Continue M56 Source work separately; complete hosted qualification before releases."
+    "Audit M55 retained results after the complete normal hook succeeds.",
+    "Finish the M56 reference inputs/helper, then integrate onto qualified M55.",
+    "Complete hosted qualification and dependency-ordered releases."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -949,7 +954,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Last locally qualified Rust revision is M54: 1,886 headless and 1,117 overlapping renderer passes, 403 Python checks and 28 finite examples. M55 native/literal evidence passed; its second normal failed four cases and is unqualified. M56 Source preparation is separate. Acceptance and hosted holds are unchanged."
+    "note": "Last locally qualified Rust revision is M54: 1,886 headless and 1,117 overlapping renderer passes, 403 Python checks and 28 finite examples. M55 native/literal evidence passed; its third full normal is active after two retained failures. M56 has reviewed Source only, not runtime qualification. Acceptance and hosted holds are unchanged."
   },
   "phase_status": {
     "P0": "in_progress",
