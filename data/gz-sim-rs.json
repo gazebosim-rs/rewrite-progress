@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T01:02:19.399936+00:00",
+  "updated_at": "2026-11-14T01:45:56.158500+00:00",
   "state": "active",
-  "summary": "M56 mandatory full retry is running with an unknown outcome. Both test-source fixes and affected formatting are complete; the first failure is preserved. Four scoped evidence stages passed; results audit remains pending.",
+  "summary": "M56 full normal retry passed. The independent retained reader failed a Source compatibility assertion before profile semantics or RAW comparisons. Reader correction and complete results audit remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M56 \u00b7 Full verification",
-      "detail": "One full mandatory retry is active after two exact test-source fixes and affected formatting. Its outcome is unknown; no Rust test, coverage or local qualification is claimed."
+      "title": "M56 \u00b7 Results audit",
+      "detail": "Full mandatory normal returned Root0. Independent retained reader returned Root1 at a Source compatibility assertion; no local qualification or audited M56 metrics are claimed."
     },
     {
       "id": "REF-01",
-      "title": "M56 \u00b7 Results audit preparation",
-      "detail": "Four scoped evidence stages passed separately. Preserve the first failed normal run and independently audit successful retry results before local qualification."
+      "title": "M56 \u00b7 Reader correction review",
+      "detail": "Preserve the successful normal result, four scoped evidence passes and all failed attempts. Review one bounded reader Source correction before auditing the unchanged results."
     }
   ],
   "accepted_slices": [
@@ -895,8 +895,8 @@
     }
   ],
   "remaining": [
-    "After the mandatory full retry completes successfully, independently audit all retained results.",
-    "Complete dependency-ordered hosted qualification and official audits before acceptance and Main/readbacks."
+    "Complete independent Source review of the retained-reader correction, then audit the unchanged normal results.",
+    "After independent local qualification, complete dependency-ordered hosted and official release qualification."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M55 is locally qualified at fcfa7176: 1,905 headless and 1,127 overlapping renderer passes, 403 Python checks and 29 finite examples. Full normal, strict workspace/per-crate coverage and independent DATA passed; Scene changed16/16 both profiles, Server237/246 headless, not100%. M56 has four separately passed evidence stages. First normal failed two test-source Clippy findings before tests/coverage; fixes and affected formatting are complete. Full retry is active with unknown outcome; results audit remains pending. Earlier failures and hosted release holds remain."
+    "note": "M55 is locally qualified at fcfa7176: 1,905 headless and 1,127 overlapping renderer passes, 403 Python checks and 29 finite examples. Full normal, strict workspace/per-crate coverage and independent DATA passed; Scene changed16/16 both profiles, Server237/246 headless, not100%. M56 full normal returned Root0; retained reader returned Root1 before profile semantics/RAW. Reader correction and complete audit remain pending; no audited M56 metrics or local qualification. Four scoped evidence passes and prior failures are preserved."
   },
   "phase_status": {
     "P0": "in_progress",
