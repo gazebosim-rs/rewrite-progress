@@ -1,20 +1,25 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T18:56:43.596715+00:00",
+  "updated_at": "2026-11-14T19:36:44.888936+00:00",
   "state": "active",
-  "summary": "M58 full verification is running with reviewed current native-probe evidence. Native reference and probe audits passed; release gates remain pending.",
+  "summary": "M58 runtime verification is active after lint, Python and auxiliary checks passed. M59 differential-drive Source preparation is running in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
       "title": "M58 \u00b7 Full mandatory verification",
-      "detail": "One complete verification run is active after the unchanged native probe passed with current system libraries. Strict lint, Python checks, runtime scenarios and both coverage profiles remain mandatory; the independent retained audit follows."
+      "detail": "The one full normal run passed both strict lint profiles, 440 aggregate Python checks, doc checks and native-free/RGB scenarios. Headless runtime compilation is active with the reviewed native-probe proof; full coverage and independent audit remain pending."
     },
     {
       "id": "REF-01",
       "title": "M58 \u00b7 Reference evidence complete",
       "detail": "Isolated controller capture, independent raw audit, fixture generation and literal validation passed. The unchanged native probe also passed once with current libraries and independent retained review. All original failures are preserved."
+    },
+    {
+      "id": "SYS-EXTENSION",
+      "title": "M59 \u00b7 Two differential-drive robots",
+      "detail": "Scene and Server/IO Source preparation runs in a separate tree on a locally qualified parent. Shared integration and execution wait for M58\u2019s full normal result and independent audit; no M59 checks have run."
     }
   ],
   "accepted_slices": [
@@ -895,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Complete M58 full verification, strict coverage and the independent results audit.",
+    "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -953,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local test and coverage metrics are shown. M58 reference capture, independent raw/literal audits and the unchanged native probe passed. The current full gate uses the separately reviewed runtime proof; no M58 full coverage or qualification pass is claimed. All four prior failures are retained. Hosted and official release gates remain required.",
+    "note": "M57 local test and coverage metrics are shown. M58 native reference/probe audits, strict lint, 440 aggregate Python checks, doc checks and native-free/RGB scenarios passed; full runtime coverage and independent audit remain pending. M59 is Source-only preparation on a qualified parent, with no checks or qualification transfer. All prior failures are retained. Hosted and official release gates remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
