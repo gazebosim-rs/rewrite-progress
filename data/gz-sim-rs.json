@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T07:09:13.339270+00:00",
+  "updated_at": "2026-11-14T07:30:26.529893+00:00",
   "state": "active",
-  "summary": "M57 full verification failed at two runtime test targets. The correction batch is under review; full normal, strict coverage and independent results audit remain unqualified. Four native evidence stages remain complete.",
+  "summary": "M57 full verification is running after reviewed fixes to two regression tests. The result is pending. Earlier failures are preserved, and independent results audit and release qualification remain ahead.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M57 \u00b7 Runtime correction review",
-      "detail": "Both strict Clippy profiles,403 aggregate quiet Python checks and maintained native-free/RGB checks passed. Scene joint-limit admission and Server retirement refusal failed at runtime; their complete correction batch is under review."
+      "title": "M57 \u00b7 Full verification in progress",
+      "detail": "The two regression tests passed source review and formatting. Full verification is running; independent results audit and release qualification remain pending."
     },
     {
       "id": "REF-01",
@@ -895,7 +895,7 @@
     }
   ],
   "remaining": [
-    "Complete the reviewed runtime corrections, full verification and independent retained results audit.",
+    "Complete the full mandatory run and independent retained results audit.",
     "Complete hosted and official release qualification before acceptance/publication."
   ],
   "blockers": [
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M56 remains locally qualified at d635b119:1,927 headless/1,138 overlapping renderer passes,403 aggregate Python checks and30 finite runs. Full normal, strict coverage and independent DATA passed; changed Scene19/19 both and Server223/231 headless are not100%. Four RAW comparisons ran once LAST; original failures remain preserved. M57 has four native evidence successes, but normal2 failed two runtime targets. Correction review, full normal/strict coverage/local DATA and hosted/official/Main acceptance remain pending.",
+    "note": "M56 remains locally qualified at d635b119: 1,927 headless and 1,138 overlapping renderer passes,403 aggregate Python checks and30 finite examples. Strict coverage and independent DATA passed; changed Scene coverage was19/19 in both profiles and Server223/231 headless. Four RAW comparisons ran once at the end. M57\u2019s four native evidence stages passed. Full verification is running after reviewed test corrections. Both earlier failures remain preserved. Qualification and release gates remain pending.",
     "renderer_coverage": {
       "lines": [
         19948,
