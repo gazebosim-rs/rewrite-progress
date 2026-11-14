@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T01:45:56.158500+00:00",
+  "updated_at": "2026-11-14T03:33:43.519681+00:00",
   "state": "active",
-  "summary": "M56 full normal retry passed. The independent retained reader failed a Source compatibility assertion before profile semantics or RAW comparisons. Reader correction and complete results audit remain pending.",
+  "summary": "M56 passed local verification and independent results audit. M57 Source and guides are reviewed; metadata admission stopped before provider/tool reads. Its guard fix and native/observed proofs remain pending; no product checks ran.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M56 \u00b7 Results audit",
-      "detail": "Full mandatory normal returned Root0. Independent retained reader returned Root1 at a Source compatibility assertion; no local qualification or audited M56 metrics are claimed."
+      "title": "M57 \u00b7 Independent joint-state publishers",
+      "detail": "Core Scene, Server, identity code, guides and input/header recipe are reviewed; registrations are integrated. Complete native and observed-data proofs before mandatory product checks."
     },
     {
       "id": "REF-01",
-      "title": "M56 \u00b7 Reader correction review",
-      "detail": "Preserve the successful normal result, four scoped evidence passes and all failed attempts. Review one bounded reader Source correction before auditing the unchanged results."
+      "title": "M57 \u00b7 Reference input preparation",
+      "detail": "The metadata diagnostic stopped at a preflight phase-field assertion before candidate/provider/tool reads or child stages. Its Source guard correction is pending; no native capture or qualification exists."
     }
   ],
   "accepted_slices": [
@@ -895,8 +895,8 @@
     }
   ],
   "remaining": [
-    "Complete independent Source review of the retained-reader correction, then audit the unchanged normal results.",
-    "After independent local qualification, complete dependency-ordered hosted and official release qualification."
+    "Correct metadata preflight, admit the fixed inputs, then capture and independently audit actual native data.",
+    "Add observed regressions, finish complete Source review, then run mandatory verification and results audit."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -931,17 +931,17 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
+    "revision": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
     "revision_url": null,
-    "rust_tests": 1905,
+    "rust_tests": 1927,
     "coverage": {
       "lines": [
-        33920,
-        34788
+        34138,
+        34998
       ],
       "regions": [
-        51760,
-        53706
+        52092,
+        54025
       ]
     },
     "upstream": {
@@ -953,7 +953,22 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M55 is locally qualified at fcfa7176: 1,905 headless and 1,127 overlapping renderer passes, 403 Python checks and 29 finite examples. Full normal, strict workspace/per-crate coverage and independent DATA passed; Scene changed16/16 both profiles, Server237/246 headless, not100%. M56 full normal returned Root0; retained reader returned Root1 before profile semantics/RAW. Reader correction and complete audit remain pending; no audited M56 metrics or local qualification. Four scoped evidence passes and prior failures are preserved."
+    "note": "M56 is locally qualified at d635b119: 1,927 headless and1,138 overlapping renderer passes,403 aggregate quiet Python checks and30 finite runs. Full normal, strict coverage and independent DATA passed; changed Scene19/19 both, Server223/231 headless, not100%. RAW1825/398/44/33 were compared once LAST. Original normal/reader failures remain preserved. M57 is Source-only; acceptance, hosted/official qualification and Main publication remain held.",
+    "renderer_coverage": {
+      "lines": [
+        19948,
+        20456
+      ],
+      "regions": [
+        30593,
+        31789
+      ]
+    },
+    "renderer_rust_tests": 1138,
+    "renderer_overlaps_headless": true,
+    "quiet_Python_tests": 403,
+    "quiet_Python_individual_results_observable": false,
+    "finite_example_runs": 30
   },
   "phase_status": {
     "P0": "in_progress",
