@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-14T01:02:19.399936+00:00",
+  "as_of": "2026-11-14T01:45:56.158500+00:00",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1400,7 +1400,7 @@
       "source_authorship_released": true,
       "operations_released": true,
       "checks_run": true,
-      "current_stage": "Exact two-test-source correction and affected formatter complete; one full mandatory normal retry active with unknown outcome, results audit pending",
+      "current_stage": "Full mandatory normal retry passed; independent retained reader failed a Source compatibility assertion before profile semantics/RAW, bounded correction and complete audit pending",
       "current_native_provider_availability": "One fresh reviewed direct-object capture completed with genuine Root0 and30 actual child exits0/reaped. Its independent native audit passed without repeating native execution. Original rejected DSO and both failed captures remain preserved; full runtime qualification is pending.",
       "selection_sha256": "2bb7cc58db737142009c7df3ee21633e682018a7135693c3013c47bb42005066",
       "authorship_release_sha256": "671be22718c9b298a2cc456c5f1c3c51635307d67cff53af68eb566adbc37e6e",
@@ -1527,7 +1527,7 @@
         "runtime_qualified_or_accepted": false
       },
       "product_checks_run": true,
-      "full_normal_passed": false,
+      "full_normal_passed": true,
       "normal_attempts": [
         {
           "attempt": 1,
@@ -1542,32 +1542,36 @@
         },
         {
           "attempt": 2,
-          "state": "ACTIVE_OUTCOME_UNKNOWN",
+          "state": "ACTUAL_EXIT0_PENDING_INDEPENDENT_LOCAL_DATA",
           "active_record_sha256": "879ddd75ce9811742d88b38ee38f6feed6f9d73292ae88191ca5e7efbb936f80",
           "method_sha256": "3e8d5aac32a50de3b4b739e8246950b7007d68a5f463a68e504e9b8ba91b8bb3",
           "tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
-          "actual_root_exit_code": null,
-          "qualified": false
+          "actual_root_exit_code": 0,
+          "qualified": false,
+          "actual_receipt_sha256": "a9d4931d36c12fcca7b299edfda5efc38f6f989420c54ba73413c762e5cb7d19",
+          "commit": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
+          "result_sha256": "649e6ec58664f4d48adb4213c83d0cb05f88e70846b02057d7ecda9c41e61169",
+          "controller_elapsed_seconds": 2115.091742492048
         }
       ],
       "normal_gate": {
-        "state": "MANDATORY_FULL_RETRY_ACTIVE_OUTCOME_UNKNOWN",
+        "state": "ACTUAL_FULL_NORMAL_RETRY_EXIT0_PENDING_INDEPENDENT_LOCAL_DATA",
         "attempt": 2,
-        "sole_Root_session": 67992,
-        "initial_tool_chunk": "35a5bf",
-        "active_record_sha256": "879ddd75ce9811742d88b38ee38f6feed6f9d73292ae88191ca5e7efbb936f80",
+        "actual_root_exit_code": 0,
+        "actual_receipt_sha256": "a9d4931d36c12fcca7b299edfda5efc38f6f989420c54ba73413c762e5cb7d19",
         "method_sha256": "3e8d5aac32a50de3b4b739e8246950b7007d68a5f463a68e504e9b8ba91b8bb3",
         "release_sha256": "4a79f37bab842d96f3aad51644e14fea751f2b32bef52b54130a4b47f4a6bc3f",
-        "candidate_tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
+        "result_sha256": "649e6ec58664f4d48adb4213c83d0cb05f88e70846b02057d7ecda9c41e61169",
+        "commit": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
+        "tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
         "parent": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
-        "actual_root_exit_code": null,
-        "full_normal_result": null,
-        "strict_coverage_result": null,
-        "independent_local_DATA_result": null,
+        "controller_elapsed_seconds": 2115.091742492048,
+        "independent_local_DATA_passed": false,
+        "numeric_test_or_coverage_results_independently_audited": false,
         "whole_qualification_claimed": false
       },
       "test_Source_correction": {
-        "state": "TWO_EXACT_TEST_SOURCE_FIXES_INDEPENDENTLY_REVIEWED_AFFECTED_FORMATTER0_FULL_RETRY_ACTIVE",
+        "state": "TWO_EXACT_TEST_SOURCE_FIXES_REVIEWED_FORMATTER0_FULL_NORMAL_RETRY0_PENDING_DATA",
         "Scene": "A left-first short-circuit let chain preserves the paused skip and identical advance/held-sample body.",
         "Server": "BoundarySnapshot names the identical tuple; fields, order, Arc lease counts, body and assertions are unchanged.",
         "production_math_assertions_test_IDs_fixtures_or_native_evidence_changed": false,
@@ -1578,7 +1582,8 @@
         "affected_formatter_sha256": "e61752d306b21980897adc1118c88fe3540d75aa0b8ec6bd9a488b40f8e4e146",
         "affected_formatter_log_bytes": 0,
         "corrected_Source_state_sha256": "8dc56770b5038461e27ac70f27a5f57493f7d950e4f34a0ec63c282a8df53b6a",
-        "retry_active_outcome_unknown": true
+        "retry_active_outcome_unknown": false,
+        "retry_actual_root_exit_code": 0
       },
       "retained_first_full_normal_failure": {
         "state": "FIRST_RUN_FAILED_TWO_CLIPPY_TEST_SOURCE_FINDINGS_RETRY_PENDING",
@@ -1599,6 +1604,29 @@
         "strict_coverage_result": null,
         "independent_local_DATA_result": null,
         "whole_qualification_claimed": false
+      },
+      "retained_DATA_reader_attempts": [
+        {
+          "attempt": 1,
+          "actual_root_exit_code": 1,
+          "failure_sha256": "bf3a8328468b013bb315a8bc2d558bb04cbfbfe85da39eb5c6d243c2947debf0",
+          "method_sha256": "51b2ea402087ee80d937d3437a9a1f694650987e644f7e2643f53c00f420d59c",
+          "release_sha256": "76f123eda10cf9410b636da777371921b05f9e72dcddbfc8f73daa1463681cea",
+          "primary_log_sha256": "c025c0254c5968008e6d228cddc35214b32464ab812556e53caeec9efe020282",
+          "normal_actual_root_exit_code_remains": 0,
+          "completed_report_exists": false,
+          "current_profile_semantics_and_four_RAW_remerges_reached": false,
+          "Source_candidate_mutated_or_qualified": false
+        }
+      ],
+      "independent_local_DATA": {
+        "state": "FIRST_RETAINED_READER_FAILED_SOURCE_COMPATIBILITY_CORRECTION_PENDING",
+        "passed": false,
+        "normal_result_preserved": true,
+        "product_native_or_normal_campaign_repeated": false,
+        "correction_scope": "The separate Server Stream-tail equality must account for the already-reviewed added private test module and the named old test fourth-to-fifth wildcard projection; preserve entire projected parent equality.",
+        "corrected_reader_or_retry_run": false,
+        "numeric_M56_profile_results_claimed": false
       }
     }
   ],
@@ -1924,19 +1952,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M42 are accepted; M40 remains installed Latest. M43\u2013M55 are locally qualified but unaccepted. All four scoped M56 reference/evidence stages passed separately. First full normal failed two test-source Clippy findings before tests or coverage; exact fixes and affected formatting are complete. One full mandatory retry is active with an unknown outcome. Independent results audit, accepted predecessors, hosted qualification, official audit and Main/readbacks remain required; no M56 local qualification or acceptance is claimed.",
+  "acceptance_boundary": "M1\u2013M42 are accepted; M40 remains installed Latest. M43\u2013M55 are locally qualified but unaccepted. M56 full mandatory normal retry returned Root0, but its independent retained reader returned Root1 before profile semantics and RAW comparisons. The reader Source compatibility correction and complete independent results audit remain pending. Four scoped reference/evidence passes and all earlier failures are preserved. Accepted predecessors, hosted qualification, official audit and Main/readbacks still precede acceptance; no M56 local qualification or acceptance is claimed.",
   "current_delivery_group": [
     "M43",
     "M44"
   ],
   "current_development_phase": "M56",
   "board": {
-    "updated_at": "2026-11-14T01:02:19.399936+00:00",
+    "updated_at": "2026-11-14T01:45:56.158500+00:00",
     "current": {
-      "title": "M56 \u00b7 Full verification",
+      "title": "M56 \u00b7 Results audit",
       "items": [
-        "Both exact test-source fixes are independently reviewed and affected formatting passed. One full mandatory retry is running with an unknown outcome.",
-        "Four scoped reference/evidence stages passed separately. The failed first normal run is preserved; results audit and local qualification remain pending."
+        "The full mandatory normal retry passed. Its independent retained-data reader failed a Source compatibility assertion before profile semantics and RAW comparisons.",
+        "The normal result and four scoped evidence passes are preserved. A bounded reader correction and independent results audit remain pending."
       ]
     },
     "done": [
@@ -1945,8 +1973,8 @@
       "M43\u2013M55 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "After the mandatory full retry completes successfully, independently audit all retained results.",
-      "Complete dependency-ordered hosted qualification and official audits before acceptance and Main/readbacks."
+      "Complete independent Source review of the retained-reader correction, then audit the unchanged normal results.",
+      "After independent local qualification, complete dependency-ordered hosted and official release qualification."
     ],
     "blocker": {
       "text": "Release is blocked by Ubuntu snapshot setup failures in hosted CI. Recovery has not been confirmed.",

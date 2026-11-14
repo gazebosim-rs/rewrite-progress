@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-13",
-  "scope": "M56 mandatory full retry and independent results audit.",
+  "scope": "M56 retained-reader correction and independent results audit.",
   "target_working_days": 5,
   "confidence": "Low",
-  "assumption": "M55 remains locally qualified. Four scoped M56 evidence stages passed separately. The first full normal failed two test-source Clippy findings; exact fixes and affected formatting are complete. One full mandatory retry is active with an unknown outcome and needs independent successful-results audit. Hosted release qualification remains blocked.",
+  "assumption": "M55 remains locally qualified. M56 full mandatory normal returned Root0, but the independent retained reader failed a Source compatibility assertion before profile semantics or RAW comparisons. Correct and independently review that bounded reader, then audit the unchanged normal results. Hosted release qualification remains blocked.",
   "clock": "Development is active. Five working days is the bounded capability and review/check scope budget, not an ETA or release promise."
 }
