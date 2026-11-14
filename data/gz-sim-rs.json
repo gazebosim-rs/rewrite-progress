@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T12:12:21.697539+00:00",
+  "updated_at": "2026-11-14T14:08:28.502173+00:00",
   "state": "active",
-  "summary": "M57 is locally qualified. M58 implementation and regression sources are reviewed; reference evidence is being closed before product verification.",
+  "summary": "M58 native reference capture completed. Independent data validation, borrowed-fixture tests and product verification are next.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
       "title": "M58 \u00b7 Two controller chains",
-      "detail": "Scene, Server, shared reset/reservation integration and regression sources are independently reviewed. Existing motor behavior and release gates are preserved. M58 product verification has not run."
+      "detail": "The two-owner controller implementation, shared integration and regressions are source-reviewed. Existing motor behavior is preserved. M58 product verification has not run."
     },
     {
       "id": "REF-01",
-      "title": "M58 \u00b7 Reference input preparation",
-      "detail": "All 20 static reads completed, but the diagnostic returned exit code 1 for an unsupported tool option and unsafe library paths. Duplicate plugin hooks require separate reference helpers for each controller family. Original files and failures are preserved; ABI validation remains pending."
+      "title": "M58 \u00b7 Reference data and fixtures",
+      "detail": "Both isolated native helpers compiled and ran successfully through all 49 capture stages. Independent reference-data validation and fixture generation are next. The original compile failure and unsafe library refusals remain preserved."
     }
   ],
   "accepted_slices": [
@@ -895,8 +895,8 @@
     }
   ],
   "remaining": [
-    "Complete M58 isolated reference evidence, then consolidated product verification and independent results DATA.",
-    "Complete hosted and official release qualification before acceptance/publication."
+    "Validate M58 reference data, generate borrowed fixtures, then complete product checks and the independent results audit.",
+    "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
     "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 is locally qualified at9dfde487: 1,951 headless and 1,149 overlapping renderer passes, 403 aggregate Python checks and 31 finite examples. Full normal, strict coverage and independent DATA passed; changed Scene coverage was16/16 both and Server263/276 headless. Four RAW comparisons ran once at the end. Both reader failures and all earlier failures are retained. M58 checks have not run; hosted and official release gates remain held.",
+    "note": "M57 local verification passed: 1,951 headless tests, 1,149 overlapping renderer tests, 403 Python checks and 31 finite examples, with strict coverage and an independent results audit. M58 native capture completed; independent reference validation and product verification remain pending. Hosted and official release checks remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
