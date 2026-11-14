@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T10:59:54.096508+00:00",
+  "updated_at": "2026-11-14T12:12:21.697539+00:00",
   "state": "active",
-  "summary": "M57 is locally qualified. M58 development is active in parallel Scene, Server and shared integration lanes; reference inputs and verification remain ahead.",
+  "summary": "M57 is locally qualified. M58 implementation and regression sources are reviewed; reference evidence is being closed before product verification.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
       "title": "M58 \u00b7 Two controller chains",
-      "detail": "Scene and Server code plus shared identity work are reviewed. Reset and input reservation integration, bounded reference evidence and the consolidated checks remain. Existing motor behavior and release gates are preserved."
+      "detail": "Scene, Server, shared reset/reservation integration and regression sources are independently reviewed. Existing motor behavior and release gates are preserved. M58 product verification has not run."
     },
     {
       "id": "REF-01",
       "title": "M58 \u00b7 Reference input preparation",
-      "detail": "The first bounded retrieval stopped in Docker image-metadata formatting before any container or copy. The original failure is retained; a narrow optional-field correction is in Source review. Input availability and admission remain unproved."
+      "detail": "All 20 static reads completed, but the diagnostic returned exit code 1 for an unsupported tool option and unsafe library paths. Duplicate plugin hooks require separate reference helpers for each controller family. Original files and failures are preserved; ABI validation remains pending."
     }
   ],
   "accepted_slices": [
@@ -895,7 +895,7 @@
     }
   ],
   "remaining": [
-    "Finish M58 implementation, regression Source, reference evidence and independent review before consolidated verification.",
+    "Complete M58 isolated reference evidence, then consolidated product verification and independent results DATA.",
     "Complete hosted and official release qualification before acceptance/publication."
   ],
   "blockers": [
