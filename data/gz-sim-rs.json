@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T16:38:39.404986+00:00",
+  "updated_at": "2026-11-14T16:54:53.209160+00:00",
   "state": "active",
-  "summary": "M58 reference evidence passed. The first product gate found compile errors before tests; the narrow correction batch is under review.",
+  "summary": "M58 compile corrections passed both strict lint profiles. The full test and coverage gate is continuing; reference evidence is complete.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
       "title": "M58 \u00b7 Two controller chains",
-      "detail": "The first full staged hook stopped during strict Clippy compilation. All available import, dependency-scope and test-helper match findings are batched for review before one full retry."
+      "detail": "The third full staged hook is active. Both strict Clippy profiles completed after the reviewed import, dependency, match and public-pause corrections. Tests, coverage and the independent results audit must still finish."
     },
     {
       "id": "REF-01",
@@ -895,7 +895,7 @@
     }
   ],
   "remaining": [
-    "Review the compile corrections, then complete one full M58 verification retry, strict coverage and independent results audit.",
+    "Complete the running M58 full verification, strict coverage and independent results audit.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local verification passed: 1,951 headless tests, 1,149 overlapping renderer tests, 403 Python checks and 31 finite examples, with strict coverage and an independent results audit. M58 reference capture and both independent reference audits passed. Its first full normal failed during compilation before tests or coverage. Hosted and official release checks remain required.",
+    "note": "M57 local verification passed: 1,951 headless tests, 1,149 overlapping renderer tests, 403 Python checks and 31 finite examples, with strict coverage and an independent results audit. M58 reference capture and both independent reference audits passed. Its third full normal is active and both strict lint profiles completed. No M58 product test or coverage result is claimed. Hosted and official release checks remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
