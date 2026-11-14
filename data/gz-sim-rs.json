@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T18:25:36.441379+00:00",
+  "updated_at": "2026-11-14T18:56:43.596715+00:00",
   "state": "active",
-  "summary": "M58 is repairing stale native dependency validation after a system library update. Application code is unchanged; the next full verification is not running.",
+  "summary": "M58 full verification is running with reviewed current native-probe evidence. Native reference and probe audits passed; release gates remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "M58 \u00b7 Native verification repair",
-      "detail": "Three parallel lanes are closing review findings in the native probe selection and evidence tooling. The original SDK and probe remain intact. A fresh probe completion is required before the next full gate."
+      "title": "M58 \u00b7 Full mandatory verification",
+      "detail": "One complete verification run is active after the unchanged native probe passed with current system libraries. Strict lint, Python checks, runtime scenarios and both coverage profiles remain mandatory; the independent retained audit follows."
     },
     {
       "id": "REF-01",
       "title": "M58 \u00b7 Reference evidence complete",
-      "detail": "Isolated controller capture, independent raw audit, fixture generation and literal validation passed. The last full gate passed 404 Python checks and native-free/RGB scenarios, then rejected stale native runtime dependency metadata."
+      "detail": "Isolated controller capture, independent raw audit, fixture generation and literal validation passed. The unchanged native probe also passed once with current libraries and independent retained review. All original failures are preserved."
     }
   ],
   "accepted_slices": [
@@ -895,7 +895,7 @@
     }
   ],
   "remaining": [
-    "Run the unchanged native probe with current libraries, then finish the required full gate and independent results audit.",
+    "Complete M58 full verification, strict coverage and the independent results audit.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local test and coverage metrics are shown. M58 reference capture and independent raw/literal audits passed. Its fourth full gate passed strict lint, 404 Python checks and native-free/RGB scenarios, then stopped at stale native dependency metadata. A verification-only repair is under review; no M58 full coverage or qualification pass is claimed. Hosted and official release gates remain required.",
+    "note": "M57 local test and coverage metrics are shown. M58 reference capture, independent raw/literal audits and the unchanged native probe passed. The current full gate uses the separately reviewed runtime proof; no M58 full coverage or qualification pass is claimed. All four prior failures are retained. Hosted and official release gates remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
