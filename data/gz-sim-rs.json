@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T19:51:04.814754+00:00",
+  "updated_at": "2026-11-14T20:53:09.321655+00:00",
   "state": "active",
-  "summary": "M58 reached runtime tests and found two failures; their fixes are being batched. M59 differential-drive Source preparation continues in parallel.",
+  "summary": "M58 full verification is running after two reviewed runtime fixes. M59 differential-drive source preparation and review continue in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "M58 \u00b7 Two runtime corrections",
-      "detail": "The fifth full gate passed lint, 440 Python checks, doc checks, native-free/RGB and current native-probe validation. Headless testing failed a historical DART dependency guard and an old Server reset-error contract. The run is retired; both fixes require one reviewed batch before another gate."
+      "title": "M58 \u00b7 Full verification active",
+      "detail": "Both runtime corrections, regression source, guides, independent review and formatting are complete. The sixth full gate is running on the frozen tree; all five earlier failures remain preserved. No full result or independent product audit is claimed."
     },
     {
       "id": "REF-01",
@@ -900,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Correct both M58 failures as one reviewed batch, complete verification and its audit, then integrate M59.",
+    "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -958,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local test and coverage metrics are shown. M58 passed strict lint, 440 aggregate Python checks, doc checks, native-free/RGB and native-probe validation, then failed two headless runtime targets. Renderer and full coverage were not reached; no M58 full pass or DATA is claimed. Both failures are preserved. M59 is Source-only, with integration held. Hosted and official release gates remain required.",
+    "note": "M57 local metrics are shown. M58\u2019s sixth full gate is active after reviewed corrections to DART dependency selection and reset-error classification. The fifth run\u2019s partial successes and both failures remain preserved; no M58 full pass, complete coverage or DATA is claimed. M59 is source preparation only. Hosted and official release gates remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
