@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T14:08:28.502173+00:00",
+  "updated_at": "2026-11-14T14:51:10.921421+00:00",
   "state": "active",
-  "summary": "M58 native reference capture completed. Independent data validation, borrowed-fixture tests and product verification are next.",
+  "summary": "M58 reference validation is held by a host-library mismatch. Dependency reconciliation and fixture-test source work continue in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "REF-01",
       "title": "M58 \u00b7 Reference data and fixtures",
-      "detail": "Both isolated native helpers compiled and ran successfully through all 49 capture stages. Independent reference-data validation and fixture generation are next. The original compile failure and unsafe library refusals remain preserved."
+      "detail": "Both native helpers ran successfully. The independent audit stopped on a libm hash mismatch, confirmed by a targeted host read. Reconcile the dependency closure before new capture and data validation; fixture generation remains held."
     }
   ],
   "accepted_slices": [
@@ -895,11 +895,12 @@
     }
   ],
   "remaining": [
-    "Validate M58 reference data, generate borrowed fixtures, then complete product checks and the independent results audit.",
+    "Reconcile M58 reference dependencies, validate data and borrowed fixtures, then complete product checks and the independent results audit.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
-    "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
+    "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed.",
+    "The current host libm hash differs from the reference manifest. Dependency provenance must be reconciled before reference validation can continue."
   ],
   "plan_status": {
     "REF-01": "in_progress",
