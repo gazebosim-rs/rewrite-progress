@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T16:54:53.209160+00:00",
+  "updated_at": "2026-11-14T17:07:20.867262+00:00",
   "state": "active",
-  "summary": "M58 compile corrections passed both strict lint profiles. The full test and coverage gate is continuing; reference evidence is complete.",
+  "summary": "M58 full verification is running after a finite-example count correction. Native reference capture, data and fixture validation passed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
       "title": "M58 \u00b7 Two controller chains",
-      "detail": "The third full staged hook is active. Both strict Clippy profiles completed after the reviewed import, dependency, match and public-pause corrections. Tests, coverage and the independent results audit must still finish."
+      "detail": "The fourth full staged hook is active. The previous run passed both strict lint profiles, then found one stale expected count in 404 Python checks. That single expectation is corrected; runtime tests, coverage and independent DATA remain pending."
     },
     {
       "id": "REF-01",
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local verification passed: 1,951 headless tests, 1,149 overlapping renderer tests, 403 Python checks and 31 finite examples, with strict coverage and an independent results audit. M58 reference capture and both independent reference audits passed. Its third full normal is active and both strict lint profiles completed. No M58 product test or coverage result is claimed. Hosted and official release checks remain required.",
+    "note": "M57 passed local tests, strict coverage and an independent audit; its metrics are shown. M58 native reference capture and independent raw/literal validation passed. Its previous full run passed both strict lint profiles, then failed one of 404 Python checks on a stale example count. The corrected full gate is running. No M58 runtime test, coverage or qualification pass is claimed; hosted and official release checks remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
