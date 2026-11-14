@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T08:44:44.785702+00:00",
+  "updated_at": "2026-11-14T09:25:47.406282+00:00",
   "state": "active",
-  "summary": "Full verification is running with the revised terminal connection. The result is pending. Earlier failures are preserved; independent results audit and release qualification remain ahead.",
+  "summary": "M57 passed the full normal hook and strict coverage. The retained audit reader failed an inherited identity assertion; a batched reader repair is in review.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
-      "title": "M57 \u00b7 Full verification in progress",
-      "detail": "Full verification is running with the revised terminal connection. The result is pending. Earlier failed and interrupted runs are preserved. Independent results audit and release qualification remain ahead; no owner action is required."
+      "title": "M57 \u00b7 Results audit repair",
+      "detail": "The full normal hook and strict coverage passed at the exact M57 commit. The first retained audit reader failed before current profile checks or RAW comparisons. Three agents are reviewing related reader calls as one batch; no product test replay is needed."
     },
     {
       "id": "REF-01",
@@ -895,7 +895,7 @@
     }
   ],
   "remaining": [
-    "Complete the full mandatory run and independent retained results audit.",
+    "Complete the reviewed audit-reader repair and independent retained results audit.",
     "Complete hosted and official release qualification before acceptance/publication."
   ],
   "blockers": [
@@ -953,7 +953,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M56 remains locally qualified at d635b119:1,927 headless and1,138 overlapping renderer passes,403 aggregate Python checks and30 finite examples. Strict coverage and independent DATA passed; changed Scene coverage was19/19 both and Server223/231 headless. Four RAW comparisons ran once at the end. M57\u2019s four native evidence stages passed. Full verification is running with revised terminal delivery; its result is pending. Both failures and interrupted third run remain preserved. Qualification and release gates remain held.",
+    "note": "M56 remains locally qualified: 1,927 headless and 1,138 overlapping renderer passes, 403 aggregate Python checks and 30 finite examples. M57 native evidence, full normal hook and strict coverage passed. Its first retained audit reader failed an inherited identity assertion before current profile checks or RAW comparisons. M57 local qualification and release remain pending; all earlier failures are preserved.",
     "renderer_coverage": {
       "lines": [
         19948,
