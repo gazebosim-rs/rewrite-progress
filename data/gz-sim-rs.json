@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T22:03:46.353619+00:00",
+  "updated_at": "2026-11-14T22:52:24.691395+00:00",
   "state": "active",
-  "summary": "M58 full verification is running with reviewed behavioral coverage additions. M59 source implementation, guide and canonical peer protocol are ready for integration review.",
+  "summary": "M58 passed full normal verification; its independent retained results audit is pending. M59 source preparation is ready, with integration held until that audit passes.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "M58 \u00b7 Full verification active",
-      "detail": "The eighth mandatory gate is active after genuine reservation-lifecycle, incomplete-lease and legacy-reset coverage tests passed Source review and formatting. Production code and thresholds are unchanged. The prior run\u2019s 1,980 headless passes and coverage failure remain separate; no full result or product audit is claimed."
+      "title": "M58 \u00b7 Independent results audit pending",
+      "detail": "The eighth mandatory full normal passed with 1,981 headless and 1,161 overlapping renderer tests, strict coverage and the maintained staged hook. Seven failed runs remain preserved. Independent retained DATA is still pending; no local qualification or acceptance is claimed."
     },
     {
       "id": "REF-01",
@@ -19,7 +19,7 @@
     {
       "id": "SYS-EXTENSION",
       "title": "M59 \u00b7 Two differential-drive robots",
-      "detail": "Scene and Server/IO Source preparation runs in a separate tree on a locally qualified parent. Shared integration and execution wait for M58\u2019s full normal result and independent audit; no M59 checks have run."
+      "detail": "Scene, Server/IO, fixture and canonical peer source preparation are ready in a separate tree on a locally qualified parent. Shared integration and execution wait for M58\u2019s independent retained results audit; no M59 checks have run."
     }
   ],
   "accepted_slices": [
@@ -900,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
+    "Complete M58\u2019s independent retained results audit, then integrate M59 and run its required checks.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -958,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local metrics are shown. M58\u2019s eighth gate is active after a test-only coverage correction. The seventh passed 1,980 headless tests, 448 Python checks, lint, docs and auxiliary qualification but missed strict changed-line coverage. Seven failed runs remain preserved; no M58 full pass or DATA is claimed. M59 integration and hosted/official release gates remain held.",
+    "note": "M57 local metrics remain shown. M58\u2019s eighth full normal passed with 1,981 headless and 1,161 overlapping renderer tests and strict coverage. Seven failed runs remain preserved. Independent retained DATA is pending; M58 local qualification, M59 integration and hosted/official release gates remain held.",
     "renderer_coverage": {
       "lines": [
         19966,
