@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T14:51:10.921421+00:00",
+  "updated_at": "2026-11-14T16:24:28.861410+00:00",
   "state": "active",
-  "summary": "M58 reference validation is held by a host-library mismatch. Dependency reconciliation and fixture-test source work continue in parallel.",
+  "summary": "M58 reference capture, data and fixture audits passed. Reviewed and formatted controller regressions await the full product gate.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "SYS-EXTENSION",
       "title": "M58 \u00b7 Two controller chains",
-      "detail": "The two-owner controller implementation, shared integration and regressions are source-reviewed. Existing motor behavior is preserved. M58 product verification has not run."
+      "detail": "The two-owner implementation and observed-input regressions are source-reviewed and formatted. The full staged product hook, strict coverage and independent results audit remain pending."
     },
     {
       "id": "REF-01",
-      "title": "M58 \u00b7 Reference data and fixtures",
-      "detail": "Both native helpers ran successfully. The independent audit stopped on a libm hash mismatch, confirmed by a targeted host read. Reconcile the dependency closure before new capture and data validation; fixture generation remains held."
+      "title": "M58 \u00b7 Reference evidence complete",
+      "detail": "Fresh isolated capture, independent raw audit, fixture generation and independent literal validation passed against the reconciled dependency snapshot. All original failures are retained."
     }
   ],
   "accepted_slices": [
@@ -895,12 +895,11 @@
     }
   ],
   "remaining": [
-    "Reconcile M58 reference dependencies, validate data and borrowed fixtures, then complete product checks and the independent results audit.",
+    "Complete M58 full staged verification, strict coverage and the independent results audit.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
-    "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed.",
-    "The current host libm hash differs from the reference manifest. Dependency provenance must be reconciled before reference validation can continue."
+    "Required hosted CI fails during Ubuntu snapshot setup before product checks. Recovery has not been confirmed."
   ],
   "plan_status": {
     "REF-01": "in_progress",
