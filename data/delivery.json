@@ -3036,12 +3036,12 @@
   ],
   "current_development_phase": "M58",
   "board": {
-    "updated_at": "2026-11-14T18:56:43.596715+00:00",
+    "updated_at": "2026-11-14T19:36:44.888936+00:00",
     "current": {
-      "title": "M58 \u00b7 Two independent controller chains",
+      "title": "M58 verification and M59 preparation",
       "items": [
-        "M58 full mandatory verification is running with the independently reviewed current native-probe proof.",
-        "Native controller capture, raw and fixture audits, and the unchanged native probe passed. Full verification and the independent results audit remain pending."
+        "M58 full verification is running. Strict lint, Python checks, doc checks, native-free/RGB scenarios and the current native-probe proof passed; runtime profiles are active.",
+        "In parallel, M59 prepares two differential-drive robots in a separate Source-only tree. Integration and execution wait for M58\u2019s complete result and independent audit."
       ]
     },
     "done": [
@@ -3050,7 +3050,7 @@
       "M43\u2013M57 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Complete M58 full verification, strict coverage and the independent results audit.",
+      "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
       "Complete hosted and official release qualification before acceptance or publication."
     ],
     "blocker": {
