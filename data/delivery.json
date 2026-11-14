@@ -2608,7 +2608,7 @@
       "independent_local_DATA_passed": false,
       "runtime_provisionally_locally_qualified": false,
       "accepted": false,
-      "current_stage": "Reconcile changed host dependencies after the independent reference audit stopped; product verification is pending.",
+      "current_stage": "Reference capture, independent raw DATA, borrowed fixture generation and literal DATA passed. Reviewed, formatted regressions await the full staged product gate.",
       "parent_provisional_local_qualification": {
         "sha256": "8b8696d52c1298a5a35c1167f213e3ad3aa8557e6002da5634bc1f6a9dcd4c21",
         "bytes": 22980
@@ -2667,14 +2667,30 @@
         "bytes": 3346
       },
       "reference_component_capture_completed": true,
-      "reference_semantic_DATA_passed": false,
+      "reference_semantic_DATA_passed": true,
       "native_capture_actual0": {
-        "sha256": "6656f2820792931095756733e101128a46708c73f9bdbfb5697938328d6142a1",
-        "bytes": 3240
+        "sha256": "ceac1e07862259ae1f334ac09a373f9f498c87fd3cc09a82e38de9679680f226",
+        "bytes": 4335
       },
       "retained_native_compile_failure_actual1": {
         "sha256": "a3751c3b748fed94f93a9787f2419ffe359e7970d0086d056f6abb34124ee9d9",
         "bytes": 3232
+      },
+      "native_reference_DATA_actual0": {
+        "sha256": "41c94397e6f677555a5c3e0526e281486c537a06ef5b3f8e9b96074eb4e58c78",
+        "bytes": 2844
+      },
+      "borrowed_fixture_generation_actual0": {
+        "sha256": "e132ec723b5feda1b0c8c3c0a85b7e7d48397dea9dfa71c797693f1533414874",
+        "bytes": 2433
+      },
+      "fixed_literal_DATA_actual0": {
+        "sha256": "14a554082d93f8fa9260c361bdcb7b9a6df45648094e2b761e6b6f1956410433",
+        "bytes": 2721
+      },
+      "source_format_actual0": {
+        "sha256": "f7bdc61630f0f21f2bdcd7667d1d25c4777277c36af7a28a4435934f6d56be39",
+        "bytes": 878
       }
     }
   ],
@@ -3019,12 +3035,12 @@
   ],
   "current_development_phase": "M58",
   "board": {
-    "updated_at": "2026-11-14T14:51:10.921421+00:00",
+    "updated_at": "2026-11-14T16:24:28.861410+00:00",
     "current": {
       "title": "M58 · Two independent controller chains",
       "items": [
-        "The two-owner controller implementation is source-reviewed. M58 product verification is pending.",
-        "Native capture succeeded. A host-library mismatch stopped its independent audit; dependency reconciliation is underway."
+        "Source review and formatting are complete. M58 product tests and strict coverage checks are next.",
+        "Fresh native capture, independent data validation, fixture generation and literal validation passed."
       ]
     },
     "done": [
@@ -3033,7 +3049,7 @@
       "M43–M57 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Reconcile reference dependencies, validate data and borrowed fixtures, then run consolidated M58 product checks.",
+      "Complete M58 staged verification and its independent results audit.",
       "Complete hosted and official release qualification before acceptance or publication."
     ],
     "blocker": {
