@@ -2608,7 +2608,7 @@
       "independent_local_DATA_passed": false,
       "runtime_provisionally_locally_qualified": false,
       "accepted": false,
-      "current_stage": "Both isolated native reference helpers compiled and ran successfully. Independent reference-data validation and borrowed-fixture generation are next; M58 product verification and release qualification remain pending.",
+      "current_stage": "Reconcile changed host dependencies after the independent reference audit stopped; product verification is pending.",
       "parent_provisional_local_qualification": {
         "sha256": "8b8696d52c1298a5a35c1167f213e3ad3aa8557e6002da5634bc1f6a9dcd4c21",
         "bytes": 22980
@@ -3019,12 +3019,12 @@
   ],
   "current_development_phase": "M58",
   "board": {
-    "updated_at": "2026-11-14T14:08:28.502173+00:00",
+    "updated_at": "2026-11-14T14:51:10.921421+00:00",
     "current": {
       "title": "M58 · Two independent controller chains",
       "items": [
         "The two-owner controller implementation is source-reviewed. M58 product verification is pending.",
-        "Both native reference helpers ran successfully. Independent data validation and borrowed-fixture tests are next."
+        "Native capture succeeded. A host-library mismatch stopped its independent audit; dependency reconciliation is underway."
       ]
     },
     "done": [
@@ -3033,7 +3033,7 @@
       "M43–M57 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Validate the reference data, generate borrowed fixtures, then run consolidated M58 product checks.",
+      "Reconcile reference dependencies, validate data and borrowed fixtures, then run consolidated M58 product checks.",
       "Complete hosted and official release qualification before acceptance or publication."
     ],
     "blocker": {
