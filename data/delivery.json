@@ -2604,11 +2604,11 @@
       },
       "source_authorship_released": true,
       "product_checks_run": true,
-      "full_normal_passed": false,
+      "full_normal_passed": true,
       "independent_local_DATA_passed": false,
       "runtime_provisionally_locally_qualified": false,
       "accepted": false,
-      "current_stage": "The eighth full normal is active after a reviewed, formatted test-only coverage correction. Production Rust is unchanged from the seventh run, which passed1980headless tests but failed strictchangedlines581/612. Seven failed runs remain preserved. No current full result/coverage/DATA; M59integration held.",
+      "current_stage": "The eighth full normal passed both test profiles and strict coverage. Seven failed runs remain preserved. The independent retained results audit is pending; M58 local qualification, M59 integration and hosted/official acceptance remain held.",
       "parent_provisional_local_qualification": {
         "sha256": "8b8696d52c1298a5a35c1167f213e3ad3aa8557e6002da5634bc1f6a9dcd4c21",
         "bytes": 22980
@@ -2692,7 +2692,7 @@
         "sha256": "f7bdc61630f0f21f2bdcd7667d1d25c4777277c36af7a28a4435934f6d56be39",
         "bytes": 878
       },
-      "product_tests_and_coverage_reached": false
+      "product_tests_and_coverage_reached": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3036,12 +3036,12 @@
   ],
   "current_development_phase": "M58",
   "board": {
-    "updated_at": "2026-11-14T22:03:46.353619+00:00",
+    "updated_at": "2026-11-14T22:52:24.691395+00:00",
     "current": {
       "title": "M58 verification and M59 preparation",
       "items": [
-        "M58 full verification is running with the reviewed behavioral coverage tests. The previous run passed all 1,980 headless tests but missed the strict coverage gate. No completed result or independent audit is claimed.",
-        "M59 prepares two differential-drive robots in a separate Source-only tree. Integration and execution wait for M58\u2019s complete result and independent audit."
+        "M58 passed full normal verification, including both test profiles and strict coverage. Its independent retained results audit is pending; local qualification and acceptance are not yet claimed.",
+        "M59 source preparation is ready in a separate tree. Shared integration and execution wait for M58\u2019s independent audit."
       ]
     },
     "done": [
@@ -3050,7 +3050,7 @@
       "M43\u2013M57 passed local verification and independent results audits; release qualification remains pending."
     ],
     "next": [
-      "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
+      "Complete M58\u2019s independent retained results audit, then integrate M59 and run its required checks.",
       "Complete hosted and official release qualification before acceptance or publication."
     ],
     "blocker": {
