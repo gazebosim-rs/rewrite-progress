@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T21:09:26.041934+00:00",
+  "updated_at": "2026-11-14T21:47:38.061233+00:00",
   "state": "active",
-  "summary": "M58 full verification is running after reviewed compilation corrections. M59 source implementation, guide and canonical peer design proceed in parallel.",
+  "summary": "M58 passed 1,980 headless tests and is closing a strict coverage gap. M59 implementation, guide and canonical peer protocol are reviewed in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "M58 \u00b7 Full verification active",
-      "detail": "The strict helper interface and full private-module regression are corrected, independently reviewed and formatted. The seventh mandatory gate is active on the frozen tree. Six earlier failures remain preserved; no completed result, full coverage or independent product audit is claimed."
+      "title": "M58 \u00b7 Behavioral coverage correction",
+      "detail": "The seventh gate passed both lint profiles, 448 Python checks, docs, native-free/RGB and all 1,980 headless Rust tests. Server changed-line coverage is 581/612, below the strict >95% gate. The missing behavioral coverage is being added as one batch; no verification job is active."
     },
     {
       "id": "REF-01",
@@ -900,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
+    "Complete M58 coverage, full verification and its independent audit, then integrate M59.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -958,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local metrics are shown. M58\u2019s seventh full gate is active after reviewed compilation corrections. All six failed runs remain preserved; no M58 full pass, complete coverage or product DATA is claimed. M59 implementation and guides remain source preparation, with integration held. Hosted and official release gates remain required.",
+    "note": "M57 local metrics are shown. M58 passed 1,980 headless Rust tests, 448 Python checks, lint, docs and auxiliary qualification, then failed strict changed-line coverage at 581/612. Whole headless line/region coverage passes; renderer and full normal/DATA were not completed. All seven failed runs remain preserved. M59 integration stays held; hosted and official gates remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
