@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T21:02:54.376740+00:00",
+  "updated_at": "2026-11-14T21:09:26.041934+00:00",
   "state": "active",
-  "summary": "M58 is correcting two test compilation errors from its full gate. M59 differential-drive source preparation and review continue in parallel.",
+  "summary": "M58 full verification is running after reviewed compilation corrections. M59 source implementation, guide and canonical peer design proceed in parallel.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "M58 \u00b7 Test compilation corrections",
-      "detail": "The sixth full gate stopped during strict Clippy test compilation: a retained helper call needs its strict interface preserved, and the new regression must sit in the owning private module. Both corrections preserve the assertions. The run is retired; no verification job is active."
+      "title": "M58 \u00b7 Full verification active",
+      "detail": "The strict helper interface and full private-module regression are corrected, independently reviewed and formatted. The seventh mandatory gate is active on the frozen tree. Six earlier failures remain preserved; no completed result, full coverage or independent product audit is claimed."
     },
     {
       "id": "REF-01",
@@ -900,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Complete the reviewed M58 corrections, full verification and independent audit, then integrate M59.",
+    "Finish M58 verification and its independent audit, then integrate M59 and complete its required checks.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -958,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "M57 local metrics are shown. M58\u2019s sixth full gate failed test compilation before Python, runtime tests and coverage. Both compiler findings are being corrected as one source-reviewed batch; all earlier failures remain preserved. No M58 full pass or product DATA is claimed. M59 remains source preparation only. Hosted and official release gates remain required.",
+    "note": "M57 local metrics are shown. M58\u2019s seventh full gate is active after reviewed compilation corrections. All six failed runs remain preserved; no M58 full pass, complete coverage or product DATA is claimed. M59 implementation and guides remain source preparation, with integration held. Hosted and official release gates remain required.",
     "renderer_coverage": {
       "lines": [
         19966,
