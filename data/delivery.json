@@ -2460,7 +2460,7 @@
       "independent_local_DATA_passed": true,
       "runtime_provisionally_locally_qualified": true,
       "accepted": false,
-      "current_stage": "M60 local integrated-preview qualification is complete: full normal and strict coverage, release binaries, package/relocation, all 33 installed finite examples, real two-robot forward/turn, Play/Pause/Reset, canonical odometry and owned shutdown passed with independent retained DATA. Hosted CI, accepted predecessors, official audits and Main/release readbacks remain mandatory; no release acceptance is claimed.",
+      "current_stage": "M60 local integrated-preview qualification remains complete. Seventeen exact-revision hosted runs for M43\u2013M60 are active in parallel. The earliest passed locked snapshot APT, Zenoh and physics setup; full hosted verification is still running. Accepted predecessors, complete hosted success, official audits and ordered Main/release readbacks remain mandatory; no acceptance is claimed.",
       "integrated_parent": "7f849bd3e6b1d9842bdde415d9f2923e09ef0b0e",
       "parent_provisional_local_qualification": {
         "path": "artifacts/m59-delivery/provisional-local-qualification.json",
@@ -2931,12 +2931,12 @@
   ],
   "current_development_phase": "M60",
   "board": {
-    "updated_at": "2026-11-15T13:13:09.909684+00:00",
+    "updated_at": "2026-11-15T14:35:55.558018+00:00",
     "current": {
-      "title": "M60 \u00b7 Local preview verified; release closeout blocked",
+      "title": "Release CI qualification",
       "items": [
-        "Runtime, strict coverage, three binaries, package and clean Ubuntu installation passed locally. All 33 installed examples passed.",
-        "Real two-robot motion, Play/Pause/Reset, canonical odometry and owned shutdown passed independent visual and retained-message audits."
+        "Seventeen exact-revision hosted CI runs for M43\u2013M60 are in progress in parallel; acceptance remains pending.",
+        "The earliest run passed locked snapshot APT, Zenoh and physics setup; full product verification is running."
       ]
     },
     "done": [
@@ -2945,11 +2945,11 @@
       "M43\u2013M60 are locally qualified. M60\u2019s installed integrated preview passed local checks; release acceptance is pending."
     ],
     "next": [
-      "Confirm Ubuntu snapshot recovery through the separately reviewed process, then complete required hosted CI.",
-      "Complete accepted predecessors, official audits and Main/release readbacks before publication or acceptance."
+      "Finish all 17 exact hosted CI runs and independently audit their retained evidence.",
+      "Complete official audits, then promote qualified revisions to Main in predecessor order and verify release readbacks."
     ],
     "blocker": {
-      "text": "Release is blocked by Ubuntu snapshot setup failures in hosted CI. Recovery has not been confirmed.",
+      "text": "Fresh signed host checks passed all nine targets; the earliest CI retry passed locked APT setup. Full hosted qualification, official audits and ordered Main promotion remain pending. The original failure is preserved; no complete hosted result is claimed.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43024343885"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
