@@ -2460,7 +2460,7 @@
       "independent_local_DATA_passed": true,
       "runtime_provisionally_locally_qualified": true,
       "accepted": false,
-      "current_stage": "Runtime, strict coverage, independent local DATA, all three release binaries, package/relocation and clean Ubuntu installation passed locally. All33 installed finite examples and installed verification passed as a non-root user. The complete two-robot browser/control/odometry/shutdown proof and independent audit remain. Six incomplete demo attempts are preserved; the recording procedure is being revised without changing the product or proof requirements. Hosted, official and release gates remain mandatory.",
+      "current_stage": "M60 local integrated-preview qualification is complete: full normal and strict coverage, release binaries, package/relocation, all 33 installed finite examples, real two-robot forward/turn, Play/Pause/Reset, canonical odometry and owned shutdown passed with independent retained DATA. Hosted CI, accepted predecessors, official audits and Main/release readbacks remain mandatory; no release acceptance is claimed.",
       "integrated_parent": "7f849bd3e6b1d9842bdde415d9f2923e09ef0b0e",
       "parent_provisional_local_qualification": {
         "path": "artifacts/m59-delivery/provisional-local-qualification.json",
@@ -2554,6 +2554,27 @@
         "path": "artifacts/m60-delivery/packaged-two-robot-normal6-actual-exit.json",
         "bytes": 4102,
         "sha256": "3ba58cbb98dd5bf10a9c0386b99ce128a8e16685ca2fb0c4c4c4e5c806823692"
+      },
+      "local_integrated_preview_qualification_complete": true,
+      "packaged_two_robot_capture_actual0": {
+        "path": "artifacts/m60-delivery/packaged-two-robot-acquisition9-actual-exit.json",
+        "bytes": 2428,
+        "sha256": "0e15de27c7060abdf246f2d6caf1f7705fcb68eeee4bdbfe27351744a8cf9d57"
+      },
+      "independent_visual_review": {
+        "path": "artifacts/m60-delivery/independent-fresh-visual-review-acquisition9.json",
+        "bytes": 26872,
+        "sha256": "8627f3101ad92b7b6670a7e85b31061f89f582000a66bfe126565c5c2cd9b884"
+      },
+      "packaged_two_robot_DATA_actual0": {
+        "path": "artifacts/m60-delivery/packaged-two-robot-acquisition9-independent-audit-actual-exit.json",
+        "bytes": 1646,
+        "sha256": "52c14e20fb1c85736d4ebc7880a3dee1a83555ad96447a8898cc8d03f9271ee0"
+      },
+      "packaged_two_robot_DATA_report": {
+        "path": "artifacts/m60-delivery/packaged-two-robot-acquisition9-independent-data-method2.json",
+        "bytes": 134627,
+        "sha256": "b1d0af1a7908cd58849e5b3bf73c8d33aba96de394bee5aecbe3b9b842339c16"
       }
     }
   ],
@@ -2903,29 +2924,29 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M42 and 175 slices remain accepted; M40 remains Latest. M43\u2013M59 and the M60 runtime are provisionally locally qualified. M60 binaries, package/relocation and clean Ubuntu installation passed locally. Complete browser/control/odometry/shutdown proof, accepted predecessors, exact hosted success, official audits and Main/release readbacks remain mandatory before release acceptance or publication.",
+  "acceptance_boundary": "M1\u2013M42 and 175 slices remain accepted; M40 remains Latest. M43\u2013M60 are provisionally locally qualified. M60 completed source/runtime, package, clean Ubuntu installation and independent real robot/browser/odometry/shutdown qualification. Accepted predecessors, exact hosted success, official audits and Main/release readbacks remain mandatory before release acceptance or publication.",
   "current_delivery_group": [
     "M43",
     "M44"
   ],
   "current_development_phase": "M60",
   "board": {
-    "updated_at": "2026-11-15T11:31:41.212610+00:00",
+    "updated_at": "2026-11-15T13:13:09.909684+00:00",
     "current": {
-      "title": "M60 \u00b7 Installed preview checked; browser proof in progress",
+      "title": "M60 \u00b7 Local preview verified; release closeout blocked",
       "items": [
-        "Runtime, strict coverage, three binaries, package checks and clean Ubuntu installation passed locally.",
-        "All33 installed examples passed as a non-root user. The browser recording procedure is being revised; complete controls, odometry and shutdown proof remain."
+        "Runtime, strict coverage, three binaries, package and clean Ubuntu installation passed locally. All 33 installed examples passed.",
+        "Real two-robot motion, Play/Pause/Reset, canonical odometry and owned shutdown passed independent visual and retained-message audits."
       ]
     },
     "done": [
       "MVP and M1\u2013M42 accepted and published: 175 accepted slices.",
       "M40 remains the latest installable preview.",
-      "M43\u2013M59 remain locally qualified. M60 runtime, package and clean installation checks passed locally; release acceptance is pending."
+      "M43\u2013M60 are locally qualified. M60\u2019s installed integrated preview passed local checks; release acceptance is pending."
     ],
     "next": [
-      "Complete the two-robot browser/control/odometry/shutdown recording and its independent audit.",
-      "Complete accepted predecessors, hosted CI, official audits and Main readbacks before publication or acceptance."
+      "Confirm Ubuntu snapshot recovery through the separately reviewed process, then complete required hosted CI.",
+      "Complete accepted predecessors, official audits and Main/release readbacks before publication or acceptance."
     ],
     "blocker": {
       "text": "Release is blocked by Ubuntu snapshot setup failures in hosted CI. Recovery has not been confirmed.",
