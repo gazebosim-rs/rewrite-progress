@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T21:40:43.834276+00:00",
-  "state": "active",
-  "summary": "M63 adds two automatically scheduled RGB cameras using the existing renderer. Source authoring and review are active; M61/M62 verification still awaits SSD capacity. M1\u2013M60 and 193 slices remain accepted.",
+  "updated_at": "2026-11-15T21:56:05.820338+00:00",
+  "state": "blocked",
+  "summary": "M63 two-camera RGB implementation and independent source review are complete; formatting passed. Product qualification awaits SSD capacity. M61/M62 stay frozen; M1\u2013M60 and 193 slices remain accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "RENDER-01",
-      "title": "M63 \u00b7 Two automatic RGB cameras",
-      "detail": "Add explicit pair admission, ID-bearing capture results, independent demand/cadence and fair Busy handling while preserving zero/single and one-depth behavior. Camera ownership, Server/CLI integration and real software-worker/canonical-wire regression Source are developed in separate trees and independently reviewed. No M63 test or acceptance is claimed."
+      "title": "M63 \u00b7 Source complete; qualification held",
+      "detail": "Two automatic RGB owners, exact-set admission, per-ID capture, shared-session teardown, independent demand/cadence and fair Busy handling are implemented. Own regressions, real dual-worker/canonical test Source, fixture and guide passed independent review. Formatting passed; product tests, rendering, coverage and acceptance are unrun."
     },
     {
       "id": "REF-01",
@@ -985,9 +985,9 @@
     }
   ],
   "remaining": [
-    "Complete M63 implementation, regression Source, fixture, documentation and independent whole integration review.",
-    "Restore SSD capacity or approve the exact six-target compiler-cache recovery; preserve source and all qualification evidence.",
-    "Run consolidated normal/strict workspace-per-crate-actual-parent checks and independent local DATA, then exact hosted/official/Main gates before acceptance."
+    "Restore SSD capacity or approve the exact reviewed six-target compiler-cache recovery.",
+    "Run real dual-worker/canonical controls and full normal/strict workspace-per-crate-actual-parent checks, followed by independent local DATA.",
+    "Complete exact hosted CI, independent official DATA and ordinary Main/readbacks before accepting new phases."
   ],
   "blockers": [
     "Full verification needs 14 GiB free SSD at launch; about 8.1 GiB is available. The preceding run used about 25 GiB of scratch, so 35 GiB free is the practical target. Exact cleanup approval is still pending."
@@ -1044,7 +1044,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed numeric fields remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. M61/M62 Source and formatting are complete but product verification is unrun. M63 two-camera RGB Source is being implemented and reviewed; no new test, coverage, native or acceptance result is claimed. Other owners and historical evidence remain preserved.",
+    "note": "Displayed numbers remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. M61/M62 and M63 implementation/source review/formatting are complete, but product tests, new rendering/native results, coverage and acceptance are unrun. Other owners and historical evidence remain preserved.",
     "renderer_coverage": {
       "lines": [
         19966,
