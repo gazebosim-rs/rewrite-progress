@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T21:56:05.820338+00:00",
-  "state": "blocked",
-  "summary": "M63 two-camera RGB implementation and independent source review are complete; formatting passed. Product qualification awaits SSD capacity. M61/M62 stay frozen; M1\u2013M60 and 193 slices remain accepted.",
+  "updated_at": "2026-11-15T23:24:15.474569+00:00",
+  "state": "active",
+  "summary": "Disk recovery is complete: 28 GiB recovered and 35.8 GiB free. M61\u2013M64 source review and formatting are complete; product qualification is queued. M1\u2013M60 and 193 slices remain accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "RENDER-01",
-      "title": "M63 \u00b7 Source complete; qualification held",
-      "detail": "Two automatic RGB owners, exact-set admission, per-ID capture, shared-session teardown, independent demand/cadence and fair Busy handling are implemented. Own regressions, real dual-worker/canonical test Source, fixture and guide passed independent review. Formatting passed; product tests, rendering, coverage and acceptance are unrun."
+      "id": "REF-01",
+      "title": "M61/M62 \u00b7 Next full qualification",
+      "detail": "The reviewed and formatted drive/controller candidate remains frozen. Owner-authorized disk recovery cleared the capacity hold; full normal, strict coverage and independent local DATA are next. No product test or acceptance is claimed."
     },
     {
-      "id": "REF-01",
-      "title": "M61/M62 \u00b7 Reviewed candidate held for verification",
-      "detail": "Eight drive robots and eight controller chains, their own controls, shared qualifier and maximum coexistence regression are reviewed and formatted. The candidate remains frozen and untested; full qualification awaits SSD capacity."
+      "id": "RENDER-01",
+      "title": "M63/M64 \u00b7 Reviewed candidates queued",
+      "detail": "Two-camera RGB and cylinder-camera Source, regressions, fixtures and guides are reviewed and formatted. Their actual software-worker/canonical and full qualification gates are unrun; later composition requires overlap review."
     }
   ],
   "accepted_slices": [
@@ -985,13 +985,11 @@
     }
   ],
   "remaining": [
-    "Restore SSD capacity or approve the exact reviewed six-target compiler-cache recovery.",
-    "Run real dual-worker/canonical controls and full normal/strict workspace-per-crate-actual-parent checks, followed by independent local DATA.",
-    "Complete exact hosted CI, independent official DATA and ordinary Main/readbacks before accepting new phases."
+    "Run queued full normal and strict workspace/per-crate/actual-parent verification, followed by independent local DATA.",
+    "Run each camera candidate\u2019s real feature controls and review overlaps before integrating candidates.",
+    "Require exact hosted CI, independent official DATA and ordinary Main/readbacks before accepting new phases."
   ],
-  "blockers": [
-    "Full verification needs 14 GiB free SSD at launch; about 8.1 GiB is available. The preceding run used about 25 GiB of scratch, so 35 GiB free is the practical target. Exact cleanup approval is still pending."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1044,7 +1042,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed numbers remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. M61/M62 and M63 implementation/source review/formatting are complete, but product tests, new rendering/native results, coverage and acceptance are unrun. Other owners and historical evidence remain preserved.",
+    "note": "Displayed numbers remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. M61\u2013M64 source review and formatting are complete, but product tests, new rendering/native results, coverage and acceptance are unrun. Owner-authorized cache recovery cleared the SSD capacity hold; historical evidence and other owners remain preserved.",
     "renderer_coverage": {
       "lines": [
         19966,
