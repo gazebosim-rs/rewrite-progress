@@ -68,7 +68,7 @@ function renderBoard() {
   $("board-current").replaceChildren(node("h3", board.current.title), list(board.current.items));
   $("board-done").replaceChildren(list(board.done));
   $("board-next").replaceChildren(list(board.next));
-  $("board-blocker").replaceChildren(node("strong", "Release blocker: "), node("span", board.blocker.text), link(" View failed CI ↗", board.blocker.url));
+  $("board-blocker").replaceChildren(node("strong", "Release blocker: "), node("span", board.blocker.text), link(" View CI ↗", board.blocker.url));
   $("board-blocker").hidden = !board.blocker.text;
   $("board-updated").textContent = `Board updated ${timestamp(board.updated_at)}. Detailed evidence is below.`;
   $("board-history").href = board.history_url;
