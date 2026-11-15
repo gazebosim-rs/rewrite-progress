@@ -2460,7 +2460,7 @@
       "independent_local_DATA_passed": true,
       "runtime_provisionally_locally_qualified": true,
       "accepted": false,
-      "current_stage": "Runtime provisionally locally qualified at a1a01192/tree 351670d1 after full normal exit 0 and independent retained DATA exit 0: 2,016 headless and 1,176 overlapping renderer tests, 459 aggregate Python checks, 33 finite examples and strict coverage. The audit checked 578 headless/262 renderer unique named controls and four byte-exact RAW comparisons once (1,831/401/47/33 files). The first failed reader is preserved. All three fresh native-free release-input builds completed with actual exit 0; independent input audits, dependency/notices, package/relocation audits, clean Ubuntu installation and both M59 command-route motion/odometry/browser/shutdown proofs remain; no installed-preview or release acceptance is claimed.",
+      "current_stage": "Full local verification and independent retained DATA passed at a1a01192/tree351670d1. All three release binaries, exact dependency/notice inputs, package assembly and relocation checks, and independent package DATA passed. Clean Ubuntu installation, M58/M59 finite fixtures, both installed M59 command routes, actual body motion/canonical odometry, browser controls and owned shutdown remain. Hosted, official and release gates remain mandatory; this is not release acceptance.",
       "integrated_parent": "7f849bd3e6b1d9842bdde415d9f2923e09ef0b0e",
       "parent_provisional_local_qualification": {
         "path": "artifacts/m59-delivery/provisional-local-qualification.json",
@@ -2519,6 +2519,21 @@
         "path": "artifacts/m60-delivery/provisional-release-actual-exit.json",
         "sha256": "68ba259b9c0232c8e4290146514a8560a5b6e29896fbc74e841ad11e4e8b76a3",
         "bytes": 2168
+      },
+      "package_input_DATA_actual0": {
+        "path": "artifacts/m60-delivery/package-inputs-independent-audit-actual-exit.json",
+        "sha256": "7b4c6fd61566492c52e2e5c8640916b5dd5aeb102db405c17fcc191fab2b1dcd",
+        "bytes": 3474
+      },
+      "package_assembly_actual0": {
+        "path": "artifacts/m60-delivery/provisional-package-actual-exit.json",
+        "sha256": "749877bf8dd45c61a57c0f4fd82793620ba76aedec790ab8bf8d0a917200ff22",
+        "bytes": 1808
+      },
+      "package_DATA_actual0": {
+        "path": "artifacts/m60-delivery/package-independent-audit-actual-exit.json",
+        "sha256": "692ea6f0469a205bb5e31c480beb70bd3f9af88b09e8deb23b0035a560dd918d",
+        "bytes": 1629
       }
     }
   ],
@@ -2868,28 +2883,28 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M42 and 175 slices remain accepted; M40 remains Latest. M43\u2013M59 are provisionally locally qualified. M59 exact7f849 passed full normal and independent retained DATA, with all six failures preserved. M60 reviewed Source is integrated on that parent; no M60 check/build/package/install/browser pass is claimed. Accepted predecessors, exact hosted success, official audits and Main/release readbacks remain mandatory before acceptance or publication.",
+  "acceptance_boundary": "M1\u2013M42 and 175 slices remain accepted; M40 remains Latest. M43\u2013M59 and the M60 runtime are provisionally locally qualified. M60 release inputs, package/relocation checks and independent package DATA passed locally. Clean installation/browser proof, accepted predecessors, exact hosted success, official audits and Main/release readbacks remain mandatory before release acceptance or publication.",
   "current_delivery_group": [
     "M43",
     "M44"
   ],
   "current_development_phase": "M60",
   "board": {
-    "updated_at": "2026-11-15T09:01:41.389083+00:00",
+    "updated_at": "2026-11-15T09:29:20.370904+00:00",
     "current": {
-      "title": "M60 \u00b7 Verified runtime, installed preview next",
+      "title": "M60 \u00b7 Package checked, clean installation next",
       "items": [
-        "M60 passed full local verification and its independent retained audit: 2,016 headless, 1,176 overlapping renderer and 459 aggregate Python checks.",
-        "All three fresh release-input builds passed. Dependency/notices, assembly, clean Ubuntu installation and two-robot browser proofs remain pending."
+        "Full local verification, strict coverage and independent retained DATA passed. All three release binaries are built.",
+        "Package assembly, relocation and independent package DATA passed: 1,596 files and 740 dependency records. Clean Ubuntu and two-robot browser proof remain."
       ]
     },
     "done": [
       "MVP and M1\u2013M42 accepted and published: 175 accepted slices.",
       "M40 remains the latest installable preview.",
-      "M43\u2013M59 remain locally qualified; M60 verification and audit have now passed. Release acceptance remains pending."
+      "M43\u2013M59 remain locally qualified. M60 runtime and package checks passed locally; release acceptance remains pending."
     ],
     "next": [
-      "Collect dependencies/notices and audit inputs before package assembly/audit and clean Ubuntu installation. Prove M58/M59 finite examples, both M59 drive routes, forward/turn motion, odometry, browser controls and shutdown.",
+      "Prove clean Ubuntu installation, M58/M59 finite examples, both M59 drive routes, actual forward/turn motion, odometry, browser controls and owned shutdown.",
       "Complete accepted predecessors, hosted CI, official audits and Main readbacks before publication or acceptance."
     ],
     "blocker": {
