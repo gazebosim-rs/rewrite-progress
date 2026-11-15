@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T14:35:55.558018+00:00",
+  "updated_at": "2026-11-15T15:30:35.966291+00:00",
   "state": "active",
-  "summary": "Seventeen exact-revision hosted CI runs are active for locally qualified M43\u2013M60. The earliest passed locked snapshot setup; complete hosted results, official audits and ordered Main promotion are pending.",
+  "summary": "All 17 exact-revision hosted CIs passed. Official collection is running after the confirmed quota reset; independent audits, Main promotion, ordered acceptances and release verification remain. M60\u2019s local preview stays verified.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "Release \u00b7 Hosted CI qualification",
-      "detail": "Seventeen exact-head hosted runs are active in parallel. The M43/M44 retry passed locked snapshot APT, Zenoh and physics setup; product verification is running. Full hosted results and independent official audits are pending."
+      "title": "Release \u00b7 Official evidence qualification",
+      "detail": "All 17 exact-revision hosted CI runs passed. The Core API quota reset was confirmed and official artifact collection is running; independent official audits are next. Reviewed Main promotion, ordered acceptance and release readbacks remain pending."
     },
     {
       "id": "REF-01",
@@ -900,11 +900,11 @@
     }
   ],
   "remaining": [
-    "Finish all 17 exact hosted CI runs and independently audit their retained evidence.",
-    "Complete official audits, then promote qualified revisions to Main in predecessor order and verify release readbacks."
+    "Complete artifact collection and independent official audits for every qualified revision.",
+    "Complete reviewed Main promotion, ordered acceptances and release publication/readbacks after all gates pass."
   ],
   "blockers": [
-    "Fresh signed host checks passed all nine targets; the earliest CI retry passed locked APT setup. Full hosted qualification, official audits and ordered Main promotion remain pending. The original failure is preserved; no complete hosted result is claimed."
+    "Official artifact collection is running; independent audits are next. Main promotion, ordered acceptance and release readbacks remain. All 17 hosted CIs passed."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -955,10 +955,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed numeric fields remain M57 measurements. M60 passed 2,016 headless/1,176 overlapping renderer tests, 459 aggregate Python checks, 33 finite examples and independent local DATA. Package, clean installation and real two-robot controls/odometry/shutdown are locally verified. All 17 exact hosted runs are active; the earliest cleared locked snapshot setup. Earlier failures remain preserved. Complete hosted results, official audits and ordered Main/release readbacks remain; local qualification is not acceptance.",
+    "note": "Displayed numeric fields remain M57 measurements; its exact hosted CI passed. M60\u2019s complete local preview and independent DATA remain verified. All 17 exact hosted CIs passed. After the confirmed Core API quota reset, official artifact collection is running; independent official audits are next. Earlier failures are retained. Acceptance, reviewed Main promotion and release readbacks remain pending.",
     "renderer_coverage": {
       "lines": [
         19966,
