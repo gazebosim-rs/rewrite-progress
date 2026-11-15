@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T09:29:20.370904+00:00",
+  "updated_at": "2026-11-15T11:31:41.212610+00:00",
   "state": "active",
-  "summary": "M60 runtime, release binaries and package/relocation checks passed locally. Clean Ubuntu installation and two-robot browser proof are next; hosted CI and release acceptance remain blocked.",
+  "summary": "M60 runtime, binaries, package and clean Ubuntu installation passed locally. Complete two-robot browser/control/shutdown proof remains; hosted CI and release acceptance are blocked.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "id": "PKG-01",
-      "title": "M60 \u00b7 Package checked, installation next",
-      "detail": "Assembly, relocation and independent package DATA passed: 1,596 files, 2,431 archive members and 740 dependency records. Next: clean Ubuntu installation, M58/M59 finite examples, both M59 command routes, actual motion/odometry, browser controls and owned shutdown."
+      "title": "M60 \u00b7 Installed preview checked; browser proof in progress",
+      "detail": "Runtime, coverage, binaries, package and clean Ubuntu installation passed locally, including all 33 installed finite examples. The timed recording procedure is being revised to separate acquisition from later image analysis; complete browser controls, canonical odometry and owned shutdown still require independent proof."
     }
   ],
   "accepted_slices": [
@@ -900,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Prove clean Ubuntu installation, M58/M59 finite examples, both M59 drive routes, actual forward/turn motion, odometry, browser controls and owned shutdown.",
+    "Complete two-robot browser controls, actual forward/turn motion, canonical odometry, Reset/Play and owned shutdown, then independently audit the complete evidence.",
     "Complete accepted predecessors, hosted CI, official audits and Main readbacks before publication or acceptance."
   ],
   "blockers": [
@@ -958,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Displayed numeric fields remain M57 measurements. M59\u2019s local qualification and six failed originals are retained. M60 passed 2,016 headless/1,176 overlapping renderer tests, 459 aggregate Python checks, 33 finite examples, strict coverage and independent DATA. The audit checked 578/262 named controls and RAW counts 1,831/401/47/33 once; the first failed reader is preserved. Three fresh release-input builds passed. Package assembly/relocation and independent package DATA passed. Clean installation/browser proof and hosted, official and Main gates remain. Local qualification is not acceptance.",
+    "note": "Displayed numeric fields remain M57 measurements. M60 passed 2,016 headless/1,176 overlapping renderer tests, 459 aggregate Python checks, 33 finite examples, strict coverage and independent DATA. Three release binaries, package/relocation and clean Ubuntu installation passed locally, including all 33 installed examples. Browser/control/odometry/shutdown proof and hosted, official and Main gates remain. Six incomplete demonstration attempts and all prior failures are preserved. Local qualification is not acceptance.",
     "renderer_coverage": {
       "lines": [
         19966,
