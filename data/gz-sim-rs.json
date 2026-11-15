@@ -1,25 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T15:30:35.966291+00:00",
+  "updated_at": "2026-11-15T17:12:05.837816+00:00",
   "state": "active",
-  "summary": "All 17 exact-revision hosted CIs passed. Official collection is running after the confirmed quota reset; independent audits, Main promotion, ordered acceptances and release verification remain. M60\u2019s local preview stays verified.",
+  "summary": "M1\u2013M60 are accepted: 193 slices. M60 is Latest with 33 installed examples and independently verified two-robot controls. M61 development has started; implementation review and verification remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "QLT-01",
-      "title": "Release \u00b7 Official evidence qualification",
-      "detail": "All 17 exact-revision hosted CI runs passed. The Core API quota reset was confirmed and official artifact collection is running; independent official audits are next. Reviewed Main promotion, ordered acceptance and release readbacks remain pending."
-    },
-    {
       "id": "REF-01",
-      "title": "M59 \u00b7 Locally qualified, unaccepted",
-      "detail": "Full normal and independent retained DATA passed: 2,013 headless tests, 1,176 overlapping renderer tests, 449 Python checks and 33 finite examples. All 573/262 named controls and four byte-exact RAW comparisons passed. Six earlier failures remain retained; hosted, official and publication gates remain."
-    },
-    {
-      "id": "PKG-01",
-      "title": "M60 \u00b7 Local integrated preview verified",
-      "detail": "Package, clean Ubuntu installation, all 33 finite examples and real two-robot forward/turn, Play/Pause/Reset, canonical odometry and owned shutdown passed local independent DATA. The final audit decoded 4,336 packets and bound all 10 original images. Earlier method and signal failures remain preserved. Hosted, official and Main/release gates remain."
+      "title": "M61 \u00b7 Eight independent differential-drive robots",
+      "detail": "Selected on accepted M60 with a five-working-day budget. Development has started for up to eight genuine owners, preserving wheel math, finite limits, encoder odometry, owner/key/lease isolation and aggregate ingress fairness. Regression Source, guide, independent review and all required verification remain pending."
     }
   ],
   "accepted_slices": [
@@ -897,15 +887,103 @@
       "title": "M42 WORLD-hinge joint-force commands with canonical Model feedback, native rate bounds and paired Rapier lifecycle proof",
       "commit": "73e03b9f741689b1538898bde96bf975a49f068e",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/73e03b9f741689b1538898bde96bf975a49f068e"
+    },
+    {
+      "title": "M43 Named IMU orientation references",
+      "commit": "a08f0b505bb775cbc02974e098084e763da62a82",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a08f0b505bb775cbc02974e098084e763da62a82"
+    },
+    {
+      "title": "M44 Eighteen-example preview and installed joint-command helper",
+      "commit": "a08f0b505bb775cbc02974e098084e763da62a82",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m44-preview"
+    },
+    {
+      "title": "M45 CUSTOM world-relative IMU angles",
+      "commit": "e66c21e739089670b24e23b91fcd1363935b9a39",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/e66c21e739089670b24e23b91fcd1363935b9a39"
+    },
+    {
+      "title": "M46 Rotated ground-truth odometry frames",
+      "commit": "cca6b07d9dd0f8f85c98e0de9b9488780bfa7d83",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cca6b07d9dd0f8f85c98e0de9b9488780bfa7d83"
+    },
+    {
+      "title": "M47 Gaussian ground-truth odometry velocity noise",
+      "commit": "f27a37fd94d8218a4c3c488a4e550e06f521c9c8",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/f27a37fd94d8218a4c3c488a4e550e06f521c9c8"
+    },
+    {
+      "title": "M48 IMU world-heading references",
+      "commit": "a204d94bc377caa8fedb4d89a1114c3795de1b05",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/a204d94bc377caa8fedb4d89a1114c3795de1b05"
+    },
+    {
+      "title": "M49 Independent loaded altimeters",
+      "commit": "4ccd4f067ecf3438cd9a3cc445cd45d682f6075d",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/4ccd4f067ecf3438cd9a3cc445cd45d682f6075d"
+    },
+    {
+      "title": "M50 Independent loaded air-pressure sensors",
+      "commit": "623faca668151a283f3a6057a13e29d57fe3d9ff",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/623faca668151a283f3a6057a13e29d57fe3d9ff"
+    },
+    {
+      "title": "M51 Independent loaded air-speed sensors",
+      "commit": "ea921f5886b02bbe576e328848899fd276696208",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/ea921f5886b02bbe576e328848899fd276696208"
+    },
+    {
+      "title": "M52 Independent loaded magnetometers",
+      "commit": "1ed59a7348a3dee94cdae8b7a4bbd847cbd9911b",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1ed59a7348a3dee94cdae8b7a4bbd847cbd9911b"
+    },
+    {
+      "title": "M53 Independent loaded logical cameras",
+      "commit": "9bf3ada4675022b45e39d5f089e1bb3aaeaa2c04",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9bf3ada4675022b45e39d5f089e1bb3aaeaa2c04"
+    },
+    {
+      "title": "M54 Independent loaded planar CPU lidars",
+      "commit": "d140e51e56b8c83d3857ad16977472412a9629f8",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d140e51e56b8c83d3857ad16977472412a9629f8"
+    },
+    {
+      "title": "M55 Independent loaded PosePublishers",
+      "commit": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/fcfa717630d74f8e0f3b283083c48f0ff408e08e"
+    },
+    {
+      "title": "M56 Independent loaded ground-truth OdometryPublishers",
+      "commit": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/d635b119ca8d9e3f338fb0cf8af7df88b71a7f34"
+    },
+    {
+      "title": "M57 Independent loaded JointStatePublishers",
+      "commit": "9dfde487e7e377432573ebbcfd1e7a58901bc492",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/9dfde487e7e377432573ebbcfd1e7a58901bc492"
+    },
+    {
+      "title": "M58 Two independent loaded joint-controller chains",
+      "commit": "173b31d2d13889f851c58dfff1ea81a34680ede8",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/173b31d2d13889f851c58dfff1ea81a34680ede8"
+    },
+    {
+      "title": "M59 Two independent loaded differential-drive robots",
+      "commit": "7f849bd3e6b1d9842bdde415d9f2923e09ef0b0e",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/7f849bd3e6b1d9842bdde415d9f2923e09ef0b0e"
+    },
+    {
+      "title": "M60 Current native-free installed Ubuntu preview",
+      "commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m60-preview"
     }
   ],
   "remaining": [
-    "Complete artifact collection and independent official audits for every qualified revision.",
-    "Complete reviewed Main promotion, ordered acceptances and release publication/readbacks after all gates pass."
+    "Implement and independently review M61\u2019s Scene, Server, IO, eight-robot example and meaningful regression Source.",
+    "Run consolidated mandatory normal/strict coverage and independent DATA, then exact hosted/official/Main qualification before M61 acceptance."
   ],
-  "blockers": [
-    "Official artifact collection is running; independent audits are next. Main promotion, ordered acceptance and release readbacks remain. All 17 hosted CIs passed."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -958,7 +1036,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed numeric fields remain M57 measurements; its exact hosted CI passed. M60\u2019s complete local preview and independent DATA remain verified. All 17 exact hosted CIs passed. After the confirmed Core API quota reset, official artifact collection is running; independent official audits are next. Earlier failures are retained. Acceptance, reviewed Main promotion and release readbacks remain pending.",
+    "note": "Displayed numeric fields remain the M57 measurements; its exact hosted CI passed. All 17 M43\u2013M60 candidates passed their own hosted/official gates and ordered acceptance. M60 is the Latest installed preview with independent package, clean-install and two-robot RAW/visual DATA. Historical failures and prior releases remain preserved. M61 development has started; implementation review and verification remain pending.",
     "renderer_coverage": {
       "lines": [
         19966,
