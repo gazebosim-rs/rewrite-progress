@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T17:12:05.837816+00:00",
-  "state": "active",
-  "summary": "M1\u2013M60 are accepted: 193 slices. M60 is Latest with 33 installed examples and independently verified two-robot controls. M61 development has started; implementation review and verification remain pending.",
+  "updated_at": "2026-11-15T18:31:08.728343+00:00",
+  "state": "blocked",
+  "summary": "M61 implementation and independent Source review are complete; verification awaits SSD capacity. M1\u2013M60 remain accepted with 193 slices, and M60 remains Latest. No M61 test or acceptance result is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "REF-01",
-      "title": "M61 \u00b7 Eight independent differential-drive robots",
-      "detail": "Selected on accepted M60 with a five-working-day budget. Development has started for up to eight genuine owners, preserving wheel math, finite limits, encoder odometry, owner/key/lease isolation and aggregate ingress fairness. Regression Source, guide, independent review and all required verification remain pending."
+      "title": "M61 \u00b7 Implementation reviewed; verification held",
+      "detail": "The eight-owner Scene, Server/IO, canonical C++ peer, finite fixture, regressions and guide are integrated and independently reviewed. The consolidated formatter exited zero; product checks are unrun. Full verification needs the unchanged 14 GiB initial SSD reserve; an exact compiler-cache recovery option is reviewed and awaits owner approval."
     }
   ],
   "accepted_slices": [
@@ -980,10 +980,12 @@
     }
   ],
   "remaining": [
-    "Implement and independently review M61\u2019s Scene, Server, IO, eight-robot example and meaningful regression Source.",
-    "Run consolidated mandatory normal/strict coverage and independent DATA, then exact hosted/official/Main qualification before M61 acceptance."
+    "Restore SSD capacity or approve the exact six-target reproducible compiler-cache recovery. Preserve all Source, qualification evidence and M60.",
+    "Run consolidated normal/strict coverage and independent DATA, then exact hosted/official/Main qualification before M61 acceptance."
   ],
-  "blockers": [],
+  "blockers": [
+    "Full M61 verification needs 14 GiB free SSD at launch; about 8.5 GiB is available. The prior run used about 25 GiB of scratch, so 35 GiB free is the practical target. Owner capacity decision is pending."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1036,7 +1038,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed numeric fields remain the M57 measurements; its exact hosted CI passed. All 17 M43\u2013M60 candidates passed their own hosted/official gates and ordered acceptance. M60 is the Latest installed preview with independent package, clean-install and two-robot RAW/visual DATA. Historical failures and prior releases remain preserved. M61 development has started; implementation review and verification remain pending.",
+    "note": "Displayed numeric fields remain the M57 measurements; its exact hosted CI passed. M1\u2013M60 and 193 slices are accepted, with M60 Latest. M61 implementation and independent Source review are complete, but M61 product verification remains unrun and full verification is held by SSD capacity. Historical failures, prior releases and other owners remain preserved.",
     "renderer_coverage": {
       "lines": [
         19966,
