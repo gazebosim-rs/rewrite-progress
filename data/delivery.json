@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-14",
+  "as_of": "2026-11-15",
   "execution_state": "active",
   "current_phase": "M43",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -1401,7 +1401,7 @@
       "operations_released": true,
       "checks_run": true,
       "current_stage": "Provisionally locally qualified: full normal and independent retained DATA passed; hosted/official/Main gates remain held",
-      "current_native_provider_availability": "The scoped direct-object capture, independent native DATA, immutable export and literal DATA passed. Full mandatory normal and independent retained local DATA also passed; hosted/official/Main release qualification remains held. The rejected DSO and both failed captures remain preserved.",
+      "current_native_provider_availability": "One fresh reviewed direct-object capture completed with genuine Root0 and30 actual child exits0/reaped. Its independent native audit passed without repeating native execution. Original rejected DSO and both failed captures remain preserved. Full normal attempt2 and independent retained local DATA attempt3 passed; hosted and release acceptance remain held.",
       "selection_sha256": "2bb7cc58db737142009c7df3ee21633e682018a7135693c3013c47bb42005066",
       "authorship_release_sha256": "671be22718c9b298a2cc456c5f1c3c51635307d67cff53af68eb566adbc37e6e",
       "runtime_Source_batches_complete": true,
@@ -1420,8 +1420,7 @@
         "headless": 20,
         "renderer_overlapping": 11,
         "passes_claimed": false,
-        "scope": "Named new Rust Source declarations; final harness and formatted byte witnesses are separately bound to verification.",
-        "post_correction_census_sha256": "7a4013632a8d3372df5ccd7236c8864931faaa864aad15f9373d1b3508b1a348"
+        "scope": "Named new Rust Source declarations; final harness and formatted byte witnesses are separately bound to verification."
       },
       "reference_helper_Source": {
         "sha256": "3cb697651e08aa7e7b3f7931c095c11849151bc473b8b788c1c27267459fbe69",
@@ -1502,7 +1501,7 @@
           "native_DATA_report_sha256": "5af078247cc8355739eadc7a779e1546be714c5f3fdd012886f13cbe73446380"
         }
       ],
-      "receipt_representation_Source_fix": "Compact records retain all raw fields/wires and complete saved metadata edges through full-field references. The four scoped evidence stages, full mandatory normal and independent retained local DATA passed under unchanged caps. All original failed captures, first normal and two reader failures retain their actual dispositions.",
+      "receipt_representation_Source_fix": "Reviewed compact records retain all raw fields/wires and complete saved metadata edges through full-field references. Fresh capture, independent native audit, typed export, literal validation, observed Rust consumers, full normal strict coverage and independent retained local DATA passed within unchanged caps. Hosted qualification and release acceptance remain held.",
       "independent_native_DATA": {
         "actual_root_exit_code": 0,
         "receipt_sha256": "bd40d584b7675be68a005a56140090f045e81c915b685df188d8076d3bc9baf7",
@@ -1543,133 +1542,55 @@
         },
         {
           "attempt": 2,
-          "state": "ACTUAL_EXIT0_PENDING_INDEPENDENT_LOCAL_DATA",
-          "active_record_sha256": "879ddd75ce9811742d88b38ee38f6feed6f9d73292ae88191ca5e7efbb936f80",
-          "method_sha256": "3e8d5aac32a50de3b4b739e8246950b7007d68a5f463a68e504e9b8ba91b8bb3",
-          "tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
-          "actual_root_exit_code": 0,
-          "qualified": false,
-          "actual_receipt_sha256": "a9d4931d36c12fcca7b299edfda5efc38f6f989420c54ba73413c762e5cb7d19",
+          "actual_Root_exit_code": 0,
           "commit": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-          "result_sha256": "649e6ec58664f4d48adb4213c83d0cb05f88e70846b02057d7ecda9c41e61169",
-          "controller_elapsed_seconds": 2115.091742492048
+          "tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
+          "parent": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
+          "controller_elapsed_seconds": 2115.091742492048,
+          "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/provisional-local-normal-attempt2-actual-exit.json",
+            "sha256": "a9d4931d36c12fcca7b299edfda5efc38f6f989420c54ba73413c762e5cb7d19",
+            "bytes": 3354
+          },
+          "independent_DATA_actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/local-audit-provisional-attempt3-actual-exit.json",
+            "sha256": "74a0ef778966964fcfc77083ef7726d1af9eb907bcee16f488db70e9bbae0ac7",
+            "bytes": 3992
+          },
+          "phase_accepted": false
         }
       ],
-      "normal_gate": {
-        "state": "ACTUAL_FULL_NORMAL_AND_INDEPENDENT_LOCAL_DATA_PASSED_PROVISIONAL_ONLY",
-        "attempt": 2,
-        "actual_root_exit_code": 0,
-        "actual_receipt_sha256": "a9d4931d36c12fcca7b299edfda5efc38f6f989420c54ba73413c762e5cb7d19",
-        "method_sha256": "3e8d5aac32a50de3b4b739e8246950b7007d68a5f463a68e504e9b8ba91b8bb3",
-        "release_sha256": "4a79f37bab842d96f3aad51644e14fea751f2b32bef52b54130a4b47f4a6bc3f",
-        "result_sha256": "649e6ec58664f4d48adb4213c83d0cb05f88e70846b02057d7ecda9c41e61169",
-        "commit": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-        "tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
-        "parent": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
-        "controller_elapsed_seconds": 2115.091742492048,
-        "independent_local_DATA_passed": true,
-        "numeric_test_or_coverage_results_independently_audited": true,
-        "whole_qualification_claimed": false
-      },
-      "test_Source_correction": {
-        "state": "TWO_EXACT_TEST_SOURCE_FIXES_REVIEWED_FORMATTER0_FULL_NORMAL_RETRY0_AND_INDEPENDENT_DATA0_PROVISIONAL_ONLY",
-        "Scene": "A left-first short-circuit let chain preserves the paused skip and identical advance/held-sample body.",
-        "Server": "BoundarySnapshot names the identical tuple; fields, order, Arc lease counts, body and assertions are unchanged.",
-        "production_math_assertions_test_IDs_fixtures_or_native_evidence_changed": false,
-        "Scene_Source_sha256": "244be0a2e64ca0b266f54d0e8b6617b59c68eaef54924cc03d14fdbef70bf314",
-        "Server_Source_sha256": "2a94d93bc0ffb3315ebe834c0fe8a04d98cc9ad8b4e7e6da9c064063ae8256e7",
-        "same_20_headless_11_renderer_Source_declarations_are_passes": false,
-        "affected_formatter_actual_root_exit_code": 0,
-        "affected_formatter_sha256": "e61752d306b21980897adc1118c88fe3540d75aa0b8ec6bd9a488b40f8e4e146",
-        "affected_formatter_log_bytes": 0,
-        "corrected_Source_state_sha256": "8dc56770b5038461e27ac70f27a5f57493f7d950e4f34a0ec63c282a8df53b6a",
-        "retry_active_outcome_unknown": false,
-        "retry_actual_root_exit_code": 0
-      },
-      "retained_first_full_normal_failure": {
-        "state": "FIRST_RUN_FAILED_TWO_CLIPPY_TEST_SOURCE_FINDINGS_RETRY_PENDING",
-        "actual_root_exit_code": 1,
-        "failure_sha256": "874aff493ecd4ba3fe7739ed9a81c68fee62a7ec843ea85e412de0aca043c3c1",
-        "controller_elapsed_seconds": 196.91927200788632,
-        "failed_tree": "831ccb1787e2ec58410d412ac02e62daba9bf495",
-        "parent": "fcfa717630d74f8e0f3b283083c48f0ff408e08e",
-        "method_sha256": "9c5a77c725cb8453c2ad7a4e55d1a5365d5ff60fd94697ed35b8b143af26a049",
-        "result_sha256": "69eaeb9b63fba08cd4972557eb329fe53557142de571788658dee4da998c493f",
-        "preservation_ref": "refs/qualification/m56-normal-attempt1",
-        "preservation_ref_object_type": "tree",
-        "available_diagnostics": 2,
-        "Rust_tests_or_coverage_reached": false,
-        "profile_index_exists": false,
-        "qualifying_commit": null,
-        "retry_started": false,
-        "strict_coverage_result": null,
-        "independent_local_DATA_result": null,
-        "whole_qualification_claimed": false
-      },
-      "retained_DATA_reader_attempts": [
-        {
-          "attempt": 1,
-          "actual_root_exit_code": 1,
-          "failure_sha256": "bf3a8328468b013bb315a8bc2d558bb04cbfbfe85da39eb5c6d243c2947debf0",
-          "method_sha256": "51b2ea402087ee80d937d3437a9a1f694650987e644f7e2643f53c00f420d59c",
-          "release_sha256": "76f123eda10cf9410b636da777371921b05f9e72dcddbfc8f73daa1463681cea",
-          "primary_log_sha256": "c025c0254c5968008e6d228cddc35214b32464ab812556e53caeec9efe020282",
-          "normal_actual_root_exit_code_remains": 0,
-          "completed_report_exists": false,
-          "current_profile_semantics_and_four_RAW_remerges_reached": false,
-          "Source_candidate_mutated_or_qualified": false
-        },
-        {
-          "attempt": 2,
-          "actual_root_exit_code": 1,
-          "failure_sha256": "30b3a27d5bef80aed11fbfc0fa63695fe4e0b0f055ee1c1c14065d59c6bb6253",
-          "method_sha256": "2b167ca2297a54d84236acbfeaf7e71484ad0fd6cd3662f3eeadeb5749e24e58",
-          "completed_report_exists": false,
-          "current_profile_semantics_and_four_RAW_remerges_reached": false
-        }
-      ],
-      "independent_local_DATA": {
-        "state": "ACTUAL_ROOT_M56_INDEPENDENT_LOCAL_DATA_ATTEMPT3_EXIT0",
-        "passed": true,
-        "receipt_sha256": "74a0ef778966964fcfc77083ef7726d1af9eb907bcee16f488db70e9bbae0ac7",
-        "report_sha256": "3745d61718907521abf830251e465ba58630c5890707b99287b5092592d5b6c0",
-        "method_sha256": "3f13e0484063555e12f3df5ca383696db55462fe83a16625556b26f0a617885c",
-        "normal_result_preserved": true,
-        "product_native_or_normal_campaign_repeated": false,
-        "four_RAW_once_LAST": [
-          1825,
-          398,
-          44,
-          33
-        ],
-        "qualified_provisionally_only": true,
-        "accepted": false
-      },
       "independent_local_DATA_passed": true,
       "locally_qualified_commit": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
       "locally_qualified_tree": "09d855cb9479033c3394ee5003c2dbfddb59f12b",
       "provisional_local_qualification": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/provisional-local-qualification.json",
         "sha256": "4b7e6995bf892fcc95fb136f962050e40141f19158f353b4447ad971cfdfdbfc",
         "bytes": 5655
       },
       "normal_actual_receipt": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/provisional-local-normal-attempt2-actual-exit.json",
         "sha256": "a9d4931d36c12fcca7b299edfda5efc38f6f989420c54ba73413c762e5cb7d19",
         "bytes": 3354
       },
       "independent_local_DATA_actual_receipt": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/local-audit-provisional-attempt3-actual-exit.json",
         "sha256": "74a0ef778966964fcfc77083ef7726d1af9eb907bcee16f488db70e9bbae0ac7",
         "bytes": 3992
       },
       "independent_local_DATA_report": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/local-audit-provisional.json",
         "sha256": "3745d61718907521abf830251e465ba58630c5890707b99287b5092592d5b6c0",
         "bytes": 989731
       },
       "retained_reader_failures": [
         {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/local-audit-provisional-attempt1-failure.json",
           "sha256": "bf3a8328468b013bb315a8bc2d558bb04cbfbfe85da39eb5c6d243c2947debf0",
           "bytes": 3519
         },
         {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m56-delivery/local-audit-provisional-attempt2-failure.json",
           "sha256": "30b3a27d5bef80aed11fbfc0fa63695fe4e0b0f055ee1c1c14065d59c6bb6253",
           "bytes": 3733
         }
@@ -1799,10 +1720,12 @@
       "source_preparation_started_at": "2026-11-14T02:33:46.832928+00:00",
       "contract_sha256": "96142d874d29ae60f0da64f76ab02308adb05c71593b0c9d6bd2c7e7a9a3b7cd",
       "source_scope_contract": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/phase-source-contract.json",
         "sha256": "d7183cfc5415f24aa4d8b7f4530b21dc3808fbcf42a80f6b80101c34a047077c",
         "bytes": 13721
       },
       "source_authorship_release": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/source-authorship-release.json",
         "sha256": "9f7ad5c6534f9876b9d7158116ef241d585ca1ab148c3a2c8425a7322f88cc26",
         "bytes": 2748
       },
@@ -1813,247 +1736,224 @@
       "current_stage": "Provisionally locally qualified at exact9dfde487 after full normal/strict coverage and independent retained DATA. Both normal failures, the interrupted third run/owned retirement, and both reader method failures remain preserved. Hosted/official/accepted-parent/Main release qualification is still held; the runtime Source is frozen while M58 Source work continues.",
       "runtime_Source_batches_complete": {
         "Scene_core": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/scene-source-state.json",
           "sha256": "bd0aedd8457fa287ba697ee2902d7b403459497baaeaaf2b3d89b1ae150fb11f",
           "bytes": 11286
         },
         "Server_core": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/server-source-state.json",
           "sha256": "3917e24dd28815ed626af9102132605eacb5ad368b264195ed8188ec5b87d839",
           "bytes": 10924
         },
         "Server_Reading_equality_correction": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/server-reading-equality-source-correction.json",
           "sha256": "74ffe58d98d40243f0052e55f190c5893b001002c31191059293a730f1649d9e",
           "bytes": 2681
         },
         "Root_shared_identity": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/shared-identity-source-state.json",
           "sha256": "2201c956ffd0d804eebb651b693119034cad10b973c0975871a154bedd5faa1d",
           "bytes": 3780
         }
       },
       "fixture_schema_Source_agreement": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-fixture-and-procedure-api-agreement.json",
         "sha256": "a9c9cf6a916328a469942858d11509d9032ba6874a18ab10a82edbd76c5ac6fb",
         "bytes": 1878
       },
       "reference_helper_Source": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-helper-source-state.json",
         "sha256": "7994fba150d6ab41b87a0f6f313703adec2bb6837b191822d7c7b7a983123045",
         "bytes": 6986
       },
-      "current_native_provider_availability": "The separately approved unchanged object linked into the new scoped helper and capture returned actual0. The original DSO remains rejected for empty RUNPATH; no loader or Rust-runtime qualification transfers.",
+      "current_native_provider_availability": "Original DSO remains rejected for an empty RUNPATH entry and was never loaded or repaired. The separately approved unchanged ET_REL object (SHA 2097353f, 170920 bytes) linked once into the new helper; actual capture0 with 41 children0 plus independent native DATA0 validate the owned helper ELF/maps and exact guarded providers. Source-to-binary, Physics/solver/gathering/lifecycle and release equivalence remain unclaimed.",
       "reference_capture_or_golden_data_available": true,
-      "registration_Source_adoption": {
-        "sha256": "944eb3341094184d3f03c48e0918de8aedae4cf12a77d1fe17c8cf1afad824c2",
-        "bytes": 2086,
-        "target_files": 8,
-        "Source_reviewed_and_adopted": true,
-        "checks_run": false
-      },
-      "current_reference_diagnostic": {
-        "actual_receipt": {
-          "sha256": "d9c913fb197affd1f634b92a19b65087f6fc5c18db1b56f08ef17502f5ff1e2a",
-          "bytes": 4838
+      "independent_local_DATA_passed": true,
+      "runtime_provisionally_locally_qualified": true,
+      "operation_scope": "All M57 normal and reader watches are retired; local qualification is complete and Source frozen. Original normal3 tool143 and unknown child exit/cause remain unchanged. No hosted/official qualification or acceptance is inferred from local success.",
+      "reference_pipeline": {
+        "scope": "One original unchanged-object Configure/PostUpdate controlled-component pair/eight campaign; independent DATA/export/literal stages, not Rust runtime qualification or acceptance.",
+        "input_domain": "DIRECT_ORIGINAL_OBJECT_SYSTEM_MODEL_LOCAL_AND_SINGLE_AXIS_COMPONENT_INPUTS",
+        "runtime_parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
+        "runtime_parent_accepted": false,
+        "capture": {
+          "actual_root_exit_code": 0,
+          "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-reference-actual-exit.json",
+            "sha256": "861c9338ff320a5a5d2be91eebfdc1ce6b0aa710f78cbd6b3d5ab02818a26a43",
+            "bytes": 2609
+          },
+          "result": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-multiple-joint-state-publishers-0eomnt5u/result.json",
+            "sha256": "02137542be308a1613fa13424e6d25254ded889b9e08c18bee9a0f35538cc3bf",
+            "bytes": 520941
+          },
+          "execution_ledger": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-multiple-joint-state-publishers-0eomnt5u/execution-ledger.json",
+            "sha256": "7461e3db7fba0793fffa48b261863c344b3c97a2fba013fc57a9324c0078b536",
+            "bytes": 145003
+          },
+          "method_sha256": "dcfa5ecff7cd757189c349b4b94840bcc5077c52e89dfc17c4169555aa9fde4f",
+          "execution_log_sha256": "855544b34987acefcbf74dcd50d7f9d9ab3f00833a93d846ed74b294a381b541",
+          "actual_child_stages0_reaped": 41,
+          "elapsed_seconds": 23.57837867178023,
+          "native_Server_or_Loader_or_Physics_executed": false
         },
-        "actual_root_exit_code": 1,
-        "boundary": "Original DSO remains rejected for empty RUNPATH. A separate reviewed unchanged-object input/clean new-helper recipe enabled the fresh capture; the guard was not relaxed."
+        "independent_native_DATA": {
+          "actual_root_exit_code": 0,
+          "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-audit-actual-exit.json",
+            "sha256": "ba35551a84e082b1fbac2a49e7043f234ac417244a33318ddd39035ec172bf8c",
+            "bytes": 1528
+          },
+          "report": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-audit.json",
+            "sha256": "e6953be08eaa8f7dc8d8f38a9cf8c8050bc69f0f0da2adf7b1d1c4a368235be6",
+            "bytes": 413125
+          },
+          "method_sha256": "b87e4cb565f6622abed6d3faea0fbbcae33f8302753cecf98d14e47a09662c95",
+          "execution_log_sha256": "a6b95b3a4bb2ea3b8a62874aea78dd19791677f9b3df93926c2142a9dcb95f21",
+          "elapsed_seconds": "UNKNOWN_NOT_SERIALIZED_BY_RETAINED_READER",
+          "native_or_product_campaign_repeated": false
+        },
+        "immutable_generation": {
+          "actual_root_exit_code": 0,
+          "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-fixture-generation-actual-exit.json",
+            "sha256": "4d408203ec2c45a75a8b746222132a86ae6ed4bb8eba08de41f4059a32c682c8",
+            "bytes": 2189
+          },
+          "method_sha256": "84cc8d585e3f35ff7c7578e4c2f409b81f5d41f5f1652bd4be5c668d99fc55bc",
+          "execution_log_sha256": "27fa22ba3550812c0a4dc713f47f2a1e9eb005efcea137034feef42470ecfd2b",
+          "fixture": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-replay-generated/m57_native_multiple_joint_state_publishers.rs",
+            "sha256": "c0dc5db79526e3489b753ebde9601c693fc9c5f0a83495ab551d95797511f6bf",
+            "bytes": 480049
+          },
+          "provenance": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-replay-generated/provenance.json",
+            "sha256": "2b4a98c38f9ae909dd5519b973f6f563bb01c658297a38f8f507b6f7fc39dff3",
+            "bytes": 374652
+          },
+          "native_or_product_campaign_repeated": false
+        },
+        "independent_literal_DATA": {
+          "actual_root_exit_code": 0,
+          "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-borrowed-fixture-audit-actual-exit.json",
+            "sha256": "a936754787c9e8e33cb06b0ec654241b82de65498bc759fa71f059863ab74492",
+            "bytes": 1963
+          },
+          "report": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-borrowed-fixture-audit.json",
+            "sha256": "d2d15c618ff6e5fee093f916f11225e923b5e4a22e0373072eed7e77cba775bc",
+            "bytes": 370346
+          },
+          "method_sha256": "583635f70808608f1c0088dbcd90c0734c39a381f3a81f89b099c870ce2b8072",
+          "execution_log_sha256": "83b241e90b6df8b69d13ffa387477d086136053b591ca402c81bdb078f282a8f",
+          "fixture_generated_again": false,
+          "native_or_product_campaign_repeated": false
+        },
+        "actual_aggregate_mode_counts": {
+          "owners": 10,
+          "configurations": 10,
+          "global_call_groups": 20,
+          "input_rows": 100,
+          "direct_post_update_calls": 100,
+          "fence_rows": 100,
+          "observed_models": 66,
+          "observed_joints": 108,
+          "raw_rows": 278
+        },
+        "owner_count_scope": "owners10 is2+8 separate mode instances; simultaneous owner bound remains8.",
+        "actual_fixture_or_provenance_values_duplicated_in_this_plan": false,
+        "M57_qualified_or_accepted": false
       },
-      "observed_fixture_available": true,
-      "retained_reference_diagnostic_failures": [
+      "retained_fixed_input_diagnostic_failures": [
         {
-          "historical_first_method_checkpoint": {
+          "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-input-diagnostic-actual-exit.json",
             "sha256": "33b0777f2978c961d4ce6af6b5ac35a2c43e38774e8286e9c51e2fcc5459dde6",
-            "bytes": 2599,
-            "actual_root_exit_code": 1,
-            "boundary": "Preflight phase-field assertion; no candidate/provider/tool reads or child stages. Source guard correction pending; no native capture or qualification."
-          }
+            "bytes": 2599
+          },
+          "actual_root_exit_code": 1,
+          "scope": "First method phase-type guard before provider/tool/ELF reads or children; failure preserved."
         },
         {
           "actual_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/native-input-diagnostic-attempt2-actual-exit.json",
             "sha256": "d9c913fb197affd1f634b92a19b65087f6fc5c18db1b56f08ef17502f5ff1e2a",
             "bytes": 4838
           },
           "actual_root_exit_code": 1,
-          "actual_readelf_children": 2,
-          "whole_DSO_admitted": false,
-          "boundary": "The strict metadata diagnostic reached two successful readelf children, then refused an empty RUNPATH entry. The separately selected limited object/new-helper recipe preserves this failure."
+          "scope": "Strict original DSO empty RUNPATH rejection after2readelf children0/reaped; no full DSO metadata closure/admission or load. Limited ET_REL subrecord was separately reviewed only for the new helper."
         }
       ],
-      "native_reference": {
-        "actual_receipt": {
-          "sha256": "861c9338ff320a5a5d2be91eebfdc1ce6b0aa710f78cbd6b3d5ab02818a26a43",
-          "bytes": 2609
+      "observed_consumer_Source": {
+        "independent_Source_review_clear": true,
+        "Scene_scope": "Genuine loaded graph and all fixed construction getters; all public JointSample inputs before one unchanged sampler/globalgroup; no pose/backend write or solver/gathering evidence.",
+        "Server_scope": "Isolated captured-value canonical numeric/metadata encoder proof, original native root/nested wire/order custody and separate live Rust-assigned-ID canonical peer. No whole native/Rust wire equivalence promised.",
+        "runtime_hook_reachability_or_fixture_copy_final_inventory": "Original integration/census before normal1 and corrected Name-import tree281/census before normal2 are preserved. Two runtime test targets failed in normal2. New corrected Source/census/formatter binding and complete runtime/strict coverage still require their own proof.",
+        "Rust_test_passes_claimed": false,
+        "actual_Source_integration": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/observed-native-source-integration.json",
+          "sha256": "0d5e847552930cd7c2c8183c12782bda7f428ca379bfd98891499ccb2e1ce287",
+          "bytes": 3118
         },
-        "actual_root_exit_code": 0,
-        "tool_exit_basis": {
-          "session": 96298,
-          "completion_chunk": "8419a7",
-          "actual_exit_code": 0
-        },
-        "method_sha256": "dcfa5ecff7cd757189c349b4b94840bcc5077c52e89dfc17c4169555aa9fde4f",
-        "release_sha256": "174298586db5d8a0b2995eec85dbe97de2eceded1b066db97f8c8bf5983e06ba",
-        "native_result_sha256": "02137542be308a1613fa13424e6d25254ded889b9e08c18bee9a0f35538cc3bf",
-        "native_result_bytes": 520941,
-        "execution_ledger": {
-          "sha256": "7461e3db7fba0793fffa48b261863c344b3c97a2fba013fc57a9324c0078b536",
-          "bytes": 145003
-        },
-        "elapsed_seconds": 23.57837867178023,
-        "all_actual_child_stages": 41,
-        "all_child_stages_actual_zero_and_reaped": true,
-        "mode_count": 2,
-        "counts": {
-          "owners": 10,
-          "configurations": 10,
-          "global_call_groups": 20,
-          "input_rows": 100,
-          "direct_post_update_calls": 100,
-          "fence_rows": 100,
-          "observed_models": 66,
-          "observed_joints": 108,
-          "raw_rows": 278
-        },
-        "native_DATA_passed": true,
-        "fixture_or_literal_DATA_passed": true,
-        "M57_accepted": false,
-        "scope": "Direct original-object Configure/PostUpdate with controlled fixed LOCAL poses and joint components. No original Server/plugin loader/Physics/solver/lifecycle or Rust runtime qualification."
+        "runtime_correction_scope": "Supported genuine loaded unbounded/zero-damping graph and explicit unsupported limits/dynamics refusals, exact captured metadata custody separate; live-binding fault versus full-entity retirement/cadence controls. Production/native/fixture unchanged; verification pending."
       },
-      "scoped_native_capture_release_completed": true,
-      "future_operation_authority": "M57 normal and independent local DATA are complete. No duplicate normal, product/native replay or further RAW comparisons are released. Frozen M57 awaits accepted predecessor, exact hosted/official qualification and normal publication/Main readbacks; no release acceptance is claimed.",
-      "independent_native_DATA": {
-        "actual_receipt": {
-          "sha256": "ba35551a84e082b1fbac2a49e7043f234ac417244a33318ddd39035ec172bf8c",
-          "bytes": 1528
+      "authored_control_obligations": {
+        "basis": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/source-controls-and-retained-adapter-preparation.json",
+          "sha256": "e0c5e64a12179313c423a605b1642b187f32886dae24974e931d325e80804f6e",
+          "bytes": 32323
         },
-        "report": {
-          "sha256": "e6953be08eaa8f7dc8d8f38a9cf8c8050bc69f0f0da2adf7b1d1c4a368235be6",
-          "bytes": 413125
-        },
-        "actual_root_exit_code": 0,
-        "tool_exit_basis": {
-          "session": 84553,
-          "completion_chunk": "84a4dc",
-          "actual_exit_code": 0
-        },
-        "method_sha256": "b87e4cb565f6622abed6d3faea0fbbcae33f8302753cecf98d14e47a09662c95",
-        "release_sha256": "f520b008ca5de4ca25d5fb86671afef456f828a71031633fa7a479ab18e54e44",
-        "input_domain": "DIRECT_ORIGINAL_OBJECT_SYSTEM_MODEL_LOCAL_AND_SINGLE_AXIS_COMPONENT_INPUTS",
-        "mode_count": 2,
-        "counts": {
-          "owners": 10,
-          "configurations": 10,
-          "global_call_groups": 20,
-          "input_rows": 100,
-          "direct_post_update_calls": 100,
-          "fence_rows": 100,
-          "observed_models": 66,
-          "observed_joints": 108,
-          "raw_rows": 278
-        },
-        "product_or_native_campaign_repeated": false,
-        "M57_qualified_or_accepted": false,
-        "elapsed_seconds": "UNKNOWN_NOT_SERIALIZED_BY_RETAINED_READER"
+        "authored_headless": 22,
+        "authored_renderer_overlapping": 11,
+        "counts_are_authored_core_plus_held_Source_only": false,
+        "final_reachable_harness_census": null,
+        "passes_claimed": false,
+        "counts_are_authored_Source_only_not_final_harness_census_or_passes": true,
+        "failed_attempt1_reachable_census": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/source-control-declarations-after-format.json",
+          "sha256": "475227dbd9136d2cacf02884be68aae15716fcff36d0ec304ae0553fc76b2f92",
+          "bytes": 43383
+        }
       },
-      "immutable_fixture_generation": {
-        "actual_receipt": {
-          "sha256": "4d408203ec2c45a75a8b746222132a86ae6ed4bb8eba08de41f4059a32c682c8",
-          "bytes": 2189
-        },
-        "actual_root_exit_code": 0,
-        "tool_exit_basis": {
-          "session": null,
-          "completion_chunk": "4ce8b0",
-          "actual_exit_code": 0
-        },
-        "generator_sha256": "84cc8d585e3f35ff7c7578e4c2f409b81f5d41f5f1652bd4be5c668d99fc55bc",
-        "release_sha256": "7adc74d0aaae290a16c35f4b01ef88ef5780845f5d4d28d0efc0a17f13eb1ace",
-        "fixture": {
-          "sha256": "c0dc5db79526e3489b753ebde9601c693fc9c5f0a83495ab551d95797511f6bf",
-          "bytes": 480049
-        },
-        "provenance": {
-          "sha256": "2b4a98c38f9ae909dd5519b973f6f563bb01c658297a38f8f507b6f7fc39dff3",
-          "bytes": 374652
-        },
-        "native_DATA_report_sha256": "e6953be08eaa8f7dc8d8f38a9cf8c8050bc69f0f0da2adf7b1d1c4a368235be6",
-        "actual_native_DATA_exit_receipt_sha256": "ba35551a84e082b1fbac2a49e7043f234ac417244a33318ddd39035ec172bf8c",
-        "counts": {
-          "owners": 10,
-          "configurations": 10,
-          "global_call_groups": 20,
-          "input_rows": 100,
-          "direct_post_update_calls": 100,
-          "fence_rows": 100,
-          "observed_models": 66,
-          "observed_joints": 108,
-          "raw_rows": 278
-        },
-        "product_or_native_commands_repeated": false,
-        "M57_accepted": false
-      },
-      "independent_literal_DATA": {
-        "actual_receipt": {
-          "sha256": "a936754787c9e8e33cb06b0ec654241b82de65498bc759fa71f059863ab74492",
-          "bytes": 1963
-        },
-        "actual_root_exit_code": 0,
-        "tool_exit_basis": {
-          "session": null,
-          "completion_chunk": "3eaaa5",
-          "actual_exit_code": 0
-        },
-        "method_sha256": "583635f70808608f1c0088dbcd90c0734c39a381f3a81f89b099c870ce2b8072",
-        "release_sha256": "3c48efab196659e60e5b5dff4cbcb550684c284e292ff291e75d0fc6ebe8d491",
-        "report": {
-          "sha256": "d2d15c618ff6e5fee093f916f11225e923b5e4a22e0373072eed7e77cba775bc",
-          "bytes": 370346
-        },
-        "generator_actual_exit_receipt_sha256": "4d408203ec2c45a75a8b746222132a86ae6ed4bb8eba08de41f4059a32c682c8",
-        "fixture_sha256": "c0dc5db79526e3489b753ebde9601c693fc9c5f0a83495ab551d95797511f6bf",
-        "provenance_sha256": "2b4a98c38f9ae909dd5519b973f6f563bb01c658297a38f8f507b6f7fc39dff3",
-        "counts": {
-          "configurations": 10,
-          "direct_post_update_calls": 100,
-          "fence_rows": 100,
-          "global_call_groups": 20,
-          "input_rows": 100,
-          "observed_joints": 108,
-          "observed_models": 66,
-          "owners": 10,
-          "raw_rows": 278
-        },
-        "fixture_generated_again": false,
-        "product_or_native_commands_repeated": false,
-        "M57_accepted": false
-      },
-      "observed_Source_integration": "The reviewed test-premise calibrations, formatting and complete normal hook passed. Two audit-reader method failures were corrected in separately preserved Source successors; retained DATA6 passed without product replay. Runtime/native/fixture Source stayed exact5436 throughout those reader corrections.",
       "initial_source_preparation_checkpoint": {
+        "scope": "Historical initial Source preparation before the two diagnostics and four evidence stages; these flags do not describe the current verification state.",
         "source_preparation_only": true,
         "operations_released": false,
         "checks_run": false
       },
-      "native_reference_evidence_operations_completed": true,
+      "completed_native_evidence": true,
       "release_scope": "M57 full normal and independent local DATA are complete; runtime Source is frozen at9dfde487. No duplicate verification, native replay, further RAW work or release acceptance is authorized. Hosted/official/accepted-parent/Main gates remain held while M58 Source preparation proceeds.",
-      "independent_local_DATA_passed": true,
-      "runtime_provisionally_locally_qualified": true,
-      "operation_scope": "All M57 normal and reader watches are retired; local qualification is complete and Source frozen. Original normal3 tool143 and unknown child exit/cause remain unchanged. No hosted/official qualification or acceptance is inferred from local success.",
       "normal_attempts": [
         {
           "attempt": 1,
           "actual_root_exit_code": 1,
           "actual_failure_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt1-failure.json",
             "sha256": "af5566b776af93b32013081025228a4aa68d72168a4777d25be0e8d84939e816",
             "bytes": 3105
           },
           "method": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/run-provisional-local-normal-gate-bound.py",
             "sha256": "b40c2530a698565b49f80332acb511c3b857b9d9a76cb63db70f4669a45df400",
             "bytes": 2082952
           },
           "result": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-m787nsr8/runner/result.json",
             "sha256": "897ab2cc3cf18bd49b65ba54c369be53c7ec61576991276152b32db4c54a31a4",
             "bytes": 67491
           },
           "primary_log": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-execution.log",
             "sha256": "8c728bcb4b1415df4a00d244879b75b079dff16f88b2a3fabbd98fcff3eb968c",
             "bytes": 335
           },
           "normal_hook_log": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-m787nsr8/runner/normal-hook-m57.log",
             "sha256": "53ccffad621c922bd59faeade7550fec2f4d574a078600d620a74ff5bb550fe7",
             "bytes": 24954
           },
@@ -2082,21 +1982,32 @@
         },
         {
           "attempt": 2,
-          "state": "FAILED_RUNTIME_TESTS_NOT_QUALIFIED",
-          "active_record": {
-            "sha256": "57762b3ec548ae1243be0f040b6a11e25718e57db3ffb6a9813b2edc8738f823",
-            "bytes": 825
-          },
-          "sole_Root_session": 41981,
-          "initial_chunk": "ee1ede",
-          "method_sha256": "e3c55c7c0450ee3e4908f2322b36b0a6493e541c60d6822af707ae5ec7233a82",
-          "release_sha256": "619ab45ca6ecad586953120fc4afd69f2b6bfa4a8908cb5ed7d2fa09cf17a88d",
-          "tree": "281b6af98ca97083ff4b05875c65a8d9ff1f5e9a",
-          "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-          "packet": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt2-szbreld_/runner",
           "actual_root_exit_code": 1,
-          "first_failure_preserved": "af5566b776af93b32013081025228a4aa68d72168a4777d25be0e8d84939e816",
-          "outcome_known": true,
+          "actual_failure_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt2-failure.json",
+            "sha256": "52f5a371cafa36db3bd22e524cb964e7e5a59f85437319b6af4ff0dd443c5274",
+            "bytes": 6827
+          },
+          "method": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/run-provisional-local-normal-gate-attempt2-bound.py",
+            "sha256": "e3c55c7c0450ee3e4908f2322b36b0a6493e541c60d6822af707ae5ec7233a82",
+            "bytes": 2059371
+          },
+          "result": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt2-szbreld_/runner/result.json",
+            "sha256": "9a58780786118a4634a7101c1f08cf3fd83d4a15d0832c4eaf6b2223ce310573",
+            "bytes": 72060
+          },
+          "execution_log": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt2-execution.log",
+            "sha256": "3e5f0c886f5f6afecf94f1ca1272d9a999572faf52336b5016004e6f1c565c31",
+            "bytes": 362
+          },
+          "normal_hook_log": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt2-szbreld_/runner/normal-hook-m57.log",
+            "sha256": "ecbb4954e75c332e55d25c97a57e071a34ab5aa8824ea21e57104ea9ae2ae0fd",
+            "bytes": 1122249
+          },
           "tool_exit_basis": {
             "session": 41981,
             "initial_chunk": "ee1ede",
@@ -2104,18 +2015,10 @@
             "actual_exit_code": 1
           },
           "elapsed_seconds": 1650.1202665108722,
-          "actual_failure_receipt": {
-            "sha256": "52f5a371cafa36db3bd22e524cb964e7e5a59f85437319b6af4ff0dd443c5274",
-            "bytes": 6827
-          },
-          "result": {
-            "sha256": "9a58780786118a4634a7101c1f08cf3fd83d4a15d0832c4eaf6b2223ce310573",
-            "bytes": 72060
-          },
-          "normal_hook_log": {
-            "sha256": "ecbb4954e75c332e55d25c97a57e071a34ab5aa8824ea21e57104ea9ae2ae0fd",
-            "bytes": 1122249
-          },
+          "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
+          "tree": "281b6af98ca97083ff4b05875c65a8d9ff1f5e9a",
+          "preservation_ref": "refs/qualification/m57-normal-attempt2",
+          "preservation_ref_object_type": "tree",
           "runtime_failures": [
             {
               "target": "gz-sim-scene --lib",
@@ -2132,291 +2035,53 @@
               "target_failed": 1
             }
           ],
-          "partial_passes": {
-            "strict_dev_Clippy_summaries": 2,
-            "quiet_Python_aggregate": 403,
-            "individual_Python_case_visibility": false,
-            "maintained_native_free_RGB_stage": "passed"
-          },
-          "full_normal_and_strict_coverage_completed": false,
           "qualification_or_acceptance_claimed": false
-        },
-        {
-          "attempt": 3,
-          "state": "INTERRUPTED_ROOT_TOOL143_OWNED_GROUP_RETIRED_ORIGINAL_CHILD_EXIT_AND_CAUSE_UNKNOWN",
-          "active_record": {
-            "sha256": "36b8c37284c7e00fd355507d37ede8f53d77e6e409db738024c9aba59901fdf4",
-            "bytes": 1538
-          },
-          "sole_Root_session": 69604,
-          "initial_chunk": "fdcb0e",
-          "method": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/run-provisional-local-normal-gate-attempt3-bound.py",
-            "sha256": "0e32e09b39c295201732be6eb5ecefce08b4d3d65c258ec934953cb7c4ce7f2e",
-            "bytes": 2181171
-          },
-          "release": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt3-release.json",
-            "sha256": "df8f2ceec916a2babc0f124605f2bfdc6bf2d484eaabb7d199cf00d896bfa087",
-            "bytes": 3220
-          },
-          "tree": "5436a12578fca5cd745528913d6f4427bebe319b",
-          "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-          "packet": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt3-7az3cy5t/runner",
-          "actual_root_exit_code": null,
-          "outcome_known": false,
-          "retired_active_Source_view": {
-            "attempt": 3,
-            "state": "ACTIVE_NOT_QUALIFIED",
-            "active_record": {
-              "sha256": "36b8c37284c7e00fd355507d37ede8f53d77e6e409db738024c9aba59901fdf4",
-              "bytes": 1538
-            },
-            "sole_Root_session": 69604,
-            "initial_chunk": "fdcb0e",
-            "method": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/run-provisional-local-normal-gate-attempt3-bound.py",
-              "sha256": "0e32e09b39c295201732be6eb5ecefce08b4d3d65c258ec934953cb7c4ce7f2e",
-              "bytes": 2181171
-            },
-            "release": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt3-release.json",
-              "sha256": "df8f2ceec916a2babc0f124605f2bfdc6bf2d484eaabb7d199cf00d896bfa087",
-              "bytes": 3220
-            },
-            "tree": "5436a12578fca5cd745528913d6f4427bebe319b",
-            "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-            "packet": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt3-7az3cy5t/runner",
-            "actual_root_exit_code": null,
-            "outcome_known": false
-          },
-          "controller_loss_receipt": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt3-controller-loss.json",
-            "sha256": "d3155ab00fb0eaecd0990b09bf883eef9a75eb7b6c2fb074b5888971aaceb7b0",
-            "bytes": 2856
-          },
-          "actual_Root_tool_session_exit_code": 143,
-          "tool_completion_chunk": "8c5b58",
-          "controller_observed_absent": true,
-          "actual_child_exit_code": "UNKNOWN_NOT_OWNED_WAIT",
-          "underlying_cause": "UNKNOWN",
-          "final_result_or_sidecar_observed": false,
-          "partial_observed_passes": {
-            "strict_Clippy_profiles": 2,
-            "quiet_Python_aggregate": 403,
-            "individual_Python_results_observable": false
-          },
-          "normal_completion_or_qualification_claimed": false,
-          "retired_interruption_Source_view": {
-            "attempt": 3,
-            "state": "INTERRUPTED_ROOT_TOOL143_CHILD_EXIT_AND_CAUSE_UNKNOWN_NO_FINAL_RESULT",
-            "active_record": {
-              "sha256": "36b8c37284c7e00fd355507d37ede8f53d77e6e409db738024c9aba59901fdf4",
-              "bytes": 1538
-            },
-            "sole_Root_session": 69604,
-            "initial_chunk": "fdcb0e",
-            "method": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/run-provisional-local-normal-gate-attempt3-bound.py",
-              "sha256": "0e32e09b39c295201732be6eb5ecefce08b4d3d65c258ec934953cb7c4ce7f2e",
-              "bytes": 2181171
-            },
-            "release": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt3-release.json",
-              "sha256": "df8f2ceec916a2babc0f124605f2bfdc6bf2d484eaabb7d199cf00d896bfa087",
-              "bytes": 3220
-            },
-            "tree": "5436a12578fca5cd745528913d6f4427bebe319b",
-            "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-            "packet": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt3-7az3cy5t/runner",
-            "actual_root_exit_code": null,
-            "outcome_known": false,
-            "retired_active_Source_view": {
-              "attempt": 3,
-              "state": "ACTIVE_NOT_QUALIFIED",
-              "active_record": {
-                "sha256": "36b8c37284c7e00fd355507d37ede8f53d77e6e409db738024c9aba59901fdf4",
-                "bytes": 1538
-              },
-              "sole_Root_session": 69604,
-              "initial_chunk": "fdcb0e",
-              "method": {
-                "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/run-provisional-local-normal-gate-attempt3-bound.py",
-                "sha256": "0e32e09b39c295201732be6eb5ecefce08b4d3d65c258ec934953cb7c4ce7f2e",
-                "bytes": 2181171
-              },
-              "release": {
-                "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt3-release.json",
-                "sha256": "df8f2ceec916a2babc0f124605f2bfdc6bf2d484eaabb7d199cf00d896bfa087",
-                "bytes": 3220
-              },
-              "tree": "5436a12578fca5cd745528913d6f4427bebe319b",
-              "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-              "packet": "/home/nkoenig/work/gazebo/rust/gz-m57-provisional-local-gate-attempt3-7az3cy5t/runner",
-              "actual_root_exit_code": null,
-              "outcome_known": false
-            },
-            "controller_loss_receipt": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt3-controller-loss.json",
-              "sha256": "d3155ab00fb0eaecd0990b09bf883eef9a75eb7b6c2fb074b5888971aaceb7b0",
-              "bytes": 2856
-            },
-            "actual_Root_tool_session_exit_code": 143,
-            "tool_completion_chunk": "8c5b58",
-            "controller_observed_absent": true,
-            "original_owned_child_last_observed_live": true,
-            "actual_child_exit_code": "UNKNOWN_NOT_OWNED_WAIT",
-            "underlying_cause": "UNKNOWN",
-            "final_result_or_sidecar_observed": false,
-            "partial_observed_passes": {
-              "strict_Clippy_profiles": 2,
-              "quiet_Python_aggregate": 403,
-              "individual_Python_results_observable": false
-            },
-            "normal_completion_or_qualification_claimed": false
-          },
-          "owned_execution_retired": true,
-          "owned_execution_retirement": {
-            "first_cleanup_result": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt3-owned-orphan-retirement/result.json",
-              "sha256": "d54a7201e0a04ce364e44164bb5ede37081e69b21fe4335a011908204643d637",
-              "bytes": 355289
-            },
-            "first_cleanup_actual_exit_code": 1,
-            "first_cleanup_signals": [],
-            "successful_cleanup_Root_receipt": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt3-owned-orphan-cleanup-attempt2-actual-exit.json",
-              "sha256": "ac528c5dfcd71246ae6f1b9a51e87891b81b5b2fc284274f85991133e659b59c",
-              "bytes": 1931
-            },
-            "successful_cleanup_result": {
-              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt3-owned-orphan-retirement-attempt2/result.json",
-              "sha256": "d660ced5ba6ff06d3743f5760f185bb61785ffb8cba4c11f24aee895bb55a6b6",
-              "bytes": 363471
-            },
-            "actual_cleanup_exit_code": 0,
-            "elapsed_seconds": 7.763702717144042,
-            "SIGINT_count": 1,
-            "owned_process_group": 831972,
-            "escalation": false,
-            "observed_final_members": [],
-            "zombies_still_present": [],
-            "errors": [],
-            "HEAD_after": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-            "index_lock_exists_after": false,
-            "original_normal_result_or_sidecar_present_after": false,
-            "original_child_exit_code": "UNKNOWN_NOT_OWNED_WAIT",
-            "original_controller_exit_cause": "UNKNOWN",
-            "normal_exit0_or_qualification_claimed": false
-          },
-          "observed_final_owned_group_members": [],
-          "observed_final_owned_zombies": []
-        },
-        {
-          "state": "FULL_NORMAL_PASSED_PENDING_INDEPENDENT_LOCAL_DATA",
-          "attempt": 4,
-          "sole_Root_session": 98870,
-          "initial_chunk": "633c35",
-          "active_record": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt4-active.json",
-            "sha256": "23089ccf64212c9ca1f99822c42f9e8360ca7b14145319fadda081dfc9ecd199",
-            "bytes": 2421
-          },
-          "method_sha256": "b6a793a68cae6754f3057f6686a665f74f81e3eccb5253220920f1f213859655",
-          "release_sha256": "d18ec23cd75b5bbf08bf3df9253680e830e7020ec1f655d5308d3b98affc0524",
-          "tree": "5436a12578fca5cd745528913d6f4427bebe319b",
-          "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-          "actual_root_exit_code": 0,
-          "outcome_known": true,
-          "retained_all_three_prior_attempts": true,
-          "liveness_is_test_success": false,
-          "tool_exit_basis": {
-            "session": 98870,
-            "completion_chunk": "2c95f0",
-            "actual_exit_code": 0
-          },
-          "elapsed_seconds": 2128.9094941508956,
-          "commit": "9dfde487e7e377432573ebbcfd1e7a58901bc492",
-          "actual_success_receipt": {
-            "sha256": "848e02474b3da1da61185de99fab6700eed666db9c5d9f982bf188b079ab74e3",
-            "bytes": 4585
-          },
-          "result": {
-            "sha256": "15defd7cc40818ef1599f0a423040b0314b14fb02cf61575dfbd87447fe941a0",
-            "bytes": 81238
-          },
-          "all_four_operating_floors_held": true
         }
       ],
       "normal_gate": {
         "state": "FULL_NORMAL_AND_INDEPENDENT_LOCAL_DATA_COMPLETE",
-        "attempt": 4,
-        "sole_Root_session": 98870,
-        "initial_chunk": "633c35",
-        "active_record": {
-          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt4-active.json",
-          "sha256": "23089ccf64212c9ca1f99822c42f9e8360ca7b14145319fadda081dfc9ecd199",
-          "bytes": 2421
+        "actual_root_exit_code": 1,
+        "failure_receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt2-failure.json",
+          "sha256": "52f5a371cafa36db3bd22e524cb964e7e5a59f85437319b6af4ff0dd443c5274",
+          "bytes": 6827
         },
-        "method_sha256": "b6a793a68cae6754f3057f6686a665f74f81e3eccb5253220920f1f213859655",
-        "release_sha256": "d18ec23cd75b5bbf08bf3df9253680e830e7020ec1f655d5308d3b98affc0524",
-        "tree": "5436a12578fca5cd745528913d6f4427bebe319b",
+        "tree": "281b6af98ca97083ff4b05875c65a8d9ff1f5e9a",
         "parent": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-        "actual_root_exit_code": 0,
-        "outcome_known": true,
-        "retained_all_three_prior_attempts": true,
-        "liveness_is_test_success": false,
-        "tool_exit_basis": {
-          "session": 98870,
-          "completion_chunk": "2c95f0",
-          "actual_exit_code": 0
-        },
-        "elapsed_seconds": 2128.9094941508956,
-        "commit": "9dfde487e7e377432573ebbcfd1e7a58901bc492",
-        "actual_success_receipt": {
-          "sha256": "848e02474b3da1da61185de99fab6700eed666db9c5d9f982bf188b079ab74e3",
-          "bytes": 4585
-        },
-        "result": {
-          "sha256": "15defd7cc40818ef1599f0a423040b0314b14fb02cf61575dfbd87447fe941a0",
-          "bytes": 81238
-        },
-        "all_four_operating_floors_held": true,
+        "elapsed_seconds": 1650.1202665108722,
+        "Rust_product_tests_reached": true,
+        "full_strict_coverage_completed": false,
+        "retry_outcome": null,
         "independent_local_DATA_completed": true
       },
       "first_normal_import_correction": {
         "Source_reviewed": true,
         "proposal": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/server-name-import-source-correction-proposal.json",
           "sha256": "90ebb23abd44a672069fe4b79f5ca003e7d95a924f66a1aac044e34b30ac745e",
           "bytes": 2451
         },
         "exact_edit": "Add Name, to the existing gz_sim_scene grouped import; private use super::* inherits it.",
         "behavior_assertions_IDs_math_fixtures_native_inputs_changed": false,
         "actual_correction_formatter_outcome": {
-          "actual_root_exit_code": 0,
-          "observation": {
-            "sha256": "7d3681ae5158e825885116ca6d6d6ae9652552f58728764d3295e06245f317c3",
-            "bytes": 16024
-          },
-          "tool_exit_basis": {
-            "session": 25297,
-            "initial_chunk": "a8a7d5",
-            "completion_chunk": "99909e",
-            "actual_exit_code": 0
-          },
-          "elapsed_seconds": 1.3045839141122997,
-          "formatted_paths": [
-            "crates/gz-sim-server/src/joint_state.rs"
-          ]
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt2-source-format-observation.json",
+          "sha256": "7d3681ae5158e825885116ca6d6d6ae9652552f58728764d3295e06245f317c3",
+          "bytes": 16024
         },
         "actual_retry_outcome": {
+          "attempt": 2,
           "actual_root_exit_code": 1,
-          "failure_receipt_sha256": "52f5a371cafa36db3bd22e524cb964e7e5a59f85437319b6af4ff0dd443c5274",
-          "scope": "Import compilation blocker cleared; two later runtime test failures remain. No qualification."
+          "failure_receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/provisional-local-normal-attempt2-failure.json",
+            "sha256": "52f5a371cafa36db3bd22e524cb964e7e5a59f85437319b6af4ff0dd443c5274",
+            "bytes": 6827
+          },
+          "import_compilation_passed": true
         }
       },
       "original_consolidated_formatter_checkpoint": {
         "actual_observation": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/consolidated-source-format-observation.json",
           "sha256": "fad2b723b82277841fa0dfac20112cd47775a9741b701b58a4f6cac4ef55a876",
           "bytes": 17380
         },
@@ -2425,6 +2090,7 @@
       },
       "failed_attempt1_Source_census": {
         "card": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/source-control-declarations-after-format.json",
           "sha256": "475227dbd9136d2cacf02884be68aae15716fcff36d0ec304ae0553fc76b2f92",
           "bytes": 43383
         },
@@ -2438,100 +2104,7 @@
       },
       "Rust_product_tests_reached": true,
       "coverage_reached": true,
-      "current_Source_declarations": {
-        "headless": 22,
-        "renderer_overlapping": 11,
-        "runtime_passes_claimed": false
-      },
-      "second_normal_test_calibration_correction": {
-        "Source_reviewed_and_adopted": true,
-        "scope": "Two same-ID test-premise corrections and nine current docs only; production/native/fixture unchanged.",
-        "actual_formatter": {
-          "actual_root_exit_code": 0,
-          "observation": {
-            "sha256": "118fd3351c4d79d1ce27eedf65b59eb21fd997b8d8e99c5ba8a7da666a91c9da",
-            "bytes": 16124
-          },
-          "formatted_paths": []
-        },
-        "current_Source_state": {
-          "sha256": "6948e04131cae66e81e26c75b8eb69b9d69b2f772f91ff9bd7b9dd279a81ee79",
-          "bytes": 10351
-        },
-        "current_Source_tree": "5436a12578fca5cd745528913d6f4427bebe319b",
-        "metadata_erratum": {
-          "sha256": "581b41a0aee0cec97eeffba61f71e286156c79b1861a0e4c7dc9e5ebd0f2ef62",
-          "bytes": 2500
-        },
-        "current_Source_declarations": {
-          "headless": 22,
-          "renderer_overlapping": 11,
-          "runtime_passes_claimed": false
-        },
-        "actual_retry_outcome": {
-          "attempt": 4,
-          "actual_root_exit_code": 0,
-          "receipt": {
-            "sha256": "848e02474b3da1da61185de99fab6700eed666db9c5d9f982bf188b079ab74e3",
-            "bytes": 4585
-          },
-          "scope": "Historical normal4 checkpoint before independent DATA6: Full normal and strict coverage passed; independent retained DATA remains pending after its own method failure."
-        }
-      },
-      "owned_execution_retirement": {
-        "first_cleanup_result": {
-          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt3-owned-orphan-retirement/result.json",
-          "sha256": "d54a7201e0a04ce364e44164bb5ede37081e69b21fe4335a011908204643d637",
-          "bytes": 355289
-        },
-        "first_cleanup_actual_exit_code": 1,
-        "first_cleanup_signals": [],
-        "successful_cleanup_Root_receipt": {
-          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt3-owned-orphan-cleanup-attempt2-actual-exit.json",
-          "sha256": "ac528c5dfcd71246ae6f1b9a51e87891b81b5b2fc284274f85991133e659b59c",
-          "bytes": 1931
-        },
-        "successful_cleanup_result": {
-          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m57-delivery/normal-attempt3-owned-orphan-retirement-attempt2/result.json",
-          "sha256": "d660ced5ba6ff06d3743f5760f185bb61785ffb8cba4c11f24aee895bb55a6b6",
-          "bytes": 363471
-        },
-        "actual_cleanup_exit_code": 0,
-        "elapsed_seconds": 7.763702717144042,
-        "SIGINT_count": 1,
-        "owned_process_group": 831972,
-        "escalation": false,
-        "observed_final_members": [],
-        "zombies_still_present": [],
-        "errors": [],
-        "HEAD_after": "d635b119ca8d9e3f338fb0cf8af7df88b71a7f34",
-        "index_lock_exists_after": false,
-        "original_normal_result_or_sidecar_present_after": false,
-        "original_child_exit_code": "UNKNOWN_NOT_OWNED_WAIT",
-        "original_controller_exit_cause": "UNKNOWN",
-        "normal_exit0_or_qualification_claimed": false
-      },
-      "independent_local_DATA_reader_attempts": [
-        {
-          "attempt": 1,
-          "reader_method_attempt": 4,
-          "state": "FAILED_INHERITED_CONTROL_IDENTITY_ASSERTION_NO_LOCAL_QUALIFICATION",
-          "actual_root_exit_code": 1,
-          "tool_exit_basis": {
-            "session": 32158,
-            "initial_chunk": "81a07e",
-            "completion_chunk": "1a65e5",
-            "actual_exit_code": 1
-          },
-          "failure_receipt": {
-            "sha256": "93e670a2c4888fafa9ac8f25d5e220577cb1bbb953bf052bfad18cafd44aad11",
-            "bytes": 2843
-          },
-          "normal_success_preserved": true,
-          "current_profiles_and_RAW_not_reached": true,
-          "runtime_Source_changed": false
-        }
-      ],
+      "coverage_scope": "Maintained native-free/RGB stage passed; full normal and strict workspace/percrate/actual-parent coverage incomplete.",
       "qualified_commit": "9dfde487e7e377432573ebbcfd1e7a58901bc492",
       "qualified_tree": "5436a12578fca5cd745528913d6f4427bebe319b",
       "provisional_local_qualification": {
@@ -2560,6 +2133,8 @@
           "bytes": 2688
         }
       ],
+      "future_operation_authority": "M57 normal and independent local DATA are complete. No duplicate normal, product/native replay or further RAW comparisons are released. Frozen M57 awaits accepted predecessor, exact hosted/official qualification and normal publication/Main readbacks; no release acceptance is claimed.",
+      "observed_Source_integration": "The reviewed test-premise calibrations, formatting and complete normal hook passed. Two audit-reader method failures were corrected in separately preserved Source successors; retained DATA6 passed without product replay. Runtime/native/fixture Source stayed exact5436 throughout those reader corrections.",
       "actual_local_counts": {
         "headless": 1951,
         "renderer_overlapping": 1149,
@@ -2655,44 +2230,132 @@
         "bytes": 2963
       },
       "retained_input_DATA_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/retained-controller-reference-input-data-actual-exit.json",
         "sha256": "8c0915a2075dd38d9271b3047fa82115e6ab0c020234fda0ce4f702d43635b5d",
         "bytes": 1403
       },
       "static_observation_actual1": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/controller-reference-static-query-actual-exit.json",
         "sha256": "df363f957a5dc18143215076fecaa3c670a35fd72acd66154b80b191c277cc97",
         "bytes": 1731
       },
       "reference_helper_isolation_decision": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/reference-two-helper-isolation-source-decision.json",
         "sha256": "dbf18b24cef560c5a8d6ef5c621bf5aa569460417a4bb133fbeaa14d6c4afe26",
         "bytes": 3346
       },
       "reference_component_capture_completed": true,
       "reference_semantic_DATA_passed": true,
       "native_capture_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/isolated-controller-native-capture-attempt3-actual-exit.json",
         "sha256": "ceac1e07862259ae1f334ac09a373f9f498c87fd3cc09a82e38de9679680f226",
         "bytes": 4335
       },
-      "retained_native_compile_failure_actual1": {
-        "sha256": "a3751c3b748fed94f93a9787f2419ffe359e7970d0086d056f6abb34124ee9d9",
-        "bytes": 3232
-      },
       "native_reference_DATA_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/native-isolated-controller-data-current-sdk-actual-exit.json",
         "sha256": "41c94397e6f677555a5c3e0526e281486c537a06ef5b3f8e9b96074eb4e58c78",
         "bytes": 2844
       },
       "borrowed_fixture_generation_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/native-isolated-controller-fixture-current-sdk-generation-actual-exit.json",
         "sha256": "e132ec723b5feda1b0c8c3c0a85b7e7d48397dea9dfa71c797693f1533414874",
         "bytes": 2433
       },
       "fixed_literal_DATA_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/native-isolated-controller-fixed-literal-current-sdk-actual-exit.json",
         "sha256": "14a554082d93f8fa9260c361bdcb7b9a6df45648094e2b761e6b6f1956410433",
         "bytes": 2721
       },
+      "preserved_before_host_update_capture": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/isolated-controller-native-capture-attempt2-actual-exit.json",
+        "sha256": "6656f2820792931095756733e101128a46708c73f9bdbfb5697938328d6142a1",
+        "bytes": 3240
+      },
+      "preserved_host_mismatch_DATA_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/native-isolated-controller-data-actual-exit.json",
+        "sha256": "15d517260b45eefff16e1a0bc0054424a65c94efefd8cfb821f17f94b6738999",
+        "bytes": 2652
+      },
+      "current_dependency_diagnostic_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/sdk-dependency-drift-inventory-actual-exit.json",
+        "sha256": "82b30aeb444875ebdf1aa9f8cbf4387f742f506162a06b952920b2e5b7fa25da",
+        "bytes": 1852
+      },
       "source_format_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-complete-source-format-actual-exit.json",
         "sha256": "f7bdc61630f0f21f2bdcd7667d1d25c4777277c36af7a28a4435934f6d56be39",
         "bytes": 878
       },
       "product_tests_and_coverage_reached": true,
+      "full_normal_attempt1_actual_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt1-actual-failure.json",
+        "sha256": "7c109e3f723388d29500cece8dd1713eab30becbfddcb70e27835b08ea423651",
+        "bytes": 1977
+      },
+      "compile_corrections_format_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-compile-corrections-format-actual-exit.json",
+        "sha256": "783ca1a7ed5a571da78a9cd11570b45c4ee536286b4e580998bece6800914c5c",
+        "bytes": 770
+      },
+      "full_normal_attempt2_actual_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt2-actual-failure.json",
+        "sha256": "7962b1834902e6fac71a38e5b513c2cd818361868f64c3c06f15b09298ccff94",
+        "bytes": 1663
+      },
+      "public_pause_corrections_format_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-public-pause-corrections-format-actual-exit.json",
+        "sha256": "4d21a642eb202235e51c7b6e27344213dbcea8e5bdf29e70616356759e69e24b",
+        "bytes": 783
+      },
+      "python_checks_run": true,
+      "rust_runtime_tests_and_coverage_reached": true,
+      "full_normal_attempt3_actual_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt3-actual-failure.json",
+        "sha256": "8bb0d72fbad0d9ac012525e8647dbecc16bfb92c80e4ef833922e51fc3d58834",
+        "bytes": 1865
+      },
+      "full_normal_attempt4_actual_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt4-actual-failure.json",
+        "sha256": "956a67ab42f4f687b92cffd549f3e2ecc3bb6be075072fae583811531c234ded",
+        "bytes": 2621
+      },
+      "selected_reference_requalification_state": "Actual unchanged-probe run passed once; independent retained review CLEAR and separate explicit selection recorded. Original SDK, metadata, probe and cache unchanged. No full-normal or release qualification inferred.",
+      "selected_runtime_probe_actual0": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/zenoh-runtime-probe-current-libc-attempt1/actual-exit.json",
+        "sha256": "6c486d57c36de74b37feddd1854f6f8831e4d03cd2c2ea5ba86e037029639131",
+        "bytes": 1796
+      },
+      "selected_runtime_probe_manifest": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/zenoh-runtime-probe-current-libc-attempt1/selection.json",
+        "sha256": "b1758040c77574bdfd53410e891db04cd9659f8c0d7fec9b44c4be4f5cfa22b1",
+        "bytes": 1111
+      },
+      "normal_attempt5_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt5-actual-failure.json",
+        "sha256": "7300d103a8d83ae6c08e18a98443051fc87654b2a494920a34b5443e46921547",
+        "actual_root_exit_code": 1,
+        "headless_failed_targets": 2,
+        "qualification_claimed": false
+      },
+      "corrective_batch": "Explicit exact three-leaf historical DART dependency projection with all18 strict live checks and unchanged native replay; restoration-only trusted private/native witness with structural/owner/peer errors before valid metadata Reset classification. Preserve all old assertions. Complete whole Source review before one affected formatter and one full normal; no successful native/probe replay.",
+      "normal_attempt6_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt6-actual-failure.json",
+        "sha256": "fc3e1d00d6862a44fe8f5d44bd292ea99c72f8554536543b372a680c0038ef12",
+        "actual_root_exit_code": 1,
+        "test_compile_errors": 2,
+        "qualification_claimed": false
+      },
+      "normal_attempt7_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m58-delivery/m58-normal-attempt7-actual-failure.json",
+        "sha256": "08306da1fec3487e1e12fdaebf92aef442d3307f90900a966a7c912aaf46dca7",
+        "actual_root_exit_code": 1,
+        "headless_Rust_passes": 1980,
+        "headless_Rust_failures": 0,
+        "gate": "strict changed executable lines versus actual parent",
+        "covered": 581,
+        "count": 612,
+        "qualification_claimed": false
+      },
       "full_normal_actual0": {
         "sha256": "4cf24dc4c00febb77b9364d417c22f9f811eef12497f3886db6fb8c8a3f44833",
         "bytes": 4911
@@ -2704,8 +2367,7 @@
       "provisional_local_qualification": {
         "sha256": "fff92a1f7398614f4fdb4fde2cfc013596044da17e81a2e8765a1209442f8b4a",
         "bytes": 407300
-      },
-      "rust_runtime_tests_and_coverage_reached": true
+      }
     },
     {
       "id": "M59",
@@ -2724,11 +2386,11 @@
       "source_preparation_basis_accepted": false,
       "source_authorship_released": true,
       "product_checks_run": true,
-      "full_normal_passed": false,
-      "independent_local_DATA_passed": false,
-      "runtime_provisionally_locally_qualified": false,
+      "full_normal_passed": true,
+      "independent_local_DATA_passed": true,
+      "runtime_provisionally_locally_qualified": true,
       "accepted": false,
-      "current_stage": "The sixth full normal returned exit 1 after 1,798.811 seconds: 2,011 headless passes, zero failures and five existing ignored controls; 449 Python checks and native-free/RGB qualification with 33 finite examples completed. Scene changed-line coverage of 363/391 failed the strict >95% gate; Server 700/721 is derived only. Renderer, full normal and DATA remain pending. Two Scene cases are complete, independently reviewed Source (32 H/15 R combined, not new passes). All six failures remain retained.",
+      "current_stage": "Provisionally locally qualified at 7f849bd3/tree 0184 after full normal exit 0 and independent retained DATA exit 0: 2,013 headless and 1,176 overlapping renderer tests, 449 Python checks, 33 finite examples and strict coverage. All 573 headless/262 renderer named controls and four byte-exact RAW comparisons (1,831/401/47/33 files) passed. Six earlier failures remain retained. Accepted-predecessor, hosted, official and Main gates still hold acceptance/publication.",
       "parent_provisional_local_qualification": {
         "sha256": "fff92a1f7398614f4fdb4fde2cfc013596044da17e81a2e8765a1209442f8b4a",
         "bytes": 407300
@@ -2764,6 +2426,18 @@
       "retained_normal_attempt5_failure": {
         "sha256": "5a8edfff8e8dcb6ac33e03717f8efd02217c0f0cb77a23be74d1af0c31958f85",
         "bytes": 2236
+      },
+      "provisional_local_qualification": {
+        "path": "artifacts/m59-delivery/provisional-local-qualification.json",
+        "sha256": "686fa74389f619d17e294f38d8c7f739fac84c237f8dc7fba6b0a43ef00b4bd1"
+      },
+      "normal_actual0": {
+        "path": "artifacts/m59-delivery/m59-normal-attempt7-actual-success.json",
+        "sha256": "8ad15c8704c20644dc472b8a7e6da7402edcf466476783ea730bdcce823fcf9b"
+      },
+      "DATA_actual0": {
+        "path": "artifacts/m59-delivery/independent-retained-normal-audit-actual-exit.json",
+        "sha256": "89e69a5e9a78709b113474422ba4b9bca39459b17fd3c060dad271fa5bfa6020"
       }
     },
     {
@@ -2781,12 +2455,41 @@
       "source_preparation_basis_commit": "173b31d2d13889f851c58dfff1ea81a34680ede8",
       "source_preparation_basis_accepted": false,
       "source_authorship_released": true,
-      "product_checks_run": false,
+      "product_checks_run": true,
       "full_normal_passed": false,
       "independent_local_DATA_passed": false,
       "runtime_provisionally_locally_qualified": false,
       "accepted": false,
-      "current_stage": "All eight package/launcher/regression/guide Source leaves and completed correction are independently reviewed. Three Source-only build/metadata/assembly procedures are reviewed with real-input selectors held. No M60 tests or operations ran. Integration waits for actual M59 normal and retained DATA."
+      "current_stage": "The first full mandatory normal is running on the independently reviewed and formatted integrated M60 source, tree 351670d1 over locally qualified M59 7f849bd3. No M60 pass or independent DATA is claimed. After genuine success, fresh source-bound builds, notices/ELF collection, package/relocation audits, clean Ubuntu installation, installed joint-helper and both M59 command-route motion/odometry proofs, browser controls and owned shutdown remain required.",
+      "integrated_parent": "7f849bd3e6b1d9842bdde415d9f2923e09ef0b0e",
+      "parent_provisional_local_qualification": {
+        "path": "artifacts/m59-delivery/provisional-local-qualification.json",
+        "sha256": "686fa74389f619d17e294f38d8c7f739fac84c237f8dc7fba6b0a43ef00b4bd1"
+      },
+      "parent_normal_actual0": {
+        "path": "artifacts/m59-delivery/m59-normal-attempt7-actual-success.json",
+        "sha256": "8ad15c8704c20644dc472b8a7e6da7402edcf466476783ea730bdcce823fcf9b"
+      },
+      "parent_DATA_actual0": {
+        "path": "artifacts/m59-delivery/independent-retained-normal-audit-actual-exit.json",
+        "sha256": "89e69a5e9a78709b113474422ba4b9bca39459b17fd3c060dad271fa5bfa6020"
+      },
+      "integrated_tree": "351670d1d490e0e6b36d190eb3bcc4b79ee4799a",
+      "source_format_actual0": {
+        "path": "artifacts/m60-delivery/m60-complete-source-format-actual-exit.json",
+        "sha256": "0923ebe3719b85fc8b48353d6b34a6bec5205f9015686dde143b863eaa28ab5c",
+        "bytes": 609
+      },
+      "authored_control_census": {
+        "path": "artifacts/m60-delivery/m60-authored-control-census-final-staged-source.json",
+        "sha256": "70932b6d22aa72312ea5fc84ecdbf5e90b5e2cb61945ee8db46856718e63b510",
+        "bytes": 19381
+      },
+      "full_normal_attempt1_active": {
+        "path": "artifacts/m60-delivery/development-checkpoint-m60-normal-attempt1-active.json",
+        "sha256": "ec8550d95b75cbfde9e34ac0f526ffcdcb8e2a2c928fe049a52afbd0b378aeee",
+        "bytes": 1269
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -2853,7 +2556,7 @@
     "M60": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-14T23:14:15.465049+00:00",
+  "phase_started_at": "2026-11-15T07:37:14.885903+00:00",
   "active_phases": [
     "M43",
     "M44",
@@ -3135,28 +2838,28 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M42 and175 slices remain accepted; M40 is installed Latest. M43\u2013M58 are provisionally locally qualified but unaccepted. M59 final verification is active; M60 package and selector Source preparation runs in parallel. No current M59/M60 full pass is claimed. Accepted predecessors, exact hosted CI, official audits and Main/readbacks remain mandatory; Ubuntu snapshot recovery is unconfirmed.",
+  "acceptance_boundary": "M1\u2013M42 and 175 slices remain accepted; M40 remains Latest. M43\u2013M59 are provisionally locally qualified. M59 exact7f849 passed full normal and independent retained DATA, with all six failures preserved. M60 reviewed Source is integrated on that parent; no M60 check/build/package/install/browser pass is claimed. Accepted predecessors, exact hosted success, official audits and Main/release readbacks remain mandatory before acceptance or publication.",
   "current_delivery_group": [
     "M43",
     "M44"
   ],
-  "current_development_phase": "M59",
+  "current_development_phase": "M60",
   "board": {
-    "updated_at": "2026-11-15T06:35:59.265574+00:00",
+    "updated_at": "2026-11-15T07:51:51.734194+00:00",
     "current": {
-      "title": "M59 verification \u00b7 M60 preview",
+      "title": "M60 verification \u00b7 Current installed preview",
       "items": [
-        "M59\u2019s seventh verification is running after source review of the completed coverage-regression batch. Six failed runs remain retained; no new pass is claimed.",
-        "M60 package and launcher Source is independently ready. Integration and proof operations remain held for M59 verification and its independent results audit."
+        "M60\u2019s full verification is running after complete Source review and formatting. Its result and independent results audit are pending.",
+        "M59 passed local verification and its independent audit. M60 build, package, clean installation and two-robot browser proof remain ahead."
       ]
     },
     "done": [
-      "MVP and M1\u2013M42 accepted and published.",
-      "M40 is the latest installable preview.",
-      "M43\u2013M58 passed local verification and independent results audits; release qualification remains pending."
+      "MVP and M1\u2013M42 accepted and published: 175 accepted slices.",
+      "M40 remains the latest installable preview.",
+      "M43\u2013M59 passed local verification and independent results audits; release acceptance remains pending."
     ],
     "next": [
-      "Finish M59 verification and its independent results audit, then integrate M60 and prove the installed two-robot preview.",
+      "After M60 verification and audit: source-bound builds/notices, package audits, clean Ubuntu installation, installed joint-helper and two-robot forward/turn/odometry proof, browser controls and owned shutdown.",
       "Complete accepted predecessors, hosted CI, official audits and Main readbacks before publication or acceptance."
     ],
     "blocker": {
@@ -3165,7 +2868,5 @@
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
-  "parallel_source_phases": [
-    "M60"
-  ]
+  "parallel_source_phases": []
 }
