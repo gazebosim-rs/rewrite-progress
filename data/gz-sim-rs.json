@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-14T23:14:15.465049+00:00",
+  "updated_at": "2026-11-15T00:25:39.051057+00:00",
   "state": "active",
-  "summary": "M58 completed local verification and its independent results audit. M59 integration is active on that locally qualified parent; required checks remain pending.",
+  "summary": "M59\u2019s fourth full verification is active after batched test-loop corrections. Three earlier failures remain retained; no full result or audit is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "QLT-01",
-      "title": "M58 \u00b7 Local qualification complete",
-      "detail": "The full staged hook and independent retained audit passed, including 1,981 headless and 1,161 overlapping renderer tests, 448 Python checks and 32 finite examples. Seven normal failures and two reader failures remain preserved. Hosted and official release qualification remain pending."
+      "title": "M59 \u00b7 Full verification active",
+      "detail": "The fourth mandatory full normal is active after the complete test-loop correction batch passed independent Source review and affected formatting. Three earlier runs failed before Python, runtime tests or coverage. No current full result, strict coverage pass or independent audit is claimed."
     },
     {
       "id": "REF-01",
@@ -19,7 +19,7 @@
     {
       "id": "SYS-EXTENSION",
       "title": "M59 \u00b7 Two differential-drive robots",
-      "detail": "Reviewed Scene, Server/IO, fixture and canonical peer sources are adopted on the locally qualified M58 commit. Shared identity, reset, endpoint and consumer integration is active. M59 formatting, tests, coverage and independent audit have not run."
+      "detail": "Scene, Server/IO and canonical C++ interoperability Source is integrated on locally qualified M58. Batched test-loop corrections are reviewed and formatted. Required checks are active; no M59 runtime or native-peer pass is claimed."
     }
   ],
   "accepted_slices": [
@@ -900,7 +900,7 @@
     }
   ],
   "remaining": [
-    "Complete M59 implementation, regressions and review; then run one full verification pass and its independent audit.",
+    "Complete M59 full verification and its independent results audit, then continue the next bounded increment.",
     "Complete hosted and official release qualification before acceptance or publication."
   ],
   "blockers": [
@@ -958,7 +958,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Displayed numeric metrics remain M57 measurements. M58 passed full verification and an independent retained results audit; its detailed measurements remain in the reviewed report. Seven normal and two reader failures are preserved. M59 integration is active; hosted and official release gates remain held.",
+    "note": "Displayed numeric metrics remain M57 measurements. M58 passed full verification and its independent audit. M59\u2019s fourth full normal is active after batched test-loop corrections. Three earlier runs failed before Python, runtime tests or coverage and remain retained. No current M59 full result or independent DATA is claimed; hosted and official release gates remain held.",
     "renderer_coverage": {
       "lines": [
         19966,
