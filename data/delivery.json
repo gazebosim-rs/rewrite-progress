@@ -2810,6 +2810,28 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "formatter_actual_exit": 0
+    },
+    {
+      "id": "M64",
+      "title": "Cylinder visuals in RGB camera snapshots",
+      "max_working_days": 5,
+      "depends_on": [
+        "M60"
+      ],
+      "scope": "Opaque, positive finite Z-axis cylinder visuals in the existing calibrated 64\u00d764 RGB snapshot and worker path. Use explicit protocol4 geometry and one cached 32-sector cylinder mesh. Preserve box APIs and pixels, mixed visual limits and box-only generic/depth extraction.",
+      "acceptance": "Complete implementation, regression Source, docs and independent review before consolidated checks. Require real software-worker silhouettes, axis/local pose/origin/occlusion, shape replacement/assets/readiness/purity/cancel/reset/stale controls and canonical Image/CameraInfo with actual owned child wait. Full unchanged normal, strict workspace/per-crate/actual-parent coverage, local DATA, exact hosted, official DATA and Main gates precede acceptance.",
+      "excluded": "Cylinder physics/collisions/solver, new transport or renderer framework, material/lighting/depth geometry, tessellation API, SDK or native Ogre parity, M63 pair dependency, viewer/package refresh and broad compatibility inventory.",
+      "evidence": "docs/M64_DELIVERY.md",
+      "source_preparation_basis_commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",
+      "source_preparation_basis_accepted": true,
+      "source_preparation_started_at": "2026-11-15T22:44:51.063806+00:00",
+      "implementation_started": true,
+      "accepted": false,
+      "checks_run": false,
+      "current_stage": "Implementation, regression Source, fixture, guides and shared integration are complete and independently reviewed. Both review finding classes were fixed before one consolidated formatter, which exited zero. Actual software/canonical execution and all product/full qualification gates remain unrun and SSD-held; no acceptance.",
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "formatter_actual_exit": 0
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -2876,7 +2898,8 @@
     "M60": "complete",
     "M61": "blocked",
     "M62": "blocked",
-    "M63": "blocked"
+    "M63": "blocked",
+    "M64": "blocked"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-15T17:09:42.171032+00:00",
@@ -3160,22 +3183,33 @@
       ],
       "integration": "M61/M62 staged17285 stays frozen and unqualified while M63 develops independently on accepted M60 a1a. No API or result transfer; later integration requires complete overlap review and every feature proof plus fresh full gates. Root serializes heavy operations; capacity and exact cleanup approval remain held.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M61",
+        "M62",
+        "M63",
+        "M64"
+      ],
+      "integration": "M61/M62 staged17285 and M63 staged33ec remain frozen/unqualified while M64 develops independently on accepted M60. No API/result transfer; actual later overlap/protocol/registry review and every own proof/full gate required. Root serializes heavy work; SSD and exact cleanup approval holds remain.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M60 and193slices are accepted, M60 Latest. M61/M62 Source is complete and staged but untested/unaccepted. M63 starts independently on accepted M60; full normal/strict actual-parent/local DATA/exact hosted/official/Main gates remain mandatory for each before acceptance. Capacity holds product verification. No result transfers.",
+  "acceptance_boundary": "M1\u2013M60 and 193 slices are accepted; M60 remains Latest. M61\u2013M64 implementation, source review and formatting are complete, but product qualification and acceptance are unrun. Independent candidates on accepted M60 require overlap review and their own unchanged feature/full gates before later integration. SSD capacity holds verification; no result transfers.",
   "current_delivery_group": [
     "M61",
     "M62",
-    "M63"
+    "M63",
+    "M64"
   ],
-  "current_development_phase": "M63",
+  "current_development_phase": "M64",
   "board": {
-    "updated_at": "2026-11-15T21:56:05.820338+00:00",
+    "updated_at": "2026-11-15T23:09:24.246967+00:00",
     "current": {
-      "title": "M63 source complete; two-camera qualification needs SSD space",
+      "title": "M64 cylinders: source ready; verification needs SSD space",
       "items": [
-        "The two-camera RGB application, Server/CLI integration, dual-view regression code, fixture and guide are integrated and independently reviewed. The consolidated formatter passed; product verification is unrun.",
-        "M61/M62 remain frozen and untested. M1\u2013M60 and all 193 accepted slices are preserved; M60 stays Latest with 33 installed examples."
+        "Cylinder visuals, explicit protocol4 messages, RGB extraction and regression code are integrated and independently reviewed. Formatting passed; real pixel/canonical tests and full qualification are unrun.",
+        "M61/M62 and M63 remain frozen and untested. M1\u2013M60 and all 193 accepted slices are preserved; M60 stays Latest with 33 installed examples."
       ]
     },
     "done": [
@@ -3185,7 +3219,7 @@
     ],
     "next": [
       "Restore SSD capacity or approve the exact six-target compiler-cache recovery; preserve all source and qualification evidence.",
-      "Run the real dual-worker/canonical and full normal/strict/local DATA checks, then exact hosted/official/Main gates before accepting new work."
+      "Qualify queued candidates with their own feature controls and full normal, coverage, DATA, hosted and Main gates; accept only actual successes."
     ],
     "blocker": {
       "text": "Full verification needs 14 GiB free SSD at launch; about 8.1 GiB is available. The preceding run used about 25 GiB of scratch, so 35 GiB free is the practical target. Exact cleanup approval is still pending.",
@@ -3193,7 +3227,5 @@
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
-  "parallel_source_phases": [
-    "M63"
-  ]
+  "parallel_source_phases": []
 }
