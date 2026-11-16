@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-16T02:01:52.974890+00:00",
+  "updated_at": "2026-11-16T02:57:36.058386+00:00",
   "state": "active",
-  "summary": "The third M61/M62 full normal is running under inherited-context supervision; namespace preflight passed, with no product result yet. Camera qualification remains queued. M1\u2013M60 and 193 slices remain accepted.",
+  "summary": "The fourth M61/M62 full normal is running after reviewed regression Source and formatting. All three failures remain retained; camera checks are unrun. M1\u2013M60 and 193 slices stay accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "REF-01",
-      "title": "M61/M62 \u00b7 Third full normal running",
-      "detail": "The detached supervisor, controller and Git child are actually running. The namespace preflight exited zero in 0.1015 seconds; it is not a product pass. Both earlier failures and their partial results remain retained. No new runtime, coverage or qualification result is claimed; all unchanged full gates still apply."
+      "title": "M61/M62 \u00b7 Fourth full normal running",
+      "detail": "One full normal is actually running under inherited-host supervision after review and formatting of the two wildcard-key negatives. Production and thresholds are unchanged. The third run passed 2,040 headless tests, Python 462, RGB 9 and finite 35, but failed strict changed-line coverage at 14/15 before renderer. No fourth-run product result or qualification yet."
     },
     {
       "id": "RENDER-01",
@@ -985,8 +985,8 @@
     }
   ],
   "remaining": [
-    "Inspect the running full normal\u2019s actual result; batch any real findings before corrections, then require independent retained DATA after success.",
-    "Preserve both earlier failures and the first run\u2019s unknown controller/Git exits; their Python 462 and finite 35 results remain partial, not third-run passes.",
+    "Finish the fourth full normal and inspect its actual outcome; require independent retained DATA after success.",
+    "Preserve all three failures, their partial test results and actual wait versus unknown-exit distinctions.",
     "Qualify camera composition with every own feature control and fresh full gates; review overlaps before later integration and acceptance."
   ],
   "blockers": [],
@@ -1042,7 +1042,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed metrics remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest with 33 installed examples. The third M61/M62 normal is running; only namespace preflight passed so far. Both earlier failures, their Python 462/finite 35 partial results and distinct exits remain retained. No new product, coverage or qualification result is claimed. Camera product checks remain unrun.",
+    "note": "Displayed metrics remain M57 measurements and its linked hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. The third run had 2,040 headless passes, none failed and five ignored; all 24 new controls, Python 462, RGB 9 and finite 35 passed. Server changed-line coverage failed at 14/15; renderer was not reached. Its controller and Git waits returned 1 and reaped; supervisor own exit is UNKNOWN. The reviewed, formatted regression is in the fourth running normal with no new outcome. All three failures remain retained; camera checks are unrun.",
     "renderer_coverage": {
       "lines": [
         19966,
