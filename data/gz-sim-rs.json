@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-16T16:39:06.243439+00:00",
+  "updated_at": "2026-11-16T17:30:00.650815+00:00",
   "state": "active",
-  "summary": "Eight-robot fleets, paired RGB cameras and cylinders are in their third full verification run. The prior run stopped at a nine-versus-ten CLI registry mismatch; reviewed correction requires all ten. M1\u2013M60 and 193 slices stay accepted.",
+  "summary": "Eight-robot fleets, paired RGB cameras and cylinders are in their fourth full normal. The complete correction passed Source review and one formatter; no new full pass is claimed. M1\u2013M60 and 193 slices stay accepted; M60 stays Latest.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "REF-01",
       "title": "M61\u2013M64 \u00b7 Fleet and camera verification running",
-      "detail": "The prior full run passed strict lint, 466 Python checks, 37 finite examples and ten RGB CLI cases, then stopped at the old nine-case registry guard. Its reviewed correction requires all ten and strengthens rejection controls; Rust and production are unchanged. The third full normal is active, with namespace preflight zero as readiness only. Full runtime, coverage and qualification remain pending."
+      "detail": "Normal3 failed five renderer cases across four targets after 2685.018 seconds; headless2042/0/5 and renderer1211/5/4 are overlapping partials. The complete six-background/two-client test correction passed independent Source review and one four-file formatter; production and strict assertions are unchanged. The fourth full normal is active; launch/startup is readiness only. No full pass or qualification is claimed."
     },
     {
       "id": "RENDER-01",
@@ -985,7 +985,7 @@
     }
   ],
   "remaining": [
-    "Inspect the third full normal\u2019s actual outcome and batch real findings before corrections; require independent retained DATA only after full normal success.",
+    "Inspect the fourth full normal\u2019s actual outcome and batch real findings before corrections; require independent retained DATA only after full normal success.",
     "Require every fleet/camera feature\u2019s own proof and strict actual-M60-parent coverage; do not transfer old fleet or camera results to this atomic candidate.",
     "Run exact new-head hosted CI and independent official DATA, then ordinary Main/readbacks before atomic M61\u2013M64 acceptance; preserve M60 Latest.",
     "Retain the reboot-loss assessment; do not claim lost RAM originals or journals were archived or fully recovered."
@@ -1043,7 +1043,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed metrics remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest with 33 installed examples. Prior-run lint, Python466, finite37 and RGB CLI10 passed before the nine-case registry guard failed. The reviewed correction requires ten; full normal3 is active, with full runtime/coverage still pending. Vendor bytes are unchanged; reboot losses remain disclosed. No new qualification or acceptance is claimed.",
+    "note": "Displayed metrics remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices stay accepted; M60 Latest/install33 is unchanged. Normal3 failed five renderer cases; headless2042/0/5 and renderer1211/5/4 overlap and are partial, never summed. The complete test-only correction passed independent Source review and one formatter. Full normal4 is active; launch/startup is not a product pass. No new qualification or acceptance; unchanged vendor bytes and reboot losses remain disclosed.",
     "renderer_coverage": {
       "lines": [
         19966,
