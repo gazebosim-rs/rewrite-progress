@@ -2759,14 +2759,15 @@
       "selected_at": "2026-11-15T17:09:42.171032+00:00",
       "accepted_parent_commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",
       "implementation_started": true,
-      "current_stage": "Implementation, regression Source, documentation, independent source review and formatting are complete. Owner-authorized compiler-cache cleanup restored SSD capacity; product qualification is queued and unrun. Candidate Source stays frozen; all own feature and normal/strict/DATA/hosted/official/Main gates remain required.",
+      "current_stage": "Reviewed full normal commit hook is actually running on the frozen combined candidate. No successful normal result, local qualification or acceptance yet. All remaining strict/DATA/hosted/official/Main gates remain required.",
       "source_preparation_started_at": "2026-11-15T17:09:42.171032+00:00",
       "implementation_complete": true,
       "independent_source_review_complete": true,
-      "checks_run": false,
+      "checks_run": true,
       "accepted": false,
       "formatter_actual_exit": 0,
-      "qualification_capacity_restored_at": "2026-11-15T23:24:15.474569+00:00"
+      "qualification_capacity_restored_at": "2026-11-15T23:24:15.474569+00:00",
+      "qualification_state": "running"
     },
     {
       "id": "M62",
@@ -2783,13 +2784,14 @@
       "source_preparation_basis_accepted": true,
       "source_preparation_started_at": "2026-11-15T18:54:42.288412+00:00",
       "accepted": false,
-      "checks_run": false,
-      "current_stage": "Implementation, regression Source, documentation, independent source review and formatting are complete. Owner-authorized compiler-cache cleanup restored SSD capacity; product qualification is queued and unrun. Candidate Source stays frozen; all own feature and normal/strict/DATA/hosted/official/Main gates remain required.",
+      "checks_run": true,
+      "current_stage": "Reviewed full normal commit hook is actually running on the frozen combined candidate. No successful normal result, local qualification or acceptance yet. All remaining strict/DATA/hosted/official/Main gates remain required.",
       "implementation_started": true,
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "formatter_actual_exit": 0,
-      "qualification_capacity_restored_at": "2026-11-15T23:24:15.474569+00:00"
+      "qualification_capacity_restored_at": "2026-11-15T23:24:15.474569+00:00",
+      "qualification_state": "running"
     },
     {
       "id": "M63",
@@ -2808,7 +2810,7 @@
       "implementation_started": true,
       "accepted": false,
       "checks_run": false,
-      "current_stage": "Implementation, regression Source, documentation, independent source review and formatting are complete. Owner-authorized compiler-cache cleanup restored SSD capacity; product qualification is queued and unrun. Candidate Source stays frozen; all own feature and normal/strict/DATA/hosted/official/Main gates remain required.",
+      "current_stage": "The independently reviewed donor remains frozen and unqualified. Separate camera composition, both own proof sets and a real pair-cylinder control are complete and independently reviewed; one consolidated formatter exited zero. Product qualification remains unrun and all own/fresh full gates are required.",
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "formatter_actual_exit": 0,
@@ -2831,7 +2833,7 @@
       "implementation_started": true,
       "accepted": false,
       "checks_run": false,
-      "current_stage": "Implementation, regression Source, documentation, independent source review and formatting are complete. Owner-authorized compiler-cache cleanup restored SSD capacity; product qualification is queued and unrun. Candidate Source stays frozen; all own feature and normal/strict/DATA/hosted/official/Main gates remain required.",
+      "current_stage": "The independently reviewed donor remains frozen and unqualified. Separate camera composition, both own proof sets and a real pair-cylinder control are complete and independently reviewed; one consolidated formatter exited zero. Product qualification remains unrun and all own/fresh full gates are required.",
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "formatter_actual_exit": 0,
@@ -3197,9 +3199,17 @@
       ],
       "integration": "M61/M62 staged17285 and M63 staged33ec remain frozen/unqualified while M64 develops independently on accepted M60. No API/result transfer; actual later overlap/protocol/registry review and every own proof/full gate required. Root serializes heavy work; SSD and exact cleanup approval holds remain.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M63",
+        "M64"
+      ],
+      "integration": "Compose the two frozen, source-reviewed camera candidates on accepted M60: preserve pair ownership, explicit protocol4 shapes, both own controls, exact C++ modes and first33 plus both finite fixtures; add one real pair-cylinder control. Complete independent integration review and one formatter before full qualification. M61/M62 normal may run concurrently; later merging waits for actual result and DATA and preserves every repair. No result or acceptance transfers.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M60 and 193 slices are accepted; M60 remains Latest. M61\u2013M64 source review and formatting are complete, but product qualification and acceptance are unrun. Exact owner-authorized cache cleanup restored SSD capacity. Frozen independent candidates still need overlap review and their own unchanged feature/full gates; no result transfers.",
+  "acceptance_boundary": "M1\u2013M60 and 193slices remain accepted; M60 is Latest. M61/M62 full normal is running with no success claimed. M63/M64 composition, independent source review and formatting are complete; original donors remain frozen. Every own feature proof and fresh full normal/strict/DATA/hosted/official/Main gate remains mandatory; no result or acceptance transfer.",
   "current_delivery_group": [
     "M61",
     "M62",
@@ -3208,12 +3218,12 @@
   ],
   "current_development_phase": "M64",
   "board": {
-    "updated_at": "2026-11-15T23:24:15.474569+00:00",
+    "updated_at": "2026-11-16T00:00:26.016461+00:00",
     "current": {
-      "title": "M61\u2013M64 source ready; disk capacity restored",
+      "title": "M61/M62 verification running; camera integration ready",
       "items": [
-        "The reviewed six compiler-cache directories are removed. About 28 GiB was recovered; 35.8 GiB SSD is free, clearing the verification starting reserve. Source and qualification evidence are preserved.",
-        "M61\u2013M64 implementation, regression code, documentation and independent source review are complete; formatting passed. Their product verification is queued and unrun."
+        "The full normal commit hook is running on the reviewed eight-drive/eight-controller candidate. Strict coverage, independent retained DATA and hosted checks still gate acceptance.",
+        "Two-camera RGB and cylinder-camera source is combined, independently reviewed and formatted in a separate tree. Both originals and all own controls are preserved; camera product qualification remains unrun."
       ]
     },
     "done": [
@@ -3223,8 +3233,8 @@
       "Owner-approved disk recovery completed with independent retained-data review. All six selected caches are absent; protected evidence is unchanged."
     ],
     "next": [
-      "Run the queued M61/M62 full normal and strict coverage checks, then independent local DATA. Keep M63/M64 frozen until their reviewed qualification or integration.",
-      "Require each feature\u2019s own controls, overlap review, exact hosted CI, official DATA and ordinary Main/readbacks before accepting new phases."
+      "Inspect the actual M61/M62 result and batch any real failures before affected reruns; require independent retained DATA after normal success.",
+      "Require the camera candidates\u2019 own feature controls, overlap review and fresh full normal, strict coverage, DATA, hosted and Main gates before acceptance."
     ],
     "blocker": {
       "text": "",
@@ -3232,5 +3242,22 @@
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
-  "parallel_source_phases": []
+  "parallel_source_phases": [],
+  "camera_integration": {
+    "scope": "M63/M64 composition only, not a new phase",
+    "basis_accepted_commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",
+    "donor_staged_trees": {
+      "M63": "33ec6cd49c14a145a889d3ca07637bb49fb7f4f4",
+      "M64": "b81b06ab56c717cd5150f44d5d7151b73fcc65a4"
+    },
+    "evidence": "docs/M63_M64_INTEGRATION.md",
+    "source_complete": true,
+    "formatter_run": true,
+    "product_checks_run": false,
+    "accepted": false,
+    "source_finite_example_obligations": 35,
+    "installed_accepted_examples": 33,
+    "independent_source_review_complete": true,
+    "formatter_actual_exit_code": 0
+  }
 }
