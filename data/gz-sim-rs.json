@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-16T18:28:41.906452+00:00",
+  "updated_at": "2026-11-16T18:45:57.108391+00:00",
   "state": "active",
-  "summary": "Eight-robot fleets, paired RGB cameras and cylinders passed all 53 feature controls, but the full run failed strict camera-output coverage. Focused regressions are in development; no job is active or new phase accepted.",
+  "summary": "Eight-robot fleets, paired RGB cameras and cylinders are in their fifth full normal after ten new regression declarations passed Source review and formatting. Prior coverage failure remains; no new pass or acceptance is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "REF-01",
-      "title": "M61\u2013M64 \u00b7 Camera coverage regressions in development",
-      "detail": "Normal4 passed all 53 feature controls and the five previously failing camera cases, then failed strict camera-output region coverage. Retained changed-line data would also fail; that gate was not reached. Targeted public API, ownership, schedule and lifecycle regressions are under development. No heavy job is active; the next full normal follows complete Source review and one formatter."
+      "title": "M61\u2013M64 \u00b7 Fleet and camera verification running",
+      "detail": "Normal5 is active after complete Source review and one formatter. Ten new regressions bring the Source census to 63 unique Rust controls, not passes. Prior normal4 passed the original 53 but failed camera-output regions1876/2010; retained changed354/387 would fail, unexecuted. Four compile jobs retain resource, deadline, serial-heavy, test-thread and SDK caps; no speed or pass claim."
     },
     {
       "id": "RENDER-01",
@@ -985,7 +985,7 @@
     }
   ],
   "remaining": [
-    "Complete the targeted regressions and guides with independent Source review, then one formatter and consolidated full normal. Require independent retained DATA only after full normal success.",
+    "Inspect the fifth full normal\u2019s actual outcome and batch real findings; require independent retained DATA only after full normal and strict coverage success.",
     "Require every fleet/camera feature\u2019s own proof and strict actual-M60-parent coverage; do not transfer old fleet or camera results to this atomic candidate.",
     "Run exact new-head hosted CI and independent official DATA, then ordinary Main/readbacks before atomic M61\u2013M64 acceptance; preserve M60 Latest.",
     "Retain the reboot-loss assessment; do not claim lost RAM originals or journals were archived or fully recovered."
@@ -1043,7 +1043,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed metrics remain M57 and its exact CI. M1\u2013M60/193 slices stay accepted; M60 Latest/install33 is unchanged. Normal4 partials: headless2042/0/5, renderer1216/0/4 (overlap), Python466, finite37 and RGB10. All 53 feature controls and prior five cases passed, but camera-output regions1876/2010 failed; changed354/387 would fail (gate unreached). Targeted regressions are in development; no heavy job or new qualification. Vendor bytes and reboot-loss disclosures remain.",
+    "note": "Displayed metrics remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices stay accepted; M60 Latest/install33 is unchanged. Normal4 passed the original53 controls but failed camera-output regions1876/2010; changed354/387 was retained-only and unexecuted. Ten reviewed regression declarations bring Source to63 Rust (26H/46R/nine overlapping), not passes. Normal5 is active after one formatter, with no new qualification or acceptance. Vendor-byte and reboot-loss disclosures remain unchanged.",
     "renderer_coverage": {
       "lines": [
         19966,
