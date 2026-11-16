@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-15T23:24:15.474569+00:00",
+  "updated_at": "2026-11-16T00:00:26.016461+00:00",
   "state": "active",
-  "summary": "Disk recovery is complete: 28 GiB recovered and 35.8 GiB free. M61\u2013M64 source review and formatting are complete; product qualification is queued. M1\u2013M60 and 193 slices remain accepted.",
+  "summary": "M61/M62 full verification is running after disk recovery. Camera integration is reviewed and formatted, preserving both original candidates and own controls. M1\u2013M60 and 193 slices remain accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "REF-01",
-      "title": "M61/M62 \u00b7 Next full qualification",
-      "detail": "The reviewed and formatted drive/controller candidate remains frozen. Owner-authorized disk recovery cleared the capacity hold; full normal, strict coverage and independent local DATA are next. No product test or acceptance is claimed."
+      "title": "M61/M62 \u00b7 Full normal verification running",
+      "detail": "One reviewed full normal commit hook is running on the frozen eight-drive/eight-controller candidate, with actual resource guards and retained logs. No successful normal result or local qualification is claimed; strict coverage, independent DATA, hosted and Main gates still apply."
     },
     {
       "id": "RENDER-01",
-      "title": "M63/M64 \u00b7 Reviewed candidates queued",
-      "detail": "Two-camera RGB and cylinder-camera Source, regressions, fixtures and guides are reviewed and formatted. Their actual software-worker/canonical and full qualification gates are unrun; later composition requires overlap review."
+      "title": "M63/M64 \u00b7 Combined camera source ready",
+      "detail": "Both reviewed camera features, all own proof sets and one real pair-cylinder control are composed and independently source-reviewed. One consolidated formatter passed. The original candidates stay frozen; camera product qualification and acceptance are unrun."
     }
   ],
   "accepted_slices": [
@@ -985,9 +985,9 @@
     }
   ],
   "remaining": [
-    "Run queued full normal and strict workspace/per-crate/actual-parent verification, followed by independent local DATA.",
-    "Run each camera candidate\u2019s real feature controls and review overlaps before integrating candidates.",
-    "Require exact hosted CI, independent official DATA and ordinary Main/readbacks before accepting new phases."
+    "Complete the running M61/M62 full normal and inspect all actual outcomes; batch corrections if needed, then require independent retained DATA.",
+    "Qualify the reviewed camera composition with its own feature controls and fresh full checks; preserve original candidates and review all later overlaps.",
+    "Require overlap review, exact hosted CI, independent official DATA and ordinary Main/readbacks before accepting new phases."
   ],
   "blockers": [],
   "plan_status": {
@@ -1042,7 +1042,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Displayed numbers remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. M61\u2013M64 source review and formatting are complete, but product tests, new rendering/native results, coverage and acceptance are unrun. Owner-authorized cache recovery cleared the SSD capacity hold; historical evidence and other owners remain preserved.",
+    "note": "Displayed numbers remain M57 measurements and its exact hosted CI. M1\u2013M60 and 193 slices are accepted; M60 stays Latest. M61/M62 full normal is running with no success yet. M63/M64 source composition is reviewed and formatted; camera product checks are unrun. Historical evidence, original candidates and other owners remain preserved.",
     "renderer_coverage": {
       "lines": [
         19966,
