@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-16T21:43:26.429797+00:00",
+  "as_of": "2026-11-16T22:27:22.929910+00:00",
   "execution_state": "active",
   "current_phase": "M65",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -2896,7 +2896,7 @@
       "scope_independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Full local normal and independent retained DATA passed at the exact M65 commit. Required hosted CI is running. Fresh release builds, notices, package, supported installation, fleet application, browser and shutdown proofs remain pending; no acceptance or new Latest is claimed.",
+      "current_stage": "Full local normal, independent local DATA and exact hosted CI passed. Three release binaries and fresh dependency inventory are complete. Independent notice resolution, official artifact audit, assembly, clean installation and fleet/browser/shutdown evidence remain pending; no M65 acceptance or Latest update.",
       "source_finite_example_obligations": 37,
       "target_installed_examples": 35,
       "installed_accepted_examples": 33,
@@ -2908,7 +2908,7 @@
       "provisional_distribution_timing": "After actual accepted predecessor and M65 complete Source/review/formatter/full local normal plus independent local DATA0, separately reviewed same-head LOCAL PROVISIONAL release builds/notices/package/install/demo may overlap its own remote hosted/official closeout. Root serializes local heavy jobs; changed inputs require fresh applicable proofs. Exact hosted/official/durable/Main remain mandatory before acceptance/public release/Latest; no prior approval scope is reused.",
       "accepted_predecessor_record": "artifacts/m61-m64-delivery/acceptance-main-promotion.json",
       "formatter_actual_exit": 0,
-      "qualification_state": "local_normal_and_independent_DATA_clear_hosted_and_distribution_pending",
+      "qualification_state": "local_normal_DATA_and_exact_hosted_clear_distribution_pending",
       "local_qualification": {
         "commit": "069f315c1466c40120d85f6944a5f478ef6e9c71",
         "tree": "3b2e95214d1a058e4ba570469d2ee01f425be49d",
@@ -2932,8 +2932,19 @@
         "raw_comparisons_once_LAST": 4,
         "hosted_run": 43962566891,
         "hosted_attempt": 1,
-        "hosted_success": false,
+        "hosted_success": true,
         "fresh_distribution_passed": false,
+        "accepted": false
+      },
+      "provisional_distribution": {
+        "release_builds_passed": true,
+        "release_binaries": 3,
+        "metadata_inventory_passed": true,
+        "compiled_native_package_ids": 438,
+        "notice_resolution_passed": false,
+        "package_passed": false,
+        "installation_passed": false,
+        "fleet_browser_shutdown_passed": false,
         "accepted": false
       }
     }
@@ -3338,19 +3349,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M64 and 197 slices are accepted on Main. M65 full local verification and independent DATA passed at the exact reviewed commit; hosted CI and fresh distribution proofs are pending. M60 remains Latest with 33 examples.",
+  "acceptance_boundary": "M1–M64 and 197 slices are accepted. M65 full local verification, independent local DATA and exact hosted CI passed; release binaries and metadata inventory are ready. Official audit and fresh package, installation and fleet/browser proofs remain required. M60 stays Latest with 33 examples.",
   "current_delivery_group": [
     "M65"
   ],
   "current_development_phase": "M65",
   "board": {
-    "updated_at": "2026-11-16T21:43:26.429797+00:00",
+    "updated_at": "2026-11-16T22:27:22.929910+00:00",
     "current": {
-      "title": "Qualifying the installed eight-owner fleet release",
+      "title": "Preparing the 35-example installed fleet package",
       "items": [
-        "M65 passed full local verification and independent DATA: 2,046 headless tests, 1,226 overlapping renderer tests, 472 Python tests and 37 finite examples.",
-        "Exact-commit hosted CI is running while reviewed local release, package and installation work proceeds separately. M65 is not accepted yet.",
-        "The package targets 35 installed examples and selectable joint topics. M60 stays Latest with 33 examples and the unchanged viewer; RGB-worker distribution remains excluded."
+        "M65 passed full local verification, independent local DATA and exact-commit hosted CI. It remains unaccepted until the distribution and official evidence are complete.",
+        "The three release binaries and fresh dependency inventory are ready. Independent notice resolution and retained hosted-artifact review precede package assembly.",
+        "The refresh targets 35 installed examples, eight drive robots and sixteen controller inputs. M60 stays Latest with 33 examples; RGB-worker distribution remains excluded."
       ]
     },
     "done": [
@@ -3360,9 +3371,9 @@
       "The exact native build input remains available as a verified non-Latest prerelease; pinned versions and native build gates are unchanged."
     ],
     "next": [
-      "Finish hosted CI and independent official DATA with retained original artifacts.",
-      "Build the three release binaries, collect exact notices, then assemble and independently verify the relocated package.",
-      "Prove all 35 installed loads, eight-drive and sixteen-controller application and isolation, browser controls and clean shutdown before publication."
+      "Finish independent notice and hosted-artifact audits, then assemble and verify the relocated package.",
+      "Prove all 35 installed loads on clean Ubuntu, followed by command application and isolation across every fleet owner.",
+      "Retain actual browser Play/Pause/Reset and clean shutdown evidence before Main, release and Latest publication."
     ],
     "blocker": {
       "text": "",
