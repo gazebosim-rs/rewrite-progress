@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T04:22:45.617137+00:00",
+  "updated_at": "2026-11-17T05:35:54.258892+00:00",
   "state": "active",
-  "summary": "M66 sphere visuals are accepted after all gates and Main promotion: 66 phases, 199 slices. M67 ellipsoid visuals are selected for parallel development. M65 remains Latest with 35 installed examples.",
+  "summary": "M67 passed local normal, strict coverage and independent audit; exact hosted CI is running. M68 primitive-depth Source preparation overlaps those gates. M65 stays Latest with35 examples;199 slices are accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M67-RGB",
-      "title": "M67 \u00b7 RGB ellipsoid visuals",
-      "detail": "Adding opaque ellipsoid visuals through disjoint protocol, scene and renderer lanes after independent contract review. Reuse the existing sphere mesh; preserve depth and physics. Complete implementation and Source review precede consolidated tests."
+      "title": "M67 \u00b7 Hosted qualification",
+      "detail": "Locally qualified at exact cba09: 2,048 headless, 1,270 overlapping renderer, 480 Python, 39 finite examples and 12 RGB cases. All 21 feature controls and two separate support cases passed. Exact review CI44024955758 attempt1 is running."
+    },
+    {
+      "id": "M68-DEPTH",
+      "title": "M68 \u00b7 Parallel Source preparation",
+      "detail": "Adding bounded single-camera primitive depth in disjoint Source lanes after independent contract review. All formatter, tests and qualification wait for accepted M67 and complete feature review. No M68 product result exists."
     }
   ],
   "accepted_slices": [
@@ -1010,9 +1015,9 @@
     }
   ],
   "remaining": [
-    "Finish ellipsoid implementation, meaningful regressions and guides; batch independent review findings.",
-    "Run one consolidated normal and strict coverage cycle after the complete feature.",
-    "Retain exact hosted, official audit and Main gates before accepting M67."
+    "Finish M67 exact-commit hosted CI, durable original evidence and independent official audit, then promote the qualified Main commit.",
+    "Complete the M68 Source contract, implementation, meaningful regressions and guides in disjoint lanes.",
+    "Run M68 consolidated checks only after M67 acceptance and complete independent Source review."
   ],
   "blockers": [],
   "plan_status": {
@@ -1067,7 +1072,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M66 and 199 slices are accepted. M66 separately passed 2,047 headless, 1,247 overlapping renderer, 476 Python, 38 finite and 11 RGB checks, strict coverage, exact CI44010465041 and local/official audits. M67 has no measured results. M65 remains Latest with35 installed examples.",
+    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M66 and 199 slices are accepted; M65 is Latest with35 installed examples. M67 separately passed 2,048 headless and 1,270 overlapping renderer tests, 480 Python checks, 39 finite examples,12 RGB cases, strict coverage and independent local audit. Four RAW comparisons passed once. Exact hosted CI, official audit and Main remain.",
     "renderer_coverage": {
       "lines": [
         19966,
