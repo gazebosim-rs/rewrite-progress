@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T20:42:22.506879+00:00",
+  "updated_at": "2026-11-17T21:55:39.065713+00:00",
   "state": "active",
-  "summary": "The prior M70 package installed41 examples and robot controls were observed. An outer controller exit left final verification incomplete; cache and final-wait corrections are being implemented.",
+  "summary": "The cache-safe M70 candidate passed full local checks and an independent evidence audit. Exact hosted CI is running; fresh release and installed runtime proofs remain.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70-INSTALLED-CAMERA",
-      "title": "M70 \u00b7 Cache and final process-wait correction",
-      "detail": "The previous candidate passed code/package/install audits. Robot forward/turn/Pause/Reset were observed, but the outer controller exited143 before its final receipt. A bounded correction is being implemented and independently reviewed; new required checks and camera proofs remain."
+      "title": "M70 \u00b7 Qualifying the cache-safe camera preview",
+      "detail": "Full normal and independent local DATA passed for d0ba/419f. Exact hosted CI is running. Fresh release, package, installation, robot/browser and camera proofs remain; prior candidate evidence and all three browser failures are preserved."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,11 @@
     }
   ],
   "remaining": [
-    "Complete and review the cache and process-wait correction, then run its required final checks.",
-    "Complete the exact candidate\u2019s package, installation, robot and camera proofs, audit the results, then publish M70."
+    "Complete exact hosted CI and its independent audit for the locally qualified candidate.",
+    "Build and audit fresh release inputs, then complete package, installation, robot/browser and camera proofs before M70 publication."
   ],
   "blockers": [
-    "The outer browser controller exited 143 before its final receipt. Robot controls were observed and the container is stopped; the cause remains unknown. Reliable final-wait recording is being added."
+    "Exact hosted CI is running. Fresh release, installation, robot/browser and camera checks remain before M70 acceptance."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1083,7 +1083,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Numeric fields retain the M57 baseline. Previous M70 candidate916e passed normal/strict/exact hosted/official/package/install audits (2052 headless,1305 overlapping renderer,518 aggregate Python,41 finite loads). Actual robot controls and guest shutdown were observed, but outer143 left Docker wait and final controller completion unproved. Cache/final-wait corrections require new qualification; M70 remains unaccepted.",
+    "note": "Numeric fields retain the M57 baseline. Corrected M70 d0ba/419f passed full normal and independent local DATA:2052 headless and1305 overlapping renderer tests,521 aggregate Python tests,41 finite loads and14 RGB CLI cases. Its23 new Python declarations are not individual quiet-test pass claims. Exact hosted CI is running; fresh distribution/runtime gates and acceptance remain pending. Prior916e evidence and three browser failures remain historical; outer143 cause UNKNOWN.",
     "renderer_coverage": {
       "lines": [
         19966,
