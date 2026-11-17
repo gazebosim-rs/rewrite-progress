@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T09:46:27.882952+00:00",
+  "as_of": "2026-11-17T11:06:35.131956+00:00",
   "execution_state": "active",
   "current_phase": "M68",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3163,7 +3163,7 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Locally qualified at103fd927. Fresh package-only diagnostic verified all3signed releases/6pinnedindexes/16directpackages/22records, independent retained DATA CLEAR. One unchanged hosted44049236320 attempt2 running; official/Main/acceptance pending.",
+      "current_stage": "The exact signed-input delivery repair is independently reviewed and running its full normal hook. Original primitive-depth local evidence is retained separately; no repair result, hosted success or acceptance is claimed.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true,
@@ -3173,14 +3173,16 @@
         "headless": 1,
         "renderer": 21,
         "overlap": 1,
-        "Python": 4,
-        "separate_borrowed_renderer_support": 2
+        "Python": 16,
+        "separate_borrowed_renderer_support": 2,
+        "Python_runtime_feature": 4,
+        "Python_CI_input_delivery": 12
       },
       "source_finite_example_obligations": 40,
       "auxiliary_RGB_obligations": 13,
       "formatter_run": true,
       "formatter_actual_exit": 0,
-      "qualification_state": "locally_qualified_unchanged_hosted_attempt2_in_progress",
+      "qualification_state": "signed_metadata_delivery_repair_full_normal_in_progress",
       "prior_normal_failure": {
         "tree": "3f00c975c54cb0e9ef9f4aa28d0016b908cd5a50",
         "actual_Git_controller_wait_exit": 1,
@@ -3205,47 +3207,64 @@
         "case": "tests::depth_shape_wire_rejects_malformed_and_nonfinite_inputs_before_writing",
         "renderer_coverage_produced": false
       },
-      "staged_tree": "6fe3032b3475383415cf0b6cb35699fa9b7e2b61",
-      "normal_passed": true,
-      "locally_verified_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
-      "independent_local_DATA_passed": true,
-      "hosted_run": 44049236320,
-      "hosted_attempt": 1,
-      "hosted_state": "in_progress",
-      "hosted_success": false,
-      "hosted_attempt1_failure": {
-        "run": 44049236320,
-        "attempt": 1,
-        "head": "103fd9275637a1a18f416320c08893dcb2ecff75",
-        "watch_actual_exit": 1,
-        "APT_install_step5": "success",
-        "reference_setup_step6": "HTTP503 in verify_package_indexes at Packages.xz download",
-        "product_checks": "skipped",
-        "exact_failed_suite_component": "UNKNOWN",
-        "provider_cause": "UNKNOWN",
-        "original_jobs_ZIP_sha256": "10fd7566c0a707d875fe03084cbe7a4cde991785a1f2576802c7453057082e45",
-        "retry_released": false
+      "original_runtime_local_qualification": {
+        "commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
+        "tree": "6fe3032b3475383415cf0b6cb35699fa9b7e2b61",
+        "full_normal_actual_exit": 0,
+        "independent_local_DATA": true,
+        "headless": 2049,
+        "renderer_overlapping": 1293,
+        "Python_aggregate": 484,
+        "finite_examples": 40,
+        "RGB_cases": 13,
+        "raw_counts_once_LAST": [
+          1855,
+          504,
+          54,
+          57
+        ]
       },
-      "hosted_attempt2": {
-        "run": 44049236320,
-        "attempt": 2,
-        "head": "103fd9275637a1a18f416320c08893dcb2ecff75",
-        "request_actual_exit": 0,
-        "status": "in_progress",
-        "success": false,
-        "further_retry_released": false
+      "normal_passed": false,
+      "local_DATA_passed": false,
+      "locally_verified_commit": null,
+      "hosted_failures": [
+        {
+          "run": 44049236320,
+          "attempt": 1,
+          "head": "103fd9275637a1a18f416320c08893dcb2ecff75",
+          "actual_watch_exit": 1,
+          "step5_APT": "success",
+          "failed_step6": "Signed Packages.xz HTTP503 before vendor/build/product",
+          "product_checks": "skipped",
+          "provider_cause": "UNKNOWN"
+        },
+        {
+          "run": 44049236320,
+          "attempt": 2,
+          "head": "103fd9275637a1a18f416320c08893dcb2ecff75",
+          "actual_watch_exit": 1,
+          "step5_APT": "success",
+          "failed_step6": "Signed Packages.xz HTTP503 before vendor/build/product",
+          "product_checks": "skipped",
+          "provider_cause": "UNKNOWN"
+        }
+      ],
+      "input_delivery_repair": {
+        "archive_SHA256": "2eed96d6cb8c6b4d6cc5f61e35c81713254fd1906182354d0123d79ba17046e6",
+        "archive_bytes": 22428672,
+        "original_body_bytes": 22421298,
+        "members": 9,
+        "producer_actual_exit": 0,
+        "independent_archive_DATA": true,
+        "upload_performed": false,
+        "runtime_and_8SDK_inputs_unchanged": true,
+        "normal_run": true,
+        "accepted": false,
+        "independent_source_review_complete": true,
+        "normal_state": "in_progress",
+        "normal_passed": false
       },
-      "snapshot_recovery_diagnostic": {
-        "actual_Root_exit": 0,
-        "actual_child_exit": 0,
-        "independent_retained_DATA": true,
-        "signed_releases": 3,
-        "pinned_indexes": 6,
-        "direct_packages": 16,
-        "matching_records": 22,
-        "provider_cause": "UNKNOWN",
-        "not_CI_qualification": true
-      }
+      "staged_tree": "10101d116ecbd694f528cb9989f1a0014794d718"
     },
     {
       "id": "M69",
@@ -3257,21 +3276,22 @@
       "scope": "Exactly two homogeneous calibrated 64 by 64 depth cameras with independent demand, rates, workers and canonical metric-depth outputs through a separate depth-pair API.",
       "acceptance": "Complete implementation, meaningful regressions, guide and independent Source review; actual M68 acceptance before any checks. Then require a fresh full normal, strict actual-parent coverage, independent local DATA, exact hosted CI, durable originals, official audit and Main promotion.",
       "excluded": "RGBD registration, point clouds, noise, dynamic registration, renderer or physics changes, new dependencies or SDK/framework, package refresh, analytic/native Ogre/performance parity.",
-      "evidence": "docs/M69_DELIVERY.md",
+      "evidence": "docs/M68_SIGNED_INPUTS.md",
       "source_preparation_basis_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
       "source_preparation_basis_accepted": false,
       "source_preparation_basis_locally_qualified": true,
       "source_preparation_started_at": "2026-11-17T08:45:47.683966+00:00",
       "implementation_started": true,
       "implementation_complete": true,
-      "independent_source_review_complete": false,
+      "independent_source_review_complete": true,
       "scope_independent_source_review_complete": true,
       "accepted": false,
       "checks_run": false,
-      "current_stage": "All implementation and regression source lanes complete and independently reviewed; final integration/control-census Source review is finishing. No checks before actual M68 acceptance and complete review.",
+      "current_stage": "All source lanes, cross-seam review and initial control census are independently reviewed. Frozen until finally accepted M68 repair parent adoption and final Source bindings; no checks ran.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
-      "qualification_state": "source_in_progress_checks_held_for_M68_acceptance"
+      "qualification_state": "source_review_complete_checks_held_for_accepted_M68_parent",
+      "preformat_census_final_bindings": false
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3685,42 +3705,34 @@
       ],
       "integration": "M67 exact cba09 local normal/DATA passed and hosted/official/Main closeout continues. Isolated M68 Source preparation may proceed over locally qualified cba09; no formatter/tests/build/native or qualification before actual M67 acceptance and complete independent Source review. Any predecessor correction requires affected adoption/review; no result transfer.",
       "max_working_days": 5
-    },
-    {
-      "phases": [
-        "M68",
-        "M69"
-      ],
-      "integration": "M68 exact103fd passed full local normal and independent DATA while hosted closeout continues. Isolated M69 Source work may overlap; all M69 checks and publication require actual M68 acceptance and complete Source review. Preserve predecessor corrections, original failures and every own gate; no result transfer.",
-      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices accepted. M68 locally qualified at103fd927. After retained attempt1 HTTP503 and fresh signed-index diagnostic0 plus independent DATA, one unchanged hosted44049236320 attempt2 is running. M69 implementation/regression Source is complete and independently reviewed by lane; final integration/census review pending, checks wait M68 acceptance.",
+  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices are accepted. Original primitive depth passed local verification, but both exact hosted attempts failed before product on HTTP 503. The reviewed signed-input delivery repair is running its full normal hook; M69 reviewed source waits for accepted M68 and final parent bindings.",
   "current_delivery_group": [
     "M68"
   ],
-  "current_development_phase": "M69",
+  "current_development_phase": "M68",
   "board": {
-    "updated_at": "2026-11-17T09:46:27.882952+00:00",
+    "updated_at": "2026-11-17T11:06:35.131956+00:00",
     "current": {
-      "title": "Depth camera CI retry and source integration",
+      "title": "Verifying the depth-camera CI input repair",
       "items": [
-        "Snapshot inputs passed fresh signature and hash checks; one unchanged hosted CI retry is running for primitive depth.",
-        "Two-depth-camera source is reviewed by lane. Final integration review is finishing; checks wait for M68 acceptance.",
+        "The signed-input delivery repair is reviewed and running full verification. Ubuntu package versions, signatures and quality gates are unchanged.",
+        "Two-depth-camera implementation and regression source are reviewed. Its checks wait for M68 acceptance.",
         "M1\u2013M67 and 200 reviewed slices remain accepted; M65 stays Latest with 35 installed examples."
       ]
     },
     "done": [
       "M1\u2013M67 and 200 reviewed slices are accepted.",
-      "M67 RGB ellipsoid pixels and canonical consumer passed every required gate.",
+      "Original primitive depth passed local verification; its two hosted attempts failed before product checks.",
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Complete the unchanged CI retry, retain original evidence, then finish the official audit and Main acceptance.",
-      "Finish reviewed two-depth-camera Source; run checks only after M68 acceptance and complete Source review."
+      "Finish repair verification, exact hosted CI and the official audit, then accept primitive depth.",
+      "Adopt accepted M68 in the reviewed depth-pair source, then run its consolidated verification."
     ],
     "blocker": {
-      "text": "",
+      "text": "Primitive-depth release waits for repair qualification and exact hosted success after two snapshot HTTP 503 failures.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44049236320/attempts/2"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
