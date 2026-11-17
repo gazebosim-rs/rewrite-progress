@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T02:41:52.249712+00:00",
+  "as_of": "2026-11-17T03:31:38.426371+00:00",
   "execution_state": "active",
   "current_phase": "M66",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3024,7 +3024,7 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Implementation, meaningful regressions, guides and all independent Source reviews passed; one formatter passed. The single unchanged full normal/strict coverage hook is running. No M66 qualification or acceptance result yet.",
+      "current_stage": "Full normal and strict coverage passed, followed by actual HOST custody and independent retained local DATA0. Exact review commit is published; hosted CI44010465041 attempt1 is running. Official evidence/audit and Main/readbacks remain before acceptance.",
       "installed_accepted_examples": 35,
       "scope_independent_source_review_complete": true,
       "formatter_run": true,
@@ -3038,7 +3038,36 @@
       },
       "source_finite_example_obligations": 38,
       "auxiliary_RGB_obligations": 11,
-      "qualification_state": "single_full_normal_running_not_qualified"
+      "qualification_state": "local_qualified_review_hosted_CI_running",
+      "accepted_predecessor_commit": "069f315c1466c40120d85f6944a5f478ef6e9c71",
+      "locally_qualified_commit": "1b0c3be1af7c751987df53b4b96269236f7ae9c5",
+      "locally_qualified_tree": "fd7edcdd920fb780551a3a23022b97b167138668",
+      "local_qualification": {
+        "commit": "1b0c3be1af7c751987df53b4b96269236f7ae9c5",
+        "tree": "fd7edcdd920fb780551a3a23022b97b167138668",
+        "parent": "069f315c1466c40120d85f6944a5f478ef6e9c71",
+        "full_normal_passed": true,
+        "independent_local_DATA_passed": true,
+        "headless_passed": 2047,
+        "renderer_overlapping_passed": 1247,
+        "Python_aggregate": 476,
+        "finite_examples": 38,
+        "RGB_CLI_cases": 11,
+        "actual_new_Rust_controls": {
+          "headless": 1,
+          "renderer": 19
+        },
+        "actual_new_shared_support_controls": {
+          "headless": 0,
+          "renderer": 2
+        },
+        "raw_comparisons_once_LAST": 4,
+        "hosted_run": 44010465041,
+        "hosted_attempt": 1,
+        "hosted_success": false,
+        "official_DATA_success": false,
+        "accepted": false
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3442,19 +3471,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M65/198 accepted; exact Main069f and public Latest m65-preview/install35. M66 is new Source work only; all own gates remain required. No acceptance or qualification transfer.",
+  "acceptance_boundary": "M1–M65/198 accepted; M65 Latest/install35 unchanged. M66 passed full normal/strict/local DATA at1b0c and exact review CI44010465041attempt1 is running. Exact hosted success, durable originals, official DATA and Main/readbacks remain before acceptance.",
   "current_delivery_group": [
     "M66"
   ],
   "current_development_phase": "M66",
   "board": {
-    "updated_at": "2026-11-17T02:41:52.249712+00:00",
+    "updated_at": "2026-11-17T03:31:38.426371+00:00",
     "current": {
-      "title": "Verifying RGB sphere visuals",
+      "title": "Qualifying RGB sphere visuals",
       "items": [
-        "M66 implementation, regression Source and independent review are complete across the renderer and scene/canonical integration lanes.",
-        "The single full normal and strict coverage cycle is running. Local DATA, exact hosted CI, official audit and Main readbacks remain before acceptance.",
-        "M65 stays public and Latest with 35 installed examples and unchanged viewer bytes. M66 is not accepted yet."
+        "M66 implementation, meaningful regressions, independent Source review, full normal and strict coverage have passed.",
+        "Independent retained local DATA passed: 2,047 headless, 1,247 overlapping renderer and 476 Python checks, plus 38 finite examples.",
+        "Exact-commit hosted CI is running. Official evidence review and Main promotion remain; M65 stays Latest with 35 installed examples."
       ]
     },
     "done": [
@@ -3463,13 +3492,13 @@
       "The seven-asset m65-preview release is public and Latest; earlier releases and original evidence remain preserved."
     ],
     "next": [
-      "Finish the existing normal run and independently audit its retained results; batch any genuine failures before affected reruns.",
-      "Complete exact hosted CI, durable original evidence, independent official audit and Main readbacks before M66 acceptance.",
-      "Continue directly to the next useful bounded increment after acceptance."
+      "Finish the existing exact-commit hosted CI run without dispatching a duplicate.",
+      "Retain original hosted evidence, complete the independent official audit, then promote and read back the exact qualified Main commit.",
+      "Accept M66 only after every gate, then continue directly to the next bounded increment."
     ],
     "blocker": {
       "text": "",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m65-preview"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44010465041"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
