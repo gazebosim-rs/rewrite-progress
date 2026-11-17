@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T02:03:32.475571+00:00",
+  "as_of": "2026-11-17T02:41:52.249712+00:00",
   "execution_state": "active",
   "current_phase": "M66",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3020,13 +3020,25 @@
       "source_preparation_basis_accepted": true,
       "source_preparation_started_at": "2026-11-17T01:53:24.141767+00:00",
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
       "accepted": false,
-      "checks_run": false,
-      "current_stage": "Independent contract review passed. Parallel renderer and scene/canonical Source implementation is active; Root protocol/client/worker/qualifier regression Source is complete for review. No formatter or checks have run.",
+      "checks_run": true,
+      "current_stage": "Implementation, meaningful regressions, guides and all independent Source reviews passed; one formatter passed. The single unchanged full normal/strict coverage hook is running. No M66 qualification or acceptance result yet.",
       "installed_accepted_examples": 35,
-      "scope_independent_source_review_complete": true
+      "scope_independent_source_review_complete": true,
+      "formatter_run": true,
+      "formatter_actual_exit": 0,
+      "source_control_declarations": {
+        "Rust_unique": 19,
+        "headless": 1,
+        "renderer": 19,
+        "overlap": 1,
+        "Python": 4
+      },
+      "source_finite_example_obligations": 38,
+      "auxiliary_RGB_obligations": 11,
+      "qualification_state": "single_full_normal_running_not_qualified"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3436,13 +3448,13 @@
   ],
   "current_development_phase": "M66",
   "board": {
-    "updated_at": "2026-11-17T01:53:24.141767+00:00",
+    "updated_at": "2026-11-17T02:41:52.249712+00:00",
     "current": {
-      "title": "Adding sphere visuals to RGB cameras",
+      "title": "Verifying RGB sphere visuals",
       "items": [
-        "M65 is shipped: the Ubuntu preview contains 35 examples, including eight-drive and eight-controller fleets.",
-        "M66 adds opaque sphere visuals to the existing RGB camera path. Renderer and scene integration are separate source lanes with independent review.",
-        "The installed release and accepted viewer stay unchanged. M66 has not run tests or qualification yet."
+        "M66 implementation, regression Source and independent review are complete across the renderer and scene/canonical integration lanes.",
+        "The single full normal and strict coverage cycle is running. Local DATA, exact hosted CI, official audit and Main readbacks remain before acceptance.",
+        "M65 stays public and Latest with 35 installed examples and unchanged viewer bytes. M66 is not accepted yet."
       ]
     },
     "done": [
@@ -3451,9 +3463,9 @@
       "The seven-asset m65-preview release is public and Latest; earlier releases and original evidence remain preserved."
     ],
     "next": [
-      "Complete sphere implementation, meaningful regressions and documentation, then batch independent review findings.",
-      "Run one consolidated normal and strict coverage cycle after the complete feature; retain exact hosted and independent audit gates.",
-      "Continue to the next bounded increment after M66 acceptance."
+      "Finish the existing normal run and independently audit its retained results; batch any genuine failures before affected reruns.",
+      "Complete exact hosted CI, durable original evidence, independent official audit and Main readbacks before M66 acceptance.",
+      "Continue directly to the next useful bounded increment after acceptance."
     ],
     "blocker": {
       "text": "",
