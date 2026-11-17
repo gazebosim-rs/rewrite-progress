@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T05:35:54.258892+00:00",
+  "updated_at": "2026-11-17T07:09:56.554005+00:00",
   "state": "active",
-  "summary": "M67 passed local normal, strict coverage and independent audit; exact hosted CI is running. M68 primitive-depth Source preparation overlaps those gates. M65 stays Latest with35 examples;199 slices are accepted.",
+  "summary": "M1\u2013M67 and200 reviewed slices are accepted. M68 stale Python registry counts are corrected and reviewed; its single full normal/strict coverage retry is active. No M68 qualification is claimed; M65 stays Latest/install35.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M67-RGB",
-      "title": "M67 \u00b7 Hosted qualification",
-      "detail": "Locally qualified at exact cba09: 2,048 headless, 1,270 overlapping renderer, 480 Python, 39 finite examples and 12 RGB cases. All 21 feature controls and two separate support cases passed. Exact review CI44024955758 attempt1 is running."
-    },
-    {
       "id": "M68-DEPTH",
-      "title": "M68 \u00b7 Parallel Source preparation",
-      "detail": "Adding bounded single-camera primitive depth in disjoint Source lanes after independent contract review. All formatter, tests and qualification wait for accepted M67 and complete feature review. No M68 product result exists."
+      "title": "M68 \u00b7 Full verification retry",
+      "detail": "The first normal stopped on one registry-count control after484Python tests. Both exact counts are corrected and reviewed; the one full normal/strict retry is active on frozen source. No M68 pass, hosted result or acceptance yet."
     }
   ],
   "accepted_slices": [
@@ -1012,12 +1007,16 @@
       "title": "Calibrated RGB sphere visuals with bounded cached mesh, real software pixels and canonical Image/CameraInfo consumer",
       "commit": "1b0c3be1af7c751987df53b4b96269236f7ae9c5",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1b0c3be1af7c751987df53b4b96269236f7ae9c5"
+    },
+    {
+      "title": "Calibrated RGB ellipsoid visuals with shared finite sphere mesh, asymmetric software pixels and canonical Image/CameraInfo proof",
+      "commit": "cba09f1c088b5b8b328516c8f31aaf554229f1db",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cba09f1c088b5b8b328516c8f31aaf554229f1db"
     }
   ],
   "remaining": [
-    "Finish M67 exact-commit hosted CI, durable original evidence and independent official audit, then promote the qualified Main commit.",
-    "Complete the M68 Source contract, implementation, meaningful regressions and guides in disjoint lanes.",
-    "Run M68 consolidated checks only after M67 acceptance and complete independent Source review."
+    "Finish the single M68 full normal retry and independently audit its retained evidence.",
+    "Complete exact-commit hosted CI and official audit before M68 acceptance."
   ],
   "blockers": [],
   "plan_status": {
@@ -1072,7 +1071,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M66 and 199 slices are accepted; M65 is Latest with35 installed examples. M67 separately passed 2,048 headless and 1,270 overlapping renderer tests, 480 Python checks, 39 finite examples,12 RGB cases, strict coverage and independent local audit. Four RAW comparisons passed once. Exact hosted CI, official audit and Main remain.",
+    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M67 and200 slices are accepted; M65 remains Latest/install35. M67 separately passed2048headless/1270overlappingrenderer/480aggregatePython/39finite/RGB12 and all required gates. M68 first normal failed one Python registry control;484tests ran. No full runtime/coverage/qualification or M68 acceptance is claimed.",
     "renderer_coverage": {
       "lines": [
         19966,
