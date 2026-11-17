@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T08:03:16.282016+00:00",
+  "as_of": "2026-11-17T08:50:42.358129+00:00",
   "execution_state": "active",
   "current_phase": "M68",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3163,7 +3163,7 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "The fixture-only correction passed complete Source review and one affected formatter. One third full normal run is active on frozen 6fe3032b; no terminal result or M68 qualification yet.",
+      "current_stage": "Full local normal verification and independent retained DATA passed on the exact review commit. Hosted CI is running; official audit and Main acceptance remain. Both earlier failed runs are retained.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true,
@@ -3180,7 +3180,7 @@
       "auxiliary_RGB_obligations": 13,
       "formatter_run": true,
       "formatter_actual_exit": 0,
-      "qualification_state": "normal_attempt3_active_not_qualified",
+      "qualification_state": "local_normal_and_DATA_passed_hosted_in_progress",
       "prior_normal_failure": {
         "tree": "3f00c975c54cb0e9ef9f4aa28d0016b908cd5a50",
         "actual_Git_controller_wait_exit": 1,
@@ -3205,7 +3205,39 @@
         "case": "tests::depth_shape_wire_rejects_malformed_and_nonfinite_inputs_before_writing",
         "renderer_coverage_produced": false
       },
-      "staged_tree": "6fe3032b3475383415cf0b6cb35699fa9b7e2b61"
+      "staged_tree": "6fe3032b3475383415cf0b6cb35699fa9b7e2b61",
+      "normal_passed": true,
+      "locally_verified_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
+      "independent_local_DATA_passed": true,
+      "hosted_run": 44049236320,
+      "hosted_attempt": 1,
+      "hosted_state": "in_progress"
+    },
+    {
+      "id": "M69",
+      "title": "Two independently demanded calibrated depth cameras",
+      "max_working_days": 5,
+      "depends_on": [
+        "M68"
+      ],
+      "scope": "Exactly two homogeneous calibrated 64 by 64 depth cameras with independent demand, rates, workers and canonical metric-depth outputs through a separate depth-pair API.",
+      "acceptance": "Complete implementation, meaningful regressions, guide and independent Source review; actual M68 acceptance before any checks. Then require a fresh full normal, strict actual-parent coverage, independent local DATA, exact hosted CI, durable originals, official audit and Main promotion.",
+      "excluded": "RGBD registration, point clouds, noise, dynamic registration, renderer or physics changes, new dependencies or SDK/framework, package refresh, analytic/native Ogre/performance parity.",
+      "evidence": "docs/M69_DELIVERY.md",
+      "source_preparation_basis_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_started_at": "2026-11-17T08:45:47.683966+00:00",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "scope_independent_source_review_complete": true,
+      "accepted": false,
+      "checks_run": false,
+      "current_stage": "Source work is released in an isolated checkout over the locally qualified M68 candidate. M69 checks, qualification and publication are held until actual M68 acceptance and complete independent Source review.",
+      "installed_accepted_examples": 35,
+      "predecessor_acceptance_required_before_checks": true,
+      "qualification_state": "source_in_progress_checks_held_for_M68_acceptance"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3277,12 +3309,14 @@
     "M65": "complete",
     "M66": "complete",
     "M67": "complete",
-    "M68": "in_progress"
+    "M68": "in_progress",
+    "M69": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-17T04:22:13.840777+00:00",
   "active_phases": [
-    "M68"
+    "M68",
+    "M69"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -3617,21 +3651,29 @@
       ],
       "integration": "M67 exact cba09 local normal/DATA passed and hosted/official/Main closeout continues. Isolated M68 Source preparation may proceed over locally qualified cba09; no formatter/tests/build/native or qualification before actual M67 acceptance and complete independent Source review. Any predecessor correction requires affected adoption/review; no result transfer.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M68",
+        "M69"
+      ],
+      "integration": "M68 exact103fd passed full local normal and independent DATA while hosted closeout continues. Isolated M69 Source work may overlap; all M69 checks and publication require actual M68 acceptance and complete Source review. Preserve predecessor corrections, original failures and every own gate; no result transfer.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices are accepted at exact Main cba09 after every required gate. Both prior M68 normals failed test premises; their partial results remain separate. The reviewed third full run is active, not qualified. M65 stays Latest with 35 installed examples.",
+  "acceptance_boundary": "M1\u2013M67 and 200 slices remain accepted. M68 passed full local verification and independent DATA; hosted CI is running, with official audit and Main acceptance still required. M69 is Source-only until M68 acceptance and complete review. M65 stays Latest with 35 installed examples.",
   "current_delivery_group": [
     "M68"
   ],
-  "current_development_phase": "M68",
+  "current_development_phase": "M69",
   "board": {
-    "updated_at": "2026-11-17T08:03:16.282016+00:00",
+    "updated_at": "2026-11-17T08:50:42.358129+00:00",
     "current": {
-      "title": "Verifying primitive depth cameras",
+      "title": "Depth camera qualification and paired-camera Source",
       "items": [
-        "The malformed-input fixture is corrected and independently reviewed.",
-        "The third full M68 test and strict coverage run is active. No qualification is claimed.",
-        "M1\u2013M67 and 200 reviewed slices are accepted; M65 stays Latest with 35 examples."
+        "Primitive depth passed full local verification and independent retained-evidence validation; exact-commit hosted CI is running.",
+        "Source work has started for two depth cameras. All M69 checks wait for M68 acceptance and complete independent Source review.",
+        "M1\u2013M67 and 200 reviewed slices remain accepted; M65 stays Latest with 35 installed examples."
       ]
     },
     "done": [
@@ -3640,16 +3682,18 @@
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Finish the single M68 full normal run and independently audit its retained evidence.",
-      "Complete exact-commit hosted CI and official audit before M68 acceptance."
+      "Finish primitive-depth hosted CI, retain its original evidence, then complete the official audit and Main acceptance.",
+      "Finish reviewed two-depth-camera Source; run checks only after M68 acceptance and complete Source review."
     ],
     "blocker": {
       "text": "",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44024955758"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44049236320"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
-  "parallel_source_phases": [],
+  "parallel_source_phases": [
+    "M69"
+  ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
     "basis_accepted_commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",

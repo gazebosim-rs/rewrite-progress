@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-17",
-  "scope": "Qualify M68 primitive metric-depth camera support after accepted M67.",
+  "scope": "Qualify M68 primitive depth while preparing M69 paired-depth Source in parallel.",
   "target_working_days": 5,
   "owner_target_date": null,
   "confidence": "Low",
-  "assumption": "M67 is accepted through every required gate. M68\u2019s two test-premise failures are preserved; the reviewed fixture-only correction is in one active full normal run. Strict coverage, local audit and exact hosted, official and Main gates remain. M65 stays Latest with 35 examples.",
+  "assumption": "M68 full local verification and independent DATA passed; exact-commit hosted CI is running. Official audit and Main acceptance still precede M68 acceptance. M69 Source may overlap, but all checks wait for accepted M68 and complete independent review. Earlier failures are retained; M65 stays Latest with 35 examples.",
   "clock": "Each phase is bounded to a target of five working days including implementation, regressions, documentation, independent review and mandatory gates. Independent Source work overlaps under D31; retained scope and actual qualification determine acceptance."
 }
