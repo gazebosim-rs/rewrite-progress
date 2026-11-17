@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T01:54:40.452633+00:00",
+  "updated_at": "2026-11-17T02:41:52.249712+00:00",
   "state": "active",
-  "summary": "M65 is shipped and accepted: 35 installed examples and independently checked fleet/browser/shutdown proof. M66 sphere visuals are in parallel Source preparation. M1\u2013M65 retain 198 accepted slices.",
+  "summary": "M66 sphere implementation and independent Source review are complete; the single full normal and strict coverage run is active. M65 stays public Latest with 35 examples and 198 accepted slices.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M66-RGB",
-      "title": "M66 \u00b7 Sphere visuals in RGB cameras",
-      "detail": "Add opaque spheres through the existing calibrated RGB path. Renderer and scene/canonical integration are separate Source lanes with independent review. Preserve M65 Latest/install35; no M66 checks have run."
+      "title": "M66 \u00b7 Final sphere verification",
+      "detail": "All renderer and scene/canonical Source is complete and reviewed. One formatter passed. Nineteen Rust and four Python declarations are not measured passes; the single full normal/strict cycle is running. Hosted/official/Main gates remain."
     }
   ],
   "accepted_slices": [
@@ -1005,9 +1005,9 @@
     }
   ],
   "remaining": [
-    "Complete M66 sphere implementation, meaningful regression Source and guides, then batch independent review findings.",
-    "Run one consolidated normal/strict coverage cycle and independent local DATA after the complete feature.",
-    "Require exact hosted CI, durable originals, official audit and Main/readbacks before M66 acceptance."
+    "Finish the existing normal run and independently audit its retained results; batch any genuine failures before affected reruns.",
+    "Complete exact hosted CI, durable original evidence, independent official audit and Main readbacks before M66 acceptance.",
+    "Continue directly to the next useful bounded increment after acceptance."
   ],
   "blockers": [],
   "plan_status": {
@@ -1062,7 +1062,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M65 separately passed 2,046 headless, 1,226 overlapping renderer, 472 Python and 37 Source finite checks, all strict local/hosted and official gates, 35-example clean installation and fleet/browser/shutdown DATA. M1\u2013M65/198 slices are accepted; m65-preview is public Latest. M66 Source preparation has no test or qualification result.",
+    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M65 separately passed 2,046 headless, 1,226 overlapping renderer, 472 Python and 37 Source finite checks, all required audits,35-example installation and fleet/browser/shutdown DATA. M1\u2013M65/198 slices are accepted; m65-preview is public Latest. M66 single full normal/strict cycle is running; no qualification result is claimed.",
     "renderer_coverage": {
       "lines": [
         19966,
