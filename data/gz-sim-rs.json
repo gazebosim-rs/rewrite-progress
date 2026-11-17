@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T18:50:01.653419+00:00",
+  "updated_at": "2026-11-17T20:13:56.757155+00:00",
   "state": "active",
-  "summary": "M70 code qualification and its provisional camera-preview package passed independent audits. Clean Ubuntu installation and actual camera/browser proof remain; M65 stays Latest.",
+  "summary": "M70 code, package and clean Ubuntu installation passed, including 41 finite loads. Mesh display and Play worked, but asset-custody proof stopped the trial before helpers; robot and camera runtime qualification remains.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70-INSTALLED-CAMERA",
-      "title": "M70 \u00b7 Clean installation and runtime proof",
-      "detail": "Full normal, strict coverage, exact hosted and official audits passed at916e. Four release binaries, all 757 dependency notice records and the complete 41-example package passed independent audits. The original wrapper receipt failure and separate successful recovery are preserved. Clean Ubuntu installation, actual paired-depth/RGB output and default robot browser controls remain; M70 is not accepted."
+      "title": "M70 \u00b7 Final installed runtime proof",
+      "detail": "Code/hosted/package audits and clean Ubuntu installation passed. The latest browser trial loaded the mesh world and accepted Play, then stopped at the asset-custody gate before helpers. Its container is stopped; reload evidence and camera Source remain under review. M70 is not accepted."
     }
   ],
   "accepted_slices": [
@@ -1025,10 +1025,12 @@
     }
   ],
   "remaining": [
-    "Install the audited package on clean Ubuntu and verify all 41 finite loads.",
-    "Prove camera output and the default robot browser controls, complete independent evidence review, then publish M70."
+    "Close the reload and asset-custody Source review, then complete the default robot controls and shutdown.",
+    "Complete the separate camera profile/trials and independent runtime DATA, then publish M70 after all gates."
   ],
-  "blockers": [],
+  "blockers": [
+    "The browser trial stopped at its asset-custody gate after the mesh world loaded and Play worked. Reload evidence is under review; no helper ran and the owned container is stopped."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1081,7 +1083,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Numeric fields retain the M57 baseline. M70 full normal/strict/exact hosted/official audits passed: 2052 headless,1305 overlapping renderer,518 aggregate Python,41 finite loads,14 camera cases. Four release binaries,757 notice records and the complete package passed independent audits. Original wrapper1 receipt failure and separate finalizer0 remain explicit. Clean installation/camera/browser proof and M70 acceptance remain pending.",
+    "note": "Numeric fields retain the M57 baseline. M70 normal/strict/exact hosted/official audits passed (2052 headless,1305 overlapping renderer,518 aggregate Python,41 finite loads,14 camera cases). Package and clean installation audits passed; original wrapper failure/recovery and first browser failure remain retained. Robot/camera runtime proofs and M70 acceptance are pending.",
     "renderer_coverage": {
       "lines": [
         19966,
