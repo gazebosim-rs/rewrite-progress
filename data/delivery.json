@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T09:17:38.231044+00:00",
+  "as_of": "2026-11-17T09:46:27.882952+00:00",
   "execution_state": "active",
   "current_phase": "M68",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3163,7 +3163,7 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Locally qualified at103fd927; exact hosted44049236320 attempt1 failed before product checks during signed snapshot package-index verification with HTTP503. Original logs retained; separate bounded recovery diagnostic in preparation, no CI retry released.",
+      "current_stage": "Locally qualified at103fd927. Fresh package-only diagnostic verified all3signed releases/6pinnedindexes/16directpackages/22records, independent retained DATA CLEAR. One unchanged hosted44049236320 attempt2 running; official/Main/acceptance pending.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true,
@@ -3180,7 +3180,7 @@
       "auxiliary_RGB_obligations": 13,
       "formatter_run": true,
       "formatter_actual_exit": 0,
-      "qualification_state": "locally_qualified_hosted_failed_external_package_index_503",
+      "qualification_state": "locally_qualified_unchanged_hosted_attempt2_in_progress",
       "prior_normal_failure": {
         "tree": "3f00c975c54cb0e9ef9f4aa28d0016b908cd5a50",
         "actual_Git_controller_wait_exit": 1,
@@ -3225,6 +3225,26 @@
         "provider_cause": "UNKNOWN",
         "original_jobs_ZIP_sha256": "10fd7566c0a707d875fe03084cbe7a4cde991785a1f2576802c7453057082e45",
         "retry_released": false
+      },
+      "hosted_attempt2": {
+        "run": 44049236320,
+        "attempt": 2,
+        "head": "103fd9275637a1a18f416320c08893dcb2ecff75",
+        "request_actual_exit": 0,
+        "status": "in_progress",
+        "success": false,
+        "further_retry_released": false
+      },
+      "snapshot_recovery_diagnostic": {
+        "actual_Root_exit": 0,
+        "actual_child_exit": 0,
+        "independent_retained_DATA": true,
+        "signed_releases": 3,
+        "pinned_indexes": 6,
+        "direct_packages": 16,
+        "matching_records": 22,
+        "provider_cause": "UNKNOWN",
+        "not_CI_qualification": true
       }
     },
     {
@@ -3243,12 +3263,12 @@
       "source_preparation_basis_locally_qualified": true,
       "source_preparation_started_at": "2026-11-17T08:45:47.683966+00:00",
       "implementation_started": true,
-      "implementation_complete": false,
+      "implementation_complete": true,
       "independent_source_review_complete": false,
       "scope_independent_source_review_complete": true,
       "accepted": false,
       "checks_run": false,
-      "current_stage": "Source work is released in an isolated checkout over the locally qualified M68 candidate. M69 checks, qualification and publication are held until actual M68 acceptance and complete independent Source review.",
+      "current_stage": "All implementation and regression source lanes complete and independently reviewed; final integration/control-census Source review is finishing. No checks before actual M68 acceptance and complete review.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "qualification_state": "source_in_progress_checks_held_for_M68_acceptance"
@@ -3675,18 +3695,18 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices accepted. M68 full local normal and independent DATA passed at103fd927. Hosted44049236320 attempt1 failed before product checks on a pinned Ubuntu snapshot Packages.xz HTTP503; exact suite/component and provider cause UNKNOWN. No CI retry released. M69 Source continues; checks wait actual M68 acceptance.",
+  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices accepted. M68 locally qualified at103fd927. After retained attempt1 HTTP503 and fresh signed-index diagnostic0 plus independent DATA, one unchanged hosted44049236320 attempt2 is running. M69 implementation/regression Source is complete and independently reviewed by lane; final integration/census review pending, checks wait M68 acceptance.",
   "current_delivery_group": [
     "M68"
   ],
   "current_development_phase": "M69",
   "board": {
-    "updated_at": "2026-11-17T09:19:02.856213+00:00",
+    "updated_at": "2026-11-17T09:46:27.882952+00:00",
     "current": {
-      "title": "Snapshot recovery and two depth cameras",
+      "title": "Depth camera CI retry and source integration",
       "items": [
-        "Primitive depth passed local verification; hosted CI stopped on an Ubuntu snapshot package-index HTTP 503 before product checks.",
-        "M69 source work continues in parallel. Its checks wait for M68 acceptance and complete independent review.",
+        "Snapshot inputs passed fresh signature and hash checks; one unchanged hosted CI retry is running for primitive depth.",
+        "Two-depth-camera source is reviewed by lane. Final integration review is finishing; checks wait for M68 acceptance.",
         "M1\u2013M67 and 200 reviewed slices remain accepted; M65 stays Latest with 35 installed examples."
       ]
     },
@@ -3696,12 +3716,12 @@
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Validate snapshot recovery with one reviewed diagnostic, then finish unchanged hosted verification, official audit and Main acceptance.",
+      "Complete the unchanged CI retry, retain original evidence, then finish the official audit and Main acceptance.",
       "Finish reviewed two-depth-camera Source; run checks only after M68 acceptance and complete Source review."
     ],
     "blocker": {
-      "text": "A pinned Ubuntu snapshot package-index request returned HTTP 503 before hosted product checks.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44049236320"
+      "text": "",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44049236320/attempts/2"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
