@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T11:06:35.131956+00:00",
+  "updated_at": "2026-11-17T11:54:58.036041+00:00",
   "state": "active",
-  "summary": "M68 signed-input delivery repair is reviewed and running full verification after two pre-product HTTP 503 failures. M69 depth-pair source is reviewed; its checks wait for M68 acceptance.",
+  "summary": "Primitive depth and its CI input repair passed local checks. Exact hosted CI is running. Reviewed two-depth-camera source waits for M68 acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M68-DEPTH",
-      "title": "M68 \u00b7 Signed-input repair verification",
-      "detail": "The repair supplies the exact pinned Ubuntu metadata through a fixed archive before the unchanged signature verifier. Full normal verification is running; the new source still needs local DATA, hosted CI, official audit and Main acceptance."
+      "title": "M68 \u00b7 Exact hosted verification",
+      "detail": "The full local hook and independent audit passed at the repaired commit. The exact pinned metadata archive is published; original assets and M65 Latest are unchanged. Automatic hosted CI is running; official audit and Main acceptance remain."
     },
     {
       "id": "M69-DEPTH-PAIR",
@@ -1020,11 +1020,11 @@
     }
   ],
   "remaining": [
-    "Finish repair verification, exact hosted CI and the official audit, then accept primitive depth.",
+    "Finish hosted CI, the official audit and Main acceptance for primitive depth.",
     "Adopt accepted M68 in the reviewed depth-pair source, then run its consolidated verification."
   ],
   "blockers": [
-    "Primitive-depth release waits for repair qualification and exact hosted success after two snapshot HTTP 503 failures."
+    "Primitive-depth release still requires exact hosted success and the official audit."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1078,7 +1078,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "The numeric quality measurements below remain the retained M57 baseline. Original M68 locally passed 2,049 headless, 1,293 overlapping renderer and 484 aggregate Python checks; both hosted attempts failed before product. The new signed-input repair is being verified and has no pass totals yet.",
+    "note": "Numeric quality measurements below remain the retained M57 baseline. Repaired M68 passed 2,049 headless, 1,293 overlapping renderer and 496 aggregate Python checks, 40 finite examples, 13 camera controls and four byte-exact coverage comparisons. Exact hosted CI is running; M68 is not accepted.",
     "renderer_coverage": {
       "lines": [
         19966,
