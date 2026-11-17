@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T12:53:15.757364+00:00",
+  "as_of": "2026-11-17T13:30:15.467007+00:00",
   "execution_state": "active",
   "current_phase": "M69",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3296,14 +3296,14 @@
       "source_preparation_started_at": "2026-11-17T08:45:47.683966+00:00",
       "implementation_started": true,
       "implementation_complete": true,
-      "independent_source_review_complete": false,
+      "independent_source_review_complete": true,
       "scope_independent_source_review_complete": true,
       "accepted": false,
-      "checks_run": false,
-      "current_stage": "Complete reviewed feature and regression source is on actual accepted M68. One affected formatter passed; post-format Source/census/binding closure precedes the single full verification cycle. No M69 tests or acceptance claimed.",
+      "checks_run": true,
+      "current_stage": "The first full normal failed at one retained fixture-count assertion after498 Python checks; runtime and coverage were not reached. The strict40\u219241 correction and final Source bindings are independently reviewed. One fresh full normal retry is now running; launch is not qualification and no retry result is claimed.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
-      "qualification_state": "accepted_parent_final_Source_metadata_review_pending",
+      "qualification_state": "reviewed_registry_correction_full_normal_attempt2_running_not_qualified",
       "preformat_census_final_bindings": false,
       "initial_source_preparation_basis_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
       "repair_parent_Source_preparation_started_at": "2026-11-17T12:17:48.920468+00:00",
@@ -3322,7 +3322,18 @@
         "separate_retained_renderer_support": 6
       },
       "formatter_run": true,
-      "formatter_actual_exit": 0
+      "formatter_actual_exit": 0,
+      "normal_passed": false,
+      "prior_normal_failure": {
+        "tree": "733835b6453ab7d811ab5d1c8eb30890fe33801a",
+        "actual_Git_controller_wait_exit": 1,
+        "both_reaped": true,
+        "seconds": 290.17842376999033,
+        "Python_run": 498,
+        "Python_failures": 1,
+        "case": "CylinderFiniteOutput.test_m64_requires_exact_sorted_four_static_poses_and_two_step_headline",
+        "full_H_R_aux_coverage_reached": false
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3745,19 +3756,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M68 and 201 reviewed slices are accepted at exact Main24ea625. M68 full normal/local DATA/exact hosted44077798140a1/official DATA/durable originals/Main passed; M65 remains Latest/install35. Prepared M69 source is on this actual accepted parent; post-format Source/census/binding closure and the full verification cycle remain.",
+  "acceptance_boundary": "M1\u2013M68 and 201 reviewed slices remain accepted on Main24ea625; M65 stays Latest with35 installed examples. M69 first normal failed at one retained fixture-count assertion before runtime/coverage. The reviewed40\u219241 correction is in a fresh full normal retry; no complete retry result or M69 qualification is claimed.",
   "current_delivery_group": [
     "M69"
   ],
   "current_development_phase": "M69",
   "board": {
-    "updated_at": "2026-11-17T12:53:15.757364+00:00",
+    "updated_at": "2026-11-17T13:30:15.467007+00:00",
     "current": {
-      "title": "M68 accepted; two-depth-camera verification cycle",
+      "title": "Two depth cameras: full verification retry running",
       "items": [
-        "Primitive depth and its CI input repair passed every required gate and are accepted on Main.",
-        "Two-depth-camera features and regressions are integrated on the accepted parent and in final source review and verification preparation.",
-        "M1\u2013M68 and 201 reviewed slices are accepted; M65 stays Latest with 35 installed examples."
+        "The first full normal stopped at one retained fixture-count assertion; runtime and coverage were not reached.",
+        "The strict count was corrected from 40 to 41 and independent Source review cleared the batch. Rust and fixtures are unchanged.",
+        "One fresh full normal retry is running. Its launch is not a pass; M69 remains unqualified."
       ]
     },
     "done": [
@@ -3766,8 +3777,8 @@
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Complete the consolidated checks and independent evidence audits for two depth cameras.",
-      "Finish exact hosted acceptance, then select the next useful bounded delivery."
+      "Inspect the full retry outcome, then complete independent evidence review and remaining gates.",
+      "Complete independent local evidence, exact hosted CI, official audit and Main promotion before acceptance."
     ],
     "blocker": {
       "text": "",
