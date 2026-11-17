@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T07:09:56.554005+00:00",
+  "updated_at": "2026-11-17T08:03:16.282016+00:00",
   "state": "active",
-  "summary": "M1\u2013M67 and200 reviewed slices are accepted. M68 stale Python registry counts are corrected and reviewed; its single full normal/strict coverage retry is active. No M68 qualification is claimed; M65 stays Latest/install35.",
+  "summary": "M1\u2013M67 and 200 reviewed slices are accepted. M68\u2019s malformed-input fixture is corrected and reviewed; its third full normal and strict coverage run is active. No M68 qualification is claimed. M65 stays Latest with 35 examples.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M68-DEPTH",
-      "title": "M68 \u00b7 Full verification retry",
-      "detail": "The first normal stopped on one registry-count control after484Python tests. Both exact counts are corrected and reviewed; the one full normal/strict retry is active on frozen source. No M68 pass, hosted result or acceptance yet."
+      "title": "M68 \u00b7 Full verification",
+      "detail": "The second run found one duplicate-key test using the wrong fixture request ID. The fixture-only correction is reviewed, and the third full run is active. Prior partial passes stay separate; no M68 qualification or acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -1015,7 +1015,7 @@
     }
   ],
   "remaining": [
-    "Finish the single M68 full normal retry and independently audit its retained evidence.",
+    "Finish the single M68 full normal run and independently audit its retained evidence.",
     "Complete exact-commit hosted CI and official audit before M68 acceptance."
   ],
   "blockers": [],
@@ -1071,7 +1071,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M67 and200 slices are accepted; M65 remains Latest/install35. M67 separately passed2048headless/1270overlappingrenderer/480aggregatePython/39finite/RGB12 and all required gates. M68 first normal failed one Python registry control;484tests ran. No full runtime/coverage/qualification or M68 acceptance is claimed.",
+    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M67 and 200 slices are accepted; M65 stays Latest with 35 installed examples. M67 separately passed 2,048 headless and 1,270 overlapping renderer tests, 480 Python checks, 39 finite examples and 12 RGB cases through all required gates. M68\u2019s prior runs failed test premises; their partial counts do not qualify the current third run.",
     "renderer_coverage": {
       "lines": [
         19966,
