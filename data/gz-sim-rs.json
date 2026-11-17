@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T02:41:52.249712+00:00",
+  "updated_at": "2026-11-17T03:31:38.426371+00:00",
   "state": "active",
-  "summary": "M66 sphere implementation and independent Source review are complete; the single full normal and strict coverage run is active. M65 stays public Latest with 35 examples and 198 accepted slices.",
+  "summary": "M66 full normal, strict coverage and independent local DATA passed. Exact-commit hosted CI is running; official audit and Main gates remain. M65 stays public Latest with 35 examples and 198 accepted slices.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M66-RGB",
-      "title": "M66 \u00b7 Final sphere verification",
-      "detail": "All renderer and scene/canonical Source is complete and reviewed. One formatter passed. Nineteen Rust and four Python declarations are not measured passes; the single full normal/strict cycle is running. Hosted/official/Main gates remain."
+      "title": "M66 \u00b7 Hosted qualification",
+      "detail": "Local qualification passed at exact 1b0c: 2,047 headless, 1,247 overlapping renderer, 476 Python and 38 finite examples. All 19 feature controls and two borrowed renderer support cases passed. Exact review CI44010465041 attempt1 is running."
     }
   ],
   "accepted_slices": [
@@ -1005,9 +1005,9 @@
     }
   ],
   "remaining": [
-    "Finish the existing normal run and independently audit its retained results; batch any genuine failures before affected reruns.",
-    "Complete exact hosted CI, durable original evidence, independent official audit and Main readbacks before M66 acceptance.",
-    "Continue directly to the next useful bounded increment after acceptance."
+    "Finish the existing exact-commit hosted CI run without dispatching a duplicate.",
+    "Retain original hosted evidence, complete the independent official audit, then promote and read back the exact qualified Main commit.",
+    "Accept M66 only after every gate, then continue directly to the next bounded increment."
   ],
   "blockers": [],
   "plan_status": {
@@ -1062,7 +1062,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M65 separately passed 2,046 headless, 1,226 overlapping renderer, 472 Python and 37 Source finite checks, all required audits,35-example installation and fleet/browser/shutdown DATA. M1\u2013M65/198 slices are accepted; m65-preview is public Latest. M66 single full normal/strict cycle is running; no qualification result is claimed.",
+    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M65 and 198 slices remain accepted; M65 is Latest with 35 examples. M66 separately passed 2,047 headless and 1,247 overlapping renderer tests, 476 Python checks, 38 finite examples and 11 RGB cases, strict coverage and independent local DATA. Four RAW comparisons passed once. Hosted CI, official audit and Main remain.",
     "renderer_coverage": {
       "lines": [
         19966,
