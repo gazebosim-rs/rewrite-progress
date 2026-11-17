@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T13:30:15.467007+00:00",
+  "updated_at": "2026-11-17T14:19:41.042496+00:00",
   "state": "active",
-  "summary": "Two depth cameras are implemented. The first normal stopped at one stale fixture-count assertion; the reviewed correction is now in a fresh full normal retry.",
+  "summary": "Two depth cameras are implemented. The reviewed Busy-test correction was formatted without Source changes and is now in a fresh full normal; no complete result is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M69-DEPTH-PAIR",
-      "title": "M69 \u00b7 Full normal retry running",
-      "detail": "The first normal ran 498 Python checks with one stale 40-versus-41 fixture-count failure, before runtime or coverage. The strict correction and final Source bindings are independently reviewed. One full normal retry is now running; launch does not establish a pass. Rust, fixtures and tolerances are unchanged."
+      "title": "M69 \u00b7 Full verification running",
+      "detail": "Both earlier full normals remain failed evidence. The Busy-test correction checks typed Busy before pumping and retains peer clocks and lifecycle assertions. Independent Source review and one affected formatter passed. One fresh full normal is running; launch is not qualification and the earlier alternative error remains unknown."
     }
   ],
   "accepted_slices": [
@@ -1020,8 +1020,8 @@
     }
   ],
   "remaining": [
-    "Inspect the full retry outcome, then complete independent evidence review and remaining gates.",
-    "Complete independent local evidence, exact hosted CI, official audit and Main promotion before acceptance."
+    "Inspect the complete full normal outcome and run independent local evidence review after actual success.",
+    "Finish exact hosted CI, durable originals, official audit and Main promotion before acceptance."
   ],
   "blockers": [],
   "plan_status": {
@@ -1076,7 +1076,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Numeric quality measurements remain the retained M57 baseline. Accepted M68 passed 2,049 headless, 1,293 overlapping renderer and 496 aggregate Python checks, 40 finite examples, exact hosted CI and independent audits. M69 first normal ran 498 Python checks with one failure before runtime/coverage. The reviewed correction is now in a full retry with no complete result; Source declarations are not passes.",
+    "note": "Numeric quality fields remain the retained M57 baseline. Accepted M68 passed all required gates. The previous M69 normal observed 2,052 headless passes, 1,304 renderer passes and one failure; these overlapping observations are partial, not qualification. All 498 Python checks passed. The corrected Source is now in a fresh full normal with no completed result; the earlier alternative error remains unknown.",
     "renderer_coverage": {
       "lines": [
         19966,
