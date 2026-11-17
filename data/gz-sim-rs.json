@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T11:54:58.036041+00:00",
+  "updated_at": "2026-11-17T12:53:15.757364+00:00",
   "state": "active",
-  "summary": "Primitive depth and its CI input repair passed local checks. Exact hosted CI is running. Reviewed two-depth-camera source waits for M68 acceptance.",
+  "summary": "M68 primitive depth and its CI input repair are accepted on Main. M69 two-depth-camera source is integrated on the accepted parent and preparing final verification.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M68-DEPTH",
-      "title": "M68 \u00b7 Exact hosted verification",
-      "detail": "The full local hook and independent audit passed at the repaired commit. The exact pinned metadata archive is published; original assets and M65 Latest are unchanged. Automatic hosted CI is running; official audit and Main acceptance remain."
-    },
-    {
       "id": "M69-DEPTH-PAIR",
-      "title": "M69 \u00b7 Reviewed source awaiting accepted parent",
-      "detail": "Implementation, regression code, guides and independent source review are complete. Adopt the accepted M68 repair parent and finalize source bindings before one consolidated verification cycle."
+      "title": "M69 \u00b7 Final source and verification cycle",
+      "detail": "Two independent calibrated depth cameras have complete implementation, regressions and reviewed integration on accepted M68. One formatter passed; final source and census bindings precede one full normal, strict coverage and hosted/official cycle."
     }
   ],
   "accepted_slices": [
@@ -1017,15 +1012,18 @@
       "title": "Calibrated RGB ellipsoid visuals with shared finite sphere mesh, asymmetric software pixels and canonical Image/CameraInfo proof",
       "commit": "cba09f1c088b5b8b328516c8f31aaf554229f1db",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/cba09f1c088b5b8b328516c8f31aaf554229f1db"
+    },
+    {
+      "title": "Calibrated primitive metric depth and verified signed CI inputs",
+      "commit": "24ea62519d0a671f789e6b3fc98bd2b72de18ae2",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/24ea62519d0a671f789e6b3fc98bd2b72de18ae2"
     }
   ],
   "remaining": [
-    "Finish hosted CI, the official audit and Main acceptance for primitive depth.",
-    "Adopt accepted M68 in the reviewed depth-pair source, then run its consolidated verification."
+    "Complete the consolidated checks and independent evidence audits for two depth cameras.",
+    "Finish exact hosted acceptance, then select the next useful bounded delivery."
   ],
-  "blockers": [
-    "Primitive-depth release still requires exact hosted success and the official audit."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1078,7 +1076,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Numeric quality measurements below remain the retained M57 baseline. Repaired M68 passed 2,049 headless, 1,293 overlapping renderer and 496 aggregate Python checks, 40 finite examples, 13 camera controls and four byte-exact coverage comparisons. Exact hosted CI is running; M68 is not accepted.",
+    "note": "Numeric quality measurements below remain the retained M57 baseline. Accepted M68 passed 2,049 headless, 1,293 overlapping renderer and 496 aggregate Python checks, 40 finite examples, exact hosted CI and independent audits. M69 has no verification results yet; its source declarations are not passes.",
     "renderer_coverage": {
       "lines": [
         19966,
