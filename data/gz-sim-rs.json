@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T08:50:42.358129+00:00",
+  "updated_at": "2026-11-17T09:19:02.856213+00:00",
   "state": "active",
-  "summary": "M68 primitive depth passed local verification and independent DATA; hosted CI is running. M69 two-depth-camera Source work has started. M1\u2013M67 and 200 slices are accepted; M65 stays Latest with 35 examples.",
+  "summary": "M68 passed local verification; hosted CI stopped on a snapshot package-index HTTP 503 before product checks. M69 source work continues. M1\u2013M67 and 200 slices are accepted; M65 stays Latest with 35 examples.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M68-DEPTH",
-      "title": "M68 \u00b7 Hosted verification",
-      "detail": "Primitive depth passed full local tests, strict coverage and independent retained-evidence validation at the exact review commit. Hosted CI is running; official audit and Main acceptance remain. Earlier failed runs stay separate."
+      "title": "M68 \u00b7 Snapshot recovery assessment",
+      "detail": "Local tests, strict coverage and independent DATA passed. Hosted setup stopped on an Ubuntu snapshot package-index HTTP 503 before product checks. Original logs are retained; one recovery diagnostic is being prepared."
     },
     {
       "id": "M69-DEPTH-PAIR",
@@ -1020,10 +1020,12 @@
     }
   ],
   "remaining": [
-    "Finish primitive-depth hosted CI, retain its original evidence, then complete the official audit and Main acceptance.",
+    "Validate snapshot recovery with one reviewed diagnostic, then finish unchanged hosted verification, official audit and Main acceptance.",
     "Finish reviewed two-depth-camera Source; run checks only after M68 acceptance and complete Source review."
   ],
-  "blockers": [],
+  "blockers": [
+    "A pinned Ubuntu snapshot package-index request returned HTTP 503 before hosted product checks."
+  ],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1076,7 +1078,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics and linked CI remain earlier M57 scope. M68 separately passed 2,049 headless and 1,293 overlapping renderer tests, 484 Python checks, 40 finite examples and 13 RGB admission cases; independent local DATA passed four final RAW comparisons. Hosted CI is running; no M68 acceptance. Both earlier failed runs remain separate. M69 Source only; M65 stays Latest with 35 installed examples.",
+    "note": "M68 local: 2,049 headless and 1,293 overlapping renderer tests, 484 aggregate Python checks, 40 finite examples, 13 camera controls and four byte-exact coverage comparisons. Hosted product checks were skipped after a snapshot index HTTP 503. No M68 acceptance is claimed.",
     "renderer_coverage": {
       "lines": [
         19966,
