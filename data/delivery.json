@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T11:06:35.131956+00:00",
+  "as_of": "2026-11-17T11:54:58.036041+00:00",
   "execution_state": "active",
   "current_phase": "M68",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3163,7 +3163,7 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "The exact signed-input delivery repair is independently reviewed and running its full normal hook. Original primitive-depth local evidence is retained separately; no repair result, hosted success or acceptance is claimed.",
+      "current_stage": "Repaired primitive depth at24ea625 passed the full normal hook and independent local DATA. The exact input asset is published and preserved; new automatic hosted44077798140 attempt1 is running. Official audit/Main/acceptance remain.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true,
@@ -3182,7 +3182,7 @@
       "auxiliary_RGB_obligations": 13,
       "formatter_run": true,
       "formatter_actual_exit": 0,
-      "qualification_state": "signed_metadata_delivery_repair_full_normal_in_progress",
+      "qualification_state": "repaired_locally_qualified_exact_hosted_attempt1_running",
       "prior_normal_failure": {
         "tree": "3f00c975c54cb0e9ef9f4aa28d0016b908cd5a50",
         "actual_Git_controller_wait_exit": 1,
@@ -3224,9 +3224,9 @@
           57
         ]
       },
-      "normal_passed": false,
-      "local_DATA_passed": false,
-      "locally_verified_commit": null,
+      "normal_passed": true,
+      "local_DATA_passed": true,
+      "locally_verified_commit": "24ea62519d0a671f789e6b3fc98bd2b72de18ae2",
       "hosted_failures": [
         {
           "run": 44049236320,
@@ -3256,15 +3256,22 @@
         "members": 9,
         "producer_actual_exit": 0,
         "independent_archive_DATA": true,
-        "upload_performed": false,
+        "upload_performed": true,
         "runtime_and_8SDK_inputs_unchanged": true,
         "normal_run": true,
         "accepted": false,
         "independent_source_review_complete": true,
-        "normal_state": "in_progress",
-        "normal_passed": false
+        "normal_state": "passed",
+        "normal_passed": true,
+        "asset_id": 758853584,
+        "independent_local_DATA": true,
+        "Python_aggregate": 496
       },
-      "staged_tree": "10101d116ecbd694f528cb9989f1a0014794d718"
+      "staged_tree": "10101d116ecbd694f528cb9989f1a0014794d718",
+      "hosted_run": 44077798140,
+      "hosted_attempt": 1,
+      "hosted_state": "in_progress",
+      "hosted_success": false
     },
     {
       "id": "M69",
@@ -3707,33 +3714,33 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices are accepted. Original primitive depth passed local verification, but both exact hosted attempts failed before product on HTTP 503. The reviewed signed-input delivery repair is running its full normal hook; M69 reviewed source waits for accepted M68 and final parent bindings.",
+  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices remain accepted. Repaired primitive depth at24ea625 passed the full normal hook and independent local DATA; its exact automatic hosted run44077798140 attempt1 is running. Input archive publication and preservation readbacks passed. Official DATA/Main still precede M68 acceptance; M69 reviewed source waits for the accepted repair parent.",
   "current_delivery_group": [
     "M68"
   ],
   "current_development_phase": "M68",
   "board": {
-    "updated_at": "2026-11-17T11:06:35.131956+00:00",
+    "updated_at": "2026-11-17T11:54:58.036041+00:00",
     "current": {
-      "title": "Verifying the depth-camera CI input repair",
+      "title": "Primitive depth passed locally; hosted CI is running",
       "items": [
-        "The signed-input delivery repair is reviewed and running full verification. Ubuntu package versions, signatures and quality gates are unchanged.",
+        "Primitive depth and its CI input repair passed local verification. Exact hosted CI is now running.",
         "Two-depth-camera implementation and regression source are reviewed. Its checks wait for M68 acceptance.",
         "M1\u2013M67 and 200 reviewed slices remain accepted; M65 stays Latest with 35 installed examples."
       ]
     },
     "done": [
       "M1\u2013M67 and 200 reviewed slices are accepted.",
-      "Original primitive depth passed local verification; its two hosted attempts failed before product checks.",
+      "Primitive depth and its signed-input repair passed the full local hook and independent audit.",
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Finish repair verification, exact hosted CI and the official audit, then accept primitive depth.",
+      "Finish hosted CI, the official audit and Main acceptance for primitive depth.",
       "Adopt accepted M68 in the reviewed depth-pair source, then run its consolidated verification."
     ],
     "blocker": {
-      "text": "Primitive-depth release waits for repair qualification and exact hosted success after two snapshot HTTP 503 failures.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44049236320/attempts/2"
+      "text": "Primitive-depth release still requires exact hosted success and the official audit.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44077798140"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
