@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T07:09:56.554005+00:00",
+  "as_of": "2026-11-17T08:03:16.282016+00:00",
   "execution_state": "active",
   "current_phase": "M68",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3163,7 +3163,7 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "The reviewed two-count correction is frozen in a new checkout. ONE full mandatory normal retry is active on d44608c5; no terminal result or M68 qualification yet.",
+      "current_stage": "The fixture-only correction passed complete Source review and one affected formatter. One third full normal run is active on frozen 6fe3032b; no terminal result or M68 qualification yet.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true,
@@ -3180,7 +3180,7 @@
       "auxiliary_RGB_obligations": 13,
       "formatter_run": true,
       "formatter_actual_exit": 0,
-      "qualification_state": "normal_attempt2_active_not_qualified",
+      "qualification_state": "normal_attempt3_active_not_qualified",
       "prior_normal_failure": {
         "tree": "3f00c975c54cb0e9ef9f4aa28d0016b908cd5a50",
         "actual_Git_controller_wait_exit": 1,
@@ -3191,7 +3191,21 @@
         "case": "DisabledBackendProof.test_rgb_requires_every_named_case_without_failure_or_skip",
         "full_H_R_aux_coverage_reached": false
       },
-      "staged_tree": "d44608c5ee3f28c0ea4d8b18bbc645967ef18430"
+      "prior_normal_attempt2_failure": {
+        "tree": "d44608c5ee3f28c0ea4d8b18bbc645967ef18430",
+        "actual_Git_controller_wait_exit": 1,
+        "both_reaped": true,
+        "seconds": 2050.9084753309944,
+        "headless_passed": 2049,
+        "renderer_passed": 1292,
+        "renderer_failed": 1,
+        "Python_aggregate": 484,
+        "finite_examples": 40,
+        "RGB_CLI": 13,
+        "case": "tests::depth_shape_wire_rejects_malformed_and_nonfinite_inputs_before_writing",
+        "renderer_coverage_produced": false
+      },
+      "staged_tree": "6fe3032b3475383415cf0b6cb35699fa9b7e2b61"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3605,19 +3619,19 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M67/200 accepted at exact Maincba09 after every required gate. M68 first normal failed on one stale Python registry count; its reviewed correction is in one active full retry. No M68 pass or acceptance. M65 Latest/install35 unchanged.",
+  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices are accepted at exact Main cba09 after every required gate. Both prior M68 normals failed test premises; their partial results remain separate. The reviewed third full run is active, not qualified. M65 stays Latest with 35 installed examples.",
   "current_delivery_group": [
     "M68"
   ],
   "current_development_phase": "M68",
   "board": {
-    "updated_at": "2026-11-17T07:09:56.554005+00:00",
+    "updated_at": "2026-11-17T08:03:16.282016+00:00",
     "current": {
       "title": "Verifying primitive depth cameras",
       "items": [
-        "The stale CLI registry counts are corrected and independently reviewed.",
-        "M68 full tests and strict coverage retry is running on frozen source; no pass is claimed.",
-        "M1\u2013M67 and 200 slices are accepted. M65 remains Latest with 35 installed examples."
+        "The malformed-input fixture is corrected and independently reviewed.",
+        "The third full M68 test and strict coverage run is active. No qualification is claimed.",
+        "M1\u2013M67 and 200 reviewed slices are accepted; M65 stays Latest with 35 examples."
       ]
     },
     "done": [
@@ -3626,7 +3640,7 @@
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Finish the single M68 full normal retry and independently audit its retained evidence.",
+      "Finish the single M68 full normal run and independently audit its retained evidence.",
       "Complete exact-commit hosted CI and official audit before M68 acceptance."
     ],
     "blocker": {
