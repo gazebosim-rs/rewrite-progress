@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T21:55:39.065713+00:00",
+  "as_of": "2026-11-17T23:13:54.248130+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,23 +3377,23 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Cache-safe viewer and detached final-wait correction implemented and independently reviewed. Exact d0ba/419f full normal and independent local DATA passed; ordinary review ref is published and exact hosted CI44184362570 attempt1 is running. Fresh release/package/install/browser/camera evidence remains pending.",
+      "current_stage": "Exact d0ba/419f local, hosted and official qualification passed. Detached four-role release build and independent release-output DATA passed. Fresh metadata/notices, package assembly/audit, installation, default-browser/camera proofs and publication remain pending.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "d19d5a69b94ed959bf1348665783996a531a3c36",
       "actual_predecessor_acceptance": "artifacts/m69-delivery/acceptance-main-promotion.json",
-      "qualification_state": "cache_safe_candidate_local_qualification_clear_hosted_running",
+      "qualification_state": "code_and_release_outputs_independently_qualified_package_preparation",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
       "normal_passed": true,
       "local_DATA_passed": true,
-      "hosted_success": false,
+      "hosted_success": true,
       "accepted_parent_adoption_recorded_at": "2026-11-17T15:59:27.413616+00:00",
       "locally_verified_commit": "d0ba8656401c7e41d33cf7269dcc08114086d10e",
       "staged_tree": "419f5200a783ab129fbace050e8408fcfc6238b9",
       "hosted_run": 44184362570,
       "hosted_attempt": 1,
-      "hosted_state": "in_progress",
+      "hosted_state": "completed_success",
       "actual_outcome_overlay": {
         "state": "LIVE_OBSERVED_QUALIFICATION_OVERLAY_NOT_FROZEN_SOURCE_MUTATION",
         "source_checkpoint": {
@@ -3465,6 +3465,61 @@
             "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-hosted-initial-runs.json",
             "bytes": 12558,
             "sha256": "dfbe565b2a10a18a65d494957cf8a769fee330685a3558d8f084f3b565464dc2"
+          },
+          "official_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-hosted-44184362570-attempt1-official-audit-actual-exit.json",
+            "sha256": "f3c8ce568feeb481321e0015600bf5ff1fa9efc24315ff4587238544c1e2ad55",
+            "bytes": 2539
+          },
+          "hosted_success": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-hosted-44184362570-attempt1-actual-success.json",
+            "sha256": "22828ec2bc1d6b4171931cd842a112616746de5d3c3a9fa69aac94c2f4236700",
+            "bytes": 776
+          },
+          "collector_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-hosted-44184362570-attempt1-collector-actual-exit.json",
+            "sha256": "873f3fa53f6764af1d91b71f508a4a1a7c8fb3c2b9dee23719fabf386a3e2e53",
+            "bytes": 1414
+          },
+          "release_attempt2_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-build-terminal-basis-actual-exit.json",
+            "sha256": "111bf993c3e1b861647ccda3075c16a878a0371aa6d0fb98636cc06df95bceba",
+            "bytes": 4774
+          },
+          "release_attempt2_terminal_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-terminal-wait-actual-exit.json",
+            "sha256": "26cbd30863e6593de54507e960a61ab87da3637685b5f008bd898a3c3b0b7947",
+            "bytes": 1431
+          },
+          "release_attempt1_failure": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-controller143-outcome.json",
+            "sha256": "08c587f6831557c4b3d48a39fd8a7844e749b25ed3c37e924893ebb995f4e0b6",
+            "bytes": 4276
+          },
+          "release_attempt1_worker_inventory_correction": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release143-worker-output-correction.json",
+            "sha256": "c410d1a3e8b308480479d18b3df274a32190be1acca5c4a181cb3df055759f88",
+            "bytes": 2255
+          },
+          "RGB_execution_copy_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-rgb-execution-copy-actual-exit.json",
+            "sha256": "27a604c3241cdc78a231e506eada14bb1237905001f184ddcff89a8a723c16ff",
+            "bytes": 2079
+          },
+          "RGB_execution_selection": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-retained-qualified-rgb-client-selection.json",
+            "sha256": "f96c740ebbcc90d3ebeae8d6c6bacc7cbf786d49147d0a780cb1497fcf033eca",
+            "bytes": 3944
+          },
+          "release_attempt2_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-independent-release-output-data-actual-exit.json",
+            "sha256": "82f5b3e6547fb67c325ddfaabca9239f9ea066ad2b62e1c723ad4327eba45960",
+            "bytes": 1373
+          },
+          "release_attempt2_DATA_report": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-independent-release-output-data.json",
+            "bytes": 330759,
+            "sha256": "e3f7bc77bf99d278ed84b4ff6d41cf8b2fe8e296624e4baaec269171c3450dde"
           }
         },
         "quiet_individual_passes_claimed": false,
@@ -3673,7 +3728,7 @@
           }
         },
         "active_correction": {
-          "state": "ACTUAL_FULL_NORMAL_AND_INDEPENDENT_LOCAL_DATA_CLEAR_HOSTED_RUNNING",
+          "state": "CODE_AND_RELEASE_OUTPUTS_PASSED_METADATA_PACKAGE_PREPARATION",
           "accepted_parent": "d19d5a69b94ed959bf1348665783996a531a3c36",
           "previous_frozen_candidate": "916e87384f0ce732a95b67f8c4e9303b1f1904a8",
           "contract": {
@@ -3700,15 +3755,106 @@
           "review_branch": "review/m70-cache-safe-installed-preview",
           "hosted_run": 44184362570,
           "hosted_attempt": 1,
-          "hosted_state": "in_progress",
-          "hosted_success": false,
-          "official_DATA": false,
-          "fresh_release_package_install_browser_camera_state": "NOT_STARTED_FOR_NEW_CANDIDATE",
-          "accepted": false
+          "hosted_state": "completed_success",
+          "hosted_success": true,
+          "official_DATA": true,
+          "fresh_release_package_install_browser_camera_state": "RELEASE_DATA_CLEAR_METADATA_PACKAGE_PREPARATION",
+          "accepted": false,
+          "release_input_build": {
+            "state": "ACTUAL_DETACHED_FOUR_ROLE_BUILD_AND_INDEPENDENT_RELEASE_DATA_CLEAR",
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-build-terminal-basis-actual-exit.json",
+              "sha256": "111bf993c3e1b861647ccda3075c16a878a0371aa6d0fb98636cc06df95bceba",
+              "bytes": 4774
+            },
+            "terminal_actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-terminal-wait-actual-exit.json",
+              "sha256": "26cbd30863e6593de54507e960a61ab87da3637685b5f008bd898a3c3b0b7947",
+              "bytes": 1431
+            },
+            "terminal_report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-terminal-wait-readback.json",
+              "bytes": 4637,
+              "sha256": "1dfecbfbccc62ae415eb71567e734864db5089279667222c9c076e2b035a0a6c"
+            },
+            "build_result": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-m70-release-p5hpt361/result.json",
+              "bytes": 299298,
+              "sha256": "5234f4f99c4b97542506a0d06b2c9dcd81399e659628d789f77621bba6d1783d"
+            },
+            "actual_supervisor_waited_controller_exit": 0,
+            "controller_reaped": true,
+            "supervisor_own_exit": "UNKNOWN",
+            "independent_release_DATA": true,
+            "package_or_runtime_proof": false,
+            "independent_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-independent-release-output-data-actual-exit.json",
+              "sha256": "82f5b3e6547fb67c325ddfaabca9239f9ea066ad2b62e1c723ad4327eba45960",
+              "bytes": 1373
+            },
+            "independent_DATA_report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-independent-release-output-data.json",
+              "bytes": 330759,
+              "sha256": "e3f7bc77bf99d278ed84b4ff6d41cf8b2fe8e296624e4baaec269171c3450dde"
+            }
+          },
+          "release_attempt_history": {
+            "attempt1": {
+              "basis": "CURRENT_d0ba_FIRST_RELEASE_FAILURE_PRESERVED_NO_TRANSFER",
+              "failure": {
+                "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-controller143-outcome.json",
+                "sha256": "08c587f6831557c4b3d48a39fd8a7844e749b25ed3c37e924893ebb995f4e0b6",
+                "bytes": 4276
+              },
+              "worker_inventory_correction": {
+                "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release143-worker-output-correction.json",
+                "sha256": "c410d1a3e8b308480479d18b3df274a32190be1acca5c4a181cb3df055759f88",
+                "bytes": 2255
+              },
+              "actual_outer_exit": 143,
+              "cause": "UNKNOWN",
+              "fourth_role_actual_wait": "UNKNOWN",
+              "whole_release_qualified": false
+            }
+          },
+          "RGB_execution_copy": {
+            "state": "ACTUAL_PRIVATE_BYTE_IDENTICAL_EXECUTION_COPY0_NOT_RUNTIME_PROOF",
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-rgb-execution-copy-actual-exit.json",
+              "sha256": "27a604c3241cdc78a231e506eada14bb1237905001f184ddcff89a8a723c16ff",
+              "bytes": 2079
+            },
+            "selection": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-retained-qualified-rgb-client-selection.json",
+              "sha256": "f96c740ebbcc90d3ebeae8d6c6bacc7cbf786d49147d0a780cb1497fcf033eca",
+              "bytes": 3944
+            },
+            "client_invoked": false,
+            "runtime_proof": false
+          },
+          "official_audit": {
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-hosted-44184362570-attempt1-official-audit-actual-exit.json",
+              "sha256": "f3c8ce568feeb481321e0015600bf5ff1fa9efc24315ff4587238544c1e2ad55",
+              "bytes": 2539
+            },
+            "report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/m70-hosted-44184362570-attempt1/official-audit.json",
+              "bytes": 972152,
+              "sha256": "9193279e228764766d302653881a3cc7afd4c4c4fe61dac309ee1b7d510c21fb"
+            },
+            "method": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/official-audit-m70-cache-correction-hosted-root-released-source.py",
+              "bytes": 75354,
+              "sha256": "97b576559285efd1de9c7847bb308dbb32498f903799ba8e6bb828714a01076a"
+            },
+            "original_zip_bytes": 168653863,
+            "retention": "individual_original_zips_durable_SSD_and_original_RAM"
+          }
         },
         "source_checkpoint_basis": "Frozen prior916e Source-only checkpoint preserved unchanged; current d0ba/419f qualification is a separate actual-outcome overlay, not product-planning mutation or acceptance."
       },
-      "official_DATA_passed": false,
+      "official_DATA_passed": true,
       "package_DATA_passed": false
     }
   ],
@@ -4141,18 +4287,18 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and 202 slices remain accepted; M65 Latest has35 examples. Corrected M70 candidate d0ba/419f passed full normal and independent local DATA; exact hosted CI44184362570 attempt1 is running. Fresh candidate-bound release/package/install/default-browser/camera/independent DATA and publication gates remain. Prior916e qualifications and three browser failures remain historical; earlier outer143 cause is UNKNOWN. No M70 acceptance or evidence transfer.",
+  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. Corrected M70 d0ba/419f passed full normal, independent local DATA, exact hosted CI44184362570a1, official DATA and independent four-role release-output DATA. Fresh metadata/notices/package/install/default-browser/camera proofs and publication remain. Prior916e and all browser/release143 failures stay historical;143 causes UNKNOWN, no qualification transfer or M70 acceptance.",
   "current_delivery_group": [
     "M70"
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-17T21:55:39.065713+00:00",
+    "updated_at": "2026-11-17T23:13:54.248130+00:00",
     "current": {
-      "title": "Qualifying the cache-safe camera preview",
+      "title": "Preparing the checked camera preview package",
       "items": [
-        "The cache-safe viewer correction passed full local checks and an independent evidence audit. Exact hosted CI is running.",
-        "The new candidate still needs fresh release, package, installation, robot/browser and camera proofs; earlier candidate results remain historical.",
+        "The cache-safe M70 candidate passed full local checks, exact hosted CI, the official audit and independent release-output audit.",
+        "Preparing fresh package metadata and notices, then assembly, installation and robot/browser/camera proofs.",
         "M1\u2013M69 and 202 slices remain accepted. M65 stays public Latest with 35 examples; M70 is not accepted."
       ]
     },
@@ -4162,11 +4308,11 @@
       "M65 remains public Latest with 35 examples."
     ],
     "next": [
-      "Complete exact hosted CI and its independent audit for the locally qualified candidate.",
-      "Build and audit fresh release inputs, then complete package, installation, robot/browser and camera proofs before M70 publication."
+      "Collect and audit fresh package metadata and notices, then assemble and audit the package.",
+      "Complete fresh installation, robot/browser and camera proofs, then publish M70 after all remaining gates."
     ],
     "blocker": {
-      "text": "Exact hosted CI is running. Fresh release, installation, robot/browser and camera checks remain before M70 acceptance.",
+      "text": "Fresh package, installation and robot/browser/camera proofs remain before M70 acceptance.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44184362570"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
