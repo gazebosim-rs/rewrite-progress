@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T20:13:56.757155+00:00",
+  "as_of": "2026-11-17T20:42:22.506879+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3373,27 +3373,27 @@
       "source_preparation_began_before_parent_acceptance": true,
       "source_preparation_started_at": "2026-11-17T15:07:51.347433+00:00",
       "implementation_started": true,
-      "implementation_complete": true,
-      "independent_source_review_complete": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
       "accepted": false,
-      "checks_run": true,
-      "current_stage": "Code/package/default-install audits passed. The latest browser trial loaded the mesh world and accepted Play, then failed the asset-custody gate before any helper; owned container cleanup completed. Reload evidence and camera Source are under review; runtime qualification and acceptance remain pending.",
+      "checks_run": false,
+      "current_stage": "Preserved prior code/package/install qualification and actual robot forward/turn/Pause/Reset observations. Outer controller143 left no final result; its sender and Docker wait are unknown. Cache-safe static paths and detached final-wait custody are being implemented and independently reviewed before new required checks.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "d19d5a69b94ed959bf1348665783996a531a3c36",
       "actual_predecessor_acceptance": "artifacts/m69-delivery/acceptance-main-promotion.json",
-      "qualification_state": "code_package_and_default_install_qualified_runtime_pending",
+      "qualification_state": "cache_and_final_wait_correction_Source_in_progress",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
-      "normal_passed": true,
-      "local_DATA_passed": true,
-      "hosted_success": true,
+      "normal_passed": false,
+      "local_DATA_passed": false,
+      "hosted_success": false,
       "accepted_parent_adoption_recorded_at": "2026-11-17T15:59:27.413616+00:00",
-      "locally_verified_commit": "916e87384f0ce732a95b67f8c4e9303b1f1904a8",
-      "staged_tree": "6e7d0df813b7a0f414f3e1be227ec2f0cb23ea65",
-      "hosted_run": 44133293765,
-      "hosted_attempt": 1,
-      "hosted_state": "completed_success",
+      "locally_verified_commit": null,
+      "staged_tree": null,
+      "hosted_run": null,
+      "hosted_attempt": null,
+      "hosted_state": "NOT_STARTED_FOR_CORRECTION",
       "actual_outcome_overlay": {
         "state": "LIVE_OBSERVED_QUALIFICATION_OVERLAY_NOT_FROZEN_SOURCE_MUTATION",
         "source_checkpoint": {
@@ -3431,198 +3431,224 @@
           "accepted_parent_adoption_recorded_at": "2026-11-17T15:59:27.413616+00:00"
         },
         "proofs": {
-          "qualification": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/provisional-local-qualification.json",
-            "bytes": 2005,
-            "sha256": "f26a764b8760f70088c0d21586dbb853cc794f898f263f31ac39835c0388cba8"
+          "third_browser_controller143": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt3-controller143-outcome.json",
+            "bytes": 10881,
+            "sha256": "b116eeae24b7851b83b7712d9a9f7e65030bca17440e0a26cf8fde9280f45ea7"
           },
-          "local_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/retained-normal-audit-actual-exit.json",
-            "bytes": 1655,
-            "sha256": "b8908f28d4a4176989365c2a1cc5fa66715f4471d77216d5df05e2b031ea7202"
-          },
-          "local_DATA_report": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/independent-retained-normal-audit.json",
-            "bytes": 727470,
-            "sha256": "255232d3df668191b4cd06db1e11b79ec5cd3736b1f784e754ed54c232ca997f"
-          },
-          "independent_local_metadata": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/local-data-final-independent-consistency.json",
-            "bytes": 1731,
-            "sha256": "57f65e69d96ca525a5c6d7adfdc937ae949b3d2a9a5d1b71629cb7d4ad9e28e9"
-          },
-          "review_publication": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/review-publication.json",
-            "bytes": 2609,
-            "sha256": "af5b56e2cd231e91666ee8532f28b2a0ec97610114c3b06b45ae2291f82c022e"
-          },
-          "hosted_initial": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/hosted-44133293765-attempt1-initial-run.json",
-            "bytes": 12514,
-            "sha256": "2d0a59841624f45ef21b4ae398c1142e1d56a46c7051ab0967756ec7aae83614"
-          },
-          "hosted_success": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/hosted-44133293765-attempt1-success-actual-root.json",
-            "sha256": "6c51c8faa6c03e3280dc37b3ac32760dffc39040399829ee14eb78b3c3d4d432",
-            "bytes": 1195
-          },
-          "official_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/hosted-44133293765-attempt1-official-audit-actual-exit.json",
-            "sha256": "58d5b44ac72ec89b28a8fa61b5ee3c155eb8a32db6b41389be863f9c339f0f28",
-            "bytes": 2610
-          },
-          "release_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/release-output-audit-actual-exit.json",
-            "sha256": "67345450725fb49f89992925827721eb3d0f12e1307eb871b0e982b442992f53",
-            "bytes": 2029
-          },
-          "input_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-inputs-data-actual-exit.json",
-            "sha256": "1c586af54fefb8613d16a1fe1896a87d78a6c6d60e51ffe7d1ff26036bfeaccf",
-            "bytes": 2052
-          },
-          "qa_compile_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/external-qa-pair-compile-actual-exit.json",
-            "sha256": "99d8b896d88b96de3e700bb3d6f3b9820f34ea2daf9e51aeaeaee2f154902252",
-            "bytes": 1678
-          },
-          "package_wrapper_failure": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-assembly-finalization-failure.json",
-            "sha256": "2195e49860ec9a8e7c1e24708856b99674d96c1a6d4089c31d028bbae890289f",
-            "bytes": 3717
-          },
-          "package_finalizer_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-retained-finalization-actual-exit.json",
-            "sha256": "d6c71a4c4436665bbf4246a20eb06b0401cecd7bb4418a867b96bde8be0af58e",
-            "bytes": 2094
-          },
-          "package_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-data-actual-exit.json",
-            "sha256": "4b5169ff3ee01202ec700d8fb1ed4f5dee983d8e656a1facd44cb1f580f4f055",
-            "bytes": 2102
-          },
-          "default_setup_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-ubuntu-default-setup-actual-exit.json",
-            "bytes": 2545,
-            "sha256": "91621122cc99c7df29ae6c1a4877970a8e012ae50a8138754df8fbd9c5fa698b"
-          },
-          "default_install_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-default-install-data-actual-exit.json",
-            "bytes": 1823,
-            "sha256": "128a3ebdaab2ce0d2a97d2811bbbd5787ab44ed639caf806b8dc333d35550617"
-          },
-          "default_browser_failure": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt1-failure-outcome.json",
-            "bytes": 3008,
-            "sha256": "9af0cf2028e7676a42b60691f71d8692c9db3dd4bc3d172b86e121c10ed626c7"
-          },
-          "cache_remedy_Source_plan": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-single-8082-hard-reload-remedy-source-plan.json",
-            "bytes": 10519,
-            "sha256": "9f5b7ac07b155b44c23c64fcf8c7e168e7c48140a161b6e80a9ff7de37131522"
-          },
-          "default_browser_attempt2_failure": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt2-http-custody-failure-outcome.json",
-            "sha256": "72f0fe7281fe53f7950942fc2e509791d76b05a2f7bf75b7ed936e3fba6d66be",
-            "bytes": 4131
+          "bounded_correction_contract": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-and-final-wait-correction-source-contract.json",
+            "bytes": 4092,
+            "sha256": "ae76e52be81bf45932b4125037b3deb7d4a2e6911ef6705266a23da3f295ab19"
           }
         },
-        "normal_seconds": 2070.9226,
-        "release_input_build": {
-          "state": "ACTUAL_BUILD_AND_INDEPENDENT_RETAINED_DATA_PASSED",
-          "actual_Root": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/release-build-actual-exit.json",
-            "sha256": "dbed6f950533b9c638f426439880534297472165bde558e545f3e934a7d4fb0f",
-            "bytes": 1991
-          },
-          "independent_DATA": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/release-output-audit-actual-exit.json",
-            "sha256": "67345450725fb49f89992925827721eb3d0f12e1307eb871b0e982b442992f53",
-            "bytes": 2029
-          }
-        },
-        "Source_new_Python_declarations": 20,
         "quiet_individual_passes_claimed": false,
         "frozen_product_planning_changed": false,
-        "package_assembly": {
-          "actual_product_stage_exits": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "actual_wrapper_exit": 1,
-          "failure": "Original wrapper1 neutral locator EEXIST retained. Separate finalizer0 recovered exact retained four-stage completion without replay; independent package DATA and clean installation DATA subsequently passed.",
-          "failure_receipt": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-assembly-finalization-failure.json",
-            "sha256": "2195e49860ec9a8e7c1e24708856b99674d96c1a6d4089c31d028bbae890289f",
-            "bytes": 3717
-          },
-          "package_DATA": true,
-          "installed": true,
-          "runtime_proof": false,
-          "accepted": false,
-          "finalizer_actual_exit": 0,
-          "finalizer": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-retained-finalization-actual-exit.json",
-            "sha256": "d6c71a4c4436665bbf4246a20eb06b0401cecd7bb4418a867b96bde8be0af58e",
-            "bytes": 2094
-          },
-          "package_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-data-actual-exit.json",
-            "sha256": "4b5169ff3ee01202ec700d8fb1ed4f5dee983d8e656a1facd44cb1f580f4f055",
-            "bytes": 2102
-          }
-        },
-        "default_clean_install": {
-          "state": "ACTUAL_SETUP_AND_INDEPENDENT_RETAINED_DATA_PASSED",
-          "finite_installed_loads": 41,
-          "default_camera_profile_installed": false,
-          "actual_Root": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-ubuntu-default-setup-actual-exit.json",
-            "bytes": 2545,
-            "sha256": "91621122cc99c7df29ae6c1a4877970a8e012ae50a8138754df8fbd9c5fa698b"
-          },
-          "independent_DATA_actual": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-default-install-data-actual-exit.json",
-            "bytes": 1823,
-            "sha256": "128a3ebdaab2ce0d2a97d2811bbbd5787ab44ed639caf806b8dc333d35550617"
-          }
-        },
         "default_browser": {
-          "state": "SECOND_ACTUAL_TRIAL_MESH_AND_PLAY_OBSERVED_HTTP_CUSTODY_GATE_FAILED",
-          "failure": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt1-failure-outcome.json",
-            "bytes": 3008,
-            "sha256": "9af0cf2028e7676a42b60691f71d8692c9db3dd4bc3d172b86e121c10ed626c7"
+          "state": "ACTUAL_FORWARD_TURN_PAUSE_RESET_OBSERVED_OUTER143_FINAL_RESULT_MISSING_NOT_QUALIFIED",
+          "actual_controller_exit": 143,
+          "Docker_wait": "UNKNOWN",
+          "cause": "UNKNOWN",
+          "container_stopped": true,
+          "receipt": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt3-controller143-outcome.json",
+            "bytes": 10881,
+            "sha256": "b116eeae24b7851b83b7712d9a9f7e65030bca17440e0a26cf8fde9280f45ea7"
           },
-          "HTTP304_observed": true,
-          "browser_body_SHA": "UNKNOWN",
-          "fresh_supported_origin_remedy": "ACTUAL_ATTEMPT2_MESH_WORLD_AND_PLAY_OBSERVED_ASSET_CUSTODY_GATE_FAILED",
-          "accepted": false,
-          "first_attempt_state": "FIRST_ACTUAL_TRIAL_FAILED_BEFORE_PLAY_MESH_DECODER_MISMATCH",
-          "failure_is_first_attempt_history": true,
-          "latest_failure": {
-            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt2-http-custody-failure-outcome.json",
-            "sha256": "72f0fe7281fe53f7950942fc2e509791d76b05a2f7bf75b7ed936e3fba6d66be",
-            "bytes": 4131
+          "accepted": false
+        },
+        "previous_candidate_qualification": {
+          "implementation_complete": true,
+          "independent_source_review_complete": true,
+          "checks_run": true,
+          "normal_passed": true,
+          "local_DATA_passed": true,
+          "hosted_success": true,
+          "official_DATA_passed": true,
+          "package_DATA_passed": true,
+          "locally_verified_commit": "916e87384f0ce732a95b67f8c4e9303b1f1904a8",
+          "staged_tree": "6e7d0df813b7a0f414f3e1be227ec2f0cb23ea65",
+          "hosted_run": 44133293765,
+          "hosted_attempt": 1,
+          "hosted_state": "completed_success",
+          "qualification_state": "code_package_and_default_install_qualified_runtime_pending",
+          "candidate_commit": "916e87384f0ce732a95b67f8c4e9303b1f1904a8",
+          "source_tree": "6e7d0df813b7a0f414f3e1be227ec2f0cb23ea65",
+          "basis": "RETAINED_PRIOR_CANDIDATE_ONLY_NO_QUALIFICATION_TRANSFER_TO_CORRECTION",
+          "release_input_build": {
+            "state": "ACTUAL_BUILD_AND_INDEPENDENT_RETAINED_DATA_PASSED",
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/release-build-actual-exit.json",
+              "sha256": "dbed6f950533b9c638f426439880534297472165bde558e545f3e934a7d4fb0f",
+              "bytes": 1991
+            },
+            "independent_DATA": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/release-output-audit-actual-exit.json",
+              "sha256": "67345450725fb49f89992925827721eb3d0f12e1307eb871b0e982b442992f53",
+              "bytes": 2029
+            }
           },
-          "observed_mesh_world_loaded": true,
-          "observed_entities": 6,
-          "observed_Play_ACK": {
-            "epoch": 0,
-            "simulation_time": 3.895,
-            "paused": false
+          "package_assembly": {
+            "actual_product_stage_exits": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "actual_wrapper_exit": 1,
+            "failure": "Original wrapper1 neutral locator EEXIST retained. Separate finalizer0 recovered exact retained four-stage completion without replay; independent package DATA and clean installation DATA subsequently passed.",
+            "failure_receipt": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-assembly-finalization-failure.json",
+              "sha256": "2195e49860ec9a8e7c1e24708856b99674d96c1a6d4089c31d028bbae890289f",
+              "bytes": 3717
+            },
+            "package_DATA": true,
+            "installed": true,
+            "runtime_proof": false,
+            "accepted": false,
+            "finalizer_actual_exit": 0,
+            "finalizer": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-retained-finalization-actual-exit.json",
+              "sha256": "d6c71a4c4436665bbf4246a20eb06b0401cecd7bb4418a867b96bde8be0af58e",
+              "bytes": 2094
+            },
+            "package_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-data-actual-exit.json",
+              "sha256": "4b5169ff3ee01202ec700d8fb1ed4f5dee983d8e656a1facd44cb1f580f4f055",
+              "bytes": 2102
+            }
           },
-          "helpers_issued": false,
-          "owned_container_stopped": true,
-          "runtime_qualified": false,
-          "next_trial_released": false,
-          "reload_evidence_assessment": "Documented tab.reload differs from keypress; observed asset URLs do not supply JS/Wasm bodies. Source assessment pending, no automatic retry."
-        }
+          "default_clean_install": {
+            "state": "ACTUAL_SETUP_AND_INDEPENDENT_RETAINED_DATA_PASSED",
+            "finite_installed_loads": 41,
+            "default_camera_profile_installed": false,
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-ubuntu-default-setup-actual-exit.json",
+              "bytes": 2545,
+              "sha256": "91621122cc99c7df29ae6c1a4877970a8e012ae50a8138754df8fbd9c5fa698b"
+            },
+            "independent_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-default-install-data-actual-exit.json",
+              "bytes": 1823,
+              "sha256": "128a3ebdaab2ce0d2a97d2811bbbd5787ab44ed639caf806b8dc333d35550617"
+            }
+          },
+          "normal_seconds": 2070.9226,
+          "Source_new_Python_declarations": 20,
+          "proofs": {
+            "qualification": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/provisional-local-qualification.json",
+              "bytes": 2005,
+              "sha256": "f26a764b8760f70088c0d21586dbb853cc794f898f263f31ac39835c0388cba8"
+            },
+            "local_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/retained-normal-audit-actual-exit.json",
+              "bytes": 1655,
+              "sha256": "b8908f28d4a4176989365c2a1cc5fa66715f4471d77216d5df05e2b031ea7202"
+            },
+            "local_DATA_report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/independent-retained-normal-audit.json",
+              "bytes": 727470,
+              "sha256": "255232d3df668191b4cd06db1e11b79ec5cd3736b1f784e754ed54c232ca997f"
+            },
+            "independent_local_metadata": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/local-data-final-independent-consistency.json",
+              "bytes": 1731,
+              "sha256": "57f65e69d96ca525a5c6d7adfdc937ae949b3d2a9a5d1b71629cb7d4ad9e28e9"
+            },
+            "review_publication": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/review-publication.json",
+              "bytes": 2609,
+              "sha256": "af5b56e2cd231e91666ee8532f28b2a0ec97610114c3b06b45ae2291f82c022e"
+            },
+            "hosted_initial": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/hosted-44133293765-attempt1-initial-run.json",
+              "bytes": 12514,
+              "sha256": "2d0a59841624f45ef21b4ae398c1142e1d56a46c7051ab0967756ec7aae83614"
+            },
+            "hosted_success": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/hosted-44133293765-attempt1-success-actual-root.json",
+              "sha256": "6c51c8faa6c03e3280dc37b3ac32760dffc39040399829ee14eb78b3c3d4d432",
+              "bytes": 1195
+            },
+            "official_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/hosted-44133293765-attempt1-official-audit-actual-exit.json",
+              "sha256": "58d5b44ac72ec89b28a8fa61b5ee3c155eb8a32db6b41389be863f9c339f0f28",
+              "bytes": 2610
+            },
+            "release_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/release-output-audit-actual-exit.json",
+              "sha256": "67345450725fb49f89992925827721eb3d0f12e1307eb871b0e982b442992f53",
+              "bytes": 2029
+            },
+            "input_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-inputs-data-actual-exit.json",
+              "sha256": "1c586af54fefb8613d16a1fe1896a87d78a6c6d60e51ffe7d1ff26036bfeaccf",
+              "bytes": 2052
+            },
+            "qa_compile_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/external-qa-pair-compile-actual-exit.json",
+              "sha256": "99d8b896d88b96de3e700bb3d6f3b9820f34ea2daf9e51aeaeaee2f154902252",
+              "bytes": 1678
+            },
+            "package_wrapper_failure": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-assembly-finalization-failure.json",
+              "sha256": "2195e49860ec9a8e7c1e24708856b99674d96c1a6d4089c31d028bbae890289f",
+              "bytes": 3717
+            },
+            "package_finalizer_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-retained-finalization-actual-exit.json",
+              "sha256": "d6c71a4c4436665bbf4246a20eb06b0401cecd7bb4418a867b96bde8be0af58e",
+              "bytes": 2094
+            },
+            "package_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/package-data-actual-exit.json",
+              "sha256": "4b5169ff3ee01202ec700d8fb1ed4f5dee983d8e656a1facd44cb1f580f4f055",
+              "bytes": 2102
+            },
+            "default_setup_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-ubuntu-default-setup-actual-exit.json",
+              "bytes": 2545,
+              "sha256": "91621122cc99c7df29ae6c1a4877970a8e012ae50a8138754df8fbd9c5fa698b"
+            },
+            "default_install_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/clean-default-install-data-actual-exit.json",
+              "bytes": 1823,
+              "sha256": "128a3ebdaab2ce0d2a97d2811bbbd5787ab44ed639caf806b8dc333d35550617"
+            },
+            "default_browser_failure": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt1-failure-outcome.json",
+              "bytes": 3008,
+              "sha256": "9af0cf2028e7676a42b60691f71d8692c9db3dd4bc3d172b86e121c10ed626c7"
+            },
+            "cache_remedy_Source_plan": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-single-8082-hard-reload-remedy-source-plan.json",
+              "bytes": 10519,
+              "sha256": "9f5b7ac07b155b44c23c64fcf8c7e168e7c48140a161b6e80a9ff7de37131522"
+            },
+            "default_browser_attempt2_failure": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/default-viewer-attempt2-http-custody-failure-outcome.json",
+              "sha256": "72f0fe7281fe53f7950942fc2e509791d76b05a2f7bf75b7ed936e3fba6d66be",
+              "bytes": 4131
+            }
+          }
+        },
+        "active_correction": {
+          "state": "SOURCE_IN_PROGRESS_NO_CHECKS",
+          "accepted_parent": "d19d5a69b94ed959bf1348665783996a531a3c36",
+          "previous_frozen_candidate": "916e87384f0ce732a95b67f8c4e9303b1f1904a8",
+          "contract": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-and-final-wait-correction-source-contract.json",
+            "bytes": 4092,
+            "sha256": "ae76e52be81bf45932b4125037b3deb7d4a2e6911ef6705266a23da3f295ab19"
+          },
+          "renderer_bytes_changed": false,
+          "new_candidate_qualified": false
+        },
+        "source_checkpoint_basis": "Frozen prior916e Source-only checkpoint, preserved unchanged; current correction is not qualified."
       },
-      "official_DATA_passed": true,
-      "package_DATA_passed": true
+      "official_DATA_passed": false,
+      "package_DATA_passed": false
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -4054,32 +4080,32 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and 202 reviewed slices are accepted on Main d19d; M65 Latest remains 35 installed examples. M70 code/local/hosted/official/package/default-install audits passed. The latest browser trial loaded the mesh world and accepted Play, then failed asset custody before any helper. Robot/camera runtime proof, independent runtime DATA and publication remain pending. This is a live outcome overlay; frozen product Source is unchanged.",
+  "acceptance_boundary": "M1\u2013M69 and 202 slices remain accepted; M65 Latest has35 examples. Previous M70 candidate916e passed code/package/install audits. Its third browser trial observed robot controls and guest shutdown, but outer143 left no final result or proven Docker wait. A bounded cache/final-wait correction is in Source development and requires new qualification. No M70 acceptance or evidence transfer.",
   "current_delivery_group": [
     "M70"
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-17T20:13:56.757155+00:00",
+    "updated_at": "2026-11-17T20:42:22.506879+00:00",
     "current": {
-      "title": "Finishing the installed camera preview",
+      "title": "Closing the browser and camera delivery",
       "items": [
-        "M70 code, hosted CI, package audits and clean Ubuntu installation passed; all 41 installed examples load.",
-        "The mesh world loaded and Play worked. The browser asset-custody gate then stopped the trial before any robot helper; reload evidence is under review.",
-        "Robot motion/Pause/Reset and camera trials remain. M1\u2013M69 and 202 slices are accepted; M65 stays Latest with 35 examples."
+        "The previous M70 package passed clean Ubuntu installation and all 41 finite loads. Real robot forward, turn, Pause and Reset were observed.",
+        "Its outer controller ended before saving the final result. A bounded correction adds cache-safe viewer paths and durable final process-wait records.",
+        "Complete the correction, required checks and camera trials before M70 acceptance. M1\u2013M69 and 202 slices remain accepted; M65 stays Latest."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 reviewed slices are accepted.",
-      "M70 code, package and clean Ubuntu installation passed independent audits; 41 installed examples load.",
+      "A prior M70 candidate passed code/package/install audits and all 41 finite installed loads.",
       "M65 remains public Latest with 35 examples."
     ],
     "next": [
-      "Close the reload and asset-custody Source review, then complete the default robot controls and shutdown.",
-      "Complete the separate camera profile/trials and independent runtime DATA, then publish M70 after all gates."
+      "Complete and review the cache and process-wait correction, then run its required final checks.",
+      "Complete the exact candidate\u2019s package, installation, robot and camera proofs, audit the results, then publish M70."
     ],
     "blocker": {
-      "text": "The browser trial stopped at its asset-custody gate after the mesh world loaded and Play worked. Reload evidence is under review; no helper ran and the owned container is stopped.",
+      "text": "The outer browser controller exited 143 before its final receipt. Robot controls were observed and the container is stopped; the cause remains unknown. Reliable final-wait recording is being added.",
       "url": "https://github.com/gazebosim-rs/rewrite-progress"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
