@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T00:45:27.373652+00:00",
+  "updated_at": "2026-11-17T01:54:40.452633+00:00",
   "state": "active",
-  "summary": "All M65 qualification passed, including 35 installed examples and fleet/browser/shutdown proof. Main and tag are published; release assets and public readbacks remain. M1\u2013M64 and 197 slices stay accepted.",
+  "summary": "M65 is shipped and accepted: 35 installed examples and independently checked fleet/browser/shutdown proof. M66 sphere visuals are in parallel Source preparation. M1\u2013M65 retain 198 accepted slices.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "PKG-01",
-      "title": "M65 \u00b7 Preparing the checked fleet release",
-      "detail": "All 24 numerical commands, six browser checkpoints and clean owned shutdown passed, followed by independent numerical and visual audits. Main and annotated m65-preview are published and read back. Release assets and public readbacks remain before acceptance."
+      "id": "M66-RGB",
+      "title": "M66 \u00b7 Sphere visuals in RGB cameras",
+      "detail": "Add opaque spheres through the existing calibrated RGB path. Renderer and scene/canonical integration are separate Source lanes with independent review. Preserve M65 Latest/install35; no M66 checks have run."
     }
   ],
   "accepted_slices": [
@@ -997,16 +997,19 @@
       "title": "M64 Cylinder visuals in RGB camera snapshots",
       "commit": "192ede6369ab6d83ecf88230944d2061f74b5e94",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/192ede6369ab6d83ecf88230944d2061f74b5e94"
+    },
+    {
+      "title": "M65 Installed eight-owner fleet preview",
+      "commit": "069f315c1466c40120d85f6944a5f478ef6e9c71",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m65-preview"
     }
   ],
   "remaining": [
-    "Stage and review seven release assets at the published qualified Main and tag.",
-    "Verify draft downloads, publish the release, and check Latest and prior release preservation.",
-    "Record M65 acceptance, then continue directly to the next useful bounded phase."
+    "Complete M66 sphere implementation, meaningful regression Source and guides, then batch independent review findings.",
+    "Run one consolidated normal/strict coverage cycle and independent local DATA after the complete feature.",
+    "Require exact hosted CI, durable originals, official audit and Main/readbacks before M66 acceptance."
   ],
-  "blockers": [
-    "Only release asset publication and public readbacks remain. No owner action is needed."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1059,7 +1062,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M65 separately passed 2,046 headless,1,226 overlapping renderer and 472 Python tests, 37 Source finite examples, strict local/hosted gates, official audit, package and 35-example clean-install DATA. Its actual fleet/browser/shutdown run passed; independent fleet DATA passed and publication remains. M1\u2013M64/197 slices remain accepted; M60 stays Latest with 33 examples.",
+    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M65 separately passed 2,046 headless, 1,226 overlapping renderer, 472 Python and 37 Source finite checks, all strict local/hosted and official gates, 35-example clean installation and fleet/browser/shutdown DATA. M1\u2013M65/198 slices are accepted; m65-preview is public Latest. M66 Source preparation has no test or qualification result.",
     "renderer_coverage": {
       "lines": [
         19966,
