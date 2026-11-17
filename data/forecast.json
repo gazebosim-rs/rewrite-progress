@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "as_of": "2026-11-17",
-  "scope": "Complete primitive-depth hosted acceptance, then verify the reviewed two-depth-camera phase.",
+  "scope": "Verify and accept two independently demanded calibrated depth cameras.",
   "target_working_days": 5,
   "owner_target_date": null,
-  "confidence": "Low",
-  "assumption": "Repaired primitive depth passed the full local hook and independent DATA. Its pinned input archive is published and exact hosted CI is running. Official audit and Main remain mandatory; M69 checks wait for accepted M68 and final parent bindings.",
+  "confidence": "Medium",
+  "assumption": "M68 is accepted after all required gates and its exact signed-input repair is published. M69 source and regressions are integrated on the accepted parent; final source bindings and consolidated local/hosted/official verification remain.",
   "clock": "Each phase is bounded to a target of five working days including implementation, regressions, documentation, independent review and mandatory gates. Independent Source work overlaps under D31; retained scope and actual qualification determine acceptance."
 }

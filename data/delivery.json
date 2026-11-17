@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T11:54:58.036041+00:00",
+  "as_of": "2026-11-17T12:53:15.757364+00:00",
   "execution_state": "active",
-  "current_phase": "M68",
+  "current_phase": "M69",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -3153,7 +3153,7 @@
       "scope": "One calibrated64x64 depth camera using current Box/Cylinder/Sphere/Ellipsoid meshes, explicit protocol7 depth-shape request and existing R_FLOAT32 Image output.",
       "acceptance": "Complete implementation, meaningful regressions, guides and independent Source review; actual accepted M67 parent before one consolidated normal/strict/local DATA cycle, real finite-mesh depth and canonical consumer, exact hosted/official/durable/Main gates.",
       "excluded": "Depth noise, pointcloud/RGBD/multiplicity, lighting/material/physics changes, packages/worker distribution, new dependencies/SDK/framework or analytic/native/performance parity.",
-      "evidence": "docs/M68_DELIVERY.md",
+      "evidence": "docs/M68_ACCEPTANCE.md",
       "source_preparation_basis_commit": "cba09f1c088b5b8b328516c8f31aaf554229f1db",
       "source_preparation_basis_accepted": true,
       "source_preparation_basis_locally_qualified": true,
@@ -3161,9 +3161,9 @@
       "implementation_started": true,
       "implementation_complete": true,
       "independent_source_review_complete": true,
-      "accepted": false,
+      "accepted": true,
       "checks_run": true,
-      "current_stage": "Repaired primitive depth at24ea625 passed the full normal hook and independent local DATA. The exact input asset is published and preserved; new automatic hosted44077798140 attempt1 is running. Official audit/Main/acceptance remain.",
+      "current_stage": "Accepted after full normal/strict/local DATA, exact hosted44077798140 attempt1, durable originals, independent official DATA and Main promotion/readbacks. The signed-input archive was published with old assets and M65 Latest preserved.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true,
@@ -3182,7 +3182,7 @@
       "auxiliary_RGB_obligations": 13,
       "formatter_run": true,
       "formatter_actual_exit": 0,
-      "qualification_state": "repaired_locally_qualified_exact_hosted_attempt1_running",
+      "qualification_state": "accepted_on_Main",
       "prior_normal_failure": {
         "tree": "3f00c975c54cb0e9ef9f4aa28d0016b908cd5a50",
         "actual_Git_controller_wait_exit": 1,
@@ -3259,19 +3259,25 @@
         "upload_performed": true,
         "runtime_and_8SDK_inputs_unchanged": true,
         "normal_run": true,
-        "accepted": false,
-        "independent_source_review_complete": true,
+        "accepted": true,
+        "asset_id": 758853584,
         "normal_state": "passed",
         "normal_passed": true,
-        "asset_id": 758853584,
         "independent_local_DATA": true,
         "Python_aggregate": 496
       },
       "staged_tree": "10101d116ecbd694f528cb9989f1a0014794d718",
       "hosted_run": 44077798140,
       "hosted_attempt": 1,
-      "hosted_state": "in_progress",
-      "hosted_success": false
+      "hosted_state": "completed_success",
+      "hosted_success": true,
+      "accepted_at": "2026-11-17T12:43:57.222419+00:00",
+      "accepted_commits": {
+        "gz-sim-rs": "24ea62519d0a671f789e6b3fc98bd2b72de18ae2",
+        "gzweb-rs": "c40418cd85e21db2bd0271919c90eda0c1184ece"
+      },
+      "official_DATA": true,
+      "Main_commit": "24ea62519d0a671f789e6b3fc98bd2b72de18ae2"
     },
     {
       "id": "M69",
@@ -3283,22 +3289,40 @@
       "scope": "Exactly two homogeneous calibrated 64 by 64 depth cameras with independent demand, rates, workers and canonical metric-depth outputs through a separate depth-pair API.",
       "acceptance": "Complete implementation, meaningful regressions, guide and independent Source review; actual M68 acceptance before any checks. Then require a fresh full normal, strict actual-parent coverage, independent local DATA, exact hosted CI, durable originals, official audit and Main promotion.",
       "excluded": "RGBD registration, point clouds, noise, dynamic registration, renderer or physics changes, new dependencies or SDK/framework, package refresh, analytic/native Ogre/performance parity.",
-      "evidence": "docs/M68_SIGNED_INPUTS.md",
-      "source_preparation_basis_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
-      "source_preparation_basis_accepted": false,
+      "evidence": "docs/M69_DELIVERY.md",
+      "source_preparation_basis_commit": "24ea62519d0a671f789e6b3fc98bd2b72de18ae2",
+      "source_preparation_basis_accepted": true,
       "source_preparation_basis_locally_qualified": true,
       "source_preparation_started_at": "2026-11-17T08:45:47.683966+00:00",
       "implementation_started": true,
       "implementation_complete": true,
-      "independent_source_review_complete": true,
+      "independent_source_review_complete": false,
       "scope_independent_source_review_complete": true,
       "accepted": false,
       "checks_run": false,
-      "current_stage": "All source lanes, cross-seam review and initial control census are independently reviewed. Frozen until finally accepted M68 repair parent adoption and final Source bindings; no checks ran.",
+      "current_stage": "Complete reviewed feature and regression source is on actual accepted M68. One affected formatter passed; post-format Source/census/binding closure precedes the single full verification cycle. No M69 tests or acceptance claimed.",
       "installed_accepted_examples": 35,
       "predecessor_acceptance_required_before_checks": true,
-      "qualification_state": "source_review_complete_checks_held_for_accepted_M68_parent",
-      "preformat_census_final_bindings": false
+      "qualification_state": "accepted_parent_final_Source_metadata_review_pending",
+      "preformat_census_final_bindings": false,
+      "initial_source_preparation_basis_commit": "103fd9275637a1a18f416320c08893dcb2ecff75",
+      "repair_parent_Source_preparation_started_at": "2026-11-17T12:17:48.920468+00:00",
+      "prior_feature_source_review_complete": true,
+      "accepted_predecessor_commit": "24ea62519d0a671f789e6b3fc98bd2b72de18ae2",
+      "actual_predecessor_acceptance": "artifacts/m68-delivery/acceptance-main-promotion.json",
+      "source_control_declarations": {
+        "Rust_unique": 12,
+        "headless": 3,
+        "renderer": 10,
+        "overlap": 1,
+        "Python": 2,
+        "separate_borrowed_renderer_support": 2,
+        "inherited_Rust_unique": 128,
+        "inherited_Python": 37,
+        "separate_retained_renderer_support": 6
+      },
+      "formatter_run": true,
+      "formatter_actual_exit": 0
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3370,13 +3394,12 @@
     "M65": "complete",
     "M66": "complete",
     "M67": "complete",
-    "M68": "in_progress",
+    "M68": "complete",
     "M69": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-17T04:22:13.840777+00:00",
   "active_phases": [
-    "M68",
     "M69"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
@@ -3712,41 +3735,47 @@
       ],
       "integration": "M67 exact cba09 local normal/DATA passed and hosted/official/Main closeout continues. Isolated M68 Source preparation may proceed over locally qualified cba09; no formatter/tests/build/native or qualification before actual M67 acceptance and complete independent Source review. Any predecessor correction requires affected adoption/review; no result transfer.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M68",
+        "M69"
+      ],
+      "integration": "M68 repaired24ea passed full local normal and independent DATA while exact hosted/official/Main closeout proceeds. D31 permits NEW isolated M69 Source-only adoption on that qualified unaccepted parent, preserving old frozen roots and all repairs. All M69 formatting/tests/lint/staging/commit/build/qualification/publication wait actual M68 acceptance plus complete final parent/Source review. A changed accepted parent requires affected reconciliation/review; no result transfer. Root serializes heavy work.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M67 and 200 reviewed slices remain accepted. Repaired primitive depth at24ea625 passed the full normal hook and independent local DATA; its exact automatic hosted run44077798140 attempt1 is running. Input archive publication and preservation readbacks passed. Official DATA/Main still precede M68 acceptance; M69 reviewed source waits for the accepted repair parent.",
+  "acceptance_boundary": "M1\u2013M68 and 201 reviewed slices are accepted at exact Main24ea625. M68 full normal/local DATA/exact hosted44077798140a1/official DATA/durable originals/Main passed; M65 remains Latest/install35. Prepared M69 source is on this actual accepted parent; post-format Source/census/binding closure and the full verification cycle remain.",
   "current_delivery_group": [
-    "M68"
+    "M69"
   ],
-  "current_development_phase": "M68",
+  "current_development_phase": "M69",
   "board": {
-    "updated_at": "2026-11-17T11:54:58.036041+00:00",
+    "updated_at": "2026-11-17T12:53:15.757364+00:00",
     "current": {
-      "title": "Primitive depth passed locally; hosted CI is running",
+      "title": "M68 accepted; two-depth-camera verification cycle",
       "items": [
-        "Primitive depth and its CI input repair passed local verification. Exact hosted CI is now running.",
-        "Two-depth-camera implementation and regression source are reviewed. Its checks wait for M68 acceptance.",
-        "M1\u2013M67 and 200 reviewed slices remain accepted; M65 stays Latest with 35 installed examples."
+        "Primitive depth and its CI input repair passed every required gate and are accepted on Main.",
+        "Two-depth-camera features and regressions are integrated on the accepted parent and in final source review and verification preparation.",
+        "M1\u2013M68 and 201 reviewed slices are accepted; M65 stays Latest with 35 installed examples."
       ]
     },
     "done": [
-      "M1\u2013M67 and 200 reviewed slices are accepted.",
-      "Primitive depth and its signed-input repair passed the full local hook and independent audit.",
+      "M1\u2013M68 and 201 reviewed slices are accepted.",
+      "Primitive depth passed local and exact hosted verification, independent audits and Main promotion.",
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Finish hosted CI, the official audit and Main acceptance for primitive depth.",
-      "Adopt accepted M68 in the reviewed depth-pair source, then run its consolidated verification."
+      "Complete the consolidated checks and independent evidence audits for two depth cameras.",
+      "Finish exact hosted acceptance, then select the next useful bounded delivery."
     ],
     "blocker": {
-      "text": "Primitive-depth release still requires exact hosted success and the official audit.",
+      "text": "",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44077798140"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
-  "parallel_source_phases": [
-    "M69"
-  ],
+  "parallel_source_phases": [],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
     "basis_accepted_commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",
