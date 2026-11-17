@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T08:03:16.282016+00:00",
+  "updated_at": "2026-11-17T08:50:42.358129+00:00",
   "state": "active",
-  "summary": "M1\u2013M67 and 200 reviewed slices are accepted. M68\u2019s malformed-input fixture is corrected and reviewed; its third full normal and strict coverage run is active. No M68 qualification is claimed. M65 stays Latest with 35 examples.",
+  "summary": "M68 primitive depth passed local verification and independent DATA; hosted CI is running. M69 two-depth-camera Source work has started. M1\u2013M67 and 200 slices are accepted; M65 stays Latest with 35 examples.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M68-DEPTH",
-      "title": "M68 \u00b7 Full verification",
-      "detail": "The second run found one duplicate-key test using the wrong fixture request ID. The fixture-only correction is reviewed, and the third full run is active. Prior partial passes stay separate; no M68 qualification or acceptance is claimed."
+      "title": "M68 \u00b7 Hosted verification",
+      "detail": "Primitive depth passed full local tests, strict coverage and independent retained-evidence validation at the exact review commit. Hosted CI is running; official audit and Main acceptance remain. Earlier failed runs stay separate."
+    },
+    {
+      "id": "M69-DEPTH-PAIR",
+      "title": "M69 \u00b7 Two depth cameras in Source development",
+      "detail": "Source work has started for two independently demanded depth cameras with separate workers, rates and canonical outputs. All checks, qualification and publication wait for M68 acceptance and complete independent Source review."
     }
   ],
   "accepted_slices": [
@@ -1015,8 +1020,8 @@
     }
   ],
   "remaining": [
-    "Finish the single M68 full normal run and independently audit its retained evidence.",
-    "Complete exact-commit hosted CI and official audit before M68 acceptance."
+    "Finish primitive-depth hosted CI, retain its original evidence, then complete the official audit and Main acceptance.",
+    "Finish reviewed two-depth-camera Source; run checks only after M68 acceptance and complete Source review."
   ],
   "blockers": [],
   "plan_status": {
@@ -1071,7 +1076,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Structured metrics remain the earlier M57 measurements and linked CI. M1\u2013M67 and 200 slices are accepted; M65 stays Latest with 35 installed examples. M67 separately passed 2,048 headless and 1,270 overlapping renderer tests, 480 Python checks, 39 finite examples and 12 RGB cases through all required gates. M68\u2019s prior runs failed test premises; their partial counts do not qualify the current third run.",
+    "note": "Structured metrics and linked CI remain earlier M57 scope. M68 separately passed 2,049 headless and 1,293 overlapping renderer tests, 484 Python checks, 40 finite examples and 13 RGB admission cases; independent local DATA passed four final RAW comparisons. Hosted CI is running; no M68 acceptance. Both earlier failed runs remain separate. M69 Source only; M65 stays Latest with 35 installed examples.",
     "renderer_coverage": {
       "lines": [
         19966,
