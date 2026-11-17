@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T04:22:45.617137+00:00",
+  "as_of": "2026-11-17T05:35:54.258892+00:00",
   "execution_state": "active",
   "current_phase": "M67",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3091,14 +3091,79 @@
       "source_preparation_basis_accepted": true,
       "source_preparation_started_at": "2026-11-17T04:22:13.840777+00:00",
       "implementation_started": true,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "accepted": false,
+      "checks_run": true,
+      "current_stage": "Full normal and strict coverage passed, followed by actual HOST custody and independent retained local DATA0. Exact review commit is published; hosted CI44024955758 attempt1 is running. Official audit and Main readbacks remain.",
+      "installed_accepted_examples": 35,
+      "source_finite_example_obligations": 39,
+      "auxiliary_RGB_obligations": 12,
+      "scope_independent_source_review_complete": true,
+      "formatter_run": true,
+      "formatter_actual_exit": 0,
+      "source_control_declarations": {
+        "Rust_unique": 21,
+        "headless": 1,
+        "renderer": 21,
+        "overlap": 1,
+        "Python": 4,
+        "separate_borrowed_renderer_support": 2
+      },
+      "qualification_state": "local_qualified_review_hosted_CI_running",
+      "accepted_predecessor_commit": "1b0c3be1af7c751987df53b4b96269236f7ae9c5",
+      "locally_qualified_commit": "cba09f1c088b5b8b328516c8f31aaf554229f1db",
+      "locally_qualified_tree": "d03ef2094795c732f12a9183d912547e602c693a",
+      "local_qualification": {
+        "commit": "cba09f1c088b5b8b328516c8f31aaf554229f1db",
+        "tree": "d03ef2094795c732f12a9183d912547e602c693a",
+        "parent": "1b0c3be1af7c751987df53b4b96269236f7ae9c5",
+        "full_normal_passed": true,
+        "independent_local_DATA_passed": true,
+        "headless_passed": 2048,
+        "renderer_overlapping_passed": 1270,
+        "Python_aggregate": 480,
+        "finite_examples": 39,
+        "RGB_CLI_cases": 12,
+        "actual_new_Rust_controls": {
+          "headless": 1,
+          "renderer": 21
+        },
+        "actual_new_shared_support_controls": {
+          "headless": 0,
+          "renderer": 2
+        },
+        "raw_comparisons_once_LAST": 4,
+        "hosted_run": 44024955758,
+        "hosted_attempt": 1,
+        "hosted_success": false,
+        "official_DATA_success": false,
+        "accepted": false
+      }
+    },
+    {
+      "id": "M68",
+      "title": "Curved primitives in calibrated metric-depth snapshots",
+      "max_working_days": 5,
+      "depends_on": [
+        "M67"
+      ],
+      "scope": "One calibrated64x64 depth camera using current Box/Cylinder/Sphere/Ellipsoid meshes, explicit protocol7 depth-shape request and existing R_FLOAT32 Image output.",
+      "acceptance": "Complete implementation, meaningful regressions, guides and independent Source review; actual accepted M67 parent before one consolidated normal/strict/local DATA cycle, real finite-mesh depth and canonical consumer, exact hosted/official/durable/Main gates.",
+      "excluded": "Depth noise, pointcloud/RGBD/multiplicity, lighting/material/physics changes, packages/worker distribution, new dependencies/SDK/framework or analytic/native/performance parity.",
+      "evidence": "docs/M68_DELIVERY.md",
+      "source_preparation_basis_commit": "cba09f1c088b5b8b328516c8f31aaf554229f1db",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_started_at": "2026-11-17T05:42:11.759764+00:00",
+      "implementation_started": true,
       "implementation_complete": false,
       "independent_source_review_complete": false,
       "accepted": false,
       "checks_run": false,
-      "current_stage": "Independent contract review passed; disjoint protocol, renderer and scene implementation lanes are underway. No product checks run.",
+      "current_stage": "Independent contract review passed; disjoint Source implementation is underway. Every formatter/test/build/native/qualification step waits for accepted M67 and complete independent Source review.",
       "installed_accepted_examples": 35,
-      "source_finite_example_obligations": 39,
-      "auxiliary_RGB_obligations": 12,
+      "predecessor_acceptance_required_before_checks": true,
       "scope_independent_source_review_complete": true
     }
   ],
@@ -3170,12 +3235,14 @@
     "M64": "complete",
     "M65": "complete",
     "M66": "complete",
-    "M67": "in_progress"
+    "M67": "in_progress",
+    "M68": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-17T04:22:13.840777+00:00",
   "active_phases": [
-    "M67"
+    "M67",
+    "M68"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -3502,21 +3569,30 @@
       ],
       "integration": "M61\u2013M64 exact192ede local normal/DATA passed; hosted/official/Main closeout stays separate while disjoint M65 package/helper Source preparation proceeds over192ede. Actual predecessor acceptance and complete independent Source review precede any M65 checks. Every feature/distribution proof remains mandatory; Root alone releases serial heavy operations, no result transfer.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M67",
+        "M68"
+      ],
+      "integration": "M67 exact cba09 local normal/DATA passed and hosted/official/Main closeout continues. Isolated M68 Source preparation may proceed over locally qualified cba09; no formatter/tests/build/native or qualification before actual M67 acceptance and complete independent Source review. Any predecessor correction requires affected adoption/review; no result transfer.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M66/199 accepted at exact Main1b0c. M65 public Latest/install35 unchanged. M67 is new unqualified Source work; all own gates mandatory.",
+  "acceptance_boundary": "M1\u2013M66/199 accepted at exact Main1b0c; M65 public Latest/install35 unchanged. M67 full normal/strict/local DATA passed atcba09; exact review CI44024955758attempt1 is running. Official/durable/Main gates remain before acceptance.",
   "current_delivery_group": [
-    "M67"
+    "M67",
+    "M68"
   ],
-  "current_development_phase": "M67",
+  "current_development_phase": "M68",
   "board": {
-    "updated_at": "2026-11-17T04:22:45.617137+00:00",
+    "updated_at": "2026-11-17T05:35:54.258892+00:00",
     "current": {
-      "title": "Adding ellipsoid visuals to RGB cameras",
+      "title": "Qualifying ellipsoids and preparing primitive depth",
       "items": [
-        "M66 sphere visuals are accepted after full normal, strict coverage, exact hosted CI and independent audits.",
-        "M67 adds opaque ellipsoid visuals using the existing sphere mesh. Renderer, scene and protocol work use disjoint lanes with independent review.",
-        "Parallel implementation is underway after contract review. Tests run after the complete feature; the installed release stays unchanged."
+        "M67 passed full normal, strict coverage and independent local audit: 2,048 headless and 1,270 overlapping renderer tests, 480 Python checks and 39 finite examples.",
+        "Exact-commit M67 hosted CI is running. Official evidence review and Main promotion remain; M65 stays Latest with 35 installed examples.",
+        "M68 primitive depth is being prepared in a separate Source worktree. Its checks wait for M67 acceptance and complete independent review."
       ]
     },
     "done": [
@@ -3525,18 +3601,18 @@
       "M65 remains the public Latest preview with 35 installed examples."
     ],
     "next": [
-      "Finish ellipsoid implementation, meaningful regressions and guides; batch independent review findings.",
-      "Run one consolidated normal and strict coverage cycle after the complete feature.",
-      "Retain exact hosted, official audit and Main gates before accepting M67."
+      "Finish M67 exact-commit hosted CI, durable original evidence and independent official audit, then promote the qualified Main commit.",
+      "Complete the M68 Source contract, implementation, meaningful regressions and guides in disjoint lanes.",
+      "Run M68 consolidated checks only after M67 acceptance and complete independent Source review."
     ],
     "blocker": {
       "text": "",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/1b0c3be1af7c751987df53b4b96269236f7ae9c5"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44024955758"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M67"
+    "M68"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
