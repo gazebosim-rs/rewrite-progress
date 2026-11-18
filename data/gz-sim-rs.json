@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T05:06:20+00:00",
+  "updated_at": "2026-11-18T06:10:16.665169+00:00",
   "state": "active",
-  "summary": "Reviewed D33 candidate removes DART/MuJoCo adapters, dependencies and dedicated jobs. Corrected mandatory verification is running; removal is not qualified or published. M70 browser approval remains pending.",
+  "summary": "Backend removal passed local checks and independent result validation. Exact hosted CI is running on review commit 8f13dc7; Main remains at M69. M70 browser approval is separate.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "D33RETIREBACKENDS",
       "title": "D33 \u00b7 Retiring DART and MuJoCo",
-      "detail": "The isolated removal, regression tests, guides and independent review are complete. The corrected mandatory verification pass is running on an accepted-Main candidate. It is unqualified; M70 and its browser approval remain separate."
+      "detail": "Local verification and independent retained-evidence review passed. Hosted CI run 44248938975, attempt 1, is running: https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44248938975. After success, review its artifacts before Main promotion. No M70 qualification transfers."
     }
   ],
   "accepted_slices": [
@@ -1025,8 +1025,8 @@
     }
   ],
   "remaining": [
-    "Complete mandatory local verification and independent retained-evidence review.",
-    "Require exact hosted CI before publishing or accepting the removal; M70 runtime remains held for browser approval."
+    "Validate the completed hosted CI result and retain its original evidence.",
+    "Publish the checked removal to Main after that validation."
   ],
   "blockers": [
     "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. D33 retirement work can proceed independently."
