@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-17T23:58:12.380374+00:00",
+  "updated_at": "2026-11-18T01:05:39.917291+00:00",
   "state": "active",
-  "summary": "The cache-safe M70 package passed independent clean Ubuntu installation DATA and all 41 installed finite loads. Fresh robot/browser and camera proofs remain.",
+  "summary": "The installed robot/browser proof passed. Camera provisioning hit the launcher\u2019s absolute-only provider guard; a bounded correction is under Source review.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70-INSTALLED-CAMERA",
-      "title": "M70 \u00b7 Preparing installed robot and camera proofs",
-      "detail": "Code qualification, release/package audits and independent clean Ubuntu installation DATA passed, including all 41 finite installed loads. Fresh robot/browser and camera proofs remain before M70 acceptance."
+      "title": "M70 \u00b7 Reviewing the camera provider path correction",
+      "detail": "Default installation, all 41 finite loads and robot/browser runtime DATA passed. Camera provisioning failed on the signed OS ICD library basename; launcher correction review precedes camera trials."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,11 @@
     }
   ],
   "remaining": [
-    "Complete the fresh installed robot/browser proof and independent runtime DATA.",
-    "Complete camera proofs, then publish M70 after all remaining gates."
+    "Complete independent Source review and required qualification of the bounded launcher correction.",
+    "Complete fresh package and camera proofs, then publish M70 after all remaining gates."
   ],
   "blockers": [
-    "Fresh robot/browser and camera proofs remain before M70 acceptance."
+    "The launcher rejects the signed OS ICD library basename; correction review and required fresh qualification precede camera trials."
   ],
   "plan_status": {
     "REF-01": "in_progress",
