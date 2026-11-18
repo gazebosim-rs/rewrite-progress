@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T22:59:44.911320+00:00",
+  "updated_at": "2026-11-18T23:42:34.628628+00:00",
   "state": "active",
-  "summary": "All 15 CLI camera cases passed; the first full qualification stopped on a stale 14-case proof registry. Its reviewed correction has one full normal/strict retry running, with no result. Hosted CI and browser approval remain blocked.",
+  "summary": "M70 camera correction passed full local normal/strict checks and independent audit. Fresh release builds are running; new package/install/camera/browser proof and hosted qualification remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Verifying the corrected camera proof registry",
-      "detail": "The camera correction first qualification stopped after 541 seconds: all 15 CLI camera cases passed, but its strict auxiliary registry still expected 14. The bounded registry, regression and documentation correction passed independent source review. One affected full normal/strict retry is running with no result yet. Earlier candidate 597ac3d proof remains separate; changed-package installation and camera/browser proof are pending."
+      "title": "Building the locally verified camera preview",
+      "detail": "Local unpublished candidate 2e8d9dc passed the full normal/strict gate and independent audit: 1,740 headless and 1,278 renderer Rust passes (overlapping), 469 quiet Python checks, 15 auxiliary camera cases, 41 finite loads and 38 native records. Four-role release builds are running. Fresh package/install/camera/browser proof remains pending; earlier failures are preserved."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Finish the running full normal/strict retry of the independently reviewed registry correction.",
-    "Build the changed package and verify a fresh installation, paired-depth/RGB behavior and shutdown.",
-    "Finish the live browser proof after explicit origin approval, then exact hosted qualification and release readbacks."
+    "Complete release inputs, notices, package assembly/relocation and independent package audit.",
+    "Verify a fresh Ubuntu installation, paired-depth/RGB behavior and owned shutdown.",
+    "Finish real robot/browser proof after origin approval, hosted qualification and release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "Exact hosted CI failed before product verification: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown; no retry or gate workaround is running.",
+    "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
   "plan_status": {
@@ -1061,17 +1061,16 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "597ac3ddccf150cc1c45a60c3c72b838f943093a",
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/597ac3ddccf150cc1c45a60c3c72b838f943093a",
-    "rust_tests": 1738,
+    "revision": "2e8d9dc22ae267a7a108a76716b8aaefcabbddf2",
+    "rust_tests": 1740,
     "coverage": {
       "lines": [
-        33095,
-        33995
+        33051,
+        33949
       ],
       "regions": [
-        50501,
-        52516
+        50454,
+        52462
       ]
     },
     "upstream": {
@@ -1080,23 +1079,23 @@
       "partial": 9
     },
     "ci": {
-      "state": "failure",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
+      "state": "unknown",
+      "url": null
     },
-    "note": "Figures are same-head local M70 qualification: headless and renderer counts overlap; both strict profiles and independent audit passed. Upstream inventory remains historical. Exact hosted CI failed before product checks on three Ubuntu snapshot HTTP401 responses; original evidence is durable and independently audited. M70 remains unaccepted; M65 Latest still has 35 examples.",
+    "note": "Unpublished local candidate 2e8d9dc passed full normal, both strict workspace/per-crate coverage profiles, actual-parent changed-line gates and independent audit. Headless/renderer counts overlap; 469 Python checks are quiet aggregate evidence. All 15 auxiliary camera cases, 41 finite loads and 38 native records passed. New installed runtime proof is pending. This revision has no hosted result; the earlier 597ac3d run failed on Ubuntu snapshot HTTP401. Upstream counts remain historical; M65 Latest still has 35 examples.",
     "renderer_coverage": {
       "lines": [
-        21189,
-        21733
+        21287,
+        21826
       ],
       "regions": [
-        32299,
-        33548
+        32405,
+        33649
       ]
     },
-    "renderer_rust_tests": 1272,
+    "renderer_rust_tests": 1278,
     "renderer_overlaps_headless": true,
-    "quiet_Python_tests": 466,
+    "quiet_Python_tests": 469,
     "quiet_Python_individual_results_observable": false,
     "finite_example_runs": 41
   },
