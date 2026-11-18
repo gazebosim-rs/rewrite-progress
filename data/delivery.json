@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18T21:27:48.352711+00:00",
+  "as_of": "2026-11-18",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,13 +3377,13 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Full local normal and independent retained audit passed for candidate 597ac3d based on the D33 Main. Hosted CI failed before product checks when three locked Ubuntu InRelease requests returned HTTP401. Provisional local release builds are running; M70 remains unaccepted.",
+      "current_stage": "The earlier candidate 597ac3d passed local qualification, package and clean Ubuntu installation with 41 examples; its first camera trial failed. The shared-session connection correction, lifecycle regressions and guides passed independent source review. One consolidated normal/strict verification is running with no result yet; fresh changed-package installation and camera/browser proofs remain required.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
       "actual_predecessor_acceptance": "artifacts/backend-retirement/retirement-completion.json",
-      "qualification_state": "local_qualified_hosted_snapshot_access_blocked",
+      "qualification_state": "camera_connection_correction_verification_running",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
       "normal_passed": true,
       "local_DATA_passed": true,
@@ -3399,7 +3399,7 @@
         "browser_origin_approval_pending": true,
         "accepted_parent_adoption_recorded_at": "2026-11-17T15:59:27.413616+00:00"
       },
-      "bounded_correction": "Carry the unchanged frozen M70 package/launcher and regression changes onto D33 Main, preserving D33 backend retirement and strict camera-provider/cache/cleanup rules and all package/install/robot/camera acceptance gates. No old qualification transfers.",
+      "bounded_correction": "Share the world server upstream Zenoh session with CLI camera output after complete family preflight; preserve legacy constructors, lazy worker demand, reset/removal/partial-failure cleanup and strict camera-provider rules. New code requires its own mandatory qualification, source-bound release/package, fresh installation and GPU provision, camera/browser proofs and independent audits; earlier candidate qualification does not transfer.",
       "locally_qualified_commit": "597ac3ddccf150cc1c45a60c3c72b838f943093a",
       "hosted_run": 44351185107,
       "hosted_attempt": 1,
@@ -3841,13 +3841,13 @@
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T21:27:48.352711+00:00",
+    "updated_at": "2026-11-18T22:44:24.247521+00:00",
     "current": {
-      "title": "Preparing the installed camera proof",
+      "title": "Verifying the camera connection correction",
       "items": [
-        "M70 source checks, release builds, package audits and clean Ubuntu installation passed provisionally.",
-        "All 41 installed examples passed as an unprivileged user; installed camera behavior awaits proof.",
-        "Camera procedures are being reviewed. Hosted snapshot HTTP 401 and browser approval still block acceptance."
+        "The earlier M70 package and clean Ubuntu installation passed; all 41 installed examples passed.",
+        "The first camera trial failed. Source review found a disconnected camera peer and an early harness timeout.",
+        "The shared-session correction, lifecycle regressions and guides passed independent source review. One consolidated normal/strict check is running; no result yet."
       ]
     },
     "done": [
@@ -3855,8 +3855,8 @@
       "D33 retirement is published on Main. M70 local verification and audit passed on review commit 597ac3d."
     ],
     "next": [
-      "Run installed paired-depth and RGB proofs, including provider, resource and shutdown checks.",
-      "Run the live robot browser demonstration after explicit origin approval.",
+      "Complete consolidated verification, then build the changed package and verify its fresh installation.",
+      "Complete paired-depth/RGB, browser and shutdown proofs; browser access still needs explicit origin approval.",
       "Restore exact hosted qualification and finish release readbacks before M70 acceptance."
     ],
     "blocker": {
