@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T16:01:14.781547+00:00",
+  "updated_at": "2026-11-18T16:07:18.853658+00:00",
   "state": "active",
-  "summary": "M70 camera-preview integration on Main 8f13dc7 passed source review; full verification is running. DART and MuJoCo remain retired. Browser approval is still needed; M70 is not accepted.",
+  "summary": "M70 integration preserves D33 retirement. The first check found one guide line-wrap mismatch; its reviewed correction is running the full required check. Browser approval is still needed; M70 is not accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
       "title": "Installed camera preview on retained backends",
-      "detail": "The four package/launcher implementation and regression files are unchanged from the reviewed M70 donor. A new isolated candidate preserves D33 and is running the complete normal hook and strict coverage. Old M70 proofs do not qualify this parent."
+      "detail": "All 466 Python tests ran in the first normal, with one documentation assertion failing because a sentence wrapped across lines. Only that wrap changed; assertions and implementation are unchanged. Independent review cleared the correction and the full normal/strict coverage retry is running."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Finish local verification and independent audit, then exact hosted CI.",
+    "Finish the corrected full local verification and independent audit, then exact hosted CI.",
     "Build and install the source-bound four-ELF package and audit its notices and payload.",
     "Complete robot/browser and paired-depth/RGB acceptance after browser approval."
   ],
@@ -1082,7 +1082,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
     },
-    "note": "Numeric quality fields remain the historical M57 baseline, not D33 or current M70 results. D33 passed required local/exact hosted gates and independent audits; its separate automatic Main CI also succeeded. The new M70 successor passed source review and is running mandatory local checks. M1\u2013M69, 202 slices and M65 Latest with 35 examples remain accepted; no old M70 result transfers.",
+    "note": "Numeric fields remain the historical M57 baseline. D33 required/local/hosted audits and separate automatic Main CI passed. The new M70 first normal failed one guide assertion after 466 Python checks; Rust runtime/coverage were not reached. Its reviewed newline correction is running the complete required retry. No M70 acceptance or old-result transfer.",
     "renderer_coverage": {
       "lines": [
         19966,
