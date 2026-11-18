@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18T03:19:19.756831+00:00",
+  "as_of": "2026-11-18T03:53:15.515667+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,13 +3377,13 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Current fcd5/74ff passed normal/strict/local DATA, exact hosted CI and release/Input/Package DATA. Fresh setup failed preflight before Docker on two procedure layout bindings; a bounded Source correction is under review. Official DATA and fresh installation/41 finite loads/robot/browser/camera proofs remain; M70 is unaccepted.",
+      "current_stage": "Current fcd5/74ff passed code/local, exact hosted/official, release/Input/Package DATA and clean Ubuntu installation/41 finite loads/installation DATA. Browser access was denied by automatic approval review; no navigation, Play or helpers occurred. The reviewed UI deadline expired with controller1 and owned cleanup stopped the container. Explicit local-origin approval, fresh browser/robot and camera proofs remain; M70 is unaccepted.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "d19d5a69b94ed959bf1348665783996a531a3c36",
       "actual_predecessor_acceptance": "artifacts/m69-delivery/acceptance-main-promotion.json",
-      "qualification_state": "system_lvp_basename_code_hosted_package_clear_setup_preflight_correction",
+      "qualification_state": "system_lvp_basename_code_official_package_install_clear_browser_origin_approval_required",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
       "normal_passed": true,
       "local_DATA_passed": true,
@@ -3626,7 +3626,7 @@
             "basis": "HISTORICAL_916e_ONLY_NO_TRANSFER_TO_CURRENT_d0ba"
           }
         },
-        "source_checkpoint_basis": "Frozen916e and historical d0ba records remain unchanged without transfer. Current fcd5/74ff code/hosted/package passes are retained; its fresh setup preflight1 is separately recorded before Docker. A bounded procedure correction and fresh installed/runtime plus official gates remain.",
+        "source_checkpoint_basis": "Frozen916e and historical d0ba records remain unchanged without transfer. Current fcd5/74ff code/official/package/install passes are retained. Its first browser trial timed out after automatic navigation rejection without UI checkpoints; owned cleanup is not application-clean-exit proof. Explicit owner origin approval and runtime/acceptance gates remain.",
         "previous_cache_safe_candidate_qualification": {
           "identity": {
             "commit": "d0ba8656401c7e41d33cf7269dcc08114086d10e",
@@ -4274,10 +4274,40 @@
             "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-clean-setup-preflight-actual-failure.json",
             "sha256": "c6a55befb52fe37c853aa7ba4fe93c4ee0479dec00af8a192b73019fa7e221c4",
             "bytes": 2315
+          },
+          "official_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-hosted-44221877589-attempt1-official-audit-actual-exit.json",
+            "sha256": "fa9a76920e4af0cab4becdfb7af600be94afce7a24f9385022ba9e19133ba968",
+            "bytes": 2524
+          },
+          "default_setup_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-layout-reviewed-default-clean-setup-actual-exit.json",
+            "sha256": "01e276173f0e47180a69c643852bbdfc3025fcb13c55f07230af2636d2001249",
+            "bytes": 3249
+          },
+          "default_install_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-default-install-state-reviewed-data-actual-exit.json",
+            "sha256": "a741181233bcdf5cac572537c32c1164683a86fb94ed9223307770057e34ff3c",
+            "bytes": 2293
+          },
+          "default_install_DATA_report": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-default-clean-install-state-reviewed-independent-data.json",
+            "sha256": "dcb01934b0db4a96eb86d493dfa120fa10ddc567b7e31d4fe9183e7685a3cda4",
+            "bytes": 84791
+          },
+          "default_browser_origin_approval_hold": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-browser-origin-approval-held.json",
+            "sha256": "b0dbf7acd8e7240d79d5287d25fed345cbb01ee00c1329cd9d8ae9228be98c8b",
+            "bytes": 1511
+          },
+          "default_browser_origin_hold_failure": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-browser-origin-held-default-actor-actual-failure.json",
+            "sha256": "a85e4ce0db8af9d4f6a1726b88e0985b06b5e6598cdc9255025c29f4f50a7888",
+            "bytes": 4370
           }
         },
         "active_correction": {
-          "state": "CODE_AND_PACKAGE_CLEAR_SETUP_PREFLIGHT_CORRECTION_UNDER_REVIEW",
+          "state": "CODE_OFFICIAL_PACKAGE_INSTALL_CLEAR_LOCAL_BROWSER_APPROVAL_REQUIRED",
           "candidate_commit": "fcd5a30dc0a8431b250cf96720db27ae597a6585",
           "source_tree": "74ff160f0cc32df84534cdf3c3d4002d895901b1",
           "source_root": "/home/nkoenig/work/gazebo/rust/gz-sim-m70-system-lvp-basename-fix",
@@ -4352,7 +4382,7 @@
           "hosted_attempt": 1,
           "hosted_state": "completed_success",
           "hosted_conclusion": "success",
-          "official_DATA": false,
+          "official_DATA": true,
           "release_input_build": {
             "state": "ACTUAL_FOUR_ROLE_BUILD_AND_INDEPENDENT_RELEASE_DATA_PASSED",
             "launch_actual": {
@@ -4463,6 +4493,30 @@
             }
           },
           "default_clean_install": {
+            "state": "ACTUAL_SETUP_AND_INDEPENDENT_INSTALL_DATA_PASSED",
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-layout-reviewed-default-clean-setup-actual-exit.json",
+              "sha256": "01e276173f0e47180a69c643852bbdfc3025fcb13c55f07230af2636d2001249",
+              "bytes": 3249
+            },
+            "independent_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-default-install-state-reviewed-data-actual-exit.json",
+              "sha256": "a741181233bcdf5cac572537c32c1164683a86fb94ed9223307770057e34ff3c",
+              "bytes": 2293
+            },
+            "independent_DATA_report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-default-clean-install-state-reviewed-independent-data.json",
+              "sha256": "dcb01934b0db4a96eb86d493dfa120fa10ddc567b7e31d4fe9183e7685a3cda4",
+              "bytes": 84791
+            },
+            "finite_installed_loads": 41,
+            "actual_host_stages": 28,
+            "actual_guest_stages": 9,
+            "owned_idle_container_stopped": true,
+            "application_shutdown_proof": false,
+            "camera_frames_proved": false
+          },
+          "default_clean_install_preflight_failure": {
             "state": "ACTUAL_SETUP_PREFLIGHT1_BEFORE_DOCKER_CORRECTION_UNDER_SOURCE_REVIEW",
             "candidate_commit": "fcd5a30dc0a8431b250cf96720db27ae597a6585",
             "source_tree": "74ff160f0cc32df84534cdf3c3d4002d895901b1",
@@ -4482,19 +4536,49 @@
             ],
             "retry_released": false,
             "accepted": false
+          },
+          "official_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-hosted-44221877589-attempt1-official-audit-actual-exit.json",
+            "sha256": "fa9a76920e4af0cab4becdfb7af600be94afce7a24f9385022ba9e19133ba968",
+            "bytes": 2524
           }
         },
         "default_browser": {
-          "state": "NOT_STARTED_FOR_BASENAME_SUCCESSOR",
+          "state": "ACTUAL_BROWSER_ORIGIN_APPROVAL_HOLD_AND_CHECKPOINT_TIMEOUT_NOT_QUALIFIED",
           "candidate_commit": "fcd5a30dc0a8431b250cf96720db27ae597a6585",
           "source_tree": "74ff160f0cc32df84534cdf3c3d4002d895901b1",
-          "actual_controller_exit": null,
-          "Docker_wait": null,
-          "result": null,
+          "actual_failure": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-browser-origin-held-default-actor-actual-failure.json",
+            "sha256": "a85e4ce0db8af9d4f6a1726b88e0985b06b5e6598cdc9255025c29f4f50a7888",
+            "bytes": 4370
+          },
+          "approval_hold": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/system-lvp-basename-browser-origin-approval-held.json",
+            "sha256": "b0dbf7acd8e7240d79d5287d25fed345cbb01ee00c1329cd9d8ae9228be98c8b",
+            "bytes": 1511
+          },
+          "actual_controller_exit": 1,
+          "controller_reaped": true,
+          "supervisor_own_exit": "UNKNOWN",
+          "Docker_wait": 1,
+          "result": {
+            "path": "/dev/shm/gz-sim-m70-packaged-demo-axyqv197/result.json",
+            "bytes": 232618,
+            "sha256": "a74db8dcf25932a70e184bdbfa065eb2c59883227309d6d1ff41ee80f96aab42"
+          },
+          "browser_navigation": false,
+          "Play_issued": false,
+          "finite_helpers_issued": false,
+          "browser_checkpoints": [],
+          "application_clean_shutdown_exit": "UNKNOWN_NOT_PROVED",
+          "owned_container_stopped": true,
+          "owned_container_pid": 0,
+          "owner_approval_received": false,
+          "retry_released": false,
           "accepted": false
         }
       },
-      "official_DATA_passed": false,
+      "official_DATA_passed": true,
       "package_DATA_passed": true
     }
   ],
@@ -4927,33 +5011,33 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. Current fcd5/74ff passed code/local, exact hosted, release/Input/Package DATA gates. Fresh setup stopped before Docker on procedure bindings; correction is under Source review. Fresh installation/runtime, official/durable/Main/publication remain; M70 is unaccepted.",
+  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. Current fcd5/74ff passed code/local, exact hosted/official, release/Input/Package and installation DATA with41 finite loads. Browser navigation was rejected; controller1/zero UI checkpoints and owned cleanup are retained. Explicit local-origin approval, fresh robot/browser/camera and durable/Main/publication gates remain; M70 is unaccepted.",
   "current_delivery_group": [
     "M70"
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T03:19:19.756831+00:00",
+    "updated_at": "2026-11-18T03:53:15.515667+00:00",
     "current": {
-      "title": "Correcting setup admission before installation",
+      "title": "Awaiting approval for local browser access",
       "items": [
-        "Current code checks, exact hosted CI and independent local/release/Input/Package DATA passed.",
-        "Fresh setup stopped before Docker on two procedure layout bindings; the bounded Source correction is under review.",
-        "Official DATA and fresh installed robot/camera proofs remain. M1\u2013M69/202 are accepted; M65 stays Latest with 35 examples."
+        "Current code, exact hosted/official, release/package and clean installation audits passed, including 41 finite loads.",
+        "Automatic approval review denied local browser access. No navigation, Play or helpers occurred; the trial timed out and cleanup stopped the container.",
+        "Explicit local-origin approval is pending. Robot/browser and camera proofs remain; M1\u2013M69/202 and M65 Latest with 35 examples are unchanged."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 reviewed slices are accepted; M65 remains Latest with 35 examples.",
-      "Current normal/strict checks, exact hosted CI and independent local/release DATA passed.",
-      "Input DATA bound 757 packages and 1,604 notice files; assembly and independent Package DATA passed."
+      "Current normal/strict checks, local DATA and exact hosted/official audits passed.",
+      "Release/Input/Package DATA and clean Ubuntu installation DATA passed, including 41 finite loads."
     ],
     "next": [
-      "Review the setup correction, then complete fresh Ubuntu installation, 41 finite loads and installation DATA.",
-      "Complete robot/browser and camera proofs plus official qualification and publication gates."
+      "Obtain local-browser origin approval, then review and release a fresh robot/browser proof trial.",
+      "Complete camera proofs and independent runtime DATA before durable acceptance and publication."
     ],
     "blocker": {
-      "text": "Setup admission correction is under Source review; fresh installation/runtime proofs and official DATA remain before M70 acceptance.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44221877589"
+      "text": "Explicit approval for http://127.0.0.1:8082 browser access is pending. No navigation or runtime proof is credited.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/fcd5a30dc0a8431b250cf96720db27ae597a6585/docs/M70_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
