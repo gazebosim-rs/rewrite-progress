@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T16:07:18.853658+00:00",
+  "updated_at": "2026-11-18T16:59:17.364043+00:00",
   "state": "active",
-  "summary": "M70 integration preserves D33 retirement. The first check found one guide line-wrap mismatch; its reviewed correction is running the full required check. Browser approval is still needed; M70 is not accepted.",
+  "summary": "M70 local verification and audit passed on 597ac3d. Provisional packaging continues; hosted CI hit Ubuntu snapshot HTTP401 before product checks. Browser approval is pending; M70 is unaccepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Installed camera preview on retained backends",
-      "detail": "All 466 Python tests ran in the first normal, with one documentation assertion failing because a sentence wrapped across lines. Only that wrap changed; assertions and implementation are unchanged. Independent review cleared the correction and the full normal/strict coverage retry is running."
+      "title": "Provisional installed camera package",
+      "detail": "The integration keeps DART and MuJoCo retired. Full local checks and independent audit passed; source-bound release builds are running. CI failed before product checks on three snapshot HTTP401 responses. Its original logs are retained; no retry is running."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,14 @@
     }
   ],
   "remaining": [
-    "Finish the corrected full local verification and independent audit, then exact hosted CI.",
-    "Build and install the source-bound four-ELF package and audit its notices and payload.",
-    "Complete robot/browser and paired-depth/RGB acceptance after browser approval."
+    "Finish the four-role release builds, metadata/notices and package audits.",
+    "Complete clean Ubuntu installation and independent camera numeric/provider/shutdown proof.",
+    "Finish the live robot browser demonstration after explicit origin approval.",
+    "Complete exact hosted qualification and release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "Live browser access to http://127.0.0.1:8082 needs explicit owner approval after automatic review rejected it. No browser retry is running."
+    "Exact hosted CI failed before product verification: three locked Ubuntu InRelease requests returned HTTP401. Underlying cause is unknown; no retry or gate workaround is running.",
+    "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after its package/install dependencies."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1060,17 +1062,17 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "9dfde487e7e377432573ebbcfd1e7a58901bc492",
-    "revision_url": null,
-    "rust_tests": 1951,
+    "revision": "597ac3ddccf150cc1c45a60c3c72b838f943093a",
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/597ac3ddccf150cc1c45a60c3c72b838f943093a",
+    "rust_tests": 1738,
     "coverage": {
       "lines": [
-        34365,
-        35234
+        33095,
+        33995
       ],
       "regions": [
-        52415,
-        54361
+        50501,
+        52516
       ]
     },
     "upstream": {
@@ -1079,25 +1081,25 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/43724961266"
+      "state": "failure",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
-    "note": "Numeric fields remain the historical M57 baseline. D33 required/local/hosted audits and separate automatic Main CI passed. The new M70 first normal failed one guide assertion after 466 Python checks; Rust runtime/coverage were not reached. Its reviewed newline correction is running the complete required retry. No M70 acceptance or old-result transfer.",
+    "note": "Figures are same-head local M70 qualification: headless and renderer counts overlap; both strict profiles and independent audit passed. Upstream inventory remains historical. Exact hosted CI failed before product checks on three Ubuntu snapshot HTTP401 responses; original evidence is durable and independently audited. M70 remains unaccepted; M65 Latest still has 35 examples.",
     "renderer_coverage": {
       "lines": [
-        19966,
-        20472
+        21189,
+        21733
       ],
       "regions": [
-        30621,
-        31812
+        32299,
+        33548
       ]
     },
-    "renderer_rust_tests": 1149,
+    "renderer_rust_tests": 1272,
     "renderer_overlaps_headless": true,
-    "quiet_Python_tests": 403,
+    "quiet_Python_tests": 466,
     "quiet_Python_individual_results_observable": false,
-    "finite_example_runs": 31
+    "finite_example_runs": 41
   },
   "phase_status": {
     "P0": "in_progress",
