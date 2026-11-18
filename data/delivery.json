@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18T16:59:17.364043+00:00",
+  "as_of": "2026-11-18T21:11:53.063458+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3841,13 +3841,13 @@
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T16:59:17.364043+00:00",
+    "updated_at": "2026-11-18T21:11:53.063458+00:00",
     "current": {
-      "title": "Packaging the locally verified camera preview",
+      "title": "Verifying the installed camera package",
       "items": [
-        "Full local checks and independent audit passed for candidate 597ac3d, based on the Main with DART and MuJoCo retired.",
-        "Hosted CI stopped before product checks: Ubuntu snapshot release requests returned HTTP 401.",
-        "Fresh provisional release builds are running; no M70 acceptance or release is claimed."
+        "Full local checks and independent audit passed for candidate 597ac3d on the Main with DART and MuJoCo retired.",
+        "Four release builds, metadata and whole notice-input review passed; package verification is underway.",
+        "Hosted CI stopped before product checks at Ubuntu snapshot HTTP 401. M70 remains unaccepted."
       ]
     },
     "done": [
@@ -3855,7 +3855,7 @@
       "D33 retirement is published on Main. M70 local verification and audit passed on review commit 597ac3d."
     ],
     "next": [
-      "Finish four-role release builds, package audits and a fresh supported installation.",
+      "Finish relocation and package audit, then verify a fresh supported Ubuntu installation.",
       "Run independent camera proofs, then the live robot browser demonstration after approval.",
       "Restore exact hosted qualification before acceptance or release."
     ],
