@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18T16:01:14.781547+00:00",
+  "as_of": "2026-11-18T16:59:17.364043+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,16 +3377,16 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "The isolated M70 successor passed complete independent source review. One consolidated normal/strict coverage cycle is running; no final result is observed.",
+      "current_stage": "Full local normal and independent retained audit passed for candidate 597ac3d based on the D33 Main. Hosted CI failed before product checks when three locked Ubuntu InRelease requests returned HTTP401. Provisional local release builds are running; M70 remains unaccepted.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
       "actual_predecessor_acceptance": "artifacts/backend-retirement/retirement-completion.json",
-      "qualification_state": "retained_backend_successor_normal_running",
+      "qualification_state": "local_qualified_hosted_snapshot_access_blocked",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
-      "normal_passed": false,
-      "local_DATA_passed": false,
+      "normal_passed": true,
+      "local_DATA_passed": true,
       "hosted_success": false,
       "accepted_parent_adoption_recorded_at": "2026-11-18T15:58:49.570683+00:00",
       "previous_candidate": {
@@ -3399,7 +3399,11 @@
         "browser_origin_approval_pending": true,
         "accepted_parent_adoption_recorded_at": "2026-11-17T15:59:27.413616+00:00"
       },
-      "bounded_correction": "Carry the unchanged frozen M70 package/launcher and regression changes onto D33 Main, preserving D33 backend retirement and strict camera-provider/cache/cleanup rules and all package/install/robot/camera acceptance gates. No old qualification transfers."
+      "bounded_correction": "Carry the unchanged frozen M70 package/launcher and regression changes onto D33 Main, preserving D33 backend retirement and strict camera-provider/cache/cleanup rules and all package/install/robot/camera acceptance gates. No old qualification transfers.",
+      "locally_qualified_commit": "597ac3ddccf150cc1c45a60c3c72b838f943093a",
+      "hosted_run": 44351185107,
+      "hosted_attempt": 1,
+      "hosted_conclusion": "failure"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3831,32 +3835,33 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and 202 reviewed slices remain accepted; D33 retirement is published on Main 8f13dc7. This isolated M70 successor is unqualified and unaccepted. Historical fcd5 code/package/install proofs do not transfer. Browser-origin approval remains pending; M65 Latest has 35 installed examples.",
+  "acceptance_boundary": "M1\u2013M69 and 202 reviewed slices remain accepted; D33 retirement is published on Main 8f13dc7. This isolated M70 successor is locally qualified, hosted-blocked and unaccepted. Historical fcd5 code/package/install proofs do not transfer. Browser-origin approval remains pending; M65 Latest has 35 installed examples.",
   "current_delivery_group": [
     "M70"
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T16:01:14.781547+00:00",
+    "updated_at": "2026-11-18T16:59:17.364043+00:00",
     "current": {
-      "title": "Verifying the installed camera preview on the new Main",
+      "title": "Packaging the locally verified camera preview",
       "items": [
-        "M70 package and launcher integration passed independent source review.",
-        "One full verification cycle is running with DART and MuJoCo still retired.",
-        "Rapier f64, TPE and all retained quality gates remain."
+        "Full local checks and independent audit passed for candidate 597ac3d, based on the Main with DART and MuJoCo retired.",
+        "Hosted CI stopped before product checks: Ubuntu snapshot release requests returned HTTP 401.",
+        "Fresh provisional release builds are running; no M70 acceptance or release is claimed."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "D33 passed local and exact hosted verification, independent audits and Main publication."
+      "D33 retirement is published on Main. M70 local verification and audit passed on review commit 597ac3d."
     ],
     "next": [
-      "Complete local verification and independent audit, then exact hosted CI.",
-      "Build and install the newly qualified package; finish robot and camera proof after browser approval."
+      "Finish four-role release builds, package audits and a fresh supported installation.",
+      "Run independent camera proofs, then the live robot browser demonstration after approval.",
+      "Restore exact hosted qualification before acceptance or release."
     ],
     "blocker": {
-      "text": "M70 live browser access to http://127.0.0.1:8082 needs explicit approval; source integration can proceed.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/8f13dc7446be4fded424b1eba83df4c8253d0cef"
+      "text": "Hosted CI cannot retrieve the locked Ubuntu snapshot (HTTP 401). Live browser access at http://127.0.0.1:8082 also needs explicit approval.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
