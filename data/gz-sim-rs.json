@@ -1,17 +1,11 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T06:10:16.665169+00:00",
+  "updated_at": "2026-11-18T07:07:42.692767+00:00",
   "state": "active",
-  "summary": "Backend removal passed local checks and independent result validation. Exact hosted CI is running on review commit 8f13dc7; Main remains at M69. M70 browser approval is separate.",
+  "summary": "D33 retirement is complete on Main 8f13dc7. Rapier f64 and TPE remain; required checks and independent audits passed. Separate Main CI is running. M70 still needs browser approval; no M70 acceptance is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
-  "active": [
-    {
-      "id": "D33RETIREBACKENDS",
-      "title": "D33 \u00b7 Retiring DART and MuJoCo",
-      "detail": "Local verification and independent retained-evidence review passed. Hosted CI run 44248938975, attempt 1, is running: https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44248938975. After success, review its artifacts before Main promotion. No M70 qualification transfers."
-    }
-  ],
+  "active": [],
   "accepted_slices": [
     {
       "title": "Native-compatible runtime IMU rate control, bounded one-way services and real C++ reset clients",
@@ -1025,11 +1019,11 @@
     }
   ],
   "remaining": [
-    "Validate the completed hosted CI result and retain its original evidence.",
-    "Publish the checked removal to Main after that validation."
+    "Prepare the M70 successor on the new Main without restoring retired backends.",
+    "After browser approval, finish the packaged robot and camera acceptance checks."
   ],
   "blockers": [
-    "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. D33 retirement work can proceed independently."
+    "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. Backend retirement is complete."
   ],
   "plan_status": {
     "REF-01": "in_progress",
