@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T20:55:01.403894+00:00",
+  "updated_at": "2026-11-18T21:11:53.063458+00:00",
   "state": "active",
-  "summary": "M70 local checks and audit passed. Provisional builds resumed using retained targets after a reboot. Hosted snapshot HTTP401 and browser approval still block acceptance. M70 is unaccepted.",
+  "summary": "M70 local checks, release builds, metadata and notice-input review passed. Package verification is underway. Hosted snapshot HTTP401 and browser approval still block acceptance; M70 is unaccepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Recovering the installed camera build",
-      "detail": "The host restarted before the original release result; its exits remain unknown and one transcript is incomplete. The independently reviewed recovery is now running against retained targets, with new transcripts and fresh exits required for all four roles. DART and MuJoCo remain retired."
+      "title": "Verifying the installed camera package",
+      "detail": "Four resumed release commands passed after the reboot, followed by metadata and whole source/unit notice review. Assembly and installed-file verification passed; the relocation wrapper stopped on a permissions assumption. Reviewed remaining work will reuse the archive and preserve those successful stages."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Recover all four release roles, then collect metadata/notices and independently audit the package.",
+    "Finish relocation and independent package audit, then verify a fresh supported Ubuntu installation.",
     "Complete clean Ubuntu installation and independent paired-depth, RGB, provider and shutdown proof.",
     "Finish the live robot browser demonstration after explicit origin approval.",
     "Complete exact hosted qualification and release readbacks before M70 acceptance."
