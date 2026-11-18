@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-17T23:13:54.248130+00:00",
+  "as_of": "2026-11-17T23:58:12.380374+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,13 +3377,13 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Exact d0ba/419f local, hosted and official qualification passed. Detached four-role release build and independent release-output DATA passed. Fresh metadata/notices, package assembly/audit, installation, default-browser/camera proofs and publication remain pending.",
+      "current_stage": "Exact d0ba/419f code qualification, release-output DATA, fresh package assembly/DATA, clean Ubuntu setup and independent installation DATA passed, including all41 installed finite loads. Fresh default-browser/camera proofs and publication remain pending.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "d19d5a69b94ed959bf1348665783996a531a3c36",
       "actual_predecessor_acceptance": "artifacts/m69-delivery/acceptance-main-promotion.json",
-      "qualification_state": "code_and_release_outputs_independently_qualified_package_preparation",
+      "qualification_state": "code_release_package_and_clean_install_independently_qualified_runtime_pending",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
       "normal_passed": true,
       "local_DATA_passed": true,
@@ -3520,6 +3520,36 @@
             "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-release-attempt2-independent-release-output-data.json",
             "bytes": 330759,
             "sha256": "e3f7bc77bf99d278ed84b4ff6d41cf8b2fe8e296624e4baaec269171c3450dde"
+          },
+          "package_assembly_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-package-assembly-actual-exit.json",
+            "sha256": "8f9fcd718818e478439d33e70e40158b039e5c344ce9da05c52399917dba0880",
+            "bytes": 2265
+          },
+          "package_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-package-independent-data-actual-exit.json",
+            "sha256": "c9bb3011c45ba3a76810222807e4ab1e641ba16e2bd9ad5bd657438f4f5fdc3d",
+            "bytes": 1649
+          },
+          "package_DATA_report": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-package-independent-data.json",
+            "bytes": 57985,
+            "sha256": "f1a2fc515ee1d27805ec099755e718922643d0cf9bff5153093795a384602149"
+          },
+          "default_setup_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-default-clean-setup-actual-exit.json",
+            "sha256": "db5837aaa75f3cc33075f228ae508788c70e5bf949122c53bcf93d266e1ddc4f",
+            "bytes": 2552
+          },
+          "default_install_DATA_actual": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-default-install-independent-data-actual-exit.json",
+            "sha256": "cb0c92b5b6e5d85970fa0b9df68a65f3314703a623a75f4ff702ea4e3f15f09b",
+            "bytes": 1894
+          },
+          "default_install_DATA_report": {
+            "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-default-clean-install-independent-data.json",
+            "bytes": 84596,
+            "sha256": "f848bf4875c4f58b79ad4ebb49ef6f979f7fa4b7d4b724a33fcaf640eb28e578"
           }
         },
         "quiet_individual_passes_claimed": false,
@@ -3728,7 +3758,7 @@
           }
         },
         "active_correction": {
-          "state": "CODE_AND_RELEASE_OUTPUTS_PASSED_METADATA_PACKAGE_PREPARATION",
+          "state": "CODE_RELEASE_PACKAGE_AND_CLEAN_INSTALL_DATA_PASSED_RUNTIME_PENDING",
           "accepted_parent": "d19d5a69b94ed959bf1348665783996a531a3c36",
           "previous_frozen_candidate": "916e87384f0ce732a95b67f8c4e9303b1f1904a8",
           "contract": {
@@ -3758,7 +3788,7 @@
           "hosted_state": "completed_success",
           "hosted_success": true,
           "official_DATA": true,
-          "fresh_release_package_install_browser_camera_state": "RELEASE_DATA_CLEAR_METADATA_PACKAGE_PREPARATION",
+          "fresh_release_package_install_browser_camera_state": "CLEAN_INSTALL_DATA_CLEAR_RUNTIME_PENDING",
           "accepted": false,
           "release_input_build": {
             "state": "ACTUAL_DETACHED_FOUR_ROLE_BUILD_AND_INDEPENDENT_RELEASE_DATA_CLEAR",
@@ -3850,12 +3880,126 @@
             },
             "original_zip_bytes": 168653863,
             "retention": "individual_original_zips_durable_SSD_and_original_RAM"
+          },
+          "package_assembly": {
+            "state": "ACTUAL_FOUR_STAGE_ASSEMBLY_AND_INDEPENDENT_PACKAGE_DATA_CLEAR",
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-package-assembly-actual-exit.json",
+              "sha256": "8f9fcd718818e478439d33e70e40158b039e5c344ce9da05c52399917dba0880",
+              "bytes": 2265
+            },
+            "result": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-m70-cache-correction-package-dgnu_xg0/result.json",
+              "bytes": 6860,
+              "sha256": "09b5f1d7a6b633b2f084bf2a96010efa33c7719e966daabf4ab0809b03cf2546"
+            },
+            "manifest": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-m70-cache-correction-package-dgnu_xg0/relocated/gz-preview-m70-linux-x86_64/manifest.json",
+              "bytes": 363740,
+              "sha256": "813c43d4efd5be060773d4f19422e2d3e36b7ccd9a8ab6a455b128c2e8b1b595"
+            },
+            "archive": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-m70-cache-correction-package-dgnu_xg0/gz-preview-m70-linux-x86_64.tar.gz",
+              "bytes": 64855426,
+              "sha256": "bd9fd1678029df516937134c0612f9b919a7db71aa4650d266802149ea297d69"
+            },
+            "independent_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-package-independent-data-actual-exit.json",
+              "sha256": "c9bb3011c45ba3a76810222807e4ab1e641ba16e2bd9ad5bd657438f4f5fdc3d",
+              "bytes": 1649
+            },
+            "independent_DATA_report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-package-independent-data.json",
+              "bytes": 57985,
+              "sha256": "f1a2fc515ee1d27805ec099755e718922643d0cf9bff5153093795a384602149"
+            },
+            "actual_product_stage_exits": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "installed": false,
+            "runtime_proof": false,
+            "accepted": false
+          },
+          "default_clean_install": {
+            "state": "ACTUAL_SETUP41_LOADS_AND_INDEPENDENT_INSTALLATION_DATA_CLEAR",
+            "actual_Root": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-default-clean-setup-actual-exit.json",
+              "sha256": "db5837aaa75f3cc33075f228ae508788c70e5bf949122c53bcf93d266e1ddc4f",
+              "bytes": 2552
+            },
+            "result": {
+              "path": "/dev/shm/gz-sim-m70-clean-setup-6i6jxlcs/result.json",
+              "bytes": 134008,
+              "sha256": "effb8b7ef20fc0dadbc2bd5701197c7d039c7c0d19255c0dc918aa923b68fa29"
+            },
+            "finite_installed_loads": 41,
+            "all_host_stages": 28,
+            "all_host_stage_exits": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "guest_stage_exits": {
+              "base-os-and-dpkg": 0,
+              "ordinary-ubuntu-sources": 0,
+              "apt-update": 0,
+              "apt-python-only": 0,
+              "owned-runtime-home": 0,
+              "guest-runtime-evidence": 0,
+              "runtime-library-ownership": 0,
+              "installed-verify-unprivileged": 0,
+              "installed-noisy-examples-unprivileged": 0
+            },
+            "maximum_layer_bytes": 38653094,
+            "owned_container_id": "692d5aceea9fd032568cfe1a0cd638f94fa9a5d69e8cf36f7df77e41919461bb",
+            "independent_DATA_passed": true,
+            "application_shutdown_proof": false,
+            "camera_provider_installed_or_executed": false,
+            "accepted": false,
+            "independent_DATA_actual": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-default-install-independent-data-actual-exit.json",
+              "sha256": "cb0c92b5b6e5d85970fa0b9df68a65f3314703a623a75f4ff702ea4e3f15f09b",
+              "bytes": 1894
+            },
+            "independent_DATA_report": {
+              "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m70-delivery/cache-correction-default-clean-install-independent-data.json",
+              "bytes": 84596,
+              "sha256": "f848bf4875c4f58b79ad4ebb49ef6f979f7fa4b7d4b724a33fcaf640eb28e578"
+            }
           }
         },
         "source_checkpoint_basis": "Frozen prior916e Source-only checkpoint preserved unchanged; current d0ba/419f qualification is a separate actual-outcome overlay, not product-planning mutation or acceptance."
       },
       "official_DATA_passed": true,
-      "package_DATA_passed": false
+      "package_DATA_passed": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -4287,18 +4431,18 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. Corrected M70 d0ba/419f passed full normal, independent local DATA, exact hosted CI44184362570a1, official DATA and independent four-role release-output DATA. Fresh metadata/notices/package/install/default-browser/camera proofs and publication remain. Prior916e and all browser/release143 failures stay historical;143 causes UNKNOWN, no qualification transfer or M70 acceptance.",
+  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. Corrected M70 d0ba/419f passed code qualification, independent release/package DATA and clean Ubuntu installation DATA with all41 installed finite loads. Fresh default-browser/camera proofs and publication remain. Prior916e and all browser/release143 failures stay historical;143 causes UNKNOWN, no qualification transfer or M70 acceptance.",
   "current_delivery_group": [
     "M70"
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-17T23:13:54.248130+00:00",
+    "updated_at": "2026-11-17T23:58:12.380374+00:00",
     "current": {
-      "title": "Preparing the checked camera preview package",
+      "title": "Preparing installed robot and camera proofs",
       "items": [
-        "The cache-safe M70 candidate passed full local checks, exact hosted CI, the official audit and independent release-output audit.",
-        "Preparing fresh package metadata and notices, then assembly, installation and robot/browser/camera proofs.",
+        "The cache-safe M70 package passed code qualification, release/package audits and independent clean Ubuntu installation DATA.",
+        "All 41 installed finite loads passed. Fresh robot/browser and camera proofs remain.",
         "M1\u2013M69 and 202 slices remain accepted. M65 stays public Latest with 35 examples; M70 is not accepted."
       ]
     },
@@ -4308,11 +4452,11 @@
       "M65 remains public Latest with 35 examples."
     ],
     "next": [
-      "Collect and audit fresh package metadata and notices, then assemble and audit the package.",
-      "Complete fresh installation, robot/browser and camera proofs, then publish M70 after all remaining gates."
+      "Complete the fresh installed robot/browser proof and independent runtime DATA.",
+      "Complete camera proofs, then publish M70 after all remaining gates."
     ],
     "blocker": {
-      "text": "Fresh package, installation and robot/browser/camera proofs remain before M70 acceptance.",
+      "text": "Fresh robot/browser and camera proofs remain before M70 acceptance.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44184362570"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
