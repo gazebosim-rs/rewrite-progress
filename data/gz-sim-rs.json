@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T16:59:17.364043+00:00",
+  "updated_at": "2026-11-18T20:55:01.403894+00:00",
   "state": "active",
-  "summary": "M70 local verification and audit passed on 597ac3d. Provisional packaging continues; hosted CI hit Ubuntu snapshot HTTP401 before product checks. Browser approval is pending; M70 is unaccepted.",
+  "summary": "M70 local checks and audit passed. Provisional builds resumed using retained targets after a reboot. Hosted snapshot HTTP401 and browser approval still block acceptance. M70 is unaccepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Provisional installed camera package",
-      "detail": "The integration keeps DART and MuJoCo retired. Full local checks and independent audit passed; source-bound release builds are running. CI failed before product checks on three snapshot HTTP401 responses. Its original logs are retained; no retry is running."
+      "title": "Recovering the installed camera build",
+      "detail": "The host restarted before the original release result; its exits remain unknown and one transcript is incomplete. The independently reviewed recovery is now running against retained targets, with new transcripts and fresh exits required for all four roles. DART and MuJoCo remain retired."
     }
   ],
   "accepted_slices": [
@@ -1025,14 +1025,14 @@
     }
   ],
   "remaining": [
-    "Finish the four-role release builds, metadata/notices and package audits.",
-    "Complete clean Ubuntu installation and independent camera numeric/provider/shutdown proof.",
+    "Recover all four release roles, then collect metadata/notices and independently audit the package.",
+    "Complete clean Ubuntu installation and independent paired-depth, RGB, provider and shutdown proof.",
     "Finish the live robot browser demonstration after explicit origin approval.",
     "Complete exact hosted qualification and release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "Exact hosted CI failed before product verification: three locked Ubuntu InRelease requests returned HTTP401. Underlying cause is unknown; no retry or gate workaround is running.",
-    "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after its package/install dependencies."
+    "Exact hosted CI failed before product verification: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown; no retry or gate workaround is running.",
+    "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
   "plan_status": {
     "REF-01": "in_progress",
