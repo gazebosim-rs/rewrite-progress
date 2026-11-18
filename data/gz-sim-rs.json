@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T04:10:52.298400+00:00",
+  "updated_at": "2026-11-18T05:06:20+00:00",
   "state": "active",
-  "summary": "Owner decision D33 cancels DART/MuJoCo and prioritizes backend retirement Source work. Rapier f64/TPE and remaining gates stay. M70 browser approval is unanswered; no qualification transfers to the new candidate.",
+  "summary": "Reviewed D33 candidate removes DART/MuJoCo adapters, dependencies and dedicated jobs. Corrected mandatory verification is running; removal is not qualified or published. M70 browser approval remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "D33RETIREBACKENDS",
       "title": "D33 \u00b7 Retiring DART and MuJoCo",
-      "detail": "Complete isolated Source removal, regressions, guides and independent exact test/control retirement review before one consolidated required verification cycle. M70 remains unaccepted with its browser-origin approval hold; frozen proofs do not qualify the new candidate."
+      "detail": "The isolated removal, regression tests, guides and independent review are complete. The corrected mandatory verification pass is running on an accepted-Main candidate. It is unqualified; M70 and its browser approval remain separate."
     }
   ],
   "accepted_slices": [
@@ -1025,8 +1025,8 @@
     }
   ],
   "remaining": [
-    "Finish retirement implementation, regressions, docs and independent exact test/control retirement review.",
-    "Run one consolidated mandatory qualification cycle after whole Source review; keep M70 runtime work held for browser approval."
+    "Complete mandatory local verification and independent retained-evidence review.",
+    "Require exact hosted CI before publishing or accepting the removal; M70 runtime remains held for browser approval."
   ],
   "blockers": [
     "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. D33 retirement work can proceed independently."
