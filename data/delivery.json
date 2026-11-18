@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18T06:10:16.665169+00:00",
+  "as_of": "2026-11-18T07:07:42.692767+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -5017,26 +5017,26 @@
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T06:10:16.665169+00:00",
+    "updated_at": "2026-11-18T07:07:42.692767+00:00",
     "current": {
-      "title": "Backend removal passed local checks",
+      "title": "DART and MuJoCo retired",
       "items": [
-        "Both adapters, their dependencies and dedicated build jobs are removed; Rapier f64 and TPE remain.",
-        "Local checks and independent result validation passed. Exact hosted CI is running.",
-        "The reviewed code is on a review branch. Main remains at M69; M70 still needs browser approval."
+        "DART and MuJoCo adapters and dedicated jobs are removed; Rapier f64 and TPE remain.",
+        "Required checks and independent audits passed; original evidence is durable.",
+        "M70 still needs browser approval. The 69 accepted phases, 202 slices and Latest release with 35 examples are unchanged."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 reviewed slices are accepted; M65 remains Latest with 35 examples.",
       "Frozen M70 code, exact hosted/official, package and installation audits passed.",
-      "D33 local verification and independent retained-evidence review passed; Rapier f64 and TPE remain."
+      "D33 retirement is published on Main 8f13dc7 after local verification, exact review CI and independent audits."
     ],
     "next": [
-      "Validate the completed hosted CI result and retain its original evidence.",
-      "Publish the checked removal to Main after that validation."
+      "Prepare the M70 successor on the new Main without restoring retired backends.",
+      "After browser approval, finish the packaged robot and camera acceptance checks."
     ],
     "blocker": {
-      "text": "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. D33 retirement work can proceed independently.",
+      "text": "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. Backend retirement is complete.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/fcd5a30dc0a8431b250cf96720db27ae597a6585/docs/M70_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -5180,7 +5180,7 @@
       "PHY-03",
       "PHY-04"
     ],
-    "retirement_implementation": "in_progress",
+    "retirement_implementation": "complete",
     "historical_evidence_preserved": true,
     "remaining_quality_gates_unchanged": true,
     "contract": "docs/BACKEND_RETIREMENT.md"
@@ -5191,7 +5191,7 @@
     "owner_directed_at": "2026-11-17",
     "candidate_root": "/home/nkoenig/work/gazebo/rust/gz-sim-retire-dart-mujoco-accepted",
     "source_basis_commit": "d19d5a69b94ed959bf1348665783996a531a3c36",
-    "state": "LOCAL_VERIFICATION_AND_RETAINED_AUDIT_CLEAR_HOSTED_CI_RUNNING",
+    "state": "D33_COMPLETE_PUBLISHED_TO_MAIN",
     "retained_product_backends": [
       "rapier",
       "tpe"
@@ -5218,16 +5218,26 @@
         "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/backend-retirement/independent-retained-normal-audit.json",
         "sha256": "3da4f41426e36c521014ffdccc123889837160830a95d41c759aa789a876b5cf",
         "bytes": 8645
+      },
+      "hosted_capture_and_source_audit": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/backend-retirement/hosted-capture-api-source-independent-audit.json",
+        "sha256": "ab90103adca78829f9900cd0b8d8010c03b7dca6ad027330b13ffa7ddb93ab72",
+        "bytes": 1962
+      },
+      "hosted_profile_audit": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/backend-retirement/independent-hosted-coverage-artifact-audit.json",
+        "sha256": "1fe3270ca61c46de567e6a54556b098977a1360535ff8926d58146b68a74b75b",
+        "bytes": 8117
       }
     },
     "independent_Source_review_complete": true,
     "historical_evidence_Fuel_and_frozen_M70_preserved": true,
     "implementation_complete": true,
     "test_retirement_inventory_complete": true,
-    "current_verification_state": "hosted_ci_running",
-    "current_verification_outcome": null,
-    "removal_qualified": false,
-    "removal_published": false,
+    "current_verification_state": "required_gates_passed_main_published",
+    "current_verification_outcome": "success",
+    "removal_qualified": true,
+    "removal_published": true,
     "unaccepted_M70_product_changes_included": false,
     "candidate_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
     "candidate_tree": "e85d2aa075a1bc742da047c909c91fd64221a53f",
@@ -5237,13 +5247,32 @@
       "run_id": 44248938975,
       "attempt": 1,
       "head_sha": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44248938975",
+      "role": "Required exact review CI proof; retained independently audited originals."
+    },
+    "main_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
+    "review_ref": "review/retire-dart-mujoco",
+    "review_ref_published": true,
+    "completion_scope": "D33 retirement and cancellation only; no completion credit for DART/MuJoCo development, no new phase and no M70 acceptance.",
+    "main_promotion": {
+      "commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
+      "actual_push_exit_code": 0,
+      "api_readback_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
+      "git_readback_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
+      "basis": "Root reports ordinary push actual0 and exact API/Git readbacks; no network operation performed by tracker author."
+    },
+    "automatic_main_ci": {
+      "run_id": 44256079612,
+      "attempt": 1,
+      "head_sha": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
       "status": "in_progress",
       "conclusion": null,
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44248938975",
-      "basis": "Root current actual automatic CI observation; no new status query performed by tracker author."
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44256079612",
+      "role": "Separate automatic Main CI; not passed and does not replace required review CI proof.",
+      "basis": "Root current actual observation; no new status query performed by tracker author."
     },
-    "main_commit": "d19d5a69b94ed959bf1348665783996a531a3c36",
-    "review_ref": "review/retire-dart-mujoco",
-    "review_ref_published": true
+    "originals_durable": true
   }
 }
