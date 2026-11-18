@@ -189,24 +189,6 @@
       "acceptance": "Upstream TPE motion/contact/lifecycle tests and benchmark"
     },
     {
-      "id": "PHY-03",
-      "owner": "gz-sim-rs",
-      "phase": "P3",
-      "group": "Runtime and physics tasks",
-      "depends_on": "PHY-01",
-      "title": "DART native adapter and safe ownership/threads, batched IO",
-      "acceptance": "Same-version upstream DART parity, FFI tests, >95% Rust and bridge evidence"
-    },
-    {
-      "id": "PHY-04",
-      "owner": "gz-sim-rs",
-      "phase": "P3",
-      "group": "Runtime and physics tasks",
-      "depends_on": "PHY-01",
-      "title": "MuJoCo adapter, SDF lowering, model/state mapping and topology edits",
-      "acceptance": "Actual supported features verified; state preservation/rollback; native lifetime tests"
-    },
-    {
       "id": "PHY-05",
       "owner": "gz-sim-rs",
       "phase": "P2",
@@ -247,7 +229,7 @@
       "owner": "gz-sim-rs",
       "phase": "P2",
       "group": "Runtime and physics tasks",
-      "depends_on": "LOAD-01, PHY-02, PHY-03 or PHY-05, SENSOR-01, IO-01",
+      "depends_on": "LOAD-01, PHY-02, PHY-05, SENSOR-01, IO-01",
       "title": "First complete exact-step SDF world",
       "acceptance": "P2 report with C++ comparison, >95% code coverage, performance data and remaining scope"
     },
@@ -301,7 +283,7 @@
       "owner": "gz-sim-rs",
       "phase": "P4",
       "group": "Assets, rendering, and complete sensors",
-      "depends_on": "SENSOR-01, PHY-03, PHY-04",
+      "depends_on": "SENSOR-01",
       "title": "Force/torque, pressure/speed, altimeter, magnetic, NavSat/logical/contact",
       "acceptance": "Model/noise/units/frame tests and backend capability errors"
     },
@@ -1073,8 +1055,28 @@
       "title": "Complete logging, statistics, auth/config behavior and CLI",
       "acceptance": "Full retained transport ledger; load/overload/log interoperability",
       "retirement": "Owner scope change D28/D29: removed release responsibility; historical evidence retained."
+    },
+    {
+      "id": "PHY-03",
+      "owner": "gz-sim-rs",
+      "phase": "P3",
+      "group": "Runtime and physics tasks",
+      "depends_on": "PHY-01",
+      "title": "DART native adapter and safe ownership/threads, batched IO",
+      "acceptance": "Same-version upstream DART parity, FFI tests, >95% Rust and bridge evidence",
+      "retirement": "Owner decision D33 (2026-11-17): cancelled by owner; DART/MuJoCo will not be used. Historical evidence is retained; this is not completed work."
+    },
+    {
+      "id": "PHY-04",
+      "owner": "gz-sim-rs",
+      "phase": "P3",
+      "group": "Runtime and physics tasks",
+      "depends_on": "PHY-01",
+      "title": "MuJoCo adapter, SDF lowering, model/state mapping and topology edits",
+      "acceptance": "Actual supported features verified; state preservation/rollback; native lifetime tests",
+      "retirement": "Owner decision D33 (2026-11-17): cancelled by owner; DART/MuJoCo will not be used. Historical evidence is retained; this is not completed work."
     }
   ],
-  "scope_note": "D30: The current weekly delivery schedule and acceptance states are recorded separately in the delivery plan above. P0\u2013P7 and these legacy packets remain long-term compatibility inventories, not MVP prerequisites. No old acceptance is transferred to the new milestones. Owner scope change: four target repositories. Use Zenoh directly and keep Messages schema-only. NET-01, NET-02 and MSG-02 were retired, not completed; ZEN-01 now tracks C++ Gazebo interoperability. Packet totals reflect this scope change, not implementation progress. Historical ZeroMQ evidence remains in Git history.",
+  "scope_note": "D30: The current weekly delivery schedule and acceptance states are recorded separately in the delivery plan above. P0\u2013P7 and these legacy packets remain long-term compatibility inventories, not MVP prerequisites. No old acceptance is transferred to the new milestones. Owner scope change: four target repositories. Use Zenoh directly and keep Messages schema-only. NET-01, NET-02 and MSG-02 were retired, not completed; ZEN-01 now tracks C++ Gazebo interoperability. Packet totals reflect this scope change, not implementation progress. Historical ZeroMQ evidence remains in Git history. D33 (2026-11-17 owner decision) cancels DART and MuJoCo product backends: PHY-03 and PHY-04 are retired, not completed. Active packet totals decrease by two because of scope, not implementation progress. Their active dependency obligations are removed; P3 legacy DART/MuJoCo and same-engine parity clauses are historical and superseded. Rapier f64 and TPE, retained behavior assertions and remaining strict quality gates continue.",
   "delivery_source_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/main/docs/DELIVERY_PLAN.md"
 }

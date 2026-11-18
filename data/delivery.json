@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18T03:53:15.515667+00:00",
+  "as_of": "2026-11-18T04:10:52.298400+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -5011,32 +5011,32 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. Current fcd5/74ff passed code/local, exact hosted/official, release/Input/Package and installation DATA with41 finite loads. Browser navigation was rejected; controller1/zero UI checkpoints and owned cleanup are retained. Explicit local-origin approval, fresh robot/browser/camera and durable/Main/publication gates remain; M70 is unaccepted.",
+  "acceptance_boundary": "M1\u2013M69 and202 slices remain accepted; M65 Latest has35 examples. D33 cancels DART/MuJoCo work and prioritizes Source retirement while retaining Rapier f64/TPE and strict remaining gates. Frozen M70 fcd5 code/official/package/install evidence stays historical to the new candidate; M70 is unaccepted and local-browser approval is unanswered. No new phase or retirement qualification is claimed.",
   "current_delivery_group": [
     "M70"
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T03:53:15.515667+00:00",
+    "updated_at": "2026-11-18T04:10:52.298400+00:00",
     "current": {
-      "title": "Awaiting approval for local browser access",
+      "title": "Retiring DART and MuJoCo by owner direction",
       "items": [
-        "Current code, exact hosted/official, release/package and clean installation audits passed, including 41 finite loads.",
-        "Automatic approval review denied local browser access. No navigation, Play or helpers occurred; the trial timed out and cleanup stopped the container.",
-        "Explicit local-origin approval is pending. Robot/browser and camera proofs remain; M1\u2013M69/202 and M65 Latest with 35 examples are unchanged."
+        "D33 cancels DART and MuJoCo backends and pending work. Rapier f64 and TPE remain.",
+        "Implementation, regression and gate updates are in Source preparation; independent test-retirement review is required before consolidated checks.",
+        "M70 remains unaccepted with local-browser approval unanswered. M1\u2013M69/202 and M65 Latest with 35 examples are unchanged."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 reviewed slices are accepted; M65 remains Latest with 35 examples.",
-      "Current normal/strict checks, local DATA and exact hosted/official audits passed.",
-      "Release/Input/Package DATA and clean Ubuntu installation DATA passed, including 41 finite loads."
+      "Frozen M70 code, exact hosted/official, package and installation audits passed.",
+      "The owner cancelled PHY-03/PHY-04. Their historical records are retained; cancellation is not completion."
     ],
     "next": [
-      "Obtain local-browser origin approval, then review and release a fresh robot/browser proof trial.",
-      "Complete camera proofs and independent runtime DATA before durable acceptance and publication."
+      "Finish retirement implementation, regressions, docs and independent exact test/control retirement review.",
+      "Run one consolidated mandatory qualification cycle after whole Source review; keep M70 runtime work held for browser approval."
     ],
     "blocker": {
-      "text": "Explicit approval for http://127.0.0.1:8082 browser access is pending. No navigation or runtime proof is credited.",
+      "text": "M70 browser access at http://127.0.0.1:8082 still needs explicit approval. D33 retirement work can proceed independently.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/fcd5a30dc0a8431b250cf96720db27ae597a6585/docs/M70_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -5164,5 +5164,52 @@
       "Main_commit": "192ede6369ab6d83ecf88230944d2061f74b5e94",
       "acceptance_record": "artifacts/m61-m64-delivery/acceptance-main-promotion.json"
     }
+  },
+  "backend_scope": {
+    "decision": "D33",
+    "owner_directed_at": "2026-11-17",
+    "retained_product_backends": [
+      "rapier",
+      "tpe"
+    ],
+    "cancelled_product_backends": [
+      "dart",
+      "mujoco"
+    ],
+    "cancelled_tasks": [
+      "PHY-03",
+      "PHY-04"
+    ],
+    "retirement_implementation": "in_progress",
+    "historical_evidence_preserved": true,
+    "remaining_quality_gates_unchanged": true,
+    "contract": "docs/BACKEND_RETIREMENT.md"
+  },
+  "current_development_task": "D33RETIREBACKENDS",
+  "backend_retirement_source_preparation": {
+    "decision": "D33",
+    "owner_directed_at": "2026-11-17",
+    "candidate_root": "/home/nkoenig/work/gazebo/rust/gz-sim-retire-dart-mujoco",
+    "source_basis_commit": "fcd5a30dc0a8431b250cf96720db27ae597a6585",
+    "state": "SOURCE_IMPLEMENTATION_AND_TEST_RETIREMENT_REVIEW_PENDING",
+    "retained_product_backends": [
+      "rapier",
+      "tpe"
+    ],
+    "cancelled_product_backends": [
+      "dart",
+      "mujoco"
+    ],
+    "cancelled_tasks": [
+      "PHY-03",
+      "PHY-04"
+    ],
+    "new_phase_created": false,
+    "test_retirement_inventory_required": true,
+    "checks_run": false,
+    "qualification_inherited": false,
+    "actual_check_results": null,
+    "independent_Source_review_complete": false,
+    "historical_evidence_Fuel_and_frozen_M70_preserved": true
   }
 }
