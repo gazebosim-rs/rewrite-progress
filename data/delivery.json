@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T20:26:11.150638+00:00",
+  "as_of": "2026-11-19T21:01:22.125615+00:00",
   "execution_state": "active",
   "current_phase": "M74",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3791,15 +3791,15 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "checks_run": true,
-      "normal_passed": false,
-      "local_DATA_passed": false,
+      "normal_passed": true,
+      "local_DATA_passed": true,
       "accepted": false,
       "hosted_success": false,
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "whole_Source_review_complete_full_local_normal_running_no_result",
-      "current_stage": "The complete 34-path M74 implementation, meaningful regression Source, fixture and guides passed independent whole Source review. The sole finding was an overlapping mutable/immutable borrow in a new metadata test; separate lexical scopes corrected it before verification while preserving every payload and assertion. One formatter genuinely returned 0. A single full local normal/strict gate is active on staged tree e025fe8101b2525f03ca794d39297a96a577d667 over locally qualified private M73 03f3fc9. Its 1735 Source bindings, 16 distinct Rust declarations (three headless/sixteen renderer, overlapping three), two Python declarations, 45 finite source-run and 19 CLI obligations are authored scope, not qualification pass counts. Signed projection signs, configured and f32-rounded sheared corners, exact zero-skew path, four-corner pixel purity, all4096 depth checks, explicit-P precedence and source-derived native CameraInfo zero-offdiagonal limitation remain unchanged. No current normal, coverage, independent DATA, installed distribution, hosted result or acceptance is claimed. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; historical snapshot HTTP 401 recovery remains unproven.",
+      "qualification_state": "first_full_local_normal_and_corrected_retained_audit_passed_private_unaccepted",
+      "current_stage": "M74 local development completed provisionally on private clean commit 487f0eab28b9fa505ae02becd71e74f69f54c65f (tree e025fe8101b2525f03ca794d39297a96a577d667, parent 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342). The first full normal genuinely returned Root/Git 0 after 1666.884146313998 seconds. Headless 1755 and renderer 1339 passes overlap, with two retained ignored controls per profile; Python 477 is quiet aggregate evidence. All 16 distinct new M74 Rust controls, 45 finite source runs and 19 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The first retained audit method genuinely failed because it assumed each profile must add executable changed lines; headless correctly has0/0 because its only production edit is a doc replacement and deletion of the skew refusal. The original reader/log/failure receipt remain preserved. A separately reviewed method2 independently proves that exact parent/current Source diff and all raw retained gates, then returned0 without product test, compiler, native or raw-merge replay. Its audit retained1693 members/673842385 bytes,1735 Source bindings,140 profile Sources,296 inputs and43 native-peer provenance records. Temporary ELF paths remain metadata rather than rehashed bytes. No M74 normal failure, distribution, installed-example, hosted success, acceptance or product publication is claimed. Every older failure remains retained. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; historical snapshot HTTP401 recovery remains unproven.",
       "source_finite_example_obligations": 45,
       "source_CLI_case_obligations": 19,
       "source_control_declarations": {
@@ -3812,8 +3812,8 @@
         "attempt": 1,
         "launch_tool": "648a40",
         "session_id": 76892,
-        "actual_exit_code": null,
-        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "actual_exit_code": 0,
+        "state": "TERMINAL_SUCCESS",
         "runner": {
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/run-final-staged-hook.py",
           "bytes": 8928,
@@ -3823,7 +3823,65 @@
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/source-state.json",
           "bytes": 545052,
           "sha256": "3a38996001173c8bf93b76d63de2638c4b8c31a6b0029779c4e782d49966192b"
+        },
+        "actual_git_exit_code": 0,
+        "terminal_tool": "0afd26",
+        "elapsed_seconds": 1666.884146313998,
+        "commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+        "terminal_receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/normal-actual-exit.json",
+          "bytes": 1152,
+          "sha256": "94529f842ba5479051179e24a62a746e920c5fcdcc8ce9751e36cf90b2a6acb4"
         }
+      },
+      "local_development_complete": true,
+      "local_qualification_provisional": true,
+      "locally_qualified_commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+      "distribution_selected": false,
+      "retained_audit_method1_failure": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/independent-normal-audit-method1-failure.json",
+        "bytes": 1609,
+        "sha256": "87ad7f32aacdd018e84cf3680491cb50df4e4f7aa0a0e5ddb48130e3cf01cd57"
+      },
+      "local_qualification": {
+        "normal_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/normal-actual-exit.json",
+          "bytes": 1152,
+          "sha256": "94529f842ba5479051179e24a62a746e920c5fcdcc8ce9751e36cf90b2a6acb4"
+        },
+        "independent_audit": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/independent-normal-audit.json",
+          "bytes": 28548,
+          "sha256": "e46a4eea8014a80d36a87d2152d586ef55bc30f60d350a0d2d02e1886071416d"
+        },
+        "audit_method2_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/independent-normal-audit-method2-actual-exit.json",
+          "bytes": 1653,
+          "sha256": "45021e601822605ea03521420d7a281d5b7b1f5bd617b7c10212da9d42765661"
+        },
+        "Rust_controls_observed": 16,
+        "Python_aggregate": 477,
+        "headless_passed": 1755,
+        "renderer_passed": 1339,
+        "profile_counts_overlap": true,
+        "ignored_each_profile": 2,
+        "source_finite_runs": 45,
+        "auxiliary_CLI_cases": 19,
+        "installed_finite_example_runs": null,
+        "native_peer_provenance_records": 43,
+        "headless_added_executable_changed_lines": [
+          0,
+          0
+        ],
+        "headless_parent_diff_scope_independently_proven": true,
+        "current_source_publication": false,
+        "hosted_success": false,
+        "independent_compact_coherence": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/normal-method2-consistency.json",
+          "bytes": 2864,
+          "sha256": "5d7118eff66ab5fafa2bcea3040e0560284544977acd8c1d786ccc470b29216e"
+        },
+        "independent_compact_coherence_clear": true
       }
     }
   ],
@@ -4298,31 +4356,30 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M73 local normal/strict/DATA passed provisionally, all private and unaccepted. M74 Source work does not inherit parent qualification. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M74 local normal/strict/DATA passed provisionally, all private and unaccepted. No M74 distribution proof is selected or claimed. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
     "M74"
   ],
   "current_development_phase": "M74",
   "board": {
-    "updated_at": "2026-11-19T20:26:11.150638+00:00",
+    "updated_at": "2026-11-19T21:01:22.125615+00:00",
     "current": {
-      "title": "Qualifying signed camera skew",
+      "title": "Signed camera skew locally qualified",
       "items": [
-        "M74 signed-skew implementation, regression Source and guides passed whole independent review. The single test-borrow finding was corrected before checks.",
-        "The full local normal/strict qualification run is active over locally qualified M73. Explicit-P precedence, sheared-corner bounds and the native CameraInfo limitation remain intact.",
-        "The 16 new Rust/two Python declarations and 45 source-example/19 CLI obligations await qualification. No current result or independent audit is claimed."
+        "M74 first full local normal/strict gate and the corrected retained audit passed on private 487f0ea. The original reader failure remains preserved.",
+        "All 16 new Rust controls passed, including signed rays, sheared bounds, software RGB/depth, explicit-P override and lifecycle checks. Its 45 finite examples are source runs, not installed examples.",
+        "Local development is complete provisionally. Final parent, exact hosted/official and Main release gates remain pending; M74 is private and unaccepted."
       ]
     },
     "done": [
       "M1–M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "M70 local distribution/runtime and M71–M73 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
+      "M70 local distribution/runtime and M71–M74 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Complete the M74 full local normal/strict gate and independent audit, retaining actual results and any failures.",
-      "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M74 acceptance."
+      "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M74 acceptance."
     ],
     "blocker": {
-      "text": "M74 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released.",
+      "text": "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70–M74 results do not replace final parent, hosted/official or Main acceptance gates.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -4483,10 +4540,11 @@
       "M70",
       "M71",
       "M72",
-      "M73"
+      "M73",
+      "M74"
     ],
-    "source_commit": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
-    "reason": "Selected M70 local distribution/runtime and M71–M73 local development obligations are complete provisionally; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
+    "source_commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+    "reason": "Selected M70 local distribution/runtime and M71–M74 local development obligations are complete provisionally; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
     "accepted": false,
     "included_in_this_candidate": true
   },
