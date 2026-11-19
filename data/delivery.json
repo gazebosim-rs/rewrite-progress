@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T19:29:04.384981+00:00",
+  "as_of": "2026-11-19T19:57:34.761778+00:00",
   "execution_state": "active",
   "current_phase": "M73",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3695,15 +3695,15 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "checks_run": true,
-      "normal_passed": false,
-      "local_DATA_passed": false,
+      "normal_passed": true,
+      "local_DATA_passed": true,
       "accepted": false,
       "hosted_success": false,
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "whole_Source_review_complete_full_local_normal_running_no_result",
-      "current_stage": "The complete 30-path M73 implementation, meaningful regression Source, fixture and guides passed independent whole Source review. The sole finding was stale current planning guidance; it was corrected before verification. One formatter genuinely returned 0. A single full local normal/strict gate is active on staged tree a00a151d1f6e80168da49b879728133fd49aa7c0 over locally qualified private M72 2f3e458. Its 1730 Source bindings, 14 distinct Rust declarations (four headless/fourteen renderer, overlapping four), two Python declarations, 44 finite source-run and 18 CLI obligations are authored scope, not qualification pass counts. No current normal, coverage, independent DATA, installed distribution, hosted result or acceptance is claimed. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; historical snapshot HTTP 401 recovery remains unproven.",
+      "qualification_state": "first_full_local_normal_strict_and_independent_DATA_passed_private_unaccepted",
+      "current_stage": "M73 local development completed provisionally on private clean commit 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342 (tree a00a151d1f6e80168da49b879728133fd49aa7c0, parent 2f3e458f8257e72358a607b999bdd4e66a93872a). The first full normal genuinely returned Root/Git 0 after 1656.232253137 seconds, and one retained independent audit returned 0. Headless 1752 and renderer 1323 passes overlap, with two retained ignored controls per profile; Python 475 is quiet aggregate evidence. All 14 distinct new M73 Rust controls, 44 finite source runs and 18 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The audit retained 1583 members/647130101 bytes, 1730 Source bindings, 140 profile Sources, 296 inputs and 41 native-peer provenance records. Raw profiles were hashed without remerge or test replay; temporary ELF paths were retained as metadata rather than rehashed bytes. No M73 qualification failure occurred; every older failure and original evidence remains preserved. No M73 distribution, installed-example, hosted success, acceptance or product publication is claimed. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; historical snapshot HTTP 401 recovery remains unproven.",
       "source_finite_example_obligations": 44,
       "source_CLI_case_obligations": 18,
       "source_control_declarations": {
@@ -3716,8 +3716,8 @@
         "attempt": 1,
         "launch_tool": "6e099f",
         "session_id": 48446,
-        "actual_exit_code": null,
-        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "actual_exit_code": 0,
+        "state": "TERMINAL_SUCCESS",
         "runner": {
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/run-final-staged-hook.py",
           "bytes": 8966,
@@ -3727,7 +3727,49 @@
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/source-state.json",
           "bytes": 543263,
           "sha256": "696b3784ce06923d5ab1276880091df37f8cc681f6747a6c289b2c0833ba18d8"
+        },
+        "actual_git_exit_code": 0,
+        "terminal_tool": "19a946",
+        "elapsed_seconds": 1656.232253137001,
+        "commit": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
+        "terminal_receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/normal-actual-exit.json",
+          "bytes": 1168,
+          "sha256": "fc2460a76d21e0dcf6ccf92c44425d12879e7f4117185cd8ad706f0895fefb68"
         }
+      },
+      "local_development_complete": true,
+      "local_qualification_provisional": true,
+      "locally_qualified_commit": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
+      "distribution_selected": false,
+      "local_qualification": {
+        "normal_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/normal-actual-exit.json",
+          "bytes": 1168,
+          "sha256": "fc2460a76d21e0dcf6ccf92c44425d12879e7f4117185cd8ad706f0895fefb68"
+        },
+        "independent_audit": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/independent-normal-audit.json",
+          "bytes": 27000,
+          "sha256": "fadc29be6a454e977112e7bbee897ebc99cc0e1fe66ffef184af1231efb4a3d3"
+        },
+        "audit_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/independent-normal-audit-actual-exit.json",
+          "bytes": 1460,
+          "sha256": "e5820a553e62a019f0e0589a4b0313f7f048bd1f935bda822dd341d4d3d63a19"
+        },
+        "Rust_controls_observed": 14,
+        "Python_aggregate": 475,
+        "headless_passed": 1752,
+        "renderer_passed": 1323,
+        "profile_counts_overlap": true,
+        "ignored_each_profile": 2,
+        "source_finite_runs": 44,
+        "auxiliary_CLI_cases": 18,
+        "installed_finite_example_runs": null,
+        "native_peer_provenance_records": 41,
+        "current_source_publication": false,
+        "hosted_success": false
       }
     }
   ],
@@ -4190,31 +4232,30 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M72 local normal/strict/DATA passed provisionally, all private and unaccepted. M73 Source work does not inherit parent qualification. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M73 local normal/strict/DATA passed provisionally, all private and unaccepted. No M73 distribution proof is selected or claimed. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
     "M73"
   ],
   "current_development_phase": "M73",
   "board": {
-    "updated_at": "2026-11-19T19:29:04.384981+00:00",
+    "updated_at": "2026-11-19T19:57:34.761778+00:00",
     "current": {
-      "title": "Qualifying explicit camera projection",
+      "title": "Explicit camera projection locally qualified",
       "items": [
-        "M73 explicit zero-translation P selects rendering while CameraInfo retains separate K/P. Implementation, regression Source and guides passed whole independent review.",
-        "The full local normal/strict qualification run is active on a new staged candidate over locally qualified M72. No current result or independent audit is claimed.",
-        "The 14 new Rust/two Python declarations and 44 source-example/18 CLI obligations await qualification. Parent local results do not qualify M73."
+        "M73 full local normal, strict coverage and independent retained audit passed on private 03f3fc9. Its first qualification attempt passed.",
+        "All 14 new Rust controls passed, including distinct K/P, P-based software images, demand, reset, removal and drift checks. Its 44 finite examples are source runs, not installed examples.",
+        "Local development is complete provisionally. Final parent, exact hosted/official and Main release gates remain pending; M73 is private and unaccepted."
       ]
     },
     "done": [
       "M1–M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "M70 local distribution/runtime and M71–M72 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
+      "M70 local distribution/runtime and M71–M73 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Complete the M73 full local normal/strict gate and independent audit, retaining actual results and any failures.",
-      "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M73 acceptance."
+      "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M73 acceptance."
     ],
     "blocker": {
-      "text": "M73 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released.",
+      "text": "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70–M73 results do not replace final parent, hosted/official or Main acceptance gates.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -4374,10 +4415,11 @@
     "phases": [
       "M70",
       "M71",
-      "M72"
+      "M72",
+      "M73"
     ],
-    "source_commit": "2f3e458f8257e72358a607b999bdd4e66a93872a",
-    "reason": "Selected M70 local distribution/runtime and M71–M72 local development obligations are complete provisionally; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
+    "source_commit": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
+    "reason": "Selected M70 local distribution/runtime and M71–M73 local development obligations are complete provisionally; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
     "accepted": false,
     "included_in_this_candidate": true
   },
