@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-18",
+  "as_of": "2026-11-19",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,13 +3377,13 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "The corrected local commit 2e8d9dc passed the full normal/strict gate and independent retained audit. Fresh four-role release builds are running; the changed package still needs fresh package/install/paired-depth/RGB/browser/shutdown proof. Earlier registry and camera failures and candidate597 evidence remain preserved. This commit is unpublished and has no hosted result. M70 remains unaccepted.",
+      "current_stage": "Local candidate 2e8d9dc passed normal/strict qualification and independent audit, then fresh four-role package assembly/relocation and independent package audit. Fresh Ubuntu installation and audit passed with 22 Docker commands, 9 guest stages and all 41 finite examples. The camera procedure passed independent Source review and one actual paired-depth/RGB operation is running; runtime audit and browser proof remain pending. This commit is unpublished with no hosted result. M70 remains unaccepted.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
       "actual_predecessor_acceptance": "artifacts/backend-retirement/retirement-completion.json",
-      "qualification_state": "local_qualified_fresh_release_builds_running",
+      "qualification_state": "local_qualified_package_install_audited_camera_running",
       "optional_camera_resources": "Proposed/unmeasured8GiB/512PIDs/4CPUs/512MiBlayer+128MiBmargin; actualfitunknown/failclosed",
       "normal_passed": true,
       "local_DATA_passed": true,
@@ -3850,23 +3850,23 @@
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-18T23:42:34.628628+00:00",
+    "updated_at": "2026-11-19T00:18:00.200270+00:00",
     "current": {
-      "title": "Building the locally verified camera preview",
+      "title": "Verifying the installed camera preview",
       "items": [
-        "The corrected M70 candidate passed the full local normal/strict gate and independent audit.",
-        "1,740 headless and 1,278 renderer Rust cases passed (overlapping), plus 469 quiet Python checks and all 15 auxiliary camera cases.",
-        "Fresh four-role release builds are running. The changed package needs new installation, camera and browser proof."
+        "Fresh four-role package assembly, relocation and independent audit passed for the locally qualified candidate.",
+        "Clean Ubuntu installation and independent audit passed: 22 Docker commands, 9 guest stages and all 41 finite examples as an unprivileged user.",
+        "Actual installed paired-depth/RGB camera trials are running. Runtime audit and browser proof remain pending."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "D33 retirement is published on Main. Earlier M70 failures and package/install evidence remain preserved."
+      "The current camera correction passed local normal/strict checks and audit; earlier failures remain preserved."
     ],
     "next": [
-      "Complete release inputs, notices, package assembly/relocation and independent package audit.",
-      "Verify a fresh Ubuntu installation, paired-depth/RGB behavior and owned shutdown.",
-      "Finish real robot/browser proof after origin approval, hosted qualification and release readbacks before M70 acceptance."
+      "Complete installed paired-depth/RGB proof and independent runtime audit, including demand, reset, provider and owned shutdown.",
+      "Demonstrate the default robot in the real browser after explicit origin approval, then independently audit its shutdown.",
+      "Recover exact hosted qualification and complete publication/release readbacks before M70 acceptance."
     ],
     "blocker": {
       "text": "Hosted snapshot recovery remains unproven after the prior HTTP 401 failure. Live browser access at http://127.0.0.1:8082 also needs explicit owner approval.",
