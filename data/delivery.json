@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T07:16:00.944468+00:00",
+  "as_of": "2026-11-19T12:57:29.795923+00:00",
   "execution_state": "active",
   "current_phase": "M70",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3377,13 +3377,13 @@
       "independent_source_review_complete": true,
       "accepted": false,
       "checks_run": true,
-      "current_stage": "Local unpublished 7094a31 passed normal/strict checks, fresh release/inputs/package/relocation and clean Ubuntu installation with independent audits; all 41 installed examples passed. Retained GPU/depth component DATA passed separately. Native RGB now passed its affected operation and independent retained DATA: actual Image/Info numeric and wire checks, Clock 0 \u2192 1 ms, worker mapping/kernel-FD proof, native/launcher exit 0 and worker PID/listener retirement. The live SDK pair interlock completed within the unchanged native 20-second success boundary. Worker grandchild exit codes and SDK dispatch quiescence remain UNKNOWN. Original failed whole-camera and intermediate operations remain failed, with separate component evidence and missing original independent host-wait ledger disclosures preserved. Default robot browser proof requires explicit origin approval; exact hosted/official/release qualification remains pending. No source publication or M70 acceptance is claimed.",
+      "current_stage": "Local unpublished 7094a31 passed normal/strict checks, fresh release/inputs/package/relocation and clean Ubuntu installation with independent audits; all 41 installed examples passed. Retained GPU/depth component DATA passed separately. Native RGB now passed its affected operation and independent retained DATA: actual Image/Info numeric and wire checks, Clock 0 \u2192 1 ms, worker mapping/kernel-FD proof, native/launcher exit 0 and worker PID/listener retirement. The live SDK pair interlock completed within the unchanged native 20-second success boundary. Worker grandchild exit codes and SDK dispatch quiescence remain UNKNOWN. Original failed whole-camera and intermediate operations remain failed, with separate component evidence and missing original independent host-wait ledger disclosures preserved. The approved installed default robot browser demonstration completed Play, forward/turn, Pause acknowledgement with a stable clock, Reset to epoch 1/clock 0/initial pose, and clean launcher exit 0. Independent visual review of all four screenshots and retained browser DATA passed, confirming the actual eight image/accessibility captures, three checkpoints, helper motion, Pause/Reset and clean launcher/PID/listener retirement. The historical close-code 4002 cause remains UNKNOWN, and two later operator/harness failures remain preserved; no new product defect is demonstrated. All required local preview proofs passed; exact hosted qualification, official evidence and release/publication readbacks remain pending. No source publication or M70 acceptance is claimed.",
       "installed_accepted_examples": 35,
       "source_finite_example_obligations": 41,
       "predecessor_acceptance_required_before_checks": true,
       "accepted_predecessor_commit": "8f13dc7446be4fded424b1eba83df4c8253d0cef",
       "actual_predecessor_acceptance": "artifacts/backend-retirement/retirement-completion.json",
-      "qualification_state": "local_normal_package_install_depth_GPU_and_native_RGB_independent_DATA_passed_browser_hosted_pending",
+      "qualification_state": "all_required_local_preview_proofs_and_independent_DATA_passed_hosted_official_release_pending",
       "optional_camera_resources": "Verified camera profile: 8GiB/512PIDs/4CPUs; observed owned layer stayed below512MiB with128MiB reserve. No hardware GPU or general performance claim.",
       "normal_passed": true,
       "local_DATA_passed": true,
@@ -3417,7 +3417,7 @@
         "commit": "7094a31890e78bc83c65f12a056dfb3918b7401a",
         "tree": "46493c4b29704cdf131670234b0044ec70f49804",
         "parent_commit": "2e8d9dc22ae267a7a108a76716b8aaefcabbddf2",
-        "state": "LOCALLY_QUALIFIED_UNPUBLISHED_COMPONENT_AND_NATIVE_RGB_AUDITED_BROWSER_HOSTED_PENDING"
+        "state": "LOCALLY_QUALIFIED_UNPUBLISHED_ALL_LOCAL_PROOFS_AUDITED_HOSTED_RELEASE_PENDING"
       },
       "previous_local_qualification": {
         "commit": "2e8d9dc22ae267a7a108a76716b8aaefcabbddf2",
@@ -3863,25 +3863,24 @@
   ],
   "current_development_phase": "M70",
   "board": {
-    "updated_at": "2026-11-19T07:16:00.944468+00:00",
+    "updated_at": "2026-11-19T12:57:29.795923+00:00",
     "current": {
-      "title": "Awaiting browser approval and hosted qualification",
+      "title": "Local preview verified; hosted qualification pending",
       "items": [
-        "Local 7094a31 normal checks, release/package and Ubuntu installation are independently audited; all 41 installed examples passed.",
-        "Retained GPU/depth components and native RGB Image/Info, Clock, mapping and lifecycle proof now have separate independent audits. The original failed whole-camera operation remains failed.",
-        "Default robot browser proof awaits origin approval. The candidate remains unpublished, with no hosted result; M70 is not accepted."
+        "Local 7094a31 qualification, package/Ubuntu installation with all 41 examples, depth/GPU components and native RGB are independently audited.",
+        "The installed browser demonstration and independent visual/data audits passed Play, forward/turn, Pause, Reset and clean launcher/PID/listener retirement.",
+        "All required local preview proofs passed. The candidate remains private and unaccepted while exact hosted qualification and official release evidence are pending."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "7094a31 local qualification, release/package, Ubuntu installation with 41 examples, retained GPU/depth components and native RGB proof are independently audited."
+      "7094a31 local checks, package/install, depth/GPU and RGB proofs, plus the actual browser demonstration and its independent audits, passed."
     ],
     "next": [
-      "Obtain browser origin approval, then complete the default robot browser proof and its independent audit.",
-      "Recover exact hosted qualification and complete official release/publication readbacks before M70 acceptance."
+      "Recover exact hosted qualification, then complete official evidence and release/publication readbacks before M70 acceptance."
     ],
     "blocker": {
-      "text": "Browser origin approval is pending. Earlier hosted CI failed before product checks with HTTP401; recovery remains unproven and unpublished 7094a31 has no hosted result.",
+      "text": "Earlier hosted CI failed before product checks with HTTP401. Recovery is unproven; unpublished 7094a31 has no hosted result. Official qualification and release evidence remain pending.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -4038,7 +4037,7 @@
   "held_work": {
     "phase": "M70",
     "source_commit": "fcd5a30dc0a8431b250cf96720db27ae597a6585",
-    "reason": "The old fcd5 candidate remains frozen; explicit approval to open http://127.0.0.1:8082 is still pending.",
+    "reason": "The old fcd5 candidate remains frozen. Current 7094 local preview proofs and independent audits passed; exact hosted qualification and official release evidence remain pending.",
     "accepted": false,
     "included_in_this_candidate": false
   },
