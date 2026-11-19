@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T19:19:26.135789+00:00",
+  "as_of": "2026-11-19T19:29:04.384981+00:00",
   "execution_state": "active",
   "current_phase": "M73",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3692,9 +3692,9 @@
       "source_preparation_basis_locally_qualified": true,
       "source_preparation_started_at": "2026-11-19T19:19:26.135789+00:00",
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
-      "checks_run": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
       "normal_passed": false,
       "local_DATA_passed": false,
       "accepted": false,
@@ -3702,8 +3702,33 @@
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "bounded_source_implementation_in_progress_no_checks_or_results",
-      "current_stage": "M73 was selected and its contract recorded before implementation over locally qualified private M72 2f3e458f8257e72358a607b999bdd4e66a93872a. Root owns Scene admission, CLI, shared guidance and integration; extraction/output and real-worker/native-evidence lanes are disjoint. Explicit P requires finite positive focal lengths, finite principal points and exact zero tx/ty; rendering follows P while CameraInfo retains independent K/P. Selected K/P keep current f64/f32 representability checks before external IO, absent fields remain dormant and all other existing camera bounds remain. Implementation, meaningful regression Source, fixture/guides and independent whole Source review remain in progress; no M73 formatter, tests, lint, coverage, audit or qualification result is claimed. Existing failed native Ogre/Mesa helper and historical runtime evidence retain their original scopes; no new native runtime precedence result is inferred. Final parent acceptance/reconciliation and all exact hosted/official/Main gates remain mandatory."
+      "qualification_state": "whole_Source_review_complete_full_local_normal_running_no_result",
+      "current_stage": "The complete 30-path M73 implementation, meaningful regression Source, fixture and guides passed independent whole Source review. The sole finding was stale current planning guidance; it was corrected before verification. One formatter genuinely returned 0. A single full local normal/strict gate is active on staged tree a00a151d1f6e80168da49b879728133fd49aa7c0 over locally qualified private M72 2f3e458. Its 1730 Source bindings, 14 distinct Rust declarations (four headless/fourteen renderer, overlapping four), two Python declarations, 44 finite source-run and 18 CLI obligations are authored scope, not qualification pass counts. No current normal, coverage, independent DATA, installed distribution, hosted result or acceptance is claimed. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; historical snapshot HTTP 401 recovery remains unproven.",
+      "source_finite_example_obligations": 44,
+      "source_CLI_case_obligations": 18,
+      "source_control_declarations": {
+        "Rust_unique": 14,
+        "Python": 2
+      },
+      "current_staged_tree": "a00a151d1f6e80168da49b879728133fd49aa7c0",
+      "formatter_actual_exit_code": 0,
+      "current_normal_attempt": {
+        "attempt": 1,
+        "launch_tool": "6e099f",
+        "session_id": 48446,
+        "actual_exit_code": null,
+        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "runner": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/run-final-staged-hook.py",
+          "bytes": 8966,
+          "sha256": "e2a895cc85b9dfb9b78c26a995542828f7ece9fce0568a643b66b1e91b135049"
+        },
+        "snapshot": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m73-delivery/source-state.json",
+          "bytes": 543263,
+          "sha256": "696b3784ce06923d5ab1276880091df37f8cc681f6747a6c289b2c0833ba18d8"
+        }
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -4171,13 +4196,13 @@
   ],
   "current_development_phase": "M73",
   "board": {
-    "updated_at": "2026-11-19T19:19:26.135789+00:00",
+    "updated_at": "2026-11-19T19:29:04.384981+00:00",
     "current": {
-      "title": "Implementing explicit camera projection",
+      "title": "Qualifying explicit camera projection",
       "items": [
-        "M73 selects explicit zero-translation projection matrices for existing 64×64 RGB/depth cameras. Rendering uses P; CameraInfo keeps separately selected K and P.",
-        "Scene/CLI, extraction/output and evidence Source lanes are in progress over locally qualified M72. Absent P preserves the M72 path; no shader, protocol, dependency or package change is selected.",
-        "Implementation, regression Source, guides and independent review precede one consolidated local gate. No M73 checks or qualification results are claimed."
+        "M73 explicit zero-translation P selects rendering while CameraInfo retains separate K/P. Implementation, regression Source and guides passed whole independent review.",
+        "The full local normal/strict qualification run is active on a new staged candidate over locally qualified M72. No current result or independent audit is claimed.",
+        "The 14 new Rust/two Python declarations and 44 source-example/18 CLI obligations await qualification. Parent local results do not qualify M73."
       ]
     },
     "done": [
@@ -4185,7 +4210,7 @@
       "M70 local distribution/runtime and M71–M72 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Complete the bounded M73 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+      "Complete the M73 full local normal/strict gate and independent audit, retaining actual results and any failures.",
       "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M73 acceptance."
     ],
     "blocker": {
