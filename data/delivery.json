@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T21:01:22.125615+00:00",
+  "as_of": "2026-11-19T22:20:16.959303+00:00",
   "execution_state": "active",
   "current_phase": "M74",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3798,8 +3798,8 @@
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "first_full_local_normal_and_corrected_retained_audit_passed_private_unaccepted",
-      "current_stage": "M74 local development completed provisionally on private clean commit 487f0eab28b9fa505ae02becd71e74f69f54c65f (tree e025fe8101b2525f03ca794d39297a96a577d667, parent 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342). The first full normal genuinely returned Root/Git 0 after 1666.884146313998 seconds. Headless 1755 and renderer 1339 passes overlap, with two retained ignored controls per profile; Python 477 is quiet aggregate evidence. All 16 distinct new M74 Rust controls, 45 finite source runs and 19 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The first retained audit method genuinely failed because it assumed each profile must add executable changed lines; headless correctly has0/0 because its only production edit is a doc replacement and deletion of the skew refusal. The original reader/log/failure receipt remain preserved. A separately reviewed method2 independently proves that exact parent/current Source diff and all raw retained gates, then returned0 without product test, compiler, native or raw-merge replay. Its audit retained1693 members/673842385 bytes,1735 Source bindings,140 profile Sources,296 inputs and43 native-peer provenance records. Temporary ELF paths remain metadata rather than rehashed bytes. No M74 normal failure, distribution, installed-example, hosted success, acceptance or product publication is claimed. Every older failure remains retained. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; historical snapshot HTTP401 recovery remains unproven.",
+      "qualification_state": "first_local_normal_and_corrected_audit_passed_review_branch_available_unaccepted",
+      "current_stage": "M74 local development completed provisionally on clean review-branch commit 487f0eab28b9fa505ae02becd71e74f69f54c65f (tree e025fe8101b2525f03ca794d39297a96a577d667, parent 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342). The first full normal genuinely returned Root/Git 0 after 1666.884146313998 seconds. Headless 1755 and renderer 1339 passes overlap, with two retained ignored controls per profile; Python 477 is quiet aggregate evidence. All 16 distinct new M74 Rust controls, 45 finite source runs and 19 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The first retained audit method genuinely failed because it assumed each profile must add executable changed lines; headless correctly has0/0 because its only production edit is a doc replacement and deletion of the skew refusal. The original reader/log/failure receipt remain preserved. A separately reviewed method2 independently proves that exact parent/current Source diff and all raw retained gates, then returned0 without product test, compiler, native or raw-merge replay. Its audit retained1693 members/673842385 bytes,1735 Source bindings,140 profile Sources,296 inputs and43 native-peer provenance records. Temporary ELF paths remain metadata rather than rehashed bytes. The owner explicitly requested all code be pushed: this exact commit and its qualified M70–M73 ancestors are now available on review/m74-signed-camera-skew. No M74 normal failure, distribution, installed-example, hosted success, acceptance, Main promotion or release publication is claimed. Every older failure remains retained. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; historical snapshot HTTP401 recovery remains unproven.",
       "source_finite_example_obligations": 45,
       "source_CLI_case_obligations": 19,
       "source_control_declarations": {
@@ -3874,7 +3874,7 @@
           0
         ],
         "headless_parent_diff_scope_independently_proven": true,
-        "current_source_publication": false,
+        "current_source_publication": true,
         "hosted_success": false,
         "independent_compact_coherence": {
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/normal-method2-consistency.json",
@@ -3882,6 +3882,25 @@
           "sha256": "5d7118eff66ab5fafa2bcea3040e0560284544977acd8c1d786ccc470b29216e"
         },
         "independent_compact_coherence_clear": true
+      },
+      "source_publication": {
+        "commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+        "commit_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/487f0eab28b9fa505ae02becd71e74f69f54c65f",
+        "branch": "review/m74-signed-camera-skew",
+        "branch_url": "https://github.com/gazebosim-rs/gz-sim-rs/tree/review/m74-signed-camera-skew",
+        "scope": "Owner-authorized qualified Source review branch only; not Main promotion, release or acceptance.",
+        "owner_instruction": "Make sure all of your code has been pushed to github",
+        "normal_nonforced_push_actual_exit": 0,
+        "tool_exit_basis": {
+          "launch_tool": "981598",
+          "terminal_tool": "4648f2",
+          "session_id": 20635,
+          "actual_exit_code": 0
+        },
+        "qualified_M70_through_M73_commits_verified_ancestors": true,
+        "Main_promoted": false,
+        "release_published": false,
+        "hosted_success_claimed": false
       }
     }
   ],
@@ -4356,24 +4375,24 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M74 local normal/strict/DATA passed provisionally, all private and unaccepted. No M74 distribution proof is selected or claimed. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M74 local normal/strict/DATA passed provisionally. Their qualified commits are available on the owner-authorized GitHub review branch, with no acceptance, Main promotion or release. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
     "M74"
   ],
   "current_development_phase": "M74",
   "board": {
-    "updated_at": "2026-11-19T21:01:22.125615+00:00",
+    "updated_at": "2026-11-19T22:20:16.959303+00:00",
     "current": {
       "title": "Signed camera skew locally qualified",
       "items": [
-        "M74 first full local normal/strict gate and the corrected retained audit passed on private 487f0ea. The original reader failure remains preserved.",
+        "M74 first full local normal/strict gate and corrected retained audit passed. Commit 487f0ea and its qualified M70–M73 ancestors are now on the GitHub review branch.",
         "All 16 new Rust controls passed, including signed rays, sheared bounds, software RGB/depth, explicit-P override and lifecycle checks. Its 45 finite examples are source runs, not installed examples.",
-        "Local development is complete provisionally. Final parent, exact hosted/official and Main release gates remain pending; M74 is private and unaccepted."
+        "Local development is complete provisionally and review Source is pushed. Final parent, exact hosted/official and Main release gates remain pending; M74 is unaccepted."
       ]
     },
     "done": [
       "M1–M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "M70 local distribution/runtime and M71–M74 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
+      "M70 local distribution/runtime and M71–M74 local normal/strict qualification and independent audits passed provisionally. Qualified Source is on GitHub for review; acceptance remains pending."
     ],
     "next": [
       "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M74 acceptance."
@@ -4544,7 +4563,7 @@
       "M74"
     ],
     "source_commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
-    "reason": "Selected M70 local distribution/runtime and M71–M74 local development obligations are complete provisionally; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
+    "reason": "Selected M70 local distribution/runtime and M71–M74 local development obligations are complete provisionally and qualified Source is pushed for review. Final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
     "accepted": false,
     "included_in_this_candidate": true
   },
