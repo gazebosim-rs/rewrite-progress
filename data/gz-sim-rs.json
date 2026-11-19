@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T04:13:49.983534+00:00",
+  "updated_at": "2026-11-19T04:31:28.838195+00:00",
   "state": "active",
-  "summary": "The WebSocket close-handshake fix passed full local qualification and independent audit at 7094a31. Fresh release builds are running; changed package, installation, camera/browser and hosted proof remain pending.",
+  "summary": "7094a31 is locally qualified. Fresh release, exact inputs, package/relocation and Ubuntu installation passed independent audits; all 41 installed examples passed. Complete camera trials are next; browser and hosted proof remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Building the locally qualified camera preview",
-      "detail": "Local 7094a31 passed the full normal/strict gate and independent retained audit, including the Close regression in both profiles. Four release roles are now building in a fresh shared target; no result yet. Its changed package needs fresh assembly/install and complete camera/browser proof. Earlier 2e8d9dc install evidence is historical. No current hosted result."
+      "title": "Testing the installed camera preview",
+      "detail": "Local unpublished 7094a31 passed full normal/strict qualification and independent audit. Fresh release, zero-gap metadata/notices, package/relocation and clean Ubuntu installation also passed independent audits; all 41 installed examples passed. Full installed camera proof remains pending. Browser proof needs explicit origin approval; hosted proof remains pending."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Finish the fresh four-role release, then verify package/relocation and clean Ubuntu installation with all 41 examples.",
-    "Complete fresh paired-depth/RGB camera proof and independent audit; run the robot browser demo after explicit origin approval.",
+    "Run the complete installed paired-depth/RGB camera trials and independent retained audit.",
+    "Run the installed robot browser demo and independent audit after explicit origin approval.",
     "Recover exact hosted qualification and complete release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "7094a31 is locally qualified, but fresh release/package/Ubuntu installation and complete paired-depth/RGB camera/browser proof remain pending. Earlier partial camera and 2e8d9dc installation results do not qualify this changed package.",
+    "Source, fresh release, exact metadata/notices, package/relocation and clean Ubuntu installation are independently audited. Complete installed paired-depth/RGB camera proof and the robot browser demo remain pending.",
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
@@ -1083,7 +1083,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Local unpublished 7094a31 passed normal, strict workspace/per-crate coverage, actual-parent gates and independent audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. The Close regression passed in both profiles; 41 finite runs passed and 38 native-peer provenance records were audited. Fresh release is building; new install/camera/browser proof is pending. Earlier 2e8d9dc installation is historical. No current hosted result; historical 597ac3d CI failed on HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
+    "note": "Local unpublished 7094a31 passed normal, strict workspace/per-crate coverage, actual-parent gates and independent audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. The Close regression passed in both profiles; 41 finite runs passed and 38 native-peer provenance records were audited. Fresh release, inputs, package/relocation and Ubuntu installation are audited; all 41 installed examples passed. Full camera/browser and hosted proof remain pending. M65 Latest has 35 examples. Upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21286,
@@ -1098,7 +1098,8 @@
     "renderer_overlaps_headless": true,
     "quiet_Python_tests": 469,
     "quiet_Python_individual_results_observable": false,
-    "finite_example_runs": 41
+    "finite_example_runs": 41,
+    "installed_finite_example_runs": 41
   },
   "phase_status": {
     "P0": "in_progress",
