@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T15:08:52.597300+00:00",
-  "state": "blocked",
-  "summary": "M71 mixed RGB/depth local development, full normal/strict qualification and independent audit passed on private f31d715. Final parent, hosted/official and Main release gates remain pending.",
+  "updated_at": "2026-11-19T17:32:54.495079+00:00",
+  "state": "active",
+  "summary": "M72 explicit camera intrinsics Source passed independent review. After two new test-code errors, a reviewed test-only correction is in place and the full local retry is running; no result yet.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M71",
-      "title": "Mixed RGB/depth pair locally qualified",
-      "detail": "Full local normal/strict and independent DATA passed, including 15 new Rust controls, four real-worker controls, 42 finite source runs and 16 CLI cases. All prior failures remain preserved. M71 is private and provisionally qualified, awaiting final release gates."
+      "id": "M72",
+      "title": "Qualifying explicit pinhole camera intrinsics",
+      "detail": "Explicit zero-skew K uses existing 64\u00d764 RGB/depth paths and unchanged HFOV fallback. The first gate failed at two test-code errors before tests; reviewed borrow/identity corrections preserve all assertions. The full retry is running, with no qualification result."
     }
   ],
   "accepted_slices": [
@@ -1025,10 +1025,11 @@
     }
   ],
   "remaining": [
-    "Resolve the hosted qualification hold and complete final parent reconciliation, exact official evidence and Main/release readbacks before M70/M71 acceptance."
+    "Complete the affected M72 full local normal/strict gate and independent audit, preserving the first failure.",
+    "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M72 acceptance."
   ],
   "blockers": [
-    "Exact hosted qualification remains held after earlier snapshot HTTP401 failures; recovery is unproven. Private M70/M71 local results do not replace final parent, hosted/official or Main acceptance gates."
+    "M72 local qualification can proceed. Final parent, exact hosted/official and Main release gates remain held after earlier snapshot HTTP401 failures; recovery is unproven and no CI retry or index probe is released."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1079,7 +1080,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Local unpublished f31d715 passed full normal, strict workspace/per-crate/actual-parent coverage and independent audit. Headless 1744 and renderer 1294 passes overlap; each has two retained ignored controls. Python 471 is quiet aggregate evidence. All 15 new Rust controls, 42 finite source runs and 16 CLI cases passed; 39 native-peer provenance records were audited. No M71 installed-example proof is claimed. Final parent, hosted/official and Main gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Historical parent f31d715 passed local normal, strict coverage and independent audit. Headless 1744 and renderer 1294 passes overlap; each has two retained ignored controls. Python 471 is quiet aggregate evidence. Its 42 finite source runs, 16 CLI cases and 15 new Rust controls passed; 39 native-peer provenance records were audited. These results do not qualify M72; 43 source-run/17 CLI obligations await the current retry. No M72 installed proof or hosted result is claimed. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21389,
