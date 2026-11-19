@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T23:04:52.143942+00:00",
+  "updated_at": "2026-11-19T23:40:18.535963+00:00",
   "state": "active",
-  "summary": "M75 visibility-mask Source passed independent review and its full local normal/strict run is active. Validation precedes filtering; empty-image oracles remain to be proven. No current result is claimed.",
+  "summary": "M75\u2019s first gate failed on one shared C++ warning; a reviewed brace/layout fix is undergoing the full local retry. M74 hosted CI succeeded, but official audit and final parent/Main reconciliation remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M75",
       "title": "Qualifying camera visibility masks",
-      "detail": "Whole review closed three stale count assertions and current planning guidance. The empty-RGB plan was corrected to the existing [43, 44, 47] background before checks. One formatter completed; the full gate is running. Its 14 new Rust/two Python declarations and 46 source-example/20 CLI obligations are not passes."
+      "detail": "The failed gate retained 1,759 headless passes and 1,339 renderer passes with 14 shared C++ compile failures. The isolated correction changes only throw braces and counter layout, preserving all assertions. The full retry is running; no new qualification result or empty-frame proof is claimed."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,11 @@
     }
   ],
   "remaining": [
-    "Complete the M75 full local normal/strict gate and independent audit, retaining actual results and any failures.",
-    "Await exact hosted qualification, then complete final parent reconciliation, official evidence and Main release gates before M70\u2013M75 acceptance."
+    "Complete the affected M75 full local normal/strict retry and independent audit, preserving the first failure.",
+    "Complete the corrected M74 official audit and final parent/Main reconciliation; M75 still needs its own exact hosted/official acceptance gates."
   ],
   "blockers": [
-    "Automatic M74 CI completed signed snapshot/native setup (steps 1\u20138) and was running product verification (step 9) at last observation. Whole hosted success remains unproven; the historical HTTP 401 failures are retained, with no manual retry or probe."
+    "M74 hosted CI succeeded. Its official audit has not cleared: the first reader expected six retained ELFs instead of the actual three native plus two RGB roles. Final parent/Main reconciliation and M75 qualification remain pending."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1077,10 +1077,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44627469212"
     },
-    "note": "Historical parent GitHub review commit 487f0ea passed local normal, strict coverage and corrected audit. Headless 1755 and renderer 1339 passes overlap; each has two ignored controls. Python 477 is quiet aggregate evidence. Its 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer provenance records were audited. The original reader failure is retained. These results do not qualify M75. Automatic M74 CI was in progress at last observation; no hosted success is claimed. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Historical M74 review commit 487f0ea passed local normal, strict coverage and corrected audit. Headless 1755 and renderer 1339 passes overlap; each has two ignored controls. Python 477 is quiet aggregate evidence. Its 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer records were audited. Exact M74 CI succeeded; originals are collected, but official audit and final reconciliation remain pending. These results do not qualify M75. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21523,
