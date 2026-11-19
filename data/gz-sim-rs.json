@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T00:25:34.007344+00:00",
+  "updated_at": "2026-11-19T00:53:43.590782+00:00",
   "state": "active",
-  "summary": "Fresh M70 package/install audits passed. Both native consumers validated first 1 ms camera packets, but the full trial failed: its observer misses thread-spawned workers. A bounded correction is under way; release proof remains pending.",
+  "summary": "Fresh M70 package/install audits passed. The camera attempt failed a strict mapping guard; its offending path is unknown because raw mappings were not retained. A bounded diagnostic is being prepared; release proof remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Correcting worker detection in the camera proof",
-      "detail": "Fresh package and clean Ubuntu installation audits passed, including all 41 installed examples. Both native consumers validated first 1 ms camera packets, but the full trial failed its strict worker count: the observer reads only main-thread children while workers spawn on supervisor threads. A bounded task-aware census correction is under way. Worker identities/maps and the full camera proof remain unverified."
+      "title": "Diagnosing a camera worker mapping rejection",
+      "detail": "Fresh package and Ubuntu installation audits passed, including all 41 installed examples. The next camera attempt failed after 17.863 seconds at mapped-file validation. The offending path and branch remain unknown because raw mappings and PID context were not retained before parsing. No product or graphics-driver defect is established. Prepare bounded diagnostic preservation before any further correction."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Review the bounded worker census correction, then rerun affected camera trials using the retained GPU provisioning evidence.",
-    "Complete independent camera runtime audit and the real robot/browser proof after explicit origin approval.",
-    "Recover exact hosted qualification and finish release readbacks before M70 acceptance."
+    "Retain the exact raw worker mappings and rejection context through a reviewed bounded diagnostic, then review any correction.",
+    "Complete valid camera runtime proof and independent audit, then the real browser demo after explicit origin approval.",
+    "Recover exact hosted qualification and complete release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "The full camera trial failed because its observer misses workers spawned by non-main threads. Correct the bounded census and rerun affected trials without weakening the strict worker count or replaying completed provisioning.",
+    "Camera proof stopped at a strict mapped-file guard. The underlying path and branch are unknown because raw mappings were not retained before parsing; a bounded reviewed diagnostic must preserve that evidence before correction.",
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
@@ -1083,7 +1083,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Unpublished local candidate 2e8d9dc passed normal, strict workspace/per-crate coverage, actual-parent gates and audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. Fresh package/install audits and 41 installed examples passed. The camera trial failed at worker observation after validated first 1 ms packets; full camera/browser proof is pending. This revision has no hosted result; earlier 597ac3d CI failed on Ubuntu snapshot HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
+    "note": "Unpublished local candidate 2e8d9dc passed normal, strict workspace/per-crate coverage, actual-parent gates and audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. Fresh package/install audits and 41 installed examples passed. Camera proof failed on a strict mapping guard; the underlying path is unknown. Camera/browser proof is pending. This revision has no hosted result; earlier 597ac3d CI failed on Ubuntu snapshot HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
     "renderer_coverage": {
       "lines": [
         21287,
