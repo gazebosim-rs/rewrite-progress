@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T18:13:52.692902+00:00",
+  "as_of": "2026-11-19T19:10:18.768369+00:00",
   "execution_state": "active",
   "current_phase": "M72",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3553,15 +3553,15 @@
       "source_finite_example_obligations": 43,
       "auxiliary_camera_case_obligations": 17,
       "installed_accepted_examples": 35,
-      "current_stage": "The first normal failed after 25.361 seconds at two new test-code compilation/lint errors, before tests or coverage. The second normal genuinely failed after 1646.887 seconds: both Clippy profiles, 473 aggregate Python controls, 43 finite source runs and 17 CLI cases passed; headless passed 1748 with two retained ignored controls, while renderer passed 1306 with three failures and two retained ignored controls. Headless and renderer counts overlap. Full coverage was not completed. Two explicit-intrinsics RGB tests exposed a center-ray-only flat-color oracle that did not exclude nearer silhouette footprints; no production defect is established. The retained shutdown fixture failed its final expected-Closed assertion; the actual returned variant was not printed and remains unknown, while Source permits a queued unconsumed Ready. Independently reviewed test-only corrections add conservative full-pixel footprint purity with explicit RGB exclusions and consume the actual Ready before unchanged timeout/reap/Closed assertions. Exact RGB values, count/HFOV thresholds, all 4096 depth values, positive infinity/1e-4 checks, deadlines and production Source remain unchanged. The third affected full local normal/strict gate is running on tree 222c51bcaac8253d24be372338553069c610cc65 over locally qualified f31d715, with no current result or independent DATA claimed. The formatter process ended but its actual exit was not recovered; mandatory normal fmt-check remains required. Both failed trees, packets, logs and receipts are preserved. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory.",
+      "current_stage": "M72 local development completed provisionally on private clean commit 2f3e458f8257e72358a607b999bdd4e66a93872a (tree 222c51bcaac8253d24be372338553069c610cc65, parent f31d7155c2569df875b393857a1339bb192caf2c). The third full normal genuinely returned Root/Git 0 after 1674.491818651 seconds, and one retained independent audit returned 0. Headless 1748 and renderer 1309 passes overlap, with two retained ignored controls per profile; Python 473 is quiet aggregate evidence. All 13 distinct new M72 Rust controls, 43 finite source runs and 17 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The audit retained 1500 members/625246440 bytes, 1727 Source bindings, 140 profile Sources, 296 inputs and 40 native-peer provenance records. Raw profiles were hashed without remerge or test replay; temporary ELF paths were retained as metadata rather than rehashed bytes. Both prior failed trees, packets, assertions, logs and receipts remain preserved. No M72 distribution, installed-example, hosted success, acceptance or product publication is claimed. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; unresolved historical snapshot HTTP 401 is not recovery evidence.",
       "source_control_declarations": {
         "Rust_unique": 13,
         "Python": 2
       },
-      "normal_passed": false,
-      "local_DATA_passed": false,
+      "normal_passed": true,
+      "local_DATA_passed": true,
       "current_staged_tree": "222c51bcaac8253d24be372338553069c610cc65",
-      "qualification_state": "reviewed_pixel_footprint_and_reply_order_correction_full_local_attempt3_running_no_result",
+      "qualification_state": "full_local_normal_strict_and_independent_DATA_passed_private_unaccepted",
       "prior_normal_failure": {
         "tree": "b7d0edc1a63c1e2a841f6fb48e1a6956b2e18be1",
         "actual_exit_code": 1,
@@ -3620,8 +3620,8 @@
         "attempt": 3,
         "launch_tool": "ccc0b0",
         "session_id": 77515,
-        "actual_exit_code": null,
-        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "actual_exit_code": 0,
+        "state": "TERMINAL_SUCCESS",
         "runner": {
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/run-final-staged-hook-attempt3.py",
           "bytes": 8973,
@@ -3631,7 +3631,49 @@
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/source-state-attempt3.json",
           "bytes": 542424,
           "sha256": "f5bec06a621f352a46b1c946d23b27593d8d291c39d9503a07270af9ce82d885"
+        },
+        "actual_git_exit_code": 0,
+        "terminal_tool": "69d5c9",
+        "elapsed_seconds": 1674.491818651004,
+        "commit": "2f3e458f8257e72358a607b999bdd4e66a93872a",
+        "terminal_receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/normal-actual-exit.json",
+          "bytes": 1187,
+          "sha256": "33145939e9dec041de0b1e25f951707dcea080e1eba6e39e51700a5e06747d7b"
         }
+      },
+      "local_development_complete": true,
+      "local_qualification_provisional": true,
+      "locally_qualified_commit": "2f3e458f8257e72358a607b999bdd4e66a93872a",
+      "distribution_selected": false,
+      "local_qualification": {
+        "normal_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/normal-actual-exit.json",
+          "bytes": 1187,
+          "sha256": "33145939e9dec041de0b1e25f951707dcea080e1eba6e39e51700a5e06747d7b"
+        },
+        "independent_audit": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/independent-normal-audit.json",
+          "bytes": 26443,
+          "sha256": "02dbb1b0563924e7fb03c3f456c75d357d2fbbe7a7d5e0ce2f36fb34ea42abe5"
+        },
+        "audit_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/independent-normal-audit-actual-exit.json",
+          "bytes": 1469,
+          "sha256": "f630cfb0e7a420b3c9d8817502475428247f7d7f5ba3ddf562b8d093b0f29951"
+        },
+        "Rust_controls_observed": 13,
+        "Python_aggregate": 473,
+        "headless_passed": 1748,
+        "renderer_passed": 1309,
+        "profile_counts_overlap": true,
+        "ignored_each_profile": 2,
+        "source_finite_runs": 43,
+        "auxiliary_CLI_cases": 17,
+        "installed_finite_example_runs": null,
+        "native_peer_provenance_records": 40,
+        "current_source_publication": false,
+        "hosted_success": false
       }
     }
   ],
@@ -4083,31 +4125,30 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71 local normal/strict/DATA passed provisionally, with both phases private and unaccepted. M72 has no qualification result or transferred parent proof. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M72 local normal/strict/DATA passed provisionally. All three phases remain private and unaccepted. No M72 distribution proof is selected or claimed. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
     "M72"
   ],
   "current_development_phase": "M72",
   "board": {
-    "updated_at": "2026-11-19T18:13:52.692902+00:00",
+    "updated_at": "2026-11-19T19:10:18.768369+00:00",
     "current": {
-      "title": "Qualifying explicit pinhole camera intrinsics",
+      "title": "Explicit camera intrinsics locally qualified",
       "items": [
-        "M72 adds explicit focal lengths and principal points to existing 64×64 RGB/depth cameras. HFOV fallback is unchanged; explicit P and nonzero skew remain refused.",
-        "The previous full gate passed 1,748 headless tests but had three renderer test failures. Reviewed pixel-footprint and reply-order corrections are in place; the third full local attempt is running, with no result yet.",
-        "Both failed attempts remain preserved. Partial passes do not qualify M72; full strict coverage and an independent audit remain pending."
+        "M72 full local normal, strict coverage and independent retained audit passed on private 2f3e458. Both earlier failures remain preserved.",
+        "All 13 new Rust controls passed, including real-worker pixel/depth, demand, reset, removal and drift checks. Its 43 finite examples are source runs, not installed examples.",
+        "Local development is complete provisionally. Final parent, exact hosted/official and Main release gates remain pending; M72 is private and unaccepted."
       ]
     },
     "done": [
       "M1–M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "M70 local distribution/runtime and M71 local normal/strict qualification and independent audit passed provisionally; both remain private and unaccepted."
+      "M70 local distribution/runtime and M71–M72 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Complete the affected M72 full local normal/strict gate and independent audit, preserving both failed attempts.",
-      "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M72 acceptance."
+      "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M72 acceptance."
     ],
     "blocker": {
-      "text": "M72 local qualification can proceed. Final parent, exact hosted/official and Main release gates remain held after earlier snapshot HTTP401 failures; recovery is unproven and no CI retry or index probe is released.",
+      "text": "Exact hosted qualification remains held after earlier snapshot HTTP 401 failures; recovery is unproven. Local M70–M72 results do not replace final parent, hosted/official or Main acceptance gates.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -4266,10 +4307,11 @@
   "held_work": {
     "phases": [
       "M70",
-      "M71"
+      "M71",
+      "M72"
     ],
-    "source_commit": "f31d7155c2569df875b393857a1339bb192caf2c",
-    "reason": "M70 local distribution/runtime and M71 local normal/DATA are complete; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
+    "source_commit": "2f3e458f8257e72358a607b999bdd4e66a93872a",
+    "reason": "Selected M70 local distribution/runtime and M71–M72 local development obligations are complete provisionally; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
     "accepted": false,
     "included_in_this_candidate": true
   },
