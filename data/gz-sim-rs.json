@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T14:06:08.687382+00:00",
+  "updated_at": "2026-11-19T14:37:32.631228+00:00",
   "state": "active",
-  "summary": "M71 second stopped at one Python control exposing an unexpected test-name admission gap. Reviewed stricter validation is in place; the third full local gate is running, with no result yet.",
+  "summary": "M71 third passed broad local checks and four new real-worker controls, but two test-setup failures stopped full qualification. Reviewed test-only fixes are in place; the fourth gate is running.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M71",
-      "title": "Running the corrected mixed-camera checks",
-      "detail": "Both prior failures are preserved. After the second gate passed Clippy, one Python assertion exposed an unexpected-case validation gap. The reviewed exact-case-set correction is in place and the third full local gate is running. No M71 pass or acceptance is claimed."
+      "title": "Qualifying corrected camera test setups",
+      "detail": "Third-gate lint/Python/42 examples/16 CLI/headless and four new real-worker controls passed; two setup failures remained and coverage was incomplete. Reviewed loaded-metadata/reset-zero test fixes preserve assertions and production. The fourth full gate is running, with no result yet."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Finish the corrected M71 full local normal/strict gate and independent audit; preserve both prior failures.",
+    "Finish the fourth M71 full local normal/strict gate and independent audit; retain all three prior failures.",
     "Resolve hosted qualification and reconcile the final parent; exact hosted/official/Main gates precede M70/M71 acceptance."
   ],
   "blockers": [
