@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T20:08:53.591919+00:00",
+  "updated_at": "2026-11-19T20:26:11.150638+00:00",
   "state": "active",
-  "summary": "M74 signed camera skew is selected and Source implementation is in progress over locally qualified M73. Projection/frustum math and bounded image evidence are in scope; no M74 checks or results are claimed.",
+  "summary": "M74 signed camera skew passed whole Source review, including a corrected test-borrow finding. The full local normal/strict qualification run is active; no current result or audit is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M74",
-      "title": "Implementing signed camera skew",
-      "detail": "Finite signed K skew extends existing 64\u00d764 RGB/depth projection with sheared-corner bounds. Explicit P retains precedence and CameraInfo zero off-diagonals remain documented. Disjoint Source lanes are in progress; complete review precedes consolidated qualification."
+      "title": "Qualifying signed camera skew",
+      "detail": "Signed projection, shared sheared bounds and evidence Source passed review; one formatter completed. The full local gate is running. Its 16 new Rust/two Python declarations and 45 source-example/19 CLI obligations remain pending qualification."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Complete the bounded M74 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+    "Complete the M74 full local normal/strict gate and independent audit, retaining actual results and any failures.",
     "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M74 acceptance."
   ],
   "blockers": [
