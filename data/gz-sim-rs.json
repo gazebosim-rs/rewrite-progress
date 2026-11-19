@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T19:29:04.384981+00:00",
-  "state": "active",
-  "summary": "M73 explicit camera projection implementation and regression Source passed independent review. The full local normal/strict qualification run is active; no current result or audit is claimed.",
+  "updated_at": "2026-11-19T19:57:34.761778+00:00",
+  "state": "blocked",
+  "summary": "M73 explicit camera projection passed full local normal/strict qualification and independent audit on private 03f3fc9. Local development is complete provisionally; final parent, hosted/official and Main release gates remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M73",
-      "title": "Qualifying explicit camera projection",
-      "detail": "The complete zero-translation P increment preserves distinct K/P and absent-P behavior. Whole Source review and one formatter completed; the full local gate is running. Its 14 new Rust/two Python declarations and 44 source-example/18 CLI obligations are not pass claims."
+      "title": "Explicit camera projection locally qualified",
+      "detail": "The first full gate and independent audit passed, including all 14 new Rust controls, 44 finite source runs and 18 CLI cases. Distinct K/P and P-based software-worker evidence passed. No installed M73 distribution or acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,10 @@
     }
   ],
   "remaining": [
-    "Complete the M73 full local normal/strict gate and independent audit, retaining actual results and any failures.",
-    "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M73 acceptance."
+    "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70\u2013M73 acceptance."
   ],
   "blockers": [
-    "M73 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released."
+    "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70\u2013M73 results do not replace final parent, hosted/official or Main acceptance gates."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1059,16 +1058,16 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "2f3e458f8257e72358a607b999bdd4e66a93872a",
-    "rust_tests": 1748,
+    "revision": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
+    "rust_tests": 1752,
     "coverage": {
       "lines": [
-        33103,
-        34009
+        33123,
+        34018
       ],
       "regions": [
-        50526,
-        52543
+        50552,
+        52557
       ]
     },
     "upstream": {
@@ -1080,22 +1079,22 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Historical parent 2f3e458 passed local normal, strict coverage and independent audit. Headless 1748 and renderer 1309 passes overlap; each has two retained ignored controls. Python 473 is quiet aggregate evidence. Its 13 new Rust controls, 43 finite source runs and 17 CLI cases passed; 40 native-peer provenance records were audited. These results do not qualify M73. No M73 checks, installed distribution or hosted result is claimed. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Local unpublished 03f3fc9 passed full normal, strict workspace/per-crate coverage, actual-parent changed-line gates and independent audit. Headless 1752 and renderer 1323 passes overlap; each has two retained ignored controls. Python 475 is quiet aggregate evidence. All 14 new Rust controls, 44 finite source runs and 18 CLI cases passed; 41 native-peer provenance records were audited. No M73 installed distribution or hosted proof is claimed. Final parent, hosted/official and Main gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
-        21413,
-        21954
+        21473,
+        22015
       ],
       "regions": [
-        32548,
-        33792
+        32623,
+        33869
       ]
     },
-    "renderer_rust_tests": 1309,
+    "renderer_rust_tests": 1323,
     "renderer_overlaps_headless": true,
-    "quiet_Python_tests": 473,
+    "quiet_Python_tests": 475,
     "quiet_Python_individual_results_observable": false,
-    "finite_example_runs": 43,
+    "finite_example_runs": 44,
     "installed_finite_example_runs": null,
     "revision_url": null
   },
