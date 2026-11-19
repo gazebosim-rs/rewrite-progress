@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T14:06:08.687382+00:00",
+  "as_of": "2026-11-19T14:37:32.631228+00:00",
   "execution_state": "active",
   "current_phase": "M71",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3452,7 +3452,7 @@
       "source_finite_example_obligations": 42,
       "auxiliary_camera_case_obligations": 16,
       "installed_accepted_examples": 35,
-      "current_stage": "Two genuine local failures remain preserved: the first stopped after 99.856 seconds at nine new-regression Clippy iterator findings before tests/coverage. The second passed both Clippy profiles, then ran 471 Python checks with one failure after 275.144 seconds: an existing negative assertion exposed admission of an unexpected passed test name under a claimed 16-case summary. Rust feature tests and coverage were not reached in that second attempt. A new isolated successor strengthens the validator to require exactly 16 actual once-only name/result rows, the complete expected name set, all outcomes ok and the unchanged 16/0/0 summary. Unknown and duplicate case controls were added while preserving the original failed assertion; no Rust, numerical, tolerance or gate relaxation occurred. Whole and narrow independent Source review passed. The third consolidated full local normal/strict gate is running on staged tree ed91d3f84baa5995fc757bfa04ddd82758bd5e08 over locally qualified 7094a31; no qualification result is claimed. All 42 finite-example/16 CLI obligations, strict coverage and independent DATA remain required. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory.",
+      "current_stage": "The third full local gate genuinely failed after 1679.588 seconds. Both Clippy profiles, 471 aggregate Python checks, 42 finite examples, 16 CLI cases and 1744 headless tests passed. Renderer all-target execution retained 1292 passes and two new private test-setup failures; all four new real-worker controls passed. These are partial facts: the full strict coverage gate did not complete. The setup defects were width32 invalid SDF being refused by the loader before the intended output preflight, and a reset staged by prepare_io not yet committed through its paused zero-time tick before a later control. A new isolated, independently reviewed test-only correction mutates valid loaded camera metadata for the same width negative and consumes/asserts the paused reset-zero boundary before preserving the existing 1ms step checks. Production, numerical assertions, scenarios and limits are unchanged. The fourth full local normal/strict gate is running on staged tree 00c8de8ca9e89c05c128a9fd5830386c0ba900ee over locally qualified 7094a31; no result or qualification pass is claimed. All three prior failed trees, packets and logs remain preserved. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory.",
       "predecessor_acceptance_required_before_acceptance": true,
       "source_control_declarations": {
         "Rust_unique": 15,
@@ -3474,8 +3474,8 @@
           "bytes": 1634
         }
       },
-      "current_staged_tree": "ed91d3f84baa5995fc757bfa04ddd82758bd5e08",
-      "qualification_state": "reviewed_closed_test_case_validator_third_full_local_gate_running_no_result",
+      "current_staged_tree": "00c8de8ca9e89c05c128a9fd5830386c0ba900ee",
+      "qualification_state": "reviewed_test_setup_correction_fourth_full_local_gate_running_no_result",
       "second_normal_failure": {
         "tree": "95ff397f098d83e367d5013b109ed520d7182cd0",
         "actual_exit_code": 1,
@@ -3489,6 +3489,26 @@
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m71-delivery/normal-attempt2-failure.json",
           "sha256": "29acefd728492298076d2111278dad69b311938e3df6e659b191ea55aeb8b357",
           "bytes": 1706
+        }
+      },
+      "third_normal_failure": {
+        "tree": "ed91d3f84baa5995fc757bfa04ddd82758bd5e08",
+        "actual_exit_code": 1,
+        "actual_git_exit_code": 1,
+        "elapsed_seconds": 1679.5876242939994,
+        "Clippy_both_profiles_passed": true,
+        "Python_aggregate_passed": 471,
+        "finite_examples_passed": 42,
+        "auxiliary_CLI_passed": 16,
+        "headless_passed": 1744,
+        "renderer_passed": 1292,
+        "renderer_failed": 2,
+        "new_real_worker_cases_passed": 4,
+        "coverage_gate_complete": false,
+        "receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m71-delivery/normal-attempt3-failure.json",
+          "sha256": "232933f8b7f91df94304e372eebaabe02b1225032fb2a52d6421addf11ce8d33",
+          "bytes": 3458
         }
       }
     }
@@ -3937,13 +3957,13 @@
   ],
   "current_development_phase": "M71",
   "board": {
-    "updated_at": "2026-11-19T14:06:08.687382+00:00",
+    "updated_at": "2026-11-19T14:37:32.631228+00:00",
     "current": {
-      "title": "Running the corrected mixed-camera checks",
+      "title": "Qualifying corrected camera test setups",
       "items": [
-        "The second M71 local gate passed Clippy but stopped on a Python control exposing an unexpected test-name admission gap. Both failed attempts are preserved.",
-        "Reviewed validator corrections require exactly the 16 expected test results, once each and all passed. The third full local normal/strict gate is running; no result yet.",
-        "M70 local package, camera and browser proofs remain independently audited. Both phases remain private and unaccepted while exact hosted/official qualification is pending."
+        "The third M71 gate passed lint, Python, 42 examples, 16 CLI cases, headless tests and all four new real-worker controls. Two new test-setup failures stopped qualification; full coverage was incomplete.",
+        "Reviewed test-only fixes correct loaded-camera metadata and reset-commit setup. Assertions and production behavior are unchanged; the fourth full local gate is running, with no result yet.",
+        "All prior failures are preserved. M70 local proofs remain independently audited; M70 and M71 remain private and unaccepted pending exact hosted/official qualification."
       ]
     },
     "done": [
@@ -3951,7 +3971,7 @@
       "7094a31 local checks, package/install, depth/GPU and RGB proofs, plus the actual browser demonstration and its independent audits, passed."
     ],
     "next": [
-      "Finish the corrected M71 full local normal/strict gate and independent audit; preserve both prior failures.",
+      "Finish the fourth M71 full local normal/strict gate and independent audit; retain all three prior failures.",
       "Resolve hosted qualification and reconcile the final parent; exact hosted/official/Main gates precede M70/M71 acceptance."
     ],
     "blocker": {
