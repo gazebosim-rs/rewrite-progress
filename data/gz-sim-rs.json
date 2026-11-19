@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-18T23:42:34.628628+00:00",
+  "updated_at": "2026-11-19T00:18:00.200270+00:00",
   "state": "active",
-  "summary": "M70 camera correction passed full local normal/strict checks and independent audit. Fresh release builds are running; new package/install/camera/browser proof and hosted qualification remain pending.",
+  "summary": "Fresh M70 package, relocation, Ubuntu installation and independent audits passed, including all 41 installed examples. Installed camera trials are running; runtime audit, browser proof and hosted qualification remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Building the locally verified camera preview",
-      "detail": "Local unpublished candidate 2e8d9dc passed the full normal/strict gate and independent audit: 1,740 headless and 1,278 renderer Rust passes (overlapping), 469 quiet Python checks, 15 auxiliary camera cases, 41 finite loads and 38 native records. Four-role release builds are running. Fresh package/install/camera/browser proof remains pending; earlier failures are preserved."
+      "title": "Verifying the installed camera preview",
+      "detail": "The current locally qualified candidate passed fresh package/relocation and independent package audit, then clean Ubuntu installation and audit: 22 Docker commands, 9 guest stages and 41 finite examples as UID 65534. One reviewed paired-depth/RGB camera operation is running; independent runtime audit and browser proof remain pending. The new commit remains unpublished and has no hosted result."
     }
   ],
   "accepted_slices": [
@@ -1025,9 +1025,9 @@
     }
   ],
   "remaining": [
-    "Complete release inputs, notices, package assembly/relocation and independent package audit.",
-    "Verify a fresh Ubuntu installation, paired-depth/RGB behavior and owned shutdown.",
-    "Finish real robot/browser proof after origin approval, hosted qualification and release readbacks before M70 acceptance."
+    "Complete installed paired-depth/RGB proof and independent runtime audit, including demand, reset, provider and owned shutdown.",
+    "Demonstrate the default robot in the real browser after explicit origin approval, then independently audit its shutdown.",
+    "Recover exact hosted qualification and complete publication/release readbacks before M70 acceptance."
   ],
   "blockers": [
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
@@ -1082,7 +1082,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Unpublished local candidate 2e8d9dc passed full normal, both strict workspace/per-crate coverage profiles, actual-parent changed-line gates and independent audit. Headless/renderer counts overlap; 469 Python checks are quiet aggregate evidence. All 15 auxiliary camera cases, 41 finite loads and 38 native records passed. New installed runtime proof is pending. This revision has no hosted result; the earlier 597ac3d run failed on Ubuntu snapshot HTTP401. Upstream counts remain historical; M65 Latest still has 35 examples.",
+    "note": "Unpublished local candidate 2e8d9dc passed normal, strict workspace/per-crate coverage, actual-parent gates and independent audit. Rust profile counts overlap; 469 Python checks are quiet aggregate evidence. All 15 auxiliary camera cases, 41 finite loads and 38 native records passed. Fresh package/install audits and all 41 installed examples passed; camera trials are running; runtime audit/browser proof is pending. This revision has no hosted result; earlier 597ac3d CI failed on Ubuntu snapshot HTTP401. Upstream counts are historical; M65 Latest still has 35 examples.",
     "renderer_coverage": {
       "lines": [
         21287,
@@ -1097,7 +1097,8 @@
     "renderer_overlaps_headless": true,
     "quiet_Python_tests": 469,
     "quiet_Python_individual_results_observable": false,
-    "finite_example_runs": 41
+    "finite_example_runs": 41,
+    "installed_finite_example_runs": 41
   },
   "phase_status": {
     "P0": "in_progress",
