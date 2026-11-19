@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T02:01:49.853839+00:00",
+  "updated_at": "2026-11-19T02:41:10.601643+00:00",
   "state": "active",
-  "summary": "M70 package/install audits and 41 examples passed. Positive worker backing proofs and both native cadence consumers passed; the full camera trial failed during retirement census. A bounded correction is being prepared.",
+  "summary": "M70 package/install audits and 41 examples passed. Native cadence passed again; a fresh census attempt started, but incomplete identity reads blocked retirement proof. The final state is unknown; a bounded correction is being prepared.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Finishing camera worker retirement checks",
-      "detail": "Both workers\u2019 positive backing-FD proofs were verified, with 35 ordinary-file proofs retained. Both native consumers passed C1/C50/C100/C150/C200. The full trial failed at OFF-0: a queued child disappeared during retirement inspection. Prepare bounded census reacquisition within the same eight-second deadline, retaining unknown attempts. Reset/demand/RGB and complete camera/shutdown proof remain unqualified."
+      "title": "Stabilizing camera retirement observations",
+      "detail": "Both native cadence consumers passed all five clock points again, with six snapshots retained. Task churn was recorded at OFF-0 and a fresh attempt started, but separate process-identity reads became incomplete and lacked a closing stat check. The subsequent actual state is unknown. Correct stable identity acquisition within unchanged 16-attempt/eight-second bounds. Full camera/reset/demand/RGB/shutdown proof is pending."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Review the bounded census correction, retaining unknown attempts within the same eight-second deadline, then complete affected camera trials.",
+    "Review stable process-identity acquisition within the same 16-attempt and eight-second limits, then complete affected camera trials.",
     "Complete independent camera audit and the real browser demo after explicit origin approval.",
     "Recover exact hosted qualification and complete release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "The full camera trial failed during retirement census when a queued child disappeared before inspection. A reviewed bounded reacquisition must preserve unknown attempts and the existing deadline; reset/demand/RGB and complete shutdown proof remain pending.",
+    "The full camera trial failed during retirement identity collection. Separate reads mixed an early running state with later missing executable/arguments; no closing stat proved the final state. Stable identity acquisition needs independent Source review before the next affected run.",
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
@@ -1083,7 +1083,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Unpublished local candidate 2e8d9dc passed normal, strict coverage, parent gates and audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. Fresh package/install audits and 41 examples passed. Positive worker backing proofs and native cadence passed; full camera proof failed during retirement census. Camera/browser qualification remains pending. No hosted result; earlier 597ac3d CI failed on Ubuntu snapshot HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
+    "note": "Unpublished local candidate 2e8d9dc passed normal, strict coverage, parent gates and audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. Fresh package/install audits and 41 examples passed. Positive backing proofs remain verified; native cadence passed again. Full camera proof failed on incomplete retirement identity reads; final state is unknown. No hosted result; earlier 597ac3d CI failed on snapshot HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
     "renderer_coverage": {
       "lines": [
         21287,
