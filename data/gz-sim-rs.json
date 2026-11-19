@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T06:06:19.782930+00:00",
+  "updated_at": "2026-11-19T06:32:36.067712+00:00",
   "state": "active",
-  "summary": "The bootstrap fixed the host argv limit. RGB then correctly rejected growth of an existing mapping from 4 to 28 VMAs under the old new-keys-only policy. A bounded proof/cache/reader amendment is being designed; no RGB pass is claimed.",
+  "summary": "RGB mapping reached final equal maps and one worker, as unaudited partial evidence. The parent wait ended at about 16.74 s before the native 20 s deadline. A bounded wait fix and failure-only callback diagnostics are selected.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Adapting RGB observation to worker mapping growth",
-      "detail": "Retained evidence explains the RGB failure: one existing mapping identity grew from 4 to 28 shared, nonexecutable VMAs, while ordinary maps and the PID core stayed stable. The old policy admits only new object keys and correctly rejected this growth. A Source-only proof/cache/reader amendment is being designed; final equal-map closure, numeric controls, deadlines and caps remain mandatory."
+      "title": "Diagnosing installed RGB frame delivery",
+      "detail": "Partial mapping evidence reached final equal maps and one worker; the whole RGB run failed. The parent wait ended at about 16.74 s, before the unchanged native 20 s deadline. Image versus Info callback delivery/matching is unknown; no product defect is demonstrated. Selected Source-only work corrects that parent budget and adds separately provenanced QA failure diagnostics; no compile/run yet."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Complete and independently review the bounded mapping-growth proof/cache/reader design before affected RGB verification and audit.",
+    "Complete Source and independent review, build the separately provenanced QA helper once, then run one affected RGB verification and audit within the unchanged native 20 s deadline.",
     "Complete the independent default robot browser proof after explicit origin approval; it does not depend on RGB success.",
     "Recover exact hosted qualification and complete release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "The RGB observation policy does not yet admit existing-object VMA growth. A complete bounded proof/cache/reader design and independent Source review are required before affected verification. The prior rejection was correct; no product defect or full RGB pass is inferred.",
+    "The parent completion wait ended prematurely; actual Image/Info callback receipt and matching remain unknown. Source-only wait-budget correction and fresh QA failure diagnostics must be reviewed before one affected verification. No full RGB DATA or product defect is claimed.",
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
