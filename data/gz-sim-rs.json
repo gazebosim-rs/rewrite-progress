@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T07:16:00.944468+00:00",
+  "updated_at": "2026-11-19T12:57:29.795923+00:00",
   "state": "active",
-  "summary": "Local qualification, package/installation, retained GPU/depth components and native RGB proof are independently audited. Browser origin approval and exact hosted qualification remain pending.",
+  "summary": "All required local preview proofs passed, including the installed robot browser demonstration and independent audits. Exact hosted qualification and official release evidence remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Awaiting browser approval and hosted qualification",
-      "detail": "Native RGB Image/Info, Clock, mapping and lifecycle checks passed with independent DATA. GPU/depth components remain separate evidence; the original whole-camera failure is preserved. Browser proof and hosted/official qualification remain pending; M70 is unaccepted."
+      "title": "Local preview verified; hosted qualification pending",
+      "detail": "Local checks, package/installation with 41 examples, depth/GPU, RGB and actual browser Play/motion/Pause/Reset/clean retirement proofs passed independent audits. Only exact hosted qualification and official release evidence remain; M70 is private and unaccepted."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,10 @@
     }
   ],
   "remaining": [
-    "Obtain browser origin approval, then complete the default robot browser proof and its independent audit.",
-    "Recover exact hosted qualification and complete official release/publication readbacks before M70 acceptance."
+    "Recover exact hosted qualification, then complete official evidence and release/publication readbacks before M70 acceptance."
   ],
   "blockers": [
-    "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
-    "Live browser access to http://127.0.0.1:8082 needs explicit owner approval before the default robot browser proof."
+    "Earlier hosted CI failed before product checks with HTTP401. Recovery is unproven; unpublished 7094a31 has no hosted result. Official qualification and release evidence remain pending."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1081,7 +1079,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Local unpublished 7094a31 passed normal, strict coverage, actual-parent gates and independent audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. The Close regression passed both profiles; 41 finite runs passed and 38 native-peer provenance records were audited. Fresh release/package, Ubuntu installation with all 41 examples, retained GPU/depth components and native RGB have independent audits. Browser and hosted qualification remain pending. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Local unpublished 7094a31 passed normal, strict coverage, actual-parent gates and independent audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. The Close regression passed both profiles; 41 finite runs passed and 38 native-peer provenance records were audited. Package/Ubuntu installation with 41 examples, depth/GPU, native RGB and actual robot browser proofs have independent audits. Hosted qualification and official release evidence remain pending. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21286,
