@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T20:08:53.591919+00:00",
+  "as_of": "2026-11-19T20:26:11.150638+00:00",
   "execution_state": "active",
   "current_phase": "M74",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3788,9 +3788,9 @@
       "source_preparation_basis_locally_qualified": true,
       "source_preparation_started_at": "2026-11-19T20:08:53.591919+00:00",
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
-      "checks_run": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
       "normal_passed": false,
       "local_DATA_passed": false,
       "accepted": false,
@@ -3798,8 +3798,33 @@
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "bounded_source_implementation_in_progress_no_checks_or_results",
-      "current_stage": "M74 was selected and its contract recorded before implementation over locally qualified private M73 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342. Root owns Scene/extraction/CLI/guides and integration; projection/frustum and actual-evidence lanes are disjoint. Finite signed K skew uses native clip coupling +2s/width and optical u=fx*X/Z-s*Y/Z+cx, with shared sheared-corner validation. Explicit zero-translation P still overrides render skew to zero. CameraInfo preserves native zero off-diagonals: this nonzero-skew limitation is derived from pinned source, not a new actual native packet capture. The retained skew35 CPU utility capture is unchanged projection-math evidence only; no SDK rebuild or failed Ogre/Mesa replay is selected. Complete Source/regressions/guides and independent review remain in progress; no M74 checks, runtime proof, audit or qualification result is claimed. Existing image/clip/HFOV/pose/noise/rate/count/ownership bounds and final parent/hosted/official/Main gates remain mandatory."
+      "qualification_state": "whole_Source_review_complete_full_local_normal_running_no_result",
+      "current_stage": "The complete 34-path M74 implementation, meaningful regression Source, fixture and guides passed independent whole Source review. The sole finding was an overlapping mutable/immutable borrow in a new metadata test; separate lexical scopes corrected it before verification while preserving every payload and assertion. One formatter genuinely returned 0. A single full local normal/strict gate is active on staged tree e025fe8101b2525f03ca794d39297a96a577d667 over locally qualified private M73 03f3fc9. Its 1735 Source bindings, 16 distinct Rust declarations (three headless/sixteen renderer, overlapping three), two Python declarations, 45 finite source-run and 19 CLI obligations are authored scope, not qualification pass counts. Signed projection signs, configured and f32-rounded sheared corners, exact zero-skew path, four-corner pixel purity, all4096 depth checks, explicit-P precedence and source-derived native CameraInfo zero-offdiagonal limitation remain unchanged. No current normal, coverage, independent DATA, installed distribution, hosted result or acceptance is claimed. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; historical snapshot HTTP 401 recovery remains unproven.",
+      "source_finite_example_obligations": 45,
+      "source_CLI_case_obligations": 19,
+      "source_control_declarations": {
+        "Rust_unique": 16,
+        "Python": 2
+      },
+      "current_staged_tree": "e025fe8101b2525f03ca794d39297a96a577d667",
+      "formatter_actual_exit_code": 0,
+      "current_normal_attempt": {
+        "attempt": 1,
+        "launch_tool": "648a40",
+        "session_id": 76892,
+        "actual_exit_code": null,
+        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "runner": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/run-final-staged-hook.py",
+          "bytes": 8928,
+          "sha256": "bd6bd5605f86afcd3a9b608dd5507c3b6b112fc7dcea88a974596597da75b911"
+        },
+        "snapshot": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m74-delivery/source-state.json",
+          "bytes": 545052,
+          "sha256": "3a38996001173c8bf93b76d63de2638c4b8c31a6b0029779c4e782d49966192b"
+        }
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -4279,13 +4304,13 @@
   ],
   "current_development_phase": "M74",
   "board": {
-    "updated_at": "2026-11-19T20:08:53.591919+00:00",
+    "updated_at": "2026-11-19T20:26:11.150638+00:00",
     "current": {
-      "title": "Implementing signed camera skew",
+      "title": "Qualifying signed camera skew",
       "items": [
-        "M74 selects finite signed intrinsic skew for existing 64×64 RGB/depth cameras, with native-compatible projection signs and sheared-corner bounds.",
-        "Scene/extraction/CLI, projection/frustum and evidence Source lanes are in progress over locally qualified M73. Explicit P still overrides rendering; CameraInfo keeps native zero off-diagonals.",
-        "Implementation, regression Source, guides and independent review precede one consolidated local gate. No M74 checks or qualification results are claimed."
+        "M74 signed-skew implementation, regression Source and guides passed whole independent review. The single test-borrow finding was corrected before checks.",
+        "The full local normal/strict qualification run is active over locally qualified M73. Explicit-P precedence, sheared-corner bounds and the native CameraInfo limitation remain intact.",
+        "The 16 new Rust/two Python declarations and 45 source-example/19 CLI obligations await qualification. No current result or independent audit is claimed."
       ]
     },
     "done": [
@@ -4293,7 +4318,7 @@
       "M70 local distribution/runtime and M71–M73 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Complete the bounded M74 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+      "Complete the M74 full local normal/strict gate and independent audit, retaining actual results and any failures.",
       "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M74 acceptance."
     ],
     "blocker": {
