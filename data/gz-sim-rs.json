@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T19:10:18.768369+00:00",
-  "state": "blocked",
-  "summary": "M72 explicit camera intrinsics passed full local normal/strict qualification and independent audit on private 2f3e458. Local development is complete provisionally; final parent, hosted/official and Main release gates remain pending.",
+  "updated_at": "2026-11-19T19:19:26.135789+00:00",
+  "state": "active",
+  "summary": "M73 explicit camera projection is selected and Source implementation is in progress over locally qualified M72. Rendering will use P while CameraInfo retains separate K/P; no M73 checks or results are claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M72",
-      "title": "Explicit camera intrinsics locally qualified",
-      "detail": "All 13 new Rust controls, 43 finite source runs and 17 CLI cases passed, including four real-worker controls. Both earlier failures remain preserved. Local development is provisionally complete; no installed M72 distribution or acceptance is claimed."
+      "id": "M73",
+      "title": "Implementing explicit camera projection",
+      "detail": "The bounded zero-translation P increment preserves exact absent-P behavior and existing 64\u00d764 RGB/depth bounds. Scene/CLI, extraction/output and evidence lanes are in progress; complete implementation and independent review precede consolidated qualification."
     }
   ],
   "accepted_slices": [
@@ -1025,10 +1025,11 @@
     }
   ],
   "remaining": [
-    "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70\u2013M72 acceptance."
+    "Complete the bounded M73 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+    "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M73 acceptance."
   ],
   "blockers": [
-    "Exact hosted qualification remains held after earlier snapshot HTTP 401 failures; recovery is unproven. Local M70\u2013M72 results do not replace final parent, hosted/official or Main acceptance gates."
+    "M73 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1079,7 +1080,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Local unpublished 2f3e458 passed full normal, strict workspace/per-crate coverage, actual-parent changed-line gates and independent audit. Headless 1748 and renderer 1309 passes overlap; each has two retained ignored controls. Python 473 is quiet aggregate evidence. All 13 new Rust controls, 43 finite source runs and 17 CLI cases passed; 40 native-peer provenance records were audited. No M72 installed distribution or hosted proof is claimed. Final parent, hosted/official and Main gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Historical parent 2f3e458 passed local normal, strict coverage and independent audit. Headless 1748 and renderer 1309 passes overlap; each has two retained ignored controls. Python 473 is quiet aggregate evidence. Its 13 new Rust controls, 43 finite source runs and 17 CLI cases passed; 40 native-peer provenance records were audited. These results do not qualify M73. No M73 checks, installed distribution or hosted result is claimed. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21413,
