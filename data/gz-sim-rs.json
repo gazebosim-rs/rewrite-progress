@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T13:42:32.863084+00:00",
+  "updated_at": "2026-11-19T13:52:23.451199+00:00",
   "state": "active",
-  "summary": "M71 mixed RGB/depth Source passed independent review and its consolidated local normal/strict hook is running. M70 local proofs passed; hosted qualification and official release remain held.",
+  "summary": "M71 first stopped at nine strict Clippy findings before tests. Reviewed iterator-only corrections preserve all assertions; the affected full local qualification retry is running, with no result yet.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M71",
-      "title": "Qualifying an independent RGB and depth pair",
-      "detail": "Exactly one RGB and one depth camera retain independent demand, rates, workers and lifetime. Complete Source passed independent review; one consolidated local normal/strict hook is running, with no result yet. M70 local proofs remain separately audited and unaccepted."
+      "title": "Retrying mixed-camera local qualification",
+      "detail": "The first normal hook failed at nine new-test Clippy iterator findings before tests or coverage. Nine iterator-only fixes passed independent review; the affected full normal/strict retry is running. No M71 pass or acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Finish the active M71 local normal/strict qualification and independent audit on locally qualified 7094a31.",
+    "Finish the affected M71 full local normal/strict retry and independent audit; retain the original failure.",
     "Resolve hosted qualification and reconcile the final parent; exact hosted/official/Main gates precede M70/M71 acceptance."
   ],
   "blockers": [
