@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T19:10:18.768369+00:00",
+  "as_of": "2026-11-19T19:19:26.135789+00:00",
   "execution_state": "active",
-  "current_phase": "M72",
+  "current_phase": "M73",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -3675,6 +3675,35 @@
         "current_source_publication": false,
         "hosted_success": false
       }
+    },
+    {
+      "id": "M73",
+      "title": "Explicit monocular camera projection",
+      "max_working_days": 5,
+      "depends_on": [
+        "M72"
+      ],
+      "scope": "Explicit finite positive zero-translation SDF projection for existing 64×64 RGB/depth cameras. Select K from present intrinsics or exact HFOV fallback; explicit P selects rendering while CameraInfo publishes separate K/P. Absent P preserves exact M72 requests and canonical bytes.",
+      "acceptance": "Complete implementation, meaningful regression Source, fixture/guides and independent whole Source review before one consolidated local normal/strict gate and retained audit. Cover all K/P presence combinations, distinct K/P, all four extraction variants, pre-IO representability/refusals, exact absent-P compatibility, real software-worker P-based RGB/depth and canonical consumers, laziness/demand/rates/pause/reset/removal/drift. Final accepted-parent reconciliation and exact hosted/official/durable/Main gates precede source publication or acceptance.",
+      "excluded": "Nonzero projection translations, stereo, arbitrary extrinsics, skew/distortion/noise, larger images or camera fleets, RGBD/point clouds, shader/protocol/dependency/SDK/physics/transport/framework/viewer/package changes, native image/runtime-precedence or performance parity claims.",
+      "evidence": "docs/M73_DELIVERY.md",
+      "source_preparation_basis_commit": "2f3e458f8257e72358a607b999bdd4e66a93872a",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_started_at": "2026-11-19T19:19:26.135789+00:00",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_passed": false,
+      "local_DATA_passed": false,
+      "accepted": false,
+      "hosted_success": false,
+      "predecessor_acceptance_required_before_checks": false,
+      "predecessor_acceptance_required_before_acceptance": true,
+      "installed_accepted_examples": 35,
+      "qualification_state": "bounded_source_implementation_in_progress_no_checks_or_results",
+      "current_stage": "M73 was selected and its contract recorded before implementation over locally qualified private M72 2f3e458f8257e72358a607b999bdd4e66a93872a. Root owns Scene admission, CLI, shared guidance and integration; extraction/output and real-worker/native-evidence lanes are disjoint. Explicit P requires finite positive focal lengths, finite principal points and exact zero tx/ty; rendering follows P while CameraInfo retains independent K/P. Selected K/P keep current f64/f32 representability checks before external IO, absent fields remain dormant and all other existing camera bounds remain. Implementation, meaningful regression Source, fixture/guides and independent whole Source review remain in progress; no M73 formatter, tests, lint, coverage, audit or qualification result is claimed. Existing failed native Ogre/Mesa helper and historical runtime evidence retain their original scopes; no new native runtime precedence result is inferred. Final parent acceptance/reconciliation and all exact hosted/official/Main gates remain mandatory."
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3750,12 +3779,13 @@
     "M69": "complete",
     "M70": "in_progress",
     "M71": "in_progress",
-    "M72": "in_progress"
+    "M72": "in_progress",
+    "M73": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-19T15:33:13.255424+00:00",
+  "phase_started_at": "2026-11-19T19:19:26.135789+00:00",
   "active_phases": [
-    "M72"
+    "M73"
   ],
   "execution_policy": "D30–D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -4123,21 +4153,31 @@
       ],
       "integration": "Freeze locally qualified f31d715 and all M70/M71 evidence. M72 disjoint Scene/extraction/evidence Source lanes share one integrator and may proceed with reviewed local qualification; actual accepted-parent reconciliation and every exact hosted/official/Main release gate remain mandatory. No previous result transfer or CI retry.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M70",
+        "M71",
+        "M72",
+        "M73"
+      ],
+      "integration": "Freeze locally qualified M72 and all parent evidence. M73 disjoint Scene/CLI, extraction/output and evidence Source lanes share one integrator, then complete whole Source review and one local qualification cycle. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; no previous result transfer, CI retry or parent replay.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M72 local normal/strict/DATA passed provisionally. All three phases remain private and unaccepted. No M72 distribution proof is selected or claimed. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M72 local normal/strict/DATA passed provisionally, all private and unaccepted. M73 Source work does not inherit parent qualification. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
-    "M72"
+    "M73"
   ],
-  "current_development_phase": "M72",
+  "current_development_phase": "M73",
   "board": {
-    "updated_at": "2026-11-19T19:10:18.768369+00:00",
+    "updated_at": "2026-11-19T19:19:26.135789+00:00",
     "current": {
-      "title": "Explicit camera intrinsics locally qualified",
+      "title": "Implementing explicit camera projection",
       "items": [
-        "M72 full local normal, strict coverage and independent retained audit passed on private 2f3e458. Both earlier failures remain preserved.",
-        "All 13 new Rust controls passed, including real-worker pixel/depth, demand, reset, removal and drift checks. Its 43 finite examples are source runs, not installed examples.",
-        "Local development is complete provisionally. Final parent, exact hosted/official and Main release gates remain pending; M72 is private and unaccepted."
+        "M73 selects explicit zero-translation projection matrices for existing 64×64 RGB/depth cameras. Rendering uses P; CameraInfo keeps separately selected K and P.",
+        "Scene/CLI, extraction/output and evidence Source lanes are in progress over locally qualified M72. Absent P preserves the M72 path; no shader, protocol, dependency or package change is selected.",
+        "Implementation, regression Source, guides and independent review precede one consolidated local gate. No M73 checks or qualification results are claimed."
       ]
     },
     "done": [
@@ -4145,16 +4185,17 @@
       "M70 local distribution/runtime and M71–M72 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M72 acceptance."
+      "Complete the bounded M73 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+      "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M73 acceptance."
     ],
     "blocker": {
-      "text": "Exact hosted qualification remains held after earlier snapshot HTTP 401 failures; recovery is unproven. Local M70–M72 results do not replace final parent, hosted/official or Main acceptance gates.",
+      "text": "M73 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M72"
+    "M73"
   ],
   "camera_integration": {
     "scope": "Atomic M61–M64 qualification on accepted M60; no new phase",
@@ -4303,7 +4344,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M72_EXPLICIT_PINHOLE_CAMERA_INTRINSICS",
+  "current_development_task": "M73_EXPLICIT_MONOCULAR_CAMERA_PROJECTION",
   "held_work": {
     "phases": [
       "M70",
