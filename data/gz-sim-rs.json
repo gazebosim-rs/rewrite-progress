@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T22:20:16.959303+00:00",
-  "state": "blocked",
-  "summary": "M74 local normal/strict qualification and corrected audit passed. Qualified commit 487f0ea and its M70\u2013M73 ancestors are pushed to GitHub for review; final parent, hosted/official and Main release gates remain pending.",
+  "updated_at": "2026-11-19T22:27:21.122890+00:00",
+  "state": "active",
+  "summary": "M75 camera visibility masks are selected and Source implementation is in progress over qualified M74. Full world validation precedes per-camera filtering; no M75 checks or results are claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M74",
-      "title": "Signed camera skew locally qualified",
-      "detail": "All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed. The original reader failure is preserved; corrected audit passed without product replay. Qualified Source is on the GitHub review branch under the owner\u2019s instruction; M74 remains unaccepted."
+      "id": "M75",
+      "title": "Implementing camera visibility masks",
+      "detail": "Low-28-bit masks plus the default sentinel filter existing RGB/depth acquisition snapshots after full visual validation and the global128 bound. Generic snapshots remain strict. Source lanes are in progress; complete review precedes consolidated qualification."
     }
   ],
   "accepted_slices": [
@@ -1025,10 +1025,11 @@
     }
   ],
   "remaining": [
-    "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70\u2013M74 acceptance."
+    "Complete bounded M75 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+    "Await exact hosted qualification, then complete final parent reconciliation, official evidence and Main release gates before M70\u2013M75 acceptance."
   ],
   "blockers": [
-    "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70\u2013M74 results do not replace final parent, hosted/official or Main acceptance gates."
+    "Exact hosted qualification remains unproven. The automatic M74 run was in progress at the last observation; no success is claimed. The historical snapshot HTTP 401 failure remains retained; no retry, probe or workaround is released."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1076,10 +1077,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "unknown",
-      "url": null
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44627469212"
     },
-    "note": "GitHub review commit 487f0ea passed full normal, strict workspace/per-crate coverage, actual-parent changed-line gates and corrected independent audit. Headless 1755 and renderer 1339 passes overlap; each has two retained ignored controls. Python 477 is quiet aggregate evidence. All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer provenance records were audited. Original reader failure is retained. No M74 installed or hosted proof is claimed. Final release gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Historical parent GitHub review commit 487f0ea passed local normal, strict coverage and corrected audit. Headless 1755 and renderer 1339 passes overlap; each has two ignored controls. Python 477 is quiet aggregate evidence. Its 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer provenance records were audited. The original reader failure is retained. These results do not qualify M75. Automatic M74 CI was in progress at last observation; no hosted success is claimed. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21523,
