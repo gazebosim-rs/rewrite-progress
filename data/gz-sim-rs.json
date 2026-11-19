@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T22:27:21.122890+00:00",
+  "updated_at": "2026-11-19T23:04:52.143942+00:00",
   "state": "active",
-  "summary": "M75 camera visibility masks are selected and Source implementation is in progress over qualified M74. Full world validation precedes per-camera filtering; no M75 checks or results are claimed.",
+  "summary": "M75 visibility-mask Source passed independent review and its full local normal/strict run is active. Validation precedes filtering; empty-image oracles remain to be proven. No current result is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M75",
-      "title": "Implementing camera visibility masks",
-      "detail": "Low-28-bit masks plus the default sentinel filter existing RGB/depth acquisition snapshots after full visual validation and the global128 bound. Generic snapshots remain strict. Source lanes are in progress; complete review precedes consolidated qualification."
+      "title": "Qualifying camera visibility masks",
+      "detail": "Whole review closed three stale count assertions and current planning guidance. The empty-RGB plan was corrected to the existing [43, 44, 47] background before checks. One formatter completed; the full gate is running. Its 14 new Rust/two Python declarations and 46 source-example/20 CLI obligations are not passes."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,11 @@
     }
   ],
   "remaining": [
-    "Complete bounded M75 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+    "Complete the M75 full local normal/strict gate and independent audit, retaining actual results and any failures.",
     "Await exact hosted qualification, then complete final parent reconciliation, official evidence and Main release gates before M70\u2013M75 acceptance."
   ],
   "blockers": [
-    "Exact hosted qualification remains unproven. The automatic M74 run was in progress at the last observation; no success is claimed. The historical snapshot HTTP 401 failure remains retained; no retry, probe or workaround is released."
+    "Automatic M74 CI completed signed snapshot/native setup (steps 1\u20138) and was running product verification (step 9) at last observation. Whole hosted success remains unproven; the historical HTTP 401 failures are retained, with no manual retry or probe."
   ],
   "plan_status": {
     "REF-01": "in_progress",
