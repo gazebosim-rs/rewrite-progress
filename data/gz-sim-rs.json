@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T20:26:11.150638+00:00",
-  "state": "active",
-  "summary": "M74 signed camera skew passed whole Source review, including a corrected test-borrow finding. The full local normal/strict qualification run is active; no current result or audit is claimed.",
+  "updated_at": "2026-11-19T21:01:22.125615+00:00",
+  "state": "blocked",
+  "summary": "M74 signed camera skew passed its first full local normal/strict gate and corrected retained audit on private 487f0ea. Local development is provisionally complete; final parent, hosted/official and Main release gates remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M74",
-      "title": "Qualifying signed camera skew",
-      "detail": "Signed projection, shared sheared bounds and evidence Source passed review; one formatter completed. The full local gate is running. Its 16 new Rust/two Python declarations and 45 source-example/19 CLI obligations remain pending qualification."
+      "title": "Signed camera skew locally qualified",
+      "detail": "All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed. The first retained-reader method failed on an invalid universal changed-line assumption; its corrected method passed without replaying product checks. Original failures remain preserved; M74 is private and unaccepted."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,10 @@
     }
   ],
   "remaining": [
-    "Complete the M74 full local normal/strict gate and independent audit, retaining actual results and any failures.",
-    "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M74 acceptance."
+    "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70\u2013M74 acceptance."
   ],
   "blockers": [
-    "M74 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released."
+    "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70\u2013M74 results do not replace final parent, hosted/official or Main acceptance gates."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1059,16 +1058,16 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
-    "rust_tests": 1752,
+    "revision": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+    "rust_tests": 1755,
     "coverage": {
       "lines": [
-        33123,
-        34018
+        33121,
+        34017
       ],
       "regions": [
-        50552,
-        52557
+        50549,
+        52556
       ]
     },
     "upstream": {
@@ -1080,22 +1079,22 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Historical parent 03f3fc9 passed its first local normal, strict coverage and independent audit. Headless 1752 and renderer 1323 passes overlap; each has two retained ignored controls. Python 475 is quiet aggregate evidence. Its 14 new Rust controls, 44 finite source runs and 18 CLI cases passed; 41 native-peer provenance records were audited. These results do not qualify M74. No M74 checks, installed distribution or hosted result is claimed. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Local unpublished 487f0ea passed full normal, strict workspace/per-crate coverage, actual-parent changed-line gates and corrected independent audit. Headless 1755 and renderer 1339 passes overlap; each has two retained ignored controls. Python 477 is quiet aggregate evidence. All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer provenance records were audited. Original reader failure is retained. No M74 installed or hosted proof is claimed. Final release gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
-        21473,
-        22015
+        21523,
+        22063
       ],
       "regions": [
-        32623,
-        33869
+        32698,
+        33943
       ]
     },
-    "renderer_rust_tests": 1323,
+    "renderer_rust_tests": 1339,
     "renderer_overlaps_headless": true,
-    "quiet_Python_tests": 475,
+    "quiet_Python_tests": 477,
     "quiet_Python_individual_results_observable": false,
-    "finite_example_runs": 44,
+    "finite_example_runs": 45,
     "installed_finite_example_runs": null,
     "revision_url": null
   },
