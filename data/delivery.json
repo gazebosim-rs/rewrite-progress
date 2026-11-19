@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T19:57:34.761778+00:00",
+  "as_of": "2026-11-19T20:08:53.591919+00:00",
   "execution_state": "active",
-  "current_phase": "M73",
+  "current_phase": "M74",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -3771,6 +3771,35 @@
         "current_source_publication": false,
         "hosted_success": false
       }
+    },
+    {
+      "id": "M74",
+      "title": "Signed pinhole camera skew",
+      "max_working_days": 5,
+      "depends_on": [
+        "M73"
+      ],
+      "scope": "Finite signed SDF intrinsic skew for existing 64×64 RGB/depth cameras, with native-compatible positive clip coupling and optical minus sign. Absent K preserves HFOV; absent P renders selected K, while explicit zero-translation P selects zero render skew. Shared sheared near/far corners enforce current representability bounds. CameraInfo retains native zero off-diagonals.",
+      "acceptance": "Complete implementation, meaningful regression Source, fixture/guides and independent whole Source review before one full local normal/strict gate and retained audit. Cover signed projection/inverse rays/corners against retained native math, zero-skew compatibility, coupled overflow/pre-IO refusals, actual software RGB/depth inverse-sheared images and explicit-P override, canonical zero-off-diagonal packets, laziness/demand/cadence/pause/drift/reset/removal/retirement. Final accepted-parent reconciliation and exact hosted/official/durable/Main gates precede source publication or acceptance.",
+      "excluded": "Stereo translations, arbitrary projection forms, new native sensor/image or nonzero-skew packet capture claims, shaders/protocol/schema/SDK/dependency/physics/transport/framework/viewer/package changes, larger images/fleets, noise/distortion/RGBD/point clouds and performance claims.",
+      "evidence": "docs/M74_DELIVERY.md",
+      "source_preparation_basis_commit": "03f3fc9dfc594ca7ebccb9af46ba8968b83ca342",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_started_at": "2026-11-19T20:08:53.591919+00:00",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_passed": false,
+      "local_DATA_passed": false,
+      "accepted": false,
+      "hosted_success": false,
+      "predecessor_acceptance_required_before_checks": false,
+      "predecessor_acceptance_required_before_acceptance": true,
+      "installed_accepted_examples": 35,
+      "qualification_state": "bounded_source_implementation_in_progress_no_checks_or_results",
+      "current_stage": "M74 was selected and its contract recorded before implementation over locally qualified private M73 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342. Root owns Scene/extraction/CLI/guides and integration; projection/frustum and actual-evidence lanes are disjoint. Finite signed K skew uses native clip coupling +2s/width and optical u=fx*X/Z-s*Y/Z+cx, with shared sheared-corner validation. Explicit zero-translation P still overrides render skew to zero. CameraInfo preserves native zero off-diagonals: this nonzero-skew limitation is derived from pinned source, not a new actual native packet capture. The retained skew35 CPU utility capture is unchanged projection-math evidence only; no SDK rebuild or failed Ogre/Mesa replay is selected. Complete Source/regressions/guides and independent review remain in progress; no M74 checks, runtime proof, audit or qualification result is claimed. Existing image/clip/HFOV/pose/noise/rate/count/ownership bounds and final parent/hosted/official/Main gates remain mandatory."
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3847,12 +3876,13 @@
     "M70": "in_progress",
     "M71": "in_progress",
     "M72": "in_progress",
-    "M73": "in_progress"
+    "M73": "in_progress",
+    "M74": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-19T19:19:26.135789+00:00",
+  "phase_started_at": "2026-11-19T20:08:53.591919+00:00",
   "active_phases": [
-    "M73"
+    "M74"
   ],
   "execution_policy": "D30–D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -4230,21 +4260,32 @@
       ],
       "integration": "Freeze locally qualified M72 and all parent evidence. M73 disjoint Scene/CLI, extraction/output and evidence Source lanes share one integrator, then complete whole Source review and one local qualification cycle. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; no previous result transfer, CI retry or parent replay.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M70",
+        "M71",
+        "M72",
+        "M73",
+        "M74"
+      ],
+      "integration": "Freeze locally qualified M73 and all parent evidence. M74 Scene/extraction/CLI, projection/frustum and evidence Source lanes share one integrator, then complete whole Source review and one local qualification cycle. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; no previous result transfer, CI retry or parent replay.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M73 local normal/strict/DATA passed provisionally, all private and unaccepted. No M73 distribution proof is selected or claimed. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M73 local normal/strict/DATA passed provisionally, all private and unaccepted. M74 Source work does not inherit parent qualification. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
-    "M73"
+    "M74"
   ],
-  "current_development_phase": "M73",
+  "current_development_phase": "M74",
   "board": {
-    "updated_at": "2026-11-19T19:57:34.761778+00:00",
+    "updated_at": "2026-11-19T20:08:53.591919+00:00",
     "current": {
-      "title": "Explicit camera projection locally qualified",
+      "title": "Implementing signed camera skew",
       "items": [
-        "M73 full local normal, strict coverage and independent retained audit passed on private 03f3fc9. Its first qualification attempt passed.",
-        "All 14 new Rust controls passed, including distinct K/P, P-based software images, demand, reset, removal and drift checks. Its 44 finite examples are source runs, not installed examples.",
-        "Local development is complete provisionally. Final parent, exact hosted/official and Main release gates remain pending; M73 is private and unaccepted."
+        "M74 selects finite signed intrinsic skew for existing 64×64 RGB/depth cameras, with native-compatible projection signs and sheared-corner bounds.",
+        "Scene/extraction/CLI, projection/frustum and evidence Source lanes are in progress over locally qualified M73. Explicit P still overrides rendering; CameraInfo keeps native zero off-diagonals.",
+        "Implementation, regression Source, guides and independent review precede one consolidated local gate. No M74 checks or qualification results are claimed."
       ]
     },
     "done": [
@@ -4252,16 +4293,17 @@
       "M70 local distribution/runtime and M71–M73 local normal/strict qualification and independent audits passed provisionally; all remain private and unaccepted."
     ],
     "next": [
-      "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M73 acceptance."
+      "Complete the bounded M74 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+      "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70–M74 acceptance."
     ],
     "blocker": {
-      "text": "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70–M73 results do not replace final parent, hosted/official or Main acceptance gates.",
+      "text": "M74 local development can proceed. Final parent, exact hosted/official and Main release gates remain held after the earlier snapshot HTTP 401 failure; recovery is unproven and no CI retry or probe is released.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M73"
+    "M74"
   ],
   "camera_integration": {
     "scope": "Atomic M61–M64 qualification on accepted M60; no new phase",
@@ -4410,7 +4452,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M73_EXPLICIT_MONOCULAR_CAMERA_PROJECTION",
+  "current_development_task": "M74_SIGNED_PINHOLE_CAMERA_SKEW",
   "held_work": {
     "phases": [
       "M70",
