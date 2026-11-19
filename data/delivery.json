@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T14:37:32.631228+00:00",
+  "as_of": "2026-11-19T15:08:52.597300+00:00",
   "execution_state": "active",
   "current_phase": "M71",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3452,14 +3452,14 @@
       "source_finite_example_obligations": 42,
       "auxiliary_camera_case_obligations": 16,
       "installed_accepted_examples": 35,
-      "current_stage": "The third full local gate genuinely failed after 1679.588 seconds. Both Clippy profiles, 471 aggregate Python checks, 42 finite examples, 16 CLI cases and 1744 headless tests passed. Renderer all-target execution retained 1292 passes and two new private test-setup failures; all four new real-worker controls passed. These are partial facts: the full strict coverage gate did not complete. The setup defects were width32 invalid SDF being refused by the loader before the intended output preflight, and a reset staged by prepare_io not yet committed through its paused zero-time tick before a later control. A new isolated, independently reviewed test-only correction mutates valid loaded camera metadata for the same width negative and consumes/asserts the paused reset-zero boundary before preserving the existing 1ms step checks. Production, numerical assertions, scenarios and limits are unchanged. The fourth full local normal/strict gate is running on staged tree 00c8de8ca9e89c05c128a9fd5830386c0ba900ee over locally qualified 7094a31; no result or qualification pass is claimed. All three prior failed trees, packets and logs remain preserved. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory.",
+      "current_stage": "Private clean f31d7155c2569df875b393857a1339bb192caf2c, tree 00c8de8ca9e89c05c128a9fd5830386c0ba900ee over locally qualified 7094a31, passed full normal/strict qualification and independent retained local DATA. Actual Root/Git exit 0 followed 1659.436 seconds. Headless 1744 and renderer 1294 passes overlap; each retains two pre-existing ignored controls. Python 471 is quiet aggregate evidence. All 42 finite source runs, 16 auxiliary CLI cases and 15 distinct new Rust controls passed, including four real-worker canonical mixed-camera controls. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The audit checked 1722 Source bindings, 1428 retained packet members and 39 native-peer provenance records; RAW files were hashed without a new merge or test replay. No M71 package/installed example proof is claimed. All three genuine earlier failures remain preserved. Local development is provisionally qualified; final parent reconciliation/acceptance, exact hosted success, durable official audit and Main/release readbacks remain required. Source remains unpublished and M71 unaccepted.",
       "predecessor_acceptance_required_before_acceptance": true,
       "source_control_declarations": {
         "Rust_unique": 15,
         "Python": 2
       },
-      "normal_passed": false,
-      "local_DATA_passed": false,
+      "normal_passed": true,
+      "local_DATA_passed": true,
       "prior_normal_failure": {
         "tree": "04a15b873c1472d8dd4d968734953b9947be25d3",
         "actual_exit_code": 1,
@@ -3475,7 +3475,7 @@
         }
       },
       "current_staged_tree": "00c8de8ca9e89c05c128a9fd5830386c0ba900ee",
-      "qualification_state": "reviewed_test_setup_correction_fourth_full_local_gate_running_no_result",
+      "qualification_state": "local_development_normal_strict_and_independent_DATA_passed_provisional_hosted_parent_official_Main_pending",
       "second_normal_failure": {
         "tree": "95ff397f098d83e367d5013b109ed520d7182cd0",
         "actual_exit_code": 1,
@@ -3510,7 +3510,22 @@
           "sha256": "232933f8b7f91df94304e372eebaabe02b1225032fb2a52d6421addf11ce8d33",
           "bytes": 3458
         }
-      }
+      },
+      "locally_qualified_commit": "f31d7155c2569df875b393857a1339bb192caf2c",
+      "current_candidate": {
+        "commit": "f31d7155c2569df875b393857a1339bb192caf2c",
+        "tree": "00c8de8ca9e89c05c128a9fd5830386c0ba900ee",
+        "parent_commit": "7094a31890e78bc83c65f12a056dfb3918b7401a",
+        "state": "LOCALLY_QUALIFIED_UNPUBLISHED_PENDING_FINAL_RELEASE_GATES"
+      },
+      "local_completion_audit": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m71-delivery/independent-normal-audit.json",
+        "sha256": "ecab1a60e85daf671cd511292fa077f7c3a96fd578c44c013bf0ffca3a4ac744",
+        "bytes": 26823
+      },
+      "local_observed_Rust_controls": 15,
+      "finite_examples_scope": "42 source runs; no M71 installed-example claim",
+      "local_native_peer_provenance_records": 39
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3957,25 +3972,24 @@
   ],
   "current_development_phase": "M71",
   "board": {
-    "updated_at": "2026-11-19T14:37:32.631228+00:00",
+    "updated_at": "2026-11-19T15:08:52.597300+00:00",
     "current": {
-      "title": "Qualifying corrected camera test setups",
+      "title": "Mixed RGB/depth pair locally qualified",
       "items": [
-        "The third M71 gate passed lint, Python, 42 examples, 16 CLI cases, headless tests and all four new real-worker controls. Two new test-setup failures stopped qualification; full coverage was incomplete.",
-        "Reviewed test-only fixes correct loaded-camera metadata and reset-commit setup. Assertions and production behavior are unchanged; the fourth full local gate is running, with no result yet.",
-        "All prior failures are preserved. M70 local proofs remain independently audited; M70 and M71 remain private and unaccepted pending exact hosted/official qualification."
+        "M71 full normal, strict workspace/per-crate/actual-parent coverage and independent local audit passed on private f31d715.",
+        "All 15 new Rust controls passed, including four real-worker controls for canonical RGB/depth, independent rates/demand, faults, reset, removal and retirement. Its 42 finite examples are source runs, not installed examples.",
+        "All three earlier failures are preserved. M70 local proofs remain separate; both phases await final parent, exact hosted/official and Main qualification before acceptance."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "7094a31 local checks, package/install, depth/GPU and RGB proofs, plus the actual browser demonstration and its independent audits, passed."
+      "M70 local package, installation, camera and browser proofs passed independent audits. M71 mixed-pair local development and qualification passed provisionally."
     ],
     "next": [
-      "Finish the fourth M71 full local normal/strict gate and independent audit; retain all three prior failures.",
-      "Resolve hosted qualification and reconcile the final parent; exact hosted/official/Main gates precede M70/M71 acceptance."
+      "Resolve the hosted qualification hold and complete final parent reconciliation, exact official evidence and Main/release readbacks before M70/M71 acceptance."
     ],
     "blocker": {
-      "text": "M71 local qualification can proceed. M70 release and final M71 acceptance still require exact hosted qualification; earlier snapshot HTTP401 recovery remains unproven.",
+      "text": "Exact hosted qualification remains held after earlier snapshot HTTP401 failures; recovery is unproven. Private M70/M71 local results do not replace final parent, hosted/official or Main acceptance gates.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
