@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T13:42:32.863084+00:00",
+  "as_of": "2026-11-19T13:52:23.451199+00:00",
   "execution_state": "active",
   "current_phase": "M71",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3452,14 +3452,30 @@
       "source_finite_example_obligations": 42,
       "auxiliary_camera_case_obligations": 16,
       "installed_accepted_examples": 35,
-      "current_stage": "The complete explicit mixed RGB/depth implementation, regressions, fixture and guide passed independent Source review. One consolidated full local normal/strict hook is now running on staged tree 04a15b873c1472d8dd4d968734953b9947be25d3 over locally qualified 7094a31. No current result or qualification pass is claimed. Its 42 finite-example and 16 CLI-case obligations, strict coverage and independent local DATA remain pending. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory; no qualification transfers from M70.",
+      "current_stage": "The first complete normal hook genuinely failed after 99.856 seconds at workspace all-target strict Clippy: nine needless_range_loop findings in the new mixed-camera regression leaf; no tests or coverage were reached. An isolated successor over the same locally qualified 7094 parent changes only nine fixed-array loops and their subscription references to iterator enumeration. Complete independent Source review confirmed unchanged order, assertions, numerical controls and limits, with no lint suppression. The affected full local normal/strict retry is running on staged tree 95ff397f098d83e367d5013b109ed520d7182cd0; no new result or qualification pass is claimed. All 42 finite-example/16 CLI-case obligations, coverage and independent local DATA remain required. Original failed tree, result, logs and index are preserved. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory.",
       "predecessor_acceptance_required_before_acceptance": true,
       "source_control_declarations": {
         "Rust_unique": 15,
         "Python": 2
       },
       "normal_passed": false,
-      "local_DATA_passed": false
+      "local_DATA_passed": false,
+      "prior_normal_failure": {
+        "tree": "04a15b873c1472d8dd4d968734953b9947be25d3",
+        "actual_exit_code": 1,
+        "actual_git_exit_code": 1,
+        "elapsed_seconds": 99.85633703900385,
+        "Clippy_findings": 9,
+        "tests_reached": false,
+        "coverage_reached": false,
+        "receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m71-delivery/normal-attempt1-failure.json",
+          "sha256": "1a9f84fbe6ec40e2d5ea72f37ce93492a2e281e50aca99729a1ea91345e1c97e",
+          "bytes": 1634
+        }
+      },
+      "current_staged_tree": "95ff397f098d83e367d5013b109ed520d7182cd0",
+      "qualification_state": "reviewed_iterator_correction_full_local_normal_retry_running_no_result"
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3906,13 +3922,13 @@
   ],
   "current_development_phase": "M71",
   "board": {
-    "updated_at": "2026-11-19T13:42:32.863084+00:00",
+    "updated_at": "2026-11-19T13:52:23.451199+00:00",
     "current": {
-      "title": "Qualifying an independent RGB and depth pair",
+      "title": "Retrying mixed-camera local qualification",
       "items": [
-        "M71 implementation, regression Source, fixture and guide passed independent review: one explicit RGB/depth pair with independent demand, rates and lifetime.",
-        "One consolidated M71 local normal/strict hook is running; no result yet. Its 42 finite-example and 16 CLI-case obligations await current qualification.",
-        "M70 package, installation, camera and browser proofs passed independent audits. Hosted qualification and official release remain held; M70 is private and unaccepted."
+        "The first M71 normal hook stopped at nine Clippy iterator findings in new regression Source. Tests and coverage were not reached; the failure is preserved.",
+        "Nine iterator-only corrections passed independent review with assertions and subscription order unchanged. The affected full local normal/strict retry is running; no result yet.",
+        "M70 local package, camera and browser proofs remain independently audited. M70 and M71 are private and unaccepted while exact hosted/official qualification is pending."
       ]
     },
     "done": [
@@ -3920,7 +3936,7 @@
       "7094a31 local checks, package/install, depth/GPU and RGB proofs, plus the actual browser demonstration and its independent audits, passed."
     ],
     "next": [
-      "Finish the active M71 local normal/strict qualification and independent audit on locally qualified 7094a31.",
+      "Finish the affected M71 full local normal/strict retry and independent audit; retain the original failure.",
       "Resolve hosted qualification and reconcile the final parent; exact hosted/official/Main gates precede M70/M71 acceptance."
     ],
     "blocker": {
