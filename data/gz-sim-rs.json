@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T03:07:53.381561+00:00",
+  "updated_at": "2026-11-19T04:13:49.983534+00:00",
   "state": "active",
-  "summary": "Worker retirement and native cadence passed; the diagnostic confirmed an abnormal close after clean EOF. The bounded WebSocket close-reply fix and regression are reviewed. New qualification and release proof remain pending.",
+  "summary": "The WebSocket close-handshake fix passed full local qualification and independent audit at 7094a31. Fresh release builds are running; changed package, installation, camera/browser and hosted proof remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Qualifying the WebSocket close-handshake fix",
-      "detail": "Frozen 2e8d9dc package/install audits and 41 examples passed. Worker retirement and native cadence then passed, but Scene closed abnormally (1006) after clean EOF. Source review matched a queued close reply dropped without flushing. The isolated one-flush correction, strict real-socket regression and guide passed independent Source review. A consolidated normal/strict pass and fresh release/runtime proof remain pending."
+      "title": "Building the locally qualified camera preview",
+      "detail": "Local 7094a31 passed the full normal/strict gate and independent retained audit, including the Close regression in both profiles. Four release roles are now building in a fresh shared target; no result yet. Its changed package needs fresh assembly/install and complete camera/browser proof. Earlier 2e8d9dc install evidence is historical. No current hosted result."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Run one consolidated normal/strict qualification and independent audit for the changed CLI.",
-    "Build and verify its fresh package/install, then complete camera proof and the browser demo after explicit origin approval.",
+    "Finish the fresh four-role release, then verify package/relocation and clean Ubuntu installation with all 41 examples.",
+    "Complete fresh paired-depth/RGB camera proof and independent audit; run the robot browser demo after explicit origin approval.",
     "Recover exact hosted qualification and complete release readbacks before M70 acceptance."
   ],
   "blockers": [
-    "The verified close-handshake defect has a reviewed bounded correction, but the changed CLI still needs normal/strict qualification and fresh package, installation and complete camera/browser proof. Earlier partial camera results do not qualify the successor.",
+    "7094a31 is locally qualified, but fresh release/package/Ubuntu installation and complete paired-depth/RGB camera/browser proof remain pending. Earlier partial camera and 2e8d9dc installation results do not qualify this changed package.",
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
@@ -1062,16 +1062,16 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "2e8d9dc22ae267a7a108a76716b8aaefcabbddf2",
-    "rust_tests": 1740,
+    "revision": "7094a31890e78bc83c65f12a056dfb3918b7401a",
+    "rust_tests": 1741,
     "coverage": {
       "lines": [
-        33051,
-        33949
+        33058,
+        33951
       ],
       "regions": [
-        50454,
-        52462
+        50459,
+        52464
       ]
     },
     "upstream": {
@@ -1083,23 +1083,22 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Historical measurements for frozen unpublished 2e8d9dc: normal, strict coverage, parent gates and audit passed. Rust counts overlap; 469 Python checks are quiet aggregate evidence. Its package/install audits and 41 examples passed. The reviewed close-handshake successor is unqualified and needs fresh release/runtime proof. No current hosted result; earlier 597ac3d CI failed on snapshot HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
+    "note": "Local unpublished 7094a31 passed normal, strict workspace/per-crate coverage, actual-parent gates and independent audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. The Close regression passed in both profiles; 41 finite runs passed and 38 native-peer provenance records were audited. Fresh release is building; new install/camera/browser proof is pending. Earlier 2e8d9dc installation is historical. No current hosted result; historical 597ac3d CI failed on HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
     "renderer_coverage": {
       "lines": [
-        21287,
-        21826
+        21286,
+        21828
       ],
       "regions": [
         32405,
-        33649
+        33651
       ]
     },
-    "renderer_rust_tests": 1278,
+    "renderer_rust_tests": 1279,
     "renderer_overlaps_headless": true,
     "quiet_Python_tests": 469,
     "quiet_Python_individual_results_observable": false,
-    "finite_example_runs": 41,
-    "installed_finite_example_runs": 41
+    "finite_example_runs": 41
   },
   "phase_status": {
     "P0": "in_progress",
