@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T15:08:52.597300+00:00",
+  "as_of": "2026-11-19T17:32:54.495079+00:00",
   "execution_state": "active",
-  "current_phase": "M71",
+  "current_phase": "M72",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -3526,6 +3526,55 @@
       "local_observed_Rust_controls": 15,
       "finite_examples_scope": "42 source runs; no M71 installed-example claim",
       "local_native_peer_provenance_records": 39
+    },
+    {
+      "id": "M72",
+      "title": "Explicit pinhole camera intrinsics",
+      "max_working_days": 5,
+      "depends_on": [
+        "M71"
+      ],
+      "scope": "Finite zero-skew SDF lens intrinsics for the existing 64\u00d764 RGB/depth domain: positive independent fx/fy and finite off-axis cx/cy selected by presence, unchanged HFOV fallback and canonical K/P=[K|0].",
+      "acceptance": "Complete implementation, meaningful regression Source, fixture/guides and independent whole Source review before one consolidated local normal/strict actual-parent/local DATA cycle. Existing software workers and canonical consumers verify explicitK/P, asymmetric pixel/ray/axial depth, demand/laziness, reset/removal/drift/stale frames. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates precede acceptance/publication.",
+      "excluded": "Explicit P, skew, distortion, noise, lens-relative pose, RGBD, point clouds, greater sizes/counts, protocol/shader/physics/dependency/SDK/framework/viewer/package changes, native Ogre or performance parity.",
+      "evidence": "docs/M72_DELIVERY.md",
+      "source_preparation_basis_commit": "f31d7155c2569df875b393857a1339bb192caf2c",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_started_at": "2026-11-19T15:33:13.255424+00:00",
+      "implementation_started": true,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
+      "accepted": false,
+      "hosted_success": false,
+      "predecessor_acceptance_required_before_checks": false,
+      "predecessor_acceptance_required_before_acceptance": true,
+      "source_finite_example_obligations": 43,
+      "auxiliary_camera_case_obligations": 17,
+      "installed_accepted_examples": 35,
+      "current_stage": "The complete bounded explicit-intrinsics Source batch and its 13 new Rust/two Python control declarations passed independent review. The first normal hook genuinely failed after 25.361 seconds in the first Clippy pass: drop on a non-Drop Bevy mutation wrapper and an EntityId comparison without PartialEq, both in new test Source; no tests or coverage were reached. A new isolated, independently reviewed test-only correction replaces explicit drop with a lexical borrow scope and compares exact EntityId.get() values. All mutations, assertions, numerical controls, scope guards and production behavior remain unchanged. The affected full local normal/strict retry is running on tree 36c1ec7399b5e014b811ecc29b39f95fdaf495f2 over locally qualified f31d715; no qualification result is claimed. The 43 finite source-run and 17 CLI-case obligations, all new numerical/worker/lifecycle controls, strict coverage and independent DATA remain pending current qualification. The failed tree, packet and logs remain preserved. Final parent reconciliation/acceptance and exact hosted/official/Main gates remain mandatory.",
+      "source_control_declarations": {
+        "Rust_unique": 13,
+        "Python": 2
+      },
+      "normal_passed": false,
+      "local_DATA_passed": false,
+      "current_staged_tree": "36c1ec7399b5e014b811ecc29b39f95fdaf495f2",
+      "qualification_state": "reviewed_test_borrow_identity_correction_full_local_retry_running_no_result",
+      "prior_normal_failure": {
+        "tree": "b7d0edc1a63c1e2a841f6fb48e1a6956b2e18be1",
+        "actual_exit_code": 1,
+        "actual_git_exit_code": 1,
+        "elapsed_seconds": 25.361056727997493,
+        "new_test_Source_errors": 2,
+        "tests_and_coverage_reached": false,
+        "receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m72-delivery/normal-attempt1-failure.json",
+          "bytes": 1846,
+          "sha256": "0fa4fe56d7f0a0f5aac733c6fe51b22f4d2c4f4dcdaa4d478e835160dcc89e7f"
+        }
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3600,12 +3649,13 @@
     "M68": "complete",
     "M69": "complete",
     "M70": "in_progress",
-    "M71": "in_progress"
+    "M71": "in_progress",
+    "M72": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-19T13:23:58.854241+00:00",
+  "phase_started_at": "2026-11-19T15:33:13.255424+00:00",
   "active_phases": [
-    "M71"
+    "M72"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -3964,38 +4014,48 @@
       ],
       "integration": "User requested next development phase after all M70 local proofs passed. Complete isolated M71 Source/regressions/docs/independent review, then one local normal/strict/local DATA cycle on genuinely locally qualified7094 while parent hosted closeout is held. No result transfer or gate change; final parent acceptance, reconciliation of any changed parent and exact hosted/official/Main qualification remain required for M71 acceptance/publication.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M70",
+        "M71",
+        "M72"
+      ],
+      "integration": "Freeze locally qualified f31d715 and all M70/M71 evidence. M72 disjoint Scene/extraction/evidence Source lanes share one integrator and may proceed with reviewed local qualification; actual accepted-parent reconciliation and every exact hosted/official/Main release gate remain mandatory. No previous result transfer or CI retry.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M69 and 202 slices remain accepted; M65 Latest has 35 examples. M70 has all required local proofs but remains private and unaccepted while hosted qualification is held. M71 Source passed independent review over locally qualified 7094a31; its own local and final release qualification remain pending.",
+  "acceptance_boundary": "M1\u2013M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71 local normal/strict/DATA passed provisionally, with both phases private and unaccepted. M72 has no qualification result or transferred parent proof. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
-    "M71"
+    "M72"
   ],
-  "current_development_phase": "M71",
+  "current_development_phase": "M72",
   "board": {
-    "updated_at": "2026-11-19T15:08:52.597300+00:00",
+    "updated_at": "2026-11-19T17:32:54.495079+00:00",
     "current": {
-      "title": "Mixed RGB/depth pair locally qualified",
+      "title": "Qualifying explicit pinhole camera intrinsics",
       "items": [
-        "M71 full normal, strict workspace/per-crate/actual-parent coverage and independent local audit passed on private f31d715.",
-        "All 15 new Rust controls passed, including four real-worker controls for canonical RGB/depth, independent rates/demand, faults, reset, removal and retirement. Its 42 finite examples are source runs, not installed examples.",
-        "All three earlier failures are preserved. M70 local proofs remain separate; both phases await final parent, exact hosted/official and Main qualification before acceptance."
+        "M72 selects explicit focal lengths and principal points for existing 64\u00d764 RGB/depth cameras. HFOV fallback is unchanged; explicit P and nonzero skew remain refused.",
+        "The first gate stopped at two new test-code errors before tests or coverage. Reviewed test-only corrections are in place; the affected full local retry is running, with no result yet.",
+        "The 43 source-example/17 CLI obligations and 13 new Rust/two Python control declarations await qualification. Parent M70/M71 local proofs do not qualify M72."
       ]
     },
     "done": [
       "M1\u2013M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "M70 local package, installation, camera and browser proofs passed independent audits. M71 mixed-pair local development and qualification passed provisionally."
+      "M70 local distribution/runtime and M71 local normal/strict qualification and independent audit passed provisionally; both remain private and unaccepted."
     ],
     "next": [
-      "Resolve the hosted qualification hold and complete final parent reconciliation, exact official evidence and Main/release readbacks before M70/M71 acceptance."
+      "Complete the affected M72 full local normal/strict gate and independent audit, preserving the first failure.",
+      "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M72 acceptance."
     ],
     "blocker": {
-      "text": "Exact hosted qualification remains held after earlier snapshot HTTP401 failures; recovery is unproven. Private M70/M71 local results do not replace final parent, hosted/official or Main acceptance gates.",
+      "text": "M72 local qualification can proceed. Final parent, exact hosted/official and Main release gates remain held after earlier snapshot HTTP401 failures; recovery is unproven and no CI retry or index probe is released.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M71"
+    "M72"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -4144,11 +4204,14 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M71_MIXED_CAMERA_PAIR",
+  "current_development_task": "M72_EXPLICIT_PINHOLE_CAMERA_INTRINSICS",
   "held_work": {
-    "phase": "M70",
-    "source_commit": "7094a31890e78bc83c65f12a056dfb3918b7401a",
-    "reason": "All required local proofs complete; exact hosted qualification/official release held by unresolved prior snapshotHTTP401.",
+    "phases": [
+      "M70",
+      "M71"
+    ],
+    "source_commit": "f31d7155c2569df875b393857a1339bb192caf2c",
+    "reason": "M70 local distribution/runtime and M71 local normal/DATA are complete; final parent, exact hosted, official and Main release gates remain held after the retained snapshot HTTP 401 failure.",
     "accepted": false,
     "included_in_this_candidate": true
   },
