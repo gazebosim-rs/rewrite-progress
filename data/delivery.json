@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T22:27:21.122890+00:00",
+  "as_of": "2026-11-19T23:04:52.143942+00:00",
   "execution_state": "active",
   "current_phase": "M75",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3920,9 +3920,9 @@
       "source_preparation_basis_GitHub_review_branch": "review/m74-signed-camera-skew",
       "source_preparation_started_at": "2026-11-19T22:27:21.122890+00:00",
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
-      "checks_run": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
       "normal_passed": false,
       "local_DATA_passed": false,
       "accepted": false,
@@ -3930,8 +3930,61 @@
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "bounded_source_implementation_in_progress_no_checks_or_results",
-      "current_stage": "M75 was selected and its contract recorded before implementation over locally qualified M74 487f0eab28b9fa505ae02becd71e74f69f54c65f, available on the owner-requested GitHub review branch. Root owns Scene/CLI/guides/planning and integration; extraction/filtering and actual-evidence lanes are disjoint. Low28 masks/flags plus MAX sentinel use exact nonzero bitwise selection only after complete world visual validation and the global128 bound; zero mask cannot hide invalid or oversized scenes. Immutable acquisition filtering preserves the worker schema, and empty selected RGB/depth snapshots still render black/+INF under image demand. Generic snapshots retain box-only/default-visibility/error-order constraints. Loaded reset and stale camera ownership semantics remain unchanged. Source/regressions/guides and whole independent review remain in progress; no M75 checks, audit or qualification result is claimed. Native references are source-derived, not new renderer/image-equivalence results. Automatic M74 CI44627469212 was in progress at selection; no hosted success or recovery is inferred, and no retry/probe/workaround is selected. Final parent, exact hosted/official/Main acceptance gates remain mandatory."
+      "qualification_state": "whole_Source_review_complete_full_local_normal_running_no_result",
+      "current_stage": "The complete 26-path M75 implementation, meaningful regression Source, fixture and guides passed independent whole Source review. One batched correction updated strict inherited Python count assertions to20 unique/20 actual CLI cases/46 finite calls and replaced stale current planning guidance; all assertions and gates remain. A precheck Source finding corrected the newly proposed empty-RGB black expectation to the unchanged Bevy default [43,44,47]; the original contract and finding are retained. This is Source rationale for a new oracle, not an observed empty frame. Empty selected depth remains +INF. One formatter genuinely returned0. The single full local normal/strict gate is active on staged tree fc66c64375c800359e9aa35084334dfd3aafb4db over qualified review-branch M74 487f0ea. All1739 Source bindings and14 distinct Rust declarations (four shared headless/renderer, fourteen renderer total), two Python declarations,46 finite source-run and20 CLI obligations are authored scope, not current passes. Full world validation/global128 before filtering, generic snapshot constraints, immutable acquisition/ownership/lifecycle semantics and numerical bounds remain unchanged. No current normal/coverage/independent DATA/installed distribution/hosted success/acceptance is claimed. The automatic M74 hosted run completed signed snapshot/native setup steps1–8 and was in product verification step9 at the last observation; no whole success or manual retry/probe is inferred. Final parent/exact hosted/official/Main gates remain mandatory.",
+      "source_finite_example_obligations": 46,
+      "source_CLI_case_obligations": 20,
+      "source_control_declarations": {
+        "Rust_unique": 14,
+        "Python": 2,
+        "headless": 4,
+        "renderer": 14,
+        "overlap": 4
+      },
+      "current_staged_tree": "fc66c64375c800359e9aa35084334dfd3aafb4db",
+      "formatter_actual_exit_code": 0,
+      "empty_rgb_plan_source_finding": {
+        "finding": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/empty-rgb-background-precheck-source-finding.json",
+          "bytes": 881,
+          "sha256": "ea74c9fb38657e2af9b19306086a01c8aa357660d9f88a47009cf1472f918ef1"
+        },
+        "original_contract": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/M75_DELIVERY-before-empty-background-source-finding.md",
+          "bytes": 5303,
+          "sha256": "bdc3cb0dfefbcecdfce6f409ef5d670cf9be26fcb767e25da0e18a6ea0913cca"
+        },
+        "expected_RGB": [
+          43,
+          44,
+          47
+        ],
+        "expected_depth": "+INF",
+        "renderer_changed": false,
+        "actual_empty_frame_observed_before_qualification": false
+      },
+      "current_normal_attempt": {
+        "attempt": 1,
+        "launch_tool": "d3e2b9",
+        "session_id": 97620,
+        "actual_exit_code": null,
+        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "runner": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/run-final-staged-hook.py",
+          "bytes": 8947,
+          "sha256": "3f8bf7315d26fa866567ac37fa302f121801d0bd6c64e0edf9ed16b42908cd45"
+        },
+        "snapshot": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/source-state.json",
+          "bytes": 545875,
+          "sha256": "dcc6a3ebb0c656b4d8f2ca5536524ac8ea220d244331b96bbac357f4ab3ef265"
+        }
+      },
+      "M74_last_hosted_progress": {
+        "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-hosted-progress-selection.json",
+        "bytes": 768,
+        "sha256": "64f035c723ded0308647d5c7df8f5dbe461e89a9dc2340c989c4d65004edd96b"
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -4424,13 +4477,13 @@
   ],
   "current_development_phase": "M75",
   "board": {
-    "updated_at": "2026-11-19T22:27:21.122890+00:00",
+    "updated_at": "2026-11-19T23:04:52.143942+00:00",
     "current": {
-      "title": "Implementing camera visibility masks",
+      "title": "Qualifying camera visibility masks",
       "items": [
-        "M75 selects per-camera visual masks for existing 64×64 RGB/depth paths: low 28 bits plus the default all-visible sentinel, with exact bitwise selection.",
-        "Scene/CLI, extraction/filtering and evidence Source lanes are in progress over qualified M74. Every visual and the global 128-visual bound are checked before filtering; generic snapshots remain strict.",
-        "Implementation, regression Source, guides and independent review precede consolidated qualification. No M75 checks or results are claimed; M74 Source is available on GitHub for review."
+        "M75 implementation, regression Source and guides passed whole independent review. The full local normal/strict run is active, with no result yet.",
+        "All visuals and the global 128-visual bound are validated before filtering. Empty RGB uses the existing [43, 44, 47] background; depth uses +INF. These new image oracles await actual proof.",
+        "The 14 new Rust/two Python declarations and 46 source-example/20 CLI obligations await qualification. No current pass or independent audit is claimed."
       ]
     },
     "done": [
@@ -4438,11 +4491,11 @@
       "M70 local distribution/runtime and M71–M74 local normal/strict qualification and independent audits passed provisionally. Qualified Source is on GitHub for review; acceptance remains pending."
     ],
     "next": [
-      "Complete bounded M75 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+      "Complete the M75 full local normal/strict gate and independent audit, retaining actual results and any failures.",
       "Await exact hosted qualification, then complete final parent reconciliation, official evidence and Main release gates before M70–M75 acceptance."
     ],
     "blocker": {
-      "text": "Exact hosted qualification remains unproven. The automatic M74 run was in progress at the last observation; no success is claimed. The historical snapshot HTTP 401 failure remains retained; no retry, probe or workaround is released.",
+      "text": "Automatic M74 CI completed signed snapshot/native setup (steps 1–8) and was running product verification (step 9) at last observation. Whole hosted success remains unproven; the historical HTTP 401 failures are retained, with no manual retry or probe.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44627469212"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
