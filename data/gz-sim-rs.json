@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T21:01:22.125615+00:00",
+  "updated_at": "2026-11-19T22:20:16.959303+00:00",
   "state": "blocked",
-  "summary": "M74 signed camera skew passed its first full local normal/strict gate and corrected retained audit on private 487f0ea. Local development is provisionally complete; final parent, hosted/official and Main release gates remain pending.",
+  "summary": "M74 local normal/strict qualification and corrected audit passed. Qualified commit 487f0ea and its M70\u2013M73 ancestors are pushed to GitHub for review; final parent, hosted/official and Main release gates remain pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M74",
       "title": "Signed camera skew locally qualified",
-      "detail": "All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed. The first retained-reader method failed on an invalid universal changed-line assumption; its corrected method passed without replaying product checks. Original failures remain preserved; M74 is private and unaccepted."
+      "detail": "All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed. The original reader failure is preserved; corrected audit passed without product replay. Qualified Source is on the GitHub review branch under the owner\u2019s instruction; M74 remains unaccepted."
     }
   ],
   "accepted_slices": [
@@ -1079,7 +1079,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Local unpublished 487f0ea passed full normal, strict workspace/per-crate coverage, actual-parent changed-line gates and corrected independent audit. Headless 1755 and renderer 1339 passes overlap; each has two retained ignored controls. Python 477 is quiet aggregate evidence. All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer provenance records were audited. Original reader failure is retained. No M74 installed or hosted proof is claimed. Final release gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "GitHub review commit 487f0ea passed full normal, strict workspace/per-crate coverage, actual-parent changed-line gates and corrected independent audit. Headless 1755 and renderer 1339 passes overlap; each has two retained ignored controls. Python 477 is quiet aggregate evidence. All 16 new Rust controls, 45 finite source runs and 19 CLI cases passed; 43 native-peer provenance records were audited. Original reader failure is retained. No M74 installed or hosted proof is claimed. Final release gates remain pending. M65 Latest has 35 examples; upstream counts are historical.",
     "renderer_coverage": {
       "lines": [
         21523,
@@ -1096,7 +1096,7 @@
     "quiet_Python_individual_results_observable": false,
     "finite_example_runs": 45,
     "installed_finite_example_runs": null,
-    "revision_url": null
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/487f0eab28b9fa505ae02becd71e74f69f54c65f"
   },
   "phase_status": {
     "P0": "in_progress",
