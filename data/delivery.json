@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T22:20:16.959303+00:00",
+  "as_of": "2026-11-19T22:27:21.122890+00:00",
   "execution_state": "active",
-  "current_phase": "M74",
+  "current_phase": "M75",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -3902,6 +3902,36 @@
         "release_published": false,
         "hosted_success_claimed": false
       }
+    },
+    {
+      "id": "M75",
+      "title": "Per-camera visual visibility masks",
+      "max_working_days": 5,
+      "depends_on": [
+        "M74"
+      ],
+      "scope": "Camera visibility masks and visual flags in the low 28 bits plus the u32::MAX default sentinel for existing 64×64 RGB/depth paths. Select visuals by nonzero flags & mask after validating all world visuals and enforcing the global128 bound. Preserve sorted identities, exact default behavior and strict generic box-only/default-visibility semantics.",
+      "acceptance": "Complete implementation, meaningful regression Source, fixture/guides and independent whole Source review before one consolidated local normal/strict gate and retained audit. Cover disjoint/overlap/zero/default masks, all shape routes, hidden invalid data/global128 bounds, strict generic behavior, actual selective RGB occlusion/all4096 depth/+INF and empty rendering, canonical packet custody, demand/cadence/pause/drift/reset/removal/retirement. Final accepted-parent reconciliation and exact hosted/official/durable/Main gates precede acceptance or release; qualified Source may be pushed for owner-authorized review.",
+      "excluded": "Reserved visibility bits outside low28 except MAX, schema/protocol/shader/renderer-algorithm/SDK/dependency/physics/transport/framework/viewer/package expansion, larger camera fleets/images, RGBD/noise/distortion/performance or new native renderer/image-equivalence claims.",
+      "evidence": "docs/M75_DELIVERY.md",
+      "source_preparation_basis_commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_basis_GitHub_review_branch": "review/m74-signed-camera-skew",
+      "source_preparation_started_at": "2026-11-19T22:27:21.122890+00:00",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_passed": false,
+      "local_DATA_passed": false,
+      "accepted": false,
+      "hosted_success": false,
+      "predecessor_acceptance_required_before_checks": false,
+      "predecessor_acceptance_required_before_acceptance": true,
+      "installed_accepted_examples": 35,
+      "qualification_state": "bounded_source_implementation_in_progress_no_checks_or_results",
+      "current_stage": "M75 was selected and its contract recorded before implementation over locally qualified M74 487f0eab28b9fa505ae02becd71e74f69f54c65f, available on the owner-requested GitHub review branch. Root owns Scene/CLI/guides/planning and integration; extraction/filtering and actual-evidence lanes are disjoint. Low28 masks/flags plus MAX sentinel use exact nonzero bitwise selection only after complete world visual validation and the global128 bound; zero mask cannot hide invalid or oversized scenes. Immutable acquisition filtering preserves the worker schema, and empty selected RGB/depth snapshots still render black/+INF under image demand. Generic snapshots retain box-only/default-visibility/error-order constraints. Loaded reset and stale camera ownership semantics remain unchanged. Source/regressions/guides and whole independent review remain in progress; no M75 checks, audit or qualification result is claimed. Native references are source-derived, not new renderer/image-equivalence results. Automatic M74 CI44627469212 was in progress at selection; no hosted success or recovery is inferred, and no retry/probe/workaround is selected. Final parent, exact hosted/official/Main acceptance gates remain mandatory."
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -3979,12 +4009,13 @@
     "M71": "in_progress",
     "M72": "in_progress",
     "M73": "in_progress",
-    "M74": "in_progress"
+    "M74": "in_progress",
+    "M75": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-19T20:08:53.591919+00:00",
+  "phase_started_at": "2026-11-19T22:27:21.122890+00:00",
   "active_phases": [
-    "M74"
+    "M75"
   ],
   "execution_policy": "D30–D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -4373,21 +4404,33 @@
       ],
       "integration": "Freeze locally qualified M73 and all parent evidence. M74 Scene/extraction/CLI, projection/frustum and evidence Source lanes share one integrator, then complete whole Source review and one local qualification cycle. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; no previous result transfer, CI retry or parent replay.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M70",
+        "M71",
+        "M72",
+        "M73",
+        "M74",
+        "M75"
+      ],
+      "integration": "Freeze locally qualified M74 and all parent evidence. M75 Scene/CLI, extraction/filtering and evidence Source lanes share one integrator, then complete whole Source review and one local qualification cycle. Final accepted-parent reconciliation and exact hosted/official/Main gates remain mandatory; no previous result transfer, CI retry or parent replay.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M74 local normal/strict/DATA passed provisionally. Their qualified commits are available on the owner-authorized GitHub review branch, with no acceptance, Main promotion or release. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M74 local normal/strict/DATA passed provisionally; qualified Source is on the owner-authorized GitHub review branch, with no acceptance or Main release. M75 inherits no qualification. Final parent, exact hosted/official and Main gates remain mandatory.",
   "current_delivery_group": [
-    "M74"
+    "M75"
   ],
-  "current_development_phase": "M74",
+  "current_development_phase": "M75",
   "board": {
-    "updated_at": "2026-11-19T22:20:16.959303+00:00",
+    "updated_at": "2026-11-19T22:27:21.122890+00:00",
     "current": {
-      "title": "Signed camera skew locally qualified",
+      "title": "Implementing camera visibility masks",
       "items": [
-        "M74 first full local normal/strict gate and corrected retained audit passed. Commit 487f0ea and its qualified M70–M73 ancestors are now on the GitHub review branch.",
-        "All 16 new Rust controls passed, including signed rays, sheared bounds, software RGB/depth, explicit-P override and lifecycle checks. Its 45 finite examples are source runs, not installed examples.",
-        "Local development is complete provisionally and review Source is pushed. Final parent, exact hosted/official and Main release gates remain pending; M74 is unaccepted."
+        "M75 selects per-camera visual masks for existing 64×64 RGB/depth paths: low 28 bits plus the default all-visible sentinel, with exact bitwise selection.",
+        "Scene/CLI, extraction/filtering and evidence Source lanes are in progress over qualified M74. Every visual and the global 128-visual bound are checked before filtering; generic snapshots remain strict.",
+        "Implementation, regression Source, guides and independent review precede consolidated qualification. No M75 checks or results are claimed; M74 Source is available on GitHub for review."
       ]
     },
     "done": [
@@ -4395,16 +4438,17 @@
       "M70 local distribution/runtime and M71–M74 local normal/strict qualification and independent audits passed provisionally. Qualified Source is on GitHub for review; acceptance remains pending."
     ],
     "next": [
-      "Resolve hosted qualification and complete final parent reconciliation, exact official evidence and Main release gates before M70–M74 acceptance."
+      "Complete bounded M75 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+      "Await exact hosted qualification, then complete final parent reconciliation, official evidence and Main release gates before M70–M75 acceptance."
     ],
     "blocker": {
-      "text": "Exact hosted qualification remains held after the earlier snapshot HTTP 401 failure; recovery is unproven. Local M70–M74 results do not replace final parent, hosted/official or Main acceptance gates.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44351185107"
+      "text": "Exact hosted qualification remains unproven. The automatic M74 run was in progress at the last observation; no success is claimed. The historical snapshot HTTP 401 failure remains retained; no retry, probe or workaround is released.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44627469212"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M74"
+    "M75"
   ],
   "camera_integration": {
     "scope": "Atomic M61–M64 qualification on accepted M60; no new phase",
@@ -4553,7 +4597,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M74_SIGNED_PINHOLE_CAMERA_SKEW",
+  "current_development_task": "M75_PER_CAMERA_VISUAL_VISIBILITY_MASKS",
   "held_work": {
     "phases": [
       "M70",
