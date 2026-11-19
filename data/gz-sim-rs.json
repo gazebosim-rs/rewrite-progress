@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T17:32:54.495079+00:00",
+  "updated_at": "2026-11-19T18:13:52.692902+00:00",
   "state": "active",
-  "summary": "M72 explicit camera intrinsics Source passed independent review. After two new test-code errors, a reviewed test-only correction is in place and the full local retry is running; no result yet.",
+  "summary": "M72 reviewed pixel-footprint and reply-order test corrections are undergoing a third full local qualification attempt. Both earlier failures are preserved; no current result is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M72",
       "title": "Qualifying explicit pinhole camera intrinsics",
-      "detail": "Explicit zero-skew K uses existing 64\u00d764 RGB/depth paths and unchanged HFOV fallback. The first gate failed at two test-code errors before tests; reviewed borrow/identity corrections preserve all assertions. The full retry is running, with no qualification result."
+      "detail": "The second gate passed 1,748 headless and 1,306 renderer tests, with three renderer failures. Whole-pixel RGB oracle and Ready-reply ordering corrections preserve exact values, depth checks and deadlines. The third full gate is running; full coverage and independent audit remain pending."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Complete the affected M72 full local normal/strict gate and independent audit, preserving the first failure.",
+    "Complete the affected M72 full local normal/strict gate and independent audit, preserving both failed attempts.",
     "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M72 acceptance."
   ],
   "blockers": [
@@ -1080,7 +1080,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Historical parent f31d715 passed local normal, strict coverage and independent audit. Headless 1744 and renderer 1294 passes overlap; each has two retained ignored controls. Python 471 is quiet aggregate evidence. Its 42 finite source runs, 16 CLI cases and 15 new Rust controls passed; 39 native-peer provenance records were audited. These results do not qualify M72; 43 source-run/17 CLI obligations await the current retry. No M72 installed proof or hosted result is claimed. M65 Latest has 35 examples; upstream counts are historical.",
+    "note": "Historical parent f31d715 passed local normal, strict coverage and independent audit. Headless 1744 and renderer 1294 passes overlap; each has two retained ignored controls. Python 471 is quiet aggregate evidence. Its 42 finite source runs, 16 CLI cases and 15 new Rust controls passed; 39 native-peer provenance records were audited. These results do not qualify M72. Both M72 failed attempts are retained; the third full gate and independent audit are pending. No M72 installed or hosted proof is claimed. M65 Latest has 35 examples.",
     "renderer_coverage": {
       "lines": [
         21389,
