@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T00:18:00.200270+00:00",
+  "updated_at": "2026-11-19T00:25:34.007344+00:00",
   "state": "active",
-  "summary": "Fresh M70 package, relocation, Ubuntu installation and independent audits passed, including all 41 installed examples. Installed camera trials are running; runtime audit, browser proof and hosted qualification remain pending.",
+  "summary": "Fresh M70 package/install audits passed. Both native consumers validated first 1 ms camera packets, but the full trial failed: its observer misses thread-spawned workers. A bounded correction is under way; release proof remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M70",
-      "title": "Verifying the installed camera preview",
-      "detail": "The current locally qualified candidate passed fresh package/relocation and independent package audit, then clean Ubuntu installation and audit: 22 Docker commands, 9 guest stages and 41 finite examples as UID 65534. One reviewed paired-depth/RGB camera operation is running; independent runtime audit and browser proof remain pending. The new commit remains unpublished and has no hosted result."
+      "title": "Correcting worker detection in the camera proof",
+      "detail": "Fresh package and clean Ubuntu installation audits passed, including all 41 installed examples. Both native consumers validated first 1 ms camera packets, but the full trial failed its strict worker count: the observer reads only main-thread children while workers spawn on supervisor threads. A bounded task-aware census correction is under way. Worker identities/maps and the full camera proof remain unverified."
     }
   ],
   "accepted_slices": [
@@ -1025,11 +1025,12 @@
     }
   ],
   "remaining": [
-    "Complete installed paired-depth/RGB proof and independent runtime audit, including demand, reset, provider and owned shutdown.",
-    "Demonstrate the default robot in the real browser after explicit origin approval, then independently audit its shutdown.",
-    "Recover exact hosted qualification and complete publication/release readbacks before M70 acceptance."
+    "Review the bounded worker census correction, then rerun affected camera trials using the retained GPU provisioning evidence.",
+    "Complete independent camera runtime audit and the real robot/browser proof after explicit origin approval.",
+    "Recover exact hosted qualification and finish release readbacks before M70 acceptance."
   ],
   "blockers": [
+    "The full camera trial failed because its observer misses workers spawned by non-main threads. Correct the bounded census and rerun affected trials without weakening the strict worker count or replaying completed provisioning.",
     "Earlier candidate 597ac3d hosted CI failed before product checks: three locked Ubuntu InRelease requests returned HTTP401. The reason is unknown and recovery is unproven. The new candidate is unpublished and has no hosted result.",
     "Live browser access to http://127.0.0.1:8082 needs explicit owner approval. Non-UI camera proof can proceed independently after package and installation verification."
   ],
@@ -1082,7 +1083,7 @@
       "state": "unknown",
       "url": null
     },
-    "note": "Unpublished local candidate 2e8d9dc passed normal, strict workspace/per-crate coverage, actual-parent gates and independent audit. Rust profile counts overlap; 469 Python checks are quiet aggregate evidence. All 15 auxiliary camera cases, 41 finite loads and 38 native records passed. Fresh package/install audits and all 41 installed examples passed; camera trials are running; runtime audit/browser proof is pending. This revision has no hosted result; earlier 597ac3d CI failed on Ubuntu snapshot HTTP401. Upstream counts are historical; M65 Latest still has 35 examples.",
+    "note": "Unpublished local candidate 2e8d9dc passed normal, strict workspace/per-crate coverage, actual-parent gates and audit. Rust counts overlap; 469 Python checks are quiet aggregate evidence. Fresh package/install audits and 41 installed examples passed. The camera trial failed at worker observation after validated first 1 ms packets; full camera/browser proof is pending. This revision has no hosted result; earlier 597ac3d CI failed on Ubuntu snapshot HTTP401. Upstream counts are historical; M65 Latest has 35 examples.",
     "renderer_coverage": {
       "lines": [
         21287,
