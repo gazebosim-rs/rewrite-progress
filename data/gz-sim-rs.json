@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-19T19:19:26.135789+00:00",
+  "updated_at": "2026-11-19T19:29:04.384981+00:00",
   "state": "active",
-  "summary": "M73 explicit camera projection is selected and Source implementation is in progress over locally qualified M72. Rendering will use P while CameraInfo retains separate K/P; no M73 checks or results are claimed.",
+  "summary": "M73 explicit camera projection implementation and regression Source passed independent review. The full local normal/strict qualification run is active; no current result or audit is claimed.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M73",
-      "title": "Implementing explicit camera projection",
-      "detail": "The bounded zero-translation P increment preserves exact absent-P behavior and existing 64\u00d764 RGB/depth bounds. Scene/CLI, extraction/output and evidence lanes are in progress; complete implementation and independent review precede consolidated qualification."
+      "title": "Qualifying explicit camera projection",
+      "detail": "The complete zero-translation P increment preserves distinct K/P and absent-P behavior. Whole Source review and one formatter completed; the full local gate is running. Its 14 new Rust/two Python declarations and 44 source-example/18 CLI obligations are not pass claims."
     }
   ],
   "accepted_slices": [
@@ -1025,7 +1025,7 @@
     }
   ],
   "remaining": [
-    "Complete the bounded M73 implementation, regression Source and guides; batch independent review findings before one full local normal/strict gate and audit.",
+    "Complete the M73 full local normal/strict gate and independent audit, retaining actual results and any failures.",
     "Resolve hosted qualification and final parent reconciliation; exact hosted/official/Main gates precede M70\u2013M73 acceptance."
   ],
   "blockers": [
