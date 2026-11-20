@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T05:58:57.805183+00:00",
+  "updated_at": "2026-11-20T06:33:04.166197+00:00",
   "state": "active",
-  "summary": "M77 implementation, regression declarations and guides are source reviewed; checks wait for M76 acceptance. M76 exact hosted CI is running. M1\u2013M75, 202 slices and Latest M70\u2019s 41 examples remain accepted.",
+  "summary": "M76 is accepted at exact Main. M77\u2019s reviewed full normal/strict pipeline is running with no result. Counts remain 76 accepted of 77, 202 slices; Latest M70 retains 41 installed examples.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M77",
-      "title": "Reviewed installed-preview source awaits its accepted parent",
-      "detail": "Whole independent Source review passed for implementation, 13 new Python regression declarations and guides. The target package has 47 existing examples and an explicit live mixed-pair option; Source worlds/CLI cases stay 47/21. M77 checks, builds, packaging and installed proofs are held for actual M76 acceptance and final parent reconciliation."
-    },
-    {
-      "id": "M76",
-      "title": "Exact hosted and acceptance gates remain pending",
-      "detail": "The exact review-published M76 commit passed full local normal/strict qualification and independent retained DATA. Hosted run 44681392983 attempt 1 remains in progress; official evidence and Main acceptance are pending. Earlier failures, the capacity stop and cleanup evidence remain preserved."
+      "title": "Full installed-preview qualification is running",
+      "detail": "Whole implementation, 13 Python regression declarations, guides and accepted-parent/final bindings are independently reviewed. Root launched one full ordinary normal/strict pipeline on exact frozen fe7b and accepted dddf parent. It is running; no product qualification result, installed proof or M77 acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -1030,8 +1025,8 @@
     }
   ],
   "remaining": [
-    "Finish M76 exact hosted, official and Main acceptance gates without replaying local qualification.",
-    "Reconcile the accepted parent, then release one consolidated M77 verification cycle before fresh build, package, installation and live-camera/browser proofs."
+    "Observe the existing full M77 normal/strict pipeline and preserve its actual exits, logs and any partial evidence.",
+    "After qualification, independently audit retained evidence and obtain fresh four-role package/install, camera/skew/browser and exact hosted/official/Main/release proofs."
   ],
   "blockers": [],
   "plan_status": {
@@ -1080,10 +1075,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "M76 dddf1f42 passed full local normal/strict and independent DATA: headless 1762 and renderer 1367 overlap, with two ignored controls per profile; Python 481 is aggregate evidence. All 14 new Rust controls, 47 source runs and 21 CLI cases passed. Exact hosted CI remains in progress; official/Main acceptance is pending. M77 whole Source and 13 Python declarations are reviewed, not executed; checks wait for accepted M76. Accepted M75 quality is retained separately. Latest M70 has 41 installed examples from 7094a31.",
+    "note": "Accepted M76 dddf1f42 passed own normal/strict, local DATA, exact review CI, official DATA and Main/readbacks. Headless 1762 and renderer 1367 overlap; two ignored controls per profile; Python 481 is aggregate evidence. All 14 new Rust controls, 47 source runs and 21 CLI cases passed. M77\u2019s reviewed full normal/strict pipeline is running with no result; its 13 new declarations have no pass claim. Separate automatic Main CI was initially in progress; no result is inferred. Latest M70 retains 41 installed examples.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1102,16 +1097,17 @@
     "installed_finite_example_runs": null,
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dddf1f4284557c420e384d263a4365b2153dfde2",
     "automatic_Main_CI": {
-      "id": 44653390693,
-      "status": "completed",
-      "conclusion": "success",
-      "scope": "Separate automatic Main CI metadata success at accepted 616cc3e; no new artifact audit and no M76 qualification transfer. The qualifying M75 review run remains distinct.",
+      "id": 44687651179,
       "attempt": 1,
-      "head_sha": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
-      "terminal_metadata": {
-        "bytes": 616,
-        "sha256": "57655a20f505876871b21dfe4e672771365b6f2acd9c9d8651a3f42ba77bb828"
-      }
+      "head_sha": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44687651179",
+      "initial_metadata": {
+        "bytes": 243,
+        "sha256": "0bd483c3b15e8d7ecb006972ce9e3d0f1b245ab7fa19ad0d82e6f5bdaf4d253a"
+      },
+      "scope": "Separate initial automatic Main observation; no terminal result is inferred. Exact own review run 44681392983 succeeded and remains the qualifying hosted proof."
     },
     "accepted_release": {
       "phase": "M70",
@@ -1126,8 +1122,17 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Latest local normal/strict and independent local DATA only; exact hosted CI, official and Main acceptance pending.",
-    "accepted_baseline_revision": "616cc3e2105a7ef9479ac823a6b05e832a92defc"
+    "qualification_scope": "Accepted M76: exact own local/hosted/official and Main evidence. No M77 qualification transfer.",
+    "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "M76_acceptance_receipt": {
+      "bytes": 3134,
+      "sha256": "f5728d187664ade59eea645615d617ae3f32d69f184b3227dde2a76c59ed9511"
+    },
+    "M76_Main_promotion": {
+      "bytes": 3302,
+      "sha256": "f34263d4f78852242910dac57288a7cedb7808201f084b80a513578e1f7459c7"
+    },
+    "acceptance_index_scope": "Retained M70\u2013M75 index; the separate M76 acceptance receipt adds one accepted phase and zero slices."
   },
   "phase_status": {
     "P0": "in_progress",
