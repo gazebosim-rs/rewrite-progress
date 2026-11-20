@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T19:55:10.867280+00:00",
+  "updated_at": "2026-11-20T20:31:19.855584+00:00",
   "state": "active",
-  "summary": "Shared M78/M79 local normal/strict, DATA and review publication passed. Exact-head hosted CI is running; official gates remain pending. M77\u2019s demo stays live; accepted phases remain 76 of 79.",
+  "summary": "M80 posed-cylinder source is integrated for independent review; no M80 checks have run. Parent hosted CI continues, M77\u2019s demo stays live, and acceptance remains 76 of 80.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
+    {
+      "id": "M80-source-review",
+      "title": "Posed-cylinder source integrated; review pending",
+      "detail": "M80 adds one translated/rotated cylinder collider on Rapier, preserving link-centered inertia and existing target restrictions. Its implementation and regression source are integrated; whole independent review precedes all M80 checks."
+    },
     {
       "id": "M78-M79-hosted-running",
       "title": "Local qualification passed; exact-head CI running",
@@ -1030,11 +1035,12 @@
     }
   ],
   "remaining": [
+    "Complete whole M80 source review and batch findings before one formatter and the full mandatory qualification cycle.",
     "Wait for the exact automatic hosted attempt to finish, then collect original artifacts and require official DATA.",
     "Keep the manual demo running; complete M77 formal GUI/Main acceptance before accepting either shared phase."
   ],
   "blockers": [
-    "Automatic exact-head hosted CI is running without an outcome; official qualification is pending. M77 formal GUI/Main acceptance still gates both shared phases."
+    "Release acceptance waits for M77 browser access and owner-approved shutdown. The current demo stays live; development and hosted CI continue."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1085,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "M77 measurements are unchanged. Shared 8ad64532 passed its own local normal/strict, independent DATA and review publication/readbacks. Automatic hosted attempt1 is in progress; no hosted or official pass is claimed. Failed readers and prior failed runs remain preserved.",
+    "note": "M77 measurements are unchanged. Shared 8ad64532 passed its own local normal/strict, independent DATA and review publication/readbacks. Automatic hosted attempt1 is in progress; no hosted or official pass is claimed. Failed readers and prior failed runs remain preserved. M80 Source inherits no qualification and has no check results.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -2562,6 +2568,61 @@
       },
       "state": "PRE_REPRODUCTION_REVIEWED_TEST_INPUT_SOURCE_ONLY",
       "scope": "This reviewed and formatted 1769-file snapshot predates the checked-in reproduction helper/provenance/guide additions. It is not the expanded final Source or a qualification result."
+    },
+    "current_M80_Source": {
+      "state": "M80_IMPLEMENTATION_AND_REGRESSION_SOURCE_INTEGRATED_WHOLE_REVIEW_PENDING",
+      "Source_basis_commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+      "Source_basis_accepted": false,
+      "basis_local_normal_and_independent_DATA_qualified": true,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "source_preparation_under_D31": true,
+      "contract": {
+        "sha256": "c4be226f8cba1187dde2c4f58c1cc04aff177eaec7eb03b8dacea8d2c922074c",
+        "bytes": 4734,
+        "mode": 436
+      },
+      "selected_scope_and_leases": {
+        "sha256": "16b793460c7ae2447520c584f5c9f09d398e0eac9c9fd7eeeaa7c1f11eda9b75",
+        "bytes": 4719,
+        "mode": 436
+      },
+      "implementation_started": true,
+      "implementation_complete": true,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "accepted": false,
+      "qualification_inherited": false,
+      "Source_publication_available": false,
+      "future_qualified_head": null,
+      "Source_binding_count": 1775,
+      "changed_paths_vs_basis": 16,
+      "new_paths": 5,
+      "Source_count_scope": "Root integrated Source census before independent review, final formatter and frozen staged snapshot; no final qualification tree or result claimed.",
+      "Source_control_declarations": {
+        "Rust_unique": 18,
+        "headless": 18,
+        "renderer": 9,
+        "overlap": 9,
+        "Python_new": 0,
+        "counts_are_Source_obligations_not_executed_results": true
+      },
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "no_new_automatic_inertia_computation": true,
+      "resolved_inertial_values_policy": "Direct dynamic backend callers must supply Some centered validated inertia. Scene uses existing SDFormat resolved defaults or centered automatic-inertia results; no XML-presence gate and no new mass-property computation. Resolved offset COM stays refused.",
+      "M79_target_domain_expanded": false,
+      "retained_test_disposition": {
+        "path": "crates/gz-sim-scene/tests/posed_box.rs",
+        "scope": "Only the posed-cylinder row in the old unsupported geometry loop becomes a positive load plus independent analytic ray at the existing tolerance. Sphere/capsule and all other assertions remain unchanged.",
+        "independent_reviewer": "Root approved exact Source disposition; Scope reviews whole final test semantics before checks.",
+        "reason": "M80 intentionally admits this cylinder domain; preserve its coverage with a positive geometry oracle, plus new TPE/COM/compound negative controls."
+      },
+      "current_stage": "Physics/Rapier and Scene implementation and regression Source are integrated. Whole independent Source review is pending; no M80 tests, lint or formatter has run.",
+      "protected_manual_demo_session": 86363,
+      "stop_or_restart_authorized": false
     }
   },
   "phase_status": {
