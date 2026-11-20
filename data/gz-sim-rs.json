@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T07:56:04.356819+00:00",
+  "updated_at": "2026-11-20T08:46:35.023627+00:00",
   "state": "active",
-  "summary": "M77 distribution and both pristine install audits passed. One unchanged hosted retry is running; camera/browser proof remains pending. Counts stay 76 of 77 and 202 slices; Latest M70 retains 41 installed examples.",
+  "summary": "M77 camera startup failed; the reviewed correction is running one full normal gate. Original candidate 353 hosted attempt 2 success is separate. Counts stay 76 of 77 and 202 slices; Latest M70 remains unchanged.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M77",
-      "title": "One unchanged hosted retry is running",
-      "detail": "Actual attempt2 remains in progress at the same public commit after one reviewed full-job retry. Original attempt1 failed in a retained post-reset control; cause stays unknown. No Source/gate change, extra retry or success claim."
+      "title": "Corrected camera admission is in full verification",
+      "detail": "The confirmed startup guard failure is preserved. Corrected nonzero web visibility admission and wrench preconditions passed Source review and one final formatter. Root launched one full normal/strict gate on staged tree 95ef over unaccepted candidate 353; it is running with no result."
     },
     {
-      "id": "M77-installed",
-      "title": "Distribution audited; camera and browser proof remain",
-      "detail": "Fresh release/package and both pristine install audits passed. Final camera bindings are Source-clear; retained camera DATA method agreement is next. Browser has distinct audited custody and still needs current owner approval. No camera/browser runtime or M77 acceptance is claimed."
+      "id": "M77-history",
+      "title": "Original candidate outcomes remain historical",
+      "detail": "Original candidate 353 retains local/distribution passes, camera startup failure and actual hosted attempt2 success. Reported guest-final exit 1, cleanup Docker CLI exit 0 and unknown guest OS wait stay distinct; no application clean shutdown or camera trial passed. No old result qualifies corrected Source."
     }
   ],
   "accepted_slices": [
@@ -1030,11 +1030,11 @@
     }
   ],
   "remaining": [
-    "Complete camera retained audit-method agreement and final release review, then run against its audited pristine custody and exact QA inputs.",
-    "Observe the single hosted retry and complete the browser approval/runtime plus official/Main/public acceptance gates."
+    "Observe the sole corrected full normal pipeline, then independently audit its exact retained result before any release/package operation.",
+    "Obtain fresh corrected-head distribution and camera/browser proofs, including the pending browser origin approval; then complete hosted/official/Main/public gates."
   ],
   "blockers": [
-    "M77 still needs successful hosted/official evidence and actual camera/browser proof. One unchanged hosted retry is running after the preserved failure; browser-origin approval is not yet recorded."
+    "Browser origin approval remains pending: the owner was asked and has not replied. Corrected M77 qualification is running; fresh runtime proofs and all final gates remain required."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1082,10 +1082,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128"
     },
-    "note": "M77 own local qualification passed: headless 1762/renderer 1367 overlap, two ignored per profile; Python 494 is aggregate-only, 47 Source worlds and 21 CLI controls passed. Fresh release/package and both pristine install audits passed; installed census 47 existing worlds. Attempt1 failed with unknown cause; one unchanged attempt2 is running. Camera/browser/official/Main/M77 acceptance remain pending. Latest M70 retains 41 installed examples.",
+    "note": "Latest measurements belong to frozen unaccepted candidate 353: headless 1762/renderer 1367 overlap; 494 Python tests is aggregate-only and 47 finite installed worlds passed. Its hosted attempt2 succeeded, but camera startup failed. Current corrected tree 95ef is Source/formatter clear with one full normal running and no result. Old measurements do not qualify it. M76 remains accepted Main; Latest M70 retains 41 installed examples.",
     "renderer_coverage": {
       "lines": [
         21569,
@@ -1129,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Own M77 LOCAL and distribution/install retained DATA passed. Original hosted failure and unknown cause retained; exactly one unchanged attempt2 running. Actual camera/browser/hosted-success/official/Main/public acceptance remains pending; accepted Main is M76.",
+    "qualification_scope": "Measurements/revision/linked successful CI are for frozen UNACCEPTED candidate 353 only. Current corrected tree 95ef has one normal gate running and no result; no inherited test/coverage/distribution/runtime/hosted qualification. Accepted Main remains M76.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1204,6 +1204,27 @@
     "M77_browser_distinct_install_DATA_actual": {
       "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
       "bytes": 1557
+    },
+    "M77_original_353_hosted_attempt2_terminal": {
+      "sha256": "b86a7b4d58c26b700ecfd3375b49a6ac548460a81cc867397f607ffe87baf46f",
+      "bytes": 2452
+    },
+    "M77_original_353_camera_failure": {
+      "sha256": "8bf0fb23865d92a50977782ab20b9415a5f967a77ec82a7fb62d7f17c71a4b5e",
+      "bytes": 2040
+    },
+    "current_candidate": {
+      "staged_tree": "95ef6ceddd916c07516828ef8a3dcdd4a9b6c6a0",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "published_commit": null,
+      "normal_running": true,
+      "actual_Root_exit": null,
+      "actual_Git_exit": null,
+      "tests_passed": null,
+      "coverage": null,
+      "current_head_CI": null,
+      "qualification_inherited": false
     }
   },
   "phase_status": {
@@ -1363,5 +1384,148 @@
       "sha256": "f34263d4f78852242910dac57288a7cedb7808201f084b80a513578e1f7459c7"
     },
     "acceptance_index_scope": "Retained M70\u2013M75 index; the separate M76 acceptance receipt adds one accepted phase and zero slices."
+  },
+  "historical_unaccepted_M77_353_quality": {
+    "revision": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+    "rust_tests": 1762,
+    "coverage": {
+      "lines": [
+        33116,
+        34018
+      ],
+      "regions": [
+        50547,
+        52559
+      ]
+    },
+    "upstream": {
+      "total": null,
+      "ported": 4,
+      "partial": 9
+    },
+    "ci": {
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128"
+    },
+    "note": "M77 own local qualification passed: headless 1762/renderer 1367 overlap, two ignored per profile; Python 494 is aggregate-only, 47 Source worlds and 21 CLI controls passed. Fresh release/package and both pristine install audits passed; installed census 47 existing worlds. Attempt1 failed with unknown cause; one unchanged attempt2 is running. Camera/browser/official/Main/M77 acceptance remain pending. Latest M70 retains 41 installed examples.",
+    "renderer_coverage": {
+      "lines": [
+        21569,
+        22109
+      ],
+      "regions": [
+        32754,
+        33999
+      ]
+    },
+    "renderer_rust_tests": 1367,
+    "renderer_overlaps_headless": true,
+    "quiet_Python_tests": 494,
+    "quiet_Python_individual_results_observable": false,
+    "finite_example_runs": 47,
+    "installed_finite_example_runs": 47,
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+    "automatic_Main_CI": {
+      "id": 44687651179,
+      "attempt": 1,
+      "head_sha": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44687651179",
+      "terminal_metadata": {
+        "sha256": "189d432cd9001d557bf9452be0c77baed08c46b0cbb760f1dfaf6b6bfcb433b5",
+        "bytes": 12512
+      },
+      "scope": "Separate automatic accepted-M76 Main CI metadata success. Own qualifying M76 review run 44681392983 is distinct; no new artifact audit or M77 qualification transfers."
+    },
+    "accepted_release": {
+      "phase": "M70",
+      "installed_examples": 41,
+      "package_build_Source": "7094a31890e78bc83c65f12a056dfb3918b7401a",
+      "release_id": 452158796,
+      "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
+      "public_and_Latest_HTTP_status": 200
+    },
+    "acceptance_index": {
+      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "bytes": 1614,
+      "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
+    },
+    "qualification_scope": "Own M77 LOCAL and distribution/install retained DATA passed. Original hosted failure and unknown cause retained; exactly one unchanged attempt2 running. Actual camera/browser/hosted-success/official/Main/public acceptance remains pending; accepted Main is M76.",
+    "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "M76_acceptance_receipt": {
+      "bytes": 3134,
+      "sha256": "f5728d187664ade59eea645615d617ae3f32d69f184b3227dde2a76c59ed9511"
+    },
+    "M76_Main_promotion": {
+      "bytes": 3302,
+      "sha256": "f34263d4f78852242910dac57288a7cedb7808201f084b80a513578e1f7459c7"
+    },
+    "acceptance_index_scope": "Retained M70\u2013M75 index; the separate M76 acceptance receipt adds one accepted phase and zero slices.",
+    "M77_normal_actual": {
+      "sha256": "55a601500ca73f7e37d27a8993d7659f154d8dcb4be32149f59189d948c460f6",
+      "bytes": 1672
+    },
+    "M77_local_DATA_actual": {
+      "sha256": "55de3728f1c3a9e56a5f770a62845dd77a639df1f33a69c1aab0779c4f109910",
+      "bytes": 1829
+    },
+    "M77_local_DATA_report": {
+      "sha256": "7186a7f38d58427bde0f9016a2c573412e48364b62ccfb5232b653bd048d7334",
+      "bytes": 36441
+    },
+    "M77_review_publication": {
+      "sha256": "1a4ac9f8e17894a1c26f01b86c9381d42e6317949d211bab5fa424901aafe64d",
+      "bytes": 2059
+    },
+    "M77_release_actual": {
+      "sha256": "c0c75b1536a5b3f2084ad3197939748020b9ddfd1d965b0ddf05bade10f6fc56",
+      "bytes": 3031
+    },
+    "M77_release_DATA_actual": {
+      "sha256": "81273c0001038d1b31cb4697731b8c8670ef695b5b4c785dd8ca817d5872f191",
+      "bytes": 1936
+    },
+    "M77_package_assembly_actual": {
+      "sha256": "5806eb2bc123f7f221e76624a507213b3640bd5d0468e29993981f9f5801e6d2",
+      "bytes": 1470
+    },
+    "M77_package_DATA_actual": {
+      "sha256": "3814dba48de42c06d768bbc53578d0e7f037f576d9996c20efc410eafcf19358",
+      "bytes": 1430
+    },
+    "M77_package_DATA_report": {
+      "sha256": "0f1a98a8a09d4e9fa2ce73fa53c1a8d0a2a06f69fa2b17e84bb7fca2702d53ff",
+      "bytes": 13549
+    },
+    "M77_hosted_attempt1_failure": {
+      "sha256": "1a06f191b2fb9e58b7241385a9d4571ea3422e8f8da1af2984a22f37e6c4401e",
+      "bytes": 2241
+    },
+    "M77_install_actual": {
+      "sha256": "49da2321097e3c5444af2a4df3d84ae56c14408917308b21d45919da550a2cba",
+      "bytes": 1495
+    },
+    "M77_hosted_retry_actual": {
+      "sha256": "31851ad2544832c3ed5ea95b73c387d2c8af7c64bf7e33df85b603b6b76717e3",
+      "bytes": 2475
+    },
+    "M77_hosted_attempt2_initial": {
+      "sha256": "e278dba55e8eab62d52716f0acd66682b4dfb1d549c7eb194aaeca0c7360203c",
+      "bytes": 12601
+    },
+    "installed_finite_scope": "Two distinct pristine setups each executed the same 47 plain finite world commands and passed independent retained DATA; distinct installed example census 47, no added phase/slice count or camera/browser credit.",
+    "M77_install_DATA_actual": {
+      "sha256": "d7dd5dfbd333cc411ee01415b023d4bc0ab8c3a1d53e84cafc7a6672ed8375ee",
+      "bytes": 1524
+    },
+    "M77_browser_distinct_install_actual": {
+      "sha256": "8d7e662710f357037def8246c3516c51e0095b73b6d9a7be0310d755a6a4b99c",
+      "bytes": 1625
+    },
+    "M77_browser_distinct_install_DATA_actual": {
+      "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
+      "bytes": 1557
+    }
   }
 }
