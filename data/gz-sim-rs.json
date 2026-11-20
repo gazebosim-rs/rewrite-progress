@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T10:34:37.525685+00:00",
+  "updated_at": "2026-11-20T10:46:37.507350+00:00",
   "state": "active",
-  "summary": "M77 package and two pristine installs are audited. Camera execution and hosted CI are running without final results. Counts stay 76 of 77 and 202 slices; browser approval remains pending.",
+  "summary": "M77 camera wrapper failed its final result cap; retained-only recovery feasibility is under Source review. Current hosted CI succeeded, with official audit pending. Browser approval is pending; counts stay 76 of 77 and 202 slices.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M77-camera",
-      "title": "One installed camera execution is running",
-      "detail": "The current package and first pristine camera setup have own actual and retained DATA0. The bound six-session camera Source passed independent review, and Root launched one installed camera execution. It is running without a result or runtime DATA. The distinct browser setup remains separately audited."
+      "title": "Camera wrapper failed its final result cap",
+      "detail": "Actual Root exit 1 preserved only a finalization sidecar; result.json was never written. Six raw guest-final zero records and shutdown observations remain unqualified. Independent retained-recovery feasibility is under Source review, with no runtime rerun or cap change."
     },
     {
       "id": "M77-closeout",
-      "title": "Hosted CI and browser approval remain pending",
-      "detail": "Current hosted run 44715646599 attempt 1 is still active. Browser origin approval remains requested with no reply. Both setups ran the same 47 worlds through 22 CLI and nine guest stages each; finite installation and stopped idle containers do not prove camera/browser runtime."
+      "title": "Hosted CI succeeded; official audit and browser approval are pending",
+      "detail": "Whole current run 44715646599 attempt 1 succeeded at the corrected commit. Its official artifact is identified but not collected or independently audited. Current package and both pristine install DATA proofs remain intact. Browser origin approval is requested with no reply; no runtime or phase acceptance is claimed."
     }
   ],
   "accepted_slices": [
@@ -1030,11 +1030,11 @@
     }
   ],
   "remaining": [
-    "Observe the sole installed camera execution, then independently audit its actual retained result before claiming runtime success.",
-    "Obtain current browser origin approval and runtime proof; complete hosted/official/Main/public gates before M77 acceptance."
+    "Complete the independent Source review of retained-recovery feasibility, preserving the failed wrapper and all raw evidence before any further operation.",
+    "Collect and audit the successful current hosted artifacts; obtain browser approval and runtime proof, then complete Main/public gates before M77 acceptance."
   ],
   "blockers": [
-    "Browser origin approval remains pending: the owner was asked and has not replied. Current camera execution and hosted CI are active; runtime and final qualification gates remain incomplete."
+    "Camera wrapper failed its final result cap and has no qualification; retained-only recovery feasibility is under Source review. Browser origin approval remains pending. Successful hosted CI still needs official artifact collection/audit."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1082,10 +1082,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Own current commit passed normal and retained DATA: 1771 headless/1369 overlapping renderer tests, two ignored per profile, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Four-role release, package and two distinct pristine installs also passed actual and retained DATA. Both setups ran the same 47 worlds; the census stays 47. Camera execution and hosted CI are active without final results. Browser approval remains pending; accepted Main is M76 and Latest M70 retains 41 installed examples.",
+    "note": "Own current normal/DATA: 1771 headless/1369 overlapping renderer tests, two ignored per profile, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Release/package/two pristine install DATA remain intact. Whole current hosted CI succeeded; official collection/audit is pending. Camera wrapper failed its two MiB result cap; six raw guest-final zero records remain unqualified. Retained-only feasibility is under Source review without rerun/cap change. Browser approval and acceptance remain pending.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1129,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Own current57 local/release/package and pristine finite-install proofs only. Accepted Main remains M76. Camera execution and hosted CI are active without final results; browser approval and actual runtime/official/Main/public acceptance remain pending.",
+    "qualification_scope": "Own current57 local/release/package/pristine finite-install DATA and whole hosted CI success. Official collection/audit remains pending. Camera wrapper Root1 has no result/qualification; retained feasibility is Source-only without rerun/cap change. Browser approval/runtime/Main/public acceptance remain pending.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1177,8 +1177,10 @@
       "hosted_CI": {
         "id": 44715646599,
         "attempt": 1,
-        "status": "in_progress",
-        "conclusion": null
+        "status": "completed",
+        "conclusion": "success",
+        "official_collected": false,
+        "official_DATA": false
       },
       "release_build_active": false,
       "qualification_inherited": false,
@@ -1187,12 +1189,14 @@
       "pristine_install_DATA_qualified": true,
       "installed_camera_runtime": false,
       "installed_browser_runtime": false,
-      "installed_camera_runtime_active": true,
+      "installed_camera_runtime_active": false,
       "installed_camera_launch": {
         "tool": "6b00ea",
         "session": 6800,
-        "actual_Root_exit": null,
-        "result": null
+        "terminal_tool": "35747f",
+        "actual_Root_exit": 1,
+        "result": null,
+        "independent_DATA": null
       }
     },
     "installed_finite_scope": "Own current57 package passed the same47 plain finite commands in two distinct pristine setups with independent DATA. Distinct world census47, not94. No camera/browser runtime or acceptance claim.",
@@ -1254,6 +1258,55 @@
     "M77_browser_distinct_install_DATA_actual": {
       "sha256": "fea99209a60b20396facbbf622c35e3d61097ab4da3fe32b1ff15c0211d813d7",
       "bytes": 1407
+    },
+    "historical_camera_active_current_candidate": {
+      "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "staged_tree": "b1dd0332656b233a1546dcca87733abe14305092",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "normal_running": false,
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "actual_Root_exit": 0,
+      "actual_Git_exit": 0,
+      "hosted_CI": {
+        "id": 44715646599,
+        "attempt": 1,
+        "status": "in_progress",
+        "conclusion": null
+      },
+      "release_build_active": false,
+      "qualification_inherited": false,
+      "release_DATA_qualified": true,
+      "package_DATA_qualified": true,
+      "pristine_install_DATA_qualified": true,
+      "installed_camera_runtime": false,
+      "installed_browser_runtime": false,
+      "installed_camera_runtime_active": true,
+      "installed_camera_launch": {
+        "tool": "6b00ea",
+        "session": 6800,
+        "actual_Root_exit": null,
+        "result": null
+      }
+    },
+    "M77_installed_camera_failed_actual": {
+      "sha256": "37d0e18d3c27bf9e873fb01bbf04b753d6f4025f8400e4b1d8f9fd581484ae1c",
+      "bytes": 2251
+    },
+    "M77_installed_camera_result_cap_failure": {
+      "sha256": "cb99346f0e7277ed8bb4b38022a85beedd097a8182ce969993bbeccc3ebb5f37",
+      "bytes": 6465
+    },
+    "historical_current_hosted_pending_observation": {
+      "id": 44715646599,
+      "attempt": 1,
+      "status": "in_progress",
+      "conclusion": null
+    },
+    "M77_own_hosted_success_terminal": {
+      "sha256": "fea7af8910cab97918b6b6fc5ff2d16eadb28fa238e341b3c1dbf3775a045f23",
+      "bytes": 2152
     }
   },
   "phase_status": {
