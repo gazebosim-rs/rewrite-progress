@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T11:36:12.443296+00:00",
+  "as_of": "2026-11-20T12:26:53.836464+00:00",
   "execution_state": "active",
   "current_phase": "M77",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4944,8 +4944,8 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": true,
-      "qualification_state": "own_all_camera_and_independent_DATA_clear_only_browser_owner_decision_pending",
-      "current_stage": "All six installed camera trials and independent retained DATA passed, including the complete host ledger and zero-offset comparison. Own local/CI/official/release/package/install proofs are complete. Earlier wrapper/audit failures stay preserved. The browser has not been invoked; its origin approval is the sole pending owner decision before downstream runtime/Main/public/acceptance gates.",
+      "qualification_state": "all_prior_qualification_clear_browser_owner_approved_app_origin_policy_blocked",
+      "current_stage": "Owner approval was recorded, then the app browser gate rejected the exact approved local URL before any navigation or checkpoints. The owned actor exited one after one SIGINT and reviewed cleanup; no job remains active. Prior qualification and all failure evidence stay intact. The second browser custody is used/stopped, not pristine. App permission resolution and a new reviewed custody plan precede any retry; Main/public/acceptance stay held.",
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
       "new_Source_finite_examples": 0,
@@ -5422,7 +5422,7 @@
         "accepted": false
       },
       "current_distribution_and_runtime": {
-        "state": "CURRENT_LOCAL_HOSTED_OFFICIAL_DISTRIBUTION_CAMERA_COMPLETE_BROWSER_OWNER_DECISION_PENDING",
+        "state": "ALL_PRIOR_QUALIFICATION_INTACT_BROWSER_OWNER_APPROVED_APP_ORIGIN_PERMISSION_BLOCKED",
         "fresh_release": {
           "sha256": "f18e8562257edf6f93db4f8524af071eb42328eea2764ea661f7bf579eef5301",
           "bytes": 3201
@@ -5461,9 +5461,27 @@
             "bytes": 2026
           }
         },
-        "browser_actual": null,
-        "browser_origin_approval": null,
-        "scope": "Own current local/hosted/official/release/package/install and camera qualification are complete. Only current browser origin approval remains an owner decision; the pristine second browser custody is preserved and browser has not been invoked. Browser runtime, Main/public gates and M77 acceptance remain downstream and held. No heavy job is active."
+        "browser_actual": {
+          "state": "actor_failed_origin_policy_denied_and_cleaned",
+          "actual_Root_exit": 1,
+          "actual_Root": {
+            "sha256": "a442a0adcdf41a3b4e771187e900c29d90816f3f13146d920104d580990a93a6",
+            "bytes": 4179
+          },
+          "actor_result": {
+            "sha256": "fc2ec9b78a0273226bfacf2619013fd2f3146e568e46cd16a2634969e4099da1",
+            "bytes": 117929,
+            "mode": 436
+          },
+          "navigation_succeeded": false,
+          "checkpoints_written": false,
+          "browser_DATA": null
+        },
+        "browser_origin_approval": {
+          "sha256": "c08dc5b0562f8990abc39c7d29126a9122febe5e626385e8cafaa5611d31d8bb",
+          "bytes": 582
+        },
+        "scope": "Own current local/CI/official/release/package/install/camera DATA remains complete. Owner approved the browser demo, but the automatic browser origin gate rejected navigation. The actor failed and was cleaned up; no job is active, no GUI proof exists, and the second custody is used/stopped at8GiB. Main/public/acceptance and any retry remain held until app permission changes and a new custody plan is reviewed."
       },
       "historical_failed_95ef_candidate": {
         "whole_Source_review": {
@@ -6053,7 +6071,10 @@
             "pristine_custody_reserved_for": "browser",
             "camera_runtime_passed": false,
             "default_browser_passed": false,
-            "scope": "Separate actual setup/custody; finite47 and stopped idle container do not prove camera/browser runtime or application clean shutdown."
+            "scope": "Original successful pristine finite-install provenance remains unchanged. The subsequent browser actor used this custody and promoted resources to8GiB; it is now used/stopped, not pristine, and has no browser qualification. No fresh install/retry is selected while permission is blocked.",
+            "currently_pristine": false,
+            "custody_current_state": "USED_STOPPED_AFTER_ORIGIN_POLICY_BLOCKED_BROWSER_ACTOR",
+            "current_memory_limit_GiB": 8
           },
           "camera_recorder_recovery_third": {
             "state": "ACTUAL_THIRD_PRISTINE_INSTALL_AND_SEPARATE_DATA_CLEAR",
@@ -6089,8 +6110,9 @@
         "total_distinct_setup_custodies": 3,
         "currently_selected_camera_setup": "camera_recorder_recovery_third",
         "first_camera_custody_GPU_mutated_and_preserved": true,
-        "second_browser_custody_preserved_pristine": true,
-        "historical_setup_provenance_scope": "Initial camera/browser setup records remain exact provenance of their completed pristine installations. Subsequent camera GPU mutation does not relabel first custody pristine; current camera runtime uses only the third setup."
+        "second_browser_custody_preserved_pristine": false,
+        "historical_setup_provenance_scope": "Initial camera/browser setup records remain exact provenance of their completed pristine installations. Subsequent camera GPU mutation does not relabel first custody pristine; current camera runtime uses only the third setup.",
+        "second_browser_custody_used_stopped_8GiB": true
       },
       "current_installed_camera": {
         "state": "ALL_SIX_ACTUAL_RUNTIME_AND_INDEPENDENT_DATA_CLEAR",
@@ -6769,6 +6791,74 @@
       },
       "camera_qualified": true,
       "current_browser": {
+        "state": "OWNER_APPROVED_BROWSER_ORIGIN_POLICY_REJECTED_ACTOR_FAILED_CLEANED",
+        "owner_question_already_asked": true,
+        "owner_reply": "Approve the M77 browser demo",
+        "origin_approval": {
+          "sha256": "c08dc5b0562f8990abc39c7d29126a9122febe5e626385e8cafaa5611d31d8bb",
+          "bytes": 582
+        },
+        "browser_invoked": false,
+        "browser_actual_Root": {
+          "sha256": "a442a0adcdf41a3b4e771187e900c29d90816f3f13146d920104d580990a93a6",
+          "bytes": 4179
+        },
+        "browser_DATA": null,
+        "second_pristine_custody_preserved": false,
+        "scope": "Owner chat approval is genuine. The automatic browser security/origin gate rejected creation of the exact approved8082 tab; no navigation/checkpoint occurred. The owned actor was interrupted once and fully reaped with stopped used8GiB custody and listeners absent. No successful browser/application shutdown proof or retry is inferred. Resolve app browser permission and review a new custody plan before any retry; no workaround.",
+        "owner_approval_received": true,
+        "actor_invoked": true,
+        "actor_launch_tool": "c14e45",
+        "actor_session_id": 94106,
+        "actor_terminal_tool": "ba87a1",
+        "actual_Root_exit": 1,
+        "actor_result": {
+          "sha256": "fc2ec9b78a0273226bfacf2619013fd2f3146e568e46cd16a2634969e4099da1",
+          "bytes": 117929,
+          "mode": 436
+        },
+        "finalization_sidecar": {
+          "sha256": "0b77ca69243c522fda701e00de2497c33a4bb9593546f5d26e7a00360627abdb",
+          "bytes": 317,
+          "mode": 436
+        },
+        "browser_navigation_succeeded": false,
+        "browser_checkpoints_written": false,
+        "origin_policy_rejection": {
+          "sha256": "87745fdecb04672b96cc2af88d092af6b61f0a2125a9bb9a6f5c877e6885de30",
+          "bytes": 2660
+        },
+        "automatic_review_reason": "User declined permission; origin approval gate did not grant access to http://127.0.0.1:8082. No browser egress authority. No workaround permitted.",
+        "second_custody_used_and_stopped": true,
+        "current_custody_memory_GiB": 8,
+        "cleanup": {
+          "host_actor_actual_exit": 1,
+          "host_actor_reaped": true,
+          "host_actor_proc_absent": true,
+          "cooperative_EOF_exited": true,
+          "owned_container_stopped": true,
+          "owned_container_PID": 0,
+          "maximum_layer_bytes": 38653094,
+          "idle_container_exit": 137,
+          "idle_exit_is_application_shutdown": false,
+          "fresh_application_ports_absent": [
+            7449,
+            8082,
+            9014
+          ],
+          "protected_ports_unchanged": [
+            8080,
+            9013
+          ],
+          "single_SIGINT_to_exact_owned_supervisor": true,
+          "actor_signal": 2
+        },
+        "active_owned_job": false,
+        "retry_released": false,
+        "new_custody_plan": null,
+        "app_browser_permission_resolution": null
+      },
+      "historical_browser_owner_decision_pending_observation": {
         "state": "HELD_FOR_CURRENT_OWNER_ORIGIN_APPROVAL",
         "owner_question_already_asked": true,
         "owner_reply": null,
@@ -6778,6 +6868,83 @@
         "browser_DATA": null,
         "second_pristine_custody_preserved": true,
         "scope": "One current M77 installed browser demonstration requires genuine owner origin approval. No prior approval is transferred and no approval identifier or screenshot is invented."
+      },
+      "historical_distribution_browser_owner_decision_observation": {
+        "state": "CURRENT_LOCAL_HOSTED_OFFICIAL_DISTRIBUTION_CAMERA_COMPLETE_BROWSER_OWNER_DECISION_PENDING",
+        "fresh_release": {
+          "sha256": "f18e8562257edf6f93db4f8524af071eb42328eea2764ea661f7bf579eef5301",
+          "bytes": 3201
+        },
+        "fresh_package": {
+          "sha256": "79ba48bbf0ba4661170ec84e67c3c1b666f9cac8a633de6d45727a3de56bd6fd",
+          "bytes": 1352
+        },
+        "fresh_install": {
+          "camera_third": {
+            "sha256": "5fdcc74757170d7c26ce0a56ba8264a1461059a27ab3de3d180e3dafb5a6e3d3",
+            "bytes": 1436
+          },
+          "browser_second": {
+            "sha256": "fea99209a60b20396facbbf622c35e3d61097ab4da3fe32b1ff15c0211d813d7",
+            "bytes": 1407
+          }
+        },
+        "camera_actual": {
+          "state": "passed_and_independent_DATA_clear",
+          "launch_tool": "461208",
+          "Root_solewatch_session_id": 47449,
+          "terminal_tool": "eb9f56",
+          "actual_Root_exit": 0,
+          "actual_Root": {
+            "sha256": "294648dac945709915cf1c05942a72ef48d6a31d85df48ad2acac48df1e23f8e",
+            "bytes": 2668
+          },
+          "result_index": {
+            "sha256": "2e052cf5ca8f9866d770cea411e75068b3362f0ff570632fb75d09c5ecf40f34",
+            "bytes": 1965,
+            "mode": 384
+          },
+          "independent_DATA": {
+            "sha256": "b6da2e12ab6744780b277c75b27c69b93d7f3aa5a9ce2b92b9c17e41ffb9623c",
+            "bytes": 2026
+          }
+        },
+        "browser_actual": null,
+        "browser_origin_approval": null,
+        "scope": "Own current local/hosted/official/release/package/install and camera qualification are complete. Only current browser origin approval remains an owner decision; the pristine second browser custody is preserved and browser has not been invoked. Browser runtime, Main/public gates and M77 acceptance remain downstream and held. No heavy job is active."
+      },
+      "historical_browser_pristine_custody_before_actor": {
+        "state": "ACTUAL_DISTINCT_PRISTINE_INSTALL_AND_RETAINED_DATA_CLEAR",
+        "install_actual": {
+          "sha256": "e8ff2a5981575ca1109f31fb1fbed584cd8383a4f39d56cc40fd6b12d3f083c0",
+          "bytes": 1951
+        },
+        "install_result": {
+          "sha256": "26d8e3d5877655799185db906a316506cf3e871aedc78989f3d752cdc5939a36",
+          "bytes": 179052
+        },
+        "install_DATA_actual": {
+          "sha256": "fea99209a60b20396facbbf622c35e3d61097ab4da3fe32b1ff15c0211d813d7",
+          "bytes": 1407
+        },
+        "install_DATA_report": {
+          "sha256": "134ae4e2c67398cf053ce94735c303dad25190f7bbd594c9304c80a8557d1f28",
+          "bytes": 12072
+        },
+        "install_DATA_Source": {
+          "sha256": "c23e1569b6bb2a57fe1d1b3e97b9107565d2bf20542e1d9e5f9b8ba6b6a612f6",
+          "bytes": 24140
+        },
+        "actual_Root_exit": 0,
+        "actual_DATA_Root_exit": 0,
+        "finite_examples": 47,
+        "actual_CLI_stages": 22,
+        "actual_guest_stages": 9,
+        "container_stopped": true,
+        "pristine_custody_reserved_for": "browser",
+        "camera_runtime_passed": false,
+        "default_browser_passed": false,
+        "scope": "Separate actual setup/custody; finite47 and stopped idle container do not prove camera/browser runtime or application clean shutdown."
       }
     }
   ],
@@ -7267,20 +7434,20 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 77 phases are cataloged. Own current local/CI/official/release/package/install/camera and independent DATA proofs are complete. Browser origin approval is the only pending owner decision; no reply or invocation exists. Browser runtime and Main/public/M77 acceptance remain downstream and held. Earlier failures and public Latest M70 with 41 examples remain unchanged.",
+  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 77 phases are cataloged. All prior current qualification proofs remain intact. Owner chat approval is received, but the automatic app browser origin gate rejected the demo URL; no GUI proof exists. The failed actor is fully stopped and its used 8 GiB custody is preserved. No retry/fresh setup, Main/public action or acceptance is released while permission remains blocked. Latest M70 stays unchanged.",
   "current_delivery_group": [
     "M77"
   ],
   "current_development_phase": "M77",
   "board": {
-    "updated_at": "2026-11-20T11:36:12.443296+00:00",
+    "updated_at": "2026-11-20T12:26:53.836464+00:00",
     "current": {
-      "title": "M77 camera qualification passed; awaiting browser origin approval",
+      "title": "M77 browser demo is approved but blocked by app permission",
       "items": [
-        "All six installed camera trials and independent retained DATA passed, including full host ledger, zero-offset comparison, Scene/Clock barriers, reset, demand and removal.",
-        "Own current local, hosted/official, release/package/install and camera proofs are complete. Earlier wrapper and audit failures remain preserved; the bounded result index reconstructs the full summary.",
-        "Browser origin approval is the only pending owner decision. No owner reply exists and the browser has not run; its separate second pristine custody remains preserved.",
-        "Counts stay 76 of 77 and 202 slices. Accepted Main remains M76 and public Latest M70 retains 41 examples; browser runtime and final acceptance gates remain held."
+        "All prior local, hosted/official, release/package/install and six-trial camera DATA proofs remain complete. No qualification or accepted-count changes occurred.",
+        "Owner approval was recorded, but the automatic browser origin gate rejected the exact approved local URL before any navigation or checkpoints. No browser proof exists.",
+        "The reviewed actor exited one after owned cleanup; no job or fresh application listener remains active. Its second custody is used/stopped at 8 GiB, not pristine. Failed evidence and protected ports are preserved.",
+        "Counts stay 76 of 77 and 202 slices. Accepted Main remains M76 and public Latest M70 retains 41 examples; runtime retry and Main/public/acceptance remain held."
       ]
     },
     "done": [
@@ -7289,11 +7456,11 @@
       "All six camera trials and independent DATA passed. Failed wrapper and reader records remain preserved. The reader correction reused the successful camera run; no acceptance increment occurred."
     ],
     "next": [
-      "Await genuine current browser origin approval; then perform the reviewed browser demonstration and independent runtime evidence in its preserved pristine custody.",
-      "After required browser proof, complete Main/public gates and exact M77 acceptance."
+      "Resolve the Codex app browser permission denial. Any browser retry requires changed permission state and a new reviewed custody plan; no workaround or fresh install is selected.",
+      "After the required browser proof, complete Main/public gates and exact M77 acceptance."
     ],
     "blocker": {
-      "text": "Awaiting the owner’s current M77 browser origin approval; the question is already pending with no reply. Camera and all other qualification proofs are complete. Browser execution and Main/public/acceptance remain held downstream.",
+      "text": "The app browser security/origin gate rejected the demo despite recorded owner chat approval. No browser proof exists. Permission resolution and a new reviewed custody plan are required before retry; Main/public/acceptance remain held.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -7448,7 +7615,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M77_BROWSER_ORIGIN_OWNER_DECISION",
+  "current_development_task": "M77_BROWSER_APP_ORIGIN_PERMISSION_BLOCKED",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -7539,8 +7706,8 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_ALL_CAMERA_DATA_CLEAR_BROWSER_OWNER_DECISION_ONLY",
-    "recorded_at": "2026-11-20T11:36:12.443296+00:00",
+    "state": "M1_M76_ACCEPTED_M77_PRIOR_PROOFS_CLEAR_BROWSER_ORIGIN_POLICY_BLOCKED",
+    "recorded_at": "2026-11-20T12:26:53.836464+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
       "bytes": 8283,
@@ -7624,7 +7791,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "All current own prerequisite and camera proofs are complete. Await the already-requested browser origin approval, then obtain browser proof before exact Main/public/M77 acceptance. No browser invocation, owner approval or next feature is inferred.",
+    "next_phase_selection": "Owner browser approval is genuine, but the automatic app origin gate rejected the approved URL. Actor cleanup completed; no job or GUI proof remains. Hold retry/fresh setup/Main/public/acceptance until permission state changes and a new custody plan is reviewed.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
