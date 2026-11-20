@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T06:33:04.166197+00:00",
+  "as_of": "2026-11-20T07:20:03.822795+00:00",
   "execution_state": "active",
   "current_phase": "M77",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4944,8 +4944,8 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": true,
-      "qualification_state": "whole_Source_reviewed_accepted_parent_full_normal_running_no_result",
-      "current_stage": "M77 whole Source and factual parent reconciliation are independently reviewed. Root released one full ordinary staged-hook/normal/strict pipeline on the unchanged accepted dddf parent and exact frozen fe7b candidate. The actual process is running with no result. The 13 new Python controls are declarations until observed outcomes; no installed proof or M77 acceptance is claimed.",
+      "qualification_state": "own_local_normal_and_retained_DATA_clear_review_CI_running_fresh_four_role_build_running",
+      "current_stage": "M77 passed its own full local normal/strict and independent retained DATA at public review commit 353dc9ae. Exact review CI is running and the fresh four-role release build is active. Clean-install and camera operational Source is reviewed but remains held; package, installed proofs, official evidence, Main and M77 acceptance are pending.",
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
       "new_Source_finite_examples": 0,
@@ -4984,8 +4984,18 @@
         "Root_installed_proofs": "Operational artifacts/m77-delivery only; independent Source and retained DATA review remain mandatory."
       },
       "source_publication": {
-        "available": false,
-        "scope": "Local Source preparation only; no future M77 commit, branch or run is invented."
+        "available": true,
+        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "review_branch": "review/m77-installed-camera-preview",
+        "actual_nonforced_push_exit": 0,
+        "publication_receipt": {
+          "sha256": "1a4ac9f8e17894a1c26f01b86c9381d42e6317949d211bab5fa424901aafe64d",
+          "bytes": 2059
+        },
+        "remote_review_exact": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "Main_unchanged": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "scope": "Actual new ordinary review push and exact remote readback; no Main promotion or hosted success claimed."
       },
       "whole_Source_review": {
         "state": "INDEPENDENT_WHOLE_SOURCE_CLEAR",
@@ -5020,9 +5030,53 @@
         "same_parent_no_rebase": true,
         "M77_qualification_transferred": false
       },
-      "normal_qualified": false,
-      "checks_run_scope": "Root released the reviewed full ordinary staged-hook/normal/strict pipeline after exact accepted-parent and final binding review. It is running; no result or M77 qualification is claimed.",
+      "normal_qualified": true,
+      "checks_run_scope": "The complete ordinary staged-hook/normal/strict pipeline passed with actual Root and Git exits zero; independent retained DATA passed. Python evidence is a quiet aggregate, not per-declaration execution receipts.",
       "current_normal": {
+        "state": "ACTUAL_LOCAL_NORMAL_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
+        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
+        "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "actual_Root_exit": 0,
+        "actual_Git_exit": 0,
+        "elapsed_seconds": 1913.0819339470036,
+        "normal_actual": {
+          "sha256": "55a601500ca73f7e37d27a8993d7659f154d8dcb4be32149f59189d948c460f6",
+          "bytes": 1672
+        },
+        "result": {
+          "sha256": "b7d108bffd1b3b728865e51c1b82e80a29fd3a8c339c8a1b567c5a56cb81de93",
+          "bytes": 2838
+        },
+        "independent_DATA_actual": {
+          "sha256": "55de3728f1c3a9e56a5f770a62845dd77a639df1f33a69c1aab0779c4f109910",
+          "bytes": 1829
+        },
+        "independent_DATA_report": {
+          "sha256": "7186a7f38d58427bde0f9016a2c573412e48364b62ccfb5232b653bd048d7334",
+          "bytes": 36441
+        },
+        "headless_tests": {
+          "passed": 1762,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 169
+        },
+        "renderer_tests": {
+          "passed": 1367,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 158
+        },
+        "profiles_overlap": true,
+        "quiet_Python_aggregate": 494,
+        "individual_Python_results_observable": false,
+        "finite_source_runs": 47,
+        "CLI_controls": 21,
+        "installed_proof": false,
+        "accepted": false
+      },
+      "historical_normal_launch_observation": {
         "state": "ACTUAL_ROOT_LAUNCH_RUNNING_NO_RESULT",
         "launch_tool_chunk": "1a4d70",
         "solewatch_session_id": 9280,
@@ -5046,6 +5100,56 @@
         "actual_Git_exit": null,
         "result": null,
         "accepted": false
+      },
+      "historical_unpublished_Source_observation": {
+        "available": false,
+        "scope": "Local Source preparation only; no future M77 commit, branch or run is invented."
+      },
+      "independent_local_DATA_qualified": true,
+      "current_hosted_CI": {
+        "id": 44693213128,
+        "attempt": 1,
+        "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "branch": "review/m77-installed-camera-preview",
+        "event": "push",
+        "status": "in_progress",
+        "conclusion": null,
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
+        "initial_metadata": {
+          "sha256": "faeec9eb6b9cf22eee19dfb1bae211ac72f21f6773ea74f79756ee0240cd33bd",
+          "bytes": 12516
+        },
+        "scope": "Actual exact review push run observed in progress; no terminal conclusion or official artifact audit."
+      },
+      "current_release_build": {
+        "state": "ACTUAL_FRESH_FOUR_ROLE_BUILD_RUNNING_NO_RESULT",
+        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
+        "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "actual_launch_tool": "f3bb6f",
+        "solewatch_session_id": 22732,
+        "Root_observation": "Root reported actual launch; Root alone watches the existing process.",
+        "reviewed_command": {
+          "sha256": "6d3462f19aa8c235ba3b9ac824c2c2d9fd0085174dd9521b92ee9c35fbf98d76",
+          "bytes": 3738
+        },
+        "command_card_scope": "Retained prelaunch command/input binding; actual launch above is a separate observed fact.",
+        "actual_exit": null,
+        "role_outputs": null,
+        "result": null,
+        "package_assembled": false
+      },
+      "installed_proof_Source": {
+        "state": "INDEPENDENT_SOURCE_CLEAR_EXECUTION_HELD",
+        "clean_install_plan": {
+          "sha256": "638ca34e8f40f43cf81eaaf1d60954409cbcf4149f867f9d42546459f96575e2",
+          "bytes": 8238
+        },
+        "camera_adapter_plan": {
+          "sha256": "f176e563f921e80ac461a880471f01b86663337d869eff505c8619265edb0c17",
+          "bytes": 9709
+        },
+        "scope": "Mature clean Ubuntu method and six closed mixed-camera actor/guest/Scene/session profiles are reviewed. All future actual package/install/QA/camera bindings remain empty; no installed pass claimed."
       }
     }
   ],
@@ -5535,29 +5639,29 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M76 and 202 retained slices are accepted; 77 phases are cataloged. M76 exact own hosted CI, independent official DATA and actual Main/readbacks accepted unchanged dddf. M77 whole Source and factual parent/bindings are reviewed; Root launched its one full normal/strict pipeline, now running without a result. No M77 qualification or installed proof is claimed. Latest M70 remains Source 7094a31 with 41 installed examples; M77 targets 47, with Source 47/CLI 21 unchanged.",
+  "acceptance_boundary": "M1–M76 and 202 retained slices are accepted; 77 phases are cataloged. M77 passed its own local normal/strict and independent retained DATA at 353dc9ae, then a new review push/readback. Its exact review CI and fresh four-role release build are running; no installed, hosted, official, Main or M77 acceptance is claimed. Latest M70 remains Source 7094a31 with 41 installed examples; M77 targets 47, with Source 47/CLI 21 unchanged.",
   "current_delivery_group": [
     "M77"
   ],
   "current_development_phase": "M77",
   "board": {
-    "updated_at": "2026-11-20T06:33:04.166197+00:00",
+    "updated_at": "2026-11-20T07:20:03.822795+00:00",
     "current": {
-      "title": "M76 is accepted; M77 full qualification is running",
+      "title": "M77 passed local qualification; CI and release build are running",
       "items": [
-        "M76 passed its own exact hosted CI, independent official DATA and ordinary Main/readbacks. It is the unchanged accepted M77 parent.",
-        "M77 whole Source, 13 regression declarations and final parent/bindings are reviewed. Root launched one full normal/strict pipeline; it is running with no result.",
-        "No M77 installed proof or acceptance is claimed. Latest M70 remains its immutable 41-example package; M77 targets 47 existing worlds."
+        "M77 passed its own full normal/strict pipeline and independent retained audit. Its exact review commit is public; hosted CI is running.",
+        "The fresh four-role release build is running. Clean-install and mixed-camera procedures passed Source review and remain held for actual package and QA bindings.",
+        "M76 remains accepted Main. Counts stay 76 of 77 and 202 slices; Latest M70 has 41 installed examples, while M77 targets 47."
       ]
     },
     "done": [
       "76 of 77 cataloged phases and 202 reviewed slices are accepted; no new slice was appended.",
       "M76 is accepted at exact Main dddf1f42 after own review run 44681392983 attempt 1 and official evidence. All historical failures remain preserved.",
-      "M77 whole Source and accepted-parent reconciliation are clear. Source worlds and CLI cases stay 47 and 21; its installed target is separate from M70’s 41."
+      "M77 local qualification passed at its own exact commit: overlapping headless and renderer tests, 494 aggregate Python tests, 47 Source worlds and 21 CLI controls."
     ],
     "next": [
-      "Observe the existing full M77 normal/strict pipeline and preserve its actual exits, logs and any partial evidence.",
-      "After qualification, independently audit retained evidence and obtain fresh four-role package/install, camera/skew/browser and exact hosted/official/Main/release proofs."
+      "Observe the existing release build and exact review CI; retain actual terminal results before binding fresh package inputs.",
+      "Complete fresh package/install, mixed camera and skew, separate browser/shutdown, independent retained audits, official evidence, Main and public-release readbacks."
     ],
     "blocker": {
       "text": "",
@@ -5715,7 +5819,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M77_FULL_ORDINARY_NORMAL_AND_STRICT_VERIFICATION_RUNNING",
+  "current_development_task": "M77_FRESH_RELEASE_BUILD_AND_EXACT_REVIEW_CI_RUNNING",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -5806,8 +5910,8 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_FULL_NORMAL_RUNNING_NO_RESULT",
-    "recorded_at": "2026-11-20T06:25:45.867378+00:00",
+    "state": "M1_M76_ACCEPTED_M77_LOCAL_QUALIFIED_REVIEW_CI_AND_RELEASE_BUILD_RUNNING",
+    "recorded_at": "2026-11-20T07:20:03.822795+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
       "bytes": 8283,
@@ -5866,14 +5970,14 @@
       "id": 44687651179,
       "attempt": 1,
       "head_sha": "dddf1f4284557c420e384d263a4365b2153dfde2",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44687651179",
-      "initial_metadata": {
-        "bytes": 243,
-        "sha256": "0bd483c3b15e8d7ecb006972ce9e3d0f1b245ab7fa19ad0d82e6f5bdaf4d253a"
+      "terminal_metadata": {
+        "sha256": "189d432cd9001d557bf9452be0c77baed08c46b0cbb760f1dfaf6b6bfcb433b5",
+        "bytes": 12512
       },
-      "scope": "Separate initial automatic Main observation; no terminal result is inferred. Exact own review run 44681392983 succeeded and remains the qualifying hosted proof."
+      "scope": "Separate automatic accepted-M76 Main CI metadata success. Own qualifying M76 review run 44681392983 is distinct; no new artifact audit or M77 qualification transfers."
     },
     "historical_checkpoint_scope": "Frozen local_qualification, source_publication and parent progress objects retain their original observation-time flags. Current phase gate fields and current_acceptance_gate_progress record the later actual state.",
     "ordered_phase_acceptance_index": {
@@ -5891,7 +5995,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "M77 whole Source and exact accepted-parent/final bindings are reviewed. Root launched its one full normal/strict pipeline, which is running without a result. No M77 qualification transfers from M76.",
+    "next_phase_selection": "M77 own local normal/strict and independent retained DATA passed. Exact public review CI and a fresh four-role release build are running. Complete fresh installed and hosted/official/Main/public evidence before M77 acceptance.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
@@ -5913,6 +6017,19 @@
         "bytes": 616,
         "sha256": "57655a20f505876871b21dfe4e672771365b6f2acd9c9d8651a3f42ba77bb828"
       }
+    },
+    "historical_initial_M76_automatic_Main_CI": {
+      "id": 44687651179,
+      "attempt": 1,
+      "head_sha": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44687651179",
+      "initial_metadata": {
+        "bytes": 243,
+        "sha256": "0bd483c3b15e8d7ecb006972ce9e3d0f1b245ab7fa19ad0d82e6f5bdaf4d253a"
+      },
+      "scope": "Separate initial automatic Main observation; no terminal result is inferred. Exact own review run 44681392983 succeeded and remains the qualifying hosted proof."
     }
   },
   "historical_held_work_before_closeout": {
