@@ -1,20 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T11:18:39.035314+00:00",
-  "state": "active",
-  "summary": "M77 official qualification, recorder method and third install DATA passed. One affected camera recapture is running without a result; browser approval is pending. Counts stay 76 of 77 and 202 slices.",
+  "updated_at": "2026-11-20T11:36:12.443296+00:00",
+  "state": "blocked",
+  "summary": "M77 camera and independent DATA passed all six trials. Browser origin approval is the only pending owner decision; no reply or browser run exists. Counts stay 76 of 77 and 202 slices; final acceptance remains held.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M77-camera",
-      "title": "One affected camera recapture is running",
-      "detail": "The bounded recorder Source passed independent review and one 14-case artifact-method check. The third pristine setup and separate DATA passed 47 worlds through 23 CLI and nine guest stages. Root launched one affected camera recapture; no index/result or camera qualification is claimed."
-    },
-    {
-      "id": "M77-closeout",
-      "title": "Official qualification is clear; browser approval is pending",
-      "detail": "Own current hosted/official DATA passed, with both failed audit methods and the old camera Root1 preserved. First GPU-mutated custody is retained; the second browser custody stays pristine. Browser origin approval has no reply. Product Python remains 494; the 14 artifact-method controls are separate."
+      "id": "M77-owner-decision",
+      "title": "Awaiting current browser origin approval",
+      "detail": "All six camera trials and independent DATA passed, completing current local/hosted/official/distribution/camera prerequisites. The already-asked browser origin question has no owner reply. Browser has not run; its separate pristine custody is preserved. Main/public/M77 acceptance remain downstream."
     }
   ],
   "accepted_slices": [
@@ -1030,11 +1025,11 @@
     }
   ],
   "remaining": [
-    "Observe the sole affected camera recapture, then independently audit its actual indexed result and full host ledger before claiming camera qualification.",
-    "Obtain browser origin approval and runtime proof; complete Main/public gates after required runtime qualification before M77 acceptance."
+    "Await genuine current browser origin approval; then perform the reviewed browser demonstration and independent runtime evidence in its preserved pristine custody.",
+    "After required browser proof, complete Main/public gates and exact M77 acceptance."
   ],
   "blockers": [
-    "Browser origin approval remains pending with no owner reply. The sole affected camera recapture is running without a qualification result; the earlier wrapper Root1 remains failed and preserved."
+    "Awaiting the owner\u2019s current M77 browser origin approval; the question is already pending with no reply. Camera and all other qualification proofs are complete. Browser execution and Main/public/acceptance remain held downstream."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1085,7 +1080,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Own normal/DATA remains 1771 headless/1369 overlapping renderer tests, two ignored each, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Own hosted/official qualification passed. The recorder fix passed 14 separate artifact-method controls; product Python is unchanged. Third install/DATA passed the same 47 worlds with 23 CLI/nine guest stages. One affected camera recapture is active without result. Old camera Root1 remains unqualified; browser approval and Main/public acceptance are pending.",
+    "note": "Own normal/DATA: 1771 headless/1369 overlapping renderer tests, two ignored each, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Own hosted/official/distribution and all six camera trials plus independent DATA passed. The result index reconstructs 3,467,297 bytes in four parts under unchanged bounds. Earlier wrapper/audit failures stay failed. Grandchild waits remain UNKNOWN except direct zero-control exit 0; SDK quiescence is UNKNOWN. Browser approval is the only owner decision; browser and acceptance remain held.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1129,7 +1124,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Own current57 local/distribution and hosted/official qualification passed. Artifact-only recorder Source and 14-case method check, plus third pristine install/DATA, are clear. One affected camera recapture is active without result; no camera/runtime/phase/Main acceptance. Browser approval remains pending.",
+    "qualification_scope": "Own exact current57 local/CI/official/release/package/install/camera and independent DATA are complete. Browser origin approval is the sole owner decision; browser has not run. Grandchild waits remain UNKNOWN except direct zero-control0 and SDK dispatch quiescence UNKNOWN. M76 remains accepted Main; M77 acceptance is held.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1187,19 +1182,27 @@
       "release_DATA_qualified": true,
       "package_DATA_qualified": true,
       "pristine_install_DATA_qualified": true,
-      "installed_camera_runtime": false,
+      "installed_camera_runtime": true,
       "installed_browser_runtime": false,
-      "installed_camera_runtime_active": true,
+      "installed_camera_runtime_active": false,
       "installed_camera_launch": {
         "tool": "461208",
         "session": 47449,
-        "actual_Root_exit": null,
-        "result_index": null
+        "terminal_tool": "eb9f56",
+        "actual_Root_exit": 0,
+        "result_index": {
+          "sha256": "2e052cf5ca8f9866d770cea411e75068b3362f0ff570632fb75d09c5ecf40f34",
+          "bytes": 1965,
+          "mode": 384
+        }
       },
       "camera_recorder_Source_complete": true,
       "camera_recorder_method_check_passed": true,
       "artifact_only_method_cases": 14,
-      "third_install_DATA_qualified": true
+      "third_install_DATA_qualified": true,
+      "installed_camera_DATA_qualified": true,
+      "browser_origin_approval": null,
+      "browser_invoked": false
     },
     "installed_finite_scope": "Own current package passed the same 47 plain finite worlds in three distinct setup runs with separate DATA. Distinct census stays 47; current camera recapture, browser runtime and acceptance remain pending.",
     "historical_release_build_active_current_candidate": {
@@ -1413,7 +1416,64 @@
       "sha256": "5fdcc74757170d7c26ce0a56ba8264a1461059a27ab3de3d180e3dafb5a6e3d3",
       "bytes": 1436
     },
-    "historical_two_install_finite_scope": "Own current57 package passed the same47 plain finite commands in two distinct pristine setups with independent DATA. Distinct world census47, not94. No camera/browser runtime or acceptance claim."
+    "historical_two_install_finite_scope": "Own current57 package passed the same47 plain finite commands in two distinct pristine setups with independent DATA. Distinct world census47, not94. No camera/browser runtime or acceptance claim.",
+    "historical_affected_camera_active_current_candidate": {
+      "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "staged_tree": "b1dd0332656b233a1546dcca87733abe14305092",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "normal_running": false,
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "actual_Root_exit": 0,
+      "actual_Git_exit": 0,
+      "hosted_CI": {
+        "id": 44715646599,
+        "attempt": 1,
+        "status": "completed",
+        "conclusion": "success",
+        "official_collected": true,
+        "official_DATA": true
+      },
+      "release_build_active": false,
+      "qualification_inherited": false,
+      "release_DATA_qualified": true,
+      "package_DATA_qualified": true,
+      "pristine_install_DATA_qualified": true,
+      "installed_camera_runtime": false,
+      "installed_browser_runtime": false,
+      "installed_camera_runtime_active": true,
+      "installed_camera_launch": {
+        "tool": "461208",
+        "session": 47449,
+        "actual_Root_exit": null,
+        "result_index": null
+      },
+      "camera_recorder_Source_complete": true,
+      "camera_recorder_method_check_passed": true,
+      "artifact_only_method_cases": 14,
+      "third_install_DATA_qualified": true
+    },
+    "M77_installed_camera_actual": {
+      "sha256": "294648dac945709915cf1c05942a72ef48d6a31d85df48ad2acac48df1e23f8e",
+      "bytes": 2668
+    },
+    "M77_installed_camera_DATA_actual": {
+      "sha256": "b6da2e12ab6744780b277c75b27c69b93d7f3aa5a9ce2b92b9c17e41ffb9623c",
+      "bytes": 2026
+    },
+    "M77_installed_camera_DATA_report": {
+      "sha256": "0796f98b6267d32b774c270dec2a3a44c9044eb1771837b1d9a7a96ec49ea09a",
+      "bytes": 264804
+    },
+    "M77_installed_camera_DATA_Source": {
+      "sha256": "3f8ff98407fa82ad14808f7b0f5e8a18dac3519564a604c57f6c97aa76995148",
+      "bytes": 169381
+    },
+    "M77_camera_audit_method1_failure": {
+      "sha256": "b7b8fdcbdf264cdd49ad7da5ef5720138ecb63addfff2302d5a687cf1d762799",
+      "bytes": 1883
+    }
   },
   "phase_status": {
     "P0": "in_progress",
