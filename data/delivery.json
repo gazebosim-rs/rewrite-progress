@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-19T23:40:18.535963+00:00",
+  "as_of": "2026-11-20T00:16:56.526339+00:00",
   "execution_state": "active",
   "current_phase": "M75",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -3794,12 +3794,12 @@
       "normal_passed": true,
       "local_DATA_passed": true,
       "accepted": false,
-      "hosted_success": false,
+      "hosted_success": true,
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
       "qualification_state": "first_local_normal_and_corrected_audit_passed_review_branch_available_unaccepted",
-      "current_stage": "M74 local development completed provisionally on clean review-branch commit 487f0eab28b9fa505ae02becd71e74f69f54c65f (tree e025fe8101b2525f03ca794d39297a96a577d667, parent 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342). The first full normal genuinely returned Root/Git 0 after 1666.884146313998 seconds. Headless 1755 and renderer 1339 passes overlap, with two retained ignored controls per profile; Python 477 is quiet aggregate evidence. All 16 distinct new M74 Rust controls, 45 finite source runs and 19 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The first retained audit method genuinely failed because it assumed each profile must add executable changed lines; headless correctly has0/0 because its only production edit is a doc replacement and deletion of the skew refusal. The original reader/log/failure receipt remain preserved. A separately reviewed method2 independently proves that exact parent/current Source diff and all raw retained gates, then returned0 without product test, compiler, native or raw-merge replay. Its audit retained1693 members/673842385 bytes,1735 Source bindings,140 profile Sources,296 inputs and43 native-peer provenance records. Temporary ELF paths remain metadata rather than rehashed bytes. The owner explicitly requested all code be pushed: this exact commit and its qualified M70–M73 ancestors are now available on review/m74-signed-camera-skew. No M74 normal failure, distribution, installed-example, hosted success, acceptance, Main promotion or release publication is claimed. Every older failure remains retained. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; historical snapshot HTTP401 recovery remains unproven.",
+      "current_stage": "Historical local-qualification checkpoint, before subsequent hosted/official success (current gates recorded separately below): M74 local development completed provisionally on clean review-branch commit 487f0eab28b9fa505ae02becd71e74f69f54c65f (tree e025fe8101b2525f03ca794d39297a96a577d667, parent 03f3fc9dfc594ca7ebccb9af46ba8968b83ca342). The first full normal genuinely returned Root/Git 0 after 1666.884146313998 seconds. Headless 1755 and renderer 1339 passes overlap, with two retained ignored controls per profile; Python 477 is quiet aggregate evidence. All 16 distinct new M74 Rust controls, 45 finite source runs and 19 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The first retained audit method genuinely failed because it assumed each profile must add executable changed lines; headless correctly has0/0 because its only production edit is a doc replacement and deletion of the skew refusal. The original reader/log/failure receipt remain preserved. A separately reviewed method2 independently proves that exact parent/current Source diff and all raw retained gates, then returned0 without product test, compiler, native or raw-merge replay. Its audit retained1693 members/673842385 bytes,1735 Source bindings,140 profile Sources,296 inputs and43 native-peer provenance records. Temporary ELF paths remain metadata rather than rehashed bytes. The owner explicitly requested all code be pushed: this exact commit and its qualified M70–M73 ancestors are now available on review/m74-signed-camera-skew. No M74 normal failure, distribution, installed-example, hosted success, acceptance, Main promotion or release publication is claimed. Every older failure remains retained. Final parent acceptance/reconciliation and exact hosted/official/durable/Main gates remain mandatory; historical snapshot HTTP401 recovery remains unproven.",
       "source_finite_example_obligations": 45,
       "source_CLI_case_obligations": 19,
       "source_control_declarations": {
@@ -3901,6 +3901,35 @@
         "Main_promoted": false,
         "release_published": false,
         "hosted_success_claimed": false
+      },
+      "independent_official_DATA_passed": true,
+      "current_release_gate_progress": {
+        "hosted_run": 44627469212,
+        "attempt": 1,
+        "head": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
+        "terminal_success_metadata": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-hosted-terminal-metadata.json",
+          "bytes": 928,
+          "sha256": "1ce05139d3da7986f3fee3e2c16d983876082e1f97ead5ea117e2fdcd9c8cc53"
+        },
+        "official_method2_report": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-hosted-44627469212-attempt1/audit-method2/official-audit.json",
+          "bytes": 91689,
+          "sha256": "3b354cef24b484467bcac1453f9d8b5d9affdd6375e929f1de37749e221ba17e"
+        },
+        "official_method2_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-official-method2-actual-exit.json",
+          "bytes": 1447,
+          "sha256": "4e7aec11ce6797326037b6806ff073e476034ccde2d43e6cd4b505c1041d7e83"
+        },
+        "official_RAW_comparisons": 4,
+        "original_method1_failure": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-official-audit-method1-failure.json",
+          "bytes": 1956,
+          "sha256": "7041c1ddbbab548b21535a3556efc75f284ae5b5c23d746f273d8a7fd0035ee2"
+        },
+        "accepted": false,
+        "Main_promoted": false
       }
     },
     {
@@ -3923,15 +3952,15 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "checks_run": true,
-      "normal_passed": false,
-      "local_DATA_passed": false,
+      "normal_passed": true,
+      "local_DATA_passed": true,
       "accepted": false,
       "hosted_success": false,
       "predecessor_acceptance_required_before_checks": false,
       "predecessor_acceptance_required_before_acceptance": true,
       "installed_accepted_examples": 35,
-      "qualification_state": "reviewed_shared_CPP_warning_correction_full_local_retry_running_no_result",
-      "current_stage": "The first M75 full normal genuinely returned Root/Git1 after1637.821371822 seconds. Both Clippy profiles,479 aggregate Python controls,46 finite Source runs and20 CLI cases passed; headless passed1759 with0 failures/two ignored, while renderer passed1339 with14 failures/two ignored. Profile counts overlap. Every available renderer failure is the same new shared canonical C++ helper line1070 misleading-indentation diagnostic under unchanged-Werror. The new broad M75 image/native-consumer case failed at compilation before reaching its mask variants; no actual empty-background whole-frame proof is claimed. Lifecycle/private application controls passed only as partial evidence; full strict qualification remains incomplete. Frozen fc66 tree/logs/packet and failure00f796 remain untouched. A separately reviewed isolated successor changes exactly one C++ file by+4/-1, adding braces around the existing throw and moving the unconditional counter to its own line. All Rust, old C++ modes, assertions, image/depth/numeric bounds and gate settings are unchanged. Original Rust formatter0 is reused because Rust bytes are identical; mandatory normal fmt-check remains. The full affected retry is running on tree e0287e7d948e776fe4e0f80dfe37fcebcd15f221 over487f0ea, with no new result or independent DATA claimed. M74 exact automatic hosted CI44627469212 attempt1 succeeded; original ZIPs174001331 bytes are durably collected under genuine collectorRoot0. Its first official audit reader genuinely failed at inherited objects==6 before any four-RAW comparison, whereas actual retained roles are native3 plus RGB2. The original stopped marker/log/source remain preserved; a reviewed method2 uses closed role identities and a separate exclusive output directory, with no official clearance or Main promotion yet. Historical snapshot failures remain preserved, not a current external-snapshot blockage claim. Final parent and exact hosted/official/Main acceptance gates remain mandatory.",
+      "qualification_state": "full_local_normal_and_corrected_audit_passed_review_branch_available_unaccepted",
+      "current_stage": "M75 local development completed provisionally on qualified review-branch commit 616cc3e2105a7ef9479ac823a6b05e832a92defc (tree e0287e7d948e776fe4e0f80dfe37fcebcd15f221, parent 487f0eab28b9fa505ae02becd71e74f69f54c65f). The full retry returned Root/Git 0 after 1678.8313963880064 seconds; corrected retained method2 returned 0 and independent compact consistency review cleared. Headless 1759 and renderer 1353 passes overlap, with two ignored controls per profile; Python 479 is quiet aggregate evidence. All 14 distinct new Rust controls, 46 finite Source runs and 20 CLI cases passed. Strict workspace/per-crate line and region coverage and actual-parent changed-line gates passed. The audit retained 1797 members/694864567 bytes, 1739 Source bindings, 140 profile Sources, 296 inputs and 46 native-peer provenance records (29 headless/17 renderer). Raw profiles were hashed without remerge or test/native replay; temporary ELF identities remain metadata only. The original fc66 product failure and first retained-reader wrong-result-path failure remain unchanged; corrected method2 used the genuine successful attempt2 result without product replay. The exact commit was pushed nonforced to review/m75-camera-visibility-masks and read back; automatic hosted run 44644272919 attempt1 was initially in progress, not successful. No installed distribution, acceptance, Main promotion or release is claimed. Parent M74 hosted CI and independent official method2 passed with durable ZIP originals and four once-only RAW comparisons; its original failed method remains preserved. Exact M70–M73 review refs were atomically pushed and their automatic hosted runs were initially in progress. All remaining per-head hosted/official and accepted-parent/Main gates remain mandatory.",
       "source_finite_example_obligations": 46,
       "source_CLI_case_obligations": 20,
       "source_control_declarations": {
@@ -3967,8 +3996,8 @@
         "attempt": 2,
         "launch_tool": "c4f971",
         "session_id": 12712,
-        "actual_exit_code": null,
-        "state": "RUNNING_AT_SOURCE_PREPARATION",
+        "actual_exit_code": 0,
+        "state": "TERMINAL_SUCCESS",
         "runner": {
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/run-final-staged-hook-attempt2.py",
           "bytes": 8967,
@@ -3978,6 +4007,15 @@
           "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/source-state-attempt2.json",
           "bytes": 546433,
           "sha256": "b7bc6d83db85a559bb55d84e603d1851bc023bed6e4e2227bf1ee814d0ca146c"
+        },
+        "actual_git_exit_code": 0,
+        "terminal_tool": "62948d",
+        "elapsed_seconds": 1678.8313963880064,
+        "commit": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "terminal_receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/normal-actual-exit.json",
+          "bytes": 1465,
+          "sha256": "00b34485ac1c9c526ad367183a497038fc4f169f8048d5c1fb8bf1170625a84a"
         }
       },
       "M74_last_hosted_progress": {
@@ -4029,9 +4067,122 @@
           "bytes": 82074,
           "sha256": "04cb9bf8bb4d2e3e913fc63e495a235761c8dade19f0f90116c0fd688f35b709"
         },
-        "independent_official_DATA_passed": false,
+        "independent_official_DATA_passed": true,
+        "Main_promoted": false,
+        "accepted": false,
+        "official_method2_report": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-hosted-44627469212-attempt1/audit-method2/official-audit.json",
+          "bytes": 91689,
+          "sha256": "3b354cef24b484467bcac1453f9d8b5d9affdd6375e929f1de37749e221ba17e"
+        },
+        "official_method2_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/m74-official-method2-actual-exit.json",
+          "bytes": 1447,
+          "sha256": "4e7aec11ce6797326037b6806ff073e476034ccde2d43e6cd4b505c1041d7e83"
+        },
+        "official_RAW_comparisons_completed": 4,
+        "hosted_success": true
+      },
+      "locally_verified_commit": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+      "retained_audit_status": {
+        "method1_failure": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/independent-normal-audit-method1-failure.json",
+          "bytes": 2584,
+          "sha256": "ccb709d8197966066f34e5568f76338f99168bb421513d07b914b5f078751d6f"
+        },
+        "method1_actual_exit_code": 1,
+        "method2_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/independent-normal-audit-method2-actual-exit.json",
+          "bytes": 1720,
+          "sha256": "47ac19840cd26541ff96842ce16bade491ee6d2f117b1f12d9cb2f28077d3919"
+        },
+        "method2_actual_exit_code": 0,
+        "report": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/independent-normal-audit.json",
+          "bytes": 26679,
+          "sha256": "ca29fd2c189e69097cce1f4d82a0b7e5a2e047f65e63de505c0efadfe0390765"
+        },
+        "independent_compact_coherence_clear": true,
+        "product_replay": false,
+        "independent_DATA_passed": true
+      },
+      "parent_review_publication_progress": {
+        "publication": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/parent-review-publication.json",
+          "bytes": 2473,
+          "sha256": "170cef99f050dfd36f49e57801d56907603e70d60396caeb53cdab3c7f14e501"
+        },
+        "initial_hosted_observation": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/parent-review-initial-hosted-metadata.json",
+          "bytes": 1644,
+          "sha256": "af01ecfc39263a6f8472d1dff14cdcb4cdc0281c9c11979e87664cb856718c81"
+        },
+        "M70_run": 44641153608,
+        "M71_run": 44641153549,
+        "M72_run": 44641153598,
+        "M73_run": 44641155601,
+        "initial_status": "in_progress",
+        "conclusions_claimed": false,
+        "manual_retry_dispatch": false,
         "Main_promoted": false,
         "accepted": false
+      },
+      "local_development_complete": true,
+      "local_qualification_provisional": true,
+      "locally_qualified_commit": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+      "distribution_selected": false,
+      "local_qualification": {
+        "normal_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/normal-actual-exit.json",
+          "bytes": 1465,
+          "sha256": "00b34485ac1c9c526ad367183a497038fc4f169f8048d5c1fb8bf1170625a84a"
+        },
+        "independent_audit": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/independent-normal-audit.json",
+          "bytes": 26679,
+          "sha256": "ca29fd2c189e69097cce1f4d82a0b7e5a2e047f65e63de505c0efadfe0390765"
+        },
+        "audit_method2_actual": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/independent-normal-audit-method2-actual-exit.json",
+          "bytes": 1720,
+          "sha256": "47ac19840cd26541ff96842ce16bade491ee6d2f117b1f12d9cb2f28077d3919"
+        },
+        "Rust_controls_observed": 14,
+        "Python_aggregate": 479,
+        "headless_passed": 1759,
+        "renderer_passed": 1353,
+        "profile_counts_overlap": true,
+        "ignored_each_profile": 2,
+        "source_finite_runs": 46,
+        "auxiliary_CLI_cases": 20,
+        "installed_finite_example_runs": null,
+        "native_peer_provenance_records": 46,
+        "current_source_publication": true,
+        "hosted_success": false
+      },
+      "source_publication": {
+        "receipt": {
+          "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/review-publication.json",
+          "bytes": 1702,
+          "sha256": "ef9398e2b52e6c2539a6c0b9ef95625272f9756cae851452dea56c71a96f0287"
+        },
+        "commit": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "commit_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "branch": "review/m75-camera-visibility-masks",
+        "nonforced_push_actual_exit": 0,
+        "exact_ref_readback": true,
+        "Main_promoted": false,
+        "accepted": false
+      },
+      "automatic_hosted_run": {
+        "id": 44644272919,
+        "attempt": 1,
+        "head": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "status": "in_progress",
+        "conclusion": null,
+        "event": "push",
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44644272919",
+        "metadata_tool": "03cc20"
       }
     }
   ],
@@ -4519,33 +4670,34 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70 local distribution/runtime and M71–M74 local normal/strict/DATA passed provisionally; qualified Source is on the owner-authorized GitHub review branch, with no acceptance or Main release. M75 inherits no qualification. Final parent, exact hosted/official and Main gates remain mandatory.",
+  "acceptance_boundary": "M1–M69 and 202 slices remain accepted; M65 Latest has 35 installed examples. M70–M75 are locally qualified provisionally and their qualified Source is on owner-authorized GitHub review branches. M74 exact hosted CI and independent official DATA passed; M70–M73 and M75 hosted runs were in progress at the latest observation. Their exact official qualifications, final accepted-parent/Main reconciliation and M70 release obligations remain mandatory before acceptance.",
   "current_delivery_group": [
     "M75"
   ],
   "current_development_phase": "M75",
   "board": {
-    "updated_at": "2026-11-19T23:40:18.535963+00:00",
+    "updated_at": "2026-11-20T00:16:56.526339+00:00",
     "current": {
-      "title": "Qualifying camera visibility masks",
+      "title": "Camera visibility locally qualified",
       "items": [
-        "M75’s first gate failed: 1,759 headless tests passed; renderer tests had 14 failures from one shared C++ compilation warning. The failed candidate and logs remain preserved.",
-        "An independently reviewed one-file brace/layout correction preserves all assertions and numeric bounds. The full local retry is running, with no current result.",
-        "Empty RGB [43, 44, 47] and +INF-depth whole-frame proof remain pending. Earlier partial passes do not qualify the retry; full strict coverage and independent audit are still required."
+        "M75 full local normal/strict retry and corrected retained audit passed on 616cc3e. The qualified commit is pushed to GitHub for review; earlier product and reader failures are preserved.",
+        "All 14 new Rust controls passed, including mask selection, empty RGB/depth, immutable acquisitions and lifecycle checks. Its 46 finite examples are source runs, not installed examples.",
+        "M75’s automatic hosted run was initially in progress. M74 hosted CI and official audit passed; final per-head parent/Main reconciliation and release gates remain pending."
       ]
     },
     "done": [
       "M1–M69 and 202 slices are accepted; M65 remains Latest with 35 examples.",
-      "M70 local distribution/runtime and M71–M74 local normal/strict qualification and independent audits passed provisionally. Qualified Source is on GitHub for review; acceptance remains pending.",
-      "M74 exact review-branch CI succeeded and its original ZIPs are durably collected. The official audit remains pending after an inherited reader-count failure; no acceptance or Main promotion is claimed."
+      "M70 local distribution/runtime and M71–M75 local normal/strict qualification and independent audits passed provisionally. Qualified Source is on GitHub for review; acceptance remains pending.",
+      "M74 exact review-branch CI and independent official audit passed, with durable original ZIPs and four official RAW comparisons. The original failed reader is preserved; acceptance and Main promotion remain pending.",
+      "Exact M70–M73 qualified review branches were pushed atomically. Their four automatic hosted runs were in progress at the initial observation; no success is inferred."
     ],
     "next": [
-      "Complete the affected M75 full local normal/strict retry and independent audit, preserving the first failure.",
-      "Complete the corrected M74 official audit and final parent/Main reconciliation; M75 still needs its own exact hosted/official acceptance gates."
+      "Complete each exact-head hosted and independent official qualification, including M75; preserve all failures and durable originals.",
+      "Reconcile accepted parents and Main, retain release evidence and complete required readbacks before phase acceptance."
     ],
     "blocker": {
-      "text": "M74 hosted CI succeeded. Its official audit has not cleared: the first reader expected six retained ELFs instead of the actual three native plus two RGB roles. Final parent/Main reconciliation and M75 qualification remain pending.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44627469212"
+      "text": "M75 local qualification passed and its automatic hosted run was initially in progress. M74 hosted/official gates passed. Other exact per-head hosted/official checks, accepted-parent reconciliation and Main release gates remain open.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44644272919"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
@@ -4706,10 +4858,11 @@
       "M71",
       "M72",
       "M73",
-      "M74"
+      "M74",
+      "M75"
     ],
-    "source_commit": "487f0eab28b9fa505ae02becd71e74f69f54c65f",
-    "reason": "Selected M70 local distribution/runtime and M71–M74 local development obligations are complete provisionally and qualified Source is pushed for review. Exact M74 hosted CI succeeded; corrected official audit and final parent/Main reconciliation remain pending. M75 qualification is separate.",
+    "source_commit": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+    "reason": "Selected local obligations are complete provisionally and qualified Source is on GitHub for review. M74 hosted and official gates passed; M75’s automatic hosted run was initially in progress. Other exact per-head hosted/official gates and final accepted-parent/Main reconciliation remain pending.",
     "accepted": false,
     "included_in_this_candidate": true
   },
