@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T12:26:53.836464+00:00",
+  "as_of": "2026-11-20T14:40:38.574674+00:00",
   "execution_state": "active",
-  "current_phase": "M77",
+  "current_phase": "M78",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -4944,8 +4944,8 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": true,
-      "qualification_state": "all_prior_qualification_clear_browser_owner_approved_app_origin_policy_blocked",
-      "current_stage": "Owner approval was recorded, then the app browser gate rejected the exact approved local URL before any navigation or checkpoints. The owned actor exited one after one SIGINT and reviewed cleanup; no job remains active. Prior qualification and all failure evidence stay intact. The second browser custody is used/stopped, not pristine. App permission resolution and a new reviewed custody plan precede any retry; Main/public/acceptance stay held.",
+      "qualification_state": "nonbrowser_qualified_persistent_manual_demo_active_formal_browser_pending",
+      "current_stage": "All own non-browser qualification is complete. The separate owner-operated manual demo is running without session expiry and must remain until owner confirms stop. Formal browser qualification, Main/public gates and M77 acceptance remain pending; M78 Source implementation proceeds independently under D31.",
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
       "new_Source_finite_examples": 0,
@@ -5422,7 +5422,7 @@
         "accepted": false
       },
       "current_distribution_and_runtime": {
-        "state": "ALL_PRIOR_QUALIFICATION_INTACT_BROWSER_OWNER_APPROVED_APP_ORIGIN_PERMISSION_BLOCKED",
+        "state": "NONBROWSER_QUALIFICATION_COMPLETE_MANUAL_DEMO_ACTIVE_M78_SOURCE_PARALLEL",
         "fresh_release": {
           "sha256": "f18e8562257edf6f93db4f8524af071eb42328eea2764ea661f7bf579eef5301",
           "bytes": 3201
@@ -5462,6 +5462,65 @@
           }
         },
         "browser_actual": {
+          "state": "manual_demo_running_not_formal_browser_qualification",
+          "actual_Root_exit": null,
+          "manual_demo": {
+            "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
+            "session_id": 86363,
+            "actual_exit_code": null,
+            "ready": {
+              "sha256": "d17182bdd36694b4fdd0aebe1bbaea0e9a9ee92a0c08fe7289ea192fa1da1b54",
+              "bytes": 2319,
+              "mode": 436
+            },
+            "Source": {
+              "sha256": "8e5c7e8b269441e495b94f58933868a84d60b76d33fcd6d7481f50284ea52e6f",
+              "bytes": 57446,
+              "mode": 436
+            },
+            "Root_release": {
+              "sha256": "0ee88600cda16509fe73d4c3d4c5dd0e073320e75b048375f19caada9e21e348",
+              "bytes": 1900,
+              "mode": 436
+            },
+            "restart_approval": {
+              "sha256": "10695e4f6d8e23d6c8b0c2228e42f4a688e86d3cb3e32f2f30eb10ab82d0b385",
+              "bytes": 456,
+              "mode": 436
+            },
+            "session_expiry_timer": false,
+            "owner_stop_confirmation_required": true,
+            "manual_owner_browser_interaction": true,
+            "agent_GUI_qualification": false,
+            "browser_DATA": null,
+            "scope": "Actual Root receipt records this persistent manual session ready/running; no qualification checkpoints or browser DATA are inferred. Leave it running until owner confirms stop, except genuine fault/resource guards. M78 does not stop/restart or operate it.",
+            "actual_active_receipt": {
+              "sha256": "cd54f4cad62d2cb1c61ddf1b80a4b6147a084f61772d3554d2915144df7a8fad",
+              "bytes": 2473,
+              "mode": 436
+            },
+            "launch_tool": "18c05d",
+            "ready_tool": "c272fc",
+            "finite_watchdogs_and_resource_guards_retained": true,
+            "forward_turn_actual": {
+              "sha256": "3f3531f030a250b0d2e24a103c09b5133b81d9f27a1faa3b122ccd078dc31983",
+              "bytes": 2820,
+              "mode": 436
+            },
+            "owner_current_Play_reply": "Play is running",
+            "forward_helper_actual_exit": 0,
+            "turn_helper_actual_exit": 0,
+            "GUI_motion_observation_inferred": false,
+            "stop_authorized": false
+          },
+          "browser_DATA": null
+        },
+        "browser_origin_approval": {
+          "sha256": "c08dc5b0562f8990abc39c7d29126a9122febe5e626385e8cafaa5611d31d8bb",
+          "bytes": 582
+        },
+        "scope": "All qualified57 non-browser proofs remain intact. A separately owner-operated manual demo is active without session expiry; it is not formal GUI/browser qualification. M77 Main/public/acceptance remain pending while M78 Source implementation proceeds independently.",
+        "historical_automatic_browser_policy_failure": {
           "state": "actor_failed_origin_policy_denied_and_cleaned",
           "actual_Root_exit": 1,
           "actual_Root": {
@@ -5476,12 +5535,7 @@
           "navigation_succeeded": false,
           "checkpoints_written": false,
           "browser_DATA": null
-        },
-        "browser_origin_approval": {
-          "sha256": "c08dc5b0562f8990abc39c7d29126a9122febe5e626385e8cafaa5611d31d8bb",
-          "bytes": 582
-        },
-        "scope": "Own current local/CI/official/release/package/install/camera DATA remains complete. Owner approved the browser demo, but the automatic browser origin gate rejected navigation. The actor failed and was cleaned up; no job is active, no GUI proof exists, and the second custody is used/stopped at8GiB. Main/public/acceptance and any retry remain held until app permission changes and a new custody plan is reviewed."
+        }
       },
       "historical_failed_95ef_candidate": {
         "whole_Source_review": {
@@ -6791,72 +6845,62 @@
       },
       "camera_qualified": true,
       "current_browser": {
-        "state": "OWNER_APPROVED_BROWSER_ORIGIN_POLICY_REJECTED_ACTOR_FAILED_CLEANED",
-        "owner_question_already_asked": true,
-        "owner_reply": "Approve the M77 browser demo",
-        "origin_approval": {
-          "sha256": "c08dc5b0562f8990abc39c7d29126a9122febe5e626385e8cafaa5611d31d8bb",
-          "bytes": 582
-        },
-        "browser_invoked": false,
-        "browser_actual_Root": {
-          "sha256": "a442a0adcdf41a3b4e771187e900c29d90816f3f13146d920104d580990a93a6",
-          "bytes": 4179
-        },
-        "browser_DATA": null,
-        "second_pristine_custody_preserved": false,
-        "scope": "Owner chat approval is genuine. The automatic browser security/origin gate rejected creation of the exact approved8082 tab; no navigation/checkpoint occurred. The owned actor was interrupted once and fully reaped with stopped used8GiB custody and listeners absent. No successful browser/application shutdown proof or retry is inferred. Resolve app browser permission and review a new custody plan before any retry; no workaround.",
+        "state": "MANUAL_PERSISTENT_DEMO_ACTIVE_FORMAL_BROWSER_QUALIFICATION_PENDING",
         "owner_approval_received": true,
-        "actor_invoked": true,
-        "actor_launch_tool": "c14e45",
-        "actor_session_id": 94106,
-        "actor_terminal_tool": "ba87a1",
-        "actual_Root_exit": 1,
-        "actor_result": {
-          "sha256": "fc2ec9b78a0273226bfacf2619013fd2f3146e568e46cd16a2634969e4099da1",
-          "bytes": 117929,
-          "mode": 436
+        "browser_runtime_qualified": false,
+        "browser_DATA": null,
+        "manual_demo": {
+          "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
+          "session_id": 86363,
+          "actual_exit_code": null,
+          "ready": {
+            "sha256": "d17182bdd36694b4fdd0aebe1bbaea0e9a9ee92a0c08fe7289ea192fa1da1b54",
+            "bytes": 2319,
+            "mode": 436
+          },
+          "Source": {
+            "sha256": "8e5c7e8b269441e495b94f58933868a84d60b76d33fcd6d7481f50284ea52e6f",
+            "bytes": 57446,
+            "mode": 436
+          },
+          "Root_release": {
+            "sha256": "0ee88600cda16509fe73d4c3d4c5dd0e073320e75b048375f19caada9e21e348",
+            "bytes": 1900,
+            "mode": 436
+          },
+          "restart_approval": {
+            "sha256": "10695e4f6d8e23d6c8b0c2228e42f4a688e86d3cb3e32f2f30eb10ab82d0b385",
+            "bytes": 456,
+            "mode": 436
+          },
+          "session_expiry_timer": false,
+          "owner_stop_confirmation_required": true,
+          "manual_owner_browser_interaction": true,
+          "agent_GUI_qualification": false,
+          "browser_DATA": null,
+          "scope": "Actual Root receipt records this persistent manual session ready/running; no qualification checkpoints or browser DATA are inferred. Leave it running until owner confirms stop, except genuine fault/resource guards. M78 does not stop/restart or operate it.",
+          "actual_active_receipt": {
+            "sha256": "cd54f4cad62d2cb1c61ddf1b80a4b6147a084f61772d3554d2915144df7a8fad",
+            "bytes": 2473,
+            "mode": 436
+          },
+          "launch_tool": "18c05d",
+          "ready_tool": "c272fc",
+          "finite_watchdogs_and_resource_guards_retained": true,
+          "forward_turn_actual": {
+            "sha256": "3f3531f030a250b0d2e24a103c09b5133b81d9f27a1faa3b122ccd078dc31983",
+            "bytes": 2820,
+            "mode": 436
+          },
+          "owner_current_Play_reply": "Play is running",
+          "forward_helper_actual_exit": 0,
+          "turn_helper_actual_exit": 0,
+          "GUI_motion_observation_inferred": false,
+          "stop_authorized": false
         },
-        "finalization_sidecar": {
-          "sha256": "0b77ca69243c522fda701e00de2497c33a4bb9593546f5d26e7a00360627abdb",
-          "bytes": 317,
-          "mode": 436
-        },
-        "browser_navigation_succeeded": false,
-        "browser_checkpoints_written": false,
-        "origin_policy_rejection": {
-          "sha256": "87745fdecb04672b96cc2af88d092af6b61f0a2125a9bb9a6f5c877e6885de30",
-          "bytes": 2660
-        },
-        "automatic_review_reason": "User declined permission; origin approval gate did not grant access to http://127.0.0.1:8082. No browser egress authority. No workaround permitted.",
-        "second_custody_used_and_stopped": true,
-        "current_custody_memory_GiB": 8,
-        "cleanup": {
-          "host_actor_actual_exit": 1,
-          "host_actor_reaped": true,
-          "host_actor_proc_absent": true,
-          "cooperative_EOF_exited": true,
-          "owned_container_stopped": true,
-          "owned_container_PID": 0,
-          "maximum_layer_bytes": 38653094,
-          "idle_container_exit": 137,
-          "idle_exit_is_application_shutdown": false,
-          "fresh_application_ports_absent": [
-            7449,
-            8082,
-            9014
-          ],
-          "protected_ports_unchanged": [
-            8080,
-            9013
-          ],
-          "single_SIGINT_to_exact_owned_supervisor": true,
-          "actor_signal": 2
-        },
-        "active_owned_job": false,
-        "retry_released": false,
-        "new_custody_plan": null,
-        "app_browser_permission_resolution": null
+        "automatic_origin_policy_failure_preserved": true,
+        "automatic_permission_resolution_inferred": false,
+        "scope": "The prior automatic browser origin denial and cleaned Root1 actor remain historical evidence. A separate owner-operated manual demo is now ready/running without session expiry. No agent GUI checkpoints, browser DATA or successful application shutdown proof are claimed. M77 remains provisional."
       },
       "historical_browser_owner_decision_pending_observation": {
         "state": "HELD_FOR_CURRENT_OWNER_ORIGIN_APPROVAL",
@@ -6945,7 +6989,136 @@
         "camera_runtime_passed": false,
         "default_browser_passed": false,
         "scope": "Separate actual setup/custody; finite47 and stopped idle container do not prove camera/browser runtime or application clean shutdown."
+      },
+      "historical_owner_approved_automatic_browser_policy_failure": {
+        "state": "OWNER_APPROVED_BROWSER_ORIGIN_POLICY_REJECTED_ACTOR_FAILED_CLEANED",
+        "owner_question_already_asked": true,
+        "owner_reply": "Approve the M77 browser demo",
+        "origin_approval": {
+          "sha256": "c08dc5b0562f8990abc39c7d29126a9122febe5e626385e8cafaa5611d31d8bb",
+          "bytes": 582
+        },
+        "browser_invoked": false,
+        "browser_actual_Root": {
+          "sha256": "a442a0adcdf41a3b4e771187e900c29d90816f3f13146d920104d580990a93a6",
+          "bytes": 4179
+        },
+        "browser_DATA": null,
+        "second_pristine_custody_preserved": false,
+        "scope": "Owner chat approval is genuine. The automatic browser security/origin gate rejected creation of the exact approved8082 tab; no navigation/checkpoint occurred. The owned actor was interrupted once and fully reaped with stopped used8GiB custody and listeners absent. No successful browser/application shutdown proof or retry is inferred. Resolve app browser permission and review a new custody plan before any retry; no workaround.",
+        "owner_approval_received": true,
+        "actor_invoked": true,
+        "actor_launch_tool": "c14e45",
+        "actor_session_id": 94106,
+        "actor_terminal_tool": "ba87a1",
+        "actual_Root_exit": 1,
+        "actor_result": {
+          "sha256": "fc2ec9b78a0273226bfacf2619013fd2f3146e568e46cd16a2634969e4099da1",
+          "bytes": 117929,
+          "mode": 436
+        },
+        "finalization_sidecar": {
+          "sha256": "0b77ca69243c522fda701e00de2497c33a4bb9593546f5d26e7a00360627abdb",
+          "bytes": 317,
+          "mode": 436
+        },
+        "browser_navigation_succeeded": false,
+        "browser_checkpoints_written": false,
+        "origin_policy_rejection": {
+          "sha256": "87745fdecb04672b96cc2af88d092af6b61f0a2125a9bb9a6f5c877e6885de30",
+          "bytes": 2660
+        },
+        "automatic_review_reason": "User declined permission; origin approval gate did not grant access to http://127.0.0.1:8082. No browser egress authority. No workaround permitted.",
+        "second_custody_used_and_stopped": true,
+        "current_custody_memory_GiB": 8,
+        "cleanup": {
+          "host_actor_actual_exit": 1,
+          "host_actor_reaped": true,
+          "host_actor_proc_absent": true,
+          "cooperative_EOF_exited": true,
+          "owned_container_stopped": true,
+          "owned_container_PID": 0,
+          "maximum_layer_bytes": 38653094,
+          "idle_container_exit": 137,
+          "idle_exit_is_application_shutdown": false,
+          "fresh_application_ports_absent": [
+            7449,
+            8082,
+            9014
+          ],
+          "protected_ports_unchanged": [
+            8080,
+            9013
+          ],
+          "single_SIGINT_to_exact_owned_supervisor": true,
+          "actor_signal": 2
+        },
+        "active_owned_job": false,
+        "retry_released": false,
+        "new_custody_plan": null,
+        "app_browser_permission_resolution": null
       }
+    },
+    {
+      "id": "M78",
+      "title": "One posed box collision in Rapier",
+      "max_working_days": 5,
+      "depends_on": [
+        "M77"
+      ],
+      "scope": "Admit one finite translated/rotated SDF box collision per Rapier f64 link with resolved centered inertia, preserving old centered construction APIs and every other shape/count/engine restriction.",
+      "acceptance": "Complete implementation, additive regressions, docs and independent whole Source review with batched findings before Root consolidated qualification. Prove analytic composed geometry/rays, actual contacts, explicit COM/inertia, ordinary/prepared/loaded reset and removal, identity compatibility, atomic invalid refusal and unchanged unsupported domains. Require own full normal/strict coverage, exact hosted CI, retained local/official DATA and qualified Main after predecessor reconciliation.",
+      "excluded": "Compound collisions, other posed primitives, offset/automatic inertia, TPE expansion, solver/joint/renderer/camera/transport/package changes, new SDK/framework/performance claim and DART/MuJoCo.",
+      "contract": "docs/M78_DELIVERY.md",
+      "source_preparation_basis_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "accepted": false,
+      "distribution_selected": false,
+      "qualification_state": "Source_implementation_started_not_complete_checks_unrun",
+      "new_Source_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_Rust_Source_controls": null,
+      "new_Python_Source_controls": null,
+      "file_ownership": {
+        "physics": [
+          "crates/gz-physics/src/lib.rs",
+          "crates/gz-physics/src/backend.rs",
+          "crates/gz-physics/tests/private/backend.rs",
+          "crates/gz-physics-rapier/src/lib.rs",
+          "crates/gz-physics-rapier/src/posed_box.rs",
+          "crates/gz-physics-rapier/tests/posed_box.rs"
+        ],
+        "Scene": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/tests/posed_box.rs",
+          "crates/gz-sim-scene/tests/fixtures/m78_posed_box.sdf"
+        ],
+        "canonical_docs": [
+          "docs/M78_DELIVERY.md",
+          "planning/delivery-phases.json",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "docs/DECISIONS.md",
+          "README.md",
+          "AGENTS.md"
+        ],
+        "Root": "Shared integration, serial heavy operations and final bindings/publication; independent Source and DATA review required.",
+        "assigned_agents": {
+          "physics": "package_collector",
+          "Scene": "tracker_acceptance_closeout",
+          "canonical_docs": "m76_scope",
+          "integrator": "Root"
+        }
+      },
+      "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM."
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -7026,12 +7199,14 @@
     "M74": "complete",
     "M75": "complete",
     "M76": "complete",
-    "M77": "in_progress"
+    "M77": "in_progress",
+    "M78": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-20T05:55:17.049086+00:00",
   "active_phases": [
-    "M77"
+    "M77",
+    "M78"
   ],
   "execution_policy": "D30–D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -7434,39 +7609,37 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 77 phases are cataloged. All prior current qualification proofs remain intact. Owner chat approval is received, but the automatic app browser origin gate rejected the demo URL; no GUI proof exists. The failed actor is fully stopped and its used 8 GiB custody is preserved. No retry/fresh setup, Main/public action or acceptance is released while permission remains blocked. Latest M70 stays unchanged.",
+  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 78 phases are cataloged. M77 qualified57 remains provisional while a separate persistent manual demo is active; formal browser and Main/public/acceptance gates remain pending. M78 Source implementation is selected under D31 over unaccepted57 with accepted Main ancestorDDD, with no inherited qualification. Public Latest M70 remains Source7094a31/41 examples; Source finite47/CLI21 and provisional M77 installed47 remain distinct.",
   "current_delivery_group": [
-    "M77"
+    "M78"
   ],
-  "current_development_phase": "M77",
+  "current_development_phase": "M78",
   "board": {
-    "updated_at": "2026-11-20T12:26:53.836464+00:00",
+    "updated_at": "2026-11-20T14:40:38.574674+00:00",
     "current": {
-      "title": "M77 browser demo is approved but blocked by app permission",
+      "title": "M78 posed-box implementation; persistent M77 demo remains running",
       "items": [
-        "All prior local, hosted/official, release/package/install and six-trial camera DATA proofs remain complete. No qualification or accepted-count changes occurred.",
-        "Owner approval was recorded, but the automatic browser origin gate rejected the exact approved local URL before any navigation or checkpoints. No browser proof exists.",
-        "The reviewed actor exited one after owned cleanup; no job or fresh application listener remains active. Its second custody is used/stopped at 8 GiB, not pristine. Failed evidence and protected ports are preserved.",
-        "Counts stay 76 of 77 and 202 slices. Accepted Main remains M76 and public Latest M70 retains 41 examples; runtime retry and Main/public/acceptance remain held."
+        "M78 adds one translated or rotated Rapier box collision with resolved centered inertia. Disjoint Source implementation is underway; no M78 checks or results exist.",
+        "The manual M77 demo stays running without expiry. Forward and turn helpers exited zero after the owner reported Play running; formal GUI qualification is not inferred.",
+        "All M77 non-browser proofs remain complete. Accepted phases and slices stay 76 and 202; catalog is 78. Latest M70 retains its immutable 41-example package."
       ]
     },
     "done": [
-      "76 of 77 cataloged phases and 202 reviewed slices are accepted; no new slice was appended.",
-      "M76 is accepted at exact Main dddf1f42 after own review run 44681392983 attempt 1 and official evidence. All historical failures remain preserved.",
-      "All six camera trials and independent DATA passed. Failed wrapper and reader records remain preserved. The reader correction reused the successful camera run; no acceptance increment occurred."
+      "M1–M76 and 202 reviewed slices remain accepted. M77 own local, hosted/official, release/package/install and six-trial camera DATA proofs remain complete.",
+      "M78 scope and disjoint implementation leases were reviewed and released over qualified, unaccepted M77 Source. Frozen parents, all failures and Fuel work remain preserved."
     ],
     "next": [
-      "Resolve the Codex app browser permission denial. Any browser retry requires changed permission state and a new reviewed custody plan; no workaround or fresh install is selected.",
-      "After the required browser proof, complete Main/public gates and exact M77 acceptance."
+      "Finish M78 implementation, additive regression Source and docs; batch independent whole Source findings before Root releases consolidated required qualification.",
+      "Keep the manual demo running. Complete M77 formal browser qualification and its downstream Main/public/acceptance gates; manual operation does not transfer qualification."
     ],
     "blocker": {
-      "text": "The app browser security/origin gate rejected the demo despite recorded owner chat approval. No browser proof exists. Permission resolution and a new reviewed custody plan are required before retry; Main/public/acceptance remain held.",
+      "text": "M77 formal browser qualification remains pending. The earlier automatic origin rejection is preserved; the separate persistent manual demo does not satisfy that gate. M78 Source implementation may continue independently.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M77"
+    "M78"
   ],
   "camera_integration": {
     "scope": "Atomic M61–M64 qualification on accepted M60; no new phase",
@@ -7615,7 +7788,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M77_BROWSER_APP_ORIGIN_PERMISSION_BLOCKED",
+  "current_development_task": "M78_POSED_BOX_SOURCE_IMPLEMENTATION",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -7706,7 +7879,7 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_PRIOR_PROOFS_CLEAR_BROWSER_ORIGIN_POLICY_BLOCKED",
+    "state": "M1_M76_ACCEPTED_M77_MANUAL_DEMO_ACTIVE_M78_SOURCE_IMPLEMENTATION",
     "recorded_at": "2026-11-20T12:26:53.836464+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
@@ -7782,7 +7955,7 @@
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
     "accepted_phase_count": 76,
-    "catalog_count": 77,
+    "catalog_count": 78,
     "Latest": {
       "phase": "M70",
       "installed_examples": 41,
@@ -7791,7 +7964,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "Owner browser approval is genuine, but the automatic app origin gate rejected the approved URL. Actor cleanup completed; no job or GUI proof remains. Hold retry/fresh setup/Main/public/acceptance until permission state changes and a new custody plan is reviewed.",
+    "next_phase_selection": "M78 posed box collision selected and disjoint Source implementation released under owner continuation; Source over qualified unaccepted57, accepted ancestorDDD. No M78 checks/results or M77 GUI acceptance implied.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
@@ -7841,5 +8014,29 @@
     "reason": "Selected local obligations are complete provisionally and qualified Source is on GitHub for review. M74 hosted and official gates passed; M75’s automatic hosted run was initially in progress. Other exact per-head hosted/official gates and final accepted-parent/Main reconciliation remain pending.",
     "accepted": false,
     "included_in_this_candidate": true
+  },
+  "current_M78_Source": {
+    "scope_reviewed_and_lanes_released": true,
+    "Source_basis_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+    "Source_basis_accepted": false,
+    "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "implementation_started": true,
+    "implementation_complete": false,
+    "whole_independent_Source_review_complete": false,
+    "checks_run": false,
+    "qualification_inherited": false,
+    "contract": {
+      "sha256": "139f5b9e5a406a5aa88baad81201e3626bc5f5b84e621a5a2b5a7c9d2b085b43",
+      "bytes": 8055,
+      "mode": 436
+    },
+    "Source_publication_available": false,
+    "future_qualified_head": null,
+    "new_Rust_test_declarations": null,
+    "new_Python_test_declarations": null,
+    "Source_finite_examples": 47,
+    "Source_CLI_cases": 21,
+    "scope": "One finite local-pose Box collider per Rapier link with resolved centered inertia; old centered APIs, TPE/other-shape/count refusals retained. Test-owned fixture; no finite/CLI/package expansion. Root alone releases serial heavy work after complete implementation/regression/docs and independent Source review.",
+    "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM."
   }
 }
