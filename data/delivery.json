@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T05:33:50.863611+00:00",
+  "as_of": "2026-11-20T05:58:57.805183+00:00",
   "execution_state": "active",
-  "current_phase": "M76",
+  "current_phase": "M77",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -4893,6 +4893,86 @@
       "hosted_conclusion": null,
       "independent_official_DATA_passed": false,
       "Main_promoted": false
+    },
+    {
+      "id": "M77",
+      "title": "Installed camera preview through M76",
+      "max_working_days": 5,
+      "depends_on": [
+        "M76"
+      ],
+      "scope": "Add M77 package generation with 47 existing finite examples, the same four roles and unchanged accepted viewer. Add explicit M77-only launcher --camera-mixed-pair requiring --camera-output and forwarding the fixed existing CLI boolean. Preserve all older generation behavior and defaults.",
+      "acceptance": "Complete Source, meaningful package/runtime regressions, guides and whole independent review before one consolidated required normal/strict cycle. Require accepted M76 and final parent reconciliation before M77 checks/build/package/install; fresh same-head four-role release/notices/archive/relocation, 47 plain finite installed loads, actual installed mixed RGB/depth and signed-skew full-frame/canonical/lifecycle proofs, separate default browser/shutdown, independent retained DATA, exact hosted/official/Main and public/Latest/preservation readbacks.",
+      "excluded": "No new simulator examples or CLI cases, viewer/web-shape/schema/renderer/worker/physics changes, SDK/native render campaign, telemetry framework, Fuel changes, camera noise/distortion/RGBD/count/resolution expansion or performance claim.",
+      "contract": "docs/M77_DELIVERY.md",
+      "source_preparation_basis_commit": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "accepted_predecessor_required_before_checks": true,
+      "implementation_started": true,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": false,
+      "accepted": false,
+      "distribution_selected": true,
+      "qualification_state": "whole_Source_and_13_Python_regression_declarations_clear_checks_held_M76_acceptance_and_parent_reconciliation",
+      "current_stage": "The complete 14-path implementation, 13 new Python regression declarations and guide/planning batch passed independent whole Source review. Source preparation overlaps M76 hosted closeout under D31. M77 has no check or release result; checks, release build, package assembly and installed proofs wait for actual M76 acceptance and final parent reconciliation.",
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_Source_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "new_Python_Source_controls": 13,
+      "target_installed_examples": 47,
+      "currently_published_Latest": "M70",
+      "currently_installed_accepted_examples": 41,
+      "finite_load_command": "binary fixture --iterations 2 --step-ns 1000000",
+      "finite_load_command_scope": "All 47 loads are plain finite commands with no server, camera worker or mixed flag. Only actual live launcher camera trials use --camera-output --camera-mixed-pair.",
+      "removal_route": "Canonical gz.msgs.Entity request to /world/default/remove or /world/default/remove/blocking; no local remove_editable_model and no camera+lifecycle combination.",
+      "frame_oracle_scope": "Whole-frame finite values and any infinity mask derive from the exact fixture and admitted oracle; no universal infinity-background assumption.",
+      "file_ownership": {
+        "packaging": [
+          "scripts/package-preview.py",
+          "tests/test_preview_package.py"
+        ],
+        "Root_runtime": [
+          "scripts/preview_runtime.py",
+          "tests/test_preview_runtime.py"
+        ],
+        "Root_guides": [
+          "docs/M77_INSTALL.md",
+          "docs/M77_CAPABILITIES.md",
+          "docs/M77_PREVIEW.md"
+        ],
+        "canonical_docs": [
+          "docs/M77_DELIVERY.md",
+          "planning/delivery-phases.json",
+          "docs/DECISIONS.md",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "README.md",
+          "AGENTS.md"
+        ],
+        "Root_installed_proofs": "Operational artifacts/m77-delivery only; independent Source and retained DATA review remain mandatory."
+      },
+      "source_publication": {
+        "available": false,
+        "scope": "Local Source preparation only; no future M77 commit, branch or run is invented."
+      },
+      "whole_Source_review": {
+        "state": "INDEPENDENT_WHOLE_SOURCE_CLEAR",
+        "reviewed_paths": 14,
+        "new_Python_regression_declarations": 13,
+        "canonical_plan": {
+          "bytes": 389611,
+          "sha256": "d81e6e94fced361fd383a86589b43d64987f9359a814c2d20c8812dae083b1ba"
+        },
+        "contract": {
+          "bytes": 10477,
+          "sha256": "d6e34b5d4ddd21b769d4ce9350b1e8ccf306b044d3118ec6c07ac4b88666d7ab"
+        },
+        "review_basis": "Independent reviewer read the full integration, unchanged old test bodies, seven package and six runtime controls, all guides and canonical docs; reported no findings to Root. No checks were run.",
+        "checks_run": false
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -4972,12 +5052,14 @@
     "M73": "complete",
     "M74": "complete",
     "M75": "complete",
-    "M76": "in_progress"
+    "M76": "in_progress",
+    "M77": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-20T01:43:09.287137+00:00",
+  "phase_started_at": "2026-11-20T05:55:17.049086+00:00",
   "active_phases": [
-    "M76"
+    "M76",
+    "M77"
   ],
   "execution_policy": "D30–D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -5380,29 +5462,29 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 76 phases are cataloged. Latest M70 retains 41 installed examples from Source 7094a31. M76 commit dddf1f42 passed full local normal/strict and independent DATA, then was published nonforced for review. Its exact hosted run 44681392983 attempt 1 is in progress; official evidence and Main acceptance remain pending. Earlier failures, the capacity stop and cleanup evidence remain preserved. No M76 acceptance or new package is claimed.",
+  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 77 phases are cataloged. M76 dddf1f42 is locally qualified and published for review; exact hosted run 44681392983 attempt 1 remains in progress, with official/Main gates pending. M77 implementation, 13 regression declarations and guides passed whole Source review. M77 checks/build/package/install wait for actual M76 acceptance and reconciled parent. Latest M70 remains Source 7094a31 with 41 installed examples; M77 targets 47 existing worlds, with Source 47/CLI 21 unchanged.",
   "current_delivery_group": [
-    "M76"
+    "M77"
   ],
-  "current_development_phase": "M76",
+  "current_development_phase": "M77",
   "board": {
-    "updated_at": "2026-11-20T05:33:50.863611+00:00",
+    "updated_at": "2026-11-20T05:58:57.805183+00:00",
     "current": {
-      "title": "M76 is locally qualified; exact hosted CI is running",
+      "title": "M77 source is reviewed; M76 hosted closeout is running",
       "items": [
-        "The fourth full normal/strict gate and independent retained-data audit passed on the exact M76 commit. Source is available on its review branch.",
-        "Exact hosted CI is in progress. Official evidence and Main acceptance remain pending; local success does not complete those gates.",
-        "Both earlier failures, the disk-capacity stop and cleanup evidence remain preserved. Latest M70 still contains 41 installed examples."
+        "M77 implementation, 13 regression declarations and guides passed whole independent source review. It adds an installed preview generation and an explicit live mixed-pair option.",
+        "M77 checks and distribution proofs wait for actual M76 acceptance and final parent reconciliation. No M77 check result is claimed.",
+        "M76 is locally qualified and published for review; its exact hosted CI remains in progress. Official and Main gates are pending."
       ]
     },
     "done": [
-      "75 of 76 cataloged phases are accepted; 202 reviewed slices remain unchanged.",
-      "M76 passed 1,762 headless and 1,367 overlapping renderer tests, 481 aggregate Python checks, 47 finite source runs and 21 CLI cases.",
-      "Latest M70 remains the 41-example package built from Source 7094a31. The M76 candidate adds no installed package or acceptance increment."
+      "75 of 77 cataloged phases and 202 slices are accepted. Latest M70 retains 41 installed examples from Source 7094a31.",
+      "M76 full local normal/strict qualification and independent DATA passed. All earlier failures, the capacity stop and cleanup evidence remain preserved.",
+      "M77 whole Source review is clear. Its 47 installed examples are a target; Source worlds and CLI cases remain 47 and 21."
     ],
     "next": [
-      "Observe the existing exact-head hosted run without replaying local qualification; preserve its original evidence and actual outcome.",
-      "Complete independent official evidence and actual Main/readbacks before accepting M76. Select the next bounded retained delivery after that disposition."
+      "Finish M76 exact hosted, official and Main acceptance gates without replaying local qualification.",
+      "Reconcile the accepted parent, then release one consolidated M77 verification cycle before fresh build, package, installation and live-camera/browser proofs."
     ],
     "blocker": {
       "text": "",
@@ -5411,7 +5493,7 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M76"
+    "M77"
   ],
   "camera_integration": {
     "scope": "Atomic M61–M64 qualification on accepted M60; no new phase",
@@ -5560,7 +5642,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M76_EXACT_HOSTED_OFFICIAL_AND_MAIN_QUALIFICATION",
+  "current_development_task": "M77_REVIEWED_SOURCE_AND_M76_HOSTED_ACCEPTANCE_DEPENDENCY",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -5723,7 +5805,7 @@
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
     "accepted_phase_count": 75,
-    "catalog_count": 76,
+    "catalog_count": 77,
     "Latest": {
       "phase": "M70",
       "installed_examples": 41,
@@ -5732,7 +5814,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "M76 is locally qualified and published for review; exact hosted CI is in progress, with official DATA and Main acceptance pending. The next retained deliverable remains a read-only recommendation, not implementation."
+    "next_phase_selection": "M77 installed camera preview is selected and whole Source reviewed under D31. Its checks/build/package/install remain held for actual M76 acceptance and final parent reconciliation; no M77 qualification or acceptance is claimed."
   },
   "historical_held_work_before_closeout": {
     "phases": [
