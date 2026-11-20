@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T00:16:56.526339+00:00",
+  "updated_at": "2026-11-20T01:44:50.818505+00:00",
   "state": "active",
-  "summary": "M75 visibility masks passed full local normal/strict qualification and corrected audit; 616cc3e is pushed for review. Automatic hosted CI was initially in progress. M74 hosted/official gates passed; final acceptance remains pending.",
+  "summary": "M76 is selected for camera projection metadata and maintained M70 guides; implementation is underway and checks have not run. M1\u2013M75 and 202 slices are accepted. Latest M70 has 41 installed examples from Source 7094a31.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M75",
-      "title": "Camera visibility locally qualified",
-      "detail": "All 14 new Rust controls, 46 finite source runs and 20 CLI cases passed. Corrected audit and independent consistency review passed; qualified Source is on the review branch. Original product/reader failures remain preserved. M75 hosted CI and final parent/Main gates remain pending."
+      "id": "M76",
+      "title": "Preparing complete camera projection metadata source",
+      "detail": "Finite P.tx/P.ty will populate CameraInfo only; rendered calibration, images and worker requests stay unchanged. The isolated phase includes meaningful regressions and maintained M70 guide corrections. Implementation has started and remains incomplete. Independent whole-source review precedes one consolidated mandatory qualification; no M76 result is claimed."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,10 @@
     }
   ],
   "remaining": [
-    "Complete each exact-head hosted and independent official qualification, including M75; preserve all failures and durable originals.",
-    "Reconcile accepted parents and Main, retain release evidence and complete required readbacks before phase acceptance."
+    "Complete M76 implementation, meaningful regression source and maintained guides within its five-day budget, including review and required gates.",
+    "Review the whole source independently and batch findings before one consolidated normal/strict qualification; retain hosted, official and Main acceptance gates."
   ],
-  "blockers": [
-    "M75 local qualification passed and its automatic hosted run was initially in progress. M74 hosted/official gates passed. Other exact per-head hosted/official checks, accepted-parent reconciliation and Main release gates remain open."
-  ],
+  "blockers": [],
   "plan_status": {
     "REF-01": "in_progress",
     "REF-02": "in_progress",
@@ -1077,10 +1075,10 @@
       "partial": 9
     },
     "ci": {
-      "state": "pending",
+      "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44644272919"
     },
-    "note": "Review commit 616cc3e passed full local normal, strict workspace/per-crate coverage, actual-parent changed-line gates and corrected independent audit. Headless 1759 and renderer 1353 passes overlap; each has two ignored controls. Python 479 is quiet aggregate evidence. All 14 new Rust controls, 46 finite source runs and 20 CLI cases passed; 46 native-peer provenance records were audited. Original failures are retained. M75 hosted CI and final acceptance gates remain pending. M65 Latest has 35 installed examples; upstream counts are historical.",
+    "note": "Accepted M75 616cc3e passed normal, strict coverage, independent local DATA, first review CI and official audit. Headless 1759 and renderer 1353 overlap; each has two ignored controls. Python 479 is aggregate evidence; 14 new controls, 46 source runs and 20 CLI cases passed. These results do not qualify selected M76, which has no checks yet. Separate automatic Main CI was last observed in progress. Latest M70 has 41 installed examples from package Source 7094a31. Earlier failures and unknowns remain preserved.",
     "renderer_coverage": {
       "lines": [
         21549,
@@ -1097,7 +1095,26 @@
     "quiet_Python_individual_results_observable": false,
     "finite_example_runs": 46,
     "installed_finite_example_runs": null,
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/616cc3e2105a7ef9479ac823a6b05e832a92defc"
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/616cc3e2105a7ef9479ac823a6b05e832a92defc",
+    "automatic_Main_CI": {
+      "id": 44653390693,
+      "status": "in_progress",
+      "conclusion": null,
+      "scope": "Separate automatic Main run; not a replacement for the qualifying exact review runs."
+    },
+    "accepted_release": {
+      "phase": "M70",
+      "installed_examples": 41,
+      "package_build_Source": "7094a31890e78bc83c65f12a056dfb3918b7401a",
+      "release_id": 452158796,
+      "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
+      "public_and_Latest_HTTP_status": 200
+    },
+    "acceptance_index": {
+      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "bytes": 1614,
+      "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
+    }
   },
   "phase_status": {
     "P0": "in_progress",
