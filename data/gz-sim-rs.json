@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T09:21:00.622956+00:00",
+  "updated_at": "2026-11-20T10:05:25.980054+00:00",
   "state": "active",
-  "summary": "M77 query-completion controls passed Source review and final formatting. One full normal is running; the prior headless failure is preserved. Counts stay 76 of 77 and 202 slices; browser approval is pending.",
+  "summary": "M77 passed own full normal and retained DATA and is review-published. Hosted CI and the four-role build are running. Counts stay 76 of 77 and 202 slices; browser approval remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M77",
-      "title": "Query completion is in full verification",
-      "detail": "The prior normal failed at finite query EOF after all available headless targets completed; renderer was not reached and no commit was created. The reviewed EOF/timeout correction retains assertions and deadlines. One new full normal/strict pipeline is running without a result."
+      "title": "Current commit is locally qualified and review-published",
+      "detail": "Own full normal and retained DATA method2 passed at the corrected commit. The exact new review branch is published; Main and the original review branch are preserved. Current hosted CI is running without a terminal result. Earlier camera, normal and reader-method failures remain historical."
     },
     {
-      "id": "M77-history",
-      "title": "Earlier outcomes remain distinct",
-      "detail": "Original candidate 353 retains its local/distribution passes, hosted attempt 2 success and camera startup failure. The failed correction source and resource ledger are preserved. None of these results qualifies the current successor. Browser origin approval remains pending."
+      "id": "M77-distribution",
+      "title": "Four-role release build is running",
+      "detail": "Root launched the reviewed four-role builder from the locally qualified corrected commit. No output or build result is available yet. Fresh package, installs and camera/browser proofs still follow; browser origin approval remains pending."
     }
   ],
   "accepted_slices": [
@@ -1030,11 +1030,11 @@
     }
   ],
   "remaining": [
-    "Observe the sole full normal pipeline and independently audit its retained result before corrected-head distribution work.",
-    "Obtain fresh distribution and camera/browser proofs, including the pending browser origin approval; then complete hosted/official/Main/public gates."
+    "Observe hosted CI and the four-role build, then audit and assemble the fresh package before installed runtime proofs.",
+    "Complete camera/browser proofs, including pending browser origin approval, and official/Main/public gates before M77 acceptance."
   ],
   "blockers": [
-    "Browser origin approval remains pending: the owner was asked and has not replied. The new full normal is running without a result; fresh runtime proofs and all final gates remain required."
+    "Browser origin approval remains pending: the owner was asked and has not replied. Current hosted CI and release build are active; fresh installed/runtime proofs and all final gates remain required."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1064,15 +1064,15 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-    "rust_tests": 1762,
+    "revision": "57b44de10713dc6132c5549d769dac00dc041f56",
+    "rust_tests": 1771,
     "coverage": {
       "lines": [
-        33116,
+        33120,
         34018
       ],
       "regions": [
-        50547,
+        50549,
         52559
       ]
     },
@@ -1082,27 +1082,27 @@
       "partial": 9
     },
     "ci": {
-      "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128"
+      "state": "pending",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Existing measurements belong to frozen unaccepted candidate 353: headless 1762/renderer 1367 overlap, 494 aggregate Python tests and 47 installed finite worlds. Its hosted attempt 2 succeeded but camera startup failed. The prior correction normal failed once in headless query EOF handling. Current query-completion Source and final formatter are clear; one full normal is running without a result. No measurements transfer; M76 remains accepted Main and Latest M70 retains 41 installed examples.",
+    "note": "Current corrected commit passed own full normal and retained DATA: 1771 headless/1369 overlapping renderer tests, two ignored per profile, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Nine distinct Rust controls passed; the changed guard line is covered in both profiles against true parent and accepted ancestor. Hosted CI and four-role build are running. Installed runtime and acceptance remain pending; browser approval is still requested.",
     "renderer_coverage": {
       "lines": [
-        21569,
+        21567,
         22109
       ],
       "regions": [
-        32754,
+        32752,
         33999
       ]
     },
-    "renderer_rust_tests": 1367,
+    "renderer_rust_tests": 1369,
     "renderer_overlaps_headless": true,
     "quiet_Python_tests": 494,
     "quiet_Python_individual_results_observable": false,
     "finite_example_runs": 47,
-    "installed_finite_example_runs": 47,
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+    "installed_finite_example_runs": null,
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/tree/57b44de10713dc6132c5549d769dac00dc041f56",
     "automatic_Main_CI": {
       "id": 44687651179,
       "attempt": 1,
@@ -1129,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Existing numeric measurements/revision/linked CI describe frozen unaccepted candidate 353 only. The retained correction failed; the query-completion successor has one normal running and no result. No qualification is inherited. Accepted Main remains M76.",
+    "qualification_scope": "Latest own LOCAL results at exact corrected57 only. Accepted Main remains M76; hosted CI/release build are active and current-head package/install/runtime/official/Main/public acceptance remain pending. Original353 measurements and failed95ef/method1 history are retained separately.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1141,114 +1141,49 @@
     },
     "acceptance_index_scope": "Retained M70\u2013M75 index; the separate M76 acceptance receipt adds one accepted phase and zero slices.",
     "M77_normal_actual": {
-      "sha256": "55a601500ca73f7e37d27a8993d7659f154d8dcb4be32149f59189d948c460f6",
-      "bytes": 1672
+      "sha256": "68ea8ae610214078ac41b94b63d961fcebc5030e6e4ba6ad36570a6968363be9",
+      "bytes": 1747
     },
     "M77_local_DATA_actual": {
-      "sha256": "55de3728f1c3a9e56a5f770a62845dd77a639df1f33a69c1aab0779c4f109910",
-      "bytes": 1829
+      "sha256": "beeeb33d506d077edd332d43e4e67033a7546e972621ee868f21b94eade81094",
+      "bytes": 2351
     },
     "M77_local_DATA_report": {
-      "sha256": "7186a7f38d58427bde0f9016a2c573412e48364b62ccfb5232b653bd048d7334",
-      "bytes": 36441
+      "sha256": "d83749490d484572389981e65452420657a08ea80b1f4b613edb1e94839a820f",
+      "bytes": 44611
+    },
+    "M77_local_DATA_Source": {
+      "sha256": "ce23bb0b4818f593b9250353a9b5b9accd70031368be7c9e0a13ec21e0a98e75",
+      "bytes": 67381
     },
     "M77_review_publication": {
-      "sha256": "1a4ac9f8e17894a1c26f01b86c9381d42e6317949d211bab5fa424901aafe64d",
-      "bytes": 2059
+      "sha256": "ba09aac6df4a66ccd2e30cd2a2fb3c02e743404466d2c433ba4a74311d4373fe",
+      "bytes": 3581
     },
-    "M77_release_actual": {
-      "sha256": "c0c75b1536a5b3f2084ad3197939748020b9ddfd1d965b0ddf05bade10f6fc56",
-      "bytes": 3031
-    },
-    "M77_release_DATA_actual": {
-      "sha256": "81273c0001038d1b31cb4697731b8c8670ef695b5b4c785dd8ca817d5872f191",
-      "bytes": 1936
-    },
-    "M77_package_assembly_actual": {
-      "sha256": "5806eb2bc123f7f221e76624a507213b3640bd5d0468e29993981f9f5801e6d2",
-      "bytes": 1470
-    },
-    "M77_package_DATA_actual": {
-      "sha256": "3814dba48de42c06d768bbc53578d0e7f037f576d9996c20efc410eafcf19358",
-      "bytes": 1430
-    },
-    "M77_package_DATA_report": {
-      "sha256": "0f1a98a8a09d4e9fa2ce73fa53c1a8d0a2a06f69fa2b17e84bb7fca2702d53ff",
-      "bytes": 13549
-    },
-    "M77_hosted_attempt1_failure": {
-      "sha256": "1a06f191b2fb9e58b7241385a9d4571ea3422e8f8da1af2984a22f37e6c4401e",
-      "bytes": 2241
-    },
-    "M77_install_actual": {
-      "sha256": "49da2321097e3c5444af2a4df3d84ae56c14408917308b21d45919da550a2cba",
-      "bytes": 1495
-    },
-    "M77_hosted_retry_actual": {
-      "sha256": "31851ad2544832c3ed5ea95b73c387d2c8af7c64bf7e33df85b603b6b76717e3",
-      "bytes": 2475
-    },
-    "M77_hosted_attempt2_initial": {
-      "sha256": "e278dba55e8eab62d52716f0acd66682b4dfb1d549c7eb194aaeca0c7360203c",
-      "bytes": 12601
-    },
-    "installed_finite_scope": "Two distinct pristine setups each executed the same 47 plain finite world commands and passed independent retained DATA; distinct installed example census 47, no added phase/slice count or camera/browser credit.",
-    "M77_install_DATA_actual": {
-      "sha256": "d7dd5dfbd333cc411ee01415b023d4bc0ab8c3a1d53e84cafc7a6672ed8375ee",
-      "bytes": 1524
-    },
-    "M77_browser_distinct_install_actual": {
-      "sha256": "8d7e662710f357037def8246c3516c51e0095b73b6d9a7be0310d755a6a4b99c",
-      "bytes": 1625
-    },
-    "M77_browser_distinct_install_DATA_actual": {
-      "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
-      "bytes": 1557
-    },
-    "M77_original_353_hosted_attempt2_terminal": {
-      "sha256": "b86a7b4d58c26b700ecfd3375b49a6ac548460a81cc867397f607ffe87baf46f",
-      "bytes": 2452
-    },
-    "M77_original_353_camera_failure": {
-      "sha256": "8bf0fb23865d92a50977782ab20b9415a5f967a77ec82a7fb62d7f17c71a4b5e",
-      "bytes": 2040
+    "M77_retained_method1_failure": {
+      "sha256": "6ede43a7b542dc831c9060240c17d934b31bd2ab6f1887cc596f678e8ae1d8c1",
+      "bytes": 1988
     },
     "current_candidate": {
+      "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
       "staged_tree": "b1dd0332656b233a1546dcca87733abe14305092",
       "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
       "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
-      "published_commit": null,
-      "normal_running": true,
-      "launch_tool": "c700ff",
-      "solewatch_session_id": 44185,
-      "actual_Root_exit": null,
-      "actual_Git_exit": null,
-      "tests_passed": null,
-      "coverage": null,
-      "current_head_CI": null,
+      "normal_running": false,
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "actual_Root_exit": 0,
+      "actual_Git_exit": 0,
+      "hosted_CI": {
+        "id": 44715646599,
+        "attempt": 1,
+        "status": "in_progress",
+        "conclusion": null
+      },
+      "release_build_active": true,
       "qualification_inherited": false
     },
-    "historical_failed_95ef_current_candidate": {
-      "staged_tree": "95ef6ceddd916c07516828ef8a3dcdd4a9b6c6a0",
-      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
-      "published_commit": null,
-      "normal_running": true,
-      "actual_Root_exit": null,
-      "actual_Git_exit": null,
-      "tests_passed": null,
-      "coverage": null,
-      "current_head_CI": null,
-      "qualification_inherited": false
-    },
-    "M77_failed_95ef_normal_actual": {
-      "sha256": "a7183fa08baa6f03f8ce480941c504a014c187a72425367666020918305f0363",
-      "bytes": 1673
-    },
-    "M77_failed_95ef_normal_failure": {
-      "sha256": "ba307d775fb4d778c2d0251f10aa1579a0329c197cf7ab96fe352842401b717a",
-      "bytes": 3158
-    }
+    "installed_finite_scope": "No current57 installed-run result yet. The two pristine47-world installations at unaccepted353 remain historical; public Latest M70 still retains41 examples."
   },
   "phase_status": {
     "P0": "in_progress",
@@ -1549,6 +1484,193 @@
     "M77_browser_distinct_install_DATA_actual": {
       "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
       "bytes": 1557
+    }
+  },
+  "historical_pre_57_M77_quality": {
+    "revision": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+    "rust_tests": 1762,
+    "coverage": {
+      "lines": [
+        33116,
+        34018
+      ],
+      "regions": [
+        50547,
+        52559
+      ]
+    },
+    "upstream": {
+      "total": null,
+      "ported": 4,
+      "partial": 9
+    },
+    "ci": {
+      "state": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128"
+    },
+    "note": "Existing measurements belong to frozen unaccepted candidate 353: headless 1762/renderer 1367 overlap, 494 aggregate Python tests and 47 installed finite worlds. Its hosted attempt 2 succeeded but camera startup failed. The prior correction normal failed once in headless query EOF handling. Current query-completion Source and final formatter are clear; one full normal is running without a result. No measurements transfer; M76 remains accepted Main and Latest M70 retains 41 installed examples.",
+    "renderer_coverage": {
+      "lines": [
+        21569,
+        22109
+      ],
+      "regions": [
+        32754,
+        33999
+      ]
+    },
+    "renderer_rust_tests": 1367,
+    "renderer_overlaps_headless": true,
+    "quiet_Python_tests": 494,
+    "quiet_Python_individual_results_observable": false,
+    "finite_example_runs": 47,
+    "installed_finite_example_runs": 47,
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+    "automatic_Main_CI": {
+      "id": 44687651179,
+      "attempt": 1,
+      "head_sha": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44687651179",
+      "terminal_metadata": {
+        "sha256": "189d432cd9001d557bf9452be0c77baed08c46b0cbb760f1dfaf6b6bfcb433b5",
+        "bytes": 12512
+      },
+      "scope": "Separate automatic accepted-M76 Main CI metadata success. Own qualifying M76 review run 44681392983 is distinct; no new artifact audit or M77 qualification transfers."
+    },
+    "accepted_release": {
+      "phase": "M70",
+      "installed_examples": 41,
+      "package_build_Source": "7094a31890e78bc83c65f12a056dfb3918b7401a",
+      "release_id": 452158796,
+      "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
+      "public_and_Latest_HTTP_status": 200
+    },
+    "acceptance_index": {
+      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "bytes": 1614,
+      "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
+    },
+    "qualification_scope": "Existing numeric measurements/revision/linked CI describe frozen unaccepted candidate 353 only. The retained correction failed; the query-completion successor has one normal running and no result. No qualification is inherited. Accepted Main remains M76.",
+    "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "M76_acceptance_receipt": {
+      "bytes": 3134,
+      "sha256": "f5728d187664ade59eea645615d617ae3f32d69f184b3227dde2a76c59ed9511"
+    },
+    "M76_Main_promotion": {
+      "bytes": 3302,
+      "sha256": "f34263d4f78852242910dac57288a7cedb7808201f084b80a513578e1f7459c7"
+    },
+    "acceptance_index_scope": "Retained M70\u2013M75 index; the separate M76 acceptance receipt adds one accepted phase and zero slices.",
+    "M77_normal_actual": {
+      "sha256": "55a601500ca73f7e37d27a8993d7659f154d8dcb4be32149f59189d948c460f6",
+      "bytes": 1672
+    },
+    "M77_local_DATA_actual": {
+      "sha256": "55de3728f1c3a9e56a5f770a62845dd77a639df1f33a69c1aab0779c4f109910",
+      "bytes": 1829
+    },
+    "M77_local_DATA_report": {
+      "sha256": "7186a7f38d58427bde0f9016a2c573412e48364b62ccfb5232b653bd048d7334",
+      "bytes": 36441
+    },
+    "M77_review_publication": {
+      "sha256": "1a4ac9f8e17894a1c26f01b86c9381d42e6317949d211bab5fa424901aafe64d",
+      "bytes": 2059
+    },
+    "M77_release_actual": {
+      "sha256": "c0c75b1536a5b3f2084ad3197939748020b9ddfd1d965b0ddf05bade10f6fc56",
+      "bytes": 3031
+    },
+    "M77_release_DATA_actual": {
+      "sha256": "81273c0001038d1b31cb4697731b8c8670ef695b5b4c785dd8ca817d5872f191",
+      "bytes": 1936
+    },
+    "M77_package_assembly_actual": {
+      "sha256": "5806eb2bc123f7f221e76624a507213b3640bd5d0468e29993981f9f5801e6d2",
+      "bytes": 1470
+    },
+    "M77_package_DATA_actual": {
+      "sha256": "3814dba48de42c06d768bbc53578d0e7f037f576d9996c20efc410eafcf19358",
+      "bytes": 1430
+    },
+    "M77_package_DATA_report": {
+      "sha256": "0f1a98a8a09d4e9fa2ce73fa53c1a8d0a2a06f69fa2b17e84bb7fca2702d53ff",
+      "bytes": 13549
+    },
+    "M77_hosted_attempt1_failure": {
+      "sha256": "1a06f191b2fb9e58b7241385a9d4571ea3422e8f8da1af2984a22f37e6c4401e",
+      "bytes": 2241
+    },
+    "M77_install_actual": {
+      "sha256": "49da2321097e3c5444af2a4df3d84ae56c14408917308b21d45919da550a2cba",
+      "bytes": 1495
+    },
+    "M77_hosted_retry_actual": {
+      "sha256": "31851ad2544832c3ed5ea95b73c387d2c8af7c64bf7e33df85b603b6b76717e3",
+      "bytes": 2475
+    },
+    "M77_hosted_attempt2_initial": {
+      "sha256": "e278dba55e8eab62d52716f0acd66682b4dfb1d549c7eb194aaeca0c7360203c",
+      "bytes": 12601
+    },
+    "installed_finite_scope": "Two distinct pristine setups each executed the same 47 plain finite world commands and passed independent retained DATA; distinct installed example census 47, no added phase/slice count or camera/browser credit.",
+    "M77_install_DATA_actual": {
+      "sha256": "d7dd5dfbd333cc411ee01415b023d4bc0ab8c3a1d53e84cafc7a6672ed8375ee",
+      "bytes": 1524
+    },
+    "M77_browser_distinct_install_actual": {
+      "sha256": "8d7e662710f357037def8246c3516c51e0095b73b6d9a7be0310d755a6a4b99c",
+      "bytes": 1625
+    },
+    "M77_browser_distinct_install_DATA_actual": {
+      "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
+      "bytes": 1557
+    },
+    "M77_original_353_hosted_attempt2_terminal": {
+      "sha256": "b86a7b4d58c26b700ecfd3375b49a6ac548460a81cc867397f607ffe87baf46f",
+      "bytes": 2452
+    },
+    "M77_original_353_camera_failure": {
+      "sha256": "8bf0fb23865d92a50977782ab20b9415a5f967a77ec82a7fb62d7f17c71a4b5e",
+      "bytes": 2040
+    },
+    "current_candidate": {
+      "staged_tree": "b1dd0332656b233a1546dcca87733abe14305092",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "published_commit": null,
+      "normal_running": true,
+      "launch_tool": "c700ff",
+      "solewatch_session_id": 44185,
+      "actual_Root_exit": null,
+      "actual_Git_exit": null,
+      "tests_passed": null,
+      "coverage": null,
+      "current_head_CI": null,
+      "qualification_inherited": false
+    },
+    "historical_failed_95ef_current_candidate": {
+      "staged_tree": "95ef6ceddd916c07516828ef8a3dcdd4a9b6c6a0",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "published_commit": null,
+      "normal_running": true,
+      "actual_Root_exit": null,
+      "actual_Git_exit": null,
+      "tests_passed": null,
+      "coverage": null,
+      "current_head_CI": null,
+      "qualification_inherited": false
+    },
+    "M77_failed_95ef_normal_actual": {
+      "sha256": "a7183fa08baa6f03f8ce480941c504a014c187a72425367666020918305f0363",
+      "bytes": 1673
+    },
+    "M77_failed_95ef_normal_failure": {
+      "sha256": "ba307d775fb4d778c2d0251f10aa1579a0329c197cf7ab96fe352842401b717a",
+      "bytes": 3158
     }
   }
 }
