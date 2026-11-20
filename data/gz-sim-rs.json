@@ -1,15 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T05:33:50.863611+00:00",
+  "updated_at": "2026-11-20T05:58:57.805183+00:00",
   "state": "active",
-  "summary": "M76 passed full local normal/strict qualification and independent DATA; exact hosted CI is running. Official and Main gates remain pending. M1\u2013M75, 202 slices and Latest M70\u2019s 41 examples remain accepted.",
+  "summary": "M77 implementation, regression declarations and guides are source reviewed; checks wait for M76 acceptance. M76 exact hosted CI is running. M1\u2013M75, 202 slices and Latest M70\u2019s 41 examples remain accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
+      "id": "M77",
+      "title": "Reviewed installed-preview source awaits its accepted parent",
+      "detail": "Whole independent Source review passed for implementation, 13 new Python regression declarations and guides. The target package has 47 existing examples and an explicit live mixed-pair option; Source worlds/CLI cases stay 47/21. M77 checks, builds, packaging and installed proofs are held for actual M76 acceptance and final parent reconciliation."
+    },
+    {
       "id": "M76",
-      "title": "Exact hosted and acceptance gates are pending",
-      "detail": "The exact published M76 commit passed its full fourth normal/strict gate and independent retained-data audit. Hosted run 44681392983 attempt 1 is in progress; no hosted success, official qualification or Main acceptance is claimed. Earlier failures, the capacity stop and cleanup evidence remain preserved. Local qualification is separate from the unchanged 41-example M70 package."
+      "title": "Exact hosted and acceptance gates remain pending",
+      "detail": "The exact review-published M76 commit passed full local normal/strict qualification and independent retained DATA. Hosted run 44681392983 attempt 1 remains in progress; official evidence and Main acceptance are pending. Earlier failures, the capacity stop and cleanup evidence remain preserved."
     }
   ],
   "accepted_slices": [
@@ -1025,8 +1030,8 @@
     }
   ],
   "remaining": [
-    "Observe the existing exact-head hosted run without replaying local qualification; preserve its original evidence and actual outcome.",
-    "Complete independent official evidence and actual Main/readbacks before accepting M76. Select the next bounded retained delivery after that disposition."
+    "Finish M76 exact hosted, official and Main acceptance gates without replaying local qualification.",
+    "Reconcile the accepted parent, then release one consolidated M77 verification cycle before fresh build, package, installation and live-camera/browser proofs."
   ],
   "blockers": [],
   "plan_status": {
@@ -1078,7 +1083,7 @@
       "state": "pending",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "M76 dddf1f42 passed full local normal/strict and independent DATA: headless 1762 and renderer 1367 overlap, with two ignored controls per profile; Python 481 is aggregate evidence. All 14 new Rust controls, 47 source runs and 21 CLI cases passed. Headless changed lines 0/0 are pure deletion; renderer 28/28. Exact hosted CI is in progress; official/Main acceptance is pending. All failures and the capacity stop remain preserved. Accepted M75 quality is retained separately. Latest M70 has 41 installed examples from 7094a31.",
+    "note": "M76 dddf1f42 passed full local normal/strict and independent DATA: headless 1762 and renderer 1367 overlap, with two ignored controls per profile; Python 481 is aggregate evidence. All 14 new Rust controls, 47 source runs and 21 CLI cases passed. Exact hosted CI remains in progress; official/Main acceptance is pending. M77 whole Source and 13 Python declarations are reviewed, not executed; checks wait for accepted M76. Accepted M75 quality is retained separately. Latest M70 has 41 installed examples from 7094a31.",
     "renderer_coverage": {
       "lines": [
         21567,
