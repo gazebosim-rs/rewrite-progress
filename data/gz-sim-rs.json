@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T08:46:35.023627+00:00",
+  "updated_at": "2026-11-20T09:21:00.622956+00:00",
   "state": "active",
-  "summary": "M77 camera startup failed; the reviewed correction is running one full normal gate. Original candidate 353 hosted attempt 2 success is separate. Counts stay 76 of 77 and 202 slices; Latest M70 remains unchanged.",
+  "summary": "M77 query-completion controls passed Source review and final formatting. One full normal is running; the prior headless failure is preserved. Counts stay 76 of 77 and 202 slices; browser approval is pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M77",
-      "title": "Corrected camera admission is in full verification",
-      "detail": "The confirmed startup guard failure is preserved. Corrected nonzero web visibility admission and wrench preconditions passed Source review and one final formatter. Root launched one full normal/strict gate on staged tree 95ef over unaccepted candidate 353; it is running with no result."
+      "title": "Query completion is in full verification",
+      "detail": "The prior normal failed at finite query EOF after all available headless targets completed; renderer was not reached and no commit was created. The reviewed EOF/timeout correction retains assertions and deadlines. One new full normal/strict pipeline is running without a result."
     },
     {
       "id": "M77-history",
-      "title": "Original candidate outcomes remain historical",
-      "detail": "Original candidate 353 retains local/distribution passes, camera startup failure and actual hosted attempt2 success. Reported guest-final exit 1, cleanup Docker CLI exit 0 and unknown guest OS wait stay distinct; no application clean shutdown or camera trial passed. No old result qualifies corrected Source."
+      "title": "Earlier outcomes remain distinct",
+      "detail": "Original candidate 353 retains its local/distribution passes, hosted attempt 2 success and camera startup failure. The failed correction source and resource ledger are preserved. None of these results qualifies the current successor. Browser origin approval remains pending."
     }
   ],
   "accepted_slices": [
@@ -1030,11 +1030,11 @@
     }
   ],
   "remaining": [
-    "Observe the sole corrected full normal pipeline, then independently audit its exact retained result before any release/package operation.",
-    "Obtain fresh corrected-head distribution and camera/browser proofs, including the pending browser origin approval; then complete hosted/official/Main/public gates."
+    "Observe the sole full normal pipeline and independently audit its retained result before corrected-head distribution work.",
+    "Obtain fresh distribution and camera/browser proofs, including the pending browser origin approval; then complete hosted/official/Main/public gates."
   ],
   "blockers": [
-    "Browser origin approval remains pending: the owner was asked and has not replied. Corrected M77 qualification is running; fresh runtime proofs and all final gates remain required."
+    "Browser origin approval remains pending: the owner was asked and has not replied. The new full normal is running without a result; fresh runtime proofs and all final gates remain required."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1085,7 +1085,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128"
     },
-    "note": "Latest measurements belong to frozen unaccepted candidate 353: headless 1762/renderer 1367 overlap; 494 Python tests is aggregate-only and 47 finite installed worlds passed. Its hosted attempt2 succeeded, but camera startup failed. Current corrected tree 95ef is Source/formatter clear with one full normal running and no result. Old measurements do not qualify it. M76 remains accepted Main; Latest M70 retains 41 installed examples.",
+    "note": "Existing measurements belong to frozen unaccepted candidate 353: headless 1762/renderer 1367 overlap, 494 aggregate Python tests and 47 installed finite worlds. Its hosted attempt 2 succeeded but camera startup failed. The prior correction normal failed once in headless query EOF handling. Current query-completion Source and final formatter are clear; one full normal is running without a result. No measurements transfer; M76 remains accepted Main and Latest M70 retains 41 installed examples.",
     "renderer_coverage": {
       "lines": [
         21569,
@@ -1129,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Measurements/revision/linked successful CI are for frozen UNACCEPTED candidate 353 only. Current corrected tree 95ef has one normal gate running and no result; no inherited test/coverage/distribution/runtime/hosted qualification. Accepted Main remains M76.",
+    "qualification_scope": "Existing numeric measurements/revision/linked CI describe frozen unaccepted candidate 353 only. The retained correction failed; the query-completion successor has one normal running and no result. No qualification is inherited. Accepted Main remains M76.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1214,6 +1214,21 @@
       "bytes": 2040
     },
     "current_candidate": {
+      "staged_tree": "b1dd0332656b233a1546dcca87733abe14305092",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "published_commit": null,
+      "normal_running": true,
+      "launch_tool": "c700ff",
+      "solewatch_session_id": 44185,
+      "actual_Root_exit": null,
+      "actual_Git_exit": null,
+      "tests_passed": null,
+      "coverage": null,
+      "current_head_CI": null,
+      "qualification_inherited": false
+    },
+    "historical_failed_95ef_current_candidate": {
       "staged_tree": "95ef6ceddd916c07516828ef8a3dcdd4a9b6c6a0",
       "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
       "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
@@ -1225,6 +1240,14 @@
       "coverage": null,
       "current_head_CI": null,
       "qualification_inherited": false
+    },
+    "M77_failed_95ef_normal_actual": {
+      "sha256": "a7183fa08baa6f03f8ce480941c504a014c187a72425367666020918305f0363",
+      "bytes": 1673
+    },
+    "M77_failed_95ef_normal_failure": {
+      "sha256": "ba307d775fb4d778c2d0251f10aa1579a0329c197cf7ab96fe352842401b717a",
+      "bytes": 3158
     }
   },
   "phase_status": {
