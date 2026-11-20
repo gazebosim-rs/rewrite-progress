@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T17:54:01.960213+00:00",
+  "as_of": "2026-11-20T19:55:10.867280+00:00",
   "execution_state": "active",
   "current_phase": "M79",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -7080,7 +7080,7 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": false,
-      "qualification_state": "final_corrected_and_reproduction_Source_reviewed_full_normal_running",
+      "qualification_state": "shared_local_qualified_review_published_hosted_attempt1_running",
       "new_Source_finite_examples": 0,
       "new_CLI_cases": 0,
       "Source_finite_runs": 47,
@@ -7127,7 +7127,7 @@
         "new_Rust_Source_controls": null,
         "new_Python_Source_controls": null
       },
-      "checks_run_scope": "Previous qualification failed or was retired. One full normal gate is now running on the final reviewed Source; no outcome or qualification is claimed.",
+      "checks_run_scope": "The exact shared commit passed full local normal/strict and independent DATA, then ordinary review publication/readbacks. Automatic hosted attempt1 is running without an outcome; official gates and predecessor acceptance remain pending.",
       "Source_profile_declarations": {
         "Rust_unique": 16,
         "Python": 0,
@@ -7136,10 +7136,10 @@
         "overlap": 7,
         "counts_are_Source_obligations_not_executed_results": true
       },
-      "normal_qualified": false,
-      "independent_local_DATA_qualified": false,
+      "normal_qualified": true,
+      "independent_local_DATA_qualified": true,
       "hosted_qualified": false,
-      "current_stage": "One full normal gate is running on final reviewed corrected tests and checked-in reproduction Source. The previous retired run remains failed, and the new outcome is pending.",
+      "current_stage": "Exact review head published and automatic hosted attempt1 running. Preserve local qualification and failed attempts; require full hosted success, official DATA and predecessor acceptance before phase/Main acceptance.",
       "quaternion_policy": "Direct backend requires unit quaternions; loaded XML follows pinned SDFormat finite-positive normalization. The sole new-test finding was corrected with positive equivalence plus genuine zero refusal; old assertions and tolerances remain.",
       "whole_Source_review": {
         "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
@@ -7155,39 +7155,6 @@
         "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
         "bytes": 1078570,
         "mode": 436
-      },
-      "current_normal": {
-        "state": "failed_not_qualified",
-        "actual_Root_exit": 1,
-        "actual_Git_exit": 1,
-        "inner_headless_timeout_seconds": 3600,
-        "elapsed_seconds": 4169.970975891978,
-        "cause": "UNKNOWN",
-        "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
-        "source_binding_count": 1754,
-        "actual": {
-          "sha256": "e3f94ea33b295e7495f5f360c3a99b57a757ed62d025035a0c914fcbf7f2b2ea",
-          "bytes": 5182,
-          "mode": 436
-        },
-        "no_qualified_commit": true,
-        "retention_audit": {
-          "state": "INDEPENDENT_M78_FAILED_NORMAL_RETENTION_CONSISTENT_NOT_QUALIFICATION",
-          "actual_exit": 0,
-          "retained_stage_entries": 738,
-          "frozen_Source_entries": 1754,
-          "report": {
-            "sha256": "b0d439245daf2c2de5b6f51fb6382b7dd637cddf3e1a994c28ec53903856ecac",
-            "bytes": 2788,
-            "mode": 436
-          },
-          "actual": {
-            "sha256": "ec1ebb1066eb3a363942a17e98d01a2414fd913c45f1ec062d88f882e0db4d41",
-            "bytes": 1190,
-            "mode": 436
-          },
-          "qualification": false
-        }
       },
       "historical_camera_reference": {
         "sha256": "517b75b0fd0de85506a85662cabdc547ec3082223f112d733dc65515b5f5786d",
@@ -7237,7 +7204,7 @@
           "M78",
           "M79"
         ],
-        "state": "corrected_and_reproduction_Source_reviewed_actual_full_normal_running",
+        "state": "own_local_qualified_review_published_exact_automatic_hosted_running",
         "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
         "parent_accepted": false,
         "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
@@ -7310,8 +7277,45 @@
         },
         "old_local_fixture_constructors_isolated": 3,
         "old_fixture_cause": "UNKNOWN; isolation preserves local assertions and does not establish the prior blocked site.",
-        "active_heavy_job": true,
-        "normal_launch": {
+        "active_heavy_job": false,
+        "normal_actual": {
+          "sha256": "54c6875c88846f217219738228c7f6ad7904359c2a0a018386bbba4772c5ca0b",
+          "bytes": 1461,
+          "mode": 436
+        },
+        "normal_result": {
+          "sha256": "f2a98db190ab82e7aa08dbd0aeb9044b47d7b06811feb0f8ac2c59e8c1378258",
+          "bytes": 6231,
+          "mode": 436
+        },
+        "local_DATA_actual": {
+          "sha256": "48997a5c6b3015ed1e1d65794b636b62d248dd934715d1cc3b51558d33cf0cf7",
+          "bytes": 2166,
+          "mode": 436
+        },
+        "hosted_actual": null,
+        "official_actual": null,
+        "qualified_commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "normal_qualified": true,
+        "test_or_coverage_pass_claimed": true,
+        "qualification_inherited": false,
+        "standalone_M78_pass": false,
+        "acceptance_requires_M77_closeout": true,
+        "current_Source_scope": "The shared exact commit passed normal/strict and independent retained DATA, then its ordinary review push and exact readbacks completed. Its own automatic hosted attempt1 is running; official evidence and M77 predecessor acceptance remain pending. Prior failures and unknowns are preserved.",
+        "test_input_corrections_independently_reviewed": true,
+        "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
+        "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
+        "reproduction_Source": {
+          "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
+          "retained_projection_actual": {
+            "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
+            "bytes": 2327,
+            "mode": 436
+          },
+          "byte_identical_fixture": true,
+          "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+        },
+        "historical_normal_launch_observation": {
           "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
           "session_id": 47120,
           "launch_tool": "41c369",
@@ -7339,33 +7343,100 @@
           "actual_Git_exit_code": null,
           "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
         },
-        "normal_actual": null,
-        "normal_result": null,
-        "local_DATA_actual": null,
-        "hosted_actual": null,
-        "official_actual": null,
-        "qualified_commit": null,
-        "normal_qualified": false,
-        "test_or_coverage_pass_claimed": false,
-        "qualification_inherited": false,
-        "standalone_M78_pass": false,
-        "acceptance_requires_M77_closeout": true,
-        "current_Source_scope": "Final corrected tests and checked-in reproduction Source are independently reviewed. One full normal gate is running on that exact Source; outcome and qualified commit remain pending. Earlier retired failures and native evidence retain their original scope.",
-        "test_input_corrections_independently_reviewed": true,
-        "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
-        "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
-        "reproduction_Source": {
-          "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
-          "retained_projection_actual": {
-            "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
-            "bytes": 2327,
-            "mode": 436
+        "normal_completion": {
+          "state": "actual_full_normal_Root_and_Git_zero",
+          "actual_Root_exit_code": 0,
+          "actual_Git_exit_code": 0,
+          "actual_child_exit_code": 0,
+          "elapsed_seconds": 1952.5363140940026,
+          "terminal_tool": "cbec8c",
+          "session_id": 47120,
+          "commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+          "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+          "parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+          "scope": "Complete local normal/strict hook only; no independent DATA, hosted/official or phase acceptance transfer."
+        },
+        "local_DATA_state": "actual_method3_Root_zero_independent_retained_DATA_clear",
+        "hosted_state": "own_exact_head_automatic_attempt1_in_progress_no_outcome",
+        "local_DATA_report": {
+          "sha256": "e74123c678133ac9947622d740b55d56176f4a23165eaa15523799060890eee2",
+          "bytes": 75281,
+          "mode": 436
+        },
+        "local_DATA_Source": {
+          "sha256": "aeb233a67b2f98174b602bf00456358a31a14e191ea5bc5734f04860a799fd7f",
+          "bytes": 97200,
+          "mode": 436
+        },
+        "local_DATA_qualified": true,
+        "preserved_retained_reader_failures": [
+          {
+            "method": 1,
+            "actual_Root_exit_code": 1,
+            "actual": {
+              "sha256": "4a876d0c7805009fc3d2c095af45e21892ae93d4aad8d3f17bf55b08138652ca",
+              "bytes": 1503,
+              "mode": 436
+            },
+            "product_normal_passed": true,
+            "product_tests_repeated": false
           },
-          "byte_identical_fixture": true,
-          "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+          {
+            "method": 2,
+            "actual_Root_exit_code": 1,
+            "actual": {
+              "sha256": "53fefe7b15e65da8cf2a4d7e1985cb0a240f5f4fcef7c02254085caa42e4f764",
+              "bytes": 1094,
+              "mode": 436
+            },
+            "product_normal_passed": true,
+            "product_tests_repeated": false
+          }
+        ],
+        "local_observed_counts": {
+          "headless": {
+            "passed": 1812,
+            "failed": 0,
+            "ignored": 2,
+            "summary_rows": 173
+          },
+          "renderer": {
+            "passed": 1390,
+            "failed": 0,
+            "ignored": 2,
+            "summary_rows": 160
+          },
+          "renderer_overlaps_headless": true,
+          "quiet_Python_aggregate": 494,
+          "quiet_Python_individual_results_observable": false,
+          "finite_runs": 47,
+          "RGB_CLI_cases": 21,
+          "coverage_basis": "Strict whole-workspace/per-crate and changed-line gates passed independently for actual parent57, intermediate353 and accepted ancestorDDD.",
+          "RAW_local_hash_only": true,
+          "scope": "This shared exact commit only; no prior phase measurement replacement or acceptance transfer."
+        },
+        "review_publication": {
+          "sha256": "24a02b2ec219a9a0febe533c7a4f20e276e7b53dd2f362a26aa6e43e4ea809c9",
+          "bytes": 6989,
+          "mode": 436
+        },
+        "review_ref": "refs/heads/review/m78-m79-posed-box-velocity-control",
+        "review_publication_qualified": true,
+        "hosted_run": {
+          "id": 44806268854,
+          "name": "simulator",
+          "path": ".github/workflows/ci.yml",
+          "event": "push",
+          "head_branch": "review/m78-m79-posed-box-velocity-control",
+          "head_sha": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+          "run_attempt": 1,
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44806268854",
+          "created_at": "2026-11-20T19:53:05Z"
         }
       },
-      "shared_normal_launch": {
+      "historical_shared_normal_launch_observation": {
         "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
         "session_id": 47120,
         "launch_tool": "41c369",
@@ -7392,7 +7463,64 @@
         "actual_Root_exit_code": null,
         "actual_Git_exit_code": null,
         "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
-      }
+      },
+      "historical_standalone_current_normal": {
+        "state": "failed_not_qualified",
+        "actual_Root_exit": 1,
+        "actual_Git_exit": 1,
+        "inner_headless_timeout_seconds": 3600,
+        "elapsed_seconds": 4169.970975891978,
+        "cause": "UNKNOWN",
+        "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+        "source_binding_count": 1754,
+        "actual": {
+          "sha256": "e3f94ea33b295e7495f5f360c3a99b57a757ed62d025035a0c914fcbf7f2b2ea",
+          "bytes": 5182,
+          "mode": 436
+        },
+        "no_qualified_commit": true,
+        "retention_audit": {
+          "state": "INDEPENDENT_M78_FAILED_NORMAL_RETENTION_CONSISTENT_NOT_QUALIFICATION",
+          "actual_exit": 0,
+          "retained_stage_entries": 738,
+          "frozen_Source_entries": 1754,
+          "report": {
+            "sha256": "b0d439245daf2c2de5b6f51fb6382b7dd637cddf3e1a994c28ec53903856ecac",
+            "bytes": 2788,
+            "mode": 436
+          },
+          "actual": {
+            "sha256": "ec1ebb1066eb3a363942a17e98d01a2414fd913c45f1ec062d88f882e0db4d41",
+            "bytes": 1190,
+            "mode": 436
+          },
+          "qualification": false
+        }
+      },
+      "current_normal": {
+        "state": "actual_full_normal_Root_and_Git_zero",
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "actual_child_exit_code": 0,
+        "elapsed_seconds": 1952.5363140940026,
+        "terminal_tool": "cbec8c",
+        "session_id": 47120,
+        "commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+        "parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "scope": "Complete local normal/strict hook only; no independent DATA, hosted/official or phase acceptance transfer."
+      },
+      "normal_actual": {
+        "sha256": "54c6875c88846f217219738228c7f6ad7904359c2a0a018386bbba4772c5ca0b",
+        "bytes": 1461,
+        "mode": 436
+      },
+      "normal_result": {
+        "sha256": "f2a98db190ab82e7aa08dbd0aeb9044b47d7b06811feb0f8ac2c59e8c1378258",
+        "bytes": 6231,
+        "mode": 436
+      },
+      "review_publication_qualified": true
     },
     {
       "id": "M79",
@@ -7416,7 +7544,7 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": false,
-      "qualification_state": "final_corrected_and_reproduction_Source_reviewed_full_normal_running",
+      "qualification_state": "shared_local_qualified_review_published_hosted_attempt1_running",
       "new_Rust_Source_controls": 23,
       "new_Python_Source_controls": 0,
       "Source_finite_runs": 47,
@@ -7440,7 +7568,7 @@
           "M78",
           "M79"
         ],
-        "state": "corrected_and_reproduction_Source_reviewed_actual_full_normal_running",
+        "state": "own_local_qualified_review_published_exact_automatic_hosted_running",
         "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
         "parent_accepted": false,
         "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
@@ -7513,8 +7641,45 @@
         },
         "old_local_fixture_constructors_isolated": 3,
         "old_fixture_cause": "UNKNOWN; isolation preserves local assertions and does not establish the prior blocked site.",
-        "active_heavy_job": true,
-        "normal_launch": {
+        "active_heavy_job": false,
+        "normal_actual": {
+          "sha256": "54c6875c88846f217219738228c7f6ad7904359c2a0a018386bbba4772c5ca0b",
+          "bytes": 1461,
+          "mode": 436
+        },
+        "normal_result": {
+          "sha256": "f2a98db190ab82e7aa08dbd0aeb9044b47d7b06811feb0f8ac2c59e8c1378258",
+          "bytes": 6231,
+          "mode": 436
+        },
+        "local_DATA_actual": {
+          "sha256": "48997a5c6b3015ed1e1d65794b636b62d248dd934715d1cc3b51558d33cf0cf7",
+          "bytes": 2166,
+          "mode": 436
+        },
+        "hosted_actual": null,
+        "official_actual": null,
+        "qualified_commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "normal_qualified": true,
+        "test_or_coverage_pass_claimed": true,
+        "qualification_inherited": false,
+        "standalone_M78_pass": false,
+        "acceptance_requires_M77_closeout": true,
+        "current_Source_scope": "The shared exact commit passed normal/strict and independent retained DATA, then its ordinary review push and exact readbacks completed. Its own automatic hosted attempt1 is running; official evidence and M77 predecessor acceptance remain pending. Prior failures and unknowns are preserved.",
+        "test_input_corrections_independently_reviewed": true,
+        "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
+        "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
+        "reproduction_Source": {
+          "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
+          "retained_projection_actual": {
+            "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
+            "bytes": 2327,
+            "mode": 436
+          },
+          "byte_identical_fixture": true,
+          "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+        },
+        "historical_normal_launch_observation": {
           "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
           "session_id": 47120,
           "launch_tool": "41c369",
@@ -7542,33 +7707,116 @@
           "actual_Git_exit_code": null,
           "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
         },
-        "normal_actual": null,
-        "normal_result": null,
-        "local_DATA_actual": null,
-        "hosted_actual": null,
-        "official_actual": null,
-        "qualified_commit": null,
-        "normal_qualified": false,
-        "test_or_coverage_pass_claimed": false,
-        "qualification_inherited": false,
-        "standalone_M78_pass": false,
-        "acceptance_requires_M77_closeout": true,
-        "current_Source_scope": "Final corrected tests and checked-in reproduction Source are independently reviewed. One full normal gate is running on that exact Source; outcome and qualified commit remain pending. Earlier retired failures and native evidence retain their original scope.",
-        "test_input_corrections_independently_reviewed": true,
-        "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
-        "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
-        "reproduction_Source": {
-          "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
-          "retained_projection_actual": {
-            "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
-            "bytes": 2327,
-            "mode": 436
+        "normal_completion": {
+          "state": "actual_full_normal_Root_and_Git_zero",
+          "actual_Root_exit_code": 0,
+          "actual_Git_exit_code": 0,
+          "actual_child_exit_code": 0,
+          "elapsed_seconds": 1952.5363140940026,
+          "terminal_tool": "cbec8c",
+          "session_id": 47120,
+          "commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+          "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+          "parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+          "scope": "Complete local normal/strict hook only; no independent DATA, hosted/official or phase acceptance transfer."
+        },
+        "local_DATA_state": "actual_method3_Root_zero_independent_retained_DATA_clear",
+        "hosted_state": "own_exact_head_automatic_attempt1_in_progress_no_outcome",
+        "local_DATA_report": {
+          "sha256": "e74123c678133ac9947622d740b55d56176f4a23165eaa15523799060890eee2",
+          "bytes": 75281,
+          "mode": 436
+        },
+        "local_DATA_Source": {
+          "sha256": "aeb233a67b2f98174b602bf00456358a31a14e191ea5bc5734f04860a799fd7f",
+          "bytes": 97200,
+          "mode": 436
+        },
+        "local_DATA_qualified": true,
+        "preserved_retained_reader_failures": [
+          {
+            "method": 1,
+            "actual_Root_exit_code": 1,
+            "actual": {
+              "sha256": "4a876d0c7805009fc3d2c095af45e21892ae93d4aad8d3f17bf55b08138652ca",
+              "bytes": 1503,
+              "mode": 436
+            },
+            "product_normal_passed": true,
+            "product_tests_repeated": false
           },
-          "byte_identical_fixture": true,
-          "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+          {
+            "method": 2,
+            "actual_Root_exit_code": 1,
+            "actual": {
+              "sha256": "53fefe7b15e65da8cf2a4d7e1985cb0a240f5f4fcef7c02254085caa42e4f764",
+              "bytes": 1094,
+              "mode": 436
+            },
+            "product_normal_passed": true,
+            "product_tests_repeated": false
+          }
+        ],
+        "local_observed_counts": {
+          "headless": {
+            "passed": 1812,
+            "failed": 0,
+            "ignored": 2,
+            "summary_rows": 173
+          },
+          "renderer": {
+            "passed": 1390,
+            "failed": 0,
+            "ignored": 2,
+            "summary_rows": 160
+          },
+          "renderer_overlaps_headless": true,
+          "quiet_Python_aggregate": 494,
+          "quiet_Python_individual_results_observable": false,
+          "finite_runs": 47,
+          "RGB_CLI_cases": 21,
+          "coverage_basis": "Strict whole-workspace/per-crate and changed-line gates passed independently for actual parent57, intermediate353 and accepted ancestorDDD.",
+          "RAW_local_hash_only": true,
+          "scope": "This shared exact commit only; no prior phase measurement replacement or acceptance transfer."
+        },
+        "review_publication": {
+          "sha256": "24a02b2ec219a9a0febe533c7a4f20e276e7b53dd2f362a26aa6e43e4ea809c9",
+          "bytes": 6989,
+          "mode": 436
+        },
+        "review_ref": "refs/heads/review/m78-m79-posed-box-velocity-control",
+        "review_publication_qualified": true,
+        "hosted_run": {
+          "id": 44806268854,
+          "name": "simulator",
+          "path": ".github/workflows/ci.yml",
+          "event": "push",
+          "head_branch": "review/m78-m79-posed-box-velocity-control",
+          "head_sha": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+          "run_attempt": 1,
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44806268854",
+          "created_at": "2026-11-20T19:53:05Z"
         }
       },
-      "shared_normal_launch": {
+      "native_reference_completed": true,
+      "native_capture_actual": {
+        "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
+        "bytes": 3898,
+        "mode": 436
+      },
+      "native_DATA_actual": {
+        "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
+        "bytes": 1790,
+        "mode": 436
+      },
+      "native_product_fixture_present": true,
+      "checks_run_scope": "The exact shared commit passed full local normal/strict and independent DATA, then ordinary review publication/readbacks. Automatic hosted attempt1 is running without an outcome; official gates and predecessor acceptance remain pending.",
+      "normal_qualified": true,
+      "independent_local_DATA_qualified": true,
+      "hosted_qualified": false,
+      "historical_shared_normal_launch_observation": {
         "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
         "session_id": 47120,
         "launch_tool": "41c369",
@@ -7596,19 +7844,31 @@
         "actual_Git_exit_code": null,
         "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
       },
-      "native_reference_completed": true,
-      "native_capture_actual": {
-        "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
-        "bytes": 3898,
+      "current_stage": "Exact review head published and automatic hosted attempt1 running. Preserve local qualification and failed attempts; require full hosted success, official DATA and predecessor acceptance before phase/Main acceptance.",
+      "current_normal": {
+        "state": "actual_full_normal_Root_and_Git_zero",
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "actual_child_exit_code": 0,
+        "elapsed_seconds": 1952.5363140940026,
+        "terminal_tool": "cbec8c",
+        "session_id": 47120,
+        "commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+        "parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "scope": "Complete local normal/strict hook only; no independent DATA, hosted/official or phase acceptance transfer."
+      },
+      "normal_actual": {
+        "sha256": "54c6875c88846f217219738228c7f6ad7904359c2a0a018386bbba4772c5ca0b",
+        "bytes": 1461,
         "mode": 436
       },
-      "native_DATA_actual": {
-        "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
-        "bytes": 1790,
+      "normal_result": {
+        "sha256": "f2a98db190ab82e7aa08dbd0aeb9044b47d7b06811feb0f8ac2c59e8c1378258",
+        "bytes": 6231,
         "mode": 436
       },
-      "native_product_fixture_present": true,
-      "checks_run_scope": "Previous qualification failed or was retired. One full normal gate is now running on the final reviewed Source; no outcome or qualification is claimed."
+      "review_publication_qualified": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -8109,33 +8369,33 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1\u2013M76 and 202 slices remain accepted; 79 phases are cataloged. The reviewed compile-fix successor is running one full-normal retry. Its result and commit are unknown. Native DATA is retained unchanged; earlier failures remain preserved. No acceptance or pass transfers. M77 formal GUI/Main acceptance and Latest M70 are unchanged.",
+  "acceptance_boundary": "M1\u2013M76 and 202 slices remain accepted; 79 phases are cataloged. Shared 8ad64532 passed its own local normal/strict, DATA and review publication/readbacks. Automatic hosted attempt1 is running; full hosted/official gates remain pending. Failures and unknowns, M77 formal GUI/Main acceptance and Latest M70 are unchanged.",
   "current_delivery_group": [
     "M78",
     "M79"
   ],
   "current_development_phase": "M79",
   "board": {
-    "updated_at": "2026-11-20T19:08:37.756844+00:00",
+    "updated_at": "2026-11-20T19:55:10.867280+00:00",
     "current": {
-      "title": "Reviewed corrected source in full verification",
+      "title": "Shared local qualification passed; hosted CI running",
       "items": [
-        "One full normal gate is running on the final reviewed corrected tests and reproduction source. Its result and any qualified commit remain pending.",
-        "The previous run was retired after six reported failures. Reviewed setup corrections and three local-fixture substitutions preserve the original assertions.",
+        "The exact shared commit passed local normal/strict and independent DATA, then ordinary review publication and exact readbacks.",
+        "Automatic hosted attempt1 is running on that exact head. Full success and official DATA are still pending; failed attempts stay preserved.",
         "M77\u2019s manual demo stays live without expiry. Formal GUI/Main acceptance remains pending."
       ]
     },
     "done": [
       "M1\u2013M76 and 202 slices remain accepted. M77 non-browser qualification and Latest M70\u2019s original 41-example package are unchanged.",
-      "Test-input corrections and checked-in reproduction source are independently reviewed. The retained projection reproduced the native fixture; original native evidence stays in its own scope."
+      "Shared local normal/strict, independent DATA and ordinary review publication/readbacks passed. Native references, failed readers and prior failed runs retain their original scope."
     ],
     "next": [
-      "Finish the running full staged hook and strict coverage, then require same-head local DATA and hosted/official gates before qualification.",
+      "Wait for the exact automatic hosted attempt to finish, then collect original artifacts and require official DATA.",
       "Keep the manual demo running; complete M77 formal GUI/Main acceptance before accepting either shared phase."
     ],
     "blocker": {
-      "text": "Previous qualification failed. The new full gate has no outcome yet; remaining local/hosted gates and M77 formal GUI/Main acceptance are still required.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
+      "text": "Automatic exact-head hosted CI is running without an outcome; official qualification is pending. M77 formal GUI/Main acceptance still gates both shared phases.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44806268854"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
@@ -8290,7 +8550,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "SHARED_M78_M79_REPRODUCTION_CLOSED_FULL_NORMAL_RUNNING",
+  "current_development_task": "SHARED_M78_M79_LOCAL_QUALIFIED_REVIEW_PUBLISHED_HOSTED_RUNNING",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -8381,7 +8641,7 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_MANUAL_DEMO_ACTIVE_SHARED_COMPILE_FIX_NORMAL_RETRY_ACTIVE",
+    "state": "M1_M76_ACCEPTED_M77_MANUAL_DEMO_ACTIVE_SHARED_LOCAL_QUALIFIED_HOSTED_RUNNING",
     "recorded_at": "2026-11-20T12:26:53.836464+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
@@ -8466,7 +8726,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "All bounded compile corrections, affected formatting and final Source review are complete. One full-normal retry is actually active with no result. Require genuine normal0/local DATA and exact hosted/official gates; M77 acceptance remains prerequisite.",
+    "next_phase_selection": "The shared exact commit is locally qualified and review publication/readbacks passed. Its automatic hosted attempt1 is running; require full success, official DATA and accepted predecessor before acceptance.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
@@ -8532,15 +8792,15 @@
       "bytes": 8888,
       "mode": 436
     },
-    "Source_publication_available": false,
-    "future_qualified_head": null,
+    "Source_publication_available": true,
+    "future_qualified_head": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
     "new_Rust_test_declarations": 16,
     "new_Python_test_declarations": 0,
     "Source_finite_examples": 47,
     "Source_CLI_cases": 21,
-    "scope": "The preceding shared run retired with controller exit 1 and UNKNOWN Git/test completion. Corrected tests and checked-in reproduction Source are reviewed; one fresh full gate is now running.",
+    "scope": "Standalone M78 and prior shared failures remain preserved. The exact shared commit passed local normal/strict and independent DATA; review publication/readbacks passed and its own automatic hosted attempt1 is running.",
     "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
-    "checks_run_scope": "Earlier runs failed or were retired. The final 1770-file Source now has one full gate running; no new pass or qualified commit exists.",
+    "checks_run_scope": "Local normal/strict and independent DATA passed; the exact shared review head is published with hosted attempt1 running and no outcome. No hosted qualification, official DATA or phase acceptance is inferred.",
     "Source_profile_declarations": {
       "Rust_unique": 16,
       "Python": 0,
@@ -8638,7 +8898,7 @@
         "M78",
         "M79"
       ],
-      "state": "corrected_and_reproduction_Source_reviewed_actual_full_normal_running",
+      "state": "own_local_qualified_review_published_exact_automatic_hosted_running",
       "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
       "parent_accepted": false,
       "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
@@ -8711,8 +8971,45 @@
       },
       "old_local_fixture_constructors_isolated": 3,
       "old_fixture_cause": "UNKNOWN; isolation preserves local assertions and does not establish the prior blocked site.",
-      "active_heavy_job": true,
-      "normal_launch": {
+      "active_heavy_job": false,
+      "normal_actual": {
+        "sha256": "54c6875c88846f217219738228c7f6ad7904359c2a0a018386bbba4772c5ca0b",
+        "bytes": 1461,
+        "mode": 436
+      },
+      "normal_result": {
+        "sha256": "f2a98db190ab82e7aa08dbd0aeb9044b47d7b06811feb0f8ac2c59e8c1378258",
+        "bytes": 6231,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "48997a5c6b3015ed1e1d65794b636b62d248dd934715d1cc3b51558d33cf0cf7",
+        "bytes": 2166,
+        "mode": 436
+      },
+      "hosted_actual": null,
+      "official_actual": null,
+      "qualified_commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+      "normal_qualified": true,
+      "test_or_coverage_pass_claimed": true,
+      "qualification_inherited": false,
+      "standalone_M78_pass": false,
+      "acceptance_requires_M77_closeout": true,
+      "current_Source_scope": "The shared exact commit passed normal/strict and independent retained DATA, then its ordinary review push and exact readbacks completed. Its own automatic hosted attempt1 is running; official evidence and M77 predecessor acceptance remain pending. Prior failures and unknowns are preserved.",
+      "test_input_corrections_independently_reviewed": true,
+      "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
+      "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
+      "reproduction_Source": {
+        "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
+        "retained_projection_actual": {
+          "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
+          "bytes": 2327,
+          "mode": 436
+        },
+        "byte_identical_fixture": true,
+        "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+      },
+      "historical_normal_launch_observation": {
         "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
         "session_id": 47120,
         "launch_tool": "41c369",
@@ -8740,30 +9037,97 @@
         "actual_Git_exit_code": null,
         "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
       },
-      "normal_actual": null,
-      "normal_result": null,
-      "local_DATA_actual": null,
-      "hosted_actual": null,
-      "official_actual": null,
-      "qualified_commit": null,
-      "normal_qualified": false,
-      "test_or_coverage_pass_claimed": false,
-      "qualification_inherited": false,
-      "standalone_M78_pass": false,
-      "acceptance_requires_M77_closeout": true,
-      "current_Source_scope": "Final corrected tests and checked-in reproduction Source are independently reviewed. One full normal gate is running on that exact Source; outcome and qualified commit remain pending. Earlier retired failures and native evidence retain their original scope.",
-      "test_input_corrections_independently_reviewed": true,
-      "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
-      "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
-      "reproduction_Source": {
-        "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
-        "retained_projection_actual": {
-          "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
-          "bytes": 2327,
-          "mode": 436
+      "normal_completion": {
+        "state": "actual_full_normal_Root_and_Git_zero",
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "actual_child_exit_code": 0,
+        "elapsed_seconds": 1952.5363140940026,
+        "terminal_tool": "cbec8c",
+        "session_id": 47120,
+        "commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+        "parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "scope": "Complete local normal/strict hook only; no independent DATA, hosted/official or phase acceptance transfer."
+      },
+      "local_DATA_state": "actual_method3_Root_zero_independent_retained_DATA_clear",
+      "hosted_state": "own_exact_head_automatic_attempt1_in_progress_no_outcome",
+      "local_DATA_report": {
+        "sha256": "e74123c678133ac9947622d740b55d56176f4a23165eaa15523799060890eee2",
+        "bytes": 75281,
+        "mode": 436
+      },
+      "local_DATA_Source": {
+        "sha256": "aeb233a67b2f98174b602bf00456358a31a14e191ea5bc5734f04860a799fd7f",
+        "bytes": 97200,
+        "mode": 436
+      },
+      "local_DATA_qualified": true,
+      "preserved_retained_reader_failures": [
+        {
+          "method": 1,
+          "actual_Root_exit_code": 1,
+          "actual": {
+            "sha256": "4a876d0c7805009fc3d2c095af45e21892ae93d4aad8d3f17bf55b08138652ca",
+            "bytes": 1503,
+            "mode": 436
+          },
+          "product_normal_passed": true,
+          "product_tests_repeated": false
         },
-        "byte_identical_fixture": true,
-        "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+        {
+          "method": 2,
+          "actual_Root_exit_code": 1,
+          "actual": {
+            "sha256": "53fefe7b15e65da8cf2a4d7e1985cb0a240f5f4fcef7c02254085caa42e4f764",
+            "bytes": 1094,
+            "mode": 436
+          },
+          "product_normal_passed": true,
+          "product_tests_repeated": false
+        }
+      ],
+      "local_observed_counts": {
+        "headless": {
+          "passed": 1812,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 173
+        },
+        "renderer": {
+          "passed": 1390,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 160
+        },
+        "renderer_overlaps_headless": true,
+        "quiet_Python_aggregate": 494,
+        "quiet_Python_individual_results_observable": false,
+        "finite_runs": 47,
+        "RGB_CLI_cases": 21,
+        "coverage_basis": "Strict whole-workspace/per-crate and changed-line gates passed independently for actual parent57, intermediate353 and accepted ancestorDDD.",
+        "RAW_local_hash_only": true,
+        "scope": "This shared exact commit only; no prior phase measurement replacement or acceptance transfer."
+      },
+      "review_publication": {
+        "sha256": "24a02b2ec219a9a0febe533c7a4f20e276e7b53dd2f362a26aa6e43e4ea809c9",
+        "bytes": 6989,
+        "mode": 436
+      },
+      "review_ref": "refs/heads/review/m78-m79-posed-box-velocity-control",
+      "review_publication_qualified": true,
+      "hosted_run": {
+        "id": 44806268854,
+        "name": "simulator",
+        "path": ".github/workflows/ci.yml",
+        "event": "push",
+        "head_branch": "review/m78-m79-posed-box-velocity-control",
+        "head_sha": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "run_attempt": 1,
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44806268854",
+        "created_at": "2026-11-20T19:53:05Z"
       }
     },
     "historical_pre_test_input_current_fields": {
@@ -8819,7 +9183,7 @@
       "M78",
       "M79"
     ],
-    "state": "corrected_and_reproduction_Source_reviewed_actual_full_normal_running",
+    "state": "own_local_qualified_review_published_exact_automatic_hosted_running",
     "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
     "parent_accepted": false,
     "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
@@ -8892,8 +9256,45 @@
     },
     "old_local_fixture_constructors_isolated": 3,
     "old_fixture_cause": "UNKNOWN; isolation preserves local assertions and does not establish the prior blocked site.",
-    "active_heavy_job": true,
-    "normal_launch": {
+    "active_heavy_job": false,
+    "normal_actual": {
+      "sha256": "54c6875c88846f217219738228c7f6ad7904359c2a0a018386bbba4772c5ca0b",
+      "bytes": 1461,
+      "mode": 436
+    },
+    "normal_result": {
+      "sha256": "f2a98db190ab82e7aa08dbd0aeb9044b47d7b06811feb0f8ac2c59e8c1378258",
+      "bytes": 6231,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "48997a5c6b3015ed1e1d65794b636b62d248dd934715d1cc3b51558d33cf0cf7",
+      "bytes": 2166,
+      "mode": 436
+    },
+    "hosted_actual": null,
+    "official_actual": null,
+    "qualified_commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+    "normal_qualified": true,
+    "test_or_coverage_pass_claimed": true,
+    "qualification_inherited": false,
+    "standalone_M78_pass": false,
+    "acceptance_requires_M77_closeout": true,
+    "current_Source_scope": "The shared exact commit passed normal/strict and independent retained DATA, then its ordinary review push and exact readbacks completed. Its own automatic hosted attempt1 is running; official evidence and M77 predecessor acceptance remain pending. Prior failures and unknowns are preserved.",
+    "test_input_corrections_independently_reviewed": true,
+    "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
+    "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
+    "reproduction_Source": {
+      "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
+      "retained_projection_actual": {
+        "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
+        "bytes": 2327,
+        "mode": 436
+      },
+      "byte_identical_fixture": true,
+      "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+    },
+    "historical_normal_launch_observation": {
       "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
       "session_id": 47120,
       "launch_tool": "41c369",
@@ -8921,30 +9322,97 @@
       "actual_Git_exit_code": null,
       "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
     },
-    "normal_actual": null,
-    "normal_result": null,
-    "local_DATA_actual": null,
-    "hosted_actual": null,
-    "official_actual": null,
-    "qualified_commit": null,
-    "normal_qualified": false,
-    "test_or_coverage_pass_claimed": false,
-    "qualification_inherited": false,
-    "standalone_M78_pass": false,
-    "acceptance_requires_M77_closeout": true,
-    "current_Source_scope": "Final corrected tests and checked-in reproduction Source are independently reviewed. One full normal gate is running on that exact Source; outcome and qualified commit remain pending. Earlier retired failures and native evidence retain their original scope.",
-    "test_input_corrections_independently_reviewed": true,
-    "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
-    "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
-    "reproduction_Source": {
-      "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
-      "retained_projection_actual": {
-        "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
-        "bytes": 2327,
-        "mode": 436
+    "normal_completion": {
+      "state": "actual_full_normal_Root_and_Git_zero",
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "actual_child_exit_code": 0,
+      "elapsed_seconds": 1952.5363140940026,
+      "terminal_tool": "cbec8c",
+      "session_id": 47120,
+      "commit": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+      "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+      "parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "scope": "Complete local normal/strict hook only; no independent DATA, hosted/official or phase acceptance transfer."
+    },
+    "local_DATA_state": "actual_method3_Root_zero_independent_retained_DATA_clear",
+    "hosted_state": "own_exact_head_automatic_attempt1_in_progress_no_outcome",
+    "local_DATA_report": {
+      "sha256": "e74123c678133ac9947622d740b55d56176f4a23165eaa15523799060890eee2",
+      "bytes": 75281,
+      "mode": 436
+    },
+    "local_DATA_Source": {
+      "sha256": "aeb233a67b2f98174b602bf00456358a31a14e191ea5bc5734f04860a799fd7f",
+      "bytes": 97200,
+      "mode": 436
+    },
+    "local_DATA_qualified": true,
+    "preserved_retained_reader_failures": [
+      {
+        "method": 1,
+        "actual_Root_exit_code": 1,
+        "actual": {
+          "sha256": "4a876d0c7805009fc3d2c095af45e21892ae93d4aad8d3f17bf55b08138652ca",
+          "bytes": 1503,
+          "mode": 436
+        },
+        "product_normal_passed": true,
+        "product_tests_repeated": false
       },
-      "byte_identical_fixture": true,
-      "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+      {
+        "method": 2,
+        "actual_Root_exit_code": 1,
+        "actual": {
+          "sha256": "53fefe7b15e65da8cf2a4d7e1985cb0a240f5f4fcef7c02254085caa42e4f764",
+          "bytes": 1094,
+          "mode": 436
+        },
+        "product_normal_passed": true,
+        "product_tests_repeated": false
+      }
+    ],
+    "local_observed_counts": {
+      "headless": {
+        "passed": 1812,
+        "failed": 0,
+        "ignored": 2,
+        "summary_rows": 173
+      },
+      "renderer": {
+        "passed": 1390,
+        "failed": 0,
+        "ignored": 2,
+        "summary_rows": 160
+      },
+      "renderer_overlaps_headless": true,
+      "quiet_Python_aggregate": 494,
+      "quiet_Python_individual_results_observable": false,
+      "finite_runs": 47,
+      "RGB_CLI_cases": 21,
+      "coverage_basis": "Strict whole-workspace/per-crate and changed-line gates passed independently for actual parent57, intermediate353 and accepted ancestorDDD.",
+      "RAW_local_hash_only": true,
+      "scope": "This shared exact commit only; no prior phase measurement replacement or acceptance transfer."
+    },
+    "review_publication": {
+      "sha256": "24a02b2ec219a9a0febe533c7a4f20e276e7b53dd2f362a26aa6e43e4ea809c9",
+      "bytes": 6989,
+      "mode": 436
+    },
+    "review_ref": "refs/heads/review/m78-m79-posed-box-velocity-control",
+    "review_publication_qualified": true,
+    "hosted_run": {
+      "id": 44806268854,
+      "name": "simulator",
+      "path": ".github/workflows/ci.yml",
+      "event": "push",
+      "head_branch": "review/m78-m79-posed-box-velocity-control",
+      "head_sha": "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+      "run_attempt": 1,
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44806268854",
+      "created_at": "2026-11-20T19:53:05Z"
     }
   },
   "current_reported_test_failures": {
