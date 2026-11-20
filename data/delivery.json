@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T07:56:04.356819+00:00",
+  "as_of": "2026-11-20T08:46:35.023627+00:00",
   "execution_state": "active",
   "current_phase": "M77",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4930,7 +4930,7 @@
       "depends_on": [
         "M76"
       ],
-      "scope": "Add M77 package generation with 47 existing finite examples, the same four roles and unchanged accepted viewer. Add explicit M77-only launcher --camera-mixed-pair requiring --camera-output and forwarding the fixed existing CLI boolean. Preserve all older generation behavior and defaults.",
+      "scope": "Add M77 package generation with 47 existing finite examples, the same four roles and unchanged accepted viewer. Add explicit M77-only launcher --camera-mixed-pair requiring --camera-output and forwarding the fixed existing CLI boolean. Preserve all older generation behavior and defaults. Correct nonzero default-web visibility admission for the retained camera fixtures and strengthen retained wrench-test admission preconditions without changing their assertions.",
       "acceptance": "Complete Source, meaningful package/runtime regressions, guides and whole independent review before one consolidated required normal/strict cycle. Require accepted M76 and final parent reconciliation before M77 checks/build/package/install; fresh same-head four-role release/notices/archive/relocation, 47 plain finite installed loads, actual installed mixed RGB/depth and signed-skew full-frame/canonical/lifecycle proofs, separate default browser/shutdown, independent retained DATA, exact hosted/official/Main and public/Latest/preservation readbacks.",
       "excluded": "No new simulator examples or CLI cases, viewer/web-shape/schema/renderer/worker/physics changes, SDK/native render campaign, telemetry framework, Fuel changes, camera noise/distortion/RGBD/count/resolution expansion or performance claim.",
       "contract": "docs/M77_DELIVERY.md",
@@ -4944,8 +4944,8 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": true,
-      "qualification_state": "local_release_package_and_two_pristine_install_DATA_clear_hosted_retry2_running_camera_browser_pending",
-      "current_stage": "M77 own local qualification, fresh release/package DATA and both distinct pristine clean installations with independent DATA passed. Hosted attempt1 failure and unknown cause are preserved; exactly one unchanged attempt2 is running. Final camera bindings are Source-clear but execution awaits retained DATA method agreement. Browser has genuine distinct custody and still needs current owner approval. No camera/browser, hosted success, official, Main or M77 acceptance is claimed.",
+      "qualification_state": "camera_failure_preserved_corrected_Source_clear_postformatter_staged_full_normal_running_no_result",
+      "current_stage": "Original M77 camera startup failed before any SDK peer because the web snapshot guard rejected nonzero visibility flags. The isolated correction and wrench preconditions passed whole Source review and one final formatter. Root staged exact95ef and launched one full normal/strict pipeline, now running without result. Original candidate 353 hosted attempt2 succeeded separately; no old result qualifies this successor.",
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
       "new_Source_finite_examples": 0,
@@ -4983,35 +4983,6 @@
         ],
         "Root_installed_proofs": "Operational artifacts/m77-delivery only; independent Source and retained DATA review remain mandatory."
       },
-      "source_publication": {
-        "available": true,
-        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "review_branch": "review/m77-installed-camera-preview",
-        "actual_nonforced_push_exit": 0,
-        "publication_receipt": {
-          "sha256": "1a4ac9f8e17894a1c26f01b86c9381d42e6317949d211bab5fa424901aafe64d",
-          "bytes": 2059
-        },
-        "remote_review_exact": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "Main_unchanged": "dddf1f4284557c420e384d263a4365b2153dfde2",
-        "scope": "Actual new ordinary review push and exact remote readback; no Main promotion or hosted success claimed."
-      },
-      "whole_Source_review": {
-        "state": "INDEPENDENT_WHOLE_SOURCE_CLEAR",
-        "reviewed_paths": 14,
-        "new_Python_regression_declarations": 13,
-        "canonical_plan": {
-          "bytes": 389611,
-          "sha256": "d81e6e94fced361fd383a86589b43d64987f9359a814c2d20c8812dae083b1ba"
-        },
-        "contract": {
-          "bytes": 10477,
-          "sha256": "d6e34b5d4ddd21b769d4ce9350b1e8ccf306b044d3118ec6c07ac4b88666d7ab"
-        },
-        "review_basis": "Independent reviewer read the full integration, unchanged old test bodies, seven package and six runtime controls, all guides and canonical docs; reported no findings to Root. No checks were run.",
-        "checks_run": false
-      },
       "accepted_predecessor_commit": "dddf1f4284557c420e384d263a4365b2153dfde2",
       "actual_predecessor_acceptance": {
         "bytes": 3134,
@@ -5030,52 +5001,8 @@
         "same_parent_no_rebase": true,
         "M77_qualification_transferred": false
       },
-      "normal_qualified": true,
-      "checks_run_scope": "The complete ordinary staged-hook/normal/strict pipeline passed with actual Root and Git exits zero; independent retained DATA passed. Python evidence is a quiet aggregate, not per-declaration execution receipts.",
-      "current_normal": {
-        "state": "ACTUAL_LOCAL_NORMAL_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
-        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
-        "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
-        "actual_Root_exit": 0,
-        "actual_Git_exit": 0,
-        "elapsed_seconds": 1913.0819339470036,
-        "normal_actual": {
-          "sha256": "55a601500ca73f7e37d27a8993d7659f154d8dcb4be32149f59189d948c460f6",
-          "bytes": 1672
-        },
-        "result": {
-          "sha256": "b7d108bffd1b3b728865e51c1b82e80a29fd3a8c339c8a1b567c5a56cb81de93",
-          "bytes": 2838
-        },
-        "independent_DATA_actual": {
-          "sha256": "55de3728f1c3a9e56a5f770a62845dd77a639df1f33a69c1aab0779c4f109910",
-          "bytes": 1829
-        },
-        "independent_DATA_report": {
-          "sha256": "7186a7f38d58427bde0f9016a2c573412e48364b62ccfb5232b653bd048d7334",
-          "bytes": 36441
-        },
-        "headless_tests": {
-          "passed": 1762,
-          "failed": 0,
-          "ignored": 2,
-          "summary_rows": 169
-        },
-        "renderer_tests": {
-          "passed": 1367,
-          "failed": 0,
-          "ignored": 2,
-          "summary_rows": 158
-        },
-        "profiles_overlap": true,
-        "quiet_Python_aggregate": 494,
-        "individual_Python_results_observable": false,
-        "finite_source_runs": 47,
-        "CLI_controls": 21,
-        "installed_proof": false,
-        "accepted": false
-      },
+      "normal_qualified": false,
+      "checks_run_scope": "Exactly one full ordinary staged-hook/normal/strict pipeline is actually running on corrected staged tree 95ef with true parent 353. Started checks are not a pass; original candidate 353 measurements/CI/distribution remain historical.",
       "historical_normal_launch_observation": {
         "state": "ACTUAL_ROOT_LAUNCH_RUNNING_NO_RESULT",
         "launch_tool_chunk": "1a4d70",
@@ -5105,265 +5032,470 @@
         "available": false,
         "scope": "Local Source preparation only; no future M77 commit, branch or run is invented."
       },
-      "independent_local_DATA_qualified": true,
-      "current_hosted_CI": {
-        "id": 44693213128,
-        "attempt": 2,
-        "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "branch": "review/m77-installed-camera-preview",
-        "event": "push",
-        "status": "in_progress",
-        "conclusion": null,
-        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
-        "initial_attempt2_metadata": {
-          "sha256": "e278dba55e8eab62d52716f0acd66682b4dfb1d549c7eb194aaeca0c7360203c",
-          "bytes": 12601
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "historical_unaccepted_353_candidate": {
+        "source_publication": {
+          "available": true,
+          "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "review_branch": "review/m77-installed-camera-preview",
+          "actual_nonforced_push_exit": 0,
+          "publication_receipt": {
+            "sha256": "1a4ac9f8e17894a1c26f01b86c9381d42e6317949d211bab5fa424901aafe64d",
+            "bytes": 2059
+          },
+          "remote_review_exact": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "Main_unchanged": "dddf1f4284557c420e384d263a4365b2153dfde2",
+          "scope": "Actual new ordinary review push and exact remote readback; no Main promotion or hosted success claimed."
         },
-        "actual_retry_request": {
-          "sha256": "31851ad2544832c3ed5ea95b73c387d2c8af7c64bf7e33df85b603b6b76717e3",
-          "bytes": 2475
+        "whole_Source_review": {
+          "state": "INDEPENDENT_WHOLE_SOURCE_CLEAR",
+          "reviewed_paths": 14,
+          "new_Python_regression_declarations": 13,
+          "canonical_plan": {
+            "bytes": 389611,
+            "sha256": "d81e6e94fced361fd383a86589b43d64987f9359a814c2d20c8812dae083b1ba"
+          },
+          "contract": {
+            "bytes": 10477,
+            "sha256": "d6e34b5d4ddd21b769d4ce9350b1e8ccf306b044d3118ec6c07ac4b88666d7ab"
+          },
+          "review_basis": "Independent reviewer read the full integration, unchanged old test bodies, seven package and six runtime controls, all guides and canonical docs; reported no findings to Root. No checks were run.",
+          "checks_run": false
         },
-        "scope": "One unchanged complete failed-job retry was actually requested0 and attempt2 is observed in progress. No Source or gate changed; no extra retry is authorized. Original attempt1 failure/cause UNKNOWN stays preserved.",
-        "solewatch_launch_tool": "9320e1",
-        "solewatch_session_id": 54486,
-        "success_collector_held": true,
-        "official_success_audit": false
-      },
-      "current_release_build": {
-        "state": "ACTUAL_FRESH_FOUR_ROLE_BUILD_AND_INDEPENDENT_DATA_CLEAR",
-        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
-        "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
-        "actual_exit": 0,
-        "release_actual": {
-          "sha256": "c0c75b1536a5b3f2084ad3197939748020b9ddfd1d965b0ddf05bade10f6fc56",
-          "bytes": 3031
+        "current_normal": {
+          "state": "ACTUAL_LOCAL_NORMAL_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
+          "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
+          "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
+          "actual_Root_exit": 0,
+          "actual_Git_exit": 0,
+          "elapsed_seconds": 1913.0819339470036,
+          "normal_actual": {
+            "sha256": "55a601500ca73f7e37d27a8993d7659f154d8dcb4be32149f59189d948c460f6",
+            "bytes": 1672
+          },
+          "result": {
+            "sha256": "b7d108bffd1b3b728865e51c1b82e80a29fd3a8c339c8a1b567c5a56cb81de93",
+            "bytes": 2838
+          },
+          "independent_DATA_actual": {
+            "sha256": "55de3728f1c3a9e56a5f770a62845dd77a639df1f33a69c1aab0779c4f109910",
+            "bytes": 1829
+          },
+          "independent_DATA_report": {
+            "sha256": "7186a7f38d58427bde0f9016a2c573412e48364b62ccfb5232b653bd048d7334",
+            "bytes": 36441
+          },
+          "headless_tests": {
+            "passed": 1762,
+            "failed": 0,
+            "ignored": 2,
+            "summary_rows": 169
+          },
+          "renderer_tests": {
+            "passed": 1367,
+            "failed": 0,
+            "ignored": 2,
+            "summary_rows": 158
+          },
+          "profiles_overlap": true,
+          "quiet_Python_aggregate": 494,
+          "individual_Python_results_observable": false,
+          "finite_source_runs": 47,
+          "CLI_controls": 21,
+          "installed_proof": false,
+          "accepted": false
         },
-        "release_DATA_actual": {
-          "sha256": "81273c0001038d1b31cb4697731b8c8670ef695b5b4c785dd8ca817d5872f191",
-          "bytes": 1936
+        "current_hosted_CI": {
+          "id": 44693213128,
+          "attempt": 2,
+          "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "branch": "review/m77-installed-camera-preview",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null,
+          "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
+          "initial_attempt2_metadata": {
+            "sha256": "e278dba55e8eab62d52716f0acd66682b4dfb1d549c7eb194aaeca0c7360203c",
+            "bytes": 12601
+          },
+          "actual_retry_request": {
+            "sha256": "31851ad2544832c3ed5ea95b73c387d2c8af7c64bf7e33df85b603b6b76717e3",
+            "bytes": 2475
+          },
+          "scope": "One unchanged complete failed-job retry was actually requested0 and attempt2 is observed in progress. No Source or gate changed; no extra retry is authorized. Original attempt1 failure/cause UNKNOWN stays preserved.",
+          "solewatch_launch_tool": "9320e1",
+          "solewatch_session_id": 54486,
+          "success_collector_held": true,
+          "official_success_audit": false
         },
-        "release_DATA_report": {
-          "sha256": "a26d04342a526d346962573551c1a79aea7a10d81e0c840ff6875871692ceb96",
-          "bytes": 6264
+        "current_release_build": {
+          "state": "ACTUAL_FRESH_FOUR_ROLE_BUILD_AND_INDEPENDENT_DATA_CLEAR",
+          "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
+          "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
+          "actual_exit": 0,
+          "release_actual": {
+            "sha256": "c0c75b1536a5b3f2084ad3197939748020b9ddfd1d965b0ddf05bade10f6fc56",
+            "bytes": 3031
+          },
+          "release_DATA_actual": {
+            "sha256": "81273c0001038d1b31cb4697731b8c8670ef695b5b4c785dd8ca817d5872f191",
+            "bytes": 1936
+          },
+          "release_DATA_report": {
+            "sha256": "a26d04342a526d346962573551c1a79aea7a10d81e0c840ff6875871692ceb96",
+            "bytes": 6264
+          },
+          "scope": "Actual fresh four-role build and independent retained input DATA; no installed proof or phase acceptance."
         },
-        "scope": "Actual fresh four-role build and independent retained input DATA; no installed proof or phase acceptance."
-      },
-      "installed_proof_Source": {
-        "state": "INDEPENDENT_SOURCE_CLEAR_EXECUTION_HELD",
-        "clean_install_plan": {
-          "sha256": "638ca34e8f40f43cf81eaaf1d60954409cbcf4149f867f9d42546459f96575e2",
-          "bytes": 8238
+        "current_package": {
+          "state": "ACTUAL_FRESH_PACKAGE_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
+          "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
+          "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
+          "assembly_actual": {
+            "sha256": "5806eb2bc123f7f221e76624a507213b3640bd5d0468e29993981f9f5801e6d2",
+            "bytes": 1470
+          },
+          "result": {
+            "sha256": "42138597cadfdb11f1f0b51f4506eed0c84175b326245405e8603d3a974e877f",
+            "bytes": 7282
+          },
+          "actual_Root_exit": 0,
+          "elapsed_seconds": 37.84084094699938,
+          "fresh_generation": true,
+          "prior_product_stages_reused": false,
+          "stages": [
+            {
+              "label": "assemble",
+              "actual_exit": 0,
+              "reaped": true
+            },
+            {
+              "label": "assembled-verify",
+              "actual_exit": 0,
+              "reaped": true
+            },
+            {
+              "label": "extract",
+              "actual_exit": 0,
+              "reaped": true
+            },
+            {
+              "label": "relocated-verify",
+              "actual_exit": 0,
+              "reaped": true
+            }
+          ],
+          "independent_package_DATA": {
+            "sha256": "0f1a98a8a09d4e9fa2ce73fa53c1a8d0a2a06f69fa2b17e84bb7fca2702d53ff",
+            "bytes": 13549
+          },
+          "independent_package_DATA_Root": {
+            "sha256": "3814dba48de42c06d768bbc53578d0e7f037f576d9996c20efc410eafcf19358",
+            "bytes": 1430
+          },
+          "installed_verified": true,
+          "accepted": false,
+          "included_installed_examples": 47,
+          "payload_files": 1672,
+          "actual_installed_finite_runs": 47,
+          "installed_verification_scope": "47 plain finite commands in distinct pristine Ubuntu setups; camera/browser runtime and phase/release acceptance remain pending."
         },
-        "camera_adapter_plan": {
-          "sha256": "f176e563f921e80ac461a880471f01b86663337d869eff505c8619265edb0c17",
-          "bytes": 9709
+        "current_external_camera_QA": {
+          "state": "ACTUAL_COMPILATION_ZERO_NOT_RUNTIME_PROOF",
+          "actual_compile_Root": {
+            "sha256": "ce6c722e2ce9d1630a3ecbf790c53867e2dcf5dc6c5ee3b3960bd48f7ea56b71",
+            "bytes": 2082
+          },
+          "actual_exit": 0,
+          "compiled_peers_executed": false,
+          "camera_actual_bindings_held": true,
+          "scope": "Three reviewed SDK consumers/control helpers compiled; no camera subscriber runtime or installed camera proof."
         },
-        "scope": "Clean Ubuntu, six mixed-camera profiles and default robot/browser actor/guest/retained reader are independently Source-reviewed. Actual package/install/camera bindings and current M77 origin approval remain held; no installed/browser pass.",
-        "default_browser_plan": {
-          "sha256": "6f7c2a034b9da1e5385c9cd8a2046a52d3bb0f83e149b90cb67f724f67f3eeac",
-          "bytes": 9038
+        "installed_proof_Source": {
+          "state": "INDEPENDENT_SOURCE_CLEAR_EXECUTION_HELD",
+          "clean_install_plan": {
+            "sha256": "638ca34e8f40f43cf81eaaf1d60954409cbcf4149f867f9d42546459f96575e2",
+            "bytes": 8238
+          },
+          "camera_adapter_plan": {
+            "sha256": "f176e563f921e80ac461a880471f01b86663337d869eff505c8619265edb0c17",
+            "bytes": 9709
+          },
+          "scope": "Clean Ubuntu, six mixed-camera profiles and default robot/browser actor/guest/retained reader are independently Source-reviewed. Actual package/install/camera bindings and current M77 origin approval remain held; no installed/browser pass.",
+          "default_browser_plan": {
+            "sha256": "6f7c2a034b9da1e5385c9cd8a2046a52d3bb0f83e149b90cb67f724f67f3eeac",
+            "bytes": 9038
+          },
+          "camera_final_binding": {
+            "Source_clear": true,
+            "plan": {
+              "sha256": "128864732b50e76f68c649f9d9144f4da1bc26d4beeee1c20cd9b47aebba6618",
+              "bytes": 10605
+            },
+            "execution_released": false,
+            "retained_camera_DATA_method_agreement_pending": true,
+            "actual_camera_result": null
+          }
         },
-        "camera_final_binding": {
+        "provisional_install_preparation": {
+          "state": "ACTUAL_FIRST_PRISTINE_INSTALL_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
+          "Source": {
+            "sha256": "739b509f99235021828e5d74ab57bf4199375302403c2c5725b01faee16bfa25",
+            "bytes": 33017
+          },
+          "command": {
+            "sha256": "39b5cb3b276463c2d58769845f7686646969705d89a699defff4d20386f84efc",
+            "bytes": 6556
+          },
+          "execution_released": true,
+          "actual_install_Root": {
+            "sha256": "49da2321097e3c5444af2a4df3d84ae56c14408917308b21d45919da550a2cba",
+            "bytes": 1495
+          },
+          "actual_install_result": {
+            "sha256": "cd0e7451eb0e04e568adcf502a86296297309710ce654fe18524604f8fc50ea1",
+            "bytes": 177740
+          },
+          "actual_install_DATA": {
+            "sha256": "f43ec5797486a535cef81ec905bdba642fbce1eb30655c4b195b8e2d671d5591",
+            "bytes": 11840
+          },
+          "scope": "First pristine provisional clean install and retained DATA both passed0 with 47 plain finite commands. Reserved exclusively for camera; no camera/browser runtime or phase acceptance.",
+          "actual_install_exit": 0,
+          "independent_reader_Source": {
+            "sha256": "5286eb8ac33682dd3ed5b047b132ea988cae2a288ff2b318ba87177ed28bb617",
+            "bytes": 24295
+          },
+          "independent_reader_command": {
+            "sha256": "c86ffcec869b6f9851a75f8840f82e87623cc29f54486f6a52894c02e7f9f48a",
+            "bytes": 4127
+          },
+          "independent_reader_Source_clear": true,
+          "actual_install_DATA_Root": {
+            "sha256": "d7dd5dfbd333cc411ee01415b023d4bc0ab8c3a1d53e84cafc7a6672ed8375ee",
+            "bytes": 1524
+          },
+          "independent_DATA_exit": 0,
+          "installed_finite_examples": 47
+        },
+        "browser_distinct_custody_selection": {
           "Source_clear": true,
           "plan": {
-            "sha256": "128864732b50e76f68c649f9d9144f4da1bc26d4beeee1c20cd9b47aebba6618",
-            "bytes": 10605
+            "sha256": "b53827e12201f616eea4d0e4841f5376aef7950848a7af55138ff74afd24eb20",
+            "bytes": 2032
           },
-          "execution_released": false,
-          "retained_camera_DATA_method_agreement_pending": true,
-          "actual_camera_result": null
+          "second_setup_actual": {
+            "sha256": "8d7e662710f357037def8246c3516c51e0095b73b6d9a7be0310d755a6a4b99c",
+            "bytes": 1625
+          },
+          "M77_origin_approval": null,
+          "scope": "Distinct pristine setup and its independent DATA passed in this consolidated distribution cycle. Same47worlds, no new feature verification round or duplicated completion count. Current M77 browser-origin approval remains absent.",
+          "second_setup_DATA": {
+            "sha256": "f25aafbcf00cfd1514f62e2521fac6974a366f1485d2cc417ce3a7f43a6d6f6b",
+            "bytes": 11848
+          },
+          "second_setup_DATA_Root": {
+            "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
+            "bytes": 1557
+          },
+          "second_setup_actual_exit": 0,
+          "second_setup_independent_DATA_exit": 0,
+          "installed_finite_examples": 47
+        },
+        "historical_release_build_launch_observation": {
+          "state": "ACTUAL_FRESH_FOUR_ROLE_BUILD_RUNNING_NO_RESULT",
+          "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
+          "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
+          "actual_launch_tool": "f3bb6f",
+          "solewatch_session_id": 22732,
+          "Root_observation": "Root reported actual launch; Root alone watches the existing process.",
+          "reviewed_command": {
+            "sha256": "6d3462f19aa8c235ba3b9ac824c2c2d9fd0085174dd9521b92ee9c35fbf98d76",
+            "bytes": 3738
+          },
+          "command_card_scope": "Retained prelaunch command/input binding; actual launch above is a separate observed fact.",
+          "actual_exit": null,
+          "role_outputs": null,
+          "result": null,
+          "package_assembled": false
+        },
+        "historical_initial_hosted_CI": {
+          "id": 44693213128,
+          "attempt": 1,
+          "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "branch": "review/m77-installed-camera-preview",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null,
+          "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
+          "initial_metadata": {
+            "sha256": "faeec9eb6b9cf22eee19dfb1bae211ac72f21f6773ea74f79756ee0240cd33bd",
+            "bytes": 12516
+          },
+          "scope": "Actual exact review push run observed in progress; no terminal conclusion or official artifact audit."
+        },
+        "historical_hosted_attempt1_failure": {
+          "id": 44693213128,
+          "attempt": 1,
+          "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "branch": "review/m77-installed-camera-preview",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "failure",
+          "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
+          "terminal_metadata": {
+            "sha256": "89d0353a302e5f0c9679e2f5418963c62231a53e7d6cfaf2b7a31e75a55b256e",
+            "bytes": 12519
+          },
+          "failure_receipt": {
+            "sha256": "1a06f191b2fb9e58b7241385a9d4571ea3422e8f8da1af2984a22f37e6c4401e",
+            "bytes": 2241
+          },
+          "failed_step": "verify-core step 9, python3 scripts/verify.py",
+          "failed_retained_control": "real_canonical_inputs_preserve_pause_add_clear_validation_reset_and_shutdown",
+          "failure_phase": "post-reset persistent admission queued=7",
+          "observed": "Deadline with received15/rejected8/queued6/clears1/drops0/epoch1/elapsed1ms. No actual delivery of final persistent command is observable.",
+          "cause": "UNKNOWN",
+          "retry_invoked": false,
+          "success_collector_held": true,
+          "official_success_audit": false
+        },
+        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "scope": "Frozen unaccepted original M77 candidate. All original passes and observation-time states remain historical; none qualifies corrected tree 95ef.",
+        "camera_startup_failure": {
+          "actual_Root": {
+            "sha256": "efe800802b25e758462814b23f197765a8b61009ff434355379249632ddb3b66",
+            "bytes": 1927
+          },
+          "failure_receipt": {
+            "sha256": "8bf0fb23865d92a50977782ab20b9415a5f967a77ec82a7fb62d7f17c71a4b5e",
+            "bytes": 2040
+          },
+          "actual_Root_exit": 1,
+          "elapsed_seconds": 28.310965319004026,
+          "confirmed_cause": "Web snapshot guard required all-bits visibility; actual unchanged M76 opaque visual flags 4, 1 and 2 were refused.",
+          "SDK_Scene_Clock_peers_started": false,
+          "completed_camera_trials": 0,
+          "all_provision_and_cleanup_stages_zero": true,
+          "reported_guest_final_exit": 1,
+          "host_Docker_cleanup_exit": 0,
+          "guest_OS_exit": "UNKNOWN",
+          "application_clean_shutdown_proven": false
+        },
+        "actual_hosted_attempt2_terminal": {
+          "id": 44693213128,
+          "attempt": 2,
+          "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+          "status": "completed",
+          "conclusion": "success",
+          "watch_actual_exit": 0,
+          "observation": {
+            "sha256": "b86a7b4d58c26b700ecfd3375b49a6ac548460a81cc867397f607ffe87baf46f",
+            "bytes": 2452
+          },
+          "official_audit_performed": false,
+          "Main_promoted": false,
+          "acceptance": false,
+          "scope": "Original candidate 353 exact retry success only; original attempt1 failure/unknown cause remain. No transfer to corrected tree 95ef."
         }
       },
-      "historical_release_build_launch_observation": {
-        "state": "ACTUAL_FRESH_FOUR_ROLE_BUILD_RUNNING_NO_RESULT",
-        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
-        "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
-        "actual_launch_tool": "f3bb6f",
-        "solewatch_session_id": 22732,
-        "Root_observation": "Root reported actual launch; Root alone watches the existing process.",
-        "reviewed_command": {
-          "sha256": "6d3462f19aa8c235ba3b9ac824c2c2d9fd0085174dd9521b92ee9c35fbf98d76",
-          "bytes": 3738
+      "new_Rust_Source_controls": 5,
+      "source_publication": {
+        "available": false,
+        "commit": null,
+        "scope": "Corrected Source is staged privately; no future commit, public review branch, CI run or result is invented."
+      },
+      "whole_Source_review": {
+        "state": "INDEPENDENT_WHOLE_SOURCE_CLEAR_POSTFORMAT_BOUND",
+        "reviewed_paths": 14,
+        "cumulative_paths_vs_accepted_ancestor": 18,
+        "new_Rust_Source_controls_vs353": 5,
+        "new_Python_Source_declarations_vs353": 0,
+        "retained_original_M77_Python_declarations": 13,
+        "review_receipt": {
+          "sha256": "e0cd909878451d894222d0f5b1816e96959faecf96bae0ef46612f82a1318c30",
+          "bytes": 6900
         },
-        "command_card_scope": "Retained prelaunch command/input binding; actual launch above is a separate observed fact.",
-        "actual_exit": null,
-        "role_outputs": null,
+        "formatter_actual": {
+          "sha256": "62dcf711a483b72ec4dfd421e2b3e6819c77f981dfe184f2807ec87496c707f1",
+          "bytes": 5800
+        },
+        "snapshot": {
+          "sha256": "9c9eddd88ee3e0e7cae8d3d4075d4021f417b7afd7aa45fcbdc9238ce0b83517",
+          "bytes": 650156
+        },
+        "scope": "Source declarations only; trusted formatter exit 0 is distinct from normal/test results."
+      },
+      "corrected_candidate": {
+        "staged_tree": "95ef6ceddd916c07516828ef8a3dcdd4a9b6c6a0",
+        "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "true_parent_accepted": false,
+        "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "Source_bindings": 1749,
+        "current_commit": null,
+        "Source_control_declarations": {
+          "Rust_unique": 5,
+          "Python": 0,
+          "headless": 5,
+          "renderer": 2,
+          "overlap": 2
+        },
+        "retained_original_M77_Python_declarations": 13,
+        "production_delta": "Only default web snapshot visibility refusal changes from all-bits-only to zero-only, under implicit viewer all-bits mask. Opacity/material/zero visibility bounds and camera masking/protocol/viewer/GPU/solver paths stay unchanged.",
+        "wrench_delta": "Finite Block configuration and fresh per-key presence generations share each original phase deadline; original real puts and semantic assertions remain.",
+        "new_head_qualification_inherited": false
+      },
+      "current_normal": {
+        "state": "ACTUAL_CORRECTED_ROOT_LAUNCH_RUNNING_NO_RESULT",
+        "launch_tool": "56f92a",
+        "solewatch_session_id": 29733,
+        "staged_tree": "95ef6ceddd916c07516828ef8a3dcdd4a9b6c6a0",
+        "parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "root_release": {
+          "sha256": "9f4cd5abfe5af62f32ec8a420d1cb2fe71f595808eb340531de9dc5546af6b7f",
+          "bytes": 1398
+        },
+        "source_snapshot": {
+          "sha256": "9c9eddd88ee3e0e7cae8d3d4075d4021f417b7afd7aa45fcbdc9238ce0b83517",
+          "bytes": 650156
+        },
+        "native_nine_leaf_reuse": {
+          "sha256": "ac02501ba6ce4a726ef58f7c683189779ba6f597bf6f4f2fcdf4f50082ed42ab",
+          "bytes": 12426
+        },
+        "runner": {
+          "sha256": "fd672fd3a7d368cb13cb290ced8253cc1eac08db3bc92431f99f834533e7c689",
+          "bytes": 18262
+        },
+        "released_binding": {
+          "sha256": "cb7ca95760147a267c7b107e160117ce30a04a535f6de8759e1ff4fc7bd24671",
+          "bytes": 4532
+        },
+        "run_initial_SSD_bytes": 51539607552,
+        "early_stop_SSD_bytes": 8589934592,
+        "capacity_ledger": "Bounded one-second samples/minima and failure-inclusive partial preservation; no fit guarantee.",
+        "actual_Root_exit": null,
+        "actual_Git_exit": null,
         "result": null,
-        "package_assembled": false
+        "independent_DATA": null,
+        "accepted": false
       },
-      "current_package": {
-        "state": "ACTUAL_FRESH_PACKAGE_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
-        "commit": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "tree": "fe7b04bcb602680fe121ade6ba73c254a8fdbc77",
-        "parent": "dddf1f4284557c420e384d263a4365b2153dfde2",
-        "assembly_actual": {
-          "sha256": "5806eb2bc123f7f221e76624a507213b3640bd5d0468e29993981f9f5801e6d2",
-          "bytes": 1470
-        },
-        "result": {
-          "sha256": "42138597cadfdb11f1f0b51f4506eed0c84175b326245405e8603d3a974e877f",
-          "bytes": 7282
-        },
-        "actual_Root_exit": 0,
-        "elapsed_seconds": 37.84084094699938,
-        "fresh_generation": true,
-        "prior_product_stages_reused": false,
-        "stages": [
-          {
-            "label": "assemble",
-            "actual_exit": 0,
-            "reaped": true
-          },
-          {
-            "label": "assembled-verify",
-            "actual_exit": 0,
-            "reaped": true
-          },
-          {
-            "label": "extract",
-            "actual_exit": 0,
-            "reaped": true
-          },
-          {
-            "label": "relocated-verify",
-            "actual_exit": 0,
-            "reaped": true
-          }
-        ],
-        "independent_package_DATA": {
-          "sha256": "0f1a98a8a09d4e9fa2ce73fa53c1a8d0a2a06f69fa2b17e84bb7fca2702d53ff",
-          "bytes": 13549
-        },
-        "independent_package_DATA_Root": {
-          "sha256": "3814dba48de42c06d768bbc53578d0e7f037f576d9996c20efc410eafcf19358",
-          "bytes": 1430
-        },
-        "installed_verified": true,
-        "accepted": false,
-        "included_installed_examples": 47,
-        "payload_files": 1672,
-        "actual_installed_finite_runs": 47,
-        "installed_verification_scope": "47 plain finite commands in distinct pristine Ubuntu setups; camera/browser runtime and phase/release acceptance remain pending."
-      },
-      "current_external_camera_QA": {
-        "state": "ACTUAL_COMPILATION_ZERO_NOT_RUNTIME_PROOF",
-        "actual_compile_Root": {
-          "sha256": "ce6c722e2ce9d1630a3ecbf790c53867e2dcf5dc6c5ee3b3960bd48f7ea56b71",
-          "bytes": 2082
-        },
-        "actual_exit": 0,
-        "compiled_peers_executed": false,
-        "camera_actual_bindings_held": true,
-        "scope": "Three reviewed SDK consumers/control helpers compiled; no camera subscriber runtime or installed camera proof."
-      },
-      "historical_initial_hosted_CI": {
-        "id": 44693213128,
-        "attempt": 1,
-        "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "branch": "review/m77-installed-camera-preview",
-        "event": "push",
-        "status": "in_progress",
-        "conclusion": null,
-        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
-        "initial_metadata": {
-          "sha256": "faeec9eb6b9cf22eee19dfb1bae211ac72f21f6773ea74f79756ee0240cd33bd",
-          "bytes": 12516
-        },
-        "scope": "Actual exact review push run observed in progress; no terminal conclusion or official artifact audit."
-      },
-      "hosted_qualified": false,
-      "provisional_install_preparation": {
-        "state": "ACTUAL_FIRST_PRISTINE_INSTALL_AND_INDEPENDENT_RETAINED_DATA_CLEAR",
-        "Source": {
-          "sha256": "739b509f99235021828e5d74ab57bf4199375302403c2c5725b01faee16bfa25",
-          "bytes": 33017
-        },
-        "command": {
-          "sha256": "39b5cb3b276463c2d58769845f7686646969705d89a699defff4d20386f84efc",
-          "bytes": 6556
-        },
-        "execution_released": true,
-        "actual_install_Root": {
-          "sha256": "49da2321097e3c5444af2a4df3d84ae56c14408917308b21d45919da550a2cba",
-          "bytes": 1495
-        },
-        "actual_install_result": {
-          "sha256": "cd0e7451eb0e04e568adcf502a86296297309710ce654fe18524604f8fc50ea1",
-          "bytes": 177740
-        },
-        "actual_install_DATA": {
-          "sha256": "f43ec5797486a535cef81ec905bdba642fbce1eb30655c4b195b8e2d671d5591",
-          "bytes": 11840
-        },
-        "scope": "First pristine provisional clean install and retained DATA both passed0 with 47 plain finite commands. Reserved exclusively for camera; no camera/browser runtime or phase acceptance.",
-        "actual_install_exit": 0,
-        "independent_reader_Source": {
-          "sha256": "5286eb8ac33682dd3ed5b047b132ea988cae2a288ff2b318ba87177ed28bb617",
-          "bytes": 24295
-        },
-        "independent_reader_command": {
-          "sha256": "c86ffcec869b6f9851a75f8840f82e87623cc29f54486f6a52894c02e7f9f48a",
-          "bytes": 4127
-        },
-        "independent_reader_Source_clear": true,
-        "actual_install_DATA_Root": {
-          "sha256": "d7dd5dfbd333cc411ee01415b023d4bc0ab8c3a1d53e84cafc7a6672ed8375ee",
-          "bytes": 1524
-        },
-        "independent_DATA_exit": 0,
-        "installed_finite_examples": 47
-      },
-      "historical_hosted_attempt1_failure": {
-        "id": 44693213128,
-        "attempt": 1,
-        "head_sha": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
-        "branch": "review/m77-installed-camera-preview",
-        "event": "push",
-        "status": "completed",
-        "conclusion": "failure",
-        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128",
-        "terminal_metadata": {
-          "sha256": "89d0353a302e5f0c9679e2f5418963c62231a53e7d6cfaf2b7a31e75a55b256e",
-          "bytes": 12519
-        },
-        "failure_receipt": {
-          "sha256": "1a06f191b2fb9e58b7241385a9d4571ea3422e8f8da1af2984a22f37e6c4401e",
-          "bytes": 2241
-        },
-        "failed_step": "verify-core step 9, python3 scripts/verify.py",
-        "failed_retained_control": "real_canonical_inputs_preserve_pause_add_clear_validation_reset_and_shutdown",
-        "failure_phase": "post-reset persistent admission queued=7",
-        "observed": "Deadline with received15/rejected8/queued6/clears1/drops0/epoch1/elapsed1ms. No actual delivery of final persistent command is observable.",
-        "cause": "UNKNOWN",
-        "retry_invoked": false,
-        "success_collector_held": true,
-        "official_success_audit": false
-      },
-      "browser_distinct_custody_selection": {
-        "Source_clear": true,
-        "plan": {
-          "sha256": "b53827e12201f616eea4d0e4841f5376aef7950848a7af55138ff74afd24eb20",
-          "bytes": 2032
-        },
-        "second_setup_actual": {
-          "sha256": "8d7e662710f357037def8246c3516c51e0095b73b6d9a7be0310d755a6a4b99c",
-          "bytes": 1625
-        },
-        "M77_origin_approval": null,
-        "scope": "Distinct pristine setup and its independent DATA passed in this consolidated distribution cycle. Same47worlds, no new feature verification round or duplicated completion count. Current M77 browser-origin approval remains absent.",
-        "second_setup_DATA": {
-          "sha256": "f25aafbcf00cfd1514f62e2521fac6974a366f1485d2cc417ce3a7f43a6d6f6b",
-          "bytes": 11848
-        },
-        "second_setup_DATA_Root": {
-          "sha256": "6d81b81faffb6b149e69fe73a999967d42f233a5149072ff9194fac9dd816e6c",
-          "bytes": 1557
-        },
-        "second_setup_actual_exit": 0,
-        "second_setup_independent_DATA_exit": 0,
-        "installed_finite_examples": 47
+      "current_distribution_and_runtime": {
+        "state": "HELD_UNTIL_CORRECTED_HEAD_QUALIFICATION",
+        "fresh_release": null,
+        "fresh_package": null,
+        "fresh_install": null,
+        "camera_actual": null,
+        "browser_actual": null,
+        "browser_origin_approval": null,
+        "scope": "All original candidate 353 future-bound camera/browser procedures are obsolete and held. Fresh corrected-head distribution and installed camera/browser proofs plus exact hosted/official/Main/public gates remain required."
       }
     }
   ],
@@ -5853,34 +5985,34 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M76 and 202 retained slices remain accepted; 77 phases are cataloged. M77 own local/release/package DATA and two distinct pristine clean-install audits passed; each ran the same 47 existing worlds. Original hosted attempt1 failure and unknown cause is preserved and one unchanged attempt2 is running without result. Camera/browser execution, hosted success, official/Main/public evidence and M77 acceptance remain pending. Latest M70 remains Source 7094 with 41 installed examples; M77 targets 47, Source 47/CLI 21 unchanged.",
+  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 77 phases are cataloged. Original candidate 353 camera startup failed and remains unaccepted; its local/distribution passes and hosted attempt2 success are historical only. Corrected95ef over true unaccepted parent 353, with accepted ancestor M76, is Source-clear and running one full normal/strict gate without result. No qualification transfers. Latest M70 package source 7094 with 41 installed examples and M77 target of 47 installed examples, 47 source examples and 21 CLI examples remain separate.",
   "current_delivery_group": [
     "M77"
   ],
   "current_development_phase": "M77",
   "board": {
-    "updated_at": "2026-11-20T07:56:04.356819+00:00",
+    "updated_at": "2026-11-20T08:46:35.023627+00:00",
     "current": {
-      "title": "M77 distribution audits passed; unchanged hosted retry is running",
+      "title": "M77 camera startup correction is in full verification",
       "items": [
-        "Fresh release and package audits passed. Both distinct pristine clean installations and their independent audits passed with the same 47 finite worlds.",
-        "Original hosted attempt1 failed with unknown cause. One unchanged full-job attempt2 is running; no Source, gate or retry allowance changed.",
-        "Camera execution awaits retained audit-method agreement. Browser has distinct pristine custody and still needs current owner approval; neither has a runtime pass claim.",
+        "Installed camera startup failed before any SDK peer: the web snapshot guard rejected opaque visual flags. The reviewed correction admits nonzero flags while retaining zero/material refusals.",
+        "The correction and wrench preconditions passed whole Source review and one final formatter. One full normal/strict pipeline is running; no result is claimed.",
+        "Original candidate 353 hosted attempt2 succeeded. Its camera failure, prior hosted failure and distribution passes remain history; they do not qualify corrected Source.",
         "M76 remains accepted Main. Counts stay 76 of 77 and 202 slices; Latest M70 retains 41 installed examples, while M77 targets 47."
       ]
     },
     "done": [
       "76 of 77 cataloged phases and 202 reviewed slices are accepted; no new slice was appended.",
       "M76 is accepted at exact Main dddf1f42 after own review run 44681392983 attempt 1 and official evidence. All historical failures remain preserved.",
-      "M77 passed own local qualification, fresh release/package audits and two distinct pristine install audits. The installed census is 47 existing worlds, counted once."
+      "M77 correction Source is clear across 14 paths, with five new Rust controls and retained original assertions. The actual one final formatter completed zero."
     ],
     "next": [
-      "Complete camera retained audit-method agreement and final release review, then run against its audited pristine custody and exact QA inputs.",
-      "Observe the single hosted retry and complete the browser approval/runtime plus official/Main/public acceptance gates."
+      "Observe the sole corrected full normal pipeline, then independently audit its exact retained result before any release/package operation.",
+      "Obtain fresh corrected-head distribution and camera/browser proofs, including the pending browser origin approval; then complete hosted/official/Main/public gates."
     ],
     "blocker": {
-      "text": "M77 still needs successful hosted/official evidence and actual camera/browser proof. One unchanged hosted retry is running after the preserved failure; browser-origin approval is not yet recorded.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44693213128"
+      "text": "Browser origin approval remains pending: the owner was asked and has not replied. Corrected M77 qualification is running; fresh runtime proofs and all final gates remain required.",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/353dc9ae86aac56c7653f36a933d688b43fa6fbf/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
@@ -6034,7 +6166,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M77_CAMERA_DATA_SOURCE_AGREEMENT_AND_UNCHANGED_HOSTED_RETRY2_RUNNING",
+  "current_development_task": "M77_CORRECTED_CAMERA_ADMISSION_FULL_NORMAL_RUNNING",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -6125,8 +6257,8 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_DISTRIBUTION_AUDITED_HOSTED_RETRY2_RUNNING_CAMERA_BROWSER_PENDING",
-    "recorded_at": "2026-11-20T07:56:04.356819+00:00",
+    "state": "M1_M76_ACCEPTED_M77_CORRECTED_NORMAL_RUNNING_OLD353_HOSTED2_SUCCESS",
+    "recorded_at": "2026-11-20T08:46:35.023627+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
       "bytes": 8283,
@@ -6210,7 +6342,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "M77 distribution and both separate pristine install audits passed. Camera retained DATA method agreement and browser current-owner approval/runtime remain pending; observe the sole unchanged hosted attempt2 and complete all mandatory later acceptance gates.",
+    "next_phase_selection": "M77 correction Source/formatter are clear and one full normal gate is running at staged tree 95ef over unaccepted candidate 353. Original candidate 353 hosted attempt2 success cannot qualify it. Fresh normal/DATA/distribution/runtime/hosted/official/Main/public evidence remains required.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
