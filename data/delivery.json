@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T02:35:56.851711+00:00",
+  "as_of": "2026-11-20T02:47:19.258168+00:00",
   "execution_state": "active",
   "current_phase": "M76",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4583,13 +4583,13 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": false,
-      "qualification_state": "reviewed_test_only_alias_correction_full_normal_retry_running_no_result",
-      "current_stage": "The isolated test-only tuple alias correction and complete checkpoint/pin batch passed independent Source review; formatting returned zero. The full normal/strict retry is running with no result. All helper bodies, assertions, production and native bytes remain unchanged. Preserve the first actual lint failure; native reference evidence is reused without recapture. No normal success or acceptance is claimed.",
+      "qualification_state": "reviewed_two_positive_retention_fixture_count_corrections_full_normal_attempt3_running_no_result",
+      "current_stage": "The isolated two-literal positive retention-fixture correction, truthful checkpoints and final bindings passed independent Source review. The third full normal/strict gate is running with no result. All Rust, production, negative controls, gates and native bytes are unchanged; formatting was not repeated. Both prior failures and unchanged native reference DATA remain preserved. No normal success or acceptance is claimed.",
       "source_publication": {
         "available": false,
         "scope": "Selected contract and selection proof remain local until actual source publication."
       },
-      "checks_run_scope": "The corrected full normal/strict ordinary commit hook is running with no result. The first lint failure is preserved; no product tests or coverage were reached in that first attempt.",
+      "checks_run_scope": "The reviewed third full normal/strict ordinary commit hook is running with no result. Both previous failures remain preserved; no full Rust profile/coverage qualification is inferred from their partial evidence.",
       "normal_qualified": false,
       "historical_first_normal_source_and_native_milestone": {
         "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
@@ -4649,7 +4649,7 @@
         "coverage_reached": false,
         "original_tree_and_logs_preserved": true
       },
-      "current_correction": {
+      "historical_second_normal_correction_and_launch": {
         "scope": "Test-only named alias for the identical five-array helper return tuple; helper body, assertions, all production and native bytes unchanged.",
         "isolated_successor": true,
         "independent_batch_review_complete": true,
@@ -4690,6 +4690,72 @@
           "actual_Root_exit": null,
           "actual_Git_exit": null,
           "basis": "Root actual launch and active receipt; Root alone watches the existing retry. No terminal outcome is inferred."
+        },
+        "observation_scope": "This is the published running-state observation before the second normal later failed; the separate failure receipt records its terminal state."
+      },
+      "second_normal_failure": {
+        "receipt": {
+          "bytes": 2053,
+          "sha256": "95247773689e710044464ad1318c25e21690359eacc4c869baed1cb5edc13fac"
+        },
+        "tree": "9aa4862cf6423d79f9149e0018663cc5f8870630",
+        "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "actual_Root_exit": 1,
+        "actual_Git_exit": 1,
+        "actual_Python_exit": 1,
+        "elapsed_seconds": 277.70755859601195,
+        "session_id": 80991,
+        "terminal_tool_chunk": "321d4b",
+        "both_Clippy_stages_passed": true,
+        "Python_aggregate": {
+          "ran": 481,
+          "failures": 1,
+          "errors": 1
+        },
+        "full_Rust_profiles_reached": false,
+        "coverage_reached": false,
+        "auxiliary_qualifier_reached": false,
+        "original_tree_and_logs_preserved": true
+      },
+      "current_correction": {
+        "scope": "Two positive synthetic retention-fixture literals only: camera summary20→21 and finite-example expectation46→47; truthful checkpoint updates join the reviewed batch.",
+        "isolated_successor": true,
+        "independent_batch_review_complete": true,
+        "all_Rust_production_and_native_bytes_unchanged": true,
+        "all_negative_controls_and_runtime_gates_unchanged": true,
+        "full_normal_retry_state": "attempt3_running_no_terminal_result",
+        "retry_running": true,
+        "retry_result": null,
+        "normal_qualified": false,
+        "native_reference_recapture_required": false,
+        "rust_formatter_repeated": false,
+        "final_source_review": {
+          "bytes": 11754,
+          "sha256": "4d3d63bbade0068b70ada7e585fdcf72b9a204c351dc17ca292cda2b655f4bb6"
+        },
+        "native_reference_reuse": {
+          "bytes": 6024,
+          "sha256": "92f4f4d54501d35e0821915a36a23050bf3af9a74c6683d34ce2cde5f6008c1c"
+        },
+        "retry_launch": {
+          "active_card": {
+            "bytes": 1060,
+            "sha256": "d2a344302508877ec2f5be6e24052d9404c309cd55b3a946780ab814cefd1a6f"
+          },
+          "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+          "staged_tree": "1bb91f06f162e4657ed084ce0408254a84de9f92",
+          "source_snapshot": {
+            "bytes": 549256,
+            "sha256": "e7adfd836260128f5a2c0d2161c5f1b99adcb26b616d20af97a19224363a4710"
+          },
+          "runner_sha256": "b10ebe7cb7bb15b72e6210464ae645c6cf4eb9cb1d7e474a8c5e7a035ca8d473",
+          "binding_sha256": "85ba88a0ef9924c5397e170dfa0375dd54ef7d644fa642810cdf758b2b3b394c",
+          "launch_tool_chunk": "e51bc5",
+          "solewatch_session_id": 28573,
+          "result": null,
+          "actual_Root_exit": null,
+          "actual_Git_exit": null,
+          "basis": "Root actual attempt3 launch and active receipt; Root alone watches the existing gate. No terminal outcome is inferred."
         }
       }
     }
@@ -5179,28 +5245,28 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 76 phases are cataloged. Latest M70 has 41 installed examples from Source 7094a31; accepted M75 has 46 source runs. M76 first normal failed at one test-helper tuple lint before product tests/coverage. Its isolated alias correction is independently reviewed and the full retry is running with no result. Native CPU reference DATA remains valid. Separate automatic Main CI succeeded; neither it nor M75 qualification transfers to M76.",
+  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 76 phases are cataloged. Latest M70 has 41 installed examples from Source 7094a31; accepted M75 has 46 source runs. M76’s two positive retention-fixture count corrections and final bindings are independently reviewed. The third full normal/strict gate is running with no result. Both prior failures and unchanged native reference DATA are preserved. Separate automatic Main CI success does not qualify M76.",
   "current_delivery_group": [
     "M76"
   ],
   "current_development_phase": "M76",
   "board": {
-    "updated_at": "2026-11-20T02:35:56.851711+00:00",
+    "updated_at": "2026-11-20T02:47:19.258168+00:00",
     "current": {
-      "title": "The reviewed M76 qualification retry is running",
+      "title": "The reviewed third M76 qualification attempt is running",
       "items": [
-        "The isolated test-only tuple alias correction and final source bindings are independently reviewed. The full normal/strict retry is running; no result is available.",
-        "The first attempt failed at one new helper return tuple lint before product tests or coverage. Its original tree and logs remain preserved.",
-        "Production, helper bodies, assertions and native bytes are unchanged. The passed CPU-native reference and independent data review are reused."
+        "The two positive retention-fixture count corrections and final bindings passed independent source review. The third full normal/strict gate is running; no result is available.",
+        "Both earlier failures remain preserved: one test-helper tuple lint, then two stale positive Python fixture counts. Neither attempt reached full Rust profiles or coverage.",
+        "All Rust, production, negative controls and native bytes are unchanged. The passed native CPU reference and independent data review are reused."
       ]
     },
     "done": [
       "75 of 76 cataloged phases are accepted; 202 reviewed slices remain unchanged.",
       "M70–M75 acceptance and the public Latest M70 release are complete. The package remains built from Source 7094a31 with 41 examples.",
-      "The M76 test-only correction passed independent source review and formatting. Native reference capture and independent data review remain valid."
+      "The complete M76 correction batch and final bindings passed independent source review. Unchanged native reference data remains valid; formatting was not repeated."
     ],
     "next": [
-      "Observe the existing full normal/strict retry and preserve its actual exits, logs and any partial evidence.",
+      "Observe the existing third full normal/strict gate and preserve its actual exits, logs and any partial evidence.",
       "After successful local qualification, independently audit retained evidence and complete exact hosted, official and Main gates before acceptance."
     ],
     "blocker": {
@@ -5359,7 +5425,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M76_CAMERA_INFO_OFFSETS_FULL_NORMAL_RETRY",
+  "current_development_task": "M76_CAMERA_INFO_OFFSETS_FULL_NORMAL_ATTEMPT3",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -5531,7 +5597,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "The reviewed isolated M76 alias correction is running its full normal/strict retry. The first lint failure is preserved and unchanged native reference DATA is reused; no normal result or acceptance is claimed."
+    "next_phase_selection": "The independently reviewed M76 positive-fixture-count correction is running its third full normal/strict gate. Both previous failures are preserved and unchanged native reference DATA is reused; no normal result or acceptance is claimed."
   },
   "historical_held_work_before_closeout": {
     "phases": [
