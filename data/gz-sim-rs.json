@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T16:49:02.943726+00:00",
+  "updated_at": "2026-11-20T17:54:01.960213+00:00",
   "state": "active",
-  "summary": "M78/M79 Source is clear; native evidence and new qualification are held. Standalone M78 normal failed; cause UNKNOWN. M77's manual demo stays live. Counts remain 76 accepted of 79 phases and 202 slices.",
+  "summary": "Shared M78/M79 normal retry is running on reviewed compile corrections. Native DATA is retained; no result or qualified commit yet. M77\u2019s demo stays live. Counts remain 76 accepted of 79 phases and 202 slices.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M78-M79-shared-Source",
-      "title": "Shared Source is clear; qualification is held",
-      "detail": "Reviewed posed-box and VelocityControl implementations share a pre-native candidate over qualified but unaccepted M77. Its 39 Rust declarations and zero Python additions are Source counts, not passes. Native capture/DATA, final formatter and new normal/CI gates remain unrun."
+      "id": "M78-M79-normal-retry",
+      "title": "Reviewed compile-fix full-normal retry is active",
+      "detail": "All three compile-failure classes and affected formatting passed Source review. Root alone watches one full-normal retry on the corrected candidate. Native evidence is retained unchanged; previous failures remain preserved. No result or qualified commit is inferred."
     },
     {
       "id": "M77-manual-demo",
@@ -1030,12 +1030,11 @@
     }
   ],
   "remaining": [
-    "Capture and independently audit the bounded native component reference; then freeze the final fixture, formatter and exact Source.",
-    "Require one fresh shared normal/strict cycle, local DATA, exact hosted CI and official DATA. Reconcile M77 acceptance before either new phase is accepted.",
-    "Keep the manual demo running until the owner confirms stop. Complete M77 formal GUI and Main acceptance; preserve all historical failures."
+    "Wait for this exact full-normal retry result. Require independent local DATA only after genuine normal0, then exact hosted CI and official DATA.",
+    "Keep the manual demo running; complete M77 formal GUI/Main acceptance before accepting either shared phase."
   ],
   "blockers": [
-    "The native reference and new shared qualification gates are held and unrun. M77 formal GUI and Main acceptance remain pending; manual operation is not formal GUI proof."
+    "M77 formal GUI/Main acceptance remains pending. The shared normal retry is active with no result; neither manual operation nor an active gate implies acceptance."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1086,7 +1085,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Numeric measurements remain bound to qualified M77 Source57, not M78/M79. Standalone M78 normal failed with Root/Git 1 at its strict-headless timeout; cause UNKNOWN. Independent retention consistency passed, without qualification. Shared Source review is complete; native evidence, final formatter and all new qualification gates remain held. The persistent M77 manual demo is live without expiry; formal GUI/Main acceptance and Latest M70 remain unchanged.",
+    "note": "Product measurements remain bound to qualified M77 Source57. Reviewed compile corrections and final affected formatting are complete; the shared full-normal retry is active with no result or qualified commit. Two obsolete forwarders had zero callers, including tests. Native evidence and all failures are preserved. M77\u2019s manual demo stays live; formal GUI/Main acceptance and Latest M70 are unchanged.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1130,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Own M77 exact57 non-browser qualification remains complete. Standalone M78 normal ended with Root/Git 1 at the strict-headless timeout; cause UNKNOWN. Its retention reader passed only evidence consistency. Shared M78/M79 Source is independently clear, while native capture/DATA, final formatter and all new qualification gates remain held. The persistent manual demo is separate; no pass or acceptance transfers.",
+    "qualification_scope": "Own M77 exact57 non-browser qualification remains complete. All shared compile corrections and affected formatting are Source-clear; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged. Earlier normal failures remain historical; no pass or acceptance transfers.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1219,7 +1218,7 @@
       "browser_checkpoints_written": false,
       "browser_runtime_qualified": false,
       "active_owned_job": true,
-      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. No heavy qualification job is active. Failed standalone M78 is recorded under current_M78_Source; the Source-only shared candidate and held gates are recorded under current_M78_M79_Source.",
+      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. The separate shared compile-fix full-normal retry is active under current_M78_M79_Source with Root solewatch and no result.",
       "manual_demo": {
         "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
         "session_id": 86363,
@@ -1618,9 +1617,9 @@
       "new_Python_test_declarations": 0,
       "Source_finite_examples": 47,
       "Source_CLI_cases": 21,
-      "scope": "Reviewed posed-box implementation is integrated with M79; standalone M78 normal failed, and the new shared candidate remains Source-only.",
+      "scope": "Both earlier normal failures remain preserved. All bounded compile corrections and affected formatting are Source-clear in the isolated successor; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged; no qualification transfers.",
       "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
-      "checks_run_scope": "Standalone normal failed; no shared qualification checks have run. The earlier M78 formatter and Source records remain historical, not a final shared formatter.",
+      "checks_run_scope": "Both earlier normal failures remain preserved. All bounded compile corrections and affected formatting are Source-clear in the isolated successor; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged; no qualification transfers.",
       "Source_profile_declarations": {
         "Rust_unique": 16,
         "Python": 0,
@@ -1718,14 +1717,14 @@
           "M78",
           "M79"
         ],
-        "state": "merged_Source_clear_pre_native_checks_held",
+        "state": "compile_corrected_full_normal_retry_actually_active_no_result",
         "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
         "parent_accepted": false,
         "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
         "pre_native_tree": "b076078c613c7962e33dfb4282f6814dee8f26a5",
         "pre_native_tree_is_final_qualification_tree": false,
-        "Source_binding_count": 1767,
-        "changed_paths": 43,
+        "Source_binding_count": 1769,
+        "changed_paths": 46,
         "Source_control_obligations": {
           "Rust_unique": 39,
           "headless": 39,
@@ -1751,18 +1750,190 @@
           "bytes": 656418,
           "mode": 436
         },
-        "native_fixture_present": false,
-        "native_capture_actual": null,
-        "native_DATA_actual": null,
-        "final_formatter_actual": null,
-        "final_qualification_tree": null,
+        "native_fixture_present": true,
+        "native_capture_actual": {
+          "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
+          "bytes": 3898,
+          "mode": 436
+        },
+        "native_DATA_actual": {
+          "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
+          "bytes": 1790,
+          "mode": 436
+        },
+        "final_formatter_actual": {
+          "sha256": "70fe748c9b2d64f2914aba8a9ca03f977f445002ee750f97fdb6c813c9dfd4b7",
+          "bytes": 477831,
+          "mode": 436
+        },
+        "final_qualification_tree": "352b58662499d7de86d1681355dd31e6090d1030",
         "normal_actual": null,
         "local_DATA_actual": null,
         "hosted_actual": null,
         "official_actual": null,
         "qualification_inherited": false,
         "standalone_M78_pass": false,
-        "acceptance_requires_M77_closeout": true
+        "acceptance_requires_M77_closeout": true,
+        "pre_native_Source_binding_count": 1767,
+        "pre_native_changed_paths": 43,
+        "Source_count_scope": "Actual final staged Source/index inventory after native import and one final formatter.",
+        "native_DATA_report": {
+          "sha256": "6347d18b75e1d53ae58a3861cc6f628d04c357329b539d3df2fcd59d74be514a",
+          "bytes": 253242,
+          "mode": 384
+        },
+        "native_fixture_proposal": {
+          "sha256": "5878e0a69599b97031a6eaeb20d8aad460c8edc25444ee25f8d721dad98b417c",
+          "bytes": 15900,
+          "mode": 384
+        },
+        "native_fixture_import_actual": {
+          "sha256": "6f691e2c061ab786167c69cf17b6f1db9150b27ba8d6e4b102f3824d8f7003be",
+          "bytes": 2272,
+          "mode": 436
+        },
+        "typed_fixture": {
+          "sha256": "6bc234d23191fb59f753ec6bc962c3e42f45d8b3e6271804d956c9c579dcea98",
+          "bytes": 4764,
+          "mode": 436
+        },
+        "typed_fixture_provenance": {
+          "sha256": "77c789113a8221181e086a701697e6d5ae6b9620a72670d9521c1f549ea23ae1",
+          "bytes": 2433,
+          "mode": 436
+        },
+        "fresh_reference_descriptor": {
+          "sha256": "8afa485fac4036f588da591346560477006c3c369db4f4305deff5650ab6d0c1",
+          "bytes": 2341,
+          "mode": 436
+        },
+        "native_scope": "Original VelocityControl public model-frame component observations only; no Physics step, SystemManager reset, private callback receipt/quiescence or phase qualification.",
+        "native_callback_quiescence": "UNKNOWN",
+        "historical_native_preflight_failure": {
+          "sha256": "1c55cdd550c020ba578753f112f15c1fee4a753b77f6f22f33f43b3a6652c20e",
+          "bytes": 2275,
+          "mode": 436
+        },
+        "normal_launch": {
+          "state": "active_no_result",
+          "actual_launch": {
+            "sha256": "8e76d338584a5f763051959cfae7b3a5d77fccc64e78ede38f0fc482e15da9e4",
+            "bytes": 2368,
+            "mode": 436
+          },
+          "Root_solewatch_session_id": 63906,
+          "launch_tool": "9d1276",
+          "tree": "352b58662499d7de86d1681355dd31e6090d1030",
+          "Source_binding_count": 1769,
+          "runner": {
+            "sha256": "e9156a011c5df6f02519d1e89b590a4cc0ad49b43266d8457b647a4a85e47ab5",
+            "bytes": 31102,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "c2de4852745190190572e4918f8f52f7b8e9e4109d94c01ca469217eddb56c12",
+            "bytes": 6850,
+            "mode": 436
+          },
+          "actual_Root_exit": null,
+          "actual_Git_exit": null,
+          "actual_commit": null,
+          "actual_result": null,
+          "qualification_inherited": false
+        },
+        "normal_result": null,
+        "cumulative_changed_paths_vs_accepted_ancestor": 58,
+        "final_Source_snapshot": {
+          "sha256": "7b6dc3729f14371eacb7cf14a624c8b1f94b525d6415bc9ba61eb952fdc56ee0",
+          "bytes": 662416,
+          "mode": 436
+        },
+        "final_Source_review": {
+          "sha256": "117babb07db3821dca57d88376172b8059da26065d6f6f9546fa9a852a1db176",
+          "bytes": 5507,
+          "mode": 436
+        },
+        "normal_qualified": false,
+        "historical_active_normal_observation": {
+          "state": "active_no_result",
+          "actual_launch": {
+            "sha256": "ae6d087a5c0abb808a0a2c84fd14ec388c09e05565973a6adcda2adbaa21b945",
+            "bytes": 2036,
+            "mode": 436
+          },
+          "Root_solewatch_session_id": 79611,
+          "launch_tool": "4eb190",
+          "tree": "e60e47f26d1df6d1f43dfc1c5e639046ed689e6a",
+          "Source_binding_count": 1769,
+          "runner": {
+            "sha256": "38ffc8b556acbe1a88c1997c0098b2aafc1907dc856e4cd5a3a970ac4729c4c4",
+            "bytes": 31068,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "2cbde8b959ca00f37e1e9f48eaf9a8a661a8182fe2e70301d4a048a2ffd678ed",
+            "bytes": 6593,
+            "mode": 436
+          },
+          "actual_Root_exit": null,
+          "actual_Git_exit": null,
+          "actual_commit": null,
+          "actual_result": null,
+          "qualification_inherited": false
+        },
+        "test_or_coverage_pass_claimed": false,
+        "bounded_correction_state": "All three compile-failure classes corrected and independently Source-reviewed; affected four-file formatter passed. One full normal retry is actually active with no result.",
+        "historical_first_shared_failure": {
+          "actual": {
+            "sha256": "49b0f48cdb965a94b4f05cca62e5665cf9955b3484ad2abcabfa7d91c72af3c1",
+            "bytes": 4176,
+            "mode": 436
+          },
+          "result": {
+            "sha256": "800c851ccb2f9610d24356ac4c2aff14490fab0d39341af4739f84fe0ad9c738",
+            "bytes": 6227,
+            "mode": 436
+          },
+          "retired_launch": {
+            "state": "retired_actual1",
+            "actual_launch": {
+              "sha256": "ae6d087a5c0abb808a0a2c84fd14ec388c09e05565973a6adcda2adbaa21b945",
+              "bytes": 2036,
+              "mode": 436
+            },
+            "retired_session_id": 79611,
+            "launch_tool": "4eb190",
+            "terminal_tool": "3c92c0",
+            "actual_Root_exit": 1,
+            "actual_Git_exit": 1,
+            "actual_result": {
+              "sha256": "800c851ccb2f9610d24356ac4c2aff14490fab0d39341af4739f84fe0ad9c738",
+              "bytes": 6227,
+              "mode": 436
+            },
+            "actual_commit": null
+          },
+          "tree": "e60e47f26d1df6d1f43dfc1c5e639046ed689e6a",
+          "Root_and_Git_exit": 1,
+          "tests_or_coverage_run": false,
+          "original_Root_failure_classes": [
+            "Two private production wrappers used only by tests lack test-only cfg",
+            "Three retained seven-family test matches omit the new explicitly out-of-fixture VelocityControl variant",
+            "Three pose-preservation assertions require field equality rather than nonexistent WorldPose PartialEq"
+          ],
+          "correction_to_original_Root_inference": "The original receipt remains immutable. Later whole Source inspection found zero callsites for the two obsolete private forwarders, including tests; removing them was the reviewed fix, not cfg(test).",
+          "failure_stage": "workspace all-target Clippy --keep-going, actual exit101"
+        },
+        "historical_camera_info_reference": {
+          "sha256": "e0a2f9520b964b1e90c070acf8f5d76f26be77401af68d39ab507acb90a0debd",
+          "bytes": 9117,
+          "mode": 436
+        },
+        "reviewed_compile_corrections": [
+          "Two zero-caller obsolete private forwarders removed.",
+          "Three retained seven-family fixture matches explicitly reject the out-of-fixture VelocityControl variant.",
+          "Three pose-preservation assertions compare exact translation/quaternion tuples without changing tolerances."
+        ]
       }
     },
     "historical_M78_normal_active_Source_observation": {
@@ -1854,14 +2025,14 @@
         "M78",
         "M79"
       ],
-      "state": "merged_Source_clear_pre_native_checks_held",
+      "state": "compile_corrected_full_normal_retry_actually_active_no_result",
       "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
       "parent_accepted": false,
       "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
       "pre_native_tree": "b076078c613c7962e33dfb4282f6814dee8f26a5",
       "pre_native_tree_is_final_qualification_tree": false,
-      "Source_binding_count": 1767,
-      "changed_paths": 43,
+      "Source_binding_count": 1769,
+      "changed_paths": 46,
       "Source_control_obligations": {
         "Rust_unique": 39,
         "headless": 39,
@@ -1887,18 +2058,190 @@
         "bytes": 656418,
         "mode": 436
       },
-      "native_fixture_present": false,
-      "native_capture_actual": null,
-      "native_DATA_actual": null,
-      "final_formatter_actual": null,
-      "final_qualification_tree": null,
+      "native_fixture_present": true,
+      "native_capture_actual": {
+        "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
+        "bytes": 3898,
+        "mode": 436
+      },
+      "native_DATA_actual": {
+        "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
+        "bytes": 1790,
+        "mode": 436
+      },
+      "final_formatter_actual": {
+        "sha256": "70fe748c9b2d64f2914aba8a9ca03f977f445002ee750f97fdb6c813c9dfd4b7",
+        "bytes": 477831,
+        "mode": 436
+      },
+      "final_qualification_tree": "352b58662499d7de86d1681355dd31e6090d1030",
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
       "official_actual": null,
       "qualification_inherited": false,
       "standalone_M78_pass": false,
-      "acceptance_requires_M77_closeout": true
+      "acceptance_requires_M77_closeout": true,
+      "pre_native_Source_binding_count": 1767,
+      "pre_native_changed_paths": 43,
+      "Source_count_scope": "Actual final staged Source/index inventory after native import and one final formatter.",
+      "native_DATA_report": {
+        "sha256": "6347d18b75e1d53ae58a3861cc6f628d04c357329b539d3df2fcd59d74be514a",
+        "bytes": 253242,
+        "mode": 384
+      },
+      "native_fixture_proposal": {
+        "sha256": "5878e0a69599b97031a6eaeb20d8aad460c8edc25444ee25f8d721dad98b417c",
+        "bytes": 15900,
+        "mode": 384
+      },
+      "native_fixture_import_actual": {
+        "sha256": "6f691e2c061ab786167c69cf17b6f1db9150b27ba8d6e4b102f3824d8f7003be",
+        "bytes": 2272,
+        "mode": 436
+      },
+      "typed_fixture": {
+        "sha256": "6bc234d23191fb59f753ec6bc962c3e42f45d8b3e6271804d956c9c579dcea98",
+        "bytes": 4764,
+        "mode": 436
+      },
+      "typed_fixture_provenance": {
+        "sha256": "77c789113a8221181e086a701697e6d5ae6b9620a72670d9521c1f549ea23ae1",
+        "bytes": 2433,
+        "mode": 436
+      },
+      "fresh_reference_descriptor": {
+        "sha256": "8afa485fac4036f588da591346560477006c3c369db4f4305deff5650ab6d0c1",
+        "bytes": 2341,
+        "mode": 436
+      },
+      "native_scope": "Original VelocityControl public model-frame component observations only; no Physics step, SystemManager reset, private callback receipt/quiescence or phase qualification.",
+      "native_callback_quiescence": "UNKNOWN",
+      "historical_native_preflight_failure": {
+        "sha256": "1c55cdd550c020ba578753f112f15c1fee4a753b77f6f22f33f43b3a6652c20e",
+        "bytes": 2275,
+        "mode": 436
+      },
+      "normal_launch": {
+        "state": "active_no_result",
+        "actual_launch": {
+          "sha256": "8e76d338584a5f763051959cfae7b3a5d77fccc64e78ede38f0fc482e15da9e4",
+          "bytes": 2368,
+          "mode": 436
+        },
+        "Root_solewatch_session_id": 63906,
+        "launch_tool": "9d1276",
+        "tree": "352b58662499d7de86d1681355dd31e6090d1030",
+        "Source_binding_count": 1769,
+        "runner": {
+          "sha256": "e9156a011c5df6f02519d1e89b590a4cc0ad49b43266d8457b647a4a85e47ab5",
+          "bytes": 31102,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "c2de4852745190190572e4918f8f52f7b8e9e4109d94c01ca469217eddb56c12",
+          "bytes": 6850,
+          "mode": 436
+        },
+        "actual_Root_exit": null,
+        "actual_Git_exit": null,
+        "actual_commit": null,
+        "actual_result": null,
+        "qualification_inherited": false
+      },
+      "normal_result": null,
+      "cumulative_changed_paths_vs_accepted_ancestor": 58,
+      "final_Source_snapshot": {
+        "sha256": "7b6dc3729f14371eacb7cf14a624c8b1f94b525d6415bc9ba61eb952fdc56ee0",
+        "bytes": 662416,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "117babb07db3821dca57d88376172b8059da26065d6f6f9546fa9a852a1db176",
+        "bytes": 5507,
+        "mode": 436
+      },
+      "normal_qualified": false,
+      "historical_active_normal_observation": {
+        "state": "active_no_result",
+        "actual_launch": {
+          "sha256": "ae6d087a5c0abb808a0a2c84fd14ec388c09e05565973a6adcda2adbaa21b945",
+          "bytes": 2036,
+          "mode": 436
+        },
+        "Root_solewatch_session_id": 79611,
+        "launch_tool": "4eb190",
+        "tree": "e60e47f26d1df6d1f43dfc1c5e639046ed689e6a",
+        "Source_binding_count": 1769,
+        "runner": {
+          "sha256": "38ffc8b556acbe1a88c1997c0098b2aafc1907dc856e4cd5a3a970ac4729c4c4",
+          "bytes": 31068,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "2cbde8b959ca00f37e1e9f48eaf9a8a661a8182fe2e70301d4a048a2ffd678ed",
+          "bytes": 6593,
+          "mode": 436
+        },
+        "actual_Root_exit": null,
+        "actual_Git_exit": null,
+        "actual_commit": null,
+        "actual_result": null,
+        "qualification_inherited": false
+      },
+      "test_or_coverage_pass_claimed": false,
+      "bounded_correction_state": "All three compile-failure classes corrected and independently Source-reviewed; affected four-file formatter passed. One full normal retry is actually active with no result.",
+      "historical_first_shared_failure": {
+        "actual": {
+          "sha256": "49b0f48cdb965a94b4f05cca62e5665cf9955b3484ad2abcabfa7d91c72af3c1",
+          "bytes": 4176,
+          "mode": 436
+        },
+        "result": {
+          "sha256": "800c851ccb2f9610d24356ac4c2aff14490fab0d39341af4739f84fe0ad9c738",
+          "bytes": 6227,
+          "mode": 436
+        },
+        "retired_launch": {
+          "state": "retired_actual1",
+          "actual_launch": {
+            "sha256": "ae6d087a5c0abb808a0a2c84fd14ec388c09e05565973a6adcda2adbaa21b945",
+            "bytes": 2036,
+            "mode": 436
+          },
+          "retired_session_id": 79611,
+          "launch_tool": "4eb190",
+          "terminal_tool": "3c92c0",
+          "actual_Root_exit": 1,
+          "actual_Git_exit": 1,
+          "actual_result": {
+            "sha256": "800c851ccb2f9610d24356ac4c2aff14490fab0d39341af4739f84fe0ad9c738",
+            "bytes": 6227,
+            "mode": 436
+          },
+          "actual_commit": null
+        },
+        "tree": "e60e47f26d1df6d1f43dfc1c5e639046ed689e6a",
+        "Root_and_Git_exit": 1,
+        "tests_or_coverage_run": false,
+        "original_Root_failure_classes": [
+          "Two private production wrappers used only by tests lack test-only cfg",
+          "Three retained seven-family test matches omit the new explicitly out-of-fixture VelocityControl variant",
+          "Three pose-preservation assertions require field equality rather than nonexistent WorldPose PartialEq"
+        ],
+        "correction_to_original_Root_inference": "The original receipt remains immutable. Later whole Source inspection found zero callsites for the two obsolete private forwarders, including tests; removing them was the reviewed fix, not cfg(test).",
+        "failure_stage": "workspace all-target Clippy --keep-going, actual exit101"
+      },
+      "historical_camera_info_reference": {
+        "sha256": "e0a2f9520b964b1e90c070acf8f5d76f26be77401af68d39ab507acb90a0debd",
+        "bytes": 9117,
+        "mode": 436
+      },
+      "reviewed_compile_corrections": [
+        "Two zero-caller obsolete private forwarders removed.",
+        "Three retained seven-family fixture matches explicitly reject the out-of-fixture VelocityControl variant.",
+        "Three pose-preservation assertions compare exact translation/quaternion tuples without changing tolerances."
+      ]
     }
   },
   "phase_status": {
