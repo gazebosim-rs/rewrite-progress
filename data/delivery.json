@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T01:44:50.818505+00:00",
+  "as_of": "2026-11-20T02:35:56.851711+00:00",
   "execution_state": "active",
   "current_phase": "M76",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4578,16 +4578,119 @@
         "bytes": 2380
       },
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
-      "checks_run": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
       "accepted": false,
       "distribution_selected": false,
-      "qualification_state": "selected_for_complete_source_preparation_no_checks_or_qualification",
-      "current_stage": "Root selected the bounded M76 contract on accepted Main 616cc3e in an isolated successor. Complete implementation, meaningful regression source and maintained M70 guides precede independent whole-source review and one consolidated mandatory qualification. Implementation has started and remains incomplete; no M76 checks, functional result or acceptance is claimed.",
+      "qualification_state": "reviewed_test_only_alias_correction_full_normal_retry_running_no_result",
+      "current_stage": "The isolated test-only tuple alias correction and complete checkpoint/pin batch passed independent Source review; formatting returned zero. The full normal/strict retry is running with no result. All helper bodies, assertions, production and native bytes remain unchanged. Preserve the first actual lint failure; native reference evidence is reused without recapture. No normal success or acceptance is claimed.",
       "source_publication": {
         "available": false,
         "scope": "Selected contract and selection proof remain local until actual source publication."
+      },
+      "checks_run_scope": "The corrected full normal/strict ordinary commit hook is running with no result. The first lint failure is preserved; no product tests or coverage were reached in that first attempt.",
+      "normal_qualified": false,
+      "historical_first_normal_source_and_native_milestone": {
+        "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "staged_tree": "f1f023932274d0a41b54ca8f3b0f107e014783c1",
+        "source_snapshot": {
+          "bytes": 548805,
+          "sha256": "89fd0de8430b326bedd11c07bf971afa4d4a9904717ad142da6a699a35eb5baa"
+        },
+        "independent_final_source_review": {
+          "bytes": 10579,
+          "sha256": "350ab97e80c50674616de0cc28828ca85ec7ca963128d889c2b905d190a80adc"
+        },
+        "native_capture_actual": {
+          "bytes": 1411,
+          "sha256": "fad0d9086a1a6c8784056cd76fc681eae3305839a2c525495b0c51826d238bd6"
+        },
+        "native_capture_actual_Root_exit": 0,
+        "native_capture_elapsed_seconds": 20.047634856,
+        "native_wire_bytes": 325,
+        "native_wire_sha256": "a84edd3c39ff29cb2deffc4aa304b3ce4fc53dd0fc6fcfad3462b5559f211e31",
+        "independent_native_DATA": {
+          "bytes": 4372,
+          "sha256": "6773b9da0f61755d38ebf8804bdbda338ed7366de9c361be5d7a969cff6b0019"
+        },
+        "native_reference_scope": "CPU PopulateInfo/PublishInfo only; no rendered image, normal, hosted or official qualification transfer.",
+        "normal_launch": {
+          "state": "FIRST_NORMAL_TERMINAL_FAILURE",
+          "launch_tool_chunk": "0f5440",
+          "session_id": 58085,
+          "runner_sha256": "7a57a53e5e93e8e36f7540e5f0f6e5e2745c15338caebdd691dccbf2c69d6e91",
+          "binding_sha256": "6412f25bcb7e474f14194e24d76583c2fd0f74e06c1849fadd1487af08477f92",
+          "tree": "f1f023932274d0a41b54ca8f3b0f107e014783c1",
+          "true_parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+          "basis": "Actual first launch retired with Root/Git 1; preserved failure receipt supplies the terminal observation."
+        },
+        "normal_passed": false,
+        "normal_terminal_result": "failure",
+        "normal_actual_Root_exit": 1,
+        "normal_actual_Git_exit": 1,
+        "accepted": false
+      },
+      "first_normal_failure": {
+        "receipt": {
+          "bytes": 1868,
+          "sha256": "a8a88ac014685e1caa1e085f4a1469844dd6baa6459229ae437b1cba1b5aae3f"
+        },
+        "tree": "f1f023932274d0a41b54ca8f3b0f107e014783c1",
+        "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "actual_Root_exit": 1,
+        "actual_Git_exit": 1,
+        "actual_workspace_Clippy_exit": 101,
+        "elapsed_seconds": 100.3599618540029,
+        "session_id": 58085,
+        "terminal_tool_chunk": "bd7912",
+        "failure_scope": "clippy::type_complexity in new projection_offsets first() testhelper five-array return tuple; one diagnostic in completed --keep-going workspace Clippy.",
+        "product_tests_reached": false,
+        "coverage_reached": false,
+        "original_tree_and_logs_preserved": true
+      },
+      "current_correction": {
+        "scope": "Test-only named alias for the identical five-array helper return tuple; helper body, assertions, all production and native bytes unchanged.",
+        "isolated_successor": true,
+        "independent_batch_review_complete": true,
+        "full_normal_retry_state": "running_no_terminal_result",
+        "retry_running": true,
+        "retry_result": null,
+        "normal_qualified": false,
+        "native_reference_recapture_required": false,
+        "formatter_actual_exit": 0,
+        "final_source_review": {
+          "bytes": 10957,
+          "sha256": "22d84b93961448e5aa0291289242f9b54aabf52288bdc173b2d9aa2992dd43ad"
+        },
+        "formatter_actual": {
+          "bytes": 1214,
+          "sha256": "56ff05ee6104ac50432e4a9936805927ec523342aee7bb651a1fc6d4c323fd3f"
+        },
+        "native_reference_reuse": {
+          "bytes": 6022,
+          "sha256": "0dab0564e5c323f566a0470e310cc4f59c990d4716c39bdbe4c9d1d42a0ca0b4"
+        },
+        "retry_launch": {
+          "active_card": {
+            "bytes": 944,
+            "sha256": "0eaddc73d95caa9ca9dd573f13b3255935fbba8dfa29ef4b6f65ea8a1938dc32"
+          },
+          "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+          "staged_tree": "9aa4862cf6423d79f9149e0018663cc5f8870630",
+          "source_snapshot": {
+            "bytes": 548908,
+            "sha256": "a84a1b8f5e0732ab180e8481c6fcb8d00323f935a9fd0e5306398739033e14e4"
+          },
+          "runner_sha256": "4f6f7bca3af6a34ba588a1149784486e83eab8f3e84921342fe6d750d1f27e80",
+          "binding_sha256": "6b4974ee6375eeb55299a03409cfe1b08de873d07ca19618eba3175a1e4df02f",
+          "launch_tool_chunk": "d19a9d",
+          "solewatch_session_id": 80991,
+          "result": null,
+          "actual_Root_exit": null,
+          "actual_Git_exit": null,
+          "basis": "Root actual launch and active receipt; Root alone watches the existing retry. No terminal outcome is inferred."
+        }
       }
     }
   ],
@@ -5076,29 +5179,29 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M75 are accepted individually with 202 retained reviewed slices; 76 phases are cataloged. Every exact M70–M75 head passed its own gates before one actual nonforced Main fast-forward to 616cc3e. M70 is public and Latest with 41 installed examples from package Source 7094a31; M75 has 46 finite source runs, with no M71–M76 distribution selected. M76 is newly selected for complete source preparation on accepted 616cc3e; implementation, review and checks remain incomplete. Separate automatic Main CI was last observed in progress.",
+  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 76 phases are cataloged. Latest M70 has 41 installed examples from Source 7094a31; accepted M75 has 46 source runs. M76 first normal failed at one test-helper tuple lint before product tests/coverage. Its isolated alias correction is independently reviewed and the full retry is running with no result. Native CPU reference DATA remains valid. Separate automatic Main CI succeeded; neither it nor M75 qualification transfers to M76.",
   "current_delivery_group": [
     "M76"
   ],
   "current_development_phase": "M76",
   "board": {
-    "updated_at": "2026-11-20T01:44:50.818505+00:00",
+    "updated_at": "2026-11-20T02:35:56.851711+00:00",
     "current": {
-      "title": "Preparing complete M76 camera metadata source",
+      "title": "The reviewed M76 qualification retry is running",
       "items": [
-        "M76 is selected on accepted Main 616cc3e: finite projection offsets go into CameraInfo only; rendered calibration, images and worker requests stay unchanged.",
-        "The isolated source phase includes meaningful regressions and maintained M70 guide corrections. Implementation has started and remains incomplete; no M76 checks or qualification are claimed.",
-        "M70–M75 closeout is complete. Latest M70 has 41 installed examples from Source 7094a31; M75 retains 46 source runs."
+        "The isolated test-only tuple alias correction and final source bindings are independently reviewed. The full normal/strict retry is running; no result is available.",
+        "The first attempt failed at one new helper return tuple lint before product tests or coverage. Its original tree and logs remain preserved.",
+        "Production, helper bodies, assertions and native bytes are unchanged. The passed CPU-native reference and independent data review are reused."
       ]
     },
     "done": [
-      "75 of 76 cataloged phases are accepted; 202 reviewed slices are preserved with no new slice append.",
-      "M70–M75 acceptance receipts bind each own head and predecessor to the shared actual Main receipt. Earlier failures and unknowns remain preserved.",
-      "M70 public and anonymous Latest readbacks both returned the same release; the package remains built from exact Source 7094a31."
+      "75 of 76 cataloged phases are accepted; 202 reviewed slices remain unchanged.",
+      "M70–M75 acceptance and the public Latest M70 release are complete. The package remains built from Source 7094a31 with 41 examples.",
+      "The M76 test-only correction passed independent source review and formatting. Native reference capture and independent data review remain valid."
     ],
     "next": [
-      "Complete M76 implementation, meaningful regression source and maintained guides within its five-day budget, including review and required gates.",
-      "Review the whole source independently and batch findings before one consolidated normal/strict qualification; retain hosted, official and Main acceptance gates."
+      "Observe the existing full normal/strict retry and preserve its actual exits, logs and any partial evidence.",
+      "After successful local qualification, independently audit retained evidence and complete exact hosted, official and Main gates before acceptance."
     ],
     "blocker": {
       "text": "",
@@ -5256,7 +5359,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M76_CAMERA_INFO_PROJECTION_OFFSETS_SOURCE_PREPARATION",
+  "current_development_task": "M76_CAMERA_INFO_OFFSETS_FULL_NORMAL_RETRY",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -5402,9 +5505,15 @@
     "new_slice_append_list": [],
     "automatic_Main_CI": {
       "id": 44653390693,
-      "status": "in_progress",
-      "conclusion": null,
-      "scope": "Separate automatic Main run; not a replacement for the qualifying exact review runs."
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "Separate automatic Main CI metadata success at accepted 616cc3e; no new artifact audit and no M76 qualification transfer. The qualifying M75 review run remains distinct.",
+      "attempt": 1,
+      "head_sha": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+      "terminal_metadata": {
+        "bytes": 616,
+        "sha256": "57655a20f505876871b21dfe4e672771365b6f2acd9c9d8651a3f42ba77bb828"
+      }
     },
     "historical_checkpoint_scope": "Frozen local_qualification, source_publication and parent progress objects retain their original observation-time flags. Current phase gate fields and current_acceptance_gate_progress record the later actual state.",
     "ordered_phase_acceptance_index": {
@@ -5422,7 +5531,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "M76 selected on accepted 616cc3e for complete source preparation; implementation, review and qualification remain incomplete. No M76 result transfers from accepted M75."
+    "next_phase_selection": "The reviewed isolated M76 alias correction is running its full normal/strict retry. The first lint failure is preserved and unchanged native reference DATA is reused; no normal result or acceptance is claimed."
   },
   "historical_held_work_before_closeout": {
     "phases": [
