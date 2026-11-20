@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T14:40:38.574674+00:00",
+  "as_of": "2026-11-20T15:14:28.962910+00:00",
   "execution_state": "active",
   "current_phase": "M78",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -7075,18 +7075,18 @@
       "source_preparation_under_D31": true,
       "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
-      "checks_run": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
       "accepted": false,
       "distribution_selected": false,
-      "qualification_state": "Source_implementation_started_not_complete_checks_unrun",
+      "qualification_state": "whole_Source_clear_formatter0_own_full_normal_running_no_result",
       "new_Source_finite_examples": 0,
       "new_CLI_cases": 0,
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
-      "new_Rust_Source_controls": null,
-      "new_Python_Source_controls": null,
+      "new_Rust_Source_controls": 16,
+      "new_Python_Source_controls": 0,
       "file_ownership": {
         "physics": [
           "crates/gz-physics/src/lib.rs",
@@ -7118,7 +7118,83 @@
           "integrator": "Root"
         }
       },
-      "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM."
+      "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
+      "historical_initial_Source_implementation_observation": {
+        "implementation_complete": false,
+        "independent_source_review_complete": false,
+        "checks_run": false,
+        "qualification_state": "Source_implementation_started_not_complete_checks_unrun",
+        "new_Rust_Source_controls": null,
+        "new_Python_Source_controls": null
+      },
+      "checks_run_scope": "One own full normal/strict hook has actually started; no result or pass inferred. Final formatter actual0 is separate.",
+      "Source_profile_declarations": {
+        "Rust_unique": 16,
+        "Python": 0,
+        "headless": 16,
+        "renderer": 7,
+        "overlap": 7,
+        "counts_are_Source_obligations_not_executed_results": true
+      },
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "current_stage": "Complete implementation, 16 Rust declarations and docs passed whole independent Source review after one batched quaternion-test finding. Final formatter exited zero. Own full normal/strict qualification is active on staged tree 9774 with 1754 Source files; result, commit and Root/Git exits remain unknown. M77 formal browser acceptance remains separate.",
+      "quaternion_policy": "Direct backend requires unit quaternions; loaded XML follows pinned SDFormat finite-positive normalization. The sole new-test finding was corrected with positive equivalence plus genuine zero refusal; old assertions and tolerances remain.",
+      "whole_Source_review": {
+        "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
+        "bytes": 2484,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "98c661382b43ed7d3cd98e261078cf538f034e9d9949669f261066ceff5c4299",
+        "bytes": 1043,
+        "mode": 436
+      },
+      "formatter_actual": {
+        "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
+        "bytes": 1078570,
+        "mode": 436
+      },
+      "current_normal": {
+        "state": "active_no_result",
+        "actual_launch": {
+          "sha256": "0e2bc740ade79a06d1f0289303726962f73405a693af1fed217bd401b3ed00d5",
+          "bytes": 1729,
+          "mode": 436
+        },
+        "launch_tool": "348f80",
+        "Root_solewatch_session_id": 35585,
+        "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+        "source_binding_count": 1754,
+        "Source_snapshot": {
+          "sha256": "f633d85a4e888d42bcab0a8993b80f42dbeb84649b56a3f72d53ef2f911d10ed",
+          "bytes": 652239,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "ca5914e870cfb4cdda0ef3c5502e93ce13b266ef19468c03549eba47edcd4e7a",
+          "bytes": 22764,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "743b1f0ac8cae2fa7b0e3298d58acbe6b31a4d3ad5a0ce1052cd4d8415b9c174",
+          "bytes": 3880,
+          "mode": 436
+        },
+        "actual_Root_exit": null,
+        "actual_Git_exit": null,
+        "actual_commit": null,
+        "actual_result": null,
+        "normal_qualified": false,
+        "capacity_scope": "44 GiB initial reserve and 8 GiB early SSD stop; mandatory 14 GiB initial reserve and all four floors remain unchanged, with a bounded one-second ledger. This budget is not a fit guarantee.",
+        "qualification_inherited": false
+      },
+      "historical_camera_reference": {
+        "sha256": "517b75b0fd0de85506a85662cabdc547ec3082223f112d733dc65515b5f5786d",
+        "bytes": 9017,
+        "mode": 436
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -7609,31 +7685,31 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 78 phases are cataloged. M77 qualified57 remains provisional while a separate persistent manual demo is active; formal browser and Main/public/acceptance gates remain pending. M78 Source implementation is selected under D31 over unaccepted57 with accepted Main ancestorDDD, with no inherited qualification. Public Latest M70 remains Source7094a31/41 examples; Source finite47/CLI21 and provisional M77 installed47 remain distinct.",
+  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 78 phases are cataloged. M78 Source and docs are independently clear, with 16 Rust declarations and final formatter exit zero. Its own full normal run is active with no result or pass. M77 qualified57 remains provisional during the persistent manual demo; formal GUI, Main/public and acceptance gates remain pending. True parent57 is unaccepted; accepted Main ancestorDDD remains distinct. Latest M70 Source7094 retains41examples; Source finite/CLI inventories remain47/21.",
   "current_delivery_group": [
     "M78"
   ],
   "current_development_phase": "M78",
   "board": {
-    "updated_at": "2026-11-20T14:40:38.574674+00:00",
+    "updated_at": "2026-11-20T15:14:28.962910+00:00",
     "current": {
-      "title": "M78 posed-box implementation; persistent M77 demo remains running",
+      "title": "M78 full qualification is running; persistent M77 demo stays live",
       "items": [
-        "M78 adds one translated or rotated Rapier box collision with resolved centered inertia. Disjoint Source implementation is underway; no M78 checks or results exist.",
+        "M78 implementation, 16 Rust regression declarations and docs are Source-clear after one batched finding. Final formatter exited zero; its own full normal/strict run is active, with no result yet.",
         "The manual M77 demo stays running without expiry. Forward and turn helpers exited zero after the owner reported Play running; formal GUI qualification is not inferred.",
         "All M77 non-browser proofs remain complete. Accepted phases and slices stay 76 and 202; catalog is 78. Latest M70 retains its immutable 41-example package."
       ]
     },
     "done": [
       "M1–M76 and 202 reviewed slices remain accepted. M77 own local, hosted/official, release/package/install and six-trial camera DATA proofs remain complete.",
-      "M78 scope and disjoint implementation leases were reviewed and released over qualified, unaccepted M77 Source. Frozen parents, all failures and Fuel work remain preserved."
+      "M78 whole Source review and final formatter are complete. The frozen candidate has 1754 Source files; 16 Rust declarations and zero Python additions are Source counts, not executed passes."
     ],
     "next": [
-      "Finish M78 implementation, additive regression Source and docs; batch independent whole Source findings before Root releases consolidated required qualification.",
+      "Wait for the current M78 full normal result; then require independent retained DATA before own review publication and exact hosted/official qualification. No pass is inferred from an active run.",
       "Keep the manual demo running. Complete M77 formal browser qualification and its downstream Main/public/acceptance gates; manual operation does not transfer qualification."
     ],
     "blocker": {
-      "text": "M77 formal browser qualification remains pending. The earlier automatic origin rejection is preserved; the separate persistent manual demo does not satisfy that gate. M78 Source implementation may continue independently.",
+      "text": "M77 formal browser qualification remains pending; the persistent manual demo does not satisfy that gate. M78 own normal qualification proceeds independently. Accepted Main and public releases remain unchanged.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -7788,7 +7864,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M78_POSED_BOX_SOURCE_IMPLEMENTATION",
+  "current_development_task": "M78_OWN_FULL_NORMAL_RUNNING",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -7879,7 +7955,7 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_MANUAL_DEMO_ACTIVE_M78_SOURCE_IMPLEMENTATION",
+    "state": "M1_M76_ACCEPTED_M77_MANUAL_DEMO_ACTIVE_M78_OWN_NORMAL_RUNNING",
     "recorded_at": "2026-11-20T12:26:53.836464+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
@@ -7964,7 +8040,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "M78 posed box collision selected and disjoint Source implementation released under owner continuation; Source over qualified unaccepted57, accepted ancestorDDD. No M78 checks/results or M77 GUI acceptance implied.",
+    "next_phase_selection": "M78 implementation, regression Source and docs are independently clear; final formatter exited zero. Own full normal qualification is active with no result. Independent local DATA and exact hosted/official/Main gates remain mandatory; no qualification transfers.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
@@ -8016,6 +8092,90 @@
     "included_in_this_candidate": true
   },
   "current_M78_Source": {
+    "scope_reviewed_and_lanes_released": true,
+    "Source_basis_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+    "Source_basis_accepted": false,
+    "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "implementation_started": true,
+    "implementation_complete": true,
+    "whole_independent_Source_review_complete": true,
+    "checks_run": true,
+    "qualification_inherited": false,
+    "contract": {
+      "sha256": "0df9540223fcc8d6488c333c3e985f7079f98030dd441d1cc040fa4b9ae4d40f",
+      "bytes": 8888,
+      "mode": 436
+    },
+    "Source_publication_available": false,
+    "future_qualified_head": null,
+    "new_Rust_test_declarations": 16,
+    "new_Python_test_declarations": 0,
+    "Source_finite_examples": 47,
+    "Source_CLI_cases": 21,
+    "scope": "One posed Rapier box collider per link. Implementation, additive regression Source and docs are complete, with whole Source clearance after one batched test finding. Own full normal/strict cycle is active, not qualified. Source inventories remain 47 finite examples and 21 CLI cases; no results transfer.",
+    "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
+    "checks_run_scope": "One normal/strict qualification started, no completed result; separate final formatter actual0.",
+    "Source_profile_declarations": {
+      "Rust_unique": 16,
+      "Python": 0,
+      "headless": 16,
+      "renderer": 7,
+      "overlap": 7,
+      "counts_are_Source_obligations_not_executed_results": true
+    },
+    "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+    "source_binding_count": 1754,
+    "whole_Source_review": {
+      "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
+      "bytes": 2484,
+      "mode": 436
+    },
+    "final_Source_review": {
+      "sha256": "98c661382b43ed7d3cd98e261078cf538f034e9d9949669f261066ceff5c4299",
+      "bytes": 1043,
+      "mode": 436
+    },
+    "formatter_actual": {
+      "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
+      "bytes": 1078570,
+      "mode": 436
+    },
+    "normal_active": {
+      "state": "active_no_result",
+      "actual_launch": {
+        "sha256": "0e2bc740ade79a06d1f0289303726962f73405a693af1fed217bd401b3ed00d5",
+        "bytes": 1729,
+        "mode": 436
+      },
+      "launch_tool": "348f80",
+      "Root_solewatch_session_id": 35585,
+      "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+      "source_binding_count": 1754,
+      "Source_snapshot": {
+        "sha256": "f633d85a4e888d42bcab0a8993b80f42dbeb84649b56a3f72d53ef2f911d10ed",
+        "bytes": 652239,
+        "mode": 436
+      },
+      "runner": {
+        "sha256": "ca5914e870cfb4cdda0ef3c5502e93ce13b266ef19468c03549eba47edcd4e7a",
+        "bytes": 22764,
+        "mode": 436
+      },
+      "binding": {
+        "sha256": "743b1f0ac8cae2fa7b0e3298d58acbe6b31a4d3ad5a0ce1052cd4d8415b9c174",
+        "bytes": 3880,
+        "mode": 436
+      },
+      "actual_Root_exit": null,
+      "actual_Git_exit": null,
+      "actual_commit": null,
+      "actual_result": null,
+      "normal_qualified": false,
+      "capacity_scope": "44 GiB initial reserve and 8 GiB early SSD stop; mandatory 14 GiB initial reserve and all four floors remain unchanged, with a bounded one-second ledger. This budget is not a fit guarantee.",
+      "qualification_inherited": false
+    }
+  },
+  "historical_M78_Source_implementation_observation": {
     "scope_reviewed_and_lanes_released": true,
     "Source_basis_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
     "Source_basis_accepted": false,
