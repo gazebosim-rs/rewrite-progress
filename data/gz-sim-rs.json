@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T10:05:25.980054+00:00",
+  "updated_at": "2026-11-20T10:34:37.525685+00:00",
   "state": "active",
-  "summary": "M77 passed own full normal and retained DATA and is review-published. Hosted CI and the four-role build are running. Counts stay 76 of 77 and 202 slices; browser approval remains pending.",
+  "summary": "M77 package and two pristine installs are audited. Camera execution and hosted CI are running without final results. Counts stay 76 of 77 and 202 slices; browser approval remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M77",
-      "title": "Current commit is locally qualified and review-published",
-      "detail": "Own full normal and retained DATA method2 passed at the corrected commit. The exact new review branch is published; Main and the original review branch are preserved. Current hosted CI is running without a terminal result. Earlier camera, normal and reader-method failures remain historical."
+      "id": "M77-camera",
+      "title": "One installed camera execution is running",
+      "detail": "The current package and first pristine camera setup have own actual and retained DATA0. The bound six-session camera Source passed independent review, and Root launched one installed camera execution. It is running without a result or runtime DATA. The distinct browser setup remains separately audited."
     },
     {
-      "id": "M77-distribution",
-      "title": "Four-role release build is running",
-      "detail": "Root launched the reviewed four-role builder from the locally qualified corrected commit. No output or build result is available yet. Fresh package, installs and camera/browser proofs still follow; browser origin approval remains pending."
+      "id": "M77-closeout",
+      "title": "Hosted CI and browser approval remain pending",
+      "detail": "Current hosted run 44715646599 attempt 1 is still active. Browser origin approval remains requested with no reply. Both setups ran the same 47 worlds through 22 CLI and nine guest stages each; finite installation and stopped idle containers do not prove camera/browser runtime."
     }
   ],
   "accepted_slices": [
@@ -1030,11 +1030,11 @@
     }
   ],
   "remaining": [
-    "Observe hosted CI and the four-role build, then audit and assemble the fresh package before installed runtime proofs.",
-    "Complete camera/browser proofs, including pending browser origin approval, and official/Main/public gates before M77 acceptance."
+    "Observe the sole installed camera execution, then independently audit its actual retained result before claiming runtime success.",
+    "Obtain current browser origin approval and runtime proof; complete hosted/official/Main/public gates before M77 acceptance."
   ],
   "blockers": [
-    "Browser origin approval remains pending: the owner was asked and has not replied. Current hosted CI and release build are active; fresh installed/runtime proofs and all final gates remain required."
+    "Browser origin approval remains pending: the owner was asked and has not replied. Current camera execution and hosted CI are active; runtime and final qualification gates remain incomplete."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1085,7 +1085,7 @@
       "state": "pending",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Current corrected commit passed own full normal and retained DATA: 1771 headless/1369 overlapping renderer tests, two ignored per profile, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Nine distinct Rust controls passed; the changed guard line is covered in both profiles against true parent and accepted ancestor. Hosted CI and four-role build are running. Installed runtime and acceptance remain pending; browser approval is still requested.",
+    "note": "Own current commit passed normal and retained DATA: 1771 headless/1369 overlapping renderer tests, two ignored per profile, 494 aggregate Python tests, 47 finite examples and 21 RGB controls. Four-role release, package and two distinct pristine installs also passed actual and retained DATA. Both setups ran the same 47 worlds; the census stays 47. Camera execution and hosted CI are active without final results. Browser approval remains pending; accepted Main is M76 and Latest M70 retains 41 installed examples.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1101,7 +1101,7 @@
     "quiet_Python_tests": 494,
     "quiet_Python_individual_results_observable": false,
     "finite_example_runs": 47,
-    "installed_finite_example_runs": null,
+    "installed_finite_example_runs": 47,
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/tree/57b44de10713dc6132c5549d769dac00dc041f56",
     "automatic_Main_CI": {
       "id": 44687651179,
@@ -1129,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Latest own LOCAL results at exact corrected57 only. Accepted Main remains M76; hosted CI/release build are active and current-head package/install/runtime/official/Main/public acceptance remain pending. Original353 measurements and failed95ef/method1 history are retained separately.",
+    "qualification_scope": "Own current57 local/release/package and pristine finite-install proofs only. Accepted Main remains M76. Camera execution and hosted CI are active without final results; browser approval and actual runtime/official/Main/public acceptance remain pending.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1180,10 +1180,81 @@
         "status": "in_progress",
         "conclusion": null
       },
+      "release_build_active": false,
+      "qualification_inherited": false,
+      "release_DATA_qualified": true,
+      "package_DATA_qualified": true,
+      "pristine_install_DATA_qualified": true,
+      "installed_camera_runtime": false,
+      "installed_browser_runtime": false,
+      "installed_camera_runtime_active": true,
+      "installed_camera_launch": {
+        "tool": "6b00ea",
+        "session": 6800,
+        "actual_Root_exit": null,
+        "result": null
+      }
+    },
+    "installed_finite_scope": "Own current57 package passed the same47 plain finite commands in two distinct pristine setups with independent DATA. Distinct world census47, not94. No camera/browser runtime or acceptance claim.",
+    "historical_release_build_active_current_candidate": {
+      "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "staged_tree": "b1dd0332656b233a1546dcca87733abe14305092",
+      "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "normal_running": false,
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "actual_Root_exit": 0,
+      "actual_Git_exit": 0,
+      "hosted_CI": {
+        "id": 44715646599,
+        "attempt": 1,
+        "status": "in_progress",
+        "conclusion": null
+      },
       "release_build_active": true,
       "qualification_inherited": false
     },
-    "installed_finite_scope": "No current57 installed-run result yet. The two pristine47-world installations at unaccepted353 remain historical; public Latest M70 still retains41 examples."
+    "M77_release_actual": {
+      "sha256": "f18e8562257edf6f93db4f8524af071eb42328eea2764ea661f7bf579eef5301",
+      "bytes": 3201
+    },
+    "M77_release_DATA_actual": {
+      "sha256": "c13b7882caac7ea81b6331e550c4bd34a3cfbc9dc916ec059b98fe0e427f4b15",
+      "bytes": 1535
+    },
+    "M77_release_DATA_report": {
+      "sha256": "56bff30bf60801a2add9880948198b41b19fe3a72cefe129aa2b232915d98da0",
+      "bytes": 6521
+    },
+    "M77_package_assembly_actual": {
+      "sha256": "ae0570f09bae8c5ae1fde057411d99f3c2866734cb29ac61fa55e48b191417b5",
+      "bytes": 1631
+    },
+    "M77_package_DATA_actual": {
+      "sha256": "79ba48bbf0ba4661170ec84e67c3c1b666f9cac8a633de6d45727a3de56bd6fd",
+      "bytes": 1352
+    },
+    "M77_package_DATA_report": {
+      "sha256": "58f38bcca4a2c264edb6960080d1b17b37b67079b2ce4130e4c345f2dd72d9c6",
+      "bytes": 13774
+    },
+    "M77_camera_install_actual": {
+      "sha256": "77f39cb5b213bcc6d705f641532a5c04aeeb9db1f503352032a234bb4dd383cd",
+      "bytes": 1885
+    },
+    "M77_camera_install_DATA_actual": {
+      "sha256": "1b0b01e5a3ff863c87a566b5065c53ec56a124e799a5c97e21d9b637b14b973b",
+      "bytes": 1403
+    },
+    "M77_browser_distinct_install_actual": {
+      "sha256": "e8ff2a5981575ca1109f31fb1fbed584cd8383a4f39d56cc40fd6b12d3f083c0",
+      "bytes": 1951
+    },
+    "M77_browser_distinct_install_DATA_actual": {
+      "sha256": "fea99209a60b20396facbbf622c35e3d61097ab4da3fe32b1ff15c0211d813d7",
+      "bytes": 1407
+    }
   },
   "phase_status": {
     "P0": "in_progress",
