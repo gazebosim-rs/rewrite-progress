@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T17:54:01.960213+00:00",
+  "updated_at": "2026-11-20T19:08:37.756844+00:00",
   "state": "active",
-  "summary": "Shared M78/M79 normal retry is running on reviewed compile corrections. Native DATA is retained; no result or qualified commit yet. M77\u2019s demo stays live. Counts remain 76 accepted of 79 phases and 202 slices.",
+  "summary": "Full verification is running on the reviewed corrected source and reproduction material. The previous run retired after six failures. No new pass is claimed; M77\u2019s demo stays live and acceptance remains 76 of 79.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M78-M79-normal-retry",
-      "title": "Reviewed compile-fix full-normal retry is active",
-      "detail": "All three compile-failure classes and affected formatting passed Source review. Root alone watches one full-normal retry on the corrected candidate. Native evidence is retained unchanged; previous failures remain preserved. No result or qualified commit is inferred."
+      "id": "M78-M79-full-normal-running",
+      "title": "Reviewed corrected source in full verification",
+      "detail": "One full normal gate is running on the final 1770-file source. Corrected tests and reproduction material are reviewed; the previous six-failure run remains retired. New result, qualified commit and acceptance are pending."
     },
     {
       "id": "M77-manual-demo",
@@ -1030,11 +1030,11 @@
     }
   ],
   "remaining": [
-    "Wait for this exact full-normal retry result. Require independent local DATA only after genuine normal0, then exact hosted CI and official DATA.",
+    "Finish the running full staged hook and strict coverage, then require same-head local DATA and hosted/official gates before qualification.",
     "Keep the manual demo running; complete M77 formal GUI/Main acceptance before accepting either shared phase."
   ],
   "blockers": [
-    "M77 formal GUI/Main acceptance remains pending. The shared normal retry is active with no result; neither manual operation nor an active gate implies acceptance."
+    "Previous qualification failed. The new full gate has no outcome yet; remaining local/hosted gates and M77 formal GUI/Main acceptance are still required."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1085,7 +1085,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Product measurements remain bound to qualified M77 Source57. Reviewed compile corrections and final affected formatting are complete; the shared full-normal retry is active with no result or qualified commit. Two obsolete forwarders had zero callers, including tests. Native evidence and all failures are preserved. M77\u2019s manual demo stays live; formal GUI/Main acceptance and Latest M70 are unchanged.",
+    "note": "M77 non-browser measurements remain unchanged. The prior shared run retired with controller exit 1 and UNKNOWN Git/test completion. One fresh full gate is running on final reviewed source; its outcome is pending. The retained projection reproduced the fixture without native replay.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1129,7 +1129,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Own M77 exact57 non-browser qualification remains complete. All shared compile corrections and affected formatting are Source-clear; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged. Earlier normal failures remain historical; no pass or acceptance transfers.",
+    "qualification_scope": "Own M77 exact57 non-browser qualification remains complete. The previous shared run retired with controller exit 1 and UNKNOWN Git/test completion. One fresh full gate is running on the final reviewed Source; no new pass or inherited qualification is claimed.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1218,7 +1218,7 @@
       "browser_checkpoints_written": false,
       "browser_runtime_qualified": false,
       "active_owned_job": true,
-      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. The separate shared compile-fix full-normal retry is active under current_M78_M79_Source with Root solewatch and no result.",
+      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. The separate shared full normal gate is active and recorded under current_M78_M79_Source; its outcome is pending.",
       "manual_demo": {
         "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
         "session_id": 86363,
@@ -1617,9 +1617,9 @@
       "new_Python_test_declarations": 0,
       "Source_finite_examples": 47,
       "Source_CLI_cases": 21,
-      "scope": "Both earlier normal failures remain preserved. All bounded compile corrections and affected formatting are Source-clear in the isolated successor; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged; no qualification transfers.",
+      "scope": "The preceding shared run retired with controller exit 1 and UNKNOWN Git/test completion. Corrected tests and checked-in reproduction Source are reviewed; one fresh full gate is now running.",
       "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
-      "checks_run_scope": "Both earlier normal failures remain preserved. All bounded compile corrections and affected formatting are Source-clear in the isolated successor; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged; no qualification transfers.",
+      "checks_run_scope": "Earlier runs failed or were retired. The final 1770-file Source now has one full gate running; no new pass or qualified commit exists.",
       "Source_profile_declarations": {
         "Rust_unique": 16,
         "Python": 0,
@@ -1628,21 +1628,21 @@
         "overlap": 7,
         "counts_are_Source_obligations_not_executed_results": true
       },
-      "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
-      "source_binding_count": 1754,
+      "tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+      "source_binding_count": 1770,
       "whole_Source_review": {
-        "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
-        "bytes": 2484,
+        "sha256": "005815ae064484e7abe976173b980ddae0cafb31632aa5052f420e2d7217c6b6",
+        "bytes": 6003,
         "mode": 436
       },
       "final_Source_review": {
-        "sha256": "98c661382b43ed7d3cd98e261078cf538f034e9d9949669f261066ceff5c4299",
-        "bytes": 1043,
+        "sha256": "005815ae064484e7abe976173b980ddae0cafb31632aa5052f420e2d7217c6b6",
+        "bytes": 6003,
         "mode": 436
       },
       "formatter_actual": {
-        "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
-        "bytes": 1078570,
+        "sha256": "55c93e4678d9f44b68096ad08af7a3f65c937ad0bf213d12a656da3f4bd72dbd",
+        "bytes": 447898,
         "mode": 436
       },
       "historical_normal_active_observation": {
@@ -1713,6 +1713,402 @@
         }
       },
       "shared_candidate": {
+        "phases": [
+          "M78",
+          "M79"
+        ],
+        "state": "corrected_and_reproduction_Source_reviewed_actual_full_normal_running",
+        "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "parent_accepted": false,
+        "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "Source_binding_count": 1770,
+        "changed_paths": 48,
+        "cumulative_changed_paths_vs_accepted_ancestor": 60,
+        "Source_control_obligations": {
+          "Rust_unique": 39,
+          "headless": 39,
+          "renderer": 21,
+          "overlap": 21,
+          "Python_new": 0
+        },
+        "Source_finite_runs": 47,
+        "Source_CLI_cases": 21,
+        "independent_whole_Source_review_complete": true,
+        "final_qualification_tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+        "final_Source_snapshot": {
+          "sha256": "7a73a3ed7362ba092ecb1fa11f7c0cb4e2abd38f9674f1c5b32b77dc8351c3d5",
+          "bytes": 664093,
+          "mode": 436
+        },
+        "final_Source_review": {
+          "sha256": "005815ae064484e7abe976173b980ddae0cafb31632aa5052f420e2d7217c6b6",
+          "bytes": 6003,
+          "mode": 436
+        },
+        "final_formatter_actual": {
+          "sha256": "55c93e4678d9f44b68096ad08af7a3f65c937ad0bf213d12a656da3f4bd72dbd",
+          "bytes": 447898,
+          "mode": 436
+        },
+        "native_fixture_present": true,
+        "native_capture_actual": {
+          "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
+          "bytes": 3898,
+          "mode": 436
+        },
+        "native_DATA_actual": {
+          "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
+          "bytes": 1790,
+          "mode": 436
+        },
+        "native_scope": "Original VelocityControl public model-frame component observations only; no Physics step, SystemManager reset, private callback receipt/quiescence or phase qualification.",
+        "native_callback_quiescence": "UNKNOWN",
+        "native_reference_replayed": false,
+        "previous_normal": {
+          "state": "retired_after_reported_test_failures_not_qualified",
+          "actual": {
+            "sha256": "72d448ffeff8ebda3da540faa24e2b5f3c050cce851c5f2fca44e127737f13b0",
+            "bytes": 4390,
+            "mode": 436
+          },
+          "actual_Root_exit": 1,
+          "actual_Git_exit": null,
+          "actual_test_process_exit": null,
+          "unknown_exit_scope": "Git and test-process exits were not observed as completed; neither is inferred from the controller exit.",
+          "retired_session_id": 63906,
+          "elapsed_seconds": 2476.124432484008,
+          "reported_failed_tests": 6,
+          "unfinished_old_tests": 3,
+          "unfinished_cause": "UNKNOWN; Source-proven default-discovery exposure is not an actual blocked-site diagnosis.",
+          "test_or_coverage_pass_claimed": false,
+          "qualified_commit": null
+        },
+        "reported_test_failures": {
+          "count": 6,
+          "setup_cause_groups_corrected": 5,
+          "independently_Source_reviewed": true
+        },
+        "old_local_fixture_constructors_isolated": 3,
+        "old_fixture_cause": "UNKNOWN; isolation preserves local assertions and does not establish the prior blocked site.",
+        "active_heavy_job": true,
+        "normal_launch": {
+          "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
+          "session_id": 47120,
+          "launch_tool": "41c369",
+          "actual": {
+            "sha256": "f534db62417100817068c40037476b5fce8a193ebed8fa86d0be648f260806f9",
+            "bytes": 2723,
+            "mode": 436
+          },
+          "runner": {
+            "sha256": "a1129e9c2d3896dd623b7ea8930e398806c7b884e127a924b2698eb3664e31aa",
+            "bytes": 31085,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "6ecc738d2d3bb47913c0c60f7f726cb10c3f173f63526e3ae38161cf38906588",
+            "bytes": 7457,
+            "mode": 436
+          },
+          "release": {
+            "sha256": "c85417facf12fe737d2c4b8e05c1696e0e49dc2276a79378a33f0674a65040c2",
+            "bytes": 2107,
+            "mode": 436
+          },
+          "actual_Root_exit_code": null,
+          "actual_Git_exit_code": null,
+          "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
+        },
+        "normal_actual": null,
+        "normal_result": null,
+        "local_DATA_actual": null,
+        "hosted_actual": null,
+        "official_actual": null,
+        "qualified_commit": null,
+        "normal_qualified": false,
+        "test_or_coverage_pass_claimed": false,
+        "qualification_inherited": false,
+        "standalone_M78_pass": false,
+        "acceptance_requires_M77_closeout": true,
+        "current_Source_scope": "Final corrected tests and checked-in reproduction Source are independently reviewed. One full normal gate is running on that exact Source; outcome and qualified commit remain pending. Earlier retired failures and native evidence retain their original scope.",
+        "test_input_corrections_independently_reviewed": true,
+        "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
+        "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
+        "reproduction_Source": {
+          "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
+          "retained_projection_actual": {
+            "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
+            "bytes": 2327,
+            "mode": 436
+          },
+          "byte_identical_fixture": true,
+          "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+        }
+      },
+      "historical_pre_test_input_current_fields": {
+        "scope": "Both earlier normal failures remain preserved. All bounded compile corrections and affected formatting are Source-clear in the isolated successor; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged; no qualification transfers.",
+        "checks_run_scope": "Both earlier normal failures remain preserved. All bounded compile corrections and affected formatting are Source-clear in the isolated successor; one full-normal retry is actually active with no result. Native capture/DATA values are retained unchanged; no qualification transfers.",
+        "checks_run": true,
+        "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+        "source_binding_count": 1754,
+        "whole_Source_review": {
+          "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
+          "bytes": 2484,
+          "mode": 436
+        },
+        "final_Source_review": {
+          "sha256": "98c661382b43ed7d3cd98e261078cf538f034e9d9949669f261066ceff5c4299",
+          "bytes": 1043,
+          "mode": 436
+        },
+        "formatter_actual": {
+          "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
+          "bytes": 1078570,
+          "mode": 436
+        }
+      },
+      "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source"
+    },
+    "historical_M78_normal_active_Source_observation": {
+      "scope_reviewed_and_lanes_released": true,
+      "Source_basis_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "Source_basis_accepted": false,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "implementation_started": true,
+      "implementation_complete": true,
+      "whole_independent_Source_review_complete": true,
+      "checks_run": true,
+      "qualification_inherited": false,
+      "contract": {
+        "sha256": "0df9540223fcc8d6488c333c3e985f7079f98030dd441d1cc040fa4b9ae4d40f",
+        "bytes": 8888,
+        "mode": 436
+      },
+      "Source_publication_available": false,
+      "future_qualified_head": null,
+      "new_Rust_test_declarations": 16,
+      "new_Python_test_declarations": 0,
+      "Source_finite_examples": 47,
+      "Source_CLI_cases": 21,
+      "scope": "One posed Rapier box collider per link. Implementation, additive regression Source and docs are complete, with whole Source clearance after one batched test finding. Own full normal/strict cycle is active, not qualified. Source inventories remain 47 finite examples and 21 CLI cases; no results transfer.",
+      "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
+      "checks_run_scope": "One normal/strict qualification started, no completed result; separate final formatter actual0.",
+      "Source_profile_declarations": {
+        "Rust_unique": 16,
+        "Python": 0,
+        "headless": 16,
+        "renderer": 7,
+        "overlap": 7,
+        "counts_are_Source_obligations_not_executed_results": true
+      },
+      "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+      "source_binding_count": 1754,
+      "whole_Source_review": {
+        "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
+        "bytes": 2484,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "98c661382b43ed7d3cd98e261078cf538f034e9d9949669f261066ceff5c4299",
+        "bytes": 1043,
+        "mode": 436
+      },
+      "formatter_actual": {
+        "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
+        "bytes": 1078570,
+        "mode": 436
+      },
+      "normal_active": {
+        "state": "active_no_result",
+        "actual_launch": {
+          "sha256": "0e2bc740ade79a06d1f0289303726962f73405a693af1fed217bd401b3ed00d5",
+          "bytes": 1729,
+          "mode": 436
+        },
+        "launch_tool": "348f80",
+        "Root_solewatch_session_id": 35585,
+        "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
+        "source_binding_count": 1754,
+        "Source_snapshot": {
+          "sha256": "f633d85a4e888d42bcab0a8993b80f42dbeb84649b56a3f72d53ef2f911d10ed",
+          "bytes": 652239,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "ca5914e870cfb4cdda0ef3c5502e93ce13b266ef19468c03549eba47edcd4e7a",
+          "bytes": 22764,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "743b1f0ac8cae2fa7b0e3298d58acbe6b31a4d3ad5a0ce1052cd4d8415b9c174",
+          "bytes": 3880,
+          "mode": 436
+        },
+        "actual_Root_exit": null,
+        "actual_Git_exit": null,
+        "actual_commit": null,
+        "actual_result": null,
+        "normal_qualified": false,
+        "capacity_scope": "44 GiB initial reserve and 8 GiB early SSD stop; mandatory 14 GiB initial reserve and all four floors remain unchanged, with a bounded one-second ledger. This budget is not a fit guarantee.",
+        "qualification_inherited": false
+      }
+    },
+    "current_M78_M79_Source": {
+      "phases": [
+        "M78",
+        "M79"
+      ],
+      "state": "corrected_and_reproduction_Source_reviewed_actual_full_normal_running",
+      "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
+      "parent_accepted": false,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "Source_binding_count": 1770,
+      "changed_paths": 48,
+      "cumulative_changed_paths_vs_accepted_ancestor": 60,
+      "Source_control_obligations": {
+        "Rust_unique": 39,
+        "headless": 39,
+        "renderer": 21,
+        "overlap": 21,
+        "Python_new": 0
+      },
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "independent_whole_Source_review_complete": true,
+      "final_qualification_tree": "da2fee0ff19a85d7805c264e28ca4e9d4e9dd2a9",
+      "final_Source_snapshot": {
+        "sha256": "7a73a3ed7362ba092ecb1fa11f7c0cb4e2abd38f9674f1c5b32b77dc8351c3d5",
+        "bytes": 664093,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "005815ae064484e7abe976173b980ddae0cafb31632aa5052f420e2d7217c6b6",
+        "bytes": 6003,
+        "mode": 436
+      },
+      "final_formatter_actual": {
+        "sha256": "55c93e4678d9f44b68096ad08af7a3f65c937ad0bf213d12a656da3f4bd72dbd",
+        "bytes": 447898,
+        "mode": 436
+      },
+      "native_fixture_present": true,
+      "native_capture_actual": {
+        "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
+        "bytes": 3898,
+        "mode": 436
+      },
+      "native_DATA_actual": {
+        "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
+        "bytes": 1790,
+        "mode": 436
+      },
+      "native_scope": "Original VelocityControl public model-frame component observations only; no Physics step, SystemManager reset, private callback receipt/quiescence or phase qualification.",
+      "native_callback_quiescence": "UNKNOWN",
+      "native_reference_replayed": false,
+      "previous_normal": {
+        "state": "retired_after_reported_test_failures_not_qualified",
+        "actual": {
+          "sha256": "72d448ffeff8ebda3da540faa24e2b5f3c050cce851c5f2fca44e127737f13b0",
+          "bytes": 4390,
+          "mode": 436
+        },
+        "actual_Root_exit": 1,
+        "actual_Git_exit": null,
+        "actual_test_process_exit": null,
+        "unknown_exit_scope": "Git and test-process exits were not observed as completed; neither is inferred from the controller exit.",
+        "retired_session_id": 63906,
+        "elapsed_seconds": 2476.124432484008,
+        "reported_failed_tests": 6,
+        "unfinished_old_tests": 3,
+        "unfinished_cause": "UNKNOWN; Source-proven default-discovery exposure is not an actual blocked-site diagnosis.",
+        "test_or_coverage_pass_claimed": false,
+        "qualified_commit": null
+      },
+      "reported_test_failures": {
+        "count": 6,
+        "setup_cause_groups_corrected": 5,
+        "independently_Source_reviewed": true
+      },
+      "old_local_fixture_constructors_isolated": 3,
+      "old_fixture_cause": "UNKNOWN; isolation preserves local assertions and does not establish the prior blocked site.",
+      "active_heavy_job": true,
+      "normal_launch": {
+        "state": "ACTUAL_FULL_NORMAL_RUNNING_OUTCOME_PENDING",
+        "session_id": 47120,
+        "launch_tool": "41c369",
+        "actual": {
+          "sha256": "f534db62417100817068c40037476b5fce8a193ebed8fa86d0be648f260806f9",
+          "bytes": 2723,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "a1129e9c2d3896dd623b7ea8930e398806c7b884e127a924b2698eb3664e31aa",
+          "bytes": 31085,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "6ecc738d2d3bb47913c0c60f7f726cb10c3f173f63526e3ae38161cf38906588",
+          "bytes": 7457,
+          "mode": 436
+        },
+        "release": {
+          "sha256": "c85417facf12fe737d2c4b8e05c1696e0e49dc2276a79378a33f0674a65040c2",
+          "bytes": 2107,
+          "mode": 436
+        },
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "scope": "One full normal gate is actually running. No result, pass, qualified commit or phase acceptance is inferred."
+      },
+      "normal_actual": null,
+      "normal_result": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "qualified_commit": null,
+      "normal_qualified": false,
+      "test_or_coverage_pass_claimed": false,
+      "qualification_inherited": false,
+      "standalone_M78_pass": false,
+      "acceptance_requires_M77_closeout": true,
+      "current_Source_scope": "Final corrected tests and checked-in reproduction Source are independently reviewed. One full normal gate is running on that exact Source; outcome and qualified commit remain pending. Earlier retired failures and native evidence retain their original scope.",
+      "test_input_corrections_independently_reviewed": true,
+      "pre_reproduction_Source_reference": "pre_reproduction_reviewed_Source",
+      "Source_count_scope": "The final expanded Source binds 1770 files and 48 own changes. The earlier 1769-file snapshot is preserved as pre-reproduction history.",
+      "reproduction_Source": {
+        "state": "checked_in_reproduction_Source_independently_reviewed_retained_projection_actual_zero",
+        "retained_projection_actual": {
+          "sha256": "ef8d77ed33d5f079db76fa49a30e57d11b8d7702c55e1e1b206f39c5edda0847",
+          "bytes": 2327,
+          "mode": 436
+        },
+        "byte_identical_fixture": true,
+        "scope": "The checked-in original helper, provenance and complete compile environment/argv are reviewed. One retained-stdout projection reproduced the fixture bytes. No compiler, native component, SDK or product replay occurred."
+      }
+    },
+    "historical_compile_fix_Source_before_test_input_corrections": {
+      "state": "historical_compile_fix_launch_observation_now_retired",
+      "as_of_scope": "The sealed observation below described session63906 before retirement. It is historical, not an active job; actual retirement and limits are recorded above.",
+      "retirement": {
+        "state": "retired_after_reported_test_failures_not_qualified",
+        "actual": {
+          "sha256": "72d448ffeff8ebda3da540faa24e2b5f3c050cce851c5f2fca44e127737f13b0",
+          "bytes": 4390,
+          "mode": 436
+        },
+        "actual_Root_exit": 1,
+        "actual_Git_exit": null,
+        "actual_test_process_exit": null,
+        "unknown_exit_scope": "Git and test-process exits were not observed as completed; neither is inferred from the controller exit.",
+        "retired_session_id": 63906,
+        "elapsed_seconds": 2476.124432484008,
+        "reported_failed_tests": 6,
+        "unfinished_old_tests": 3,
+        "unfinished_cause": "UNKNOWN; Source-proven default-discovery exposure is not an actual blocked-site diagnosis.",
+        "test_or_coverage_pass_claimed": false,
+        "qualified_commit": null
+      },
+      "sealed_Source_observation": {
         "phases": [
           "M78",
           "M79"
@@ -1936,312 +2332,28 @@
         ]
       }
     },
-    "historical_M78_normal_active_Source_observation": {
-      "scope_reviewed_and_lanes_released": true,
-      "Source_basis_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
-      "Source_basis_accepted": false,
-      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
-      "implementation_started": true,
-      "implementation_complete": true,
-      "whole_independent_Source_review_complete": true,
-      "checks_run": true,
-      "qualification_inherited": false,
-      "contract": {
-        "sha256": "0df9540223fcc8d6488c333c3e985f7079f98030dd441d1cc040fa4b9ae4d40f",
-        "bytes": 8888,
-        "mode": 436
-      },
-      "Source_publication_available": false,
-      "future_qualified_head": null,
-      "new_Rust_test_declarations": 16,
-      "new_Python_test_declarations": 0,
-      "Source_finite_examples": 47,
-      "Source_CLI_cases": 21,
-      "scope": "One posed Rapier box collider per link. Implementation, additive regression Source and docs are complete, with whole Source clearance after one batched test finding. Own full normal/strict cycle is active, not qualified. Source inventories remain 47 finite examples and 21 CLI cases; no results transfer.",
-      "SDF_inertial_default_policy": "Direct dynamic API callers must supply Some centered validated inertia. Scene passes resolved SDFormat values, including omitted-inertial default mass1/tensoridentity/poseidentity; no XML-presence rule or collider-derived mass/COM.",
-      "checks_run_scope": "One normal/strict qualification started, no completed result; separate final formatter actual0.",
-      "Source_profile_declarations": {
-        "Rust_unique": 16,
-        "Python": 0,
-        "headless": 16,
-        "renderer": 7,
-        "overlap": 7,
-        "counts_are_Source_obligations_not_executed_results": true
-      },
-      "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
-      "source_binding_count": 1754,
-      "whole_Source_review": {
-        "sha256": "7f5509fe43849995108c7ae4e0b1fa3926a255ea8ffc4e719db1b34d29fa3a8d",
-        "bytes": 2484,
+    "pre_reproduction_reviewed_Source": {
+      "final_qualification_tree": "5b963325bf93682ada2eba4a6bb6814f877bfd9d",
+      "Source_binding_count": 1769,
+      "changed_paths": 47,
+      "cumulative_changed_paths_vs_accepted_ancestor": 59,
+      "final_Source_snapshot": {
+        "sha256": "34f75fcdbf57b5d43811bd9c929341ba613a2f623ad279a7837b1249f0ed6cae",
+        "bytes": 662531,
         "mode": 436
       },
       "final_Source_review": {
-        "sha256": "98c661382b43ed7d3cd98e261078cf538f034e9d9949669f261066ceff5c4299",
-        "bytes": 1043,
-        "mode": 436
-      },
-      "formatter_actual": {
-        "sha256": "326972a76d9d22f006d0f59c7e37b478c16efc2a5d0ae44ea0fd72b0da3549d6",
-        "bytes": 1078570,
-        "mode": 436
-      },
-      "normal_active": {
-        "state": "active_no_result",
-        "actual_launch": {
-          "sha256": "0e2bc740ade79a06d1f0289303726962f73405a693af1fed217bd401b3ed00d5",
-          "bytes": 1729,
-          "mode": 436
-        },
-        "launch_tool": "348f80",
-        "Root_solewatch_session_id": 35585,
-        "tree": "9774cd21704d985ce324af39a2ea94caea0cb6b1",
-        "source_binding_count": 1754,
-        "Source_snapshot": {
-          "sha256": "f633d85a4e888d42bcab0a8993b80f42dbeb84649b56a3f72d53ef2f911d10ed",
-          "bytes": 652239,
-          "mode": 436
-        },
-        "runner": {
-          "sha256": "ca5914e870cfb4cdda0ef3c5502e93ce13b266ef19468c03549eba47edcd4e7a",
-          "bytes": 22764,
-          "mode": 436
-        },
-        "binding": {
-          "sha256": "743b1f0ac8cae2fa7b0e3298d58acbe6b31a4d3ad5a0ce1052cd4d8415b9c174",
-          "bytes": 3880,
-          "mode": 436
-        },
-        "actual_Root_exit": null,
-        "actual_Git_exit": null,
-        "actual_commit": null,
-        "actual_result": null,
-        "normal_qualified": false,
-        "capacity_scope": "44 GiB initial reserve and 8 GiB early SSD stop; mandatory 14 GiB initial reserve and all four floors remain unchanged, with a bounded one-second ledger. This budget is not a fit guarantee.",
-        "qualification_inherited": false
-      }
-    },
-    "current_M78_M79_Source": {
-      "phases": [
-        "M78",
-        "M79"
-      ],
-      "state": "compile_corrected_full_normal_retry_actually_active_no_result",
-      "true_parent": "57b44de10713dc6132c5549d769dac00dc041f56",
-      "parent_accepted": false,
-      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
-      "pre_native_tree": "b076078c613c7962e33dfb4282f6814dee8f26a5",
-      "pre_native_tree_is_final_qualification_tree": false,
-      "Source_binding_count": 1769,
-      "changed_paths": 46,
-      "Source_control_obligations": {
-        "Rust_unique": 39,
-        "headless": 39,
-        "renderer": 21,
-        "overlap": 21,
-        "Python_new": 0
-      },
-      "Source_finite_runs": 47,
-      "Source_CLI_cases": 21,
-      "independent_whole_Source_review_complete": true,
-      "decision": {
-        "sha256": "14e3b249e17c607f514ef0828ce1ecad4129a6c9e38c9440d816527a723792fd",
-        "bytes": 4920,
-        "mode": 436
-      },
-      "whole_Source_review": {
-        "sha256": "6b2377a264dcdc75f44cf83dcc870a03675f587e652e108c25340844ddb86368",
-        "bytes": 4961,
-        "mode": 436
-      },
-      "pre_native_Source_snapshot": {
-        "sha256": "4cec6d3e65efb7716b1ee2bb1ec0c74b7c0925b7d06188686cb6da12298f28a9",
-        "bytes": 656418,
-        "mode": 436
-      },
-      "native_fixture_present": true,
-      "native_capture_actual": {
-        "sha256": "05eabb486762f6e53243fd660c61c499525c99a9a4a96bf8902bf3a0379d888d",
-        "bytes": 3898,
-        "mode": 436
-      },
-      "native_DATA_actual": {
-        "sha256": "e3583aaa41f1e8d46f53f8d7c9363f5a0f92d310d10c0383ebff783256580441",
-        "bytes": 1790,
+        "sha256": "a4c54318f4e995f090da8f25aefe37031768c78d88c0f12357bb1175f3c6823b",
+        "bytes": 8064,
         "mode": 436
       },
       "final_formatter_actual": {
-        "sha256": "70fe748c9b2d64f2914aba8a9ca03f977f445002ee750f97fdb6c813c9dfd4b7",
-        "bytes": 477831,
+        "sha256": "55c93e4678d9f44b68096ad08af7a3f65c937ad0bf213d12a656da3f4bd72dbd",
+        "bytes": 447898,
         "mode": 436
       },
-      "final_qualification_tree": "352b58662499d7de86d1681355dd31e6090d1030",
-      "normal_actual": null,
-      "local_DATA_actual": null,
-      "hosted_actual": null,
-      "official_actual": null,
-      "qualification_inherited": false,
-      "standalone_M78_pass": false,
-      "acceptance_requires_M77_closeout": true,
-      "pre_native_Source_binding_count": 1767,
-      "pre_native_changed_paths": 43,
-      "Source_count_scope": "Actual final staged Source/index inventory after native import and one final formatter.",
-      "native_DATA_report": {
-        "sha256": "6347d18b75e1d53ae58a3861cc6f628d04c357329b539d3df2fcd59d74be514a",
-        "bytes": 253242,
-        "mode": 384
-      },
-      "native_fixture_proposal": {
-        "sha256": "5878e0a69599b97031a6eaeb20d8aad460c8edc25444ee25f8d721dad98b417c",
-        "bytes": 15900,
-        "mode": 384
-      },
-      "native_fixture_import_actual": {
-        "sha256": "6f691e2c061ab786167c69cf17b6f1db9150b27ba8d6e4b102f3824d8f7003be",
-        "bytes": 2272,
-        "mode": 436
-      },
-      "typed_fixture": {
-        "sha256": "6bc234d23191fb59f753ec6bc962c3e42f45d8b3e6271804d956c9c579dcea98",
-        "bytes": 4764,
-        "mode": 436
-      },
-      "typed_fixture_provenance": {
-        "sha256": "77c789113a8221181e086a701697e6d5ae6b9620a72670d9521c1f549ea23ae1",
-        "bytes": 2433,
-        "mode": 436
-      },
-      "fresh_reference_descriptor": {
-        "sha256": "8afa485fac4036f588da591346560477006c3c369db4f4305deff5650ab6d0c1",
-        "bytes": 2341,
-        "mode": 436
-      },
-      "native_scope": "Original VelocityControl public model-frame component observations only; no Physics step, SystemManager reset, private callback receipt/quiescence or phase qualification.",
-      "native_callback_quiescence": "UNKNOWN",
-      "historical_native_preflight_failure": {
-        "sha256": "1c55cdd550c020ba578753f112f15c1fee4a753b77f6f22f33f43b3a6652c20e",
-        "bytes": 2275,
-        "mode": 436
-      },
-      "normal_launch": {
-        "state": "active_no_result",
-        "actual_launch": {
-          "sha256": "8e76d338584a5f763051959cfae7b3a5d77fccc64e78ede38f0fc482e15da9e4",
-          "bytes": 2368,
-          "mode": 436
-        },
-        "Root_solewatch_session_id": 63906,
-        "launch_tool": "9d1276",
-        "tree": "352b58662499d7de86d1681355dd31e6090d1030",
-        "Source_binding_count": 1769,
-        "runner": {
-          "sha256": "e9156a011c5df6f02519d1e89b590a4cc0ad49b43266d8457b647a4a85e47ab5",
-          "bytes": 31102,
-          "mode": 436
-        },
-        "binding": {
-          "sha256": "c2de4852745190190572e4918f8f52f7b8e9e4109d94c01ca469217eddb56c12",
-          "bytes": 6850,
-          "mode": 436
-        },
-        "actual_Root_exit": null,
-        "actual_Git_exit": null,
-        "actual_commit": null,
-        "actual_result": null,
-        "qualification_inherited": false
-      },
-      "normal_result": null,
-      "cumulative_changed_paths_vs_accepted_ancestor": 58,
-      "final_Source_snapshot": {
-        "sha256": "7b6dc3729f14371eacb7cf14a624c8b1f94b525d6415bc9ba61eb952fdc56ee0",
-        "bytes": 662416,
-        "mode": 436
-      },
-      "final_Source_review": {
-        "sha256": "117babb07db3821dca57d88376172b8059da26065d6f6f9546fa9a852a1db176",
-        "bytes": 5507,
-        "mode": 436
-      },
-      "normal_qualified": false,
-      "historical_active_normal_observation": {
-        "state": "active_no_result",
-        "actual_launch": {
-          "sha256": "ae6d087a5c0abb808a0a2c84fd14ec388c09e05565973a6adcda2adbaa21b945",
-          "bytes": 2036,
-          "mode": 436
-        },
-        "Root_solewatch_session_id": 79611,
-        "launch_tool": "4eb190",
-        "tree": "e60e47f26d1df6d1f43dfc1c5e639046ed689e6a",
-        "Source_binding_count": 1769,
-        "runner": {
-          "sha256": "38ffc8b556acbe1a88c1997c0098b2aafc1907dc856e4cd5a3a970ac4729c4c4",
-          "bytes": 31068,
-          "mode": 436
-        },
-        "binding": {
-          "sha256": "2cbde8b959ca00f37e1e9f48eaf9a8a661a8182fe2e70301d4a048a2ffd678ed",
-          "bytes": 6593,
-          "mode": 436
-        },
-        "actual_Root_exit": null,
-        "actual_Git_exit": null,
-        "actual_commit": null,
-        "actual_result": null,
-        "qualification_inherited": false
-      },
-      "test_or_coverage_pass_claimed": false,
-      "bounded_correction_state": "All three compile-failure classes corrected and independently Source-reviewed; affected four-file formatter passed. One full normal retry is actually active with no result.",
-      "historical_first_shared_failure": {
-        "actual": {
-          "sha256": "49b0f48cdb965a94b4f05cca62e5665cf9955b3484ad2abcabfa7d91c72af3c1",
-          "bytes": 4176,
-          "mode": 436
-        },
-        "result": {
-          "sha256": "800c851ccb2f9610d24356ac4c2aff14490fab0d39341af4739f84fe0ad9c738",
-          "bytes": 6227,
-          "mode": 436
-        },
-        "retired_launch": {
-          "state": "retired_actual1",
-          "actual_launch": {
-            "sha256": "ae6d087a5c0abb808a0a2c84fd14ec388c09e05565973a6adcda2adbaa21b945",
-            "bytes": 2036,
-            "mode": 436
-          },
-          "retired_session_id": 79611,
-          "launch_tool": "4eb190",
-          "terminal_tool": "3c92c0",
-          "actual_Root_exit": 1,
-          "actual_Git_exit": 1,
-          "actual_result": {
-            "sha256": "800c851ccb2f9610d24356ac4c2aff14490fab0d39341af4739f84fe0ad9c738",
-            "bytes": 6227,
-            "mode": 436
-          },
-          "actual_commit": null
-        },
-        "tree": "e60e47f26d1df6d1f43dfc1c5e639046ed689e6a",
-        "Root_and_Git_exit": 1,
-        "tests_or_coverage_run": false,
-        "original_Root_failure_classes": [
-          "Two private production wrappers used only by tests lack test-only cfg",
-          "Three retained seven-family test matches omit the new explicitly out-of-fixture VelocityControl variant",
-          "Three pose-preservation assertions require field equality rather than nonexistent WorldPose PartialEq"
-        ],
-        "correction_to_original_Root_inference": "The original receipt remains immutable. Later whole Source inspection found zero callsites for the two obsolete private forwarders, including tests; removing them was the reviewed fix, not cfg(test).",
-        "failure_stage": "workspace all-target Clippy --keep-going, actual exit101"
-      },
-      "historical_camera_info_reference": {
-        "sha256": "e0a2f9520b964b1e90c070acf8f5d76f26be77401af68d39ab507acb90a0debd",
-        "bytes": 9117,
-        "mode": 436
-      },
-      "reviewed_compile_corrections": [
-        "Two zero-caller obsolete private forwarders removed.",
-        "Three retained seven-family fixture matches explicitly reject the out-of-fixture VelocityControl variant.",
-        "Three pose-preservation assertions compare exact translation/quaternion tuples without changing tolerances."
-      ]
+      "state": "PRE_REPRODUCTION_REVIEWED_TEST_INPUT_SOURCE_ONLY",
+      "scope": "This reviewed and formatted 1769-file snapshot predates the checked-in reproduction helper/provenance/guide additions. It is not the expanded final Source or a qualification result."
     }
   },
   "phase_status": {
@@ -2730,6 +2842,30 @@
     "M77_failed_95ef_normal_failure": {
       "sha256": "ba307d775fb4d778c2d0251f10aa1579a0329c197cf7ab96fe352842401b717a",
       "bytes": 3158
+    }
+  },
+  "current_reported_test_failures": {
+    "as_of": "2026-11-20T18:46:16.511800+00:00",
+    "profile": "headless",
+    "reported_failed_cases": [
+      "posed_dynamic_box_keeps_explicit_centered_inertia_and_world_impulses",
+      "velocity_control::tests::velocity_control_live_private_or_public_binding_drift_never_redirects_owned_body_or_releases_velocity",
+      "posed_box_reset_and_removal_restore_geometry_and_public_identities",
+      "resolved_box_faces_preserve_link_visual_sensor_frames_and_ray_exclusion",
+      "identity_and_old_refusal_domains_remain_separate_from_posed_boxes",
+      "velocity_control::tests::absent_system_has_no_velocity_owner_or_reserved_input"
+    ],
+    "count": 6,
+    "full_run_still_active": false,
+    "normal_Root_exit_code": 1,
+    "qualified_commit": null,
+    "scope": "Six reported failed-case headers are retained from the retired headless run. Controller exit is actual1; Git/test completion and unfinished-case cause remain UNKNOWN. No profile pass or qualified commit.",
+    "normal_Git_exit_code": null,
+    "test_process_exit_code": null,
+    "actual_retirement": {
+      "sha256": "72d448ffeff8ebda3da540faa24e2b5f3c050cce851c5f2fca44e127737f13b0",
+      "bytes": 4390,
+      "mode": 436
     }
   }
 }
