@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-20T01:44:50.818505+00:00",
+  "updated_at": "2026-11-20T02:35:56.851711+00:00",
   "state": "active",
-  "summary": "M76 is selected for camera projection metadata and maintained M70 guides; implementation is underway and checks have not run. M1\u2013M75 and 202 slices are accepted. Latest M70 has 41 installed examples from Source 7094a31.",
+  "summary": "M76\u2019s reviewed test-only lint correction is running its full normal/strict retry; no result is available. The first failure is preserved. M1\u2013M75, 202 slices and Latest M70\u2019s 41 examples remain accepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M76",
-      "title": "Preparing complete camera projection metadata source",
-      "detail": "Finite P.tx/P.ty will populate CameraInfo only; rendered calibration, images and worker requests stay unchanged. The isolated phase includes meaningful regressions and maintained M70 guide corrections. Implementation has started and remains incomplete. Independent whole-source review precedes one consolidated mandatory qualification; no M76 result is claimed."
+      "title": "The reviewed camera metadata qualification retry is running",
+      "detail": "The isolated tuple alias correction passed independent source review and formatting. The full normal/strict retry is running with no result. The first attempt failed at one helper lint before product tests or coverage; its evidence is preserved. Production, helper bodies, assertions and native bytes are unchanged, so passed CPU-native reference DATA is reused."
     }
   ],
   "accepted_slices": [
@@ -1025,8 +1025,8 @@
     }
   ],
   "remaining": [
-    "Complete M76 implementation, meaningful regression source and maintained guides within its five-day budget, including review and required gates.",
-    "Review the whole source independently and batch findings before one consolidated normal/strict qualification; retain hosted, official and Main acceptance gates."
+    "Observe the existing full normal/strict retry and preserve its actual exits, logs and any partial evidence.",
+    "After successful local qualification, independently audit retained evidence and complete exact hosted, official and Main gates before acceptance."
   ],
   "blockers": [],
   "plan_status": {
@@ -1078,7 +1078,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44644272919"
     },
-    "note": "Accepted M75 616cc3e passed normal, strict coverage, independent local DATA, first review CI and official audit. Headless 1759 and renderer 1353 overlap; each has two ignored controls. Python 479 is aggregate evidence; 14 new controls, 46 source runs and 20 CLI cases passed. These results do not qualify selected M76, which has no checks yet. Separate automatic Main CI was last observed in progress. Latest M70 has 41 installed examples from package Source 7094a31. Earlier failures and unknowns remain preserved.",
+    "note": "Accepted M75 616cc3e: headless 1759 and renderer 1353 overlap, with two ignored controls per profile; Python 479 is aggregate evidence. Its 14 new controls, 46 source runs and 20 CLI cases passed the required gates. M76\u2019s reviewed test-only alias correction is running a full normal/strict retry with no result. The first lint failure reached no product tests/coverage; native reference DATA remains valid. Latest M70 has 41 installed examples from Source 7094a31. Separate automatic Main CI succeeded; no qualification transfers to M76.",
     "renderer_coverage": {
       "lines": [
         21549,
@@ -1098,9 +1098,15 @@
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/616cc3e2105a7ef9479ac823a6b05e832a92defc",
     "automatic_Main_CI": {
       "id": 44653390693,
-      "status": "in_progress",
-      "conclusion": null,
-      "scope": "Separate automatic Main run; not a replacement for the qualifying exact review runs."
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "Separate automatic Main CI metadata success at accepted 616cc3e; no new artifact audit and no M76 qualification transfer. The qualifying M75 review run remains distinct.",
+      "attempt": 1,
+      "head_sha": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+      "terminal_metadata": {
+        "bytes": 616,
+        "sha256": "57655a20f505876871b21dfe4e672771365b6f2acd9c9d8651a3f42ba77bb828"
+      }
     },
     "accepted_release": {
       "phase": "M70",
