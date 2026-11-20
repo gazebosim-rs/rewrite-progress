@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T10:46:37.507350+00:00",
+  "as_of": "2026-11-20T11:18:39.035314+00:00",
   "execution_state": "active",
   "current_phase": "M77",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4944,8 +4944,8 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": true,
-      "qualification_state": "own_package_two_install_DATA_and_hosted_CI_success_camera_result_cap_failure_retained_feasibility_review",
-      "current_stage": "Camera wrapper Root1 has no result after its inherited two MiB final-result guard. Six raw guest-final zero observations remain unqualified; retained-only recovery feasibility is under Source review without rerun or cap change. Current whole hosted CI succeeded, but official artifacts are not yet collected or audited. Browser approval remains pending.",
+      "qualification_state": "own_official_recorder_method_third_install_DATA_clear_one_affected_camera_active",
+      "current_stage": "Own official qualification and the bounded recorder Source/review plus one fourteen-case method check passed. Third pristine setup and independent install DATA passed 47 worlds through 23 CLI and nine guest stages. One affected camera recapture is active without an index/result. Earlier camera Root1 remains failed and unqualified; browser approval is pending.",
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
       "new_Source_finite_examples": 0,
@@ -5033,7 +5033,7 @@
         "scope": "Local Source preparation only; no future M77 commit, branch or run is invented."
       },
       "independent_local_DATA_qualified": true,
-      "hosted_qualified": false,
+      "hosted_qualified": true,
       "historical_unaccepted_353_candidate": {
         "source_publication": {
           "available": true,
@@ -5422,7 +5422,7 @@
         "accepted": false
       },
       "current_distribution_and_runtime": {
-        "state": "PACKAGE_TWO_INSTALL_DATA_CLEAR_CAMERA_RESULT_CAP_FAILURE_RETAINED_REVIEW",
+        "state": "OWN_OFFICIAL_AND_RECORDER_METHOD_CLEAR_THIRD_INSTALL_DATA_CLEAR_ONE_CAMERA_ACTIVE",
         "fresh_release": {
           "sha256": "f18e8562257edf6f93db4f8524af071eb42328eea2764ea661f7bf579eef5301",
           "bytes": 3201
@@ -5432,32 +5432,26 @@
           "bytes": 1352
         },
         "fresh_install": {
-          "camera": {
-            "sha256": "1b0b01e5a3ff863c87a566b5065c53ec56a124e799a5c97e21d9b637b14b973b",
-            "bytes": 1403
+          "camera_third": {
+            "sha256": "5fdcc74757170d7c26ce0a56ba8264a1461059a27ab3de3d180e3dafb5a6e3d3",
+            "bytes": 1436
           },
-          "browser": {
+          "browser_second": {
             "sha256": "fea99209a60b20396facbbf622c35e3d61097ab4da3fe32b1ff15c0211d813d7",
             "bytes": 1407
           }
         },
         "camera_actual": {
-          "state": "failed_result_cap",
-          "launch_tool": "6b00ea",
-          "Root_solewatch_session_id": 6800,
-          "terminal_tool": "35747f",
-          "actual_Root_exit": 1,
-          "actual_Root": {
-            "sha256": "37d0e18d3c27bf9e873fb01bbf04b753d6f4025f8400e4b1d8f9fd581484ae1c",
-            "bytes": 2251
-          },
-          "result": null,
-          "result_file_exists": false,
+          "state": "running",
+          "launch_tool": "461208",
+          "Root_solewatch_session_id": 47449,
+          "actual_Root_exit": null,
+          "result_index": null,
           "independent_DATA": null
         },
         "browser_actual": null,
         "browser_origin_approval": null,
-        "scope": "Own current57 package and two pristine install DATA0 remain intact. Camera wrapper failed its final result cap; raw terminal observations remain unqualified. Source-only independent retained-recovery feasibility review is in progress without runtime rerun or cap change. Hosted CI remains active; browser approval and all final gates remain pending."
+        "scope": "Own current hosted/official, package/install DATA and one artifact-only recorder method check passed. Third pristine install DATA is clear; one affected camera recapture is active without result. Earlier Root1/no-result failure and first mutated custody remain preserved, second browser custody remains pristine. Browser approval/runtime and Main/public acceptance remain pending."
       },
       "historical_failed_95ef_candidate": {
         "whole_Source_review": {
@@ -5790,7 +5784,7 @@
         },
         "Root_solewatch_launch_tool": "d3391c",
         "Root_solewatch_session_id": 97043,
-        "scope": "Own exact current57 whole hosted CI success and terminal metadata only. Artifact is identified by API, not yet collected or independently audited; no Main promotion, runtime qualification or phase acceptance follows.",
+        "scope": "Own exact current57 whole hosted CI success, original official collection and independent official DATA method2 actual0. All strict bases and four once-only byte-exact RAW merges passed; runtime and phase/Main/public acceptance remain separate.",
         "job_id": 136218216084,
         "artifact_id": 14622500677,
         "artifact_size": 172558255,
@@ -5818,8 +5812,20 @@
         },
         "watch_actual_exit": 0,
         "watch_terminal_tool": "175b6b",
-        "official_collector_invoked": false,
-        "official_independent_DATA": false
+        "official_collector_invoked": true,
+        "official_independent_DATA": true,
+        "official_collector_actual": {
+          "sha256": "4ff912d0cf6e03655400ef7de8718418918e1e512454067405efd147c95c447d",
+          "bytes": 2034
+        },
+        "official_DATA_actual": {
+          "sha256": "02771e66f8ff7424036af154f5cda8b84c8fd3dbad3ea53b4d85d1b6cbe67039",
+          "bytes": 2262
+        },
+        "official_DATA_report": {
+          "sha256": "05f5fc21724b2ef1961b5c9d72c267b264b5e2b6f1b658a32ec5abacce78fa8d",
+          "bytes": 110097
+        }
       },
       "current_release_build": {
         "state": "ACTUAL_FOUR_ROLE_RELEASE_AND_INDEPENDENT_DATA_CLEAR",
@@ -5959,10 +5965,11 @@
         "actual_package_DATA_Root_exit": 0,
         "installed_verified": true,
         "actual_installed_finite_runs": 47,
-        "installed_verification_scope": "The same 47 plain finite commands passed in each of two distinct pristine Ubuntu setups with independent retained DATA. Distinct world census remains 47; installed camera/browser runtime and phase/release acceptance remain pending.",
+        "installed_verification_scope": "The same 47 plain finite worlds passed in each of three distinct pristine setup runs with separate retained DATA. Distinct world census remains 47; current affected camera runtime and browser/phase acceptance remain pending. First camera custody was subsequently GPU-mutated and is preserved.",
         "published_release": false,
         "Latest": false,
-        "accepted": false
+        "accepted": false,
+        "historical_two_install_verification_scope": "The same 47 plain finite commands passed in each of two distinct pristine Ubuntu setups with independent retained DATA. Distinct world census remains 47; installed camera/browser runtime and phase/release acceptance remain pending."
       },
       "current_pristine_installs": {
         "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
@@ -6035,99 +6042,78 @@
             "camera_runtime_passed": false,
             "default_browser_passed": false,
             "scope": "Separate actual setup/custody; finite47 and stopped idle container do not prove camera/browser runtime or application clean shutdown."
+          },
+          "camera_recorder_recovery_third": {
+            "state": "ACTUAL_THIRD_PRISTINE_INSTALL_AND_SEPARATE_DATA_CLEAR",
+            "install_actual": {
+              "sha256": "628a47f834db1aeae63f486654076b398335557ae9c6eebe8fbe693950068f8f",
+              "bytes": 2009
+            },
+            "install_result": {
+              "sha256": "abf8ce0953335bbc344abb67bbc38eed4988bda94e423af2b7bde5c00b848add",
+              "bytes": 180139
+            },
+            "install_DATA_actual": {
+              "sha256": "5fdcc74757170d7c26ce0a56ba8264a1461059a27ab3de3d180e3dafb5a6e3d3",
+              "bytes": 1436
+            },
+            "install_DATA_report": {
+              "sha256": "64db24c8a7128992f846c500495caa37911141f64dc8ef5fd208d222aed40920",
+              "bytes": 12089
+            },
+            "install_DATA_Source": {
+              "sha256": "daf4c4acea55dfee515482d95ffb44d19c20d4c6c14c6d5eff6ba213633a30ed",
+              "bytes": 24157
+            },
+            "actual_Root_exit": 0,
+            "actual_DATA_Root_exit": 0,
+            "finite_examples": 47,
+            "actual_CLI_stages": 23,
+            "actual_guest_stages": 9,
+            "camera_runtime_passed": false,
+            "scope": "Unique third pristine setup at install time; actual one affected camera run now owns this custody. First camera and second browser records are not substituted. World census remains 47."
           }
-        }
+        },
+        "total_distinct_setup_custodies": 3,
+        "currently_selected_camera_setup": "camera_recorder_recovery_third",
+        "first_camera_custody_GPU_mutated_and_preserved": true,
+        "second_browser_custody_preserved_pristine": true,
+        "historical_setup_provenance_scope": "Initial camera/browser setup records remain exact provenance of their completed pristine installations. Subsequent camera GPU mutation does not relabel first custody pristine; current camera runtime uses only the third setup."
       },
       "current_installed_camera": {
-        "state": "ACTUAL_ROOT_FAILED_RESULT_CAP_NO_RESULT_FILE",
-        "first_pristine_install_DATA_clear": true,
+        "state": "ACTUAL_RESULT_PARTS_CAMERA_ROOT_LAUNCH_RUNNING_NO_INDEX_RESULT",
         "actual_launch": {
-          "tool": "6b00ea",
-          "Root_solewatch_session_id": 6800
+          "tool": "461208",
+          "Root_solewatch_session_id": 47449
         },
-        "actual_Root_exit": 1,
-        "result": null,
-        "independent_DATA": null,
-        "scope": "Actual camera wrapper Root1: inherited save refused the result above the unchanged two MiB cap before opening result.json. Only the finalization sidecar exists. Six raw guest-final0 and shutdown observations are preserved but unqualified. No camera result/success reader, cap relaxation, runtime rerun or acceptance claim.",
+        "qualified_product_commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "selected_install": "camera_recorder_recovery_third",
         "actor_Source": {
-          "sha256": "cee6233f8f6eb175efa27085b218e1509d85b6a83bf8f361eb0ce177047c8de5",
-          "bytes": 72450
+          "sha256": "b12bd62dfba1a67779c85eb3f2695b10d09d626406dde8178a4273f7b1052370",
+          "bytes": 73769
         },
         "witness_Source": {
-          "sha256": "ff0b4f1c581a92948431c262b903364fc344cb47066deb4f7b1cb3db7ea06f05",
-          "bytes": 15171
+          "sha256": "5c8b3f04a59ad245dc44e10989c68f696b5a3e563464a5ea1536e5e9a58abcf8",
+          "bytes": 15220
         },
         "released_command": {
-          "sha256": "9235a554ddf9d26a5ae6796c96a01d0a471b31ecc696ffa0ac881e803296cc48",
-          "bytes": 7180
+          "sha256": "8c5b9eabdfc438ff6be533e206dd611599a74f08f76a8824efed03177d3e40d7",
+          "bytes": 7584
         },
-        "independent_Source_review": "CLEAR for complete bound actor/witness/reader methods; Root final flag-only release after exact bindings review.",
-        "actual_Root": {
-          "sha256": "37d0e18d3c27bf9e873fb01bbf04b753d6f4025f8400e4b1d8f9fd581484ae1c",
-          "bytes": 2251
+        "third_binding_Source": {
+          "sha256": "9c164854a8016694068543fb086c05a75ae17053657fa786a3f6c984986497f7",
+          "bytes": 7284
         },
-        "failure_receipt": {
-          "sha256": "cb99346f0e7277ed8bb4b38022a85beedd097a8182ce969993bbeccc3ebb5f37",
-          "bytes": 6465
+        "recorder_method_check_actual": {
+          "sha256": "6245f2649ab81ac45fd2a5083e27921e73ba68ec157d9564c4521c69e64cecad",
+          "bytes": 2239
         },
-        "terminal_tool": "35747f",
-        "result_file_exists": false,
+        "actual_Root_exit": null,
+        "result_index": null,
+        "independent_DATA": null,
         "qualification": false,
-        "wrapper_stdout_bytes": 0,
-        "wrapper_stderr_bytes": 0,
-        "result_cap_bytes": 2097152,
-        "sidecar": {
-          "sha256": "bd100444a16c16bfd12def329503dce536d3a71948113cdc47e08531a843949e",
-          "bytes": 156,
-          "mode": 436
-        },
-        "sidecar_body": {
-          "error": null,
-          "final_errors": [
-            "Final result guard: ValueError('Result/receipt cap exceeded')"
-          ],
-          "terminal_signal": null,
-          "faults": []
-        },
-        "retained_terminal_observations": {
-          "guest_final_rows": 6,
-          "guest_actual_exits": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "guest_cleanup_errors": [],
-          "installed_launcher_actual_exits": [
-            0,
-            0,
-            0,
-            0,
-            0
-          ],
-          "zero_offset_direct_simulator_actual_exit": 0,
-          "other_simulator_grandchild_exits": "UNKNOWN",
-          "same_identity_paths_and_listeners_absent": true,
-          "scope": "Raw guest/shutdown records only, not full independent runtime qualification."
-        },
-        "owned_container_final": {
-          "stopped": true,
-          "pid": 0,
-          "layer_bytes": 324106304,
-          "idle_container_exit": 137,
-          "idle_exit_is_application_shutdown": false
-        },
-        "retained_recovery": {
-          "state": "SOURCE_ONLY_INDEPENDENT_FEASIBILITY_REVIEW",
-          "actual_execution": null,
-          "report": null,
-          "runtime_rerun": false,
-          "result_cap_raised": false,
-          "scope": "Inspect whether retained evidence supports a separately reviewed determination; no successful-run reader or runtime replay is authorized by this observation."
-        },
-        "product_defect_confirmed": false
+        "old_Root1_unqualified_and_preserved": true,
+        "scope": "One actual affected six-session recapture on the third audited setup. Recorder format Source, regressions and independent review/check are clear; full summary is reconstructed under unchanged bounds. No runtime result, index, host ledger outcome or camera qualification is claimed yet."
       },
       "historical_camera_Source_binding_held_observation": {
         "state": "HELD_SOURCE_BINDING_REVIEW_PENDING",
@@ -6210,6 +6196,393 @@
         "Root_solewatch_launch_tool": "d3391c",
         "Root_solewatch_session_id": 97043,
         "scope": "Genuine current57 push run only; no terminal outcome or official artifact audit yet."
+      },
+      "historical_hosted_success_official_pending_observation": {
+        "id": 44715646599,
+        "attempt": 1,
+        "status": "completed",
+        "conclusion": "success",
+        "event": "push",
+        "head_sha": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599",
+        "metadata": {
+          "sha256": "6851b409fc5fa22bdfb939bd9f9adfd2c633d8c7454a103b285ed505fa24c69c",
+          "bytes": 13884
+        },
+        "Root_solewatch_launch_tool": "d3391c",
+        "Root_solewatch_session_id": 97043,
+        "scope": "Own exact current57 whole hosted CI success and terminal metadata only. Artifact is identified by API, not yet collected or independently audited; no Main promotion, runtime qualification or phase acceptance follows.",
+        "job_id": 136218216084,
+        "artifact_id": 14622500677,
+        "artifact_size": 172558255,
+        "artifact_digest": "sha256:04f7f94d7a49362cceb84131af5326e6e24d60a4a6f8b749312e91858c078ecd",
+        "terminal_observation": {
+          "sha256": "fea7af8910cab97918b6b6fc5ff2d16eadb28fa238e341b3c1dbf3775a045f23",
+          "bytes": 2152
+        },
+        "terminal_API": {
+          "run": {
+            "sha256": "f5ba67070d0709ea2a07007bad6bf96261732cd61d07dc88f7c9280fa9704a22",
+            "bytes": 12580,
+            "mode": 436
+          },
+          "jobs": {
+            "sha256": "00d0865e23e28fe0b6d643dbab8f95dba55cba372db2d696434b3bdfc42cdf47",
+            "bytes": 3404,
+            "mode": 436
+          },
+          "artifacts": {
+            "sha256": "c1d9ef3e625a95e43c58809ef0f53a758c5ecbd56ca2c26a575e79977e6c152a",
+            "bytes": 770,
+            "mode": 436
+          }
+        },
+        "watch_actual_exit": 0,
+        "watch_terminal_tool": "175b6b",
+        "official_collector_invoked": false,
+        "official_independent_DATA": false
+      },
+      "current_official_DATA": {
+        "state": "INDEPENDENT_EXACT_HEAD_OFFICIAL_DATA_CLEAR",
+        "run": 44715646599,
+        "attempt": 1,
+        "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "tree": "b1dd0332656b233a1546dcca87733abe14305092",
+        "true_parent": "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "true_parent_accepted": false,
+        "accepted_ancestor_Main": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "actual_Root_exit": 0,
+        "actual_Root": {
+          "sha256": "02771e66f8ff7424036af154f5cda8b84c8fd3dbad3ea53b4d85d1b6cbe67039",
+          "bytes": 2262
+        },
+        "report": {
+          "sha256": "05f5fc21724b2ef1961b5c9d72c267b264b5e2b6f1b658a32ec5abacce78fa8d",
+          "bytes": 110097
+        },
+        "auditor_Source": {
+          "sha256": "9a83aaf8db6d9f74b6c4670f603f6d4e25a6aa8cabaa9b6cd497a398f21280e4",
+          "bytes": 101439
+        },
+        "original_collector_actual": {
+          "sha256": "4ff912d0cf6e03655400ef7de8718418918e1e512454067405efd147c95c447d",
+          "bytes": 2034
+        },
+        "collection": {
+          "sha256": "6011580af637e62b79c75efc8255381288a495a44e8fff05662354088699db66",
+          "bytes": 37186
+        },
+        "preserved_failed_method1": {
+          "actual_Root": {
+            "sha256": "a37e0709a6b00934e95097f9f1633d8201568868fb87ac73ea90f4d89a4a67e2",
+            "bytes": 2104
+          },
+          "actual_Root_exit": 1,
+          "report": null,
+          "cause": "Declaration census included two non-test helpers setUp and install_m77_camera_fixture; all thirteen required tests were present. Method2 narrows only that filter.",
+          "raw_merge_comparisons_started": false,
+          "product_or_hosted_replay": false
+        },
+        "raw_merge_comparisons": [
+          {
+            "label": "headless",
+            "RAW_profiles": 427,
+            "merged_sha256": "b0892899c385b322542a2a32de4cef4801252ebf54c81eba6b116da754419c31",
+            "receipt_sha256": "5c5292d47aa289049f08740b350cccc0db12d0391dbfa0917e81992a2ea45645",
+            "byte_exact": true,
+            "comparisons": 1
+          },
+          {
+            "label": "renderer",
+            "RAW_profiles": 727,
+            "merged_sha256": "5684923f366f7928ee1922007756c637416b06a8bbb50ee4094b437422e1046e",
+            "receipt_sha256": "4d1452523bba828e6affc2929cf41ce8a7f8e5faafd83f95b4793621983ca9f4",
+            "byte_exact": true,
+            "comparisons": 1
+          },
+          {
+            "label": "nativefree",
+            "RAW_profiles": 57,
+            "merged_sha256": "cc21e3ddcf6391689062f6e540e735e1234c160851c27da1e79bca26f06fa1cf",
+            "receipt_sha256": "2dc8f8c6228eaffd628197618c91728238cd237edded16a4c1bea690f4c40c86",
+            "byte_exact": true,
+            "comparisons": 1
+          },
+          {
+            "label": "rgb-camera",
+            "RAW_profiles": 168,
+            "merged_sha256": "cce37092b71c2b65ad6864ce477a093edfbae71c5720e6888591d976fc55dee8",
+            "receipt_sha256": "7bb64fb6a94216cb32337bc84637db7790d96dcd488a77c9afbd4bdc320cadd5",
+            "byte_exact": true,
+            "comparisons": 1
+          }
+        ],
+        "strict_coverage_bases": [
+          "true_unaccepted_parent353",
+          "accepted_ancestor_M76_dddf",
+          "actual_hosted_coverage_base"
+        ],
+        "source_blobs_and_modes_verified": 1749,
+        "all_thirteen_original_M77_Python_test_declarations_present": true,
+        "quiet_Python_individual_execution_results_observable": false,
+        "limitations": [
+          "Only this same exact-head local native/reference DATA is reused through genuine Root+report+method and complete downloaded Source/Git/mode identity. It is not fresh hosted numeric/provider-byte proof.",
+          "Local temporary Rust ELF identities remain metadata only and old local RAWs are not remerged. Immediate parent353 is unaccepted and acceptedancestorM76dddf remains separate; official DATA still is not M77 phase acceptance or Main promotion.",
+          "Every required per-profile seven-field harness identity, actual Cargo object, unignored OK result, native peer bytes/provenance/SDK manifest and maintained auxiliary/RGB/finite/closure output is independently checked from this attempt.",
+          "Actual hosted totals are independently derived, not forced equal local totals. Immediate-parent, accepted-ancestor and actual hosted-base coverage are separate strict gates.",
+          "No network/workload/native/browser/provider replay, no ancestor acceptance transfer. Actual audit0 plus no late-stop is required separately."
+        ],
+        "phase_accepted": false,
+        "Main_promoted": false
+      },
+      "historical_camera_retained_feasibility_observation": {
+        "state": "SOURCE_ONLY_INDEPENDENT_FEASIBILITY_REVIEW",
+        "actual_execution": null,
+        "report": null,
+        "runtime_rerun": false,
+        "result_cap_raised": false,
+        "scope": "Inspect whether retained evidence supports a separately reviewed determination; no successful-run reader or runtime replay is authorized by this observation."
+      },
+      "current_recorder_correction": {
+        "state": "ARTIFACT_ONLY_BOUNDED_FORMAT_SOURCE_CLEAR_ONE_METHOD_CHECK_ACTUAL0",
+        "implementation_complete": true,
+        "independent_Source_review_complete": true,
+        "checks_run": true,
+        "qualified_product_commit_unchanged": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "new_product_feature": false,
+        "format_contract": {
+          "part_max_bytes": 1048576,
+          "index_max_bytes": 2097152,
+          "existing_aggregate_bound_bytes": 134217728,
+          "existing_4096_bound": 4096,
+          "full_summary_reconstructed": true,
+          "numeric_limits_relaxed": false,
+          "mandatory_host_and_legacy_guards_preserved": true
+        },
+        "regression_test_Source_and_docs_required": true,
+        "final_Source_cards": {
+          "sha256": "034beb1fab5310b58c1a1a39ad5519a69dd9eca56261602e24a0d73bad441ad1",
+          "bytes": 11086
+        },
+        "one_affected_method_check_actual": {
+          "sha256": "6245f2649ab81ac45fd2a5083e27921e73ba68ec157d9564c4521c69e64cecad",
+          "bytes": 2239
+        },
+        "third_pristine_install_plan": {
+          "sha256": "19b3fa7a9a37855d98ff9d8e100a9eec0df1a161d0db547034f88a6703146068",
+          "bytes": 13953
+        },
+        "third_pristine_install_actual": {
+          "sha256": "628a47f834db1aeae63f486654076b398335557ae9c6eebe8fbe693950068f8f",
+          "bytes": 2009
+        },
+        "third_install_DATA_actual": {
+          "sha256": "5fdcc74757170d7c26ce0a56ba8264a1461059a27ab3de3d180e3dafb5a6e3d3",
+          "bytes": 1436
+        },
+        "one_affected_camera_runtime_actual": {
+          "launch_tool": "461208",
+          "Root_solewatch_session_id": 47449,
+          "actual_Root_exit": null,
+          "result_index": null
+        },
+        "scope": "Complete recorder implementation/regression Source/docs passed independent review and one consolidated fourteen-case artifact-method check actual0. Numeric/legacy guards remain unchanged. Third pristine setup and separate DATA passed; one affected camera recapture is now active without result. Product Python494 is unchanged and not summed with artifact controls.",
+        "artifact_only_method_cases_passed": 14,
+        "product_Python_aggregate_unchanged": 494,
+        "method_cases_are_separate_from_product_Python": true
+      },
+      "historical_recorder_correction_in_progress_observation": {
+        "state": "ARTIFACT_ONLY_BOUNDED_JSON_FORMAT_SOURCE_IN_PROGRESS",
+        "implementation_complete": false,
+        "independent_Source_review_complete": false,
+        "checks_run": false,
+        "qualified_product_commit_unchanged": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "new_product_feature": false,
+        "format_contract": {
+          "part_max_bytes": 1048576,
+          "index_max_bytes": 2097152,
+          "existing_aggregate_bound_bytes": 134217728,
+          "existing_4096_bound": 4096,
+          "full_summary_reconstructed": true,
+          "numeric_limits_relaxed": false,
+          "mandatory_host_and_legacy_guards_preserved": true
+        },
+        "regression_test_Source_and_docs_required": true,
+        "final_Source_cards": null,
+        "one_affected_method_check_actual": null,
+        "third_pristine_install_plan": {
+          "sha256": "19b3fa7a9a37855d98ff9d8e100a9eec0df1a161d0db547034f88a6703146068",
+          "bytes": 13953
+        },
+        "third_pristine_install_actual": null,
+        "third_install_DATA_actual": null,
+        "one_affected_camera_runtime_actual": null,
+        "scope": "Complete artifact-only recorder implementation, regression Source, documentation and independent review before Root releases the one consolidated method check, third fresh camera setup/DATA and one affected recapture. First GPU-mutated failure and second browser-pristine custody remain protected."
+      },
+      "historical_two_initial_pristine_installs_observation": {
+        "commit": "57b44de10713dc6132c5549d769dac00dc041f56",
+        "camera_and_browser_custodies_distinct": true,
+        "distinct_world_census": 47,
+        "runs_are_not_94_distinct_examples": true,
+        "setups": {
+          "camera": {
+            "state": "ACTUAL_DISTINCT_PRISTINE_INSTALL_AND_RETAINED_DATA_CLEAR",
+            "install_actual": {
+              "sha256": "77f39cb5b213bcc6d705f641532a5c04aeeb9db1f503352032a234bb4dd383cd",
+              "bytes": 1885
+            },
+            "install_result": {
+              "sha256": "b2cfb96411ab8d1da48e53b1b671d42565cf292fb9117bc177dde76a3d0dfc61",
+              "bytes": 179052
+            },
+            "install_DATA_actual": {
+              "sha256": "1b0b01e5a3ff863c87a566b5065c53ec56a124e799a5c97e21d9b637b14b973b",
+              "bytes": 1403
+            },
+            "install_DATA_report": {
+              "sha256": "38d34697c40a7ff372a5e29ed32c269dd346f293c18217a172ddde14dc9eeb0a",
+              "bytes": 12071
+            },
+            "install_DATA_Source": {
+              "sha256": "828ffb83ec249c9d8e48eff158c05db37b80e386ef849b56a1950913f5b4a530",
+              "bytes": 24139
+            },
+            "actual_Root_exit": 0,
+            "actual_DATA_Root_exit": 0,
+            "finite_examples": 47,
+            "actual_CLI_stages": 22,
+            "actual_guest_stages": 9,
+            "container_stopped": true,
+            "pristine_custody_reserved_for": "camera",
+            "camera_runtime_passed": false,
+            "default_browser_passed": false,
+            "scope": "Separate actual setup/custody; finite47 and stopped idle container do not prove camera/browser runtime or application clean shutdown."
+          },
+          "browser": {
+            "state": "ACTUAL_DISTINCT_PRISTINE_INSTALL_AND_RETAINED_DATA_CLEAR",
+            "install_actual": {
+              "sha256": "e8ff2a5981575ca1109f31fb1fbed584cd8383a4f39d56cc40fd6b12d3f083c0",
+              "bytes": 1951
+            },
+            "install_result": {
+              "sha256": "26d8e3d5877655799185db906a316506cf3e871aedc78989f3d752cdc5939a36",
+              "bytes": 179052
+            },
+            "install_DATA_actual": {
+              "sha256": "fea99209a60b20396facbbf622c35e3d61097ab4da3fe32b1ff15c0211d813d7",
+              "bytes": 1407
+            },
+            "install_DATA_report": {
+              "sha256": "134ae4e2c67398cf053ce94735c303dad25190f7bbd594c9304c80a8557d1f28",
+              "bytes": 12072
+            },
+            "install_DATA_Source": {
+              "sha256": "c23e1569b6bb2a57fe1d1b3e97b9107565d2bf20542e1d9e5f9b8ba6b6a612f6",
+              "bytes": 24140
+            },
+            "actual_Root_exit": 0,
+            "actual_DATA_Root_exit": 0,
+            "finite_examples": 47,
+            "actual_CLI_stages": 22,
+            "actual_guest_stages": 9,
+            "container_stopped": true,
+            "pristine_custody_reserved_for": "browser",
+            "camera_runtime_passed": false,
+            "default_browser_passed": false,
+            "scope": "Separate actual setup/custody; finite47 and stopped idle container do not prove camera/browser runtime or application clean shutdown."
+          }
+        }
+      },
+      "historical_failed_unparted_camera_wrapper": {
+        "state": "ACTUAL_ROOT_FAILED_RESULT_CAP_NO_RESULT_FILE",
+        "first_pristine_install_DATA_clear": true,
+        "actual_launch": {
+          "tool": "6b00ea",
+          "Root_solewatch_session_id": 6800
+        },
+        "actual_Root_exit": 1,
+        "result": null,
+        "independent_DATA": null,
+        "scope": "Actual camera wrapper Root1: inherited save refused the result above the unchanged two MiB cap before opening result.json. Only the finalization sidecar exists. Six raw guest-final0 and shutdown observations are preserved but unqualified. No camera result/success reader, cap relaxation, runtime rerun or acceptance claim.",
+        "actor_Source": {
+          "sha256": "cee6233f8f6eb175efa27085b218e1509d85b6a83bf8f361eb0ce177047c8de5",
+          "bytes": 72450
+        },
+        "witness_Source": {
+          "sha256": "ff0b4f1c581a92948431c262b903364fc344cb47066deb4f7b1cb3db7ea06f05",
+          "bytes": 15171
+        },
+        "released_command": {
+          "sha256": "9235a554ddf9d26a5ae6796c96a01d0a471b31ecc696ffa0ac881e803296cc48",
+          "bytes": 7180
+        },
+        "independent_Source_review": "CLEAR for complete bound actor/witness/reader methods; Root final flag-only release after exact bindings review.",
+        "actual_Root": {
+          "sha256": "37d0e18d3c27bf9e873fb01bbf04b753d6f4025f8400e4b1d8f9fd581484ae1c",
+          "bytes": 2251
+        },
+        "failure_receipt": {
+          "sha256": "cb99346f0e7277ed8bb4b38022a85beedd097a8182ce969993bbeccc3ebb5f37",
+          "bytes": 6465
+        },
+        "terminal_tool": "35747f",
+        "result_file_exists": false,
+        "qualification": false,
+        "wrapper_stdout_bytes": 0,
+        "wrapper_stderr_bytes": 0,
+        "result_cap_bytes": 2097152,
+        "sidecar": {
+          "sha256": "bd100444a16c16bfd12def329503dce536d3a71948113cdc47e08531a843949e",
+          "bytes": 156,
+          "mode": 436
+        },
+        "sidecar_body": {
+          "error": null,
+          "final_errors": [
+            "Final result guard: ValueError('Result/receipt cap exceeded')"
+          ],
+          "terminal_signal": null,
+          "faults": []
+        },
+        "retained_terminal_observations": {
+          "guest_final_rows": 6,
+          "guest_actual_exits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "guest_cleanup_errors": [],
+          "installed_launcher_actual_exits": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "zero_offset_direct_simulator_actual_exit": 0,
+          "other_simulator_grandchild_exits": "UNKNOWN",
+          "same_identity_paths_and_listeners_absent": true,
+          "scope": "Raw guest/shutdown records only, not full independent runtime qualification."
+        },
+        "owned_container_final": {
+          "stopped": true,
+          "pid": 0,
+          "layer_bytes": 324106304,
+          "idle_container_exit": 137,
+          "idle_exit_is_application_shutdown": false
+        },
+        "retained_recovery": {
+          "state": "RAW_ONLY_RECOVERY_NOT_SELECTED_MANDATORY_HOST_LEDGER_MISSING",
+          "actual_execution": null,
+          "report": null,
+          "runtime_rerun": false,
+          "result_cap_raised": false,
+          "scope": "Mandatory host PID/start/wait ledger was not written. RAW-only observations and Source-flow inference cannot replace that ledger or satisfy unchanged full acceptance. No RAW-only successful qualification is claimed."
+        },
+        "product_defect_confirmed": false
       }
     }
   ],
@@ -6699,33 +7072,33 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 77 phases are cataloged. Current local/release/package and two pristine install DATA0 proofs remain intact; own whole hosted CI succeeded, without official collection/audit yet. Camera wrapper failed its final result cap and has no qualification. Retained-only recovery feasibility is under Source review, browser approval is pending, and Latest M70 remains the public 41-example package.",
+  "acceptance_boundary": "M1–M76 and 202 slices remain accepted; 77 phases are cataloged. Own current hosted/official qualification is clear. The artifact-only recorder format fix passed Source review and fourteen separate method controls; product Python remains 494. Third install/DATA passed; one affected camera recapture is running without a result. Old camera Root1 remains unqualified. Browser approval/runtime and Main/public gates remain pending; Latest M70 is unchanged.",
   "current_delivery_group": [
     "M77"
   ],
   "current_development_phase": "M77",
   "board": {
-    "updated_at": "2026-11-20T10:46:37.507350+00:00",
+    "updated_at": "2026-11-20T11:18:39.035314+00:00",
     "current": {
-      "title": "M77 camera result-cap failure is under retained-evidence review",
+      "title": "Recorder method passed; M77 camera recapture is running",
       "items": [
-        "The camera wrapper exited one at the inherited two MiB result cap before writing result.json. Its sidecar and raw evidence are preserved; no camera qualification is claimed.",
-        "All six raw guest-final records report zero with empty cleanup errors. Five launcher exits and the direct simulator exit are zero; other simulator waits remain unknown. These records remain unqualified.",
-        "Current whole hosted CI succeeded; official artifacts are identified but not collected or audited. Camera retained-recovery feasibility is under Source review without rerun or cap change; browser approval remains pending.",
-        "The current package and both pristine install DATA proofs remain intact. Counts stay 76 of 77 and 202 slices; accepted Main is M76 and public Latest M70 retains 41 examples."
+        "Own current hosted CI and official DATA passed, including four byte-exact RAW comparisons once. The first failed audit method remains preserved.",
+        "The bounded recorder format fix passed independent Source review and 14 separate artifact-method controls. Receipt/aggregate limits and legacy guards remain unchanged; product Python remains 494.",
+        "Third pristine install and independent DATA passed the same 47 worlds through 23 CLI and nine guest stages. One affected camera recapture is running without a result; the earlier Root1 failure stays unqualified.",
+        "Browser approval remains pending. Counts stay 76 of 77 and 202 slices; accepted Main is M76 and public Latest M70 retains 41 examples."
       ]
     },
     "done": [
       "76 of 77 cataloged phases and 202 reviewed slices are accepted; no new slice was appended.",
       "M76 is accepted at exact Main dddf1f42 after own review run 44681392983 attempt 1 and official evidence. All historical failures remain preserved.",
-      "Current M77 has own full normal, release, package and two pristine-install DATA proofs. Each setup completed 22 CLI stages and nine guest stages; these do not prove camera/browser runtime."
+      "Current hosted/official and distribution proofs are clear. The recorder correction passed one 14-case method check; the third fresh install/DATA passed. Earlier failures and the separate browser custody remain preserved."
     ],
     "next": [
-      "Complete the independent Source review of retained-recovery feasibility, preserving the failed wrapper and all raw evidence before any further operation.",
-      "Collect and audit the successful current hosted artifacts; obtain browser approval and runtime proof, then complete Main/public gates before M77 acceptance."
+      "Observe the sole affected camera recapture, then independently audit its actual indexed result and full host ledger before claiming camera qualification.",
+      "Obtain browser origin approval and runtime proof; complete Main/public gates after required runtime qualification before M77 acceptance."
     ],
     "blocker": {
-      "text": "Camera wrapper failed its final result cap and has no qualification; retained-only recovery feasibility is under Source review. Browser origin approval remains pending. Successful hosted CI still needs official artifact collection/audit.",
+      "text": "Browser origin approval remains pending with no owner reply. The sole affected camera recapture is running without a qualification result; the earlier wrapper Root1 remains failed and preserved.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -6880,7 +7253,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M77_CAMERA_RETAINED_RECOVERY_FEASIBILITY_AND_HOSTED_CLOSEOUT",
+  "current_development_task": "M77_AFFECTED_CAMERA_RECAPTURE_AND_BROWSER_APPROVAL",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -6971,8 +7344,8 @@
     "originals_durable": true
   },
   "qualification_closeout": {
-    "state": "M1_M76_ACCEPTED_M77_HOSTED_CI_SUCCESS_CAMERA_CAP_FAILURE_RETAINED_REVIEW",
-    "recorded_at": "2026-11-20T10:46:37.507350+00:00",
+    "state": "M1_M76_ACCEPTED_M77_OWN_OFFICIAL_RECORDER_METHOD_THIRD_INSTALL_CLEAR_CAMERA_ACTIVE",
+    "recorded_at": "2026-11-20T11:18:39.035314+00:00",
     "own_head_admission": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-own-head-admission.json",
       "bytes": 8283,
@@ -7056,7 +7429,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "Own current hosted CI succeeded; official artifact collection/audit is pending. Preserve camera Root1/no result and finish independent retained-only recovery feasibility Source review without rerun/cap change. Browser approval/runtime and exact final gates remain required before acceptance.",
+    "next_phase_selection": "Own official and recorder method checks are clear. Observe the sole affected camera recapture on the third audited setup, then retain its independent complete result/host-ledger DATA. Browser approval/runtime and Main/public gates remain pending; earlier failures remain preserved.",
     "historical_M70_M75_Main_promotion": {
       "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/final-main-promotion.json",
       "bytes": 2682,
