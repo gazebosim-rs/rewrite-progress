@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-20T04:54:00.583067+00:00",
+  "as_of": "2026-11-20T05:33:50.863611+00:00",
   "execution_state": "active",
   "current_phase": "M76",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -4583,14 +4583,24 @@
       "checks_run": true,
       "accepted": false,
       "distribution_selected": false,
-      "qualification_state": "capacity_restored_same_frozen_source_full_normal_attempt4_running_no_result",
-      "current_stage": "Owner-authorized ordinary-cache cleanup restored capacity while preserving all frozen Source/evidence. Final operational runner/binding review is complete and the fourth full normal/strict gate is running on the same frozen candidate with no result. The third attempt’s Root1/Git UNKNOWN capacity stop and both earlier failures remain preserved. Native DATA is reused unchanged; no normal success or acceptance is claimed.",
+      "qualification_state": "full_local_normal_strict_and_independent_DATA_clear_published_for_review_exact_hosted_in_progress_unaccepted",
+      "current_stage": "Exact commit dddf1f42 passed its full normal/strict fourth attempt and independent retained local DATA. The qualified Source was pushed nonforced to its review branch and exact hosted run 44681392983 attempt 1 is in progress. Both earlier failures, the capacity stop, cleanup evidence and native DATA remain preserved. No hosted success, official qualification, Main promotion or M76 acceptance is claimed.",
       "source_publication": {
-        "available": false,
-        "scope": "Selected contract and selection proof remain local until actual source publication."
+        "available": true,
+        "branch": "review/m76-camera-info-projection-offsets",
+        "commit": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dddf1f4284557c420e384d263a4365b2153dfde2",
+        "actual_nonforced_push_exit": 0,
+        "remote_review_readback": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "Main_unchanged": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "receipt": {
+          "bytes": 1837,
+          "sha256": "8f6b8b805d0903c589f928d1d066d33e9c543566a441e274d555e2e56dbcd15f"
+        },
+        "scope": "Qualified Source available for review only; not Main acceptance or package distribution."
       },
-      "checks_run_scope": "One fourth full normal/strict ordinary commit hook is running after capacity restoration, with no result. The third capacity stop and two earlier failures remain preserved; no normal qualification is inferred from partial evidence.",
-      "normal_qualified": false,
+      "checks_run_scope": "Full normal/strict fourth attempt returned actual Root/Git zero and independent retained local DATA returned zero. Exact review-branch hosted CI is in progress; official evidence and Main acceptance remain pending.",
+      "normal_qualified": true,
       "historical_first_normal_source_and_native_milestone": {
         "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
         "staged_tree": "f1f023932274d0a41b54ca8f3b0f107e014783c1",
@@ -4789,7 +4799,7 @@
         "current_profile_binaries_raw_evidence_and_archives_preserved": true,
         "normal_qualified": false
       },
-      "current_correction": {
+      "historical_fourth_normal_launch": {
         "scope": "Operational retry binding only on the same frozen Source tree1bb91f and snapshote7adfd83; no product/Source correction or native recapture.",
         "operational_runner_binding_review_complete": true,
         "all_Source_and_native_bytes_unchanged": true,
@@ -4816,8 +4826,73 @@
           "actual_Root_exit": null,
           "actual_Git_exit": null,
           "basis": "Root actual attempt4 launch and active receipt after reviewed operational bindings; Root alone watches this existing gate. No terminal outcome is inferred."
+        },
+        "observation_scope": "Published running-state observation before actual normal Root/Git zero; the local qualification receipt records the terminal result."
+      },
+      "local_qualification": {
+        "commit": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "tree": "1bb91f06f162e4657ed084ce0408254a84de9f92",
+        "parent": "616cc3e2105a7ef9479ac823a6b05e832a92defc",
+        "normal_actual": {
+          "bytes": 1712,
+          "sha256": "ce92f9686f466e0febed67ba7d6cde31bb87e4d1837e25dfa6aa0963df800110"
+        },
+        "normal_result": {
+          "bytes": 2642,
+          "sha256": "e2cd00d1515e974e1ac4af9734b3e72afcf934fdd6ee60d7941fa81548783764"
+        },
+        "actual_Root_exit": 0,
+        "actual_Git_exit": 0,
+        "normal_elapsed_seconds": 1903.436398779988,
+        "independent_local_DATA_actual": {
+          "bytes": 1844,
+          "sha256": "5c081186d803fc3c043e4aacd62d7128c64b05b75e6971efea8a73f50eacbaf9"
+        },
+        "independent_local_DATA_report": {
+          "bytes": 33536,
+          "sha256": "8973e90874321549aa411cc9075c73fba6b770f881d364104664df7a290a5dfb"
+        },
+        "independent_local_DATA_actual_exit": 0,
+        "headless_passed": 1762,
+        "renderer_overlapping_passed": 1367,
+        "ignored_per_profile": 2,
+        "Python_aggregate": 481,
+        "Python_individual_quiet_results_observable": false,
+        "new_Rust_controls_observed": 14,
+        "finite_Source_runs": 47,
+        "CLI_cases": 21,
+        "headless_actual_parent_changed_lines": [
+          0,
+          0
+        ],
+        "headless_zero_basis": "Only two projection-offset refusal lines are deleted; no added headless executable Source lines.",
+        "renderer_actual_parent_changed_lines": [
+          28,
+          28
+        ],
+        "strict_workspace_per_crate_lines_regions_and_changed_line_gates_passed": true,
+        "RAWs_remerged_or_product_tests_replayed_by_auditor": false,
+        "accepted": false
+      },
+      "automatic_hosted_run": {
+        "id": 44681392983,
+        "attempt": 1,
+        "head_sha": "dddf1f4284557c420e384d263a4365b2153dfde2",
+        "status": "in_progress",
+        "conclusion": null,
+        "event": "push",
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983",
+        "initial_API_metadata": {
+          "bytes": 12546,
+          "sha256": "707d9ac935f621e7951b9d71a01b927ae3c7f9ff51b9262ac21d172bfcff4fc8"
         }
-      }
+      },
+      "hosted_run": 44681392983,
+      "hosted_attempt": 1,
+      "hosted_success": false,
+      "hosted_conclusion": null,
+      "independent_official_DATA_passed": false,
+      "Main_promoted": false
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -5305,29 +5380,29 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 76 phases are cataloged. Latest M70 has 41 installed examples from Source 7094a31; accepted M75 has 46 source runs. Authorized ordinary-cache cleanup restored capacity without changing frozen Source/evidence. M76’s fourth full normal/strict gate is running on the same candidate with no result. The third capacity stop and two earlier failures remain preserved; native reference DATA is unchanged. No M76 acceptance is claimed.",
+  "acceptance_boundary": "M1–M75 and 202 retained slices remain accepted; 76 phases are cataloged. Latest M70 retains 41 installed examples from Source 7094a31. M76 commit dddf1f42 passed full local normal/strict and independent DATA, then was published nonforced for review. Its exact hosted run 44681392983 attempt 1 is in progress; official evidence and Main acceptance remain pending. Earlier failures, the capacity stop and cleanup evidence remain preserved. No M76 acceptance or new package is claimed.",
   "current_delivery_group": [
     "M76"
   ],
   "current_development_phase": "M76",
   "board": {
-    "updated_at": "2026-11-20T04:54:00.583067+00:00",
+    "updated_at": "2026-11-20T05:33:50.863611+00:00",
     "current": {
-      "title": "Storage is restored; the fourth M76 qualification run is active",
+      "title": "M76 is locally qualified; exact hosted CI is running",
       "items": [
-        "The fourth full normal/strict gate is running on the same reviewed frozen candidate after operational binding review. No result is available.",
-        "Authorized removal of 17 ordinary compiler caches reclaimed 65.56 GiB. Frozen source, current profile binaries, raw evidence and archives were preserved.",
-        "The third capacity stop remains Root exit 1 with Git exit unknown. Both earlier failures and unchanged native reference data are preserved."
+        "The fourth full normal/strict gate and independent retained-data audit passed on the exact M76 commit. Source is available on its review branch.",
+        "Exact hosted CI is in progress. Official evidence and Main acceptance remain pending; local success does not complete those gates.",
+        "Both earlier failures, the disk-capacity stop and cleanup evidence remain preserved. Latest M70 still contains 41 installed examples."
       ]
     },
     "done": [
       "75 of 76 cataloged phases are accepted; 202 reviewed slices remain unchanged.",
-      "Latest M70 retains 41 installed examples from Source 7094a31. Accepted M75 quality and M76 native reference evidence remain separate.",
-      "The authorized cleanup completed with 66.48 GiB free and all 1,744 frozen source hashes, lengths and modes unchanged. Final retry bindings passed independent review."
+      "M76 passed 1,762 headless and 1,367 overlapping renderer tests, 481 aggregate Python checks, 47 finite source runs and 21 CLI cases.",
+      "Latest M70 remains the 41-example package built from Source 7094a31. The M76 candidate adds no installed package or acceptance increment."
     ],
     "next": [
-      "Observe the existing fourth full normal/strict gate and retain its actual exits, logs, resource observations and any partial evidence.",
-      "After successful local qualification, independently audit retained evidence and complete exact hosted, official and Main gates before acceptance."
+      "Observe the existing exact-head hosted run without replaying local qualification; preserve its original evidence and actual outcome.",
+      "Complete independent official evidence and actual Main/readbacks before accepting M76. Select the next bounded retained delivery after that disposition."
     ],
     "blocker": {
       "text": "",
@@ -5485,7 +5560,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M76_CAMERA_INFO_OFFSETS_FULL_NORMAL_ATTEMPT4",
+  "current_development_task": "M76_EXACT_HOSTED_OFFICIAL_AND_MAIN_QUALIFICATION",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -5657,7 +5732,7 @@
       "release_url": "https://github.com/gazebosim-rs/gz-sim-rs/releases/tag/m70-preview",
       "public_and_Latest_HTTP_status": 200
     },
-    "next_phase_selection": "After authorized ordinary-cache cleanup and final binding review, M76’s fourth full normal/strict gate is running on unchanged frozen Source. The capacity stop and two earlier failures remain preserved; no normal result or acceptance is claimed."
+    "next_phase_selection": "M76 is locally qualified and published for review; exact hosted CI is in progress, with official DATA and Main acceptance pending. The next retained deliverable remains a read-only recommendation, not implementation."
   },
   "historical_held_work_before_closeout": {
     "phases": [
