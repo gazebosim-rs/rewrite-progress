@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-21T07:37:14.007341+00:00",
+  "updated_at": "2026-11-21T08:47:42.242326+00:00",
   "state": "active",
-  "summary": "M85\u2019s first gate failed coverage after headless tests passed. Its reviewed private control is under full retry. M84 completed own qualification; M77 browser and shutdown gates still hold acceptance.",
+  "summary": "M86 compound state edits and M87 passive joints are implemented, reviewed and formatted. Full verification is next. M85 passed local tests and audit; hosted CI is running. M77 browser and shutdown checks hold acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M85-private-coverage-correction-retry",
-      "title": "M85 reviewed pose-error control; full retry running",
-      "detail": "The first gate failed strict changed-line coverage at 14/15 after 1904 headless passes, zero failures and two ignored. The private DOM-error control, documentation, independent review and one-file formatting are complete. A full retry is active with no outcome; production and all seven integration cases stay unchanged."
+      "id": "M86-M87-reviewed-formatted-verification-next",
+      "title": "Compound state and passive joints ready for full verification",
+      "detail": "Both implementations, regression Source, independent code/docs review and one six-path formatter are complete. The 15 new headless/renderer declarations are Source obligations, not passes. Full staged-hook, coverage and audit gates are next; no normal has started and outcomes remain pending."
     },
     {
-      "id": "M84-own-qualified-unaccepted",
-      "title": "M84 own qualification complete; acceptance held",
-      "detail": "Corrected local normal, independent retained audit, review publication, exact hosted CI, original collection and independent official audit passed. Four original RAW groups were compared byte-exactly once. Its first failure remains preserved; phase acceptance, Main and Latest remain held."
+      "id": "M85-local-qualified-own-hosted-running",
+      "title": "M85 local qualification passed; hosted CI running",
+      "detail": "Corrected local normal and independent retained audit passed, including all seven own cases and Scene changed lines15/15 in both profiles. Its review branch is published and exact hosted CI is running. The first coverage failure stays preserved. M84 completed own qualification; neither is accepted."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Complete the corrected M85 full normal and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
-    "Preserve every own and predecessor acceptance gate and failed original. Keep the live M77 demo until owner-confirmed shutdown."
+    "Run one shared M86/M87 full mandatory verification cycle, including staged hook, strict coverage and independent local audit, then exact own hosted and official closeout.",
+    "Finish M85 hosted/official closeout and preserve all predecessor acceptance gates. Keep the live M77 demo until owner-confirmed shutdown."
   ],
   "blockers": [
     "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop."
@@ -1090,7 +1090,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "M77 numerical quality and proof remain unchanged. M85 first normal passed 1904 headless tests but failed strict changed-line coverage at 14/15; its reviewed private correction is under full retry with no result. M84 completed own qualification, not acceptance. Counts remain 76 accepted phases, catalog 85, 202 slices and Latest M70\u2019s original 41-example package.",
+    "note": "M77 numerical quality and proof remain unchanged. M86/M87 implementation, regression Source, independent review and formatting are complete; full verification has not started. Their 15 new Rust declarations are Source obligations. M85 passed corrected local tests and audit; hosted CI runs. M84 completed qualification. Counts remain 76 accepted phases, catalog 87, 202 slices and Latest M70\u2019s original 41-example package.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1134,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Current M85 retry is active, not passed; its first failed gate and original formatter/Source remain historical. M84 owns its completed local/hosted/official qualification. All original predecessor and release acceptance gates remain held.",
+    "qualification_scope": "M86/M87 completed implementation, regression Source, independent code/docs review and one formatter; no own mandatory verification has run. M85 local normal and independent DATA passed, with own hosted CI in progress. All predecessor and release acceptance gates remain.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1223,7 +1223,7 @@
       "browser_checkpoints_written": false,
       "browser_runtime_qualified": false,
       "active_owned_job": true,
-      "active_owned_job_scope": "M85 first normal22476 retired Root/Git1 at strict coverage. Corrected full retry37778 is active with unknown outcome; M84 completed own qualification. M77 manual demo remains live.",
+      "active_owned_job_scope": "M86/M87 implementation, independent review and formatting are complete; no own normal is launched. M85 corrected local normal and DATA finished zero; own hosted CI runs. M84 completed qualification. M77 manual demo remains live.",
       "manual_demo": {
         "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
         "session_id": 86363,
@@ -5319,7 +5319,7 @@
       }
     },
     "current_M85_Source": {
-      "state": "M85_PRIVATE_CHILD_POSE_CORRECTION_REVIEWED_FORMATTED_FULL_RETRY_RUNNING",
+      "state": "M85_LOCAL_NORMAL_AND_INDEPENDENT_DATA_QUALIFIED_REVIEW_PUBLISHED_OWN_CI_RUNNING",
       "Source_basis_commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
       "Source_basis_accepted": false,
       "basis_local_normal_and_independent_DATA_qualified": true,
@@ -5341,14 +5341,14 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "checks_run": true,
-      "normal_qualified": false,
-      "independent_local_DATA_qualified": false,
+      "normal_qualified": true,
+      "independent_local_DATA_qualified": true,
       "hosted_qualified": false,
       "official_DATA_qualified": false,
       "accepted": false,
       "qualification_inherited": false,
-      "Source_publication_available": false,
-      "future_qualified_head": null,
+      "Source_publication_available": true,
+      "future_qualified_head": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
       "Source_binding_count": 1795,
       "changed_paths_vs_basis": 12,
       "new_paths": 2,
@@ -5365,7 +5365,7 @@
       },
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
-      "current_stage": "The first normal passed all headless cases but failed strict changed-line coverage14/15. The additive private pose-error/atomicity control and docs are independently reviewed and formatted. One full mandatory retry is active; its outcome and qualified commit remain unknown.",
+      "current_stage": "The corrected full normal and independent retained audit passed. All seven own controls and Scene changed lines15/15 passed in both profiles. The ordinary review branch is published; exact own hosted CI is running. The first14/15 coverage failure stays preserved; acceptance is held.",
       "file_ownership": {
         "tracker_acceptance_closeout": [
           "crates/gz-sim-scene/src/velocity_control/config.rs",
@@ -5413,7 +5413,7 @@
         "mode": 436
       },
       "normal_launch": {
-        "state": "actual_child_pose_error_correction_full_normal_running_outcome_unknown",
+        "state": "actual_corrected_full_normal_retired_Root_Git_zero",
         "actual_launch": {
           "sha256": "0cd70d85798207cf361723151e503d2e1c84b1b9f696c623a2542716d1b996a5",
           "bytes": 1915,
@@ -5436,25 +5436,39 @@
           "bytes": 6034,
           "mode": 436
         },
-        "actual_Root_exit_code": null,
-        "actual_Git_exit_code": null,
-        "result": null,
-        "qualified_commit": null
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "result": {
+          "sha256": "77941fca0109e20c42c6d807c2da2eb5710e0a041d2f4a6b3751c67617752cbd",
+          "bytes": 4392,
+          "mode": 436
+        },
+        "qualified_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
+        "terminal_tool": "b1c6f7",
+        "elapsed_seconds": 1963.3708071020083
       },
-      "normal_actual": null,
-      "local_DATA_actual": null,
+      "normal_actual": {
+        "sha256": "526c50ed5e786fae200c79782d9653c173250f1fabcda3c3b6986b2019cdde1e",
+        "bytes": 1876,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "8c42318c0295535c59e94bcd0bf13b1836b7b39d8b3b58172bf6650c3c817815",
+        "bytes": 1914,
+        "mode": 436
+      },
       "hosted_actual": null,
       "official_actual": null,
       "protected_manual_demo_session": 86363,
       "stop_or_restart_authorized": false,
-      "active_heavy_job": true,
+      "active_heavy_job": false,
       "parent_qualification_scope": "Actual M84 corrected local normal, independent DATA, review publication, exact hosted CI, original collection and independent official DATA passed. It remains unaccepted with its first failure preserved; no qualification or acceptance transfers to M85.",
       "retained_test_disposition": "Only the extra-collision invalid row in velocity_control_posed.rs and controlled owner refusal in compound_primitives.rs become stronger same-XML Rapier positives at existing1e-11. All case identities/other negatives/TPE/precision assertions retained.",
       "frame_contract": "Identity local LINK and centered resolved COM remain mandatory for the controller, despite wider passive M84 link-pose support. Child geometry never changes link-origin model-frame velocity semantics.",
       "reset_contract": "Ordinary Simulation reset and loaded-world reconstruction restore configured initials and clear pending. Bare backend prepared reset covers geometry/IDs only; no new controller or native manager reset-mode claim.",
       "reference_scope": "Unchanged original M79 CPU component reference retains its limitations; no fresh native campaign or native compound-controller parity claim.",
-      "sole_Source_finding": "The first full normal exposed one missing changed-line coverage edge: the private per-child pose-resolution error path. An additive existing private-case typed UnknownReference/atomicity control covers that boundary without changing production or gates; actual full retry outcome remains unknown.",
-      "checks_run_scope": "The current full retry actually started, not passed. First normal partial headless results remain failed evidence; current Root/Git exits, renderer/strict results and qualified commit remain unknown.",
+      "sole_Source_finding": "The first normal exposed the private per-child pose-resolution error edge. The additive typed UnknownReference/atomicity control preserved production and gates; corrected normal and independent DATA now prove Scene changed lines15/15 in both profiles.",
+      "checks_run_scope": "Corrected full normal Root/Git0 and independent local DATA0 are actual. Own hosted CI is in progress; no hosted or official result or acceptance is inferred.",
       "Source_review_scopes": {
         "Package": "Independent complete additive private child-pose control review CLEAR: exact valid-two-child precondition, typed UnknownReference and atomicity; no old assertion or declaration change.",
         "Server": "Authored only the additive existing private configuration-case block; original four formatted feature Rust files and all seven integration case bodies remain byte-identical. Scope and Package independently review this code.",
@@ -5582,7 +5596,220 @@
         "sha256": "7b14817a072f2e4948cad41fa16206f94f42cffc18a3e308bd6762f9888c3a1a",
         "bytes": 21210,
         "mode": 436
+      },
+      "historical_corrected_retry_active_observation": {
+        "state": "M85_PRIVATE_CHILD_POSE_CORRECTION_REVIEWED_FORMATTED_FULL_RETRY_RUNNING",
+        "current_stage": "The first normal passed all headless cases but failed strict changed-line coverage14/15. The additive private pose-error/atomicity control and docs are independently reviewed and formatted. One full mandatory retry is active; its outcome and qualified commit remain unknown.",
+        "checks_run_scope": "The current full retry actually started, not passed. First normal partial headless results remain failed evidence; current Root/Git exits, renderer/strict results and qualified commit remain unknown.",
+        "sole_Source_finding": "The first full normal exposed one missing changed-line coverage edge: the private per-child pose-resolution error path. An additive existing private-case typed UnknownReference/atomicity control covers that boundary without changing production or gates; actual full retry outcome remains unknown.",
+        "normal_launch": {
+          "state": "actual_child_pose_error_correction_full_normal_running_outcome_unknown",
+          "actual_launch": {
+            "sha256": "0cd70d85798207cf361723151e503d2e1c84b1b9f696c623a2542716d1b996a5",
+            "bytes": 1915,
+            "mode": 436
+          },
+          "session_id": 37778,
+          "launch_tool": "34bf91",
+          "command": {
+            "sha256": "c343060a57b3ac1761d9ffc0d338b58c13bf990088fca25ee3c6a8c094458903",
+            "bytes": 1854,
+            "mode": 436
+          },
+          "runner": {
+            "sha256": "6f7042e6c10191ea6493ffed1bdce5d942771e0510c1b2f8c18ba64d59ef6d85",
+            "bytes": 30938,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "04d9623e4405bdf12067190989f4c5052aedf1362be474f2e96c07194e7b5572",
+            "bytes": 6034,
+            "mode": 436
+          },
+          "actual_Root_exit_code": null,
+          "actual_Git_exit_code": null,
+          "result": null,
+          "qualified_commit": null
+        },
+        "normal_actual": null,
+        "local_DATA_actual": null,
+        "normal_qualified": false,
+        "independent_local_DATA_qualified": false,
+        "Source_publication_available": false,
+        "future_qualified_head": null,
+        "active_heavy_job": true
+      },
+      "qualified_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
+      "local_DATA_report": {
+        "sha256": "8210fa49a1b9db81537c98b9a57efa903d259aa1fca989da7a1e6d7a30943702",
+        "bytes": 137559,
+        "mode": 436
+      },
+      "local_DATA_Source": {
+        "sha256": "9e89a5c2eadae0ac2311c82683a00b0009b489fbd7d28dddd7b490132d76fd17",
+        "bytes": 125638,
+        "mode": 436
+      },
+      "local_DATA_execution_log": {
+        "sha256": "d100e1921538f7e558e203a42954e5192d8cac81792d4c004927ffbcf9e8b1c8",
+        "bytes": 222,
+        "mode": 436
+      },
+      "review_publication": {
+        "sha256": "effd9f7f38138a0b93cc2d087c02acc2bcd6a2fe02daab33dc202beb71067edf",
+        "bytes": 2862,
+        "mode": 436
+      },
+      "hosted_run": {
+        "id": 44883777137,
+        "name": "simulator",
+        "path": ".github/workflows/ci.yml",
+        "head_sha": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
+        "head_branch": "review/m85-compound-velocity-control",
+        "event": "push",
+        "run_attempt": 1,
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44883777137",
+        "created_at": "2026-11-21T08:12:25Z"
+      },
+      "actual_profile_results": {
+        "headless_passed": 1904,
+        "renderer_passed_overlapping": 1440,
+        "ignored_each": 2,
+        "own_controls_observed_each": 7,
+        "Scene_changed_lines_each": [
+          15,
+          15
+        ],
+        "Python_aggregate": 494,
+        "finite_examples": 47,
+        "CLI_cases": 21,
+        "strict_bases": 9,
+        "scope": "Actual corrected M85 retained local DATA only; no inherited new-phase pass."
       }
+    },
+    "current_M86_M87_Source": {
+      "state": "M86_M87_COMPLETE_REVIEWED_FORMATTED_SOURCE_PENDING_MANDATORY_CHECKS",
+      "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
+      "Source_basis_tree": "bf83012768dde6feb1af7e402853d3dd841e3d50",
+      "Source_basis_accepted": false,
+      "basis_local_normal_and_independent_DATA_qualified": true,
+      "basis_hosted_and_official_qualified": false,
+      "source_preparation_under_D31": true,
+      "contracts": {
+        "M86": {
+          "sha256": "2b336ec00952b841299c7a2f14f8805a0762f7e6c3ccb24e3ea68d2b7d3241f2",
+          "bytes": 10050,
+          "mode": 436
+        },
+        "M87": {
+          "sha256": "9497d926239c8ac72a134635eda7581f0723dce6ffa1f5d9931c0486e45a4daa",
+          "bytes": 8452,
+          "mode": 436
+        }
+      },
+      "canonical_planning_Source": {
+        "sha256": "165d670caac423cb5b5652a16df8ee1820fe84ae139d89ef0f9d4f5778b9f9b1",
+        "bytes": 525125,
+        "mode": 436
+      },
+      "implementation_started": true,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": false,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "accepted": false,
+      "qualification_inherited": false,
+      "new_Rust_Source_controls": 15,
+      "new_Python_Source_controls": 0,
+      "Source_control_declarations": {
+        "Rust_unique": 15,
+        "headless": 15,
+        "renderer": 15,
+        "overlap": 15,
+        "Python": 0,
+        "counts_are_Source_obligations_not_executed_results": true
+      },
+      "Source_binding_count": 1799,
+      "changed_paths_vs_basis": 14,
+      "new_paths": 4,
+      "changed_production_paths_vs_basis": 3,
+      "final_tree": null,
+      "future_qualified_head": null,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "current_stage": "Both implementations, regression Source, reciprocal/whole code reviews and final docs review are complete. One six-path formatter returned zero with only four layout changes; no tests/lint or full normal have run. Consolidated mandatory verification is next; final tree, commit and outcomes are pending.",
+      "file_ownership": {
+        "package_collector": [
+          "crates/gz-sim-scene/src/world_edit.rs",
+          "crates/gz-sim-scene/src/initial.rs",
+          "crates/gz-sim-scene/tests/compound_world_edit.rs"
+        ],
+        "tracker_acceptance_closeout": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs"
+        ],
+        "Root": "Only the three explicitly selected assertions in tests/compound_primitives.rs: passive getter/setter and passive world-revolute refusal.",
+        "m76_scope": "Two guides and six current canonical documentation/planning files."
+      },
+      "original_domain_contract": "M86 binds immutable original compound child membership and native owner; no live-count promotion or shrink fallback. Existing singleton COM behavior and singleton-only runtime spawn/fixed4 remain unchanged. Controlled sensorless getter may read; setter keeps immutable controller veto.",
+      "joint_contract": "M87 reuses existing passive Revolute graph/axis/limits/dynamics. Any compound model refuses JointController/DiffDrive; VelocityControl no-joints and all unrelated negatives remain.",
+      "verification_contract": "Both complete Source/regressions/docs and reciprocal/whole review before one affected formatter and consolidated full staged-hook/strict/local DATA/hosted/official cycle; no separate inherited phase pass.",
+      "protected_manual_demo_session": 86363,
+      "stop_or_restart_authorized": false,
+      "active_heavy_job": false,
+      "cumulative_changed_paths_vs_accepted_ancestor": 93,
+      "changed_production_paths": [
+        "crates/gz-sim-scene/src/initial.rs",
+        "crates/gz-sim-scene/src/lib.rs",
+        "crates/gz-sim-scene/src/world_edit.rs"
+      ],
+      "per_phase_Source_declarations": {
+        "M86": {
+          "external_Rust": 5,
+          "inline_private_Rust": 2,
+          "headless": 7,
+          "renderer": 7,
+          "overlap": 7,
+          "Python": 0
+        },
+        "M87": {
+          "external_Rust": 8,
+          "headless": 8,
+          "renderer": 8,
+          "overlap": 8,
+          "Python": 0
+        }
+      },
+      "Source_review_scopes": {
+        "Package": "Authored M86; independently reviewed complete M87 and Root three same-XML transitions CLEAR.",
+        "Server": "Independent complete M86 baseline helper/public/private Source review CLEAR; gap/Frames fixes were queued. The exact final delta and full inverse were independently closed by Scope and Root.",
+        "Scope": "Independent whole joined production/math/query/lifecycle/ownership/test-integrity and exact gap/Frames correction review CLEAR.",
+        "Root": "Independent entire final eight-doc batch, all prose/counts/gates and exact qualification/task/attribution metadata successor CLEAR. Completed code/math/helper and final formatted Source custody independently clear."
+      },
+      "batched_review_corrections": "M86 gap ray now crosses the compound aggregate interior between members, preserving its expected miss/tolerance; Frames aliases its unchanged return type. Exact inverse restores all other bytes.",
+      "final_docs_review_pending": false,
+      "formatter_actual": {
+        "sha256": "78be4b899264b699681c7787d38434e620e6558c62211e78db994217187952f3",
+        "bytes": 6410,
+        "mode": 436
+      },
+      "final_docs_review_complete": true,
+      "preformat_whole_review": {
+        "sha256": "23e287227d884ebf5758755ef12ac6dbc44ef080b68793f10d0dbea4cb716bb6",
+        "bytes": 10111,
+        "mode": 436
+      },
+      "formatter_Source_review_complete": true,
+      "formatter_scope": "Actual0 across six affected Rust paths; four layout changes, two byte-identical. Independent complete backup/current/card/token/1799mode/index closure CLEAR. No tests or lint; no normal launched."
     }
   },
   "phase_status": {
