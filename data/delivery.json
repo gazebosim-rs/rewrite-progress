@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-21T05:57:21.153437+00:00",
+  "as_of": "2026-11-21T06:46:07.329184+00:00",
   "execution_state": "active",
-  "current_phase": "M84",
+  "current_phase": "M85",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -11776,6 +11776,144 @@
         "bytes": 13359,
         "mode": 436
       }
+    },
+    {
+      "id": "M85",
+      "title": "VelocityControl for Rapier primitive compounds",
+      "max_working_days": 5,
+      "depends_on": [
+        "M84"
+      ],
+      "scope": "Admit the existing model-frame VelocityControl on one Rapier 2..16-primitive compound link; validate every child and retain existing identity LINK, centered COM, top-level dynamic free single-link and single-owner boundaries.",
+      "acceptance": "Genuine M84 normal and independent DATA parent, reviewed integration; complete implementation/regression/docs and independent whole Source review before one affected formatter and consolidated full normal/strict/local DATA. Ordinary review publication, exact own hosted and independent official DATA and every original predecessor/M77 gate remain mandatory before acceptance/Main/release.",
+      "excluded": "New Physics/public API/controller runtime/Server/transport/native campaign; TPE compounds, offset COM/nonidentity LINK/joints/nesting/multiple controllers, world-edit/world-spawn compound expansion, renderer/package/dependency/sensor/framework, DART/MuJoCo and Fuel/demo operations.",
+      "contract": "docs/M85_DELIVERY.md",
+      "source_preparation_basis_commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "final_qualification_parent": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+      "implementation_started": true,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "accepted": false,
+      "distribution_selected": false,
+      "qualification_inherited": false,
+      "Source_publication_available": false,
+      "future_qualified_head": null,
+      "new_Source_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_Rust_Source_controls": 7,
+      "new_Python_Source_controls": 0,
+      "final_Source_count": 1795,
+      "changed_paths_vs_basis": 11,
+      "new_paths": 2,
+      "changed_production_paths_vs_basis": 1,
+      "changed_production_paths": [
+        "crates/gz-sim-scene/src/velocity_control/config.rs"
+      ],
+      "file_ownership": {
+        "tracker_acceptance_closeout": [
+          "crates/gz-sim-scene/src/velocity_control/config.rs",
+          "crates/gz-sim-scene/tests/velocity_control_posed.rs",
+          "crates/gz-sim-scene/tests/compound_primitives.rs"
+        ],
+        "package_collector": [
+          "crates/gz-sim-scene/tests/velocity_control_compounds.rs"
+        ],
+        "m76_scope": [
+          "docs/M85_DELIVERY.md",
+          "AGENTS.md",
+          "README.md",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "docs/IMPLEMENTATION_TASKS.md",
+          "planning/delivery-phases.json"
+        ]
+      },
+      "retained_test_disposition": "Only the extra-collision invalid row in velocity_control_posed.rs and controlled owner refusal in compound_primitives.rs become stronger same-XML Rapier positives at existing1e-11. All case identities/other negatives/TPE/precision assertions retained.",
+      "frame_contract": "Identity local LINK and centered resolved COM remain mandatory for the controller, despite wider passive M84 link-pose support. Child geometry never changes link-origin model-frame velocity semantics.",
+      "reset_contract": "Ordinary Simulation reset and loaded-world reconstruction restore configured initials and clear pending. Bare backend prepared reset covers geometry/IDs only; no new controller or native manager reset-mode claim.",
+      "reference_scope": "Unchanged original M79 CPU component reference retains its limitations; no fresh native campaign or native compound-controller parity claim.",
+      "qualification_state": "reviewed_formatted_full_normal_running_outcome_unknown",
+      "current_stage": "M85 implementation, seven regression declarations, independent whole Source review and one formatter are complete. Root launched one full normal on the reviewed staged tree; it is running with no outcome or qualified commit.",
+      "Source_profile_declarations": {
+        "Rust_unique": 7,
+        "headless": 7,
+        "renderer": 7,
+        "overlap": 7,
+        "Python": 0,
+        "counts_are_Source_obligations_not_executed_results": true
+      },
+      "formatter_actual": {
+        "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
+        "bytes": 4547,
+        "mode": 436
+      },
+      "preformat_whole_review": {
+        "sha256": "0e32a51da7c2973dfbb6f4eccc6721c885269cbfa27fe5236c2cebe5b465ba11",
+        "bytes": 6015,
+        "mode": 436
+      },
+      "formatted_staged_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+      "final_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "historical_formatted_prelaunch_Source_observation": {
+        "qualification_state": "implementation_review_formatter_complete_normal_not_invoked",
+        "current_stage": "M85 implementation, seven new regressions, independent whole Source review and one affected formatter are complete. Only layout changed during formatting. Own full normal and every runtime outcome remain uninvoked and unknown.",
+        "checks_run": false,
+        "final_tree": null
+      },
+      "checks_run_scope": "The full normal actually started; it has not passed. Product/profile results, Root/Git terminal exits and qualified commit remain unknown. Source census and prior formatter0 are not executed test passes.",
+      "current_normal": {
+        "state": "actual_full_normal_running_outcome_unknown",
+        "actual_launch": {
+          "sha256": "dc70a536957d908f122616e5a74ca76782cffc118b8d013a5d016829d80264e9",
+          "bytes": 1740,
+          "mode": 436
+        },
+        "session_id": 22476,
+        "launch_tool": "a4f441",
+        "command": {
+          "sha256": "b05944c4eece5aed31d6970d4ca41d24abdd719b753d560f7c2e06a08651e0cc",
+          "bytes": 1754,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "95b1fb1b16be56968428bf243f9c30cb895a503bb5735576405220384a9e809e",
+          "bytes": 30958,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "3002e304f99eefb9d002e644cf5db1a6485c9b6bd642499d8af12ea70262f55d",
+          "bytes": 5182,
+          "mode": 436
+        },
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "result": null,
+        "qualified_commit": null
+      },
+      "final_Source_review": {
+        "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
+        "bytes": 6835,
+        "mode": 436
+      },
+      "final_Source_snapshot": {
+        "sha256": "09923addfaded490d8149233a40cdabc7ba24a7cda0b73f2f4e0c206ba54f163",
+        "bytes": 665305,
+        "mode": 436
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -11863,10 +12001,11 @@
     "M81": "in_progress",
     "M82": "in_progress",
     "M83": "in_progress",
-    "M84": "in_progress"
+    "M84": "in_progress",
+    "M85": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-21T04:33:27.674240+00:00",
+  "phase_started_at": "2026-11-21T06:17:40.674075+00:00",
   "active_phases": [
     "M77",
     "M78",
@@ -11875,7 +12014,8 @@
     "M81",
     "M82",
     "M83",
-    "M84"
+    "M84",
+    "M85"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -12312,30 +12452,37 @@
       ],
       "integration": "D31: disjoint Physics/Rapier and Scene primitive-compound Source lanes over locally qualified unaccepted M83 11afe37a; Root integrates and serializes operations. M83 exact hosted/official and all predecessor acceptance remain separate; no result transfers.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M85"
+      ],
+      "integration": "D31: disjoint Scene admission/legacy-row and new compound-controller regression Source lanes use the exact unqualified M84 corrected seed while its own full retry runs. Root integrates only after actual M84 normal/DATA qualified-parent reconciliation and independent review; no evidence or acceptance transfers.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M84\u2019s isolated contact-window repair is independently reviewed and formatted, and its full retry is active with no outcome. The first Root/Git1 failure is preserved; no own qualified commit exists. M83 completed its own local, hosted and independent official qualification but remains unaccepted. All own and predecessor gates, accepted counts, Latest and the M77 browser/shutdown hold remain unchanged.",
+  "acceptance_boundary": "M85 implementation, regression Source, independent review and formatter are complete; one full normal is genuinely active with no outcome. Actual locally qualified M84 parentba2 is reconciled; its own review branch is published and hosted attempt1 remains active. Source counts are obligations, not passes. Every own/predecessor/M77 browser+owner-confirmed shutdown gate remains required; accepted76/catalog85/slices202/Latest M70 original41 unchanged.",
   "current_delivery_group": [
-    "M84"
+    "M85"
   ],
-  "current_development_phase": "M84",
+  "current_development_phase": "M85",
   "board": {
-    "updated_at": "2026-11-21T05:57:21.153437+00:00",
+    "updated_at": "2026-11-21T06:46:07.329184+00:00",
     "current": {
-      "title": "M84 full retry running after contact-window repair",
+      "title": "M85 full verification running; M84 hosted CI active",
       "items": [
-        "M84\u2019s first verification failed one new contact case. The reviewed repair changes only two observation windows, preserving every threshold and input. Formatting is complete; full retry is running with no outcome.",
-        "M83 completed its own local, hosted and independent official qualification. Its first failure and original evidence stay preserved; no acceptance transfers.",
+        "M85 compound-controller implementation, seven new regressions, independent review and formatting are complete. One full verification run is active on the reviewed Source; its outcome and qualified commit are unknown.",
+        "M84 passed corrected local tests and independent audit. Its review branch is published and hosted CI is running; the first failed run remains preserved and no qualification transfers to M85.",
         "The manual M77 demo remains running without expiry. Formal browser evidence and an owner-approved shutdown still hold release acceptance."
       ]
     },
     "done": [
-      "76 phases and 202 slices remain accepted; catalog 84 and Latest M70\u2019s original 41-example package are unchanged.",
-      "M84\u2019s first run completed 1896 headless passes with one failure and two ignored; sixteen new controls passed. These partial results do not qualify the feature."
+      "76 phases and 202 slices remain accepted; catalog 85 and Latest M70\u2019s original 41-example package do not add acceptance.",
+      "M83 completed its own qualification. M84 completed its corrected local gate and retained audit; M85 Source counts describe obligations, not executed passes."
     ],
     "next": [
-      "Complete the corrected M84 full normal and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
-      "Complete every own and predecessor acceptance gate. Preserve the live M77 demo until owner-confirmed shutdown."
+      "Complete the active M85 full normal and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
+      "Complete M84 hosted/official qualification and every original predecessor gate. Preserve the live M77 demo until owner-confirmed shutdown."
     ],
     "blocker": {
       "text": "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop.",
@@ -12344,7 +12491,7 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M84"
+    "M85"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -12493,7 +12640,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M84_CONTACT_WINDOW_CORRECTION_FULL_NORMAL_RUNNING",
+  "current_development_task": "M85_REVIEWED_FORMATTED_FULL_NORMAL_RUNNING",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -15196,7 +15343,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "M84 Source documentation checkpoint after Root selection; not an inferred earlier selection or runtime launch.",
+  "phase_started_at_scope": "M85 selected Source-documentation checkpoint, not a product verification launch or acceptance time.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -16065,7 +16212,7 @@
     }
   },
   "current_M84_Source": {
-    "state": "M84_REVIEWED_CONTACT_WINDOW_CORRECTION_FULL_NORMAL_RUNNING",
+    "state": "M84_LOCAL_NORMAL_AND_INDEPENDENT_DATA_QUALIFIED_REVIEW_PUBLISHED_HOSTED_RUNNING",
     "Source_basis_commit": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
     "Source_basis_accepted": false,
     "basis_local_normal_and_independent_DATA_qualified": true,
@@ -16082,13 +16229,13 @@
     "implementation_complete": true,
     "independent_source_review_complete": true,
     "checks_run": true,
-    "normal_qualified": false,
-    "independent_local_DATA_qualified": false,
+    "normal_qualified": true,
+    "independent_local_DATA_qualified": true,
     "hosted_qualified": false,
     "accepted": false,
     "qualification_inherited": false,
-    "Source_publication_available": false,
-    "future_qualified_head": null,
+    "Source_publication_available": true,
+    "future_qualified_head": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
     "Source_binding_count": 1793,
     "changed_paths_vs_basis": 22,
     "new_paths": 5,
@@ -16105,7 +16252,7 @@
     },
     "Source_finite_runs": 47,
     "Source_CLI_cases": 21,
-    "current_stage": "M84\u2019s first normal failed one new contact case. The reviewed repair changes only two observation windows and preserves every threshold, input and production file. One affected formatter passed with no byte changes; full retry is running with no outcome.",
+    "current_stage": "M84 corrected full normal and independent retained audit passed. Its exact review branch is published and own hosted CI is running without outcome; official qualification and original predecessor acceptance gates remain pending.",
     "frame_contract": "Retain passive link world P/Q and model anchors; child local transforms compose once, including existing cylinder Y-to-Z correction. No identity local-link restriction.",
     "query_contract": "Traverse all at most16 direct children, unchanged full maximum/no early successful return; reuse unchanged cylinder_distance and maintained other primitive kernels, finite inclusive minimum, solid-inside0, wholebody exclusion/current poses.",
     "inertia_contract": "Requested spec.mass supplies link mass; supplied centered validated Inertia supplies COM/tensor. DynamicSome inertia required/staticNone permitted, suppliedstaticSome centered. Existing resolved Scene defaults honored; upstream compound-auto refusal and density metadata unchanged. No child mass sum/XML presence parser.",
@@ -16143,7 +16290,7 @@
     },
     "protected_manual_demo_session": 86363,
     "stop_or_restart_authorized": false,
-    "active_heavy_job": true,
+    "active_heavy_job": false,
     "parent_qualification_scope": "M83 completed its own corrected local qualification, retained audit, review publication, exact hosted CI, original collection and independent official audit. It remains unaccepted, with its first failure preserved and no result transfer to M84.",
     "final_qualification_tree": "6e720e7b42524ca6f5b4d64538c8268778f541ad",
     "final_Source_snapshot": {
@@ -16161,8 +16308,16 @@
       "bytes": 3558,
       "mode": 436
     },
-    "normal_actual": null,
-    "local_DATA_actual": null,
+    "normal_actual": {
+      "sha256": "7b9becfedceb9e7d737b4ea0d518706654dfa2e011944e36b5f396955ed822fe",
+      "bytes": 1862,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "5e88a5f36aa566469cc37c9cc4c9d127181feab2af20975129af355cc91ad40c",
+      "bytes": 1816,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
     "historical_selected_contract": {
@@ -16178,10 +16333,10 @@
     "selected_observation_retention": "The selected Source checkpoint remains in immutable published fb421b7e and its retained API/Source; no recursive phase-history clone.",
     "cumulative_changed_paths_vs_accepted_ancestor": 87,
     "normal_launch": {
-      "state": "actual_contact_window_correction_full_normal_running_outcome_unknown",
+      "state": "actual_corrected_full_normal_completed_zero",
       "session_id": 33035,
       "launch_tool": "cdeb48",
-      "observation_basis": "Root directly observed one invocation of the exact reviewed seven-token command running with session33035. No separate launch receipt or duplicate watch.",
+      "observation_basis": "Root actual cdeb48/session33035 retired469075 with Root/Git0; normal receipt7b9becfe binds the same invocation.",
       "command": {
         "sha256": "91b292eaadcf17e2046af3639398cdd90998d0cbd02c6a7d70c3680a9c76d210",
         "bytes": 1572,
@@ -16197,12 +16352,16 @@
         "bytes": 5959,
         "mode": 436
       },
-      "actual_Root_exit_code": null,
-      "actual_Git_exit_code": null,
-      "result": null,
-      "qualified_commit": null
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "result": {
+        "sha256": "cc15b5b94d40730e67c510cf0b1bc924927dc8d9e6ebaad30170e1f2e3bf1ad1",
+        "bytes": 4402,
+        "mode": 436
+      },
+      "qualified_commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0"
     },
-    "checks_run_scope": "The corrected full normal started, not passed. First-attempt headless partial results are failed evidence only; current Root/Git exits, renderer/strict results and qualified commit remain unknown.",
+    "checks_run_scope": "Own corrected full normal/strict and independent retained DATA passed. The first failed normal stays failed. Own exact hosted CI is running with no conclusion; no acceptance or Main promotion.",
     "Source_review_scopes": {
       "package_collector": "Independent full Scene eight-path admission/newregression/five-disposition review CLEAR; sole shape-quaternion finding closed without scope/tolerance change.",
       "tracker_acceptance_closeout": "Independent full Physics/Rapier seven-path API/constructor/query/regression review and held normal donor adaptation CLEAR.",
@@ -16328,7 +16487,92 @@
       "sha256": "343d188f9b81bbcc8cbf62820a7a074981447ce5acd8db8d082f49a6f78bfa7c",
       "bytes": 13359,
       "mode": 436
-    }
+    },
+    "historical_contact_window_retry_active_observation": {
+      "state": "M84_REVIEWED_CONTACT_WINDOW_CORRECTION_FULL_NORMAL_RUNNING",
+      "current_stage": "M84\u2019s first normal failed one new contact case. The reviewed repair changes only two observation windows and preserves every threshold, input and production file. One affected formatter passed with no byte changes; full retry is running with no outcome.",
+      "normal_launch": {
+        "state": "actual_contact_window_correction_full_normal_running_outcome_unknown",
+        "session_id": 33035,
+        "launch_tool": "cdeb48",
+        "observation_basis": "Root directly observed one invocation of the exact reviewed seven-token command running with session33035. No separate launch receipt or duplicate watch.",
+        "command": {
+          "sha256": "91b292eaadcf17e2046af3639398cdd90998d0cbd02c6a7d70c3680a9c76d210",
+          "bytes": 1572,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "d2a4ae55626276806507bbb3fc2b9a3e285a8891f48c5241d12cb273f326c46d",
+          "bytes": 30059,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "a044c6c401a9bf116b3ba553991f99efddcbc2599d0498198c40e79970f76f17",
+          "bytes": 5959,
+          "mode": 436
+        },
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "result": null,
+        "qualified_commit": null
+      },
+      "checks_run_scope": "The corrected full normal started, not passed. First-attempt headless partial results are failed evidence only; current Root/Git exits, renderer/strict results and qualified commit remain unknown.",
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "future_qualified_head": null
+    },
+    "official_DATA_qualified": false,
+    "local_DATA_admission_complete_actual": {
+      "sha256": "33a9d6ad7c4192ccae8396254e732e0c6cd971c5f36135fc61b3d0cc9043b795",
+      "bytes": 2189,
+      "mode": 436
+    },
+    "local_DATA_report": {
+      "sha256": "becd57708ba2993cede4a9950b34e3d817b8d6e39b37945e8171feb0f6001f1d",
+      "bytes": 129018,
+      "mode": 436
+    },
+    "local_DATA_Source": {
+      "sha256": "9ee1cd4d705e8debe8ea7ca8692bf74ed71fa8ff421abcabf7349be21b39a7fe",
+      "bytes": 120581,
+      "mode": 436
+    },
+    "local_DATA_execution_log": {
+      "sha256": "2a11cca4fe3de51854ada6336ed7ee0a0948497dccc7d4912f036759fb2d56ad",
+      "bytes": 226,
+      "mode": 436
+    },
+    "review_publication": {
+      "sha256": "000660439f0ee0aeb8e1f24af240262bac49479b7f48464cc7ab0d229367c89b",
+      "bytes": 2780,
+      "mode": 436
+    },
+    "hosted_run": {
+      "id": 44876073592,
+      "name": "simulator",
+      "path": ".github/workflows/ci.yml",
+      "head_sha": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+      "head_branch": "review/m84-primitive-compounds",
+      "event": "push",
+      "run_attempt": 1,
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44876073592",
+      "created_at": "2026-11-21T06:33:04Z"
+    },
+    "hosted_state": "own_exact_head_attempt1_running_outcome_unknown",
+    "original_ZIPs_downloaded": false,
+    "local_profile_passes": {
+      "headless": 1897,
+      "renderer_overlapping": 1433,
+      "ignored_each": 2,
+      "Python_aggregate": 494,
+      "finite_examples": 47,
+      "CLI_cases": 21,
+      "strict_changed_line_bases": 8
+    },
+    "local_DATA_actual_scope": "Original genuine5e88 Root0 receipt remains preserved. Same-tool admission-complete33a9 supplement adds four missing consumer fields; no second audit, test or native execution.",
+    "current_qualification_scope": "Own corrected local qualification only; exact review publication succeeded and hosted attempt1 is in progress. No hosted/official or acceptance success inferred."
   },
   "current_M83_parent_qualification": {
     "commit": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
@@ -16395,5 +16639,206 @@
       "bytes": 40637,
       "mode": 436
     }
-  }
+  },
+  "current_M84_parent_qualification": {
+    "commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+    "tree": "6e720e7b42524ca6f5b4d64538c8268778f541ad",
+    "parent": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
+    "accepted": false,
+    "normal_actual": {
+      "sha256": "7b9becfedceb9e7d737b4ea0d518706654dfa2e011944e36b5f396955ed822fe",
+      "bytes": 1862,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "5e88a5f36aa566469cc37c9cc4c9d127181feab2af20975129af355cc91ad40c",
+      "bytes": 1816,
+      "mode": 436
+    },
+    "local_DATA_admission_complete_actual": {
+      "sha256": "33a9d6ad7c4192ccae8396254e732e0c6cd971c5f36135fc61b3d0cc9043b795",
+      "bytes": 2189,
+      "mode": 436
+    },
+    "local_DATA_report": {
+      "sha256": "becd57708ba2993cede4a9950b34e3d817b8d6e39b37945e8171feb0f6001f1d",
+      "bytes": 129018,
+      "mode": 436
+    },
+    "review_publication": {
+      "sha256": "000660439f0ee0aeb8e1f24af240262bac49479b7f48464cc7ab0d229367c89b",
+      "bytes": 2780,
+      "mode": 436
+    },
+    "hosted_run": {
+      "id": 44876073592,
+      "name": "simulator",
+      "path": ".github/workflows/ci.yml",
+      "head_sha": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+      "head_branch": "review/m84-primitive-compounds",
+      "event": "push",
+      "run_attempt": 1,
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44876073592",
+      "created_at": "2026-11-21T06:33:04Z"
+    },
+    "official_actual": null,
+    "scope": "Actual M84 corrected local normal and independent DATA qualify this unaccepted parent locally. Ordinary review publication completed; own hosted is running and official remains pending. No evidence or acceptance transfers to M85."
+  },
+  "current_M85_Source": {
+    "state": "M85_REVIEWED_FORMATTED_FULL_NORMAL_RUNNING_OUTCOME_UNKNOWN",
+    "Source_basis_commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+    "Source_basis_accepted": false,
+    "basis_local_normal_and_independent_DATA_qualified": true,
+    "basis_hosted_and_official_qualified": false,
+    "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "source_preparation_under_D31": true,
+    "contract": {
+      "sha256": "62b62db2cd3596eecaa99b8ed26335db44c3ff310784b15fb17a5ba3e261582d",
+      "bytes": 9830,
+      "mode": 436
+    },
+    "canonical_planning_Source": {
+      "sha256": "719e9480bd22be73eb765db09a61f969836e03005aa2db7b5e595f5134f78ae4",
+      "bytes": 505011,
+      "mode": 436
+    },
+    "contract_scope_review_complete": true,
+    "implementation_started": true,
+    "implementation_complete": true,
+    "independent_source_review_complete": true,
+    "checks_run": true,
+    "normal_qualified": false,
+    "independent_local_DATA_qualified": false,
+    "hosted_qualified": false,
+    "official_DATA_qualified": false,
+    "accepted": false,
+    "qualification_inherited": false,
+    "Source_publication_available": false,
+    "future_qualified_head": null,
+    "Source_binding_count": 1795,
+    "changed_paths_vs_basis": 11,
+    "new_paths": 2,
+    "changed_production_paths_vs_basis": 1,
+    "new_Rust_Source_controls": 7,
+    "new_Python_Source_controls": 0,
+    "Source_control_declarations": {
+      "Rust_unique": 7,
+      "headless": 7,
+      "renderer": 7,
+      "overlap": 7,
+      "Python": 0,
+      "counts_are_Source_obligations_not_executed_results": true
+    },
+    "Source_finite_runs": 47,
+    "Source_CLI_cases": 21,
+    "current_stage": "M85 implementation, seven regression declarations, independent whole Source review and one formatter are complete. Root launched one full normal on the reviewed staged tree; it is running with no outcome or qualified commit.",
+    "file_ownership": {
+      "tracker_acceptance_closeout": [
+        "crates/gz-sim-scene/src/velocity_control/config.rs",
+        "crates/gz-sim-scene/tests/velocity_control_posed.rs",
+        "crates/gz-sim-scene/tests/compound_primitives.rs"
+      ],
+      "package_collector": [
+        "crates/gz-sim-scene/tests/velocity_control_compounds.rs"
+      ],
+      "m76_scope": [
+        "docs/M85_DELIVERY.md",
+        "AGENTS.md",
+        "README.md",
+        "docs/DELIVERY_PLAN.md",
+        "docs/HANDOFF.md",
+        "docs/IMPLEMENTATION_TASKS.md",
+        "planning/delivery-phases.json"
+      ]
+    },
+    "formatted_staged_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+    "preformat_whole_review": {
+      "sha256": "0e32a51da7c2973dfbb6f4eccc6721c885269cbfa27fe5236c2cebe5b465ba11",
+      "bytes": 6015,
+      "mode": 436
+    },
+    "preformat_Source_custody": {
+      "sha256": "54d42cc7a8b7f41eb24ca60e5813d888d413d7f438a9734905cc4fb3c00d082e",
+      "bytes": 761645,
+      "mode": 436
+    },
+    "final_formatter_actual": {
+      "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
+      "bytes": 4547,
+      "mode": 436
+    },
+    "final_Source_review": {
+      "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
+      "bytes": 6835,
+      "mode": 436
+    },
+    "final_Source_snapshot": {
+      "sha256": "09923addfaded490d8149233a40cdabc7ba24a7cda0b73f2f4e0c206ba54f163",
+      "bytes": 665305,
+      "mode": 436
+    },
+    "normal_launch": {
+      "state": "actual_full_normal_running_outcome_unknown",
+      "actual_launch": {
+        "sha256": "dc70a536957d908f122616e5a74ca76782cffc118b8d013a5d016829d80264e9",
+        "bytes": 1740,
+        "mode": 436
+      },
+      "session_id": 22476,
+      "launch_tool": "a4f441",
+      "command": {
+        "sha256": "b05944c4eece5aed31d6970d4ca41d24abdd719b753d560f7c2e06a08651e0cc",
+        "bytes": 1754,
+        "mode": 436
+      },
+      "runner": {
+        "sha256": "95b1fb1b16be56968428bf243f9c30cb895a503bb5735576405220384a9e809e",
+        "bytes": 30958,
+        "mode": 436
+      },
+      "binding": {
+        "sha256": "3002e304f99eefb9d002e644cf5db1a6485c9b6bd642499d8af12ea70262f55d",
+        "bytes": 5182,
+        "mode": 436
+      },
+      "actual_Root_exit_code": null,
+      "actual_Git_exit_code": null,
+      "result": null,
+      "qualified_commit": null
+    },
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "protected_manual_demo_session": 86363,
+    "stop_or_restart_authorized": false,
+    "active_heavy_job": true,
+    "parent_qualification_scope": "Actual M84 corrected local normal and independent DATA qualify this unaccepted parent locally. Ordinary review publication completed; own hosted is running and official remains pending. No evidence or acceptance transfers to M85.",
+    "retained_test_disposition": "Only the extra-collision invalid row in velocity_control_posed.rs and controlled owner refusal in compound_primitives.rs become stronger same-XML Rapier positives at existing1e-11. All case identities/other negatives/TPE/precision assertions retained.",
+    "frame_contract": "Identity local LINK and centered resolved COM remain mandatory for the controller, despite wider passive M84 link-pose support. Child geometry never changes link-origin model-frame velocity semantics.",
+    "reset_contract": "Ordinary Simulation reset and loaded-world reconstruction restore configured initials and clear pending. Bare backend prepared reset covers geometry/IDs only; no new controller or native manager reset-mode claim.",
+    "reference_scope": "Unchanged original M79 CPU component reference retains its limitations; no fresh native campaign or native compound-controller parity claim.",
+    "sole_Source_finding": "A solid-inside test used maximum0 outside the maintained positive-bound API; only maximum became0.125. Expectedhit0/allotherbytes preserved; independent exact correction closure CLEAR.",
+    "checks_run_scope": "The full normal actually started; it has not passed. Product/profile results, Root/Git terminal exits and qualified commit remain unknown. Source census and prior formatter0 are not executed test passes.",
+    "Source_review_scopes": {
+      "Package": "Independent entire Server three-file admission/two old-row disposition review CLEAR.",
+      "Server": "Independent whole new seven-case regression review and exact sole maximum correction closure CLEAR.",
+      "Scope": "Independent integrated code/test-integrity and all1795 postformatter/index/tree/mode custody review CLEAR.",
+      "Root": "Independent complete seven authored docs and feature Source review CLEAR before the single affected formatter."
+    },
+    "historical_formatted_prelaunch_Source_observation": {
+      "state": "M85_IMPLEMENTATION_REVIEW_AND_FORMATTER_COMPLETE_NORMAL_NOT_INVOKED",
+      "current_stage": "M85 implementation, seven new regressions, independent whole Source review and one affected formatter are complete. Only layout changed during formatting. Own full normal and every runtime outcome remain uninvoked and unknown.",
+      "checks_run": false,
+      "checks_run_scope": "One completed-batch formatter actual0 is not a product test. No M85 full normal, tests/lint, local DATA, hosted or official qualification has run.",
+      "normal_launch": null,
+      "final_Source_review": null,
+      "final_Source_snapshot": null,
+      "active_heavy_job": false
+    },
+    "final_qualification_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da"
+  },
+  "phase_catalog_checkpoint_scope": "M1\u2013M84 phase objects are preserved exact historical Source checkpoints. Latest M84 corrected local qualification/review/hosted-running facts are in current_M84_Source/current_M84_parent_qualification; M85 is the new current Source-only entry."
 }
