@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-21T02:32:05.459617+00:00",
+  "as_of": "2026-11-21T02:48:24.619656+00:00",
   "execution_state": "active",
-  "current_phase": "M82",
+  "current_phase": "M83",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -11043,6 +11043,77 @@
         "both_legacy_disposition_cases_observed_in_each_profile": true,
         "scope": "Actual own M82 local qualification only, including the corrected legacy cases. Not accepted phase or predecessor measurements."
       }
+    },
+    {
+      "id": "M83",
+      "title": "VelocityControl with one posed Rapier primitive",
+      "max_working_days": 5,
+      "depends_on": [
+        "M82"
+      ],
+      "scope": "Compose existing model VelocityControl with one posed Box/Cylinder/Capsule/Sphere on one top-level dynamic free single link, preserving identity link and centered COM.",
+      "acceptance": "Complete Source/regressions/docs and independent whole review; batch findings before one affected formatter/full normal/strict/local DATA/exact own hosted/official cycle. Preserve all predecessor/accepted ancestry gates.",
+      "excluded": "New physics/transport API, query changes, TPE posed geometry, compounds, offset link/COM, joints/nested/static/multiple owners, new native campaign, dependencies/package/examples/renderer/sensors, DART/MuJoCo, Fuel and demo operations",
+      "contract": "docs/M83_DELIVERY.md",
+      "source_preparation_basis_commit": "039a1e5142dd48705a23acb6f817613f509408f0",
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "accepted": false,
+      "distribution_selected": false,
+      "qualification_inherited": false,
+      "Source_publication_available": false,
+      "future_qualified_head": null,
+      "qualification_state": "selected_Source_implementation_underway",
+      "new_Source_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_Rust_Source_controls": null,
+      "new_Python_Source_controls": null,
+      "final_Source_count": null,
+      "final_tree": null,
+      "file_ownership": {
+        "tracker_acceptance_closeout": [
+          "crates/gz-sim-scene/src/velocity_control/config.rs",
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/tests/private/velocity_control.rs",
+          "crates/gz-sim-scene/tests/velocity_control.rs",
+          "crates/gz-sim-scene/tests/posed_cylinder.rs",
+          "crates/gz-sim-scene/tests/posed_capsule.rs",
+          "crates/gz-sim-scene/tests/posed_sphere.rs"
+        ],
+        "package_collector": [
+          "crates/gz-sim-scene/tests/velocity_control_posed.rs"
+        ],
+        "m76_scope": [
+          "AGENTS.md",
+          "docs/M83_DELIVERY.md",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "docs/IMPLEMENTATION_TASKS.md",
+          "planning/delivery-phases.json",
+          "README.md"
+        ]
+      },
+      "current_stage": "Selected disjoint Source preparation only. Complete admission, exact four-site retained-test dispositions, new regression Source and docs before whole review and consolidated verification.",
+      "retained_test_disposition": "Generic velocity_control.rs collision-local rotation: Rapier positive/TPE negative retained. Final posed_cylinder/posed_capsule/posed_sphere controlled_pose refusals become positive; coexistence prefixes unchanged. posed_box.rs has no controller refusal and stays exact. Private direct calls receive only engine forwarding and unchanged flags-tuple grouping; other assertions/tolerances remain unchanged.",
+      "frame_contract": "Commands remain model-frame/link-origin; current linkQ rotates committed vectors. ColliderQ never rotates commands/translation again; geometry follows linkP+linkQ*localP under engine stepping. No pose teleport or new velocity API.",
+      "engine_admission": "Pass actual local backend engine to Plan::validate; only Some(rapier) admits nonidentity primitive collision. Keep identity link, centered COM and all prior owner/refusal guards.",
+      "reference_scope": "Unchanged historical M79 CPU component reference only, with original reset/callback/physics limitations. No fresh native campaign or inherited qualification.",
+      "task_mapping": [
+        "LOAD-M83",
+        "LOAD-01",
+        "SYS-CONTROL",
+        "PHY-01"
+      ]
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -11128,17 +11199,19 @@
     "M79": "in_progress",
     "M80": "in_progress",
     "M81": "in_progress",
-    "M82": "in_progress"
+    "M82": "in_progress",
+    "M83": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-21T00:59:26.857389+00:00",
+  "phase_started_at": "2026-11-21T02:44:47.815870+00:00",
   "active_phases": [
     "M77",
     "M78",
     "M79",
     "M80",
     "M81",
-    "M82"
+    "M82",
+    "M83"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -11561,30 +11634,37 @@
       ],
       "integration": "D31: Physics/Rapier and Scene work in disjoint Source leases over locally qualified unaccepted M81 6ef85e9f. Root integrates and serializes heavy jobs; M81 official/predecessor closeout remains separate and no qualification transfers.",
       "max_working_days": 5
+    },
+    {
+      "phases": [
+        "M83"
+      ],
+      "integration": "D31: disjoint Scene admission/retained-test and new regression Source lanes over locally qualified unaccepted M82 039a1e51. Root integrates and serializes heavy work; M82 hosted/official and predecessor closeout remain separate. No qualification transfers.",
+      "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M82 own local normal/strict and independent retained DATA passed at exact039a1e51; its ordinary published review is in automatic hosted attempt1 with no outcome. The first Root/Git1 failure96080 remains preserved. M81 own qualification passed but remains unaccepted. All own hosted/official and predecessor acceptance gates remain mandatory; accepted Main M76,76phases/202slices/catalog82/Latest M70 original41 stay unchanged.",
+  "acceptance_boundary": "M83 Source work proceeds under D31 from locally qualified unaccepted M82 039a1e51. M82 own normal/strict and retained DATA passed; its exact published review is in hosted attempt1 with no outcome. No earlier result qualifies M83. Accepted Main remains M76:76phases/202slices/catalog83/Latest M70 original41. M77 formal browser/owner-confirmed shutdown and all own/predecessor gates remain mandatory.",
   "current_delivery_group": [
-    "M82"
+    "M83"
   ],
-  "current_development_phase": "M82",
+  "current_development_phase": "M83",
   "board": {
-    "updated_at": "2026-11-21T02:32:05.459617+00:00",
+    "updated_at": "2026-11-21T02:48:24.619656+00:00",
     "current": {
-      "title": "M82 hosted verification; own local qualification passed",
+      "title": "M83 controller/posed-geometry Source; M82 hosted verification",
       "items": [
-        "M82 own normal/strict and independent retained DATA passed at its exact published review. Automatic hosted attempt 1 is active with no outcome; official evidence remains pending.",
-        "Both corrected legacy cases and all 19 new controls passed their required profiles. The original failed normal, five-site disposition review and all earlier proof remain preserved.",
-        "M77\u2019s no-expiry demo stays live. Formal browser access and owner-confirmed shutdown still hold downstream acceptance; M81\u2019s completed qualification does not transfer acceptance."
+        "M83 is selected: drive one posed Rapier box, cylinder, capsule or sphere with the existing model VelocityControl. Disjoint Source lanes are underway; authored counts and all own outcomes remain unbound.",
+        "M82 own normal/strict and independent DATA passed at exact 039a1e51. Its published review is in automatic hosted attempt 1 with no outcome; the first failed run remains preserved.",
+        "M77\u2019s no-expiry manual demo stays live. Formal browser access and owner-confirmed shutdown still hold downstream acceptance."
       ]
     },
     "done": [
-      "M1\u2013M76 and 202 slices remain accepted; catalog 82 and Latest M70 original41 are unchanged. Prior Source, failures and all proof histories are preserved.",
-      "M82 local qualification passed: 1872 headless and 1417 overlapping renderer, two ignored each; 494 aggregate Python, 47 finite examples, 21 CLI cases and all six strict changed-line bases."
+      "M1\u2013M76 and 202 slices remain accepted; catalog 83 and Latest M70\u2019s original 41-example package are unchanged.",
+      "M82 local qualification passed: 1872 headless and 1417 overlapping renderer passes, two ignored each; 494 aggregate Python, 47 finite examples, 21 CLI cases and six strict changed-line bases."
     ],
     "next": [
-      "Complete exact M82 hosted and independent official evidence; accepted predecessors remain mandatory before phase/Main acceptance.",
-      "Complete M77 formal browser access, visual/DATA and owner-approved shutdown; preserve the live demo meanwhile."
+      "Finish complete M83 implementation, regression Source and docs; batch whole independent review before one affected formatter and mandatory full qualification.",
+      "Complete exact M82 hosted/official evidence and predecessor closeout; keep M77\u2019s live demo until owner-confirmed stop."
     ],
     "blocker": {
       "text": "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop.",
@@ -11593,7 +11673,7 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M82"
+    "M83"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -11742,7 +11822,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M82_HOSTED_VERIFICATION_OWN_LOCAL_QUALIFIED",
+  "current_development_task": "M83_POSED_PRIMITIVE_VELOCITY_CONTROL_SOURCE_PREPARATION",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -14445,7 +14525,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "M82 Source documentation checkpoint recorded by the selection-plan as_of; not an inferred earlier selection or runtime launch.",
+  "phase_started_at_scope": "M83 Source documentation checkpoint; not an inferred earlier selection or runtime launch.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_QUALIFIED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -14790,5 +14870,89 @@
       "mode": 436
     },
     "official_qualified": true
+  },
+  "current_M83_Source": {
+    "state": "M83_SELECTED_DISJOINT_SOURCE_IMPLEMENTATION_UNDERWAY",
+    "Source_basis_commit": "039a1e5142dd48705a23acb6f817613f509408f0",
+    "Source_basis_accepted": false,
+    "basis_local_normal_and_independent_DATA_qualified": true,
+    "basis_hosted_and_official_qualified": false,
+    "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+    "source_preparation_under_D31": true,
+    "contract": {
+      "sha256": "9042e5502e3ef212d70ec239a562f8d41c4f52a99e316918876d2b558fd980ab",
+      "bytes": 7950,
+      "mode": 436
+    },
+    "contract_scope_review_complete": true,
+    "implementation_started": true,
+    "implementation_complete": false,
+    "independent_source_review_complete": false,
+    "checks_run": false,
+    "normal_qualified": false,
+    "independent_local_DATA_qualified": false,
+    "hosted_qualified": false,
+    "accepted": false,
+    "qualification_inherited": false,
+    "Source_publication_available": false,
+    "future_qualified_head": null,
+    "Source_binding_count": null,
+    "changed_paths_vs_basis": null,
+    "new_Rust_Source_controls": null,
+    "new_Python_Source_controls": null,
+    "Source_finite_runs": 47,
+    "Source_CLI_cases": 21,
+    "current_stage": "Selected disjoint Source implementation and meaningful regression authoring are underway. Complete the exact four-site retained-test dispositions, docs and whole independent review before consolidated qualification; no M83 outcome is inferred.",
+    "frame_contract": "Commands remain model-frame/link-origin; current linkQ rotates committed vectors. ColliderQ never rotates commands/translation again; geometry follows linkP+linkQ*localP under engine stepping. No pose teleport or new velocity API.",
+    "engine_admission": "Pass actual local backend engine to Plan::validate; only Some(rapier) admits nonidentity primitive collision. Keep identity link, centered COM and all prior owner/refusal guards.",
+    "retained_test_disposition": "Generic velocity_control.rs collision-local rotation: Rapier positive/TPE negative retained. Final posed_cylinder/posed_capsule/posed_sphere controlled_pose refusals become positive; coexistence prefixes unchanged. posed_box.rs has no controller refusal and stays exact. Private direct calls receive only engine forwarding and unchanged flags-tuple grouping; other assertions/tolerances remain unchanged.",
+    "reference_scope": "Unchanged historical M79 CPU component reference only, with original reset/callback/physics limitations. No fresh native campaign or inherited qualification.",
+    "protected_manual_demo_session": 86363,
+    "stop_or_restart_authorized": false,
+    "active_heavy_job": false,
+    "parent_qualification_scope": "M82 own local normal/strict and independent DATA passed; ordinary review publication succeeded and exact hosted44856006215 attempt1 is active. First failed normal remains preserved. M82 is unaccepted and no qualification transfers.",
+    "final_qualification_tree": null,
+    "final_Source_snapshot": null,
+    "final_Source_review": null,
+    "final_formatter_actual": null,
+    "normal_launch": null,
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null
+  },
+  "current_M82_parent_qualification": {
+    "commit": "039a1e5142dd48705a23acb6f817613f509408f0",
+    "tree": "420197183a1ec5b71f85f9c2181b9caa1d82a4c6",
+    "parent": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
+    "accepted": false,
+    "normal_actual": {
+      "sha256": "2fc1b9dcd6454586a466439ac6aa48f8a5ad7e4006fa353158061e9d0e3bc9c4",
+      "bytes": 1809,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "c36980c4ddf5b19da564a7cc61245fa62ebcdaaabebda2d9287594306d02b27f",
+      "bytes": 1633,
+      "mode": 436
+    },
+    "local_DATA_report": {
+      "sha256": "9805d10e08af701da55e8b4a8f9cebe551ff0554ad62ee2f506c1813e9e69e30",
+      "bytes": 108557,
+      "mode": 436
+    },
+    "review_publication": {
+      "sha256": "359011a18801202f12d4ec34f3c2c122a7f699bb4937847ae9002385416d8a38",
+      "bytes": 4698,
+      "mode": 436
+    },
+    "hosted_run": {
+      "id": 44856006215,
+      "attempt": 1,
+      "status": "in_progress",
+      "conclusion": null
+    },
+    "official_actual": null,
+    "scope": "Own M82 local qualification and review publication passed. Exact own hosted is active at this Source checkpoint; all predecessor/own release gates remain required and no result qualifies M83."
   }
 }
