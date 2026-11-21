@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-21T01:14:02.460691+00:00",
+  "updated_at": "2026-11-21T01:51:40.991077+00:00",
   "state": "active",
-  "summary": "M82 sphere Source, whole review and formatting are complete; one full normal is running. M81 own local, hosted and official qualification passed. M77 browser access and confirmed shutdown still hold acceptance at 76 of 82.",
+  "summary": "M82\u2019s two missed legacy Sphere-refusal rows are corrected, reviewed and formatted; one full retry is running. The original failed run is preserved. M81 own qualification passed; M77 browser access and shutdown still hold acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M82-full-normal",
-      "title": "M82 complete Source; full normal running",
-      "detail": "The integrated sphere feature has 19 new Rust declarations, zero new Python, 1786 Source files and 18 changed paths. Whole independent review and final formatter passed. One full normal is active at the frozen tree; no outcome or qualified M82 commit exists."
+      "id": "M82-corrected-full-normal",
+      "title": "M82 reviewed correction; full retry running",
+      "detail": "Two old Sphere-refusal expectations are corrected, completing five deliberate dispositions. Production and 19 new control bodies stay unchanged; whole review and the affected two-file formatter passed. One corrected full normal is active at frozen42019718, with no outcome or qualified M82 commit."
     },
     {
       "id": "M81-own-qualification-complete",
@@ -1035,7 +1035,7 @@
     }
   ],
   "remaining": [
-    "Complete M82\u2019s full normal, independent local DATA and exact own hosted/official evidence; no parent qualification transfers.",
+    "Complete the corrected M82 full normal, independent local DATA and exact own hosted/official evidence. Earlier partial results and parent qualification do not transfer.",
     "Complete M77 formal browser access, visual/DATA and owner-approved shutdown; preserve the live demo meanwhile."
   ],
   "blockers": [
@@ -1090,7 +1090,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "M81 own qualification passed: local 1853 headless/1408 overlapping renderer, two ignored each, 494 aggregate Python, 47 finite/21 CLI; exact hosted and independent official DATA passed with four RAW comparisons once. M82 has 19 Source declarations and one full normal running, no outcome. M77 browser access and confirmed shutdown still hold acceptance.",
+    "note": "M82 first normal failed: 1870 headless passes, two old Sphere-refusal failures and two ignored controls; all 19 new controls passed headless. Renderer/strict coverage were not reached. The five-site disposition correction is reviewed/formatted and one full retry is running, with no outcome. M81 own local/hosted/official qualification passed; M77 browser access and confirmed shutdown still hold acceptance.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1134,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "M77 and all prior phase measurements remain unchanged. M81 own local, hosted and independent official qualification passed. M82 complete Source is under its own full normal with no outcome; no qualification or predecessor acceptance transfers.",
+    "qualification_scope": "M77 and all prior phase measurements remain unchanged. M82\u2019s first normal failed; the reviewed two-row expectation correction is under a new full normal with no outcome. Its 19 headless/nine overlapping renderer/zero Python counts remain Source obligations, not a qualified run. M81 own qualification does not transfer.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1223,7 +1223,7 @@
       "browser_checkpoints_written": false,
       "browser_runtime_qualified": false,
       "active_owned_job": true,
-      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. M82 has one full normal running at its frozen Source tree, with no outcome. M81 own local, hosted and independent official qualification passed; no acceptance transfers.",
+      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. M82\u2019s first normal retired Root/Git 1; a reviewed expectation-only correction has one full retry running with no outcome. M81 own qualification passed; no acceptance transfers.",
       "manual_demo": {
         "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
         "session_id": 86363,
@@ -4114,7 +4114,7 @@
       }
     },
     "current_M82_Source": {
-      "state": "M82_COMPLETE_REVIEWED_FORMATTED_SOURCE_FULL_NORMAL_RUNNING",
+      "state": "M82_FIVE_ROW_DISPOSITION_CORRECTION_FULL_NORMAL_RUNNING",
       "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
       "Source_basis_accepted": false,
       "basis_local_normal_and_independent_DATA_qualified": true,
@@ -4122,15 +4122,15 @@
       "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
       "source_preparation_under_D31": true,
       "contract": {
-        "sha256": "c86f5ee232c3f2af323a17421535cd62dc96d9ad1bdfc74296258c4cb50810a9",
-        "bytes": 7284,
+        "sha256": "e27547895dc5f33bdcfad23df438181fe381f83e767dfdcf29b2927671044741",
+        "bytes": 8242,
         "mode": 436
       },
       "implementation_started": true,
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "checks_run": true,
-      "checks_run_scope": "The full normal has started, not passed. The 19 new declarations are Source obligations; outcomes and qualified commit remain unknown.",
+      "checks_run_scope": "The corrected full normal has actually started, not passed. Historical first-normal Root/Git1 and partial headless results remain separate; no result transfers.",
       "normal_qualified": false,
       "independent_local_DATA_qualified": false,
       "hosted_qualified": false,
@@ -4140,7 +4140,7 @@
       "Source_publication_available": false,
       "future_qualified_head": null,
       "Source_binding_count": 1786,
-      "changed_paths_vs_basis": 18,
+      "changed_paths_vs_basis": 20,
       "new_paths": 5,
       "changed_production_paths_vs_basis": 5,
       "new_Rust_Source_controls": 19,
@@ -4155,9 +4155,9 @@
       },
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
-      "current_stage": "Complete integrated Source, 19 Rust declarations, docs, whole independent review and final affected formatter passed. One full normal is actually running; no result or qualified M82 commit exists.",
+      "current_stage": "The first normal failed on two missed old Sphere-refusal rows. The five-site disposition batch, whole review and affected two-file formatter are complete; one corrected full normal is running, with no outcome or qualified M82 commit.",
       "axis_contract": "Existing ball plus caller local Pose; no axis correction. Validate localQ but center=linkP+linkQ*localP, independent of localQ.",
-      "retained_test_disposition": "Only Sphere-refusal blocks in Scene posed_box.rs,posed_cylinder.rs,posed_capsule.rs become positive independent geometry at existing1e-11. All other assertions/tolerances, M80 strict chord/five precision controls and other M81 controls stay exact.",
+      "retained_test_disposition": "Five intentional Sphere-refusal transitions: Scene posed_box/posed_cylinder/posed_capsule retain existing1e-11 independent geometry; compound_collisions and scene gain positive Rapier geometry while preserving compound/TPE refusal and existing-simulation atomicity. All other bodies/assertions/tolerances and M80 precision controls remain unchanged.",
       "resolved_inertia_policy": "Direct dynamicNone/offsetCOM refused; Scene existing resolved Some defaults/auto retained. Sphere radius missing/nonpositive defaults1. Plain rotation-only auto supported; translated-auto COM and auto pose attributes/relative_to remain upstream-refused.",
       "reference_scope": "Ten unchanged retained reference Source inputs only. No new native capture, solver parity or inherited qualification.",
       "protected_manual_demo_session": 86363,
@@ -4165,43 +4165,43 @@
       "active_heavy_job": true,
       "parent_qualification_scope": "M81 own local/hosted/official passed at exact 6ef85e9f. Accepted predecessor closeout remains pending; no M82 pass follows from parent evidence.",
       "whole_Source_review": {
-        "sha256": "79e87d00ada64ef1cf63fd90d006dc6d88f110217cc2e86a8c53d3a0fd510221",
-        "bytes": 10691,
+        "sha256": "ad74254c3f50edf503d005c724957e21fd9ee43e9b66a330774c6e7add9cd7ca",
+        "bytes": 12417,
         "mode": 436
       },
-      "final_qualification_tree": "05716f7506544dace1582e76209a895605c867b3",
+      "final_qualification_tree": "420197183a1ec5b71f85f9c2181b9caa1d82a4c6",
       "final_Source_snapshot": {
-        "sha256": "3c482289a35829262e904f0eb9626c787d7b6a33db55685bda8d992152bc4409",
-        "bytes": 662488,
+        "sha256": "0a3c9fb77903754286a230dcf3028d0a3d196ad3254910bb7396851e42391f9c",
+        "bytes": 662643,
         "mode": 436
       },
       "final_Source_review": {
-        "sha256": "28c1d1340bf7f7c18a6eaaf648e21fec2336bdfb3c054005582116d7c0e5473a",
-        "bytes": 11860,
+        "sha256": "4c0c44e3ff994cfd31027d63748972cd10ba187031f13ddac2eb451b92808660",
+        "bytes": 13824,
         "mode": 436
       },
       "final_formatter_actual": {
-        "sha256": "f1a2adad768341e776846bd114ae9d1e1fbb38bedce90b4678a673f43de5ee20",
-        "bytes": 10098,
+        "sha256": "3eaa9cfeb79799f96706b3c709972990d279f0157e1ac4f83e52f914c49f4230",
+        "bytes": 3711,
         "mode": 436
       },
       "normal_launch": {
-        "state": "actual_full_normal_running_outcome_unknown",
-        "session_id": 36552,
-        "launch_tool": "7c5776",
+        "state": "actual_correction_full_normal_running_outcome_unknown",
+        "session_id": 52623,
+        "launch_tool": "e90041",
         "actual_launch": {
-          "sha256": "6c739184790241ac44743702bd34f04a1f3ca444b640e17f7887238a1036bca3",
-          "bytes": 1648,
+          "sha256": "1cf30da088e94b144e037e4e637097be142a33f8ee8c9dca2f9e973a5c9e7302",
+          "bytes": 2015,
           "mode": 436
         },
         "runner": {
-          "sha256": "4a3707f13765698cdc8ca132f281a40f2a4d01a877f50f5c2caacd79d78e3e24",
-          "bytes": 29639,
+          "sha256": "7e74613fbf025fe191eff37961b2af352f11fa6887d795b0c5d314752131e835",
+          "bytes": 29666,
           "mode": 436
         },
         "binding": {
-          "sha256": "815d232107563dd871790d9f19b81244bfc287932ef0dbdbc4f9372c3dd96f27",
-          "bytes": 5281,
+          "sha256": "91d91b6b5483d213d4c4c9b505d8d664546f6a623c2be64bdf8850086ba8b1f8",
+          "bytes": 5921,
           "mode": 436
         },
         "actual_Root_exit_code": null,
@@ -4213,7 +4213,105 @@
       "normal_result": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
-      "official_actual": null
+      "official_actual": null,
+      "historical_first_normal_failed": {
+        "state": "historical_first_normal_failed",
+        "actual": {
+          "sha256": "96080aa22d66d3c041950b7283d4a9f7e0d6573265c135e0f476184f630451dd",
+          "bytes": 4609,
+          "mode": 436
+        },
+        "session_id": 36552,
+        "launch_tool": "7c5776",
+        "terminal_tool": "84ef25",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "elapsed_seconds_Root": 1390.567019773007,
+        "tree": "05716f7506544dace1582e76209a895605c867b3",
+        "parent": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
+        "result": {
+          "sha256": "c4618666b4002ec272b56df0160696611e2db281735c54bbe4924169e189f501",
+          "bytes": 4324,
+          "mode": 436
+        },
+        "headless": {
+          "passed": 1870,
+          "failed": 2,
+          "ignored": 2
+        },
+        "all19new_M82_controls_passed_headless": true,
+        "failed_cases": [
+          "other_engines_keep_single_centered_collision_domain",
+          "unsupported_features_are_errors_and_existing_simulations_are_untouched"
+        ],
+        "renderer_reached": false,
+        "strict_coverage_reached": false,
+        "capacity_faults": [],
+        "terminal_signal": null,
+        "finalization_faults": [],
+        "qualified_commit": null,
+        "scope": "Actual failed first normal, not qualification. Both missed legacy Sphere-refusal expectations are explicitly corrected; frozen original Source/logs/formatter retained."
+      },
+      "historical_first_normal_Source_observation": {
+        "contract": {
+          "sha256": "c86f5ee232c3f2af323a17421535cd62dc96d9ad1bdfc74296258c4cb50810a9",
+          "bytes": 7284,
+          "mode": 436
+        },
+        "whole_Source_review": {
+          "sha256": "79e87d00ada64ef1cf63fd90d006dc6d88f110217cc2e86a8c53d3a0fd510221",
+          "bytes": 10691,
+          "mode": 436
+        },
+        "final_qualification_tree": "05716f7506544dace1582e76209a895605c867b3",
+        "final_Source_snapshot": {
+          "sha256": "3c482289a35829262e904f0eb9626c787d7b6a33db55685bda8d992152bc4409",
+          "bytes": 662488,
+          "mode": 436
+        },
+        "final_Source_review": {
+          "sha256": "28c1d1340bf7f7c18a6eaaf648e21fec2336bdfb3c054005582116d7c0e5473a",
+          "bytes": 11860,
+          "mode": 436
+        },
+        "final_formatter_actual": {
+          "sha256": "f1a2adad768341e776846bd114ae9d1e1fbb38bedce90b4678a673f43de5ee20",
+          "bytes": 10098,
+          "mode": 436
+        },
+        "normal_launch": {
+          "state": "actual_full_normal_running_outcome_unknown",
+          "session_id": 36552,
+          "launch_tool": "7c5776",
+          "actual_launch": {
+            "sha256": "6c739184790241ac44743702bd34f04a1f3ca444b640e17f7887238a1036bca3",
+            "bytes": 1648,
+            "mode": 436
+          },
+          "runner": {
+            "sha256": "4a3707f13765698cdc8ca132f281a40f2a4d01a877f50f5c2caacd79d78e3e24",
+            "bytes": 29639,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "815d232107563dd871790d9f19b81244bfc287932ef0dbdbc4f9372c3dd96f27",
+            "bytes": 5281,
+            "mode": 436
+          },
+          "actual_Root_exit_code": null,
+          "actual_Git_exit_code": null,
+          "result": null,
+          "qualified_commit": null
+        },
+        "retained_test_disposition": "Only Sphere-refusal blocks in Scene posed_box.rs,posed_cylinder.rs,posed_capsule.rs become positive independent geometry at existing1e-11. All other assertions/tolerances, M80 strict chord/five precision controls and other M81 controls stay exact.",
+        "scope": "Published first-normal active observation only; retired failure is recorded separately. These old proof cards remain immutable and do not qualify the correction."
+      },
+      "retained_original_eleven_file_formatter": {
+        "sha256": "f1a2adad768341e776846bd114ae9d1e1fbb38bedce90b4678a673f43de5ee20",
+        "bytes": 10098,
+        "mode": 436
+      },
+      "correction_scope": "Only two legacy test-row dispositions plus six current docs change from frozen05716. Five production leaves, all19 new control bodies, original11 formatted Rust leaves and all other assertions/tolerances remain unchanged."
     }
   },
   "phase_status": {
