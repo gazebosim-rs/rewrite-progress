@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-21T04:39:33.336546+00:00",
+  "updated_at": "2026-11-21T05:08:28.172861+00:00",
   "state": "active",
-  "summary": "M84 compound collisions are in development. M83 passed local tests and independent audit; its hosted CI is running. M82 passed qualification. Releases remain held by M77 browser and shutdown checks.",
+  "summary": "M84 implementation, review and formatting are complete; full verification is running with no outcome. M83 hosted CI is still active. M82 passed qualification. M77 browser and shutdown checks still hold release acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M84-primitive-compounds",
-      "title": "M84 compound collisions in development",
-      "detail": "One Rapier link will support 2\u201316 primitive collision shapes. Physics and scene loading are being implemented in parallel under the reviewed contract. Regression code, independent review and final checks are next. Authored counts, final tree and outcomes remain unknown."
+      "id": "M84-full-verification",
+      "title": "M84 full verification running",
+      "detail": "Implementation, regression code, documentation and independent whole Source review are complete. One affected formatter passed. Root launched the full verification run at the frozen tree; its outcome and qualified commit remain unknown. Declaration and inventory counts are Source obligations, not passes."
     },
     {
       "id": "M83-hosted-verification",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Finish M84 implementation, regression code and documentation; batch independent review findings before formatting and the complete required verification.",
-    "Complete M83 hosted and official evidence, then all predecessor acceptance gates. Keep the M77 demo live until the owner confirms shutdown."
+    "Complete M84 full normal verification and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
+    "Complete M83 hosted/official evidence and every predecessor acceptance gate. Keep the M77 demo live until the owner confirms shutdown."
   ],
   "blockers": [
     "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop."
@@ -1090,7 +1090,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "M84 physics and scene-loading implementation are underway; authored counts, final tree and outcomes remain unknown. M83 passed corrected local qualification and independent audit, with detailed measurements retained below. Its published review branch is running hosted CI. The first M83 failure is preserved. M82 completed its own qualification. M77 browser and shutdown evidence still hold release acceptance; the manual demo remains live.",
+    "note": "M84 implementation, regression code, independent review and one affected formatter are complete. A single full verification run is active; own results and qualified commit remain unknown. Detailed Source counts are obligations, not passes. M83 local qualification and independent audit remain complete while hosted CI runs; its first failure is preserved. M82 completed its own qualification. The M77 browser/shutdown hold and live manual demo remain unchanged.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1134,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "All prior measured evidence remains unchanged. M83 passed corrected local qualification and independent audit; hosted CI is running and official evidence is pending. M84 implementation is underway without checks or qualification. Neither result transfers acceptance.",
+    "qualification_scope": "Prior measured evidence remains unchanged. M84 has completed reviewed and formatted Source under one full verification run with no outcome. M83 hosted CI is still running. No own result, predecessor acceptance or demo shutdown is inferred.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -1223,7 +1223,7 @@
       "browser_checkpoints_written": false,
       "browser_runtime_qualified": false,
       "active_owned_job": true,
-      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. M84 implementation is underway. M83 passed local qualification and independent audit and is running hosted CI; M82 completed its own qualification. No downstream acceptance or demo shutdown is inferred.",
+      "active_owned_job_scope": "This M77 field describes only its persistent manual demo. M84 has one full verification run active after Source review and formatting; no outcome is inferred. M83 hosted CI remains active and M82 completed its own qualification. No downstream acceptance or demo shutdown is inferred.",
       "manual_demo": {
         "state": "ROOT_OBSERVED_MANUAL_DEMO_READY_RUNNING_WITHOUT_SESSION_EXPIRY",
         "session_id": 86363,
@@ -4778,7 +4778,7 @@
       "Source_revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/11afe37a4747cd7c4c0ad9a2f466721b86b1a156/docs/M83_DELIVERY.md"
     },
     "current_M84_Source": {
-      "state": "M84_SELECTED_DISJOINT_SOURCE_IMPLEMENTATION_UNDERWAY",
+      "state": "M84_COMPLETE_REVIEWED_FORMATTED_SOURCE_FULL_NORMAL_RUNNING",
       "Source_basis_commit": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
       "Source_basis_accepted": false,
       "basis_local_normal_and_independent_DATA_qualified": true,
@@ -4786,15 +4786,15 @@
       "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
       "source_preparation_under_D31": true,
       "contract": {
-        "sha256": "e4b159f57b1d7920937bd4f1c7048f3c0fe146efe485e9fcffe79e73ef461ad8",
-        "bytes": 8865,
+        "sha256": "b742dfc89da3286b885fe4022b7c74b93edcec9a936e0724b807d39c63c09812",
+        "bytes": 9836,
         "mode": 436
       },
       "contract_scope_review_complete": true,
       "implementation_started": true,
-      "implementation_complete": false,
-      "independent_source_review_complete": false,
-      "checks_run": false,
+      "implementation_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": true,
       "normal_qualified": false,
       "independent_local_DATA_qualified": false,
       "hosted_qualified": false,
@@ -4802,16 +4802,23 @@
       "qualification_inherited": false,
       "Source_publication_available": false,
       "future_qualified_head": null,
-      "Source_binding_count": null,
-      "changed_paths_vs_basis": null,
-      "new_paths": null,
-      "changed_production_paths_vs_basis": null,
-      "new_Rust_Source_controls": null,
-      "new_Python_Source_controls": null,
-      "Source_control_declarations": null,
+      "Source_binding_count": 1793,
+      "changed_paths_vs_basis": 22,
+      "new_paths": 5,
+      "changed_production_paths_vs_basis": 6,
+      "new_Rust_Source_controls": 17,
+      "new_Python_Source_controls": 0,
+      "Source_control_declarations": {
+        "Rust_unique": 17,
+        "headless": 17,
+        "renderer": 8,
+        "overlap": 8,
+        "Python": 0,
+        "counts_are_Source_obligations_not_executed_results": true
+      },
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
-      "current_stage": "Root confirmed both disjoint Physics/Rapier and Scene implementation Source lanes have actually started after written contract/independent Root docs review. Counts, final Source inventory/tree and own outcomes remain unbound; no checks ran.",
+      "current_stage": "M84 implementation, regression code, documentation, independent whole Source review and one affected formatter are complete. Root launched one full verification run at the frozen staged tree; its outcome and qualified commit remain unknown.",
       "frame_contract": "Retain passive link world P/Q and model anchors; child local transforms compose once, including existing cylinder Y-to-Z correction. No identity local-link restriction.",
       "query_contract": "Traverse all at most16 direct children, unchanged full maximum/no early successful return; reuse unchanged cylinder_distance and maintained other primitive kernels, finite inclusive minimum, solid-inside0, wholebody exclusion/current poses.",
       "inertia_contract": "Requested spec.mass supplies link mass; supplied centered validated Inertia supplies COM/tensor. DynamicSome inertia required/staticNone permitted, suppliedstaticSome centered. Existing resolved Scene defaults honored; upstream compound-auto refusal and density metadata unchanged. No child mass sum/XML presence parser.",
@@ -4849,22 +4856,72 @@
       },
       "protected_manual_demo_session": 86363,
       "stop_or_restart_authorized": false,
-      "active_heavy_job": false,
+      "active_heavy_job": true,
       "parent_qualification_scope": "M83 passed corrected local qualification and independent audit, and its review branch was published. Its own hosted CI is running; official evidence and predecessor acceptance remain pending. M82 completed qualification without acceptance transfer.",
-      "final_qualification_tree": null,
-      "final_Source_snapshot": null,
-      "final_Source_review": null,
-      "final_formatter_actual": null,
+      "final_qualification_tree": "4292c9820754de4ab7117500f655b2a82e4b1200",
+      "final_Source_snapshot": {
+        "sha256": "947534bd50ae1c5ad054d901c63e14161162abb4e5a8d7cb9c79a5e74f798217",
+        "bytes": 665253,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "343d188f9b81bbcc8cbf62820a7a074981447ce5acd8db8d082f49a6f78bfa7c",
+        "bytes": 13359,
+        "mode": 436
+      },
+      "final_formatter_actual": {
+        "sha256": "a758a42a5465ddb3b892f7a9b29835d9e3fe0640c7ab4b83ae7d00e981ec00b8",
+        "bytes": 11789,
+        "mode": 436
+      },
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
       "official_actual": null,
-      "selected_canonical_planning_Source": {
+      "historical_selected_contract": {
+        "sha256": "e4b159f57b1d7920937bd4f1c7048f3c0fe146efe485e9fcffe79e73ef461ad8",
+        "bytes": 8865,
+        "mode": 436
+      },
+      "historical_selected_canonical_planning_Source": {
         "sha256": "c3ad462ea0395abde9c5a8354bd1c9feb6264a38ae01c406d20bf9e4fa152c4c",
         "bytes": 490740,
         "mode": 436
       },
-      "implementation_observation": "Root confirmed Physics and Scene lanes actually started; current canonical docs intentionally preserve selected-before-implementation checkpoint until authored census is complete."
+      "selected_observation_retention": "The selected Source checkpoint remains in immutable published fb421b7e and its retained API/Source; no recursive phase-history clone.",
+      "cumulative_changed_paths_vs_accepted_ancestor": 87,
+      "normal_launch": {
+        "state": "actual_full_normal_running_outcome_unknown",
+        "session_id": 78435,
+        "launch_tool": "05ff27",
+        "observation_basis": "Root directly observed one invocation of the exact reviewed seven-token command running with session78435. No separate launch receipt or duplicate watch.",
+        "command": {
+          "sha256": "037603a27a2d8f5d94ef772cd340d2cac1e7b9c90a3d7f2d56dbae2ee1c36283",
+          "bytes": 1470,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "de795a7f9e78f0ccb3bc68b3073cfc11a1aa7e835ec7bd2a7bf92dabae225b84",
+          "bytes": 30062,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "aa6ed358b30d1eb49bc5d664fb1c0ffbc45708e630e69b09c239ad838fc2c16f",
+          "bytes": 5359,
+          "mode": 436
+        },
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "result": null,
+        "qualified_commit": null
+      },
+      "checks_run_scope": "A single full normal invocation has started, not passed. The seventeen headless and eight overlapping renderer declarations remain Source obligations; current Root/Git exits, results and qualified commit are unknown.",
+      "Source_review_scopes": {
+        "package_collector": "Independent full Scene eight-path admission/newregression/five-disposition review CLEAR; sole shape-quaternion finding closed without scope/tolerance change.",
+        "tracker_acceptance_closeout": "Independent full Physics/Rapier seven-path API/constructor/query/regression review and held normal donor adaptation CLEAR.",
+        "m76_scope": "Independent whole integrated API/math/query/frame/atomicity/reset/test-integrity Source review plus exact single-row oracle correction closure CLEAR; Root reviews authored docs.",
+        "Root": "Independent complete code, seven final docs/current census and final formatted Source/binding review CLEAR before invocation."
+      }
     }
   },
   "phase_status": {
