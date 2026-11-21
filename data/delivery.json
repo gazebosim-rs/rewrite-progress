@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-21T12:39:11.798396+00:00",
+  "as_of": "2026-11-21T13:39:22.259184+00:00",
   "execution_state": "active",
-  "current_phase": "M88",
+  "current_phase": "M90",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -13872,6 +13872,180 @@
         "bytes": 2684,
         "mode": 436
       }
+    },
+    {
+      "id": "M90",
+      "title": "Passive runtime compound templates with immutable bounded ownership",
+      "max_working_days": 5,
+      "depends_on": [
+        "M88",
+        "M89"
+      ],
+      "scope": "Loaded passive Rapier primitive compounds2..16; private immutable template/member stamp, N+3 model/link/C0/visual/C1.. ID order preserving visual=model+3, sixaxis read/edit/removal/ordinary+loaded reset. Existing public signatures and singleton admitted_entities4 remain exact.",
+      "acceptance": "Existing template signatures;2/4/16 mixed members with N+3 prefix IDs/visual alias, independent all-child queries/contact, six-axis editing, source removal/ordinary+loaded reset/removal/survivor IDs, immutable stamp drift/late invalid/camera128 atomicity; exact two old same-XML dispositions, every inherited singleton/closed guard retained.",
+      "excluded": "No TPE, compoundMesh/Plane, sensors, joints, plugins/controllers/VC, unsupportedCOM/visual/posed-singleton expansion. Require actual admitted loaded compound source; new branch actual VC-owner veto even if caller DOM strips plugins. Retain existing caller-resolved SDF parameter semantics; no false loaded-geometry equality claim.",
+      "contract": "docs/M90_DELIVERY.md",
+      "shared_qualification_group": [
+        "M90",
+        "M91"
+      ],
+      "source_preparation_basis_commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+      "source_preparation_basis_tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "implementation_started": true,
+      "implementation_started_scope": "Root dispatched actual disjoint author lanes; new authored Source and case counts pending.",
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "accepted": false,
+      "qualification_inherited": false,
+      "distribution_selected": false,
+      "Source_publication_available": false,
+      "future_qualified_head": null,
+      "qualification_state": "selected_disjoint_Source_implementation_underway",
+      "new_Rust_Source_controls": null,
+      "new_Python_Source_controls": null,
+      "Source_control_declarations": null,
+      "final_Source_count": null,
+      "changed_paths_vs_basis": null,
+      "new_paths": null,
+      "changed_production_paths_vs_basis": null,
+      "cumulative_changed_paths_vs_accepted_ancestor": null,
+      "final_tree": null,
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_Source_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "file_ownership": {
+        "package_collector": [
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/src/world_edit.rs (narrow compound runtime binding/ownership)",
+          "crates/gz-sim-scene/tests/runtime_compound_spawn.rs (new)"
+        ],
+        "tracker_acceptance_closeout": [
+          "crates/gz-sim-scene/src/lib.rs (compound DiffDrive canonical-chassis predicate only)",
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs (new)"
+        ],
+        "Root": [
+          "tests/compound_world_edit.rs exact existing compound-template row",
+          "tests/primitive_runtime_spawn.rs exact extra-collision row",
+          "tests/compound_joints.rs exact M8 chassis row; wheel row stays refused",
+          "integration, records, final review/release, serial heavy operations"
+        ],
+        "m76_scope": [
+          "AGENTS.md",
+          "README.md",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "docs/IMPLEMENTATION_TASKS.md",
+          "planning/delivery-phases.json",
+          "docs/M90_DELIVERY.md",
+          "docs/M91_DELIVERY.md"
+        ]
+      },
+      "retained_test_disposition": "Root-only same static/dynamic compound_world_edit template assertion and same Cylinder/Capsule primitive_runtime_spawn extra-child row become positive prepare/spawn/geometry/ownership at original tolerances; all other inputs/refusals/case identities exact.",
+      "current_stage": "Selected bounded Source implementation underway in disjoint lanes. Actual declaration/file census pending completion; no formatter, tests, lint, full normal, DATA or hosted results. Final tree/commit/outcomes NULL.",
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "protected_manual_demo_session": 86363,
+      "stop_or_restart_authorized": false,
+      "critical_contract": "No lib/initial/lifecycle/core/CLI/Physics lease selected; private world_spawn Collider extension only. Source-route every typed refusal to first reachable existing guard. Validate all members/poses/densities/generatednames/native+logical-ID range/camera128 before allocation. Immutable complete model/link/membership/metadata stamps prevent shrink/reparent/forged downgrade; model/world pose stays mutable. Singleton reset uses old4; private bounded owned-node helper handles compounds."
+    },
+    {
+      "id": "M91",
+      "title": "Existing DiffDrive on primitive compound canonical chassis",
+      "max_working_days": 5,
+      "depends_on": [
+        "M88",
+        "M89"
+      ],
+      "scope": "Permit compound ONLY on existing validated canonical chassis; all wheel-link singleton admission and existing graph/axes/modes/limits/topic/odom/motor semantics unchanged.",
+      "acceptance": "Existing DiffDrive canonical chassis only;2/4/16 members with singleton wheels, real motor/traction/body motion vs suspended controls, command/pause/limits/odom cadence/reset/removal/binding drift/closed wheel domain; one same-XML chassis row positive while wheel row stays refused.",
+      "excluded": "No compound wheels, topology/axis/motor/odometry/publicAPI/Physics/Server/native/visual/frame expansion; preserve all current wheel geometry/radius domains and jointed state/runtime-template exclusions.",
+      "contract": "docs/M91_DELIVERY.md",
+      "shared_qualification_group": [
+        "M90",
+        "M91"
+      ],
+      "source_preparation_basis_commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+      "source_preparation_basis_tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
+      "implementation_started": true,
+      "implementation_started_scope": "Root dispatched actual disjoint author lanes; new authored Source and case counts pending.",
+      "implementation_complete": false,
+      "independent_source_review_complete": false,
+      "checks_run": false,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "accepted": false,
+      "qualification_inherited": false,
+      "distribution_selected": false,
+      "Source_publication_available": false,
+      "future_qualified_head": null,
+      "qualification_state": "selected_disjoint_Source_implementation_underway",
+      "new_Rust_Source_controls": null,
+      "new_Python_Source_controls": null,
+      "Source_control_declarations": null,
+      "final_Source_count": null,
+      "changed_paths_vs_basis": null,
+      "new_paths": null,
+      "changed_production_paths_vs_basis": null,
+      "cumulative_changed_paths_vs_accepted_ancestor": null,
+      "final_tree": null,
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_Source_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "file_ownership": {
+        "package_collector": [
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/src/world_edit.rs (narrow compound runtime binding/ownership)",
+          "crates/gz-sim-scene/tests/runtime_compound_spawn.rs (new)"
+        ],
+        "tracker_acceptance_closeout": [
+          "crates/gz-sim-scene/src/lib.rs (compound DiffDrive canonical-chassis predicate only)",
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs (new)"
+        ],
+        "Root": [
+          "tests/compound_world_edit.rs exact existing compound-template row",
+          "tests/primitive_runtime_spawn.rs exact extra-collision row",
+          "tests/compound_joints.rs exact M8 chassis row; wheel row stays refused",
+          "integration, records, final review/release, serial heavy operations"
+        ],
+        "m76_scope": [
+          "AGENTS.md",
+          "README.md",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "docs/IMPLEMENTATION_TASKS.md",
+          "planning/delivery-phases.json",
+          "docs/M90_DELIVERY.md",
+          "docs/M91_DELIVERY.md"
+        ]
+      },
+      "retained_test_disposition": "Root-only same M8 canonical-chassis row in compound_joints becomes positive actual binding/motor/contact/child geometry; exact wheel mutation and every other control unchanged.",
+      "current_stage": "Selected bounded Source implementation underway in disjoint lanes. Actual declaration/file census pending completion; no formatter, tests, lint, full normal, DATA or hosted results. Final tree/commit/outcomes NULL.",
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "protected_manual_demo_session": 86363,
+      "stop_or_restart_authorized": false,
+      "critical_contract": "Do not invent wheel collision-shape/radius restrictions absent current config. Existing motors/contact path only, no velocity teleport or solver/new native campaign. Actual ground traction/bodymotion versus suspended/clear controls, not odometry equal body-distance. Native and metadata binding drift refusals/commands/timing/reset/removal/IDs remain closed."
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -13964,10 +14138,12 @@
     "M86": "in_progress",
     "M87": "in_progress",
     "M88": "in_progress",
-    "M89": "in_progress"
+    "M89": "in_progress",
+    "M90": "in_progress",
+    "M91": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-21T11:09:44.755899+00:00",
+  "phase_started_at": "2026-11-21T13:22:58.551659+00:00",
   "active_phases": [
     "M77",
     "M78",
@@ -13981,7 +14157,9 @@
     "M86",
     "M87",
     "M88",
-    "M89"
+    "M89",
+    "M90",
+    "M91"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -14442,31 +14620,39 @@
       "integration": "M88/M89 share one D31 candidate. The first full normal failed one new typed TPE-refusal premise; exact test-only repair and whole review/one-file formatter are complete, with four unchanged copies reusing original custody. One full retry is active at e648 with unknown outcome. Parent M86/M87 own local/hosted/official qualification is complete and unaccepted; no result transfers.",
       "max_working_days": 5,
       "historical_first_normal_active_integration": "D31: disjoint compound JointController admission and centered primitive collision-template geometry match are implemented with seven regression declarations each. Reciprocal and whole independent Source review complete; the sole high-water API correction is closed before execution. Root owns shared two-row dispositions, final docs/integration and serial heavy release; one candidate retains every mandatory gate over locally qualified unaccepted ee4df6. Parent own CI passed; original collection and independent official audit remain pending; no inherited result or acceptance."
+    },
+    {
+      "phases": [
+        "M90",
+        "M91"
+      ],
+      "max_working_days": 5,
+      "integration": "D31 disjoint runtime-compound ownership world_spawn/world_edit lane and canonical-chassis DiffDrive lib predicate lane. Root owns three exact same-XML retained-row dispositions and one integrated candidate; authors cross-review, Scope whole-reviews, Root reviews docs/integration. Complete Source/regressions/docs/reviews before one formatter and consolidated mandatory qualification. Parent1e54399 locally qualified unaccepted, own hosted in progress; no result transfer."
     }
   ],
-  "acceptance_boundary": "M88/M89 first normal failed one new typed TPE-error premise: Root/Git1,1932 headless passes/1 failure/2 ignored;13of14 own cases passed, no renderer/strict/commit. Same-input exact InvalidScene/Motion atomicity correction is independently reviewed and formatted; complete retry76636 is genuinely active at e648/parent ee4, outcome/qualified commit NULL. Source1803/13own/4new/2production/98cumulative/14H14R0Py/47finite21CLI unchanged. Current1 formatter and original5 reusedONLY4 remain separate. Parent M86/M87 own local/hosted/original collection/official qualification complete, unaccepted. No gate/result transfer; all predecessor/M77 browser/shutdown requirements remain. Accepted76/202/catalog89/Latest41/demo86363 unchanged.",
+  "acceptance_boundary": "M90/M91 selected disjoint Source implementations are underway over genuine locally qualified unaccepted1e54399/e648. New Source/case counts/tree/commit/outcomes are pending; no own formatter or verification. Parent corrected normal887048 and localDATAa7c8/reportc82 passed; review1a293 published and exact own CI44908259208 attempt1 running with no outcome/official DATA. M86/M87 own qualification complete unaccepted. Complete both lanes/regressions/docs/reciprocal+whole review before one affected formatter and consolidated mandatory normal/strict/localDATA/review/hosted/official qualification. Preserve every predecessor/M77 browser+owner-shutdown gate, all historical failures, accepted76/202/catalog91/finite47CLI21/Latest41/demo86363; no inheritance.",
   "current_delivery_group": [
-    "M88",
-    "M89"
+    "M90",
+    "M91"
   ],
-  "current_development_phase": "M88",
+  "current_development_phase": "M90",
   "board": {
-    "updated_at": "2026-11-21T12:39:11.798396+00:00",
+    "updated_at": "2026-11-21T13:39:22.259184+00:00",
     "current": {
-      "title": "Reviewed TPE refusal repair under full verification",
+      "title": "Runtime compounds and compound drive chassis in development",
       "items": [
-        "M88/M89 have one reviewed test-only repair after the first gate failed. The complete retry is running; its outcome is unknown. Production and admission are unchanged.",
-        "M86/M87 completed local tests, independent audits, exact hosted CI and original collection. Its own qualification is complete; acceptance remains held.",
+        "M90 will clone passive primitive compounds with bounded ownership. M91 will use a compound canonical chassis with existing DiffDrive motors; wheel links remain singleton. Implementation is in parallel.",
+        "M88/M89 passed corrected local tests, strict coverage and independent audit. Its published review branch is running hosted CI. M86/M87 completed its own qualification and remains unaccepted.",
         "The manual M77 demo remains running without expiry. Formal browser evidence and an owner-approved shutdown still hold release acceptance."
       ]
     },
     "done": [
-      "The failed M88/M89 run and all evidence are retained. The exact TPE error and Motion atomicity repair passed independent Source review and one affected formatter.",
-      "M86/M87 completed its own official audit without acceptance transfer. Counts remain 76 accepted phases, 202 slices, catalog89 and Latest M70\u2019s original 41-example package."
+      "The two bounded scopes and disjoint Source leases passed independent contract review. All three retained-row transitions passed independent Source review; new product/regression counts are still pending.",
+      "M88/M89 corrected normal and independent local audit passed; its first failure and distinct formatter custody remain preserved. Accepted76 phases/202 slices, catalog91 and Latest M70 original41 are separate."
     ],
     "next": [
-      "Finish the complete retry and independent local audit, then qualify the exact review head through hosted CI and official audit. No current result is claimed.",
-      "Preserve every own and predecessor gate, both parent failures, the first M88/M89 failure and the live M77 demo."
+      "Complete both bounded implementations, regression Source and docs; cross-review and whole-review the full batch before one affected formatter and consolidated mandatory qualification.",
+      "Finish the parent\u2019s exact hosted and official closeout, retaining every predecessor/browser/shutdown gate and the no-expiry manual demo."
     ],
     "blocker": {
       "text": "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop.",
@@ -14475,8 +14661,8 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M88",
-    "M89"
+    "M90",
+    "M91"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -14625,7 +14811,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M88_M89_TEST_ONLY_TPE_REFUSAL_CORRECTION_FULL_NORMAL_RETRY_ACTUALLY_ACTIVE",
+  "current_development_task": "M90_M91_SELECTED_DISJOINT_IMPLEMENTATION_SOURCE_UNDERWAY",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -17328,7 +17514,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "Actual Root M88/M89 selection time; separate from parent verification or acceptance.",
+  "phase_started_at_scope": "Actual Root M90/M91 selection time; separate from parent qualification and acceptance.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -19202,7 +19388,7 @@
       }
     }
   },
-  "phase_catalog_checkpoint_scope": "First85phaseobjects and all prior groups remain exact. Current M86/M87 qualification fields adopt actual local, hosted and independent official qualification; each prior active observation is losslessly historical. M88/M89 are newly completed reviewed Source entries, not executed passes. Accepted76/202/Latest41 unchanged; catalog89.",
+  "phase_catalog_checkpoint_scope": "All first89 phase objects and prior parallel-group prefix retain their actual published observation-time contents exactly, including first M88/M89 failure and retry-active checkpoint. Current corrected M88/M89 local normal/DATA0, published review and exact CI-running fields are adopted separately in current_M88_M89_Source. New selected M90/M91 entries have unknown authored counts and no executed results; accepted76/202/Latest41 unchanged, catalog91.",
   "current_M86_M87_Source": {
     "state": "M86_M87_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
@@ -19839,7 +20025,7 @@
     }
   },
   "current_M88_M89_Source": {
-    "state": "M88_M89_TEST_ONLY_TPE_REFUSAL_CORRECTION_REVIEWED_FORMATTED_FULL_RETRY_RUNNING",
+    "state": "M88_M89_CORRECTED_LOCAL_QUALIFIED_REVIEW_PUBLISHED_EXACT_HOSTED_RUNNING",
     "Source_basis_commit": "ee4df6c5851cc40b77a15b19c6e992434ee7bfff",
     "Source_basis_tree": "d3ffae592249a6b8c0a73ba27097504a6340c639",
     "Source_basis_accepted": false,
@@ -19869,8 +20055,8 @@
     "final_docs_review_pending": false,
     "final_docs_review_complete": true,
     "checks_run": true,
-    "normal_qualified": false,
-    "independent_local_DATA_qualified": false,
+    "normal_qualified": true,
+    "independent_local_DATA_qualified": true,
     "hosted_qualified": false,
     "official_DATA_qualified": false,
     "accepted": false,
@@ -19897,7 +20083,7 @@
     "Source_finite_runs": 47,
     "Source_CLI_cases": 21,
     "final_tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
-    "future_qualified_head": null,
+    "future_qualified_head": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
     "formatter_actual": {
       "sha256": "89160fe6caef221d9e8dfa693bfa864d64f8d0a57d5b5b7d6cfac482e078eb70",
       "bytes": 4339,
@@ -19913,11 +20099,19 @@
       "bytes": 670488,
       "mode": 436
     },
-    "normal_actual": null,
-    "local_DATA_actual": null,
+    "normal_actual": {
+      "sha256": "887048c813e40b53c75e2fc985b3c9d63b82ec903b59c3c2e6eb496c8bea157d",
+      "bytes": 2213,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "a7c8e55093b52208a81891c9f55ac171762ac7a2785530f38c01bb737db171c2",
+      "bytes": 1951,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
-    "current_stage": "The first normal returned Root/Git 1 after 1,932 headless passes, one failure and two ignored cases; thirteen of fourteen new cases passed, with no renderer or strict qualification. The exact same-input TPE refusal and Motion atomicity repair is reviewed and formatted. One complete retry is active as session76636; its outcome and qualified commit remain unknown.",
+    "current_stage": "Corrected full normal and one independent retained audit genuinely passed at1e54399/e648 over parent ee4df6. The review ref is published; exact automatic CI44908259208 attempt1 is running with no outcome. First failure0361 and separate formatter custody remain preserved. Own hosted/official and all acceptance gates remain pending.",
     "file_ownership": {
       "tracker_acceptance_closeout": [
         "crates/gz-sim-scene/src/lib.rs: compound actuator predicate only",
@@ -20029,8 +20223,8 @@
         "mode": 436
       }
     },
-    "checks_run_scope": "The first full normal is genuinely failed and retained. A complete mandatory retry launched once as76636/9881ae; started is not passed. No current result, qualified commit, DATA or hosted outcome is claimed.",
-    "active_heavy_job": true,
+    "checks_run_scope": "Completed corrected full normal and one independent local DATA returned actual zero. Exact own review publication passed and hosted CI is running; no hosted success, official audit or acceptance is inferred.",
+    "active_heavy_job": false,
     "protected_manual_demo_session": 86363,
     "stop_or_restart_authorized": false,
     "preformat_whole_review": {
@@ -20039,7 +20233,7 @@
       "mode": 436
     },
     "formatter_Source_review_complete": true,
-    "formatter_scope": "Current one-file formatter returned zero and changed only expression wrapping in the repaired test. Independent whole diff, exact inverse, case identities, all 1,803 modes and 1,802 other Source files are CLEAR. Original five-file formatter is reused only for four unchanged Rust copies. No formatter union or qualification is inferred; the full retry launched separately and has no outcome.",
+    "formatter_scope": "Current one-file formatter returned zero and changed only expression wrapping in the repaired test. Independent whole diff, exact inverse, case identities, all 1,803 modes and 1,802 other Source files are CLEAR. Original five-file formatter is reused only for four unchanged Rust copies. No formatter union or qualification is inferred; the subsequent full normal passed separately; formatter custody itself is not test qualification.",
     "preformat_author_Source_cards": {
       "M88_lib": {
         "sha256": "5b43968c41887529d580473976ec6317b42d11e585a5a390cb73ff71692a0161",
@@ -20097,7 +20291,7 @@
     },
     "formatted_staged_tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
     "normal_launch": {
-      "state": "actual_full_normal_retry_running_outcome_unknown",
+      "state": "actual_full_normal_retry_completed_passed",
       "session_id": 76636,
       "launch_tool": "9881ae",
       "basis": "Genuine Root tpe-refusal-normal-launch-actual.json receipt; no author runtime observation or duplicate watch.",
@@ -20121,12 +20315,23 @@
         "bytes": 5642,
         "mode": 436
       },
-      "actual_Root_exit_code": null,
-      "actual_Git_exit_code": null,
-      "qualified_commit": null,
-      "result": null
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "qualified_commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+      "result": {
+        "sha256": "07d85fb05d00166e1798fa7111068f6ef4bc02343c02e64ad1f587df03290a11",
+        "bytes": 4442,
+        "mode": 436
+      },
+      "terminal_tool": "374305",
+      "actual_terminal": {
+        "sha256": "887048c813e40b53c75e2fc985b3c9d63b82ec903b59c3c2e6eb496c8bea157d",
+        "bytes": 2213,
+        "mode": 436
+      },
+      "elapsed_seconds": 2315.742688139988
     },
-    "contract_checkpoint_scope": "Correction contracts retain their completed preformatter Source checkpoint and parent hosted-success/official-pending observation time. Later actual formatter, retry launch and parent official success are recorded here without rewriting frozen product Source.",
+    "contract_checkpoint_scope": "Frozen M88/M89 docs retain their correction Source checkpoint observations. Current normal887048/localDATAa7c8/reportc82 and review1a293 qualify the local parent only; exact hosted running/official pending and acceptance remain separate.",
     "historical_first_normal_active_Source_observation": {
       "state": "M88_M89_COMPLETE_REVIEWED_FORMATTED_SOURCE_FULL_NORMAL_RUNNING",
       "Source_basis_commit": "ee4df6c5851cc40b77a15b19c6e992434ee7bfff",
@@ -20473,6 +20678,261 @@
         "mode": 436
       }
     },
-    "correction_scope": "Only the TPE block in one existing new case: same Box fixture in both iterations, exact InvalidScene from existing missing-BodyHandle binding, nonvacuous two-model public Motion state snapshots plus identities/next-ID/epoch/elapsed atomicity. All production, imports, dependencies, other thirteen new cases, old controls, strict numerical oracles and thresholds unchanged."
+    "correction_scope": "Only the TPE block in one existing new case: same Box fixture in both iterations, exact InvalidScene from existing missing-BodyHandle binding, nonvacuous two-model public Motion state snapshots plus identities/next-ID/epoch/elapsed atomicity. All production, imports, dependencies, other thirteen new cases, old controls, strict numerical oracles and thresholds unchanged.",
+    "historical_retry_active_current_fields": {
+      "state": "M88_M89_TEST_ONLY_TPE_REFUSAL_CORRECTION_REVIEWED_FORMATTED_FULL_RETRY_RUNNING",
+      "current_stage": "The first normal returned Root/Git 1 after 1,932 headless passes, one failure and two ignored cases; thirteen of fourteen new cases passed, with no renderer or strict qualification. The exact same-input TPE refusal and Motion atomicity repair is reviewed and formatted. One complete retry is active as session76636; its outcome and qualified commit remain unknown.",
+      "checks_run_scope": "The first full normal is genuinely failed and retained. A complete mandatory retry launched once as76636/9881ae; started is not passed. No current result, qualified commit, DATA or hosted outcome is claimed.",
+      "active_heavy_job": true,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "normal_launch": {
+        "state": "actual_full_normal_retry_running_outcome_unknown",
+        "session_id": 76636,
+        "launch_tool": "9881ae",
+        "basis": "Genuine Root tpe-refusal-normal-launch-actual.json receipt; no author runtime observation or duplicate watch.",
+        "actual_launch": {
+          "sha256": "99d1b0e03a521fca384614c1fb748521ec53a22437933babee6ad9050339718c",
+          "bytes": 1561,
+          "mode": 436
+        },
+        "command": {
+          "sha256": "1467e54b860d018a9c726296862bccc9a7315e4712f803aa0597392419ed287b",
+          "bytes": 1739,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "bd98778bfa2a8a6aa7d2e67b9528d9d9746e09e209cb0600831a3ec7f82beca7",
+          "bytes": 42869,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "4340d105f7cab2d2b88fe72ba0c4fedebb2ebb52746a0e84144090b688d47571",
+          "bytes": 5642,
+          "mode": 436
+        },
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "qualified_commit": null,
+        "result": null
+      },
+      "formatter_scope": "Current one-file formatter returned zero and changed only expression wrapping in the repaired test. Independent whole diff, exact inverse, case identities, all 1,803 modes and 1,802 other Source files are CLEAR. Original five-file formatter is reused only for four unchanged Rust copies. No formatter union or qualification is inferred; the full retry launched separately and has no outcome.",
+      "contract_checkpoint_scope": "Correction contracts retain their completed preformatter Source checkpoint and parent hosted-success/official-pending observation time. Later actual formatter, retry launch and parent official success are recorded here without rewriting frozen product Source."
+    },
+    "Source_publication_available": true,
+    "local_qualification_results": {
+      "normal_actual": {
+        "sha256": "887048c813e40b53c75e2fc985b3c9d63b82ec903b59c3c2e6eb496c8bea157d",
+        "bytes": 2213,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "a7c8e55093b52208a81891c9f55ac171762ac7a2785530f38c01bb737db171c2",
+        "bytes": 1951,
+        "mode": 436
+      },
+      "local_DATA_report": {
+        "sha256": "c82e1e4fb9fff8c1ade7db48bd437340f436ae7270806b4aac21db51b6017ef8",
+        "bytes": 163877,
+        "mode": 436
+      },
+      "local_DATA_source": {
+        "sha256": "e3b4cae5ab0f9a5251b130f1c25cc701cb7145f1e9a787ff1eb1c62edfdfa4f4",
+        "bytes": 144557,
+        "mode": 436
+      },
+      "local_DATA_execution_log": {
+        "sha256": "a6130b3a5a0dfa7a01cd8fdb162075093a9675437147e5ee6c4e101b8a5dcc4f",
+        "bytes": 227,
+        "mode": 436
+      },
+      "normal_result": {
+        "sha256": "07d85fb05d00166e1798fa7111068f6ef4bc02343c02e64ad1f587df03290a11",
+        "bytes": 4442,
+        "mode": 436
+      },
+      "commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+      "tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
+      "parent": "ee4df6c5851cc40b77a15b19c6e992434ee7bfff",
+      "headless": {
+        "passed": 1933,
+        "failed": 0,
+        "ignored": 2
+      },
+      "renderer": {
+        "passed": 1469,
+        "failed": 0,
+        "ignored": 2
+      },
+      "all14_new_controls_observed_both": true,
+      "Python_aggregate": 494,
+      "finite_examples": 47,
+      "CLI_cases": 21,
+      "strict_bases": 11,
+      "Scene_changed_coverage": {
+        "headless": [
+          9,
+          9
+        ],
+        "renderer": [
+          9,
+          9
+        ]
+      },
+      "RAWs_hash_only_no_remerge": true,
+      "prior_reader_failures": [],
+      "accepted": false
+    },
+    "review_publication": {
+      "sha256": "1a2931b5f9492675a779d2a75502cbc335f15f18eafce444a55f7d1bbb5fd182",
+      "bytes": 2572,
+      "mode": 436
+    },
+    "review_ref": "refs/heads/review/m88-m89-compound-controller-primitive-spawn",
+    "review_ref_published": true,
+    "hosted_run": {
+      "id": 44908259208,
+      "name": "simulator",
+      "path": ".github/workflows/ci.yml",
+      "head_sha": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+      "head_branch": "review/m88-m89-compound-controller-primitive-spawn",
+      "event": "push",
+      "run_attempt": 1,
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44908259208",
+      "created_at": "2026-11-21T13:19:14Z"
+    },
+    "official_qualification_state": "pending_exact_hosted_success_original_collection_and_independent_official_DATA",
+    "hosted_watch": {
+      "session_id": 42274,
+      "launch_tool": "1f7940",
+      "status": "active",
+      "outcome": null,
+      "basis": "Genuine Root observation; no author API or duplicate watch"
+    }
+  },
+  "current_M90_M91_Source": {
+    "state": "M90_M91_SELECTED_DISJOINT_IMPLEMENTATION_SOURCE_UNDERWAY",
+    "Source_basis_commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+    "Source_basis_tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
+    "Source_basis_accepted": false,
+    "basis_local_normal_and_independent_DATA_qualified": true,
+    "basis_hosted_and_official_qualified": false,
+    "source_preparation_under_D31": true,
+    "contracts": {
+      "M90": {
+        "sha256": "50e6cb87323447a3b63f356afba7a22bcc5e6e2f1357ac3e9ce40bc124a40076",
+        "bytes": 9640,
+        "mode": 436
+      },
+      "M91": {
+        "sha256": "3a3c4a2833ef17be6b2e223c8c52673bb8bd65aa889fd038e843224a11184b52",
+        "bytes": 7573,
+        "mode": 436
+      }
+    },
+    "canonical_planning_Source": {
+      "sha256": "f30fb3ab3d52c7ba2217de1e04aaa16dbf0bf6a99c31fca5be48fce723dd35a9",
+      "bytes": 590046,
+      "mode": 436
+    },
+    "implementation_started": true,
+    "implementation_complete": false,
+    "independent_source_review_complete": false,
+    "initial_contract_and_docs_Root_Source_review_complete": true,
+    "checks_run": false,
+    "normal_qualified": false,
+    "independent_local_DATA_qualified": false,
+    "hosted_qualified": false,
+    "official_DATA_qualified": false,
+    "accepted": false,
+    "qualification_inherited": false,
+    "new_Rust_Source_controls": null,
+    "new_Python_Source_controls": null,
+    "Source_control_declarations": null,
+    "Source_binding_count": null,
+    "changed_paths_vs_basis": null,
+    "new_paths": null,
+    "changed_production_paths_vs_basis": null,
+    "changed_production_paths": null,
+    "cumulative_changed_paths_vs_accepted_ancestor": null,
+    "Source_finite_runs": 47,
+    "Source_CLI_cases": 21,
+    "final_tree": null,
+    "future_qualified_head": null,
+    "formatter_actual": null,
+    "final_Source_review": null,
+    "final_Source_snapshot": null,
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "current_stage": "Both bounded implementation lanes are actually dispatched in parallel. Selected contracts and current docs passed Root independent Source review. New authored Source/case counts remain pending until completion; no formatter, tests, normal or qualification outcome is claimed.",
+    "file_ownership": {
+      "package_collector": [
+        "crates/gz-sim-scene/src/world_spawn.rs",
+        "crates/gz-sim-scene/src/world_edit.rs (narrow compound runtime binding/ownership)",
+        "crates/gz-sim-scene/tests/runtime_compound_spawn.rs (new)"
+      ],
+      "tracker_acceptance_closeout": [
+        "crates/gz-sim-scene/src/lib.rs (compound DiffDrive canonical-chassis predicate only)",
+        "crates/gz-sim-scene/tests/compound_diff_drive.rs (new)"
+      ],
+      "Root": [
+        "tests/compound_world_edit.rs exact existing compound-template row",
+        "tests/primitive_runtime_spawn.rs exact extra-collision row",
+        "tests/compound_joints.rs exact M8 chassis row; wheel row stays refused",
+        "integration, records, final review/release, serial heavy operations"
+      ],
+      "m76_scope": [
+        "AGENTS.md",
+        "README.md",
+        "docs/DELIVERY_PLAN.md",
+        "docs/HANDOFF.md",
+        "docs/IMPLEMENTATION_TASKS.md",
+        "planning/delivery-phases.json",
+        "docs/M90_DELIVERY.md",
+        "docs/M91_DELIVERY.md"
+      ]
+    },
+    "parent_proofs": {
+      "normal_actual": {
+        "sha256": "887048c813e40b53c75e2fc985b3c9d63b82ec903b59c3c2e6eb496c8bea157d",
+        "bytes": 2213,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "a7c8e55093b52208a81891c9f55ac171762ac7a2785530f38c01bb737db171c2",
+        "bytes": 1951,
+        "mode": 436
+      },
+      "local_DATA_report": {
+        "sha256": "c82e1e4fb9fff8c1ade7db48bd437340f436ae7270806b4aac21db51b6017ef8",
+        "bytes": 163877,
+        "mode": 436
+      },
+      "review_publication": {
+        "sha256": "1a2931b5f9492675a779d2a75502cbc335f15f18eafce444a55f7d1bbb5fd182",
+        "bytes": 2572,
+        "mode": 436
+      }
+    },
+    "protected_manual_demo_session": 86363,
+    "stop_or_restart_authorized": false,
+    "closed_domains": "M90 passive loaded Rapier compounds2..16 with immutable N+3 ownership, singleton API4/visual+3 unchanged; actual controlled-source veto even if caller DOM removes plugins. M91 compound canonical chassis only, current singleton wheel domains/config/runtime unchanged. No new visuals/TPE/COM/sensors/controllers/runtime joints/Physics/Server/API/native campaign.",
+    "retained_test_disposition": "Root alone owns exactly two same-XML runtime-template row transitions and one same-XML M8 chassis row; wheel mutation and all other negatives/case identities/assertion strength remain. Full independent shared-row Source/API/global-ray review is CLEAR; no executed test result.",
+    "review_scopes": {
+      "Root": "Independent full two-guide and six-current-doc scope/parent/phase-prefix review CLEAR. Owns exactly three retained-row transitions and final integration/release.",
+      "Scope": "Authored only eight selected current docs. Independent whole three-row Source/API/global-ray/actuator witness and old-case inverse review CLEAR. Whole product/regression review waits completed lanes.",
+      "Package": "Authors M90 product/new regressions; reciprocal M91 review follows completed Source.",
+      "Server": "Authors M91 product/new regressions; reciprocal M90 review follows completed Source."
+    },
+    "own_historical_normal_failures": [],
+    "active_heavy_job": false,
+    "checks_run_scope": "No M90/M91 checks or formatter have run. Parent corrected local qualification is genuine and exact parent hosted CI is running; none qualifies this new Source.",
+    "contract_checkpoint_scope": "Selected scope and unknown counts/outcomes are observation-time Source preparation. Retain all first89 old phase objects and prior parallel-group prefix exactly; current parent qualification is separately reflected here."
   }
 }
