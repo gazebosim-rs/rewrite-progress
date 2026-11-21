@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-21T05:08:28.172861+00:00",
+  "as_of": "2026-11-21T05:21:34.104599+00:00",
   "execution_state": "active",
   "current_phase": "M84",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -11123,13 +11123,13 @@
       "checks_run": true,
       "normal_qualified": true,
       "independent_local_DATA_qualified": true,
-      "hosted_qualified": false,
+      "hosted_qualified": true,
       "accepted": false,
       "distribution_selected": false,
       "qualification_inherited": false,
       "Source_publication_available": true,
       "future_qualified_head": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
-      "qualification_state": "own_local_qualified_review_published_hosted_active",
+      "qualification_state": "own_local_and_hosted_qualified_official_pending",
       "new_Source_finite_examples": 0,
       "new_CLI_cases": 0,
       "Source_finite_runs": 47,
@@ -11161,7 +11161,7 @@
           "README.md"
         ]
       },
-      "current_stage": "M83 passed corrected local tests, coverage and independent audit. Its review branch was published and hosted CI is running. The first failed attempt remains preserved; official evidence and release acceptance are still pending.",
+      "current_stage": "M83 passed corrected local qualification, independent audit and exact hosted CI. Original archive collection and independent official audit remain pending. The first failed normal and all predecessor gates are preserved; no acceptance or Main promotion occurred.",
       "retained_test_disposition": "Generic velocity_control.rs collision-local rotation: Rapier positive/TPE negative retained. Final posed_cylinder/posed_capsule/posed_sphere controlled_pose refusals become positive; coexistence prefixes unchanged. posed_box.rs has no controller refusal and stays exact. Private direct calls receive only engine forwarding and unchanged flags-tuple grouping; other assertions/tolerances remain unchanged.",
       "frame_contract": "Commands remain model-frame/link-origin; current linkQ rotates committed vectors. ColliderQ never rotates commands/translation again; geometry follows linkP+linkQ*localP under engine stepping. No pose teleport or new velocity API.",
       "engine_admission": "Pass actual local backend engine to Plan::validate; only Some(rapier) admits nonidentity primitive collision. Keep identity link, centered COM and all prior owner/refusal guards.",
@@ -11189,7 +11189,7 @@
         "m76_scope": "Independent whole one-case diff/API/domain/protected Source, no-change formatter and concrete entire seven-token CLI adoption CLEAR; authored docs independently reviewed by Root.",
         "Root": "Independent full one-case correction and authored seven docs/current board/census CLEAR; final Source pins and command reviewed before invocation."
       },
-      "checks_run_scope": "The corrected full normal and first retained audit passed. Detailed profile measurements and seven strict coverage bases are recorded below. Own hosted CI is running; official evidence and acceptance remain pending.",
+      "checks_run_scope": "Corrected full normal and independent retained audit passed, followed by exact hosted attempt 1 success. Detailed local measurements remain unchanged. Collection, official evidence and predecessor acceptance remain pending.",
       "current_normal": {
         "state": "actual_corrected_normal_and_independent_local_DATA_passed",
         "session_id": 29618,
@@ -11394,12 +11394,17 @@
         "head_branch": "review/m83-posed-velocity-control",
         "event": "push",
         "run_attempt": 1,
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44865727539",
-        "created_at": "2026-11-21T04:21:42Z"
+        "created_at": "2026-11-21T04:21:42Z",
+        "updated_at": "2026-11-21T05:15:54Z"
       },
-      "hosted_actual": null,
+      "hosted_actual": {
+        "sha256": "be60aad218bb77a08df6ed1a170924a460d7e258999baf62b1c56b37c0606143",
+        "bytes": 2457,
+        "mode": 436
+      },
       "official_actual": null,
       "local_profile_measurements": {
         "headless_passed": 1880,
@@ -11412,6 +11417,52 @@
         "new_Rust_observed_in_each_profile": 8,
         "strict_changed_line_bases": 7,
         "scope": "Own corrected M83 local normal/strict and retained DATA only; no hosted or acceptance result is inferred."
+      },
+      "official_DATA_qualified": false,
+      "hosted_job": {
+        "id": 136728827071,
+        "name": "verify-core",
+        "conclusion": "success",
+        "successful_steps": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          22,
+          23
+        ]
+      },
+      "hosted_artifact": {
+        "id": 14693746593,
+        "name": "render-coverage-44865727539-1",
+        "size_in_bytes": 178180389,
+        "digest": "sha256:2d556186d803a9892c2f639991ce68026306a2ee5c1dd1cae1c31b439aca5aeb",
+        "expired": false
+      },
+      "historical_hosted_active_observation": {
+        "hosted_run": {
+          "id": 44865727539,
+          "name": "simulator",
+          "path": ".github/workflows/ci.yml",
+          "head_sha": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
+          "head_branch": "review/m83-posed-velocity-control",
+          "event": "push",
+          "run_attempt": 1,
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44865727539",
+          "created_at": "2026-11-21T04:21:42Z"
+        },
+        "hosted_actual": null,
+        "official_actual": null,
+        "scope": "Earlier exact published in-progress observation retained; the genuine terminal success below supersedes current status only."
       }
     },
     {
@@ -12089,18 +12140,18 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M84 implementation, regression code, independent Source review and formatting are complete; one full verification run is active at its frozen tree. Current declaration and inventory counts are Source obligations, not passes. No own outcome or qualified commit exists. Parent M83 hosted CI is still running; all own and predecessor gates remain mandatory. Accepted phases, slices, Latest and the M77 browser/shutdown acceptance hold remain unchanged.",
+  "acceptance_boundary": "M84 implementation, regression code, independent Source review and formatting are complete; one full verification run is active at its frozen tree. Current declaration and inventory counts are Source obligations, not passes. No own outcome or qualified commit exists. Parent M83 hosted CI passed; collection and independent official evidence remain pending, and all own and predecessor gates remain mandatory. Accepted phases, slices, Latest and the M77 browser/shutdown acceptance hold remain unchanged.",
   "current_delivery_group": [
     "M84"
   ],
   "current_development_phase": "M84",
   "board": {
-    "updated_at": "2026-11-21T05:08:28.172861+00:00",
+    "updated_at": "2026-11-21T05:21:34.104599+00:00",
     "current": {
       "title": "M84 full verification running after Source review and formatting",
       "items": [
         "M84 implementation, regression code and independent Source review are complete. One affected formatter passed; the full verification run is active with no outcome.",
-        "M83 passed corrected local tests, coverage and independent audit. Its published review branch is still running hosted CI; no hosted result or acceptance transfers to M84.",
+        "M83 passed local tests, coverage, independent audit and exact hosted CI. Original archive collection and independent official audit are next; its first failure and predecessor gates remain preserved.",
         "The manual M77 demo remains running without expiry. Formal browser evidence and an owner-approved shutdown still hold release acceptance."
       ]
     },
@@ -12110,7 +12161,7 @@
     ],
     "next": [
       "Complete M84 full normal verification and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
-      "Complete M83 hosted/official evidence and every predecessor acceptance gate. Keep the M77 demo live until the owner confirms shutdown."
+      "Collect and audit M83\u2019s original hosted evidence, then complete every predecessor acceptance gate. Keep the M77 demo live until the owner confirms shutdown."
     ],
     "blocker": {
       "text": "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop.",
@@ -15376,7 +15427,7 @@
     "official_qualified": true
   },
   "current_M83_Source": {
-    "state": "M83_OWN_LOCAL_QUALIFIED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
+    "state": "M83_OWN_LOCAL_AND_HOSTED_QUALIFIED_OFFICIAL_PENDING",
     "Source_basis_commit": "039a1e5142dd48705a23acb6f817613f509408f0",
     "Source_basis_accepted": false,
     "basis_local_normal_and_independent_DATA_qualified": true,
@@ -15395,7 +15446,7 @@
     "checks_run": true,
     "normal_qualified": true,
     "independent_local_DATA_qualified": true,
-    "hosted_qualified": false,
+    "hosted_qualified": true,
     "accepted": false,
     "qualification_inherited": false,
     "Source_publication_available": true,
@@ -15406,7 +15457,7 @@
     "new_Python_Source_controls": 0,
     "Source_finite_runs": 47,
     "Source_CLI_cases": 21,
-    "current_stage": "M83 passed corrected local tests, coverage and independent audit. Its review branch was published and hosted CI is running. The first failed attempt remains preserved; official evidence and release acceptance are still pending.",
+    "current_stage": "M83 passed corrected local qualification, independent audit and exact hosted CI. Original archive collection and independent official audit remain pending. The first failed normal and all predecessor gates are preserved; no acceptance or Main promotion occurred.",
     "frame_contract": "Commands remain model-frame/link-origin; current linkQ rotates committed vectors. ColliderQ never rotates commands/translation again; geometry follows linkP+linkQ*localP under engine stepping. No pose teleport or new velocity API.",
     "engine_admission": "Pass actual local backend engine to Plan::validate; only Some(rapier) admits nonidentity primitive collision. Keep identity link, centered COM and all prior owner/refusal guards.",
     "retained_test_disposition": "Generic velocity_control.rs collision-local rotation: Rapier positive/TPE negative retained. Final posed_cylinder/posed_capsule/posed_sphere controlled_pose refusals become positive; coexistence prefixes unchanged. posed_box.rs has no controller refusal and stays exact. Private direct calls receive only engine forwarding and unchanged flags-tuple grouping; other assertions/tolerances remain unchanged.",
@@ -15477,9 +15528,13 @@
       "bytes": 1784,
       "mode": 436
     },
-    "hosted_actual": null,
+    "hosted_actual": {
+      "sha256": "be60aad218bb77a08df6ed1a170924a460d7e258999baf62b1c56b37c0606143",
+      "bytes": 2457,
+      "mode": 436
+    },
     "official_actual": null,
-    "checks_run_scope": "The corrected full normal and first retained audit passed. Detailed profile measurements and seven strict coverage bases are recorded below. Own hosted CI is running; official evidence and acceptance remain pending.",
+    "checks_run_scope": "Corrected full normal and independent retained audit passed, followed by exact hosted attempt 1 success. Detailed local measurements remain unchanged. Collection, official evidence and predecessor acceptance remain pending.",
     "new_paths": 2,
     "changed_production_paths_vs_basis": 2,
     "Source_control_declarations": {
@@ -15660,12 +15715,13 @@
       "head_branch": "review/m83-posed-velocity-control",
       "event": "push",
       "run_attempt": 1,
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44865727539",
-      "created_at": "2026-11-21T04:21:42Z"
+      "created_at": "2026-11-21T04:21:42Z",
+      "updated_at": "2026-11-21T05:15:54Z"
     },
-    "hosted_state": "own_exact_head_automatic_attempt1_in_progress",
+    "hosted_state": "own_exact_head_attempt1_success_collection_official_pending",
     "local_profile_measurements": {
       "headless_passed": 1880,
       "renderer_overlapping_passed": 1425,
@@ -15678,7 +15734,54 @@
       "strict_changed_line_bases": 7,
       "scope": "Own corrected M83 local normal/strict and retained DATA only; no hosted or acceptance result is inferred."
     },
-    "Source_revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/11afe37a4747cd7c4c0ad9a2f466721b86b1a156/docs/M83_DELIVERY.md"
+    "Source_revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/11afe37a4747cd7c4c0ad9a2f466721b86b1a156/docs/M83_DELIVERY.md",
+    "official_DATA_qualified": false,
+    "hosted_job": {
+      "id": 136728827071,
+      "name": "verify-core",
+      "conclusion": "success",
+      "successful_steps": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        22,
+        23
+      ]
+    },
+    "hosted_artifact": {
+      "id": 14693746593,
+      "name": "render-coverage-44865727539-1",
+      "size_in_bytes": 178180389,
+      "digest": "sha256:2d556186d803a9892c2f639991ce68026306a2ee5c1dd1cae1c31b439aca5aeb",
+      "expired": false
+    },
+    "historical_hosted_active_observation": {
+      "hosted_run": {
+        "id": 44865727539,
+        "name": "simulator",
+        "path": ".github/workflows/ci.yml",
+        "head_sha": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
+        "head_branch": "review/m83-posed-velocity-control",
+        "event": "push",
+        "run_attempt": 1,
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44865727539",
+        "created_at": "2026-11-21T04:21:42Z"
+      },
+      "hosted_actual": null,
+      "official_actual": null,
+      "scope": "Earlier exact published in-progress observation retained; the genuine terminal success below supersedes current status only."
+    },
+    "original_ZIPs_downloaded": false
   },
   "current_M82_parent_qualification": {
     "commit": "039a1e5142dd48705a23acb6f817613f509408f0",
@@ -15808,7 +15911,7 @@
     "protected_manual_demo_session": 86363,
     "stop_or_restart_authorized": false,
     "active_heavy_job": true,
-    "parent_qualification_scope": "M83 passed corrected local qualification and independent audit, and its review branch was published. Its own hosted CI is running; official evidence and predecessor acceptance remain pending. M82 completed qualification without acceptance transfer.",
+    "parent_qualification_scope": "M83 passed corrected local qualification and independent audit, published its review branch, and passed exact hosted CI. Original collection, official evidence and predecessor acceptance remain pending. M82 completed its own qualification without acceptance transfer.",
     "final_qualification_tree": "4292c9820754de4ab7117500f655b2a82e4b1200",
     "final_Source_snapshot": {
       "sha256": "947534bd50ae1c5ad054d901c63e14161162abb4e5a8d7cb9c79a5e74f798217",
@@ -15907,12 +16010,18 @@
       "head_branch": "review/m83-posed-velocity-control",
       "event": "push",
       "run_attempt": 1,
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44865727539",
-      "created_at": "2026-11-21T04:21:42Z"
+      "created_at": "2026-11-21T04:21:42Z",
+      "updated_at": "2026-11-21T05:15:54Z"
     },
     "official_actual": null,
-    "scope": "Own M83 corrected local normal/strict and independent DATA passed; ordinary review published and exact hosted active. First failed normal preserved. Unaccepted; no qualification transfers to M84."
+    "scope": "M83 passed corrected local qualification, independent retained audit and exact hosted CI. Original archive collection and independent official audit remain pending. Its first failure is preserved; unaccepted, with no result transfer to M84.",
+    "hosted_actual": {
+      "sha256": "be60aad218bb77a08df6ed1a170924a460d7e258999baf62b1c56b37c0606143",
+      "bytes": 2457,
+      "mode": 436
+    }
   }
 }
