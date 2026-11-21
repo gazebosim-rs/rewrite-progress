@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-21T14:44:09+00:00",
+  "updated_at": "2026-11-21T15:50:01.409227+00:00",
   "state": "active",
-  "summary": "M90/M91 full verification is running after six test API calls were corrected. M88/M89 completed its own qualification and remains unaccepted. M77 browser and shutdown evidence still hold acceptance.",
+  "summary": "M90/M91 corrections are implemented, independently reviewed and formatted. The full retry is running with no result yet. M88/M89 remains qualified and unaccepted. M77 browser and shutdown checks still hold acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M90-M91-tick-api-full-normal-active",
-      "title": "Reviewed test API correction in full verification",
-      "detail": "Source and independent review are complete. The first normal failed compilation; six test API calls were corrected. The reviewed retry is running with no result yet. The 17 shared controls remain Source obligations."
+      "id": "M90-M91-controls-full-normal-active",
+      "title": "Corrected compound spawning and chassis drive in verification",
+      "detail": "The three test corrections passed independent Source review and formatting. One full normal is running with no outcome or qualified commit. Both earlier failed attempts remain retained; their headless counts do not qualify corrected Source."
     },
     {
       "id": "M88-M89-qualified-unaccepted",
@@ -1035,7 +1035,7 @@
     }
   ],
   "remaining": [
-    "Finish the one running M90/M91 full normal, then independently audit genuine successful retained evidence. Own review publication, hosted CI and official audit remain; Source controls are not passes.",
+    "Finish the running full normal and independently audit its retained evidence if it passes; then complete review publication, exact hosted CI and official audit. Preserve all predecessor and M77 acceptance gates.",
     "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
   ],
   "blockers": [
@@ -1090,7 +1090,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "M77 numeric proofs and the live manual demo remain unchanged. M88/M89 completed its own local, hosted and official qualification without acceptance. M90/M91 first failed compilation; its reviewed test-only correction is in full verification. Counts remain 76 accepted phases, 202 slices, catalog 91 and Latest M70 original 41.",
+    "note": "M77 numeric proofs and the no-expiry demo remain unchanged. M88/M89 own qualification is complete and unaccepted. M90/M91 has one reviewed and formatted correction with its full retry running; no corrected result is claimed. Counts remain 76 accepted phases, 202 slices, catalog 91 and Latest M70 original 41.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1134,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "M86/M87 and M88/M89 completed their own normal, independent local DATA, exact hosted CI and official audit; both remain unaccepted. M90/M91 corrected full normal is active under Root session 49682, with outcome and qualified commit unknown. No qualification or acceptance transfers. All M77 browser/shutdown and predecessor gates remain.",
+    "qualification_scope": "M86/M87 and M88/M89 completed their own local, hosted and official qualification and remain unaccepted. M90/M91 retains both failed attempts; its completed correction is under full verification with no outcome or qualified commit. Every M77 browser/shutdown and predecessor gate remains.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -6705,7 +6705,7 @@
         },
         "elapsed_seconds": 2315.742688139988
       },
-      "contract_checkpoint_scope": "Frozen M88/M89 docs retain their correction Source checkpoint observations. Separate actual normal, independent local DATA, review publication, exact hosted CI and official audit now complete its own qualification; the review candidate remains unaccepted. M90/M91 corrected full normal is active under Root session 49682 with unknown outcome. No result transfers, and all M77 browser/shutdown gates remain.",
+      "contract_checkpoint_scope": "Frozen M88/M89 docs retain their earlier Source observations. Its separate actual local normal, independent DATA, review publication, exact hosted CI and official audit completed its own qualification; it remains unaccepted. M90/M91 subsequently failed its second gate and is under correction-batch diagnosis. No qualification or acceptance transfers; all M77 browser/shutdown gates remain.",
       "historical_first_normal_active_Source_observation": {
         "state": "M88_M89_COMPLETE_REVIEWED_FORMATTED_SOURCE_FULL_NORMAL_RUNNING",
         "Source_basis_commit": "ee4df6c5851cc40b77a15b19c6e992434ee7bfff",
@@ -7287,10 +7287,11 @@
           }
         }
       ],
-      "official_execution_scope": "One actual official audit and four prescribed end-only RAW comparisons. No repeated product tests or new native capture; acceptance and Main promotion remain false."
+      "official_execution_scope": "One actual official audit and four prescribed end-only RAW comparisons. No repeated product tests or new native capture; acceptance and Main promotion remain false.",
+      "historical_qualification_context_before_descendant_second_failure": "Frozen M88/M89 docs retain their correction Source checkpoint observations. Separate actual normal, independent local DATA, review publication, exact hosted CI and official audit now complete its own qualification; the review candidate remains unaccepted. M90/M91 corrected full normal is active under Root session 49682 with unknown outcome. No result transfers, and all M77 browser/shutdown gates remain."
     },
     "current_M90_M91_Source": {
-      "state": "M90_M91_TICK_API_CORRECTION_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+      "state": "M90_M91_CONTROLS_CORRECTION_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
       "Source_basis_commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
       "Source_basis_tree": "e648b4bfaedb9dcfe6b6937c83ea1b8647f30397",
       "Source_basis_accepted": false,
@@ -7346,28 +7347,28 @@
       "cumulative_changed_paths_vs_accepted_ancestor": 102,
       "Source_finite_runs": 47,
       "Source_CLI_cases": 21,
-      "final_tree": "1ddb50c72e5d05d0d8c405673ef7dcceaf01f0d8",
+      "final_tree": "19187aea360c610dc173ea57e2529c163919a79e",
       "future_qualified_head": null,
       "formatter_actual": {
-        "sha256": "e15f2983e54b26aff3747dacc495fbd3e3d068babae61fd48e4f7e71ec06ca38",
-        "bytes": 5094,
+        "sha256": "b6722b2828a8ed038537529a2bfc689db17b6fcb3fa1d0731bf90aa9125befb1",
+        "bytes": 7496,
         "mode": 436
       },
       "final_Source_review": {
-        "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
-        "bytes": 18503,
+        "sha256": "ea93e0e65b619a5c9ca5eb3a1ae6d9d9c306e6679b8132b70614944222fc450d",
+        "bytes": 27402,
         "mode": 436
       },
       "final_Source_snapshot": {
-        "sha256": "0c42c6168bb72734d8d0b1bf1e35472d963e66ca91ba88ffb468ab6255c6a879",
-        "bytes": 672773,
+        "sha256": "0446454c04c880bbb0dd53de2b5dbbd3eb77d06cb997083dd41e57d425d131cf",
+        "bytes": 674157,
         "mode": 436
       },
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
       "official_actual": null,
-      "current_stage": "The first full normal failed Clippy compilation on six nonexistent test API calls; no tests or coverage were reached. The isolated six-call correction, complete Source/docs and formatter custody passed independent review. One full retry is running; its result and qualified commit are unknown.",
+      "current_stage": "The three test corrections and eight current docs are complete and independently Source-reviewed. The affected three-file formatter returned zero. One full retry is running on the final staged Source; its outcome and qualified commit remain unknown. Both earlier failed attempts remain historical.",
       "file_ownership": {
         "package_collector": [
           "crates/gz-sim-scene/src/world_spawn.rs",
@@ -7447,21 +7448,26 @@
       "closed_domains": "M90 adds the loaded passive Rapier compound DOM branch with immutable N+3 ownership. Actual runtime compounds cannot be retemplated, including through singleton DOMs. Mature loaded-source singleton-DOM preparation remains unchanged. M91 admits compounds only on the validated canonical chassis; singleton wheels and all controller/TPE/COM/sensor/joint/visual/API boundaries stay closed.",
       "retained_test_disposition": "Root alone owns exactly two same-XML runtime-template row transitions and one same-XML M8 chassis row; wheel mutation and all other negatives/case identities/assertion strength remain. Full independent shared-row Source/API/global-ray review is CLEAR; no executed test result.",
       "review_scopes": {
-        "Root": "Complete implementations/regressions, three retained-row transitions, docs, isolated API correction and concrete retry adoption independently reviewed; CLEAR. Owns the running normal.",
-        "Scope": "Whole joined Source, three retained-file inverses, exact six-call correction and actual two-file formatter/index/mode custody independently reviewed; CLEAR.",
-        "Package": "Authored M90 and isolated API correction; reciprocal M91 and retained-row Source review CLEAR.",
-        "Server": "Authored M91; complete M90, retained-row and exact six-call correction/API Source review CLEAR."
+        "Package": "Authored M90 endpoint repair; whole M91 and Root shared-row reciprocal review CLEAR. Independently reviewed all eight final docs and current concrete normal Source adoption.",
+        "Server": "Authored all six M91 control repairs; whole endpoint and shared-row reciprocal review CLEAR. Future success methods are held separately.",
+        "Scope": "Whole correction mathematics, APIs, control identities, exact inverses, eight-doc census, current formatter and final Source/index/seven-token normal adoption independently CLEAR.",
+        "Root": "Whole three-test correction and eight-doc integration Source review CLEAR; completed staged Source custody and released exactly one full normal."
       },
       "own_historical_normal_failures": [
         {
           "sha256": "f9d43298fbc8b439889221fa1ce84e56b6c2fb39bb717f3073309a9f16b014ce",
           "bytes": 3836,
           "mode": 436
+        },
+        {
+          "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+          "bytes": 5223,
+          "mode": 436
         }
       ],
       "active_heavy_job": true,
-      "checks_run_scope": "The first normal returned actual Root/Git 1 at compilation, with six E0599 diagnostics and no executed tests or coverage. The reviewed retry is active. Formatter receipts are Source custody; all 17 H/R declarations remain obligations rather than passes. Retry outcome, DATA, qualified commit and hosted/official results are unbound.",
-      "contract_checkpoint_scope": "Published selection contracts and planning hashes remain original observation-time Source. Current corrected contracts/planning are pinned separately. First 89 phase objects and prior group history remain unchanged; no parent qualification transfers.",
+      "checks_run_scope": "The current full normal launched once as session 32524 and is active with no outcome or qualified commit. The earlier failed 1ddb gate alone recorded 1,942 headless passes, eight failures and two ignored cases; ten of seventeen new controls passed that failed profile. These observations do not qualify corrected Source.",
+      "contract_checkpoint_scope": "Initial selection, API repair and failed diagnosis checkpoints remain historical. Current guides/planning, independent whole Source reviews, formatting and final staged Source are complete. The full normal is genuinely active; no outcome, own qualification or acceptance is transferred.",
       "historical_selected_Source_observation": {
         "state": "M90_M91_SELECTED_DISJOINT_IMPLEMENTATION_SOURCE_UNDERWAY",
         "Source_basis_commit": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
@@ -7593,19 +7599,19 @@
       },
       "current_contract_Source": {
         "M90": {
-          "sha256": "f836b7b56e4d46132dc2e4a4fe2392ca79182d01ebd75452b850f5ed5e901562",
-          "bytes": 11858,
+          "sha256": "a39fd5e7754df9570f5365c9a0e3db64f2e4b36cee8bb4a870ccabab4943a479",
+          "bytes": 14041,
           "mode": 436
         },
         "M91": {
-          "sha256": "b4a5bd716876e844f9760a2d674bf4f45052e35e09606d3f30a90d1323abf722",
-          "bytes": 9253,
+          "sha256": "16a29aaf1279930d909383f5896f701434aa812bbaa10cbd3e5af8f161e0622a",
+          "bytes": 11436,
           "mode": 436
         }
       },
       "current_canonical_planning_Source": {
-        "sha256": "6c3b714879db232dec116e20e1b3e4a4863a3af7b2bc5712bcf11c98d2bd7b11",
-        "bytes": 612913,
+        "sha256": "94ece62b7a858c3e828a575976adbdea15791104e41f855f1aeb1f7e105fc8e2",
+        "bytes": 634867,
         "mode": 436
       },
       "Source_counts_are_obligations_not_executed_results": true,
@@ -7688,66 +7694,469 @@
       "unchanged_rust_paths_reusing_original": [
         "crates/gz-sim-scene/src/lib.rs",
         "crates/gz-sim-scene/src/world_edit.rs",
-        "crates/gz-sim-scene/tests/compound_diff_drive.rs",
-        "crates/gz-sim-scene/tests/compound_joints.rs",
         "crates/gz-sim-scene/tests/compound_world_edit.rs",
         "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
       ],
       "current_formatter_paths": [
-        "crates/gz-sim-scene/src/world_spawn.rs",
+        "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+        "crates/gz-sim-scene/tests/compound_joints.rs",
         "crates/gz-sim-scene/tests/runtime_compound_spawn.rs"
       ],
-      "formatter_scope": "The current two-file formatter returned zero and changed no further bytes. It covers the repaired public test and inline private test only. The original eight-file formatter is reused only for six unchanged Rust copies. All 1,807 modes and other Source bytes are preserved; formatter custody is not test qualification.",
+      "formatter_scope": "The current formatter returned zero for the three corrected test files. Intermediate formatting is reused only for unchanged world_spawn.rs, and original formatting only for four other unchanged Rust copies. These disjoint roles preserve custody without a synthetic union or inherited qualification. The formatter ran no product tests or lint; the full normal launched separately with outcome unknown.",
       "formatter_Source_review_complete": true,
       "preformat_whole_review": {
-        "sha256": "59e23de15c91f0254edc3ed003dc8dcb441c18575e893fc93cb1d8b8f9faffc1",
-        "bytes": 17503,
+        "sha256": "c011c1474c3c09413dc13c1d89732c63257d8b0d0501d5599e8b53c87486258b",
+        "bytes": 26529,
         "mode": 436
       },
       "correction_source_completion": {
-        "sha256": "860dcce05cb8abde363c75e2e1e7d334858ec6ba5bf37ae9c03503bd1f526479",
-        "bytes": 3339,
+        "sha256": "2be0c9143605d36a6844dc57b97e3b7ac490af6a5d331dd63c4687a2bf80ffdb",
+        "bytes": 11939,
         "mode": 436
       },
-      "correction_scope": "Exactly six calls in two Rust files: one paused tick with an explicit zero-dt assertion and five one-step advances. Production functions, all assertions, 1,500-step contact horizons and all 17 case identities remain unchanged. Author, reciprocal, whole and Root Source review missed the original API calls; the real compiler failure and corrected review are retained.",
+      "correction_scope": "One complete Source batch repairs the isolated binary Sphere endpoint fixture, replaces the new never-passed motor, odometry, contact and fault oracles with measured causal controls, and preserves paired physical witnesses in the retained chassis row. Production behavior, solver settings, case identities and strict numerical tolerances remain unchanged. No corrected passing result is claimed.",
       "normal_launch": {
-        "state": "M90_M91_TICK_API_CORRECTION_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+        "state": "M90_M91_CONTROLS_CORRECTION_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
         "receipt": {
-          "sha256": "5cdc68fe8808fd0c981678bfce3431c4b4545b172842df916de0cf8c9498118b",
-          "bytes": 1896,
+          "sha256": "53dfd822ff7d832a6080142c6f7d2d21cf7799097f6905ec8037da82164d1e24",
+          "bytes": 2432,
           "mode": 436
         },
-        "session_id": 49682,
-        "launch_tool": "abfe7f",
+        "session_id": 32524,
+        "launch_tool": "302205",
+        "terminal_tool": null,
         "actual_Root_exit_code": null,
         "actual_Git_exit_code": null,
         "qualified_commit": null,
         "runner": {
-          "sha256": "c7178aa761fbd4bf1e9a1f9067a52e8a768c38a93fe095ab85940f692bfb0e15",
-          "bytes": 43851,
+          "sha256": "c0fc2a0a3880d190ad7573f4efeb1f64bb774dc5676630e16197387eff1d42b8",
+          "bytes": 56460,
           "mode": 436
         },
         "binding": {
-          "sha256": "bec5d9f5d4de7655375cd51bd08d67b5e60fd2bd823d6121456bd16f75e26a11",
-          "bytes": 7074,
+          "sha256": "629179bfca0347be23743158bdd6be822d34d9828c1d48bb86ca6b68942afd15",
+          "bytes": 8453,
+          "mode": 436
+        },
+        "release_receipt": {
+          "sha256": "614b359cd5318dd1d631864781592d99d89f1a6152108b1ccc5570b6cbeeb735",
+          "bytes": 2205,
           "mode": 436
         },
         "source_review": {
+          "sha256": "ea93e0e65b619a5c9ca5eb3a1ae6d9d9c306e6679b8132b70614944222fc450d",
+          "bytes": 27402,
+          "mode": 436
+        },
+        "source_snapshot": {
+          "sha256": "0446454c04c880bbb0dd53de2b5dbbd3eb77d06cb997083dd41e57d425d131cf",
+          "bytes": 674157,
+          "mode": 436
+        },
+        "full_argv": {
+          "sha256": "f79c8eab15a2535f8734b09b9414050c242a50d4b13e06ff4469a422b9b38dfd",
+          "bytes": 3096,
+          "mode": 436
+        },
+        "heavy_job_active": true,
+        "actual_terminal": null,
+        "elapsed_seconds": null
+      },
+      "frozen_failed_tree": "1ddb50c72e5d05d0d8c405673ef7dcceaf01f0d8",
+      "historical_second_normal_failure": {
+        "state": "M90_M91_TICK_API_CORRECTED_NORMAL_ACTUAL_HEADLESS_FAILURE",
+        "receipt": {
+          "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+          "bytes": 5223,
+          "mode": 436
+        },
+        "actual_Root_exit": 1,
+        "actual_Git_exit": 1,
+        "session_id": 49682,
+        "launch_tool": "abfe7f",
+        "terminal_tool": "098374",
+        "elapsed_seconds": 1591.1281296920206,
+        "staged_tree": "1ddb50c72e5d05d0d8c405673ef7dcceaf01f0d8",
+        "qualified_commit": null,
+        "headless": {
+          "passed": 1942,
+          "failed": 8,
+          "ignored": 2,
+          "sum_of_actual_binary_summary_rows": true
+        },
+        "new_control_actuals": {
+          "source_declared_unique": 17,
+          "passed_in_headless": 10,
+          "failed_in_headless": 7,
+          "additional_retained_case_failed": 1,
+          "renderer": null
+        },
+        "failed_case_names": [
+          "compound_drive_binding_drift_refuses_before_any_owner_changes_pending_physics",
+          "compound_chassis_admission_preserves_singleton_wheel_parameters_and_closed_domains",
+          "compound_chassis_motor_motion_advects_every_primitive_frame_and_strict_query",
+          "compound_drive_odometry_keeps_encoder_frame_cadence_and_last_valid_paused_command",
+          "compound_chassis_ground_traction_moves_and_turns_without_suspended_teleport",
+          "compound_chassis_bumper_contacts_move_a_target_while_quiet_controls_remain_clear",
+          "compound_joint_chains_do_not_expand_joint_controllers_diff_drive_or_velocity_control",
+          "runtime_compounds_keep_mixed_child_frames_prefix_ids_and_isolated_global_queries"
+        ],
+        "renderer_executed": false,
+        "strict_coverage_completed": false,
+        "no_capacity_signal_or_finalization_fault": true,
+        "result": {
+          "sha256": "fec4b8822353d0963c5469798d5c81c48c2a1bc81fd09d496bc0fd3ec0ce35e6",
+          "bytes": 4453,
+          "mode": 436
+        },
+        "stage_result": {
+          "sha256": "6e2a6ee354e07232ee24aec3ae27dfc75bac5cc7afd5f128f6b09cc4ec938cf9",
+          "bytes": 141707,
+          "mode": 436
+        },
+        "profile_index": {
+          "sha256": "7a797309e8433657b46095802c966747356a6c7f406fbd4d8326f909dafa9f39",
+          "bytes": 61957,
+          "mode": 436
+        },
+        "headless_stdout": {
+          "sha256": "0af154da192ccdcab7309430f014bbeb111c8633dba9fd301e1ed226faba277e",
+          "bytes": 969990,
+          "mode": 436
+        },
+        "headless_stderr": {
+          "sha256": "378ff1cc08b299207a3f16937896200c65df9b938db84523e56b9a1d5e4c24cf",
+          "bytes": 36562,
+          "mode": 436
+        }
+      },
+      "controls_correction_Source_preparation": {
+        "state": "M90_M91_CONTROLS_CORRECTION_REVIEWED_FORMATTED_FULL_NORMAL_ACTIVE",
+        "prepared_worktrees": {
+          "sha256": "2c6362e1c7ccf8e96d6ccbc7089718c042baa1b0f70df96148de5da7ed3999bc",
+          "bytes": 2122,
+          "mode": 436
+        },
+        "seed_failed_tree": "1ddb50c72e5d05d0d8c405673ef7dcceaf01f0d8",
+        "true_parent": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+        "failure_batch_complete": true,
+        "Source_edits_started": true,
+        "implementation_complete": true,
+        "independent_Source_review_complete": true,
+        "formatter_actual": {
+          "sha256": "b6722b2828a8ed038537529a2bfc689db17b6fcb3fa1d0731bf90aa9125befb1",
+          "bytes": 7496,
+          "mode": 436
+        },
+        "normal_retry_released": true,
+        "normal_retry_started": true,
+        "normal_actual": null,
+        "local_DATA_actual": null,
+        "hosted_actual": null,
+        "official_actual": null,
+        "Source_census": {
+          "files": 1807,
+          "owned_paths": 16,
+          "new_paths": 4,
+          "production_paths": 3,
+          "cumulative_paths": 102,
+          "Rust_unique": 17,
+          "headless": 17,
+          "renderer": 17,
+          "overlap": 17,
+          "Python": 0,
+          "finite": 47,
+          "CLI": 21
+        },
+        "final_tree": "19187aea360c610dc173ea57e2529c163919a79e",
+        "future_qualified_commit": null,
+        "scope": "One complete Source batch repairs the isolated binary Sphere endpoint fixture, replaces the new never-passed motor, odometry, contact and fault oracles with measured causal controls, and preserves paired physical witnesses in the retained chassis row. Production behavior, solver settings, case identities and strict numerical tolerances remain unchanged. No corrected passing result is claimed."
+      },
+      "historical_tick_API_retry_active_current_fields": {
+        "state": "M90_M91_TICK_API_CORRECTION_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+        "implementation_complete": true,
+        "independent_source_review_complete": true,
+        "final_tree": "1ddb50c72e5d05d0d8c405673ef7dcceaf01f0d8",
+        "normal_actual": null,
+        "current_stage": "The first full normal failed Clippy compilation on six nonexistent test API calls; no tests or coverage were reached. The isolated six-call correction, complete Source/docs and formatter custody passed independent review. One full retry is running; its result and qualified commit are unknown.",
+        "review_scopes": {
+          "Root": "Complete implementations/regressions, three retained-row transitions, docs, isolated API correction and concrete retry adoption independently reviewed; CLEAR. Owns the running normal.",
+          "Scope": "Whole joined Source, three retained-file inverses, exact six-call correction and actual two-file formatter/index/mode custody independently reviewed; CLEAR.",
+          "Package": "Authored M90 and isolated API correction; reciprocal M91 and retained-row Source review CLEAR.",
+          "Server": "Authored M91; complete M90, retained-row and exact six-call correction/API Source review CLEAR."
+        },
+        "own_historical_normal_failures": [
+          {
+            "sha256": "f9d43298fbc8b439889221fa1ce84e56b6c2fb39bb717f3073309a9f16b014ce",
+            "bytes": 3836,
+            "mode": 436
+          }
+        ],
+        "active_heavy_job": true,
+        "checks_run_scope": "The first normal returned actual Root/Git 1 at compilation, with six E0599 diagnostics and no executed tests or coverage. The reviewed retry is active. Formatter receipts are Source custody; all 17 H/R declarations remain obligations rather than passes. Retry outcome, DATA, qualified commit and hosted/official results are unbound.",
+        "contract_checkpoint_scope": "Published selection contracts and planning hashes remain original observation-time Source. Current corrected contracts/planning are pinned separately. First 89 phase objects and prior group history remain unchanged; no parent qualification transfers.",
+        "formatter_scope": "The current two-file formatter returned zero and changed no further bytes. It covers the repaired public test and inline private test only. The original eight-file formatter is reused only for six unchanged Rust copies. All 1,807 modes and other Source bytes are preserved; formatter custody is not test qualification.",
+        "correction_scope": "Exactly six calls in two Rust files: one paused tick with an explicit zero-dt assertion and five one-step advances. Production functions, all assertions, 1,500-step contact horizons and all 17 case identities remain unchanged. Author, reciprocal, whole and Root Source review missed the original API calls; the real compiler failure and corrected review are retained.",
+        "normal_launch": {
+          "state": "M90_M91_TICK_API_CORRECTION_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+          "receipt": {
+            "sha256": "5cdc68fe8808fd0c981678bfce3431c4b4545b172842df916de0cf8c9498118b",
+            "bytes": 1896,
+            "mode": 436
+          },
+          "session_id": 49682,
+          "launch_tool": "abfe7f",
+          "actual_Root_exit_code": null,
+          "actual_Git_exit_code": null,
+          "qualified_commit": null,
+          "runner": {
+            "sha256": "c7178aa761fbd4bf1e9a1f9067a52e8a768c38a93fe095ab85940f692bfb0e15",
+            "bytes": 43851,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "bec5d9f5d4de7655375cd51bd08d67b5e60fd2bd823d6121456bd16f75e26a11",
+            "bytes": 7074,
+            "mode": 436
+          },
+          "source_review": {
+            "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
+            "bytes": 18503,
+            "mode": 436
+          },
+          "source_snapshot": {
+            "sha256": "0c42c6168bb72734d8d0b1bf1e35472d963e66ca91ba88ffb468ab6255c6a879",
+            "bytes": 672773,
+            "mode": 436
+          },
+          "full_argv": {
+            "sha256": "cda12ff1549b6bc38a61817476268ef168cc698693a5c435c329239f47439552",
+            "bytes": 2392,
+            "mode": 436
+          },
+          "heavy_job_active": true
+        }
+      },
+      "historical_tick_API_retry_active_parallel_group": {
+        "phases": [
+          "M90",
+          "M91"
+        ],
+        "max_working_days": 5,
+        "integration": "M90 and M91 share one independently reviewed candidate. Both implementations and regression Source are complete. Six test API calls were corrected after a compilation-only failure; the reviewed retry is running. Parent M88/M89 completed its own qualification and remains unaccepted. No result transfers."
+      },
+      "historical_controls_diagnosis_current_fields": {
+        "state": "M90_M91_SECOND_NORMAL_HEADLESS_FAILED_CONTROLS_SOURCE_DIAGNOSIS",
+        "implementation_complete": false,
+        "independent_source_review_complete": false,
+        "final_tree": null,
+        "formatter_actual": {
+          "sha256": "e15f2983e54b26aff3747dacc495fbd3e3d068babae61fd48e4f7e71ec06ca38",
+          "bytes": 5094,
+          "mode": 436
+        },
+        "final_Source_review": {
           "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
           "bytes": 18503,
           "mode": 436
         },
-        "source_snapshot": {
+        "final_Source_snapshot": {
           "sha256": "0c42c6168bb72734d8d0b1bf1e35472d963e66ca91ba88ffb468ab6255c6a879",
           "bytes": 672773,
           "mode": 436
         },
-        "full_argv": {
-          "sha256": "cda12ff1549b6bc38a61817476268ef168cc698693a5c435c329239f47439552",
-          "bytes": 2392,
+        "normal_actual": {
+          "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+          "bytes": 5223,
           "mode": 436
         },
-        "heavy_job_active": true
+        "current_stage": "The second full normal returned Root/Git 1 after 1,942 headless passes, eight failures and two ignored cases. Ten of seventeen new controls passed in that profile; seven new and one retained case failed. Renderer and strict coverage were not reached. The complete failure/correction batch is under parallel Source diagnosis; no corrective Source edits, new formatter or retry have been released.",
+        "review_scopes": {
+          "Package": "Prior M90 author/reciprocal review is retained historically. Independently diagnosing the actual runtime query failure; no new correction Source or executed result.",
+          "Server": "Prior M91 author/reciprocal review is retained historically. Independently diagnosing all six failed new drive cases; no new correction Source complete.",
+          "Scope": "Prior whole Source and formatter reviews are retained historically. Source-only diagnosis and meaningful shared-row failure disposition proposed to Root; no implementation or checks.",
+          "Root": "Preserved the failed second candidate and all evidence; coordinating the complete failure batch before any isolated Source corrections or retry release."
+        },
+        "active_heavy_job": false,
+        "checks_run_scope": "Actual second gate failed: Root/Git 1, 1,591.1281296920206 seconds, headless 1942 passed/8 failed/2 ignored; new controls 10 passed/7 failed plus one retained failure. Renderer/strict coverage and a qualified commit were not reached. No capacity, signal or finalization fault. Both actual failed attempts remain preserved; no success audit or qualification follows.",
+        "contract_checkpoint_scope": "Published selection and tick-correction contract/planning hashes remain exact historical Source checkpoints. The 53b8 review, 0c42 snapshot and e15 formatter describe frozen failed 1ddb Source, not a new correction. The whole eight-failure batch is under diagnosis with no Source edits or retry release; future corrected Source/tree/commit/outcomes are unknown.",
+        "current_contract_Source": {
+          "M90": {
+            "sha256": "f836b7b56e4d46132dc2e4a4fe2392ca79182d01ebd75452b850f5ed5e901562",
+            "bytes": 11858,
+            "mode": 436
+          },
+          "M91": {
+            "sha256": "b4a5bd716876e844f9760a2d674bf4f45052e35e09606d3f30a90d1323abf722",
+            "bytes": 9253,
+            "mode": 436
+          }
+        },
+        "current_canonical_planning_Source": {
+          "sha256": "6c3b714879db232dec116e20e1b3e4a4863a3af7b2bc5712bcf11c98d2bd7b11",
+          "bytes": 612913,
+          "mode": 436
+        },
+        "unchanged_rust_paths_reusing_original": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/src/world_edit.rs",
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs",
+          "crates/gz-sim-scene/tests/compound_world_edit.rs",
+          "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
+        ],
+        "current_formatter_paths": [
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/tests/runtime_compound_spawn.rs"
+        ],
+        "formatter_scope": "The prior two-file formatter returned zero without byte changes before the now-failed second gate; original eight-file formatting was reused only for six unchanged copies. Those records remain bound to frozen 1ddb Source. No new corrective Source or formatter is complete; no union or qualification is inferred.",
+        "preformat_whole_review": {
+          "sha256": "59e23de15c91f0254edc3ed003dc8dcb441c18575e893fc93cb1d8b8f9faffc1",
+          "bytes": 17503,
+          "mode": 436
+        },
+        "correction_source_completion": {
+          "sha256": "860dcce05cb8abde363c75e2e1e7d334858ec6ba5bf37ae9c03503bd1f526479",
+          "bytes": 3339,
+          "mode": 436
+        },
+        "correction_scope": "The completed six-call API correction reached actual headless tests in the second normal, which failed eight cases. Its Source, formatter and original compilation failure remain preserved. A separate complete corrective batch is under parallel diagnosis; no new Source edits, altered assertions, fixture changes or passing result are claimed.",
+        "normal_launch": {
+          "state": "M90_M91_TICK_API_CORRECTION_NORMAL_RETIRED_ACTUAL_HEADLESS_FAILURE",
+          "receipt": {
+            "sha256": "5cdc68fe8808fd0c981678bfce3431c4b4545b172842df916de0cf8c9498118b",
+            "bytes": 1896,
+            "mode": 436
+          },
+          "session_id": 49682,
+          "launch_tool": "abfe7f",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "qualified_commit": null,
+          "runner": {
+            "sha256": "c7178aa761fbd4bf1e9a1f9067a52e8a768c38a93fe095ab85940f692bfb0e15",
+            "bytes": 43851,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "bec5d9f5d4de7655375cd51bd08d67b5e60fd2bd823d6121456bd16f75e26a11",
+            "bytes": 7074,
+            "mode": 436
+          },
+          "source_review": {
+            "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
+            "bytes": 18503,
+            "mode": 436
+          },
+          "source_snapshot": {
+            "sha256": "0c42c6168bb72734d8d0b1bf1e35472d963e66ca91ba88ffb468ab6255c6a879",
+            "bytes": 672773,
+            "mode": 436
+          },
+          "full_argv": {
+            "sha256": "cda12ff1549b6bc38a61817476268ef168cc698693a5c435c329239f47439552",
+            "bytes": 2392,
+            "mode": 436
+          },
+          "heavy_job_active": false,
+          "terminal_tool": "098374",
+          "actual_terminal": {
+            "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+            "bytes": 5223,
+            "mode": 436
+          },
+          "elapsed_seconds": 1591.1281296920206
+        },
+        "controls_correction_Source_preparation": {
+          "state": "M90_M91_EIGHT_CONTROL_FAILURE_BATCH_PARALLEL_SOURCE_DIAGNOSIS",
+          "prepared_worktrees": {
+            "sha256": "2c6362e1c7ccf8e96d6ccbc7089718c042baa1b0f70df96148de5da7ed3999bc",
+            "bytes": 2122,
+            "mode": 436
+          },
+          "seed_failed_tree": "1ddb50c72e5d05d0d8c405673ef7dcceaf01f0d8",
+          "true_parent": "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+          "failure_batch_complete": false,
+          "Source_edits_started": false,
+          "implementation_complete": false,
+          "independent_Source_review_complete": false,
+          "formatter_actual": null,
+          "normal_retry_released": false,
+          "normal_retry_started": false,
+          "normal_actual": null,
+          "local_DATA_actual": null,
+          "hosted_actual": null,
+          "official_actual": null,
+          "future_Source_census": null,
+          "future_tree": null,
+          "future_qualified_commit": null,
+          "scope": "Read-only diagnosis across the complete actual eight-failure batch before Root selects and releases isolated Source corrections. No fixture, numerical oracle, tolerance, production behavior or gate change is claimed. Proposed next-wave work remains unselected."
+        }
+      },
+      "historical_controls_diagnosis_Source": {
+        "delivery": {
+          "sha256": "19762365d7e49a1cb85891e93635e6b8ebf7525318d6582587f98d49cc8fcf3c",
+          "bytes": 1126311,
+          "mode": 436
+        },
+        "status": {
+          "sha256": "080521aeff6a034239513ffbd373182039867e741147505ca3b8d709a032f6fc",
+          "bytes": 397239,
+          "mode": 436
+        },
+        "plan": {
+          "sha256": "0682ebae315a5a09d38eb7f07fdd7153b381282cf42abc07faf02d09804bfda2",
+          "bytes": 12026,
+          "mode": 436
+        }
+      },
+      "previous_correction_failure": {
+        "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+        "bytes": 5223,
+        "mode": 436
+      },
+      "previous_correction_Source_review": {
+        "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
+        "bytes": 18503,
+        "mode": 436
+      },
+      "previous_correction_source_snapshot": {
+        "sha256": "0c42c6168bb72734d8d0b1bf1e35472d963e66ca91ba88ffb468ab6255c6a879",
+        "bytes": 672773,
+        "mode": 436
+      },
+      "previous_correction_formatter_reused": {
+        "sha256": "e15f2983e54b26aff3747dacc495fbd3e3d068babae61fd48e4f7e71ec06ca38",
+        "bytes": 5094,
+        "mode": 436
+      },
+      "unchanged_rust_paths_reusing_previous_correction": [
+        "crates/gz-sim-scene/src/world_spawn.rs"
+      ],
+      "controls_correction_Source_completions": {
+        "endpoint": {
+          "sha256": "c40d78a64ca1a9d2dbf40677a300fb084400f9d94cd0d9ba909906396af98244",
+          "bytes": 2950,
+          "mode": 436
+        },
+        "drive": {
+          "sha256": "7be19554871dda84f27ad1e88608a3ee10ec30f9a739fc34ef12f4f11e231cf1",
+          "bytes": 6326,
+          "mode": 436
+        },
+        "shared": {
+          "sha256": "41999cd8555969ff292d38a6eb7360f69404e81555e941ceed117610c515ea1e",
+          "bytes": 1945,
+          "mode": 436
+        }
+      },
+      "historical_controls_diagnosis_parallel_group": {
+        "phases": [
+          "M90",
+          "M91"
+        ],
+        "max_working_days": 5,
+        "integration": "M90/M91 share one bounded candidate. The second normal failed eight headless cases; the frozen Source and both failures remain retained. The complete corrective batch is under parallel Source diagnosis with no new edits or retry release. Parent M88/M89 own qualification remains complete and unaccepted. No result transfers."
       }
     }
   },
