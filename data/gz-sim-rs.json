@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-21T18:23:45.713943+00:00",
+  "updated_at": "2026-11-21T20:11:42.093663+00:00",
   "state": "active",
-  "summary": "M92/M93 corrections, review and formatting are complete; the full retry is running with no result yet. M90/M91 own qualification is complete and unaccepted. Releases remain held by M77.",
+  "summary": "M94/M95 code, regressions, reviews and formatting are complete; the sole full normal is running with no result. M92/M93 passed local and hosted qualification; official DATA is pending. M77 still holds acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M92-M93-physical-controls-full-normal-active",
-      "title": "Corrected physical controls in full verification",
-      "detail": "Both test-only repairs and final documentation reviews are complete. One affected formatter returned zero. The sole full normal retry is running; its outcome and qualified commit remain unknown. The first failed run is preserved."
+      "id": "M94-M95-full-normal-active",
+      "title": "Runtime retemplating and principal-axis full verification",
+      "detail": "Seventeen Rust controls and all Source reviews are complete. One five-file formatter passed. The sole full normal is active; its outcome and qualified commit remain unknown. Source counts are not pass counts."
     },
     {
-      "id": "M90-M91-own-qualified-unaccepted",
-      "title": "M90/M91 qualification complete; acceptance pending",
-      "detail": "Local tests, independent retained audit, exact hosted CI and independent official DATA passed. The first audit method failed before RAW and is preserved. No descendant result or release acceptance transfers."
+      "id": "M92-M93-hosted-passed-official-pending",
+      "title": "M92/M93 hosted CI passed; official evidence pending",
+      "detail": "Corrected local verification, independent audit and exact hosted CI passed on the published review branch. The sole watcher retired with actual zero. Artifact collection and independent official DATA remain pending; acceptance is unchanged."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Complete the active M92/M93 full retry, then independent retained audit, exact hosted CI and official DATA if each prerequisite passes.",
-    "M90/M91 own qualification is complete and unaccepted. Preserve all predecessor acceptance gates and the live demo.",
+    "Complete the sole active M94/M95 full normal, then independent local audit, hosted CI and official DATA if each prerequisite passes.",
+    "Complete M92/M93 independent official evidence after hosted success. M90/M91 own qualification is complete and unaccepted.",
     "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
   ],
   "blockers": [
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "M77 numeric proofs and the no-expiry demo are unchanged. M92/M93 test corrections, final reviews and one two-file formatter are complete; the full retry is running with no result. M90/M91 own qualification passed, unaccepted. Accepted 76 phases and 202 slices, catalog 93, Latest M70 original 41-example package.",
+    "note": "M94/M95 has seventeen declared controls, not passes. All Source reviews and one five-file formatter are complete; the sole full normal is running with no result. M92/M93 passed local and hosted qualification; official DATA is pending. M90/M91 remains own qualified and unaccepted. M77 proofs/demo are unchanged. Accepted 76 phases and 202 slices, catalog 95, Latest M70 original 41-example package.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1135,7 +1135,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "M90/M91 own local, hosted and official qualification is complete and unaccepted. M92/M93 reviewed and formatted corrected Source is in its sole full normal retry, with no corrected qualification or qualified commit yet. The original failure and every predecessor/M77 acceptance gate remain.",
+    "qualification_scope": "M94/M95 code and final-doc Source reviews and one five-file formatter are complete; sole full normal66817 is active with outcome and qualified commit null. CurrentSource tree7d050c30/1815files/17declared controls is frozen. ParentM92 local+hosted passed, official DATA pending; M90 own qualification complete and unaccepted. All predecessor/M77 acceptance gates remain.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -7690,78 +7690,45 @@
       }
     },
     "current_M92_M93_Source": {
-      "state": "M92_M93_CORRECTED_SOURCE_REVIEW_AND_FORMATTER_COMPLETE_FULL_NORMAL_RETRY_ACTIVE_OUTCOME_UNKNOWN",
+      "commit": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+      "tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
       "parent": "e264c6494d69ccacf41e0b21ddf3827d1f12cd40",
-      "parent_tree": "19187aea360c610dc173ea57e2529c163919a79e",
-      "parent_locally_qualified": true,
-      "parent_accepted": false,
+      "locally_qualified": true,
       "accepted": false,
-      "implementation_complete": true,
-      "independent_code_Source_review_complete": true,
-      "final_docs_review_complete": true,
-      "Source_controls": {
-        "Rust_unique": 17,
-        "headless": 17,
-        "renderer": 17,
-        "overlap": 17,
-        "Python": 0
-      },
-      "final_joined_Source_counts": {
-        "files": 1811,
-        "changed_paths": 15,
-        "new_paths": 4,
-        "production_paths": 2,
-        "cumulative_paths_vs_accepted_ancestor": 106
-      },
-      "checks_run": true,
-      "formatter_run": true,
-      "future_final_tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
-      "future_qualified_commit": null,
-      "normal_actual": null,
-      "local_DATA_actual": null,
-      "hosted_actual": null,
-      "official_actual": null,
-      "protected_demo_session": 86363,
-      "stop_or_restart_authorized": false,
-      "source_selection": {
-        "sha256": "28e31238161b7ba4c2afc80694393aa70102a7cd9687ba41d19c11c0b0756b6d",
-        "bytes": 7304,
+      "normal_actual": {
+        "sha256": "4a1c59a7dd5ed13d701df790126f1a3e77debfbac4e2dff331214ad52d3d6b7e",
+        "bytes": 3883,
         "mode": 436
       },
-      "source_dispatch": {
-        "sha256": "e7dd7e85db17687039c4fd06704acccfeda9a2926c3ace04330eaadda47fb574",
-        "bytes": 1809,
+      "local_DATA_actual": {
+        "sha256": "e33975e14b31906d7594b38582d7b407a4b8daa235d637d825c2dbc5a825ef60",
+        "bytes": 3363,
         "mode": 436
       },
-      "author_completions": {
-        "M92": {
-          "sha256": "fca52c21787d5df651b2591b0bef72e47ba31b230a8a26a5f0786319f1f04608",
-          "bytes": 6184,
-          "mode": 436
-        },
-        "M93": {
-          "sha256": "ce84d588c47c9d8c6d5b1f6ce2f92c23417eb339a5c49b0d54e31e1dc376018f",
-          "bytes": 7185,
-          "mode": 436
-        },
-        "retained_dispositions": {
-          "sha256": "2f73664deb11fb2196661946171b0e5e7827f0c6e9c66a9b001212846c8dbf71",
-          "bytes": 3951,
-          "mode": 436
-        }
-      },
-      "Source_integration": {
-        "sha256": "f902b010240e84a3ed6a1f0b4c37fc492f7889fb40cbbaed5bffd30d47cb8741",
-        "bytes": 3493,
+      "local_DATA_report": {
+        "sha256": "59113b308506921d70efec60ac9cb22d6375f8d6c4c26cd0c9f0a9b03fcc8234",
+        "bytes": 194140,
         "mode": 436
       },
-      "scope": "The first failed normal and its15of17headless-only new passes remain historical. Both test-only corrections, final eight-doc Root and Package reviews and one affected two-file formatter are complete. Root and Server closed postformat and actual final Source joins at tree1dc85433. Sole full normal retry5131 is active with no result, qualified commit or corrected qualification yet. Source17H17R/census1811 are obligations, not passes.",
-      "corrective_code_Source_complete": true,
-      "final_docs_authored_complete": true,
-      "normal_qualified": false,
-      "qualification_inherited": false,
-      "current_normal_active": true,
-      "retry_released": true,
+      "review_publication": {
+        "sha256": "6b16995f4be1a5dc21a2632396e87bcd40df478d9b42911dc3b6d8c808083a26",
+        "bytes": 2203,
+        "mode": 436
+      },
+      "review_ref_published": true,
+      "hosted_run": {
+        "id": 44939453527,
+        "attempt": 1,
+        "head": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+        "status": "completed",
+        "outcome": 0,
+        "watch_session": null,
+        "launch_tool": "f59b22",
+        "conclusion": "success",
+        "terminal_tool": "abe451"
+      },
+      "own_hosted_qualified": true,
+      "official_qualified": false,
       "own_historical_normal_failures": [
         {
           "sha256": "005bf028f7dc2e954070a0a221085dcdc8d1cb465c47ca82676f1e8cdfb4dd4e",
@@ -7769,137 +7736,174 @@
           "mode": 436
         }
       ],
-      "original_failure": {
-        "sha256": "005bf028f7dc2e954070a0a221085dcdc8d1cb465c47ca82676f1e8cdfb4dd4e",
-        "bytes": 9475,
-        "mode": 436
-      },
-      "original_formatted_Source_review": {
-        "sha256": "e538a56345116122e94f99300102e9dde7455b5485a056dc2fbec5d5ae136179",
-        "bytes": 14190,
-        "mode": 436
-      },
-      "original_formatter_reused": {
-        "sha256": "12ccb626920edb1415ec12da3171625a7a9deef8bbe4eacd039a44636afb0cda",
-        "bytes": 7681,
-        "mode": 436
-      },
-      "original_failed_source_snapshot": {
-        "sha256": "e45e22af812842acc2649ed66254a2fb332d663675fd2f2f88900149a605e95d",
-        "bytes": 675820,
-        "mode": 436
-      },
-      "unchanged_rust_paths_reusing_original": [
-        "crates/gz-sim-scene/src/lib.rs",
-        "crates/gz-sim-scene/src/world_spawn.rs",
-        "crates/gz-sim-scene/tests/compound_diff_drive.rs",
-        "crates/gz-sim-scene/tests/compound_joints.rs",
-        "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
-      ],
-      "current_formatter_Rust_paths": [
-        "crates/gz-sim-scene/tests/compound_wheel_diff_drive.rs",
-        "crates/gz-sim-scene/tests/posed_primitive_runtime_spawn.rs"
-      ],
-      "current_formatter_actual": {
-        "sha256": "1ffb0cfdc360f87efd8e5a42716caa640760e75922d6bc994a783ee7d67af960",
-        "bytes": 5518,
-        "mode": 436
-      },
-      "first_normal_observation": {
-        "session": 47694,
-        "launch_tool": "ea3796",
-        "terminal_tool": "3bc814",
-        "status": "retired",
-        "actual_Root_exit_code": 1,
-        "actual_Git_exit_code": 1,
-        "elapsed_seconds": 1607.7634678439936,
-        "headless": {
-          "passed": 1965,
-          "failed": 2,
-          "ignored": 2,
-          "summary_rows": 192
-        },
-        "new_control_actuals": {
-          "source_declared_unique": 17,
-          "passed_in_headless": 15,
-          "failed_in_headless": 2,
-          "renderer": null
-        },
-        "renderer_reached": false,
-        "strict_coverage_reached": false,
-        "qualified_commit": null,
-        "no_capacity_signal_or_finalization_fault": true
-      },
-      "corrective_Source_completions": {
-        "M92": {
-          "sha256": "2a7d26e7ba531c30db24354f5b133a64bb014680d6014027fdfdb7bbbae1792c",
-          "bytes": 4458,
+      "formatter_custody": {
+        "original_seven_file_formatter": {
+          "sha256": "12ccb626920edb1415ec12da3171625a7a9deef8bbe4eacd039a44636afb0cda",
+          "bytes": 7681,
           "mode": 436
         },
-        "M93_original": {
-          "sha256": "63364729966baa501d2f758df90b92551827c170d725481b87e77aca926e706c",
-          "bytes": 3407,
+        "original_formatted_Source_review": {
+          "sha256": "e538a56345116122e94f99300102e9dde7455b5485a056dc2fbec5d5ae136179",
+          "bytes": 14190,
           "mode": 436
         },
-        "M93_named_field_fix": {
-          "sha256": "7d676fae1806d588613f5a304f3b5a1877084c1055c758a3cc6ff2df66123851",
-          "bytes": 1782,
+        "current_two_file_formatter": {
+          "sha256": "1ffb0cfdc360f87efd8e5a42716caa640760e75922d6bc994a783ee7d67af960",
+          "bytes": 5518,
           "mode": 436
         },
-        "final_eight_docs": {
-          "sha256": "66330dd2d23b909e5dd4c4f21543304e06ac86b9867686afde12f301f9cc2127",
-          "bytes": 9466,
+        "unchanged_Rust_paths_reusing_original": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs",
+          "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
+        ],
+        "affected_Rust_paths": [
+          "crates/gz-sim-scene/tests/compound_wheel_diff_drive.rs",
+          "crates/gz-sim-scene/tests/posed_primitive_runtime_spawn.rs"
+        ],
+        "original_paths_preserved": true,
+        "qualification_inherited": false
+      },
+      "inherited_M90_M91_parent_historical_normal_failures": [
+        {
+          "sha256": "f9d43298fbc8b439889221fa1ce84e56b6c2fb39bb717f3073309a9f16b014ce",
+          "bytes": 3836,
+          "mode": 436
+        },
+        {
+          "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+          "bytes": 5223,
           "mode": 436
         }
+      ],
+      "inherited_M90_M91_formatter_custody": {
+        "original_eight_file_formatter": {
+          "sha256": "d52bee60bb033801970d42ce419e9ffe29ddcdbf0730d357d2d32df8cb3b8f9b",
+          "bytes": 8438,
+          "mode": 436
+        },
+        "original_formatted_Source_review": {
+          "sha256": "ab497fbbb4fe0481f339872418f6d707101d0f08eae7a9f6eb53d7f79b1870cf",
+          "bytes": 15924,
+          "mode": 436
+        },
+        "previous_two_file_formatter": {
+          "sha256": "e15f2983e54b26aff3747dacc495fbd3e3d068babae61fd48e4f7e71ec06ca38",
+          "bytes": 5094,
+          "mode": 436
+        },
+        "previous_correction_Source_review": {
+          "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
+          "bytes": 18503,
+          "mode": 436
+        },
+        "current_three_file_formatter": {
+          "sha256": "b6722b2828a8ed038537529a2bfc689db17b6fcb3fa1d0731bf90aa9125befb1",
+          "bytes": 7496,
+          "mode": 436
+        },
+        "unchanged_Rust_paths_reusing_original": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/src/world_edit.rs",
+          "crates/gz-sim-scene/tests/compound_world_edit.rs",
+          "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
+        ],
+        "unchanged_Rust_paths_reusing_previous_correction": [
+          "crates/gz-sim-scene/src/world_spawn.rs"
+        ],
+        "current_changed_Rust_paths": [
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs",
+          "crates/gz-sim-scene/tests/runtime_compound_spawn.rs"
+        ],
+        "original_paths_preserved": true,
+        "qualification_inherited": false
       },
-      "correction_scope": "Two test-only repairs preserve mixed inertia inputs, full density twins, original Cylinder commands and horizons. New strict principal-axis inertia controls and a separate spherical-rim compound steering witness replace invalid physical premises. The pre-execution named-field access fix is closed. No production, solver, gain, tolerance, horizon or declaration change.",
-      "formatter_scope": "One current two-file formatter returned zero after whole code and documentation review. Original seven-file evidence is reused only for five unchanged Rust copies. No synthetic union or qualification transfer. The full normal retry launched separately and its outcome is unknown.",
-      "checks_started": true,
-      "checks_passed": false,
-      "final_Source_tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
-      "preformat_Source_review": {
-        "sha256": "f87b9dbebfca0146c20252d8e74646942d7e18bb18f04d491268ac174741bbff",
-        "bytes": 15498,
-        "mode": 436
-      },
-      "final_Source_review": {
-        "sha256": "beb02dfe66896ea0c6a59346e26ae96c294b0a50c94545ef340b82747b641b7c",
-        "bytes": 16440,
-        "mode": 436
-      },
-      "source_snapshot": {
-        "sha256": "1f8937336b47d02ac17306ea95d3b32544c675dd9b19e073d6bdcec0169cb800",
-        "bytes": 677951,
-        "mode": 436
-      },
-      "normal_launch": {
-        "sha256": "2e241bcd36269366c57fd4050b2687adc3a26cd130159ed09197054d353e2284",
-        "bytes": 1442,
-        "mode": 436
-      },
-      "normal_release": {
-        "sha256": "c296e9f2df9cdca17fbdfb3a42a136a6bae68bb59a2aea189451c2da72a57422",
-        "bytes": 2663,
-        "mode": 436
-      },
-      "normal_runner": {
-        "sha256": "5e30686d2fe50d035101e8c35bbb68f81cccec669ef7d69a2a51b205ef50b34b",
-        "bytes": 47498,
-        "mode": 436
-      },
-      "normal_release_binding": {
-        "sha256": "f635cd64e955c6374b88a3e7e2fed99a05930be445cc9513a8ae7604b1f0d787",
-        "bytes": 7572,
-        "mode": 436
+      "qualification_inherited": false,
+      "scope": "Genuine corrected normal0, independent local DATA0 and exact hosted CI success at cc83; official collection/DATA pending and accepted false. Parent005bf/current2+original7ONLY5 and M90f9/fc5/3+1+4 remain separate. M94/M95 stays unqualified and unaccepted.",
+      "state": "M92_M93_LOCAL_NORMAL_DATA_AND_HOSTED_QUALIFIED_OFFICIAL_PENDING",
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "hosted_qualified": true,
+      "official_DATA_qualified": false,
+      "own_qualification_complete": false,
+      "current_normal_active": false,
+      "active_heavy_job": null,
+      "hosted_watch_session": null,
+      "current_stage": "Corrected normal, independent local DATA and exact hosted CI passed at cc83. Review remains published. Watch12097 retired with actual zero; collection and independent official DATA remain pending. No acceptance or descendant qualification transfers.",
+      "actual_profile_observation": {
+        "headless_passed": 1967,
+        "renderer_passed": 1503,
+        "ignored_each": 2,
+        "Python_tests": 494,
+        "own_controls_headless": 17,
+        "own_controls_renderer": 17,
+        "strict_bases": 13,
+        "Source_files": 1811
       },
       "normal_observation": {
         "session": 5131,
         "launch_tool": "cf33c1",
-        "status": "active",
-        "actual_Root_exit_code": null,
-        "actual_Git_exit_code": null,
-        "qualified_commit": null,
-        "basis": "Genuine sole Root launch receipt; no tracker-author watch or inferred result."
+        "terminal_tool": "a6b122",
+        "status": "retired",
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "qualified_commit": "cc83ca4a62773edb80b05992fa67a03ff1dad134"
+      },
+      "hosted_actual": {
+        "sha256": "fff836d8176886e5eed7eb9ab57e2697e4cd31d8d540c10ec242d0f15444fcd7",
+        "bytes": 1916,
+        "mode": 436
+      },
+      "hosted_metadata": {
+        "run.json": {
+          "sha256": "4b34c9ae5a64b395cfc08704c07283f96c8fc6eacee6492ac0a904f613f5d349",
+          "bytes": 12550,
+          "mode": 436
+        },
+        "jobs.json": {
+          "sha256": "14c9940df346f02dd7ce5dbf8ecbca94ab56765f692d06e0103f04879b7bab55",
+          "bytes": 3410,
+          "mode": 436
+        },
+        "artifacts.json": {
+          "sha256": "c87ec833236483ec4a4a93e0f1917f0ec1c590cce42f68b8bd905e92b8abbe7f",
+          "bytes": 776,
+          "mode": 436
+        }
+      },
+      "hosted_watch_observation": {
+        "session_id": 12097,
+        "launch_tool": "f59b22",
+        "terminal_tool": "abe451",
+        "status": "retired",
+        "actual_exit_code": 0
+      },
+      "hosted_job_artifact_observation": {
+        "job": 136953227554,
+        "successful_steps": 13,
+        "artifact": 14722214270,
+        "artifact_bytes": 182175175,
+        "artifact_digest": "sha256:c85e5c07220305b33c36fe0c9bae9d3766f35ef6cf3364b9b88375e54647a1c3"
+      },
+      "historical_hosted_active_current_fields": {
+        "hosted_run": {
+          "id": 44939453527,
+          "attempt": 1,
+          "head": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+          "status": "in_progress",
+          "outcome": null,
+          "watch_session": 12097,
+          "launch_tool": "f59b22"
+        },
+        "own_hosted_qualified": false,
+        "scope": "Genuine corrected normal0+independent localDATA0 atcc83, reviewpublished/exactCIactive/no hosted or official result. Oldnormalfailure005bf andcurrent2/original7ONLY5 separate fromM90parentf9fc5/3+1+4. NewM94/M95unqualified andunaccepted.",
+        "state": "M92_M93_LOCAL_NORMAL_AND_DATA_QUALIFIED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
+        "hosted_qualified": false,
+        "hosted_watch_session": 12097,
+        "current_stage": "Corrected normal and independent local DATA passed at cc83. Review is published; exact hosted CI44939453527 attempt1 is running under sole Root watch12097. Hosted outcome and official DATA remain unknown. No acceptance or descendant qualification transfers."
       }
     },
     "historical_pre_M92_M93_candidate_current_fields": {
@@ -8774,6 +8778,668 @@
         "max_working_days": 5,
         "integration": "M90/M91 share one bounded candidate. The second normal failed eight headless cases; the frozen Source and both failures remain retained. The complete corrective batch is under parallel Source diagnosis with no new edits or retry release. Parent M88/M89 own qualification remains complete and unaccepted. No result transfers."
       }
+    },
+    "historical_pre_M94_M95_current_fields": {
+      "current_M92_M93_Source": {
+        "state": "M92_M93_CORRECTED_SOURCE_REVIEW_AND_FORMATTER_COMPLETE_FULL_NORMAL_RETRY_ACTIVE_OUTCOME_UNKNOWN",
+        "parent": "e264c6494d69ccacf41e0b21ddf3827d1f12cd40",
+        "parent_tree": "19187aea360c610dc173ea57e2529c163919a79e",
+        "parent_locally_qualified": true,
+        "parent_accepted": false,
+        "accepted": false,
+        "implementation_complete": true,
+        "independent_code_Source_review_complete": true,
+        "final_docs_review_complete": true,
+        "Source_controls": {
+          "Rust_unique": 17,
+          "headless": 17,
+          "renderer": 17,
+          "overlap": 17,
+          "Python": 0
+        },
+        "final_joined_Source_counts": {
+          "files": 1811,
+          "changed_paths": 15,
+          "new_paths": 4,
+          "production_paths": 2,
+          "cumulative_paths_vs_accepted_ancestor": 106
+        },
+        "checks_run": true,
+        "formatter_run": true,
+        "future_final_tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
+        "future_qualified_commit": null,
+        "normal_actual": null,
+        "local_DATA_actual": null,
+        "hosted_actual": null,
+        "official_actual": null,
+        "protected_demo_session": 86363,
+        "stop_or_restart_authorized": false,
+        "source_selection": {
+          "sha256": "28e31238161b7ba4c2afc80694393aa70102a7cd9687ba41d19c11c0b0756b6d",
+          "bytes": 7304,
+          "mode": 436
+        },
+        "source_dispatch": {
+          "sha256": "e7dd7e85db17687039c4fd06704acccfeda9a2926c3ace04330eaadda47fb574",
+          "bytes": 1809,
+          "mode": 436
+        },
+        "author_completions": {
+          "M92": {
+            "sha256": "fca52c21787d5df651b2591b0bef72e47ba31b230a8a26a5f0786319f1f04608",
+            "bytes": 6184,
+            "mode": 436
+          },
+          "M93": {
+            "sha256": "ce84d588c47c9d8c6d5b1f6ce2f92c23417eb339a5c49b0d54e31e1dc376018f",
+            "bytes": 7185,
+            "mode": 436
+          },
+          "retained_dispositions": {
+            "sha256": "2f73664deb11fb2196661946171b0e5e7827f0c6e9c66a9b001212846c8dbf71",
+            "bytes": 3951,
+            "mode": 436
+          }
+        },
+        "Source_integration": {
+          "sha256": "f902b010240e84a3ed6a1f0b4c37fc492f7889fb40cbbaed5bffd30d47cb8741",
+          "bytes": 3493,
+          "mode": 436
+        },
+        "scope": "The first failed normal and its15of17headless-only new passes remain historical. Both test-only corrections, final eight-doc Root and Package reviews and one affected two-file formatter are complete. Root and Server closed postformat and actual final Source joins at tree1dc85433. Sole full normal retry5131 is active with no result, qualified commit or corrected qualification yet. Source17H17R/census1811 are obligations, not passes.",
+        "corrective_code_Source_complete": true,
+        "final_docs_authored_complete": true,
+        "normal_qualified": false,
+        "qualification_inherited": false,
+        "current_normal_active": true,
+        "retry_released": true,
+        "own_historical_normal_failures": [
+          {
+            "sha256": "005bf028f7dc2e954070a0a221085dcdc8d1cb465c47ca82676f1e8cdfb4dd4e",
+            "bytes": 9475,
+            "mode": 436
+          }
+        ],
+        "original_failure": {
+          "sha256": "005bf028f7dc2e954070a0a221085dcdc8d1cb465c47ca82676f1e8cdfb4dd4e",
+          "bytes": 9475,
+          "mode": 436
+        },
+        "original_formatted_Source_review": {
+          "sha256": "e538a56345116122e94f99300102e9dde7455b5485a056dc2fbec5d5ae136179",
+          "bytes": 14190,
+          "mode": 436
+        },
+        "original_formatter_reused": {
+          "sha256": "12ccb626920edb1415ec12da3171625a7a9deef8bbe4eacd039a44636afb0cda",
+          "bytes": 7681,
+          "mode": 436
+        },
+        "original_failed_source_snapshot": {
+          "sha256": "e45e22af812842acc2649ed66254a2fb332d663675fd2f2f88900149a605e95d",
+          "bytes": 675820,
+          "mode": 436
+        },
+        "unchanged_rust_paths_reusing_original": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs",
+          "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
+        ],
+        "current_formatter_Rust_paths": [
+          "crates/gz-sim-scene/tests/compound_wheel_diff_drive.rs",
+          "crates/gz-sim-scene/tests/posed_primitive_runtime_spawn.rs"
+        ],
+        "current_formatter_actual": {
+          "sha256": "1ffb0cfdc360f87efd8e5a42716caa640760e75922d6bc994a783ee7d67af960",
+          "bytes": 5518,
+          "mode": 436
+        },
+        "first_normal_observation": {
+          "session": 47694,
+          "launch_tool": "ea3796",
+          "terminal_tool": "3bc814",
+          "status": "retired",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 1607.7634678439936,
+          "headless": {
+            "passed": 1965,
+            "failed": 2,
+            "ignored": 2,
+            "summary_rows": 192
+          },
+          "new_control_actuals": {
+            "source_declared_unique": 17,
+            "passed_in_headless": 15,
+            "failed_in_headless": 2,
+            "renderer": null
+          },
+          "renderer_reached": false,
+          "strict_coverage_reached": false,
+          "qualified_commit": null,
+          "no_capacity_signal_or_finalization_fault": true
+        },
+        "corrective_Source_completions": {
+          "M92": {
+            "sha256": "2a7d26e7ba531c30db24354f5b133a64bb014680d6014027fdfdb7bbbae1792c",
+            "bytes": 4458,
+            "mode": 436
+          },
+          "M93_original": {
+            "sha256": "63364729966baa501d2f758df90b92551827c170d725481b87e77aca926e706c",
+            "bytes": 3407,
+            "mode": 436
+          },
+          "M93_named_field_fix": {
+            "sha256": "7d676fae1806d588613f5a304f3b5a1877084c1055c758a3cc6ff2df66123851",
+            "bytes": 1782,
+            "mode": 436
+          },
+          "final_eight_docs": {
+            "sha256": "66330dd2d23b909e5dd4c4f21543304e06ac86b9867686afde12f301f9cc2127",
+            "bytes": 9466,
+            "mode": 436
+          }
+        },
+        "correction_scope": "Two test-only repairs preserve mixed inertia inputs, full density twins, original Cylinder commands and horizons. New strict principal-axis inertia controls and a separate spherical-rim compound steering witness replace invalid physical premises. The pre-execution named-field access fix is closed. No production, solver, gain, tolerance, horizon or declaration change.",
+        "formatter_scope": "One current two-file formatter returned zero after whole code and documentation review. Original seven-file evidence is reused only for five unchanged Rust copies. No synthetic union or qualification transfer. The full normal retry launched separately and its outcome is unknown.",
+        "checks_started": true,
+        "checks_passed": false,
+        "final_Source_tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
+        "preformat_Source_review": {
+          "sha256": "f87b9dbebfca0146c20252d8e74646942d7e18bb18f04d491268ac174741bbff",
+          "bytes": 15498,
+          "mode": 436
+        },
+        "final_Source_review": {
+          "sha256": "beb02dfe66896ea0c6a59346e26ae96c294b0a50c94545ef340b82747b641b7c",
+          "bytes": 16440,
+          "mode": 436
+        },
+        "source_snapshot": {
+          "sha256": "1f8937336b47d02ac17306ea95d3b32544c675dd9b19e073d6bdcec0169cb800",
+          "bytes": 677951,
+          "mode": 436
+        },
+        "normal_launch": {
+          "sha256": "2e241bcd36269366c57fd4050b2687adc3a26cd130159ed09197054d353e2284",
+          "bytes": 1442,
+          "mode": 436
+        },
+        "normal_release": {
+          "sha256": "c296e9f2df9cdca17fbdfb3a42a136a6bae68bb59a2aea189451c2da72a57422",
+          "bytes": 2663,
+          "mode": 436
+        },
+        "normal_runner": {
+          "sha256": "5e30686d2fe50d035101e8c35bbb68f81cccec669ef7d69a2a51b205ef50b34b",
+          "bytes": 47498,
+          "mode": 436
+        },
+        "normal_release_binding": {
+          "sha256": "f635cd64e955c6374b88a3e7e2fed99a05930be445cc9513a8ae7604b1f0d787",
+          "bytes": 7572,
+          "mode": 436
+        },
+        "normal_observation": {
+          "session": 5131,
+          "launch_tool": "cf33c1",
+          "status": "active",
+          "actual_Root_exit_code": null,
+          "actual_Git_exit_code": null,
+          "qualified_commit": null,
+          "basis": "Genuine sole Root launch receipt; no tracker-author watch or inferred result."
+        }
+      },
+      "qualification_scope": "M90/M91 own local, hosted and official qualification is complete and unaccepted. M92/M93 reviewed and formatted corrected Source is in its sole full normal retry, with no corrected qualification or qualified commit yet. The original failure and every predecessor/M77 acceptance gate remain.",
+      "note": "M77 numeric proofs and the no-expiry demo are unchanged. M92/M93 test corrections, final reviews and one two-file formatter are complete; the full retry is running with no result. M90/M91 own qualification passed, unaccepted. Accepted 76 phases and 202 slices, catalog 93, Latest M70 original 41-example package."
+    },
+    "current_M92_M93_parent_qualification": {
+      "commit": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+      "tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
+      "parent": "e264c6494d69ccacf41e0b21ddf3827d1f12cd40",
+      "locally_qualified": true,
+      "accepted": false,
+      "normal_actual": {
+        "sha256": "4a1c59a7dd5ed13d701df790126f1a3e77debfbac4e2dff331214ad52d3d6b7e",
+        "bytes": 3883,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "e33975e14b31906d7594b38582d7b407a4b8daa235d637d825c2dbc5a825ef60",
+        "bytes": 3363,
+        "mode": 436
+      },
+      "local_DATA_report": {
+        "sha256": "59113b308506921d70efec60ac9cb22d6375f8d6c4c26cd0c9f0a9b03fcc8234",
+        "bytes": 194140,
+        "mode": 436
+      },
+      "review_publication": {
+        "sha256": "6b16995f4be1a5dc21a2632396e87bcd40df478d9b42911dc3b6d8c808083a26",
+        "bytes": 2203,
+        "mode": 436
+      },
+      "review_ref_published": true,
+      "hosted_run": {
+        "id": 44939453527,
+        "attempt": 1,
+        "head": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+        "status": "completed",
+        "outcome": 0,
+        "watch_session": null,
+        "launch_tool": "f59b22",
+        "conclusion": "success",
+        "terminal_tool": "abe451"
+      },
+      "own_hosted_qualified": true,
+      "official_qualified": false,
+      "own_historical_normal_failures": [
+        {
+          "sha256": "005bf028f7dc2e954070a0a221085dcdc8d1cb465c47ca82676f1e8cdfb4dd4e",
+          "bytes": 9475,
+          "mode": 436
+        }
+      ],
+      "formatter_custody": {
+        "original_seven_file_formatter": {
+          "sha256": "12ccb626920edb1415ec12da3171625a7a9deef8bbe4eacd039a44636afb0cda",
+          "bytes": 7681,
+          "mode": 436
+        },
+        "original_formatted_Source_review": {
+          "sha256": "e538a56345116122e94f99300102e9dde7455b5485a056dc2fbec5d5ae136179",
+          "bytes": 14190,
+          "mode": 436
+        },
+        "current_two_file_formatter": {
+          "sha256": "1ffb0cfdc360f87efd8e5a42716caa640760e75922d6bc994a783ee7d67af960",
+          "bytes": 5518,
+          "mode": 436
+        },
+        "unchanged_Rust_paths_reusing_original": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs",
+          "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
+        ],
+        "affected_Rust_paths": [
+          "crates/gz-sim-scene/tests/compound_wheel_diff_drive.rs",
+          "crates/gz-sim-scene/tests/posed_primitive_runtime_spawn.rs"
+        ],
+        "original_paths_preserved": true,
+        "qualification_inherited": false
+      },
+      "inherited_M90_M91_parent_historical_normal_failures": [
+        {
+          "sha256": "f9d43298fbc8b439889221fa1ce84e56b6c2fb39bb717f3073309a9f16b014ce",
+          "bytes": 3836,
+          "mode": 436
+        },
+        {
+          "sha256": "fc5dce536c293fb04c9c792f7c484897dc76697055fb8dd0d57a01caacab99d7",
+          "bytes": 5223,
+          "mode": 436
+        }
+      ],
+      "inherited_M90_M91_formatter_custody": {
+        "original_eight_file_formatter": {
+          "sha256": "d52bee60bb033801970d42ce419e9ffe29ddcdbf0730d357d2d32df8cb3b8f9b",
+          "bytes": 8438,
+          "mode": 436
+        },
+        "original_formatted_Source_review": {
+          "sha256": "ab497fbbb4fe0481f339872418f6d707101d0f08eae7a9f6eb53d7f79b1870cf",
+          "bytes": 15924,
+          "mode": 436
+        },
+        "previous_two_file_formatter": {
+          "sha256": "e15f2983e54b26aff3747dacc495fbd3e3d068babae61fd48e4f7e71ec06ca38",
+          "bytes": 5094,
+          "mode": 436
+        },
+        "previous_correction_Source_review": {
+          "sha256": "53b83b860e1d45f8764739a9d14e6774b590a9e0e3848486bc7e19b6aeda4e95",
+          "bytes": 18503,
+          "mode": 436
+        },
+        "current_three_file_formatter": {
+          "sha256": "b6722b2828a8ed038537529a2bfc689db17b6fcb3fa1d0731bf90aa9125befb1",
+          "bytes": 7496,
+          "mode": 436
+        },
+        "unchanged_Rust_paths_reusing_original": [
+          "crates/gz-sim-scene/src/lib.rs",
+          "crates/gz-sim-scene/src/world_edit.rs",
+          "crates/gz-sim-scene/tests/compound_world_edit.rs",
+          "crates/gz-sim-scene/tests/primitive_runtime_spawn.rs"
+        ],
+        "unchanged_Rust_paths_reusing_previous_correction": [
+          "crates/gz-sim-scene/src/world_spawn.rs"
+        ],
+        "current_changed_Rust_paths": [
+          "crates/gz-sim-scene/tests/compound_diff_drive.rs",
+          "crates/gz-sim-scene/tests/compound_joints.rs",
+          "crates/gz-sim-scene/tests/runtime_compound_spawn.rs"
+        ],
+        "original_paths_preserved": true,
+        "qualification_inherited": false
+      },
+      "qualification_inherited": false,
+      "scope": "Genuine corrected normal0, independent local DATA0 and exact hosted CI success at cc83; official collection/DATA pending and accepted false. Parent005bf/current2+original7ONLY5 and M90f9/fc5/3+1+4 remain separate. M94/M95 stays unqualified and unaccepted.",
+      "state": "M92_M93_LOCAL_NORMAL_DATA_AND_HOSTED_QUALIFIED_OFFICIAL_PENDING",
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "hosted_qualified": true,
+      "official_DATA_qualified": false,
+      "own_qualification_complete": false,
+      "current_normal_active": false,
+      "active_heavy_job": null,
+      "hosted_watch_session": null,
+      "current_stage": "Corrected normal, independent local DATA and exact hosted CI passed at cc83. Review remains published. Watch12097 retired with actual zero; collection and independent official DATA remain pending. No acceptance or descendant qualification transfers.",
+      "actual_profile_observation": {
+        "headless_passed": 1967,
+        "renderer_passed": 1503,
+        "ignored_each": 2,
+        "Python_tests": 494,
+        "own_controls_headless": 17,
+        "own_controls_renderer": 17,
+        "strict_bases": 13,
+        "Source_files": 1811
+      },
+      "normal_observation": {
+        "session": 5131,
+        "launch_tool": "cf33c1",
+        "terminal_tool": "a6b122",
+        "status": "retired",
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "qualified_commit": "cc83ca4a62773edb80b05992fa67a03ff1dad134"
+      },
+      "hosted_actual": {
+        "sha256": "fff836d8176886e5eed7eb9ab57e2697e4cd31d8d540c10ec242d0f15444fcd7",
+        "bytes": 1916,
+        "mode": 436
+      },
+      "hosted_metadata": {
+        "run.json": {
+          "sha256": "4b34c9ae5a64b395cfc08704c07283f96c8fc6eacee6492ac0a904f613f5d349",
+          "bytes": 12550,
+          "mode": 436
+        },
+        "jobs.json": {
+          "sha256": "14c9940df346f02dd7ce5dbf8ecbca94ab56765f692d06e0103f04879b7bab55",
+          "bytes": 3410,
+          "mode": 436
+        },
+        "artifacts.json": {
+          "sha256": "c87ec833236483ec4a4a93e0f1917f0ec1c590cce42f68b8bd905e92b8abbe7f",
+          "bytes": 776,
+          "mode": 436
+        }
+      },
+      "hosted_watch_observation": {
+        "session_id": 12097,
+        "launch_tool": "f59b22",
+        "terminal_tool": "abe451",
+        "status": "retired",
+        "actual_exit_code": 0
+      },
+      "hosted_job_artifact_observation": {
+        "job": 136953227554,
+        "successful_steps": 13,
+        "artifact": 14722214270,
+        "artifact_bytes": 182175175,
+        "artifact_digest": "sha256:c85e5c07220305b33c36fe0c9bae9d3766f35ef6cf3364b9b88375e54647a1c3"
+      },
+      "historical_hosted_active_current_fields": {
+        "hosted_run": {
+          "id": 44939453527,
+          "attempt": 1,
+          "head": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+          "status": "in_progress",
+          "outcome": null,
+          "watch_session": 12097,
+          "launch_tool": "f59b22"
+        },
+        "own_hosted_qualified": false,
+        "scope": "Genuine corrected normal0+independent localDATA0 atcc83, reviewpublished/exactCIactive/no hosted or official result. Oldnormalfailure005bf andcurrent2/original7ONLY5 separate fromM90parentf9fc5/3+1+4. NewM94/M95unqualified andunaccepted.",
+        "state": "M92_M93_LOCAL_NORMAL_AND_DATA_QUALIFIED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
+        "hosted_qualified": false,
+        "hosted_watch_session": 12097,
+        "current_stage": "Corrected normal and independent local DATA passed at cc83. Review is published; exact hosted CI44939453527 attempt1 is running under sole Root watch12097. Hosted outcome and official DATA remain unknown. No acceptance or descendant qualification transfers."
+      }
+    },
+    "current_M94_M95_Source": {
+      "state": "M94_M95_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+      "parent": "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+      "parent_tree": "1dc854336947b3cdd136fa9094dff9e11b9b3c01",
+      "parent_locally_qualified": true,
+      "parent_accepted": false,
+      "accepted": false,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_code_Source_review_complete": true,
+      "final_docs_authored_complete": true,
+      "final_docs_review_complete": true,
+      "final_docs_review_scope": "Root whole final prose/planning review and Package independent whole final-eight-doc Source review are complete CLEAR, recorded by actual88387dc6 preformat review. Original88fa pending-at-author-time observation remains preserved. At that preformat review checkpoint formatting and checks were unrun; current formatter zero and the active full normal are recorded separately.",
+      "Source_controls": {
+        "Rust_unique": 17,
+        "headless": 17,
+        "renderer": 17,
+        "overlap": 17,
+        "Python": 0,
+        "public_Rust": 16,
+        "private_Rust": 1
+      },
+      "private_harness_identity": "world_spawn::runtime_compound_tests::runtime_compound_retemplate_requires_both_original_stamps_and_keeps_pending_input",
+      "final_joined_Source_counts": {
+        "files": 1815,
+        "changed_paths": 13,
+        "new_paths": 4,
+        "production_paths": 2,
+        "cumulative_paths_vs_accepted_ancestor": 111
+      },
+      "production_paths": [
+        "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "crates/gz-sim-scene/src/world_spawn.rs"
+      ],
+      "Source_finite_runs": 47,
+      "Source_CLI_cases": 21,
+      "new_finite_examples": 0,
+      "new_CLI_cases": 0,
+      "Source_selection": {
+        "sha256": "9e68c1b5400cb90ffb36f1e6ea641626b750a598c99cd5a142afe7ccc4fcb462",
+        "bytes": 11901,
+        "mode": 436
+      },
+      "Source_dispatch": {
+        "sha256": "d966ec7c1aead68d91c5754b10a6da3c60d24bd228bb727682f42a1c1d38e1bd",
+        "bytes": 2344,
+        "mode": 436
+      },
+      "author_completions": [
+        {
+          "sha256": "aee62973c97e14269560d422e757e4c8b267cda4692a2a2d6b9b7a4dad611435",
+          "bytes": 6196,
+          "mode": 436
+        },
+        {
+          "sha256": "0a6505b79ccc89ce971a4873023d03eb42cb8759fad3a9b800568a2ce1e9b1b3",
+          "bytes": 6107,
+          "mode": 436
+        }
+      ],
+      "Root_retained_disposition": {
+        "sha256": "63d7f82d936fe4b2e8c2f00f1378839f569409d4be251ad1e3fa3b5a1cac60cd",
+        "bytes": 5858,
+        "mode": 436
+      },
+      "Source_integration": {
+        "sha256": "7dc0387b6cd67ee18f96de9bd1fad71f7dd6572edbf0c4bc3c11bf63343704d6",
+        "bytes": 6381,
+        "mode": 436
+      },
+      "final_eight_docs": {
+        "sha256": "88fa941ed8d29e9d195d397e5c2ec484ba07263a2d5c98020e1ea757a3cdc782",
+        "bytes": 10832,
+        "mode": 436
+      },
+      "resource_proposal": {
+        "proposal": {
+          "sha256": "cd0787da65654a5796a48ea3626700d5fc6ed41f320f3208b473ae504299c256",
+          "bytes": 6606,
+          "mode": 436
+        },
+        "independent_Source_review_complete": true,
+        "conditional": true,
+        "execution_released": true,
+        "new_target_created": null,
+        "selected_initial_SSD_bytes": 33285996544,
+        "mandatory_initial_SSD_bytes": 15032385536,
+        "early_stop_SSD_bytes": 8589934592,
+        "initial_SHM_bytes": 23622320128,
+        "early_stop_SHM_bytes": 4294967296,
+        "mandatory_SHM_bytes": 1073741824,
+        "MemAvailable_bytes": 8589934592,
+        "ordinary_only_fresh_RAM_target": true,
+        "profile_runtime_RGB_TMPDIR_packets_remain_SSD": true,
+        "old_targets_evidence_unchanged": true,
+        "eviction_authorized": false,
+        "scope": "Reviewed31GiB SSD/22GiB initial SHM/4GiB early SHM ordinary-RAM placement contract is selected in the genuinely released full-normal runner. Mandatory14GiB/8GiBSSD and all other floors remain. Target creation/identity and capacity outcomes are not observed by the tracker author; no allocation, fit, peak-attribution or eviction claim."
+      },
+      "scope": "M94 admits a valid passive owned runtime compound only as a requested2..16 compound template source, preserving complete model_state/stamp validation, actual controller veto and runtime-to-singleton/Mesh refusal. M95 admits exactly normalized parsed-DOM positive X/Y/Z directions in the existing JointController chain; lexical scaled positive directions remain equivalent. No runtime/API/Physics/Server/solver or other closed-domain expansion. All code and retained +X row whole reviews are CLEAR. Source counts are authored obligations, not passes.",
+      "checks_run": true,
+      "checks_started": true,
+      "checks_passed": false,
+      "formatter_run": true,
+      "normal_qualified": false,
+      "local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "qualification_inherited": false,
+      "current_normal_active": true,
+      "retry_released": false,
+      "own_historical_normal_failures": [],
+      "future_final_tree": "7d050c307e07062487ef11a99c115e695cc26e05",
+      "future_qualified_commit": null,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "protected_demo_session": 86363,
+      "stop_or_restart_authorized": false,
+      "preformat_Source_review": {
+        "sha256": "88387dc694012113d0641e080de725bfe63a6a56daa99024acde8ba7276f12ca",
+        "bytes": 11778,
+        "mode": 436
+      },
+      "historical_final_doc_authoring_checkpoint": {
+        "final_docs_review_complete": false,
+        "final_docs_review_scope": "Final completed eight-doc batch88fa is frozen for independent external peer review; this checkpoint does not infer later review or verification."
+      },
+      "formatter_scope": "One current five-file formatter actually passed; all1815 numeric modes,1810 Source files outside the five affected Rust paths and index remained unchanged. Parent formatter records remain separate; no parent qualification is reused.",
+      "normal_execution_released": true,
+      "final_Source_tree": "7d050c307e07062487ef11a99c115e695cc26e05",
+      "normal_observation": {
+        "session": 66817,
+        "launch_tool": "819f8c",
+        "status": "active",
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "qualified_commit": null,
+        "basis": "One genuine Root launch receipt; no outcome or target-creation inference."
+      },
+      "normal_launch": {
+        "sha256": "7a76443e50c21b190810690d404446e5f47393ff2030e775ecb7dc6d885c7c84",
+        "bytes": 1287,
+        "mode": 436
+      },
+      "normal_runner": {
+        "sha256": "d7a376d79d8ed5ebf4b080641661ffb6e7062082adc05923bd781ceef71e0ac4",
+        "bytes": 75534,
+        "mode": 436
+      },
+      "normal_release_binding": {
+        "sha256": "0e48585cc6dc447b57eb39bd418f716f862ed54340db8736cb1281705c45573d",
+        "bytes": 8269,
+        "mode": 436
+      },
+      "normal_release": {
+        "sha256": "01d457b314ca549545ad00e1661ff11b209a18f42a7b467beb2d164c91c9b083",
+        "bytes": 2136,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "8977c85937f9d57835eeb6f634418bddbab44204a85f665ba452c5553bf6ef4e",
+        "bytes": 12768,
+        "mode": 436
+      },
+      "source_snapshot": {
+        "sha256": "11aa8e1beb979e5e556273037a8220a76f14f052b54a759b59fb5c7c661b789d",
+        "bytes": 676264,
+        "mode": 436
+      },
+      "current_formatter_actual": {
+        "sha256": "0bb59146596a2bd9f2307a59b12914d593af96a2df630a0dd7f7e9114ccb3c65",
+        "bytes": 6324,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "sha256": "c18a64213a8aa9c69aee493a43f709b41645093b612f0c9ad2e00bf69fba17f1",
+        "bytes": 1549,
+        "mode": 436
+      },
+      "normal_concrete_command": {
+        "sha256": "ae1224dabd098b3b7aacf3b13990e9a5c0b605240da5c7cb1ced9c09b377b882",
+        "bytes": 1622,
+        "mode": 436
+      },
+      "historical_pre_normal_current_fields": {
+        "state": "M94_M95_IMPLEMENTATION_AND_WHOLE_CODE_SOURCE_REVIEW_COMPLETE_UNVERIFIED",
+        "resource_proposal": {
+          "proposal": {
+            "sha256": "cd0787da65654a5796a48ea3626700d5fc6ed41f320f3208b473ae504299c256",
+            "bytes": 6606,
+            "mode": 436
+          },
+          "independent_Source_review_complete": true,
+          "conditional": true,
+          "execution_released": false,
+          "new_target_created": false,
+          "selected_initial_SSD_bytes": 33285996544,
+          "mandatory_initial_SSD_bytes": 15032385536,
+          "early_stop_SSD_bytes": 8589934592,
+          "initial_SHM_bytes": 23622320128,
+          "early_stop_SHM_bytes": 4294967296,
+          "mandatory_SHM_bytes": 1073741824,
+          "MemAvailable_bytes": 8589934592,
+          "ordinary_only_fresh_RAM_target": true,
+          "profile_runtime_RGB_TMPDIR_packets_remain_SSD": true,
+          "old_targets_evidence_unchanged": true,
+          "eviction_authorized": false,
+          "scope": "Source proposal only; mount/floors/fresh0700 ownership identity and retained local/hosted resource admissions must be reviewed and resampled before one run. No peak attribution, allocation cap or fit guarantee."
+        },
+        "checks_run": false,
+        "checks_started": false,
+        "formatter_run": false,
+        "current_normal_active": false,
+        "future_final_tree": null
+      }
+    },
+    "historical_M92_M93_hosted_active_M94_M95_Source_checkpoint": {
+      "qualification_scope": "M94/M95 implementation and whole-code Source review are complete; final documentation peer review, formatter and all new checks remain pending with null tree, commit and results. M92/M93 local qualification passed and its published review is running hosted CI; no hosted or official outcome is inferred. M90/M91 own qualification is complete and unaccepted. All predecessor and M77 browser/shutdown gates remain.",
+      "note": "M94/M95 has seventeen declared Rust controls, not passes; formatting and verification are next. M92/M93 passed local qualification and is running hosted CI. M90/M91 own qualification is complete and unaccepted. M77 proofs and the no-expiry demo are unchanged. Accepted 76 phases and 202 slices, catalog 95, Latest M70 original 41-example package."
+    },
+    "historical_M94_M95_pre_final_doc_review_current_fields": {
+      "qualification_scope": "M94/M95 implementation and whole-code Source review are complete; final documentation peer review, formatter and all new checks remain pending with null tree, commit and results. M92/M93 local and exact hosted qualification passed on its published review; collection and independent official DATA remain pending. M90/M91 own qualification is complete and unaccepted. All predecessor and M77 browser/shutdown gates remain."
+    },
+    "historical_M94_M95_pre_normal_current_fields": {
+      "qualification_scope": "M94/M95 implementation and whole-code Source review are complete; final documentation Source reviews are complete, while formatter and all new checks remain pending with null tree, commit and results. M92/M93 local and exact hosted qualification passed on its published review; collection and independent official DATA remain pending. M90/M91 own qualification is complete and unaccepted. All predecessor and M77 browser/shutdown gates remain.",
+      "note": "M94/M95 has seventeen declared Rust controls, not passes; formatting and verification are next. M92/M93 passed local and hosted qualification; official DATA remains pending. M90/M91 own qualification is complete and unaccepted. M77 proofs and the no-expiry demo are unchanged. Accepted 76 phases and 202 slices, catalog 95, Latest M70 original 41-example package."
     }
   },
   "phase_status": {
@@ -9822,5 +10488,108 @@
       }
     },
     "active_owned_job_scope": "Protected no-expiry demo86363 stays live. No M92/M93 normal retry is active or released. Its first normal47694 retired1; two test-only corrections are Source-reviewed. M90/M91 own qualification is complete and unaccepted."
+  },
+  "historical_pre_M94_M95_current_fields": {
+    "state": "active",
+    "summary": "M92/M93 corrections, review and formatting are complete; the full retry is running with no result yet. M90/M91 own qualification is complete and unaccepted. Releases remain held by M77.",
+    "active": [
+      {
+        "id": "M92-M93-physical-controls-full-normal-active",
+        "title": "Corrected physical controls in full verification",
+        "detail": "Both test-only repairs and final documentation reviews are complete. One affected formatter returned zero. The sole full normal retry is running; its outcome and qualified commit remain unknown. The first failed run is preserved."
+      },
+      {
+        "id": "M90-M91-own-qualified-unaccepted",
+        "title": "M90/M91 qualification complete; acceptance pending",
+        "detail": "Local tests, independent retained audit, exact hosted CI and independent official DATA passed. The first audit method failed before RAW and is preserved. No descendant result or release acceptance transfers."
+      },
+      {
+        "id": "M77-manual-demo",
+        "title": "Persistent manual demo; formal browser proof pending",
+        "detail": "The owner reported Play running; forward and turn helpers completed with actual exit zero. The persistent manual demo remains running without session expiry until owner confirms stop. No independent GUI-motion observation, formal browser DATA or shutdown proof is inferred. M77 non-browser qualification stays complete; downstream acceptance remains pending."
+      }
+    ],
+    "remaining": [
+      "Complete the active M92/M93 full retry, then independent retained audit, exact hosted CI and official DATA if each prerequisite passes.",
+      "M90/M91 own qualification is complete and unaccepted. Preserve all predecessor acceptance gates and the live demo.",
+      "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
+    ],
+    "updated_at": "2026-11-21T18:23:45.713943+00:00"
+  },
+  "historical_M92_M93_hosted_active_M94_M95_Source_checkpoint": {
+    "summary": "M94/M95 code, regressions and whole code reviews are complete; final documentation review and verification are next. M92/M93 passed local qualification and is running hosted CI. M77 still holds release acceptance.",
+    "active": [
+      {
+        "id": "M94-M95-source-complete-verification-pending",
+        "title": "Runtime retemplating and principal-axis code complete",
+        "detail": "Seventeen Rust controls and all whole-code reviews are complete. Final documentation peer review is pending at this checkpoint. Formatting and full verification have not run; the new tree, qualified commit and results remain unknown."
+      },
+      {
+        "id": "M92-M93-hosted-verification-running",
+        "title": "M92/M93 local qualification passed; hosted CI running",
+        "detail": "Corrected local verification and independent audit passed, and the review branch is published. Exact hosted CI is running under the sole Root watcher; its outcome and official DATA are unknown. Acceptance remains pending."
+      },
+      {
+        "id": "M77-manual-demo",
+        "title": "Persistent manual demo; formal browser proof pending",
+        "detail": "The owner reported Play running; forward and turn helpers completed with actual exit zero. The persistent manual demo remains running without session expiry until owner confirms stop. No independent GUI-motion observation, formal browser DATA or shutdown proof is inferred. M77 non-browser qualification stays complete; downstream acceptance remains pending."
+      }
+    ],
+    "remaining": [
+      "Complete M94/M95 final documentation review, formatting and mandatory local, hosted and official qualification; no new execution result is claimed.",
+      "Complete M92/M93 hosted and official evidence. Its local qualification passed; M90/M91 own qualification is complete and unaccepted.",
+      "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
+    ]
+  },
+  "historical_M94_M95_pre_final_doc_review_current_fields": {
+    "summary": "M94/M95 code, regressions and whole code reviews are complete; final documentation review and verification are next. M92/M93 passed local and hosted qualification; official DATA is pending. M77 still holds release acceptance.",
+    "active": [
+      {
+        "id": "M94-M95-source-complete-verification-pending",
+        "title": "Runtime retemplating and principal-axis code complete",
+        "detail": "Seventeen Rust controls and all whole-code reviews are complete. Final documentation peer review is pending at this checkpoint. Formatting and full verification have not run; the new tree, qualified commit and results remain unknown."
+      },
+      {
+        "id": "M92-M93-hosted-passed-official-pending",
+        "title": "M92/M93 hosted CI passed; official evidence pending",
+        "detail": "Corrected local verification, independent audit and exact hosted CI passed on the published review branch. The sole watcher retired with actual zero. Artifact collection and independent official DATA remain pending; acceptance is unchanged."
+      },
+      {
+        "id": "M77-manual-demo",
+        "title": "Persistent manual demo; formal browser proof pending",
+        "detail": "The owner reported Play running; forward and turn helpers completed with actual exit zero. The persistent manual demo remains running without session expiry until owner confirms stop. No independent GUI-motion observation, formal browser DATA or shutdown proof is inferred. M77 non-browser qualification stays complete; downstream acceptance remains pending."
+      }
+    ],
+    "remaining": [
+      "Complete M94/M95 final documentation review, formatting and mandatory local, hosted and official qualification; no new execution result is claimed.",
+      "Complete M92/M93 independent official evidence after hosted success. M90/M91 own qualification is complete and unaccepted.",
+      "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
+    ]
+  },
+  "historical_M94_M95_pre_normal_current_fields": {
+    "updated_at": "2026-11-21T19:56:28.145753+00:00",
+    "summary": "M94/M95 code, regressions and all Source reviews are complete; formatting and full verification are next. M92/M93 passed local and hosted qualification; official DATA is pending. M77 still holds release acceptance.",
+    "active": [
+      {
+        "id": "M94-M95-source-complete-verification-pending",
+        "title": "Runtime retemplating and principal-axis code complete",
+        "detail": "Seventeen Rust controls and all code/documentation Source reviews are complete. Formatting and full verification have not run; the new tree, qualified commit and results remain unknown."
+      },
+      {
+        "id": "M92-M93-hosted-passed-official-pending",
+        "title": "M92/M93 hosted CI passed; official evidence pending",
+        "detail": "Corrected local verification, independent audit and exact hosted CI passed on the published review branch. The sole watcher retired with actual zero. Artifact collection and independent official DATA remain pending; acceptance is unchanged."
+      },
+      {
+        "id": "M77-manual-demo",
+        "title": "Persistent manual demo; formal browser proof pending",
+        "detail": "The owner reported Play running; forward and turn helpers completed with actual exit zero. The persistent manual demo remains running without session expiry until owner confirms stop. No independent GUI-motion observation, formal browser DATA or shutdown proof is inferred. M77 non-browser qualification stays complete; downstream acceptance remains pending."
+      }
+    ],
+    "remaining": [
+      "Complete M94/M95 formatting and mandatory local, hosted and official qualification; no new execution result is claimed.",
+      "Complete M92/M93 independent official evidence after hosted success. M90/M91 own qualification is complete and unaccepted.",
+      "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
+    ]
   }
 }
