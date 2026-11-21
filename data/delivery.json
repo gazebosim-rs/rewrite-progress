@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-21T06:46:07.329184+00:00",
+  "as_of": "2026-11-21T07:37:14.007341+00:00",
   "execution_state": "active",
   "current_phase": "M85",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -11813,7 +11813,7 @@
       "new_Rust_Source_controls": 7,
       "new_Python_Source_controls": 0,
       "final_Source_count": 1795,
-      "changed_paths_vs_basis": 11,
+      "changed_paths_vs_basis": 12,
       "new_paths": 2,
       "changed_production_paths_vs_basis": 1,
       "changed_production_paths": [
@@ -11823,7 +11823,8 @@
         "tracker_acceptance_closeout": [
           "crates/gz-sim-scene/src/velocity_control/config.rs",
           "crates/gz-sim-scene/tests/velocity_control_posed.rs",
-          "crates/gz-sim-scene/tests/compound_primitives.rs"
+          "crates/gz-sim-scene/tests/compound_primitives.rs",
+          "crates/gz-sim-scene/tests/private/velocity_control.rs"
         ],
         "package_collector": [
           "crates/gz-sim-scene/tests/velocity_control_compounds.rs"
@@ -11842,8 +11843,8 @@
       "frame_contract": "Identity local LINK and centered resolved COM remain mandatory for the controller, despite wider passive M84 link-pose support. Child geometry never changes link-origin model-frame velocity semantics.",
       "reset_contract": "Ordinary Simulation reset and loaded-world reconstruction restore configured initials and clear pending. Bare backend prepared reset covers geometry/IDs only; no new controller or native manager reset-mode claim.",
       "reference_scope": "Unchanged original M79 CPU component reference retains its limitations; no fresh native campaign or native compound-controller parity claim.",
-      "qualification_state": "reviewed_formatted_full_normal_running_outcome_unknown",
-      "current_stage": "M85 implementation, seven regression declarations, independent whole Source review and one formatter are complete. Root launched one full normal on the reviewed staged tree; it is running with no outcome or qualified commit.",
+      "qualification_state": "private_child_pose_correction_full_normal_running_outcome_unknown",
+      "current_stage": "The first normal passed all headless cases but failed strict changed-line coverage14/15. The additive private pose-error/atomicity control and docs are independently reviewed and formatted. One full mandatory retry is active; its outcome and qualified commit remain unknown.",
       "Source_profile_declarations": {
         "Rust_unique": 7,
         "headless": 7,
@@ -11853,17 +11854,17 @@
         "counts_are_Source_obligations_not_executed_results": true
       },
       "formatter_actual": {
-        "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
-        "bytes": 4547,
+        "sha256": "b2e794a1d7ed7b1d7720fa496d56b93a188de9c354aa037e550bbbe08f8fd2f0",
+        "bytes": 2731,
         "mode": 436
       },
       "preformat_whole_review": {
-        "sha256": "0e32a51da7c2973dfbb6f4eccc6721c885269cbfa27fe5236c2cebe5b465ba11",
-        "bytes": 6015,
+        "sha256": "a9d1e3a1e35634c1ed1841072af8852c5eee6d5db836e27a4f2bc437d107bcc3",
+        "bytes": 7838,
         "mode": 436
       },
-      "formatted_staged_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
-      "final_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+      "formatted_staged_tree": "bf83012768dde6feb1af7e402853d3dd841e3d50",
+      "final_tree": "bf83012768dde6feb1af7e402853d3dd841e3d50",
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -11874,29 +11875,29 @@
         "checks_run": false,
         "final_tree": null
       },
-      "checks_run_scope": "The full normal actually started; it has not passed. Product/profile results, Root/Git terminal exits and qualified commit remain unknown. Source census and prior formatter0 are not executed test passes.",
+      "checks_run_scope": "The current full retry actually started, not passed. First normal partial headless results remain failed evidence; current Root/Git exits, renderer/strict results and qualified commit remain unknown.",
       "current_normal": {
-        "state": "actual_full_normal_running_outcome_unknown",
+        "state": "actual_child_pose_error_correction_full_normal_running_outcome_unknown",
         "actual_launch": {
-          "sha256": "dc70a536957d908f122616e5a74ca76782cffc118b8d013a5d016829d80264e9",
-          "bytes": 1740,
+          "sha256": "0cd70d85798207cf361723151e503d2e1c84b1b9f696c623a2542716d1b996a5",
+          "bytes": 1915,
           "mode": 436
         },
-        "session_id": 22476,
-        "launch_tool": "a4f441",
+        "session_id": 37778,
+        "launch_tool": "34bf91",
         "command": {
-          "sha256": "b05944c4eece5aed31d6970d4ca41d24abdd719b753d560f7c2e06a08651e0cc",
-          "bytes": 1754,
+          "sha256": "c343060a57b3ac1761d9ffc0d338b58c13bf990088fca25ee3c6a8c094458903",
+          "bytes": 1854,
           "mode": 436
         },
         "runner": {
-          "sha256": "95b1fb1b16be56968428bf243f9c30cb895a503bb5735576405220384a9e809e",
-          "bytes": 30958,
+          "sha256": "6f7042e6c10191ea6493ffed1bdce5d942771e0510c1b2f8c18ba64d59ef6d85",
+          "bytes": 30938,
           "mode": 436
         },
         "binding": {
-          "sha256": "3002e304f99eefb9d002e644cf5db1a6485c9b6bd642499d8af12ea70262f55d",
-          "bytes": 5182,
+          "sha256": "04d9623e4405bdf12067190989f4c5052aedf1362be474f2e96c07194e7b5572",
+          "bytes": 6034,
           "mode": 436
         },
         "actual_Root_exit_code": null,
@@ -11905,13 +11906,110 @@
         "qualified_commit": null
       },
       "final_Source_review": {
-        "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
-        "bytes": 6835,
+        "sha256": "30d5c2ec446fda4f8e36402635a5f5b05c1c796ec8e3c300e99ff3f87893641f",
+        "bytes": 9100,
         "mode": 436
       },
       "final_Source_snapshot": {
-        "sha256": "09923addfaded490d8149233a40cdabc7ba24a7cda0b73f2f4e0c206ba54f163",
-        "bytes": 665305,
+        "sha256": "9da73ea695f89eb33d1b0d1d8e9b930614a98c29016ef5a3eafdb7e5f147698b",
+        "bytes": 666193,
+        "mode": 436
+      },
+      "historical_first_candidate_Source_checkpoint": {
+        "qualification_state": "reviewed_formatted_full_normal_running_outcome_unknown",
+        "current_stage": "M85 implementation, seven regression declarations, independent whole Source review and one formatter are complete. Root launched one full normal on the reviewed staged tree; it is running with no outcome or qualified commit.",
+        "checks_run": true,
+        "changed_paths_vs_basis": 11,
+        "final_Source_review": {
+          "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
+          "bytes": 6835,
+          "mode": 436
+        },
+        "final_Source_snapshot": {
+          "sha256": "09923addfaded490d8149233a40cdabc7ba24a7cda0b73f2f4e0c206ba54f163",
+          "bytes": 665305,
+          "mode": 436
+        },
+        "formatter_actual": {
+          "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
+          "bytes": 4547,
+          "mode": 436
+        },
+        "final_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+        "current_normal": {
+          "state": "actual_full_normal_running_outcome_unknown",
+          "actual_launch": {
+            "sha256": "dc70a536957d908f122616e5a74ca76782cffc118b8d013a5d016829d80264e9",
+            "bytes": 1740,
+            "mode": 436
+          },
+          "session_id": 22476,
+          "launch_tool": "a4f441",
+          "command": {
+            "sha256": "b05944c4eece5aed31d6970d4ca41d24abdd719b753d560f7c2e06a08651e0cc",
+            "bytes": 1754,
+            "mode": 436
+          },
+          "runner": {
+            "sha256": "95b1fb1b16be56968428bf243f9c30cb895a503bb5735576405220384a9e809e",
+            "bytes": 30958,
+            "mode": 436
+          },
+          "binding": {
+            "sha256": "3002e304f99eefb9d002e644cf5db1a6485c9b6bd642499d8af12ea70262f55d",
+            "bytes": 5182,
+            "mode": 436
+          },
+          "actual_Root_exit_code": null,
+          "actual_Git_exit_code": null,
+          "result": null,
+          "qualified_commit": null
+        }
+      },
+      "cumulative_changed_paths_vs_accepted_ancestor": 89,
+      "historical_first_normal_failure": {
+        "state": "historical_first_normal_failed_strict_changed_line_coverage",
+        "actual": {
+          "sha256": "4aa09613d9d4fea5223dff1f83620273d30605a9b8e90a1ecc4b20725cec606e",
+          "bytes": 3483,
+          "mode": 436
+        },
+        "tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+        "parent": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+        "session_id": 22476,
+        "launch_tool": "a4f441",
+        "terminal_tool": "f40f79",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "elapsed_seconds": 1394.356940572994,
+        "headless": {
+          "passed": 1904,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 184
+        },
+        "new_controls_passed": 7,
+        "strict_changed_lines": {
+          "covered": 14,
+          "total": 15,
+          "required": "strictly greater than95%",
+          "missing_Source_line": "crates/gz-sim-scene/src/velocity_control/config.rs:181"
+        },
+        "renderer_reached": false,
+        "strict_qualification": false,
+        "qualified_commit": null,
+        "scope": "All headless tests and seven new cases passed, but the full candidate failed the mandatory strict coverage gate. No production defect or successful correction is inferred."
+      },
+      "correction_scope": "Only an additive control inside the existing private configuration case: valid two-child parsed DOM, then last relative_to UnknownReference plus no native/controller/pending/ID mutation. Public XML is prevalidated earlier. No production, old assertion, seven integration-body, numerical or strict greater-than95% gate change.",
+      "retained_original_formatter": {
+        "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
+        "bytes": 4547,
+        "mode": 436
+      },
+      "retained_original_formatter_scope": "Original four-file actual0 only for its four byte/mode-identical feature Rust copies; current private-file formatter is a separate one-path actual0. No combined five-file formatter pass is claimed.",
+      "original_formatted_Source_review": {
+        "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
+        "bytes": 6835,
         "mode": 436
       }
     }
@@ -12461,28 +12559,28 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M85 implementation, regression Source, independent review and formatter are complete; one full normal is genuinely active with no outcome. Actual locally qualified M84 parentba2 is reconciled; its own review branch is published and hosted attempt1 remains active. Source counts are obligations, not passes. Every own/predecessor/M77 browser+owner-confirmed shutdown gate remains required; accepted76/catalog85/slices202/Latest M70 original41 unchanged.",
+  "acceptance_boundary": "M85 first normal failed strict changed-line coverage14/15 after1904headless passes/0failures/2ignored andall7newcasesok. Reviewed private DOM-error correction and one-file formatting are complete; actual full retry37778 is active with no result. M84 completed its own local/hosted/official qualification but remains unaccepted. All original own/predecessor/M77 browser and owner-confirmed shutdown gates remain mandatory; accepted76/catalog85/slices202/Latest M70 original41 unchanged.",
   "current_delivery_group": [
     "M85"
   ],
   "current_development_phase": "M85",
   "board": {
-    "updated_at": "2026-11-21T06:46:07.329184+00:00",
+    "updated_at": "2026-11-21T07:37:14.007341+00:00",
     "current": {
-      "title": "M85 full verification running; M84 hosted CI active",
+      "title": "M85 reviewed coverage correction under full retry",
       "items": [
-        "M85 compound-controller implementation, seven new regressions, independent review and formatting are complete. One full verification run is active on the reviewed Source; its outcome and qualified commit are unknown.",
-        "M84 passed corrected local tests and independent audit. Its review branch is published and hosted CI is running; the first failed run remains preserved and no qualification transfers to M85.",
+        "M85\u2019s first full gate failed changed-line coverage after all headless tests passed. The reviewed private pose-error control and formatting are complete; a full retry is running with no outcome.",
+        "M84 completed its own local, hosted and independent official qualification. Its first failed run and original evidence stay preserved; no acceptance transfers to M85.",
         "The manual M77 demo remains running without expiry. Formal browser evidence and an owner-approved shutdown still hold release acceptance."
       ]
     },
     "done": [
-      "76 phases and 202 slices remain accepted; catalog 85 and Latest M70\u2019s original 41-example package do not add acceptance.",
-      "M83 completed its own qualification. M84 completed its corrected local gate and retained audit; M85 Source counts describe obligations, not executed passes."
+      "76 phases and 202 slices remain accepted; catalog 85 and Latest M70\u2019s original 41-example package stay unchanged.",
+      "The failed M85 gate completed 1904 headless passes, zero failures and two ignored, including all seven new cases. Strict coverage failure still left that candidate unqualified."
     ],
     "next": [
-      "Complete the active M85 full normal and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
-      "Complete M84 hosted/official qualification and every original predecessor gate. Preserve the live M77 demo until owner-confirmed shutdown."
+      "Complete the corrected M85 full normal and independent retained audit, then ordinary review publication and exact own hosted/official qualification.",
+      "Preserve every own and predecessor acceptance gate and failed original. Keep the live M77 demo until owner-confirmed shutdown."
     ],
     "blocker": {
       "text": "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop.",
@@ -12640,7 +12738,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M85_REVIEWED_FORMATTED_FULL_NORMAL_RUNNING",
+  "current_development_task": "M85_PRIVATE_CHILD_POSE_CORRECTION_FULL_NORMAL_RUNNING",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -16212,7 +16310,7 @@
     }
   },
   "current_M84_Source": {
-    "state": "M84_LOCAL_NORMAL_AND_INDEPENDENT_DATA_QUALIFIED_REVIEW_PUBLISHED_HOSTED_RUNNING",
+    "state": "M84_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
     "Source_basis_accepted": false,
     "basis_local_normal_and_independent_DATA_qualified": true,
@@ -16231,7 +16329,7 @@
     "checks_run": true,
     "normal_qualified": true,
     "independent_local_DATA_qualified": true,
-    "hosted_qualified": false,
+    "hosted_qualified": true,
     "accepted": false,
     "qualification_inherited": false,
     "Source_publication_available": true,
@@ -16252,7 +16350,7 @@
     },
     "Source_finite_runs": 47,
     "Source_CLI_cases": 21,
-    "current_stage": "M84 corrected full normal and independent retained audit passed. Its exact review branch is published and own hosted CI is running without outcome; official qualification and original predecessor acceptance gates remain pending.",
+    "current_stage": "M84 completed corrected local qualification, independent retained audit, review publication, exact own hosted CI, original collection and independent official audit. It remains unaccepted; its first failure and all original evidence stay preserved.",
     "frame_contract": "Retain passive link world P/Q and model anchors; child local transforms compose once, including existing cylinder Y-to-Z correction. No identity local-link restriction.",
     "query_contract": "Traverse all at most16 direct children, unchanged full maximum/no early successful return; reuse unchanged cylinder_distance and maintained other primitive kernels, finite inclusive minimum, solid-inside0, wholebody exclusion/current poses.",
     "inertia_contract": "Requested spec.mass supplies link mass; supplied centered validated Inertia supplies COM/tensor. DynamicSome inertia required/staticNone permitted, suppliedstaticSome centered. Existing resolved Scene defaults honored; upstream compound-auto refusal and density metadata unchanged. No child mass sum/XML presence parser.",
@@ -16318,8 +16416,16 @@
       "bytes": 1816,
       "mode": 436
     },
-    "hosted_actual": null,
-    "official_actual": null,
+    "hosted_actual": {
+      "sha256": "b3e5043cc49249ea34184a67c6a28c46cb68a77a01bc19d0297b4618009503ef",
+      "bytes": 5745,
+      "mode": 436
+    },
+    "official_actual": {
+      "sha256": "6fc783e194fc70988afb668baa98477970f990c17157822a026bb5bbb8d3d9b3",
+      "bytes": 1560,
+      "mode": 436
+    },
     "historical_selected_contract": {
       "sha256": "e4b159f57b1d7920937bd4f1c7048f3c0fe146efe485e9fcffe79e73ef461ad8",
       "bytes": 8865,
@@ -16361,7 +16467,7 @@
       },
       "qualified_commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0"
     },
-    "checks_run_scope": "Own corrected full normal/strict and independent retained DATA passed. The first failed normal stays failed. Own exact hosted CI is running with no conclusion; no acceptance or Main promotion.",
+    "checks_run_scope": "Own corrected local normal/strict, independent local DATA, exact hosted attempt1 and independent official DATA passed. Four original RAW groups were compared byte-exactly once. No phase acceptance or Main/Latest promotion.",
     "Source_review_scopes": {
       "package_collector": "Independent full Scene eight-path admission/newregression/five-disposition review CLEAR; sole shape-quaternion finding closed without scope/tolerance change.",
       "tracker_acceptance_closeout": "Independent full Physics/Rapier seven-path API/constructor/query/regression review and held normal donor adaptation CLEAR.",
@@ -16521,7 +16627,7 @@
       "independent_local_DATA_qualified": false,
       "future_qualified_head": null
     },
-    "official_DATA_qualified": false,
+    "official_DATA_qualified": true,
     "local_DATA_admission_complete_actual": {
       "sha256": "33a9d6ad7c4192ccae8396254e732e0c6cd971c5f36135fc61b3d0cc9043b795",
       "bytes": 2189,
@@ -16555,13 +16661,14 @@
       "head_branch": "review/m84-primitive-compounds",
       "event": "push",
       "run_attempt": 1,
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44876073592",
-      "created_at": "2026-11-21T06:33:04Z"
+      "created_at": "2026-11-21T06:33:04Z",
+      "updated_at": "2026-11-21T07:09:46Z"
     },
-    "hosted_state": "own_exact_head_attempt1_running_outcome_unknown",
-    "original_ZIPs_downloaded": false,
+    "hosted_state": "own_exact_head_attempt1_success_official_DATA_CLEAR",
+    "original_ZIPs_downloaded": true,
     "local_profile_passes": {
       "headless": 1897,
       "renderer_overlapping": 1433,
@@ -16572,7 +16679,65 @@
       "strict_changed_line_bases": 8
     },
     "local_DATA_actual_scope": "Original genuine5e88 Root0 receipt remains preserved. Same-tool admission-complete33a9 supplement adds four missing consumer fields; no second audit, test or native execution.",
-    "current_qualification_scope": "Own corrected local qualification only; exact review publication succeeded and hosted attempt1 is in progress. No hosted/official or acceptance success inferred."
+    "current_qualification_scope": "Own qualification complete and unaccepted; no result or acceptance transfers to M85.",
+    "historical_local_qualified_hosted_running_observation": {
+      "state": "M84_LOCAL_NORMAL_AND_INDEPENDENT_DATA_QUALIFIED_REVIEW_PUBLISHED_HOSTED_RUNNING",
+      "current_stage": "M84 corrected full normal and independent retained audit passed. Its exact review branch is published and own hosted CI is running without outcome; official qualification and original predecessor acceptance gates remain pending.",
+      "hosted_run": {
+        "id": 44876073592,
+        "name": "simulator",
+        "path": ".github/workflows/ci.yml",
+        "head_sha": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+        "head_branch": "review/m84-primitive-compounds",
+        "event": "push",
+        "run_attempt": 1,
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44876073592",
+        "created_at": "2026-11-21T06:33:04Z"
+      },
+      "hosted_state": "own_exact_head_attempt1_running_outcome_unknown",
+      "hosted_qualified": false,
+      "official_actual": null,
+      "official_DATA_qualified": false,
+      "active_heavy_job": false,
+      "checks_run_scope": "Own corrected full normal/strict and independent retained DATA passed. The first failed normal stays failed. Own exact hosted CI is running with no conclusion; no acceptance or Main promotion."
+    },
+    "official_report": {
+      "sha256": "6304ac777a1bc3482abefb1aba9fd6fb7d00289c22ff2e702f0de90beb117836",
+      "bytes": 227827,
+      "mode": 436
+    },
+    "official_Source": {
+      "sha256": "ad6e6ff5c3ab1b85282f6a439e4feecac5fc39cae6a311b53896c93e0e6693c8",
+      "bytes": 175526,
+      "mode": 436
+    },
+    "official_execution_log": {
+      "sha256": "32907462ba2ff8edbdab82678101b4f57bf44b0ac1b8fff2a6e4098562e74439",
+      "bytes": 273,
+      "mode": 436
+    },
+    "official_collection_actual": {
+      "sha256": "f45a9c2528c43677c0f2ce80eebc3db0751db5297f2c82a3d295ba06fbe06af4",
+      "bytes": 1402,
+      "mode": 436
+    },
+    "official_collection": {
+      "sha256": "6dc0ff0e138efd32bc76f2a5a41fc8223899ef646eaf92f1f10aaaeda74a2368",
+      "bytes": 41913,
+      "mode": 436
+    },
+    "official_RAW_once_counts": {
+      "headless": 441,
+      "renderer": 733,
+      "auxiliary": 57,
+      "RGB": 168
+    },
+    "official_CI_changed_line_base": {
+      "commit": "0000000000000000000000000000000000000000",
+      "basis_kind": "new_branch_all_source"
+    }
   },
   "current_M83_parent_qualification": {
     "commit": "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
@@ -16678,30 +16843,57 @@
       "head_branch": "review/m84-primitive-compounds",
       "event": "push",
       "run_attempt": 1,
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44876073592",
-      "created_at": "2026-11-21T06:33:04Z"
+      "created_at": "2026-11-21T06:33:04Z",
+      "updated_at": "2026-11-21T07:09:46Z"
     },
-    "official_actual": null,
-    "scope": "Actual M84 corrected local normal and independent DATA qualify this unaccepted parent locally. Ordinary review publication completed; own hosted is running and official remains pending. No evidence or acceptance transfers to M85."
+    "official_actual": {
+      "sha256": "6fc783e194fc70988afb668baa98477970f990c17157822a026bb5bbb8d3d9b3",
+      "bytes": 1560,
+      "mode": 436
+    },
+    "scope": "Actual M84 corrected local normal, independent DATA, review publication, exact hosted CI, original collection and independent official DATA passed. It remains unaccepted with its first failure preserved; no qualification or acceptance transfers to M85.",
+    "hosted_actual": {
+      "sha256": "b3e5043cc49249ea34184a67c6a28c46cb68a77a01bc19d0297b4618009503ef",
+      "bytes": 5745,
+      "mode": 436
+    },
+    "official_report": {
+      "sha256": "6304ac777a1bc3482abefb1aba9fd6fb7d00289c22ff2e702f0de90beb117836",
+      "bytes": 227827,
+      "mode": 436
+    },
+    "official_collection_actual": {
+      "sha256": "f45a9c2528c43677c0f2ce80eebc3db0751db5297f2c82a3d295ba06fbe06af4",
+      "bytes": 1402,
+      "mode": 436
+    },
+    "official_collection": {
+      "sha256": "6dc0ff0e138efd32bc76f2a5a41fc8223899ef646eaf92f1f10aaaeda74a2368",
+      "bytes": 41913,
+      "mode": 436
+    },
+    "hosted_qualified": true,
+    "official_qualified": true
   },
   "current_M85_Source": {
-    "state": "M85_REVIEWED_FORMATTED_FULL_NORMAL_RUNNING_OUTCOME_UNKNOWN",
+    "state": "M85_PRIVATE_CHILD_POSE_CORRECTION_REVIEWED_FORMATTED_FULL_RETRY_RUNNING",
     "Source_basis_commit": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
     "Source_basis_accepted": false,
     "basis_local_normal_and_independent_DATA_qualified": true,
-    "basis_hosted_and_official_qualified": false,
+    "basis_hosted_and_official_qualified": true,
     "accepted_Main_ancestor": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "source_preparation_under_D31": true,
     "contract": {
-      "sha256": "62b62db2cd3596eecaa99b8ed26335db44c3ff310784b15fb17a5ba3e261582d",
-      "bytes": 9830,
+      "sha256": "39db41cdb256582503ced7ee47e6f2bd66f8bf049a19486f615621b4a2d84290",
+      "bytes": 10371,
       "mode": 436
     },
     "canonical_planning_Source": {
-      "sha256": "719e9480bd22be73eb765db09a61f969836e03005aa2db7b5e595f5134f78ae4",
-      "bytes": 505011,
+      "sha256": "0801e853e0f5ff0590c523c596e27267b3aa79bf0d42bdb2511300cea3f8b45e",
+      "bytes": 511152,
       "mode": 436
     },
     "contract_scope_review_complete": true,
@@ -16718,7 +16910,7 @@
     "Source_publication_available": false,
     "future_qualified_head": null,
     "Source_binding_count": 1795,
-    "changed_paths_vs_basis": 11,
+    "changed_paths_vs_basis": 12,
     "new_paths": 2,
     "changed_production_paths_vs_basis": 1,
     "new_Rust_Source_controls": 7,
@@ -16733,12 +16925,13 @@
     },
     "Source_finite_runs": 47,
     "Source_CLI_cases": 21,
-    "current_stage": "M85 implementation, seven regression declarations, independent whole Source review and one formatter are complete. Root launched one full normal on the reviewed staged tree; it is running with no outcome or qualified commit.",
+    "current_stage": "The first normal passed all headless cases but failed strict changed-line coverage14/15. The additive private pose-error/atomicity control and docs are independently reviewed and formatted. One full mandatory retry is active; its outcome and qualified commit remain unknown.",
     "file_ownership": {
       "tracker_acceptance_closeout": [
         "crates/gz-sim-scene/src/velocity_control/config.rs",
         "crates/gz-sim-scene/tests/velocity_control_posed.rs",
-        "crates/gz-sim-scene/tests/compound_primitives.rs"
+        "crates/gz-sim-scene/tests/compound_primitives.rs",
+        "crates/gz-sim-scene/tests/private/velocity_control.rs"
       ],
       "package_collector": [
         "crates/gz-sim-scene/tests/velocity_control_compounds.rs"
@@ -16753,54 +16946,54 @@
         "planning/delivery-phases.json"
       ]
     },
-    "formatted_staged_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+    "formatted_staged_tree": "bf83012768dde6feb1af7e402853d3dd841e3d50",
     "preformat_whole_review": {
-      "sha256": "0e32a51da7c2973dfbb6f4eccc6721c885269cbfa27fe5236c2cebe5b465ba11",
-      "bytes": 6015,
+      "sha256": "a9d1e3a1e35634c1ed1841072af8852c5eee6d5db836e27a4f2bc437d107bcc3",
+      "bytes": 7838,
       "mode": 436
     },
     "preformat_Source_custody": {
-      "sha256": "54d42cc7a8b7f41eb24ca60e5813d888d413d7f438a9734905cc4fb3c00d082e",
-      "bytes": 761645,
+      "sha256": "face4ed0933b21cac429351ff98f6c90df42ad24bcbe3004d3d899456f786370",
+      "bytes": 752666,
       "mode": 436
     },
     "final_formatter_actual": {
-      "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
-      "bytes": 4547,
+      "sha256": "b2e794a1d7ed7b1d7720fa496d56b93a188de9c354aa037e550bbbe08f8fd2f0",
+      "bytes": 2731,
       "mode": 436
     },
     "final_Source_review": {
-      "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
-      "bytes": 6835,
+      "sha256": "30d5c2ec446fda4f8e36402635a5f5b05c1c796ec8e3c300e99ff3f87893641f",
+      "bytes": 9100,
       "mode": 436
     },
     "final_Source_snapshot": {
-      "sha256": "09923addfaded490d8149233a40cdabc7ba24a7cda0b73f2f4e0c206ba54f163",
-      "bytes": 665305,
+      "sha256": "9da73ea695f89eb33d1b0d1d8e9b930614a98c29016ef5a3eafdb7e5f147698b",
+      "bytes": 666193,
       "mode": 436
     },
     "normal_launch": {
-      "state": "actual_full_normal_running_outcome_unknown",
+      "state": "actual_child_pose_error_correction_full_normal_running_outcome_unknown",
       "actual_launch": {
-        "sha256": "dc70a536957d908f122616e5a74ca76782cffc118b8d013a5d016829d80264e9",
-        "bytes": 1740,
+        "sha256": "0cd70d85798207cf361723151e503d2e1c84b1b9f696c623a2542716d1b996a5",
+        "bytes": 1915,
         "mode": 436
       },
-      "session_id": 22476,
-      "launch_tool": "a4f441",
+      "session_id": 37778,
+      "launch_tool": "34bf91",
       "command": {
-        "sha256": "b05944c4eece5aed31d6970d4ca41d24abdd719b753d560f7c2e06a08651e0cc",
-        "bytes": 1754,
+        "sha256": "c343060a57b3ac1761d9ffc0d338b58c13bf990088fca25ee3c6a8c094458903",
+        "bytes": 1854,
         "mode": 436
       },
       "runner": {
-        "sha256": "95b1fb1b16be56968428bf243f9c30cb895a503bb5735576405220384a9e809e",
-        "bytes": 30958,
+        "sha256": "6f7042e6c10191ea6493ffed1bdce5d942771e0510c1b2f8c18ba64d59ef6d85",
+        "bytes": 30938,
         "mode": 436
       },
       "binding": {
-        "sha256": "3002e304f99eefb9d002e644cf5db1a6485c9b6bd642499d8af12ea70262f55d",
-        "bytes": 5182,
+        "sha256": "04d9623e4405bdf12067190989f4c5052aedf1362be474f2e96c07194e7b5572",
+        "bytes": 6034,
         "mode": 436
       },
       "actual_Root_exit_code": null,
@@ -16815,18 +17008,18 @@
     "protected_manual_demo_session": 86363,
     "stop_or_restart_authorized": false,
     "active_heavy_job": true,
-    "parent_qualification_scope": "Actual M84 corrected local normal and independent DATA qualify this unaccepted parent locally. Ordinary review publication completed; own hosted is running and official remains pending. No evidence or acceptance transfers to M85.",
+    "parent_qualification_scope": "Actual M84 corrected local normal, independent DATA, review publication, exact hosted CI, original collection and independent official DATA passed. It remains unaccepted with its first failure preserved; no qualification or acceptance transfers to M85.",
     "retained_test_disposition": "Only the extra-collision invalid row in velocity_control_posed.rs and controlled owner refusal in compound_primitives.rs become stronger same-XML Rapier positives at existing1e-11. All case identities/other negatives/TPE/precision assertions retained.",
     "frame_contract": "Identity local LINK and centered resolved COM remain mandatory for the controller, despite wider passive M84 link-pose support. Child geometry never changes link-origin model-frame velocity semantics.",
     "reset_contract": "Ordinary Simulation reset and loaded-world reconstruction restore configured initials and clear pending. Bare backend prepared reset covers geometry/IDs only; no new controller or native manager reset-mode claim.",
     "reference_scope": "Unchanged original M79 CPU component reference retains its limitations; no fresh native campaign or native compound-controller parity claim.",
-    "sole_Source_finding": "A solid-inside test used maximum0 outside the maintained positive-bound API; only maximum became0.125. Expectedhit0/allotherbytes preserved; independent exact correction closure CLEAR.",
-    "checks_run_scope": "The full normal actually started; it has not passed. Product/profile results, Root/Git terminal exits and qualified commit remain unknown. Source census and prior formatter0 are not executed test passes.",
+    "sole_Source_finding": "The first full normal exposed one missing changed-line coverage edge: the private per-child pose-resolution error path. An additive existing private-case typed UnknownReference/atomicity control covers that boundary without changing production or gates; actual full retry outcome remains unknown.",
+    "checks_run_scope": "The current full retry actually started, not passed. First normal partial headless results remain failed evidence; current Root/Git exits, renderer/strict results and qualified commit remain unknown.",
     "Source_review_scopes": {
-      "Package": "Independent entire Server three-file admission/two old-row disposition review CLEAR.",
-      "Server": "Independent whole new seven-case regression review and exact sole maximum correction closure CLEAR.",
-      "Scope": "Independent integrated code/test-integrity and all1795 postformatter/index/tree/mode custody review CLEAR.",
-      "Root": "Independent complete seven authored docs and feature Source review CLEAR before the single affected formatter."
+      "Package": "Independent complete additive private child-pose control review CLEAR: exact valid-two-child precondition, typed UnknownReference and atomicity; no old assertion or declaration change.",
+      "Server": "Authored only the additive existing private configuration-case block; original four formatted feature Rust files and all seven integration case bodies remain byte-identical. Scope and Package independently review this code.",
+      "Scope": "Independent whole additive private control, exact preformat inverse, typed diagnostic/atomicity, one-file formatter and all1795 Source/index/mode/tree plus final seven-token command custody CLEAR.",
+      "Root": "Independent entire correction code/docs, final one-file formatter plus exact separate four-path reuse, final Source snapshot/index/tree and complete seven-token retry command reviewed CLEAR before launch."
     },
     "historical_formatted_prelaunch_Source_observation": {
       "state": "M85_IMPLEMENTATION_REVIEW_AND_FORMATTER_COMPLETE_NORMAL_NOT_INVOKED",
@@ -16838,7 +17031,118 @@
       "final_Source_snapshot": null,
       "active_heavy_job": false
     },
-    "final_qualification_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da"
+    "final_qualification_tree": "bf83012768dde6feb1af7e402853d3dd841e3d50",
+    "historical_first_candidate_formatted_Source_checkpoint": {
+      "state": "M85_REVIEWED_FORMATTED_FULL_NORMAL_RUNNING_OUTCOME_UNKNOWN",
+      "current_stage": "M85 implementation, seven regression declarations, independent whole Source review and one formatter are complete. Root launched one full normal on the reviewed staged tree; it is running with no outcome or qualified commit.",
+      "Source_binding_count": 1795,
+      "changed_paths_vs_basis": 11,
+      "final_Source_review": {
+        "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
+        "bytes": 6835,
+        "mode": 436
+      },
+      "final_Source_snapshot": {
+        "sha256": "09923addfaded490d8149233a40cdabc7ba24a7cda0b73f2f4e0c206ba54f163",
+        "bytes": 665305,
+        "mode": 436
+      },
+      "final_formatter_actual": {
+        "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
+        "bytes": 4547,
+        "mode": 436
+      },
+      "final_qualification_tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+      "normal_launch": {
+        "state": "actual_full_normal_running_outcome_unknown",
+        "actual_launch": {
+          "sha256": "dc70a536957d908f122616e5a74ca76782cffc118b8d013a5d016829d80264e9",
+          "bytes": 1740,
+          "mode": 436
+        },
+        "session_id": 22476,
+        "launch_tool": "a4f441",
+        "command": {
+          "sha256": "b05944c4eece5aed31d6970d4ca41d24abdd719b753d560f7c2e06a08651e0cc",
+          "bytes": 1754,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "95b1fb1b16be56968428bf243f9c30cb895a503bb5735576405220384a9e809e",
+          "bytes": 30958,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "3002e304f99eefb9d002e644cf5db1a6485c9b6bd642499d8af12ea70262f55d",
+          "bytes": 5182,
+          "mode": 436
+        },
+        "actual_Root_exit_code": null,
+        "actual_Git_exit_code": null,
+        "result": null,
+        "qualified_commit": null
+      },
+      "checks_run_scope": "The full normal actually started; it has not passed. Product/profile results, Root/Git terminal exits and qualified commit remain unknown. Source census and prior formatter0 are not executed test passes.",
+      "Source_review_scopes": {
+        "Package": "Independent entire Server three-file admission/two old-row disposition review CLEAR.",
+        "Server": "Independent whole new seven-case regression review and exact sole maximum correction closure CLEAR.",
+        "Scope": "Independent integrated code/test-integrity and all1795 postformatter/index/tree/mode custody review CLEAR.",
+        "Root": "Independent complete seven authored docs and feature Source review CLEAR before the single affected formatter."
+      },
+      "initial_solid_inside_Source_finding": "A solid-inside test used maximum0 outside the maintained positive-bound API; only maximum became0.125. Expectedhit0/allotherbytes preserved; independent exact correction closure CLEAR."
+    },
+    "historical_first_normal_failure": {
+      "state": "historical_first_normal_failed_strict_changed_line_coverage",
+      "actual": {
+        "sha256": "4aa09613d9d4fea5223dff1f83620273d30605a9b8e90a1ecc4b20725cec606e",
+        "bytes": 3483,
+        "mode": 436
+      },
+      "tree": "cfa8913f6374e42de6d0dbc29403396f7e5921da",
+      "parent": "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+      "session_id": 22476,
+      "launch_tool": "a4f441",
+      "terminal_tool": "f40f79",
+      "actual_Root_exit_code": 1,
+      "actual_Git_exit_code": 1,
+      "elapsed_seconds": 1394.356940572994,
+      "headless": {
+        "passed": 1904,
+        "failed": 0,
+        "ignored": 2,
+        "summary_rows": 184
+      },
+      "new_controls_passed": 7,
+      "strict_changed_lines": {
+        "covered": 14,
+        "total": 15,
+        "required": "strictly greater than95%",
+        "missing_Source_line": "crates/gz-sim-scene/src/velocity_control/config.rs:181"
+      },
+      "renderer_reached": false,
+      "strict_qualification": false,
+      "qualified_commit": null,
+      "scope": "All headless tests and seven new cases passed, but the full candidate failed the mandatory strict coverage gate. No production defect or successful correction is inferred."
+    },
+    "contract_checkpoint_scope": "Frozen correction docs record the preceding M84 hosted-success/official-pending Source checkpoint. Current tracker M84 official-success facts are separately bound to actual receipts; no frozen document was rewritten.",
+    "cumulative_changed_paths_vs_accepted_ancestor": 89,
+    "retained_original_formatter": {
+      "sha256": "bde496bc9732bda01e073b5887a7a831ccec99342a5fa18ac70145934dd07f7c",
+      "bytes": 4547,
+      "mode": 436
+    },
+    "original_formatted_Source_review": {
+      "sha256": "4e0d855243bd1056fde1414b6d0748f22548a7451518a6186b3f00c5a9f1df9f",
+      "bytes": 6835,
+      "mode": 436
+    },
+    "retained_original_formatter_scope": "Original four-file actual0 only for its four byte/mode-identical feature Rust copies; current private-file formatter is a separate one-path actual0. No combined five-file formatter pass is claimed.",
+    "correction_scope": "Only an additive control inside the existing private configuration case: valid two-child parsed DOM, then last relative_to UnknownReference plus no native/controller/pending/ID mutation. Public XML is prevalidated earlier. No production, old assertion, seven integration-body, numerical or strict greater-than95% gate change.",
+    "correction_private_Source": {
+      "sha256": "7b14817a072f2e4948cad41fa16206f94f42cffc18a3e308bd6762f9888c3a1a",
+      "bytes": 21210,
+      "mode": 436
+    }
   },
-  "phase_catalog_checkpoint_scope": "M1\u2013M84 phase objects are preserved exact historical Source checkpoints. Latest M84 corrected local qualification/review/hosted-running facts are in current_M84_Source/current_M84_parent_qualification; M85 is the new current Source-only entry."
+  "phase_catalog_checkpoint_scope": "M1\u2013M84 phase objects remain exact historical Source checkpoints. Latest M84 completed own-qualification facts are in current_M84_Source/current_M84_parent_qualification. The current M85 row records its private coverage correction and genuinely running full retry, with no outcome."
 }
