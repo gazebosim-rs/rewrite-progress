@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-21T01:51:40.991077+00:00",
+  "as_of": "2026-11-21T02:32:05.459617+00:00",
   "execution_state": "active",
   "current_phase": "M82",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -10774,15 +10774,15 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "checks_run": true,
-      "normal_qualified": false,
-      "independent_local_DATA_qualified": false,
+      "normal_qualified": true,
+      "independent_local_DATA_qualified": true,
       "hosted_qualified": false,
       "accepted": false,
       "distribution_selected": false,
       "qualification_inherited": false,
-      "Source_publication_available": false,
-      "future_qualified_head": null,
-      "qualification_state": "five_row_disposition_correction_full_normal_running",
+      "Source_publication_available": true,
+      "future_qualified_head": "039a1e5142dd48705a23acb6f817613f509408f0",
+      "qualification_state": "own_local_qualified_review_published_hosted_active",
       "new_Source_finite_examples": 0,
       "new_CLI_cases": 0,
       "Source_finite_runs": 47,
@@ -10819,7 +10819,7 @@
           "planning/delivery-phases.json"
         ]
       },
-      "current_stage": "The first normal failed on two missed old Sphere-refusal rows. The five-site disposition batch, whole review and affected two-file formatter are complete; one corrected full normal is running, with no outcome or qualified M82 commit.",
+      "current_stage": "Own M82 local normal/strict and independent retained DATA passed at exact039a1e51. Ordinary review publication and exact readbacks succeeded; automatic hosted attempt1 is active with no outcome. Official evidence and predecessor acceptance remain required.",
       "retained_test_disposition": "Five intentional Sphere-refusal transitions: Scene posed_box/posed_cylinder/posed_capsule retain existing1e-11 independent geometry; compound_collisions and scene gain positive Rapier geometry while preserving compound/TPE refusal and existing-simulation atomicity. All other bodies/assertions/tolerances and M80 precision controls remain unchanged.",
       "axis_contract": "Existing ball plus caller local Pose; no axis correction. Validate localQ but center=linkP+linkQ*localP, independent of localQ.",
       "resolved_inertia_policy": "Direct dynamicNone/offsetCOM refused; Scene existing resolved Some defaults/auto retained. Sphere radius missing/nonpositive defaults1. Plain rotation-only auto supported; translated-auto COM and auto pose attributes/relative_to remain upstream-refused.",
@@ -10840,7 +10840,7 @@
         "Python": 0,
         "counts_are_Source_obligations_not_executed_results": true
       },
-      "checks_run_scope": "The corrected full normal has actually started, not passed. Historical first-normal Root/Git1 and partial headless results remain separate; no result transfers.",
+      "checks_run_scope": "Complete own normal/strict and retained local DATA passed at exact039a1e51. Hosted attempt1 is active, not qualified; official evidence and predecessor acceptance remain pending.",
       "historical_first_normal_failure": {
         "state": "historical_first_normal_failed",
         "actual": {
@@ -10884,7 +10884,7 @@
         "bytes": 10098,
         "mode": 436
       },
-      "retained_original_formatter_scope": "The original 11 Rust files remain byte/mode unchanged. The two newly affected legacy test files completed their one formatter after whole correction Source review; the full retry is now running.",
+      "retained_original_formatter_scope": "The original 11 formatted Rust files remained byte/mode unchanged. The two affected legacy test files passed their one formatter before the complete normal and retained DATA pass; original formatting evidence remains retained.",
       "historical_first_normal_launch_observation": {
         "state": "actual_full_normal_running_outcome_unknown",
         "session_id": 36552,
@@ -10910,6 +10910,56 @@
         "qualified_commit": null
       },
       "current_normal": {
+        "state": "actual_normal_and_independent_local_DATA_passed",
+        "session_id": 52623,
+        "launch_tool": "e90041",
+        "actual_launch": {
+          "sha256": "1cf30da088e94b144e037e4e637097be142a33f8ee8c9dca2f9e973a5c9e7302",
+          "bytes": 2015,
+          "mode": 436
+        },
+        "runner": {
+          "sha256": "7e74613fbf025fe191eff37961b2af352f11fa6887d795b0c5d314752131e835",
+          "bytes": 29666,
+          "mode": 436
+        },
+        "binding": {
+          "sha256": "91d91b6b5483d213d4c4c9b505d8d664546f6a623c2be64bdf8850086ba8b1f8",
+          "bytes": 5921,
+          "mode": 436
+        },
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "result": {
+          "sha256": "c0daa5a3e3059c6a82c421b957b288e99aa458079eecd99c6e96d875500a39ec",
+          "bytes": 4388,
+          "mode": 436
+        },
+        "qualified_commit": "039a1e5142dd48705a23acb6f817613f509408f0",
+        "actual": {
+          "sha256": "2fc1b9dcd6454586a466439ac6aa48f8a5ad7e4006fa353158061e9d0e3bc9c4",
+          "bytes": 1809,
+          "mode": 436
+        },
+        "terminal_tool": "b0e907",
+        "elapsed_seconds": 1946.0749509530142
+      },
+      "final_Source_snapshot": {
+        "sha256": "0a3c9fb77903754286a230dcf3028d0a3d196ad3254910bb7396851e42391f9c",
+        "bytes": 662643,
+        "mode": 436
+      },
+      "final_Source_review": {
+        "sha256": "4c0c44e3ff994cfd31027d63748972cd10ba187031f13ddac2eb451b92808660",
+        "bytes": 13824,
+        "mode": 436
+      },
+      "formatter_actual": {
+        "sha256": "3eaa9cfeb79799f96706b3c709972990d279f0157e1ac4f83e52f914c49f4230",
+        "bytes": 3711,
+        "mode": 436
+      },
+      "historical_corrected_normal_active_observation": {
         "state": "actual_correction_full_normal_running_outcome_unknown",
         "session_id": 52623,
         "launch_tool": "e90041",
@@ -10933,20 +10983,65 @@
         "result": null,
         "qualified_commit": null
       },
-      "final_Source_snapshot": {
-        "sha256": "0a3c9fb77903754286a230dcf3028d0a3d196ad3254910bb7396851e42391f9c",
-        "bytes": 662643,
+      "official_DATA_qualified": false,
+      "local_DATA_actual": {
+        "sha256": "c36980c4ddf5b19da564a7cc61245fa62ebcdaaabebda2d9287594306d02b27f",
+        "bytes": 1633,
         "mode": 436
       },
-      "final_Source_review": {
-        "sha256": "4c0c44e3ff994cfd31027d63748972cd10ba187031f13ddac2eb451b92808660",
-        "bytes": 13824,
+      "local_DATA_report": {
+        "sha256": "9805d10e08af701da55e8b4a8f9cebe551ff0554ad62ee2f506c1813e9e69e30",
+        "bytes": 108557,
         "mode": 436
       },
-      "formatter_actual": {
-        "sha256": "3eaa9cfeb79799f96706b3c709972990d279f0157e1ac4f83e52f914c49f4230",
-        "bytes": 3711,
+      "local_DATA_Source": {
+        "sha256": "a8ef5dfeb223bb644e7bb15ddd749cdf9c338c0c383c95e4098b9e7bc93dbe55",
+        "bytes": 99512,
         "mode": 436
+      },
+      "review_publication": {
+        "sha256": "359011a18801202f12d4ec34f3c2c122a7f699bb4937847ae9002385416d8a38",
+        "bytes": 4698,
+        "mode": 436
+      },
+      "hosted_run": {
+        "id": 44856006215,
+        "name": "simulator",
+        "path": ".github/workflows/ci.yml",
+        "head_sha": "039a1e5142dd48705a23acb6f817613f509408f0",
+        "head_branch": "review/m82-posed-sphere-collision",
+        "event": "push",
+        "run_attempt": 1,
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44856006215",
+        "created_at": "2026-11-21T02:27:37Z"
+      },
+      "hosted_actual": null,
+      "official_actual": null,
+      "local_profile_measurements": {
+        "headless": {
+          "passed": 1872,
+          "failed": 0,
+          "ignored": 2
+        },
+        "renderer": {
+          "passed": 1417,
+          "failed": 0,
+          "ignored": 2
+        },
+        "renderer_overlaps_headless": true,
+        "quiet_Python_aggregate": 494,
+        "finite_examples": 47,
+        "CLI_cases": 21,
+        "strict_changed_line_bases": 6,
+        "new_M82_controls_observed": {
+          "headless": 19,
+          "renderer": 9,
+          "overlap": 9
+        },
+        "both_legacy_disposition_cases_observed_in_each_profile": true,
+        "scope": "Actual own M82 local qualification only, including the corrected legacy cases. Not accepted phase or predecessor measurements."
       }
     }
   ],
@@ -11468,27 +11563,27 @@
       "max_working_days": 5
     }
   ],
-  "acceptance_boundary": "M82 first normal ended Root/Git 1 on two missed legacy Sphere-refusal rows; all 19 new controls passed headless, renderer and strict coverage were not reached. The five-site disposition batch is reviewed and formatted; corrected full normal is running with no outcome. M81 own qualification passed but is unaccepted. All predecessor and own gates remain mandatory; accepted Main M76, 76 phases/202 slices/catalog 82/Latest M70 original41 are unchanged.",
+  "acceptance_boundary": "M82 own local normal/strict and independent retained DATA passed at exact039a1e51; its ordinary published review is in automatic hosted attempt1 with no outcome. The first Root/Git1 failure96080 remains preserved. M81 own qualification passed but remains unaccepted. All own hosted/official and predecessor acceptance gates remain mandatory; accepted Main M76,76phases/202slices/catalog82/Latest M70 original41 stay unchanged.",
   "current_delivery_group": [
     "M82"
   ],
   "current_development_phase": "M82",
   "board": {
-    "updated_at": "2026-11-21T01:51:40.991077+00:00",
+    "updated_at": "2026-11-21T02:32:05.459617+00:00",
     "current": {
-      "title": "M82 corrected full verification running",
+      "title": "M82 hosted verification; own local qualification passed",
       "items": [
-        "The first normal failed on two older Sphere-refusal expectations. Both rows are corrected and the five-site disposition batch is reviewed; one full retry is running, with no outcome yet.",
-        "Production and all 19 new controls remain unchanged. Whole correction review and the affected two-file formatter passed; original 11-file formatting evidence is retained.",
-        "M81 own qualification passed but remains unaccepted. M77\u2019s no-expiry demo stays live; formal browser access and confirmed shutdown still hold downstream acceptance."
+        "M82 own normal/strict and independent retained DATA passed at its exact published review. Automatic hosted attempt 1 is active with no outcome; official evidence remains pending.",
+        "Both corrected legacy cases and all 19 new controls passed their required profiles. The original failed normal, five-site disposition review and all earlier proof remain preserved.",
+        "M77\u2019s no-expiry demo stays live. Formal browser access and owner-confirmed shutdown still hold downstream acceptance; M81\u2019s completed qualification does not transfer acceptance."
       ]
     },
     "done": [
       "M1\u2013M76 and 202 slices remain accepted; catalog 82 and Latest M70 original41 are unchanged. Prior Source, failures and all proof histories are preserved.",
-      "The first M82 headless run recorded 1870 passes, two failures and two ignored controls; all 19 new M82 controls passed there. Renderer and strict coverage were not reached."
+      "M82 local qualification passed: 1872 headless and 1417 overlapping renderer, two ignored each; 494 aggregate Python, 47 finite examples, 21 CLI cases and all six strict changed-line bases."
     ],
     "next": [
-      "Complete the corrected M82 full normal, independent local DATA and exact own hosted/official evidence. Earlier partial results and parent qualification do not transfer.",
+      "Complete exact M82 hosted and independent official evidence; accepted predecessors remain mandatory before phase/Main acceptance.",
       "Complete M77 formal browser access, visual/DATA and owner-approved shutdown; preserve the live demo meanwhile."
     ],
     "blocker": {
@@ -11647,7 +11742,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M82_FIVE_SPHERE_ROW_CORRECTION_FULL_NORMAL_RUNNING",
+  "current_development_task": "M82_HOSTED_VERIFICATION_OWN_LOCAL_QUALIFIED",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -14352,7 +14447,7 @@
   },
   "phase_started_at_scope": "M82 Source documentation checkpoint recorded by the selection-plan as_of; not an inferred earlier selection or runtime launch.",
   "current_M82_Source": {
-    "state": "M82_FIVE_ROW_DISPOSITION_CORRECTION_FULL_NORMAL_RUNNING",
+    "state": "M82_OWN_LOCAL_QUALIFIED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
     "Source_basis_accepted": false,
     "basis_local_normal_and_independent_DATA_qualified": true,
@@ -14368,15 +14463,15 @@
     "implementation_complete": true,
     "independent_source_review_complete": true,
     "checks_run": true,
-    "checks_run_scope": "The corrected full normal has actually started, not passed. Historical first-normal Root/Git1 and partial headless results remain separate; no result transfers.",
-    "normal_qualified": false,
-    "independent_local_DATA_qualified": false,
+    "checks_run_scope": "Complete own normal/strict and retained local DATA passed at exact039a1e51. Hosted attempt1 is active, not qualified; official evidence and predecessor acceptance remain pending.",
+    "normal_qualified": true,
+    "independent_local_DATA_qualified": true,
     "hosted_qualified": false,
     "official_DATA_qualified": false,
     "accepted": false,
     "qualification_inherited": false,
-    "Source_publication_available": false,
-    "future_qualified_head": null,
+    "Source_publication_available": true,
+    "future_qualified_head": "039a1e5142dd48705a23acb6f817613f509408f0",
     "Source_binding_count": 1786,
     "changed_paths_vs_basis": 20,
     "new_paths": 5,
@@ -14393,14 +14488,14 @@
     },
     "Source_finite_runs": 47,
     "Source_CLI_cases": 21,
-    "current_stage": "The first normal failed on two missed old Sphere-refusal rows. The five-site disposition batch, whole review and affected two-file formatter are complete; one corrected full normal is running, with no outcome or qualified M82 commit.",
+    "current_stage": "Own M82 local normal/strict and independent retained DATA passed at exact039a1e51. Ordinary review publication and exact readbacks succeeded; automatic hosted attempt1 is active with no outcome. Official evidence and predecessor acceptance remain required.",
     "axis_contract": "Existing ball plus caller local Pose; no axis correction. Validate localQ but center=linkP+linkQ*localP, independent of localQ.",
     "retained_test_disposition": "Five intentional Sphere-refusal transitions: Scene posed_box/posed_cylinder/posed_capsule retain existing1e-11 independent geometry; compound_collisions and scene gain positive Rapier geometry while preserving compound/TPE refusal and existing-simulation atomicity. All other bodies/assertions/tolerances and M80 precision controls remain unchanged.",
     "resolved_inertia_policy": "Direct dynamicNone/offsetCOM refused; Scene existing resolved Some defaults/auto retained. Sphere radius missing/nonpositive defaults1. Plain rotation-only auto supported; translated-auto COM and auto pose attributes/relative_to remain upstream-refused.",
     "reference_scope": "Ten unchanged retained reference Source inputs only. No new native capture, solver parity or inherited qualification.",
     "protected_manual_demo_session": 86363,
     "stop_or_restart_authorized": false,
-    "active_heavy_job": true,
+    "active_heavy_job": false,
     "parent_qualification_scope": "M81 own local/hosted/official passed at exact 6ef85e9f. Accepted predecessor closeout remains pending; no M82 pass follows from parent evidence.",
     "whole_Source_review": {
       "sha256": "ad74254c3f50edf503d005c724957e21fd9ee43e9b66a330774c6e7add9cd7ca",
@@ -14424,7 +14519,7 @@
       "mode": 436
     },
     "normal_launch": {
-      "state": "actual_correction_full_normal_running_outcome_unknown",
+      "state": "actual_normal_and_independent_local_DATA_passed",
       "session_id": 52623,
       "launch_tool": "e90041",
       "actual_launch": {
@@ -14442,14 +14537,37 @@
         "bytes": 5921,
         "mode": 436
       },
-      "actual_Root_exit_code": null,
-      "actual_Git_exit_code": null,
-      "result": null,
-      "qualified_commit": null
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "result": {
+        "sha256": "c0daa5a3e3059c6a82c421b957b288e99aa458079eecd99c6e96d875500a39ec",
+        "bytes": 4388,
+        "mode": 436
+      },
+      "qualified_commit": "039a1e5142dd48705a23acb6f817613f509408f0",
+      "actual": {
+        "sha256": "2fc1b9dcd6454586a466439ac6aa48f8a5ad7e4006fa353158061e9d0e3bc9c4",
+        "bytes": 1809,
+        "mode": 436
+      },
+      "terminal_tool": "b0e907",
+      "elapsed_seconds": 1946.0749509530142
     },
-    "normal_actual": null,
-    "normal_result": null,
-    "local_DATA_actual": null,
+    "normal_actual": {
+      "sha256": "2fc1b9dcd6454586a466439ac6aa48f8a5ad7e4006fa353158061e9d0e3bc9c4",
+      "bytes": 1809,
+      "mode": 436
+    },
+    "normal_result": {
+      "sha256": "c0daa5a3e3059c6a82c421b957b288e99aa458079eecd99c6e96d875500a39ec",
+      "bytes": 4388,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "c36980c4ddf5b19da564a7cc61245fa62ebcdaaabebda2d9287594306d02b27f",
+      "bytes": 1633,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
     "historical_first_normal_failed": {
@@ -14549,7 +14667,85 @@
       "bytes": 10098,
       "mode": 436
     },
-    "correction_scope": "Only two legacy test-row dispositions plus six current docs change from frozen05716. Five production leaves, all19 new control bodies, original11 formatted Rust leaves and all other assertions/tolerances remain unchanged."
+    "correction_scope": "Only two legacy test-row dispositions plus six current docs change from frozen05716. Five production leaves, all19 new control bodies, original11 formatted Rust leaves and all other assertions/tolerances remain unchanged.",
+    "historical_corrected_normal_active_observation": {
+      "state": "actual_correction_full_normal_running_outcome_unknown",
+      "session_id": 52623,
+      "launch_tool": "e90041",
+      "actual_launch": {
+        "sha256": "1cf30da088e94b144e037e4e637097be142a33f8ee8c9dca2f9e973a5c9e7302",
+        "bytes": 2015,
+        "mode": 436
+      },
+      "runner": {
+        "sha256": "7e74613fbf025fe191eff37961b2af352f11fa6887d795b0c5d314752131e835",
+        "bytes": 29666,
+        "mode": 436
+      },
+      "binding": {
+        "sha256": "91d91b6b5483d213d4c4c9b505d8d664546f6a623c2be64bdf8850086ba8b1f8",
+        "bytes": 5921,
+        "mode": 436
+      },
+      "actual_Root_exit_code": null,
+      "actual_Git_exit_code": null,
+      "result": null,
+      "qualified_commit": null
+    },
+    "local_DATA_report": {
+      "sha256": "9805d10e08af701da55e8b4a8f9cebe551ff0554ad62ee2f506c1813e9e69e30",
+      "bytes": 108557,
+      "mode": 436
+    },
+    "local_DATA_Source": {
+      "sha256": "a8ef5dfeb223bb644e7bb15ddd749cdf9c338c0c383c95e4098b9e7bc93dbe55",
+      "bytes": 99512,
+      "mode": 436
+    },
+    "review_publication": {
+      "sha256": "359011a18801202f12d4ec34f3c2c122a7f699bb4937847ae9002385416d8a38",
+      "bytes": 4698,
+      "mode": 436
+    },
+    "hosted_run": {
+      "id": 44856006215,
+      "name": "simulator",
+      "path": ".github/workflows/ci.yml",
+      "head_sha": "039a1e5142dd48705a23acb6f817613f509408f0",
+      "head_branch": "review/m82-posed-sphere-collision",
+      "event": "push",
+      "run_attempt": 1,
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44856006215",
+      "created_at": "2026-11-21T02:27:37Z"
+    },
+    "hosted_state": "own_exact_head_automatic_attempt1_in_progress",
+    "local_profile_measurements": {
+      "headless": {
+        "passed": 1872,
+        "failed": 0,
+        "ignored": 2
+      },
+      "renderer": {
+        "passed": 1417,
+        "failed": 0,
+        "ignored": 2
+      },
+      "renderer_overlaps_headless": true,
+      "quiet_Python_aggregate": 494,
+      "finite_examples": 47,
+      "CLI_cases": 21,
+      "strict_changed_line_bases": 6,
+      "new_M82_controls_observed": {
+        "headless": 19,
+        "renderer": 9,
+        "overlap": 9
+      },
+      "both_legacy_disposition_cases_observed_in_each_profile": true,
+      "scope": "Actual own M82 local qualification only, including the corrected legacy cases. Not accepted phase or predecessor measurements."
+    },
+    "Source_revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/039a1e5142dd48705a23acb6f817613f509408f0/docs/M82_DELIVERY.md"
   },
   "current_M81_parent_qualification": {
     "commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
