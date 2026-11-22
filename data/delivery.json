@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-22T20:14:42.041289+00:00",
+  "as_of": "2026-11-22",
   "execution_state": "active",
-  "current_phase": "M100",
+  "current_phase": "M102",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -19528,6 +19528,359 @@
         "bytes": 14514,
         "mode": 436
       }
+    },
+    {
+      "id": "M102",
+      "title": "Translated COM for passive primitive compound copies",
+      "max_working_days": 5,
+      "depends_on": [
+        "M100",
+        "M101"
+      ],
+      "scope": "Copy translated explicit inertial COM through the existing passive loaded/runtime primitive-compound route; preserve exact immutable COM presence and value in both original construction stamps.",
+      "acceptance": "Complete native and Scene geometry, twist, wrench, bounds, allocator, stamp and lifecycle controls, independent Source review and all mandatory local, strict-coverage, hosted and artifact gates.",
+      "excluded": "No initial-loader or Mesh COM, rotated inertia basis in the new domain, compound-to-singleton COM widening, controller composition, common API, solver or TPE changes.",
+      "contract": "D31 bounded Source implementation; mandatory verification and formal acceptance remain separate.",
+      "shared_qualification_group": [
+        "M102",
+        "M103"
+      ],
+      "source_preparation_basis_commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "source_preparation_basis_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "Source_selection": {
+        "sha256": "b985af320437e5d9737eed8d517b56339f87a5f46008743f0bfdd974b7ad7824",
+        "bytes": 17277,
+        "mode": 436
+      },
+      "implementation_started": true,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": false,
+      "formatter_run": true,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "accepted": false,
+      "qualification_inherited": false,
+      "Source_control_declarations": {
+        "Rust_unique": 10,
+        "Python": 0,
+        "headless": 10,
+        "renderer": 9,
+        "overlap": 9,
+        "public": 8,
+        "private": 2
+      },
+      "new_Rust_Source_controls": [
+        {
+          "path": "crates/gz-physics-rapier/src/compound.rs",
+          "name": "compound::tests::compound_offset_mass_frame_bounds_reset_and_refusal_keep_native_pending_ownership"
+        },
+        {
+          "path": "crates/gz-sim-scene/src/world_spawn.rs",
+          "name": "world_spawn::runtime_compound_tests::offset_compound_original_optional_center_and_dual_stamps_refuse_drift_before_inputs"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_loaded_and_runtime_generations_keep_every_child_and_mass_frame"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_binary_bounds_nearest_and_visual_origin_ignore_interior_or_exterior_com"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_six_axis_edits_and_paused_inputs_round_trip_origin_and_native_com"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_explicit_inertia_density_and_centered_twins_use_measured_com_displacement"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_lifetimes_retemplate_after_retirement_and_restore_both_reset_boundaries"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_first_errors_native_boundaries_and_pending_repair_do_not_consume_ids"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_owner_and_membership_corruption_stays_upstream_of_caller_parameters"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+          "name": "offset_compound_contacts_and_camera_capacity_keep_real_geometry_and_retained_pending_inputs"
+        }
+      ],
+      "final_Source_count": 1831,
+      "future_qualified_head": null,
+      "final_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "file_ownership": [
+        "crates/gz-physics-rapier/src/compound.rs",
+        "crates/gz-sim-scene/src/world_spawn.rs",
+        "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs"
+      ],
+      "whole_file_inverse_required": true,
+      "current_stage": "Implementation, regressions, documentation and formatted Source are independently reviewed; one eight-file formatter passed. No product verification has run. Disk headroom and predecessor hosted/artifact proof still hold verification admission.",
+      "final_document_Source_review_complete": true,
+      "changed_paths_vs_basis": 16,
+      "new_paths": 4,
+      "changed_production_paths_vs_basis": 3,
+      "cumulative_changed_paths_vs_accepted_ancestor": 128,
+      "Source_completion": {
+        "sha256": "fd741b9a77abae7e93e3f1a578233ae81e35d62cfde6b26cccbeb3ea5e462cc2",
+        "bytes": 10882,
+        "mode": 436
+      },
+      "Root_retained_Source_review": {
+        "sha256": "a59476766ea3fef8082b57f03c750d670e597f1b2caed6f6102d1398f0c62e7d",
+        "bytes": 680,
+        "mode": 436
+      },
+      "eight_docs_Source_completion": {
+        "sha256": "a565291ee359ae1a27762f19c999c2c3f98d2a631def3516c47fe78c101e9e99",
+        "bytes": 3753,
+        "mode": 436
+      },
+      "eight_docs_parent_alias_Source_correction": {
+        "sha256": "4b5f768bb10bc16487c6c6a4722a196be55d28d4b2c81d53178b26b241f69666",
+        "bytes": 2347,
+        "mode": 436
+      },
+      "actual_new_case_pass_counts": null,
+      "normal_resource_budget_selected": false,
+      "postformat_Source_review_complete": true,
+      "final_Source_review": {
+        "sha256": "26e331cd4e2239305677c677526f4829953d662791320310ca690bec41e64b9c",
+        "bytes": 44972,
+        "mode": 436
+      },
+      "source_snapshot": {
+        "sha256": "265b28a315bb24980628fb7b5408d499ff2c83576b6d1049c4b559141300a9f5",
+        "bytes": 722296,
+        "mode": 436
+      },
+      "formatter_actual": {
+        "sha256": "23b31cf08f5e23899474a510584942bfe8c0a60677215c771605b011c8549bb4",
+        "bytes": 9120,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "sha256": "199f58c3aa018fd8e8ec4f3ede21b4790b534d629fe1c7f5cfdb790a8dfd9467",
+        "bytes": 2017,
+        "mode": 436
+      },
+      "eight_docs_final_reviewed": {
+        "sha256": "8961c850749ad36a08037c71d86167472c5d53de085a77555d6b026e7e00ff7a",
+        "bytes": 3096,
+        "mode": 436
+      },
+      "resource_Source_prepared": true,
+      "resource_proposal": {
+        "sha256": "98138808899b561123e6f05bd61689f08b68612477b2000e2df36e981d8947eb",
+        "bytes": 5998,
+        "mode": 436
+      },
+      "resource_admission": false,
+      "resource_execution_released": false
+    },
+    {
+      "id": "M103",
+      "title": "Rotated local link frames for JointController",
+      "max_working_days": 5,
+      "depends_on": [
+        "M100",
+        "M101"
+      ],
+      "scope": "Admit representable local LINK rotations through the existing two-revolute JointController configuration seam, preserving parsed inputs and existing joint, axis, topology and controller restrictions.",
+      "acceptance": "Complete measured native/logical frame and velocity, command, geometry, contact, lifecycle and invalid-input controls, independent Source review and every mandatory qualification gate.",
+      "excluded": "No named LINK frames, nonunit or nonfinite input repair, offset articulation COM, native joint or driver changes, new topology, controller modes, backend or public API.",
+      "contract": "D31 bounded Source implementation; mandatory verification and formal acceptance remain separate.",
+      "shared_qualification_group": [
+        "M102",
+        "M103"
+      ],
+      "source_preparation_basis_commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "source_preparation_basis_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
+      "source_preparation_basis_locally_qualified": true,
+      "source_preparation_basis_accepted": false,
+      "source_preparation_under_D31": true,
+      "Source_selection": {
+        "sha256": "b985af320437e5d9737eed8d517b56339f87a5f46008743f0bfdd974b7ad7824",
+        "bytes": 17277,
+        "mode": 436
+      },
+      "implementation_started": true,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_source_review_complete": true,
+      "checks_run": false,
+      "formatter_run": true,
+      "normal_qualified": false,
+      "independent_local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "accepted": false,
+      "qualification_inherited": false,
+      "Source_control_declarations": {
+        "Rust_unique": 16,
+        "Python": 0,
+        "headless": 16,
+        "renderer": 16,
+        "overlap": 16,
+        "public": 12,
+        "private": 4
+      },
+      "new_Rust_Source_controls": [
+        {
+          "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+          "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_admits_finite_unit_frames_without_changing_caller_or_parameters"
+        },
+        {
+          "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+          "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_nonrepresentable_or_nonunit_frames_are_never_repaired"
+        },
+        {
+          "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+          "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_unit_band_is_closed_on_both_sides_without_normalization"
+        },
+        {
+          "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+          "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_does_not_expand_relative_frames_axes_topology_or_joint_domains"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_opposite_axes_and_commands_keep_measured_physical_equivalence"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_coordinates_and_samples_remain_continuous_through_reversals"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_noncoaxial_chains_move_native_bases_velocities_and_all_children"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_commands_keep_clamp_latest_zero_pause_and_invalid_equivalence"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_motor_effort_respects_explicit_isotropic_inertia_and_density_twins"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_resets_preserve_geometry_targets_identities_and_survivors"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_eight_owner_late_faults_keep_pending_atomicity_and_terminal_latch"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_motor_contact_moves_an_independent_probe_with_quiet_clear_controls"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_axis_admission_keeps_frames_topology_limits_and_other_domains_closed"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_link_quaternion_signs_and_joint_defaults_share_physical_trajectories"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_each_rotated_link_and_noncommuting_pair_obey_independent_kinematics"
+        },
+        {
+          "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+          "name": "joint_link_frame_binary_endpoint_witness_is_separate_from_rotated_global_queries"
+        }
+      ],
+      "final_Source_count": 1831,
+      "future_qualified_head": null,
+      "final_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "file_ownership": [
+        "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "crates/gz-sim-scene/tests/joint_controller_link_frames.rs"
+      ],
+      "whole_file_inverse_required": true,
+      "current_stage": "Implementation, regressions, documentation and formatted Source are independently reviewed; one eight-file formatter passed. No product verification has run. Disk headroom and predecessor hosted/artifact proof still hold verification admission.",
+      "final_document_Source_review_complete": true,
+      "changed_paths_vs_basis": 16,
+      "new_paths": 4,
+      "changed_production_paths_vs_basis": 3,
+      "cumulative_changed_paths_vs_accepted_ancestor": 128,
+      "Source_completion": {
+        "sha256": "cf5586bf9da8c1b68f8d387cf8cbb0db06d800270cd62372e04adb82833a0718",
+        "bytes": 28486,
+        "mode": 436
+      },
+      "Root_retained_Source_review": {
+        "sha256": "a59476766ea3fef8082b57f03c750d670e597f1b2caed6f6102d1398f0c62e7d",
+        "bytes": 680,
+        "mode": 436
+      },
+      "eight_docs_Source_completion": {
+        "sha256": "a565291ee359ae1a27762f19c999c2c3f98d2a631def3516c47fe78c101e9e99",
+        "bytes": 3753,
+        "mode": 436
+      },
+      "eight_docs_parent_alias_Source_correction": {
+        "sha256": "4b5f768bb10bc16487c6c6a4722a196be55d28d4b2c81d53178b26b241f69666",
+        "bytes": 2347,
+        "mode": 436
+      },
+      "actual_new_case_pass_counts": null,
+      "normal_resource_budget_selected": false,
+      "postformat_Source_review_complete": true,
+      "final_Source_review": {
+        "sha256": "26e331cd4e2239305677c677526f4829953d662791320310ca690bec41e64b9c",
+        "bytes": 44972,
+        "mode": 436
+      },
+      "source_snapshot": {
+        "sha256": "265b28a315bb24980628fb7b5408d499ff2c83576b6d1049c4b559141300a9f5",
+        "bytes": 722296,
+        "mode": 436
+      },
+      "formatter_actual": {
+        "sha256": "23b31cf08f5e23899474a510584942bfe8c0a60677215c771605b011c8549bb4",
+        "bytes": 9120,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "sha256": "199f58c3aa018fd8e8ec4f3ede21b4790b534d629fe1c7f5cfdb790a8dfd9467",
+        "bytes": 2017,
+        "mode": 436
+      },
+      "eight_docs_final_reviewed": {
+        "sha256": "8961c850749ad36a08037c71d86167472c5d53de085a77555d6b026e7e00ff7a",
+        "bytes": 3096,
+        "mode": 436
+      },
+      "resource_Source_prepared": true,
+      "resource_proposal": {
+        "sha256": "98138808899b561123e6f05bd61689f08b68612477b2000e2df36e981d8947eb",
+        "bytes": 5998,
+        "mode": 436
+      },
+      "resource_admission": false,
+      "resource_execution_released": false
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -19632,10 +19985,12 @@
     "M98": "in_progress",
     "M99": "in_progress",
     "M100": "in_progress",
-    "M101": "in_progress"
+    "M101": "in_progress",
+    "M102": "in_progress",
+    "M103": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-22T01:15:19.084082+00:00",
+  "phase_started_at": "2026-11-22T21:54:13.267063+00:00",
   "active_phases": [
     "M77",
     "M78",
@@ -19661,7 +20016,9 @@
     "M98",
     "M99",
     "M100",
-    "M101"
+    "M101",
+    "M102",
+    "M103"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -20938,31 +21295,131 @@
         },
         "target_creation_observation": "Unknown in this public record; successful absence/admission guards do not by themselves assert target creation."
       }
+    },
+    {
+      "phases": [
+        "M102",
+        "M103"
+      ],
+      "max_working_days": 5,
+      "production_seams_disjoint": true,
+      "Source_selection": {
+        "sha256": "b985af320437e5d9737eed8d517b56339f87a5f46008743f0bfdd974b7ad7824",
+        "bytes": 17277,
+        "mode": 436
+      },
+      "source_preparation_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "implementation_started": true,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_whole_code_reviews_complete": true,
+      "Source_declarations": {
+        "Rust_unique": 26,
+        "Python": 0,
+        "headless": 26,
+        "renderer": 25,
+        "overlap": 25,
+        "public": 20,
+        "private": 6
+      },
+      "final_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
+      "checks_run": false,
+      "formatter_run": true,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "accepted": false,
+      "qualification_inherited": false,
+      "integration": "Both features, regression cases, retained dispositions and documents are independently Source reviewed and formatting passed once. The formatted Source tree is not a verified commit. Full verification remains held for disk headroom and genuine predecessor hosted/artifact proof.",
+      "final_docs_peer_review_complete": true,
+      "observed_raw_Source_census": {
+        "Source_files": 1831,
+        "owned_paths": 16,
+        "new_paths": 4,
+        "protected_parent_paths": 1815,
+        "production_paths": 3,
+        "implementation_paths": 3,
+        "comment_only_paths": 0,
+        "cumulative_paths": 128,
+        "Rust_paths": 8,
+        "doc_paths": 8
+      },
+      "Source_census": {
+        "sha256": "8056c52f9224e3a8c5803aa3bc4bcc58ad0bb64014c3a1fd42b0e4db1378d2ba",
+        "bytes": 1662,
+        "mode": 436
+      },
+      "Root_retained_Source_review": {
+        "sha256": "a59476766ea3fef8082b57f03c750d670e597f1b2caed6f6102d1398f0c62e7d",
+        "bytes": 680,
+        "mode": 436
+      },
+      "eight_docs_Source_completion": {
+        "sha256": "a565291ee359ae1a27762f19c999c2c3f98d2a631def3516c47fe78c101e9e99",
+        "bytes": 3753,
+        "mode": 436
+      },
+      "eight_docs_parent_alias_Source_correction": {
+        "sha256": "4b5f768bb10bc16487c6c6a4722a196be55d28d4b2c81d53178b26b241f69666",
+        "bytes": 2347,
+        "mode": 436
+      },
+      "normal_resource_budget_selected": false,
+      "actual_new_case_pass_counts": null,
+      "postformat_Source_review_complete": true,
+      "final_Source_review": {
+        "sha256": "26e331cd4e2239305677c677526f4829953d662791320310ca690bec41e64b9c",
+        "bytes": 44972,
+        "mode": 436
+      },
+      "source_snapshot": {
+        "sha256": "265b28a315bb24980628fb7b5408d499ff2c83576b6d1049c4b559141300a9f5",
+        "bytes": 722296,
+        "mode": 436
+      },
+      "formatter_actual": {
+        "sha256": "23b31cf08f5e23899474a510584942bfe8c0a60677215c771605b011c8549bb4",
+        "bytes": 9120,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "sha256": "199f58c3aa018fd8e8ec4f3ede21b4790b534d629fe1c7f5cfdb790a8dfd9467",
+        "bytes": 2017,
+        "mode": 436
+      },
+      "resource_Source_prepared": true,
+      "resource_proposal": {
+        "sha256": "98138808899b561123e6f05bd61689f08b68612477b2000e2df36e981d8947eb",
+        "bytes": 5998,
+        "mode": 436
+      },
+      "resource_admission": false
     }
   ],
-  "acceptance_boundary": "The original M100/M101 normal failed two M100 test premises after headless2046 passed/two failed/two ignored. Both test-only corrections are independently reviewed and formatting passed with no diff. One full normal retry is running; its outcome, commit and later qualification remain unknown. Parent M98/M99 has its own local, hosted and official qualification; no acceptance transfers, and the M77 gates remain.",
+  "acceptance_boundary": "The new features, regression cases, documents and postformat Source are independently reviewed; formatting passed once. Their 26 headless and 25 renderer declarations are obligations, not passes. Full verification has not run and lacks resource admission and predecessor hosted/artifact proof. The predecessor monitor failed with API403, not a product outcome. Formal acceptance and M77 owner gates are unchanged.",
   "current_delivery_group": [
-    "M100",
-    "M101"
+    "M102",
+    "M103"
   ],
-  "current_development_phase": "M100",
+  "current_development_phase": "M102",
   "board": {
-    "updated_at": "2026-11-22T20:14:42.041289+00:00",
+    "updated_at": "2026-11-22T23:00:13.916226+00:00",
     "current": {
-      "title": "Mass and joint frames: corrective verification running",
+      "title": "Compound mass frames and rotated links: verification held",
       "items": [
-        "The two test-only corrections are reviewed and formatted. One consolidated full verification retry is running; its outcome is pending.",
-        "Mesh copies and general joint axes passed local verification, hosted CI and the independent audit of their original artifacts. Formal acceptance is pending.",
+        "Both features and their regression cases are reviewed and formatted. Full checks await disk space and confirmation of the earlier hosted checks.",
+        "The predecessor passed local checks and its audit, and its review commit is published. Hosted outcome is unknown after the monitor hit an API rate limit.",
         "The no-expiry manual demo stays live. Formal browser evidence and an owner-approved shutdown still hold acceptance."
       ]
     },
     "done": [
       "M1\u2013M76 remain accepted. Later work keeps its own verification and acceptance evidence.",
-      "Mesh copies and general joint axes passed local verification, hosted CI and the independent audit of their original artifacts. Formal acceptance is pending."
+      "Mesh copies and general joint axes passed local verification, hosted checks and an independent audit of their original artifacts. Formal acceptance remains pending."
     ],
     "next": [
-      "Finish the running consolidated corrective verification.",
-      "After a pass, audit recorded local evidence and qualify the same review commit through hosted CI and its original-artifact audit.",
+      "Restore disk headroom, then run the reviewed verification procedure.",
+      "When API quota recovers, establish the predecessor\u2019s hosted outcome and finish its artifact audit before releasing this delivery\u2019s full verification cycle.",
       "Finish the formal browser and shutdown evidence when permitted."
     ],
     "blocker": {
@@ -20972,8 +21429,8 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M100",
-    "M101"
+    "M102",
+    "M103"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -21122,7 +21579,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Run the single consolidated normal retry for the reviewed two-oracle test correction; preserve the failed original and every required gate.",
+  "current_development_task": "Obtain verification disk headroom and genuine predecessor hosted/artifact proof before releasing the reviewed full verification cycle; keep the completed formatted Source unchanged.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -23825,7 +24282,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "Actual selected and dispatched M96/M97 Source wave; this is not a verification start or result.",
+  "phase_started_at_scope": "Actual selected and dispatched M102/M103 implementation; this is not a verification start or result.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -25699,7 +26156,7 @@
       }
     }
   },
-  "phase_catalog_checkpoint_scope": "All 99 published catalog scope, acceptance and exclusion contracts remain strings and unchanged. M96/M97 remains locally, hosted and officially qualified but unaccepted. M98/M99 normal and independent local audit passed at clean 1a4bdbb5/tree e8dd98dd; all 23 own controls passed in both profiles. Its exact review ref is published. Hosted CI was last observed running; the watcher retired after an API rate limit, so monitoring is paused and hosted/official outcomes remain unknown. Acceptance counters and retained historical evidence remain unchanged.",
+  "phase_catalog_checkpoint_scope": "The first 101 published phase objects and 58 groups retain exact timed observations and contract strings. Current qualification and monitor state are recorded separately. New M102/M103 entries record reviewed formatted Source only, with no product verification or acceptance.",
   "current_M86_M87_Source": {
     "state": "M86_M87_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
@@ -33619,26 +34076,47 @@
       "private": 5
     },
     "formatter_or_checks_run": true,
-    "new_commit": null,
+    "new_commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
     "accepted": false,
-    "state": "M100_M101_CORRECTED_SOURCE_FORMATTED_FULL_NORMAL_RETRY_ACTIVE",
+    "state": "M100_M101_LOCAL_QUALIFIED_REVIEW_PUBLISHED_HOSTED_OUTCOME_UNKNOWN_API_HOLD",
     "formatter_run": true,
     "checks_run": true,
     "checks_started": true,
-    "checks_passed": null,
-    "current_normal_active": true,
+    "checks_passed": true,
+    "current_normal_active": false,
     "normal_execution_released": true,
-    "normal_qualified": false,
-    "local_DATA_qualified": false,
+    "normal_qualified": true,
+    "local_DATA_qualified": true,
     "hosted_qualified": false,
     "official_DATA_qualified": false,
-    "normal_actual": null,
-    "normal_result": null,
-    "local_DATA_actual": null,
-    "local_DATA_report": null,
+    "normal_actual": {
+      "sha256": "9dfa6104821631a61bdf9e4645799a22aa59e2b12ba47582bfa51c012b4c99d8",
+      "bytes": 2552,
+      "mode": 436
+    },
+    "normal_result": {
+      "sha256": "3d1843e13d221c8b4788c4c392841b445dfb3c895ced98a7286fe1e691d68478",
+      "bytes": 31063,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "0f4211fb908e7c1e9f7d12770e8a7af1ea0b0571b015cb97a086560d02f39a7d",
+      "bytes": 2373,
+      "mode": 436
+    },
+    "local_DATA_report": {
+      "sha256": "88e129332bb397c6a61d84209b1f6d1104736a5767a1edfe5b73705bbdb5c905",
+      "bytes": 271503,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
-    "actual_new_case_pass_counts": null,
+    "actual_new_case_pass_counts": {
+      "commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "headless": 23,
+      "renderer": 22,
+      "shared": 22
+    },
     "final_Source_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
     "normal_release": {
       "sha256": "7be04ed724f9f583f79e840e367350f6e76fd9fe20a47eea1f6f09b234e34c22",
@@ -33658,10 +34136,16 @@
     "normal_run": {
       "session": 40737,
       "launch_tool": "487f50",
-      "active": true,
-      "actual_exit": null,
-      "commit": null,
-      "result": null
+      "active": false,
+      "actual_exit": 0,
+      "commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "result": {
+        "sha256": "3d1843e13d221c8b4788c4c392841b445dfb3c895ced98a7286fe1e691d68478",
+        "bytes": 31063,
+        "mode": 436
+      },
+      "terminal_tool": "b40278",
+      "elapsed_seconds": 4514.23203588801
     },
     "Source_counts": {
       "Source_files": 1827,
@@ -33835,7 +34319,7 @@
       "mode": 436
     },
     "retry_resource_execution_released": true,
-    "checks_scope": "Current flags and unknown results describe the corrected source only. The first failed run and its partial headless observations are retained under their failed tree and are not qualifications of this correction.",
+    "checks_scope": "The corrected commit passed full local verification and an independent audit and is published for review. Its monitor retired after API403; the last product step was in progress, but hosted outcome is unknown. This monitor failure is not a product result. Original-artifact qualification and formal acceptance remain pending.",
     "formatter_actual": {
       "sha256": "4b8acde2af7bc9e8fbf8214e6fa1a5d8cc9021e210cb724eff315b5e846fc0ac",
       "bytes": 14514,
@@ -33860,10 +34344,470 @@
         "mode": 436
       },
       "tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
-      "actual_exit": null,
-      "commit": null,
-      "result": null
+      "actual_exit": 0,
+      "commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "result": {
+        "sha256": "3d1843e13d221c8b4788c4c392841b445dfb3c895ced98a7286fe1e691d68478",
+        "bytes": 31063,
+        "mode": 436
+      },
+      "terminal_tool": "b40278",
+      "active": false
     },
-    "scope": "The two test-premise corrections are reviewed and formatted. One consolidated full normal retry is actually running; its outcome is unknown. The original failed2af headless observations remain historical, and no pass or acceptance transfers."
+    "scope": "Mass frames and local joint frames passed local verification and an independent audit; the exact review commit is published. Hosted outcome is unknown after the monitor hit an API rate limit. No acceptance transfers.",
+    "review_publication": {
+      "sha256": "db7ef2a64301a0db1d64ba136518f69cb750f3070988be23a7db45f1251d11c3",
+      "bytes": 4232,
+      "mode": 436
+    },
+    "hosted_run": {
+      "id": 45074764720,
+      "attempt": 1,
+      "head": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "status": "unknown",
+      "conclusion": null,
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45074764720",
+      "last_observed_status": "in_progress",
+      "monitoring": "held_api_rate_limit"
+    },
+    "Source_publication_available": true,
+    "observed_profiles": {
+      "headless": {
+        "tests": {
+          "passed": 2048,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 200
+        },
+        "new_controls": 23
+      },
+      "renderer": {
+        "tests": {
+          "passed": 1583,
+          "failed": 0,
+          "ignored": 2,
+          "summary_rows": 182
+        },
+        "new_controls": 22
+      }
+    },
+    "actual_Python_aggregate": 494,
+    "actual_finite_examples": 47,
+    "actual_RGB_auxiliary_passed": 21,
+    "actual_native_peer_records": 47,
+    "review_ref": "refs/heads/review/m100-m101-offset-com-joint-frames",
+    "API_observation_hold": {
+      "failure": {
+        "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
+        "bytes": 1319,
+        "mode": 436
+      },
+      "rate_read": {
+        "sha256": "14a596094a4958473eb4579b9897becc8bc366e1e753d96b2e22fa694ab96454",
+        "bytes": 1232,
+        "mode": 436
+      },
+      "core_remaining": 0,
+      "reset_UTC": "2026-11-22T23:11:34+00:00",
+      "underlying_account_activity_cause": "UNKNOWN",
+      "further_API_or_watch_until_positive_quota": false,
+      "CI_retry_or_dispatch": false,
+      "original_success_collectors_invoked": false
+    },
+    "hosted_monitor_active": false,
+    "hosted_outcome": null,
+    "historical_API_observation_hold": {
+      "source": {
+        "sha256": "b72513e1a29336bf545c62d20f49d7c2068218ebbde94d60fa410c1df9dfd644",
+        "bytes": 1232,
+        "mode": 436
+      },
+      "actual_rate_read_tool": "e2203a",
+      "core_remaining": 0,
+      "reset_UTC": "2026-11-22T22:11:08+00:00",
+      "underlying_account_activity_cause": "UNKNOWN",
+      "no_actions_run_API_request_attempted": true
+    },
+    "initial_review_publication": {
+      "sha256": "7f3cf688194a9e269769e2518db19ac89020cd4c5c30996332df73d8d627d17e",
+      "bytes": 2967,
+      "mode": 436
+    },
+    "hosted_watch": {
+      "receipt": {
+        "sha256": "1a63153b4aab9fbd7bcf06c82cd3d40d5015eb4edf9f29990fe9256de3d40d4a",
+        "bytes": 1175,
+        "mode": 436
+      },
+      "session": 86731,
+      "launch_tool": "4da17f",
+      "outcome": "monitor_failed_API403",
+      "active": false,
+      "actual_exit_code": 1,
+      "terminal_tool": "14023a",
+      "failure": {
+        "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
+        "bytes": 1319,
+        "mode": 436
+      },
+      "failure_time_UTC": "2026-11-22T22:38:39Z",
+      "product_CI_outcome": null
+    },
+    "last_observed_hosted_run": {
+      "id": 45074764720,
+      "attempt": 1,
+      "head": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45074764720"
+    },
+    "hosted_monitor_failure": {
+      "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
+      "bytes": 1319,
+      "mode": 436
+    }
+  },
+  "current_M102_M103_Source": {
+    "state": "M102_M103_FORMATTED_WHOLE_SOURCE_REVIEW_CLEAR_VERIFICATION_ADMISSION_HELD",
+    "selection": {
+      "sha256": "b985af320437e5d9737eed8d517b56339f87a5f46008743f0bfdd974b7ad7824",
+      "bytes": 17277,
+      "mode": 436
+    },
+    "Source_dispatch": {
+      "sha256": "ae8ae83fbac605894c8f94ee2f8e950b2baf1024aff5ccf976b212c391d78f3f",
+      "bytes": 1147,
+      "mode": 436
+    },
+    "source_preparation_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+    "parent_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
+    "parent_accepted": false,
+    "parent_locally_qualified": true,
+    "parent_normal_actual": {
+      "sha256": "9dfa6104821631a61bdf9e4645799a22aa59e2b12ba47582bfa51c012b4c99d8",
+      "bytes": 2552,
+      "mode": 436
+    },
+    "parent_local_DATA_actual": {
+      "sha256": "0f4211fb908e7c1e9f7d12770e8a7af1ea0b0571b015cb97a086560d02f39a7d",
+      "bytes": 2373,
+      "mode": 436
+    },
+    "parent_local_DATA_report": {
+      "sha256": "88e129332bb397c6a61d84209b1f6d1104736a5767a1edfe5b73705bbdb5c905",
+      "bytes": 271503,
+      "mode": 436
+    },
+    "parent_review_publication": {
+      "sha256": "7f3cf688194a9e269769e2518db19ac89020cd4c5c30996332df73d8d627d17e",
+      "bytes": 2967,
+      "mode": 436
+    },
+    "selected": true,
+    "implementation_started": true,
+    "Source_authors_dispatched": true,
+    "dispatch_basis": "The actual dispatch receipt releases two bounded isolated Source lanes. The selection record retains its earlier dispatch observation.",
+    "implementation_complete": true,
+    "regression_Source_complete": true,
+    "independent_source_review_complete": true,
+    "final_document_Source_review_complete": true,
+    "Source_counts": {
+      "Source_files": 1831,
+      "owned_paths": 16,
+      "new_paths": 4,
+      "protected_parent_paths": 1815,
+      "production_paths": 3,
+      "implementation_paths": 3,
+      "comment_only_paths": 0,
+      "cumulative_paths": 128,
+      "Rust_paths": 8,
+      "doc_paths": 8
+    },
+    "new_Rust_Source_controls": [
+      {
+        "path": "crates/gz-physics-rapier/src/compound.rs",
+        "name": "compound::tests::compound_offset_mass_frame_bounds_reset_and_refusal_keep_native_pending_ownership"
+      },
+      {
+        "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_admits_finite_unit_frames_without_changing_caller_or_parameters"
+      },
+      {
+        "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_nonrepresentable_or_nonunit_frames_are_never_repaired"
+      },
+      {
+        "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_unit_band_is_closed_on_both_sides_without_normalization"
+      },
+      {
+        "path": "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "name": "joint_controller::config::rotated_link_frame_dom_tests::rotated_link_dom_does_not_expand_relative_frames_axes_topology_or_joint_domains"
+      },
+      {
+        "path": "crates/gz-sim-scene/src/world_spawn.rs",
+        "name": "world_spawn::runtime_compound_tests::offset_compound_original_optional_center_and_dual_stamps_refuse_drift_before_inputs"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_opposite_axes_and_commands_keep_measured_physical_equivalence"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_coordinates_and_samples_remain_continuous_through_reversals"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_noncoaxial_chains_move_native_bases_velocities_and_all_children"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_commands_keep_clamp_latest_zero_pause_and_invalid_equivalence"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_motor_effort_respects_explicit_isotropic_inertia_and_density_twins"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_resets_preserve_geometry_targets_identities_and_survivors"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_eight_owner_late_faults_keep_pending_atomicity_and_terminal_latch"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_motor_contact_moves_an_independent_probe_with_quiet_clear_controls"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_axis_admission_keeps_frames_topology_limits_and_other_domains_closed"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_link_quaternion_signs_and_joint_defaults_share_physical_trajectories"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_each_rotated_link_and_noncommuting_pair_obey_independent_kinematics"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "name": "joint_link_frame_binary_endpoint_witness_is_separate_from_rotated_global_queries"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_loaded_and_runtime_generations_keep_every_child_and_mass_frame"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_binary_bounds_nearest_and_visual_origin_ignore_interior_or_exterior_com"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_six_axis_edits_and_paused_inputs_round_trip_origin_and_native_com"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_explicit_inertia_density_and_centered_twins_use_measured_com_displacement"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_lifetimes_retemplate_after_retirement_and_restore_both_reset_boundaries"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_first_errors_native_boundaries_and_pending_repair_do_not_consume_ids"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_owner_and_membership_corruption_stays_upstream_of_caller_parameters"
+      },
+      {
+        "path": "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "name": "offset_compound_contacts_and_camera_capacity_keep_real_geometry_and_retained_pending_inputs"
+      }
+    ],
+    "new_Python_Source_controls": [],
+    "formatter_run": true,
+    "checks_run": false,
+    "normal_qualified": false,
+    "local_DATA_qualified": false,
+    "hosted_qualified": false,
+    "official_DATA_qualified": false,
+    "new_commit": null,
+    "final_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "accepted": false,
+    "Main_promoted": false,
+    "qualification_inherited": false,
+    "own_historical_normal_failures": [],
+    "prior_normal_method_failures": [],
+    "prior_operational_release_failures": [],
+    "prior_reader_failures": [],
+    "scope": "Both features, regression cases, retained dispositions and documents are Source reviewed and the eight Rust files are formatted. Product verification has not run. Full verification admission is held for required disk headroom and genuine predecessor hosted/artifact proof.",
+    "dependencies": "The predecessor passed local verification and its independent audit and is published for review. Its hosted outcome is unknown after a retired API-limited monitor. Runtime hosted and official proofs are required separately before this delivery full verification; no qualification is inherited.",
+    "independent_code_Source_review_complete": true,
+    "Source_control_declarations": {
+      "Rust_unique": 26,
+      "Python": 0,
+      "headless": 26,
+      "renderer": 25,
+      "overlap": 25,
+      "public": 20,
+      "private": 6
+    },
+    "new_finite_Source_cases": 0,
+    "new_CLI_Source_cases": 0,
+    "Source_count_scope": "Current file census and authored declarations only. Formatting passed; no product lint, tests, full normal cycle or independent runtime evidence audit has run for this delivery.",
+    "Source_completion": {
+      "M102": {
+        "sha256": "fd741b9a77abae7e93e3f1a578233ae81e35d62cfde6b26cccbeb3ea5e462cc2",
+        "bytes": 10882,
+        "mode": 436
+      },
+      "M103": {
+        "sha256": "cf5586bf9da8c1b68f8d387cf8cbb0db06d800270cd62372e04adb82833a0718",
+        "bytes": 28486,
+        "mode": 436
+      },
+      "M102_adoption": {
+        "sha256": "a05bfb841d66a7f3431ba2651a5689a84a4646d3e817d1ba56363beff50e23b8",
+        "bytes": 2259,
+        "mode": 436
+      },
+      "M103_adoption": {
+        "sha256": "bc583774a58db920ebbb77b53bac16dffbd24786c196e1ff49333a163dd32638",
+        "bytes": 1425,
+        "mode": 436
+      },
+      "Root_retained": {
+        "sha256": "a59476766ea3fef8082b57f03c750d670e597f1b2caed6f6102d1398f0c62e7d",
+        "bytes": 680,
+        "mode": 436
+      },
+      "eight_docs": {
+        "sha256": "a565291ee359ae1a27762f19c999c2c3f98d2a631def3516c47fe78c101e9e99",
+        "bytes": 3753,
+        "mode": 436
+      },
+      "eight_docs_parent_alias_correction": {
+        "sha256": "4b5f768bb10bc16487c6c6a4722a196be55d28d4b2c81d53178b26b241f69666",
+        "bytes": 2347,
+        "mode": 436
+      },
+      "raw_census": {
+        "sha256": "8056c52f9224e3a8c5803aa3bc4bcc58ad0bb64014c3a1fd42b0e4db1378d2ba",
+        "bytes": 1662,
+        "mode": 436
+      },
+      "eight_docs_final_reviewed": {
+        "sha256": "8961c850749ad36a08037c71d86167472c5d53de085a77555d6b026e7e00ff7a",
+        "bytes": 3096,
+        "mode": 436
+      }
+    },
+    "Source_review_attribution": {
+      "code": "Root, Scope and reciprocal independent author reviews complete; M102 two actual findings and Root retained oracles closed.",
+      "eight_docs": "Root confirmed Server whole review plus sole parent-alias correction narrow closure CLEAR before this freeze."
+    },
+    "profile_projection": {
+      "headless": 26,
+      "renderer": 25,
+      "shared": 25,
+      "public_shared": 20,
+      "private_Scene_shared": 5,
+      "private_native_headless_only": 1
+    },
+    "actual_new_case_pass_counts": null,
+    "checks_started": false,
+    "checks_passed": null,
+    "current_normal_active": false,
+    "normal_resource_budget_selected": false,
+    "resource_proposal": {
+      "sha256": "98138808899b561123e6f05bd61689f08b68612477b2000e2df36e981d8947eb",
+      "bytes": 5998,
+      "mode": 436
+    },
+    "resource_execution_released": false,
+    "postformat_Source_review_complete": true,
+    "Source_formatted": true,
+    "final_Source_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
+    "final_Source_review": {
+      "sha256": "26e331cd4e2239305677c677526f4829953d662791320310ca690bec41e64b9c",
+      "bytes": 44972,
+      "mode": 436
+    },
+    "source_snapshot": {
+      "sha256": "265b28a315bb24980628fb7b5408d499ff2c83576b6d1049c4b559141300a9f5",
+      "bytes": 722296,
+      "mode": 436
+    },
+    "current_formatter_actual": {
+      "sha256": "23b31cf08f5e23899474a510584942bfe8c0a60677215c771605b011c8549bb4",
+      "bytes": 9120,
+      "mode": 436
+    },
+    "formatter_Root_actual": {
+      "sha256": "199f58c3aa018fd8e8ec4f3ede21b4790b534d629fe1c7f5cfdb790a8dfd9467",
+      "bytes": 2017,
+      "mode": 436
+    },
+    "preformat_Source_review": {
+      "sha256": "3d99f56fa1fe152833abe0e91a54677c58ef1f161eb037eb94b693d2b7e6deca",
+      "bytes": 43267,
+      "mode": 436
+    },
+    "preformat_Source_snapshot": {
+      "sha256": "9167e01cd24c5b927635bd869069f334d42be4a4e3e6b0ee4990b118adfbe6e7",
+      "bytes": 719802,
+      "mode": 436
+    },
+    "formatter_custody": {
+      "current_eight_file_formatter": {
+        "sha256": "23b31cf08f5e23899474a510584942bfe8c0a60677215c771605b011c8549bb4",
+        "bytes": 9120,
+        "mode": 436
+      },
+      "affected_Rust_paths": [
+        "crates/gz-physics-rapier/src/compound.rs",
+        "crates/gz-physics-rapier/tests/compound.rs",
+        "crates/gz-sim-scene/src/joint_controller/config.rs",
+        "crates/gz-sim-scene/src/world_spawn.rs",
+        "crates/gz-sim-scene/tests/joint_controller_link_frames.rs",
+        "crates/gz-sim-scene/tests/private/joint_controller_config.rs",
+        "crates/gz-sim-scene/tests/runtime_compound_offset_com.rs",
+        "crates/gz-sim-scene/tests/runtime_compound_retemplate.rs"
+      ],
+      "reused_parent_formatter": false
+    },
+    "formatter_scope": "One eight-file rustfmt invocation returned zero. All source modes, files outside the affected paths, index and parent were preserved; independent postformat Source review is complete. Formatting is not product verification.",
+    "normal_resource_budget_Source_prepared": true,
+    "resource_admission": false,
+    "resource_Source_review_scope": "Conditional Source mathematics only; observed SSD headroom is below the proposed initial admission. No allocation, eviction, reuse, cleanup or future fit guarantee is authorized.",
+    "proposed_normal_initial_SSD_bytes": 42949672960,
+    "observed_Root_SSD_free_bytes": 32464293888,
+    "observed_SSD_deficit_to_proposal_bytes": 10485379072,
+    "owner_capacity_decision_pending": true,
+    "verification_procedure_Source_prepared": true,
+    "verification_procedure_Source_batch": {
+      "sha256": "77756a62ae09c9f422cb8a8cb6bf7e4cd04bb4e8d46bc2cc867751e5a3711bc4",
+      "bytes": 59807,
+      "mode": 436
+    },
+    "verification_procedure_Source_review_complete": false,
+    "verification_procedure_execution_released": false,
+    "parent_hosted_outcome": null,
+    "parent_hosted_monitor_active": false,
+    "parent_hosted_monitor_failure": {
+      "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
+      "bytes": 1319,
+      "mode": 436
+    },
+    "parent_runtime_hosted_and_official_proofs_required_before_normal": true
   }
 }
