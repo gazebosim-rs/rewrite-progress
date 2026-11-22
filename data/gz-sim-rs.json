@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-22T18:43:33.587624+00:00",
+  "updated_at": "2026-11-22T20:14:42.041289+00:00",
   "state": "active",
-  "summary": "Translated mass frames and local joint frames are reviewed and formatted; final verification is running. Prior mesh and joint-axis work passed local and hosted checks; its artifact audit is pending.",
+  "summary": "Reviewed test-only corrections are formatted and their consolidated verification retry is running. Prior mesh and joint-axis work passed its local, hosted and official audits.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M100-M101-final-verification-running",
-      "title": "Mass frames and joint frames: verification running",
-      "detail": "Implementation, regression tests and documentation are reviewed. Formatting passed. The required full verification is running; its result is pending."
+      "id": "M100-M101-corrective-full-verification-running",
+      "title": "Mass and joint frames: corrective verification",
+      "detail": "The two test-only corrections are independently reviewed and formatted. One consolidated full normal retry is running; its result and any new qualified commit remain pending."
     },
     {
-      "id": "M98-M99",
-      "title": "Hosted evidence closeout",
-      "detail": "Exact review commit passed local verification, independent local evidence review and hosted CI. Original hosted artifacts are collected; their official audit is pending."
+      "id": "M98-M99-own-qualification-complete-unaccepted",
+      "title": "Mesh copies and joint axes: audits passed",
+      "detail": "The exact review commit passed local verification, its independent evidence audit, hosted CI and the independent audit of the original artifacts. Formal acceptance remains pending."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Finish the running verification and independently audit its recorded results.",
-    "Publish the reviewed candidate and qualify exact hosted CI and original artifacts.",
+    "Finish the running consolidated corrective verification.",
+    "After a pass, audit local evidence and qualify the same review commit through hosted CI and its original-artifact audit.",
     "Complete formal browser evidence and owner-approved demo shutdown before acceptance."
   ],
   "blockers": [
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted test and coverage measurements describe M76. The current features are reviewed and formatted; full verification is running and its result is pending. M98/M99 passed local and hosted checks; original artifacts are collected and their independent audit is pending. Formal acceptance and the persistent demo owner gates are unchanged.",
+    "note": "Accepted test and coverage metrics describe M76. Corrected mass-frame/joint-frame verification is running; no new pass is claimed. Original failed headless evidence remains. M98/M99 has its own local, hosted and official qualification. Formal acceptance and manual-demo owner gates are unchanged.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1134,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Top-level test and coverage measurements describe accepted M76 Main only. M100/M101 verification is running; no result or qualified commit is recorded. M98/M99 passed local and hosted checks; original artifacts are collected and their independent official audit is pending.",
+    "qualification_scope": "Top-level measurements and CI describe accepted M76 Main only. The current corrected source is unverified; the first normal failure and partial headless results belong only to its failed tree. M98/M99 completed own local, hosted and artifact audits and remains unaccepted.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -11252,7 +11252,7 @@
       "prior_official_method_failures": []
     },
     "current_M98_M99_Source": {
-      "state": "M98_M99_LOCALLY_AND_HOSTED_QUALIFIED_ORIGINALS_COLLECTED_OFFICIAL_AUDIT_PENDING",
+      "state": "M98_M99_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFICATION_COMPLETE_UNACCEPTED",
       "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
       "parent_tree": "ad639bd9e8e5e8fdbe8bf21ed1ea7511cc6bffb5",
       "parent_locally_qualified": true,
@@ -11335,7 +11335,11 @@
         "bytes": 4940,
         "mode": 436
       },
-      "official_actual": null,
+      "official_actual": {
+        "sha256": "1d6afe7d370ac21351d991fab4f8ea23eda8fbaadd7cc03f3b4aa027b9798540",
+        "bytes": 3612,
+        "mode": 436
+      },
       "checks_run": true,
       "checks_started": true,
       "checks_passed": true,
@@ -11345,14 +11349,14 @@
       "normal_qualified": true,
       "local_DATA_qualified": true,
       "hosted_qualified": true,
-      "official_DATA_qualified": false,
+      "official_DATA_qualified": true,
       "qualification_inherited": false,
       "own_historical_normal_failures": [],
       "prior_normal_method_failures": [],
       "prior_reader_failures": [],
       "accepted": false,
       "Main_promoted": false,
-      "scope": "M98/M99 passed full local verification and an independent audit of the recorded local results at the same published review commit. All 23 new controls ran in both profiles, including nineteen public and four private controls. Exact hosted CI then succeeded on the same commit, with all thirteen steps passing. The original hosted artifacts were collected once and retained; their independent official audit is pending. The earlier watcher failure under API rate limiting remains a historical monitoring failure. No formal acceptance or qualification transfers to another delivery; the demo and owner gates remain held.",
+      "scope": "M98/M99 passed full local verification, an independent audit of those recorded results, exact hosted CI and the independent audit of its once-collected original artifacts on the same published review commit. Its own qualification is complete; formal acceptance and Main promotion remain pending. The prior rate-limited watcher and two collector preflight failures stay recorded separately. No product tests or downloads were repeated for the official audit, and no qualification transfers to another delivery.",
       "production_leases": {
         "M98": [
           "crates/gz-sim-scene/src/world_spawn.rs"
@@ -11564,7 +11568,7 @@
         "mode": 436
       },
       "normal_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
-      "checks_scope": "Full local verification, its independent evidence audit and exact hosted CI passed on the same published review commit. The original hosted artifacts were collected once and retained. Their independent official audit is pending. The prior rate-limited watcher failure remains recorded separately and does not change the later hosted success or imply acceptance.",
+      "checks_scope": "All own local, hosted and original-artifact audit gates passed on the same exact review commit. Four retained RAW comparisons ran once in the official audit. These results qualify only that delivery and do not constitute formal acceptance or qualification of the corrected current source.",
       "normal_qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
       "normal_profile_observation": {
         "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
@@ -11695,7 +11699,57 @@
           "bytes": 3176,
           "mode": 436
         }
-      ]
+      ],
+      "official_report": {
+        "sha256": "6d3c3d0778cf495d1f78c9cf8dc9f818fb2e24fe5962da8614542095f854e3e6",
+        "bytes": 395482,
+        "mode": 436
+      },
+      "official_Source": {
+        "sha256": "269c9ac9e0dfea4d482aabf4ad067bcf85a9567cdd521a2cd94fd835e2e0a716",
+        "bytes": 669786,
+        "mode": 436
+      },
+      "official_release": {
+        "sha256": "53ce561f669709d92dab5c4575be33efe0a3b56c1733f59ccfac223a4c984ee7",
+        "bytes": 3107,
+        "mode": 436
+      },
+      "all_own_qualification_complete": true,
+      "official_run": {
+        "session": 84317,
+        "launch_tool": "cdaedc",
+        "terminal_tool": "32c95f",
+        "actual_Root_exit_code": 0,
+        "status": "completed_success"
+      },
+      "official_RAW_profiles": [
+        {
+          "label": "headless",
+          "raw_profiles": 456,
+          "merged_sha256": "b76cd79fb6b708bdc77a0be116a35d8fa7ff8753b329224b557992836f3fb6a8",
+          "receipt_sha256": "aae592b276d1eff98ec8c32115e4daf501fa93b1457a371dd0c459186cf6fc01"
+        },
+        {
+          "label": "renderer",
+          "raw_profiles": 748,
+          "merged_sha256": "d39482e4a3d963f8490e66c6fa42ddc4ed1483eaf65d559c2ce171a59ad77655",
+          "receipt_sha256": "dd873267d68cbcad807747b1cc7faf6377fda4e0c398a2bbbc5414251f304bda"
+        },
+        {
+          "label": "nativefree",
+          "raw_profiles": 57,
+          "merged_sha256": "c8f815a91e55d0b5f129d4d5bb0217f52953c9fdb40c9e2836c912c801727469",
+          "receipt_sha256": "daf6ab856e66e6c236eb23cca4290321a52403f55d3658c0ca50c757a4ff837c"
+        },
+        {
+          "label": "rgb-camera",
+          "raw_profiles": 168,
+          "merged_sha256": "c0f8b37bfd0840029321a977525a82b2c91ebfec61f4d2f1a36075a9771b0946",
+          "receipt_sha256": "f2f5ae300b248ab7ef5cd193b48becf68cc6564a29377f114b7ac9c77b0aded5"
+        }
+      ],
+      "prior_official_method_failures": []
     },
     "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dddf1f4284557c420e384d263a4365b2153dfde2"
   },
