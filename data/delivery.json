@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-22T04:36:25.399011+00:00",
+  "as_of": "2026-11-22T14:16:58.308149+00:00",
   "execution_state": "active",
   "current_phase": "M98",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -18055,7 +18055,7 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "final_document_Source_review_complete": true,
-      "checks_run": false,
+      "checks_run": true,
       "formatter_run": true,
       "normal_qualified": false,
       "independent_local_DATA_qualified": false,
@@ -18065,7 +18065,7 @@
       "qualification_inherited": false,
       "Source_publication_available": false,
       "future_qualified_head": null,
-      "qualification_state": "code_docs_postformat_reviewed_full_verification_capacity_held",
+      "qualification_state": "first_full_mandatory_normal_active_outcome_unknown",
       "new_Rust_Source_controls": 8,
       "new_Python_Source_controls": 0,
       "Source_control_declarations": 23,
@@ -18080,7 +18080,7 @@
         "crates/gz-sim-scene/tests/runtime_compound_to_mesh.rs"
       ],
       "whole_file_inverse_required": true,
-      "current_stage": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
+      "current_stage": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -18103,9 +18103,16 @@
         "bytes": 9297,
         "mode": 436
       },
-      "current_normal_active": false,
+      "current_normal_active": true,
       "normal_procedure_Source_review_complete": true,
-      "retained_reader_Source_review_complete": true
+      "retained_reader_Source_review_complete": true,
+      "checks_started": true,
+      "normal_execution_released": true,
+      "normal_release": {
+        "sha256": "d3a622dac968e9085d885ff19078bf7daaead11f386536f0794566d1f9f4b72a",
+        "bytes": 2716,
+        "mode": 436
+      }
     },
     {
       "id": "M99",
@@ -18203,7 +18210,7 @@
       "implementation_complete": true,
       "independent_source_review_complete": true,
       "final_document_Source_review_complete": true,
-      "checks_run": false,
+      "checks_run": true,
       "formatter_run": true,
       "normal_qualified": false,
       "independent_local_DATA_qualified": false,
@@ -18213,7 +18220,7 @@
       "qualification_inherited": false,
       "Source_publication_available": false,
       "future_qualified_head": null,
-      "qualification_state": "code_docs_postformat_reviewed_full_verification_capacity_held",
+      "qualification_state": "first_full_mandatory_normal_active_outcome_unknown",
       "new_Rust_Source_controls": 15,
       "new_Python_Source_controls": 0,
       "Source_control_declarations": 23,
@@ -18228,7 +18235,7 @@
         "crates/gz-sim-scene/tests/joint_controller_arbitrary_axes.rs"
       ],
       "whole_file_inverse_required": true,
-      "current_stage": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
+      "current_stage": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -18251,9 +18258,16 @@
         "bytes": 9297,
         "mode": 436
       },
-      "current_normal_active": false,
+      "current_normal_active": true,
       "normal_procedure_Source_review_complete": true,
-      "retained_reader_Source_review_complete": true
+      "retained_reader_Source_review_complete": true,
+      "checks_started": true,
+      "normal_execution_released": true,
+      "normal_release": {
+        "sha256": "d3a622dac968e9085d885ff19078bf7daaead11f386536f0794566d1f9f4b72a",
+        "bytes": 2716,
+        "mode": 436
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -18892,7 +18906,7 @@
         "M99"
       ],
       "max_working_days": 5,
-      "integration": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
+      "integration": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
       "production_seams_disjoint": true,
       "Root_retained_leases": [
         "crates/gz-sim-scene/tests/runtime_compound_to_primitive.rs",
@@ -18902,28 +18916,28 @@
       ]
     }
   ],
-  "acceptance_boundary": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
+  "acceptance_boundary": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
   "current_delivery_group": [
     "M98",
     "M99"
   ],
   "current_development_phase": "M98",
   "board": {
-    "updated_at": "2026-11-22T04:36:25.399011+00:00",
+    "updated_at": "2026-11-22T14:16:58.308149+00:00",
     "current": {
-      "title": "Mesh copies and general joint axes: verification held",
+      "title": "Mesh copies and general joint axes: full verification running",
       "items": [
-        "Both features and 23 regression cases are reviewed, and formatting passed. Full verification is waiting for the owner\u2019s SSD capacity decision; tests have not run.",
+        "Both features and 23 regression cases are reviewed and formatted. Full verification is running after the owner-authorized cleanup restored disk space; no result is claimed.",
         "M96/M97 passed local and hosted checks and independent evidence audits. Formal acceptance remains held by the predecessor and owner gates.",
         "The manual demo remains running without expiry. Formal browser evidence and an owner-approved shutdown still hold release acceptance."
       ]
     },
     "done": [
-      "Reviewed implementation, regression cases and documentation for both features; formatting passed.",
+      "Reviewed both features, their regression cases, documentation and verification procedures. Formatting passed, and the authorized cleanup cleared the disk-space hold.",
       "M96/M97 passed its independent official artifact audit on the same review commit as its local and hosted checks."
     ],
     "next": [
-      "Resolve the SSD capacity question, then run the reviewed full verification cycle and independently audit its results.",
+      "Complete the running full verification cycle, then independently audit its recorded results before publishing the same review commit.",
       "After local verification and its evidence audit, qualify the same M98/M99 review commit through hosted checks and artifact audits."
     ],
     "blocker": {
@@ -19083,7 +19097,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M98_M99_CODE_DOCS_POSTFORMAT_REVIEWED_FULL_VERIFICATION_CAPACITY_HELD",
+  "current_development_task": "M98_M99_REVIEWED_FIRST_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -23660,7 +23674,7 @@
       }
     }
   },
-  "phase_catalog_checkpoint_scope": "All 99 catalog rows retain their published string scope, acceptance and excluded contracts. Current M96/M97 stage and proofs record local, hosted and independent official audit success on its same unaccepted review commit. Current M98/M99 rows record reviewed implementation/docs/procedures, 23 declarations, measured inventory and formatter success; tests and full verification remain unrun under the owner capacity hold. Acceptance counters and retained historical evidence remain unchanged.",
+  "phase_catalog_checkpoint_scope": "All 99 catalog rows retain their published string scope, acceptance and excluded contracts. M96/M97 local, hosted and independent official audit qualification remains complete and unaccepted. M98/M99 has 23 reviewed Source declarations and formatter success; the first full mandatory normal is active after owner-authorized incremental-cache cleanup cleared the prior capacity hold. Its result, executed pass counts, new commit and independent local audit remain unknown. Accepted counters and retained historical evidence remain unchanged.",
   "current_M86_M87_Source": {
     "state": "M86_M87_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
@@ -31068,7 +31082,7 @@
     "prior_official_method_failures": []
   },
   "current_M98_M99_Source": {
-    "state": "M98_M99_CODE_DOCS_POSTFORMAT_REVIEWED_FULL_VERIFICATION_CAPACITY_HELD",
+    "state": "M98_M99_REVIEWED_FIRST_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
     "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
     "parent_tree": "ad639bd9e8e5e8fdbe8bf21ed1ea7511cc6bffb5",
     "parent_locally_qualified": true,
@@ -31140,12 +31154,12 @@
     "local_DATA_actual": null,
     "hosted_actual": null,
     "official_actual": null,
-    "checks_run": false,
-    "checks_started": false,
+    "checks_run": true,
+    "checks_started": true,
     "checks_passed": false,
     "formatter_run": true,
-    "current_normal_active": false,
-    "normal_execution_released": false,
+    "current_normal_active": true,
+    "normal_execution_released": true,
     "normal_qualified": false,
     "local_DATA_qualified": false,
     "hosted_qualified": false,
@@ -31156,7 +31170,7 @@
     "prior_reader_failures": [],
     "accepted": false,
     "Main_promoted": false,
-    "scope": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
+    "scope": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
     "production_leases": {
       "M98": [
         "crates/gz-sim-scene/src/world_spawn.rs"
@@ -31181,8 +31195,8 @@
       "mode": 436
     },
     "Root_retained_whole_Source_review_complete": true,
-    "resource_scope": "Conditional planning admission: 32 GiB SSD and 12 GiB shared memory, mandatory 14 GiB initial SSD and maintained floors/early guards/jobs unchanged. Root SSD observation is 2,916,671,488 bytes short of planning reserve; shared memory fits that observation. Owner question asks for 4 GiB space or an exact recovery proposal; no reply, cleanup, eviction, target creation or full-normal release is recorded. No fit guarantee.",
-    "resource_execution_released": false,
+    "resource_scope": "The owner requested workspace cleanup. Root removed only selected regenerable incremental compiler files, preserving Source, retained evidence, logs, linked ELFs, archives, Fuel and the persistent demo. The actual cleanup restored SSD space above the selected 32 GiB planning reserve; the separate Root release rechecked 32 GiB SSD / 12 GiB shared-memory admission and maintained floors. Prior proposal/observation cards remain historical planning records. The first full normal is active; no future-fit or successful-outcome guarantee is made.",
+    "resource_execution_released": true,
     "initial_contract_docs_state": "Final eight docs adopted and independently reviewed; original author-time provisional inventory is preserved in its immutable completion.",
     "protected_demo_session": 86363,
     "stop_or_restart_authorized": false,
@@ -31288,8 +31302,8 @@
       "bytes": 838,
       "mode": 436
     },
-    "resource_hold": true,
-    "owner_capacity_decision_pending": true,
+    "resource_hold": false,
+    "owner_capacity_decision_pending": false,
     "normal_and_retained_procedure_Source": {
       "sha256": "aaa252a232041de11c05ceb6ce15be09bae1ac8b16c27de2aed800a2ed7ed909",
       "bytes": 8811,
@@ -31308,6 +31322,56 @@
       "sha256": "31f963df0cb033ba3c21d68e69c009ac29941b544227fa23fa678125b8e4c1c6",
       "bytes": 369692,
       "mode": 436
-    }
+    },
+    "resource_cleanup_actual": {
+      "sha256": "8047dc1102db0569ad4f75321a7d2b93d2106b72b746f3f240632b2f27149281",
+      "bytes": 1608277,
+      "mode": 436
+    },
+    "resource_cleanup_observation": {
+      "removed_files": 10408,
+      "removed_allocated_bytes": 4434911232,
+      "Cargo_profile_locks_held": 14,
+      "SSD_free_before": 31239069696,
+      "SSD_free_after": 35673980928,
+      "observed_SSD_free_increase": 4434911232,
+      "tests_lint_builds_run_for_cleanup": false,
+      "Fuel_or_demo_touched": false
+    },
+    "normal_release": {
+      "sha256": "d3a622dac968e9085d885ff19078bf7daaead11f386536f0794566d1f9f4b72a",
+      "bytes": 2716,
+      "mode": 436
+    },
+    "normal_source": {
+      "sha256": "03e232d78873e71919b84f2fb16cc5f2988ad716da3abcd8ba0c23153d1799e0",
+      "bytes": 261058,
+      "mode": 436
+    },
+    "normal_release_binding": {
+      "sha256": "7e7f22dc355d7b1f6dc927a1b74add6cfdae75d6ec7311594e64a51c0fc9782a",
+      "bytes": 21912,
+      "mode": 436
+    },
+    "normal_run": {
+      "session": 24609,
+      "launch_tool": "72b983",
+      "status": "active",
+      "outcome": null,
+      "actual_Root_exit_code": null,
+      "actual_Git_exit_code": null,
+      "result": null,
+      "commit": null,
+      "basis": "Root direct actual-launch observation supplied with the reviewed release; no duplicate process watch or product execution by this data author."
+    },
+    "normal_release_Root_resources": {
+      "root": 35672166400,
+      "scratch": 14526472192,
+      "runtime": 6731218944,
+      "memory": 38869979136
+    },
+    "normal_result": null,
+    "normal_commit": null,
+    "checks_scope": "The reviewed first full mandatory normal is active. All executed pass counts, terminal result, commit and independent evidence-audit outcome remain unknown. Source review and formatter success are separate from verification results."
   }
 }
