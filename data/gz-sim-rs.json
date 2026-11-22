@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-22T01:28:13.412699+00:00",
+  "updated_at": "2026-11-22T02:24:44.270905+00:00",
   "state": "active",
-  "summary": "Implementation and regression cases are written for M98/M99; documentation and review are finishing. M96/M97 passed local checks and its published commit is in hosted CI. M94/M95 passed its artifact audit.",
+  "summary": "Mesh copies and general joint axes are reviewed and formatted. Full verification needs the owner\u2019s SSD capacity decision. M96/M97 passed hosted checks; its artifact audit is next. M77 still holds acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M98-M99-source-implementation",
-      "title": "Runtime Mesh copies and general joint axes",
-      "detail": "Implementation and regression cases are written for both features. Documentation and review are finishing; tests have not run yet."
+      "id": "M98-M99-verification-capacity-held",
+      "title": "Mesh copies and general joint axes",
+      "detail": "Both features and 23 regression cases are reviewed, and formatting passed. Full verification is waiting for the owner\u2019s SSD capacity decision; tests have not run."
     },
     {
-      "id": "M96-M97-hosted-verification-running",
-      "title": "M96/M97 hosted verification running",
-      "detail": "M96/M97 passed full local checks and an independent evidence audit. Its commit is published and hosted CI is running."
+      "id": "M96-M97-hosted-passed-artifact-audit-pending",
+      "title": "M96/M97 hosted checks passed",
+      "detail": "M96/M97 passed full local checks, its independent evidence audit and hosted checks. Collecting and auditing the hosted artifacts comes next."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Finish M98/M99 documentation and review, then run one full required verification cycle.",
-    "Finish M96/M97 hosted checks and its independent artifact audit, preserving all predecessor and acceptance gates.",
+    "Resolve the SSD capacity question, run the full reviewed verification cycle, then independently audit its recorded results.",
+    "Collect and independently audit the hosted artifacts for M96/M97; keep every predecessor and acceptance gate.",
     "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
   ],
   "blockers": [
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Implementation and regression cases are written for the two new features; documentation and review are finishing. Their tests have not run yet. M96/M97 passed local checks and evidence review; hosted CI is running. M94/M95 passed its artifact audit. Accepted releases and the persistent demo are unchanged.",
+    "note": "Both features, their regression cases and documentation are reviewed; formatting passed. Tests have not run because full verification needs the owner\u2019s SSD capacity decision. M96/M97 passed local and hosted checks; its hosted artifact audit is pending. Acceptance evidence and the persistent demo remain unchanged.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1135,7 +1135,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "M98 runtime-compound Mesh copies and M99 arbitrary finite unit joint axes are selected for disjoint parallel Source work over genuine locally qualified unaccepted a578c68a. Root dispatched both authors after immutable selectionc240 creation. Author Source is now frozen; integrated census, docs and whole independent review remain pending. Exact joined declaration/Source counts and all verification outcomes are unknown. No formatter/tests/normal/audits for this new wave are released. Both lanes have at most5working days including review and mandatory gates. M96/M97 own CI is running; M94/M95 own official qualification passed. No inheritance or acceptance transfer.",
+    "qualification_scope": "M98/M99 implementation, regression code, documentation and independent whole code/docs/postformat reviews are complete. The final formatted Source tree is e8dd98dd over locally qualified unaccepted a578c68a. Measured inventory is 1,823 Source files, 16 owned paths, four new paths, two production paths and 120 cumulative paths; 23 new Rust declarations comprise 19 public and four private controls in both profiles, with no new Python, finite or CLI cases. These are declarations, not executed results. One eight-file formatter passed; tests, lint, full normal and evidence audits have not run. Full verification is held for the owner SSD capacity decision under the reviewed conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source metadata coherence peer review is separately pending at this observation. No current normal or new qualification is claimed.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -9819,7 +9819,7 @@
       "note": "M94/M95 has seventeen declared Rust controls, not passes; formatting and verification are next. M92/M93 passed local and hosted qualification; official DATA remains pending. M90/M91 own qualification is complete and unaccepted. M77 proofs and the no-expiry demo are unchanged. Accepted 76 phases and 202 slices, catalog 95, Latest M70 original 41-example package."
     },
     "current_M96_M97_Source": {
-      "state": "M96_M97_LOCALLY_QUALIFIED_REVIEW_PUBLISHED_HOSTED_RUNNING_OFFICIAL_PENDING",
+      "state": "M96_M97_LOCAL_AND_HOSTED_QUALIFIED_OFFICIAL_COLLECTION_PENDING",
       "parent": "ac4af1c738a9daaf3d9d899eca46c690d3aac22a",
       "parent_tree": "7d050c307e07062487ef11a99c115e695cc26e05",
       "parent_locally_qualified": true,
@@ -9897,14 +9897,14 @@
         "crates/gz-sim-scene/src/joint_controller/config.rs",
         "crates/gz-sim-scene/src/world_spawn.rs"
       ],
-      "current_scope": "M96/M97 passed full normal and independent retained local DATA at a578c68a/treead639/parentac4. H2002/R1538, two ignored each,494Python, own18 in both profiles, required248H/194R and15strict bases are genuine retained observations. Exact review publication passed once, preserving all106 old heads/Main and adding only the107th review ref. Automatic simulatorCI44970670576 attempt1 is running under soleRootwatch54430; hosted and official outcomes are unknown. Product70d2/6f23, method4447, operational15996 and all formatter/parent histories remain separate. New M98/M99 Source work is separately selected over this locally qualified unaccepted parent; no qualification/acceptance inheritance.",
+      "current_scope": "M96/M97 passed full local verification and its independent evidence audit at a578c68a/tree ad639. Its exact published review commit also passed hosted run 44970670576 attempt 1: job 137049524268 and all thirteen steps succeeded. Root watch 54430 retired with actual exit 0. Official artifact collection has not run and its audit is pending. Product, method, operational and formatter histories remain separate; no acceptance or qualification transfers to M98/M99.",
       "checks_run": true,
       "checks_started": true,
       "checks_passed": true,
       "formatter_run": true,
       "normal_qualified": true,
       "local_DATA_qualified": true,
-      "hosted_qualified": false,
+      "hosted_qualified": true,
       "official_DATA_qualified": false,
       "qualification_inherited": false,
       "current_normal_active": false,
@@ -9943,7 +9943,11 @@
         "bytes": 2498,
         "mode": 436
       },
-      "hosted_actual": null,
+      "hosted_actual": {
+        "sha256": "6471c3bf8e0bd26e20e609f4f77b7d4e5f782e6dd45e93cc24df5b8bffdaa0b9",
+        "bytes": 2216,
+        "mode": 436
+      },
       "official_actual": null,
       "protected_demo_session": 86363,
       "stop_or_restart_authorized": false,
@@ -10079,7 +10083,7 @@
         "commit": null
       },
       "correction_scope": "Only expected rows9/14 now join InvalidScene; density8 remains InvalidState. Source resolver validation precedes representability. Borrowed row/error diagnostics add visibility without changing inputs, atomicity, late cases, horizons or declaration identities.",
-      "checks_scope": "Normal0 and independent retained local DATA0 completed at the same Source commit. Exact review publication passed; own hosted CI is active with outcome unknown and official qualification is pending. No evidence replay or acceptance transfer.",
+      "checks_scope": "Local normal and independent evidence audit passed; the same review commit passed hosted checks. Official artifact collection and audit remain pending. No acceptance or qualification inheritance.",
       "formatter_custody": {
         "original_nine_file_formatter": {
           "sha256": "8f18f6f8a1883db7ab3c3c75cf7a59ab32db88cf00e4a94eff83cdfb7d914b0f",
@@ -10281,22 +10285,25 @@
         "attempt": 1,
         "head_sha": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
         "head_branch": "review/m96-m97-runtime-primitive-copy-signed-axes",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44970670576"
       },
       "hosted_watch_observation": {
         "session": 54430,
         "launch_tool": "881aed",
-        "status": "active",
-        "outcome": null,
-        "basis": "Root sole watcher launch observation; no duplicate watch/API by this author."
+        "status": "retired",
+        "outcome": "success",
+        "basis": "Retained Root actual receipt and single saved run/jobs/artifacts capture; no repeated API or watch.",
+        "terminal_tool": "281ecf",
+        "actual_exit_code": 0
       },
       "next_wave_selection": {
         "sha256": "c240ca6274e4139f1195662fad411a6c39b3adc07c1b03222f376a6f3ccf925e",
         "bytes": 14658,
         "mode": 436
-      }
+      },
+      "official_collection_invoked": false
     },
     "current_M94_M95_parent_qualification": {
       "commit": "ac4af1c738a9daaf3d9d899eca46c690d3aac22a",
@@ -10983,18 +10990,20 @@
         "attempt": 1,
         "head_sha": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
         "head_branch": "review/m96-m97-runtime-primitive-copy-signed-axes",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44970670576"
       },
       "hosted_watch_observation": {
         "session": 54430,
         "launch_tool": "881aed",
-        "status": "active",
-        "outcome": null,
-        "basis": "Root sole watcher launch observation; no duplicate watch/API by this author."
+        "status": "retired",
+        "outcome": "success",
+        "basis": "Retained Root actual receipt and single saved run/jobs/artifacts capture; no repeated API or watch.",
+        "terminal_tool": "281ecf",
+        "actual_exit_code": 0
       },
-      "hosted_qualified": false,
+      "hosted_qualified": true,
       "official_DATA_qualified": false,
       "own_normal_failures": [
         {
@@ -11103,12 +11112,19 @@
         "RGB_CLI_cases": 21,
         "Source_bindings": 1819
       },
-      "state": "M96_M97_LOCALLY_QUALIFIED_REVIEW_PUBLISHED_HOSTED_RUNNING_OFFICIAL_PENDING",
-      "current_stage": "M96/M97 passed full normal and independent retained local DATA at a578c68a/treead639/parentac4. H2002/R1538, two ignored each,494Python, own18 in both profiles, required248H/194R and15strict bases are genuine retained observations. Exact review publication passed once, preserving all106 old heads/Main and adding only the107th review ref. Automatic simulatorCI44970670576 attempt1 is running under soleRootwatch54430; hosted and official outcomes are unknown. Product70d2/6f23, method4447, operational15996 and all formatter/parent histories remain separate. New M98/M99 Source work is separately selected over this locally qualified unaccepted parent; no qualification/acceptance inheritance.",
-      "qualification_inherited": false
+      "state": "M96_M97_LOCAL_AND_HOSTED_QUALIFIED_OFFICIAL_COLLECTION_PENDING",
+      "current_stage": "M96/M97 passed full local verification and its independent evidence audit at a578c68a/tree ad639. Its exact published review commit also passed hosted run 44970670576 attempt 1: job 137049524268 and all thirteen steps succeeded. Root watch 54430 retired with actual exit 0. Official artifact collection has not run and its audit is pending. Product, method, operational and formatter histories remain separate; no acceptance or qualification transfers to M98/M99.",
+      "qualification_inherited": false,
+      "current_normal_active": false,
+      "hosted_actual": {
+        "sha256": "6471c3bf8e0bd26e20e609f4f77b7d4e5f782e6dd45e93cc24df5b8bffdaa0b9",
+        "bytes": 2216,
+        "mode": 436
+      },
+      "official_collection_invoked": false
     },
     "current_M98_M99_Source": {
-      "state": "M98_M99_SELECTED_PARALLEL_SOURCE_REVIEW_AND_DOCS_PENDING",
+      "state": "M98_M99_CODE_DOCS_POSTFORMAT_REVIEWED_FULL_VERIFICATION_CAPACITY_HELD",
       "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
       "parent_tree": "ad639bd9e8e5e8fdbe8bf21ed1ea7511cc6bffb5",
       "parent_locally_qualified": true,
@@ -11148,11 +11164,11 @@
         "attempt": 1,
         "head_sha": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
         "head_branch": "review/m96-m97-runtime-primitive-copy-signed-axes",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44970670576"
       },
-      "implementation_complete": false,
+      "implementation_complete": true,
       "author_Source_frozen": true,
       "author_Source_completions": {
         "M98": {
@@ -11166,15 +11182,15 @@
           "mode": 436
         }
       },
-      "regression_Source_complete": false,
-      "independent_code_Source_review_complete": false,
-      "final_docs_authored_complete": false,
-      "final_docs_review_complete": false,
+      "regression_Source_complete": true,
+      "independent_code_Source_review_complete": true,
+      "final_docs_authored_complete": true,
+      "final_docs_review_complete": true,
       "future_Source_counts": null,
       "future_case_counts": null,
-      "new_Rust_Source_controls": null,
-      "new_Python_Source_controls": null,
-      "final_Source_tree": null,
+      "new_Rust_Source_controls": 23,
+      "new_Python_Source_controls": 0,
+      "final_Source_tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
       "future_qualified_commit": null,
       "normal_actual": null,
       "local_DATA_actual": null,
@@ -11183,7 +11199,7 @@
       "checks_run": false,
       "checks_started": false,
       "checks_passed": false,
-      "formatter_run": false,
+      "formatter_run": true,
       "current_normal_active": false,
       "normal_execution_released": false,
       "normal_qualified": false,
@@ -11196,7 +11212,7 @@
       "prior_reader_failures": [],
       "accepted": false,
       "Main_promoted": false,
-      "scope": "M98 runtime-compound Mesh copies and M99 arbitrary finite unit joint axes are selected for disjoint parallel Source work over genuine locally qualified unaccepted a578c68a. Root dispatched both authors after immutable selectionc240 creation. Author Source is now frozen; integrated census, docs and whole independent review remain pending. Exact joined declaration/Source counts and all verification outcomes are unknown. No formatter/tests/normal/audits for this new wave are released. Both lanes have at most5working days including review and mandatory gates. M96/M97 own CI is running; M94/M95 own official qualification passed. No inheritance or acceptance transfer.",
+      "scope": "M98/M99 implementation, regression code, documentation and independent whole code/docs/postformat reviews are complete. The final formatted Source tree is e8dd98dd over locally qualified unaccepted a578c68a. Measured inventory is 1,823 Source files, 16 owned paths, four new paths, two production paths and 120 cumulative paths; 23 new Rust declarations comprise 19 public and four private controls in both profiles, with no new Python, finite or CLI cases. These are declarations, not executed results. One eight-file formatter passed; tests, lint, full normal and evidence audits have not run. Full verification is held for the owner SSD capacity decision under the reviewed conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source metadata coherence peer review is separately pending at this observation. No current normal or new qualification is claimed.",
       "production_leases": {
         "M98": [
           "crates/gz-sim-scene/src/world_spawn.rs"
@@ -11220,12 +11236,116 @@
         "bytes": 8101,
         "mode": 436
       },
-      "Root_retained_whole_Source_review_complete": false,
-      "resource_scope": "Source-only checkout admission, no tests/build/target allocation released. Four floors preserved, fresh separately reviewed resource procedure before heavy verification; no eviction.",
+      "Root_retained_whole_Source_review_complete": true,
+      "resource_scope": "Conditional planning admission: 32 GiB SSD and 12 GiB shared memory, mandatory 14 GiB initial SSD and maintained floors/early guards/jobs unchanged. Root SSD observation is 2,916,671,488 bytes short of planning reserve; shared memory fits that observation. Owner question asks for 4 GiB space or an exact recovery proposal; no reply, cleanup, eviction, target creation or full-normal release is recorded. No fit guarantee.",
       "resource_execution_released": false,
-      "initial_contract_docs_state": "Scope preparation next; actual integrated author/Root/docs census required before final counts.",
+      "initial_contract_docs_state": "Final eight docs adopted and independently reviewed; original author-time provisional inventory is preserved in its immutable completion.",
       "protected_demo_session": 86363,
-      "stop_or_restart_authorized": false
+      "stop_or_restart_authorized": false,
+      "parent_hosted_actual": {
+        "sha256": "6471c3bf8e0bd26e20e609f4f77b7d4e5f782e6dd45e93cc24df5b8bffdaa0b9",
+        "bytes": 2216,
+        "mode": 436
+      },
+      "parent_hosted_qualified": true,
+      "post_formatter_Source_review_complete": true,
+      "final_metadata_coherence_peer_review_complete": false,
+      "Source_controls": {
+        "unique": 23,
+        "headless": 23,
+        "renderer": 23,
+        "overlap": 23,
+        "public": 19,
+        "private": 4,
+        "Python": 0,
+        "new_finite": 0,
+        "new_CLI": 0
+      },
+      "final_joined_Source_counts": {
+        "Source_files": 1823,
+        "owned_paths": 16,
+        "new_paths": 4,
+        "production_paths": 2,
+        "cumulative_paths": 120
+      },
+      "final_Source_review": {
+        "sha256": "76f0dc25d7975f81266e36e15848e491d50ac105a7b1141191ce098ee721e935",
+        "bytes": 31273,
+        "mode": 436
+      },
+      "source_snapshot": {
+        "sha256": "351458e2885f4554dbc0de2bb65ad67d12d2c5db4cfc253f16763284cc284f59",
+        "bytes": 695785,
+        "mode": 436
+      },
+      "preformat_Source_review": {
+        "sha256": "603582d899922b80da10b3d73a810db5bcd54cd99e64e585f09733104c71a2ac",
+        "bytes": 3293,
+        "mode": 436
+      },
+      "preformat_Source_snapshot": {
+        "sha256": "6da78e7d38fc9b005cb86ac92fab85ae656a7b9553aa5dd4b61e68aa6e7945bb",
+        "bytes": 506021,
+        "mode": 436
+      },
+      "current_formatter_actual": {
+        "sha256": "95f425265d4265308e4a85eebbb63af1263c5806153d4bb64bc9e26ba357f21d",
+        "bytes": 9297,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "sha256": "16357c13ce2fabe2a282c5b50e86eaedfcc2e8013cab155b568b09b4b1a9d6df",
+        "bytes": 2391,
+        "mode": 436
+      },
+      "formatter_custody": {
+        "current_eight_file_formatter": {
+          "sha256": "95f425265d4265308e4a85eebbb63af1263c5806153d4bb64bc9e26ba357f21d",
+          "bytes": 9297,
+          "mode": 436
+        },
+        "affected_Rust_paths": [
+          "crates/gz-sim-scene/src/joint_controller/config.rs",
+          "crates/gz-sim-scene/src/world_spawn.rs",
+          "crates/gz-sim-scene/tests/joint_controller_arbitrary_axes.rs",
+          "crates/gz-sim-scene/tests/joint_controller_principal_axes.rs",
+          "crates/gz-sim-scene/tests/joint_controller_signed_axes.rs",
+          "crates/gz-sim-scene/tests/runtime_compound_retemplate.rs",
+          "crates/gz-sim-scene/tests/runtime_compound_to_mesh.rs",
+          "crates/gz-sim-scene/tests/runtime_compound_to_primitive.rs"
+        ],
+        "reused_parent_formatter": false
+      },
+      "Source_review_scopes": {
+        "M98": "Server whole600d29 CLEAR; Root entire test+production+completion read.",
+        "M99": "Package whole04aa CLEAR; Root production/private/declarations selected read.",
+        "Root_retained": "Scope whole9a6a CLEAR, all4 full-file inverse/unchanged neighborhoods and seven exact same-input physical positives/two comment-only Mesh negatives.",
+        "eight_docs": "Package wholefa5b CLEAR,25planningboundaries/97oldphase56group/rawprefixsuffix/case+resource+custody; Root both completeguides/commonprefix read.",
+        "postformat": "Server entire67,684Bdiff290c onlylayout/trailingcommas/equivalentclosure-match wrappers; allidentifiers/literals/comments/controlIDs/inputs/bounds preserved; all8before/current/fullcards/1823modes1815outside/index881/parenta578 verified."
+      },
+      "final_docs_Source_completion": {
+        "sha256": "fa5b0670d029e5881762330764403e46a9a2a480cce2d6b7976c049c644a2b5f",
+        "bytes": 16625,
+        "mode": 436
+      },
+      "final_docs_review_scope": "Root and Package whole Source review closed; original author-time pending flags remain immutable observations. Current formatter and postformat Source review passed separately; no tests or lint ran.",
+      "resource_proposal": {
+        "sha256": "1fbfd0df05ef97e2582b679410bf1f94cc177b4dcd020b27cc181caeab20eb2b",
+        "bytes": 9684,
+        "mode": 436
+      },
+      "resource_Source_review": {
+        "sha256": "473453a75e7d5f7455d8b47d943292ac5db6a0c811864f98939cc561e97bc5af",
+        "bytes": 2030,
+        "mode": 436
+      },
+      "resource_Root_observation": {
+        "sha256": "87f800ebcb63963990a56b687eabddf9fd388a6cf4560fb99f4e74cffb1a0b02",
+        "bytes": 838,
+        "mode": 436
+      },
+      "resource_hold": true,
+      "owner_capacity_decision_pending": true
     }
   },
   "phase_status": {
