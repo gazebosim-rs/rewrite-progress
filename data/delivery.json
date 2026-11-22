@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-22T14:16:58.308149+00:00",
+  "as_of": "2026-11-22T15:40:27.891081+00:00",
   "execution_state": "active",
   "current_phase": "M98",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -18057,15 +18057,15 @@
       "final_document_Source_review_complete": true,
       "checks_run": true,
       "formatter_run": true,
-      "normal_qualified": false,
-      "independent_local_DATA_qualified": false,
+      "normal_qualified": true,
+      "independent_local_DATA_qualified": true,
       "hosted_qualified": false,
       "official_DATA_qualified": false,
       "accepted": false,
       "qualification_inherited": false,
-      "Source_publication_available": false,
-      "future_qualified_head": null,
-      "qualification_state": "first_full_mandatory_normal_active_outcome_unknown",
+      "Source_publication_available": true,
+      "future_qualified_head": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "qualification_state": "locally_qualified_review_published_hosted_outcome_unknown_monitoring_paused",
       "new_Rust_Source_controls": 8,
       "new_Python_Source_controls": 0,
       "Source_control_declarations": 23,
@@ -18080,9 +18080,17 @@
         "crates/gz-sim-scene/tests/runtime_compound_to_mesh.rs"
       ],
       "whole_file_inverse_required": true,
-      "current_stage": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
-      "normal_actual": null,
-      "local_DATA_actual": null,
+      "current_stage": "M98/M99 passed the full mandatory normal and an independent retained local evidence audit at clean commit 1a4bdbb5/tree e8dd98dd/parent a578c68a. The audit verified all 23 new controls in both profiles, including 19 public and four private controls, and all retained gates. Observed counts are bound only to this same commit. Its nonforced review publication passed, preserving all 107 prior heads and Main and adding only the exact new review ref. Hosted CI 45038323899 attempt 1 was last observed running with job 137256923547 verifying the product. Root watcher 18359 retired with exit 1 after an HTTP403 API rate limit; monitoring is paused and the hosted outcome is unknown. This watcher failure is not a CI or product result. Official audit outcome remains unknown. No acceptance or qualification is inherited or transferred. M77 and all predecessor owner gates remain held.",
+      "normal_actual": {
+        "sha256": "17f505b99f8a46b754dccca12b1b74bb3800a6d2e1244197dd37b5c53911ba69",
+        "bytes": 2238,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "9ccb1a49ab2b1592092db45719e2ec6d55e86efebe512538e6aa4ba867061acb",
+        "bytes": 2335,
+        "mode": 436
+      },
       "hosted_actual": null,
       "official_actual": null,
       "own_historical_normal_failures": [],
@@ -18103,7 +18111,7 @@
         "bytes": 9297,
         "mode": 436
       },
-      "current_normal_active": true,
+      "current_normal_active": false,
       "normal_procedure_Source_review_complete": true,
       "retained_reader_Source_review_complete": true,
       "checks_started": true,
@@ -18112,6 +18120,34 @@
         "sha256": "d3a622dac968e9085d885ff19078bf7daaead11f386536f0794566d1f9f4b72a",
         "bytes": 2716,
         "mode": 436
+      },
+      "normal_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "local_DATA_report": {
+        "sha256": "5e859dbffbfde220d5434c9860486da1f9ad9b6c9b84ae95226f35e8bcfeff0c",
+        "bytes": 250111,
+        "mode": 436
+      },
+      "qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "review_ref_published": true,
+      "review_publication": {
+        "sha256": "c471321dc49561890b827e20d5212663bd065d5f5f3fffac367cb7394db27ca1",
+        "bytes": 2569,
+        "mode": 436
+      },
+      "hosted_run": {
+        "id": 45038323899,
+        "attempt": 1,
+        "head": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "status": "in_progress",
+        "conclusion": null,
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45038323899",
+        "event": "push",
+        "workflow": ".github/workflows/ci.yml",
+        "last_observed_status": "in_progress",
+        "observation_is_current": false,
+        "monitoring_state": "paused_API_rate_limit",
+        "last_observed_job_id": 137256923547,
+        "observation_basis": "Last retained hosted status before watcher API-rate-limit failure; no new hosted outcome is known."
       }
     },
     {
@@ -18212,15 +18248,15 @@
       "final_document_Source_review_complete": true,
       "checks_run": true,
       "formatter_run": true,
-      "normal_qualified": false,
-      "independent_local_DATA_qualified": false,
+      "normal_qualified": true,
+      "independent_local_DATA_qualified": true,
       "hosted_qualified": false,
       "official_DATA_qualified": false,
       "accepted": false,
       "qualification_inherited": false,
-      "Source_publication_available": false,
-      "future_qualified_head": null,
-      "qualification_state": "first_full_mandatory_normal_active_outcome_unknown",
+      "Source_publication_available": true,
+      "future_qualified_head": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "qualification_state": "locally_qualified_review_published_hosted_outcome_unknown_monitoring_paused",
       "new_Rust_Source_controls": 15,
       "new_Python_Source_controls": 0,
       "Source_control_declarations": 23,
@@ -18235,9 +18271,17 @@
         "crates/gz-sim-scene/tests/joint_controller_arbitrary_axes.rs"
       ],
       "whole_file_inverse_required": true,
-      "current_stage": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
-      "normal_actual": null,
-      "local_DATA_actual": null,
+      "current_stage": "M98/M99 passed the full mandatory normal and an independent retained local evidence audit at clean commit 1a4bdbb5/tree e8dd98dd/parent a578c68a. The audit verified all 23 new controls in both profiles, including 19 public and four private controls, and all retained gates. Observed counts are bound only to this same commit. Its nonforced review publication passed, preserving all 107 prior heads and Main and adding only the exact new review ref. Hosted CI 45038323899 attempt 1 was last observed running with job 137256923547 verifying the product. Root watcher 18359 retired with exit 1 after an HTTP403 API rate limit; monitoring is paused and the hosted outcome is unknown. This watcher failure is not a CI or product result. Official audit outcome remains unknown. No acceptance or qualification is inherited or transferred. M77 and all predecessor owner gates remain held.",
+      "normal_actual": {
+        "sha256": "17f505b99f8a46b754dccca12b1b74bb3800a6d2e1244197dd37b5c53911ba69",
+        "bytes": 2238,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "9ccb1a49ab2b1592092db45719e2ec6d55e86efebe512538e6aa4ba867061acb",
+        "bytes": 2335,
+        "mode": 436
+      },
       "hosted_actual": null,
       "official_actual": null,
       "own_historical_normal_failures": [],
@@ -18258,7 +18302,7 @@
         "bytes": 9297,
         "mode": 436
       },
-      "current_normal_active": true,
+      "current_normal_active": false,
       "normal_procedure_Source_review_complete": true,
       "retained_reader_Source_review_complete": true,
       "checks_started": true,
@@ -18267,6 +18311,34 @@
         "sha256": "d3a622dac968e9085d885ff19078bf7daaead11f386536f0794566d1f9f4b72a",
         "bytes": 2716,
         "mode": 436
+      },
+      "normal_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "local_DATA_report": {
+        "sha256": "5e859dbffbfde220d5434c9860486da1f9ad9b6c9b84ae95226f35e8bcfeff0c",
+        "bytes": 250111,
+        "mode": 436
+      },
+      "qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "review_ref_published": true,
+      "review_publication": {
+        "sha256": "c471321dc49561890b827e20d5212663bd065d5f5f3fffac367cb7394db27ca1",
+        "bytes": 2569,
+        "mode": 436
+      },
+      "hosted_run": {
+        "id": 45038323899,
+        "attempt": 1,
+        "head": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "status": "in_progress",
+        "conclusion": null,
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45038323899",
+        "event": "push",
+        "workflow": ".github/workflows/ci.yml",
+        "last_observed_status": "in_progress",
+        "observation_is_current": false,
+        "monitoring_state": "paused_API_rate_limit",
+        "last_observed_job_id": 137256923547,
+        "observation_basis": "Last retained hosted status before watcher API-rate-limit failure; no new hosted outcome is known."
       }
     }
   ],
@@ -18906,7 +18978,7 @@
         "M99"
       ],
       "max_working_days": 5,
-      "integration": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
+      "integration": "M98/M99 passed the full mandatory normal and an independent retained local evidence audit at clean commit 1a4bdbb5/tree e8dd98dd/parent a578c68a. The audit verified all 23 new controls in both profiles, including 19 public and four private controls, and all retained gates. Observed counts are bound only to this same commit. Its nonforced review publication passed, preserving all 107 prior heads and Main and adding only the exact new review ref. Hosted CI 45038323899 attempt 1 was last observed running with job 137256923547 verifying the product. Root watcher 18359 retired with exit 1 after an HTTP403 API rate limit; monitoring is paused and the hosted outcome is unknown. This watcher failure is not a CI or product result. Official audit outcome remains unknown. No acceptance or qualification is inherited or transferred. M77 and all predecessor owner gates remain held.",
       "production_seams_disjoint": true,
       "Root_retained_leases": [
         "crates/gz-sim-scene/tests/runtime_compound_to_primitive.rs",
@@ -18916,29 +18988,29 @@
       ]
     }
   ],
-  "acceptance_boundary": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
+  "acceptance_boundary": "M98/M99 passed the full mandatory normal and an independent retained local evidence audit at clean commit 1a4bdbb5/tree e8dd98dd/parent a578c68a. The audit verified all 23 new controls in both profiles, including 19 public and four private controls, and all retained gates. Observed counts are bound only to this same commit. Its nonforced review publication passed, preserving all 107 prior heads and Main and adding only the exact new review ref. Hosted CI 45038323899 attempt 1 was last observed running with job 137256923547 verifying the product. Root watcher 18359 retired with exit 1 after an HTTP403 API rate limit; monitoring is paused and the hosted outcome is unknown. This watcher failure is not a CI or product result. Official audit outcome remains unknown. No acceptance or qualification is inherited or transferred. M77 and all predecessor owner gates remain held.",
   "current_delivery_group": [
     "M98",
     "M99"
   ],
   "current_development_phase": "M98",
   "board": {
-    "updated_at": "2026-11-22T14:16:58.308149+00:00",
+    "updated_at": "2026-11-22T15:40:27.891081+00:00",
     "current": {
-      "title": "Mesh copies and general joint axes: full verification running",
+      "title": "Mesh copies and general joint axes: hosted result pending",
       "items": [
-        "Both features and 23 regression cases are reviewed and formatted. Full verification is running after the owner-authorized cleanup restored disk space; no result is claimed.",
+        "Both features passed local checks and an independent evidence audit; the review commit is published. Hosted CI was last observed running, but API limits paused monitoring. Its outcome is unknown.",
         "M96/M97 passed local and hosted checks and independent evidence audits. Formal acceptance remains held by the predecessor and owner gates.",
         "The manual demo remains running without expiry. Formal browser evidence and an owner-approved shutdown still hold release acceptance."
       ]
     },
     "done": [
-      "Reviewed both features, their regression cases, documentation and verification procedures. Formatting passed, and the authorized cleanup cleared the disk-space hold.",
+      "Both features passed full local verification and an independent evidence audit; their exact review commit is published.",
       "M96/M97 passed its independent official artifact audit on the same review commit as its local and hosted checks."
     ],
     "next": [
-      "Complete the running full verification cycle, then independently audit its recorded results before publishing the same review commit.",
-      "After local verification and its evidence audit, qualify the same M98/M99 review commit through hosted checks and artifact audits."
+      "Finish hosted checks for the published review commit.",
+      "Collect original hosted artifacts for that same review commit, then independently audit them before formal acceptance."
     ],
     "blocker": {
       "text": "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop.",
@@ -19097,7 +19169,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "M98_M99_REVIEWED_FIRST_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+  "current_development_task": "M98_M99_LOCALLY_QUALIFIED_REVIEW_PUBLISHED_HOSTED_OUTCOME_UNKNOWN_MONITORING_PAUSED",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -23674,7 +23746,7 @@
       }
     }
   },
-  "phase_catalog_checkpoint_scope": "All 99 catalog rows retain their published string scope, acceptance and excluded contracts. M96/M97 local, hosted and independent official audit qualification remains complete and unaccepted. M98/M99 has 23 reviewed Source declarations and formatter success; the first full mandatory normal is active after owner-authorized incremental-cache cleanup cleared the prior capacity hold. Its result, executed pass counts, new commit and independent local audit remain unknown. Accepted counters and retained historical evidence remain unchanged.",
+  "phase_catalog_checkpoint_scope": "All 99 published catalog scope, acceptance and exclusion contracts remain strings and unchanged. M96/M97 remains locally, hosted and officially qualified but unaccepted. M98/M99 normal and independent local audit passed at clean 1a4bdbb5/tree e8dd98dd; all 23 own controls passed in both profiles. Its exact review ref is published. Hosted CI was last observed running; the watcher retired after an API rate limit, so monitoring is paused and hosted/official outcomes remain unknown. Acceptance counters and retained historical evidence remain unchanged.",
   "current_M86_M87_Source": {
     "state": "M86_M87_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
@@ -31082,7 +31154,7 @@
     "prior_official_method_failures": []
   },
   "current_M98_M99_Source": {
-    "state": "M98_M99_REVIEWED_FIRST_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+    "state": "M98_M99_LOCALLY_QUALIFIED_REVIEW_PUBLISHED_HOSTED_OUTCOME_UNKNOWN_MONITORING_PAUSED",
     "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
     "parent_tree": "ad639bd9e8e5e8fdbe8bf21ed1ea7511cc6bffb5",
     "parent_locally_qualified": true,
@@ -31149,19 +31221,27 @@
     "new_Rust_Source_controls": 23,
     "new_Python_Source_controls": 0,
     "final_Source_tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
-    "future_qualified_commit": null,
-    "normal_actual": null,
-    "local_DATA_actual": null,
+    "future_qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+    "normal_actual": {
+      "sha256": "17f505b99f8a46b754dccca12b1b74bb3800a6d2e1244197dd37b5c53911ba69",
+      "bytes": 2238,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "sha256": "9ccb1a49ab2b1592092db45719e2ec6d55e86efebe512538e6aa4ba867061acb",
+      "bytes": 2335,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
     "checks_run": true,
     "checks_started": true,
-    "checks_passed": false,
+    "checks_passed": true,
     "formatter_run": true,
-    "current_normal_active": true,
+    "current_normal_active": false,
     "normal_execution_released": true,
-    "normal_qualified": false,
-    "local_DATA_qualified": false,
+    "normal_qualified": true,
+    "local_DATA_qualified": true,
     "hosted_qualified": false,
     "official_DATA_qualified": false,
     "qualification_inherited": false,
@@ -31170,7 +31250,7 @@
     "prior_reader_failures": [],
     "accepted": false,
     "Main_promoted": false,
-    "scope": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
+    "scope": "M98/M99 passed the full mandatory normal and an independent retained local evidence audit at clean commit 1a4bdbb5/tree e8dd98dd/parent a578c68a. The audit verified all 23 new controls in both profiles, including 19 public and four private controls, and all retained gates. Observed counts are bound only to this same commit. Its nonforced review publication passed, preserving all 107 prior heads and Main and adding only the exact new review ref. Hosted CI 45038323899 attempt 1 was last observed running with job 137256923547 verifying the product. Root watcher 18359 retired with exit 1 after an HTTP403 API rate limit; monitoring is paused and the hosted outcome is unknown. This watcher failure is not a CI or product result. Official audit outcome remains unknown. No acceptance or qualification is inherited or transferred. M77 and all predecessor owner gates remain held.",
     "production_leases": {
       "M98": [
         "crates/gz-sim-scene/src/world_spawn.rs"
@@ -31195,7 +31275,7 @@
       "mode": 436
     },
     "Root_retained_whole_Source_review_complete": true,
-    "resource_scope": "The owner requested workspace cleanup. Root removed only selected regenerable incremental compiler files, preserving Source, retained evidence, logs, linked ELFs, archives, Fuel and the persistent demo. The actual cleanup restored SSD space above the selected 32 GiB planning reserve; the separate Root release rechecked 32 GiB SSD / 12 GiB shared-memory admission and maintained floors. Prior proposal/observation cards remain historical planning records. The first full normal is active; no future-fit or successful-outcome guarantee is made.",
+    "resource_scope": "Owner-authorized ordinary incremental-cache cleanup cleared the prior SSD capacity hold, and the reviewed full normal completed successfully under unchanged 32 GiB SSD / 12 GiB shared-memory admission, floors, early stops, jobs and gates. Cleanup and release observations remain retained; any future run needs separate admission. No future-fit guarantee or further eviction is authorized.",
     "resource_execution_released": true,
     "initial_contract_docs_state": "Final eight docs adopted and independently reviewed; original author-time provisional inventory is preserved in its immutable completion.",
     "protected_demo_session": 86363,
@@ -31286,7 +31366,7 @@
       "bytes": 16625,
       "mode": 436
     },
-    "final_docs_review_scope": "Root and Package whole Source review closed; original author-time pending flags remain immutable observations. Current formatter and postformat Source review passed separately; no tests or lint ran.",
+    "final_docs_review_scope": "Root and Package whole Source review closed. Original author-time pending flags and the preformat checkpoint with tests/lint unrun are immutable historical observations; current completed normal and independent local audit are recorded separately.",
     "resource_proposal": {
       "sha256": "1fbfd0df05ef97e2582b679410bf1f94cc177b4dcd020b27cc181caeab20eb2b",
       "bytes": 9684,
@@ -31311,7 +31391,7 @@
     },
     "normal_procedure_Source_review_complete": true,
     "retained_reader_Source_review_complete": true,
-    "normal_procedure_Source_scope": "One pre-execution list/tuple correction is independently reviewed; all guards, final Source facts, empty own histories and held runtime facts are retained. No normal has been invoked.",
+    "normal_procedure_Source_scope": "The list/tuple correction was independently reviewed before the first normal; all guards and exact Source/parent-history bindings were preserved. That normal and the independent local audit have since completed successfully, with their actual receipts recorded separately.",
     "parent_official_DATA_qualified": true,
     "parent_official_actual": {
       "sha256": "9eeb50b4389cb49c25ccbc3f9a02d54c875b5bbbec5a7ba195a7af038afeef14",
@@ -31356,13 +31436,19 @@
     "normal_run": {
       "session": 24609,
       "launch_tool": "72b983",
-      "status": "active",
-      "outcome": null,
-      "actual_Root_exit_code": null,
-      "actual_Git_exit_code": null,
-      "result": null,
-      "commit": null,
-      "basis": "Root direct actual-launch observation supplied with the reviewed release; no duplicate process watch or product execution by this data author."
+      "status": "completed_success",
+      "outcome": "success",
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "result": {
+        "sha256": "fc527cb31921ba29b9717346d9ab0e6f89839b1cb56e892f26988d7c156168b6",
+        "bytes": 14729,
+        "mode": 436
+      },
+      "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "basis": "Genuine retained Root terminal receipt and normal result. The independent local evidence audit subsequently passed on the same commit; no product execution was repeated for the audit.",
+      "terminal_tool": "4690c5",
+      "elapsed_seconds": 3928.5361662150244
     },
     "normal_release_Root_resources": {
       "root": 35672166400,
@@ -31370,8 +31456,118 @@
       "runtime": 6731218944,
       "memory": 38869979136
     },
-    "normal_result": null,
-    "normal_commit": null,
-    "checks_scope": "The reviewed first full mandatory normal is active. All executed pass counts, terminal result, commit and independent evidence-audit outcome remain unknown. Source review and formatter success are separate from verification results."
+    "normal_result": {
+      "sha256": "fc527cb31921ba29b9717346d9ab0e6f89839b1cb56e892f26988d7c156168b6",
+      "bytes": 14729,
+      "mode": 436
+    },
+    "normal_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+    "checks_scope": "Full mandatory normal0 and independent retained local evidence audit0 qualified the same clean published review commit. Hosted CI was last observed running, but API rate limiting retired the sole watcher with exit1; monitoring is paused and its outcome remains unknown. This is not a product/CI failure or acceptance. Official evidence qualification remains pending.",
+    "normal_qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+    "normal_profile_observation": {
+      "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
+      "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
+      "headless_passed": 2025,
+      "renderer_passed": 1561,
+      "headless_ignored": 2,
+      "renderer_ignored": 2,
+      "own_controls_headless": 23,
+      "own_controls_renderer": 23,
+      "own_controls_overlap": 23,
+      "own_public_controls": 19,
+      "own_private_controls": 4,
+      "required_Source_controls_headless": 271,
+      "required_Source_controls_renderer": 217,
+      "Python_aggregate": 494,
+      "finite_cases": 47,
+      "RGB_CLI_cases": 21,
+      "native_peer_records_observed": 47,
+      "native_Source_roster_obligations": 29,
+      "strict_Source_bases": 16,
+      "Source_bindings": 1823
+    },
+    "local_DATA_audit_state": "completed_success",
+    "review_ref_published": true,
+    "Source_publication_available": true,
+    "hosted_run": {
+      "id": 45038323899,
+      "attempt": 1,
+      "head": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "status": "in_progress",
+      "conclusion": null,
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45038323899",
+      "event": "push",
+      "workflow": ".github/workflows/ci.yml",
+      "last_observed_status": "in_progress",
+      "observation_is_current": false,
+      "monitoring_state": "paused_API_rate_limit",
+      "last_observed_job_id": 137256923547,
+      "observation_basis": "Last retained hosted status before watcher API-rate-limit failure; no new hosted outcome is known."
+    },
+    "local_DATA_report": {
+      "sha256": "5e859dbffbfde220d5434c9860486da1f9ad9b6c9b84ae95226f35e8bcfeff0c",
+      "bytes": 250111,
+      "mode": 436
+    },
+    "local_DATA_Source": {
+      "sha256": "1c3e4fceba112327699fb2fc8006cb7886e3daebc0204b4301117706c3c3b615",
+      "bytes": 514420,
+      "mode": 436
+    },
+    "local_DATA_release": {
+      "sha256": "008498704adba3751dc92654cd7367187b38f0c1132e0746cebb18df72090dfa",
+      "bytes": 2909,
+      "mode": 436
+    },
+    "actual_profile_observation": {
+      "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
+      "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
+      "headless_passed": 2025,
+      "renderer_passed": 1561,
+      "headless_ignored": 2,
+      "renderer_ignored": 2,
+      "own_controls_headless": 23,
+      "own_controls_renderer": 23,
+      "own_controls_overlap": 23,
+      "own_public_controls": 19,
+      "own_private_controls": 4,
+      "required_Source_controls_headless": 271,
+      "required_Source_controls_renderer": 217,
+      "Python_aggregate": 494,
+      "finite_cases": 47,
+      "RGB_CLI_cases": 21,
+      "native_peer_records_observed": 47,
+      "native_Source_roster_obligations": 29,
+      "strict_Source_bases": 16,
+      "Source_bindings": 1823
+    },
+    "product_tests_repeated_for_DATA": false,
+    "LLVM_remerges_repeated_for_DATA": false,
+    "qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+    "review_ref": "refs/heads/review/m98-m99-runtime-mesh-arbitrary-axes",
+    "review_publication": {
+      "sha256": "c471321dc49561890b827e20d5212663bd065d5f5f3fffac367cb7394db27ca1",
+      "bytes": 2569,
+      "mode": 436
+    },
+    "hosted_watch_observation": {
+      "session": 18359,
+      "launch_tool": "23730b",
+      "status": "retired_API_rate_limit",
+      "outcome": "monitoring_failed_API_rate_limit_not_CI_outcome",
+      "basis": "Genuine retained Root watcher failure receipt; last log HTTP403 API rate limit at15:37:25Z. Historical session and launch are retained; hosted conclusion remains unknown.",
+      "active": false,
+      "terminal_tool": "8cea40",
+      "actual_watcher_exit_code": 1,
+      "retired_at": "2026-11-22T15:37:35Z"
+    },
+    "hosted_watch_failure": {
+      "sha256": "ee8b8d0081fd4defcb1e5c23518f52784d852bafb8c671703af696363dc1e846",
+      "bytes": 868,
+      "mode": 436
+    },
+    "hosted_monitoring_active": false
   }
 }
