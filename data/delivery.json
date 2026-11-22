@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-22T18:28:56.889160+00:00",
+  "as_of": "2026-11-22T20:14:42.041289+00:00",
   "execution_state": "active",
   "current_phase": "M100",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -18543,7 +18543,7 @@
       "new_paths": 4,
       "changed_production_paths_vs_basis": 7,
       "cumulative_changed_paths_vs_accepted_ancestor": 124,
-      "final_tree": "2af214b2d21bf5e11811dbbc0fd82b5d9d087cd2",
+      "final_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -18557,11 +18557,17 @@
         "crates/gz-sim-scene/tests/runtime_primitive_offset_com.rs"
       ],
       "whole_file_inverse_required": true,
-      "own_historical_normal_failures": [],
+      "own_historical_normal_failures": [
+        {
+          "sha256": "844527c536a46866a40e6177ac001f18b09c77c52cfce35d28bea9f50d77a45d",
+          "bytes": 1650,
+          "mode": 436
+        }
+      ],
       "prior_normal_method_failures": [],
       "prior_operational_release_failures": [],
       "prior_reader_failures": [],
-      "current_stage": "Implementation, regression tests, documentation and independent reviews are complete. Formatting passed. Required full verification is running; its result and a new qualified commit are pending. The declared controls remain source obligations: twenty-three headless and twenty-two renderer controls, including one headless-only native private control. No pass counts or acceptance are inferred.",
+      "current_stage": "Corrected Source formatted; consolidated full normal retry actually running",
       "shared_qualification_group": "M100_M101_PRIMITIVE_COM_LOCAL_JOINT_FRAMES",
       "protected_manual_demo_session": 86363,
       "stop_or_restart_authorized": false,
@@ -18615,44 +18621,23 @@
         "final_seal_pending": true
       },
       "resource_proposal": {
-        "proposal": {
-          "sha256": "31ead394f1cfeeac8fb28fd0ca7b56d6bcb65f56b570be2b82c01672dda7f43b",
-          "bytes": 3600,
+        "Source_choice": {
+          "sha256": "81b7541101184049bb923fec3b7358b53896ac96f265b11040a16c8b48ae7124",
+          "bytes": 3595,
           "mode": 436
         },
-        "selection": {
-          "sha256": "7569530a60518da1c3ea879872d5d4a72eeeeb583af33153b5325914f726481a",
-          "bytes": 1462,
-          "mode": 436
-        },
-        "Source_conditionally_reviewed": true,
-        "initial_SSD_bytes": 33822867456,
-        "initial_SHM_bytes": 8589934592,
-        "initial_runtime_bytes": 6710886400,
-        "mandatory_initial_SSD_bytes": 15032385536,
+        "placement": "Fresh owned ordinary Cargo output on executable shared-memory temporary storage; old targets and evidence stay retained. Exact procedure review and fresh release admission remain required.",
+        "initial_SSD_bytes": 33285996544,
+        "initial_SHM_bytes": 9529458688,
+        "initial_runtime_bytes": 1879048192,
         "early_stop_SSD_bytes": 8589934592,
         "early_stop_SHM_bytes": 4294967296,
         "early_stop_runtime_bytes": 1476395008,
-        "runtime_maintained_floor_bytes": 1075838976,
-        "MemAvailable_floor_bytes": 8589934592,
-        "jobs": 4,
-        "placement": "Only the fresh ordinary Cargo target uses the existing Runtime temporary filesystem. Profile targets, SDK inputs, temporary files, original artifacts and all old targets remain retained on their existing storage.",
-        "execution_released": true,
+        "Source_conditionally_reviewed": true,
+        "execution_released": false,
         "new_target_created": null,
-        "exact_future_procedure_review_required": false,
-        "fit_or_peak_guarantee": false,
-        "actual_release": {
-          "sha256": "e174942b2901396b2acbe86fc780102950304fe32881fb099cfc26b6830c9a22",
-          "bytes": 1935,
-          "mode": 436
-        },
-        "initial_admission_resources": {
-          "SSD": 34146988032,
-          "SHM": 9602404352,
-          "runtime": 6731218944,
-          "MemAvailable": 33811746816
-        },
-        "target_creation_observation": "Unknown in this public record; successful absence/admission guards do not by themselves assert target creation."
+        "exact_future_procedure_review_required": true,
+        "fit_or_peak_guarantee": false
       },
       "historical_pre_profile_projection_and_candidate_clarity_Source_checkpoint": {
         "current_stage": "Implementation and regression Source complete; Root and reciprocal whole code/retained-row plus narrow first-error reviews CLEAR.23authored H/R declarations(18public5private), no passes; observed pre-doc-refresh1827/23owned/4new/1804protected/124cumulative. Final docs peer review and Root final seal pending. Formatter/tests/lint/normal/audits unrun; futuretree/commit/results NULL. New runtime ordinary-target placement Source-only; no allocation or inherited admission.",
@@ -18995,7 +18980,66 @@
       "checks_passed": null,
       "current_normal_active": true,
       "changed_implementation_paths_vs_basis": 6,
-      "comment_only_paths_vs_basis": 1
+      "comment_only_paths_vs_basis": 1,
+      "failed_normal_actual": {
+        "sha256": "f460b14dfaea2f48db035bf1d9895e65646eb553c481e4292bbbb54821e5cb5d",
+        "bytes": 2884,
+        "mode": 436
+      },
+      "correction_Source_completion": {
+        "sha256": "619aae73d192a4254ffbe3c7598a60ab3c5cc30d4f0cdd36a03133fb7acb4dfd",
+        "bytes": 4230,
+        "mode": 436
+      },
+      "correction_Source_review_complete": true,
+      "corrected_formatter_run": true,
+      "corrected_full_normal_retry_run": true,
+      "historical_failed_run_resource_proposal": {
+        "proposal": {
+          "sha256": "31ead394f1cfeeac8fb28fd0ca7b56d6bcb65f56b570be2b82c01672dda7f43b",
+          "bytes": 3600,
+          "mode": 436
+        },
+        "selection": {
+          "sha256": "7569530a60518da1c3ea879872d5d4a72eeeeb583af33153b5325914f726481a",
+          "bytes": 1462,
+          "mode": 436
+        },
+        "Source_conditionally_reviewed": true,
+        "initial_SSD_bytes": 33822867456,
+        "initial_SHM_bytes": 8589934592,
+        "initial_runtime_bytes": 6710886400,
+        "mandatory_initial_SSD_bytes": 15032385536,
+        "early_stop_SSD_bytes": 8589934592,
+        "early_stop_SHM_bytes": 4294967296,
+        "early_stop_runtime_bytes": 1476395008,
+        "runtime_maintained_floor_bytes": 1075838976,
+        "MemAvailable_floor_bytes": 8589934592,
+        "jobs": 4,
+        "placement": "Only the fresh ordinary Cargo target uses the existing Runtime temporary filesystem. Profile targets, SDK inputs, temporary files, original artifacts and all old targets remain retained on their existing storage.",
+        "execution_released": true,
+        "new_target_created": null,
+        "exact_future_procedure_review_required": false,
+        "fit_or_peak_guarantee": false,
+        "actual_release": {
+          "sha256": "e174942b2901396b2acbe86fc780102950304fe32881fb099cfc26b6830c9a22",
+          "bytes": 1935,
+          "mode": 436
+        },
+        "initial_admission_resources": {
+          "SSD": 34146988032,
+          "SHM": 9602404352,
+          "runtime": 6731218944,
+          "MemAvailable": 33811746816
+        },
+        "target_creation_observation": "Unknown in this public record; successful absence/admission guards do not by themselves assert target creation."
+      },
+      "corrected_normal_outcome": null,
+      "formatter_actual": {
+        "sha256": "4b8acde2af7bc9e8fbf8214e6fa1a5d8cc9021e210cb724eff315b5e846fc0ac",
+        "bytes": 14514,
+        "mode": 436
+      }
     },
     {
       "id": "M101",
@@ -19206,7 +19250,7 @@
       "new_paths": 4,
       "changed_production_paths_vs_basis": 7,
       "cumulative_changed_paths_vs_accepted_ancestor": 124,
-      "final_tree": "2af214b2d21bf5e11811dbbc0fd82b5d9d087cd2",
+      "final_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -19216,11 +19260,17 @@
         "crates/gz-sim-scene/tests/joint_controller_joint_frames.rs"
       ],
       "whole_file_inverse_required": true,
-      "own_historical_normal_failures": [],
+      "own_historical_normal_failures": [
+        {
+          "sha256": "844527c536a46866a40e6177ac001f18b09c77c52cfce35d28bea9f50d77a45d",
+          "bytes": 1650,
+          "mode": 436
+        }
+      ],
       "prior_normal_method_failures": [],
       "prior_operational_release_failures": [],
       "prior_reader_failures": [],
-      "current_stage": "Implementation, regression tests, documentation and independent reviews are complete. Formatting passed. Required full verification is running; its result and a new qualified commit are pending. The declared controls remain source obligations: twenty-three headless and twenty-two renderer controls, including one headless-only native private control. No pass counts or acceptance are inferred.",
+      "current_stage": "Corrected Source formatted; consolidated full normal retry actually running",
       "shared_qualification_group": "M100_M101_PRIMITIVE_COM_LOCAL_JOINT_FRAMES",
       "protected_manual_demo_session": 86363,
       "stop_or_restart_authorized": false,
@@ -19393,6 +19443,46 @@
         "final_seal_pending": true
       },
       "resource_proposal": {
+        "Source_choice": {
+          "sha256": "81b7541101184049bb923fec3b7358b53896ac96f265b11040a16c8b48ae7124",
+          "bytes": 3595,
+          "mode": 436
+        },
+        "placement": "Fresh owned ordinary Cargo output on executable shared-memory temporary storage; old targets and evidence stay retained. Exact procedure review and fresh release admission remain required.",
+        "initial_SSD_bytes": 33285996544,
+        "initial_SHM_bytes": 9529458688,
+        "initial_runtime_bytes": 1879048192,
+        "early_stop_SSD_bytes": 8589934592,
+        "early_stop_SHM_bytes": 4294967296,
+        "early_stop_runtime_bytes": 1476395008,
+        "Source_conditionally_reviewed": true,
+        "execution_released": false,
+        "new_target_created": null,
+        "exact_future_procedure_review_required": true,
+        "fit_or_peak_guarantee": false
+      },
+      "historical_pre_profile_projection_and_candidate_clarity_Source_checkpoint": {
+        "current_stage": "Implementation and regression Source complete; Root and reciprocal whole code/retained-row plus narrow first-error reviews CLEAR.23authored H/R declarations(18public5private), no passes; observed pre-doc-refresh1827/23owned/4new/1804protected/124cumulative. Final docs peer review and Root final seal pending. Formatter/tests/lint/normal/audits unrun; futuretree/commit/results NULL. New runtime ordinary-target placement Source-only; no allocation or inherited admission."
+      },
+      "checks_started": true,
+      "checks_passed": null,
+      "current_normal_active": true,
+      "changed_implementation_paths_vs_basis": 6,
+      "comment_only_paths_vs_basis": 1,
+      "failed_normal_actual": {
+        "sha256": "f460b14dfaea2f48db035bf1d9895e65646eb553c481e4292bbbb54821e5cb5d",
+        "bytes": 2884,
+        "mode": 436
+      },
+      "correction_Source_completion": {
+        "sha256": "619aae73d192a4254ffbe3c7598a60ab3c5cc30d4f0cdd36a03133fb7acb4dfd",
+        "bytes": 4230,
+        "mode": 436
+      },
+      "correction_Source_review_complete": true,
+      "corrected_formatter_run": true,
+      "corrected_full_normal_retry_run": true,
+      "historical_failed_run_resource_proposal": {
         "proposal": {
           "sha256": "31ead394f1cfeeac8fb28fd0ca7b56d6bcb65f56b570be2b82c01672dda7f43b",
           "bytes": 3600,
@@ -19432,14 +19522,12 @@
         },
         "target_creation_observation": "Unknown in this public record; successful absence/admission guards do not by themselves assert target creation."
       },
-      "historical_pre_profile_projection_and_candidate_clarity_Source_checkpoint": {
-        "current_stage": "Implementation and regression Source complete; Root and reciprocal whole code/retained-row plus narrow first-error reviews CLEAR.23authored H/R declarations(18public5private), no passes; observed pre-doc-refresh1827/23owned/4new/1804protected/124cumulative. Final docs peer review and Root final seal pending. Formatter/tests/lint/normal/audits unrun; futuretree/commit/results NULL. New runtime ordinary-target placement Source-only; no allocation or inherited admission."
-      },
-      "checks_started": true,
-      "checks_passed": null,
-      "current_normal_active": true,
-      "changed_implementation_paths_vs_basis": 6,
-      "comment_only_paths_vs_basis": 1
+      "corrected_normal_outcome": null,
+      "formatter_actual": {
+        "sha256": "4b8acde2af7bc9e8fbf8214e6fa1a5d8cc9021e210cb724eff315b5e846fc0ac",
+        "bytes": 14514,
+        "mode": 436
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -20104,7 +20192,7 @@
         "existing private joint_controller_config two exact old joint frame refusal dispositions",
         "four existing native posed_* test offset refusal rows to same-input positives"
       ],
-      "integration": "Implementation, regression tests, documentation and independent reviews are complete. Formatting passed. Required full verification is running; its result and a new qualified commit are pending. The declared controls remain source obligations: twenty-three headless and twenty-two renderer controls, including one headless-only native private control. No pass counts or acceptance are inferred.",
+      "integration": "The two test-only corrections are reviewed and formatted. One consolidated full normal retry is actually running, with no outcome or new qualified commit claimed. Failed original evidence and all mandatory gates are preserved.",
       "historical_selected_author_Source_checkpoint": {
         "integration": "Selected bounded M100/M101 Source contracts under corrected8daad5d5. M100 adds the reviewed four-constructor COM prerequisite; author completion/counts are pending. M101 author Source is frozen with14 declarations(10public4private), independent whole review pending. Combined Source counts/tree/commit/verification are unknown; no checks or inheritance.",
         "implementation_complete": null,
@@ -20150,44 +20238,23 @@
         "final_seal_pending": true
       },
       "resource_proposal": {
-        "proposal": {
-          "sha256": "31ead394f1cfeeac8fb28fd0ca7b56d6bcb65f56b570be2b82c01672dda7f43b",
-          "bytes": 3600,
+        "Source_choice": {
+          "sha256": "81b7541101184049bb923fec3b7358b53896ac96f265b11040a16c8b48ae7124",
+          "bytes": 3595,
           "mode": 436
         },
-        "selection": {
-          "sha256": "7569530a60518da1c3ea879872d5d4a72eeeeb583af33153b5325914f726481a",
-          "bytes": 1462,
-          "mode": 436
-        },
-        "Source_conditionally_reviewed": true,
-        "initial_SSD_bytes": 33822867456,
-        "initial_SHM_bytes": 8589934592,
-        "initial_runtime_bytes": 6710886400,
-        "mandatory_initial_SSD_bytes": 15032385536,
+        "placement": "Fresh owned ordinary Cargo output on executable shared-memory temporary storage; old targets and evidence stay retained. Exact procedure review and fresh release admission remain required.",
+        "initial_SSD_bytes": 33285996544,
+        "initial_SHM_bytes": 9529458688,
+        "initial_runtime_bytes": 1879048192,
         "early_stop_SSD_bytes": 8589934592,
         "early_stop_SHM_bytes": 4294967296,
         "early_stop_runtime_bytes": 1476395008,
-        "runtime_maintained_floor_bytes": 1075838976,
-        "MemAvailable_floor_bytes": 8589934592,
-        "jobs": 4,
-        "placement": "Only the fresh ordinary Cargo target uses the existing Runtime temporary filesystem. Profile targets, SDK inputs, temporary files, original artifacts and all old targets remain retained on their existing storage.",
-        "execution_released": true,
+        "Source_conditionally_reviewed": true,
+        "execution_released": false,
         "new_target_created": null,
-        "exact_future_procedure_review_required": false,
-        "fit_or_peak_guarantee": false,
-        "actual_release": {
-          "sha256": "e174942b2901396b2acbe86fc780102950304fe32881fb099cfc26b6830c9a22",
-          "bytes": 1935,
-          "mode": 436
-        },
-        "initial_admission_resources": {
-          "SSD": 34146988032,
-          "SHM": 9602404352,
-          "runtime": 6731218944,
-          "MemAvailable": 33811746816
-        },
-        "target_creation_observation": "Unknown in this public record; successful absence/admission guards do not by themselves assert target creation."
+        "exact_future_procedure_review_required": true,
+        "fit_or_peak_guarantee": false
       },
       "final_docs_peer_review_complete": true,
       "historical_pre_profile_projection_and_candidate_clarity_Source_checkpoint": {
@@ -20809,32 +20876,93 @@
       "checks_run": true,
       "checks_started": true,
       "checks_passed": null,
-      "current_normal_active": true
+      "current_normal_active": true,
+      "own_historical_normal_failures": [
+        {
+          "sha256": "844527c536a46866a40e6177ac001f18b09c77c52cfce35d28bea9f50d77a45d",
+          "bytes": 1650,
+          "mode": 436
+        }
+      ],
+      "failed_normal_actual": {
+        "sha256": "f460b14dfaea2f48db035bf1d9895e65646eb553c481e4292bbbb54821e5cb5d",
+        "bytes": 2884,
+        "mode": 436
+      },
+      "correction_Source_completion": {
+        "sha256": "619aae73d192a4254ffbe3c7598a60ab3c5cc30d4f0cdd36a03133fb7acb4dfd",
+        "bytes": 4230,
+        "mode": 436
+      },
+      "correction_Source_review_complete": true,
+      "corrected_formatter_run": true,
+      "corrected_full_normal_retry_run": true,
+      "final_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
+      "historical_failed_run_resource_proposal": {
+        "proposal": {
+          "sha256": "31ead394f1cfeeac8fb28fd0ca7b56d6bcb65f56b570be2b82c01672dda7f43b",
+          "bytes": 3600,
+          "mode": 436
+        },
+        "selection": {
+          "sha256": "7569530a60518da1c3ea879872d5d4a72eeeeb583af33153b5325914f726481a",
+          "bytes": 1462,
+          "mode": 436
+        },
+        "Source_conditionally_reviewed": true,
+        "initial_SSD_bytes": 33822867456,
+        "initial_SHM_bytes": 8589934592,
+        "initial_runtime_bytes": 6710886400,
+        "mandatory_initial_SSD_bytes": 15032385536,
+        "early_stop_SSD_bytes": 8589934592,
+        "early_stop_SHM_bytes": 4294967296,
+        "early_stop_runtime_bytes": 1476395008,
+        "runtime_maintained_floor_bytes": 1075838976,
+        "MemAvailable_floor_bytes": 8589934592,
+        "jobs": 4,
+        "placement": "Only the fresh ordinary Cargo target uses the existing Runtime temporary filesystem. Profile targets, SDK inputs, temporary files, original artifacts and all old targets remain retained on their existing storage.",
+        "execution_released": true,
+        "new_target_created": null,
+        "exact_future_procedure_review_required": false,
+        "fit_or_peak_guarantee": false,
+        "actual_release": {
+          "sha256": "e174942b2901396b2acbe86fc780102950304fe32881fb099cfc26b6830c9a22",
+          "bytes": 1935,
+          "mode": 436
+        },
+        "initial_admission_resources": {
+          "SSD": 34146988032,
+          "SHM": 9602404352,
+          "runtime": 6731218944,
+          "MemAvailable": 33811746816
+        },
+        "target_creation_observation": "Unknown in this public record; successful absence/admission guards do not by themselves assert target creation."
+      }
     }
   ],
-  "acceptance_boundary": "Implementation, regression tests and documentation for translated primitive mass frames and local joint frames are reviewed. Formatting passed and the required full verification is running; its result and any new qualified commit are pending. M98/M99 passed local verification, its independent evidence audit and exact hosted CI; original hosted artifacts are collected and their independent official audit is pending. Formal acceptance still requires predecessor and owner gates.",
+  "acceptance_boundary": "The original M100/M101 normal failed two M100 test premises after headless2046 passed/two failed/two ignored. Both test-only corrections are independently reviewed and formatting passed with no diff. One full normal retry is running; its outcome, commit and later qualification remain unknown. Parent M98/M99 has its own local, hosted and official qualification; no acceptance transfers, and the M77 gates remain.",
   "current_delivery_group": [
     "M100",
     "M101"
   ],
   "current_development_phase": "M100",
   "board": {
-    "updated_at": "2026-11-22T18:43:33.587624+00:00",
+    "updated_at": "2026-11-22T20:14:42.041289+00:00",
     "current": {
-      "title": "Translated mass frames and joint frames: verification running",
+      "title": "Mass and joint frames: corrective verification running",
       "items": [
-        "Implementation, regression tests and documentation are reviewed. Formatting passed. The required full verification is running; its result is pending.",
-        "Mesh copies and general joint axes passed local and hosted checks. Original artifacts are collected; independent official audit is next.",
+        "The two test-only corrections are reviewed and formatted. One consolidated full verification retry is running; its outcome is pending.",
+        "Mesh copies and general joint axes passed local verification, hosted CI and the independent audit of their original artifacts. Formal acceptance is pending.",
         "The no-expiry manual demo stays live. Formal browser evidence and an owner-approved shutdown still hold acceptance."
       ]
     },
     "done": [
       "M1\u2013M76 remain accepted. Later work keeps its own verification and acceptance evidence.",
-      "M98/M99 passed local verification, independent local evidence review and hosted CI on the published review commit."
+      "Mesh copies and general joint axes passed local verification, hosted CI and the independent audit of their original artifacts. Formal acceptance is pending."
     ],
     "next": [
-      "Finish the running verification, then independently audit its recorded results.",
-      "Independently audit the collected M98/M99 hosted artifacts.",
+      "Finish the running consolidated corrective verification.",
+      "After a pass, audit recorded local evidence and qualify the same review commit through hosted CI and its original-artifact audit.",
       "Finish the formal browser and shutdown evidence when permitted."
     ],
     "blocker": {
@@ -20994,7 +21122,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Required verification is running for translated primitive mass frames and local joint frames; implementation, regressions, documentation and review are complete.",
+  "current_development_task": "Run the single consolidated normal retry for the reviewed two-oracle test correction; preserve the failed original and every required gate.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -32979,7 +33107,7 @@
     "prior_official_method_failures": []
   },
   "current_M98_M99_Source": {
-    "state": "M98_M99_LOCALLY_AND_HOSTED_QUALIFIED_ORIGINALS_COLLECTED_OFFICIAL_AUDIT_PENDING",
+    "state": "M98_M99_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFICATION_COMPLETE_UNACCEPTED",
     "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
     "parent_tree": "ad639bd9e8e5e8fdbe8bf21ed1ea7511cc6bffb5",
     "parent_locally_qualified": true,
@@ -33062,7 +33190,11 @@
       "bytes": 4940,
       "mode": 436
     },
-    "official_actual": null,
+    "official_actual": {
+      "sha256": "1d6afe7d370ac21351d991fab4f8ea23eda8fbaadd7cc03f3b4aa027b9798540",
+      "bytes": 3612,
+      "mode": 436
+    },
     "checks_run": true,
     "checks_started": true,
     "checks_passed": true,
@@ -33072,14 +33204,14 @@
     "normal_qualified": true,
     "local_DATA_qualified": true,
     "hosted_qualified": true,
-    "official_DATA_qualified": false,
+    "official_DATA_qualified": true,
     "qualification_inherited": false,
     "own_historical_normal_failures": [],
     "prior_normal_method_failures": [],
     "prior_reader_failures": [],
     "accepted": false,
     "Main_promoted": false,
-    "scope": "M98/M99 passed full local verification and an independent audit of the recorded local results at the same published review commit. All 23 new controls ran in both profiles, including nineteen public and four private controls. Exact hosted CI then succeeded on the same commit, with all thirteen steps passing. The original hosted artifacts were collected once and retained; their independent official audit is pending. The earlier watcher failure under API rate limiting remains a historical monitoring failure. No formal acceptance or qualification transfers to another delivery; the demo and owner gates remain held.",
+    "scope": "M98/M99 passed full local verification, an independent audit of those recorded results, exact hosted CI and the independent audit of its once-collected original artifacts on the same published review commit. Its own qualification is complete; formal acceptance and Main promotion remain pending. The prior rate-limited watcher and two collector preflight failures stay recorded separately. No product tests or downloads were repeated for the official audit, and no qualification transfers to another delivery.",
     "production_leases": {
       "M98": [
         "crates/gz-sim-scene/src/world_spawn.rs"
@@ -33291,7 +33423,7 @@
       "mode": 436
     },
     "normal_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
-    "checks_scope": "Full local verification, its independent evidence audit and exact hosted CI passed on the same published review commit. The original hosted artifacts were collected once and retained. Their independent official audit is pending. The prior rate-limited watcher failure remains recorded separately and does not change the later hosted success or imply acceptance.",
+    "checks_scope": "All own local, hosted and original-artifact audit gates passed on the same exact review commit. Four retained RAW comparisons ran once in the official audit. These results qualify only that delivery and do not constitute formal acceptance or qualification of the corrected current source.",
     "normal_qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
     "normal_profile_observation": {
       "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
@@ -33422,7 +33554,57 @@
         "bytes": 3176,
         "mode": 436
       }
-    ]
+    ],
+    "official_report": {
+      "sha256": "6d3c3d0778cf495d1f78c9cf8dc9f818fb2e24fe5962da8614542095f854e3e6",
+      "bytes": 395482,
+      "mode": 436
+    },
+    "official_Source": {
+      "sha256": "269c9ac9e0dfea4d482aabf4ad067bcf85a9567cdd521a2cd94fd835e2e0a716",
+      "bytes": 669786,
+      "mode": 436
+    },
+    "official_release": {
+      "sha256": "53ce561f669709d92dab5c4575be33efe0a3b56c1733f59ccfac223a4c984ee7",
+      "bytes": 3107,
+      "mode": 436
+    },
+    "all_own_qualification_complete": true,
+    "official_run": {
+      "session": 84317,
+      "launch_tool": "cdaedc",
+      "terminal_tool": "32c95f",
+      "actual_Root_exit_code": 0,
+      "status": "completed_success"
+    },
+    "official_RAW_profiles": [
+      {
+        "label": "headless",
+        "raw_profiles": 456,
+        "merged_sha256": "b76cd79fb6b708bdc77a0be116a35d8fa7ff8753b329224b557992836f3fb6a8",
+        "receipt_sha256": "aae592b276d1eff98ec8c32115e4daf501fa93b1457a371dd0c459186cf6fc01"
+      },
+      {
+        "label": "renderer",
+        "raw_profiles": 748,
+        "merged_sha256": "d39482e4a3d963f8490e66c6fa42ddc4ed1483eaf65d559c2ce171a59ad77655",
+        "receipt_sha256": "dd873267d68cbcad807747b1cc7faf6377fda4e0c398a2bbbc5414251f304bda"
+      },
+      {
+        "label": "nativefree",
+        "raw_profiles": 57,
+        "merged_sha256": "c8f815a91e55d0b5f129d4d5bb0217f52953c9fdb40c9e2836c912c801727469",
+        "receipt_sha256": "daf6ab856e66e6c236eb23cca4290321a52403f55d3658c0ca50c757a4ff837c"
+      },
+      {
+        "label": "rgb-camera",
+        "raw_profiles": 168,
+        "merged_sha256": "c0f8b37bfd0840029321a977525a82b2c91ebfec61f4d2f1a36075a9771b0946",
+        "receipt_sha256": "f2f5ae300b248ab7ef5cd193b48becf68cc6564a29377f114b7ac9c77b0aded5"
+      }
+    ],
+    "prior_official_method_failures": []
   },
   "current_M100_M101_Source": {
     "source_preparation_parent": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
@@ -33439,7 +33621,7 @@
     "formatter_or_checks_run": true,
     "new_commit": null,
     "accepted": false,
-    "state": "M100_M101_FORMATTED_WHOLE_SOURCE_CLEAR_FULL_NORMAL_ACTIVE",
+    "state": "M100_M101_CORRECTED_SOURCE_FORMATTED_FULL_NORMAL_RETRY_ACTIVE",
     "formatter_run": true,
     "checks_run": true,
     "checks_started": true,
@@ -33457,33 +33639,29 @@
     "hosted_actual": null,
     "official_actual": null,
     "actual_new_case_pass_counts": null,
-    "final_Source_tree": "2af214b2d21bf5e11811dbbc0fd82b5d9d087cd2",
+    "final_Source_tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
     "normal_release": {
-      "sha256": "e174942b2901396b2acbe86fc780102950304fe32881fb099cfc26b6830c9a22",
-      "bytes": 1935,
+      "sha256": "7be04ed724f9f583f79e840e367350f6e76fd9fe20a47eea1f6f09b234e34c22",
+      "bytes": 2905,
       "mode": 436
     },
     "normal_Source": {
-      "sha256": "25159b42208fe46f4da3fa9e4b26d6d0c08ffcff8e0fb639ab8d0b6b7e8508a9",
-      "bytes": 460674,
+      "sha256": "9a0e5f8456fb6532a8b202c1a698a1c86039c9048458bf4bc1be5be51af47bbf",
+      "bytes": 471539,
       "mode": 436
     },
     "normal_release_binding": {
-      "sha256": "017244c486e9e2d6e6e186ef412980ce0e9a21ef697b92e463804ed47b4d9a5b",
-      "bytes": 38792,
+      "sha256": "e9ab450a399aa88f949a90dcd03feed65029227318b2df32fd38843f74d5d0c4",
+      "bytes": 39302,
       "mode": 436
     },
     "normal_run": {
-      "session": 77075,
-      "launch_tool": "555723",
-      "status": "running",
-      "outcome": null,
-      "actual_Root_exit_code": null,
-      "actual_Git_exit_code": null,
+      "session": 40737,
+      "launch_tool": "487f50",
+      "active": true,
+      "actual_exit": null,
       "commit": null,
-      "result": null,
-      "release_at": "2026-11-22T18:36:43.260521+00:00",
-      "basis": "Root observed the single released normal invocation passing initial admission and compiling strict Clippy dependencies. No terminal result or new qualified commit is recorded."
+      "result": null
     },
     "Source_counts": {
       "Source_files": 1827,
@@ -33495,40 +33673,197 @@
       "cumulative_paths": 124
     },
     "Source_count_scope": "Declared source controls and reviewed source inventory only; no current test pass counts are inferred.",
-    "own_historical_normal_failures": [],
+    "own_historical_normal_failures": [
+      {
+        "sha256": "844527c536a46866a40e6177ac001f18b09c77c52cfce35d28bea9f50d77a45d",
+        "bytes": 1650,
+        "mode": 436
+      }
+    ],
     "prior_normal_method_failures": [],
     "prior_operational_release_failures": [],
     "prior_reader_failures": [],
     "qualification_inherited": false,
     "final_Source_review": {
-      "sha256": "c057a09419c20d58ff5d2635e56dc4e91a22f12a6b50f4d6ca820a0bf18146cb",
-      "bytes": 44139,
+      "sha256": "eca883fabfb858a31f0c5c3c4fbbfdf0f7d1f7a941f9f0ed5a9f5fb189f1417c",
+      "bytes": 44324,
       "mode": 436
     },
     "source_snapshot": {
-      "sha256": "fc84ae5d9b8ebf7f97b82014f7b8f79f44081f1f2d9e24f1ea84ee01bb5f4f6b",
-      "bytes": 717660,
+      "sha256": "438e05cb02eb01a14aae9598ba46bb4f816435fbd32e7757b8a62ec0d7e475da",
+      "bytes": 718853,
       "mode": 436
     },
     "preformat_Source_review": {
-      "sha256": "2184b62e93d3ac8f51e95d3b114847e4013c93039b9b46e34d00f277555932df",
-      "bytes": 41987,
+      "sha256": "31c8963154877561237a446039b616e907326bdbcf472346335170b750c0da19",
+      "bytes": 42162,
       "mode": 436
     },
     "preformat_Source_snapshot": {
-      "sha256": "90fb548c63dcede655f7fd7392567d23a3df10d03f55f8d9037a81d46516b1f9",
-      "bytes": 714774,
+      "sha256": "b77d6cb3ebd8a048bbbd8e47aea54499d491ebe48203a5621d2fa69b4931136b",
+      "bytes": 715847,
       "mode": 436
     },
     "current_formatter_actual": {
-      "sha256": "abe478b8463e771c2b35382771859dcd3f99b87e2dace22d1d84ffff0b8fe631",
-      "bytes": 14455,
+      "sha256": "4b8acde2af7bc9e8fbf8214e6fa1a5d8cc9021e210cb724eff315b5e846fc0ac",
+      "bytes": 14514,
       "mode": 436
     },
     "formatter_Root_actual": {
-      "sha256": "6770a695dc761b9f23b63fbbfefbfb7d94ee21faa3790959b72691b9a6425cff",
-      "bytes": 1340,
+      "sha256": "70c8631fa36f3ded5cb88de0fdd1834b0ae02fb980bfc9232561e399a5f20b0a",
+      "bytes": 1382,
       "mode": 436
-    }
+    },
+    "implementation_complete": true,
+    "regression_Source_complete": true,
+    "independent_code_Source_review_complete": true,
+    "final_docs_review_complete": true,
+    "failed_normal_actual": {
+      "sha256": "f460b14dfaea2f48db035bf1d9895e65646eb553c481e4292bbbb54821e5cb5d",
+      "bytes": 2884,
+      "mode": 436
+    },
+    "failed_normal_record": {
+      "sha256": "844527c536a46866a40e6177ac001f18b09c77c52cfce35d28bea9f50d77a45d",
+      "bytes": 1650,
+      "mode": 436
+    },
+    "failed_normal_result": {
+      "sha256": "4724986f44fe22688b9a14c95a0f60fb9f40cd8b66b8d794551a56941ae0a315",
+      "bytes": 30872,
+      "mode": 436
+    },
+    "failed_normal_run": {
+      "session": 77075,
+      "launch_tool": "555723",
+      "status": "failed",
+      "outcome": "failure",
+      "actual_Root_exit_code": 1,
+      "actual_Git_exit_code": 1,
+      "commit": null,
+      "result": {
+        "sha256": "4724986f44fe22688b9a14c95a0f60fb9f40cd8b66b8d794551a56941ae0a315",
+        "bytes": 30872,
+        "mode": 436
+      },
+      "release_at": "2026-11-22T18:36:43.260521+00:00",
+      "basis": "The retained full normal finished its headless keep-going run with two failing regression cases in one target. Renderer and later coverage were not reached; no capacity fault or commit occurred.",
+      "terminal_tool": "01510e",
+      "elapsed_seconds": 2693.0415175100206
+    },
+    "failed_formatted_Source": {
+      "final_Source_tree": "2af214b2d21bf5e11811dbbc0fd82b5d9d087cd2",
+      "final_Source_review": {
+        "sha256": "c057a09419c20d58ff5d2635e56dc4e91a22f12a6b50f4d6ca820a0bf18146cb",
+        "bytes": 44139,
+        "mode": 436
+      },
+      "source_snapshot": {
+        "sha256": "fc84ae5d9b8ebf7f97b82014f7b8f79f44081f1f2d9e24f1ea84ee01bb5f4f6b",
+        "bytes": 717660,
+        "mode": 436
+      },
+      "preformat_Source_review": {
+        "sha256": "2184b62e93d3ac8f51e95d3b114847e4013c93039b9b46e34d00f277555932df",
+        "bytes": 41987,
+        "mode": 436
+      },
+      "preformat_Source_snapshot": {
+        "sha256": "90fb548c63dcede655f7fd7392567d23a3df10d03f55f8d9037a81d46516b1f9",
+        "bytes": 714774,
+        "mode": 436
+      },
+      "current_formatter_actual": {
+        "sha256": "abe478b8463e771c2b35382771859dcd3f99b87e2dace22d1d84ffff0b8fe631",
+        "bytes": 14455,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "sha256": "6770a695dc761b9f23b63fbbfefbfb7d94ee21faa3790959b72691b9a6425cff",
+        "bytes": 1340,
+        "mode": 436
+      },
+      "normal_Source": {
+        "sha256": "25159b42208fe46f4da3fa9e4b26d6d0c08ffcff8e0fb639ab8d0b6b7e8508a9",
+        "bytes": 460674,
+        "mode": 436
+      },
+      "normal_release_binding": {
+        "sha256": "017244c486e9e2d6e6e186ef412980ce0e9a21ef697b92e463804ed47b4d9a5b",
+        "bytes": 38792,
+        "mode": 436
+      },
+      "normal_release": {
+        "sha256": "e174942b2901396b2acbe86fc780102950304fe32881fb099cfc26b6830c9a22",
+        "bytes": 1935,
+        "mode": 436
+      }
+    },
+    "failed_headless_observation": {
+      "tree": "2af214b2d21bf5e11811dbbc0fd82b5d9d087cd2",
+      "passed": 2046,
+      "failed": 2,
+      "ignored": 2,
+      "new_controls_passed": 21,
+      "new_controls_failed": 2,
+      "new_control_failures": [
+        "offset_six_axis_state_and_velocity_inputs_round_trip_origin_and_com_twists",
+        "offset_new_route_keeps_actual_compounds_controllers_and_mature_identity_distinct"
+      ],
+      "renderer_reached": false,
+      "later_profile_coverage_reached": false,
+      "qualified": false
+    },
+    "correction_Source_completion": {
+      "sha256": "619aae73d192a4254ffbe3c7598a60ab3c5cc30d4f0cdd36a03133fb7acb4dfd",
+      "bytes": 4230,
+      "mode": 436
+    },
+    "correction_Source_review_complete": true,
+    "correction_scope": "Only two test startup premises changed: initialize schedules without callbacks before the paused baseline, and observe the existing controller post-step command latch with an explicit first-step zero witness before the original target witness. Inputs, strict tolerances, all case identities and production code are unchanged.",
+    "correction_docs_Source_completion": {
+      "sha256": "431397d70585071e24a90ce2584e23a860cc6b2cff3d9f554f9ebe2ef5beff78",
+      "bytes": 5744,
+      "mode": 436
+    },
+    "correction_docs_review_complete": true,
+    "corrected_formatter_run": true,
+    "corrected_full_normal_retry_run": true,
+    "retry_resource_Source_choice": {
+      "sha256": "81b7541101184049bb923fec3b7358b53896ac96f265b11040a16c8b48ae7124",
+      "bytes": 3595,
+      "mode": 436
+    },
+    "retry_resource_execution_released": true,
+    "checks_scope": "Current flags and unknown results describe the corrected source only. The first failed run and its partial headless observations are retained under their failed tree and are not qualifications of this correction.",
+    "formatter_actual": {
+      "sha256": "4b8acde2af7bc9e8fbf8214e6fa1a5d8cc9021e210cb724eff315b5e846fc0ac",
+      "bytes": 14514,
+      "mode": 436
+    },
+    "corrected_full_normal": {
+      "session": 40737,
+      "launch_tool": "487f50",
+      "Source": {
+        "sha256": "9a0e5f8456fb6532a8b202c1a698a1c86039c9048458bf4bc1be5be51af47bbf",
+        "bytes": 471539,
+        "mode": 436
+      },
+      "binding": {
+        "sha256": "e9ab450a399aa88f949a90dcd03feed65029227318b2df32fd38843f74d5d0c4",
+        "bytes": 39302,
+        "mode": 436
+      },
+      "release": {
+        "sha256": "7be04ed724f9f583f79e840e367350f6e76fd9fe20a47eea1f6f09b234e34c22",
+        "bytes": 2905,
+        "mode": 436
+      },
+      "tree": "9e1f92e1586846bb86c253df1d519a928b949c8c",
+      "actual_exit": null,
+      "commit": null,
+      "result": null
+    },
+    "scope": "The two test-premise corrections are reviewed and formatted. One consolidated full normal retry is actually running; its outcome is unknown. The original failed2af headless observations remain historical, and no pass or acceptance transfers."
   }
 }
