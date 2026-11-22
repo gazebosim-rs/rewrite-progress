@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-22T02:24:44.270905+00:00",
+  "updated_at": "2026-11-22T04:36:25.399011+00:00",
   "state": "active",
-  "summary": "Mesh copies and general joint axes are reviewed and formatted. Full verification needs the owner\u2019s SSD capacity decision. M96/M97 passed hosted checks; its artifact audit is next. M77 still holds acceptance.",
+  "summary": "Mesh copies and general joint axes are reviewed and formatted. Full verification awaits the owner\u2019s SSD capacity decision. M96/M97 passed local and hosted checks and evidence audits; formal acceptance is still held.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
@@ -12,9 +12,9 @@
       "detail": "Both features and 23 regression cases are reviewed, and formatting passed. Full verification is waiting for the owner\u2019s SSD capacity decision; tests have not run."
     },
     {
-      "id": "M96-M97-hosted-passed-artifact-audit-pending",
-      "title": "M96/M97 hosted checks passed",
-      "detail": "M96/M97 passed full local checks, its independent evidence audit and hosted checks. Collecting and auditing the hosted artifacts comes next."
+      "id": "M96-M97-qualified-formal-acceptance-held",
+      "title": "M96/M97 audits passed; acceptance held",
+      "detail": "M96/M97 passed local and hosted checks and independent evidence audits. Formal acceptance remains held by the predecessor and owner gates."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Resolve the SSD capacity question, run the full reviewed verification cycle, then independently audit its recorded results.",
-    "Collect and independently audit the hosted artifacts for M96/M97; keep every predecessor and acceptance gate.",
+    "Resolve the SSD capacity question, run the reviewed full verification cycle, then independently audit its recorded results.",
+    "After local verification and its evidence audit, qualify the same M98/M99 review commit through hosted checks and artifact audits.",
     "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
   ],
   "blockers": [
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
     },
-    "note": "Both features, their regression cases and documentation are reviewed; formatting passed. Tests have not run because full verification needs the owner\u2019s SSD capacity decision. M96/M97 passed local and hosted checks; its hosted artifact audit is pending. Acceptance evidence and the persistent demo remain unchanged.",
+    "note": "Both features, their regression cases, documentation and verification procedures are reviewed; formatting passed. Tests have not run while the owner\u2019s SSD capacity decision is pending. M96/M97 passed local and hosted checks and independent evidence audits. Acceptance evidence and the persistent demo remain unchanged.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1135,7 +1135,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "M98/M99 implementation, regression code, documentation and independent whole code/docs/postformat reviews are complete. The final formatted Source tree is e8dd98dd over locally qualified unaccepted a578c68a. Measured inventory is 1,823 Source files, 16 owned paths, four new paths, two production paths and 120 cumulative paths; 23 new Rust declarations comprise 19 public and four private controls in both profiles, with no new Python, finite or CLI cases. These are declarations, not executed results. One eight-file formatter passed; tests, lint, full normal and evidence audits have not run. Full verification is held for the owner SSD capacity decision under the reviewed conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source metadata coherence peer review is separately pending at this observation. No current normal or new qualification is claimed.",
+    "qualification_scope": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -9819,7 +9819,7 @@
       "note": "M94/M95 has seventeen declared Rust controls, not passes; formatting and verification are next. M92/M93 passed local and hosted qualification; official DATA remains pending. M90/M91 own qualification is complete and unaccepted. M77 proofs and the no-expiry demo are unchanged. Accepted 76 phases and 202 slices, catalog 95, Latest M70 original 41-example package."
     },
     "current_M96_M97_Source": {
-      "state": "M96_M97_LOCAL_AND_HOSTED_QUALIFIED_OFFICIAL_COLLECTION_PENDING",
+      "state": "M96_M97_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
       "parent": "ac4af1c738a9daaf3d9d899eca46c690d3aac22a",
       "parent_tree": "7d050c307e07062487ef11a99c115e695cc26e05",
       "parent_locally_qualified": true,
@@ -9897,7 +9897,7 @@
         "crates/gz-sim-scene/src/joint_controller/config.rs",
         "crates/gz-sim-scene/src/world_spawn.rs"
       ],
-      "current_scope": "M96/M97 passed full local verification and its independent evidence audit at a578c68a/tree ad639. Its exact published review commit also passed hosted run 44970670576 attempt 1: job 137049524268 and all thirteen steps succeeded. Root watch 54430 retired with actual exit 0. Official artifact collection has not run and its audit is pending. Product, method, operational and formatter histories remain separate; no acceptance or qualification transfers to M98/M99.",
+      "current_scope": "M96/M97 passed full local verification, its independent local evidence audit, hosted checks and the independent official artifact audit on the same published a578c68a review commit. The official audit returned actual Root exit 0 and verified the original hosted evidence; each required RAW audit ran once. Collection completed once with 36 captures and preserved RAM and individual SSD originals. Both earlier pre-I/O collector method failures remain distinct historical records; there is no own official audit failure. Formal acceptance remains held by the retained predecessor and M77 owner gates. No qualification or acceptance transfers to M98/M99.",
       "checks_run": true,
       "checks_started": true,
       "checks_passed": true,
@@ -9905,7 +9905,7 @@
       "normal_qualified": true,
       "local_DATA_qualified": true,
       "hosted_qualified": true,
-      "official_DATA_qualified": false,
+      "official_DATA_qualified": true,
       "qualification_inherited": false,
       "current_normal_active": false,
       "normal_execution_released": true,
@@ -9948,7 +9948,11 @@
         "bytes": 2216,
         "mode": 436
       },
-      "official_actual": null,
+      "official_actual": {
+        "sha256": "9eeb50b4389cb49c25ccbc3f9a02d54c875b5bbbec5a7ba195a7af038afeef14",
+        "bytes": 3636,
+        "mode": 436
+      },
       "protected_demo_session": 86363,
       "stop_or_restart_authorized": false,
       "resource_proposal": {
@@ -10083,7 +10087,7 @@
         "commit": null
       },
       "correction_scope": "Only expected rows9/14 now join InvalidScene; density8 remains InvalidState. Source resolver validation precedes representability. Borrowed row/error diagnostics add visibility without changing inputs, atomicity, late cases, horizons or declaration identities.",
-      "checks_scope": "Local normal and independent evidence audit passed; the same review commit passed hosted checks. Official artifact collection and audit remain pending. No acceptance or qualification inheritance.",
+      "checks_scope": "Full local checks, independent local evidence audit, hosted checks and the independent official artifact audit passed on the same review commit. Formal acceptance and every predecessor gate remain held; no inheritance.",
       "formatter_custody": {
         "original_nine_file_formatter": {
           "sha256": "8f18f6f8a1883db7ab3c3c75cf7a59ab32db88cf00e4a94eff83cdfb7d914b0f",
@@ -10303,7 +10307,67 @@
         "bytes": 14658,
         "mode": 436
       },
-      "official_collection_invoked": false
+      "official_collection_invoked": true,
+      "official_collection_complete": true,
+      "official_collection_actual": {
+        "sha256": "f9bb0d540c8ef26b0eb9b22951e495e337575aa333b958f4b2c0aecb01dab695",
+        "bytes": 2975,
+        "mode": 436
+      },
+      "official_collection": {
+        "sha256": "11cc3323ce41cb7ec4e4355b17f12e299c2e9705c9a1a4682f1f6cc11e56998d",
+        "bytes": 61138,
+        "mode": 436
+      },
+      "official_original_archive_location": {
+        "sha256": "06c3f246d1f663f003bb063db734b08a024a38f813284b1a56eef94bcdb32461",
+        "bytes": 2886,
+        "mode": 436
+      },
+      "official_original_bytes": 197464310,
+      "official_collection_requests": 36,
+      "prior_collector_method_failures": [
+        {
+          "sha256": "6d958d2be96ebf25c954c80858ec147b9d352e6c8966502a379ee40bc41946fe",
+          "bytes": 2577,
+          "mode": 436
+        },
+        {
+          "sha256": "0b9fe8617cb1b2b2e9773b00b08c66e615e4b28d1bd40fa8264de2e99cc74518",
+          "bytes": 3335,
+          "mode": 436
+        }
+      ],
+      "official_audit_run": true,
+      "official_report": {
+        "sha256": "31f963df0cb033ba3c21d68e69c009ac29941b544227fa23fa678125b8e4c1c6",
+        "bytes": 369692,
+        "mode": 436
+      },
+      "official_audit_Source": {
+        "sha256": "40a479ee8cd715ed38800b5089711da834254c5665529308f2fcd7300a121a1d",
+        "bytes": 602698,
+        "mode": 436
+      },
+      "official_profile_observation": {
+        "headless_passed": 2002,
+        "renderer_passed": 1538,
+        "Python_aggregate": 494,
+        "finite_example_executions": 47,
+        "Source_blobs_verified": 1819,
+        "Source_input_bindings": 906,
+        "new_Rust_controls": 18,
+        "strict_Source_bases": 15,
+        "RAW_profiles": {
+          "headless": 454,
+          "renderer": 746,
+          "nativefree": 57,
+          "rgb-camera": 168
+        },
+        "RAW_each_once": true
+      },
+      "own_qualification_complete": true,
+      "prior_official_method_failures": []
     },
     "current_M94_M95_parent_qualification": {
       "commit": "ac4af1c738a9daaf3d9d899eca46c690d3aac22a",
@@ -11004,7 +11068,7 @@
         "actual_exit_code": 0
       },
       "hosted_qualified": true,
-      "official_DATA_qualified": false,
+      "official_DATA_qualified": true,
       "own_normal_failures": [
         {
           "sha256": "70d2f43e128b31ed9642ff15a8f5cfe37d028ef20a138103cfb886b0b0d6861a",
@@ -11112,8 +11176,8 @@
         "RGB_CLI_cases": 21,
         "Source_bindings": 1819
       },
-      "state": "M96_M97_LOCAL_AND_HOSTED_QUALIFIED_OFFICIAL_COLLECTION_PENDING",
-      "current_stage": "M96/M97 passed full local verification and its independent evidence audit at a578c68a/tree ad639. Its exact published review commit also passed hosted run 44970670576 attempt 1: job 137049524268 and all thirteen steps succeeded. Root watch 54430 retired with actual exit 0. Official artifact collection has not run and its audit is pending. Product, method, operational and formatter histories remain separate; no acceptance or qualification transfers to M98/M99.",
+      "state": "M96_M97_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
+      "current_stage": "M96/M97 passed full local verification, its independent local evidence audit, hosted checks and the independent official artifact audit on the same published a578c68a review commit. The official audit returned actual Root exit 0 and verified the original hosted evidence; each required RAW audit ran once. Collection completed once with 36 captures and preserved RAM and individual SSD originals. Both earlier pre-I/O collector method failures remain distinct historical records; there is no own official audit failure. Formal acceptance remains held by the retained predecessor and M77 owner gates. No qualification or acceptance transfers to M98/M99.",
       "qualification_inherited": false,
       "current_normal_active": false,
       "hosted_actual": {
@@ -11121,7 +11185,72 @@
         "bytes": 2216,
         "mode": 436
       },
-      "official_collection_invoked": false
+      "official_collection_invoked": true,
+      "official_collection_complete": true,
+      "official_collection_actual": {
+        "sha256": "f9bb0d540c8ef26b0eb9b22951e495e337575aa333b958f4b2c0aecb01dab695",
+        "bytes": 2975,
+        "mode": 436
+      },
+      "official_collection": {
+        "sha256": "11cc3323ce41cb7ec4e4355b17f12e299c2e9705c9a1a4682f1f6cc11e56998d",
+        "bytes": 61138,
+        "mode": 436
+      },
+      "official_original_archive_location": {
+        "sha256": "06c3f246d1f663f003bb063db734b08a024a38f813284b1a56eef94bcdb32461",
+        "bytes": 2886,
+        "mode": 436
+      },
+      "official_original_bytes": 197464310,
+      "official_collection_requests": 36,
+      "prior_collector_method_failures": [
+        {
+          "sha256": "6d958d2be96ebf25c954c80858ec147b9d352e6c8966502a379ee40bc41946fe",
+          "bytes": 2577,
+          "mode": 436
+        },
+        {
+          "sha256": "0b9fe8617cb1b2b2e9773b00b08c66e615e4b28d1bd40fa8264de2e99cc74518",
+          "bytes": 3335,
+          "mode": 436
+        }
+      ],
+      "official_audit_run": true,
+      "official_actual": {
+        "sha256": "9eeb50b4389cb49c25ccbc3f9a02d54c875b5bbbec5a7ba195a7af038afeef14",
+        "bytes": 3636,
+        "mode": 436
+      },
+      "official_report": {
+        "sha256": "31f963df0cb033ba3c21d68e69c009ac29941b544227fa23fa678125b8e4c1c6",
+        "bytes": 369692,
+        "mode": 436
+      },
+      "official_audit_Source": {
+        "sha256": "40a479ee8cd715ed38800b5089711da834254c5665529308f2fcd7300a121a1d",
+        "bytes": 602698,
+        "mode": 436
+      },
+      "official_profile_observation": {
+        "headless_passed": 2002,
+        "renderer_passed": 1538,
+        "Python_aggregate": 494,
+        "finite_example_executions": 47,
+        "Source_blobs_verified": 1819,
+        "Source_input_bindings": 906,
+        "new_Rust_controls": 18,
+        "strict_Source_bases": 15,
+        "RAW_profiles": {
+          "headless": 454,
+          "renderer": 746,
+          "nativefree": 57,
+          "rgb-camera": 168
+        },
+        "RAW_each_once": true
+      },
+      "own_qualification_complete": true,
+      "prior_official_method_failures": []
     },
     "current_M98_M99_Source": {
       "state": "M98_M99_CODE_DOCS_POSTFORMAT_REVIEWED_FULL_VERIFICATION_CAPACITY_HELD",
@@ -11212,7 +11341,7 @@
       "prior_reader_failures": [],
       "accepted": false,
       "Main_promoted": false,
-      "scope": "M98/M99 implementation, regression code, documentation and independent whole code/docs/postformat reviews are complete. The final formatted Source tree is e8dd98dd over locally qualified unaccepted a578c68a. Measured inventory is 1,823 Source files, 16 owned paths, four new paths, two production paths and 120 cumulative paths; 23 new Rust declarations comprise 19 public and four private controls in both profiles, with no new Python, finite or CLI cases. These are declarations, not executed results. One eight-file formatter passed; tests, lint, full normal and evidence audits have not run. Full verification is held for the owner SSD capacity decision under the reviewed conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source metadata coherence peer review is separately pending at this observation. No current normal or new qualification is claimed.",
+      "scope": "Implementation, regression code, documentation and independent reviews for M98/M99 are complete; the eight-file formatter passed. The corrected held normal and retained-reader procedures are reviewed, including their actual Source records and parent namespaces. There are 23 new Rust declarations (19 public and four private), not execution results. No new tests, lint, normal or audit has run. Full verification remains held for the owner\u2019s SSD capacity decision under the conditional 32 GiB SSD / 12 GiB shared-memory plan. Final Source e8dd98dd and its measured inventory remain unchanged; no new qualification or acceptance is claimed.",
       "production_leases": {
         "M98": [
           "crates/gz-sim-scene/src/world_spawn.rs"
@@ -11249,7 +11378,7 @@
       },
       "parent_hosted_qualified": true,
       "post_formatter_Source_review_complete": true,
-      "final_metadata_coherence_peer_review_complete": false,
+      "final_metadata_coherence_peer_review_complete": true,
       "Source_controls": {
         "unique": 23,
         "headless": 23,
@@ -11345,7 +11474,26 @@
         "mode": 436
       },
       "resource_hold": true,
-      "owner_capacity_decision_pending": true
+      "owner_capacity_decision_pending": true,
+      "normal_and_retained_procedure_Source": {
+        "sha256": "aaa252a232041de11c05ceb6ce15be09bae1ac8b16c27de2aed800a2ed7ed909",
+        "bytes": 8811,
+        "mode": 436
+      },
+      "normal_procedure_Source_review_complete": true,
+      "retained_reader_Source_review_complete": true,
+      "normal_procedure_Source_scope": "One pre-execution list/tuple correction is independently reviewed; all guards, final Source facts, empty own histories and held runtime facts are retained. No normal has been invoked.",
+      "parent_official_DATA_qualified": true,
+      "parent_official_actual": {
+        "sha256": "9eeb50b4389cb49c25ccbc3f9a02d54c875b5bbbec5a7ba195a7af038afeef14",
+        "bytes": 3636,
+        "mode": 436
+      },
+      "parent_official_report": {
+        "sha256": "31f963df0cb033ba3c21d68e69c009ac29941b544227fa23fa678125b8e4c1c6",
+        "bytes": 369692,
+        "mode": 436
+      }
     }
   },
   "phase_status": {
