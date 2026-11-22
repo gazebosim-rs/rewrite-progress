@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-22T14:16:58.308149+00:00",
+  "updated_at": "2026-11-22T18:43:33.587624+00:00",
   "state": "active",
-  "summary": "Full verification is running for mesh copies and general joint axes after the authorized cleanup restored disk space. No result is claimed. M96/M97 passed its checks and evidence audits; formal acceptance remains held.",
+  "summary": "Translated mass frames and local joint frames are reviewed and formatted; final verification is running. Prior mesh and joint-axis work passed local and hosted checks; its artifact audit is pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M98-M99-first-full-normal-active",
-      "title": "Mesh copies and general joint axes: verification running",
-      "detail": "Both features and 23 regression cases are reviewed and formatted. Full verification is running after the owner-authorized cleanup restored disk space; no result is claimed."
+      "id": "M100-M101-final-verification-running",
+      "title": "Mass frames and joint frames: verification running",
+      "detail": "Implementation, regression tests and documentation are reviewed. Formatting passed. The required full verification is running; its result is pending."
     },
     {
-      "id": "M96-M97-qualified-formal-acceptance-held",
-      "title": "M96/M97 audits passed; acceptance held",
-      "detail": "M96/M97 passed local and hosted checks and independent evidence audits. Formal acceptance remains held by the predecessor and owner gates."
+      "id": "M98-M99",
+      "title": "Hosted evidence closeout",
+      "detail": "Exact review commit passed local verification, independent local evidence review and hosted CI. Original hosted artifacts are collected; their official audit is pending."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,9 +1035,9 @@
     }
   ],
   "remaining": [
-    "Complete the running full verification cycle and independently audit its recorded results.",
-    "After local verification and its evidence audit, qualify the same M98/M99 review commit through hosted checks and artifact audits.",
-    "Preserve every predecessor gate. Formal M77 browser evidence and owner-confirmed shutdown still hold acceptance; the manual demo remains live without expiry."
+    "Finish the running verification and independently audit its recorded results.",
+    "Publish the reviewed candidate and qualify exact hosted CI and original artifacts.",
+    "Complete formal browser evidence and owner-approved demo shutdown before acceptance."
   ],
   "blockers": [
     "Formal acceptance remains blocked by M77 browser access and owner-approved shutdown. The persistent demo stays live until confirmed stop."
@@ -1070,7 +1070,7 @@
     "PKG-01": "in_progress"
   },
   "quality": {
-    "revision": "57b44de10713dc6132c5549d769dac00dc041f56",
+    "revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "rust_tests": 1771,
     "coverage": {
       "lines": [
@@ -1089,9 +1089,9 @@
     },
     "ci": {
       "state": "success",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44715646599"
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Both features, regression cases, documentation and verification procedures are reviewed; formatting passed. Owner-authorized incremental-cache cleanup cleared the capacity hold, and the first full verification run is active with no outcome yet. M96/M97 is qualified but unaccepted. Acceptance evidence and the persistent demo remain unchanged.",
+    "note": "Accepted test and coverage measurements describe M76. The current features are reviewed and formatted; full verification is running and its result is pending. M98/M99 passed local and hosted checks; original artifacts are collected and their independent audit is pending. Formal acceptance and the persistent demo owner gates are unchanged.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1108,7 +1108,6 @@
     "quiet_Python_individual_results_observable": false,
     "finite_example_runs": 47,
     "installed_finite_example_runs": 47,
-    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/tree/57b44de10713dc6132c5549d769dac00dc041f56",
     "automatic_Main_CI": {
       "id": 44687651179,
       "attempt": 1,
@@ -1135,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
+    "qualification_scope": "Top-level test and coverage measurements describe accepted M76 Main only. M100/M101 verification is running; no result or qualified commit is recorded. M98/M99 passed local and hosted checks; original artifacts are collected and their independent official audit is pending.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -11253,7 +11252,7 @@
       "prior_official_method_failures": []
     },
     "current_M98_M99_Source": {
-      "state": "M98_M99_REVIEWED_FIRST_FULL_NORMAL_ACTIVE_OUTCOME_UNKNOWN",
+      "state": "M98_M99_LOCALLY_AND_HOSTED_QUALIFIED_ORIGINALS_COLLECTED_OFFICIAL_AUDIT_PENDING",
       "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
       "parent_tree": "ad639bd9e8e5e8fdbe8bf21ed1ea7511cc6bffb5",
       "parent_locally_qualified": true,
@@ -11320,20 +11319,32 @@
       "new_Rust_Source_controls": 23,
       "new_Python_Source_controls": 0,
       "final_Source_tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
-      "future_qualified_commit": null,
-      "normal_actual": null,
-      "local_DATA_actual": null,
-      "hosted_actual": null,
+      "future_qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "normal_actual": {
+        "sha256": "17f505b99f8a46b754dccca12b1b74bb3800a6d2e1244197dd37b5c53911ba69",
+        "bytes": 2238,
+        "mode": 436
+      },
+      "local_DATA_actual": {
+        "sha256": "9ccb1a49ab2b1592092db45719e2ec6d55e86efebe512538e6aa4ba867061acb",
+        "bytes": 2335,
+        "mode": 436
+      },
+      "hosted_actual": {
+        "sha256": "ddc8cf0da98719a8d7d64a2fd90048941109891d10115f90969317ea685a4b22",
+        "bytes": 4940,
+        "mode": 436
+      },
       "official_actual": null,
       "checks_run": true,
       "checks_started": true,
-      "checks_passed": false,
+      "checks_passed": true,
       "formatter_run": true,
-      "current_normal_active": true,
+      "current_normal_active": false,
       "normal_execution_released": true,
-      "normal_qualified": false,
-      "local_DATA_qualified": false,
-      "hosted_qualified": false,
+      "normal_qualified": true,
+      "local_DATA_qualified": true,
+      "hosted_qualified": true,
       "official_DATA_qualified": false,
       "qualification_inherited": false,
       "own_historical_normal_failures": [],
@@ -11341,7 +11352,7 @@
       "prior_reader_failures": [],
       "accepted": false,
       "Main_promoted": false,
-      "scope": "M98/M99 implementation, regression code, documentation, postformat reviews and corrected verification procedures are complete. The first full mandatory normal is running once under Root session 24609, launch tool 72b983, over reviewed tree e8dd98dd and parent a578c68a. Owner-authorized removal of ordinary incremental compiler caches restored disk capacity and cleared the prior SSD decision hold; the reviewed 32 GiB SSD / 12 GiB shared-memory admission and all existing floors, early stops, jobs and gates remain unchanged. The 23 new Rust declarations (19 public and four private) remain Source obligations, not observed passes. No terminal result, pass counts, new commit, independent local audit or new qualification is claimed. M96/M97 is separately qualified but unaccepted; every predecessor and owner gate remains held.",
+      "scope": "M98/M99 passed full local verification and an independent audit of the recorded local results at the same published review commit. All 23 new controls ran in both profiles, including nineteen public and four private controls. Exact hosted CI then succeeded on the same commit, with all thirteen steps passing. The original hosted artifacts were collected once and retained; their independent official audit is pending. The earlier watcher failure under API rate limiting remains a historical monitoring failure. No formal acceptance or qualification transfers to another delivery; the demo and owner gates remain held.",
       "production_leases": {
         "M98": [
           "crates/gz-sim-scene/src/world_spawn.rs"
@@ -11366,7 +11377,7 @@
         "mode": 436
       },
       "Root_retained_whole_Source_review_complete": true,
-      "resource_scope": "The owner requested workspace cleanup. Root removed only selected regenerable incremental compiler files, preserving Source, retained evidence, logs, linked ELFs, archives, Fuel and the persistent demo. The actual cleanup restored SSD space above the selected 32 GiB planning reserve; the separate Root release rechecked 32 GiB SSD / 12 GiB shared-memory admission and maintained floors. Prior proposal/observation cards remain historical planning records. The first full normal is active; no future-fit or successful-outcome guarantee is made.",
+      "resource_scope": "Owner-authorized ordinary incremental-cache cleanup cleared the prior SSD capacity hold, and the reviewed full normal completed successfully under unchanged 32 GiB SSD / 12 GiB shared-memory admission, floors, early stops, jobs and gates. Cleanup and release observations remain retained; any future run needs separate admission. No future-fit guarantee or further eviction is authorized.",
       "resource_execution_released": true,
       "initial_contract_docs_state": "Final eight docs adopted and independently reviewed; original author-time provisional inventory is preserved in its immutable completion.",
       "protected_demo_session": 86363,
@@ -11457,7 +11468,7 @@
         "bytes": 16625,
         "mode": 436
       },
-      "final_docs_review_scope": "Root and Package whole Source review closed; original author-time pending flags remain immutable observations. Current formatter and postformat Source review passed separately; no tests or lint ran.",
+      "final_docs_review_scope": "Root and Package whole Source review closed. Original author-time pending flags and the preformat checkpoint with tests/lint unrun are immutable historical observations; current completed normal and independent local audit are recorded separately.",
       "resource_proposal": {
         "sha256": "1fbfd0df05ef97e2582b679410bf1f94cc177b4dcd020b27cc181caeab20eb2b",
         "bytes": 9684,
@@ -11482,7 +11493,7 @@
       },
       "normal_procedure_Source_review_complete": true,
       "retained_reader_Source_review_complete": true,
-      "normal_procedure_Source_scope": "One pre-execution list/tuple correction is independently reviewed; all guards, final Source facts, empty own histories and held runtime facts are retained. No normal has been invoked.",
+      "normal_procedure_Source_scope": "The list/tuple correction was independently reviewed before the first normal; all guards and exact Source/parent-history bindings were preserved. That normal and the independent local audit have since completed successfully, with their actual receipts recorded separately.",
       "parent_official_DATA_qualified": true,
       "parent_official_actual": {
         "sha256": "9eeb50b4389cb49c25ccbc3f9a02d54c875b5bbbec5a7ba195a7af038afeef14",
@@ -11527,13 +11538,19 @@
       "normal_run": {
         "session": 24609,
         "launch_tool": "72b983",
-        "status": "active",
-        "outcome": null,
-        "actual_Root_exit_code": null,
-        "actual_Git_exit_code": null,
-        "result": null,
-        "commit": null,
-        "basis": "Root direct actual-launch observation supplied with the reviewed release; no duplicate process watch or product execution by this data author."
+        "status": "completed_success",
+        "outcome": "success",
+        "actual_Root_exit_code": 0,
+        "actual_Git_exit_code": 0,
+        "result": {
+          "sha256": "fc527cb31921ba29b9717346d9ab0e6f89839b1cb56e892f26988d7c156168b6",
+          "bytes": 14729,
+          "mode": 436
+        },
+        "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "basis": "Genuine retained Root terminal receipt and normal result. The independent local evidence audit subsequently passed on the same commit; no product execution was repeated for the audit.",
+        "terminal_tool": "4690c5",
+        "elapsed_seconds": 3928.5361662150244
       },
       "normal_release_Root_resources": {
         "root": 35672166400,
@@ -11541,10 +11558,146 @@
         "runtime": 6731218944,
         "memory": 38869979136
       },
-      "normal_result": null,
-      "normal_commit": null,
-      "checks_scope": "The reviewed first full mandatory normal is active. All executed pass counts, terminal result, commit and independent evidence-audit outcome remain unknown. Source review and formatter success are separate from verification results."
-    }
+      "normal_result": {
+        "sha256": "fc527cb31921ba29b9717346d9ab0e6f89839b1cb56e892f26988d7c156168b6",
+        "bytes": 14729,
+        "mode": 436
+      },
+      "normal_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "checks_scope": "Full local verification, its independent evidence audit and exact hosted CI passed on the same published review commit. The original hosted artifacts were collected once and retained. Their independent official audit is pending. The prior rate-limited watcher failure remains recorded separately and does not change the later hosted success or imply acceptance.",
+      "normal_qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "normal_profile_observation": {
+        "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
+        "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
+        "headless_passed": 2025,
+        "renderer_passed": 1561,
+        "headless_ignored": 2,
+        "renderer_ignored": 2,
+        "own_controls_headless": 23,
+        "own_controls_renderer": 23,
+        "own_controls_overlap": 23,
+        "own_public_controls": 19,
+        "own_private_controls": 4,
+        "required_Source_controls_headless": 271,
+        "required_Source_controls_renderer": 217,
+        "Python_aggregate": 494,
+        "finite_cases": 47,
+        "RGB_CLI_cases": 21,
+        "native_peer_records_observed": 47,
+        "native_Source_roster_obligations": 29,
+        "strict_Source_bases": 16,
+        "Source_bindings": 1823
+      },
+      "local_DATA_audit_state": "completed_success",
+      "review_ref_published": true,
+      "Source_publication_available": true,
+      "hosted_run": {
+        "id": 45038323899,
+        "attempt": 1,
+        "head": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45038323899",
+        "event": "push",
+        "workflow": ".github/workflows/ci.yml",
+        "last_observed_status": "completed",
+        "observation_is_current": true,
+        "monitoring_state": "terminal_metadata_success",
+        "last_observed_job_id": 137256923547,
+        "observation_basis": "Retained exact run, jobs and artifacts metadata read after API capacity returned; all13 steps succeeded. The prior watcher exit1 remains historical monitoring failure."
+      },
+      "local_DATA_report": {
+        "sha256": "5e859dbffbfde220d5434c9860486da1f9ad9b6c9b84ae95226f35e8bcfeff0c",
+        "bytes": 250111,
+        "mode": 436
+      },
+      "local_DATA_Source": {
+        "sha256": "1c3e4fceba112327699fb2fc8006cb7886e3daebc0204b4301117706c3c3b615",
+        "bytes": 514420,
+        "mode": 436
+      },
+      "local_DATA_release": {
+        "sha256": "008498704adba3751dc92654cd7367187b38f0c1132e0746cebb18df72090dfa",
+        "bytes": 2909,
+        "mode": 436
+      },
+      "actual_profile_observation": {
+        "commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "tree": "e8dd98dd5050c1b6e8c93764e17742dd11e810dc",
+        "parent": "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
+        "headless_passed": 2025,
+        "renderer_passed": 1561,
+        "headless_ignored": 2,
+        "renderer_ignored": 2,
+        "own_controls_headless": 23,
+        "own_controls_renderer": 23,
+        "own_controls_overlap": 23,
+        "own_public_controls": 19,
+        "own_private_controls": 4,
+        "required_Source_controls_headless": 271,
+        "required_Source_controls_renderer": 217,
+        "Python_aggregate": 494,
+        "finite_cases": 47,
+        "RGB_CLI_cases": 21,
+        "native_peer_records_observed": 47,
+        "native_Source_roster_obligations": 29,
+        "strict_Source_bases": 16,
+        "Source_bindings": 1823
+      },
+      "product_tests_repeated_for_DATA": false,
+      "LLVM_remerges_repeated_for_DATA": false,
+      "qualified_commit": "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "review_ref": "refs/heads/review/m98-m99-runtime-mesh-arbitrary-axes",
+      "review_publication": {
+        "sha256": "c471321dc49561890b827e20d5212663bd065d5f5f3fffac367cb7394db27ca1",
+        "bytes": 2569,
+        "mode": 436
+      },
+      "hosted_watch_observation": {
+        "session": 18359,
+        "launch_tool": "23730b",
+        "status": "retired_API_rate_limit",
+        "outcome": "monitoring_failed_API_rate_limit_not_CI_outcome",
+        "basis": "Historical watcher failed under API rate limiting. A later retained exact run metadata read independently confirmed success; original watcher exit1 remains unchanged.",
+        "active": false,
+        "terminal_tool": "8cea40",
+        "actual_watcher_exit_code": 1,
+        "retired_at": "2026-11-22T15:37:35Z"
+      },
+      "hosted_watch_failure": {
+        "sha256": "ee8b8d0081fd4defcb1e5c23518f52784d852bafb8c671703af696363dc1e846",
+        "bytes": 868,
+        "mode": 436
+      },
+      "hosted_monitoring_active": false,
+      "hosted_CI_actual_success": true,
+      "original_collection_complete": true,
+      "original_collection_actual": {
+        "sha256": "645cc0744c2b95012719fae9f005388632f1e25d0a62947687d65426c2c41394",
+        "bytes": 3341,
+        "mode": 436
+      },
+      "original_collection_report": {
+        "sha256": "b27aaf3e61e34af7a3a17809f11592c3cabcdb0b85efc331e5c166c7d32699a7",
+        "bytes": 56736,
+        "mode": 436
+      },
+      "original_collection_requests": 37,
+      "prior_collector_method_failures": [
+        {
+          "sha256": "9b899056156d4fc2d738f17f8c8469b2a3bd3ce5d1760cde60d1feb388bb818a",
+          "bytes": 2352,
+          "mode": 436
+        },
+        {
+          "sha256": "4bf08348a91f8e69bd27dc87b6d9bdd57b03c4a007da37d0e1c5201858a048fa",
+          "bytes": 3176,
+          "mode": 436
+        }
+      ]
+    },
+    "revision_url": "https://github.com/gazebosim-rs/gz-sim-rs/commit/dddf1f4284557c420e384d263a4365b2153dfde2"
   },
   "phase_status": {
     "P0": "in_progress",
