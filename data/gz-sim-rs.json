@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-23T21:18:58.037326+00:00",
+  "updated_at": "2026-11-23T21:42:57.233390+00:00",
   "state": "active",
-  "summary": "All headless tests passed; CLI/Server coverage corrections and both-profile reporting are in development. The persistent no-expiry demo is restored.",
+  "summary": "Reviewed coverage controls are in full verification; both Clippy stages and all 498 Python tests passed. The persistent no-expiry demo remains operational.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M102-M113",
-      "title": "Complete coverage controls and both-profile failure reporting",
-      "detail": "All 2,144 headless tests passed; Server region coverage and changed CLI/Server coverage failed. Three parallel source tasks cover missing behavioral controls and both-profile error collection. Tests wait until the complete batch and independent review."
+      "title": "Complete the full verification and qualification cycle",
+      "detail": "The full staged hook is running after complete source review and one formatting command. Both Clippy stages and 498 Python tests passed. The nine new Rust controls and both-profile reporting preserve all 18 strict coverage bases. Runtime results and qualification remain unknown."
     },
     {
       "id": "M77-persistent-demo",
@@ -1030,12 +1030,12 @@
     }
   ],
   "remaining": [
-    "Finish the regression and verifier changes, documentation and independent source review before one consolidated check cycle.",
-    "Complete renderer, strict coverage, retained audit, exact hosted CI and original-artifact audit.",
+    "Finish both mandatory profiles and all strict coverage comparisons in the active cycle.",
+    "Independently audit retained results, then complete exact hosted CI and original-artifact audit.",
     "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
   ],
   "blockers": [
-    "Strict Server region coverage and changed CLI/Server coverage must pass before qualification can continue.",
+    "Strict coverage and complete local, hosted and original-artifact qualification remain required; the single full check is active.",
     "Formal browser and owner-confirmed shutdown proof remain incomplete; the recorded browser permission denial is unresolved."
   ],
   "plan_status": {
@@ -1087,7 +1087,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted quality below belongs to its qualified revision. The latest candidate passed 2,144 headless tests with two ignored, lint, documentation and 494 Python tests. Strict Server regions were 19,281/20,312; retained analysis found changed CLI/Server gaps. Renderer was not reached. The no-expiry demo is restored operationally; formal browser and shutdown proof are pending.",
+    "note": "Accepted quality below belongs to its qualified revision. The current reviewed correction passed both Clippy stages and all 498 Python tests; runtime profiles and coverage remain pending. The prior cycle passed all 2,144 headless tests but failed strict Server coverage at 19,281/20,312 and had changed CLI/Server gaps. The no-expiry demo is operational; formal browser and shutdown proof remain pending.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -12538,242 +12538,42 @@
       "normal_resource_budget_selection_scope": "Forty-GiB initial SSD guard selected in the independently reviewed held Source procedure; no resource admission, execution or future fit is claimed."
     },
     "current_M104_M113_Source": {
-      "Source_control_declarations": {
-        "Rust_unique": 84,
-        "headless": 65,
-        "renderer": 72,
-        "overlap": 53,
-        "public": 50,
-        "private": 34,
-        "scope": "Actual authored ten-wave Source inventory; obligations, not executed passes."
-      },
-      "copied_foundation_Source_declarations": {
-        "Rust_unique": 26,
-        "headless": 26,
-        "renderer": 25,
-        "overlap": 25,
-        "qualified": false
-      },
-      "reviewed_sensing_retirement_correction": {
-        "path": "capsule-worker-retirement-source-correction.json",
-        "sha256": "445d0d7c1c2c381540aa9dea82983b2a9e3dc0d747352d38c84c323d5c943d43",
-        "bytes": 2302,
-        "mode": 436
-      },
-      "selection": {
-        "path": "ten-phase-reviewed-source-selection.json",
-        "sha256": "998f0cd81d60b32e2e51ba5633c02d468f15702ad5bc42a3bf06f693f36fa54b",
-        "bytes": 17059,
-        "mode": 436
-      },
-      "prerequisite_addendum": {
-        "path": "concrete-prerequisite-source-scope-addendum.json",
-        "sha256": "fe798b7d8afb9b5a31822ed40741775e1405384bcfd4a98e5592c74e0c6169cd",
-        "bytes": 2398,
-        "mode": 436
-      },
-      "author_completions": [
-        {
-          "path": "physics-three-phases-source-completion.json",
-          "sha256": "4d49244d649a4237d703221b3c013c07dc6844269fa1d9d9989c38bb77596ead",
-          "bytes": 22652,
-          "mode": 436
-        },
-        {
-          "path": "m105-m111-systems-source-completion.json",
-          "sha256": "86104a4055df9b0c466d7083b817cafcdbf029893cacb1dff9d65dd3a5a6c448",
-          "bytes": 19239,
-          "mode": 436
-        },
-        {
-          "path": "sensing-graphics-three-phases-source-completion.json",
-          "sha256": "1039308cc0315aa31f7ef6b7fa804d949ca7e308ef4b7e7f3648264839c45ff7",
-          "bytes": 45793,
-          "mode": 436
-        },
-        {
-          "path": "m112-m113-root-source-completion.json",
-          "sha256": "3b567438beb772608e67efe1485e63ff512721a7b12350d7a7e66fb01a97cbc2",
-          "bytes": 7695,
-          "mode": 436
-        }
-      ],
+      "scope": "Combined M102\u2013M113 physics, robot-control, spatial-lidar and rendering delivery.",
+      "state": "FULL_MANDATORY_VERIFICATION_RUNNING_COVERAGE_CORRECTIONS",
       "qualified_Git_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
-      "copied_foundation_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
-      "copied_foundation_phases": [
-        "M102",
-        "M103"
-      ],
-      "foundation_qualified": false,
+      "staged_source_tree": "7c8a5de42122c838d47b5bb5559cca9ee65082b2",
+      "source_counts": {
+        "files": 1862,
+        "changed_paths": 119,
+        "new_paths": 35,
+        "Rust_paths": 93,
+        "production_paths": 29
+      },
+      "Source_control_declarations": {
+        "Rust_unique": 122,
+        "headless": 103,
+        "renderer": 98,
+        "overlap": 79,
+        "public": 70,
+        "private": 52,
+        "new_Python_methods": 4,
+        "expected_quiet_Python_aggregate": 498,
+        "scope": "Source obligations, not projected runtime results."
+      },
       "implementation_complete": true,
       "regression_Source_complete": true,
-      "whole_Source_reviews_complete": true,
-      "Source_declarations_scope": "All110 Rust declarations remain obligations. The previous attempt passed both Clippy stages and ran494 Python tests with five errors; all errors were repaired before this full retry.",
-      "tests_run": false,
-      "lint_run": true,
-      "normal_actual": null,
-      "local_DATA_actual": null,
-      "hosted_actual": null,
-      "official_actual": null,
-      "final_tree": null,
-      "final_commit": null,
-      "accepted": false,
-      "qualification_inherited": false,
-      "resource_admitted": true,
-      "capacity_hold": "The prior storage shortfall is cleared. This full cycle passed fresh admission; active resource guards provide no future fit guarantee.",
-      "prior_checkpoint_alias_scope": "Other inherited current_M*_Source objects retain their earlier author-checkpoint observations. The current ten-phase wave state is this object; the historical Markdown checkpoint suffixes remain exact.",
-      "state": "HEADLESS_ALL_PASS_COVERAGE_CORRECTION_SOURCE_BATCH",
-      "independent_source_review_complete": true,
-      "final_document_Source_review_complete": true,
-      "independent_Source_review_records": {
-        "whole_code_and_regressions": {
-          "path": "m104-m113-scope-independent-source-review-receipt.json",
-          "sha256": "af4b1d8968b7955f658cd1280904b72243115ac1a2f8d715d50e87f48d4144f3",
-          "bytes": 22717,
-          "mode": 436
-        },
-        "canonical_docs": {
-          "path": "canonical-wave-docs-scope-independent-source-review.json",
-          "sha256": "c1c1d20d4d0703c72464d257a9d62122458bf4921fee6861be467a3637282961",
-          "bytes": 5002,
-          "mode": 436
-        },
-        "physics_retained": {
-          "path": "physics-retained-dispositions-independent-whole-source-review.json",
-          "sha256": "5bf8e42279e728689f2cd28105c57545a2772d11838fc0a2f93490055c660f06",
-          "bytes": 1931,
-          "mode": 436
-        },
-        "systems": {
-          "path": "m105-m111-independent-whole-source-review.json",
-          "sha256": "678018b28bd50edf212fbbfb15fe4b656e3ef22f6d29af79dc6c69dcf7ff2ec7",
-          "bytes": 1660,
-          "mode": 436
-        }
+      "independent_Source_reviews_complete": true,
+      "formatting_actual_exit_code": 0,
+      "formatter_scope": "One three-file formatter; outside files, all modes, index and HEAD unchanged.",
+      "normal_running": true,
+      "normal_actual_exit_code": null,
+      "current_observed_stages": {
+        "Clippy_stages_passed": 2,
+        "quiet_Python_aggregate_passed": 498,
+        "quiet_Python_seconds": 70.267,
+        "Rust_runtime_results": null
       },
-      "combined_Source_control_declarations": {
-        "Rust_unique": 113,
-        "headless": 94,
-        "renderer": 97,
-        "overlap": 78,
-        "public": 70,
-        "private": 43,
-        "scope": "Source obligations only; current pass counts unknown."
-      },
-      "Source_control_inventory": {
-        "path": "combined-new-Rust-Source-declarations-inventory.json",
-        "sha256": "07238e2c52f5fd23cb499b4af2e4e16ce2d8b4b16c087ebb93323837287a7cad",
-        "bytes": 155516,
-        "mode": 436
-      },
-      "Source_counts": {
-        "scope": "Actual preformat records; formatter custody retained file/mode/outside/index identity. Final candidate tree remains unknown.",
-        "Source_files": 1862,
-        "changed_paths": 96,
-        "new_paths": 35,
-        "production_paths": 26,
-        "Rust_paths": 72,
-        "current_formatter_Rust_paths": 64,
-        "unchanged_foundation_Rust_paths": 8
-      },
-      "preformat_Source_review": {
-        "path": "complete-preformat-source-review.json",
-        "sha256": "25673983d6d3b5958abd134b66b5e518757cde0dea8823dc2d9273d9fdd9ded7",
-        "bytes": 14098,
-        "mode": 436
-      },
-      "preformat_Source_snapshot": {
-        "path": "complete-preformat-source-snapshot.json",
-        "sha256": "febcd5560249385fddf7a34bf4b883f2cd45e0d5f4f201eeb3a1806d533f890d",
-        "bytes": 700025,
-        "mode": 436
-      },
-      "preformat_Source_tree": "d314b59538e7232a162d0a690bfd0654fbec5b9c",
-      "Rust_formatter_passed": true,
-      "formatter_Root_actual": {
-        "path": "final-wave-formatter-actual-exit.json",
-        "sha256": "e06863c16000c30db55d7257634d3ba9b18e7294c29b32a6362575202a79c12b",
-        "bytes": 866,
-        "mode": 436
-      },
-      "formatter_wrapper_exit_code": 0,
-      "formatter_child_exit_code": 0,
-      "formatter_elapsed_seconds": 0.633714573981706,
-      "postformat_Source_review_complete": true,
-      "formatter_custody_scope": "One invocation on 64 Rust files passed; independent retained custody and full-diff review is clear. Eight unchanged foundation Rust files retain separate original formatting evidence. All 1,862 modes, 1,798 outside files, index, HEAD and 110 declaration identities are preserved. This is not behavior qualification.",
-      "formatter_child_stdout_bytes": 0,
-      "formatter_child_stderr_bytes": 0,
-      "formatter_wrapper_log_bytes": 222,
-      "product_checks_run": true,
-      "final_Source_tree": null,
-      "heavy_verification_released": false,
-      "first_normal_failure": {
-        "tree": "eb4afd236f307011ec278312fc0d9372a37d3d78",
-        "stage": "workspace_clippy",
-        "actual_exit_code": 1,
-        "runtime_tests_reached": false,
-        "strict_coverage_reached": false
-      },
-      "correction_scope": "Preserve the original 110 test identities, inputs and tolerances. Add three private lifecycle controls and fix the multi-owner subscription fault alongside retained expectations.",
-      "normal_running": false,
-      "changed_paths_vs_Git_parent": 117,
-      "changed_production_paths": 29,
-      "correction_formatter_run": true,
-      "formatter_scope": "The one-file correction formatter passed and joined one assignment line. All 1,861 other Source files, file modes, index and HEAD remained unchanged.",
-      "original_failed_candidate_formatter_run": true,
-      "original_failed_candidate_formatter_actual": {
-        "path": "final-wave-formatter-actual.json",
-        "sha256": "ceabe9c48a815dbb5f1f77a7401b1af497770cdd95d03b186a51c1c968cc4386",
-        "bytes": 25038,
-        "mode": 436
-      },
-      "original_failed_candidate_formatter_independent_retained_review": {
-        "path": "final-wave-formatter-independent-retained-review.json",
-        "sha256": "b2c1a8725f56a95ccbd23df73ee1235019edaf0b3052d48db16d3d883b59a91e",
-        "bytes": 61941,
-        "mode": 436
-      },
-      "owner_capacity_decision_pending": false,
-      "current_outcome": "All 2,144 headless tests passed with two ignored. The hook failed at Server region coverage; retained all-base analysis also found changed-line gaps in CLI and Server. Renderer was not reached.",
-      "retry_python_failure": {
-        "tree": "333b0d7114a70c1eb33f815fbfeea50ad9b2bcc3",
-        "actual_exit_code": 1,
-        "Python_tests": 494,
-        "Python_errors": 5
-      },
-      "repair": "Preserve the exact TPE fixture and atomicity checks; expect InvalidScene at absent native BodyHandle before caller COM validation. Source-traced variant was not printed by the failed run. No production change.",
-      "headless_retry_failure": {
-        "tree": "66e848bec3a80067eb375fbb45ff24e5c90fa3d0",
-        "actual_exit_code": 1,
-        "Python_passed": 494,
-        "headless_passed": 2119,
-        "headless_failed": 22,
-        "headless_ignored": 2,
-        "renderer_runtime_reached": false,
-        "strict_coverage_reached": false
-      },
-      "import_retry_failure": {
-        "tree": "2247e7d87e8e1cf01aa5b8bdb8298dd1ec58b384",
-        "actual_exit_code": 1,
-        "elapsed_seconds": 28.24316610599635,
-        "diagnostics": 3,
-        "targets": 2,
-        "runtime_tests_reached": false,
-        "strict_coverage_reached": false
-      },
-      "typed_TPE_retry_failure": {
-        "tree": "c392f1560d7c132b19212deb95b9712cb92c8463",
-        "actual_exit_code": 1,
-        "elapsed_seconds": 2514.712569220981,
-        "headless_passed": 2143,
-        "headless_failed": 1,
-        "headless_ignored": 2,
-        "actual_variant_printed": false,
-        "renderer_runtime_reached": false,
-        "strict_coverage_reached": false
-      },
-      "persistent_demo_scope": "The failed persistent demo was restored under the existing owner instruction. The new no-expiry session is operational; no formal browser or clean application-shutdown qualification is inferred.",
-      "headless_region_coverage_failure": {
+      "prior_headless_coverage_failure": {
         "tree": "4084c78a7b9f414b3a0f23c87a097bc32938ac8a",
         "actual_exit_code": 1,
         "headless_passed": 2144,
@@ -12783,13 +12583,21 @@
           19281,
           20312
         ],
-        "renderer_runtime_reached": false,
         "all18base_changed_line_gaps": [
           "gz-sim-cli",
           "gz-sim-server"
         ],
-        "qualified": false
-      }
+        "renderer_runtime_reached": false
+      },
+      "corrections": "New behavioral controls exercise external RGB ownership, fleet identity and reset, and actual CLI dispatch. The verifier now collects ordinary failures from both profiles; actual direct-child signals, custody and resource failures remain fatal.",
+      "strict_bases": 18,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "final_commit": null,
+      "accepted": false,
+      "qualification_inherited": false,
+      "previous_checkpoint_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/069e23ef3a6e14d69e3d57f4e4a8d4ef0ba0be1b/data/delivery.json"
     },
     "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 demo/qualification evidence. The current unverified development candidate is current_M104_M113_Source, whose own metrics and CI are unknown."
   },
