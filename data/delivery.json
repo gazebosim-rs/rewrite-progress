@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-23T19:43:25.006903+00:00",
+  "as_of": "2026-11-23T20:30:49.939277+00:00",
   "execution_state": "active",
   "current_phase": "M104",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -22015,25 +22015,25 @@
   ],
   "current_development_phase": "M104",
   "board": {
-    "updated_at": "2026-11-23T19:43:25.006903+00:00",
+    "updated_at": "2026-11-23T20:30:49.939277+00:00",
     "current": {
-      "title": "Full checks running after the import fixes",
+      "title": "TPE assertion correction under verification",
       "items": [
-        "The prior full cycle passed lint, documentation and 494 Python tests but failed 22 headless cases.",
-        "All three import diagnostics are fixed and both lint stages passed in the new full cycle; runtime results are pending.",
-        "All 113 declarations remain proof obligations. No new acceptance; the persistent demo stays live."
+        "The complete headless run passed 2,143 tests and failed one, with two ignored. All 21 other formerly failing cases passed.",
+        "The sole failure was a later TPE error-type expectation. Its correction is reviewed and formatted; the full retry is running.",
+        "Renderer, coverage and evidence audits remain. No new phase is accepted; the persistent demo stays live."
       ]
     },
     "done": [
-      "Reviewed and formatted the complete headless correction batch, including the multi-owner subscription fix.",
-      "Preserved every original failure and collected all available compiler diagnostics."
+      "The multi-owner subscription, frame and effort corrections passed their formerly failing headless cases.",
+      "Reviewed the one TPE error-type correction and prepared local and hosted evidence-audit tooling."
     ],
     "next": [
-      "Run the complete staged hook and strict coverage, then independently audit retained evidence.",
+      "Finish the complete staged hook, renderer and strict coverage; then independently audit retained results.",
       "Complete exact hosted CI, original-artifact audit and outstanding formal browser/shutdown proof."
     ],
     "blocker": {
-      "text": "Qualification awaits a complete passing check and evidence audits. No owner decision is needed for the current repairs.",
+      "text": "Qualification awaits a complete passing check and evidence audits. No owner decision is needed for the current cycle.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -22197,7 +22197,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Complete the full check cycle after the reviewed import corrections.",
+  "current_development_task": "Verify the reviewed TPE error-type correction through the full check cycle.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -35555,7 +35555,7 @@
     "resource_admitted": true,
     "capacity_hold": "The prior storage shortfall is cleared. This full cycle passed fresh admission; active resource guards provide no future fit guarantee.",
     "prior_checkpoint_alias_scope": "Other inherited current_M*_Source objects retain their earlier author-checkpoint observations. The current ten-phase wave state is this object; the historical Markdown checkpoint suffixes remain exact.",
-    "state": "FULL_NORMAL_RUNNING_AFTER_IMPORT_CORRECTIONS",
+    "state": "FULL_NORMAL_RUNNING_AFTER_TYPED_TPE_ASSERTION_CORRECTION",
     "independent_source_review_complete": true,
     "final_document_Source_review_complete": true,
     "independent_Source_review_records": {
@@ -35652,7 +35652,7 @@
     "changed_paths_vs_Git_parent": 117,
     "changed_production_paths": 29,
     "correction_formatter_run": true,
-    "formatter_scope": "The20-file correction formatter passed, then the import-only2-file formatter changed no Source bytes or modes. No behavioral qualification.",
+    "formatter_scope": "The one-file correction formatter passed and joined one assignment line. All 1,861 other Source files, file modes, index and HEAD remained unchanged.",
     "original_failed_candidate_formatter_run": true,
     "original_failed_candidate_formatter_actual": {
       "path": "final-wave-formatter-actual.json",
@@ -35667,14 +35667,14 @@
       "mode": 436
     },
     "owner_capacity_decision_pending": false,
-    "current_outcome": "Both lint stages passed after the import corrections; the full hook continues with runtime and coverage results unknown.",
+    "current_outcome": "The completed headless cycle passed 2,143 tests, failed one and ignored two. The sole error-type correction is reviewed and formatted; the new full cycle is running, with no result yet.",
     "retry_python_failure": {
       "tree": "333b0d7114a70c1eb33f815fbfeea50ad9b2bcc3",
       "actual_exit_code": 1,
       "Python_tests": 494,
       "Python_errors": 5
     },
-    "repair": "Two Scene component Name qualifications and one unused import removed. Inputs, assertions and113case identities unchanged. Both lint stages passed; no current runtime result.",
+    "repair": "Preserve the exact TPE fixture and atomicity checks; expect InvalidScene at absent native BodyHandle before caller COM validation. Source-traced variant was not printed by the failed run. No production change.",
     "headless_retry_failure": {
       "tree": "66e848bec3a80067eb375fbb45ff24e5c90fa3d0",
       "actual_exit_code": 1,
@@ -35692,6 +35692,17 @@
       "diagnostics": 3,
       "targets": 2,
       "runtime_tests_reached": false,
+      "strict_coverage_reached": false
+    },
+    "typed_TPE_retry_failure": {
+      "tree": "c392f1560d7c132b19212deb95b9712cb92c8463",
+      "actual_exit_code": 1,
+      "elapsed_seconds": 2514.712569220981,
+      "headless_passed": 2143,
+      "headless_failed": 1,
+      "headless_ignored": 2,
+      "actual_variant_printed": false,
+      "renderer_runtime_reached": false,
       "strict_coverage_reached": false
     }
   },
