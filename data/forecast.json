@@ -5,6 +5,6 @@
   "target_working_days": 5,
   "owner_target_date": null,
   "confidence": "Low",
-  "assumption": "The two full-check failures are preserved. Rust compilation/lint repairs passed their stages; missing declared LLVM tools and synthetic peer fixtures are repaired and reviewed. The full retry is running, outcome unknown. Independent local audit, exact hosted CI and original-artifact audit remain, with formal browser/shutdown evidence before acceptance. No completion date or phase acceptance is inferred.",
+  "assumption": "The full headless cycle failed 22 cases. Its reviewed correction retry then found three test import diagnostics; those are fixed and both lint stages passed in the new full cycle. Runtime, strict coverage, local audit, exact hosted CI, original-artifact audit and formal browser/shutdown evidence remain. No completion date or acceptance is inferred.",
   "clock": "Each selected phase has at most five working days including independent review and all mandatory gates. Disjoint Source work overlaps under D31; acceptance follows exact candidate qualification and retained formal gates, not elapsed time."
 }
