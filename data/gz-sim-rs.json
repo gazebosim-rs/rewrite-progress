@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-23T18:32:41.691771+00:00",
+  "updated_at": "2026-11-23T19:43:25.006903+00:00",
   "state": "active",
-  "summary": "Full verification is running after reviewed compilation, fixture and toolchain repairs.",
+  "summary": "Both lint stages passed after the reviewed import fixes; full verification continues, with no new acceptance.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M102-M113",
-      "title": "Complete the twelve-feature verification cycle",
-      "detail": "Rust compilation/lint repairs passed their stages. The next Python suite found five errors; declared LLVM tools are restored and peer fixtures are corrected with strict negatives. The full retry is running, with no current full pass claimed."
+      "title": "Complete the verification repairs and full check",
+      "detail": "All 22 prior headless failures have reviewed corrections, including the multi-owner subscription fault. Three import diagnostics are fixed and both lint stages passed. Runtime and strict coverage remain; all 113 declarations are proof obligations."
     }
   ],
   "accepted_slices": [
@@ -1025,12 +1025,12 @@
     }
   ],
   "remaining": [
-    "Run the corrected candidate through the full staged hook and strict coverage, then independently audit local evidence.",
-    "Run exact hosted CI and independently audit original artifacts before code publication or phase acceptance.",
-    "Complete formal browser and owner-confirmed shutdown evidence while preserving the running no-expiry demo."
+    "Finish the full staged hook and strict coverage, then independently audit retained evidence.",
+    "Complete exact hosted CI and original-artifact audit before code acceptance/publication.",
+    "Keep the no-expiry demo live until owner-confirmed stop; formal browser/shutdown evidence remains."
   ],
   "blockers": [
-    "Qualification awaits the running consolidated check and its independent evidence audit.",
+    "Qualification awaits a complete passing check and independent evidence audits.",
     "Formal phase acceptance retains the M77 browser/shutdown obligations; the demo remains running."
   ],
   "plan_status": {
@@ -1082,7 +1082,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Quality measurements below belong to their recorded qualified revision. Current full checks are running after two preserved failures. Previous compilation/lint passed; Python494 had five errors, now repaired. All110 new Rust declarations remain obligations; no new full coverage, hosted qualification or acceptance is claimed.",
+    "note": "Recorded quality belongs to its qualified revision. The earlier complete headless cycle passed 2,119 tests and failed 22, with two ignored; 494 Python tests passed. The following retry found three import diagnostics. After those fixes, both lint stages passed; new runtime and coverage results remain unknown.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -12533,6 +12533,22 @@
       "normal_resource_budget_selection_scope": "Forty-GiB initial SSD guard selected in the independently reviewed held Source procedure; no resource admission, execution or future fit is claimed."
     },
     "current_M104_M113_Source": {
+      "Source_control_declarations": {
+        "Rust_unique": 84,
+        "headless": 65,
+        "renderer": 72,
+        "overlap": 53,
+        "public": 50,
+        "private": 34,
+        "scope": "Actual authored ten-wave Source inventory; obligations, not executed passes."
+      },
+      "copied_foundation_Source_declarations": {
+        "Rust_unique": 26,
+        "headless": 26,
+        "renderer": 25,
+        "overlap": 25,
+        "qualified": false
+      },
       "reviewed_sensing_retirement_correction": {
         "path": "capsule-worker-retirement-source-correction.json",
         "sha256": "445d0d7c1c2c381540aa9dea82983b2a9e3dc0d747352d38c84c323d5c943d43",
@@ -12588,7 +12604,6 @@
       "regression_Source_complete": true,
       "whole_Source_reviews_complete": true,
       "Source_declarations_scope": "All110 Rust declarations remain obligations. The previous attempt passed both Clippy stages and ran494 Python tests with five errors; all errors were repaired before this full retry.",
-      "formatter_run": true,
       "tests_run": false,
       "lint_run": true,
       "normal_actual": null,
@@ -12600,57 +12615,9 @@
       "accepted": false,
       "qualification_inherited": false,
       "resource_admitted": true,
-      "capacity_hold": "The SSD shortfall is cleared and this running check passed fresh admission; future runs require fresh checks.",
+      "capacity_hold": "The prior storage shortfall is cleared. This full cycle passed fresh admission; active resource guards provide no future fit guarantee.",
       "prior_checkpoint_alias_scope": "Other inherited current_M*_Source objects retain their earlier author-checkpoint observations. The current ten-phase wave state is this object; the historical Markdown checkpoint suffixes remain exact.",
-      "state": "REVIEWED_FIXTURE_AND_TOOLCHAIN_REPAIR_FULL_NORMAL_RUNNING",
-      "Source_control_declarations": {
-        "Rust_unique": 84,
-        "headless": 65,
-        "renderer": 72,
-        "overlap": 53,
-        "public": 50,
-        "private": 34,
-        "scope": "Actual authored ten-wave Source inventory; obligations, not executed passes."
-      },
-      "copied_foundation_Source_declarations": {
-        "Rust_unique": 26,
-        "headless": 26,
-        "renderer": 25,
-        "overlap": 25,
-        "qualified": false
-      },
-      "actual_new_case_pass_counts": null,
-      "current_candidate_commit": null,
-      "current_candidate_CI": {
-        "state": "unknown",
-        "url": null,
-        "run_id": null,
-        "conclusion": null
-      },
-      "current_candidate_metrics": {
-        "rust_tests": null,
-        "renderer_rust_tests": null,
-        "coverage": null,
-        "renderer_coverage": null
-      },
-      "normal_running": true,
-      "normal_qualified": false,
-      "local_DATA_qualified": false,
-      "hosted_qualified": false,
-      "official_DATA_qualified": false,
-      "current_combined_resource_procedure_prepared": false,
-      "owner_capacity_decision_pending": false,
-      "cleanup_or_eviction_authorized": false,
-      "status_publication": {
-        "state": "held",
-        "reason": "API core allowance exhausted; Root will run no updater until permitted.",
-        "rate_observation": {
-          "sha256": "13a0510d558bd6ed40f294e782b97ff53b21f44b5d2374b8733aeef808ff8a22",
-          "bytes": 60
-        },
-        "observed_remaining": 0,
-        "observed_reset_epoch": 1795414343
-      },
+      "state": "FULL_NORMAL_RUNNING_AFTER_IMPORT_CORRECTIONS",
       "independent_source_review_complete": true,
       "final_document_Source_review_complete": true,
       "independent_Source_review_records": {
@@ -12680,13 +12647,13 @@
         }
       },
       "combined_Source_control_declarations": {
-        "Rust_unique": 110,
-        "headless": 91,
+        "Rust_unique": 113,
+        "headless": 94,
         "renderer": 97,
         "overlap": 78,
         "public": 70,
-        "private": 40,
-        "scope": "Actual combined ten-wave plus unverified foundation Source inventory; no runtime pass counts."
+        "private": 43,
+        "scope": "Source obligations only; current pass counts unknown."
       },
       "Source_control_inventory": {
         "path": "combined-new-Rust-Source-declarations-inventory.json",
@@ -12718,12 +12685,6 @@
       },
       "preformat_Source_tree": "d314b59538e7232a162d0a690bfd0654fbec5b9c",
       "Rust_formatter_passed": true,
-      "formatter_actual": {
-        "path": "final-wave-formatter-actual.json",
-        "sha256": "ceabe9c48a815dbb5f1f77a7401b1af497770cdd95d03b186a51c1c968cc4386",
-        "bytes": 25038,
-        "mode": 436
-      },
       "formatter_Root_actual": {
         "path": "final-wave-formatter-actual-exit.json",
         "sha256": "e06863c16000c30db55d7257634d3ba9b18e7294c29b32a6362575202a79c12b",
@@ -12733,12 +12694,6 @@
       "formatter_wrapper_exit_code": 0,
       "formatter_child_exit_code": 0,
       "formatter_elapsed_seconds": 0.633714573981706,
-      "formatter_independent_retained_review": {
-        "path": "final-wave-formatter-independent-retained-review.json",
-        "sha256": "b2c1a8725f56a95ccbd23df73ee1235019edaf0b3052d48db16d3d883b59a91e",
-        "bytes": 61941,
-        "mode": 436
-      },
       "postformat_Source_review_complete": true,
       "formatter_custody_scope": "One invocation on 64 Rust files passed; independent retained custody and full-diff review is clear. Eight unchanged foundation Rust files retain separate original formatting evidence. All 1,862 modes, 1,798 outside files, index, HEAD and 110 declaration identities are preserved. This is not behavior qualification.",
       "formatter_child_stdout_bytes": 0,
@@ -12747,14 +12702,60 @@
       "product_checks_run": true,
       "final_Source_tree": null,
       "heavy_verification_released": true,
-      "current_outcome": "Full check running; no full-runtime, coverage, commit, hosted or acceptance result yet.",
+      "first_normal_failure": {
+        "tree": "eb4afd236f307011ec278312fc0d9372a37d3d78",
+        "stage": "workspace_clippy",
+        "actual_exit_code": 1,
+        "runtime_tests_reached": false,
+        "strict_coverage_reached": false
+      },
+      "correction_scope": "Preserve the original 110 test identities, inputs and tolerances. Add three private lifecycle controls and fix the multi-owner subscription fault alongside retained expectations.",
+      "normal_running": true,
+      "changed_paths_vs_Git_parent": 117,
+      "changed_production_paths": 29,
+      "correction_formatter_run": true,
+      "formatter_scope": "The20-file correction formatter passed, then the import-only2-file formatter changed no Source bytes or modes. No behavioral qualification.",
+      "original_failed_candidate_formatter_run": true,
+      "original_failed_candidate_formatter_actual": {
+        "path": "final-wave-formatter-actual.json",
+        "sha256": "ceabe9c48a815dbb5f1f77a7401b1af497770cdd95d03b186a51c1c968cc4386",
+        "bytes": 25038,
+        "mode": 436
+      },
+      "original_failed_candidate_formatter_independent_retained_review": {
+        "path": "final-wave-formatter-independent-retained-review.json",
+        "sha256": "b2c1a8725f56a95ccbd23df73ee1235019edaf0b3052d48db16d3d883b59a91e",
+        "bytes": 61941,
+        "mode": 436
+      },
+      "owner_capacity_decision_pending": false,
+      "current_outcome": "Both lint stages passed after the import corrections; the full hook continues with runtime and coverage results unknown.",
       "retry_python_failure": {
         "tree": "333b0d7114a70c1eb33f815fbfeea50ad9b2bcc3",
         "actual_exit_code": 1,
         "Python_tests": 494,
         "Python_errors": 5
       },
-      "repair": "Declared LLVM tools restored; missing spatial-lidar fixtures fixed with strict missing-source/captured-peer negative controls. No Rust/validator changes in this repair."
+      "repair": "Two Scene component Name qualifications and one unused import removed. Inputs, assertions and113case identities unchanged. Both lint stages passed; no current runtime result.",
+      "headless_retry_failure": {
+        "tree": "66e848bec3a80067eb375fbb45ff24e5c90fa3d0",
+        "actual_exit_code": 1,
+        "Python_passed": 494,
+        "headless_passed": 2119,
+        "headless_failed": 22,
+        "headless_ignored": 2,
+        "renderer_runtime_reached": false,
+        "strict_coverage_reached": false
+      },
+      "import_retry_failure": {
+        "tree": "2247e7d87e8e1cf01aa5b8bdb8298dd1ec58b384",
+        "actual_exit_code": 1,
+        "elapsed_seconds": 28.24316610599635,
+        "diagnostics": 3,
+        "targets": 2,
+        "runtime_tests_reached": false,
+        "strict_coverage_reached": false
+      }
     },
     "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 demo/qualification evidence. The current unverified development candidate is current_M104_M113_Source, whose own metrics and CI are unknown."
   },
