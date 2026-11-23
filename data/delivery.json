@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-23T20:30:49.939277+00:00",
+  "as_of": "2026-11-23T20:54:57.440656+00:00",
   "execution_state": "active",
   "current_phase": "M104",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -22015,13 +22015,13 @@
   ],
   "current_development_phase": "M104",
   "board": {
-    "updated_at": "2026-11-23T20:30:49.939277+00:00",
+    "updated_at": "2026-11-23T20:54:57.440656+00:00",
     "current": {
-      "title": "TPE assertion correction under verification",
+      "title": "Verification running; demo restoration in preparation",
       "items": [
-        "The complete headless run passed 2,143 tests and failed one, with two ignored. All 21 other formerly failing cases passed.",
-        "The sole failure was a later TPE error-type expectation. Its correction is reviewed and formatted; the full retry is running.",
-        "Renderer, coverage and evidence audits remain. No new phase is accepted; the persistent demo stays live."
+        "Development checks continue after the reviewed TPE assertion correction; the last headless cycle passed 2,143 tests and failed one.",
+        "A separate check found the persistent demo had exited unexpectedly. A container OOM flag was recorded; the cause is unknown.",
+        "The old active record was stale. No owner stop was requested, and restoration has not started."
       ]
     },
     "done": [
@@ -22029,11 +22029,12 @@
       "Reviewed the one TPE error-type correction and prepared local and hosted evidence-audit tooling."
     ],
     "next": [
-      "Finish the complete staged hook, renderer and strict coverage; then independently audit retained results.",
-      "Complete exact hosted CI, original-artifact audit and outstanding formal browser/shutdown proof."
+      "Finish the complete staged hook, renderer and strict coverage; independently audit retained results.",
+      "Complete exact hosted CI and original-artifact audit.",
+      "Review safe demo restoration, resolve browser authority, and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
-      "text": "Qualification awaits a complete passing check and evidence audits. No owner decision is needed for the current cycle.",
+      "text": "Release acceptance awaits qualification, demo restoration and formal browser/shutdown evidence. The recorded browser permission denial remains unresolved.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -35704,7 +35705,8 @@
       "actual_variant_printed": false,
       "renderer_runtime_reached": false,
       "strict_coverage_reached": false
-    }
+    },
+    "persistent_demo_scope": "The persistent demo failed independently; the old active record is historical. No demonstration or shutdown acceptance is inferred. Restoration is being prepared without current service changes."
   },
   "current_wave_projection_scope": "Public-only projection of frozen native planning. New absolute local card paths are reduced to basenames with their exact digest/byte/mode fields; no public URL is invented. Prior phase/group objects and richer public aliases retain exact original bytes and observations.",
   "public_path_projection": {
@@ -35716,5 +35718,18 @@
       "sha256": "cfe6e4b4634fb8bf626fb68d15e0e229f9de4f514f9717391641f630a8b40240",
       "bytes": 77031
     }
+  },
+  "persistent_demo_current": {
+    "state": "FAILED_UNREQUESTED_NOT_LIVE",
+    "application_launcher_exit": 1,
+    "container_OOM_flag_observed": true,
+    "original_OOM_time_and_cause": "UNKNOWN",
+    "owner_stop_recorded": false,
+    "later_owned_container_fault_cleanup": true,
+    "final_container_exit137_is_cleanup_not_app_shutdown_proof": true,
+    "restoration_started": false,
+    "restoration_Source_preparation": true,
+    "formal_browser_proof": false,
+    "stale_active_record_is_historical": true
   }
 }
