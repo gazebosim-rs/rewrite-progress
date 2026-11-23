@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-22T23:00:13.916226+00:00",
+  "updated_at": "2026-11-23T06:02:26.283440+00:00",
   "state": "active",
-  "summary": "Both new features are reviewed and formatted. Full verification is held for disk headroom and confirmation of the earlier hosted checks; hosted outcome is unknown after an API rate limit.",
+  "summary": "Ten features and their regression tests are independently reviewed and formatted. Product verification awaits capacity admission; the copied foundation remains unverified.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M102-M103-formatted-verification-admission-held",
-      "title": "Compound mass frames and rotated links",
-      "detail": "Both features and their regression cases are reviewed and formatted. Full checks await disk space and confirmation of the earlier hosted checks."
+      "id": "M104-M113-reviewed-formatted-capacity-held",
+      "title": "Ten features reviewed and formatted",
+      "detail": "Implementation, regressions and documents are independently reviewed. Formatting passed and its retained custody audit is clear. Product verification remains unrun while capacity admission is held."
     },
     {
-      "id": "M100-M101-local-qualified-hosted-outcome-unknown",
-      "title": "Mass and joint frames: hosted outcome unknown",
-      "detail": "The predecessor passed local checks and its audit, and its review commit is published. Hosted outcome is unknown after the monitor hit an API rate limit."
+      "id": "M102-M103-unverified-foundation",
+      "title": "Reviewed foundation; earlier qualification remains separate",
+      "detail": "The copied compound mass-frame and rotated-link foundation remains unverified. The earlier delivery passed its own local, hosted and independent audits; no qualification transfers to this candidate."
     },
     {
       "id": "M77-manual-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Obtain the required verification disk headroom and separately approve resource admission.",
-    "When API quota recovers, establish the predecessor\u2019s hosted outcome and finish its artifact audit before releasing this delivery\u2019s full verification cycle.",
+    "Resolve the capacity decision and obtain fresh resource admission, then run the combined candidate\u2019s full verification cycle.",
+    "Audit the recorded results after verification, then qualify the same review commit through hosted checks and original-artifact audits.",
     "Complete formal browser evidence and owner-approved demo shutdown before acceptance."
   ],
   "blockers": [
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Top-level metrics still describe accepted M76. The new features have reviewed formatted Source, not product verification results. Verification waits for disk headroom and predecessor proof. The published predecessor passed local checks and its audit; an API-limited retired monitor leaves hosted outcome unknown. Formal browser and owner gates remain unchanged.",
+    "note": "Top-level metrics retain the accepted release baseline. The combined candidate has reviewed Source, a measured declaration inventory, successful formatting and clear retained custody. Product tests and lint have not run; its final tree, commit and CI remain unknown. Capacity and formal browser/shutdown gates remain.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1130,11 +1130,11 @@
       "public_and_Latest_HTTP_status": 200
     },
     "acceptance_index": {
-      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "path": "ordered-phase-acceptance-index.json",
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Accepted M76 measurements remain unchanged. M100/M101 has its own local qualification and published review commit; hosted outcome is unknown after a monitor failure. M102/M103 has reviewed formatted Source only, no product verification, no inherited qualification and no acceptance.",
+    "qualification_scope": "Accepted measurements and earlier qualified deliveries retain their own evidence. The combined M102\u2013M113 candidate inherits no pass, coverage result, commit qualification or acceptance.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -11767,7 +11767,7 @@
       "formatter_or_checks_run": true,
       "new_commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
       "accepted": false,
-      "state": "M100_M101_LOCAL_QUALIFIED_REVIEW_PUBLISHED_HOSTED_OUTCOME_UNKNOWN_API_HOLD",
+      "state": "M100_M101_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFICATION_COMPLETE_UNACCEPTED",
       "formatter_run": true,
       "checks_run": true,
       "checks_started": true,
@@ -11776,8 +11776,8 @@
       "normal_execution_released": true,
       "normal_qualified": true,
       "local_DATA_qualified": true,
-      "hosted_qualified": false,
-      "official_DATA_qualified": false,
+      "hosted_qualified": true,
+      "official_DATA_qualified": true,
       "normal_actual": {
         "sha256": "9dfa6104821631a61bdf9e4645799a22aa59e2b12ba47582bfa51c012b4c99d8",
         "bytes": 2552,
@@ -11798,8 +11798,16 @@
         "bytes": 271503,
         "mode": 436
       },
-      "hosted_actual": null,
-      "official_actual": null,
+      "hosted_actual": {
+        "sha256": "6054376cc848772e6ea08208430ccc604c34e66f5c67714b33dcaf8f1346f2de",
+        "bytes": 6094,
+        "mode": 436
+      },
+      "official_actual": {
+        "sha256": "00cc21c0d5bf48dd06c4fe7cbd602befc61e74e8499f2059fd2ef544d7b87210",
+        "bytes": 3617,
+        "mode": 436
+      },
       "actual_new_case_pass_counts": {
         "commit": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
         "headless": 23,
@@ -12008,7 +12016,7 @@
         "mode": 436
       },
       "retry_resource_execution_released": true,
-      "checks_scope": "The corrected commit passed full local verification and an independent audit and is published for review. Its monitor retired after API403; the last product step was in progress, but hosted outcome is unknown. This monitor failure is not a product result. Original-artifact qualification and formal acceptance remain pending.",
+      "checks_scope": "The corrected commit passed full local verification, an independent recorded-evidence audit, hosted checks and the independent audit of original hosted artifacts. The earlier product failure and retired API-limited monitor remain separate historical evidence. Formal acceptance and Main promotion have not occurred.",
       "formatter_actual": {
         "sha256": "4b8acde2af7bc9e8fbf8214e6fa1a5d8cc9021e210cb724eff315b5e846fc0ac",
         "bytes": 14514,
@@ -12043,7 +12051,7 @@
         "terminal_tool": "b40278",
         "active": false
       },
-      "scope": "Mass frames and local joint frames passed local verification and an independent audit; the exact review commit is published. Hosted outcome is unknown after the monitor hit an API rate limit. No acceptance transfers.",
+      "scope": "Primitive mass frames and local joint frames completed their own local, hosted and original-artifact qualification on the exact published review commit. Formal acceptance remains pending.",
       "review_publication": {
         "sha256": "db7ef2a64301a0db1d64ba136518f69cb750f3070988be23a7db45f1251d11c3",
         "bytes": 4232,
@@ -12053,11 +12061,11 @@
         "id": 45074764720,
         "attempt": 1,
         "head": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
-        "status": "unknown",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45074764720",
-        "last_observed_status": "in_progress",
-        "monitoring": "held_api_rate_limit"
+        "last_observed_status": "completed",
+        "monitoring": "completed_from_retained_terminal_metadata"
       },
       "Source_publication_available": true,
       "observed_profiles": {
@@ -12085,26 +12093,9 @@
       "actual_RGB_auxiliary_passed": 21,
       "actual_native_peer_records": 47,
       "review_ref": "refs/heads/review/m100-m101-offset-com-joint-frames",
-      "API_observation_hold": {
-        "failure": {
-          "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
-          "bytes": 1319,
-          "mode": 436
-        },
-        "rate_read": {
-          "sha256": "14a596094a4958473eb4579b9897becc8bc366e1e753d96b2e22fa694ab96454",
-          "bytes": 1232,
-          "mode": 436
-        },
-        "core_remaining": 0,
-        "reset_UTC": "2026-11-22T23:11:34+00:00",
-        "underlying_account_activity_cause": "UNKNOWN",
-        "further_API_or_watch_until_positive_quota": false,
-        "CI_retry_or_dispatch": false,
-        "original_success_collectors_invoked": false
-      },
+      "API_observation_hold": null,
       "hosted_monitor_active": false,
-      "hosted_outcome": null,
+      "hosted_outcome": "success",
       "historical_API_observation_hold": {
         "source": {
           "sha256": "b72513e1a29336bf545c62d20f49d7c2068218ebbde94d60fa410c1df9dfd644",
@@ -12140,24 +12131,49 @@
           "mode": 436
         },
         "failure_time_UTC": "2026-11-22T22:38:39Z",
-        "product_CI_outcome": null
+        "product_CI_outcome": null,
+        "product_CI_outcome_scope": "Unknown when this monitor retired. Later successful CI is established by separately retained terminal metadata, not by watcher exit."
       },
       "last_observed_hosted_run": {
         "id": 45074764720,
         "attempt": 1,
         "head": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
-        "status": "in_progress",
-        "conclusion": null,
-        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45074764720"
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45074764720",
+        "last_observed_status": "completed",
+        "monitoring": "completed_from_retained_terminal_metadata"
       },
       "hosted_monitor_failure": {
         "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
         "bytes": 1319,
         "mode": 436
-      }
+      },
+      "official_DATA_report": {
+        "sha256": "7e0d365613ecbf4d68c8353ef974733264180e835da879af8714f92d36686594",
+        "bytes": 425065,
+        "mode": 436
+      },
+      "official_audit_Source": {
+        "sha256": "2f7e42620159ae27d9afa39bcf089753eccd5c8a6d5df14320780e41e0f96fb9",
+        "bytes": 1036248,
+        "mode": 436
+      },
+      "official_collector_actual": {
+        "sha256": "8401b03ee3a190def2e1266c05a458b9bb00d0bd602743b9bee035561917aca2",
+        "bytes": 2693,
+        "mode": 436
+      },
+      "official_collection": {
+        "sha256": "c7a31047b5f306ea46193a05139002b496c3384475268ca110dc54bf5ad6f36c",
+        "bytes": 57539,
+        "mode": 436
+      },
+      "all_own_qualification_complete": true,
+      "official_outcome": "success"
     },
     "current_M102_M103_Source": {
-      "state": "M102_M103_FORMATTED_WHOLE_SOURCE_REVIEW_CLEAR_VERIFICATION_ADMISSION_HELD",
+      "state": "M102_M103_FORMATTED_SOURCE_CLEAR_PARENT_QUALIFIED_FULL_VERIFICATION_CAPACITY_HELD",
       "selection": {
         "sha256": "b985af320437e5d9737eed8d517b56339f87a5f46008743f0bfdd974b7ad7824",
         "bytes": 17277,
@@ -12338,8 +12354,8 @@
       "prior_normal_method_failures": [],
       "prior_operational_release_failures": [],
       "prior_reader_failures": [],
-      "scope": "Both features, regression cases, retained dispositions and documents are Source reviewed and the eight Rust files are formatted. Product verification has not run. Full verification admission is held for required disk headroom and genuine predecessor hosted/artifact proof.",
-      "dependencies": "The predecessor passed local verification and its independent audit and is published for review. Its hosted outcome is unknown after a retired API-limited monitor. Runtime hosted and official proofs are required separately before this delivery full verification; no qualification is inherited.",
+      "scope": "Both features, regression cases, retained dispositions and documents are independently reviewed and the eight Rust files are formatted. Product verification has not run. The predecessor qualification prerequisite is satisfied; full verification remains held for SSD headroom.",
+      "dependencies": "The predecessor has its own complete local, hosted and original-artifact qualification on the exact published review commit, but is unaccepted. This satisfies the separate predecessor runtime prerequisite; no result or acceptance is inherited by this delivery.",
       "independent_code_Source_review_complete": true,
       "Source_control_declarations": {
         "Rust_unique": 26,
@@ -12416,7 +12432,7 @@
       "checks_started": false,
       "checks_passed": null,
       "current_normal_active": false,
-      "normal_resource_budget_selected": false,
+      "normal_resource_budget_selected": true,
       "resource_proposal": {
         "sha256": "98138808899b561123e6f05bd61689f08b68612477b2000e2df36e981d8947eb",
         "bytes": 5998,
@@ -12477,28 +12493,271 @@
       "formatter_scope": "One eight-file rustfmt invocation returned zero. All source modes, files outside the affected paths, index and parent were preserved; independent postformat Source review is complete. Formatting is not product verification.",
       "normal_resource_budget_Source_prepared": true,
       "resource_admission": false,
-      "resource_Source_review_scope": "Conditional Source mathematics only; observed SSD headroom is below the proposed initial admission. No allocation, eviction, reuse, cleanup or future fit guarantee is authorized.",
+      "resource_Source_review_scope": "Conditional Source mathematics only; observed SSD headroom is below the reviewed starting requirement. No allocation, eviction, reuse, cleanup or future fit guarantee is authorized.",
       "proposed_normal_initial_SSD_bytes": 42949672960,
       "observed_Root_SSD_free_bytes": 32464293888,
       "observed_SSD_deficit_to_proposal_bytes": 10485379072,
       "owner_capacity_decision_pending": true,
       "verification_procedure_Source_prepared": true,
       "verification_procedure_Source_batch": {
-        "sha256": "77756a62ae09c9f422cb8a8cb6bf7e4cd04bb4e8d46bc2cc867751e5a3711bc4",
-        "bytes": 59807,
+        "sha256": "d6b63e3ff4ec3d238e89e07c9b8aec4d5bb2299876cea984804d734453e713bb",
+        "bytes": 14639,
         "mode": 436
       },
-      "verification_procedure_Source_review_complete": false,
+      "verification_procedure_Source_review_complete": true,
       "verification_procedure_execution_released": false,
-      "parent_hosted_outcome": null,
+      "parent_hosted_outcome": "success",
       "parent_hosted_monitor_active": false,
       "parent_hosted_monitor_failure": {
         "sha256": "eacfbd6e6eac1b150d0acff28fcffda2d15665de105c1e1410a3aa9720268d4a",
         "bytes": 1319,
         "mode": 436
       },
-      "parent_runtime_hosted_and_official_proofs_required_before_normal": true
-    }
+      "parent_runtime_hosted_and_official_proofs_required_before_normal": true,
+      "parent_hosted_qualified": true,
+      "parent_official_DATA_qualified": true,
+      "parent_hosted_actual": {
+        "sha256": "6054376cc848772e6ea08208430ccc604c34e66f5c67714b33dcaf8f1346f2de",
+        "bytes": 6094,
+        "mode": 436
+      },
+      "parent_official_actual": {
+        "sha256": "00cc21c0d5bf48dd06c4fe7cbd602befc61e74e8499f2059fd2ef544d7b87210",
+        "bytes": 3617,
+        "mode": 436
+      },
+      "parent_official_DATA_report": {
+        "sha256": "7e0d365613ecbf4d68c8353ef974733264180e835da879af8714f92d36686594",
+        "bytes": 425065,
+        "mode": 436
+      },
+      "parent_runtime_hosted_and_official_proofs_satisfied": true,
+      "resource_capacity_observation_scope": "The exact retained Root resource-choice sample is evidence at its recorded time, not a new Host sample or future fit guarantee.",
+      "cleanup_or_eviction_authorized": false,
+      "verification_procedure_Source_review": {
+        "sha256": "311e0a1f27dfaea8282003903b83c9826f02ea536039cff4677af706c199b98c",
+        "bytes": 935,
+        "mode": 436
+      },
+      "normal_resource_budget_selection_scope": "Forty-GiB initial SSD guard selected in the independently reviewed held Source procedure; no resource admission, execution or future fit is claimed."
+    },
+    "current_M104_M113_Source": {
+      "reviewed_sensing_retirement_correction": {
+        "path": "capsule-worker-retirement-source-correction.json",
+        "sha256": "445d0d7c1c2c381540aa9dea82983b2a9e3dc0d747352d38c84c323d5c943d43",
+        "bytes": 2302,
+        "mode": 436
+      },
+      "selection": {
+        "path": "ten-phase-reviewed-source-selection.json",
+        "sha256": "998f0cd81d60b32e2e51ba5633c02d468f15702ad5bc42a3bf06f693f36fa54b",
+        "bytes": 17059,
+        "mode": 436
+      },
+      "prerequisite_addendum": {
+        "path": "concrete-prerequisite-source-scope-addendum.json",
+        "sha256": "fe798b7d8afb9b5a31822ed40741775e1405384bcfd4a98e5592c74e0c6169cd",
+        "bytes": 2398,
+        "mode": 436
+      },
+      "author_completions": [
+        {
+          "path": "physics-three-phases-source-completion.json",
+          "sha256": "4d49244d649a4237d703221b3c013c07dc6844269fa1d9d9989c38bb77596ead",
+          "bytes": 22652,
+          "mode": 436
+        },
+        {
+          "path": "m105-m111-systems-source-completion.json",
+          "sha256": "86104a4055df9b0c466d7083b817cafcdbf029893cacb1dff9d65dd3a5a6c448",
+          "bytes": 19239,
+          "mode": 436
+        },
+        {
+          "path": "sensing-graphics-three-phases-source-completion.json",
+          "sha256": "1039308cc0315aa31f7ef6b7fa804d949ca7e308ef4b7e7f3648264839c45ff7",
+          "bytes": 45793,
+          "mode": 436
+        },
+        {
+          "path": "m112-m113-root-source-completion.json",
+          "sha256": "3b567438beb772608e67efe1485e63ff512721a7b12350d7a7e66fb01a97cbc2",
+          "bytes": 7695,
+          "mode": 436
+        }
+      ],
+      "qualified_Git_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "copied_foundation_tree": "93a2d820853dc7366d4706aace5bd42726a42e26",
+      "copied_foundation_phases": [
+        "M102",
+        "M103"
+      ],
+      "foundation_qualified": false,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "whole_Source_reviews_complete": true,
+      "Source_declarations_scope": "Independent Source inventory confirms 84 wave declarations and 26 foundation declarations: 110 combined, with 91 headless, 97 renderer and 78 shared. These are obligations only; product verification has not run.",
+      "formatter_run": true,
+      "tests_run": false,
+      "lint_run": false,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "final_tree": null,
+      "final_commit": null,
+      "accepted": false,
+      "qualification_inherited": false,
+      "resource_admitted": false,
+      "capacity_hold": "Reviewed forty-GiB SSD starting budget unmet; owner capacity decision pending. This prior budget is not a larger-wave fit guarantee; no eviction or cleanup is authorized.",
+      "prior_checkpoint_alias_scope": "Other inherited current_M*_Source objects retain their earlier author-checkpoint observations. The current ten-phase wave state is this object; the historical Markdown checkpoint suffixes remain exact.",
+      "state": "M104_M113_COMPLETE_REVIEWED_FORMATTED_SOURCE_PRODUCT_VERIFICATION_CAPACITY_HELD",
+      "Source_control_declarations": {
+        "Rust_unique": 84,
+        "headless": 65,
+        "renderer": 72,
+        "overlap": 53,
+        "public": 50,
+        "private": 34,
+        "scope": "Actual authored ten-wave Source inventory; obligations, not executed passes."
+      },
+      "copied_foundation_Source_declarations": {
+        "Rust_unique": 26,
+        "headless": 26,
+        "renderer": 25,
+        "overlap": 25,
+        "qualified": false
+      },
+      "actual_new_case_pass_counts": null,
+      "current_candidate_commit": null,
+      "current_candidate_CI": {
+        "state": "unknown",
+        "url": null,
+        "run_id": null,
+        "conclusion": null
+      },
+      "current_candidate_metrics": {
+        "rust_tests": null,
+        "renderer_rust_tests": null,
+        "coverage": null,
+        "renderer_coverage": null
+      },
+      "normal_running": false,
+      "normal_qualified": false,
+      "local_DATA_qualified": false,
+      "hosted_qualified": false,
+      "official_DATA_qualified": false,
+      "current_combined_resource_procedure_prepared": false,
+      "owner_capacity_decision_pending": true,
+      "cleanup_or_eviction_authorized": false,
+      "status_publication": {
+        "state": "held",
+        "reason": "API core allowance exhausted; Root will run no updater until permitted.",
+        "rate_observation": {
+          "sha256": "13a0510d558bd6ed40f294e782b97ff53b21f44b5d2374b8733aeef808ff8a22",
+          "bytes": 60
+        },
+        "observed_remaining": 0,
+        "observed_reset_epoch": 1795414343
+      },
+      "independent_source_review_complete": true,
+      "final_document_Source_review_complete": true,
+      "independent_Source_review_records": {
+        "whole_code_and_regressions": {
+          "path": "m104-m113-scope-independent-source-review-receipt.json",
+          "sha256": "af4b1d8968b7955f658cd1280904b72243115ac1a2f8d715d50e87f48d4144f3",
+          "bytes": 22717,
+          "mode": 436
+        },
+        "canonical_docs": {
+          "path": "canonical-wave-docs-scope-independent-source-review.json",
+          "sha256": "c1c1d20d4d0703c72464d257a9d62122458bf4921fee6861be467a3637282961",
+          "bytes": 5002,
+          "mode": 436
+        },
+        "physics_retained": {
+          "path": "physics-retained-dispositions-independent-whole-source-review.json",
+          "sha256": "5bf8e42279e728689f2cd28105c57545a2772d11838fc0a2f93490055c660f06",
+          "bytes": 1931,
+          "mode": 436
+        },
+        "systems": {
+          "path": "m105-m111-independent-whole-source-review.json",
+          "sha256": "678018b28bd50edf212fbbfb15fe4b656e3ef22f6d29af79dc6c69dcf7ff2ec7",
+          "bytes": 1660,
+          "mode": 436
+        }
+      },
+      "combined_Source_control_declarations": {
+        "Rust_unique": 110,
+        "headless": 91,
+        "renderer": 97,
+        "overlap": 78,
+        "public": 70,
+        "private": 40,
+        "scope": "Actual combined ten-wave plus unverified foundation Source inventory; no runtime pass counts."
+      },
+      "Source_control_inventory": {
+        "path": "combined-new-Rust-Source-declarations-inventory.json",
+        "sha256": "07238e2c52f5fd23cb499b4af2e4e16ce2d8b4b16c087ebb93323837287a7cad",
+        "bytes": 155516,
+        "mode": 436
+      },
+      "Source_counts": {
+        "scope": "Actual preformat records; formatter custody retained file/mode/outside/index identity. Final candidate tree remains unknown.",
+        "Source_files": 1862,
+        "changed_paths": 96,
+        "new_paths": 35,
+        "production_paths": 26,
+        "Rust_paths": 72,
+        "current_formatter_Rust_paths": 64,
+        "unchanged_foundation_Rust_paths": 8
+      },
+      "preformat_Source_review": {
+        "path": "complete-preformat-source-review.json",
+        "sha256": "25673983d6d3b5958abd134b66b5e518757cde0dea8823dc2d9273d9fdd9ded7",
+        "bytes": 14098,
+        "mode": 436
+      },
+      "preformat_Source_snapshot": {
+        "path": "complete-preformat-source-snapshot.json",
+        "sha256": "febcd5560249385fddf7a34bf4b883f2cd45e0d5f4f201eeb3a1806d533f890d",
+        "bytes": 700025,
+        "mode": 436
+      },
+      "preformat_Source_tree": "d314b59538e7232a162d0a690bfd0654fbec5b9c",
+      "Rust_formatter_passed": true,
+      "formatter_actual": {
+        "path": "final-wave-formatter-actual.json",
+        "sha256": "ceabe9c48a815dbb5f1f77a7401b1af497770cdd95d03b186a51c1c968cc4386",
+        "bytes": 25038,
+        "mode": 436
+      },
+      "formatter_Root_actual": {
+        "path": "final-wave-formatter-actual-exit.json",
+        "sha256": "e06863c16000c30db55d7257634d3ba9b18e7294c29b32a6362575202a79c12b",
+        "bytes": 866,
+        "mode": 436
+      },
+      "formatter_wrapper_exit_code": 0,
+      "formatter_child_exit_code": 0,
+      "formatter_elapsed_seconds": 0.633714573981706,
+      "formatter_independent_retained_review": {
+        "path": "final-wave-formatter-independent-retained-review.json",
+        "sha256": "b2c1a8725f56a95ccbd23df73ee1235019edaf0b3052d48db16d3d883b59a91e",
+        "bytes": 61941,
+        "mode": 436
+      },
+      "postformat_Source_review_complete": true,
+      "formatter_custody_scope": "One invocation on 64 Rust files passed; independent retained custody and full-diff review is clear. Eight unchanged foundation Rust files retain separate original formatting evidence. All 1,862 modes, 1,798 outside files, index, HEAD and 110 declaration identities are preserved. This is not behavior qualification.",
+      "formatter_child_stdout_bytes": 0,
+      "formatter_child_stderr_bytes": 0,
+      "formatter_wrapper_log_bytes": 222,
+      "product_checks_run": false,
+      "final_Source_tree": null,
+      "heavy_verification_released": false
+    },
+    "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 demo/qualification evidence. The current unverified development candidate is current_M104_M113_Source, whose own metrics and CI are unknown."
   },
   "phase_status": {
     "P0": "in_progress",
@@ -12575,7 +12834,7 @@
       "public_and_Latest_HTTP_status": 200
     },
     "acceptance_index": {
-      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "path": "ordered-phase-acceptance-index.json",
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     }
@@ -12642,7 +12901,7 @@
       "public_and_Latest_HTTP_status": 200
     },
     "acceptance_index": {
-      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "path": "ordered-phase-acceptance-index.json",
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
@@ -12720,7 +12979,7 @@
       "public_and_Latest_HTTP_status": 200
     },
     "acceptance_index": {
-      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "path": "ordered-phase-acceptance-index.json",
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
@@ -12863,7 +13122,7 @@
       "public_and_Latest_HTTP_status": 200
     },
     "acceptance_index": {
-      "path": "/home/nkoenig/work/gazebo/rust/gz-sim-rs/artifacts/m75-delivery/ordered-phase-acceptance-index.json",
+      "path": "ordered-phase-acceptance-index.json",
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
@@ -14345,5 +14604,15 @@
     ],
     "qualification_scope": "M94/M95 local normal and independent retained DATA passed on exact ac4af1c7/tree7d050c30; the review branch is published and hosted CI is running with no outcome. Seventeen controls passed both local profiles. M92/M93 own local, hosted and official qualification is complete but unaccepted. Reader and official-method failures remain separate from product-normal histories. Accepted76/202/catalog95/Latest41/M77 browser and shutdown gates, live86363 and all prior histories remain unchanged; no acceptance or descendant qualification transfer.",
     "note": "M94/M95 local normal and independent DATA passed with seventeen controls in each profile; its exact review branch is published and hosted CI is active. M92/M93 own qualification is complete and unaccepted. Reader/method failures are preserved separately. M77 proofs/demo, accepted76/202/catalog95 and Latest41 remain unchanged."
+  },
+  "public_path_projection": {
+    "pointer_count": 226,
+    "historical_delivery_private_leaf_count": 183,
+    "historical_status_private_leaf_count": 5,
+    "rule": "Local filesystem locators become basenames or descriptive local-checkout labels. Digests, sizes, modes, public URLs, accepted results and non-private fields remain exact; no public URL is invented. Original locators are retained only in the private review mapping.",
+    "private_mapping": {
+      "sha256": "cfe6e4b4634fb8bf626fb68d15e0e229f9de4f514f9717391641f630a8b40240",
+      "bytes": 77031
+    }
   }
 }
