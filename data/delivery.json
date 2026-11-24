@@ -22052,18 +22052,18 @@
   ],
   "current_development_phase": "M114",
   "board": {
-    "updated_at": "2026-11-24T05:07:55.390068+00:00",
+    "updated_at": "2026-11-24T12:31:35.935927+00:00",
     "current": {
-      "title": "Organized lidar point clouds: verification retry running",
+      "title": "Organized lidar point clouds: full retry running",
       "items": [
-        "The native-peer dispatcher correction is complete and independently reviewed. Full verification is running again; no result is available yet.",
+        "The C++ observer compiler correction is reviewed. Full verification is running again; its result is pending.",
         "The combined physics, control, lidar and camera delivery passed local verification, hosted checks and both independent evidence audits.",
         "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
       ]
     },
     "done": [
       "Implemented and independently reviewed organized lidar point-cloud support, regression cases and documentation. Formatting passed.",
-      "Corrected and reviewed native-peer client registration; all Rust bytes and the 16 regression identities are unchanged.",
+      "Reviewed the C++ observer compiler correction; all Rust source and the 16 regression identities are unchanged.",
       "Qualified the combined review commit through full local checks, exact hosted CI and independent local and original-artifact audits."
     ],
     "next": [
@@ -22227,7 +22227,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Complete the running full verification retry after the reviewed native-peer dispatcher correction, then independently audit and qualify the same review commit.",
+  "current_development_task": "Complete the running full verification retry after the reviewed C++ observer compiler correction, then qualify the same review commit.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -35956,7 +35956,7 @@
     },
     "Main_promoted": false
   },
-  "current_wave_projection_scope": "Earlier phase objects, groups and legacy current_M* records retain their checkpoint observations. current_M114_Source records the reviewed dispatcher correction and active full verification retry; its earlier failed attempt is historical, with no new terminal result or inherited qualification.",
+  "current_wave_projection_scope": "Earlier phase objects, groups and legacy current_M* records retain their checkpoint observations. current_M114_Source records the reviewed C++ observer correction and active full verification retry; earlier failed attempts are historical, with no new terminal result or inherited qualification.",
   "public_path_projection": {
     "pointer_count": 226,
     "historical_delivery_private_leaf_count": 183,
@@ -35978,7 +35978,7 @@
     "prior_OOM_cause": "UNKNOWN"
   },
   "current_M114_Source": {
-    "state": "FULL_NORMAL_RETRY_RUNNING_AFTER_REVIEWED_DISPATCH_CORRECTION",
+    "state": "FULL_NORMAL_RETRY_RUNNING_AFTER_REVIEWED_CPP_OBSERVER_CORRECTION",
     "phase": "M114",
     "phase_contract": "phases[M114]",
     "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
@@ -36012,7 +36012,7 @@
     "Source_publication_available": false,
     "verification_capacity": {
       "state": "CAPACITY_RESTORED_CURRENT_RETRY_RUNNING",
-      "Root_observed_SSD_free_bytes": 41304076288,
+      "Root_observed_SSD_free_bytes": 40477339648,
       "comparison_prior_initial_reserve_bytes": 35433480192,
       "owner_requested_target_bytes": 37580963840,
       "owner_request": "Owner-authorized exact Rust metadata cache cleanup restored disk headroom.",
@@ -36020,12 +36020,12 @@
       "new_cleanup_or_eviction_authorized": true,
       "new_verification_started": true,
       "resource_admission_inherited": false,
-      "scope": "Exact authorized cache cleanup restored headroom. Fresh Root resources cleared the unchanged initial reserve for the corrected retry; early stops and floors remain. The earlier failure had no capacity fault. No further cleanup or future fit is implied.",
+      "scope": "Exact authorized cache cleanup restored headroom. Fresh Root resources cleared the unchanged initial reserve for the current corrected retry; early stops and floors remain. Neither prior failed run had a capacity fault. No further cleanup or future fit is implied.",
       "capacity_actual": {
-        "sha256": "bc96f8cc01146995c3e0e7dc570019c7ff77a0ba4e7ef0f250e572160045ca04",
-        "bytes": 801,
+        "sha256": "7e826c1c040763e8f2f25457737a6d92763256347c98f64a41d2d39f4b915665",
+        "bytes": 788,
         "mode": 436,
-        "filename": "m114-dispatch-correction-root-release.json"
+        "filename": "m114-cpp-sequence-loop-root-release.json"
       },
       "resource_admitted": true,
       "cleanup_actual": {
@@ -36050,12 +36050,12 @@
       "private": 13,
       "new_Python_methods": 0
     },
-    "staged_Source_tree": "471e7448c093617f2c7616551de13669525ac35c",
+    "staged_Source_tree": "c08baf47e466479d9eb359180280b809841d3490",
     "final_Source": {
-      "sha256": "8f4a462e79965ddf92b63369b54d94ca4f4450571fc77cc6ad9b337de31fc648",
-      "bytes": 2946,
+      "sha256": "0d205eebf0a31c93c64ebf793d4cee749d9a3d824b7b39a88293051300d63203",
+      "bytes": 2779,
       "mode": 436,
-      "filename": "m114-dispatch-correction-source-completion.json"
+      "filename": "m114-cpp-sequence-loop-source-completion.json"
     },
     "formatter_actual": {
       "sha256": "23348f263a158d66b1814e5ada78836649dce2ecae69813e0d9e8ceb43c0cb20",
@@ -36066,10 +36066,10 @@
     "formatter_actual_Root_exit_code": 0,
     "formatter_actual_child_exit_code": 0,
     "normal_procedure": {
-      "sha256": "b72a97db2d542be37445f9fdf84e8c82e435561dac6313cce26c7ae9b944dffc",
-      "bytes": 15831,
+      "sha256": "18b143f7007ba9ef3ad9eca4ec3ae62a0cdeae9390bc86cd63ad5d654622b4d3",
+      "bytes": 15820,
       "mode": 436,
-      "filename": "run-m114-dispatch-correction-final-checks-held.py"
+      "filename": "run-m114-cpp-sequence-loop-final-checks-held.py"
     },
     "normal_procedure_Source_review_complete": true,
     "normal_execution_released": true,
@@ -36108,29 +36108,88 @@
         "correction_state": "corrected_and_independently_reviewed",
         "Rust_runtime_or_coverage_result": null,
         "failed_tree": "367a2c3423a4d9f2ea9891760d85e4a0a9350e99"
+      },
+      {
+        "classification": "CPP_NATIVE_PEER_COMPILER_WARNING_AS_ERROR",
+        "Root_session": 30729,
+        "launch_tool": "e34ba5",
+        "terminal_tool": "b1d5e0",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "elapsed_seconds": 4428.109419314016,
+        "failure_actual": {
+          "sha256": "3ca873557ad68f44f78f2ef13e2203bb9482ad8ec8d20c42377677e7032d4b3e",
+          "bytes": 2009,
+          "mode": 436,
+          "filename": "m114-dispatch-correction-normal-actual-failure.json"
+        },
+        "result": {
+          "sha256": "6de13b56694cf50f62d811bd360c003c6cddcc18f7fe2ab3f2b96d46c891c0ef",
+          "bytes": 2478,
+          "mode": 436,
+          "filename": "result.json"
+        },
+        "released_Source": {
+          "sha256": "399c299a9ee898b10537062434c1e649bbf0bb2986d6ade2a496d3f9ea6a3872",
+          "bytes": 15830,
+          "mode": 436,
+          "filename": "run-m114-dispatch-correction-final-checks-root-released.py"
+        },
+        "compiler_stderr": {
+          "sha256": "3a0a766640870f438d66ca4a50ccfd85557d11b1b2ab41e8bef70e423dad1a28",
+          "bytes": 1221,
+          "mode": 436,
+          "filename": "compiler.stderr"
+        },
+        "failed_tree": "471e7448c093617f2c7616551de13669525ac35c",
+        "headless": {
+          "passed": 2170,
+          "failed": 1,
+          "ignored": 2,
+          "test_target_summaries": 211
+        },
+        "renderer": {
+          "passed": 1683,
+          "failed": 0,
+          "ignored": 2,
+          "test_target_summaries": 194,
+          "coverage_completed": true
+        },
+        "Python_tests": 498,
+        "Python_elapsed_seconds": 71.251,
+        "Python_passed": true,
+        "new_control_pass_count": 15,
+        "new_control_failed_count": 1,
+        "native_cloud_peer_runtime_reached": false,
+        "capacity_faults": [],
+        "commit_created": false,
+        "correction_state": "corrected_and_independently_reviewed"
       }
     ],
     "dispatcher_correction_complete": true,
     "dispatcher_correction_independent_Source_review_complete": true,
     "formatter_repeated_for_dispatch_correction": false,
     "active_normal": {
-      "Root_session": 30729,
-      "launch_tool": "e34ba5",
-      "release_at": "2026-11-24T05:05:44.980723+00:00",
+      "Root_session": 79675,
+      "launch_tool": "5f5269",
+      "release_at": "2026-11-24T12:29:09.698826+00:00",
       "released_Source": {
-        "sha256": "399c299a9ee898b10537062434c1e649bbf0bb2986d6ade2a496d3f9ea6a3872",
-        "bytes": 15830,
+        "sha256": "bb6c1eee6513f46317734a00e0e10750fe5b3f85c26a024015c5e8084cee8c8a",
+        "bytes": 15819,
         "mode": 436,
-        "filename": "run-m114-dispatch-correction-final-checks-root-released.py"
+        "filename": "run-m114-cpp-sequence-loop-final-checks-root-released.py"
       },
       "Root_release": {
-        "sha256": "bc96f8cc01146995c3e0e7dc570019c7ff77a0ba4e7ef0f250e572160045ca04",
-        "bytes": 801,
+        "sha256": "7e826c1c040763e8f2f25457737a6d92763256347c98f64a41d2d39f4b915665",
+        "bytes": 788,
         "mode": 436,
-        "filename": "m114-dispatch-correction-root-release.json"
+        "filename": "m114-cpp-sequence-loop-root-release.json"
       },
       "actual_result": null,
-      "scope": "The corrected full verification retry is active; no terminal result, successful test total or commit is asserted."
-    }
+      "scope": "The reviewed C++ observer correction is in a full verification retry. No terminal result, successful current test total or commit is asserted."
+    },
+    "cpp_observer_correction_complete": true,
+    "cpp_observer_correction_independent_Source_review_complete": true,
+    "formatter_repeated_for_cpp_correction": false
   }
 }
