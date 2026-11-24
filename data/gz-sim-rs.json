@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-24T18:59:12.817338+00:00",
+  "updated_at": "2026-11-24T21:01:13.643858+00:00",
   "state": "active",
-  "summary": "M115 passed normal and independent local audit; its review commit has hosted CI running. M116 corrected Source passed review and formatting, and one full retry is running with outcome unknown.",
+  "summary": "M115 owns full Source qualification and remains unaccepted. M116 corrections are reviewed and formatted; full verification is held for required SSD capacity.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M116",
-      "title": "Triggered-RGB full local retry running",
-      "detail": "The first normal stopped at Clippy before tests. The complete reference correction and factual docs passed independent review and one byte-neutral affected formatter. One full required retry is active with no result, commit or new case passes. All prior failure evidence remains."
+      "title": "Triggered-RGB verification held for capacity",
+      "detail": "Both failed normals are preserved. Complete fixture and verification corrections passed Source review and one byte-neutral formatter. The candidate remains unexecuted: 31 Rust IDs include 30 primary obligations and one feature-disabled auxiliary; 503 Python methods are not passes. Full checks require 33 GiB free SSD; the owner request for 36 GiB is pending."
     },
     {
       "id": "M115",
-      "title": "Runtime lidar-rate local qualification passed",
-      "detail": "The full normal and independent retained local audit passed on the same commit. Its review reference was pushed and read back; exact hosted CI is running. Official originals qualification remains pending. Both prior normal failures remain preserved."
+      "title": "Runtime lidar-rate qualification complete",
+      "detail": "Own normal, independent local audit, exact hosted CI and independent original-artifact audit passed on the same review commit. All 20 strict bases and 27 new Rust controls were validated. Source qualification remains separate from acceptance and Main promotion."
     },
     {
       "id": "M77-persistent-demo",
@@ -1035,8 +1035,8 @@
     }
   ],
   "remaining": [
-    "Complete exact M115 hosted CI, then collect and independently audit the original official artifacts.",
-    "Complete the running M116 full retry, then independently audit its retained results before review publication.",
+    "Resolve the capacity hold, then run the complete required M116 verification cycle with fresh resource admission.",
+    "After successful normal, independently audit retained results and complete exact review publication, hosted CI and official artifacts.",
     "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
   ],
   "blockers": [
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted metrics still describe M76. M114 owns complete qualification and remains unaccepted. M115 passed normal/local DATA; its published review commit has hosted CI running. M116 preserves its first Clippy failure and has one full corrected retry active with unknown outcome. No qualification transfers.",
+    "note": "Accepted metrics still describe M76. M115 owns complete normal/local/hosted/official Source qualification and remains unaccepted. M116 retains both failures and has reviewed/formatted correction Source; full verification is capacity-held. Its 31 Rust and 503 Python obligations are not passes. Formal browser/shutdown gates remain.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -1134,7 +1134,7 @@
       "bytes": 1614,
       "sha256": "98e7a6c13529cbe5ea4a7cb560b0748b28a552d1008de05fa05197cc6a4693d5"
     },
-    "qualification_scope": "Accepted measurements retain their own revision. Current M115 normal/local DATA success and M116 Source readiness are recorded separately; no hosted, official, descendant or acceptance result is inherited.",
+    "qualification_scope": "Accepted measurements retain their own revision. M115 owns all four qualification passes without acceptance; M116 has no corrected normal or audit result and inherits none.",
     "accepted_baseline_revision": "dddf1f4284557c420e384d263a4365b2153dfde2",
     "M76_acceptance_receipt": {
       "bytes": 3134,
@@ -12997,7 +12997,7 @@
       },
       "Main_promoted": false
     },
-    "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 evidence. Current M114 aliases record its own complete qualification; M115 aliases record normal/local DATA success; M116 aliases describe reviewed/formatted Source with no executed results.",
+    "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 evidence. Current M115 aliases record its own complete Source qualification; M116 aliases record both failed runs and reviewed/formatted capacity-held correction Source.",
     "current_M114_Source": {
       "state": "ALL_OWN_QUALIFICATION_CLEAR_UNACCEPTED_REVIEW_REFERENCE_ONLY",
       "phase": "M114",
@@ -13447,7 +13447,7 @@
       }
     },
     "current_M115_Source": {
-      "state": "NORMAL_AND_LOCAL_DATA_PASSED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
+      "state": "OWN_NORMAL_LOCAL_HOSTED_OFFICIAL_SOURCE_QUALIFICATION_COMPLETE_UNACCEPTED",
       "phase": "M115",
       "phase_contract": "phases[M115]",
       "source_parent": "2419c92342dcd6f869c9832ba1d691b50a51a020",
@@ -13508,7 +13508,7 @@
         "private": 17,
         "new_Python_methods": 0,
         "expected_Python_methods": 498,
-        "scope": "Twenty-seven unique controls were validated by the completed normal and independent local audit, with headless27/renderer11/shared11. M116 declarations and results are separate."
+        "scope": "All27 unique Rust controls were independently observed in their configured local and hosted profiles:27headless/11renderer/shared11. No M116 result is inherited."
       },
       "strict_base_count": 20,
       "strict_bases": [
@@ -13555,8 +13555,18 @@
         "bytes": 1714,
         "mode": 436
       },
-      "hosted_actual": null,
-      "official_actual": null,
+      "hosted_actual": {
+        "filename": "m115-hosted-terminal-actual.json",
+        "sha256": "c727162e5d7fed28db75f9d10ac7cbbb66f876e48dd1f5781cf4d5dc9cda7e0e",
+        "bytes": 2052,
+        "mode": 436
+      },
+      "official_actual": {
+        "filename": "m115-official-actual.json",
+        "sha256": "5f5698bc47cb87301773fbcdff6fe717ee55b70585bba6791d41f3b031b0eb40",
+        "bytes": 3064,
+        "mode": 436
+      },
       "actual_new_test_passes": {
         "unique": 27,
         "headless": 27,
@@ -13566,11 +13576,11 @@
       },
       "guide_URL": "https://github.com/gazebosim-rs/gz-sim-rs/blob/f71feacc73ddbd2bb8db9e4de5f373f7707056d2/docs/M115_DELIVERY.md",
       "Source_publication_available": true,
-      "qualified": false,
+      "qualified": true,
       "accepted": false,
       "Main_promoted": false,
       "qualification_inherited": false,
-      "scope": "M115 passed full normal and independent local DATA, then its exact review reference was pushed and read back. Automatic push CI is in progress on that commit; hosted success and independent official originals qualification remain unknown. Both prior normal failures remain intact; acceptance and Main promotion stay held.",
+      "scope": "M115 owns its complete normal, independent local DATA, exact hosted CI and independent original-artifact audit on f71feacc/tree0679. This is Source qualification without acceptance or Main promotion; no descendant result transfers.",
       "documentation_independent_Source_review_complete": true,
       "affected_Rust_paths": 12,
       "changed_production_paths": 4,
@@ -14125,11 +14135,11 @@
         "head_branch": "review/m115-runtime-lidar-rate-control",
         "event": "push",
         "path": ".github/workflows/ci.yml",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45463564283"
       },
-      "official_audit_passed": false,
+      "official_audit_passed": true,
       "hosted_observation": {
         "actual": {
           "filename": "hosted-delayed-discovery.json",
@@ -14144,25 +14154,84 @@
           "head_branch": "review/m115-runtime-lidar-rate-control",
           "event": "push",
           "path": ".github/workflows/ci.yml",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "success",
           "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45463564283"
         },
         "Root_observer_session": 27041,
-        "observer_active": true,
-        "terminal": null,
+        "observer_active": false,
+        "terminal": {
+          "filename": "m115-hosted-terminal-actual.json",
+          "sha256": "c727162e5d7fed28db75f9d10ac7cbbb66f876e48dd1f5781cf4d5dc9cda7e0e",
+          "bytes": 2052,
+          "mode": 436
+        },
         "initial_discovery_method_failure": {
           "filename": "review-publication-initial-discovery-method-failure.json",
           "sha256": "1cc8941bee48318f5f0e460394081fdbc6f5ef435876ba4d061f4fbe0eb35249",
           "bytes": 1067,
           "mode": 436
         },
-        "publication_or_CI_failure_inferred": false
+        "publication_or_CI_failure_inferred": false,
+        "actual_observer_exit_code": 0,
+        "terminal_actual": {
+          "filename": "terminal.json",
+          "sha256": "f48535150b51a0430479765dae2ab966668bed6b1c46619ac6227ddb37ea2d47",
+          "bytes": 10772,
+          "mode": 436
+        }
+      },
+      "official_report": {
+        "filename": "m115-official-originals-runtime-audit.json",
+        "sha256": "282ee590f84d5b2ac6040e0b1d993eebe01b47ea220dd06539d6e2baf3109c2a",
+        "bytes": 1221615,
+        "mode": 436
+      },
+      "source_qualified": true,
+      "fully_qualified": true,
+      "official_originals": {
+        "collection_actual": {
+          "filename": "m115-hosted-originals-actual.json",
+          "sha256": "c2d5582ac5204ab600ae3670c0b5b00de517161d093f5b7b14b997501488eaf3",
+          "bytes": 3707,
+          "mode": 436
+        },
+        "inventory_actual": {
+          "filename": "m115-originals-inventory-actual.json",
+          "sha256": "01bf5fb85f02378492c8a1946e9846320e471d122eec971d8fc399ae52a5434a",
+          "bytes": 1878,
+          "mode": 436
+        },
+        "official_actual": {
+          "filename": "m115-official-actual.json",
+          "sha256": "5f5698bc47cb87301773fbcdff6fe717ee55b70585bba6791d41f3b031b0eb40",
+          "bytes": 3064,
+          "mode": 436
+        },
+        "official_report": {
+          "filename": "m115-official-originals-runtime-audit.json",
+          "sha256": "282ee590f84d5b2ac6040e0b1d993eebe01b47ea220dd06539d6e2baf3109c2a",
+          "bytes": 1221615,
+          "mode": 436
+        },
+        "read_bytes": 7130202565,
+        "elapsed_seconds": 30.71979935799027,
+        "actual_commands": 65,
+        "all_commands_actual0": true,
+        "RAW_once_LAST_counts": [
+          472,
+          793,
+          57,
+          168
+        ],
+        "all_RAW_byte_exact": true,
+        "post_RAW_full_custody": true,
+        "workloads_replayed": false
       }
     },
     "tracker_publication_current": {
       "state": "SOURCE_UPDATE_REVIEW_PENDING",
-      "scope": "This combined milestone Source checkpoint has not been checked or published. Root owns the single bounded tracker check and publication cycle."
+      "scope": "This milestone Source checkpoint has not been checked or published. Root owns one bounded board check and publication cycle after independent Source review."
     },
     "current_M116_Source": {
       "id": "M116",
@@ -14171,7 +14240,7 @@
       "depends_on": [
         "M115"
       ],
-      "scope": "M116 first normal failed Clippy before tests. The isolated reference correction and factual docs passed independent Source review and one byte-neutral affected formatter. One full required retry is running, with no terminal result, commit or new case-pass claim. Prior failure and all qualification gates remain intact.",
+      "scope": "Both M116 failed normals are preserved. The complete fixture and genuine feature-disabled QA correction passed independent Source review and one byte-neutral four-file formatter. The corrected candidate has not run its full checks; verification is held for the required SSD capacity. All31 Rust IDs remain, with30primary obligations and one auxiliary;503Python methods are obligations, not passes.",
       "acceptance": "Complete implementation, meaningful regressions, guides and independent Source review; close all findings before one affected formatter and consolidated mandatory staged hook. Prove native Boolean admission and actual software-rendered Image/CameraInfo pixels, calibration, sequence and early stamps; quiet, pause/busy/inactive/no-demand, reset/removal/metadata/callback retirement and original-key ownership. Require both profiles, strict workspace/crate/changed-base coverage, own local DATA, exact hosted CI and official originals. Formal browser/shutdown gates remain.",
       "excluded": "Depth/mixed/multi-RGB triggering, new workers/renderers/protocols/schemas/SDK or backend campaigns, scheduler frameworks, DART/MuJoCo, Fuel, live demo and cleanup changes.",
       "delivery_guide": "docs/M116_DELIVERY.md",
@@ -14179,9 +14248,9 @@
       "parent_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
       "parent_normal_passed": true,
       "parent_local_DATA_passed": true,
-      "parent_hosted_passed": false,
-      "parent_official_passed": false,
-      "parent_fully_qualified": false,
+      "parent_hosted_passed": true,
+      "parent_official_passed": true,
+      "parent_fully_qualified": true,
       "parent_accepted": false,
       "implementation_started": true,
       "implementation_Source_written": true,
@@ -14191,12 +14260,16 @@
       "documentation_Source_review_complete": true,
       "Source_control_declarations": {
         "Rust_unique": 31,
+        "primary_Rust_unique": 30,
         "headless": 13,
         "renderer": 24,
-        "shared": 6,
+        "shared": 7,
+        "auxiliary_feature_disabled": 1,
         "public": 13,
         "private": 18,
-        "new_Python_methods": 0
+        "new_Python_methods": 5,
+        "expected_Python_methods": 503,
+        "scope": "Same31RustIDs:30primary/H13R24/shared7 and one genuine feature-disabled auxiliary;13public/18private. Five new Python method declarations bring the obligation to503. No corrected candidate passes are claimed."
       },
       "required_control_obligations": {
         "headless": 453,
@@ -14205,7 +14278,7 @@
       "strict_base_count": 21,
       "strict_base_scope": "Actual f71feacc parent plus its exact20 retained predecessor bases; no thresholds or denominators changed.",
       "formatter_run": true,
-      "checks_run": true,
+      "checks_run": false,
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -14217,22 +14290,22 @@
       "Main_promoted": false,
       "qualification_inherited": false,
       "source_foundation_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
-      "foundation_scope": "The parallel implementation used the exact M115 Source snapshot. Root bound the reviewed delta to the actual locally qualified M115 parent before this one D31 local normal; parent hosted/official and all own qualifications remain separate.",
+      "foundation_scope": "Historical staging used an unqualified Source snapshot for parallel implementation. Root subsequently bound the reviewed delta to genuine M115 before verification; the current correction retains that parent, now fully Source qualified. No qualification is inherited.",
       "Source_count": 1884,
-      "changed_Source_paths": 26,
+      "changed_Source_paths": 29,
       "new_Source_paths": 9,
       "affected_Rust_paths": 19,
       "changed_production_paths": 12,
-      "preformat_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+      "preformat_Source_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
       "formatter_independent_review_complete": true,
       "delivery_guide_url": null,
-      "state": "REFERENCE_CORRECTION_REVIEWED_FORMATTED_FULL_NORMAL_RETRY_RUNNING",
+      "state": "COMPLETE_REVIEWED_FORMATTED_FIXTURE_AND_FEATURE_DISABLED_QA_SOURCE_CAPACITY_HELD",
       "implementation_complete": true,
       "documentation_complete": true,
       "Source_review_complete": true,
-      "normal_running": true,
-      "verification_released": true,
-      "resource_admitted": true,
+      "normal_running": false,
+      "verification_released": false,
+      "resource_admitted": false,
       "Source_publication_available": false,
       "qualified": false,
       "d31_local_normal_admission": {
@@ -14319,6 +14392,47 @@
           "capacity_faults": [],
           "commit_created": false,
           "concrete_failure": "Clippy borrow_deref_ref: triggered_camera.rs152 comparison redundantly reborrows saved.scoped_name (&str) as &*saved.scoped_name"
+        },
+        {
+          "actual": {
+            "filename": "m116-local-normal-attempt2-test-failure.json",
+            "sha256": "81f41c4441f6c974d558f05612076a85723f9152720430ff28d44c87c8a32473",
+            "bytes": 8019,
+            "mode": 436
+          },
+          "classification": "FOUR_CONFIRMED_TEST_FIXTURE_SETUP_CLASSES",
+          "failed_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+          "Root_session": 54326,
+          "launch_tool": "ae4948",
+          "terminal_tool": "dcd6b2",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 4466.195132468012,
+          "complete_failure_inventory": true,
+          "unique_failed_case_counts": {
+            "headless": 3,
+            "renderer": 6,
+            "union": 7
+          },
+          "unique_failed_case_IDs": [
+            "canonical_boolean_trigger_drives_info_at_fixed_early_times_without_a_worker",
+            "live::triggered_rgb_cli_tests::triggered_runtime_selection_preserves_legacy_preflight_and_refuses_periodic_or_depth",
+            "ordinary_periodic_output_and_camera_free_selected_mode_own_no_trigger",
+            "original_camera_paths_use_saved_typed_nested_ancestry_and_all_camera_kinds",
+            "removed_original_reconstructs_triggered_owner_on_loaded_reset_without_old_events",
+            "trigger_fallback_uses_normalized_pre_remap_image_and_explicit_topics_remap_once",
+            "triggered_camera::tests::triggered_camera_preflight_keeps_absent_original_and_refuses_replacement_or_extra_roles"
+          ],
+          "confirmed_setup_classes": [
+            "Two inlinecameraXML literals omit requiredclip metadata",
+            "CLI triggeredDepth fixture rejected correctlybyloader beforeRuntime selector",
+            "Publicsimulation fixtures omitexplicitunpause",
+            "PreparedloadedReset snapshotiszero-dt; freshtriggerrequiresoneadvancingtick"
+          ],
+          "native_boolean_real_software_RGB_case_observed_ok": true,
+          "coverage_qualification_reached": false,
+          "capacity_faults": [],
+          "commit_created": false
         }
       ],
       "prior_initial_formatted_Source": {
@@ -14341,30 +14455,11 @@
         "mode": 436
       },
       "prior_checks_run": true,
-      "correction_Source": {
-        "filename": "m116-reference-correction-source-completion.json",
-        "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
-        "bytes": 550304,
-        "mode": 436
-      },
       "current_candidate_label": "gz-sim-m116-triggered-rgb-reference-correction",
       "correction_Source_complete": true,
       "correction_independent_Source_review_complete": true,
       "correction_formatter_run": true,
-      "unchanged_Rust_formatter_reuse_paths": 18,
-      "formatted_Source": {
-        "filename": "m116-reference-correction-formatted-source-completion.json",
-        "sha256": "d64fe84a64909f1dbc4705d8ca1a539d14f68c645fe5c9405643fa853e74b3e4",
-        "bytes": 550504,
-        "mode": 436
-      },
-      "formatted_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
-      "formatter_actual": {
-        "filename": "m116-reference-correction-final-formatter-actual.json",
-        "sha256": "e3bdb5b96d6b844461815701d6f7363abf7a971e3fc83ddbd034889e08901321",
-        "bytes": 2309,
-        "mode": 436
-      },
+      "unchanged_Rust_formatter_reuse_paths": 15,
       "prior_initial_preformat_Source_census": {
         "filename": "m116-complete-parent-alias-corrected-source-census.json",
         "sha256": "f3b8dd588947adfc03688b286e94b788ba89d6c8edefc422bab753be43c07d72",
@@ -14372,20 +14467,8 @@
         "mode": 436
       },
       "prior_initial_preformat_Source_review_complete": true,
-      "current_preformat_Source_completion": {
-        "filename": "m116-reference-correction-source-completion.json",
-        "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
-        "bytes": 550304,
-        "mode": 436
-      },
-      "current_preformat_Source_review": {
-        "filename": "m116-reference-correction-preformat-source-review.json",
-        "sha256": "7244268b381ce142faed1a82c6259a17bb8c27b1bfc4433c082edddf513b5b9f",
-        "bytes": 2735,
-        "mode": 436
-      },
       "current_preformat_Source_review_complete": true,
-      "active_normal": {
+      "completed_failed_normal2": {
         "attempt": 2,
         "Root_session": 54326,
         "launch_tool": "ae4948",
@@ -14428,11 +14511,165 @@
           "runtime": 1879048192,
           "MemAvailable": 8589934592
         },
-        "terminal_tool": null,
-        "actual_Root_exit_code": null,
-        "actual_Git_exit_code": null,
-        "actual_result": null,
-        "commit": null
+        "terminal_tool": "dcd6b2",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "actual_result": {
+          "filename": "result.json",
+          "sha256": "c09f86c6cbb3a178278877a3a71745634a45af0a25f348662601d3840592bedb",
+          "bytes": 2484,
+          "mode": 436
+        },
+        "commit": null,
+        "failure_actual": {
+          "filename": "m116-local-normal-attempt2-test-failure.json",
+          "sha256": "81f41c4441f6c974d558f05612076a85723f9152720430ff28d44c87c8a32473",
+          "bytes": 8019,
+          "mode": 436
+        },
+        "elapsed_seconds": 4466.195132468012,
+        "packet_directory": "fc56b75865def4d660f83dfa21c3841b94ca8800-ef7b2ekd",
+        "capacity_faults": [],
+        "complete_failure_inventory": true,
+        "unique_failed_case_counts": {
+          "headless": 3,
+          "renderer": 6,
+          "union": 7
+        },
+        "scope": "The second full normal ended with seven unique failed case IDs across both mandatory profiles. Child/parent CLI output repeats are not extra cases; complete coverage qualification was not reached and no commit or capacity fault occurred."
+      },
+      "prior_reference_correction_formatter_actual": {
+        "filename": "m116-reference-correction-final-formatter-actual.json",
+        "sha256": "e3bdb5b96d6b844461815701d6f7363abf7a971e3fc83ddbd034889e08901321",
+        "bytes": 2309,
+        "mode": 436
+      },
+      "prior_reference_correction_formatted_Source": {
+        "filename": "m116-reference-correction-formatted-source-completion.json",
+        "sha256": "d64fe84a64909f1dbc4705d8ca1a539d14f68c645fe5c9405643fa853e74b3e4",
+        "bytes": 550504,
+        "mode": 436
+      },
+      "prior_reference_correction_formatted_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+      "prior_reference_correction_preformat_Source_review": {
+        "filename": "m116-reference-correction-preformat-source-review.json",
+        "sha256": "7244268b381ce142faed1a82c6259a17bb8c27b1bfc4433c082edddf513b5b9f",
+        "bytes": 2735,
+        "mode": 436
+      },
+      "prior_reference_correction_preformat_Source_completion": {
+        "filename": "m116-reference-correction-source-completion.json",
+        "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
+        "bytes": 550304,
+        "mode": 436
+      },
+      "prior_reference_correction_Source": {
+        "filename": "m116-reference-correction-source-completion.json",
+        "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
+        "bytes": 550304,
+        "mode": 436
+      },
+      "prior_control_projection": {
+        "Rust_unique": 31,
+        "headless": 13,
+        "renderer": 24,
+        "shared": 6,
+        "public": 13,
+        "private": 18,
+        "new_Python_methods": 0
+      },
+      "parent_qualified": true,
+      "parent_evidence": "current_M115_Source",
+      "parent_official_actual": {
+        "filename": "m115-official-actual.json",
+        "sha256": "5f5698bc47cb87301773fbcdff6fe717ee55b70585bba6791d41f3b031b0eb40",
+        "bytes": 3064,
+        "mode": 436
+      },
+      "required_auxiliary_controls": [
+        "live::triggered_rgb_cli_tests::triggered_rgb_without_build_feature_refuses_before_loading_the_world"
+      ],
+      "Source_roster": {
+        "filename": "m116-primary-and-feature-disabled-auxiliary-source-declarations.json",
+        "sha256": "8b5cd0ab417a4b24338c0b402daef31363806321a352bc86ee0965291f763911",
+        "bytes": 20023,
+        "mode": 436
+      },
+      "QA_Source_completion": {
+        "filename": "m116-cli-feature-disabled-check-source-completion.json",
+        "sha256": "7d11a1f61310777474ad1e9528d217ec5f8c1bc468d7876fed6c3c5bb441e393",
+        "bytes": 45438,
+        "mode": 436
+      },
+      "verification_Python_production_files": 1,
+      "strict_bases": [
+        "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+        "2419c92342dcd6f869c9832ba1d691b50a51a020",
+        "02592f7aaf21d616bd6299aa87123455834794e7",
+        "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+        "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+        "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
+        "ac4af1c738a9daaf3d9d899eca46c690d3aac22a",
+        "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+        "e264c6494d69ccacf41e0b21ddf3827d1f12cd40",
+        "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+        "ee4df6c5851cc40b77a15b19c6e992434ee7bfff",
+        "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
+        "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+        "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
+        "039a1e5142dd48705a23acb6f817613f509408f0",
+        "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
+        "ac75646aa5db9d1a1f983e47c0c86857415b9a2c",
+        "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+        "57b44de10713dc6132c5549d769dac00dc041f56",
+        "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+        "dddf1f4284557c420e384d263a4365b2153dfde2"
+      ],
+      "current_preformat_Source_census": {
+        "filename": "m116-complete-fixture-and-QA-final-wording-source-census.json",
+        "sha256": "af35ba5c21f9ae84ef758a847919caf91a028defa0529ec398c9c0d9e119838c",
+        "bytes": 551201,
+        "mode": 436
+      },
+      "current_preformat_Source_review": {
+        "filename": "m116-fixture-correction-preformat-source-review.json",
+        "sha256": "39a6310595a761859efd0e21ef90119eec23b1f6e18147b400a7a51ccc8abfd8",
+        "bytes": 3346,
+        "mode": 436
+      },
+      "formatted_Source": {
+        "filename": "m116-fixture-qa-formatted-source-completion.json",
+        "sha256": "091f7595001a310735d3917b65d3fe478d9f89e459437b6b9bbfe0709fa5bf9d",
+        "bytes": 552858,
+        "mode": 436
+      },
+      "formatted_Source_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
+      "formatter_actual": {
+        "filename": "m116-fixture-correction-final-formatter-actual.json",
+        "sha256": "cfe43de68145584c87f7fedf70845382bfe3bc890f9695091f3b070a2129b667",
+        "bytes": 3501,
+        "mode": 436
+      },
+      "formatter_diff_bytes": 0,
+      "affected_formatter_Rust_paths": 4,
+      "guide_URL": null,
+      "parent_qualification_scope": "ParentM115 earned all four own qualification passes; this permits dependency admission only and transfers no descendant result.",
+      "capacity_hold": {
+        "state": "HELD_PENDING_OWNER_CAPACITY_DECISION",
+        "required_initial_SSD_bytes": 35433480192,
+        "observed_SSD_bytes": 33969291264,
+        "observation_basis": {
+          "filename": "m116-fixture-correction-final-formatter-actual.json",
+          "sha256": "cfe43de68145584c87f7fedf70845382bfe3bc890f9695091f3b070a2129b667",
+          "bytes": 3501,
+          "mode": 436
+        },
+        "owner_requested_free_SSD_GiB": 36,
+        "owner_decision": "pending",
+        "resource_admitted": false,
+        "full_normal_released": false,
+        "cleanup_or_eviction_authorized": false,
+        "scope": "A retained sample is below the33GiB initial threshold. Fresh admission is still required after capacity resolution; no fit guarantee or cleanup authority is inferred."
       }
     }
   },
