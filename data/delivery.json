@@ -3,7 +3,7 @@
   "decision": "D30",
   "as_of": "2026-11-24",
   "execution_state": "active",
-  "current_phase": "M114",
+  "current_phase": "M115",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -20423,6 +20423,164 @@
       "delivery_guide_url": null,
       "documentation_complete": true,
       "formatter_run": true
+    },
+    {
+      "id": "M115",
+      "title": "Runtime CPU-lidar update-rate control",
+      "max_working_days": 5,
+      "depends_on": [
+        "M2",
+        "M114"
+      ],
+      "scope": "Read/set authored maximum and effective rates of existing CPU lidars using the exact retained IMU policy and SampleSchedule. Add the canonical Double-to-Empty rate sibling on the existing bounded IO/CPU owner, with at most eight lidar providers and unchanged scan/cloud defaults. Normalize the whole constructed raw topic plus /set_rate, then remap once and qualify.",
+      "acceptance": "Complete implementation, meaningful regressions, documentation and independent Source review before one consolidated verification cycle. Demonstrate exact policy/phase and atomic refusal, paused/no-interest handoff, same noisy scan/cloud acquisition, bounded fair queues and native canonical interoperability, live/original key preflight and repair, reset/retirement/old-generation cancellation, and unchanged IMU controls. Require both profiles, strict workspace/crate/changed-base coverage against all20 bases, independent local DATA, exact hosted CI and original-artifact audit. Parent qualification and formal browser/shutdown gates remain.",
+      "excluded": "Reflectance/hit provenance, new rays/resolution/noise models, camera clouds, other sensor families, IMU or scheduler changes, new schemas/sessions/runtime frameworks/SDK campaigns, DART/MuJoCo, Fuel, demo actions and cleanup.",
+      "delivery_guide": "docs/M115_DELIVERY.md",
+      "source_parent": "2419c92342dcd6f869c9832ba1d691b50a51a020",
+      "parent_tree": "c08baf47e466479d9eb359180280b809841d3490",
+      "parent_normal_passed": true,
+      "parent_local_DATA_passed": true,
+      "parent_hosted_passed": false,
+      "parent_official_passed": false,
+      "parent_fully_qualified": false,
+      "parent_accepted": false,
+      "implementation_started": true,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "author_Source_reviews_complete": true,
+      "normalization_correction_complete": true,
+      "shared_integration_review_complete": true,
+      "independent_whole_Source_review_complete": true,
+      "Source_control_declarations": {
+        "Rust_unique": 22,
+        "headless": 22,
+        "renderer": 11,
+        "shared": 11,
+        "public": 10,
+        "private": 12,
+        "new_Python_methods": 0,
+        "expected_Python_methods": 498,
+        "scope": "The unchanged 22 Source obligations have no runtime result; the failed local run stopped at compilation."
+      },
+      "strict_base_count": 20,
+      "Source_count": 1874,
+      "changed_Source_paths": 23,
+      "formatter_run": true,
+      "checks_run": true,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "future_tree": null,
+      "future_commit": null,
+      "actual_new_test_passes": null,
+      "accepted": false,
+      "Main_promoted": false,
+      "qualification_inherited": false,
+      "delivery_guide_url": null,
+      "checkpoint_scope": "The failed pre-correction attempt is historical. Current correction metadata binds the actual byte-neutral affected formatter and active full local retry; no terminal result or qualification is claimed.",
+      "new_Source_paths": 6,
+      "affected_Rust_paths": 11,
+      "changed_production_paths": 4,
+      "documentation_complete": true,
+      "local_verification_may_overlap_parent_remote_closeout": true,
+      "parent_qualification_required_before_review_publication": true,
+      "formatted_Rust_tree_before_scheduling_amendment": "8c0094f64663f1fe0c4b7fee8f84da3999d29640",
+      "formatted_Source_before_scheduling_amendment": {
+        "sha256": "fea9b94dc9b87fdf99c319202f4db48850cbbe8a9e7188a05fc08159567545c2",
+        "bytes": 555180,
+        "mode": 436,
+        "filename": "m115-formatted-source-completion.json"
+      },
+      "previous_formatter_passed": true,
+      "normal_running": true,
+      "prior_checks_run": true,
+      "prior_normal_failures": [
+        {
+          "classification": "RETAINED_TEST_HELPER_NONEXHAUSTIVE_FAMILY_MATCHES",
+          "actual": {
+            "filename": "m115-local-normal-attempt1-failure.json",
+            "sha256": "4d1d9c9c91c4ab9e87845d0e37dd04567200348b55e3baa822cfb0b3b2826c04",
+            "bytes": 2393,
+            "mode": 436
+          },
+          "Root_session": 86597,
+          "launch_tool": "ab781e",
+          "terminal_tool": "f7cf7f",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 32.98771235800814,
+          "failed_tree": "f1cceff609b3e1bf0c2e334ffe60be6b181ae1fd",
+          "Source_seal": {
+            "filename": "m115-local-parallel-source-completion.json",
+            "sha256": "f6fc01e8dad2564f4b24f05b0e3e12d703aac58c482e9220a651a519630afdb5",
+            "bytes": 556359,
+            "mode": 436
+          },
+          "Root_release": {
+            "filename": "m115-local-normal-root-release.json",
+            "sha256": "5c0cd612f370ec2ee158468719bd6453e32e92c54c6cf738976b048b046d9afc",
+            "bytes": 1828,
+            "mode": 436
+          },
+          "released_Source": {
+            "filename": "run-m115-lidar-rate-final-checks-root-released.py",
+            "sha256": "325b35f26e8d1c58d33a78be5f26f9f349e9d0d5ee39af6712e3690dba957e21",
+            "bytes": 15879,
+            "mode": 436
+          },
+          "result": {
+            "filename": "result.json",
+            "sha256": "55417148ebaadcc34647faf1aa7b7f78ef21ad3a8612f19d826d18b61adf73fd",
+            "bytes": 2461,
+            "mode": 436
+          },
+          "hook_stderr": {
+            "filename": "hook.stderr",
+            "sha256": "f057b427eea8c03c69ea4a5e457b9120d0d0d3f2069fe9cd6d4b48277f169e26",
+            "bytes": 7062,
+            "mode": 436
+          },
+          "packet_directory": "f1cceff609b3e1bf0c2e334ffe60be6b181ae1fd-m9699tcp",
+          "compiler_diagnostic_count": 3,
+          "diagnostic_class": "E0004: three retained helper matches omit PublicationFamily::LidarRate",
+          "test_source": "crates/gz-sim-server/tests/private/joint_state.rs",
+          "source_lines": [
+            766,
+            790,
+            907
+          ],
+          "tests_or_coverage_reached": false,
+          "Clippy_stage_passed": false,
+          "capacity_faults": [],
+          "commit_created": false,
+          "frozen_failed_Source_unchanged": true
+        }
+      ],
+      "correction_Source_review_pending": false,
+      "correction_Source_complete": true,
+      "correction_independent_Source_review_complete": true,
+      "preformat_tree": "b52683da00458ed3071670f938b683c1077aeb82",
+      "preformat_Source_review": {
+        "sha256": "1f4819c1936f61b7274bc8d9421ecd261ca27bf0e21f54380c701600cbcae5ed",
+        "bytes": 2314,
+        "mode": 436,
+        "filename": "m115-family-match-preformat-source-review.json"
+      },
+      "normal_execution_released": true,
+      "formatted_Source_tree": "b52683da00458ed3071670f938b683c1077aeb82",
+      "formatted_Source": {
+        "sha256": "60d9d8013d05d046f03d5d62af58fc344d837da9c45338a885da056bed84ea1a",
+        "bytes": 555843,
+        "mode": 436,
+        "filename": "m115-family-match-corrected-source-completion.json"
+      },
+      "current_correction_formatter_actual": {
+        "sha256": "43b2a8bb99953784d4d513216ec5650f6803101a7fde7b9826a239a87a80259e",
+        "bytes": 2293,
+        "mode": 436,
+        "filename": "m115-family-match-final-formatter-actual.json"
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -20540,10 +20698,11 @@
     "M111": "in_progress",
     "M112": "in_progress",
     "M113": "in_progress",
-    "M114": "in_progress"
+    "M114": "in_progress",
+    "M115": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": null,
+  "phase_started_at": "2026-11-24T13:57:14.048804+00:00",
   "active_phases": [
     "M77",
     "M78",
@@ -20582,7 +20741,8 @@
     "M111",
     "M112",
     "M113",
-    "M114"
+    "M114",
+    "M115"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -22044,31 +22204,48 @@
       "implementation_complete": false,
       "checks_run": false,
       "accepted": false
+    },
+    {
+      "phases": [
+        "M115"
+      ],
+      "max_working_days": 5,
+      "integration": "The original compilation failure is preserved. Its reviewed helper correction passed the affected formatter without byte changes, and one full local retry is running. Parent hosted outcome is unknown after an API quota error; publication gates remain.",
+      "implementation_complete": true,
+      "independent_whole_Source_review_complete": true,
+      "formatter_run": true,
+      "checks_run": true,
+      "accepted": false,
+      "local_verification_may_overlap_parent_remote_closeout": true,
+      "parent_qualification_required_before_review_publication": true,
+      "previous_formatter_passed": true,
+      "prior_checks_run": true,
+      "normal_running": true,
+      "correction_Source_complete": true
     }
   ],
-  "acceptance_boundary": "The combined M102\u2013M113 review commit passed full local checks, independent local and original-artifact audits, and exact hosted CI. No phase acceptance or Main promotion follows. M114 must earn its own evidence; formal browser and owner-confirmed shutdown proof remain required.",
+  "acceptance_boundary": "Reviewed D31 scheduling permits one unchanged local M115 full verification cycle and local commit alongside parent remote closeout, after fresh resource admission. M115 review publication remains held for parent hosted/official success and own normal/local DATA success. All exact profiles,20bases,quality and M77 formal gates are unchanged.",
   "current_delivery_group": [
-    "M114"
+    "M115"
   ],
-  "current_development_phase": "M114",
+  "current_development_phase": "M115",
   "board": {
-    "updated_at": "2026-11-24T12:31:35.935927+00:00",
+    "updated_at": "2026-11-24T15:10:51.858215+00:00",
     "current": {
-      "title": "Organized lidar point clouds: full retry running",
+      "title": "Runtime lidar-rate full verification retry",
       "items": [
-        "The C++ observer compiler correction is reviewed. Full verification is running again; its result is pending.",
-        "The combined physics, control, lidar and camera delivery passed local verification, hosted checks and both independent evidence audits.",
+        "The reviewed helper correction is formatted. Full local verification is running again; its result is pending.",
+        "M114 passed local checks and its independent audit. Hosted outcome is unknown after an API quota error; the official audit remains pending.",
         "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
       ]
     },
     "done": [
-      "Implemented and independently reviewed organized lidar point-cloud support, regression cases and documentation. Formatting passed.",
-      "Reviewed the C++ observer compiler correction; all Rust source and the 16 regression identities are unchanged.",
-      "Qualified the combined review commit through full local checks, exact hosted CI and independent local and original-artifact audits."
+      "Reviewed and formatted the helper correction without changing source bytes or case identities; earlier failed evidence is preserved.",
+      "M114 passed its full verification cycle and independent local evidence audit; the review commit is published."
     ],
     "next": [
-      "Finish the running full verification retry.",
-      "Independently audit its results, then qualify the same review commit through hosted checks and original-artifact audits.",
+      "Finish the running full local verification retry, then independently audit its recorded results.",
+      "Complete parent hosted and official qualification and the independent M115 local audit before review publication.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
@@ -22078,7 +22255,7 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M114"
+    "M115"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -22227,7 +22404,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Complete the running full verification retry after the reviewed C++ observer compiler correction, then qualify the same review commit.",
+  "current_development_task": "Complete the running full local M115 verification retry and independent local audit while parent remote qualification proceeds, preserving all publication and acceptance gates.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -24930,7 +25107,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "M114 implementation and independent Source review are complete; this report does not assert an exact dispatch time.",
+  "phase_started_at_scope": "M115 isolated Source implementation; at most five working days including independent review and all gates",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -35956,7 +36133,7 @@
     },
     "Main_promoted": false
   },
-  "current_wave_projection_scope": "Earlier phase objects, groups and legacy current_M* records retain their checkpoint observations. current_M114_Source records the reviewed C++ observer correction and active full verification retry; earlier failed attempts are historical, with no new terminal result or inherited qualification.",
+  "current_wave_projection_scope": "Earlier phase objects and groups retain checkpoint observations. Current M114 aliases record local qualification and hosted progress. Current M115 aliases preserve the failed compile and bind the actual affected formatter and active local retry, with all new outcomes unknown.",
   "public_path_projection": {
     "pointer_count": 226,
     "historical_delivery_private_leaf_count": 183,
@@ -35978,7 +36155,7 @@
     "prior_OOM_cause": "UNKNOWN"
   },
   "current_M114_Source": {
-    "state": "FULL_NORMAL_RETRY_RUNNING_AFTER_REVIEWED_CPP_OBSERVER_CORRECTION",
+    "state": "NORMAL_AND_INDEPENDENT_LOCAL_DATA_CLEAR_HOSTED_OUTCOME_UNKNOWN_OBSERVER_RETIRED",
     "phase": "M114",
     "phase_contract": "phases[M114]",
     "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
@@ -35996,22 +36173,37 @@
     "new_Python_test_declarations": 0,
     "formatter_run": true,
     "checks_run": true,
-    "normal_running": true,
-    "normal_actual": null,
-    "local_DATA_actual": null,
+    "normal_running": false,
+    "normal_actual": {
+      "sha256": "ac16a457e5746986d760ecee65121a1360d29f1a08348abf33e9feb01908abce",
+      "bytes": 1607,
+      "mode": 436,
+      "filename": "m114-cpp-sequence-loop-normal-actual.json"
+    },
+    "local_DATA_actual": {
+      "sha256": "5f3933cdc94b6703702047f613a60e3cb2535788408197975d094335ea00b39b",
+      "bytes": 2746,
+      "mode": 436,
+      "filename": "m114-retained-audit-actual.json"
+    },
     "hosted_actual": null,
     "official_actual": null,
     "future_tree": null,
     "future_commit": null,
-    "actual_new_test_passes": null,
+    "actual_new_test_passes": {
+      "unique": 16,
+      "headless": 16,
+      "renderer": 2,
+      "scope": "Validated by the completed independent local retained audit."
+    },
     "qualified": false,
     "accepted": false,
     "Main_promoted": false,
     "qualification_inherited": false,
-    "guide_URL": null,
-    "Source_publication_available": false,
+    "guide_URL": "https://github.com/gazebosim-rs/gz-sim-rs/blob/2419c92342dcd6f869c9832ba1d691b50a51a020/docs/M114_DELIVERY.md",
+    "Source_publication_available": true,
     "verification_capacity": {
-      "state": "CAPACITY_RESTORED_CURRENT_RETRY_RUNNING",
+      "state": "COMPLETED_NORMAL_NO_CAPACITY_FAULT",
       "Root_observed_SSD_free_bytes": 40477339648,
       "comparison_prior_initial_reserve_bytes": 35433480192,
       "owner_requested_target_bytes": 37580963840,
@@ -36020,7 +36212,7 @@
       "new_cleanup_or_eviction_authorized": true,
       "new_verification_started": true,
       "resource_admission_inherited": false,
-      "scope": "Exact authorized cache cleanup restored headroom. Fresh Root resources cleared the unchanged initial reserve for the current corrected retry; early stops and floors remain. Neither prior failed run had a capacity fault. No further cleanup or future fit is implied.",
+      "scope": "The completed normal passed its resource and final-custody guards with no capacity fault. This grants no future resource fit or cleanup authority.",
       "capacity_actual": {
         "sha256": "7e826c1c040763e8f2f25457737a6d92763256347c98f64a41d2d39f4b915665",
         "bytes": 788,
@@ -36169,7 +36361,59 @@
     "dispatcher_correction_complete": true,
     "dispatcher_correction_independent_Source_review_complete": true,
     "formatter_repeated_for_dispatch_correction": false,
-    "active_normal": {
+    "cpp_observer_correction_complete": true,
+    "cpp_observer_correction_independent_Source_review_complete": true,
+    "formatter_repeated_for_cpp_correction": false,
+    "local_DATA_report": {
+      "sha256": "3614fb82bf6e2e40664a24a1e53e8e9c78da7372e1de2225dca3191df63aab79",
+      "bytes": 862669,
+      "mode": 436,
+      "filename": "m114-cpp-sequence-loop-retained-audit.json"
+    },
+    "locally_qualified": true,
+    "actual_commit": "2419c92342dcd6f869c9832ba1d691b50a51a020",
+    "final_tree": "c08baf47e466479d9eb359180280b809841d3490",
+    "normal_elapsed_seconds": 4449.1278651810135,
+    "local_DATA_elapsed_seconds": 13.39178957499098,
+    "strict_base_count": 19,
+    "local_profile_tests": {
+      "headless": {
+        "passed": 2171,
+        "failed": 0,
+        "ignored": 2,
+        "summary_rows": 211
+      },
+      "renderer": {
+        "passed": 1683,
+        "failed": 0,
+        "ignored": 2,
+        "summary_rows": 194
+      }
+    },
+    "RAW_comparisons": [
+      {
+        "group": "headless",
+        "raw_count": 470,
+        "byte_exact": true
+      },
+      {
+        "group": "renderer",
+        "raw_count": 792,
+        "byte_exact": true
+      },
+      {
+        "group": "rapier-runtime",
+        "raw_count": 57,
+        "byte_exact": true
+      },
+      {
+        "group": "rgb-camera",
+        "raw_count": 168,
+        "byte_exact": true
+      }
+    ],
+    "RAW_comparisons_once_last": true,
+    "completed_normal": {
       "Root_session": 79675,
       "launch_tool": "5f5269",
       "release_at": "2026-11-24T12:29:09.698826+00:00",
@@ -36185,11 +36429,482 @@
         "mode": 436,
         "filename": "m114-cpp-sequence-loop-root-release.json"
       },
-      "actual_result": null,
-      "scope": "The reviewed C++ observer correction is in a full verification retry. No terminal result, successful current test total or commit is asserted."
+      "actual_result": {
+        "sha256": "ac16a457e5746986d760ecee65121a1360d29f1a08348abf33e9feb01908abce",
+        "bytes": 1607,
+        "mode": 436,
+        "filename": "m114-cpp-sequence-loop-normal-actual.json"
+      },
+      "scope": "The full local run completed successfully on the published review commit. Hosted and official qualification are separate.",
+      "terminal_tool": "f961e6",
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0
     },
-    "cpp_observer_correction_complete": true,
-    "cpp_observer_correction_independent_Source_review_complete": true,
-    "formatter_repeated_for_cpp_correction": false
+    "review_publication": {
+      "sha256": "210fff6e8a15f2d34e4a6581e813146c4267f7af3f17ce47160ba65734ee2103",
+      "bytes": 1886,
+      "mode": 436,
+      "filename": "review-publication.json"
+    },
+    "review_branch": "refs/heads/review/m114-organized-lidar-point-clouds",
+    "hosted": {
+      "run_id": 45412754337,
+      "attempt": 1,
+      "state": "unknown",
+      "outcome": null,
+      "commit": "2419c92342dcd6f869c9832ba1d691b50a51a020",
+      "branch": "review/m114-organized-lidar-point-clouds",
+      "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45412754337",
+      "initial_actual_metadata": {
+        "sha256": "759a3ebf1fdb024070347e2f94417697b5fad9f772f6f08eebff0438e5f4a5eb",
+        "bytes": 12549,
+        "mode": 436,
+        "filename": "hosted-runs-after-quota-reset.stdout"
+      },
+      "Root_sole_observer_session": null,
+      "last_observed_state": "in_progress",
+      "observer_active": false,
+      "retired_observer_session": 70089,
+      "observer_failure": {
+        "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
+        "bytes": 1816,
+        "mode": 436,
+        "filename": "hosted-watch-attempt1-quota-observer-failure.json"
+      }
+    }
+  },
+  "current_M115_Source": {
+    "state": "CORRECTED_SOURCE_FORMATTED_FULL_LOCAL_NORMAL_RETRY_RUNNING",
+    "phase": "M115",
+    "phase_contract": "phases[M115]",
+    "source_parent": "2419c92342dcd6f869c9832ba1d691b50a51a020",
+    "parent_tree": "c08baf47e466479d9eb359180280b809841d3490",
+    "parent_evidence": "current_M114_parent_qualification",
+    "parent_normal_passed": true,
+    "parent_local_DATA_passed": true,
+    "parent_hosted_passed": false,
+    "parent_official_passed": false,
+    "parent_qualified": false,
+    "parent_accepted": false,
+    "selection": {
+      "filename": "source-selection-proposal.json",
+      "sha256": "41eac2105b40b1e2b1bf9eb5ff3900c465eab42f50a2916e43579c51e24cf9dd",
+      "bytes": 28442,
+      "mode": 436
+    },
+    "implementation_admission": {
+      "filename": "source-implementation-admission.json",
+      "sha256": "0244d87a4de407d1f18c7ad277a4ec280fa96ed1955443b625137c7f47a7fb99",
+      "bytes": 3530,
+      "mode": 436
+    },
+    "author_completions": [
+      {
+        "filename": "m115-lidar-rate-scene-source-completion.json",
+        "sha256": "143927ac71fed6aa571ca07a29535b996a5e9e06b7e874ff6f5be0d8e4d43437",
+        "bytes": 17836,
+        "mode": 436
+      },
+      {
+        "filename": "m115-lidar-rate-server-source-completion.json",
+        "sha256": "c0c21996a19c8f09aed3bd04082c1613add03be2379fbbebdceab08942029301",
+        "bytes": 58172,
+        "mode": 436
+      }
+    ],
+    "normalization_correction": {
+      "filename": "m115-normalized-sibling-server-source-completion.json",
+      "sha256": "4feabf88cabfff166d264f7472501e6b2b2a2c645761afb9bb4043eef1ee217a",
+      "bytes": 13487,
+      "mode": 436
+    },
+    "implementation_started": true,
+    "implementation_complete": true,
+    "regression_Source_complete": true,
+    "author_Source_reviews_complete": true,
+    "shared_integration_review_complete": true,
+    "independent_whole_Source_review_complete": true,
+    "documentation_Source_written": true,
+    "documentation_review_complete": true,
+    "Source_control_declarations": {
+      "Rust_unique": 22,
+      "headless": 22,
+      "renderer": 11,
+      "shared": 11,
+      "public": 10,
+      "private": 12,
+      "new_Python_methods": 0,
+      "expected_Python_methods": 498,
+      "scope": "The unchanged 22 Source obligations have no runtime result; the failed local run stopped at compilation."
+    },
+    "strict_base_count": 20,
+    "strict_bases": [
+      "2419c92342dcd6f869c9832ba1d691b50a51a020",
+      "02592f7aaf21d616bd6299aa87123455834794e7",
+      "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
+      "1a4bdbb57f41b0cba3c7b71c1695fca9bc8387fc",
+      "a578c68a3fe4daa5e83ab0bc801e641f540576ee",
+      "ac4af1c738a9daaf3d9d899eca46c690d3aac22a",
+      "cc83ca4a62773edb80b05992fa67a03ff1dad134",
+      "e264c6494d69ccacf41e0b21ddf3827d1f12cd40",
+      "1e54399a4b1fbf565b64f3ddc8e35a1a8439137f",
+      "ee4df6c5851cc40b77a15b19c6e992434ee7bfff",
+      "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
+      "ba2d85ee2a0989ad192d224fbf76ba6ab27a51d0",
+      "11afe37a4747cd7c4c0ad9a2f466721b86b1a156",
+      "039a1e5142dd48705a23acb6f817613f509408f0",
+      "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
+      "ac75646aa5db9d1a1f983e47c0c86857415b9a2c",
+      "8ad64532489ffbb9bf62badb4a0835c34af81eaf",
+      "57b44de10713dc6132c5549d769dac00dc041f56",
+      "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
+      "dddf1f4284557c420e384d263a4365b2153dfde2"
+    ],
+    "Source_count": 1874,
+    "changed_Source_paths": 23,
+    "new_Source_paths": 6,
+    "final_tree": "b52683da00458ed3071670f938b683c1077aeb82",
+    "future_commit": null,
+    "formatter_run": true,
+    "checks_run": true,
+    "verification_released": true,
+    "resource_admitted": true,
+    "resource_scope": "Root released the actual guarded local retry after fresh preflight; the runner independently resamples unchanged resources and custody. This is no future fit, cleanup or additional-job authorization.",
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "actual_new_test_passes": null,
+    "guide_URL": null,
+    "Source_publication_available": false,
+    "qualified": false,
+    "accepted": false,
+    "Main_promoted": false,
+    "qualification_inherited": false,
+    "scope": "The original compilation failure is preserved. Its reviewed helper correction is formatted and the full local retry is active. Parent hosted outcome is unknown after its observer hit the API quota. Review publication still requires parent hosted/official plus own normal/local DATA success.",
+    "documentation_independent_Source_review_complete": true,
+    "affected_Rust_paths": 11,
+    "changed_production_paths": 4,
+    "documentation_completion": {
+      "sha256": "bd7b3e3f117c062c4d2138d4f4816cf66839ed634537d75622b08c4b5d161802",
+      "bytes": 39858,
+      "mode": 436,
+      "filename": "m115-shared-docs-source-completion.json"
+    },
+    "Source_review_scope": "Whole corrected code and metadata Source reviews are closed. The one affected formatter passed without changing bytes, with no repeat of the ten prior Rust formatters. The unchanged full required local retry is now running; no result is available.",
+    "formatted_Source_before_scheduling_amendment": {
+      "sha256": "fea9b94dc9b87fdf99c319202f4db48850cbbe8a9e7188a05fc08159567545c2",
+      "bytes": 555180,
+      "mode": 436,
+      "filename": "m115-formatted-source-completion.json"
+    },
+    "formatted_Rust_tree_before_scheduling_amendment": "8c0094f64663f1fe0c4b7fee8f84da3999d29640",
+    "local_verification_may_overlap_parent_remote_closeout": true,
+    "parent_qualification_required_before_review_publication": true,
+    "local_scheduling_amendment": {
+      "Source": {
+        "sha256": "0e21705ada586c6664917896debd850798d8b125d72ba363ef48342b9e74163c",
+        "bytes": 3421,
+        "mode": 436,
+        "filename": "m115-local-parallel-verification-admission.json"
+      },
+      "principle_independent_Source_review_clear": true,
+      "six_file_metadata_Source_review_complete": true,
+      "one_local_heavy_workload": true,
+      "fresh_resource_admission_required": true,
+      "ordinary_local_full_hook_and_local_commit_only": true,
+      "own_review_publication_requires": [
+        "parent exact whole hosted success",
+        "parent independent official originals DATA success",
+        "own full normal success",
+        "own independent local DATA success"
+      ],
+      "parent_affecting_failure_scope": "Freeze descendant, batch all available affecting failures, independently review corrections before affected required rerun",
+      "verification_released": true,
+      "publication_released": false,
+      "corrected_Source": {
+        "filename": "m115-local-parallel-verification-admission-corrected.json",
+        "sha256": "a1d5015c933ab11c276e93f95d92ad85d866437b278adf2d003b5c7e38b3c11b",
+        "bytes": 2196,
+        "mode": 436
+      }
+    },
+    "local_normal_admission_pending": false,
+    "normal_running": true,
+    "prior_normal_failures": [
+      {
+        "classification": "RETAINED_TEST_HELPER_NONEXHAUSTIVE_FAMILY_MATCHES",
+        "actual": {
+          "filename": "m115-local-normal-attempt1-failure.json",
+          "sha256": "4d1d9c9c91c4ab9e87845d0e37dd04567200348b55e3baa822cfb0b3b2826c04",
+          "bytes": 2393,
+          "mode": 436
+        },
+        "Root_session": 86597,
+        "launch_tool": "ab781e",
+        "terminal_tool": "f7cf7f",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "elapsed_seconds": 32.98771235800814,
+        "failed_tree": "f1cceff609b3e1bf0c2e334ffe60be6b181ae1fd",
+        "Source_seal": {
+          "filename": "m115-local-parallel-source-completion.json",
+          "sha256": "f6fc01e8dad2564f4b24f05b0e3e12d703aac58c482e9220a651a519630afdb5",
+          "bytes": 556359,
+          "mode": 436
+        },
+        "Root_release": {
+          "filename": "m115-local-normal-root-release.json",
+          "sha256": "5c0cd612f370ec2ee158468719bd6453e32e92c54c6cf738976b048b046d9afc",
+          "bytes": 1828,
+          "mode": 436
+        },
+        "released_Source": {
+          "filename": "run-m115-lidar-rate-final-checks-root-released.py",
+          "sha256": "325b35f26e8d1c58d33a78be5f26f9f349e9d0d5ee39af6712e3690dba957e21",
+          "bytes": 15879,
+          "mode": 436
+        },
+        "result": {
+          "filename": "result.json",
+          "sha256": "55417148ebaadcc34647faf1aa7b7f78ef21ad3a8612f19d826d18b61adf73fd",
+          "bytes": 2461,
+          "mode": 436
+        },
+        "hook_stderr": {
+          "filename": "hook.stderr",
+          "sha256": "f057b427eea8c03c69ea4a5e457b9120d0d0d3f2069fe9cd6d4b48277f169e26",
+          "bytes": 7062,
+          "mode": 436
+        },
+        "packet_directory": "f1cceff609b3e1bf0c2e334ffe60be6b181ae1fd-m9699tcp",
+        "compiler_diagnostic_count": 3,
+        "diagnostic_class": "E0004: three retained helper matches omit PublicationFamily::LidarRate",
+        "test_source": "crates/gz-sim-server/tests/private/joint_state.rs",
+        "source_lines": [
+          766,
+          790,
+          907
+        ],
+        "tests_or_coverage_reached": false,
+        "Clippy_stage_passed": false,
+        "capacity_faults": [],
+        "commit_created": false,
+        "frozen_failed_Source_unchanged": true
+      }
+    ],
+    "previous_reviewed_formatted_Source": {
+      "filename": "m115-local-parallel-source-completion.json",
+      "sha256": "f6fc01e8dad2564f4b24f05b0e3e12d703aac58c482e9220a651a519630afdb5",
+      "bytes": 556359,
+      "mode": 436
+    },
+    "previous_formatter_actual": {
+      "sha256": "b3de010349851f41e0b5c61d112b6275bacbf95e32b53e8b8ab488017390f91a",
+      "bytes": 5424,
+      "mode": 436,
+      "filename": "m115-final-formatter-actual.json"
+    },
+    "previous_formatter_runs": 1,
+    "previous_formatter_actual_Root_exit_code": 0,
+    "previous_formatter_actual_child_exit_code": 0,
+    "previous_formatter_actual_Root_tool": "b80014",
+    "current_correction_formatter_actual": {
+      "sha256": "43b2a8bb99953784d4d513216ec5650f6803101a7fde7b9826a239a87a80259e",
+      "bytes": 2293,
+      "mode": 436,
+      "filename": "m115-family-match-final-formatter-actual.json"
+    },
+    "prior_checks_run": true,
+    "local_normal_retry_release_pending": false,
+    "local_heavy_workload_active": true,
+    "correction_Source_complete": true,
+    "correction_independent_Source_review_complete": true,
+    "correction_scope": {
+      "state": "SOURCE_COMPLETE_INDEPENDENTLY_REVIEWED_AND_FORMATTED",
+      "worktree_label": "gz-sim-m115-lidar-rate-family-match-correction",
+      "source_parent": "2419c92342dcd6f869c9832ba1d691b50a51a020",
+      "copied_changed_Source_paths_before_correction": 22,
+      "copied_Source_file_count_before_correction": 1874,
+      "planned_code_scope": "Three explicit LidarRate exclusion arms in retained seven-family test helpers; no wildcard, old assertion or case identity change.",
+      "source_completion": {
+        "sha256": "ff4f6f3c30f431a5d400ece2a372a117aafdbe456ff435a26c9668482f63b4b2",
+        "bytes": 3759,
+        "mode": 436,
+        "filename": "m115-family-match-correction-source-completion.json"
+      },
+      "tree": "b52683da00458ed3071670f938b683c1077aeb82",
+      "checks_retried": true,
+      "retry_released": true,
+      "documentation_completion": {
+        "sha256": "ab828fde30b879bf05ee61a8b44ae38c0b082ac4e3e374e1858ccacf8d235b1a",
+        "bytes": 2155,
+        "mode": 436,
+        "filename": "m115-family-match-correction-docs-source.json"
+      },
+      "tree_scope": "The preformat and actual formatted trees are identical because the one affected formatter changed no bytes."
+    },
+    "preformat_tree": "b52683da00458ed3071670f938b683c1077aeb82",
+    "preformat_Source_review": {
+      "sha256": "1f4819c1936f61b7274bc8d9421ecd261ca27bf0e21f54380c701600cbcae5ed",
+      "bytes": 2314,
+      "mode": 436,
+      "filename": "m115-family-match-preformat-source-review.json"
+    },
+    "canonical_correction_Planning_Source": {
+      "sha256": "b35114ca5ec1cc39bc683a60c5f2b155fd17a30351fdb4d497ef966675a88ad2",
+      "bytes": 1282249,
+      "mode": 436,
+      "filename": "delivery-phases.json"
+    },
+    "current_correction_formatter_scope": {
+      "affected_Rust_paths": [
+        "crates/gz-sim-server/tests/private/joint_state.rs"
+      ],
+      "unchanged_foundation_reused_Rust_paths": [
+        "crates/gz-sim-scene/src/lib.rs",
+        "crates/gz-sim-scene/src/lidar.rs",
+        "crates/gz-sim-scene/tests/private/lidar_rates.rs",
+        "crates/gz-sim-scene/tests/runtime_lidar_rate.rs",
+        "crates/gz-sim-server/src/lib.rs",
+        "crates/gz-sim-server/src/rates.rs",
+        "crates/gz-sim-server/tests/lidar_rates.rs",
+        "crates/gz-sim-server/tests/private/lidar_rates.rs",
+        "crates/gz-sim-server/tests/private/rates.rs",
+        "crates/gz-sim-server/tests/private/world_io.rs"
+      ],
+      "prior_formatter_actual": {
+        "sha256": "b3de010349851f41e0b5c61d112b6275bacbf95e32b53e8b8ab488017390f91a",
+        "bytes": 5424,
+        "mode": 436,
+        "filename": "m115-final-formatter-actual.json"
+      },
+      "all_ten_reused_files_byte_mode_exact": true,
+      "current_affected_formatter_actual": {
+        "sha256": "43b2a8bb99953784d4d513216ec5650f6803101a7fde7b9826a239a87a80259e",
+        "bytes": 2293,
+        "mode": 436,
+        "filename": "m115-family-match-final-formatter-actual.json"
+      },
+      "current_affected_formatter_runs": 1
+    },
+    "current_correction_formatter_Root_tool": "5f6ae9",
+    "current_correction_formatter_Root_exit_code": 0,
+    "current_correction_formatter_child_exit_code": 0,
+    "current_correction_formatter_byte_neutral": true,
+    "formatted_Source": {
+      "sha256": "60d9d8013d05d046f03d5d62af58fc344d837da9c45338a885da056bed84ea1a",
+      "bytes": 555843,
+      "mode": 436,
+      "filename": "m115-family-match-corrected-source-completion.json"
+    },
+    "active_normal": {
+      "Root_session": 2341,
+      "launch_tool": "148eef",
+      "release_at": "2026-11-24T15:00:25.550433+00:00",
+      "Root_release": {
+        "sha256": "e88e5797e4a2a8e0d15f178ec3ca3e346fbfc1c3e85d76aa464a6ac7f0af6229",
+        "bytes": 1668,
+        "mode": 436,
+        "filename": "m115-family-match-normal-root-release.json"
+      },
+      "released_Source": {
+        "sha256": "8767b69eb1b905f94081549964e8f3b62d93418409113581ae92f372b1da8880",
+        "bytes": 15926,
+        "mode": 436,
+        "filename": "run-m115-lidar-rate-family-match-final-checks-root-released.py"
+      },
+      "held_Source": {
+        "sha256": "afb378cff86c005277df8b0ed90a4b192d8cfa9afaefee40aeb4ec2ad616551e",
+        "bytes": 15927,
+        "mode": 436,
+        "filename": "run-m115-lidar-rate-family-match-final-checks-held.py"
+      },
+      "Source_seal": {
+        "sha256": "60d9d8013d05d046f03d5d62af58fc344d837da9c45338a885da056bed84ea1a",
+        "bytes": 555843,
+        "mode": 436,
+        "filename": "m115-family-match-corrected-source-completion.json"
+      },
+      "actual_result": null,
+      "scope": "One full required local retry is active. No terminal result, new test pass total or commit is claimed. The parent hosted outcome is unknown; its observer retired after an API quota error."
+    },
+    "prior_initial_preformat_Source_census": {
+      "sha256": "5be6bd8478fef4ab9f5e0f0e35eb434c2b7149dfd54a4c739838d8fb64f065f0",
+      "bytes": 554367,
+      "mode": 436,
+      "filename": "m115-complete-source-physical-census.json"
+    },
+    "parent_hosted_observation": {
+      "run_id": 45412754337,
+      "attempt": 1,
+      "last_observed_state": "in_progress",
+      "actual_terminal_conclusion": null,
+      "observer_active": false,
+      "observer_failure": {
+        "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
+        "bytes": 1816,
+        "mode": 436,
+        "filename": "hosted-watch-attempt1-quota-observer-failure.json"
+      },
+      "scope": "Observer exit1 is an API quota failure, not a CI result or retry."
+    }
+  },
+  "current_M114_parent_qualification": {
+    "state": "NORMAL_AND_INDEPENDENT_LOCAL_DATA_PASSED_HOSTED_OUTCOME_UNKNOWN_OFFICIAL_PENDING",
+    "commit": "2419c92342dcd6f869c9832ba1d691b50a51a020",
+    "tree": "c08baf47e466479d9eb359180280b809841d3490",
+    "normal_actual": {
+      "filename": "m114-cpp-sequence-loop-normal-actual.json",
+      "sha256": "ac16a457e5746986d760ecee65121a1360d29f1a08348abf33e9feb01908abce",
+      "bytes": 1607,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "filename": "m114-retained-audit-actual.json",
+      "sha256": "5f3933cdc94b6703702047f613a60e3cb2535788408197975d094335ea00b39b",
+      "bytes": 2746,
+      "mode": 436
+    },
+    "review_publication": {
+      "filename": "review-publication.json",
+      "sha256": "210fff6e8a15f2d34e4a6581e813146c4267f7af3f17ce47160ba65734ee2103",
+      "bytes": 1886,
+      "mode": 436
+    },
+    "review_branch": "review/m114-organized-lidar-point-clouds",
+    "review_published": true,
+    "hosted_run": 45412754337,
+    "hosted_attempt": 1,
+    "hosted_state": "unknown",
+    "hosted_actual": null,
+    "official_actual": null,
+    "fully_qualified": false,
+    "accepted": false,
+    "Main_promoted": false,
+    "scope": "The parent owns these normal/local proofs. Its last hosted observation was in progress; terminal outcome is unknown after the observer hit an API quota. M115 inherits no qualification.",
+    "last_hosted_observed_state": "in_progress",
+    "hosted_observer_active": false,
+    "hosted_observer_failure": {
+      "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
+      "bytes": 1816,
+      "mode": 436,
+      "filename": "hosted-watch-attempt1-quota-observer-failure.json"
+    }
+  },
+  "tracker_publication_current": {
+    "state": "HELD_API_QUOTA_UNTIL_RESET",
+    "core_remaining": 0,
+    "reset_epoch": 1795533646,
+    "reset_UTC": "2026-11-24T15:20:46Z",
+    "actual_quota": {
+      "sha256": "d23ef7d99a3c1d5c631f7f8277efdbd89c8e18cc7edc5f9b7d1de75df70ba734",
+      "bytes": 1232,
+      "mode": 436,
+      "filename": "tracker-prepublication-rate.stdout"
+    },
+    "cause": "UNKNOWN",
+    "owner_action_required": false,
+    "scope": "No repeated API calls before reset. Source review may finish; publication and exact readback wait for renewed API availability."
   }
 }
