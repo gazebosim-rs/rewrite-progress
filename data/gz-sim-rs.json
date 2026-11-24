@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-24T04:03:59.942161+00:00",
+  "updated_at": "2026-11-24T05:07:55.390068+00:00",
   "state": "active",
-  "summary": "Organized lidar point-cloud implementation, regressions and documentation are reviewed and formatted. Full verification awaits disk headroom.",
+  "summary": "The native-peer dispatcher correction is reviewed, and full verification is running again. The earlier failure is preserved; retry results are pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M114",
       "title": "Organized CPU-lidar point clouds",
-      "detail": "Default-off organized point-cloud output, regression cases and documentation are complete, independently reviewed and formatted. All 16 new cases are written; they have not run. Full verification is waiting on disk headroom."
+      "detail": "Organized lidar point-cloud implementation, regression cases and documentation are reviewed and formatted. The native-peer dispatcher registration was corrected and independently reviewed after the earlier Python failure. The full retry is running; no result or qualification is claimed."
     },
     {
       "id": "M102-M113",
@@ -1035,12 +1035,11 @@
     }
   ],
   "remaining": [
-    "Restore disk headroom, then run the reviewed full verification cycle.",
+    "Finish the running full verification retry.",
     "Independently audit its results, then qualify the same review commit through hosted checks and original-artifact audits.",
     "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
   ],
   "blockers": [
-    "Disk headroom for the future full verification cycle is pending. Source review and formatting are complete; no new cleanup or full check has been released.",
     "Release acceptance awaits formal browser and owner-confirmed shutdown evidence. The recorded browser permission denial remains unresolved."
   ],
   "plan_status": {
@@ -1092,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted metrics still describe M76. The published parent passed full local checks, exact hosted CI and both independent evidence audits. M114 implementation, regression cases and documentation are reviewed and formatted; tests and full verification await disk headroom. Formal browser and owner-confirmed shutdown proof still gate acceptance.",
+    "note": "Accepted metrics still describe M76. The parent retains its own four qualification passes. M114\u2019s first run failed one Python dispatcher case; that registration correction is now reviewed and the full retry is running. No new result or qualification is claimed. Formal browser and owner-confirmed shutdown proof still gate acceptance.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -12998,9 +12997,9 @@
       },
       "Main_promoted": false
     },
-    "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 evidence. current_M114_Source describes reviewed, formatted Source with no runtime or CI results. current_M104_M113_Source records the parent review commit\u2019s own qualification, without phase acceptance.",
+    "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 evidence. current_M114_Source records the corrected full verification retry and its historical first failure. current_M104_M113_Source records the parent\u2019s own qualification, without phase acceptance.",
     "current_M114_Source": {
-      "state": "SOURCE_COMPLETE_FORMATTED_FULL_VERIFICATION_CAPACITY_HELD",
+      "state": "FULL_NORMAL_RETRY_RUNNING_AFTER_REVIEWED_DISPATCH_CORRECTION",
       "phase": "M114",
       "phase_contract": "phases[M114]",
       "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
@@ -13017,8 +13016,8 @@
       "new_Rust_test_declarations": 16,
       "new_Python_test_declarations": 0,
       "formatter_run": true,
-      "checks_run": false,
-      "normal_running": false,
+      "checks_run": true,
+      "normal_running": true,
       "normal_actual": null,
       "local_DATA_actual": null,
       "hosted_actual": null,
@@ -13033,25 +13032,34 @@
       "guide_URL": null,
       "Source_publication_available": false,
       "verification_capacity": {
-        "state": "FINAL_CHECK_CAPACITY_PENDING_SOURCE_COMPLETE",
-        "Root_observed_SSD_free_bytes": 33379360768,
+        "state": "CAPACITY_RESTORED_CURRENT_RETRY_RUNNING",
+        "Root_observed_SSD_free_bytes": 41304076288,
         "comparison_prior_initial_reserve_bytes": 35433480192,
         "owner_requested_target_bytes": 37580963840,
-        "owner_request": "Free or add about four GiB, or choose an exact reviewed cleanup proposal.",
-        "owner_reply_received": false,
-        "new_cleanup_or_eviction_authorized": false,
-        "new_verification_started": false,
+        "owner_request": "Owner-authorized exact Rust metadata cache cleanup restored disk headroom.",
+        "owner_reply_received": true,
+        "new_cleanup_or_eviction_authorized": true,
+        "new_verification_started": true,
         "resource_admission_inherited": false,
-        "scope": "Reviewed and formatted Source is ready. The latest Root observation is below the unchanged 33 GiB initial reserve; the owner capacity question is pending. Fresh future admission and fit are not presumed.",
+        "scope": "Exact authorized cache cleanup restored headroom. Fresh Root resources cleared the unchanged initial reserve for the corrected retry; early stops and floors remain. The earlier failure had no capacity fault. No further cleanup or future fit is implied.",
         "capacity_actual": {
-          "sha256": "3326f83e56d1d5f40a7f873686f08eb6691b5e3596fde947f6475cf48ac08afe",
-          "bytes": 420,
+          "sha256": "bc96f8cc01146995c3e0e7dc570019c7ff77a0ba4e7ef0f250e572160045ca04",
+          "bytes": 801,
           "mode": 436,
-          "filename": "m114-current-capacity.json"
+          "filename": "m114-dispatch-correction-root-release.json"
         },
-        "resource_admitted": false
+        "resource_admitted": true,
+        "cleanup_actual": {
+          "sha256": "c7a6912c8b7fcf6f30a16a7dfec153e964cdaaa090479ae495e72072cc1fd9c3",
+          "bytes": 836206,
+          "mode": 436,
+          "filename": "m114-old-rust-metadata-cleanup-attempt2-result.json"
+        },
+        "cleanup_removed_files": 6344,
+        "cleanup_actual_net_freed_bytes": 8020107264,
+        "cleanup_unselected_fingerprints_unchanged": 53672
       },
-      "changed_Source_paths": 21,
+      "changed_Source_paths": 23,
       "new_Source_paths": 6,
       "affected_Rust_paths": 11,
       "Source_controls": {
@@ -13063,12 +13071,12 @@
         "private": 13,
         "new_Python_methods": 0
       },
-      "staged_Source_tree": "367a2c3423a4d9f2ea9891760d85e4a0a9350e99",
+      "staged_Source_tree": "471e7448c093617f2c7616551de13669525ac35c",
       "final_Source": {
-        "sha256": "50d70bd2a5b935f7c0304ab67dbbd794adfc4526515827ffbb78c7d445b49e2b",
-        "bytes": 10176,
+        "sha256": "8f4a462e79965ddf92b63369b54d94ca4f4450571fc77cc6ad9b337de31fc648",
+        "bytes": 2946,
         "mode": 436,
-        "filename": "m114-final-source.json"
+        "filename": "m114-dispatch-correction-source-completion.json"
       },
       "formatter_actual": {
         "sha256": "23348f263a158d66b1814e5ada78836649dce2ecae69813e0d9e8ceb43c0cb20",
@@ -13079,13 +13087,72 @@
       "formatter_actual_Root_exit_code": 0,
       "formatter_actual_child_exit_code": 0,
       "normal_procedure": {
-        "sha256": "b8d697e302ae2386c6a79fd4fe44894a42fd163ccad4b750256d9a06e4f3ca33",
-        "bytes": 15765,
+        "sha256": "b72a97db2d542be37445f9fdf84e8c82e435561dac6313cce26c7ae9b944dffc",
+        "bytes": 15831,
         "mode": 436,
-        "filename": "run-m114-final-checks-held.py"
+        "filename": "run-m114-dispatch-correction-final-checks-held.py"
       },
       "normal_procedure_Source_review_complete": true,
-      "normal_execution_released": false
+      "normal_execution_released": true,
+      "formatted_foundation_Source": {
+        "sha256": "50d70bd2a5b935f7c0304ab67dbbd794adfc4526515827ffbb78c7d445b49e2b",
+        "bytes": 10176,
+        "mode": 436,
+        "filename": "m114-final-source.json"
+      },
+      "prior_normal_failures": [
+        {
+          "classification": "TEST_HARNESS_DISPATCH_REGISTRATION_FAILURE",
+          "Root_session": 95707,
+          "launch_tool": "5b4312",
+          "terminal_tool": "e7a1b3",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 121.85115149995545,
+          "result": {
+            "sha256": "9292ae54e6aa75e84817970e07172bb9f4266f57199f5aaa06f0ef9ef6412bc6",
+            "bytes": 2464,
+            "mode": 436,
+            "filename": "result.json"
+          },
+          "hook_stderr": {
+            "sha256": "c218d48712a88381b6ebba52facd518cf660fbd17db1c82e450169ae0a2b4040",
+            "bytes": 39707,
+            "mode": 436,
+            "filename": "hook.stderr"
+          },
+          "Python_tests": 498,
+          "Python_elapsed_seconds": 71.094,
+          "Python_failures": 1,
+          "diagnostic": "scripts/native-peer.py --client rejects registered lidar_points as an invalid choice",
+          "capacity_faults": [],
+          "correction_state": "corrected_and_independently_reviewed",
+          "Rust_runtime_or_coverage_result": null,
+          "failed_tree": "367a2c3423a4d9f2ea9891760d85e4a0a9350e99"
+        }
+      ],
+      "dispatcher_correction_complete": true,
+      "dispatcher_correction_independent_Source_review_complete": true,
+      "formatter_repeated_for_dispatch_correction": false,
+      "active_normal": {
+        "Root_session": 30729,
+        "launch_tool": "e34ba5",
+        "release_at": "2026-11-24T05:05:44.980723+00:00",
+        "released_Source": {
+          "sha256": "399c299a9ee898b10537062434c1e649bbf0bb2986d6ade2a496d3f9ea6a3872",
+          "bytes": 15830,
+          "mode": 436,
+          "filename": "run-m114-dispatch-correction-final-checks-root-released.py"
+        },
+        "Root_release": {
+          "sha256": "bc96f8cc01146995c3e0e7dc570019c7ff77a0ba4e7ef0f250e572160045ca04",
+          "bytes": 801,
+          "mode": 436,
+          "filename": "m114-dispatch-correction-root-release.json"
+        },
+        "actual_result": null,
+        "scope": "The corrected full verification retry is active; no terminal result, successful test total or commit is asserted."
+      }
     }
   },
   "phase_status": {
