@@ -20440,7 +20440,7 @@
       "parent_tree": "c08baf47e466479d9eb359180280b809841d3490",
       "parent_normal_passed": true,
       "parent_local_DATA_passed": true,
-      "parent_hosted_passed": false,
+      "parent_hosted_passed": true,
       "parent_official_passed": false,
       "parent_fully_qualified": false,
       "parent_accepted": false,
@@ -20460,7 +20460,7 @@
         "private": 12,
         "new_Python_methods": 0,
         "expected_Python_methods": 498,
-        "scope": "The unchanged 22 Source obligations have no runtime result; the failed local run stopped at compilation."
+        "scope": "The unchanged 22 Source control declarations remain obligations. Both complete Rust test profiles ran without failed tests; exact per-control independent audit is pending and full qualification failed coverage."
       },
       "strict_base_count": 20,
       "Source_count": 1874,
@@ -20478,7 +20478,7 @@
       "Main_promoted": false,
       "qualification_inherited": false,
       "delivery_guide_url": null,
-      "checkpoint_scope": "The failed pre-correction attempt is historical. Current correction metadata binds the actual byte-neutral affected formatter and active full local retry; no terminal result or qualification is claimed.",
+      "checkpoint_scope": "The second full local normal failed strict changed-line coverage after both Rust profiles ran without test failures. The frozen candidate and both failure records are preserved; bounded coverage regression Source and independent review precede any next full retry.",
       "new_Source_paths": 6,
       "affected_Rust_paths": 11,
       "changed_production_paths": 4,
@@ -20493,7 +20493,7 @@
         "filename": "m115-formatted-source-completion.json"
       },
       "previous_formatter_passed": true,
-      "normal_running": true,
+      "normal_running": false,
       "prior_checks_run": true,
       "prior_normal_failures": [
         {
@@ -20555,6 +20555,68 @@
           "capacity_faults": [],
           "commit_created": false,
           "frozen_failed_Source_unchanged": true
+        },
+        {
+          "classification": "MANDATORY_CHANGED_LINE_COVERAGE_FAILURE",
+          "actual": {
+            "sha256": "a505371d2ae341e8411d86fc58a62d496767b5cbca1d4630ab8684d565153816",
+            "bytes": 4406,
+            "mode": 436,
+            "filename": "m115-local-normal-attempt2-coverage-failure.json"
+          },
+          "Root_session": 2341,
+          "launch_tool": "148eef",
+          "terminal_tool": "bf9dc0",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 4478.606205538032,
+          "failed_tree": "b52683da00458ed3071670f938b683c1077aeb82",
+          "result": {
+            "filename": "result.json",
+            "sha256": "39df68c0df7e6c7b74264110fc2a47c81b0a7961616f9aace3868e19393deba1",
+            "bytes": 2476,
+            "mode": 436
+          },
+          "tests": {
+            "headless": {
+              "passed": 2195,
+              "failed": 0,
+              "ignored": 2,
+              "harness_summary_count": 213
+            },
+            "renderer": {
+              "passed": 1694,
+              "failed": 0,
+              "ignored": 2,
+              "harness_summary_count": 195
+            }
+          },
+          "Python_aggregate": {
+            "passed": 498,
+            "elapsed_seconds": 72.899,
+            "individually_new_Python_passes_claimed": false
+          },
+          "first_reported_coverage_failure": {
+            "profile": "headless",
+            "crate": "gz-sim-server",
+            "changed_executable_lines": [
+              195,
+              208
+            ],
+            "required": "strictly greater than95percent"
+          },
+          "stage_checks_state": "checks_failed",
+          "stage_evidence_state": "partial",
+          "missing_artifacts": [
+            "test-output.log",
+            "evidence.json",
+            "summary.json",
+            "profiles-i34hhjd9/headless/summary.json",
+            "profiles-i34hhjd9/headless/evidence.json"
+          ],
+          "capacity_faults": [],
+          "commit_created": false,
+          "frozen_failed_Source_unchanged": true
         }
       ],
       "correction_Source_review_pending": false,
@@ -20567,7 +20629,7 @@
         "mode": 436,
         "filename": "m115-family-match-preformat-source-review.json"
       },
-      "normal_execution_released": true,
+      "normal_execution_released": false,
       "formatted_Source_tree": "b52683da00458ed3071670f938b683c1077aeb82",
       "formatted_Source": {
         "sha256": "60d9d8013d05d046f03d5d62af58fc344d837da9c45338a885da056bed84ea1a",
@@ -20580,7 +20642,8 @@
         "bytes": 2293,
         "mode": 436,
         "filename": "m115-family-match-final-formatter-actual.json"
-      }
+      },
+      "next_retry_released": false
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -22210,7 +22273,7 @@
         "M115"
       ],
       "max_working_days": 5,
-      "integration": "The original compilation failure is preserved. Its reviewed helper correction passed the affected formatter without byte changes, and one full local retry is running. Parent hosted outcome is unknown after an API quota error; publication gates remain.",
+      "integration": "Both mandatory Rust profiles ran without test failures, but the full local normal failed strict Server changed-line coverage. The bounded regression Source is in progress; no retry is released. Parent hosted CI passed and official evidence remains pending.",
       "implementation_complete": true,
       "independent_whole_Source_review_complete": true,
       "formatter_run": true,
@@ -22220,7 +22283,7 @@
       "parent_qualification_required_before_review_publication": true,
       "previous_formatter_passed": true,
       "prior_checks_run": true,
-      "normal_running": true,
+      "normal_running": false,
       "correction_Source_complete": true
     }
   ],
@@ -22230,22 +22293,22 @@
   ],
   "current_development_phase": "M115",
   "board": {
-    "updated_at": "2026-11-24T15:10:51.858215+00:00",
+    "updated_at": "2026-11-24T16:23:22.513727+00:00",
     "current": {
-      "title": "Runtime lidar-rate full verification retry",
+      "title": "Lidar-rate coverage regressions under review",
       "items": [
-        "The reviewed helper correction is formatted. Full local verification is running again; its result is pending.",
-        "M114 passed local checks and its independent audit. Hosted outcome is unknown after an API quota error; the official audit remains pending.",
+        "Both required Rust test profiles had no failures, but full local verification failed strict Server changed-line coverage. The bounded regression Source is in progress.",
+        "M114 passed normal, independent local audit and exact hosted checks. Original-artifact collection and its independent official audit remain pending.",
         "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
       ]
     },
     "done": [
-      "Reviewed and formatted the helper correction without changing source bytes or case identities; earlier failed evidence is preserved.",
-      "M114 passed its full verification cycle and independent local evidence audit; the review commit is published."
+      "Completed both mandatory Rust test profiles without failures; the full normal remains failed because coverage did not pass.",
+      "M114 passed exact hosted CI after its successful local verification and independent audit."
     ],
     "next": [
-      "Finish the running full local verification retry, then independently audit its recorded results.",
-      "Complete parent hosted and official qualification and the independent M115 local audit before review publication.",
+      "Complete the missing coverage regressions and independent Source review, then run one consolidated full verification cycle.",
+      "Complete parent original-artifact qualification and independent M115 local audit before review publication.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
@@ -36155,7 +36218,7 @@
     "prior_OOM_cause": "UNKNOWN"
   },
   "current_M114_Source": {
-    "state": "NORMAL_AND_INDEPENDENT_LOCAL_DATA_CLEAR_HOSTED_OUTCOME_UNKNOWN_OBSERVER_RETIRED",
+    "state": "NORMAL_LOCAL_DATA_AND_EXACT_HOSTED_PASSED_OFFICIAL_PENDING",
     "phase": "M114",
     "phase_contract": "phases[M114]",
     "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
@@ -36186,7 +36249,12 @@
       "mode": 436,
       "filename": "m114-retained-audit-actual.json"
     },
-    "hosted_actual": null,
+    "hosted_actual": {
+      "sha256": "13f456a73fa28d9786872f30e9c2d2770c35794540c70848ed8cf0f2db7eb6a0",
+      "bytes": 4871,
+      "mode": 436,
+      "filename": "m114-hosted-terminal-metadata-actual.json"
+    },
     "official_actual": null,
     "future_tree": null,
     "future_commit": null,
@@ -36450,8 +36518,8 @@
     "hosted": {
       "run_id": 45412754337,
       "attempt": 1,
-      "state": "unknown",
-      "outcome": null,
+      "state": "completed",
+      "outcome": "success",
       "commit": "2419c92342dcd6f869c9832ba1d691b50a51a020",
       "branch": "review/m114-organized-lidar-point-clouds",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45412754337",
@@ -36462,19 +36530,38 @@
         "filename": "hosted-runs-after-quota-reset.stdout"
       },
       "Root_sole_observer_session": null,
-      "last_observed_state": "in_progress",
+      "last_observed_state": "completed",
       "observer_active": false,
-      "retired_observer_session": 70089,
-      "observer_failure": {
-        "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
-        "bytes": 1816,
+      "retired_observer_session": 91560,
+      "observer_actual_exit_code": 0,
+      "terminal_actual": {
+        "sha256": "13f456a73fa28d9786872f30e9c2d2770c35794540c70848ed8cf0f2db7eb6a0",
+        "bytes": 4871,
         "mode": 436,
-        "filename": "hosted-watch-attempt1-quota-observer-failure.json"
-      }
-    }
+        "filename": "m114-hosted-terminal-metadata-actual.json"
+      },
+      "prior_observer_failures": [
+        {
+          "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
+          "bytes": 1816,
+          "mode": 436,
+          "filename": "hosted-watch-attempt1-quota-observer-failure.json"
+        }
+      ],
+      "job_id": 138510679986,
+      "artifact": {
+        "id": 14940577080,
+        "name": "render-coverage-45412754337-1",
+        "advertised_bytes": 189505589,
+        "digest": "sha256:63bd0d7c4e2cc1beca9be69d840e68fe7092d183de8d7b68af58a390fe283286",
+        "collected": false
+      },
+      "scope": "Exact hosted run completed successfully with all thirteen steps; original ZIP collection and independent official audit remain pending."
+    },
+    "hosted_qualified": true
   },
   "current_M115_Source": {
-    "state": "CORRECTED_SOURCE_FORMATTED_FULL_LOCAL_NORMAL_RETRY_RUNNING",
+    "state": "LOCAL_NORMAL_COVERAGE_FAILED_ALL_AVAILABLE_BRANCH_FINDINGS_UNDER_REVIEW",
     "phase": "M115",
     "phase_contract": "phases[M115]",
     "source_parent": "2419c92342dcd6f869c9832ba1d691b50a51a020",
@@ -36482,7 +36569,7 @@
     "parent_evidence": "current_M114_parent_qualification",
     "parent_normal_passed": true,
     "parent_local_DATA_passed": true,
-    "parent_hosted_passed": false,
+    "parent_hosted_passed": true,
     "parent_official_passed": false,
     "parent_qualified": false,
     "parent_accepted": false,
@@ -36535,7 +36622,7 @@
       "private": 12,
       "new_Python_methods": 0,
       "expected_Python_methods": 498,
-      "scope": "The unchanged 22 Source obligations have no runtime result; the failed local run stopped at compilation."
+      "scope": "The unchanged 22 Source control declarations remain obligations. Both complete Rust test profiles ran without failed tests; exact per-control independent audit is pending and full qualification failed coverage."
     },
     "strict_base_count": 20,
     "strict_bases": [
@@ -36567,9 +36654,9 @@
     "future_commit": null,
     "formatter_run": true,
     "checks_run": true,
-    "verification_released": true,
-    "resource_admitted": true,
-    "resource_scope": "Root released the actual guarded local retry after fresh preflight; the runner independently resamples unchanged resources and custody. This is no future fit, cleanup or additional-job authorization.",
+    "verification_released": false,
+    "resource_admitted": false,
+    "resource_scope": "The completed failed run recorded no capacity faults. No next retry or inherited resource admission is released.",
     "normal_actual": null,
     "local_DATA_actual": null,
     "hosted_actual": null,
@@ -36581,7 +36668,7 @@
     "accepted": false,
     "Main_promoted": false,
     "qualification_inherited": false,
-    "scope": "The original compilation failure is preserved. Its reviewed helper correction is formatted and the full local retry is active. Parent hosted outcome is unknown after its observer hit the API quota. Review publication still requires parent hosted/official plus own normal/local DATA success.",
+    "scope": "The second full local run ended with no failed Rust tests but failed strict Server changed-line coverage. All available coverage holes are analytically reviewed and the bounded regression Source is in progress; no next retry is released. Parent exact hosted CI passed; independent official evidence remains pending.",
     "documentation_independent_Source_review_complete": true,
     "affected_Rust_paths": 11,
     "changed_production_paths": 4,
@@ -36591,7 +36678,7 @@
       "mode": 436,
       "filename": "m115-shared-docs-source-completion.json"
     },
-    "Source_review_scope": "Whole corrected code and metadata Source reviews are closed. The one affected formatter passed without changing bytes, with no repeat of the ten prior Rust formatters. The unchanged full required local retry is now running; no result is available.",
+    "Source_review_scope": "Existing implementation and helper correction Source reviews remain complete. The newly discovered coverage-regression batch is being implemented in an isolated candidate; it has no complete independent Source review or verification yet.",
     "formatted_Source_before_scheduling_amendment": {
       "sha256": "fea9b94dc9b87fdf99c319202f4db48850cbbe8a9e7188a05fc08159567545c2",
       "bytes": 555180,
@@ -36620,7 +36707,7 @@
         "own independent local DATA success"
       ],
       "parent_affecting_failure_scope": "Freeze descendant, batch all available affecting failures, independently review corrections before affected required rerun",
-      "verification_released": true,
+      "verification_released": false,
       "publication_released": false,
       "corrected_Source": {
         "filename": "m115-local-parallel-verification-admission-corrected.json",
@@ -36630,7 +36717,7 @@
       }
     },
     "local_normal_admission_pending": false,
-    "normal_running": true,
+    "normal_running": false,
     "prior_normal_failures": [
       {
         "classification": "RETAINED_TEST_HELPER_NONEXHAUSTIVE_FAMILY_MATCHES",
@@ -36691,6 +36778,68 @@
         "capacity_faults": [],
         "commit_created": false,
         "frozen_failed_Source_unchanged": true
+      },
+      {
+        "classification": "MANDATORY_CHANGED_LINE_COVERAGE_FAILURE",
+        "actual": {
+          "sha256": "a505371d2ae341e8411d86fc58a62d496767b5cbca1d4630ab8684d565153816",
+          "bytes": 4406,
+          "mode": 436,
+          "filename": "m115-local-normal-attempt2-coverage-failure.json"
+        },
+        "Root_session": 2341,
+        "launch_tool": "148eef",
+        "terminal_tool": "bf9dc0",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "elapsed_seconds": 4478.606205538032,
+        "failed_tree": "b52683da00458ed3071670f938b683c1077aeb82",
+        "result": {
+          "filename": "result.json",
+          "sha256": "39df68c0df7e6c7b74264110fc2a47c81b0a7961616f9aace3868e19393deba1",
+          "bytes": 2476,
+          "mode": 436
+        },
+        "tests": {
+          "headless": {
+            "passed": 2195,
+            "failed": 0,
+            "ignored": 2,
+            "harness_summary_count": 213
+          },
+          "renderer": {
+            "passed": 1694,
+            "failed": 0,
+            "ignored": 2,
+            "harness_summary_count": 195
+          }
+        },
+        "Python_aggregate": {
+          "passed": 498,
+          "elapsed_seconds": 72.899,
+          "individually_new_Python_passes_claimed": false
+        },
+        "first_reported_coverage_failure": {
+          "profile": "headless",
+          "crate": "gz-sim-server",
+          "changed_executable_lines": [
+            195,
+            208
+          ],
+          "required": "strictly greater than95percent"
+        },
+        "stage_checks_state": "checks_failed",
+        "stage_evidence_state": "partial",
+        "missing_artifacts": [
+          "test-output.log",
+          "evidence.json",
+          "summary.json",
+          "profiles-i34hhjd9/headless/summary.json",
+          "profiles-i34hhjd9/headless/evidence.json"
+        ],
+        "capacity_faults": [],
+        "commit_created": false,
+        "frozen_failed_Source_unchanged": true
       }
     ],
     "previous_reviewed_formatted_Source": {
@@ -36716,8 +36865,8 @@
       "filename": "m115-family-match-final-formatter-actual.json"
     },
     "prior_checks_run": true,
-    "local_normal_retry_release_pending": false,
-    "local_heavy_workload_active": true,
+    "local_normal_retry_release_pending": true,
+    "local_heavy_workload_active": false,
     "correction_Source_complete": true,
     "correction_independent_Source_review_complete": true,
     "correction_scope": {
@@ -36735,14 +36884,15 @@
       },
       "tree": "b52683da00458ed3071670f938b683c1077aeb82",
       "checks_retried": true,
-      "retry_released": true,
+      "retry_released": false,
       "documentation_completion": {
         "sha256": "ab828fde30b879bf05ee61a8b44ae38c0b082ac4e3e374e1858ccacf8d235b1a",
         "bytes": 2155,
         "mode": 436,
         "filename": "m115-family-match-correction-docs-source.json"
       },
-      "tree_scope": "The preformat and actual formatted trees are identical because the one affected formatter changed no bytes."
+      "tree_scope": "The preformat and actual formatted trees are identical because the one affected formatter changed no bytes.",
+      "retry_terminal": "failed mandatory changed-line coverage"
     },
     "preformat_tree": "b52683da00458ed3071670f938b683c1077aeb82",
     "preformat_Source_review": {
@@ -36798,7 +36948,29 @@
       "mode": 436,
       "filename": "m115-family-match-corrected-source-completion.json"
     },
-    "active_normal": {
+    "prior_initial_preformat_Source_census": {
+      "sha256": "5be6bd8478fef4ab9f5e0f0e35eb434c2b7149dfd54a4c739838d8fb64f065f0",
+      "bytes": 554367,
+      "mode": 436,
+      "filename": "m115-complete-source-physical-census.json"
+    },
+    "parent_hosted_observation": {
+      "run_id": 45412754337,
+      "attempt": 1,
+      "state": "completed",
+      "conclusion": "success",
+      "terminal_actual": {
+        "sha256": "13f456a73fa28d9786872f30e9c2d2770c35794540c70848ed8cf0f2db7eb6a0",
+        "bytes": 4871,
+        "mode": 436,
+        "filename": "m114-hosted-terminal-metadata-actual.json"
+      },
+      "observer_active": false,
+      "Root_observer_session": 91560,
+      "Root_observer_exit_code": 0,
+      "scope": "Genuine exact-commit hosted success; original collection and independent official audit have not run."
+    },
+    "completed_failed_normal": {
       "Root_session": 2341,
       "launch_tool": "148eef",
       "release_at": "2026-11-24T15:00:25.550433+00:00",
@@ -36826,32 +36998,60 @@
         "mode": 436,
         "filename": "m115-family-match-corrected-source-completion.json"
       },
-      "actual_result": null,
-      "scope": "One full required local retry is active. No terminal result, new test pass total or commit is claimed. The parent hosted outcome is unknown; its observer retired after an API quota error."
-    },
-    "prior_initial_preformat_Source_census": {
-      "sha256": "5be6bd8478fef4ab9f5e0f0e35eb434c2b7149dfd54a4c739838d8fb64f065f0",
-      "bytes": 554367,
-      "mode": 436,
-      "filename": "m115-complete-source-physical-census.json"
-    },
-    "parent_hosted_observation": {
-      "run_id": 45412754337,
-      "attempt": 1,
-      "last_observed_state": "in_progress",
-      "actual_terminal_conclusion": null,
-      "observer_active": false,
-      "observer_failure": {
-        "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
-        "bytes": 1816,
-        "mode": 436,
-        "filename": "hosted-watch-attempt1-quota-observer-failure.json"
+      "actual_result": {
+        "filename": "result.json",
+        "sha256": "39df68c0df7e6c7b74264110fc2a47c81b0a7961616f9aace3868e19393deba1",
+        "bytes": 2476,
+        "mode": 436
       },
-      "scope": "Observer exit1 is an API quota failure, not a CI result or retry."
+      "scope": "Full local verification ended at a strict changed-line coverage failure. Both mandatory Rust test profiles had no failed tests; this is not a qualified normal, independent audit or commit.",
+      "terminal_tool": "bf9dc0",
+      "actual_Root_exit_code": 1,
+      "actual_Git_exit_code": 1,
+      "elapsed_seconds": 4478.606205538032,
+      "failure_actual": {
+        "sha256": "a505371d2ae341e8411d86fc58a62d496767b5cbca1d4630ab8684d565153816",
+        "bytes": 4406,
+        "mode": 436,
+        "filename": "m115-local-normal-attempt2-coverage-failure.json"
+      }
+    },
+    "coverage_regression_batch": {
+      "state": "RETAINED_COVERAGE_ANALYSIS_COMPLETE_REGRESSION_SOURCE_IN_PROGRESS",
+      "coverage_actual": {
+        "sha256": "a505371d2ae341e8411d86fc58a62d496767b5cbca1d4630ab8684d565153816",
+        "bytes": 4406,
+        "mode": 436,
+        "filename": "m115-local-normal-attempt2-coverage-failure.json"
+      },
+      "first_reported_changed_lines": [
+        195,
+        208
+      ],
+      "crate": "gz-sim-server",
+      "profile": "headless",
+      "strict_requirement": "covered*100 > total*95",
+      "full_twenty_base_retained_coverage_review": "complete analytical projection; not executed requalification",
+      "analysis": {
+        "sha256": "daccfba481ca25ad18a3d42c1527b77c1c062e95e1060876046ba0169068b469",
+        "bytes": 62255,
+        "mode": 436,
+        "filename": "m115-attempt2-retained-coverage-analysis.json"
+      },
+      "ten_reachable_holes_regressions_agreed": true,
+      "three_unreachable_error_arms_retained": true,
+      "successor_selected": true,
+      "new_Source_edits": true,
+      "candidate_label": "gz-sim-m115-lidar-rate-boundary-coverage",
+      "candidate_Source_count": null,
+      "candidate_tree": null,
+      "independent_Source_review_complete": false,
+      "next_retry_released": false,
+      "scope": "Retained analysis found only the reported headless Server current-base gap. Ten reachable holes have agreed regressions; three unreachable error arms remain. Complete Source and independent review before one consolidated full required retry; no executed requalification is claimed."
     }
   },
   "current_M114_parent_qualification": {
-    "state": "NORMAL_AND_INDEPENDENT_LOCAL_DATA_PASSED_HOSTED_OUTCOME_UNKNOWN_OFFICIAL_PENDING",
+    "state": "NORMAL_LOCAL_DATA_AND_HOSTED_PASSED_OFFICIAL_PENDING",
     "commit": "2419c92342dcd6f869c9832ba1d691b50a51a020",
     "tree": "c08baf47e466479d9eb359180280b809841d3490",
     "normal_actual": {
@@ -36876,16 +37076,22 @@
     "review_published": true,
     "hosted_run": 45412754337,
     "hosted_attempt": 1,
-    "hosted_state": "unknown",
-    "hosted_actual": null,
+    "hosted_state": "completed",
+    "hosted_actual": {
+      "sha256": "13f456a73fa28d9786872f30e9c2d2770c35794540c70848ed8cf0f2db7eb6a0",
+      "bytes": 4871,
+      "mode": 436,
+      "filename": "m114-hosted-terminal-metadata-actual.json"
+    },
     "official_actual": null,
     "fully_qualified": false,
     "accepted": false,
     "Main_promoted": false,
-    "scope": "The parent owns these normal/local proofs. Its last hosted observation was in progress; terminal outcome is unknown after the observer hit an API quota. M115 inherits no qualification.",
-    "last_hosted_observed_state": "in_progress",
+    "scope": "The parent owns genuine normal, independent local DATA and exact hosted success. Official original evidence remains unaudited, so full parent qualification and acceptance remain false. M115 inherits no result.",
+    "last_hosted_observed_state": "completed",
     "hosted_observer_active": false,
-    "hosted_observer_failure": {
+    "hosted_conclusion": "success",
+    "historical_hosted_observer_failure": {
       "sha256": "1be0de6146dbb5ed239a00f0c480b14c495458d100857d8d9b69dbeb4320d779",
       "bytes": 1816,
       "mode": 436,
@@ -36893,18 +37099,8 @@
     }
   },
   "tracker_publication_current": {
-    "state": "HELD_API_QUOTA_UNTIL_RESET",
-    "core_remaining": 0,
-    "reset_epoch": 1795533646,
-    "reset_UTC": "2026-11-24T15:20:46Z",
-    "actual_quota": {
-      "sha256": "d23ef7d99a3c1d5c631f7f8277efdbd89c8e18cc7edc5f9b7d1de75df70ba734",
-      "bytes": 1232,
-      "mode": 436,
-      "filename": "tracker-prepublication-rate.stdout"
-    },
-    "cause": "UNKNOWN",
-    "owner_action_required": false,
-    "scope": "No repeated API calls before reset. Source review may finish; publication and exact readback wait for renewed API availability."
+    "state": "SOURCE_UPDATE_NOT_PUBLISHED",
+    "no_more_API_quota_hold_claimed": true,
+    "scope": "This checkpoint requires independent Source review and one bounded board check/publication cycle. No API operation was invoked to prepare it."
   }
 }
