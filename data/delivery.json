@@ -3,7 +3,7 @@
   "decision": "D30",
   "as_of": "2026-11-24",
   "execution_state": "active",
-  "current_phase": "M104",
+  "current_phase": "M114",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -20390,6 +20390,37 @@
       "accepted": false,
       "Main_promoted": false,
       "Rust_formatter_passed": true
+    },
+    {
+      "id": "M114",
+      "title": "Organized CPU-lidar point clouds",
+      "max_working_days": 5,
+      "depends_on": [
+        "M54",
+        "M108"
+      ],
+      "scope": "Explicit default-off PointCloudPacked output from the same acquired sample as existing LaserScan: native five-field 18-byte organized sensor-frame layout, at most 128 rays and eight owners. Separate cloud counters preserve existing scan sequences. Use the existing publication IO owner and canonical transport schema.",
+      "acceptance": "Independent analytic coordinates, native layout and wire decoding; default, scan-only, cloud-only and dual demand; one acquisition/noise draw; bounded finite narrowing, misses, clipping, sequence and timestamps; all-owner endpoint/preflight/queue atomicity, pause/reset/removal/retirement and absence. Complete implementation/regressions/docs and independent review before one full staged hook, strict coverage, exact hosted CI and independent local/official audits. Accepted predecessor and formal browser/shutdown gates remain.",
+      "excluded": "Depth-camera clouds, new rays/noise or reflectance models, new protocol/session/runtime frameworks, native sensor Source-to-binary parity claims, and DART/MuJoCo.",
+      "delivery_guide": "docs/M114_DELIVERY.md",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "regression_Source_complete": false,
+      "independent_whole_Source_review_complete": false,
+      "checks_run": false,
+      "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
+      "parent_accepted": false,
+      "actual_new_test_passes": null,
+      "future_tree": null,
+      "future_commit": null,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "accepted": false,
+      "Main_promoted": false,
+      "parent_qualified": true,
+      "delivery_guide_url": null
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -20506,10 +20537,11 @@
     "M110": "in_progress",
     "M111": "in_progress",
     "M112": "in_progress",
-    "M113": "in_progress"
+    "M113": "in_progress",
+    "M114": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
-  "phase_started_at": "2026-11-22T21:54:13.267063+00:00",
+  "phase_started_at": null,
   "active_phases": [
     "M77",
     "M78",
@@ -20547,7 +20579,8 @@
     "M110",
     "M111",
     "M112",
-    "M113"
+    "M113",
+    "M114"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -21998,58 +22031,51 @@
         "bytes": 61941,
         "mode": 436
       }
+    },
+    {
+      "phases": [
+        "M114"
+      ],
+      "max_working_days": 5,
+      "integration": "Isolated implementation over fully qualified, unaccepted parent 02592f7a. Source work continues while final-check disk headroom is arranged. Root owns shared integration; no result or acceptance is inherited.",
+      "implementation_started": true,
+      "implementation_complete": false,
+      "checks_run": false,
+      "accepted": false
     }
   ],
-  "acceptance_boundary": "Full verification, independent retained audit and exact hosted checks passed. All three original ZIPs are retained unchanged; inventory, exact log/resource binding and independent official audit remain pending. No phase acceptance or Main promotion is inferred; formal browser and shutdown proof remain required.",
+  "acceptance_boundary": "The combined M102\u2013M113 review commit passed full local checks, independent local and original-artifact audits, and exact hosted CI. No phase acceptance or Main promotion follows. M114 must earn its own evidence; formal browser and owner-confirmed shutdown proof remain required.",
   "current_delivery_group": [
-    "M104",
-    "M105",
-    "M106",
-    "M107",
-    "M108",
-    "M109",
-    "M110",
-    "M111",
-    "M112",
-    "M113"
+    "M114"
   ],
-  "current_development_phase": "M104",
+  "current_development_phase": "M114",
   "board": {
-    "updated_at": "2026-11-24T02:29:05.160780+00:00",
+    "updated_at": "2026-11-24T03:17:11.051628+00:00",
     "current": {
-      "title": "Hosted originals retained; official audit next",
+      "title": "Organized lidar point clouds in development",
       "items": [
-        "Full verification, independent retained audit and the exact hosted checks passed on the same published review commit.",
-        "The original source, job logs and hosted artifact ZIPs were collected once and retained unchanged. Inventory and independent official audit are next.",
+        "Organized lidar point-cloud publication is being implemented. Source work continues while disk headroom is arranged for final checks.",
+        "The combined physics, control, lidar and camera delivery passed local verification, hosted checks and both independent evidence audits.",
         "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
       ]
     },
     "done": [
-      "Passed both Rust profiles, both coverage gates, all 498 Python tests and the native and RGB qualifiers.",
-      "Confirmed all thirteen hosted steps passed and retained all three original ZIPs without extraction or recompression."
+      "Qualified the combined review commit through full local checks, exact hosted CI and independent local and original-artifact audits.",
+      "Retained every original hosted ZIP and verified all four RAW groups byte for byte without replaying product tests."
     ],
     "next": [
-      "Inventory the retained originals and bind the exact verification log and resource plan.",
-      "Independently audit the exact hosted evidence before qualification or acceptance.",
+      "Complete the organized point-cloud implementation, regression cases, documentation and independent review.",
+      "Restore disk headroom, then run full verification and qualify the same review commit through hosted checks and independent evidence audits.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
-      "text": "Release acceptance awaits independent original-artifact audit, plus formal browser and owner-confirmed shutdown evidence. The browser permission denial remains unresolved.",
+      "text": "Release acceptance awaits formal browser and owner-confirmed shutdown evidence. The recorded browser permission denial remains unresolved.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M104",
-    "M105",
-    "M106",
-    "M107",
-    "M108",
-    "M109",
-    "M110",
-    "M111",
-    "M112",
-    "M113"
+    "M114"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -22198,7 +22224,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Inventory and independently audit the unchanged originals from the successful exact hosted run.",
+  "current_development_task": "Implement organized PointCloudPacked publication from the existing CPU-lidar sample while preserving LaserScan behavior.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -24901,7 +24927,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "Actual selected and dispatched M102/M103 implementation; this is not a verification start or result.",
+  "phase_started_at_scope": "M114 implementation is active; this report does not assert an exact dispatch time.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -26775,7 +26801,7 @@
       }
     }
   },
-  "phase_catalog_checkpoint_scope": "All published contract strings and the first 101 phase objects/58 groups retain exact timed observations. Current M100/M101 qualification is complete but unaccepted. New M102/M103 entries record formatted Source only and capacity-held product verification.",
+  "phase_catalog_checkpoint_scope": "The first 113 phase objects and 60 groups retain their published observations. M114 adds one selected five-day contract. Qualification and formal acceptance remain separate; 76 accepted phases and 202 slices are unchanged.",
   "current_M86_M87_Source": {
     "state": "M86_M87_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
@@ -35473,7 +35499,7 @@
   },
   "current_M104_M113_Source": {
     "scope": "Combined M102\u2013M113 physics, robot-control, spatial-lidar and rendering delivery.",
-    "state": "EXACT_HOSTED_SUCCESS_ORIGINALS_COLLECTED_INVENTORY_AND_OFFICIAL_AUDIT_PENDING",
+    "state": "ALL_OWN_QUALIFICATION_PASSED_ACCEPTANCE_HELD",
     "qualified_Git_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
     "staged_source_tree": "4a0e9343a5e3dba4d7e32c9ef6e56feb7cab3536",
     "source_counts": {
@@ -35576,6 +35602,37 @@
         "actual_requests": 29,
         "all_started_reaped_actual0": true,
         "elapsed_seconds": 50.142129234969616
+      },
+      "official_audit": {
+        "actual_exit_code": 0,
+        "elapsed_seconds": 31.31058257096447,
+        "read_bytes": 6999199886,
+        "all_commands_actual0": true,
+        "command_count": 61,
+        "four_RAW_groups_byte_exact_once_LAST": [
+          {
+            "group": "headless",
+            "raw_count": 468,
+            "byte_exact": true
+          },
+          {
+            "group": "renderer",
+            "raw_count": 792,
+            "byte_exact": true
+          },
+          {
+            "group": "rapier-runtime",
+            "raw_count": 57,
+            "byte_exact": true
+          },
+          {
+            "group": "rgb-camera",
+            "raw_count": 168,
+            "byte_exact": true
+          }
+        ],
+        "post_RAW_full_custody": true,
+        "product_tests_replayed": false
       }
     },
     "prior_headless_coverage_failure": {
@@ -35594,7 +35651,7 @@
       ],
       "renderer_runtime_reached": false
     },
-    "corrections": "The same published review commit passed full verification, independent retained audit and exact hosted checks. Its three original ZIPs were collected once and retained unchanged in RAM and durable storage. Inventory, exact log/resource binding and independent official audit are next; prior method and observer failures remain separate.",
+    "corrections": "The same published review commit passed full local verification, the independent retained audit, exact hosted CI and the independent original-artifact audit. Earlier failures remain preserved. Formal browser and owner-confirmed shutdown proof still gate acceptance.",
     "strict_bases": 18,
     "local_DATA_actual": {
       "filename": "renderer-correction-retained-audit-actual.json",
@@ -35608,17 +35665,32 @@
       "bytes": 4974,
       "mode": 436
     },
-    "official_actual": null,
+    "official_actual": {
+      "filename": "renderer-correction-official-actual.json",
+      "sha256": "0547f9299acd5709c1cd04e1f984ce7ed72b974e5049a6866f95c0da0ebaff0c",
+      "bytes": 2280,
+      "mode": 436
+    },
     "final_commit": "02592f7aaf21d616bd6299aa87123455834794e7",
     "accepted": false,
     "qualification_inherited": false,
     "previous_checkpoint_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/3d92f3c57dacdfd017decb159d993fa7c63e544d/data/delivery.json",
     "official_auditor_Source_preparation": {
-      "state": "independently_reviewed_complete_held",
-      "execution_released": false,
-      "runtime_bindings": null,
-      "current_CI_or_audit_result": null,
-      "current_log_and_resource_binding_pending": true
+      "state": "actual_audit_complete",
+      "execution_released": true,
+      "runtime_bindings": {
+        "filename": "renderer-correction-official-runtime-bindings-held.json",
+        "sha256": "d4175789e884e9978e8ea3683a1da3ab3da32bab31431073917b512e2865f92f",
+        "bytes": 1201494,
+        "mode": 436
+      },
+      "current_CI_or_audit_result": {
+        "filename": "renderer-correction-official-actual.json",
+        "sha256": "0547f9299acd5709c1cd04e1f984ce7ed72b974e5049a6866f95c0da0ebaff0c",
+        "bytes": 2280,
+        "mode": 436
+      },
+      "current_log_and_resource_binding_pending": false
     },
     "prior_completed_normal": {
       "tree": "7c8a5de42122c838d47b5bb5559cca9ee65082b2",
@@ -35820,16 +35892,27 @@
       "bytes": 2187,
       "mode": 436
     },
-    "official_artifact_qualification": "pending",
+    "official_artifact_qualification": "passed",
     "original_collection": {
       "filename": "collection.json",
       "sha256": "27a0088453fcfcefb367742d2b4d7629e55d15a9535dd8acadeb1b1d5ff6601a",
       "bytes": 31331,
       "mode": 436
     },
-    "official_inventory_actual": null,
-    "observed_hosted_coverage_base": null,
-    "official_allocation_and_read_plan": null,
+    "official_inventory_actual": {
+      "filename": "hosted-originals-inventory-actual.json",
+      "sha256": "ec34d01b814a445f873cbb65c4dba4ca77e3b5d400025a81aa080eab7096a804",
+      "bytes": 1679,
+      "mode": 436
+    },
+    "observed_hosted_coverage_base": "0000000000000000000000000000000000000000",
+    "official_allocation_and_read_plan": {
+      "state": "completed_with_reviewed_finite_operational_budget",
+      "initial_read_limit_bytes": 8589934592,
+      "actual_read_bytes": 6999199886,
+      "elapsed_seconds": 31.31058257096447,
+      "strict_quality_gates_unchanged": true
+    },
     "original_artifact_retention": {
       "ZIPs": [
         {
@@ -35853,13 +35936,24 @@
       ],
       "total_compressed_bytes": 203275273,
       "retained_RAM_and_individual_fsynced_SSD": true,
-      "extraction_performed": false,
+      "extraction_performed": true,
       "recompression_performed": false,
       "product_tests_repeated": false,
-      "official_audit_run": false
-    }
+      "official_audit_run": true,
+      "extraction_scope": "Only temporary audit verification copies were decoded. Original ZIPs were preserved byte for byte without recompression.",
+      "original_ZIPs_modified": false
+    },
+    "official_DATA_qualified": true,
+    "all_own_qualification_complete": true,
+    "official_report": {
+      "filename": "renderer-correction-official-audit.json",
+      "sha256": "028cd05643e713d9b7ce80bd98b15dde6ece022a20907c5d7bdc81dd2fdf0b3f",
+      "bytes": 1233390,
+      "mode": 436
+    },
+    "Main_promoted": false
   },
-  "current_wave_projection_scope": "Public-only projection of frozen native planning. New absolute local card paths are reduced to basenames with their exact digest/byte/mode fields; no public URL is invented. Prior phase/group objects and richer public aliases retain exact original bytes and observations.",
+  "current_wave_projection_scope": "Earlier phase objects, groups and legacy current_M* records retain their checkpoint observations. current_M114_Source describes current implementation only; current_M104_M113_Source records the parent review commit\u2019s own completed qualification.",
   "public_path_projection": {
     "pointer_count": 226,
     "historical_delivery_private_leaf_count": 183,
@@ -35879,5 +35973,51 @@
     "formal_browser_proof": false,
     "prior_unrequested_failure_preserved": true,
     "prior_OOM_cause": "UNKNOWN"
+  },
+  "current_M114_Source": {
+    "state": "IMPLEMENTATION_ACTIVE",
+    "phase": "M114",
+    "phase_contract": "phases[M114]",
+    "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
+    "parent_tree": "4a0e9343a5e3dba4d7e32c9ef6e56feb7cab3536",
+    "parent_evidence": "current_M104_M113_Source",
+    "parent_qualified": true,
+    "parent_accepted": false,
+    "implementation_started": true,
+    "implementation_complete": false,
+    "regression_Source_complete": false,
+    "documentation_complete": false,
+    "independent_Source_review_complete": false,
+    "Source_count": null,
+    "new_Rust_test_declarations": null,
+    "new_Python_test_declarations": null,
+    "formatter_run": false,
+    "checks_run": false,
+    "normal_running": false,
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "future_tree": null,
+    "future_commit": null,
+    "actual_new_test_passes": null,
+    "qualified": false,
+    "accepted": false,
+    "Main_promoted": false,
+    "qualification_inherited": false,
+    "guide_URL": null,
+    "Source_publication_available": false,
+    "verification_capacity": {
+      "state": "FINAL_CHECK_CAPACITY_PENDING_IMPLEMENTATION_CONTINUES",
+      "Root_observed_SSD_free_bytes": 33399984128,
+      "comparison_prior_initial_reserve_bytes": 35433480192,
+      "owner_requested_target_bytes": 37580963840,
+      "owner_request": "Free or add about four GiB, or choose an exact reviewed cleanup proposal.",
+      "owner_reply_received": false,
+      "new_cleanup_or_eviction_authorized": false,
+      "new_verification_started": false,
+      "resource_admission_inherited": false,
+      "scope": "This compares a Root observation with the prior final-normal reserve. M114 Source work continues; fresh future admission and fit are not presumed."
+    }
   }
 }
