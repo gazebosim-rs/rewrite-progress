@@ -20404,9 +20404,9 @@
       "excluded": "Depth-camera clouds, new rays/noise or reflectance models, new protocol/session/runtime frameworks, native sensor Source-to-binary parity claims, and DART/MuJoCo.",
       "delivery_guide": "docs/M114_DELIVERY.md",
       "implementation_started": true,
-      "implementation_complete": false,
-      "regression_Source_complete": false,
-      "independent_whole_Source_review_complete": false,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_whole_Source_review_complete": true,
       "checks_run": false,
       "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
       "parent_accepted": false,
@@ -20420,7 +20420,9 @@
       "accepted": false,
       "Main_promoted": false,
       "parent_qualified": true,
-      "delivery_guide_url": null
+      "delivery_guide_url": null,
+      "documentation_complete": true,
+      "formatter_run": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -22050,22 +22052,22 @@
   ],
   "current_development_phase": "M114",
   "board": {
-    "updated_at": "2026-11-24T03:17:11.051628+00:00",
+    "updated_at": "2026-11-24T04:03:59.942161+00:00",
     "current": {
-      "title": "Organized lidar point clouds in development",
+      "title": "Organized lidar point clouds ready for full checks",
       "items": [
-        "Organized lidar point-cloud publication is being implemented. Source work continues while disk headroom is arranged for final checks.",
+        "Implementation, regression cases and documentation are reviewed and formatted. Full verification is waiting on disk headroom.",
         "The combined physics, control, lidar and camera delivery passed local verification, hosted checks and both independent evidence audits.",
         "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
       ]
     },
     "done": [
-      "Qualified the combined review commit through full local checks, exact hosted CI and independent local and original-artifact audits.",
-      "Retained every original hosted ZIP and verified all four RAW groups byte for byte without replaying product tests."
+      "Implemented and independently reviewed organized lidar point-cloud support, regression cases and documentation. Formatting passed.",
+      "Qualified the combined review commit through full local checks, exact hosted CI and independent local and original-artifact audits."
     ],
     "next": [
-      "Complete the organized point-cloud implementation, regression cases, documentation and independent review.",
-      "Restore disk headroom, then run full verification and qualify the same review commit through hosted checks and independent evidence audits.",
+      "Restore disk headroom, then run the reviewed full verification cycle.",
+      "Independently audit its results, then qualify the same review commit through hosted checks and original-artifact audits.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
@@ -22224,7 +22226,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Implement organized PointCloudPacked publication from the existing CPU-lidar sample while preserving LaserScan behavior.",
+  "current_development_task": "Run final verification of the reviewed and formatted organized lidar point-cloud implementation once disk headroom is restored.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -24927,7 +24929,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "M114 implementation is active; this report does not assert an exact dispatch time.",
+  "phase_started_at_scope": "M114 implementation and independent Source review are complete; this report does not assert an exact dispatch time.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -35953,7 +35955,7 @@
     },
     "Main_promoted": false
   },
-  "current_wave_projection_scope": "Earlier phase objects, groups and legacy current_M* records retain their checkpoint observations. current_M114_Source describes current implementation only; current_M104_M113_Source records the parent review commit\u2019s own completed qualification.",
+  "current_wave_projection_scope": "Earlier phase objects, groups and legacy current_M* records retain their checkpoint observations. current_M114_Source records reviewed, formatted Source without runtime qualification; current_M104_M113_Source records the parent review commit\u2019s own completed qualification.",
   "public_path_projection": {
     "pointer_count": 226,
     "historical_delivery_private_leaf_count": 183,
@@ -35975,7 +35977,7 @@
     "prior_OOM_cause": "UNKNOWN"
   },
   "current_M114_Source": {
-    "state": "IMPLEMENTATION_ACTIVE",
+    "state": "SOURCE_COMPLETE_FORMATTED_FULL_VERIFICATION_CAPACITY_HELD",
     "phase": "M114",
     "phase_contract": "phases[M114]",
     "source_parent": "02592f7aaf21d616bd6299aa87123455834794e7",
@@ -35984,14 +35986,14 @@
     "parent_qualified": true,
     "parent_accepted": false,
     "implementation_started": true,
-    "implementation_complete": false,
-    "regression_Source_complete": false,
-    "documentation_complete": false,
-    "independent_Source_review_complete": false,
-    "Source_count": null,
-    "new_Rust_test_declarations": null,
-    "new_Python_test_declarations": null,
-    "formatter_run": false,
+    "implementation_complete": true,
+    "regression_Source_complete": true,
+    "documentation_complete": true,
+    "independent_Source_review_complete": true,
+    "Source_count": 1868,
+    "new_Rust_test_declarations": 16,
+    "new_Python_test_declarations": 0,
+    "formatter_run": true,
     "checks_run": false,
     "normal_running": false,
     "normal_actual": null,
@@ -36008,8 +36010,8 @@
     "guide_URL": null,
     "Source_publication_available": false,
     "verification_capacity": {
-      "state": "FINAL_CHECK_CAPACITY_PENDING_IMPLEMENTATION_CONTINUES",
-      "Root_observed_SSD_free_bytes": 33399984128,
+      "state": "FINAL_CHECK_CAPACITY_PENDING_SOURCE_COMPLETE",
+      "Root_observed_SSD_free_bytes": 33379360768,
       "comparison_prior_initial_reserve_bytes": 35433480192,
       "owner_requested_target_bytes": 37580963840,
       "owner_request": "Free or add about four GiB, or choose an exact reviewed cleanup proposal.",
@@ -36017,7 +36019,49 @@
       "new_cleanup_or_eviction_authorized": false,
       "new_verification_started": false,
       "resource_admission_inherited": false,
-      "scope": "This compares a Root observation with the prior final-normal reserve. M114 Source work continues; fresh future admission and fit are not presumed."
-    }
+      "scope": "Reviewed and formatted Source is ready. The latest Root observation is below the unchanged 33 GiB initial reserve; the owner capacity question is pending. Fresh future admission and fit are not presumed.",
+      "capacity_actual": {
+        "sha256": "3326f83e56d1d5f40a7f873686f08eb6691b5e3596fde947f6475cf48ac08afe",
+        "bytes": 420,
+        "mode": 436,
+        "filename": "m114-current-capacity.json"
+      },
+      "resource_admitted": false
+    },
+    "changed_Source_paths": 21,
+    "new_Source_paths": 6,
+    "affected_Rust_paths": 11,
+    "Source_controls": {
+      "Rust_unique": 16,
+      "headless": 16,
+      "renderer": 2,
+      "shared": 2,
+      "public": 3,
+      "private": 13,
+      "new_Python_methods": 0
+    },
+    "staged_Source_tree": "367a2c3423a4d9f2ea9891760d85e4a0a9350e99",
+    "final_Source": {
+      "sha256": "50d70bd2a5b935f7c0304ab67dbbd794adfc4526515827ffbb78c7d445b49e2b",
+      "bytes": 10176,
+      "mode": 436,
+      "filename": "m114-final-source.json"
+    },
+    "formatter_actual": {
+      "sha256": "23348f263a158d66b1814e5ada78836649dce2ecae69813e0d9e8ceb43c0cb20",
+      "bytes": 5662,
+      "mode": 436,
+      "filename": "m114-final-formatter-actual.json"
+    },
+    "formatter_actual_Root_exit_code": 0,
+    "formatter_actual_child_exit_code": 0,
+    "normal_procedure": {
+      "sha256": "b8d697e302ae2386c6a79fd4fe44894a42fd163ccad4b750256d9a06e4f3ca33",
+      "bytes": 15765,
+      "mode": 436,
+      "filename": "run-m114-final-checks-held.py"
+    },
+    "normal_procedure_Source_review_complete": true,
+    "normal_execution_released": false
   }
 }
