@@ -3,7 +3,7 @@
   "decision": "D30",
   "as_of": "2026-11-24",
   "execution_state": "active",
-  "current_phase": "M115",
+  "current_phase": "M116",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -20644,6 +20644,135 @@
         "filename": "m115-boundary-coverage-final-formatter-actual.json"
       },
       "next_retry_released": true
+    },
+    {
+      "id": "M116",
+      "title": "Opt-in triggered single RGB capture",
+      "max_working_days": 5,
+      "depends_on": [
+        "M115"
+      ],
+      "scope": "One explicit triggered 64x64 RGB camera on the existing application, worker and world Session. Canonical Boolean events including false/default coalesce into one pending bit; preserve periodic defaults, forced schedule phase, lazy demand and exact lifetime/loaded-original endpoint reservations.",
+      "acceptance": "Complete implementation, meaningful regressions, guides and independent Source review; close all findings before one affected formatter and consolidated mandatory staged hook. Prove native Boolean admission and actual software-rendered Image/CameraInfo pixels, calibration, sequence and early stamps; quiet, pause/busy/inactive/no-demand, reset/removal/metadata/callback retirement and original-key ownership. Require both profiles, strict workspace/crate/changed-base coverage, own local DATA, exact hosted CI and official originals. Formal browser/shutdown gates remain.",
+      "excluded": "Depth/mixed/multi-RGB triggering, new workers/renderers/protocols/schemas/SDK or backend campaigns, scheduler frameworks, DART/MuJoCo, Fuel, live demo and cleanup changes.",
+      "delivery_guide": "docs/M116_DELIVERY.md",
+      "source_parent": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+      "parent_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
+      "parent_normal_passed": true,
+      "parent_local_DATA_passed": true,
+      "parent_hosted_passed": false,
+      "parent_official_passed": false,
+      "parent_fully_qualified": false,
+      "parent_accepted": false,
+      "implementation_started": true,
+      "implementation_Source_written": true,
+      "regression_Source_complete": true,
+      "independent_whole_code_Source_review_complete": true,
+      "Source_findings_closed": true,
+      "documentation_Source_review_complete": true,
+      "Source_control_declarations": {
+        "Rust_unique": 31,
+        "headless": 13,
+        "renderer": 24,
+        "shared": 6,
+        "public": 13,
+        "private": 18,
+        "new_Python_methods": 0
+      },
+      "required_control_obligations": {
+        "headless": 453,
+        "renderer": 374
+      },
+      "strict_base_count": 21,
+      "strict_base_scope": "Actual f71feacc parent plus its exact20 retained predecessor bases; no thresholds or denominators changed.",
+      "formatter_run": true,
+      "checks_run": true,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "future_tree": null,
+      "future_commit": null,
+      "actual_new_test_passes": null,
+      "accepted": false,
+      "Main_promoted": false,
+      "qualification_inherited": false,
+      "source_foundation_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
+      "foundation_scope": "The parallel implementation used the exact M115 Source snapshot. Its actual parent now owns normal and independent local DATA success; own verification is still pending and no parent result transfers.",
+      "Source_count": 1884,
+      "changed_Source_paths": 26,
+      "new_Source_paths": 9,
+      "affected_Rust_paths": 19,
+      "changed_production_paths": 12,
+      "preformat_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+      "formatter_independent_review_complete": true,
+      "delivery_guide_url": null,
+      "normal_running": true,
+      "normal_execution_released": true,
+      "checkpoint_scope": "The isolated reference correction passed independent Source review and one affected byte-neutral formatter. One full required retry is active, with no terminal result or commit. The first Clippy failure remains preserved; all31 declarations have no pass claim yet.",
+      "prior_initial_formatted_Source": {
+        "filename": "m116-formatted-source-completion.json",
+        "sha256": "5b40d9ad5e6948660db6201f44975cfbbf273c8fd9370641b83422cd429c9885",
+        "bytes": 548113,
+        "mode": 436
+      },
+      "prior_initial_formatted_Source_tree": "c77ffa07a309180edf37f8685d29365fd1120d26",
+      "prior_initial_formatter_actual": {
+        "filename": "m116-final-formatter-actual.json",
+        "sha256": "670c998378316830a3f731cd4f272554dea6855d0bea1d081ad905a8fa8a3264",
+        "bytes": 8698,
+        "mode": 436
+      },
+      "prior_initial_formatted_Source_review": {
+        "filename": "m116-formatted-source-review.json",
+        "sha256": "c3a7c7801ca9c73cd633be8f4af5cccb2eb5f64564fe8af75a384b7cf48656fd",
+        "bytes": 1240,
+        "mode": 436
+      },
+      "prior_checks_run": true,
+      "prior_normal_failures": [
+        {
+          "actual": {
+            "filename": "m116-local-normal-attempt1-clippy-failure.json",
+            "sha256": "7b70bf6959ca4ad47f881db12f2abafc7b1118003576e31ccbe164bd2054a108",
+            "bytes": 2293,
+            "mode": 436
+          },
+          "classification": "CLIPPY_BORROW_DEREF_REF",
+          "failed_tree": "c77ffa07a309180edf37f8685d29365fd1120d26",
+          "Root_session": 48649,
+          "launch_tool": "84c4c3",
+          "terminal_tool": "2c0c15",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 32.559066993009765,
+          "tests_or_coverage_reached": false,
+          "capacity_faults": [],
+          "commit_created": false,
+          "concrete_failure": "Clippy borrow_deref_ref: triggered_camera.rs152 comparison redundantly reborrows saved.scoped_name (&str) as &*saved.scoped_name"
+        }
+      ],
+      "correction_Source": {
+        "filename": "m116-reference-correction-source-completion.json",
+        "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
+        "bytes": 550304,
+        "mode": 436
+      },
+      "correction_Source_complete": true,
+      "correction_independent_Source_review_complete": true,
+      "formatted_Source": {
+        "filename": "m116-reference-correction-formatted-source-completion.json",
+        "sha256": "d64fe84a64909f1dbc4705d8ca1a539d14f68c645fe5c9405643fa853e74b3e4",
+        "bytes": 550504,
+        "mode": 436
+      },
+      "formatted_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+      "formatter_actual": {
+        "filename": "m116-reference-correction-final-formatter-actual.json",
+        "sha256": "e3bdb5b96d6b844461815701d6f7363abf7a971e3fc83ddbd034889e08901321",
+        "bytes": 2309,
+        "mode": 436
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -20762,7 +20891,8 @@
     "M112": "in_progress",
     "M113": "in_progress",
     "M114": "in_progress",
-    "M115": "in_progress"
+    "M115": "in_progress",
+    "M116": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-24T13:57:14.048804+00:00",
@@ -20805,7 +20935,8 @@
     "M112",
     "M113",
     "M114",
-    "M115"
+    "M115",
+    "M116"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -22285,30 +22416,38 @@
       "prior_checks_run": true,
       "normal_running": true,
       "correction_Source_complete": true
+    },
+    {
+      "phases": [
+        "M116"
+      ],
+      "max_working_days": 5,
+      "integration": "The first local normal failed one Clippy class before tests. The isolated correction and factual docs passed review and one byte-neutral affected formatter; one full retry is active under D31 alongside parent exact hosted CI. No terminal result is known, and all independent audit/publication/acceptance gates remain."
     }
   ],
-  "acceptance_boundary": "Reviewed D31 scheduling permits one unchanged local M115 full verification cycle and local commit alongside parent remote closeout, after fresh resource admission. M115 review publication remains held for parent hosted/official success and own normal/local DATA success. All exact profiles,20bases,quality and M77 formal gates are unchanged.",
+  "acceptance_boundary": "Reviewed correction Source and affected formatting precede this one full required M116 retry. D31 overlap with parent remote closeout transfers no result: descendant review publication still requires parent hosted/official and own normal/local DATA success. All strict coverage, resource and M77 formal gates remain.",
   "current_delivery_group": [
-    "M115"
+    "M115",
+    "M116"
   ],
-  "current_development_phase": "M115",
+  "current_development_phase": "M116",
   "board": {
-    "updated_at": "2026-11-24T17:01:52.617951+00:00",
+    "updated_at": "2026-11-24T18:59:12.817338+00:00",
     "current": {
-      "title": "Runtime lidar-rate full verification running",
+      "title": "Triggered-RGB full retry and lidar-rate hosted CI running",
       "items": [
-        "The complete coverage-regression batch is reviewed and formatted. The third full local verification cycle is running; its result is unknown.",
-        "M114 passed full local, hosted and independent artifact qualification on its review commit. Acceptance and Main promotion remain held.",
-        "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
+        "M115 passed full local verification and its independent audit. Its review commit is published and exact hosted CI is running; official qualification is pending.",
+        "M116 Clippy correction and factual docs passed review and affected formatting. One full local retry is running; the first failure remains preserved and no result is known.",
+        "The no-expiry demo stays running. Formal browser and owner-confirmed shutdown evidence remain incomplete."
       ]
     },
     "done": [
-      "Reviewed and formatted all five boundary regressions while preserving prior failures, production behavior and every quality gate.",
-      "Completed M114 independent official evidence audit after exact hosted success; no acceptance is claimed."
+      "Completed M115 normal and independent local audit, then pushed and read back its review commit; both prior failures remain intact.",
+      "Reviewed the complete M116 reference correction and ran one byte-neutral affected formatter; no tests or coverage result is claimed."
     ],
     "next": [
-      "Complete the running full verification cycle, then independently audit its retained results.",
-      "After successful local qualification, publish the M115 review reference and complete exact hosted and official artifact qualification.",
+      "Complete exact M115 hosted CI, then collect and independently audit the original official artifacts.",
+      "Complete the running M116 full retry, then independently audit its retained results before review publication.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
@@ -22318,7 +22457,7 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M115"
+    "M116"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -22467,7 +22606,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Complete the active third full local verification cycle, then independently audit its retained results before review publication.",
+  "current_development_task": "Complete the active M116 full local retry while exact parent M115 hosted CI runs; all independent audit and publication gates remain.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -25170,7 +25309,7 @@
       "mode": 436
     }
   },
-  "phase_started_at_scope": "M115 isolated Source implementation; at most five working days including independent review and all gates",
+  "phase_started_at_scope": "M116 bounded implementation and verification; at most five working days including independent review and all mandatory gates.",
   "current_M82_Source": {
     "state": "M82_OWN_LOCAL_HOSTED_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "6ef85e9f2fbc0b371b2e0db3c366230ac8d9106e",
@@ -27044,7 +27183,7 @@
       }
     }
   },
-  "phase_catalog_checkpoint_scope": "The first 113 phase objects and 60 groups retain their published observations. M114 adds one selected five-day contract. Qualification and formal acceptance remain separate; 76 accepted phases and 202 slices are unchanged.",
+  "phase_catalog_checkpoint_scope": "The first115 public phase objects and62 groups preserve their historical snapshots exactly. M116 adds one bounded five-day Source contract;76 accepted phases and202 slices are unchanged.",
   "current_M86_M87_Source": {
     "state": "M86_M87_OWN_LOCAL_HOSTED_AND_OFFICIAL_QUALIFIED_UNACCEPTED",
     "Source_basis_commit": "22cffebd3d1f9f0be82e7ac35e557b42d08edea9",
@@ -36196,7 +36335,7 @@
     },
     "Main_promoted": false
   },
-  "current_wave_projection_scope": "Earlier phase objects and groups retain their checkpoints. Current M114 aliases record complete own qualification without acceptance or Main promotion. Current M115 aliases preserve both failed runs and bind the reviewed/formatted boundary batch and active third full local normal, with outcome unknown.",
+  "current_wave_projection_scope": "Current aliases record M115 normal/local DATA success, review publication and exact hosted CI in progress. M116 preserves its first Clippy failure and has a reviewed/formatted correction with one full retry active, outcome unknown. Earlier catalog observations and acceptance history remain intact.",
   "public_path_projection": {
     "pointer_count": 226,
     "historical_delivery_private_leaf_count": 183,
@@ -36607,7 +36746,7 @@
     }
   },
   "current_M115_Source": {
-    "state": "BOUNDARY_REGRESSION_SOURCE_REVIEWED_FORMATTED_THIRD_FULL_NORMAL_RUNNING",
+    "state": "NORMAL_AND_LOCAL_DATA_PASSED_REVIEW_PUBLISHED_HOSTED_ACTIVE",
     "phase": "M115",
     "phase_contract": "phases[M115]",
     "source_parent": "2419c92342dcd6f869c9832ba1d691b50a51a020",
@@ -36668,7 +36807,7 @@
       "private": 17,
       "new_Python_methods": 0,
       "expected_Python_methods": 498,
-      "scope": "Twenty-seven Source obligations: the original22 declarations are unchanged and five additional H-only private boundary controls have no executed result. The active third full normal has no terminal result or per-control qualification yet."
+      "scope": "Twenty-seven unique controls were validated by the completed normal and independent local audit, with headless27/renderer11/shared11. M116 declarations and results are separate."
     },
     "strict_base_count": 20,
     "strict_bases": [
@@ -36702,19 +36841,35 @@
     "checks_run": true,
     "verification_released": true,
     "resource_admitted": true,
-    "resource_scope": "One guarded local full retry is released after fresh Root resource admission. It retains all existing floors and capacity stops; no future fit or cleanup authority is inferred.",
-    "normal_actual": null,
-    "local_DATA_actual": null,
+    "resource_scope": "The completed full normal used its own fresh resource admission and unchanged floors. No future resource fit, cleanup authority or descendant admission is inferred.",
+    "normal_actual": {
+      "filename": "m115-boundary-coverage-normal-actual.json",
+      "sha256": "149298fe323c8b586ac051616ba202a1b8d70bd1a08e4fbabcab53cec798ca41",
+      "bytes": 2484,
+      "mode": 436
+    },
+    "local_DATA_actual": {
+      "filename": "m115-retained-audit-actual.json",
+      "sha256": "8711b0cad95131a2054a803fce5ccd77fe92a591b4fb93ae28971050572f9327",
+      "bytes": 1714,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
-    "actual_new_test_passes": null,
-    "guide_URL": null,
-    "Source_publication_available": false,
+    "actual_new_test_passes": {
+      "unique": 27,
+      "headless": 27,
+      "renderer": 11,
+      "shared": 11,
+      "basis": "normal_actual and local_DATA_actual on the same commit; profile observations overlap"
+    },
+    "guide_URL": "https://github.com/gazebosim-rs/gz-sim-rs/blob/f71feacc73ddbd2bb8db9e4de5f373f7707056d2/docs/M115_DELIVERY.md",
+    "Source_publication_available": true,
     "qualified": false,
     "accepted": false,
     "Main_promoted": false,
     "qualification_inherited": false,
-    "scope": "The complete boundary regression Source and documentation passed independent review and one affected formatter. The third full local normal is active with no result. Both earlier failed runs remain intact. Parent M114 qualification is complete and unaccepted; own normal/local audit still gate review publication.",
+    "scope": "M115 passed full normal and independent local DATA, then its exact review reference was pushed and read back. Automatic push CI is in progress on that commit; hosted success and independent official originals qualification remain unknown. Both prior normal failures remain intact; acceptance and Main promotion stay held.",
     "documentation_independent_Source_review_complete": true,
     "affected_Rust_paths": 12,
     "changed_production_paths": 4,
@@ -36760,10 +36915,11 @@
         "sha256": "a1d5015c933ab11c276e93f95d92ad85d866437b278adf2d003b5c7e38b3c11b",
         "bytes": 2196,
         "mode": 436
-      }
+      },
+      "checkpoint_scope": "Historical scheduling-decision fields at its Source freeze. Current review-publication and hosted observation are recorded by the actual current_M115_Source proof fields."
     },
     "local_normal_admission_pending": false,
-    "normal_running": true,
+    "normal_running": false,
     "prior_normal_failures": [
       {
         "classification": "RETAINED_TEST_HELPER_NONEXHAUSTIVE_FAMILY_MATCHES",
@@ -36912,7 +37068,7 @@
     },
     "prior_checks_run": true,
     "local_normal_retry_release_pending": false,
-    "local_heavy_workload_active": true,
+    "local_heavy_workload_active": false,
     "correction_Source_complete": true,
     "correction_independent_Source_review_complete": true,
     "preformat_tree": "0a2d21777586459924fc11c116abef066cc4c53e",
@@ -36952,7 +37108,7 @@
       "observer_active": false,
       "Root_observer_session": 91560,
       "Root_observer_exit_code": 0,
-      "scope": "Genuine exact-commit hosted success; original collection and independent official audit have not run."
+      "scope": "Genuine exact-commit parent hosted success; original collection and independent official audit subsequently passed, as recorded in current_M114_parent_qualification."
     },
     "completed_failed_normal": {
       "Root_session": 2341,
@@ -37001,7 +37157,7 @@
       }
     },
     "coverage_regression_batch": {
-      "state": "COMPLETE_REVIEWED_FORMATTED_THIRD_FULL_NORMAL_RUNNING",
+      "state": "NORMAL_AND_INDEPENDENT_LOCAL_DATA_PASSED",
       "coverage_actual": {
         "sha256": "a505371d2ae341e8411d86fc58a62d496767b5cbca1d4630ab8684d565153816",
         "bytes": 4406,
@@ -37031,9 +37187,22 @@
       "candidate_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
       "independent_Source_review_complete": true,
       "next_retry_released": true,
-      "scope": "Ten reachable holes are covered by complete reviewed regression Source; three unreachable defensive arms and all old bodies are preserved. A full required retry is active; actual coverage and case results remain unknown.",
+      "scope": "The complete reviewed boundary regression batch passed the full normal and independent local audit. All prior failures, defensive error arms, retained assertions and strict twenty-base gates remain intact.",
       "five_new_private_cases": 5,
-      "five_cases_executed_result": null,
+      "five_cases_executed_result": {
+        "normal_actual": {
+          "filename": "m115-boundary-coverage-normal-actual.json",
+          "sha256": "149298fe323c8b586ac051616ba202a1b8d70bd1a08e4fbabcab53cec798ca41",
+          "bytes": 2484,
+          "mode": 436
+        },
+        "local_DATA_actual": {
+          "filename": "m115-retained-audit-actual.json",
+          "sha256": "8711b0cad95131a2054a803fce5ccd77fe92a591b4fb93ae28971050572f9327",
+          "bytes": 1714,
+          "mode": 436
+        }
+      },
       "Source_completion": {
         "sha256": "8065484eb8b475bded7fa99a14e823a0e7fc13a6f30b1fe95cd74c53fb8fe3b1",
         "bytes": 8921,
@@ -37168,7 +37337,17 @@
       },
       "scope": "The two current affected Rust files were formatted once. The other ten affected Rust files reuse exact earlier byte/mode custody; no formatter replay is claimed."
     },
-    "active_normal": {
+    "normal_passed": true,
+    "local_DATA_passed": true,
+    "locally_qualified": true,
+    "commit": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+    "local_DATA_report": {
+      "filename": "m115-boundary-coverage-retained-audit.json",
+      "sha256": "87f9b6a828feb455ca45d739ada638af1ff2f900b0cf2275200f2050ec8ce821",
+      "bytes": 879161,
+      "mode": 436
+    },
+    "completed_normal": {
       "attempt": 3,
       "Root_session": 40357,
       "launch_tool": "0db124",
@@ -37197,11 +37376,87 @@
         "mode": 436,
         "filename": "m115-boundary-coverage-formatted-source-completion.json"
       },
-      "terminal_tool": null,
-      "actual_Root_exit_code": null,
-      "actual_Git_exit_code": null,
-      "actual_result": null,
-      "scope": "One full required local normal is running. No terminal result, new commit, coverage result or case-pass count is claimed."
+      "terminal_tool": "24d153",
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "actual_result": {
+        "filename": "result.json",
+        "sha256": "8fcd761644b28f0d2bdceca672b4cac77134f87b0356b49e80d1c15512cbd7e4",
+        "bytes": 2473,
+        "mode": 436
+      },
+      "scope": "Completed full local normal and local commit passed; the separate independent retained local audit also passed. No hosted, official or acceptance result is inferred.",
+      "actual": {
+        "filename": "m115-boundary-coverage-normal-actual.json",
+        "sha256": "149298fe323c8b586ac051616ba202a1b8d70bd1a08e4fbabcab53cec798ca41",
+        "bytes": 2484,
+        "mode": 436
+      },
+      "elapsed_seconds": 4466.670172835991,
+      "commit": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2"
+    },
+    "local_DATA_summary": {
+      "actual_exit_code": 0,
+      "elapsed_seconds": 14.172443401999772,
+      "read_bytes": 3910786826,
+      "actual_commands": 89,
+      "all_commands_actual0": true,
+      "RAW_comparisons_once_LAST": [
+        472,
+        793,
+        57,
+        168
+      ],
+      "all_RAW_byte_exact": true,
+      "post_RAW_full_closure": true,
+      "tests_or_workloads_replayed": false
+    },
+    "review_publication": {
+      "filename": "review-publication.json",
+      "sha256": "ce6231d39c78e3b2546e2c5bba2cb33c8d0f0df032719d79f20b8a666795c203",
+      "bytes": 8335,
+      "mode": 436
+    },
+    "hosted_CI": {
+      "id": 45463564283,
+      "run_attempt": 1,
+      "head_sha": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+      "head_branch": "review/m115-runtime-lidar-rate-control",
+      "event": "push",
+      "path": ".github/workflows/ci.yml",
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45463564283"
+    },
+    "official_audit_passed": false,
+    "hosted_observation": {
+      "actual": {
+        "filename": "hosted-delayed-discovery.json",
+        "sha256": "4d42c1628997877ceb4fb39f549160b01506bdeedfb82634bd9076d241efd914",
+        "bytes": 1364,
+        "mode": 436
+      },
+      "run": {
+        "id": 45463564283,
+        "run_attempt": 1,
+        "head_sha": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+        "head_branch": "review/m115-runtime-lidar-rate-control",
+        "event": "push",
+        "path": ".github/workflows/ci.yml",
+        "status": "in_progress",
+        "conclusion": null,
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45463564283"
+      },
+      "Root_observer_session": 27041,
+      "observer_active": true,
+      "terminal": null,
+      "initial_discovery_method_failure": {
+        "filename": "review-publication-initial-discovery-method-failure.json",
+        "sha256": "1cc8941bee48318f5f0e460394081fdbc6f5ef435876ba4d061f4fbe0eb35249",
+        "bytes": 1067,
+        "mode": 436
+      },
+      "publication_or_CI_failure_inferred": false
     }
   },
   "current_M114_parent_qualification": {
@@ -37265,6 +37520,277 @@
   },
   "tracker_publication_current": {
     "state": "SOURCE_UPDATE_REVIEW_PENDING",
-    "scope": "This Source checkpoint has not been checked or published. Root owns the single bounded tracker check and publication cycle."
+    "scope": "This combined milestone Source checkpoint has not been checked or published. Root owns the single bounded tracker check and publication cycle."
+  },
+  "current_M116_Source": {
+    "id": "M116",
+    "title": "Opt-in triggered single RGB capture",
+    "max_working_days": 5,
+    "depends_on": [
+      "M115"
+    ],
+    "scope": "M116 first normal failed Clippy before tests. The isolated reference correction and factual docs passed independent Source review and one byte-neutral affected formatter. One full required retry is running, with no terminal result, commit or new case-pass claim. Prior failure and all qualification gates remain intact.",
+    "acceptance": "Complete implementation, meaningful regressions, guides and independent Source review; close all findings before one affected formatter and consolidated mandatory staged hook. Prove native Boolean admission and actual software-rendered Image/CameraInfo pixels, calibration, sequence and early stamps; quiet, pause/busy/inactive/no-demand, reset/removal/metadata/callback retirement and original-key ownership. Require both profiles, strict workspace/crate/changed-base coverage, own local DATA, exact hosted CI and official originals. Formal browser/shutdown gates remain.",
+    "excluded": "Depth/mixed/multi-RGB triggering, new workers/renderers/protocols/schemas/SDK or backend campaigns, scheduler frameworks, DART/MuJoCo, Fuel, live demo and cleanup changes.",
+    "delivery_guide": "docs/M116_DELIVERY.md",
+    "source_parent": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+    "parent_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
+    "parent_normal_passed": true,
+    "parent_local_DATA_passed": true,
+    "parent_hosted_passed": false,
+    "parent_official_passed": false,
+    "parent_fully_qualified": false,
+    "parent_accepted": false,
+    "implementation_started": true,
+    "implementation_Source_written": true,
+    "regression_Source_complete": true,
+    "independent_whole_code_Source_review_complete": true,
+    "Source_findings_closed": true,
+    "documentation_Source_review_complete": true,
+    "Source_control_declarations": {
+      "Rust_unique": 31,
+      "headless": 13,
+      "renderer": 24,
+      "shared": 6,
+      "public": 13,
+      "private": 18,
+      "new_Python_methods": 0
+    },
+    "required_control_obligations": {
+      "headless": 453,
+      "renderer": 374
+    },
+    "strict_base_count": 21,
+    "strict_base_scope": "Actual f71feacc parent plus its exact20 retained predecessor bases; no thresholds or denominators changed.",
+    "formatter_run": true,
+    "checks_run": true,
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "future_tree": null,
+    "future_commit": null,
+    "actual_new_test_passes": null,
+    "accepted": false,
+    "Main_promoted": false,
+    "qualification_inherited": false,
+    "source_foundation_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
+    "foundation_scope": "The parallel implementation used the exact M115 Source snapshot. Root bound the reviewed delta to the actual locally qualified M115 parent before this one D31 local normal; parent hosted/official and all own qualifications remain separate.",
+    "Source_count": 1884,
+    "changed_Source_paths": 26,
+    "new_Source_paths": 9,
+    "affected_Rust_paths": 19,
+    "changed_production_paths": 12,
+    "preformat_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+    "formatter_independent_review_complete": true,
+    "delivery_guide_url": null,
+    "state": "REFERENCE_CORRECTION_REVIEWED_FORMATTED_FULL_NORMAL_RETRY_RUNNING",
+    "implementation_complete": true,
+    "documentation_complete": true,
+    "Source_review_complete": true,
+    "normal_running": true,
+    "verification_released": true,
+    "resource_admitted": true,
+    "Source_publication_available": false,
+    "qualified": false,
+    "d31_local_normal_admission": {
+      "filename": "m116-d31-local-normal-parent-remote-overlap-admission.json",
+      "sha256": "2b5819c2b2f216a1106360df9e71558c9afaf4652b8d6d3cf9327ef18daa1e00",
+      "bytes": 1951,
+      "mode": 436
+    },
+    "completed_failed_normal": {
+      "Root_session": 48649,
+      "launch_tool": "84c4c3",
+      "Root_release": {
+        "filename": "m116-full-normal-root-release.json",
+        "sha256": "3b3d7fcd437374721b2d1ef75df67cc94121c174e6f60aa84977a3ed2c85279e",
+        "bytes": 1905,
+        "mode": 436
+      },
+      "release_at": "2026-11-24T18:51:16.878004+00:00",
+      "released_Source": {
+        "filename": "run-m116-triggered-rgb-final-checks-root-released.py",
+        "sha256": "27a38ec0fc30dd10008bf6726f0d5642cb3c1a132227c0995cf2c9e170ae3d87",
+        "bytes": 15902,
+        "mode": 436
+      },
+      "held_Source": {
+        "filename": "run-m116-triggered-rgb-final-checks-held.py",
+        "sha256": "aa7abf59bf4d1429fa0b1306b7404f847ae4426f9d092016c45b3fefe75e2777",
+        "bytes": 15903,
+        "mode": 436
+      },
+      "tree": "c77ffa07a309180edf37f8685d29365fd1120d26",
+      "parent": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+      "fresh_host_resources": {
+        "SSD": 36207501312,
+        "SHM": 4266323968,
+        "runtime": 2007416832,
+        "MemAvailable": 31036993536
+      },
+      "initial_limits": {
+        "SSD": 35433480192,
+        "SHM": 2147483648,
+        "runtime": 1879048192,
+        "MemAvailable": 8589934592
+      },
+      "terminal_tool": "2c0c15",
+      "actual_Root_exit_code": 1,
+      "actual_Git_exit_code": 1,
+      "actual_result": {
+        "filename": "result.json",
+        "sha256": "4657042457e19656d2c6b325f57a40927d35fcab7d9cde0ccd122cae8f27f2a8",
+        "bytes": 2463,
+        "mode": 436
+      },
+      "commit": null,
+      "elapsed_seconds": 32.559066993009765,
+      "failure_actual": {
+        "filename": "m116-local-normal-attempt1-clippy-failure.json",
+        "sha256": "7b70bf6959ca4ad47f881db12f2abafc7b1118003576e31ccbe164bd2054a108",
+        "bytes": 2293,
+        "mode": 436
+      },
+      "tests_or_coverage_reached": false,
+      "capacity_faults": [],
+      "packet_directory": "c77ffa07a309180edf37f8685d29365fd1120d26-lbgun86i",
+      "scope": "The first full normal stopped at one Clippy borrow_deref_ref class before tests or coverage. Repeated lib/libtest diagnostics are not separate test failures; no commit or capacity fault occurred."
+    },
+    "prior_normal_failures": [
+      {
+        "actual": {
+          "filename": "m116-local-normal-attempt1-clippy-failure.json",
+          "sha256": "7b70bf6959ca4ad47f881db12f2abafc7b1118003576e31ccbe164bd2054a108",
+          "bytes": 2293,
+          "mode": 436
+        },
+        "classification": "CLIPPY_BORROW_DEREF_REF",
+        "failed_tree": "c77ffa07a309180edf37f8685d29365fd1120d26",
+        "Root_session": 48649,
+        "launch_tool": "84c4c3",
+        "terminal_tool": "2c0c15",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "elapsed_seconds": 32.559066993009765,
+        "tests_or_coverage_reached": false,
+        "capacity_faults": [],
+        "commit_created": false,
+        "concrete_failure": "Clippy borrow_deref_ref: triggered_camera.rs152 comparison redundantly reborrows saved.scoped_name (&str) as &*saved.scoped_name"
+      }
+    ],
+    "prior_initial_formatted_Source": {
+      "filename": "m116-formatted-source-completion.json",
+      "sha256": "5b40d9ad5e6948660db6201f44975cfbbf273c8fd9370641b83422cd429c9885",
+      "bytes": 548113,
+      "mode": 436
+    },
+    "prior_initial_formatted_Source_tree": "c77ffa07a309180edf37f8685d29365fd1120d26",
+    "prior_initial_formatter_actual": {
+      "filename": "m116-final-formatter-actual.json",
+      "sha256": "670c998378316830a3f731cd4f272554dea6855d0bea1d081ad905a8fa8a3264",
+      "bytes": 8698,
+      "mode": 436
+    },
+    "prior_initial_formatted_Source_review": {
+      "filename": "m116-formatted-source-review.json",
+      "sha256": "c3a7c7801ca9c73cd633be8f4af5cccb2eb5f64564fe8af75a384b7cf48656fd",
+      "bytes": 1240,
+      "mode": 436
+    },
+    "prior_checks_run": true,
+    "correction_Source": {
+      "filename": "m116-reference-correction-source-completion.json",
+      "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
+      "bytes": 550304,
+      "mode": 436
+    },
+    "current_candidate_label": "gz-sim-m116-triggered-rgb-reference-correction",
+    "correction_Source_complete": true,
+    "correction_independent_Source_review_complete": true,
+    "correction_formatter_run": true,
+    "unchanged_Rust_formatter_reuse_paths": 18,
+    "formatted_Source": {
+      "filename": "m116-reference-correction-formatted-source-completion.json",
+      "sha256": "d64fe84a64909f1dbc4705d8ca1a539d14f68c645fe5c9405643fa853e74b3e4",
+      "bytes": 550504,
+      "mode": 436
+    },
+    "formatted_Source_tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+    "formatter_actual": {
+      "filename": "m116-reference-correction-final-formatter-actual.json",
+      "sha256": "e3bdb5b96d6b844461815701d6f7363abf7a971e3fc83ddbd034889e08901321",
+      "bytes": 2309,
+      "mode": 436
+    },
+    "prior_initial_preformat_Source_census": {
+      "filename": "m116-complete-parent-alias-corrected-source-census.json",
+      "sha256": "f3b8dd588947adfc03688b286e94b788ba89d6c8edefc422bab753be43c07d72",
+      "bytes": 546886,
+      "mode": 436
+    },
+    "prior_initial_preformat_Source_review_complete": true,
+    "current_preformat_Source_completion": {
+      "filename": "m116-reference-correction-source-completion.json",
+      "sha256": "84b0045ea963486a0f8acf797dcb5dc2fb23d6dd58e7af7c4f55290bfa1ceb8f",
+      "bytes": 550304,
+      "mode": 436
+    },
+    "current_preformat_Source_review": {
+      "filename": "m116-reference-correction-preformat-source-review.json",
+      "sha256": "7244268b381ce142faed1a82c6259a17bb8c27b1bfc4433c082edddf513b5b9f",
+      "bytes": 2735,
+      "mode": 436
+    },
+    "current_preformat_Source_review_complete": true,
+    "active_normal": {
+      "attempt": 2,
+      "Root_session": 54326,
+      "launch_tool": "ae4948",
+      "Root_release": {
+        "filename": "m116-reference-correction-full-normal-root-release.json",
+        "sha256": "4eb67da6195854f2a7d11eef8ecdfb8d96c78afc5670542def2480d352d36913",
+        "bytes": 2342,
+        "mode": 436
+      },
+      "release_at": "2026-11-24T18:57:20.409708+00:00",
+      "released_Source": {
+        "filename": "run-m116-reference-correction-final-checks-root-released.py",
+        "sha256": "0a502249c92e452ab515231d8f8d84ea16d840dfbf66d1d75fcd4617fb49a1a7",
+        "bytes": 15974,
+        "mode": 436
+      },
+      "held_Source": {
+        "filename": "run-m116-reference-correction-final-checks-held.py",
+        "sha256": "d45774608fd9953ce75cdac63cc017d2312ddd1003aea89df9950790b3e399a1",
+        "bytes": 15975,
+        "mode": 436
+      },
+      "Source_seal": {
+        "filename": "m116-reference-correction-formatted-source-completion.json",
+        "sha256": "d64fe84a64909f1dbc4705d8ca1a539d14f68c645fe5c9405643fa853e74b3e4",
+        "bytes": 550504,
+        "mode": 436
+      },
+      "tree": "fc56b75865def4d660f83dfa21c3841b94ca8800",
+      "parent": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+      "fresh_host_resources": {
+        "SSD": 36136480768,
+        "SHM": 4266323968,
+        "runtime": 2007416832,
+        "MemAvailable": 31138791424
+      },
+      "initial_limits": {
+        "SSD": 35433480192,
+        "SHM": 2147483648,
+        "runtime": 1879048192,
+        "MemAvailable": 8589934592
+      },
+      "terminal_tool": null,
+      "actual_Root_exit_code": null,
+      "actual_Git_exit_code": null,
+      "actual_result": null,
+      "commit": null
+    }
   }
 }
