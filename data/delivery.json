@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "execution_state": "active",
   "current_phase": "M104",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
@@ -22000,7 +22000,7 @@
       }
     }
   ],
-  "acceptance_boundary": "The renderer test corrections and documentation are independently reviewed. Formatting changed no source bytes. One full verification retry is active; its result, qualified commit, local audits, hosted checks and original-artifact audit remain unknown. Earlier acceptance and formal demo gates are unchanged.",
+  "acceptance_boundary": "Full verification and independent retained audit passed. The same clean review commit is published and exact hosted checks are running; their outcome and original-artifact qualification remain pending. No phase acceptance or Main promotion is inferred; formal browser and shutdown proof remain required.",
   "current_delivery_group": [
     "M104",
     "M105",
@@ -22015,26 +22015,26 @@
   ],
   "current_development_phase": "M104",
   "board": {
-    "updated_at": "2026-11-23T22:59:33.009427+00:00",
+    "updated_at": "2026-11-24T00:37:06.765367+00:00",
     "current": {
-      "title": "Reviewed renderer corrections in full verification",
+      "title": "Locally qualified review commit in hosted checks",
       "items": [
-        "All three renderer test-premise corrections are reviewed. Formatting changed no source, and one full verification retry is running.",
-        "The prior cycle passed headless tests and coverage, then finished with four renderer failures. No additional failures were reported.",
+        "Full verification and its independent audit passed. The same clean review commit is published, and hosted checks are running.",
+        "The retained audit confirmed all 18 coverage bases and 122 new controls. Earlier audit-method failures remain recorded; product tests were not rerun.",
         "The persistent no-expiry demo stays running until confirmed stop. Formal browser and shutdown proof remain incomplete."
       ]
     },
     "done": [
-      "Completed and independently reviewed the renderer corrections and documentation; one affected formatter passed with an empty diff.",
-      "The prior cycle passed both Clippy stages, all 498 Python tests and all 2,153 headless tests; its four renderer failures remain recorded."
+      "Passed both Rust profiles, both coverage gates, all 498 Python tests and the native and RGB qualifiers.",
+      "Completed the independent retained audit and pushed the same clean review commit without changing Main."
     ],
     "next": [
-      "Finish the single full verification retry and independently audit its recorded results.",
-      "Qualify the same reviewed commit through exact hosted checks and original-artifact audits.",
+      "Finish the exact hosted checks for the published review commit.",
+      "Collect and independently audit the original hosted artifacts after those checks pass.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
-      "text": "Release acceptance awaits passing full verification and qualification, plus formal browser and owner-confirmed shutdown evidence. The recorded browser permission denial remains unresolved.",
+      "text": "Release acceptance awaits hosted and original-artifact qualification, plus formal browser and owner-confirmed shutdown evidence. The browser permission denial remains unresolved.",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
     },
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
@@ -22198,7 +22198,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Complete the single full verification retry for the reviewed renderer test corrections, then independently qualify the same candidate.",
+  "current_development_task": "Finish hosted checks and original-artifact qualification of the locally audited review commit.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -35473,7 +35473,7 @@
   },
   "current_M104_M113_Source": {
     "scope": "Combined M102\u2013M113 physics, robot-control, spatial-lidar and rendering delivery.",
-    "state": "REVIEWED_RENDERER_CORRECTION_FULL_NORMAL_RUNNING",
+    "state": "LOCALLY_QUALIFIED_REVIEW_PUBLISHED_HOSTED_CHECKS_RUNNING",
     "qualified_Git_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
     "staged_source_tree": "4a0e9343a5e3dba4d7e32c9ef6e56feb7cab3536",
     "source_counts": {
@@ -35499,16 +35499,78 @@
     "independent_Source_reviews_complete": true,
     "formatting_actual_exit_code": 0,
     "formatter_scope": "One affected three-file formatter passed; all source bytes, modes, index and HEAD were unchanged.",
-    "normal_running": true,
-    "normal_actual_exit_code": null,
+    "normal_running": false,
+    "normal_actual_exit_code": 0,
     "current_observed_stages": {
-      "sole_normal_session": 1162,
-      "launch_tool": "989d0e",
-      "state": "full_verification_running",
-      "Clippy_stages_passed": null,
-      "quiet_Python_aggregate_passed": null,
-      "Rust_runtime_results": null,
-      "independent_18_base_DATA": "pending"
+      "normal_session": 1162,
+      "terminal_tool": "79fd87",
+      "actual_Root_exit_code": 0,
+      "actual_Git_exit_code": 0,
+      "normal_elapsed_seconds": 4442.029765762971,
+      "Clippy_stages_passed": 2,
+      "quiet_Python_aggregate_passed": 498,
+      "quiet_Python_seconds": 70.991,
+      "Rust_runtime_results": {
+        "headless": {
+          "passed": 2153,
+          "failed": 0,
+          "ignored": 2,
+          "maintained_coverage_passed": true
+        },
+        "renderer": {
+          "passed": 1681,
+          "failed": 0,
+          "ignored": 2,
+          "maintained_coverage_passed": true
+        }
+      },
+      "native_and_RGB_qualifiers_passed": true,
+      "independent_18_base_DATA": "passed",
+      "local_retained_audit": {
+        "actual_exit_code": 0,
+        "elapsed_seconds": 15.187758093990851,
+        "read_bytes": 3834924592,
+        "all_commands_actual0": true,
+        "command_count": 110,
+        "retained_controls": {
+          "headless": 397,
+          "renderer": 337
+        },
+        "new_controls": {
+          "unique": 122,
+          "headless": 103,
+          "renderer": 98,
+          "shared": 79
+        },
+        "Python_aggregate": 498,
+        "finite_examples": 47,
+        "RGB_auxiliary_passed": 21,
+        "native_peer_records": 48,
+        "four_RAW_groups_byte_exact_once_LAST": [
+          {
+            "group": "headless",
+            "raw_count": 468,
+            "byte_exact": true
+          },
+          {
+            "group": "renderer",
+            "raw_count": 792,
+            "byte_exact": true
+          },
+          {
+            "group": "rapier-runtime",
+            "raw_count": 57,
+            "byte_exact": true
+          },
+          {
+            "group": "rgb-camera",
+            "raw_count": 168,
+            "byte_exact": true
+          }
+        ],
+        "post_RAW_full_custody": true,
+        "product_tests_replayed": false
+      }
     },
     "prior_headless_coverage_failure": {
       "tree": "4084c78a7b9f414b3a0f23c87a097bc32938ac8a",
@@ -35526,15 +35588,20 @@
       ],
       "renderer_runtime_reached": false
     },
-    "corrections": "All three test-premise classes are corrected and independently reviewed. One affected formatter changed no source bytes. The single consolidated full verification retry is running; its outcome remains unknown.",
+    "corrections": "All three renderer test-premise corrections are reviewed and verified. Full verification and independent retained audit passed on the same clean commit. Two earlier auditor-method failures remain separate. The review branch is published and automatic hosted checks are running; official artifact qualification is pending.",
     "strict_bases": 18,
-    "local_DATA_actual": null,
+    "local_DATA_actual": {
+      "filename": "renderer-correction-retained-audit-actual.json",
+      "sha256": "7f57637f2d79f46abe91660dfa1f8292b11fbe5b1ecd47f67280021cfaa4b21c",
+      "bytes": 2379,
+      "mode": 436
+    },
     "hosted_actual": null,
     "official_actual": null,
-    "final_commit": null,
+    "final_commit": "02592f7aaf21d616bd6299aa87123455834794e7",
     "accepted": false,
     "qualification_inherited": false,
-    "previous_checkpoint_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/df4539ca2ffb6be94e7416af07f05ab69edc8afa/data/delivery.json",
+    "previous_checkpoint_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/3d92f3c57dacdfd017decb159d993fa7c63e544d/data/delivery.json",
     "official_auditor_Source_preparation": {
       "state": "independently_reviewed_complete_held",
       "execution_released": false,
@@ -35602,7 +35669,76 @@
       "bytes": 15854,
       "mode": 436
     },
-    "current_normal_release_at": "2026-11-23T22:56:55.554587+00:00"
+    "current_normal_release_at": "2026-11-23T22:56:55.554587+00:00",
+    "normal_actual_Git_exit_code": 0,
+    "normal_actual": {
+      "filename": "renderer-correction-normal-actual.json",
+      "sha256": "5a2082b2eaca1c7b0ad39900f3e5a545592a5899c679a9eead783fc925a2608e",
+      "bytes": 2277,
+      "mode": 436
+    },
+    "normal_result": {
+      "filename": "result.json",
+      "sha256": "1cf13c388951bd6aee92c16e2bfb69891513811e8937842fd9c799daeadd5663",
+      "bytes": 2492,
+      "mode": 436
+    },
+    "review_publication": {
+      "filename": "review-publication-observed.json",
+      "sha256": "074df4b25478aac2006897846c5f097e9512e65d3c775ae88c38d8d6251a637f",
+      "bytes": 3335,
+      "mode": 436
+    },
+    "hosted_run": {
+      "id": 45297968661,
+      "run_attempt": 1,
+      "head_sha": "02592f7aaf21d616bd6299aa87123455834794e7",
+      "head_branch": "review/m104-m113-integrated-wave",
+      "status": "in_progress",
+      "conclusion": null,
+      "event": "push",
+      "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45297968661"
+    },
+    "local_qualified": true,
+    "local_DATA_report": {
+      "filename": "renderer-correction-retained-audit-sdk-reuse.json",
+      "sha256": "4344b644c6694a607496e3644de8d758cbc42301d883c57fe9c4204f02f09a23",
+      "bytes": 948401,
+      "mode": 436
+    },
+    "review_publication_URL": "https://github.com/gazebosim-rs/gz-sim-rs/commit/02592f7aaf21d616bd6299aa87123455834794e7",
+    "retained_auditor_method_failures": [
+      {
+        "record": {
+          "filename": "renderer-correction-retained-audit-method-failure.json",
+          "sha256": "7ff37b8fed9fb6b4c1638f7720e58808ce118b206c1f19644fc3762178b9492d",
+          "bytes": 2190,
+          "mode": 436
+        },
+        "state": "RETAINED_AUDITOR_METHOD_FAILURE",
+        "actual_exit_code": 1,
+        "RAW_comparisons_consumed": 0,
+        "product_normal_pass_retracted": false
+      },
+      {
+        "record": {
+          "filename": "renderer-correction-retained-audit-read-budget-failure.json",
+          "sha256": "73d380f2c874adf340ca6ddbbee784cc5579e6a9451abf9fb5501440690c7977",
+          "bytes": 2381,
+          "mode": 436
+        },
+        "state": "RETAINED_AUDITOR_READ_BUDGET_METHOD_FAILURE",
+        "actual_exit_code": 1,
+        "RAW_comparisons_consumed": 0,
+        "product_normal_pass_retracted": false
+      }
+    ],
+    "hosted_monitoring": {
+      "state": "active",
+      "sole_Root_watch_session": 21759,
+      "launch_tool": "784bed",
+      "outcome": null
+    }
   },
   "current_wave_projection_scope": "Public-only projection of frozen native planning. New absolute local card paths are reduced to basenames with their exact digest/byte/mode fields; no public URL is invented. Prior phase/group objects and richer public aliases retain exact original bytes and observations.",
   "public_path_projection": {
