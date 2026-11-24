@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-24T00:37:06.765367+00:00",
+  "updated_at": "2026-11-24T02:29:05.160780+00:00",
   "state": "active",
-  "summary": "Full verification and independent audit passed. The same clean review commit is published and hosted checks are running. Official artifact qualification and formal demo evidence remain pending.",
+  "summary": "Local and exact hosted checks passed. Original ZIPs are retained unchanged; inventory and independent official audit are next. Formal demo evidence remains pending.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M102-M113",
-      "title": "Complete hosted and original-artifact qualification",
-      "detail": "Full verification and the independent retained audit passed on the same clean commit. All 18 coverage bases and new control mappings were confirmed without replaying product tests. The review branch is published; exact hosted checks are running, with no outcome yet. Official artifact audit remains pending."
+      "title": "Inventory and audit the original hosted evidence",
+      "detail": "The same published review commit passed local verification, independent audit and all thirteen hosted steps. Its three original ZIPs were collected once and retained in memory and durable storage without extraction or recompression. Inventory and independent official audit remain pending; acceptance is unchanged."
     },
     {
       "id": "M77-persistent-demo",
@@ -1030,12 +1030,12 @@
     }
   ],
   "remaining": [
-    "Finish the exact hosted checks for the published review commit.",
-    "Collect and independently audit the original hosted artifacts after those checks pass.",
+    "Inventory the retained originals and bind the exact verification log and resource plan.",
+    "Independently audit the exact hosted evidence before qualification or acceptance.",
     "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
   ],
   "blockers": [
-    "Exact hosted checks and original-artifact qualification remain required; local verification and independent audit have passed.",
+    "Inventory and independent official audit of the retained originals remain required; local and exact hosted checks have passed.",
     "Formal browser and owner-confirmed shutdown proof remain incomplete; the recorded browser permission denial is unresolved."
   ],
   "plan_status": {
@@ -1087,7 +1087,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted metrics retain their qualified revision. Full verification and independent retained audit passed: 2,153 headless and 1,681 renderer tests, two ignored per profile, all 18 coverage bases, 498 Python tests, 47 finite examples, 21 RGB controls and 48 native records. Two earlier auditor-method failures are preserved separately; no product tests were replayed. The same review commit is published with hosted checks running. Official audit and formal browser/shutdown evidence remain pending.",
+    "note": "Accepted metrics retain their qualified revision. The current candidate passed full verification, independent retained audit and exact hosted CI. Local evidence confirms 2,153 headless and 1,681 renderer tests, all 18 coverage bases, 498 Python tests, 47 finite examples, 21 RGB controls and 48 native records. Three original hosted ZIPs are retained unchanged. Inventory and official audit remain pending; method and observer failures remain separate. Formal browser/shutdown evidence is still incomplete.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -12539,7 +12539,7 @@
     },
     "current_M104_M113_Source": {
       "scope": "Combined M102\u2013M113 physics, robot-control, spatial-lidar and rendering delivery.",
-      "state": "LOCALLY_QUALIFIED_REVIEW_PUBLISHED_HOSTED_CHECKS_RUNNING",
+      "state": "EXACT_HOSTED_SUCCESS_ORIGINALS_COLLECTED_INVENTORY_AND_OFFICIAL_AUDIT_PENDING",
       "qualified_Git_parent": "08a0eeae97dede8daee6efe6cb2922bdb86ca722",
       "staged_source_tree": "4a0e9343a5e3dba4d7e32c9ef6e56feb7cab3536",
       "source_counts": {
@@ -12636,6 +12636,12 @@
           ],
           "post_RAW_full_custody": true,
           "product_tests_replayed": false
+        },
+        "original_collector": {
+          "actual_exit_code": 0,
+          "actual_requests": 29,
+          "all_started_reaped_actual0": true,
+          "elapsed_seconds": 50.142129234969616
         }
       },
       "prior_headless_coverage_failure": {
@@ -12654,7 +12660,7 @@
         ],
         "renderer_runtime_reached": false
       },
-      "corrections": "All three renderer test-premise corrections are reviewed and verified. Full verification and independent retained audit passed on the same clean commit. Two earlier auditor-method failures remain separate. The review branch is published and automatic hosted checks are running; official artifact qualification is pending.",
+      "corrections": "The same published review commit passed full verification, independent retained audit and exact hosted checks. Its three original ZIPs were collected once and retained unchanged in RAM and durable storage. Inventory, exact log/resource binding and independent official audit are next; prior method and observer failures remain separate.",
       "strict_bases": 18,
       "local_DATA_actual": {
         "filename": "renderer-correction-retained-audit-actual.json",
@@ -12662,7 +12668,12 @@
         "bytes": 2379,
         "mode": 436
       },
-      "hosted_actual": null,
+      "hosted_actual": {
+        "filename": "hosted-current-terminal.json",
+        "sha256": "9122e01db172f2b98df65fac1cfb22ae416d81dee8666f8947877b1e072acc14",
+        "bytes": 4974,
+        "mode": 436
+      },
       "official_actual": null,
       "final_commit": "02592f7aaf21d616bd6299aa87123455834794e7",
       "accepted": false,
@@ -12672,7 +12683,8 @@
         "state": "independently_reviewed_complete_held",
         "execution_released": false,
         "runtime_bindings": null,
-        "current_CI_or_audit_result": null
+        "current_CI_or_audit_result": null,
+        "current_log_and_resource_binding_pending": true
       },
       "prior_completed_normal": {
         "tree": "7c8a5de42122c838d47b5bb5559cca9ee65082b2",
@@ -12760,10 +12772,29 @@
         "run_attempt": 1,
         "head_sha": "02592f7aaf21d616bd6299aa87123455834794e7",
         "head_branch": "review/m104-m113-integrated-wave",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "event": "push",
-        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45297968661"
+        "html_url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/45297968661",
+        "job": {
+          "id": 138123073339,
+          "status": "completed",
+          "conclusion": "success",
+          "steps_succeeded": 13
+        },
+        "artifact": {
+          "id": 14880829136,
+          "name": "render-coverage-45297968661-1",
+          "size_in_bytes": 188318006,
+          "digest": "sha256:033fd9a867e3a037988b469d66c328135f329d6b466b44b932a949d368281b80",
+          "expired": false,
+          "expires_at": "2027-02-22T00:32:22Z"
+        },
+        "metadata_capture_actual_exit_codes": [
+          0,
+          0,
+          0
+        ]
       },
       "local_qualified": true,
       "local_DATA_report": {
@@ -12800,10 +12831,98 @@
         }
       ],
       "hosted_monitoring": {
-        "state": "active",
-        "sole_Root_watch_session": 21759,
-        "launch_tool": "784bed",
-        "outcome": null
+        "state": "terminal_success_proven_by_fresh_metadata",
+        "active": false,
+        "previous_observer_failures": [
+          {
+            "record": {
+              "filename": "hosted-watch-api-quota-failure.json",
+              "sha256": "8038c9431a5f075146158c773c26c7ecdc244824c7e984e621074e0a0d708ba6",
+              "bytes": 951,
+              "mode": 436
+            },
+            "state": "HOSTED_OBSERVER_API_QUOTA_FAILURE_NOT_CI_RESULT",
+            "actual_exit_code": 1,
+            "CI_failure_inferred": false
+          },
+          {
+            "record": {
+              "filename": "hosted-watch-after-quota-reset-api-failure.json",
+              "sha256": "9b495f1363ed3817e8b26b29979ff72a402e01894b996f42bd02eeddd8317063",
+              "bytes": 977,
+              "mode": 436
+            },
+            "state": "HOSTED_OBSERVER_SECOND_API_QUOTA_FAILURE_NOT_CI_RESULT",
+            "actual_exit_code": 1,
+            "CI_failure_inferred": false
+          }
+        ],
+        "watcher_success_inferred": false
+      },
+      "hosted_qualified": true,
+      "hosted_metadata": {
+        "run": {
+          "filename": "run.stdout",
+          "sha256": "680883ce4bccb1ddea0ab62e0fc0daa7b6dbc622207077e6df5cddbd2a76a5da",
+          "bytes": 12542,
+          "mode": 436
+        },
+        "jobs": {
+          "filename": "jobs.stdout",
+          "sha256": "c7ab6f0374a5db00eb815952d88109a0c04af2ab96dc8934b813f9a160bb91b4",
+          "bytes": 3398,
+          "mode": 436
+        },
+        "artifacts": {
+          "filename": "artifacts.stdout",
+          "sha256": "820a93d09afbbf4c05d7f2030953f4d6e0dc8d2924e172235366a4ee5de4ea48",
+          "bytes": 764,
+          "mode": 436
+        }
+      },
+      "original_collection_actual": {
+        "filename": "hosted-original-collector-actual.json",
+        "sha256": "f40c8b5fa360360a2099797bcdde93179a38d029562be187fc96c0feddd29ce5",
+        "bytes": 2187,
+        "mode": 436
+      },
+      "official_artifact_qualification": "pending",
+      "original_collection": {
+        "filename": "collection.json",
+        "sha256": "27a0088453fcfcefb367742d2b4d7629e55d15a9535dd8acadeb1b1d5ff6601a",
+        "bytes": 31331,
+        "mode": 436
+      },
+      "official_inventory_actual": null,
+      "observed_hosted_coverage_base": null,
+      "official_allocation_and_read_plan": null,
+      "original_artifact_retention": {
+        "ZIPs": [
+          {
+            "filename": "source.zip",
+            "bytes": 14854022,
+            "sha256": "c4de8156b333b6fe3a4e08468c3e28e3bf8bb91aed7e382c3942296fd3195d09",
+            "mode": 436
+          },
+          {
+            "filename": "jobs.zip",
+            "bytes": 103245,
+            "sha256": "8112250087ab0dff2d17a3ac523f5d09d10b0d8607951e0d540beb80dc778c82",
+            "mode": 436
+          },
+          {
+            "filename": "artifact-14880829136.zip",
+            "bytes": 188318006,
+            "sha256": "033fd9a867e3a037988b469d66c328135f329d6b466b44b932a949d368281b80",
+            "mode": 436
+          }
+        ],
+        "total_compressed_bytes": 203275273,
+        "retained_RAM_and_individual_fsynced_SSD": true,
+        "extraction_performed": false,
+        "recompression_performed": false,
+        "product_tests_repeated": false,
+        "official_audit_run": false
       }
     },
     "current_candidate_role_scope": "The legacy current_candidate object preserves protected M77 demo/qualification evidence. The current unverified development candidate is current_M104_M113_Source, whose own metrics and CI are unknown."
