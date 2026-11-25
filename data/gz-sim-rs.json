@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-24T22:43:59.163982+00:00",
+  "updated_at": "2026-11-25T00:36:16.660529+00:00",
   "state": "active",
-  "summary": "Verified archival cleanup cleared the SSD hold. One full M116 verification cycle is running on reviewed and formatted Source, with outcome unknown. M115 remains qualified and unaccepted.",
+  "summary": "Reviewed and formatted M116 corrections are in one full verification retry. Its result is unknown; M115 remains qualified and unaccepted.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
       "id": "M116",
-      "title": "Triggered-RGB full verification running",
-      "detail": "The complete fixture and feature-disabled QA correction is reviewed and formatted. Authorized archival cleanup cleared the required SSD hold; fresh resource admission passed. One Root-owned full normal is active with no result, commit or new pass count. Both prior failures remain preserved."
+      "title": "Full correction verification running",
+      "detail": "Complete compiler-prerequisite and Server/camera coverage corrections passed independent Source and formatting review. One full mandatory normal is active after fresh resources. All three prior failures are preserved; no new result, commit or test-pass count is claimed."
     },
     {
       "id": "M115",
@@ -1035,7 +1035,7 @@
     }
   ],
   "remaining": [
-    "Finish the running full normal, then independently audit its exact retained results.",
+    "Finish the active full normal, then independently audit its exact retained results before review publication.",
     "After local qualification, publish the exact M116 review reference and complete hosted CI and independent original-artifact qualification.",
     "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
   ],
@@ -1091,7 +1091,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted metrics still describe M76. M115 owns complete Source qualification and remains unaccepted. M116 reviewed/formatted corrections have one full normal active after verified authorized cleanup and fresh resource admission. Its outcome is unknown; both failures and all formal acceptance gates remain.",
+    "note": "Accepted metrics still describe M76. M115 is fully Source qualified and unaccepted. M116 normal3 failed feature-disabled compilation and coverage despite zero failed primary-profile test rows and a passed Python aggregate. Complete corrections passed Source and formatting review; one full normal is active with unknown outcome. All independent and formal acceptance gates remain.",
     "renderer_coverage": {
       "lines": [
         21567,
@@ -14230,8 +14230,8 @@
       }
     },
     "tracker_publication_current": {
-      "state": "SOURCE_UPDATE_REVIEW_PENDING",
-      "scope": "This milestone Source checkpoint has not been checked or published. Root owns one bounded board cycle after independent Source review.",
+      "state": "SOURCE_FAILURE_CORRECTION_CHECKPOINT_REVIEW_PENDING",
+      "scope": "This current failure/correction Source checkpoint has not been checked or published. Root owns one bounded board cycle after independent Source review.",
       "browser_visual_claim": false,
       "saved_browser_permission_denial_preserved": true,
       "future_readback_scope": "Exact API payloads and Pages build metadata only; no browser retry or visual claim."
@@ -14243,7 +14243,7 @@
       "depends_on": [
         "M115"
       ],
-      "scope": "The complete M116 fixture and genuine feature-disabled QA correction is reviewed and formatted. Owner-authorized archival cleanup resolved the required SSD hold, and one guarded full normal is active after fresh resource admission. Its result and commit remain unknown. Both prior failed normals and all qualification gates remain intact.",
+      "scope": "Complete compiler-prerequisite and Server/camera coverage corrections passed independent Source review and affected formatting. One full mandatory normal is active after fresh resource admission. Its result and commit are unknown. All three prior failures and every qualification gate remain intact.",
       "acceptance": "Complete implementation, meaningful regressions, guides and independent Source review; close all findings before one affected formatter and consolidated mandatory staged hook. Prove native Boolean admission and actual software-rendered Image/CameraInfo pixels, calibration, sequence and early stamps; quiet, pause/busy/inactive/no-demand, reset/removal/metadata/callback retirement and original-key ownership. Require both profiles, strict workspace/crate/changed-base coverage, own local DATA, exact hosted CI and official originals. Formal browser/shutdown gates remain.",
       "excluded": "Depth/mixed/multi-RGB triggering, new workers/renderers/protocols/schemas/SDK or backend campaigns, scheduler frameworks, DART/MuJoCo, Fuel, live demo and cleanup changes.",
       "delivery_guide": "docs/M116_DELIVERY.md",
@@ -14261,23 +14261,6 @@
       "independent_whole_code_Source_review_complete": true,
       "Source_findings_closed": true,
       "documentation_Source_review_complete": true,
-      "Source_control_declarations": {
-        "Rust_unique": 31,
-        "primary_Rust_unique": 30,
-        "headless": 13,
-        "renderer": 24,
-        "shared": 7,
-        "auxiliary_feature_disabled": 1,
-        "public": 13,
-        "private": 18,
-        "new_Python_methods": 5,
-        "expected_Python_methods": 503,
-        "scope": "Same31RustIDs:30primary/H13R24/shared7 and one genuine feature-disabled auxiliary;13public/18private. Five new Python method declarations bring the obligation to503. No corrected candidate passes are claimed."
-      },
-      "required_control_obligations": {
-        "headless": 453,
-        "renderer": 374
-      },
       "strict_base_count": 21,
       "strict_base_scope": "Actual f71feacc parent plus its exact20 retained predecessor bases; no thresholds or denominators changed.",
       "formatter_run": true,
@@ -14294,15 +14277,9 @@
       "qualification_inherited": false,
       "source_foundation_tree": "0679e9f8682454d7eac46ab321925325c07f768a",
       "foundation_scope": "Historical staging used an unqualified Source snapshot for parallel implementation. Root subsequently bound the reviewed delta to genuine M115 before verification; the current correction retains that parent, now fully Source qualified. No qualification is inherited.",
-      "Source_count": 1884,
-      "changed_Source_paths": 29,
-      "new_Source_paths": 9,
-      "affected_Rust_paths": 19,
-      "changed_production_paths": 12,
-      "preformat_Source_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
       "formatter_independent_review_complete": true,
       "delivery_guide_url": null,
-      "state": "COMPLETE_REVIEWED_FORMATTED_FIXTURE_QA_SOURCE_FULL_NORMAL_RUNNING_AFTER_AUTHORIZED_CLEANUP",
+      "state": "COMPLETE_CORRECTION_REVIEWED_FORMATTED_FULL_NORMAL4_ACTIVE",
       "implementation_complete": true,
       "documentation_complete": true,
       "Source_review_complete": true,
@@ -14436,6 +14413,53 @@
           "coverage_qualification_reached": false,
           "capacity_faults": [],
           "commit_created": false
+        },
+        {
+          "actual": {
+            "filename": "m116-local-normal-attempt3-compiler-coverage-failure.json",
+            "sha256": "f0decdb56a1658b280c9fb02044cd823eb01885f1fd70a29ae5140b6cd09b208",
+            "bytes": 10900,
+            "mode": 436
+          },
+          "classification": "FEATURE_DISABLED_COMPILER_PREREQUISITE_AND_SERVER_CAMERA_COVERAGE",
+          "failed_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
+          "Root_session": 45521,
+          "launch_tool": "38f1dc",
+          "terminal_tool": "4c887f",
+          "actual_Root_exit_code": 1,
+          "actual_Git_exit_code": 1,
+          "elapsed_seconds": 4497.041451962083,
+          "capacity_faults": [],
+          "commit_created": false,
+          "primary_test_summary_occurrences": {
+            "headless": {
+              "summary_occurrences": 214,
+              "sum_passed_summary_occurrences": 2213,
+              "sum_failed_summary_occurrences": 0,
+              "sum_ignored_summary_occurrences": 2,
+              "actual_FAILED_case_rows": [],
+              "unique_failed_IDs": [],
+              "summary_occurrences_are_not_unique_case_counts": true
+            },
+            "renderer": {
+              "summary_occurrences": 199,
+              "sum_passed_summary_occurrences": 1720,
+              "sum_failed_summary_occurrences": 0,
+              "sum_ignored_summary_occurrences": 2,
+              "actual_FAILED_case_rows": [],
+              "unique_failed_IDs": [],
+              "summary_occurrences_are_not_unique_case_counts": true
+            }
+          },
+          "Python_aggregate_rows": [
+            [
+              "503",
+              "73.675"
+            ]
+          ],
+          "Python_individual_case_results_observed": false,
+          "auxiliary_executed_target_case_count": 0,
+          "scope": "Retained summary occurrences are not unique case counts or candidate qualification. Both required primary profiles had zero failed test rows; feature-disabled compilation and coverage still failed."
         }
       ],
       "prior_initial_formatted_Source": {
@@ -14458,11 +14482,11 @@
         "mode": 436
       },
       "prior_checks_run": true,
-      "current_candidate_label": "gz-sim-m116-triggered-rgb-reference-correction",
+      "current_candidate_label": "gz-sim-m116-triggered-rgb-coverage-correction",
       "correction_Source_complete": true,
       "correction_independent_Source_review_complete": true,
       "correction_formatter_run": true,
-      "unchanged_Rust_formatter_reuse_paths": 15,
+      "unchanged_Rust_formatter_reuse_paths": 17,
       "prior_initial_preformat_Source_census": {
         "filename": "m116-complete-parent-alias-corrected-source-census.json",
         "sha256": "f3b8dd588947adfc03688b286e94b788ba89d6c8edefc422bab753be43c07d72",
@@ -14470,7 +14494,6 @@
         "mode": 436
       },
       "prior_initial_preformat_Source_review_complete": true,
-      "current_preformat_Source_review_complete": true,
       "completed_failed_normal2": {
         "attempt": 2,
         "Root_session": 54326,
@@ -14592,12 +14615,6 @@
       "required_auxiliary_controls": [
         "live::triggered_rgb_cli_tests::triggered_rgb_without_build_feature_refuses_before_loading_the_world"
       ],
-      "Source_roster": {
-        "filename": "m116-primary-and-feature-disabled-auxiliary-source-declarations.json",
-        "sha256": "8b5cd0ab417a4b24338c0b402daef31363806321a352bc86ee0965291f763911",
-        "bytes": 20023,
-        "mode": 436
-      },
       "QA_Source_completion": {
         "filename": "m116-cli-feature-disabled-check-source-completion.json",
         "sha256": "7d11a1f61310777474ad1e9528d217ec5f8c1bc468d7876fed6c3c5bb441e393",
@@ -14628,33 +14645,6 @@
         "353dc9ae86aac56c7653f36a933d688b43fa6fbf",
         "dddf1f4284557c420e384d263a4365b2153dfde2"
       ],
-      "current_preformat_Source_census": {
-        "filename": "m116-complete-fixture-and-QA-final-wording-source-census.json",
-        "sha256": "af35ba5c21f9ae84ef758a847919caf91a028defa0529ec398c9c0d9e119838c",
-        "bytes": 551201,
-        "mode": 436
-      },
-      "current_preformat_Source_review": {
-        "filename": "m116-fixture-correction-preformat-source-review.json",
-        "sha256": "39a6310595a761859efd0e21ef90119eec23b1f6e18147b400a7a51ccc8abfd8",
-        "bytes": 3346,
-        "mode": 436
-      },
-      "formatted_Source": {
-        "filename": "m116-fixture-qa-formatted-source-completion.json",
-        "sha256": "091f7595001a310735d3917b65d3fe478d9f89e459437b6b9bbfe0709fa5bf9d",
-        "bytes": 552858,
-        "mode": 436
-      },
-      "formatted_Source_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
-      "formatter_actual": {
-        "filename": "m116-fixture-correction-final-formatter-actual.json",
-        "sha256": "cfe43de68145584c87f7fedf70845382bfe3bc890f9695091f3b070a2129b667",
-        "bytes": 3501,
-        "mode": 436
-      },
-      "formatter_diff_bytes": 0,
-      "affected_formatter_Rust_paths": 4,
       "guide_URL": null,
       "parent_qualification_scope": "ParentM115 earned all four own qualification passes; this permits dependency admission only and transfers no descendant result.",
       "historical_capacity_hold_before_worktree_cleanup": {
@@ -14717,33 +14707,7 @@
         "Fuel_or_demo_changed": false,
         "scope": "Owner-authorized archival cleanup is complete. The verified archive and shared Git metadata are retained; archived worktrees require restoration before reuse. The 69-tree instruction is consumed and grants no additional cleanup authority."
       },
-      "capacity_resolution": {
-        "state": "REQUIRED_CAPACITY_RESOLVED_AND_FRESH_NORMAL_ADMISSION_PASSED",
-        "cleanup": {
-          "filename": "completion.json",
-          "sha256": "ec81ecff44f5416b41857979bc7e56c9617ec1bb0ea58013f593371157c57ab3",
-          "bytes": 1292,
-          "mode": 436
-        },
-        "normal_Root_release": {
-          "filename": "m116-fixture-qa-normal-root-release.json",
-          "sha256": "d6fb93f5ef66f11e88415eb8cac3741bb8936684bdbad1adbb770df07069d7b2",
-          "bytes": 2801,
-          "mode": 436
-        },
-        "required_initial_SSD_bytes": 35433480192,
-        "fresh_actual_resources": {
-          "SSD": 37474951168,
-          "SHM": 4058120192,
-          "runtime": 2007416832,
-          "MemAvailable": 30507053056
-        },
-        "owner_capacity_question_pending": false,
-        "resource_admitted": true,
-        "future_fit_guarantee": false,
-        "further_cleanup_authorized": false
-      },
-      "active_normal": {
+      "completed_failed_normal3": {
         "attempt": 3,
         "Root_session": 45521,
         "launch_tool": "38f1dc",
@@ -14788,12 +14752,374 @@
         },
         "initial_SSD_required_bytes": 35433480192,
         "global_native14GiB_reserve_unchanged": true,
+        "terminal_tool": "4c887f",
+        "actual_Root_exit_code": 1,
+        "actual_Git_exit_code": 1,
+        "actual_result": {
+          "sha256": "61f7d49b4d9af292266db1dd70eeb2c8fe67a4611d8877eab93a4e167544d1b5",
+          "bytes": 2483,
+          "mode": 436,
+          "filename": "result.json"
+        },
+        "commit": null,
+        "scope": "The third full normal retired with one feature-disabled compiler prerequisite and two coverage gate classes. Primary-profile summaries contain zero failed tests; the full normal did not pass.",
+        "failure_actual": {
+          "filename": "m116-local-normal-attempt3-compiler-coverage-failure.json",
+          "sha256": "f0decdb56a1658b280c9fb02044cd823eb01885f1fd70a29ae5140b6cd09b208",
+          "bytes": 10900,
+          "mode": 436
+        },
+        "elapsed_seconds": 4497.041451962083,
+        "capacity_faults": []
+      },
+      "prior_attempt3_Source_control_declarations": {
+        "Rust_unique": 31,
+        "primary_Rust_unique": 30,
+        "headless": 13,
+        "renderer": 24,
+        "shared": 7,
+        "auxiliary_feature_disabled": 1,
+        "public": 13,
+        "private": 18,
+        "new_Python_methods": 5,
+        "expected_Python_methods": 503,
+        "scope": "Same31RustIDs:30primary/H13R24/shared7 and one genuine feature-disabled auxiliary;13public/18private. Five new Python method declarations bring the obligation to503. No corrected candidate passes are claimed."
+      },
+      "prior_attempt3_required_control_obligations": {
+        "headless": 453,
+        "renderer": 374
+      },
+      "prior_attempt3_Source_roster": {
+        "filename": "m116-primary-and-feature-disabled-auxiliary-source-declarations.json",
+        "sha256": "8b5cd0ab417a4b24338c0b402daef31363806321a352bc86ee0965291f763911",
+        "bytes": 20023,
+        "mode": 436
+      },
+      "prior_attempt3_Source_count": 1884,
+      "prior_attempt3_changed_Source_paths": 29,
+      "prior_attempt3_new_Source_paths": 9,
+      "prior_attempt3_affected_Rust_paths": 19,
+      "prior_attempt3_changed_production_paths": 12,
+      "prior_attempt3_preformat_Source_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
+      "prior_attempt3_current_preformat_Source_census": {
+        "filename": "m116-complete-fixture-and-QA-final-wording-source-census.json",
+        "sha256": "af35ba5c21f9ae84ef758a847919caf91a028defa0529ec398c9c0d9e119838c",
+        "bytes": 551201,
+        "mode": 436
+      },
+      "prior_attempt3_current_preformat_Source_review": {
+        "filename": "m116-fixture-correction-preformat-source-review.json",
+        "sha256": "39a6310595a761859efd0e21ef90119eec23b1f6e18147b400a7a51ccc8abfd8",
+        "bytes": 3346,
+        "mode": 436
+      },
+      "prior_attempt3_current_preformat_Source_review_complete": true,
+      "prior_attempt3_formatted_Source": {
+        "filename": "m116-fixture-qa-formatted-source-completion.json",
+        "sha256": "091f7595001a310735d3917b65d3fe478d9f89e459437b6b9bbfe0709fa5bf9d",
+        "bytes": 552858,
+        "mode": 436
+      },
+      "prior_attempt3_formatted_Source_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
+      "prior_attempt3_formatter_actual": {
+        "filename": "m116-fixture-correction-final-formatter-actual.json",
+        "sha256": "cfe43de68145584c87f7fedf70845382bfe3bc890f9695091f3b070a2129b667",
+        "bytes": 3501,
+        "mode": 436
+      },
+      "prior_attempt3_formatter_diff_bytes": 0,
+      "prior_attempt3_affected_formatter_Rust_paths": 4,
+      "prior_attempt3_capacity_resolution": {
+        "state": "REQUIRED_CAPACITY_RESOLVED_AND_FRESH_NORMAL_ADMISSION_PASSED",
+        "cleanup": {
+          "filename": "completion.json",
+          "sha256": "ec81ecff44f5416b41857979bc7e56c9617ec1bb0ea58013f593371157c57ab3",
+          "bytes": 1292,
+          "mode": 436
+        },
+        "normal_Root_release": {
+          "filename": "m116-fixture-qa-normal-root-release.json",
+          "sha256": "d6fb93f5ef66f11e88415eb8cac3741bb8936684bdbad1adbb770df07069d7b2",
+          "bytes": 2801,
+          "mode": 436
+        },
+        "required_initial_SSD_bytes": 35433480192,
+        "fresh_actual_resources": {
+          "SSD": 37474951168,
+          "SHM": 4058120192,
+          "runtime": 2007416832,
+          "MemAvailable": 30507053056
+        },
+        "owner_capacity_question_pending": false,
+        "resource_admitted": true,
+        "future_fit_guarantee": false,
+        "further_cleanup_authorized": false
+      },
+      "Source_control_declarations": {
+        "Rust_unique": 42,
+        "primary_Rust_unique": 41,
+        "headless": 18,
+        "renderer": 30,
+        "shared": 7,
+        "auxiliary_feature_disabled": 1,
+        "public": 13,
+        "private": 29,
+        "new_Python_methods": 5,
+        "expected_Python_methods": 503,
+        "scope": "42 Source declarations:41 primary (H18/R30/shared7) and one genuine feature-disabled auxiliary;13 public/29 private. These are unrun corrected-candidate obligations, not results. Python503 remains required."
+      },
+      "required_control_obligations": {
+        "headless": 458,
+        "renderer": 380
+      },
+      "Source_roster": {
+        "sha256": "db9235fedc8519374a3dea5d164021797d267fedc2619fa6d6bac750d37169fe",
+        "bytes": 26313,
+        "mode": 436,
+        "filename": "m116-compiler-coverage-Source-control-declarations.json"
+      },
+      "Source_count": 1884,
+      "changed_Source_paths": 31,
+      "new_Source_paths": 9,
+      "affected_Rust_paths": 20,
+      "changed_production_paths": 12,
+      "preformat_Source_tree": "84f0d369aa87b43de5cd8379686c911dbd80ca4c",
+      "formatted_Source": {
+        "sha256": "4656a3eb5f4430f2874820500afd22ae2512df1817c6f9e34844f8b2a58b1d9c",
+        "bytes": 605970,
+        "mode": 436,
+        "filename": "m116-coverage-correction-formatted-source-completion.json"
+      },
+      "formatted_Source_tree": "6d286f2758f9450b71412b196a60fc409bfed059",
+      "formatter_actual": {
+        "sha256": "52ea20b11397cc9b3ea47a4c7dcb5e75a5bad5ca74552fb7aae24f658265079d",
+        "bytes": 3161,
+        "mode": 436,
+        "filename": "m116-coverage-correction-final-formatter-actual.json"
+      },
+      "source_census_scope": "Actual complete Source inventory:1884files/31changed/9new/20Rust/12productionRust,42Rust declarations and503Python obligations. Whole code/docs/roster/census and formatting review are complete. The full normal is active; no new runtime result or commit is inferred.",
+      "correction_source": {
+        "state": "WHOLE_SOURCE_AND_FORMAT_REVIEW_CLEAR_FULL_NORMAL4_ACTIVE",
+        "foundation_tree": "487007356afff6c76ca22845d6b1a428aa5b15cc",
+        "parent": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+        "complete_failure_analysis": {
+          "filename": "m116-local-normal-attempt3-compiler-coverage-failure.json",
+          "sha256": "f0decdb56a1658b280c9fb02044cd823eb01885f1fd70a29ae5140b6cd09b208",
+          "bytes": 10900,
+          "mode": 436
+        },
+        "headless_all21_analysis": {
+          "filename": "m116-headless-all21-retained-coverage-analysis.json",
+          "sha256": "834236219e66321e3416dbb62d5c05238036e26a2ec6de2517b4d48740518a5b",
+          "bytes": 44197,
+          "mode": 436
+        },
+        "compiler_prerequisite_Source": {
+          "filename": "m116-feature-disabled-zenoh-dev-source-completion.json",
+          "sha256": "972bb544ba51fb0c1084b465172482d60a584ba5e061b9d1994003cc078d2d02",
+          "bytes": 4206,
+          "mode": 436
+        },
+        "Server_regression_Source": {
+          "filename": "m116-server-boundary-coverage-source-completion.json",
+          "sha256": "708747218e015755b50e6ed2ff6149a709a823ef1cbd8aa1f0df269020080445",
+          "bytes": 14884,
+          "mode": 436
+        },
+        "Server_new_private_headless_declarations": 5,
+        "renderer_regression_Source": "complete and independently reviewed",
+        "Root_docs_and_final_census": "complete and independently reviewed",
+        "production_behavior_change_selected": false,
+        "all21bases_and_strict_thresholds_retained": true,
+        "formatter_run": true,
+        "full_normal_released": true,
+        "qualification": false,
+        "complete_Source_census": {
+          "sha256": "2420e8565df322c4ac68dd9d35f47732a85bd64bec79a3d7242891e2b822ab41",
+          "bytes": 604749,
+          "mode": 436,
+          "filename": "m116-complete-compiler-coverage-current-alias-correction-source-census.json"
+        },
+        "Source_roster": {
+          "sha256": "db9235fedc8519374a3dea5d164021797d267fedc2619fa6d6bac750d37169fe",
+          "bytes": 26313,
+          "mode": 436,
+          "filename": "m116-compiler-coverage-Source-control-declarations.json"
+        },
+        "all_code_Source_reviews": {
+          "CLI": "Root8fa380c8+Package972 peerCLEAR",
+          "Server": "Scope70874721 wholeSourceCLEAR",
+          "camera": "Scope7378db94 wholeSourceCLEAR"
+        },
+        "all_code_Source_completions": [
+          {
+            "sha256": "972bb544ba51fb0c1084b465172482d60a584ba5e061b9d1994003cc078d2d02",
+            "bytes": 4206,
+            "mode": 436,
+            "filename": "m116-feature-disabled-zenoh-dev-source-completion.json"
+          },
+          {
+            "sha256": "708747218e015755b50e6ed2ff6149a709a823ef1cbd8aa1f0df269020080445",
+            "bytes": 14884,
+            "mode": 436,
+            "filename": "m116-server-boundary-coverage-source-completion.json"
+          },
+          {
+            "sha256": "7378db94976fbdeecf0505479c3197ec252a9903774623b5f8ceadbc1fa4b6b4",
+            "bytes": 16651,
+            "mode": 436,
+            "filename": "m116-camera-behavioral-coverage-controls-source-completion.json"
+          }
+        ],
+        "procedures_Source_review": {
+          "sha256": "cebd087b0b40c40b34ababd3f42e5ed7e929396d854a89bd6ad4d6b3f88c09e8",
+          "bytes": 1659,
+          "mode": 436,
+          "filename": "m116-coverage-correction-procedures-source-review.json"
+        },
+        "correction_paths": [
+          "AGENTS.md",
+          "README.md",
+          "crates/gz-camera-output/tests/private/application.rs",
+          "crates/gz-camera-output/tests/private/m116_triggered_rgb.rs",
+          "crates/gz-sim-cli/Cargo.toml",
+          "crates/gz-sim-server/tests/private/triggered_camera.rs",
+          "docs/DELIVERY_PLAN.md",
+          "docs/HANDOFF.md",
+          "docs/M116_DELIVERY.md",
+          "planning/delivery-phases.json"
+        ],
+        "all_1874_other_Source_rows_unchanged": true,
+        "all_12_shipped_production_Rust_rows_unchanged": true,
+        "verifier_all_Python_and_lock_unchanged": true,
+        "formatted_Source": {
+          "sha256": "4656a3eb5f4430f2874820500afd22ae2512df1817c6f9e34844f8b2a58b1d9c",
+          "bytes": 605970,
+          "mode": 436,
+          "filename": "m116-coverage-correction-formatted-source-completion.json"
+        },
+        "formatted_Source_review": {
+          "sha256": "1cf8d1e95dd46a09a419155e241ec30082b396a96d25dcaf4816c3a7b558d773",
+          "bytes": 1909,
+          "mode": 436,
+          "filename": "m116-coverage-correction-formatted-source-review.json"
+        },
+        "formatter_actual": {
+          "sha256": "52ea20b11397cc9b3ea47a4c7dcb5e75a5bad5ca74552fb7aae24f658265079d",
+          "bytes": 3161,
+          "mode": 436,
+          "filename": "m116-coverage-correction-final-formatter-actual.json"
+        },
+        "whole_docs_roster_census_peer": "Packagewhole138819+narrow2420 CLEAR; onlycurrentcatalogaliasclassclosed. Physical/index/tree84f0 confirmed beforeformatter.",
+        "Source_preparation_ran_tests": false,
+        "all_old_three_full_test_prefixes_unchanged_after_formatter": true
+      },
+      "current_failure_gates": {
+        "headless_Server_changed_lines": [
+          211,
+          228
+        ],
+        "renderer_camera_output_regions": [
+          3148,
+          3339
+        ],
+        "renderer_camera_output_changed_lines_latest_three_bases": [
+          483,
+          522
+        ],
+        "renderer_camera_output_changed_lines_older_eighteen_bases": [
+          618,
+          663
+        ],
+        "strict_threshold": "Each applicable line and region coverage ratio must exceed95%; no threshold or base is removed.",
+        "auxiliary_Cargo_exit": 101,
+        "auxiliary_compiler_error": "E0599 SessionInfo::locators: test-only Zenoh unstable prerequisite absent",
+        "headless_other21base_and_all_ordinary_metrics": "retained analytical projections pass; not executed requalification",
+        "coverage_qualification": false
+      },
+      "current_preformat_Source_census": {
+        "sha256": "2420e8565df322c4ac68dd9d35f47732a85bd64bec79a3d7242891e2b822ab41",
+        "bytes": 604749,
+        "mode": 436,
+        "filename": "m116-complete-compiler-coverage-current-alias-correction-source-census.json"
+      },
+      "current_preformat_Source_review_complete": true,
+      "affected_formatter_Rust_paths": 3,
+      "prior_pre_alias_correction_Source_census": {
+        "filename": "m116-complete-compiler-coverage-correction-source-census.json",
+        "sha256": "1388191441f5df94bf7453c5b4bc5c891acd51aaa979a4bd5a2b7fbbe041260f",
+        "bytes": 604234,
+        "mode": 436
+      },
+      "current_preformat_Source_review": {
+        "sha256": "dcc9bc83d79fd70766698ec5e481408ee86b2fb4d7fccf1197f16febe3832741",
+        "bytes": 2790,
+        "mode": 436,
+        "filename": "m116-coverage-correction-preformat-source-review.json"
+      },
+      "formatted_Source_review": {
+        "sha256": "1cf8d1e95dd46a09a419155e241ec30082b396a96d25dcaf4816c3a7b558d773",
+        "bytes": 1909,
+        "mode": 436,
+        "filename": "m116-coverage-correction-formatted-source-review.json"
+      },
+      "formatter_Root_actual": {
+        "tool": "1466f8",
+        "actual_exit_code": 0
+      },
+      "formatter_diff_bytes": 47345,
+      "all_old_three_full_test_prefixes_unchanged_after_formatter": true,
+      "active_normal": {
+        "attempt": 4,
+        "Root_session": 86340,
+        "launch_tool": "801ad2",
+        "Root_release": {
+          "filename": "m116-coverage-correction-normal-root-release.json",
+          "sha256": "20389b91a411ba53d85ba87357ae4d5786cbcbb344f69c5a11ec171866289967",
+          "bytes": 2801,
+          "mode": 436
+        },
+        "release_at": "2026-11-25T00:33:42.086958+00:00",
+        "released_Source": {
+          "sha256": "ef028c36a51803b90f92c7b1151e23a4bbfd46eae5af5076b7418435dc690d2c",
+          "bytes": 15970,
+          "mode": 436,
+          "filename": "run-m116-coverage-correction-final-checks-root-released.py"
+        },
+        "held_Source": {
+          "sha256": "52091469f47f33e304d3637d0f5b90ed4cee042e724ba89584ee3cc24459bec9",
+          "bytes": 15971,
+          "mode": 436,
+          "filename": "run-m116-coverage-correction-final-checks-held.py"
+        },
+        "Source_seal": {
+          "sha256": "4656a3eb5f4430f2874820500afd22ae2512df1817c6f9e34844f8b2a58b1d9c",
+          "bytes": 605970,
+          "mode": 436,
+          "filename": "m116-coverage-correction-formatted-source-completion.json"
+        },
+        "Source_review": {
+          "sha256": "1cf8d1e95dd46a09a419155e241ec30082b396a96d25dcaf4816c3a7b558d773",
+          "bytes": 1909,
+          "mode": 436,
+          "filename": "m116-coverage-correction-formatted-source-review.json"
+        },
+        "tree": "6d286f2758f9450b71412b196a60fc409bfed059",
+        "parent": "f71feacc73ddbd2bb8db9e4de5f373f7707056d2",
+        "fresh_actual_resources": {
+          "SSD": 35794739200,
+          "SHM": 4058398720,
+          "runtime": 2007416832,
+          "MemAvailable": 30756524032
+        },
+        "initial_SSD_required_bytes": 35433480192,
+        "global_native14GiB_reserve_unchanged": true,
         "terminal_tool": null,
         "actual_Root_exit_code": null,
         "actual_Git_exit_code": null,
         "actual_result": null,
         "commit": null,
-        "scope": "One Root-owned full mandatory verification cycle is running. No terminal result, new commit or test-pass count is inferred."
+        "scope": "One Root-owned full mandatory verification cycle is active after fresh resource admission. No terminal result, new commit or corrected-candidate test-pass count is inferred."
       }
     }
   },
