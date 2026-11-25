@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "decision": "D30",
-  "as_of": "2026-11-24",
+  "as_of": "2026-11-25",
   "execution_state": "active",
-  "current_phase": "M116",
+  "current_phase": "M117",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -20972,6 +20972,101 @@
       "normal_passed": true,
       "normal_commit": "1a3706d19043fde0db8688fd7d5a070ffaf177dd",
       "qualification_closeout_state": "HELD_FOR_NO_RUBY_NATIVE_TOOLING"
+    },
+    {
+      "id": "M117",
+      "title": "Explicit single triggered-depth capture",
+      "max_working_days": 5,
+      "depends_on": [
+        "M116"
+      ],
+      "scope": "One explicitly selected 64x64 triggered depth Image and CameraInfo path, sharing the existing pending-bit input, schedule, worker and complete live/original endpoint ownership. Existing RGB and periodic domains stay unchanged.",
+      "acceptance": "Complete implementation, meaningful regressions, documentation and independent Source review; close the complete batch before one affected formatter and combined mandatory full normal. Prove true/false/default Boolean admission, demand and clock/lifetime policy, actual R_FLOAT32 axial pixels and infinity background, Image sequence and paired stamp/frame/calibration, quiet windows, reset/retirement and unchanged RGB/legacy refusals. Require strict profile/crate/workspace/changed-base coverage, independent local DATA, exact hosted CI and official originals. Formal release gates remain.",
+      "excluded": "Multi-camera or mixed triggering, depth point clouds, new rendering/protocol/schema/runtime framework, image/noise/clip expansion, native render-binary equivalence, DART/MuJoCo, Fuel, demo and cleanup actions.",
+      "delivery_guide": "docs/M117_DELIVERY.md",
+      "source_parent": "1a3706d19043fde0db8688fd7d5a070ffaf177dd",
+      "source_foundation_tree": "68852ae9274b208dc7a02ce81cf00dff4f26a99f",
+      "source_foundation_reviewed": true,
+      "source_foundation_product_qualified": false,
+      "parent_normal_passed": true,
+      "parent_independent_qualification_complete": false,
+      "parent_accepted": false,
+      "implementation_started": true,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_whole_Source_review_complete": true,
+      "checks_run": false,
+      "new_Python_methods": 0,
+      "expected_Python_methods": 510,
+      "feature_disabled_control": "Existing auxiliary ID now checks RGB and depth in two unconditional scenarios; no new auxiliary ID or prior proof transfer.",
+      "retained_test_dispositions": "Two exact loader-refusal premises become successful metadata load plus retained legacy/RGB refusals; the existing cfg-off case receives an append-only depth scenario. All neighboring statements/assertions remain.",
+      "Source_control_declarations": {
+        "Rust_unique": 25,
+        "primary": 25,
+        "headless": 11,
+        "renderer": 19,
+        "shared": 5,
+        "public": 12,
+        "private": 13,
+        "new_auxiliary": 0,
+        "new_Python_methods": 0,
+        "expected_Python_methods": 510,
+        "scope": "Source declarations only; no M117 case or product check has executed."
+      },
+      "future_tree": null,
+      "future_commit": null,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "actual_new_test_passes": null,
+      "accepted": false,
+      "Main_promoted": false,
+      "qualification_inherited": false,
+      "author_Source_reviews_complete": true,
+      "required_control_obligations": {
+        "headless": 469,
+        "renderer": 399,
+        "existing_auxiliary_cases": 1,
+        "existing_auxiliary_scenarios": 2
+      },
+      "independent_Source_review_scope": "All complete code, retained dispositions, guides, roster, census and formatting reviews are CLEAR. No M117 product checks have run.",
+      "formatter_run": true,
+      "formatter_actual": {
+        "filename": "m117-final-formatter-actual.json",
+        "sha256": "abcb4f9e5ead0f595b4cc36322bc4305b088194175f75f29ba9d6f00ed66ac37",
+        "bytes": 8633,
+        "mode": 436
+      },
+      "formatter_independent_review_complete": true,
+      "formatted_Source_snapshot": {
+        "filename": "m117-formatted-source-snapshot.json",
+        "sha256": "8145b4c2f9d8a26a2069baad6438f6454e61e713d99505aa73c614f4767a7340",
+        "bytes": 561821,
+        "mode": 436
+      },
+      "formatted_Source_tree": "91fe1e0106b5ef7c0e0cfc9dacbaecb7942076dc",
+      "Source_count": 1892,
+      "changed_Source_paths": 32,
+      "new_Source_paths": 8,
+      "affected_Rust_paths": 19,
+      "changed_production_Rust_paths": 10,
+      "Source_roster": {
+        "filename": "M117_Source_control_declarations.json",
+        "sha256": "f193c956b18b14c47ec440adcad8e75d47c883405fb20d83ab711bb2e5897179",
+        "bytes": 15859,
+        "mode": 436
+      },
+      "capacity_hold": "current_M117_Source.capacity_hold",
+      "normal_running": false,
+      "normal_released": false,
+      "delivery_guide_url": null,
+      "formatted_Source_review": {
+        "filename": "m117-formatted-source-review.json",
+        "sha256": "35943ffc3d98012208e8138f770acb4dffccf8d6485f8b3abb7684207b118995",
+        "bytes": 2831,
+        "mode": 436
+      }
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -21091,7 +21186,8 @@
     "M113": "in_progress",
     "M114": "in_progress",
     "M115": "in_progress",
-    "M116": "in_progress"
+    "M116": "in_progress",
+    "M117": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-24T13:57:14.048804+00:00",
@@ -21135,7 +21231,8 @@
     "M113",
     "M114",
     "M115",
-    "M116"
+    "M116",
+    "M117"
   ],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
@@ -22624,31 +22721,38 @@
       "integration": "M116 full normal passed on exact 1a3706d1 / tree 6d286. The separate Ruby-free tooling candidate is Source reviewed and its fresh selected C++ reference passed. Full product checks await the unchanged SSD reserve; independent M116 qualification and formal acceptance gates remain.",
       "historical_prior_integration": "The first local normal failed one Clippy class before tests. The isolated correction and factual docs passed review and one byte-neutral affected formatter; one full retry is active under D31 alongside parent exact hosted CI. No terminal result is known, and all independent audit/publication/acceptance gates remain.",
       "historical_capacity_held_integration": "Complete fixture and genuine feature-disabled verification Source passed independent review and one affected formatter. Full normal is held for33GiB initial SSD capacity;36GiB is requested from the owner. ParentM115 is fully Source qualified and unaccepted. No own result transfers or acceptance is claimed."
+    },
+    {
+      "phases": [
+        "M117"
+      ],
+      "max_working_days": 5,
+      "integration": "Complete triggered-depth code, regressions, retained dispositions, guides, census and formatting passed independent Source review. Combined Ruby-free tooling/M117 full verification is held on the unchanged SSD reserve; no results transfer."
     }
   ],
-  "acceptance_boundary": "M116 normal and the separate fresh Ruby-free C++ reference build/probe have genuine passes, but independent qualification and the tooling candidate full normal/hosted gates remain. Preserve all coverage thresholds, retained audits and formal M77 browser/shutdown requirements.",
+  "acceptance_boundary": "Source completion and formatter success do not qualify M117. Require complete combined tooling/M117 staged checks, unchanged coverage/feature-disabled/native gates, independent local/hosted/official audits and formal M77 release evidence. No acceptance or Main promotion is claimed.",
   "current_delivery_group": [
-    "M116"
+    "M117"
   ],
-  "current_development_phase": "M116",
+  "current_development_phase": "M117",
   "board": {
-    "updated_at": "2026-11-25T02:45:55.552625+00:00",
+    "updated_at": "2026-11-25T04:38:35.235659+00:00",
     "current": {
-      "title": "Ruby-free reference passed; full checks held on SSD reserve",
+      "title": "Triggered-depth Source complete; verification capacity-held",
       "items": [
-        "Complete Ruby-free tooling Source is independently reviewed, and its fresh selected C++ reference build and probe passed. Product checks have not run.",
-        "Full checks are held below the unchanged 33 GiB starting SSD reserve. The owner capacity decision is pending; no cleanup or fit guarantee is inferred.",
+        "M117 triggered-depth code, regressions, guides and formatting passed independent Source review. No product checks have run.",
+        "Combined Ruby-free tooling and M117 verification await the unchanged 33 GiB SSD reserve. The owner capacity decision remains pending.",
         "The no-expiry demo stays running. Formal browser and owner-confirmed shutdown evidence remain incomplete."
       ]
     },
     "done": [
-      "M116 completed its full normal on the exact commit. Independent retained audit, hosted qualification and acceptance remain separate.",
-      "The fresh Ruby-free C++ client reference passed its build and probe; old references and qualification records remain unchanged.",
+      "M117 Source adds explicit triggered depth while preserving RGB and periodic behavior; its 25 Rust declarations are unrun verification obligations.",
+      "M116 passed its full normal, and the separate Ruby-free C++ reference passed its build/probe. Neither result qualifies M117.",
       "M115 completed its own normal, local, hosted and official Source qualification on its review commit; acceptance and Main promotion remain held."
     ],
     "next": [
-      "Resolve the SSD reserve, then admit one full mandatory verification cycle for the reviewed Ruby-free tooling candidate.",
-      "Complete M116 independent retained audit, exact review publication, hosted CI and independent original-artifact qualification after the tooling gate.",
+      "Resolve the SSD reserve, then admit one complete combined tooling/M117 mandatory verification cycle.",
+      "Independently audit exact local results, then complete review publication, hosted CI and original-artifact qualification.",
       "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
     ],
     "blocker": {
@@ -22658,7 +22762,7 @@
     "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
   },
   "parallel_source_phases": [
-    "M116"
+    "M117"
   ],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
@@ -22807,7 +22911,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Await the unchanged SSD starting reserve, then one full required verification of the reviewed Ruby-free tooling candidate using its fresh selected reference.",
+  "current_development_task": "Obtain the unchanged SSD reserve before one complete combined Ruby-free tooling/M117 verification cycle; all Source and formatting reviews are complete.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -36536,7 +36640,7 @@
     },
     "Main_promoted": false
   },
-  "current_wave_projection_scope": "M116 full normal passed and remains unaccepted. The separate Ruby-free tooling candidate is fully Source reviewed; its fresh C++ reference build/probe passed. Full product checks are capacity held; no phase qualification transfers or new acceptance is claimed.",
+  "current_wave_projection_scope": "M117 complete reviewed/formatted Source has no executed result. Its genuine M116 normal parent and separately observed fresh Ruby-free reference permit bounded dependency reuse only; neither transfers qualification. Combined verification remains capacity held.",
   "public_path_projection": {
     "pointer_count": 226,
     "historical_delivery_private_leaf_count": 183,
@@ -37789,8 +37893,8 @@
     }
   },
   "tracker_publication_current": {
-    "state": "SOURCE_FAILURE_CORRECTION_CHECKPOINT_REVIEW_PENDING",
-    "scope": "This current failure/correction Source checkpoint has not been checked or published. Root owns one bounded board cycle after independent Source review.",
+    "state": "M117_SOURCE_CAPACITY_CHECKPOINT_REVIEW_PENDING",
+    "scope": "This Source checkpoint awaits Root review and one bounded board cycle before publication.",
     "browser_visual_claim": false,
     "saved_browser_permission_denial_preserved": true,
     "future_readback_scope": "Exact API payloads and Pages build metadata only; no browser retry or visual claim."
@@ -38829,6 +38933,146 @@
       "full_normal_released": false,
       "future_fit_guarantee": false,
       "new_cleanup_authorized": false
-    }
+    },
+    "combined_product_verification_phase": "M117"
+  },
+  "current_M117_Source": {
+    "state": "COMPLETE_REVIEWED_FORMATTED_SOURCE_VERIFICATION_CAPACITY_HELD",
+    "parent": "1a3706d19043fde0db8688fd7d5a070ffaf177dd",
+    "foundation_tree": "68852ae9274b208dc7a02ce81cf00dff4f26a99f",
+    "source_selection_sha256": "85ec1beb790568ed6d796f0e9fbe53d335cc22ede52fadad9772134298742376",
+    "Source_guide": "docs/M117_DELIVERY.md",
+    "inherited_results": false,
+    "all_runtime_results": null,
+    "accepted": false,
+    "implementation_complete": true,
+    "regression_Source_complete": true,
+    "controls": {
+      "Rust_unique": 25,
+      "primary": 25,
+      "headless": 11,
+      "renderer": 19,
+      "shared": 5,
+      "public": 12,
+      "private": 13,
+      "new_auxiliary": 0,
+      "new_Python_methods": 0,
+      "expected_Python_methods": 510,
+      "scope": "Source declarations only; no M117 case or product check has executed."
+    },
+    "required_controls": {
+      "headless": 469,
+      "renderer": 399,
+      "existing_auxiliary_cases": 1,
+      "existing_auxiliary_scenarios": 2
+    },
+    "Source_roster_sha256": "f193c956b18b14c47ec440adcad8e75d47c883405fb20d83ab711bb2e5897179",
+    "checks_run": false,
+    "formatter_run": true,
+    "scope": "Explicit single triggered-depth implementation, regressions, guides, census and formatting passed independent Source review. No M117 product checks, result or commit exists. The combined Ruby-free tooling/M117 full cycle remains held on the unchanged SSD starting reserve.",
+    "Source_count": 1892,
+    "changed_Source_paths": 32,
+    "new_Source_paths": 8,
+    "affected_Rust_paths": 19,
+    "changed_production_Rust_paths": 10,
+    "independent_whole_Source_review_complete": true,
+    "documentation_Source_review_complete": true,
+    "source_findings_closed": true,
+    "formatter_actual": {
+      "filename": "m117-final-formatter-actual.json",
+      "sha256": "abcb4f9e5ead0f595b4cc36322bc4305b088194175f75f29ba9d6f00ed66ac37",
+      "bytes": 8633,
+      "mode": 436
+    },
+    "Root_formatter_actual": {
+      "tool": "1e3750",
+      "actual_exit_code": 0
+    },
+    "formatter_independent_review_complete": true,
+    "formatted_Source_snapshot": {
+      "filename": "m117-formatted-source-snapshot.json",
+      "sha256": "8145b4c2f9d8a26a2069baad6438f6454e61e713d99505aa73c614f4767a7340",
+      "bytes": 561821,
+      "mode": 436
+    },
+    "formatted_Source_tree": "91fe1e0106b5ef7c0e0cfc9dacbaecb7942076dc",
+    "Source_roster": {
+      "filename": "M117_Source_control_declarations.json",
+      "sha256": "f193c956b18b14c47ec440adcad8e75d47c883405fb20d83ab711bb2e5897179",
+      "bytes": 15859,
+      "mode": 436
+    },
+    "whole_Source_metadata": {
+      "filename": "m117-metadata-census-source-successor.json",
+      "sha256": "6257ae4ad459596229184cf658cedd5025673a9c2f161bafcdaa953150d370eb",
+      "bytes": 6675,
+      "mode": 436
+    },
+    "Source_selection": {
+      "filename": "source-selection.json",
+      "sha256": "85ec1beb790568ed6d796f0e9fbe53d335cc22ede52fadad9772134298742376",
+      "bytes": 3285,
+      "mode": 436
+    },
+    "Source_contract_amendment": {
+      "filename": "source-contract-amendment.json",
+      "sha256": "bdae1620b49ed7d95bbc1510088430e970a2bb37fd122eb79346d7ff9080e38a",
+      "bytes": 1040,
+      "mode": 436
+    },
+    "held_normal_Source": {
+      "filename": "run-m117-final-checks-held.py",
+      "sha256": "82c334c054261ebf111e6d5b4bacadbef183667b49402de4d2160cb02a905780",
+      "bytes": 19282,
+      "mode": 436
+    },
+    "held_normal_Source_review": "independent whole Source CLEAR; no invocation",
+    "required_control_obligations": {
+      "headless": 469,
+      "renderer": 399,
+      "existing_auxiliary_cases": 1,
+      "existing_auxiliary_scenarios": 2
+    },
+    "new_auxiliary_case_IDs": 0,
+    "Python_obligation": 510,
+    "strict_base_policy": "Retain every required strict base and threshold from the genuine parent; no Source or predecessor result transfers.",
+    "normal_running": false,
+    "verification_released": false,
+    "resource_admitted": false,
+    "normal_actual": null,
+    "local_DATA_actual": null,
+    "hosted_actual": null,
+    "official_actual": null,
+    "future_commit": null,
+    "actual_new_test_passes": null,
+    "qualified": false,
+    "Main_promoted": false,
+    "qualification_inherited": false,
+    "delivery_guide_url": null,
+    "all_eight_native_bootstrap_inputs_unchanged": true,
+    "native_reference_scope": "The separately observed Ruby-free reference may be reused only after exact eight-input and maintained-reference validation. Its build/probe pass transfers no M117 result.",
+    "capacity_hold": {
+      "state": "HELD_PENDING_OWNER_CAPACITY_DECISION",
+      "required_initial_SSD_bytes": 35433480192,
+      "observed_SSD_bytes": 34351304704,
+      "observation_basis": {
+        "filename": "m117-final-formatter-actual.json",
+        "sha256": "abcb4f9e5ead0f595b4cc36322bc4305b088194175f75f29ba9d6f00ed66ac37",
+        "bytes": 8633,
+        "mode": 436
+      },
+      "owner_requested_free_SSD_GiB": 36,
+      "owner_decision": "pending",
+      "full_normal_released": false,
+      "new_cleanup_authorized": false,
+      "future_fit_guarantee": false
+    },
+    "formatted_Source_review": {
+      "filename": "m117-formatted-source-review.json",
+      "sha256": "35943ffc3d98012208e8138f770acb4dffccf8d6485f8b3abb7684207b118995",
+      "bytes": 2831,
+      "mode": 436
+    },
+    "Source_and_formatting_review_complete": true
   }
 }
