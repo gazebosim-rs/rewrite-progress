@@ -3,7 +3,7 @@
   "decision": "D30",
   "as_of": "2026-11-25",
   "execution_state": "active",
-  "current_phase": "M117",
+  "current_phase": "M118",
   "clock": "Working days after explicit implementation resume; includes review and mandatory verification. Targets, not guarantees.",
   "phases": [
     {
@@ -21067,6 +21067,53 @@
         "bytes": 2831,
         "mode": 436
       }
+    },
+    {
+      "id": "M118",
+      "title": "Periodic RGB camera runtime rate control",
+      "max_working_days": 5,
+      "depends_on": [
+        "M63"
+      ],
+      "scope": "Programmatic read/set of one existing periodic RGB output owner using the existing SensorSchedule. Native direct SetUpdateRate policy is uncapped; preserve pending deadlines, in-flight frames, sequences and owner identity.",
+      "acceptance": "Complete implementation, regression source, docs and independent review; batch fixes before formatting and one consolidated staged-hook, strict coverage, independent local DATA, exact hosted CI and official audit. Prove exact changed cadence, real Image/CameraInfo stamps and sequences, continuous/nonfinite policy and atomic invalid-period refusal, all owner/mode/lifecycle refusals and unchanged defaults.",
+      "excluded": "Remote rate service, CLI controls, depth/trigger/pair/family expansion, new IO/runtime/worker/protocol/schema/framework, Ruby, DART/MuJoCo, Fuel, cleanup and live-demo actions.",
+      "delivery_guide": "docs/M118_DELIVERY.md",
+      "source_parent": "1a3706d19043fde0db8688fd7d5a070ffaf177dd",
+      "source_foundation_tree": "91fe1e0106b5ef7c0e0cfc9dacbaecb7942076dc",
+      "source_foundation_reviewed": true,
+      "source_foundation_product_qualified": false,
+      "implementation_started": true,
+      "implementation_complete": true,
+      "regression_Source_complete": true,
+      "independent_whole_Source_review_complete": true,
+      "checks_run": false,
+      "Source_control_declarations": {
+        "unique": 14,
+        "headless": 2,
+        "renderer": 14,
+        "shared": 2,
+        "public": 6,
+        "private": 8,
+        "new_auxiliary": 0,
+        "new_Python": 0,
+        "Python_obligation": 510
+      },
+      "future_tree": null,
+      "future_commit": null,
+      "normal_actual": null,
+      "local_DATA_actual": null,
+      "hosted_actual": null,
+      "official_actual": null,
+      "actual_new_test_passes": null,
+      "accepted": false,
+      "Main_promoted": false,
+      "qualification_inherited": false,
+      "verification_dependency": "Reconcile and independently review the feature delta against the actually qualified M117 successor before verification; M117 remains frozen and its old results do not transfer.",
+      "code_Source_review_complete": true,
+      "formatter_run": true,
+      "formatter_child_exit_code": 0,
+      "formatter_equivalence_review_complete": true
     }
   ],
   "later_work": "Continue directly to the next useful named increment after accepting a phase while retained work remains. Each is bounded to at most five working days including independent review and mandatory checks. Independent increments may share a parallel source wave with one integrator. Full rewrite compatibility remains separate from accepted phase counts.",
@@ -21187,53 +21234,55 @@
     "M114": "in_progress",
     "M115": "in_progress",
     "M116": "in_progress",
-    "M117": "in_progress"
+    "M117": "in_progress",
+    "M118": "in_progress"
   },
   "resumed_at": "2026-11-02T22:33:50.311634Z",
   "phase_started_at": "2026-11-24T13:57:14.048804+00:00",
   "active_phases": [
-    "M77",
-    "M78",
-    "M79",
-    "M80",
-    "M81",
-    "M82",
-    "M83",
-    "M84",
-    "M85",
-    "M86",
-    "M87",
-    "M88",
-    "M89",
-    "M90",
-    "M91",
-    "M92",
-    "M93",
-    "M94",
-    "M95",
-    "M96",
-    "M97",
-    "M98",
-    "M99",
-    "M100",
-    "M101",
-    "M102",
-    "M103",
-    "M104",
-    "M105",
-    "M106",
-    "M107",
-    "M108",
-    "M109",
-    "M110",
-    "M111",
-    "M112",
-    "M113",
-    "M114",
-    "M115",
-    "M116",
-    "M117"
-  ],
+  "M77",
+  "M78",
+  "M79",
+  "M80",
+  "M81",
+  "M82",
+  "M83",
+  "M84",
+  "M85",
+  "M86",
+  "M87",
+  "M88",
+  "M89",
+  "M90",
+  "M91",
+  "M92",
+  "M93",
+  "M94",
+  "M95",
+  "M96",
+  "M97",
+  "M98",
+  "M99",
+  "M100",
+  "M101",
+  "M102",
+  "M103",
+  "M104",
+  "M105",
+  "M106",
+  "M107",
+  "M108",
+  "M109",
+  "M110",
+  "M111",
+  "M112",
+  "M113",
+  "M114",
+  "M115",
+  "M116",
+  "M117",
+  "M118"
+],
   "execution_policy": "D30\u2013D32: disjoint bounded Scene and Server source work may run in parallel with independent review. Root owns shared integration and serial heavy execution. Complete implementation, regressions and guides precede consolidated checks. All accepted-predecessor, hosted, official and publication gates remain mandatory.",
   "parallel_groups": [
     {
@@ -22728,42 +22777,49 @@
       ],
       "max_working_days": 5,
       "integration": "Complete triggered-depth code, regressions, retained dispositions, guides, census and formatting passed independent Source review. Combined Ruby-free tooling/M117 full verification is held on the unchanged SSD reserve; no results transfer."
+    },
+    {
+      "phases": [
+        "M118"
+      ],
+      "max_working_days": 5,
+      "integration": "Disjoint schedule primitive, output-owner and CameraServer/real-image source lanes. One integrator, independent complete Source review and no checks until the bounded feature and actual predecessor adoption are complete."
     }
   ],
   "acceptance_boundary": "Source completion and formatter success do not qualify M117. Require complete combined tooling/M117 staged checks, unchanged coverage/feature-disabled/native gates, independent local/hosted/official audits and formal M77 release evidence. No acceptance or Main promotion is claimed.",
   "current_delivery_group": [
-    "M117"
-  ],
-  "current_development_phase": "M117",
+  "M118"
+],
+  "current_development_phase": "M118",
   "board": {
-    "updated_at": "2026-11-25T04:38:35.235659+00:00",
-    "current": {
-      "title": "Triggered-depth Source complete; verification capacity-held",
-      "items": [
-        "M117 triggered-depth code, regressions, guides and formatting passed independent Source review. No product checks have run.",
-        "Combined Ruby-free tooling and M117 verification await the unchanged 33 GiB SSD reserve. The owner capacity decision remains pending.",
-        "The no-expiry demo stays running. Formal browser and owner-confirmed shutdown evidence remain incomplete."
-      ]
-    },
-    "done": [
-      "M117 Source adds explicit triggered depth while preserving RGB and periodic behavior; its 25 Rust declarations are unrun verification obligations.",
-      "M116 passed its full normal, and the separate Ruby-free C++ reference passed its build/probe. Neither result qualifies M117.",
-      "M115 completed its own normal, local, hosted and official Source qualification on its review commit; acceptance and Main promotion remain held."
-    ],
-    "next": [
-      "Resolve the SSD reserve, then admit one complete combined tooling/M117 mandatory verification cycle.",
-      "Independently audit exact local results, then complete review publication, hosted CI and original-artifact qualification.",
-      "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
-    ],
-    "blocker": {
-      "text": "Release acceptance awaits formal browser and owner-confirmed shutdown evidence. The recorded browser permission denial remains unresolved.",
-      "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
-    },
-    "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
+  "updated_at": "2026-11-25T06:10:41.950727+00:00",
+  "current": {
+    "title": "M118 rate-control source reviewed and formatted; checks held",
+    "items": [
+      "M118 implementation, documentation and 14 new Rust regressions are independently reviewed and formatted. No product checks have run.",
+      "Frozen M117 is ready for full verification once the required SSD reserve is restored.",
+      "M118 must adopt the genuinely qualified M117 successor before its own final check cycle; no old result transfers."
+    ]
   },
-  "parallel_source_phases": [
-    "M117"
+  "done": [
+    "M118 implements one periodic RGB rate API, preserving phase, in-flight images and existing worker ownership.",
+    "M117 code, regressions, guides, formatting and all audit tooling are independently reviewed.",
+    "M115 passed its own normal, local, hosted and official qualification; release acceptance remains separate."
   ],
+  "next": [
+    "Restore capacity and qualify the frozen M117 candidate.",
+    "Adopt and review the M118 delta against that qualified predecessor, then run its complete final check cycle.",
+    "Complete formal browser Pause/Reset and owner-confirmed shutdown proof before release acceptance."
+  ],
+  "blocker": {
+    "text": "Release acceptance awaits formal browser and owner-confirmed shutdown evidence. The recorded browser permission denial remains unresolved.",
+    "url": "https://github.com/gazebosim-rs/gz-sim-rs/blob/57b44de10713dc6132c5549d769dac00dc041f56/docs/M77_DELIVERY.md"
+  },
+  "history_url": "https://github.com/gazebosim-rs/rewrite-progress/blob/ec33082416ca23913ad30e8e80664bcaa0efe2f9/data/delivery.json"
+},
+  "parallel_source_phases": [
+  "M118"
+],
   "camera_integration": {
     "scope": "Atomic M61\u2013M64 qualification on accepted M60; no new phase",
     "basis_accepted_commit": "a1a01192661281fc4691fe5c048a65e1986aefa4",
@@ -22911,7 +22967,7 @@
     "hosted_attempt": 1,
     "hosted_success": true
   },
-  "current_development_task": "Obtain the unchanged SSD reserve before one complete combined Ruby-free tooling/M117 verification cycle; all Source and formatting reviews are complete.",
+  "current_development_task": "M118 implementation, regressions, documentation and formatting passed independent source review. No product checks have run; genuine qualified M117 adoption and the required verification gates remain.",
   "backend_retirement_source_preparation": {
     "decision": "D33",
     "owner_directed_at": "2026-11-17",
@@ -39074,5 +39130,41 @@
       "mode": 436
     },
     "Source_and_formatting_review_complete": true
-  }
+  },
+  "current_M118_Source": {
+  "state": "COMPLETE_REVIEWED_FORMATTED_SOURCE_CHECKS_HELD",
+  "scope": "Programmatic rate control for one periodic RGB camera using the existing scheduler and output owner.",
+  "source_parent": "1a3706d19043fde0db8688fd7d5a070ffaf177dd",
+  "reviewed_source_foundation_tree": "91fe1e0106b5ef7c0e0cfc9dacbaecb7942076dc",
+  "source_foundation_product_qualified": false,
+  "guide_URL": null,
+  "implementation_complete": true,
+  "regression_Source_complete": true,
+  "independent_Source_review_complete": true,
+  "checks_run": false,
+  "Source_control_declarations": {
+    "unique": 14,
+    "headless": 2,
+    "renderer": 14,
+    "shared": 2,
+    "public": 6,
+    "private": 8,
+    "new_auxiliary": 0,
+    "new_Python": 0,
+    "Python_obligation": 510
+  },
+  "accepted": false,
+  "qualification_inherited": false,
+  "code_Source_review_complete": true,
+  "formatter_run": true,
+  "formatter_child_exit_code": 0,
+  "formatter_equivalence_review_complete": true,
+  "Source_count": 1897,
+  "changed_Source_paths": 38,
+  "new_Source_paths": 13,
+  "affected_Rust_paths": 24,
+  "changed_production_Rust_paths": 11,
+  "own_feature_delta_paths": 15,
+  "all_runtime_results": null
+}
 }
