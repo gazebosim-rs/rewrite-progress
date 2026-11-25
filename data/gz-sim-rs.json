@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
   "repository": "gz-sim-rs",
-  "updated_at": "2026-11-25T04:38:35.235659+00:00",
+  "updated_at": "2026-11-25T06:10:41.950727+00:00",
   "state": "active",
-  "summary": "M117 triggered-depth Source is reviewed and formatted; product verification remains held on the SSD reserve. No qualification is inherited.",
+  "summary": "M118 periodic RGB rate-control code is reviewed and formatted. Product verification awaits capacity and genuine M117 predecessor qualification.",
   "model": "Codex coordinator with repository agents and an independent reviewer",
   "active": [
     {
-      "id": "M117",
-      "title": "Triggered-depth Source complete; SSD reserve held",
-      "detail": "Complete triggered-depth code, regressions, guides, census and formatting passed independent Source review. No product checks ran. Combined Ruby-free tooling/M117 verification awaits the unchanged SSD reserve and owner capacity decision."
+      "id": "M118",
+      "title": "Periodic RGB runtime rate control",
+      "detail": "Implementation, 14 new Rust regressions, documentation and formatting passed independent source review. No product tests or qualification have run. The existing scheduler, output owner, in-flight frames and worker are preserved."
     },
     {
-      "id": "M115",
-      "title": "Runtime lidar-rate qualification complete",
-      "detail": "Own normal, independent local audit, exact hosted CI and independent original-artifact audit passed on the same review commit. All 20 strict bases and 27 new Rust controls were validated. Source qualification remains separate from acceptance and Main promotion."
+      "id": "M117",
+      "title": "Reviewed source; verification capacity-held",
+      "detail": "Implementation, regression source, docs, formatting and all held audit tooling are independently reviewed. The full check cycle awaits the unchanged SSD reserve; no qualification is inherited."
     },
     {
       "id": "M77-persistent-demo",
@@ -1035,13 +1035,13 @@
     }
   ],
   "remaining": [
-    "Resolve the SSD reserve, then admit one complete combined tooling/M117 mandatory verification cycle.",
-    "Independently audit exact local results, then complete review publication, hosted CI and original-artifact qualification.",
-    "Resolve browser authority and complete formal Pause/Reset and owner-confirmed shutdown proof."
+    "Restore capacity and qualify the frozen M117 candidate.",
+    "Adopt and review the M118 delta against that qualified predecessor, then run its complete final check cycle.",
+    "Complete formal browser Pause/Reset and owner-confirmed shutdown proof before release acceptance."
   ],
   "blockers": [
     "Release acceptance awaits formal browser and owner-confirmed shutdown evidence. The recorded browser permission denial remains unresolved.",
-    "Combined product checks require the unchanged 33 GiB initial SSD reserve. The last retained formatter sample is below that floor; the owner capacity decision is pending."
+    "Frozen M117 verification requires the unchanged 33 GiB initial SSD reserve. The latest observation remains below it; the existing owner capacity decision is pending."
   ],
   "plan_status": {
     "REF-01": "in_progress",
@@ -1092,7 +1092,7 @@
       "state": "success",
       "url": "https://github.com/gazebosim-rs/gz-sim-rs/actions/runs/44681392983"
     },
-    "note": "Accepted metrics still describe M76. M115 remains Source qualified and unaccepted; M116 owns a full-normal pass. M117 complete reviewed/formatted Source and the fresh Ruby-free reference inherit no product qualification. Combined full checks remain capacity held; all independent and formal release gates remain.",
+    "note": "Accepted metrics still describe M76. M115 is source-qualified and unaccepted; M116 owns a normal pass. M117 verification remains capacity-held. M118 code and 14 new Rust declarations are reviewed, not product-qualified. Its final cycle needs the genuine M117 successor and all local, hosted, official and formal release gates.",
     "renderer_coverage": {
       "lines": [
         21567,
